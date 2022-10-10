@@ -5,7 +5,7 @@
 public float timeStart = 60;
 public Text textBox;
 // Use this for initialization
-void Start () {
+void Start() {
   textBox.text = timeStart.ToString();
 }	
 // Update is called once per frame
@@ -27,3 +27,17 @@ IEnumerator  CountdownTimer(float timer) {
  }
 }
 ```
+**Method 3(better)**
+```cs
+StartCoroutine(CountdownTimer(60));
+//Set a count down timer
+IEnumerator  CountdownTimer(float timer) {
+	while(timer > 0) {
+	  yield return new WaitForSeconds(1);
+	  timer --;
+	  timeText.text = "Time: " + Mathf.Round(timer).ToString();
+  }
+}
+```
+
+
