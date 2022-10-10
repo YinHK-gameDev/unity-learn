@@ -19,12 +19,11 @@ void Update () {
 ```cs
 StartCoroutine(CountdownTimer(60));
 //Set a count down timer
-IEnumerator  CountdownTimer(float timer)
-{
-	while(timer > 0){
-	  yield return null;
-	  timer -= Time.deltaTime;
-	  timeText.text = "Time: " + Mathf.Round(timer).ToString();
-  }
+IEnumerator  CountdownTimer(float timer) {
+ while(timer > 0){
+    yield return null;
+    timer -= Time.deltaTime;
+    timeText.text = "Time: " + Mathf.Round(timer).ToString();
+ }
 }
 ```
