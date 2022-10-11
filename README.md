@@ -2,7 +2,7 @@
 <img src="img/Unity-Logo.png" height="200px">
 </p>
 
-# Unity-programming
+# Unity
 This is codes, notes, and snippets about unity C# programming
 
 
