@@ -55,3 +55,5 @@ https://unity.com/roadmap
 ### Unity certificate
 https://unity.com/products/unity-certifications
 
+Prepare for unity certificate \
+https://www.linkedin.com/learning/paths/prepare-for-unity-certification
