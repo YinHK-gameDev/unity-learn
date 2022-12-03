@@ -52,3 +52,6 @@ https://unity.com/roadmap
 2923 roadmap \
 [Understanding Unity's 2023 roadmap for games | Unite 2022](https://youtu.be/a4spnCpE0RE)
 
+### Unity certificate
+https://unity.com/products/unity-certifications
+
