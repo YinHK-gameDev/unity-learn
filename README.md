@@ -5,6 +5,8 @@
 ## Unity
 This is codes, notes, and snippets about unity C# programming
 
+### Learning pathway
+https://learn.unity.com/pathways
 
 ### Unity forum
 https://forum.unity.com/
