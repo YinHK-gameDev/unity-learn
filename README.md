@@ -49,3 +49,6 @@ https://unity.com/community?_ga=2.97488735.1162429466.1670037712-902083007.16698
 ### Roadmap
 https://unity.com/roadmap
 
+2923 roadmap \
+[Understanding Unity's 2023 roadmap for games | Unite 2022](https://youtu.be/a4spnCpE0RE)
+
