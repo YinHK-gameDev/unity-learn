@@ -5,6 +5,12 @@
 ## Unity
 This is codes, notes, and snippets about unity C# programming
 
+### Document
+https://docs.unity.com/
+
+### Scripting reference
+https://docs.unity3d.com/ScriptReference/index.html
+
 ### Learning pathway
 https://learn.unity.com/pathways
 
