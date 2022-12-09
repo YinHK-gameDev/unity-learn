@@ -51,6 +51,10 @@ https://forum.unity.com/
 ### Unity community
 https://unity.com/community?_ga=2.97488735.1162429466.1670037712-902083007.1669854015
 
+### Unity release
+
+https://unity.com/releases/editor/qa/lts-releases
+
 
 ### Roadmap
 https://unity.com/roadmap
