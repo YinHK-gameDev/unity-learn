@@ -59,6 +59,8 @@ https://unity.com/releases/editor/qa/lts-releases
 #### Tech Stream releases
 Tech Stream releases are for creators who value exploring in-progress features to stay on the cutting edge for their next project. This version is primarily recommended for the preproduction, discovery, and prototyping phases of development, but it can be used for production projects as well.
 
+https://unity.com/releases/lts-vs-tech-stream
+
 ### Roadmap
 https://unity.com/roadmap
 
