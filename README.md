@@ -5,11 +5,14 @@
 ## Unity
 This is codes, notes, and snippets about unity C# programming
 
-### Document
+### Manual
 https://docs.unity.com/
 
 ### Scripting reference
 https://docs.unity3d.com/ScriptReference/index.html
+
+### Package doc
+https://docs.unity3d.com/Manual/pack-safe.html
 
 ### Learning pathway
 https://learn.unity.com/pathways
