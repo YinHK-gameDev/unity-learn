@@ -45,6 +45,9 @@ https://learn.unity.com/
 
 **[https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ](https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ)**
 
+### Version control in unity
+https://learn.unity.com/tutorial/set-up-version-control#633b052bedbc2a714d775b33
+
 ### Unity forum
 https://forum.unity.com/
 
