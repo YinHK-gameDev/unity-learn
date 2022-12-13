@@ -48,6 +48,9 @@ https://learn.unity.com/
 
 **[https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ](https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ)**
 
+### Project setup processes
+https://learn.unity.com/tutorial/project-setup-processes#60ed7ae4edbc2a138163c120
+
 ### Version control in unity
 https://learn.unity.com/tutorial/set-up-version-control#633b052bedbc2a714d775b33
 
