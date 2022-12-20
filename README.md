@@ -79,5 +79,7 @@ https://unity.com/roadmap
 ### Unity certificate
 https://unity.com/products/unity-certifications
 
+https://www.credly.com/organizations/unity/badges
+
 Prepare for unity certificate \
 https://www.linkedin.com/learning/paths/prepare-for-unity-certification
