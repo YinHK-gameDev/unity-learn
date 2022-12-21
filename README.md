@@ -48,6 +48,10 @@ https://learn.unity.com/
 
 **[https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ](https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ)**
 
+Unity 筆記文章
+https://dev.twsiyuan.com/p/unity.html
+
+
 ### Project setup processes
 https://learn.unity.com/tutorial/project-setup-processes#60ed7ae4edbc2a138163c120
 
