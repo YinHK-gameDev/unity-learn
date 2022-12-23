@@ -14,4 +14,5 @@ Returns the component of Type type if the game object has one attached, null if 
  GameObject.GetComponent<Type>() 
 ```
 > Get access gameobject's component should begain in `void start()`, `void aware()`
+  
 https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html
