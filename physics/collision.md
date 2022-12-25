@@ -3,7 +3,6 @@
 
 ### Temporarily ignore collision
 
-
 There are several ways to do this, using a coroutine:
 
 **Disabling the collider**
