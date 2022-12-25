@@ -2,7 +2,7 @@
 
 
 ### collision vs trigger
-OnTrigger is a pass through collision, where objects don’t bounce off each other, but events can be triggered when contact is made. While collision like two objects collide in real world, they may bounce off. For example bullets and enemy use OnTrigger so the bullet doesn’t bounce off the enemy and fly off.
+OnTrigger is a **pass through collision**, where **objects don’t bounce off each other**, but events can be triggered when contact is made. While collision like two objects collide in real world, they may bounce off. For example bullets and enemy use OnTrigger so the bullet doesn’t bounce off the enemy and fly off.
 
 
 ### Temporarily ignore collision
