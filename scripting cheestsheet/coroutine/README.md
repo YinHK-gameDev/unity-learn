@@ -26,6 +26,18 @@ A **coroutine** is a function that can suspend its execution (yield) until the g
 - **`yield return new WaitForEndOfFrame( )` (**-Continue after the end of frame. **)**
 
 
+**StartCoroutine**
+
+[MonoBehaviour.StartCoroutine](https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html)
+
+**StopCoroutine**
+
+[MonoBehaviour.StopCoroutine](https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopCoroutine.html)
+
+**WaitForSeconds**
+
+[WaitForSeconds](https://docs.unity3d.com/ScriptReference/WaitForSeconds.html)
+
 
 ### ref 
 **[https://docs.unity3d.com/Manual/BestPracticeUnderstandingPerformanceInUnity3.html](https://docs.unity3d.com/Manual/BestPracticeUnderstandingPerformanceInUnity3.html)**
