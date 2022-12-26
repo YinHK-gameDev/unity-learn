@@ -1,7 +1,7 @@
 ## Cinemachine
 Cinemachine enables you to create complex 3D camera setups, allowing movement and cuts between multiple cameras.
 
-> Use the Unity Package Manager (in the top menu: Window > Package Manager) to select Cinemachine for installation.
+> Use the Unity Package Manager (in the top menu: **Window > Package Manager**) to select Cinemachine for installation.
 
 
 
