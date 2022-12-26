@@ -7,3 +7,6 @@ In most situations, when you call a method, it runs to completion and then retur
 
 ![](./coroutine1.png)
 ![](./coroutine2.png)
+
+
+You can stop a Coroutine with `StopCoroutine` and `StopAllCoroutines`. A **coroutine**s also stops when the GameObject it is attached to is disabled with `SetActive(false)`.
