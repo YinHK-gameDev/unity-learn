@@ -10,6 +10,10 @@ In situations where you would like to use a method call to contain a procedural 
 ![](./coroutine1.png)
 ![](./coroutine2.png)
 
+example:
+![](./coroutine example.png)
+
+
 However, it’s important to remember that coroutines aren’t threads. Synchronous operations that run within a coroutine still execute on the main thread. If you want to reduce the amount of CPU time spent on the main thread, it’s just as important to avoid blocking operations in coroutines as in any other script code. If you want to use multi-threaded code within Unity, consider the **C# Job System**.
 
 
