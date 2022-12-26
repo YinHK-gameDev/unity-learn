@@ -10,7 +10,8 @@ In situations where you would like to use a method call to contain a procedural 
 ![](./coroutine1.png)
 ![](./coroutine2.png)
 
-example:
+**example:**
+
 ![](./coroutine-example.png)
 
 
