@@ -8,3 +8,7 @@ A package is a container that stores various types of features or Assets,it cont
 
 ### Unity’s Package Manager
 https://docs.unity3d.com/Manual/Packages.html
+
+
+### Release package
+https://docs.unity3d.com/Manual/pack-safe.html
