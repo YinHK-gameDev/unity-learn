@@ -51,6 +51,8 @@ https://learn.unity.com/
 Unity 筆記文章
 https://dev.twsiyuan.com/p/unity.html
 
+### Scripting tutprial
+https://learn.unity.com/course/beginner-scripting
 
 ### Project setup processes
 https://learn.unity.com/tutorial/project-setup-processes#60ed7ae4edbc2a138163c120
