@@ -1,6 +1,6 @@
 ### Checking whether game object is grounded
 
-- **using boxcast/raycast**
+- **using boxcast / raycast**
 - Layermask
 - **overlapcircle**
 
