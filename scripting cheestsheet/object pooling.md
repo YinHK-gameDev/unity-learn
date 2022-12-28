@@ -1,5 +1,10 @@
 ## Object pooling
 
+Object pooling is a design pattern that will allow you to reduce the amount of garbage collection you have when working with instantiating multiple objects. 
+
+
+
+
 
 > 📌 better than instantiate and destroy method
 
@@ -68,5 +73,5 @@ https://learn.unity.com/tutorial/introduction-to-object-pooling#5ff8d015edbc2a00
 
 https://youtu.be/tdSmKaJvCoA
 
-
+https://medium.com/nerd-for-tech/object-pooling-design-pattern-in-unity-de5334b0fe3d
 
