@@ -62,6 +62,42 @@ public class GameObjectPool
      }
 
 ```
+**example:**
+```cs
+public List<GameObject> pooledObjects;
+public GameObject objectToPool;
+public int amountToPool;
+
+pooledObjects = new List<GameObject>();
+for (int i = 0; i < amountToPool; i++) {
+  GameObject obj = (GameObject)Instantiate(objectToPool);
+  obj.SetActive(false); 
+  pooledObjects.Add(obj);
+}
+
+public GameObject GetPooledObject() {
+//1
+  for (int i = 0; i < pooledObjects.Count; i++) {
+//2
+    if (!pooledObjects[i].activeInHierarchy) {
+      return pooledObjects[i];
+    }
+  }
+//3   
+  return null;
+}
+
+Instantiate(playerBullet, turret.transform.position, turret.transform.rotation);
+
+GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject(); 
+  if (bullet != null) {
+    bullet.transform.position = turret.transform.position;
+    bullet.transform.rotation = turret.transform.rotation;
+    bullet.SetActive(true);
+  }
+
+```
+
 
 > Unity already has one built in if you are using Unity 2021.
 
