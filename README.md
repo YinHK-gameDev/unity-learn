@@ -59,6 +59,16 @@ https://dev.twsiyuan.com/p/unity.html
 
 https://learn.unity.com/course/beginner-scripting
 
+https://learn.unity.com/project/beginner-gameplay-scripting
+
+https://learn.unity.com/project/intermediate-gameplay-scripting
+
+https://learn.unity.com/tutorial/introduction-to-editor-scripting#
+
+https://learn.unity.com/tutorial/sound-effects-scripting
+
+https://learn.unity.com/project/introduction-to-visual-scripting
+
 ### Project setup processes
 https://learn.unity.com/tutorial/project-setup-processes#60ed7ae4edbc2a138163c120
 
