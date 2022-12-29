@@ -48,3 +48,7 @@ void Start ()
 }
 
 ```
+
+1. Create the camera by choosing GameObject -> Create Other -> Camera from the editor's menu.
+2. Set the camera's depth value to -2 so it's rendered underneath the main camera (whose depth value defaults to -1).
+3. To set the black bar region to a solid color, set the camera's Clear Flags to "Solid Color", set the Culling Mask to "Nothing", and finally the Background to the desired color.
