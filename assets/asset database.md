@@ -23,4 +23,39 @@ Artifacts are the results of the import process. The Artifact database contains 
 - Artifact Database: `Library\ArtifactDB`
 
 
+### Importing an Asset
+Unity normally imports assets automatically when they are dragged into the project but it is also possible to import them under script control. To do this you can use the AssetDatabase.ImportAsset method as in the example below.
+```cs
+using UnityEngine;
+using UnityEditor;
+
+public class ImportAsset {
+    [MenuItem ("AssetDatabase/ImportExample")]
+    static void ImportExample ()
+    {
+        AssetDatabase.ImportAsset("Assets/Textures/texture.jpg", ImportAssetOptions.Default);
+    }
+}
+```
+
+### Loading an Asset
+The editor loads assets only as needed, say if they are added to the scene
+ or edited from the Inspector
+ panel. However, you can load and access assets from a script using `AssetDatabase.LoadAssetAtPath`, `AssetDatabase.LoadMainAssetAtPath`, `AssetDatabase.LoadAllAssetRepresentationsAtPath` and `AssetDatabase.LoadAllAssetsAtPath`.
+ 
+```cs
+using UnityEngine;
+using UnityEditor;
+
+public class ImportAsset {
+    [MenuItem ("AssetDatabase/LoadAssetExample")]
+    static void ImportExample ()
+    {
+        Texture2D t = AssetDatabase.LoadAssetAtPath("Assets/Textures/texture.jpg", typeof(Texture2D)) as Texture2D;
+    }
+}
+
+```
+
+
 https://docs.unity3d.com/Manual/AssetDatabase.html
