@@ -24,5 +24,6 @@ To create your own (custom) asset package, use the
 To import a local custom asset package into your project, use the `Assets`>`import package` option to unpack the collection into your currently open Unity project. For more information, see Importing Asset packages.
 
 
-
+### Publishing your asset to asset store
+https://docs.unity3d.com/Manual/AssetStorePublishing.html
 
