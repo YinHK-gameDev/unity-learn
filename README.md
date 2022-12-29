@@ -69,6 +69,8 @@ https://learn.unity.com/tutorial/sound-effects-scripting
 
 https://learn.unity.com/project/introduction-to-visual-scripting
 
+https://learn.unity.com/tutorial/april-20-intro-to-visual-scripting#
+
 ### Project setup processes
 https://learn.unity.com/tutorial/project-setup-processes#60ed7ae4edbc2a138163c120
 
