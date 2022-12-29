@@ -22,7 +22,7 @@ if (moveRight){
 ### Player stand on a moving platform
 > using `transform.parent` method
 
-```
+```cs
 void OnCollisionEnter2D(Collision2D col){    
      if (col.gameObject.name == "...."){  
            this.transform.parent = col.transform;
