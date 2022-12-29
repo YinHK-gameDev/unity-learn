@@ -35,10 +35,28 @@ e.g:  **get the object of first child**
   gameObject.transform.GetChild(0).gameObject;
 ```
   
+**取得子物件數量:**
+```cs
+gameObject.transform.childCount;
+```
+**e.g.** 
+
+```csharp
+**int Obj_childCount;
+Obj_childCount = gameObject.transform.childCount;**
+```
+
+➡️  **3. 把XX物件變成子物件**
+```cs
+XX.transform.parent = gameObject.transform;
+```
   
+➡️ **4. XX物件變成父物件** 
+```cs
+gameObject.transform.parent = XX.transform;  
+```
   
-  
-  
-  
-  
-  
+➡️ **5. 子物件脫離父物件**
+```cs
+gameObject.transform.parent = null;
+```
