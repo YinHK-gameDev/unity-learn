@@ -49,7 +49,7 @@ By using
 
 **or** 
 
-> 📌 **Rigidbody.useGravity** and **Invoke()** function in **OnCollisionEnter().**
+> 📌 **`Rigidbody.useGravity`** and **`Invoke()`** function in **`OnCollisionEnter()`.**
 
 
 
