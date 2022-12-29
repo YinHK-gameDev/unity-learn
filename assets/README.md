@@ -16,7 +16,7 @@ Unity stores the internal representation of your assets in the Library folder, w
 
 
 ### Asset packages
-Asset packages are collections of files and data from Unity projects, or elements of projects, which Unity compresses and stores in one file with the .unitypackage extension. Like a zip file, an asset package maintains its original directory structure when it is unpacked, as well as metadata about assets (such as import settings and links to other assets).
+**Asset packages are collections of files and data from Unity projects, or elements of projects, which Unity compresses and stores in one file with the `.unitypackage` extension.** Like a zip file, an asset package maintains its original directory structure when it is unpacked, as well as metadata about assets (such as import settings and links to other assets).
 
 To create your own (custom) asset package, use the 
 `Assets`>`Export Package` menu option to compress a collection of assets in your current Unity project. For more information, see Creating your own Asset packages.
