@@ -44,6 +44,25 @@ A **coroutine** is a function that can suspend its execution (yield) until the g
 [WaitForSeconds](https://docs.unity3d.com/ScriptReference/WaitForSeconds.html)
 
 
+### Start coroutine once
+
+**StartCoroutine** in Update but **once**
+```cs
+bool isCoroutineStarted = false;
+
+void Update()
+{
+    if(!isCoroutineStarted){
+        StartCoroutine("MyCoroutine");
+    }
+}
+ 
+IEnumerator MyCoroutine(){
+    isCoroutineStarted = true;
+}
+```
+
+
 ### ref 
 **[https://docs.unity3d.com/Manual/BestPracticeUnderstandingPerformanceInUnity3.html](https://docs.unity3d.com/Manual/BestPracticeUnderstandingPerformanceInUnity3.html)**
 
