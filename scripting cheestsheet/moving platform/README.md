@@ -35,5 +35,21 @@ void OnCollisionExit2D(Collision2D col){
 
 > player 要transform時, 會set player為platform 的child, player會隨着platform 移動
 
-
 [Transform.parent](https://docs.unity3d.com/ScriptReference/Transform-parent.html)
+
+
+### Creating a falling platform
+
+By using 
+
+
+> 📌 **`Rigidbody.isKinematic`**
+
+
+
+**or** 
+
+> 📌 **Rigidbody.useGravity** and **Invoke()** function in **OnCollisionEnter().**
+
+
+
