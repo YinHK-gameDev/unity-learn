@@ -17,7 +17,7 @@ Returns the component of Type type if the game object has one attached, null if 
   
 https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html
 
-### Access gameobject
+### Access parent/child gameobject
 
 ➡️ **1. 取得父物件**
 ```cs
