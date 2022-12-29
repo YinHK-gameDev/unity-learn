@@ -53,6 +53,10 @@ private IEnumerator EnableCollision( float delay )
 }
 ```
 
+
+> 📌 Set the two game objects into **different layers** → **project setting** → **physics** → **Layer collision matrix** untick two layer for collision.
+
+
 **Using Physics class**
 ```cs
 Physics.IgnoreCollision( GetComponent<Collider>(), wallCollider, true ) ;
