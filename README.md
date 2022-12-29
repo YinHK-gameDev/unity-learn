@@ -6,47 +6,47 @@
 This is notes about unity C# base on version 2021.3.0(LTS)
 
 ### ➡️ Package doc
-https://docs.unity3d.com/Manual/pack-safe.html
+**https://docs.unity3d.com/Manual/pack-safe.html**
 
 ### ➡️ Manual
-https://docs.unity.com/
+**https://docs.unity.com/**
 
 ### ➡️ Scripting reference
-https://docs.unity3d.com/ScriptReference/index.html
+**https://docs.unity3d.com/ScriptReference/index.html**
 
 ### ➡️ Learning pathway
-https://learn.unity.com/pathways
+**https://learn.unity.com/pathways**
 
 ### ➡️ Unity learn
-https://learn.unity.com/
+**https://learn.unity.com/**
 
 ✒️ **freeCodeCamp**
 
-[Learn Unity - Beginner's Game Development Tutorial](https://youtu.be/gB1F9G0JXOo) 
+**https://youtu.be/gB1F9G0JXOo**
 
 ✒️ **Brackeys**
 
-[](https://www.youtube.com/c/Brackeys)
+**https://www.youtube.com/c/Brackeys**
 
 ✒️ **DitzelGames**
 
-[DitzelGames](https://www.youtube.com/c/DitzelGames)
+**https://www.youtube.com/c/DitzelGames**
 
 ✒️ **Unity official video**
 
-[Unity](https://www.youtube.com/user/Unity3D)
+**https://www.youtube.com/user/Unity3D**
 
 ✒️ **CodeMonkey**
 
-[](https://www.youtube.com/channel/UCFK6NCbuCIVzA6Yj1G_ZqCg)
+**https://www.youtube.com/channel/UCFK6NCbuCIVzA6Yj1G_ZqCg**
 
 ✒️ **lanHubery**
 
-**[https://www.youtube.com/user/mrdodobird](https://www.youtube.com/user/mrdodobird)**
+**https://www.youtube.com/user/mrdodobird**
 
 ✒️ **Dani**
 
-**[https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ](https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ)**
+**https://www.youtube.com/channel/UCIabPXjvT5BVTxRDPCBBOOQ**
 
 ✒️ **Tarodev**
 
@@ -70,7 +70,7 @@ https://learn.unity.com/
 
 **https://learn.unity.com/tutorial/introduction-to-editor-scripting#**
 
-**https://learn.unity.com/tutorial/sound-effects-scriptin**g
+**https://learn.unity.com/tutorial/sound-effects-scripting**
 
 **https://learn.unity.com/project/introduction-to-visual-scripting**
 
