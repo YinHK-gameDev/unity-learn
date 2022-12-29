@@ -2,8 +2,15 @@
 <img src="img/Unity-Logo.png" height="200px">
 </p>
 
-## ➡️ Unity
+## Unity
 This is notes about unity C# base on version 2021.3.0(LTS)
+
+### workflow
+- **Import** assets into the Unity Editor
+- Create content using the Unity Editor with those assets.
+- **Build** your app or game file, and optionally its accompanying content bundles
+- **Distribute** the built files so that your users can access them, via a publisher, or an app store
+- **Load** futher updates as neccessary at runtime, depending on your user’s behavior, and how you have grouped and bundled your content.
 
 ### ➡️ Package doc
 **https://docs.unity3d.com/Manual/pack-safe.html**
