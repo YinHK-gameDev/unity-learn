@@ -11,3 +11,8 @@ The Input Manager uses the following types of controls:
 .
 
 https://docs.unity3d.com/Manual/AssetStorePublishing.html
+
+
+### Input class 
+use this scripting api to access user input \
+https://docs.unity3d.com/ScriptReference/Input.html
