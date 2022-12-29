@@ -18,3 +18,22 @@ if (moveRight){
 }else  
    transform.position = leftMovement;
 ```
+
+### Player stand on a moving platform
+> using `transform.parent` method
+
+```
+void OnCollisionEnter2D(Collision2D col){    
+     if (col.gameObject.name == "...."){  
+           this.transform.parent = col.transform;
+		 }
+}
+void OnCollisionExit2D(Collision2D col){
+           this.transform.parent = null;
+}
+```
+
+> player 要transform時, 會set player為platform 的child, player會隨着platform 移動
+
+
+[Transform.parent](https://docs.unity3d.com/ScriptReference/Transform-parent.html)
