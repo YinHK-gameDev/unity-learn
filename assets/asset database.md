@@ -7,4 +7,20 @@ If you subsequently modify an asset’s source file that you have already import
 
 The Asset Database also provides an AssetDatabase API that you can use to access Assets, and control or customize the import process.
 
+
+### Source Assets and Artifacts
+Unity maintains two database files in the Library folder, which together are called the Asset Database. These two databases keep track of information about your source asset files, and Artifacts, which is information about the import results.
+
+**The source Asset Database** \
+The source Asset Database contains meta-information about your source asset files which Unity uses to determine whether the file has been modified, and therefore whether it should reimport the files. This includes information such as last modified date, a hash of the file’s contents, GUIDs and other meta-information.
+
+**The Artifact database** \
+Artifacts are the results of the import process. The Artifact database contains information about the import results of each source asset. Each Artifact contains the import dependency information, Artifact meta-information and a list of Artifact files.
+
+> **Note**: The database files are located in your Project’s Library folder, and as such you should exclude them from version control systems. You can find them in the following locations:
+
+- Source Asset Database: `Library\SourceAssetDB`
+- Artifact Database: `Library\ArtifactDB`
+
+
 https://docs.unity3d.com/Manual/AssetDatabase.html
