@@ -16,3 +16,27 @@ if (viewPos.x > 0.5F)
  else  print("target is on the left side!");  
 ```
 
+那是幹啥?
+假設你現在要判斷一個在三維世界的坐標是在玩家螢幕上的左邊/右邊
+因為 viewport 恆定是百分比, 0~0.5f 一定是在左邊, 反之 0.5f~1f 一定是在右邊.
+如此類推, 判斷物件在 camera viewport 上的位置就需要用到 WorldToViewport
+(當然你是數學達人可以選擇自行計算, 只是一個方便用的工具罷了)
+
+至於 ViewportToWorldPoint 就是 WorldToViewportPoint 的相反意思,
+
+http://docs.unity3d.com/ScriptReference/Camera.ViewportToScreenPoint.html
+
+
+然後放進去 ViewportToWorldPoint , 你就擁有一個三維坐標點.
+
+從這個 Vector3 的點再加上 Camera.tranform.forward 的方向 Vector3 即可以換算成玩家現在觸碰的點跟方向.
+WorldToViewportPoint 跟 ViewportToWorldPoint 就是這個簡單
+
+再之後可以考慮使用 `Raycast` 進行三維坐標的射線.....etc 但這是另一道題了.
+其實這個有個方便的給初階使用.
+
+http://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html
+
+
+
+
