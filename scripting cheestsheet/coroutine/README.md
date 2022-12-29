@@ -46,7 +46,7 @@ A **coroutine** is a function that can suspend its execution (yield) until the g
 
 ### Start coroutine once
 
-**StartCoroutine** in Update but **once**
+**`StartCoroutine`** in Update but **once**
 ```cs
 bool isCoroutineStarted = false;
 
