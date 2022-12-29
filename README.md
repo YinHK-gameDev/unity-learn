@@ -103,6 +103,8 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 
 **https://indie-guider.games/resources/community/**
 
+**https://guild.gamer.com.tw/about.php?gsn=7229**
+
 ### ➡️ Unity release
 LTS is the release for creators who value maximum stability and support for their next project. This is our default release, and it’s primarily recommended for creators past the preproduction phase of development who are about to lock in production on a specific version of Unity.
 
