@@ -20,6 +20,10 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 ### ➡️ Unity learn
 **https://learn.unity.com/**
 
+✒️ **Unity official video**
+
+**https://www.youtube.com/user/Unity3D**
+
 ✒️ **freeCodeCamp**
 
 **https://youtu.be/gB1F9G0JXOo**
@@ -31,10 +35,6 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 ✒️ **DitzelGames**
 
 **https://www.youtube.com/c/DitzelGames**
-
-✒️ **Unity official video**
-
-**https://www.youtube.com/user/Unity3D**
 
 ✒️ **CodeMonkey**
 
