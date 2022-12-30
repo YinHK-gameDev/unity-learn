@@ -18,6 +18,9 @@ https://docs.unity3d.com/Manual/class-PolygonCollider2D.html
 
 ### Static colliders
 You can add colliders to a GameObject without a Rigidbody component to create floors, walls and other motionless elements of a Scene. These are referred to as **static colliders**.
+
+Static colliders can interact with dynamic colliders but since they don’t have a Rigidbody, they don’t move in response to collisions.
+
 > A static collider is a GameObject that has a Collider but **no Rigidbody**. For motionless gameobject(**死物**), its collider is static collider(**no rigid body**)
 
 ### Dynamic colliders
