@@ -4,6 +4,8 @@ To simulate physics-based behavior such as **movement, gravity, collision, and j
 
 To configure **GameObject**s as rigid bodies in Unity’s PhysX system, you can assign them the **Rigidbody component**. The **Rigidbody component** is represented in the API by the **Rigidbody class**.
 
+> Gameobject with motion **should add a rigid body**
+
 https://docs.unity3d.com/Manual/RigidbodiesOverview.html
 
 **Apply interpolation to a Rigidbody** \
