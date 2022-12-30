@@ -32,7 +32,7 @@ This is a GameObject with a Collider and a normal, non-kinematic Rigidbody attac
 ### Kinematic Rigidbody collider
 A a GameObject with a Collider and **a kinematic Rigidbody attached** (ie, the **`IsKinematic`** property of the Rigidbody is **enabled**).
 
-If you don’t want the trigger to fall under gravity or otherwise be affected by physics then you can set the IsKinematic property on its rigidbody.
+If you don’t want the trigger to fall under gravity or otherwise be affected by physics then you can set the `IsKinematic` property on its rigidbody.
 
 > A Rigidbody component can be switched between normal and kinematic behavior at any time using the `IsKinematic` property.
 
