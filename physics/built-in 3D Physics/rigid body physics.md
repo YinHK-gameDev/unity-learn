@@ -40,3 +40,15 @@ https://docs.unity3d.com/Manual/rigidbody-interpolation.html
 | Constraints | Place restrictions on the Rigidbody’s movement. |
 | - Freeze Position | Stops the Rigidbody moving in the world X, Y and Z axes selectively. |
 | - Freeze Rotation | Stops the Rigidbody rotating around the local X, Y and Z axes selectively. |
+
+**Info section**:
+| Property: | Function: |
+| --- | --- |
+| Speed | The speed at which the Rigidbody is moving, measured in meters per second (m/s). |
+| Velocity | The velocity of the Rigidbody along each vector, measured in meters per second (m/s). |
+| Angular Velocity | The velocity of the Rigidbody along each vector, measured in degrees per second. |
+| Inertia Tensor | The inertia tensor of this Rigidbody. Like mass, an inertia tensor defines how much force or torque is required to make a Rigidbody move; however, while mass affects linear movement, inertia tensor affects rotational movement. The higher the Inertia Tensor value is, the more torque is required to make the Rigidbody rotate on its axis. |
+| Inertia Tensor Rotation | The rotation of the inertia tensor. By default, Unity calculates inertia tensor rotation automatically, based on all of the colliders attached to the Rigidbody. |
+| Local Center of Mass | The local location of the Rigidbody’s center of mass along each vector. You can change the center of mass via script (see ScriptRef:Rigidbody-centerOfMass.html, or Unity might change it based on collider placement. |
+| World Center of Mass | The global location of the Rigidbody’s center of mass along each vector. You can change the center of mass via script (see ScriptRef:Rigidbody-centerOfMass.html, or Unity might change it based on collider placement. |
+| Sleep State | The sleep state of the Rigidbody. Displays Awake if the Rigidbody is awake and included in physics calculations. Displays Asleep if the Rigidbody is asleep, and not included in physics calculations. |
