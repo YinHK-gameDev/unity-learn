@@ -9,3 +9,10 @@ The simplest (and least processor-intensive) colliders are primitive collider ty
 In 3D, you can use Mesh Colliders to match the shape of the GameObject’s mesh exactly.
 
 https://docs.unity3d.com/Manual/class-MeshCollider.html
+
+### Polygon Collider 2D
+The Collider’s shape is defined by a freeform edge made of line segments, that you can adjust to fit the shape of the Sprite or any other shape. 
+ > **Note: that this Collider’s edge must completely enclose an area to function.**
+
+https://docs.unity3d.com/Manual/class-PolygonCollider2D.html
+
