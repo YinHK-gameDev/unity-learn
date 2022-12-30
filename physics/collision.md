@@ -1,4 +1,4 @@
-### collision
+## collision
 
 > If one Rigidbody collides with another, the physics engine only calculates a collision if both GameObjects have a Collider attached. If one GameObject has a Rigidbody but no Collider, it passes through other GameObjects, and Unity does not include it in collision calculations.
 
