@@ -16,3 +16,9 @@ The Collider’s shape is defined by a freeform edge made of line segments, that
 
 https://docs.unity3d.com/Manual/class-PolygonCollider2D.html
 
+### Static colliders
+You can add colliders to a GameObject without a Rigidbody component to create floors, walls and other motionless elements of a Scene. These are referred to as **static colliders**.
+> Colliders on a GameObject that **has no Rigidbody**. For motionless gameobject(**死物**), its collider is static collider(**no rigid body**)
+
+### Dynamic colliders
+Colliders on a GameObject that has a Rigidbody are known as dynamic colliders. 
