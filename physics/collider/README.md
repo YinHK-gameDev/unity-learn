@@ -37,6 +37,9 @@ If you don’t want the trigger to fall under gravity or otherwise be affected b
 A Rigidbody component can be switched between normal and kinematic behavior at any time using the `IsKinematic` property.
 
 > **Kinematic rigidbodies** should be used for colliders that can be moved or disabled/enabled **occasionally**
+> Unlike a static collider, a moving kinematic rigidbody **will apply friction** to other objects 
+> You can move a kinematic rigidbody object from a script by modifying its Transform Component
+ but it will not respond to collisions and forces.
 
 ### Physic Material
 The Physic Material adjusts friction and bouncing effects of colliding GameObjectsThe fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it.
