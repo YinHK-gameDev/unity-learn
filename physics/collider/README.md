@@ -34,4 +34,4 @@ https://docs.unity3d.com/Manual/class-PhysicMaterial.html
 
 
 ### Is **trigger** or not?
-If one of collider is trigger, both collider will pass through each other whereas non trigger do not.  So, if both collider without at least one of these is trigger, they will not pass through each other
+If one of collider is trigger, both collider **will pass through each other** whereas **non trigger do not**.  So, if both collider without at least one of these is trigger, they will not pass through each other
