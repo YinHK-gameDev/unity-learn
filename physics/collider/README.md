@@ -29,6 +29,9 @@ Colliders on a GameObject that has a Rigidbody are known as **dynamic colliders*
 ### Rigidbody colliders
 This is a GameObject with a Collider and a normal, non-kinematic Rigidbody attached. Rigidbody colliders are fully simulated by the physics engine and can react to collisions and forces
 
+### Kinematic Rigidbody collider
+A a GameObject with a Collider and **a kinematic Rigidbody attached** (ie, the **`IsKinematic`** property of the Rigidbody is **enabled**).
+
 ### Physic Material
 The Physic Material adjusts friction and bouncing effects of colliding GameObjectsThe fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it.
 
