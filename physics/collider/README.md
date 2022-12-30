@@ -32,6 +32,10 @@ This is a GameObject with a Collider and a normal, non-kinematic Rigidbody attac
 ### Kinematic Rigidbody collider
 A a GameObject with a Collider and **a kinematic Rigidbody attached** (ie, the **`IsKinematic`** property of the Rigidbody is **enabled**).
 
+If you don’t want the trigger to fall under gravity or otherwise be affected by physics then you can set the IsKinematic property on its rigidbody.
+
+> A Rigidbody component can be switched between normal and kinematic behavior at any time using the `IsKinematic` property.
+
 ### Physic Material
 The Physic Material adjusts friction and bouncing effects of colliding GameObjectsThe fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it.
 
