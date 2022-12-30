@@ -24,8 +24,10 @@ Static colliders can interact with dynamic colliders but since they don’t have
 > A static collider is a GameObject that has a Collider but **no Rigidbody**. For motionless gameobject(**死物**), its collider is static collider(**no rigid body**)
 
 ### Dynamic colliders
-Colliders on a GameObject that has a Rigidbody are known as dynamic colliders. 
+Colliders on a GameObject that has a Rigidbody are known as **dynamic colliders**. 
 
+### Rigidbody colliders
+This is a GameObject with a Collider and a normal, non-kinematic Rigidbody attached. Rigidbody colliders are fully simulated by the physics engine and can react to collisions and forces
 
 ### Physic Material
 The Physic Material adjusts friction and bouncing effects of colliding GameObjectsThe fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it.
