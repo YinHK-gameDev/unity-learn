@@ -33,5 +33,11 @@ The Physic Material adjusts friction and bouncing effects of colliding GameObjec
 https://docs.unity3d.com/Manual/class-PhysicMaterial.html
 
 
-### Is **trigger** or not?
+### Trigger
+A collider configured as a **Trigger** (using the **Is Trigge**r property) does not behave as a solid object and **will simply allow other colliders to pass through**. When a collider enters its space, a **trigger will call the `OnTriggerEnter` function** on the trigger object’s scripts
+
+#### Is **trigger** or not?
 If one of collider is trigger, both collider **will pass through each other** whereas **non trigger do not**.  So,  if both collider without at least one of these is trigger, they **will not pass through each other**
+
+
+.
