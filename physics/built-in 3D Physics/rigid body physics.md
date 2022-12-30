@@ -14,6 +14,10 @@ The Interpolate setting on a Rigidbody provides two options to **smooth the appe
 
 > interpolation setting is to **smooth the rigid body motion & avoid jitter**
 
+**interpolation**:  Interpolate makes the Rigidbody appear to move slightly behind where it should be. This is because interpolation delays the Rigidbody’s pose by one physics update, so that it has two points to use for its calculation, and enough time to move the Rigidbody to the new pose.
+
+**Extrapolate**:  Extrapolate makes the Rigidbody appear to move slightly ahead of where it should be. This is because extrapolation uses the Rigidbody’s current velocity to predict the Rigidbody’s pose in the next physics update, so that it has two points to use for its calculation. Extrapolation is often less accurate.
+
 https://docs.unity3d.com/Manual/rigidbody-interpolation.html
 
 ### Rigid body component
