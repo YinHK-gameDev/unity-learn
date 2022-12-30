@@ -25,3 +25,11 @@ Static colliders can interact with dynamic colliders but since they don’t have
 
 ### Dynamic colliders
 Colliders on a GameObject that has a Rigidbody are known as dynamic colliders. 
+
+
+### Physic Material
+The Physic Material adjusts friction and bouncing effects of colliding GameObjectsThe fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it.
+
+https://docs.unity3d.com/Manual/class-PhysicMaterial.html
+
+
