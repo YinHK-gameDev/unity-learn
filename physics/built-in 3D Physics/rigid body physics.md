@@ -4,6 +4,13 @@ To simulate physics-based behavior such as **movement, gravity, collision, and j
 
 https://docs.unity3d.com/Manual/RigidbodiesOverview.html
 
+**Apply interpolation to a Rigidbody** \
+Unity’s PhysX system provides a way to manage the appearance of jitter in the movement of your Rigidbody
+GameObjects at run time.
+
+Jitter can happen when the rate of physics simulation updates is slower than the application’s frame rate.
+
+The Interpolate setting on a Rigidbody provides two options to smooth the appearance of a Rigidbody’s motion if it appears jittery at run time. These options are Interpolate and Extrapolate.
 
 ### Rigid body component
 | Property | Function |
