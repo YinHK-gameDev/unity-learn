@@ -9,7 +9,7 @@ A character controller cannot walk through static colliders in a scene
 See in Glossary.
 
 
-> The Character Controller is mainly **used for third-person or first-person player control** that **does not make use of Rigidbody
+> The **Character Controller** is mainly **used for third-person or first-person player control** that **does not make use of Rigidbody
  physics**.
 
 
