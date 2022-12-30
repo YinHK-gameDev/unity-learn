@@ -52,3 +52,18 @@ https://docs.unity3d.com/Manual/rigidbody-interpolation.html
 | Local Center of Mass | The local location of the Rigidbody’s center of mass along each vector. You can change the center of mass via script (see ScriptRef:Rigidbody-centerOfMass.html, or Unity might change it based on collider placement. |
 | World Center of Mass | The global location of the Rigidbody’s center of mass along each vector. You can change the center of mass via script (see ScriptRef:Rigidbody-centerOfMass.html, or Unity might change it based on collider placement. |
 | Sleep State | The sleep state of the Rigidbody. Displays Awake if the Rigidbody is awake and included in physics calculations. Displays Asleep if the Rigidbody is asleep, and not included in physics calculations. |
+
+
+### Constant Force component
+Constant Force adds constant forces to a Rigidbody. This is useful for **GameObject movement that accelerates over time**.
+
+| Property: | Function: |
+| --- | --- |
+| Force | Define the direction of the linear force. The XYZ vectors refer to the scene’s global axes. |
+| Relative Force | Define the direction of the linear force. The XYZ vectors refer to the Rigidbody’s local axes. |
+| Torque | Define the global axes that the Rigidbody rotates around. |
+| Relative Torque | Define the local axes that the Rigidbody rotates around. |
+
+
+
+
