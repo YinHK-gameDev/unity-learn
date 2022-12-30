@@ -4,7 +4,9 @@ The character in a first- or third-person game usually needs some collision-base
 
 A simple, capsule-shaped collider component with specialized features for behaving as a character in a game. Unlike true collider components, a Rigidbody is not needed and the momentum effects are not realistic.
 
+A character controller cannot walk through static colliders in a scene
+, and so will follow floors and be obstructed by walls. It can push rigidbody objects aside while moving but will not be accelerated by incoming collisionsA collision occurs when the physics engine detects that the colliders of two GameObjects make contact or overlap, when at least one has a Rigidbody component and is in motion. More info
+See in Glossary.
 
 
-
-
+https://docs.unity3d.com/Manual/class-CharacterController.html
