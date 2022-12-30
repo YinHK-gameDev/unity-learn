@@ -12,6 +12,8 @@ Jitter can happen when the rate of physics simulation updates is slower than the
 
 The Interpolate setting on a Rigidbody provides two options to smooth the appearance of a Rigidbody’s motion if it appears jittery at run time. These options are Interpolate and Extrapolate.
 
+https://docs.unity3d.com/Manual/rigidbody-interpolation.html
+
 ### Rigid body component
 | Property | Function |
 | --- | --- |
