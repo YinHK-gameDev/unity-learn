@@ -41,11 +41,39 @@ A Rigidbody component can be switched between normal and kinematic behavior at a
 > You can move a kinematic rigidbody object from a script by modifying its Transform Component
  but it will not respond to collisions and forces.
 
+### Box Collider 
+https://docs.unity3d.com/Manual/class-BoxCollider.html \
+https://docs.unity3d.com/Manual/class-BoxCollider2D.html
+
+### Wheel Collider
+https://docs.unity3d.com/Manual/class-WheelCollider.html
+
+### Capsule Collider
+https://docs.unity3d.com/Manual/class-CapsuleCollider.html \
+https://docs.unity3d.com/Manual/class-CapsuleCollider2D.html
+
+### Terrain Collider
+https://docs.unity3d.com/Manual/class-TerrainCollider.html
+
+### Sphere Collider
+https://docs.unity3d.com/Manual/class-SphereCollider.html
+
+### Circle Collider 2D
+https://docs.unity3d.com/Manual/class-CircleCollider2D.html
+
+### Edge Collider 2D
+https://docs.unity3d.com/Manual/class-EdgeCollider2D.html
+
+### Composite Collider 2D
+https://docs.unity3d.com/Manual/class-CompositeCollider2D.html
+
+### Custom Collider 2D
+https://docs.unity3d.com/Manual/class-CustomCollider2D.html
+
 ### Physic Material
 The Physic Material adjusts friction and bouncing effects of colliding GameObjectsThe fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it.
 
 https://docs.unity3d.com/Manual/class-PhysicMaterial.html
-
 
 ### Trigger
 A collider configured as a **Trigger** (using the **Is Trigge**r property) does not behave as a solid object and **will simply allow other colliders to pass through**. When a collider enters its space, a **trigger will call the `OnTriggerEnter` function** on the trigger object’s scripts
