@@ -27,4 +27,8 @@
    - simulates wheels and suspension.
 
 
+https://docs.unity3d.com/Manual/Joints2D.html
+
 https://gamedevelopment.tutsplus.com/tutorials/unity-2d-joints-distance-hinge-target-and-fixed-joint--cms-27452
+
+https://www.kodeco.com/1766-physics-joints-in-unity-2d
