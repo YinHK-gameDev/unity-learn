@@ -133,3 +133,7 @@ Tech Stream releases are for creators who value exploring in-progress features t
 **https://www.linkedin.com/learning/paths/prepare-for-unity-certification**
 
 **https://www.circuitstream.com/blog/unity-certification-exam#z2**
+
+
+**Game dev is hard** \
+https://www.youtube.com/watch?v=WH4ccUV2VCU
