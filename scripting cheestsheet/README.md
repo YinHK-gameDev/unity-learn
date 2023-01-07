@@ -4,3 +4,15 @@
 
 You can attach a script by dragging the script asset to a GameObject in the hierarchy panel or to the inspector
  of the GameObject that is currently selected. 
+
+
+```cs
+// Use this for initialization
+void Start () 
+{
+    Debug.Log("Hello world!");
+}
+```
+
+> **`Debug.Log`** is a simple command that just prints a message to Unity’s console output. If you press Play now, you should see the message at the bottom of the main Unity editor window and in the Console window (menu: Window > General > Console
+).
