@@ -19,3 +19,9 @@ void Start ()
 
 
 ### Life cycle
+
+
+
+
+
+https://docs.unity3d.com/Manual/ExecutionOrder.html
