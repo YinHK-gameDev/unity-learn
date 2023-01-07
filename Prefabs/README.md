@@ -7,6 +7,12 @@ These assets can then be shared between scenes, or even other projects without h
 
 **Prefabs is that they are essentially linked copies of the asset** that exist in the Project window. 
 
+For Prefabs, you can
+- Instantiate a Prefab using one line of code. Creating equivalent GameObjects from scratch requires many more lines of code.
+- Set up, test, and modify the Prefab quickly and easily using the Scene
+ view, **Hierarchy** and **Inspector**.
+- Set up, test, and modify the Prefab quickly and easily using the Scene view, Hierarchy and Inspector.
+
 ### How to create Prefabs?
 Prefabs are created automatically when an object is **dragged from the Hierarchy into the Project window**.
 Prefabs look quite similar to other objects that appear in the Project window. However, when selected, their file type will be a **`*.prefab`**. When the Prefab is selected, the Inspector displays all of the components that were configured on the original object.
