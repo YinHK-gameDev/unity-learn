@@ -10,7 +10,7 @@ Prefabs are created automatically when an object is **dragged from the Hierarchy
 
 
 ### How to use Prefabs?
-Just drag Prefabs from project window into Hierarchy if you want to reuse. When prefabs are present in the Hierarchy, they’re represented with blue text and a** blue cube**.
+Just drag Prefabs from project window into Hierarchy if you want to reuse. When prefabs are present in the Hierarchy, they’re represented with blue text and a **blue cube**.
 
 
 ### ref
