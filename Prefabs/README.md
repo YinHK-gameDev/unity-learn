@@ -6,7 +6,7 @@
 These assets can then be shared between scenes, or even other projects without having to be configured again. This is quite useful for objects that will be used many times, such as platforms.
 
 ### How to create prefabs?
-Prefabs are created automatically when an object is **dragged from the Hierarchy into the Project window. **
+Prefabs are created automatically when an object is **dragged from the Hierarchy into the Project window**.
 
 
 
