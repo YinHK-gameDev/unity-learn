@@ -16,3 +16,6 @@ void Start ()
 
 > **`Debug.Log`** is a simple command that just prints a message to Unity’s console output. If you press Play now, you should see the message at the bottom of the main Unity editor window and in the Console window (menu: Window > General > Console
 ).
+
+
+### Life cycle
