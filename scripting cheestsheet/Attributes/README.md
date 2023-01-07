@@ -9,7 +9,7 @@ Attributes are added to the code by using a declarative tag that is placed using
 Attributes in C# similar to annotation in Java.
 
 Unity provides a number of attributes which are listed in the API Reference documentation:
-- **`UnityEngine` attributes`**: https://docs.unity3d.com/ScriptReference/AddComponentMenu.html
+- **`UnityEngine attributes`**: https://docs.unity3d.com/ScriptReference/AddComponentMenu.html
 - **`UnityEditor attributes`**: https://docs.unity3d.com/ScriptReference/CallbackOrderAttribute.html
 
 
