@@ -1,6 +1,6 @@
 ## Object pooling
 
-Object pooling is a design pattern that will allow you to reduce the amount of garbage collection you have when working with instantiating multiple objects. 
+Object pooling is a design pattern that will allow you to **reduce the amount of garbage collection** you have when working with instantiating multiple objects. 
 
 
 
