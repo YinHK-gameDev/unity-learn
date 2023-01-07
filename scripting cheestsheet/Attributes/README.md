@@ -5,3 +5,9 @@ Attributes are **markers that can be placed above a class, property or function 
 Attributes are used in C# to convey declarative information or metadata about various code elements such as methods, assemblies, properties, types, etc.
 
 Attributes are added to the code by using a declarative tag that is placed using **square brackets ([ ])** on top of the required code element. 
+
+Attributes in C# similar to annotation in Java.
+
+
+
+
