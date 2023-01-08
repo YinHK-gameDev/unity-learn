@@ -1,4 +1,7 @@
 ## UnityEvents
+**UnityEvents** are a way of allowing user driven callback to be persisted from edit time to run time without the need for additional programming and script configuration.
+不管是UnityEvent、Event，基本上都是基於Delegate所產生變體，而一旦使用了Event後，便可以極大幅的減少腳本之間的依賴，也不用在苦惱要在start還是update中getcomponet了，因為幾乎都可以用註冊的方式直接完成這些操作。
+而其中UnityEvent更是將其完全盡可能極簡化，特別是如果不需要有額外參數傳入的UnityEvevt更是可以直接在Editor中進行操作
 
 ### Using UnityEvents
 To configure a callback in the editor there are a few steps to take:
