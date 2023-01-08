@@ -36,7 +36,4 @@ https://www.youtube.com/watch?v=TWxXD-UpvSg
 - In c#  declare an event must use script to add event listener.
 - Using `UnityEvent`, you can use editor to add event listener manually in inspector.
 
-### Events & Delegates
-https://gamedevbeginner.com/events-and-delegates-in-unity/
-
 
