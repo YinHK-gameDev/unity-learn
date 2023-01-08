@@ -8,4 +8,8 @@ allow items in our projects to subscribe to events, and have events trigger acti
 https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#
 
 ### How to set up
-- create an empty Unity GameObject named **`XXXManager`** and attach the **`XXXManager.cs`** script to it.
+- create an empty Unity GameObject named **`XXXManager`**(Event Manager) and attach the **`XXXManager.cs`** script to it.
+- include **`void StartListening`**, **`void StopListening`**, **`void TriggerEvent`**. 
+- other game object, in its script subscript to the event listener.
+
+
