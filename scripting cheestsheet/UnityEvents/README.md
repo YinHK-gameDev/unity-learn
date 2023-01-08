@@ -32,6 +32,10 @@ https://www.youtube.com/watch?v=oc3sQamIh-Q \
 https://www.youtube.com/watch?v=TWxXD-UpvSg
 
 
+### Event vs UnityEvents
+- In c#  declare an event must use script to add event listener.
+- Using `UnityEvent`, you can use editor to add event listener manually in inspector.
+
 ### Events & Delegates
 https://gamedevbeginner.com/events-and-delegates-in-unity/
 
