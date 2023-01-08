@@ -28,7 +28,7 @@ When configuring a UnityEvent in the Inspector there are two types of function c
 
 https://docs.unity3d.com/Manual/UnityEvents.html \
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
-https://www.youtube.com/watch?v=oc3sQamIh-Q 
+https://www.youtube.com/watch?v=oc3sQamIh-Q \
 https://www.youtube.com/watch?v=AGGmnVIhHvc
 
 
