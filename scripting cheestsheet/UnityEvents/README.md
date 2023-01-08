@@ -3,9 +3,9 @@
 ### Using UnityEvents
 To configure a callback in the editor there are a few steps to take:
 
-- Make sure your script `imports/uses UnityEngine.Event`.
+- Make sure your script **`imports/uses UnityEngine.Event`**.
 
-- Select the `+` icon to add a slot for a callback
+- Select the **`+`** icon to add a slot for a callback
 
 - Select the UnityEngine.Object you wish to receive the callback (You can use the object selector for this)
 
