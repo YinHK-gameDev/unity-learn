@@ -16,3 +16,6 @@ allow items in our projects to subscribe to events, and have events trigger acti
 
 
 https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#
+
+### Events & Delegates
+https://gamedevbeginner.com/events-and-delegates-in-unity/
