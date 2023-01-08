@@ -10,15 +10,13 @@
 ### Using UnityEvents
 To configure a callback in the editor there are a few steps to take:
 
-- Make sure your script **`imports/uses UnityEngine.Event`**.
-
+- Create `XXXManager` and attach `XXXManager.cs`.
+- Make sure your script **`imports/uses UnityEngine.Events`**.
+- Declare UnityEvent variable: **`[SerializeField] private UnityEvent trigger_name`**.
 - Select the **`+`** icon to add a slot for a callback
-
 - Select the `UnityEngine.Object` you wish to receive the callback (You can use the object selector for this)
-
 - Select the function(inside that object) you wish to be called
-
-- You can add more than one callback for the event
+- You can add more than one callback for the event.
 
 When configuring a UnityEvent in the Inspector there are two types of function calls that are supported:
 
