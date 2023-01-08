@@ -10,7 +10,7 @@ allow items in our projects to subscribe to events, and have events trigger acti
 - create an empty Unity GameObject named **`XXXManager`**(Event Manager) and attach the **`XXXManager.cs`** script to it.
 - include **`void StartListening`**, **`void StopListening`**, **`void TriggerEvent`** methods. 
 - in **`void TriggerEvent`** , `Invoke()` to invoke the event.
-- other game object, in its script subscript to the event listener.
+- other game object, in its script subscribe and unscribe to the event listener.
 - **`void OnEnable()`** to subcribe the event.
 - **`void OnDisable()`** to unsubscribethe event. 
 
