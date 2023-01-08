@@ -5,6 +5,5 @@ A common way to compose a game scene in Unity is attaching one GameObject to ano
 In order to overcome these problems, just created a pure C# Event Manager to implement an event-driven architecture.
 
 
-### 
-Create a Simple Messaging System with Events
+### Create a Simple Messaging System with Events
 https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#
