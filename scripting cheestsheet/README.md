@@ -46,8 +46,10 @@ https://docs.unity3d.com/Manual/ManagedCodeStripping.html
 
 
 ### Configure entering play mode
-- **Domain Reloading**: https://docs.unity3d.com/Manual/DomainReloading.html
-- **Scene Reloading**: https://docs.unity3d.com/Manual/SceneReloading.html
+- **Domain Reloading**: Resets the scripting state, by reloading the scripting domain. \
+  https://docs.unity3d.com/Manual/DomainReloading.html
+- **Scene Reloading**: Resets the Scene state, by reloading the Scene. \
+  https://docs.unity3d.com/Manual/SceneReloading.html
   
 
 
