@@ -35,7 +35,7 @@ The benefit of using a JIT-based scripting backend is that the compilation time 
 
 By default, Unity uses the Mono backend on platforms that support Mono. When you build a player for your application, you can choose which scripting backend to use. To do this through the Editor, go to **`Edit`** > **`Project Settings`** > **`Player`**, open the Other Settings panel, then **click on the Scripting Backend dropdown** and select which backend you want.
 
-### Strip unused code
+### Managed code stripping
 When you build an application, Unity compiles and then searches the assemblies (.DLLs) in your project to detect and remove unused code. This process of stripping code reduces the final binary size of your build, but increases build time. Code stripping is disabled by default when you use Mono but code stripping can’t be disabled for IL2CPP. 
 
 go to `Edit` > `Project Settings` > `Player`, open the Other Settings panel, then click on the Managed Stripping Level dropdown and select a stripping level.
