@@ -24,4 +24,14 @@ void OnGUI() {
 }
 ```
 
+- A set of `OnMouseXXX` event functions
+
+### Physics events
+- `OnCollisionEnter()`
+- `OnCollisionStay()`
+- `OnCollisionExit()`
+- `OnTriggerEnter()`
+- `OnTriggerStay()`
+- `OnTriggerExit()`
+
 
