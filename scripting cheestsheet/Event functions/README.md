@@ -10,3 +10,18 @@ A game is rather like an animation where the animation frames are generated on t
 - `void Update()`
 - `void FixedUpdate()`
 - `void LateUpdate()`
+
+### Initialization Events
+The `Start` function is called before the first frame or physics update on an object. The `Awake` function is called for each object in the scene at the time when the scene loads
+- `void Awake()`
+- `void Start()`
+
+### GUI events
+Unity has a system for rendering GUI controls over the main action in the scene and responding to clicks on these controls.
+```cs
+void OnGUI() {
+    GUI.Label(labelRect, "Game Over");
+}
+```
+
+
