@@ -44,3 +44,13 @@ The Unity build process uses a tool called the Unity linker to strip managed cod
 
 https://docs.unity3d.com/Manual/ManagedCodeStripping.html
 
+
+### Configure entering play mode
+- **Domain Reloading**: https://docs.unity3d.com/Manual/DomainReloading.html
+- **Scene Reloading**: https://docs.unity3d.com/Manual/SceneReloading.html
+  
+
+
+
+
+
