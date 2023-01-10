@@ -28,7 +28,7 @@ Unity uses the open-source `.NET` platform to ensure that applications you make 
 
 Unity has two scripting backends; **Mono**, and **IL2CPP** (Intermediate Language To C++), each of which uses a different compilation technique:
 
-= Mono uses **just-in-time (JIT) compilation** and compiles code on demand at runtime.
+- Mono uses **just-in-time (JIT) compilation** and compiles code on demand at runtime.
 - IL2CPP uses **ahead-of-time (AOT) compilation** and compiles your entire application before it runs.
 
 The benefit of using a JIT-based scripting backend is that the compilation time is typically much faster than AOT.
