@@ -39,3 +39,6 @@ By default, Unity uses the Mono backend on platforms that support Mono. When you
 When you build an application, Unity compiles and then searches the assemblies (.DLLs) in your project to detect and remove unused code. This process of stripping code reduces the final binary size of your build, but increases build time. Code stripping is disabled by default when you use Mono but code stripping can’t be disabled for IL2CPP. 
 
 go to `Edit` > `Project Settings` > `Player`, open the Other Settings panel, then click on the Managed Stripping Level dropdown and select a stripping level.
+
+https://docs.unity3d.com/Manual/ManagedCodeStripping.html
+
