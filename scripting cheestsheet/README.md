@@ -40,5 +40,7 @@ When you build an application, Unity compiles and then searches the assemblies (
 
 go to `Edit` > `Project Settings` > `Player`, open the Other Settings panel, then click on the Managed Stripping Level dropdown and select a stripping level.
 
+The Unity build process uses a tool called the Unity linker to strip managed code. The Unity linker is a version of the IL Linker customized to work with Unity.
+
 https://docs.unity3d.com/Manual/ManagedCodeStripping.html
 
