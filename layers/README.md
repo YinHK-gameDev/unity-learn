@@ -31,6 +31,8 @@ There are two ways you can create a new layer:
 
 > Warning: Layer 31 is used internally by the Editor’s Preview window mechanics. To prevent clashes, do not use this layer.
 
+### Add GameObjects to a layer
+To assign a GameObject to a layer, select the GameObject, go to the Inspector window and select the dropdown next to Layer. This menu shows the layers that have names so you can select which one works best for your GameObject.
 
 ### ref
 https://docs.unity3d.com/Manual/Layers.html
