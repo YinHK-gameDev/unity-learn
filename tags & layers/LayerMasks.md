@@ -24,8 +24,11 @@ public class LayerExample : MonoBehaviour
     }
 }
 ```
-
-
+### Add a layer to a layerMask
+To add a layer to a layermask, use the **logical OR operator** on the original layermask and the layer to add.
+```cs
+originalLayerMask |= (1 << layerToAdd);
+```
 
 
 ### ref
