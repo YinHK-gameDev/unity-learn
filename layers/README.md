@@ -1,4 +1,6 @@
 ## Layers
+**Layers can help to organize the GameObjectsin your scene.**
+
 Layers are a tool that allows you to separate GameObjects in your scenes.
 
 ### Use of layers
@@ -21,7 +23,11 @@ If you don’t pass a LayerMask to the ray cast API call, Unity uses Physics.Def
 
 The Physics.Raycast function uses a bitmask, and each bit determines if a layer is ignored by rays or not. If all bits in the layerMask are on, the ray collides against all colliders. If the layerMask = 0, there are no collisions.
 
+### Create a layer
+There are two ways you can create a new layer:
 
+- Select the Tags and Layers window (main menu: **Edit > Project Settings > Tags and Layers > Layers**).
+- Select a GameObject, select the Layer dropdown in the Inspector window, and select Add Layer from the menu.
 
 
 ### ref
