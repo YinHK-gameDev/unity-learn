@@ -29,6 +29,8 @@ There are two ways you can create a new layer:
 - Select the Tags and Layers window (main menu: **Edit > Project Settings > Tags and Layers > Layers**).
 - Select a GameObject, select the Layer dropdown in the Inspector window, and select Add Layer from the menu.
 
+> Warning: Layer 31 is used internally by the Editor’s Preview window mechanics. To prevent clashes, do not use this layer.
+
 
 ### ref
 https://docs.unity3d.com/Manual/Layers.html
