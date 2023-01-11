@@ -33,6 +33,8 @@ There are two ways you can create a new layer:
 
 ### Add GameObjects to a layer
 To assign a GameObject to a layer, select the GameObject, go to the Inspector window and select the dropdown next to Layer. This menu shows the layers that have names so you can select which one works best for your GameObject.
+> You can only assign each GameObject to one layer, but you can add multiple GameObjects to one layer.
+
 
 ### ref
 https://docs.unity3d.com/Manual/Layers.html
