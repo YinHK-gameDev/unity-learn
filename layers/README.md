@@ -41,4 +41,4 @@ https://docs.unity3d.com/Manual/Layers.html
 
 https://learn.unity.com/tutorial/essential-unity-concepts#5c7f8528edbc2a002053b6c8
 
-
+https://docs.unity3d.com/Manual/class-TagManager.html
