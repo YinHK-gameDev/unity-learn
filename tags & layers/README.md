@@ -1,4 +1,6 @@
-## Layers
+## Tags & Layers
+
+
 **Layers can help to organize the GameObjectsin your scene.**
 
 Layers are a tool that allows you to separate GameObjects in your scenes.
