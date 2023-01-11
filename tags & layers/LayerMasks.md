@@ -30,6 +30,11 @@ To add a layer to a layermask, use the **logical OR operator** on the original l
 originalLayerMask |= (1 << layerToAdd);
 ```
 
+### Remove a layer from a layerMask
+To remove a layer from a layermask, use the logical AND operator on the original layermask and the bitwise complement of the layer to remove it.
+```cs
+originalLayerMask &= ~(1 << layerToRemove);
+```
 
 ### ref
 https://docs.unity3d.com/Manual/layers-and-layermasks.html
