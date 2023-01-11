@@ -5,5 +5,7 @@
 - In the Unity menu bar, go to **Edit > Project Settings**, then select the Physics category to open the Physics window.
 - Select which layers on the Collision Matrix will interact with the other layers by checking them.
 
- 
+![](./LayerBasedCollisionLayer.png)
+
+![](./)
  
