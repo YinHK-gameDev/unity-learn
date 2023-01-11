@@ -28,4 +28,6 @@ public class LayerExample : MonoBehaviour
 
 
 
+### ref
+https://docs.unity3d.com/Manual/layers-and-layermasks.html
 
