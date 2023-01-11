@@ -8,6 +8,7 @@ A job system manages a group of worker threads across multiple cores. It usually
 
 A job system puts jobs into a job queue to execute. Worker threads in a job system take items from the job queue and execute them. A job system manages dependencies and ensures that jobs execute in the appropriate order.
 
+https://docs.unity3d.com/Manual/JobSystem.html
 
 ### Creating jobs
 To create a job in Unity you need to implement the `IJob` interface. IJob allows you to schedule a single job that runs in parallel to any other jobs that are running.
@@ -34,5 +35,15 @@ public struct MyJob : IJob
     }
 }
 ```
+https://docs.unity3d.com/Manual/JobSystemCreatingJobs.html
+
+### Scheduling jobs
+https://docs.unity3d.com/Manual/JobSystemSchedulingJobs.html
+
+### ParallelFor jobs
+https://docs.unity3d.com/Manual/JobSystemParallelForJobs.html
+
+
+
 
 
