@@ -48,6 +48,21 @@ Tags are useful for triggers in Collider control scripts that need to determine 
 
 You can use the `GameObject.FindWithTag()` function to look for any GameObject that contains a tag you specify. 
 
+### Create or assign a tag to game object
+The Inspector displays the Tag and Layer dropdown menus below the name of a GameObject.
+To create a new tag, select Add Tag…. This opens the Tag and Layer Manager in the Inspector
+
+- A GameObject can only have one tag assigned to it.
+- Unity includes some built-in tags which don’t appear in the Tag Manager:
+  - Untagged
+  - Respawn
+  - Finish
+  - EditorOnly
+  - MainCamera
+  - Player
+  - GameController
+
+
 ### ref
 https://docs.unity3d.com/Manual/Layers.html
 
