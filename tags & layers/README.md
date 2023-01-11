@@ -39,12 +39,12 @@ To assign a GameObject to a layer, select the GameObject, go to the Inspector wi
 
 
 ### Tags
-A tag is a reference word which you can assign to one or more GameObjects.
+A tag is **a reference word** which you can assign to one or more GameObjects.
 For example, you might define “Player” tags for player-controlled characters and an “Enemy” tag for non-player-controlled characters. You might define items the player can collect in a Scene with a “Collectable” tag.
 
 Tags help you identify GameObjects for scripting purposes. 
 
-Tags are useful for triggers in Collider control scripts that need to determine if the player interacts with an enemy, a prop, or a collectable, for example.
+Tags are **useful for triggers in Collider control** scripts that need to determine if the player interacts with an enemy, a prop, or a collectable, for example.
 
 You can use the `GameObject.FindWithTag()` function to look for any GameObject that contains a tag you specify. 
 
