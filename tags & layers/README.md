@@ -3,12 +3,16 @@
 
 **Layers can help to organize the GameObjectsin your scene.**
 
-Layers are a tool that allows you to separate GameObjects in your scenes.
+Layers are a tool that allows you to separate GameObjects in your scenes. 
 
 ### Use of layers
+Use Layers primarily to restrict operations such as raycasting or rendering, so that they are only applied to the relevant groups of objects.
+
 Common uses of layers include: 
 - **Layer-based rendering**. 
 - **Layer-based collision**.
+
+> Layers marked as **Builtin** Layer are default layers used by Unity, which you cannot edit. You can customise layers marked as **User Layer**.
 
 ### Camera culling mask with layers
 You can render only the objects in a particular layer, or selection of layers, if you use the **Camera’s culling mask**.
