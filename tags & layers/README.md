@@ -38,9 +38,21 @@ To assign a GameObject to a layer, select the GameObject, go to the Inspector wi
 > You can only assign each GameObject to one layer, but you can add multiple GameObjects to one layer.
 
 
+### Tags
+A tag is a reference word which you can assign to one or more GameObjects.
+For example, you might define “Player” tags for player-controlled characters and an “Enemy” tag for non-player-controlled characters. You might define items the player can collect in a Scene with a “Collectable” tag.
+
+Tags help you identify GameObjects for scripting purposes. 
+
+Tags are useful for triggers in Collider control scripts that need to determine if the player interacts with an enemy, a prop, or a collectable, for example.
+
+You can use the `GameObject.FindWithTag()` function to look for any GameObject that contains a tag you specify. 
+
 ### ref
 https://docs.unity3d.com/Manual/Layers.html
 
 https://learn.unity.com/tutorial/essential-unity-concepts#5c7f8528edbc2a002053b6c8
 
 https://docs.unity3d.com/Manual/class-TagManager.html
+
+https://docs.unity3d.com/Manual/Tags.html
