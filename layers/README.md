@@ -38,3 +38,7 @@ To assign a GameObject to a layer, select the GameObject, go to the Inspector wi
 
 ### ref
 https://docs.unity3d.com/Manual/Layers.html
+
+https://learn.unity.com/tutorial/essential-unity-concepts#5c7f8528edbc2a002053b6c8
+
+
