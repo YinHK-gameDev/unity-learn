@@ -96,6 +96,13 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 
 **https://learn.unity.com/course/create-with-code**
 
+✒️ **Audio tutorial**
+
+**https://learn.unity.com/tutorial/working-with-audio-components-2019-3**
+
+**https://learn.unity.com/project/creative-core-audio**
+
+**https://learn.unity.com/project/beginning-audio-in-unity**
 
 
 ### ➡️ Project setup processes
