@@ -76,6 +76,8 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 
 **https://learn.unity.com/project/beginner-gameplay-scripting**
 
+**https://learn.unity.com/project/creator-kit-beginner-code**
+
 **https://learn.unity.com/project/intermediate-gameplay-scripting**
 
 **https://learn.unity.com/tutorial/introduction-to-editor-scripting#**
@@ -85,6 +87,16 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 **https://learn.unity.com/project/introduction-to-visual-scripting**
 
 **https://learn.unity.com/tutorial/april-20-intro-to-visual-scripting#**
+
+✒️ **3D game dev tutorial**
+
+**https://learn.unity.com/course/beginning-3d-game-development**
+
+**https://learn.unity.com/project/john-lemon-s-haunted-jaunt-3d-beginner**
+
+**https://learn.unity.com/course/create-with-code**
+
+
 
 ### ➡️ Project setup processes
 **https://learn.unity.com/tutorial/project-setup-processes#60ed7ae4edbc2a138163c120**
