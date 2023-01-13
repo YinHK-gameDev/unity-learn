@@ -30,6 +30,24 @@ public class SceneTemplate
     public static event NewTemplateInstantiated newSceneTemplateInstantiated;
 }
 ```
+### Scene templates
+You can create your own scene templates to customize the types of new scene you can create in a project. For example, you might create templates for each level in a game so that everyone working on the project can start their scenes with the correct assets and configuration.
+
+### Creating scene templates
+You can create a new scene template in one of the following ways:
+
+- Start an empty template:
+  - From the menu, select Assets > Create > Scene Template. Or
+  - create an empty scene template in a specific project folder:
+    - In the Project window , right-click the folder to open the context menu. Or
+    - Open the folder in the Project window, and right-click the asset pane to open the context menu. Or
+    - Select Create > Scene Template.
+- Create a template from an existing scene asset.
+  You can turn any existing scene into a scene template.
+  - **Right-click** a scene asset to open the context menu. Then select **Create > Scene Template** From Scene.
+  - Select the scene asset, and from the main menu, select **Assets > Create > Scene Template From Scene**.
+- Create a template from the current scene.
+
 
 ### Load scene
 To open a scene, do one of the following:
