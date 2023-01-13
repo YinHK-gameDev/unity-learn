@@ -71,6 +71,11 @@ Right click the scene, in the list you can:
 | Select Scene Asset | Highlights the scene asset in the Project window. |
 | Add New Scene | Adds a new untitled scene below the scene you have selected. |
 
+**Play mode**:
+
+When you are in Play mode and have multiple scenes in the Hierarchy window, the Editor displays an additional scene called DontDestroyOnLoad. You can’t access the DontDestroyOnLoad scene and it’s also not available at runtime.
+
+
 
 
 https://docs.unity3d.com/Manual/scenes-working-with.html
