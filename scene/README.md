@@ -38,6 +38,31 @@ To open a scene, do one of the following:
 - From the menu, **select File > New Scene**
 - From the menu, **select File > Recent Scenes > [NAME-OF-SCENE]**
 
+### Saving scenes
+**File > Save** Scene from the menu, or press **Ctrl + S** (Windows)
+
+### Multiple scenes in Unity
+We can open and edit multiple scenes in the Unity Editor simultaneously. Open multi scenes at once.
+Having multiple scenes open at once also lets you improve the workflow, especially if you often have to edit scenes collaboratively.
+
+To add multi scenes at editor: 
+
+- Right click to open the menu of a scene asset in the Project window and select Open Scene Additive.
+- Drag one or more scenes from the Project window into the Hierarchy window.
+
+Right click the scene, in the list you can:
+| Setting | Description |
+| --- | --- |
+| Set Active Scene | Sets the scene as the target for new GameObjects created through scripts. For more information, see SceneManager.SetActiveScene. |
+| Save Scene | Saves the scene that you selected. |
+| Save Scene As | Opens your file browser so you can choose where and how to save the scene. |
+| Save All | Saves all the scenes you have open in the Hierarchy window. |
+| Unload Scene | Hides the contents of the scene from the Scene view and the Hierarchy window. If you have unsaved changes, save them before you unload the scene to not lose any changes. |
+| Remove Scene | Removes the scene from the Hierarchy window. |
+| Discard changes | Undoes any changes that you haven’t saved. |
+| Select Scene Asset | Highlights the scene asset in the Project window. |
+| Add New Scene | Adds a new untitled scene below the scene you have selected. |
+| GameObject | Opens a dropdown menu of GameObjects that you can add to the scene you have selected. |
 
 
 https://docs.unity3d.com/Manual/scenes-working-with.html
