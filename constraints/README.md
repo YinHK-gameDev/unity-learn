@@ -11,3 +11,8 @@ Unity supports the following types of Constraint components:
 - **Position**: Move the constrained GameObject like the linked GameObject.
 - **Rotation**: Rotate the constrained GameObject like the linked GameObject.
 - **Scale**: Scale the constrained GameObject like the linked GameObject.
+
+
+https://docs.unity3d.com/Manual/Constraints.html
+
+
