@@ -64,6 +64,14 @@ Right click the scene, in the list you can:
 | Add New Scene | Adds a new untitled scene below the scene you have selected. |
 | GameObject | Opens a dropdown menu of GameObjects that you can add to the scene you have selected. |
 
+| Setting | Description |
+| --- | --- |
+| Load Scene | Displays the contents of the scene in the Hierarchy window and the Scene view, and allows you to edit them. |
+| Remove Scene | Removes the scene from the Hierarchy window. |
+| Select Scene Asset | Highlights the scene asset in the Project window. |
+| Add New Scene | Adds a new untitled scene below the scene you have selected. |
+
+
 
 https://docs.unity3d.com/Manual/scenes-working-with.html
 
