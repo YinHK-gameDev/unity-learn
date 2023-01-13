@@ -75,6 +75,18 @@ Right click the scene, in the list you can:
 
 When you are in Play mode and have multiple scenes in the Hierarchy window, the Editor displays an additional scene called DontDestroyOnLoad. You can’t access the DontDestroyOnLoad scene and it’s also not available at runtime.
 
+### Use scripts to edit multiple scenes
+
+When using (or running) scripts within the Editor, use:
+
+- `Scene struct`: Available both in the Editor and at runtime, Scene struct contains read-only properties that relate to the scene itself, such as name and asset path.
+- `EditorSceneManager` API: This class is only available only in the Editor and has several functions to implement all the Multi-Scene editing features described in the pages Setup multiple scenes and Bake data in multiple scenes.
+- `SceneSetup utility` class: A utility class that you can use to store information about a scene that is in the Hierarchy window.
+
+
+runtime scripts:
+
+When using scripts at runtime to edit multiple scenes, use the functions in the `SceneManager` class such as `LoadScene` and `UnloadScene`.
 
 
 
