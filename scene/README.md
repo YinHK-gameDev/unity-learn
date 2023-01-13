@@ -12,6 +12,10 @@ There are several ways to create a new scene:
 The New Scene dialog opens when you create a new scene from the File menu: (**`File > New Scene`**) or the **`Ctrl/Cmd + n`** shortcut. Use it to create new scenes from specific scene templates in your project, and get information about existing templates.
 
 
+### Creating a new scene from a C# script
 
+To create a new scene from a C# script using a specific scene template, use the Instantiate method.
 
-
+```cs
+Tuple<Scene, SceneAsset> SceneTemplate.Instantiate(SceneTemplateAsset sceneTemplate, bool loadAdditively, string newSceneOutputPath = null);
+```
