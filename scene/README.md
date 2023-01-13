@@ -37,7 +37,7 @@ You can create your own scene templates to customize the types of new scene you 
 You can create a new scene template in one of the following ways:
 
 - Start an empty template:
-  - From the menu, select Assets > Create > Scene Template. Or
+  - From the menu, select **Assets > Create > Scene Template**. Or
   - create an empty scene template in a specific project folder:
     - In the Project window , right-click the folder to open the context menu. Or
     - Open the folder in the Project window, and right-click the asset pane to open the context menu. Or
