@@ -84,7 +84,7 @@ When using (or running) scripts within the Editor, use:
 - `SceneSetup utility` class: A utility class that you can use to store information about a scene that is in the Hierarchy window.
 
 
-runtime scripts:
+**runtime scripts:**
 
 When using scripts at runtime to edit multiple scenes, use the functions in the `SceneManager` class such as `LoadScene` and `UnloadScene`.
 
