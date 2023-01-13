@@ -19,3 +19,20 @@ To create a new scene from a C# script using a specific scene template, use the 
 ```cs
 Tuple<Scene, SceneAsset> SceneTemplate.Instantiate(SceneTemplateAsset sceneTemplate, bool loadAdditively, string newSceneOutputPath = null);
 ```
+
+When you create a new scene from a template, either from a script or using the New Scene dialog, Unity triggers an event. Unity triggers this event after the template is instantiated, and also after it triggers the `EditorSceneManager.newSceneCreated` or `EditorSceneManager.sceneOpened` events.
+
+```cs
+public class SceneTemplate
+{
+    public delegate void NewTemplateInstantiated(SceneTemplateAsset sceneTemplateAsset, Scene scene, SceneAsset sceneAsset, bool additiveLoad);
+
+    public static event NewTemplateInstantiated newSceneTemplateInstantiated;
+}
+```
+
+
+
+
+https://docs.unity3d.com/Manual/scenes-working-with.html
+
