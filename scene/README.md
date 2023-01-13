@@ -41,13 +41,22 @@ You can create a new scene template in one of the following ways:
   - create an empty scene template in a specific project folder:
     - In the Project window , right-click the folder to open the context menu. Or
     - Open the folder in the Project window, and right-click the asset pane to open the context menu. Or
-    - Select Create > Scene Template.
+    - Select **Create > Scene Template**.
 - Create a template from an existing scene asset.
   You can turn any existing scene into a scene template.
   - **Right-click** a scene asset to open the context menu. Then select **Create > Scene Template** From Scene.
   - Select the scene asset, and from the main menu, select **Assets > Create > Scene Template From Scene**.
 - Create a template from the current scene.
-
+  - **select File > Save As Scene Template**.
+- Creating templates from C# scripts
+  - create an empty scene template, use the `CreateSceneTemplate` method.
+    ```cs
+     SceneTemplate.CreateSceneTemplate(string sceneTemplatePath)
+    ```
+  - create a template from an existing scene, use the `CreateTemplateFromScene` method. 
+    ```cs
+     SceneTemplate.CreateTemplateFromScene(SceneAsset sourceSceneAsset, string sceneTemplatePath);
+    ```
 
 ### Load scene
 To open a scene, do one of the following:
