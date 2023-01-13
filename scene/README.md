@@ -31,6 +31,12 @@ public class SceneTemplate
 }
 ```
 
+### Load scene
+To open a scene, do one of the following:
+
+- In the Project window, **double-click the scene asset**.
+- From the menu, **select File > New Scene**
+- From the menu, **select File > Recent Scenes > [NAME-OF-SCENE]**
 
 
 
