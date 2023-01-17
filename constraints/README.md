@@ -30,7 +30,7 @@ You activate a Constraint to allow it to evaluate the position, rotation, or sca
 
 You lock a Constraint to allow it to move, rotate, or scale the GameObject. A locked Constraint takes control of the relevant parts of the Transform of the GameObject. You cannot manually move, rotate, or scale a GameObject with a locked Constraint. You also cannot edit the Constraint Settings.
 
-- **Activate**: Saves the current offset from the source GameObjects, then activates and locks the constrained GameObject.
+- **Activate**: Saves the current offset from the source GameObjects, then activates and locks the constrained GameObject. Click activate to save this information. **Activate** saves the current offset from the source GameObjects
 
 - **Zero**: Resets the position, rotation, or scale to match the source GameObjects, then activates and locks the constrained GameObject.
 
