@@ -23,7 +23,7 @@ You can use quaternions directly if you use the Quaternion class. If you use scr
 
 ### Convert between Euler angles and quaternions
 
-- To convert from **Euler angles** to **quaternions**, you can use the `Quaternion.Euler` function.
-- To convert a **quaternion** to **Euler angles**, you can use the `Quaternion.eulerAngles` function.
+- To convert from **Euler angles** to **quaternions**, you can use the **`Quaternion.Euler`** function.
+- To convert a **quaternion** to **Euler angles**, you can use the **`Quaternion.eulerAngles`** function.
 
 
