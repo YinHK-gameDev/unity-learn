@@ -14,7 +14,7 @@ Unity supports the following types of Constraint components:
 
 ### Setting Constraint properties
 #### Weight
-Use Weight to vary the influence of a Constraint. A weight of 1 causes the Constraint to update a GameObject at the same rate as its source GameObjects. A weight of 0 removes the effect of the Constraint completely. Each source GameObject also has an individual weight.
+Use Weight to vary the influence of a Constraint. A weight of 1 causes the Constraint to update a GameObject at the same rate as its source GameObjects. A weight of 0 removes the effect of the Constraint completely. The strength of the Constraint. A weight of 1 causes the Constraint to move this GameObject at the same rate as its source GameObjects. A weight of 0 removes the effect of the Constraint completely. This weight affects all source GameObjects. Each GameObject in the Sources list also has a weight.
 
 #### At Rest
 In Constraint Settings, use the **At Rest** properties to specify the X, Y, and Z values to use when Weight is 0 or when the corresponding property in Freeze Axes is not checked.
