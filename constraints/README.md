@@ -25,6 +25,20 @@ Use the **Offset** properties in Constraint Settings to specify the X, Y, and Z 
 ####  Freeze Position Axes
 Use the Freeze Axes settings to toggle which axes the Constraint can actually modify.
 
+#### Active & Lock
+You activate a Constraint to allow it to evaluate the position, rotation, or scale of the constrained GameObject. Unity does not evaluate inactive Constraints.
+
+You lock a Constraint to allow it to move, rotate, or scale the GameObject. A locked Constraint takes control of the relevant parts of the Transform of the GameObject. You cannot manually move, rotate, or scale a GameObject with a locked Constraint. You also cannot edit the Constraint Settings.
+
+- **Activate**: Saves the current offset from the source GameObjects, then activates and locks the constrained GameObject.
+
+- **Zero**: Resets the position, rotation, or scale to match the source GameObjects, then activates and locks the constrained GameObject.
+
+
+
+
+
+
 
 https://docs.unity3d.com/Manual/Constraints.html
 
