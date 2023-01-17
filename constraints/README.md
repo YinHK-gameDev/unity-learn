@@ -1,7 +1,7 @@
 ## Constraints
 
-A Constraint component links the position, rotation, or scale of a GameObject
- to another GameObject. A constrained GameObject moves, rotates, or scales like the GameObject it is linked to.
+A Constraint component links the **position, rotation, or scale** of a GameObject
+ to **another GameObject**. A constrained GameObject moves, rotates, or scales like the GameObject it is linked to.
 
 Unity supports the following types of Constraint components:
 
