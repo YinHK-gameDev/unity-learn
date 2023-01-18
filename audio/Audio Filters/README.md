@@ -29,5 +29,14 @@ Repeats a sound after a given Delay, attenuating the repetitions based on the De
 | Wet Mix | Volume of echo signal to pass to output. 0.0 to 1.0. Default = 1.0. |
 | Dry Mix | Volume of original signal to pass to output. 0.0 to 1.0. Default = 1.0. |
 
+### Audio Distortion Filter
+Distorts the sound from an AudioSource or sounds reaching the AudioListener.
+
+| Property: | Function: |
+| --- | --- |
+| Distortion | Distortion value. 0.0 to 1.0. Default = 0.5. |
+
+
+
 
 
