@@ -1,4 +1,6 @@
 ## Audio Source
+The Audio Source plays back an Audio Clip in the scene. 
+
 
 The Source is like a controller for **starting and stopping** playback of that clip, and **modifying other audio properties**.
 
@@ -10,3 +12,5 @@ The Source is like a controller for **starting and stopping** playback of that c
 - With the new GameObject selected, select **Component > Audio > Audio Source**.
 - In the Inspector, find the Audio Clip property on the Audio Source Component and assign a clip, either by dragging one from the Project Window
  or by clicking the small circle icon to the right of the Inspector property, then selecting a clip from the list.
+
+
