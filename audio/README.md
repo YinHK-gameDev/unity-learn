@@ -19,6 +19,10 @@ For music, Unity also supports tracker modules, which use short audio samples as
 Unity can access the computer’s microphones from a script and create Audio Clips by direct recording.
 The **Microphone** class provides an API to **find available microphones**, **query their capabilities**, and **start and end a recording session**.
 
+The Microphone class is useful for capturing input from a built-in (physical) microphone on your PC or mobile device.
+
+you can start and end a recording from a built-in microphone, get a listing of available audio input devices (microphones), and find out the status of each such input device.
+
 https://docs.unity3d.com/ScriptReference/Microphone.html
 
 ### Echoes
