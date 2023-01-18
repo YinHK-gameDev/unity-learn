@@ -20,5 +20,6 @@ The effects are applied by adding effect components to the relevant section of t
 - **Audio Low Pass Simple Effect**: passes low frequencies of an AudioMixer group while removing frequencies higher than the Cutoff Frequency.
 - **Audio High Pass Simple Effect**: passes high frequencies of an AudioMixer group and cuts off signals with frequencies lower than the Cutoff Frequency.
 
+https://docs.unity3d.com/Manual/class-AudioEffectMixer.html
 
  
