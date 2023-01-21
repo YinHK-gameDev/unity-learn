@@ -20,9 +20,13 @@ Unity has a rich and sophisticated animation system (sometimes referred to as â€
 
 https://docs.unity3d.com/Manual/AnimationOverview.html
 
-### tutotial
+### Tutotial
 https://learn.unity.com/search?k=%5B%22q%3AAnimation%22%5D
 
 https://www.youtube.com/watch?v=vApG8aYD5aI
 
 https://www.youtube.com/watch?v=JVFg9g4f-ME
+
+To animate 2D: \
+https://www.youtube.com/watch?v=oebtkjwjkcs
+
