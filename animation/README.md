@@ -19,3 +19,8 @@ Unity has a rich and sophisticated animation system (sometimes referred to as â€
 
 
 https://docs.unity3d.com/Manual/AnimationOverview.html
+
+### tutotial
+https://learn.unity.com/search?k=%5B%22q%3AAnimation%22%5D
+
+https://www.youtube.com/watch?v=vApG8aYD5aI
