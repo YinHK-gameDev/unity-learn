@@ -26,4 +26,9 @@ When you save this new empty Animation Clip, Unity does the following:
 
 All the required elements of the animation system are now set up, and you can begin animating the GameObject.
 
+> A GameObject must have an Animator component
+> The Animator component must have an Animator Controller Asset assigned
+> The Animator Controller asset must have one or more Animation Clips assigned
+
+
 
