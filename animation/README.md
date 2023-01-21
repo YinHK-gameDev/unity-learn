@@ -27,6 +27,6 @@ https://www.youtube.com/watch?v=vApG8aYD5aI
 
 https://www.youtube.com/watch?v=JVFg9g4f-ME
 
-To animate 2D: \
+**To animate 2D:** \
 https://www.youtube.com/watch?v=oebtkjwjkcs
 
