@@ -12,6 +12,8 @@ The timeline view has two modes, **Dopesheet** and **Curves**. To toggle between
   
 - Curves mode: \
   Curves mode displays a resizable graph containing a view of how the values for each animated property changes over time. All selected properties appear overlaid within the same graph view. This mode allows you to have great control over viewing and editing the values, and how they are interpolated between.
-  
+  > Press **F** on the keyboard to zoom the view to the currently selected keyframes.
+
+  > Press **A** on the keyboard to fit and re-scale the window to show all the keyframes in the clip, regardless of which ones are selected. 
   
   
