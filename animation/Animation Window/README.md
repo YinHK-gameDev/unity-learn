@@ -1,6 +1,6 @@
 ## Animation
 
-When you begin to animate various properties within this clip, the animated properties will appear here. If the animation controls multiple child objects, the list will also include hierarchical sub-lists of each child object’s animated properties. 
+When you begin to animate various properties within this clip, the animated properties will appear here. If the animation controls **multiple child objects**, the list will also **include hierarchical sub-lists of each child object’s** animated properties. 
   
 ### The Animation Timeline
  
