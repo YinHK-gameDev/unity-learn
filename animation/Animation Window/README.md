@@ -19,3 +19,16 @@ The timeline view has two modes, **Dopesheet** and **Curves**. To toggle between
   
 ### Time line
 You can click anywhere on the Animation window time line to move the playback head to that frame, and preview or modify that frame in the Animation Clip. The numbers in the time line are shown as seconds and frames, so 1:30 means 1 second and 30 frames.
+
+
+### Manually creating keyframes
+There are three different ways to manually create a keyframe when you have modified a GameObject in preview mode.
+
+1. You can add a keyframe by right-clicking the property label of the property you have modified, which allows you to either add a keyframe for just that property, or for all animated properties.
+2. You can also add a keyframe by clicking the Add Keyframe button in the Animation window
+3. You can add a keyframe (or keyframes) by using the hotkeys K or Shift-K as described below:
+   - **K** - Key all animated. Adds an keyframe for all animated properties at the current position of the playback head in the animation window.
+   - **Shift-K** - Key all modified. Adds an keyframe for only those animated properties which have been modified at the current position of the playback head in the animation window.
+
+
+
