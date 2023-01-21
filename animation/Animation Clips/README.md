@@ -26,6 +26,14 @@ When you save this new empty Animation Clip, Unity does the following:
 
 All the required elements of the animation system are now set up, and you can begin animating the GameObject.
 
+### Adding another Animation Clip
+
+If the GameObject already has one or more Animation Clips assigned, the “Create” button is not visible. Instead, one of the existing clips is visible in the Animation window. To switch between Animation Clips, use the menu in the **top-left of the Animation window**
+.
+
+To create a new Animation Clip on a GameObject that has existing animations, select Create New Clip from this menu. Again, Unity prompts you to save your new empty Animation Clip before you can work on it.
+
+
 > A GameObject must have an Animator component
 
 > The Animator component must have an Animator Controller Asset assigned
