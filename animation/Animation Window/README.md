@@ -17,3 +17,5 @@ The timeline view has two modes, **Dopesheet** and **Curves**. To toggle between
   > Press **A** on the keyboard to fit and re-scale the window to show all the keyframes in the clip, regardless of which ones are selected. 
   
   
+### Time line
+You can click anywhere on the Animation window time line to move the playback head to that frame, and preview or modify that frame in the Animation Clip. The numbers in the time line are shown as seconds and frames, so 1:30 means 1 second and 30 frames.
