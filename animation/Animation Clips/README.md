@@ -41,4 +41,13 @@ To create a new Animation Clip on a GameObject that has existing animations, sel
 > The Animator Controller asset must have one or more Animation Clips assigned
 
 
+After you create a new Animation Clip, you can now see:
+
+- The Animation Window (top left) shows a timeline with a white playback head line, ready to record new keyframes. The clip’s name is visible in the clip menu, just below the playback controls.
+- The Inspector(center) shows that the “Cube” GameObject has an Animator Component, and the Controller field of the component shows that an Animator Controller Asset called Cube is assigned to it.
+- The Project Window(bottom right) shows that two new Assets have been created: an Animator Controller asset called Cube and an Animation Clip Asset called Cube Animation Clip.
+- The Animator Window(bottom left) shows the contents of the Animator Controller: there is a Cube Animation Clip on the controller, and that it is in the default state (as indicated by the orange color). Subsequent clips you add to the controller have a grey color, indicating they are not the default state (see Fig 4: New Animation Clip in the Project Window).
+
+
+
 
