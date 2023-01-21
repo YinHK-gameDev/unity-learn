@@ -66,6 +66,10 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 
 **https://www.youtube.com/@KetraGames**
 
+✒️ **KChris' Tutorials**
+
+**https://www.youtube.com/@ChrisTutorialsYT**
+
 ✒️ **Unity 筆記文章**
 
 **https://dev.twsiyuan.com/p/unity.html**
