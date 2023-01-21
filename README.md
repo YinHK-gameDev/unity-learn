@@ -62,6 +62,10 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 
 **https://www.youtube.com/@Tarodev**
 
+✒️ **Ketra Games**
+
+**https://www.youtube.com/@KetraGames**
+
 ✒️ **Unity 筆記文章**
 
 **https://dev.twsiyuan.com/p/unity.html**
