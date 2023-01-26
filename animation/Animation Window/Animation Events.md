@@ -16,7 +16,7 @@ Once added, you can drag the mouse to reposition the Event. To delete an Event, 
 When you add an Event, the Inspector
 Window displays several fields. These fields allow you to specify the name of the function you want to call, and the value of the parameter you want to pass to it.
 
-
+![](./AnimationEventInspector.png)
 
 https://docs.unity3d.com/Manual/script-AnimationWindowEvent.html
 
