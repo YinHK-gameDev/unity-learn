@@ -11,6 +11,10 @@ Animation clips imported from external sources could include:
 - Animation sets from 3rd-party libraries (eg, from Unity’s asset store)
 - Multiple clips cut and sliced from a single imported timeline.
 
+### Importing animation files
+
+Before any animation can be used in Unity, it must first be imported into your project. Unity can import native Autodesk® Maya® (.mb or .ma), Autodesk® 3ds Max® (.max), and Blender™ (.blend), and also generic FBX files which can be exported from most animation packages. Note that importing from .blend files requires a local installation of Blender™.
+
 ### Creating a new Animation Clip
 
 To create a new Animation Clip, select a GameObject in your Scene, and open the Animation Window (top menu:) **Window > Animation > Animation**.
