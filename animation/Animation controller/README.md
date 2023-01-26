@@ -12,7 +12,7 @@ The various ways an Animator Controller can be created:
 
 This creates a `.controller` asset on disk. In the Project Browser window the icon will look like:
 
-
+> Animator Controller assets are created from the Assets menu, or from the Create menu in the Project window.
 
 https://www.youtube.com/watch?v=S3ys0jCUE9s
 
