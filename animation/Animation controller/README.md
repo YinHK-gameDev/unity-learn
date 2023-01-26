@@ -14,6 +14,9 @@ This creates a `.controller` asset on disk. In the Project Browser window the ic
 
 > Animator Controller assets are created from the Assets menu, or from the Create menu in the Project window.
 
+The controller manages the various **animation states** and the transitions between them using a so-called **State Machine**
+, which could be thought of as a kind of flow-chart, or a simple program written in a visual programming language within Unity.
+
 https://www.youtube.com/watch?v=S3ys0jCUE9s
 
 
