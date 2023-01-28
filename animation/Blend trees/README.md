@@ -4,3 +4,9 @@
 
 ### 1D blend tree
 https://www.youtube.com/watch?v=m8rGyoStfgQ
+
+
+### Direct blend tree
+https://youtu.be/ihmPDjiF-zg
+
+
