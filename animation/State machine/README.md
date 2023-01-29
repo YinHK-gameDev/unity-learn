@@ -4,7 +4,7 @@
 
 > The **Exit** node is used to indicate that a state machine should exit.
 
-> The **Any State** is a special state which is always present. It exists for the situation where you want to go to a specific state regardless of which state you are currently in. This is a shorthand way of adding the same outward transition to all states in your machine. Note that the special meaning of Any State implies that it cannot be the end point of a transition (ie, jumping to “any state” cannot be used as a way to pick a random state to enter next).
+> The **Any State** is a special state which is always present. It exists for the situation where you want to go to a specific state regardless of which state you are currently in. This is a shorthand way of adding the same outward transition to all states in your machine. Note that the special meaning of **Any State** implies that it cannot be the end point of a transition (ie, jumping to "any state" cannot be used as a way to pick a random state to enter next).
 
 
 
@@ -53,7 +53,8 @@ To view properties for a transition, click on the transition line connecting two
 | Conditions | A transition can have a single condition, multiple conditions, or no conditions at all. If your transition has no conditions, the Unity Editor only considers the Exit Time, and the transition occurs when the exit time is reached. If your transition has one or more conditions, the conditions must all be met before the transition is triggered.A condition consists of:- An event parameter (the value considered in the condition).- A conditional predicate (if needed,for example, ‘less than’ or ‘greater than’ for floats).- A parameter value (if needed).If you have Has Exit Time selected for the transition and have one or more conditions, note that the Unity Editor considers whether the conditions are true after the Exit Time. This allows you to ensure that your transition occurs during a certain portion of the animation. |
 
 ### Conditions
-A transition can have a single condition, multiple conditions, or no conditions at all. If your transition has no conditions, the Unity Editor only considers the Exit Time, and the transition occurs when the exit time is reached. If your transition has one or more conditions, the conditions must all be met before the transition is triggered.
+A transition can have a **single condition**, **multiple conditions**, or **no conditions** at all. If your transition has no conditions, the Unity Editor **only considers the Exit Time**, and the **transition occurs when the exit time is reached**. 
+> If your transition has one or more conditions, the conditions must all be met before the transition is triggered.
 
 A condition consists of:
 
@@ -61,7 +62,7 @@ A condition consists of:
 - A conditional predicate, if needed (for example, less or greater for floats).
 - A parameter value, if needed.
 
-> If **Has Exit Time** is enabled for the transition and has one or more conditions, these conditions are only checked after the exit time of the state. This allows you to ensure that your transition only occurs during a certain portion of the animation.
+> If **Has Exit Time** is enabled for the transition and has one or more conditions, these conditions are only checked after the **exit time** of the state. This allows you to **ensure that your transition only occurs during a certain portion of the animation**.
 
 ### Transition interruption
 Use the Interruption Source and Ordered Interruption properties to control how your transition can be interrupted.
