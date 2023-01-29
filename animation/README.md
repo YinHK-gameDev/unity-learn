@@ -61,4 +61,5 @@ To edit the script:
 - **Blender**
 - **Adobe Mixamo**:   https://www.mixamo.com/#/
 
-
+**用Mixamo自動幫模型綁骨架+動畫--詳細流程教學**
+https://youtu.be/88qbApTkclM
