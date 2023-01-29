@@ -39,10 +39,21 @@ Animation transitions allow the state machine
  
  
 
+### Transition properties
+To view properties for a transition, click on the transition line connecting two states in the Animator window. The properties appear in the Inspector window.
+
+| Property | Function |
+| --- | --- |
+| Has Exit Time | Exit Time is a special transition that doesn’t rely on a parameter. Instead, it relies on the normalized time of the state. Check to make the transition happen at the specific time specified in Exit Time. |
+| Settings | Fold-out menu containing detailed transition settings as below. |
+| Exit Time | If Has Exit Time is checked, this value represents the exact time at which the transition can take effect. This is represented in normalized time (for example, an exit time of 0.75 means that on the first frame where 75% of the animation has played, the Exit Time condition is true). On the next frame, the condition is false.For looped animations, transitions with exit times smaller than 1 are evaluated every loop, so you can use this to time your transition with the proper timing in the animation every loop.Transitions with an Exit Time greater than 1 are evaluated only once, so they can be used to exit at a specific time after a fixed number of loops. For example, a transition with an exit time of 3.5 are evaluated once, after three and a half loops. |
+| Fixed Duration | If the Fixed Duration box is checked, the transition time is interpreted in seconds. If the Fixed Duration box is not checked, the transition time is interpreted as a fraction of the normalized time of the source state. |
+| Transition Duration | The duration of the transition, in normalized time or seconds depending on the Fixed Duration mode, relative to the current state’s duration. This is visualized in the transition graph as the portion between the two blue markers. |
+| Transition Offset | The offset of the time to begin playing in the destination state which is transitioned to. For example, a value of 0.5 means the target state begins playing at 50% of the way through its own timeline. |
+| Interruption Source | Use this to control the circumstances under which this transition may be interrupted (see Transition interruption below). |
+| Ordered Interruption | Determines whether the current transition can be interrupted by other transitions independently of their order (see Transition interruption below). |
+| Conditions | A transition can have a single condition, multiple conditions, or no conditions at all. If your transition has no conditions, the Unity Editor only considers the Exit Time, and the transition occurs when the exit time is reached. If your transition has one or more conditions, the conditions must all be met before the transition is triggered.A condition consists of:- An event parameter (the value considered in the condition).- A conditional predicate (if needed,for example, ‘less than’ or ‘greater than’ for floats).- A parameter value (if needed).If you have Has Exit Time selected for the transition and have one or more conditions, note that the Unity Editor considers whether the conditions are true after the Exit Time. This allows you to ensure that your transition occurs during a certain portion of the animation. |
 
 
 
-
-
-
-
+https://docs.unity3d.com/Manual/class-Transition.html
