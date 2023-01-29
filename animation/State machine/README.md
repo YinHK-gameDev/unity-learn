@@ -2,7 +2,9 @@
 
 
 
-The **Exit** node is used to indicate that a state machine should exit.
+> The **Exit** node is used to indicate that a state machine should exit.
+
+> The **Any State** is a special state which is always present. It exists for the situation where you want to go to a specific state regardless of which state you are currently in. This is a shorthand way of adding the same outward transition to all states in your machine. Note that the special meaning of Any State implies that it cannot be the end point of a transition (ie, jumping to “any state” cannot be used as a way to pick a random state to enter next).
 
 
 
