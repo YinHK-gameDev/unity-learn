@@ -14,13 +14,14 @@ Unity has a rich and sophisticated animation system (sometimes referred to as â€
 
 
 
-
-
-
-
 https://docs.unity3d.com/Manual/AnimationOverview.html
 
 ### Tutotial
+
+https://learn.unity.com/tutorial/may-18-animation#
+
+https://learn.unity.com/tutorial/create-your-first-3d-animations?uv=2020.3&projectId=61b9e300edbc2a24a5bbc17d#619cd5e3edbc2a057ec985c4
+
 https://learn.unity.com/search?k=%5B%22q%3AAnimation%22%5D
 
 https://www.youtube.com/watch?v=vApG8aYD5aI
