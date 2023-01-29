@@ -22,6 +22,9 @@ The controller manages the various **animation states** and the transitions betw
 
 > To focus on an item in the Animator Controller window, select one or multiple states (click or drag a selection box around the states you wish to select), then press the F key to zoom in on the selection.
 
+
+> Press the A key to fit all of the animation states into the Animator Controller view.
+
 https://www.youtube.com/watch?v=S3ys0jCUE9s
 
 
