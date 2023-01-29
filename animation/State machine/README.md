@@ -55,5 +55,31 @@ To view properties for a transition, click on the transition line connecting two
 | Conditions | A transition can have a single condition, multiple conditions, or no conditions at all. If your transition has no conditions, the Unity Editor only considers the Exit Time, and the transition occurs when the exit time is reached. If your transition has one or more conditions, the conditions must all be met before the transition is triggered.A condition consists of:- An event parameter (the value considered in the condition).- A conditional predicate (if needed,for example, ‘less than’ or ‘greater than’ for floats).- A parameter value (if needed).If you have Has Exit Time selected for the transition and have one or more conditions, note that the Unity Editor considers whether the conditions are true after the Exit Time. This allows you to ensure that your transition occurs during a certain portion of the animation. |
 
 
+### Transition interruption
+Use the Interruption Source and Ordered Interruption properties to control how your transition can be interrupted.
+
+**Interruption Source property** \
+The transitions in AnyState are always added first in the queue, then other transitions are queued depending on the value of Interruption Source:
+
+| Value | Function |
+| --- | --- |
+| None | Don’t add any more transitions. |
+| Current State | Queue the transitions from the current state. |
+| Next State | Queue the transitions from the next state. |
+| Current State then Next State | Queue the transitions from the current state, then queue the ones from the next state. |
+| Next State then Current State | Queue the transitions from the next state, then queue the ones from the current state. |
+
+**Ordered Interruption property** \
+
+The property Ordered Interruption changes how the queue is parsed.
+
+| Value | Ends when |
+| --- | --- |
+| Checked | A valid transition or the current transition has been found. |
+| Unchecked | A valid transition has been found. |
+
+> Only an AnyState transition can be interrupted by itself.
+
+
 
 https://docs.unity3d.com/Manual/class-Transition.html
