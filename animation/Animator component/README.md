@@ -21,7 +21,7 @@ If the GameObject is a humanoid character with an Avatar definition, the Avatar 
   - Cull Completely: Animation is completely disabled when renderers are not visible.
   
   
-
+https://docs.unity3d.com/Manual/class-Animator.html
 
 
   
