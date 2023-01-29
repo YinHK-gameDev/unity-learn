@@ -31,3 +31,20 @@ https://www.youtube.com/watch?v=JVFg9g4f-ME
 **To animate 2D:** \
 https://www.youtube.com/watch?v=oebtkjwjkcs
 
+
+### Create your animations
+1.  In the scenes folder, locate and open ChallengeScene_Animation.
+2.  Review the scene and consider the narrative you might be able to communicate through different animations.
+3.  Identify several items that you can animate. You must create a minimum of five keyframed animations, but multiple animations can be on the same object, so long as you create an Animator Controller that will allow someone to see them all.
+4.  Identify a character in the scene that you wish to animate. Source a minimum of three animations online or on the Unity Asset Store.
+5.  Use either the AnimatorControllerTriggers script or the DanceParty script to control the animator with keystrokes.
+6.  Create your keyframed animations and configure the Animator Controller as needed.
+7.  Configure your imported animations for the humanoid animation system and add them to your selected character’s Animator Controller (they’re all using the SharedController Animator Controller from the previous tutorial).
+8.  Once you’ve completed your animations, record a video showing them all off! 
+9.  If you’d like to share your hard work with the community here on Learn, submit your video! 
+
+
+
+
+
+
