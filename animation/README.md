@@ -57,4 +57,8 @@ To edit the script:
 8.  Add the script to the object that the Animator Controller is attached to.
 
 
+### Free animation tools
+- **Blender**
+- **Adobe Mixamo**:   https://www.mixamo.com/#/
+
 
