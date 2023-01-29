@@ -20,4 +20,11 @@ The controller manages the various **animation states** and the transitions betw
 https://www.youtube.com/watch?v=S3ys0jCUE9s
 
 
+###  Animator Override Controller
+It is a type of asset which allows you to extend an existing Animator Controller, replacing the specific animation clips but otherwise retaining the original’s structure, parameters and logic. The difference is the animation clips. 
+
+This allows you to create multiple variants of the same basic state machine, but with each using different sets of animations.
+
+> Reuse the original animation controller from other game object(with same logic, structure and parameters), just override the specific orignal animation clips
+
 
