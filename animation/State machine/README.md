@@ -29,5 +29,20 @@ Animation States are the basic building blocks of an Animation State Machine
 | Transitions | The list of transitions originating from this state. |
  
 
-
 https://docs.unity3d.com/Manual/class-State.html
+
+
+### Animation transitions
+
+Animation transitions allow the state machine
+ to switch or blend from one animation state to another. Transitions define not only how long the blend between states should take, but also under what conditions they should activate. You can set up a transition to occur only when certain conditions are true. To set up these conditions, specify values of parameters in the Animator Controller.
+ 
+ 
+
+
+
+
+
+
+
+
