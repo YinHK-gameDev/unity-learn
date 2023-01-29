@@ -5,6 +5,10 @@ Because of the similarity in bone structure between different humanoid character
 
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
 
+
+### Unity animation for humanoid model
+https://www.youtube.com/watch?v=HPwu7eIwjV8
+
 ### Animation Avatar from Mixamo
 https://www.youtube.com/watch?v=76Lh0UApjNI
 
