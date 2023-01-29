@@ -69,7 +69,7 @@ The transitions in AnyState are always added first in the queue, then other tran
 | Current State then Next State | Queue the transitions from the current state, then queue the ones from the next state. |
 | Next State then Current State | Queue the transitions from the next state, then queue the ones from the current state. |
 
-**Ordered Interruption property** \
+**Ordered Interruption property** 
 
 The property Ordered Interruption changes how the queue is parsed.
 
