@@ -43,8 +43,18 @@ https://www.youtube.com/watch?v=oebtkjwjkcs
 8.  Once you’ve completed your animations, record a video showing them all off! 
 9.  If you’d like to share your hard work with the community here on Learn, submit your video! 
 
+### Trigger animation
 
-
+In the Scripts folder, you’ll find a script called AnimatorControllerTriggers. This script was designed for you to edit so you can trigger animations to occur for your characters and objects based on keyboard input. 
+To edit the script:
+1.  Open AnimatorControllerTriggers in Visual Studio by double-clicking the script in the scripts folder.
+2.  Scroll down to the Update method and find the section that directs you to duplicate the code block.
+3.  Select the code block, being sure to highlight the closing curly brace ( } ), and copy it with Ctrl/Cmd+C
+4.  Paste your new block several lines below the existing code block, but still inside the Update method (stay inside the second to last curly brace in the script).
+5.  Replace the A in Keycode.A with whatever key you wish. You can see a full list of available keys here.
+6.  In the anim.SetTrigger line, replace YOUR_TRIGGER_NAME_HERE_INSIDE_THE_QUOTES with the name of the parameter you wish to have called when the keyboard key is pressed.
+7.  Save the script.
+8.  Add the script to the object that the Animator Controller is attached to.
 
 
 
