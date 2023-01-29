@@ -114,6 +114,8 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 
 ✒️ **Animation tutorial**
 
+**https://learn.unity.com/search?k=%5B%22q%3AAnimation%22%5D**
+
 **https://learn.unity.com/project/creative-core-animation**
 
 **https://learn.unity.com/tutorial/character-animation#**
