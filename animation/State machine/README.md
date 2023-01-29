@@ -36,8 +36,6 @@ https://docs.unity3d.com/Manual/class-State.html
 
 Animation transitions allow the state machine
  to switch or blend from one animation state to another. Transitions define not only how long the blend between states should take, but also under what conditions they should activate. You can set up a transition to occur only when certain conditions are true. To set up these conditions, specify values of parameters in the Animator Controller.
- 
- 
 
 ### Transition properties
 To view properties for a transition, click on the transition line connecting two states in the Animator window. The properties appear in the Inspector window.
@@ -54,11 +52,22 @@ To view properties for a transition, click on the transition line connecting two
 | Ordered Interruption | Determines whether the current transition can be interrupted by other transitions independently of their order (see Transition interruption below). |
 | Conditions | A transition can have a single condition, multiple conditions, or no conditions at all. If your transition has no conditions, the Unity Editor only considers the Exit Time, and the transition occurs when the exit time is reached. If your transition has one or more conditions, the conditions must all be met before the transition is triggered.A condition consists of:- An event parameter (the value considered in the condition).- A conditional predicate (if needed,for example, ‘less than’ or ‘greater than’ for floats).- A parameter value (if needed).If you have Has Exit Time selected for the transition and have one or more conditions, note that the Unity Editor considers whether the conditions are true after the Exit Time. This allows you to ensure that your transition occurs during a certain portion of the animation. |
 
+### Conditions
+A transition can have a single condition, multiple conditions, or no conditions at all. If your transition has no conditions, the Unity Editor only considers the Exit Time, and the transition occurs when the exit time is reached. If your transition has one or more conditions, the conditions must all be met before the transition is triggered.
+
+A condition consists of:
+
+- An event parameter, the value of which is considered in the condition.
+- A conditional predicate, if needed (for example, less or greater for floats).
+- A parameter value, if needed.
+
+> If **Has Exit Time** is enabled for the transition and has one or more conditions, these conditions are only checked after the exit time of the state. This allows you to ensure that your transition only occurs during a certain portion of the animation.
 
 ### Transition interruption
 Use the Interruption Source and Ordered Interruption properties to control how your transition can be interrupted.
 
-**Interruption Source property** \
+**Interruption Source property** 
+
 The transitions in AnyState are always added first in the queue, then other transitions are queued depending on the value of Interruption Source:
 
 | Value | Function |
