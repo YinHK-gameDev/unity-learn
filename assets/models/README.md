@@ -13,6 +13,7 @@ Unity uses the `.fbx` model format. You can also use other common native model f
 https://docs.unity3d.com/Manual/ImportingModelFiles.html
 
 
-
+### Import models from blender
+https://all3dp.com/2/blender-to-unity-how-to-import-blender-models-in-unity/
 
 
