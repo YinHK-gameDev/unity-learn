@@ -10,7 +10,7 @@ To add more polished 3D assets to your final product, create 3D Models, Material
 Unity uses the `.fbx` model format. You can also use other common native model formats (for example, `.max`, `.blend`, `.mb`, `.ma`), and Unity converts them into `.fbx` once they are imported.
 
 
-
+https://docs.unity3d.com/Manual/ImportingModelFiles.html
 
 
 
