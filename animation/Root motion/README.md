@@ -5,9 +5,6 @@ Motion of character’s root node, whether it’s controlled by the animation it
 A transform in an animation hierarchy that allows Unity to establish consistency between Animation clips for a generic model. It also enables Unity to properly blend between Animations that have not been authored “in place” (that is, where the whole Model moves its world position while animating). 
 
 
-https://docs.unity3d.com/Manual/RootMotion.html
-
-
 ### Explain root motion
 Animations set things to a specific value. For example, if a movement animation might start the position.x at 0 and move it to 1 over the course of the animation, but then when the animation loops it will set it to 0 again and teleport back to the start.
 
@@ -25,3 +22,8 @@ https://www.youtube.com/watch?v=9bV0K-pifXE
 https://youtu.be/mNxEetKzc04
 
 
+
+
+
+### Ref
+https://docs.unity3d.com/Manual/RootMotion.html
