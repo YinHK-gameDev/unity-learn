@@ -36,7 +36,7 @@ https://docs.unrealengine.com/4.27/en-US/AnimatingObjects/SkeletalMeshAnimation/
 
 ![](./applyRootMotion.jpg)
 
-
+![](./clips.jpg)
 
 https://read01.com/8PyaeG.html#.Y9dX3XbMJD8
 
