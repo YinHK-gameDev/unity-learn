@@ -33,6 +33,7 @@ https://answers.unity.com/questions/1238987/whats-root-motion-and-how-it-works.h
 https://docs.unrealengine.com/4.27/en-US/AnimatingObjects/SkeletalMeshAnimation/RootMotion/
 
 在很多動畫當中，模型的位置、角度往往會發生變化，我們需要決定是否將模型再動畫中發生的這些變換應用到實際模型。Unity中有兩個跟這個有關的設置。
+![](./applyRootMotion.jpg)
 
 
 
