@@ -52,6 +52,9 @@ The **Animation Clip Editor** settings - **Root Transform Rotation**, **Root Tra
 
 ### Body Transform
 The Body Transform is the mass center of the character. It is used in Mecanim’s retargeting engine and provides the most stable displacement model. The Body Orientation is an average of the lower and upper body orientation relative to the Avatar T-Pose.
+Body Transform不影響模型實際的位置和角度，所以這裡只是純粹的動畫效果，模型的位置和角度參數值不變
+
+https://read01.com/8PyaeG.html
 
 ### Root Transform
 The Root Transform is a projection on the Y plane of the Body Transform and is computed at runtime. At every frame, a change in the Root Transform is computed. This change in transform is then applied to the Game Object to make it move.
@@ -63,6 +66,11 @@ The Root Transform is a projection on the Y plane of the Body Transform and is c
 对于某些技能动画，整个动画是有一定位移的，但是动画的位移是动作设计师在设计时根据动作需要调出来的，位移是跟动作的幅度直接相关和匹配的。那么在释放技能的时候就只需要直接播放动画，只要应用这个 Root Motion 的特性，就可以很好的完成角色在播放动作的同时进行移动，动作播放完毕之后就在动画结束帧角色所在的位置。而不要额外地做计算工作。
 
 http://www.xionggf.com/post/unity3d/generic_animation_root_motion/
+
+Root Transform將影響模型的實際位置和角度（前提是要設置「Apply Root Motion」，如果不設置Apply Root Motion的話，也就是說變換將不應用，場景中的模型位置或角度是不會有變化的（參數值自然也不變），就像一個行走動畫，可能一直在原地行走）。
+
+https://read01.com/8PyaeG.html
+
 
 ### Root Transform Rotation
 - **Bake into Pose**: The orientation will stay on the body transform (or Pose). The Root Orientation will be constant and delta Orientation will be identity. This means that the Game Object will not be rotated at all by that AnimationClip.
