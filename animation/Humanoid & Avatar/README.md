@@ -15,3 +15,15 @@ https://www.youtube.com/watch?v=HPwu7eIwjV8
 https://www.youtube.com/watch?v=76Lh0UApjNI
 
 https://www.youtube.com/watch?v=679WLW2igns
+
+### Retargeting of Humanoid animations
+One of the most powerful features of Mecanim is retargeting of humanoid animations. This means that with relative ease, you can apply the same set of animations to various character models. Retargeting is only possible for humanoid models, where an Avatar has been configured, because this gives us a correspondence between the models’ bone structure.
+
+When working with Mecanim animations, you can expect your scene
+ to contain the following elements:-
+
+- The Imported character model, which has an Avatar on it.
+- The Animator Component, referencing an Animator Controller asset.
+- A set of animation clips, referenced from the Animator Controller.
+- Scripts for the character.
+- Character-related components, such as the Character Controller.
