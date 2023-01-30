@@ -18,6 +18,8 @@ https://forum.unity.com/threads/confused-about-apply-root-motion-in-the-animator
 
 https://youtu.be/Xl_5roq4UlI
 
+https://www.youtube.com/watch?v=9bV0K-pifXE
+
 
 ### Root motion with character controller 
 https://youtu.be/mNxEetKzc04
