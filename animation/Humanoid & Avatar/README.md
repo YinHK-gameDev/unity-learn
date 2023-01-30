@@ -27,3 +27,8 @@ When working with Mecanim animations, you can expect your scene
 - A set of animation clips, referenced from the Animator Controller.
 - Scripts for the character.
 - Character-related components, such as the Character Controller.
+
+https://www.youtube.com/watch?v=fNgPkuMgWFg
+
+https://docs.unity3d.com/Manual/Retargeting.html
+
