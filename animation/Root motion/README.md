@@ -15,6 +15,8 @@ https://forum.unity.com/threads/confused-about-apply-root-motion-in-the-animator
 
 https://youtu.be/Xl_5roq4UlI
 
+https://youtu.be/Kn6jxLWA31M
+
 https://www.youtube.com/watch?v=9bV0K-pifXE
 
 
