@@ -16,4 +16,4 @@ https://docs.unity3d.com/Manual/ImportingModelFiles.html
 ### Import models from blender
 https://all3dp.com/2/blender-to-unity-how-to-import-blender-models-in-unity/
 
-
+https://gamedevacademy.org/how-to-import-blender-models-into-unity-your-one-stop-guide/
