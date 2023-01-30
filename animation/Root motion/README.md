@@ -68,6 +68,12 @@ Most of the AnimationClips will enable this setting. Only clips that will change
 
 - **Offset**: In a similar way to Root Transform Rotation, you can manually adjust the AnimationClip height using the Offset setting.
 
+### Root Transform Position (XZ)
+
+**Bake Into Pose** will usually be used for “Idles” where you want to force the delta Position (XZ) to be 0. It will stop the accumulation of small deltas drifting after many evaluations. It can also be used for a Keyframed clip with Based Upon Original to force an authored position that was set by the artist.
+
+### Loop Pose
+Loop Pose (like Pose Blending in Blend Trees or Transitions) happens in the referential of Root Transform. Once the Root Transform is computed, the Pose becomes relative to it. The relative Pose difference between Start and Stop frame is computed and distributed over the range of the clip from 0–100%
 
 ### Ref
 https://docs.unity3d.com/Manual/RootMotion.html
