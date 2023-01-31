@@ -14,6 +14,21 @@ https://docs.unity3d.com/Manual/ImportingModelFiles.html
 https://docs.unity3d.com/Manual/HOWTO-ImportObjectsFrom3DApps.html
 
 ### Import models from blender
+
+Unity imports Blender (.blend) files through the FBX format, supporting the following:
+
+- All nodes with position, rotation and scale; pivot points and names are also imported
+- Meshes with vertices, polygons, triangles, UVs, and normals
+- Bones
+- Skinned Meshes
+- Animations
+
+#### Limitations
+Textures and diffuse color are not assigned automatically. You can manually assign them by dragging the texture onto the mesh in the Scene Viewin Unity.
+
+Blender does not export the visibility value inside animations in the FBX file.
+
+
 https://all3dp.com/2/blender-to-unity-how-to-import-blender-models-in-unity/
 
 https://gamedevacademy.org/how-to-import-blender-models-into-unity-your-one-stop-guide/
