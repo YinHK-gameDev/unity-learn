@@ -13,6 +13,11 @@ https://docs.unity3d.com/Manual/ImportingModelFiles.html
 
 https://docs.unity3d.com/Manual/HOWTO-ImportObjectsFrom3DApps.html
 
+### Importing a model
+Model files can contain a variety of data, such as meshes, animation rigs and clips, materials and textures.
+
+
+
 ### Import models from blender
 
 Unity imports Blender (.blend) files through the FBX format, supporting the following:
