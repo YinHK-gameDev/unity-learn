@@ -1,5 +1,11 @@
 ## Gameobject
 
+
+### Set game object
+> Declare **`public GameObject <name>`** in script, then drag game object into inspecter inside that GameObject field.
+or
+> Declare **`private GameObject <name>`** in script, then use GameObject.Find( ) method to find out the game object in the hierchy.
+
 ### Creating gameobject
 Some games keep a constant number of objects in the scene, but it is very common for characters, treasures and other object to be created and removed during gameplay. In Unity, 
 a GameObject can be created using the **`Instantiate()`** function which makes a new copy of an existing object. eg:
