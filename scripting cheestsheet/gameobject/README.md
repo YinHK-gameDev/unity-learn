@@ -11,7 +11,7 @@ or
 
 ### Get access component in gameobject
 ```cs
-GameObject.GetComponent<Type >( )
+GameObject.GetComponent<Type >()
 ```
 
 > **GetComponent()**  should be declared in void start( )
