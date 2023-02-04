@@ -19,5 +19,18 @@ void Start()
 }
 ```
 
+### Destroy GameObjects
 
+To destroy game object/component, use `Destroy()` function.
+```cs
+//destroy game objects
+void OnCollisionEnter(Collision otherObj) 
+{
+    if (otherObj.gameObject.tag == "Missile") 
+    {
+        Destroy(gameObject,.5f);
+    }
+}
+```
 
+https://docs.unity3d.com/ScriptReference/Object.Destroy.html
