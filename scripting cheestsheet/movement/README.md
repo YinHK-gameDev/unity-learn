@@ -1,6 +1,6 @@
 ## Movement
 
-`transform.Translate(Vector3 translation`
+**`transform.Translate(Vector3 translation`**
 
 ![](./translate().png)
 
