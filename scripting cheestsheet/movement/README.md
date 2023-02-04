@@ -1,5 +1,6 @@
 ## Movement
 
+### Move game object(translate)
 **`transform.Translate(Vector3 translation)`**
 
 ![](./translate().png)
