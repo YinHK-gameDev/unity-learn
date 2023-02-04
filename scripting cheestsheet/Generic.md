@@ -20,3 +20,4 @@ void FuncName<T>()
 ```cs
 class  GenericClassName<T>  { .... }
 ```
+[Generic Classes - C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-classes)
