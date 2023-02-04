@@ -35,3 +35,12 @@ void OnCollisionEnter(Collision otherObj)
 ```
 
 https://docs.unity3d.com/ScriptReference/Object.Destroy.html
+
+### Clone the existing GameObject
+`Instantiate()`  function is used to clone the object original and return the clones. Most commonly used to instantiate projectiles, AI Enemies, particle explosions or wrecked object replacements.
+https://docs.unity3d.com/ScriptReference/Object.Instantiate.html
+
+
+
+
+
