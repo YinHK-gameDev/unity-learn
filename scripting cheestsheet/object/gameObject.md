@@ -17,6 +17,27 @@ Returns the component of Type type if the game object has one attached, null if 
   
 https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html
 
+### Accessing other game objects
+add a public GameObject variable to the script
+eg:
+```cs
+  public class Enemy : MonoBehaviour 
+  {
+
+    public GameObject player;
+    
+    void Start() 
+    {
+        // Start the enemy ten units behind the player character.
+        transform.position = player.transform.position - Vector3.forward * 10f;
+    }
+  }
+```
+
+Then you will see the is game object field show on inspector,
+drag the game object in to inspectpr, the public game object field
+  
+  
 ### Access parent/child gameobject
 
 ➡️ **1. 取得父物件**
