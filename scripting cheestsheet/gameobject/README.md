@@ -14,7 +14,7 @@ or
 GameObject.GetComponent<Type >()
 ```
 
-> **GetComponent()**  should be declared in void start( )
+> **GetComponent()**  should be declared in **`void start()`**
 
 This returns the component of Type type if the game object has one attached (inspecter 中的component).
 
