@@ -10,6 +10,8 @@
 #### 3D Avatar creator for game
 **https://readyplayer.me/developers**
 
+**https://docs.readyplayer.me/ready-player-me/integration-guides/unity-sdk**
+
 **https://youtu.be/qtHEBDOaCPE**
 
 ### Asset processing
