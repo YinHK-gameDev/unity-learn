@@ -1,6 +1,7 @@
 ## Movement
 
-
+`transform.Translate(Vector3 translation`
+![](./translate().png)
 
 ### Basic movement from user input
 
