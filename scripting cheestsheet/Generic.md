@@ -10,7 +10,7 @@ A generic method is a method that is **declared with type parameters** The Unity
 ```csharp
 //generic function
 void FuncName<T>()
-//**return type** = T/void , **parameter type** = T
+//return type = T/void , parameter type = T
 ```
 
 [Generic Methods - C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-methods)
