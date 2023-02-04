@@ -6,7 +6,7 @@ You can attach a script by dragging the script asset to a GameObject in the hier
  of the GameObject that is currently selected. 
 
 ### Declare variable 
-When declare variables or array, it must specify its data type:   **value type** (eg: string/float…) or **reference type** ( class eg: `Transform/Gameobject`) .
+When declare variables or array, it must specify its data type:   **value type** (eg: string/float…) or **reference type** ( class eg: `Transform/Gameobject`).
 
 ### Debug
 ```cs
