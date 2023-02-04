@@ -5,6 +5,22 @@
 
 ![](./translate().png)
 
+
+### Moving a game object:(using AddForce)
+
+```cs
+//using rigidbody and physic
+playerRb = GetComponent<Rigidbody>();
+
+//input
+float horizontalInput = Input.GetAxis(“Horizontal”);
+float verticalInput = Input.GetAxis(“Vertical”);
+
+//move
+playerRb.AddForce(Vector3.forward * speed * verticalInput);
+playerRb.AddForce(Vector3.right * speed * horizontalInput);
+```
+
 ### Basic movement from user input
 
 - Declare a new `private` float speed variable
