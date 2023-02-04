@@ -18,8 +18,10 @@ using velocity method
 ```cs
 private float jumpSpeed = 40f;
 
-  if (Input.GetKeyDown("space") ) {  
-          if(isGround( )) {
+  if (Input.GetKeyDown("space") ) 
+  {  
+          if(isGround( )) 
+	  {
 	          rigidbody2d.velocity = Vector2.up * jumpSpeed;
 	          Debug.Log("Pressed primary button.");
           }
