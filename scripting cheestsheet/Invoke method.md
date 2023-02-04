@@ -42,3 +42,51 @@ public class ExampleScript : MonoBehaviour
 https://docs.unity3d.com/ScriptReference/MonoBehaviour.Invoke.html
 
 
+
+### Invokerepeating()
+Invokes the method methodName in time seconds, then repeatedly every repeatRate seconds.
+> Note : This does not work if you set the time scale to 0.
+
+
+```cs
+InvokeRepeating(string methodName, float time, float repeatRate)
+```
+
+```cs 
+using UnityEngine;
+using System.Collections.Generic;
+
+// Starting in 2 seconds.
+// a projectile will be launched every 0.3 seconds
+
+public class ExampleScript : MonoBehaviour
+{
+    public Rigidbody projectile;
+
+    void Start()
+    {
+        InvokeRepeating("LaunchProjectile", 2.0f, 0.3f);
+    }
+
+    void LaunchProjectile()
+    {
+        Rigidbody instance = Instantiate(projectile);
+
+        instance.velocity = Random.insideUnitSphere * 5;
+    }
+}
+```
+
+
+
+https://docs.unity3d.com/ScriptReference/MonoBehaviour.InvokeRepeating.html
+
+
+
+
+
+
+
+
+
+
