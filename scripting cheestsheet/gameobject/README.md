@@ -18,6 +18,8 @@ GameObject.GetComponent<Type >()
 
 This returns the component of Type type if the game object has one attached (inspecter 中的component).
 
+https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html
+
 ### Creating gameobject
 Some games keep a constant number of objects in the scene, but it is very common for characters, treasures and other object to be created and removed during gameplay. In Unity, 
 a GameObject can be created using the **`Instantiate()`** function which makes a new copy of an existing object. eg:
