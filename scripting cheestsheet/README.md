@@ -5,7 +5,10 @@ Unity allows you to create your own Components using scripts. These allow you to
 You can attach a script by dragging the script asset to a GameObject in the hierarchy panel or to the inspector
  of the GameObject that is currently selected. 
 
+### Declare variable 
+When declare variables or array, it must specify its data type:   **value type** (eg: string/float…) or **reference type** ( class eg: `Transform/Gameobject`) .
 
+### Debug
 ```cs
 // Use this for initialization
 void Start () 
