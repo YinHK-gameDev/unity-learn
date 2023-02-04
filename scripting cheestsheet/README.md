@@ -5,8 +5,11 @@ Unity allows you to create your own Components using scripts. These allow you to
 You can attach a script by dragging the script asset to a GameObject in the hierarchy panel or to the inspector
  of the GameObject that is currently selected. 
 
-### Declare variable 
+### Declare variable/array
 When declare variables or array, it must specify its data type:   **value type** (eg: string/float…) or **reference type** ( class eg: `Transform/Gameobject`).
+
+**public variable/array**:
+Inside script set variable/array 做`public`, 在unity inspector 會顯示該variable/array, 並可於inspector 修改其value, 作更改. `private` variable can’t.  Value of variable/array in inspector can override that in script.
 
 ### Debug
 ```cs
