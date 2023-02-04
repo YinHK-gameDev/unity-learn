@@ -21,10 +21,24 @@ This returns the component of Type type if the game object has one attached (ins
 https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html
 
 ### SetActive
+
+```cs
+GameObject.SetActive
+```
 > use to set game object visible and active in the scene or not.
 
 https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
 
+
+### Find specific Game object 
+
+- **`GameObject.Find()`**
+  https://docs.unity3d.com/ScriptReference/GameObject.Find.html
+- **`GameObject.FindWithTag()`**
+  https://docs.unity3d.com/ScriptReference/GameObject.FindWithTag.html
+- **`GameObject.CompareTag()`**
+  https://docs.unity3d.com/ScriptReference/GameObject.CompareTag.html
+  
 
 ### Creating gameobject
 Some games keep a constant number of objects in the scene, but it is very common for characters, treasures and other object to be created and removed during gameplay. In Unity, 
