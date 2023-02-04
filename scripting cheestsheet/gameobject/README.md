@@ -18,10 +18,11 @@ void Start()
 
 }
 ```
+https://docs.unity3d.com/2017.4/Documentation/Manual/CreateDestroyObjects.html
 
 ### Destroy GameObjects
 
-To destroy game object/component, use `Destroy()` function.
+To destroy game object/component, use **`Destroy()`** function.
 ```cs
 //destroy game objects
 void OnCollisionEnter(Collision otherObj) 
