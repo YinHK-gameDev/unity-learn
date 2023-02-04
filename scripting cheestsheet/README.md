@@ -23,6 +23,24 @@ void Start ()
 > **`Debug.Log`** is a simple command that just prints a message to Unity’s console output. If you press Play now, you should see the message at the bottom of the main Unity editor window and in the Console window (menu: Window > General > Console
 ).
 
+### How to access another script / get access variable/method from other script?
+從script B access variables/method from script A, the variable/method to be accessed must be public,  declare class variable in script B,
+```cs
+private  scriptName/className  variableName;
+```
+- If both scripts are on the same GameObject, you can use this:
+  ```cs
+   gameObject.GetComponent<Script name>();
+  ```
+- If the scripts are on different GameObjects you can do this:
+  ```cs
+   GameObject.Find("name Of Object").GetComponent<Script name>();
+  ```
+  or create  **`public GameObject variable's name`**  then drag the game object into inspecter.
+  ```cs
+   variable’s name.GetComponent<Script name>();
+  ```
+
 
 ### Life cycle
 ![](./monobehaviour_flowchart.svg)
