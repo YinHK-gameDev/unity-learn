@@ -11,7 +11,8 @@ public GameObject enemy;
 void Start() 
 {
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) 
+    {
         Instantiate(enemy);
     }
 
