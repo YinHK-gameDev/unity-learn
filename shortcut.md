@@ -34,4 +34,19 @@
 | Version control | Ctrl+0 |
 | Console | Ctrl+Shift+C |
 
-
+|Edit||
+| --- | --- |
+| Undo | Ctrl+Z |
+| Redo (MacOS) | Ctrl+Shift+Z |
+| Redo (Windows) | Ctrl+Y |
+| Cut | Ctrl+X |
+| Copy | Ctrl+C |
+| Paste | Ctrl+V |
+| Duplicate | Ctrl+D |
+| Delete | Shift+Del |
+| Frame center selection | F |
+| Find | Ctrl+F |
+| Select all | Ctrl+A |
+| Play | Ctrl+P |
+| Pause | Ctrl+Shift+P |
+| Step | Ctrl+Alt+P |
