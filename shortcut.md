@@ -20,3 +20,18 @@
 | Move to view | Ctrl+Alt+F |
 | Align with view | Ctrl+Shift+F |
 | Locks the scene view camera to the selected GameObject | Shift+F |
+
+|Window||
+| --- | --- |
+| Scene | Ctrl+1 |
+| Game | Ctrl+2 |
+| Inspector | Ctrl+3 |
+| Hierarchy | Ctrl+4 |
+| Project | Ctrl+5 |
+| Animation | Ctrl+6 |
+| Profiler | Ctrl+7 |
+| Asset store | Ctrl+9 |
+| Version control | Ctrl+0 |
+| Console | Ctrl+Shift+C |
+
+
