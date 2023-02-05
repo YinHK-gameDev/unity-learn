@@ -60,5 +60,14 @@
 | --- | --- |
 | Refresh | Ctrl+R |
 
-
-
+|Animation||
+| --- | --- |
+| First keyframe | Shift+ , |
+| Key modified | Shift+K |
+| Key selected | K |
+| Last keyframe | Shift+ . |
+| Next frame | . |
+| Next keyframe | Alt+ . |
+| Play animation | Space |
+| Previous frame | , |
+| Previous keyframe | Alt+ , |
