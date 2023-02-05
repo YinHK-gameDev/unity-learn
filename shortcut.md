@@ -56,4 +56,9 @@
 | Load selection 1-9 | Ctrl+Shift+(1-9) |
 | Save selection 1-9 | Ctrl+Altt+(1-9) |
 
+|Assets||
+| --- | --- |
+| Refresh | Ctrl+R |
+
+
 
