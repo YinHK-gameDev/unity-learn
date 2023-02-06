@@ -13,5 +13,5 @@ Many systems in Unity can precompute information about static GameObjects in the
 
 The Static Editor Flags checkbox and drop-down menu, as seen when viewing a GameObject in the Inspector
 
-
+![](./GameObjectStaticDropDownMenu1.png)
 
