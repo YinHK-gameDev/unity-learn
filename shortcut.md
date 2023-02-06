@@ -78,3 +78,11 @@
 | Play animation | Space |
 | Previous frame | , |
 | Previous keyframe | Alt+ , |
+
+**Movement shortcut**
+| Action | 3-button mouse | 2-button mouse or track-pad | Mac with only one mouse button or track-pad |
+| --- | --- | --- | --- |
+| Move | Hold Alt+middle-click, then drag | Hold Alt+Control+left-click, then drag | Hold Option+Command+left-click, then drag |
+| Orbit (Not available in 2D mode) | Hold Alt+left-click, then drag | Hold Alt+left-click, then drag | Hold Option+left-click, then drag |
+| Zoom | Use the scroll wheel, or hold Alt+right-click, then drag | Hold Alt+right-click, then drag | Use the two-finger swipe method to scroll in and out, or hold Option+Control+left-click, then drag |
+| Change speed (only available in Flythrough mode) | Use the scroll wheel while moving. | Drag with two fingers while moving | Drag with two fingers while moving |
