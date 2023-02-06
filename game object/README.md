@@ -17,7 +17,7 @@ The Static Editor Flags checkbox and drop-down menu, as seen when viewing a Game
 
 > You can also set the Static Editor Flags property in code, using the `GameObjectUtility.SetStaticEditorFlags` API, and the `GameObject.isStatic`.
 
-> **Note**: all moving dynamic objects should have a colider. If game object doesn't contain a colider, it is completely static.
+> **Note**: all moving dynamic objects should have a colider. **If game object doesn't contain a colider, it is completely static**.
 
 | Property: | Function: |
 | --- | --- |
