@@ -20,6 +20,13 @@
 | Move to view | Ctrl+Alt+F |
 | Align with view | Ctrl+Shift+F |
 | Locks the scene view camera to the selected GameObject | Shift+F |
+| For move | W |
+| For rotate | E |
+| For scale | F |
+| For react transform | T |
+| For transform | Y |
+| Focus on game obect | select gameobject + press F |
+| To lock the view to the GameObject even when the GameObject is moving |  Shift+F(or Edit > Lock View to Selected.) |
 
 |Window||
 | --- | --- |
