@@ -26,6 +26,12 @@ The Animation System works with two types of models:
 - A Humanoid model is a specific structure, containing at least 15 bones organized in a way that loosely conforms to an actual human skeleton. This page contains guidance on importing this type of model.
 - A Generic model is everything else. This might be anything from a teakettle to a dragon.
 
+
+#### Set up the Avatar
+From the **Rig** tab of the Inspector window, **set the Animation Type to Humanoid**. By default, the Avatar Definition property is set to **Create From This Model**. If you keep this option, Unity attempts to map the set of bones defined in the file to a Humanoid Avatar. If you have 3d model and created Avatar already, and only import the additional animation to that model/avatar, you can choose **copy from other Avatar** in the Avatar definition and find the source of Avatar.
+
+
+
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
 
 ### Retargeting of Humanoid animations
