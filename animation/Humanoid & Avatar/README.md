@@ -30,7 +30,7 @@ The Animation System works with two types of models:
 #### Set up the Avatar
 From the **Rig** tab of the Inspector window, **set the Animation Type to Humanoid**. By default, the Avatar Definition property is set to **Create From This Model**. If you keep this option, Unity attempts to map the set of bones defined in the file to a Humanoid Avatar. If you have 3d model and created Avatar already, and only import the additional animation to that model/avatar, you can choose **copy from other Avatar** in the Avatar definition and find the source of Avatar.
 
-
+![](./Rig-2.png)
 
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
 
