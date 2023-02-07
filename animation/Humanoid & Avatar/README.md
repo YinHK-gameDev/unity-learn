@@ -21,6 +21,11 @@ https://www.youtube.com/watch?v=679WLW2igns
 
 ### Importing a model with humanoid animations
 
+The Animation System works with two types of models:
+
+- A Humanoid model is a specific structure, containing at least 15 bones organized in a way that loosely conforms to an actual human skeleton. This page contains guidance on importing this type of model.
+- A Generic model is everything else. This might be anything from a teakettle to a dragon.
+
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
 
 ### Retargeting of Humanoid animations
