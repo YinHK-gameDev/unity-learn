@@ -9,6 +9,7 @@ When you create an Avatar in the **Rig** tab, you can configure the Avatar.
 
 
 ![](./rig_tab.png)
+
 ![](./Avatar.png)
 
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
