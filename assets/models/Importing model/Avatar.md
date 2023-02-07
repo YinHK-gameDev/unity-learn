@@ -7,4 +7,8 @@ For this reason, whether or not the automatic Avatar creation succeeds, you shou
 
 When you create an Avatar in the **Rig** tab, you can configure the Avatar.
 
+
+![](./rig_tab.png)
+
+
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
