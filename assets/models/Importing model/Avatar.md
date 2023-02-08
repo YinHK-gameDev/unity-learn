@@ -60,3 +60,12 @@ Two ways to define which parts of your animation should be masked:
 1. By selecting from a **Humanoid body** map.
 2. By choosing which bones to include or exclude from a **Transform hierarchy**.
 
+
+#### Humanoid body 
+If your animation uses a Humanoid Avatar, you can select or deselect portions of the simplified humanoid body diagram to indicate where to mask the animation
+
+To allow the body parts to be animated in the clip(**Green color**). \
+To exclude the body parts to be animated in the clip(**Red color**).
+
+
+
