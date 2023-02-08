@@ -45,6 +45,7 @@ To create an empty Avatar Mask Asset, you can either:
 
 ![](./ConfiguringtheAvatar-Mask.png)
 
+https://youtu.be/1dMoRECcstQ
 
 https://youtu.be/E8VJ7wm1mcA
 
