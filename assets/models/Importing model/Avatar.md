@@ -43,6 +43,9 @@ To create an empty Avatar Mask Asset, you can either:
 - Choose **Create > Avatar Mask** from the **Assets** menu.
 - Click the Model object you want to define the mask on in the **Project view**, and then right-click and choose **Create > Avatar Mask**.
 
+![](./ConfiguringtheAvatar-Mask.png)
+
+
 https://youtu.be/E8VJ7wm1mcA
 
 https://docs.unity3d.com/Manual/class-AvatarMask.html
