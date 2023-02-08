@@ -81,7 +81,7 @@ If your animation does not use a Humanoid Avatar, or if you want more detailed c
 2. Click the Import Skeleton button. The hierarchy of the avatar appears in the inspector.
 3. You can check each bone in the hierarchy to use as your mask
 
-![](./)
+![](./AvatarMaskInspectorTransform.png)
 
 
 
