@@ -49,6 +49,8 @@ https://youtu.be/1dMoRECcstQ
 
 https://youtu.be/E8VJ7wm1mcA
 
+https://www.youtube.com/watch?v=NiCcXaFaKoY
+
 https://docs.unity3d.com/Manual/class-AvatarMask.html
 
 
