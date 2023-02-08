@@ -46,6 +46,7 @@ To create Avatar Mask:
 
 When import animation/model, in animation tab scroll down you can find Mask field. You can choose to "**Create from this model**" or "**Copy from other mask**". 
 
+![](./mask_definition.png)
 
 #### Using mask in animation controller at run time
 In some cases, import masking may not be suitable for your purposes. In that case, you can apply a mask at run time by creating an **Avatar Mask Asset**, and using it in the **layer** settings of your Animator Controller.
