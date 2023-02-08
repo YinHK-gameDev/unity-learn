@@ -72,6 +72,8 @@ To exclude the body parts to be animated in the clip(**Red color**).
 
 You can also toggle Inverse Kinematics__ (IK)__ for hands and feet, which determines whether or not to include IK curves in animation blending.
 
+![](./AvatarMaskInspectorHumanoid.png)
+
 #### Transform hierarchy
 If your animation does not use a Humanoid Avatar, or if you want more detailed control over which individual bones are masked, you can select or deselect portions of the Model’s transform hierarchy:
 
@@ -79,7 +81,7 @@ If your animation does not use a Humanoid Avatar, or if you want more detailed c
 2. Click the Import Skeleton button. The hierarchy of the avatar appears in the inspector.
 3. You can check each bone in the hierarchy to use as your mask
 
-
+![](./)
 
 
 
