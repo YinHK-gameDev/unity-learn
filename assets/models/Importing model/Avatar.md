@@ -30,6 +30,12 @@ If the bone assignment is correct, but the character is not in the correct pose,
 ### Creating an Avatar Mask
 Masking allows you to discard some of the animation data within a clip, allowing the clip to animate only parts of the object or character rather than the entire thing.
 
+You can apply masking to animation clips either during 
+- **import time**, or 
+- at **runtime**
+
+Masking during **import time** is preferable, because it allows the discarded animation data to be omitted from your build, making the files smaller and therefore using less memory. It also makes for faster processing because there is less animation data to be blended at runtime.
+
 To create an empty Avatar Mask Asset, you can either:
 
 - Choose **Create > Avatar Mask** from the **Assets** menu.
