@@ -22,4 +22,9 @@ If the model does not yield a valid match, you can use a similar process to the 
 If automapping fails completely or partially, you can manually assign bones by either dragging them from the Scene
  view or from the Hierarchy view. If Unity thinks a bone fits, it appears in green in the Avatar Mapping tab; otherwise it appears in red.
 
+
+The **T-pose** is the default pose required by Unity animation and is the recommended pose to model in your 3D modeling application. However, if you did not use the T-pose to model your character and the animation does not work as expected, you can select Reset from the Pose drop-down menu.
+
+
+
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
