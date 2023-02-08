@@ -30,6 +30,11 @@ If the bone assignment is correct, but the character is not in the correct pose,
 ### Creating an Avatar Mask
 Masking allows you to discard some of the animation data within a clip, allowing the clip to animate only parts of the object or character rather than the entire thing.
 
+To create an empty Avatar Mask Asset, you can either:
+
+- Choose **Create > Avatar Mask** from the **Assets** menu.
+- Click the Model object you want to define the mask on in the **Project view**, and then right-click and choose **Create > Avatar Mask**.
+
 https://youtu.be/E8VJ7wm1mcA
 
 https://docs.unity3d.com/Manual/class-AvatarMask.html
