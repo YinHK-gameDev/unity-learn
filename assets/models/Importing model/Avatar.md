@@ -31,6 +31,8 @@ https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
 ### Creating an Avatar Mask
 Masking allows you to discard some of the animation data within a clip, **allowing the clip to animate only parts of the object** or character rather than the entire thing.
 
+Using avatar masks is to reduce memory overheads since body parts that are not active do not need their associated animation curves. Also, the unused curves need not be calculated during playback which will tend to reduce the CPU overhead of the animation.
+
 You can apply masking to animation clips either during 
 - **import time**, or 
 - at **runtime**
@@ -53,6 +55,8 @@ https://youtu.be/E8VJ7wm1mcA
 https://www.youtube.com/watch?v=NiCcXaFaKoY
 
 https://docs.unity3d.com/Manual/class-AvatarMask.html
+
+> Mask assets can be used in Animator Controllers, when specifying Animation Layers to apply masking at runtime, or in the import settings of of your animation files to apply masking during to the import animation.
 
 ### Avatar Mask window
 Two ways to define which parts of your animation should be masked:
