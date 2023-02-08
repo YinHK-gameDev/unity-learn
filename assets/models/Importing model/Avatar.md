@@ -25,6 +25,6 @@ If automapping fails completely or partially, you can manually assign bones by e
 
 The **T-pose** is the default pose required by Unity animation and is the recommended pose to model in your 3D modeling application. However, if you did not use the T-pose to model your character and the animation does not work as expected, you can select Reset from the Pose drop-down menu.
 
-
+If the bone assignment is correct, but the character is not in the correct pose, you will see the message "**Character not in T-Pose**". You can try to fix that by choosing **Enforce T-Pose** from the Pose menu. If the pose is still not correct, you can manually rotate the remaining bones into a T-pose.
 
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
