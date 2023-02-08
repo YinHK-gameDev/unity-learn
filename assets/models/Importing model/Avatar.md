@@ -32,6 +32,7 @@ Masking allows you to discard some of the animation data within a clip, allowing
 
 https://youtu.be/E8VJ7wm1mcA
 
+https://docs.unity3d.com/Manual/class-AvatarMask.html
 
 
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
