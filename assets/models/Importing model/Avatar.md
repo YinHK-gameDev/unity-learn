@@ -28,13 +28,15 @@ The **T-pose** is the default pose required by Unity animation and is the recomm
 If the bone assignment is correct, but the character is not in the correct pose, you will see the message "**Character not in T-Pose**". You can try to fix that by choosing **Enforce T-Pose** from the Pose menu. If the pose is still not correct, you can manually rotate the remaining bones into a T-pose.
 
 ### Creating an Avatar Mask
-Masking allows you to discard some of the animation data within a clip, allowing the clip to animate only parts of the object or character rather than the entire thing.
+Masking allows you to discard some of the animation data within a clip, **allowing the clip to animate only parts of the object** or character rather than the entire thing.
 
 You can apply masking to animation clips either during 
 - **import time**, or 
 - at **runtime**
 
 Masking during **import time** is preferable, because it allows the discarded animation data to be omitted from your build, making the files smaller and therefore using less memory. It also makes for faster processing because there is less animation data to be blended at runtime.
+
+In some cases, import masking may not be suitable for your purposes. In that case, you can apply a mask at runtime by creating an **Avatar Mask Asset**, and using it in the **layer** settings of your Animator Controller.
 
 To create an empty Avatar Mask Asset, you can either:
 
