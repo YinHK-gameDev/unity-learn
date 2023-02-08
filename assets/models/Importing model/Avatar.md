@@ -55,5 +55,8 @@ https://www.youtube.com/watch?v=NiCcXaFaKoY
 
 https://docs.unity3d.com/Manual/class-AvatarMask.html
 
-
+### Avatar Mask window
+Two ways to define which parts of your animation should be masked:
+1. By selecting from a **Humanoid body** map.
+2. By choosing which bones to include or exclude from a **Transform hierarchy**.
 
