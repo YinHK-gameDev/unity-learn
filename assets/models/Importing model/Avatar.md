@@ -60,6 +60,12 @@ To create an empty Avatar Mask Asset, you can either:
 
 ![](./ConfiguringtheAvatar-Mask.png)
 
+When clicking the gear wheel icon next to the layer from Animation Layers in Animation controller, it shows layer setting. Then you can add avatar masks to the animation layer.
+
+
+
+The Mask property is to specify the mask used on this layer. For example if you wanted to play a throwing animation on just the upper body of your model, while having your character also able to walk, run or stand still at the same time, you would use a mask on the layer which plays the throwing animation where the upper body sections are defined.
+
 https://youtu.be/1dMoRECcstQ
 
 https://youtu.be/E8VJ7wm1mcA
