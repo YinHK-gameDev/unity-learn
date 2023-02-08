@@ -40,6 +40,11 @@ You can apply masking to animation clips either during
 #### Using mask while import animation
 Masking during **import time** is preferable, because it allows the discarded animation data to be omitted from your build, making the files smaller and therefore using less memory. It also makes for faster processing because there is less animation data to be blended at runtime.
 
+To create Avatar Mask:
+
+When import animation/model, in animation tab scroll down you can find Mask field. You can choose to "**Create from this model**" or "**Copy from other mask**". 
+
+
 #### Using mask in animation controller at run time
 In some cases, import masking may not be suitable for your purposes. In that case, you can apply a mask at run time by creating an **Avatar Mask Asset**, and using it in the **layer** settings of your Animator Controller.
 
