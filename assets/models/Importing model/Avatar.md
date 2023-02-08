@@ -40,6 +40,8 @@ You can apply masking to animation clips either during
 #### Using mask while import animation
 Masking during **import time** is preferable, because it allows the discarded animation data to be omitted from your build, making the files smaller and therefore using less memory. It also makes for faster processing because there is less animation data to be blended at runtime.
 
+![](./masks.png)
+
 To create Avatar Mask:
 
 When import animation/model, in animation tab scroll down you can find Mask field. You can choose to "**Create from this model**" or "**Copy from other mask**". 
