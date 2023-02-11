@@ -68,6 +68,25 @@ Open the Avatar configuration.
 
 > Only available if the Avatar Definition is set to Create From This Model.
 
+#### Skin Weights
+This property is identical for both Humanoid and Generic Models. See the documentation on Skin Weights above for information about it.
+
+#### Optimize Game Object
+emove and store the GameObject Transform hierarchy of the imported character in the Avatar and Animator component. If enabled, the SkinnedMeshRenderers of the character use the Unity animation system’s internal skeleton, which improves the performance of the animated characters.
+
+#### Extra Transforms to Expose
+Specify which Transform paths you want Unity to ignore when Optimize Game Object is enabled. For more information, see Including extra Transforms.
+
+> This section only appears when Optimize Game Object is enabled.
+
+#### Extra Transforms
+When you enable the Optimize Game Object property, Unity ignores any Transform which is part of the hierarchy but is not mapped in the Avatar, in order to improve CPU performance. However, you can mark specific nodes in the GameObject hierarchy to include in calculations using the Extra Transforms to Expose section:
+
+The Extra Transforms to Expose property appears when Optimize Game Objects is enabled
+
+
+
+
 
 
 https://docs.unity3d.com/Manual/FBXImporter-Rig.html
