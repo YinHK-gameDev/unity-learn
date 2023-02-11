@@ -17,7 +17,11 @@ Generic Animations do not use Avatars like Humanoid animations
 
 Specifying the root node helps Unity determine between movement of the bones relative to each other, and motion of the Root node in the world
 
+#### Avatar Definition: 
+Choose where to get the Avatar definition.
 
+- Create from this model: Create an Avatar based on this model
+- Copy from Other Avatar: Point to an Avatar set up on another model.
 
 
 https://docs.unity3d.com/Manual/FBXImporter-Rig.html
