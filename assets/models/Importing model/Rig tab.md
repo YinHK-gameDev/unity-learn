@@ -23,5 +23,41 @@ Choose where to get the Avatar definition.
 - Create from this model: Create an Avatar based on this model
 - Copy from Other Avatar: Point to an Avatar set up on another model.
 
+#### Root node
+Select the bone to use as a root node for this Avatar.
+
+#### Source
+Copy another Avatar with an identical rig to import its animation clips.
+
+> This setting is only available if you set the Avatar Definition to Copy from Other Avatar.
+
+#### Skin Weights	
+Set the maximum number of bones that can influence a single vertex.
+
+- Standard (4 Bones): Use a maximum influence of four bones. This is the default, and is recommended for performance.
+- Custom: Set your own maximum number of bones. When you select this option, the Max Bones/Vertex and Max Bone Weight properties appear.
+
+#### Max Bones/Vertex
+Set the maximum number of bones per vertex to influence a given vertex. You can set between 1 and 32 bones per vertex, but the higher the number of bones you use to influence a vertex, the greater the performance cost.
+
+This setting is only available you set the Skin Weights property to Custom.
+
+#### Max Bone Weight
+Set the bottom threshold for considering bone weights. The weighting calculation ignores anything smaller than this value, and Unity scales up the bone weights higher than this value to a total of 1.0.
+
+This setting is only available if the Skin Weights property is set to Custom.
+
+#### Optimize Game Object
+Remove and store the GameObject Transform hierarchy of the imported character in the Avatar and Animator component. If enabled, the SkinnedMeshRenderers of the character use the Unity animation system’s internal skeleton, which improves the performance of the animated characters.
+
+Only available if the Avatar Definition is set to Create From This Model.
+
+#### Extra Transforms to Expose
+Specify which Transform paths you want Unity to ignore when Optimize Game Object is enabled. For more information, see Including extra Transforms.
+
+This section only appears when Optimize Game Object is enabled.
+
+
+
 
 https://docs.unity3d.com/Manual/FBXImporter-Rig.html
