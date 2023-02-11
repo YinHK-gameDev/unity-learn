@@ -32,7 +32,12 @@ The following Light types are supported:
 - Directional
 - Area
 
-
+| Property: | Function: |
+| --- | --- |
+| Range | The FarAttenuationEndValue is used if UseFarAttenuation is enabled. FarAttenuationEndValue does not support animation. |
+| Color | Supports animation. |
+| Intensity | Supports animation. |
+| Spot Angle | Supports animation. Only available for Spot lights. |
 
 
 
