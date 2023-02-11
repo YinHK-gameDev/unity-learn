@@ -58,6 +58,16 @@ Specify which Transform paths you want Unity to ignore when Optimize Game Object
 This section only appears when Optimize Game Object is enabled.
 
 
+### Humanoid animation types
+Your rig is humanoid (it has two legs, two arms and a head)
+
+Using **Unity’s Humanoid animation** features is to set up and configure an Avatar. Unity uses the Avatar to map the simplified humanoid bone structure to the actual bones present in the Model’s skeleton.
+
+#### Configure…
+Open the Avatar configuration.
+
+> Only available if the Avatar Definition is set to Create From This Model.
+
 
 
 https://docs.unity3d.com/Manual/FBXImporter-Rig.html
