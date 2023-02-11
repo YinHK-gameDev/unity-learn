@@ -42,7 +42,7 @@ The following Light types are supported:
 
 ### Meshes
 
-
+![](./mesh_property.png)
 
 
 
