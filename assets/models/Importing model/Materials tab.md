@@ -28,6 +28,17 @@ Define a naming strategy for the Materials.
 | From Model’s Material | Use the name of the imported Material to name the Material. |
 | Model Name + Model’s Material | Use the name of the Model file in combination with the name of the imported Material to name the Material. |
 
+#### Search
+Define where Unity tries to locate existing Materials when it uses the name defined by the Naming option.
+
+| Property | Function |
+| --- | --- |
+| Local Materials Folder | Find existing Materials in the local Materials subfolder, which is in the same folder as the Model file). |
+| Recursive-Up | Find existing Materials in all Materials subfolders in all parent folders up to the Assets folder. |
+| Project-Wide | Find existing Materials in all Unity Project folders. |
+
+
+
 https://docs.unity3d.com/Manual/FBXImporter-Materials.html
 
 
