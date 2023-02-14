@@ -1,4 +1,4 @@
-### Invoke()
+### `Invoke()`
 
 
 ```cs
@@ -43,7 +43,7 @@ https://docs.unity3d.com/ScriptReference/MonoBehaviour.Invoke.html
 
 
 
-### Invokerepeating()
+### `Invokerepeating()`
 Invokes the method methodName in time seconds, then repeatedly every repeatRate seconds.
 > Note : This does not work if you set the time scale to 0.
 
