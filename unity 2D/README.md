@@ -32,4 +32,12 @@ Most packages you need to make a 2D game in Unity are included in the Unity Edit
 | 2D Tilemap Extras | The 2D Tilemap Extras package contains reusable 2D and Tilemap Editor scripts that you can use for your own Projects. |
 
 
+### Sprites
+Sprites are 2D graphic objects. You use Sprites for all types of 2D games. For example, you can import an image of your main character as a Sprite.
+
+You can also use a collection of Sprites to build a character. This allows you greater control over the movement and animation of your characters.
+
+### Sprite Renderer
+The Sprite Renderer component renders the Sprite and controls how it looks in a scene.
+
 
