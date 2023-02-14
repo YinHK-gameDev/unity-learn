@@ -9,5 +9,27 @@
 5. Install any optional packages you need; see Installing packages.
 
 
+### Useful package for developing Unity 2D games
+
+Most packages you need to make a 2D game in Unity are included in the Unity Editor. The following table lists the packages included by default when you choose the 2D template:
+
+
+| Package | Description |
+| --- | --- |
+| 2D Animation | 2D Animation provides the necessary tooling and runtime components for applying skeletal animation to your Sprites. |
+| 2D Pixel Perfect | The 2D Pixel Perfect package contains the Pixel Perfect Camera component, which ensures your pixel art remains crisp and clear at different resolutions, and stable in motion. |
+| 2D PSD Importer | The 2D PSD Importer package allows you to import multilayered PSD files from Photoshop. You can use this for your Sprites, or to rig your characters. |
+| 2D Sprite | The Sprite Editor provides an in-Editor environment to create and edit Sprite assets. Sprite Editor lets you add custom behavior for editing Sprite-related data. |
+| 2D SpriteShape | 2D Sprite Shape allows you to create organic shapes and terrains, similar to a vector drawing tool. For example, you can choose the fill texture and border Sprites. |
+| 2D Tilemap Editor | 2D Tilemap Editor allows you to create grid-based worlds with square, hexagonal or isometric tiles. Add your Tiles to the Tile Palette, and paint and fill Tile Grids using different settings and brushes. Extra tools let you add smart drawing, randomization or animation to the Tile assets. |
+
+
+**Optional packages:**
+| Package | Description |
+| --- | --- |
+| Shader Graph | Shader Graph lets you build your shaders visually. |
+| Cinemachine | The Cinemachine package is a suite of modules that provide advanced functionality for operating the Unity Camera. |
+| 2D Tilemap Extras | The 2D Tilemap Extras package contains reusable 2D and Tilemap Editor scripts that you can use for your own Projects. |
+
 
 
