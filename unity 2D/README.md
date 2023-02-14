@@ -40,4 +40,4 @@ You can also use a collection of Sprites to build a character. This allows you g
 ### Sprite Renderer
 The Sprite Renderer component renders the Sprite and controls how it looks in a scene.
 
-
+Use the Sprite Renderer component to render your Sprites. For example, you can use the Sprite Renderer to change the color and opacity of a Sprite.
