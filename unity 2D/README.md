@@ -41,3 +41,10 @@ You can also use a collection of Sprites to build a character. This allows you g
 The Sprite Renderer component renders the Sprite and controls how it looks in a scene.
 
 Use the Sprite Renderer component to render your Sprites. For example, you can use the Sprite Renderer to change the color and opacity of a Sprite.
+
+
+### Sprite Atlas
+
+You can use a Sprite Atlas to consolidate several Textures into a single combined Texture. This optimizes your game and saves memory. For example, you can add all your Sprites associated with a particular character or purpose to a Sprite Atlas.
+ 
+ 
