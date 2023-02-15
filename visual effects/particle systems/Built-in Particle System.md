@@ -7,7 +7,7 @@ Built-in Particle System allows you to create effects for every platform that Un
  
  The Built-in Particle System uses a component, so placing a Particle System in a Scene is a matter of adding a pre-made GameObject (menu: **GameObject > Effects > Particle System**) or adding the component to an existing GameObject (menu: **Component > Effects > Particle System**).
  
-### Particle effect window
+### Particle effect panel
 **Playback Speed**: \
 Allows you to speed up or slow down the particle simulation, so you can quickly see how it looks at an advanced state.
 
