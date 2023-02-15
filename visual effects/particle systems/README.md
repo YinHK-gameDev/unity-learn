@@ -32,4 +32,8 @@ The Particle System component has many properties, and for convenience, the Insp
 
 ![](./PartSysMainInsp.png)
 
+To expand and collapse modules, click the bar that shows their name. Use the checkbox on the left to enable or disable the functionality of the properties in that module. For example, if you don’t want to vary the sizes of particles over their lifetime, uncheck the Size over Lifetime module.
+
+The Open Editor button displays the options in a separate Editor window, which allows you to edit multiple systems at once.
+
 
