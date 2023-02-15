@@ -13,6 +13,8 @@ This tab is only visible if you install the Visual Effect Graph package. For inf
 
 
 ![](./vfx-graph-window.png)
+![](./vfx-graph-window-details.png)
+
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@16.0/manual/index.html
