@@ -7,6 +7,17 @@ Built-in Particle System allows you to create effects for every platform that Un
  
  The Built-in Particle System uses a component, so placing a Particle System in a Scene is a matter of adding a pre-made GameObject (menu: **GameObject > Effects > Particle System**) or adding the component to an existing GameObject (menu: **Component > Effects > Particle System**).
  
+### Particle effect window
+**Playback Speed**: \
+Allows you to speed up or slow down the particle simulation, so you can quickly see how it looks at an advanced state.
+
+**Playback Time**: \
+Indicates the time elapsed since the system was started; this may be faster or slower than real time depending on the playback speed.
+
+**Particle Count**: \
+indicates how many particles are currently in the system. The playback time can be moved backwards and forwards by clicking on the Playback Time label and dragging the mouse left and right.
+
+
 ### Varying properties over time
 
 Many of the numeric properties of particles or even the whole Particle System can vary over time. Unity provides several different methods of specifying how this variation happens:
