@@ -6,5 +6,5 @@ Unity UI is a UI toolkit for developing user interfaces for games and applicatio
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html
 
 
-### UnityEngine.UI
+### Scripting API
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.UI.html
