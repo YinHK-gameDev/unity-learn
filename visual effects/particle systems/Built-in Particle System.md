@@ -7,7 +7,8 @@ Built-in Particle System allows you to create effects for every platform that Un
  
  
  
-
+### Particle System modules
+https://docs.unity3d.com/Manual/ParticleSystemModules.html
 
 
 ### Scripting API
