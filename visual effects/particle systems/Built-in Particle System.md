@@ -7,6 +7,20 @@ Built-in Particle System allows you to create effects for every platform that Un
  
  The Built-in Particle System uses a component, so placing a Particle System in a Scene is a matter of adding a pre-made GameObject (menu: **GameObject > Effects > Particle System**) or adding the component to an existing GameObject (menu: **Component > Effects > Particle System**).
  
+### Varying properties over time
+
+Many of the numeric properties of particles or even the whole Particle System can vary over time. Unity provides several different methods of specifying how this variation happens:
+
+- **Constant**: \
+ The property’s value is fixed throughout its lifetime.
+- **Curve**: \
+ The value is specified by a curve/graph.
+- **Random Between Two Constants**: \
+ Two constant values define the upper and lower bounds for the value; the actual value varies randomly over time between those bounds.
+- **Random Between Two Curves**: \
+ Two curves define the upper and lower bounds of the value at a given point in its lifetime; the current value varies randomly between those bounds.
+ 
+ 
 ### Particle System modules
 
 Because the component is quite complicated, the Inspector is divided into a number of collapsible sub-sections or modules that each contain a group of related properties.
