@@ -2,7 +2,7 @@
 Unity provides three UI systems that you can use to create user interfaces (UI) for the Unity Editor and applications made in the Unity Editor:
 
 - UI Toolkit
-- he Unity UI package (uGUI)
+- Unity UI package (uGUI)
 - IMGUI
 
 
