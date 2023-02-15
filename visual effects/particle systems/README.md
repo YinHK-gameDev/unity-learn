@@ -27,5 +27,9 @@ To provide flexibility when you author a particle system
 | Frame buffers | No | In the High Definition Render Pipeline, provides access to the color and depth buffer. For example, you can sample the color buffer and use the result to set particle color, or you can use the depth buffer to simulate collisions. |
 
 
+### Properties
+The Particle System component has many properties, and for convenience, the Inspector organises them into collapsible sections called “modules”. 
+
+
 
 
