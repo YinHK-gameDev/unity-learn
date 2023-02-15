@@ -11,6 +11,9 @@ The VFX tab in the Project Settings window controls settings relevant to the Vis
 
 This tab is only visible if you install the Visual Effect Graph package. For information on how to install the Visual Effect Graph
 
+
+![](./vfx-graph-window.png)
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@16.0/manual/index.html
 
