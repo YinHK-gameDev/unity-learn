@@ -171,6 +171,8 @@ Tech Stream releases are for creators who value exploring in-progress features t
 **2923 roadmap** \
 **[Understanding Unity's 2023 roadmap for games | Unite 2022](https://youtu.be/a4spnCpE0RE)**
 
+**https://medium.datadriveninvestor.com/roadmap-to-becoming-a-game-developer-in-2022-128fed2df6c5**
+
 ### ➡️ Unity certificate
 **https://unity.com/products/unity-certifications**
 
