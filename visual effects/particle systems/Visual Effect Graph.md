@@ -7,3 +7,9 @@ The Visual Effect Graph is a package that you can use to create large-scale visu
 If you want to **create visual effects that include a large number of particles** and need highly customisable behavior, use the **Visual Effect Graph** instead of the Built-in Particle System.
 
 
+### ref
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@16.0/manual/index.html
+
+### Scripting API
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@16.0/api/index.html
+
