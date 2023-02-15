@@ -18,6 +18,23 @@ Indicates the time elapsed since the system was started; this may be faster or s
 indicates how many particles are currently in the system. The playback time can be moved backwards and forwards by clicking on the Playback Time label and dragging the mouse left and right.
 
 
+**Simulate Layers**: \
+Allows you to preview Particle Systems that are not selected. By default, only selected Particle Systems play in the Scene View. However, when you set Simulate Layers to anything other than Nothing, effects that match the Layer Mask play automatically, without you needing to select them. This is particularly useful for previewing environmental effects.
+ 
+
+**Resimulate**: \
+When this property is enabled, the Particle System immediately applies property changes to particles it has already generated. When disabled, the Particle System leaves existing particles as they are, and only applies property changes to new particles.
+
+
+**Show Bounds**: \
+When this property is enabled, Unity displays the bounding volume around the selected Particle Systems. These bounds determine whether a Particle System is currently on screen or not.
+
+
+**Show Only Selected**: \
+When this property is enabled, Unity hides all non-selected Particle Systems, allowing you to focus on producing a single effect.
+
+
+
 ### Varying properties over time
 
 Many of the numeric properties of particles or even the whole Particle System can vary over time. Unity provides several different methods of specifying how this variation happens:
