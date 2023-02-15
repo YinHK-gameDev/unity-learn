@@ -30,6 +30,6 @@ To provide flexibility when you author a particle system
 ### Properties
 The Particle System component has many properties, and for convenience, the Inspector organises them into collapsible sections called “modules”. 
 
-
+![](./PartSysMainInsp.png)
 
 
