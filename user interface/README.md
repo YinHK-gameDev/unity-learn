@@ -5,8 +5,7 @@ Unity provides three UI systems that you can use to create user interfaces (UI) 
 - Unity UI package (uGUI)
 - IMGUI
 
+> **Note**: Unity intends for UI Toolkit to become the recommended UI system for new UI development projects, but it is still missing some features found in Unity UI (uGUI) and IMGUI. These older systems are better in certain use cases, and are required to support legacy projects.
 
-### UnityEngine.UI
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html
 
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.UI.html
+
