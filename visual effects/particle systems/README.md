@@ -1,6 +1,8 @@
 ## Particle systems
 A particle system **simulates and renders many small images or Meshes**, called particles, to produce a visual effect.
 
+A Particle System component simulates fluid entities such as liquids, clouds and flames by generating and animating large numbers of small 2D images in the scen
+
 Each particle in a system represents an individual graphical element in the effect. The system simulates every particle collectively to create the impression of the complete effect.
 
 
