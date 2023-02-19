@@ -57,3 +57,30 @@ Unity displays different properties in the Camera Inspector depending on the **r
 | Allow MSAA | Enables multi sample antialiasing for this camera. |
 | Allow Dynamic Resolution | Enables Dynamic Resolution rendering for this camera. See Dynamic Resolution for details. |
 | Target Display | Defines which external device to render to. Between 1 and 8. |
+
+
+### Render path
+Unity supports different rendering paths. You should choose which one you use depending on your game content and target platform / hardware. Different rendering paths have different features and performance characteristics that mostly affect lights and shadows. The rendering path used by your Project is chosen in the Player settings. Additionally, you can override it for each Camera.
+
+
+### Clear Flags
+
+Each Camera stores color and depth information when it renders its view. The portions of the screen that are not drawn in are empty, and will display the skybox by default. When you are using multiple Cameras, each one stores its own color and depth information in buffers, accumulating more data as each Camera renders. As any particular Camera in your scene renders its view, you can set the Clear Flags to clear different collections of the buffer information. To do this, choose one of the following four options:
+
+#### Skybox
+This is the default setting. Any empty portions of the screen will display the current Camera’s skybox. If the current Camera has no skybox set, it will default to the skybox chosen in the Lighting Window (menu: Window > Rendering > Lighting). It will then fall back to the Background Color. Alternatively a Skybox component can be added to the camera
+
+#### Solid color
+Any empty portions of the screen will display the current Camera’s Background Color.
+
+
+
+
+
+
+
+
+
+
+
+
