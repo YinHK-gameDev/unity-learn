@@ -130,5 +130,13 @@ Camera's depth in the camera rendering order. \
 Cameras with lower depth are rendered before cameras with higher depth. \
 Use this to control the order in which cameras are drawn if you have multiple cameras and some of them don't cover the full screen.
 
+> The depth is considered the rendering order. The lower the depth value, the earlier it will be in the rendering stack. 
 
+If you have more than one camera, all you need to do is set the depth value of each camera in ascending order for which they will draw. 
+
+> **Note**: If you have two cameras with the same depth, they will render in the order they were added to the scene. We don't recommend leaving cameras on the same depth, and you should always explicitly order them. The depth value can be edited via script using the `camera.depth` property.
+
+
+
+https://support.unity.com/hc/en-us/articles/214371766-How-do-I-force-my-cameras-to-render-in-a-certain-order-
 
