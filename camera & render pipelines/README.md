@@ -102,3 +102,10 @@ For performance reasons, you might want to cull small objects earlier. For examp
 Normalized Viewport Rectangle is specifically for defining a certain portion of the screen that the current camera view will be drawn upon. 
 ![](./viewport_rectangle.png)
 
+#### Create a two-player split screen effect
+By using Normalized Viewport Rectangle. \
+After you have created your two cameras, change both camera’s H values to be 0.5 then set player one’s Y value to 0.5, and player two’s Y value to 0. This will make player one’s camera display from halfway up the screen to the top, and player two’s camera start at the bottom and stop halfway up the screen.
+
+
+
+
