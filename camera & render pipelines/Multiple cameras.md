@@ -27,8 +27,7 @@ public class ExampleScript : MonoBehaviour {
 - Rendering a small camera view inside a larger one
   Usually, you want at least one camera view covering the whole screen (the default setting) but it is often useful to show another view inside a small area of the screen. For example, you might show a rear view mirror in a driving game or show an overhead mini-map in the corner of the screen while the main view is first-person. You can set the size of a camera’s onscreen rectangle using its Viewport Rect property.
 
-The coordinates of the viewport
- rectangle are “normalized” with respect to the screen. The bottom and left edges are at the 0.0 coordinate, while the top and right edges are at 1.0. A coordinate value of 0.5 is halfway across. In addition to the viewport size, you should also set the depth property of the camera with the smaller view to a higher value than the background camera. The exact value does not matter but the rule is that a camera with a higher depth value is rendered over one with a lower value.
+  The coordinates of the viewport rectangle are “normalized” with respect to the screen. The bottom and left edges are at the 0.0 coordinate, while the top and right edges are at 1.0. A coordinate value of 0.5 is halfway across. In addition to the viewport size, you should also set the depth property of the camera with the smaller view to a higher value than the background camera. The exact value does not matter but the rule is that a camera with a higher depth value is rendered over one with a lower value.
 
 
 
