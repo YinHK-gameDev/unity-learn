@@ -85,6 +85,14 @@ This mode does not clear either the color or the depth buffer
 > Note that on some GPUs (mostly mobile GPUs), not clearing the screen might result in the contents of it being undefined in the next frame. On some systems, the screen may contain the previous frame image, a solid black screen, or random colored pixels.
 
 
+### Clip Planes
+The **Near** and **Far Clip Plane** properties determine where the Camera’s view begins and ends. The planes are laid out perpendicular to the Camera’s direction and are measured from its position. The **Near plane** is the closest location that will be rendered, and the **Far plane** is the furthest.
+
+The clipping planes also determine how depth buffer precision is distributed over the scene. In general, to get better precision you should move the **Near plane** as far as possible.
+
+Note that the near and far clip planes together with the planes defined by the field of view of the camera describe what is popularly known as the camera frustum. Unity ensures that when rendering your objects those which are completely outside of this frustum are not displayed. This is called Frustum Culling. Frustum Culling happens irrespective of whether you use Occlusion Culling in your game.
+
+For performance reasons, you might want to cull small objects earlier. For example, small rocks and debris could be made invisible at much smaller distance than large buildings. To do that, put small objects into a separate layer and set up per-layer cull distances using Camera.layerCullDistances script function.
 
 
 
