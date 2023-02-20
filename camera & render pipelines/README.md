@@ -125,3 +125,10 @@ A camera has up to 8 target display settings. The camera can be controlled to re
 This will place the camera’s view onto a Texture
  that can then be applied to another object. This makes it easy to create sports arena video monitors, surveillance cameras, reflections etc.
 
+### Camera's depth
+Camera's depth in the camera rendering order. \
+Cameras with lower depth are rendered before cameras with higher depth. \
+Use this to control the order in which cameras are drawn if you have multiple cameras and some of them don't cover the full screen.
+
+
+
