@@ -117,3 +117,7 @@ Perspective effect is widely used in art and computer graphics and is important 
 For example, you might want to create a map or information display that is not supposed to appear exactly like a real-world object. A camera that does not diminish the size of objects with distance is referred to as orthographic and Unity cameras also have an option for this.
 
 ![](./prespective.png)
+
+
+### Target display
+A camera has up to 8 target display settings. The camera can be controlled to render to one of up to 8 monitors. This is supported only on PC, Mac and Linux. In Game View the chosen display in the Camera Inspector will be shown.
