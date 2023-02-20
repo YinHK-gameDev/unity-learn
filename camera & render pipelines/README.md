@@ -118,6 +118,10 @@ For example, you might want to create a map or information display that is not s
 
 ![](./prespective.png)
 
-
 ### Target display
 A camera has up to 8 target display settings. The camera can be controlled to render to one of up to 8 monitors. This is supported only on PC, Mac and Linux. In Game View the chosen display in the Camera Inspector will be shown.
+
+### Render Texture
+This will place the camera’s view onto a Texture
+ that can then be applied to another object. This makes it easy to create sports arena video monitors, surveillance cameras, reflections etc.
+
