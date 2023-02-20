@@ -95,6 +95,9 @@ Note that the near and far clip planes together with the planes defined by the f
 For performance reasons, you might want to cull small objects earlier. For example, small rocks and debris could be made invisible at much smaller distance than large buildings. To do that, put small objects into a separate layer and set up per-layer cull distances using Camera.layerCullDistances script function.
 
 
+### Culling Mask
+> The Culling Mask is used for selectively rendering groups of objects using Layers.
+
 
 
 
