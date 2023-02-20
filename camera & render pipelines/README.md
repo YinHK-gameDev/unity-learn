@@ -106,6 +106,11 @@ Normalized Viewport Rectangle is specifically for defining a certain portion of 
 By using Normalized Viewport Rectangle. \
 After you have created your two cameras, change both camera’s H values to be 0.5 then set player one’s Y value to 0.5, and player two’s Y value to 0. This will make player one’s camera display from halfway up the screen to the top, and player two’s camera start at the bottom and stop halfway up the screen.
 
+### projection
+The **perspective** and **orthographic** modes of viewing a scene are known as camera projections.
+#### Orthographic
+Orthographic camera mode removes all perspective from the Camera’s view. This is mostly useful for making isometric or 2D games. 
 
-
-
+#### Perspective
+Perspective effect is widely used in art and computer graphics and is important for creating a realistic scene.
+For example, you might want to create a map or information display that is not supposed to appear exactly like a real-world object. A camera that does not diminish the size of objects with distance is referred to as orthographic and Unity cameras also have an option for this.
