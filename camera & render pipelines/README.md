@@ -110,6 +110,7 @@ After you have created your two cameras, change both camera’s H values to be 0
 The **perspective** and **orthographic** modes of viewing a scene are known as camera projections.
 #### Orthographic
 Orthographic camera mode removes all perspective from the Camera’s view. This is mostly useful for making isometric or 2D games. 
+![](./orthographic.png)
 
 #### Perspective
 Perspective effect is widely used in art and computer graphics and is important for creating a realistic scene.
