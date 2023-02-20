@@ -9,6 +9,8 @@ Unity displays different properties in the Camera Inspector depending on the **r
 - If your Project uses the High Definition Render Pipeline (HDRP), see the HDRP package documentation microsite. https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@16.0/manual/index.html
 - If your Project uses the Built-in Render Pipeline, Unity displays the following properties:
 
+![](./camera.png)
+
 | Property: | Function: |
 | --- | --- |
 | Clear Flags | Determines which parts of the screen will be cleared. This is handy when using multiple Cameras to draw different game elements. |
