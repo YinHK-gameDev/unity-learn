@@ -98,6 +98,7 @@ For performance reasons, you might want to cull small objects earlier. For examp
 ### Culling Mask
 > The Culling Mask is used for selectively rendering groups of objects using Layers.
 
-
-
+### Normalized Viewport Rectangles
+Normalized Viewport Rectangle is specifically for defining a certain portion of the screen that the current camera view will be drawn upon. 
+![](./viewport_rectangle.png)
 
