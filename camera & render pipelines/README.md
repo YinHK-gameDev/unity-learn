@@ -9,9 +9,9 @@ n Unity, this point is located exactly at the camera’s transform position and 
 
 The diverging corner lines of the image along with the two clipping planes define a truncated pyramid - the **view frustum**.
 
-![](./clipping_plane.png)
-
 ![](./ViewFrustum.png)
+
+![](./clipping_plane.png)
 
 ![](./view1.png)
 
