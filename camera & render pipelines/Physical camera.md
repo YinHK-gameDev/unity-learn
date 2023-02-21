@@ -15,3 +15,19 @@ Unity provides the same settings as those in most 3D modeling application’s ph
 ![](./PhysCamAttributes.png)
 
 
+### Lens Shifts
+Lens Shift offsets the camera’s lens from its sensor horizontally and vertically. This allows you to change the focal center, and reposition a subject in the rendered frame, with little or no distortion.
+
+For example, if you want to capture a tall building, you could rotate the camera. But that distorts the image, making parallel lines appear to converge. If you shift the lens up instead of rotating the camera, you can change the composition of the image to include the top of the building, but parallel lines stay straight.
+
+Shifting the lens along the Y axis moves the focal center, but keeps vertical lines straight.
+
+Similarly, you can use a horizontal lens shift to capture wide objects without the distortion you might get by rotating the camera.
+
+
+
+
+### ref
+https://docs.unity3d.com/Manual/PhysicalCameras.html
+
+
