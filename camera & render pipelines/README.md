@@ -9,6 +9,9 @@ n Unity, this point is located exactly at the camera’s transform position and 
 
 The diverging corner lines of the image along with the two clipping planes define a truncated pyramid - the **view frustum**.
 
+![](./clipping_plane.png)
+
+
 ### Camera Inspector reference
 Unity displays different properties in the Camera Inspector depending on the **render pipeline** that your Project uses.
 
