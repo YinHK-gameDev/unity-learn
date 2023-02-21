@@ -15,7 +15,7 @@ View Frustum can be adjusted by setting the distance from start(**Near**) and st
 
 ![](./clipping_plane.png)
 
-Game object inside the view frustum will be showed/rendered in the game view
+Game object inside the **view frustum** will be showed/rendered in the game view
 ![](./view1.png)
 
 
