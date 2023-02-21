@@ -32,11 +32,12 @@ The Camera component’s Gate Fit property determines what happens when the Game
 
 In Physical Camera mode, a camera has two **"gates"**.
 
-- The area rendered in the Game view, according to the resolution you set in the Aspect drop-down menu, is called the “resolution gate”.
+- The area rendered in the Game view, according to the resolution you set in the Aspect drop-down menu, is called the "**resolution gate**".
 
-- The area that the camera actually sees, as defined by the Sensor Size properties, is called the “film gate”.
+- The area that the camera actually sees, as defined by the Sensor Size properties, is called the "**film gate**".
 
-
+#### Gate Fit Modes
+The Gate Fit mode you choose determines how Unity resizes the resolution gate (and consequently, the camera’s view frustum). The film gate always stays the same size.
 
 ### ref
 https://docs.unity3d.com/Manual/PhysicalCameras.html
