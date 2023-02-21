@@ -29,9 +29,9 @@ The Camera component’s Gate Fit property determines what happens when the Game
 
 In Physical Camera mode, a camera has two **"gates"**.
 
-The area rendered in the Game view, according to the resolution you set in the Aspect drop-down menu, is called the “resolution gate”.
+- The area rendered in the Game view, according to the resolution you set in the Aspect drop-down menu, is called the “resolution gate”.
 
-The area that the camera actually sees, as defined by the Sensor Size properties, is called the “film gate”.
+- The area that the camera actually sees, as defined by the Sensor Size properties, is called the “film gate”.
 
 
 
