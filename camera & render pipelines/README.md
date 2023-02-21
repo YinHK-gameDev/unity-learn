@@ -7,8 +7,9 @@ The word frustum refers to a solid shape that looks like a pyramid with the top 
 
 n Unity, this point is located exactly at the camera’s transform position and is known as the centre of perspective. The angle subtended by the lines converging from the top and bottom centres of the screen at the centre of perspective is called the **field of view** (often abbreviated to **FOV**).
 
+The diverging corner lines of the image along with the two clipping planes define a truncated pyramid - the **view frustum**.
 
-Camera Inspector reference
+### Camera Inspector reference
 Unity displays different properties in the Camera Inspector depending on the **render pipeline** that your Project uses.
 
 - If your Project uses the Universal Render Pipeline (URP), see the URP package documentation microsite. https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@16.0/manual/index.html
