@@ -10,3 +10,8 @@ Unity provides the same settings as those in most 3D modeling application’s ph
 
 - Sensor Size: The width and height of the sensor that captures the image. These determine the physical camera’s aspect ratio
 . You can choose from several preset sensor sizes that correspond to real-world camera formats, or set a custom size. When the sensor aspect ratio is different to the rendered aspect ratio, as set in the Game view, you can control how Unity fits the camera image to the rendered image.
+
+
+![](./PhysCamAttributes.png)
+
+
