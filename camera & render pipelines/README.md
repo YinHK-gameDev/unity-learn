@@ -2,6 +2,12 @@
 
 Cameras are the devices that capture and display the world to the player
 
+### View Frustum
+The word frustum refers to a solid shape that looks like a pyramid with the top cut off parallel to the base. This is the shape of the region that can be seen and rendered by a perspective camera.
+
+n Unity, this point is located exactly at the camera’s transform position and is known as the centre of perspective. The angle subtended by the lines converging from the top and bottom centres of the screen at the centre of perspective is called the **field of view** (often abbreviated to **FOV**).
+
+
 Camera Inspector reference
 Unity displays different properties in the Camera Inspector depending on the **render pipeline** that your Project uses.
 
