@@ -24,6 +24,14 @@ Shifting the lens along the Y axis moves the focal center, but keeps vertical li
 
 Similarly, you can use a horizontal lens shift to capture wide objects without the distortion you might get by rotating the camera.
 
+### Gate Fit
+The Camera component’s Gate Fit property determines what happens when the Game view and the physical camera sensor have different aspect ratios.
+
+In Physical Camera mode, a camera has two **"gates"**.
+
+The area rendered in the Game view, according to the resolution you set in the Aspect drop-down menu, is called the “resolution gate”.
+
+The area that the camera actually sees, as defined by the Sensor Size properties, is called the “film gate”.
 
 
 
