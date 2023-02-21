@@ -52,7 +52,10 @@ The Gate Fit mode you choose determines how Unity resizes the resolution gate (a
 - None \
   When Gate Fit is set to None, Unity fits the resolution gate to the width and height (X and Y axes) of the film gate. Unity stretches the rendered image to fit the Game view aspect ratio.
   
-- 
+- Fill and Overscan \
+  When Gate Fit is set to Fill or Overscan, Unity automatically performs either a vertical or horizontal fit, depending on the resolution gate and film gate aspect ratios.
+  - **Fill** fits the resolution gate to the film gate’s smaller axis, and crops the rest of the camera image.
+  - **Overscan** fits the resolution gate to the film gate’s larger axis and overscans the area outside of the camera image’s boundaries.
   
 
 
