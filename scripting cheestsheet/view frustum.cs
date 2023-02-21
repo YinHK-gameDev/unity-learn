@@ -19,3 +19,5 @@ var cameraFieldOfView = 2.0f * Mathf.Atan(frustumHeight * 0.5f / distance) * Mat
 //Each of these calculations involves the height of the frustum but this can be obtained from the width (and vice versa) very easily:
 var frustumWidth = frustumHeight * camera.aspect;
 var frustumHeight = frustumWidth / camera.aspect;
+
+
