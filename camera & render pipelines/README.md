@@ -11,12 +11,18 @@ The diverging corner lines of the image along with the two clipping planes defin
 
 ![](./ViewFrustum.png)
 
+View Frustum can be adjusted by setting the distance from start(**Near**) and stop(**Far**) rendering in camera component.
+
 ![](./clipping_plane.png)
 
+Game object inside the view frustum will be showed/rendered in the game view
 ![](./view1.png)
 
+
+Game object outside the **far clipping plane** will not be showed/rendered in the game view
 ![](./view2.png)
 
+Game object before the **near clipping plane** will not be showed/rendered in the game view
 ![](./view3.png)
 
 ### Camera Inspector reference
