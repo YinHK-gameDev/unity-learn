@@ -14,3 +14,6 @@ When you bake occlusion culling data, Unity divides the Scene into cells and gen
 
 ### ref
 https://docs.unity3d.com/Manual/OcclusionCulling.html
+
+https://www.youtube.com/watch?v=OmuQmydipGg
+
