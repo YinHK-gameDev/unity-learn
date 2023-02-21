@@ -28,8 +28,8 @@ Game object before the **near clipping plane** will not be showed/rendered in th
 ### Oblique frustum
 By default, the view frustum is arranged symmetrically around the camera’s center line, but we can set an oblique frustum.
 
-Setting frustum obliqueness: \
-- By Physical Camera properties:
+Setting frustum obliqueness: 
+- By Physical Camera properties: \
   Enable a camera’s Physical Camera properties to expose the Lens Shift options. You can use these to offset the camera’s focal center along the X and Y axes. Shifting the lens reduces the frustum angle on the side opposite the direction of the shift. For example, as you shift the lens up, the angle between the bottom of the frustum and the camera’s center line gets smaller. Normally a camera’s frustum is symmetrical (left), meaning the angles on either side of the center line are equal. Shifting the lens (right) makes the frustum oblique, meaning the angle is smaller on one side than on the other.
   
 - By scripting:
