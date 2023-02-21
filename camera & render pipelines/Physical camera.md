@@ -24,6 +24,9 @@ Shifting the lens along the Y axis moves the focal center, but keeps vertical li
 
 Similarly, you can use a horizontal lens shift to capture wide objects without the distortion you might get by rotating the camera.
 
+
+For example, in a racing game, you might want to keep the perspective low to the ground. A lens shift is a way of achieving an oblique frustum without scripting.
+
 ### Gate Fit
 The Camera component’s Gate Fit property determines what happens when the Game view and the physical camera sensor have different aspect ratios.
 
