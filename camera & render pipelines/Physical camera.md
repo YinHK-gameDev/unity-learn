@@ -39,17 +39,17 @@ In Physical Camera mode, a camera has two **"gates"**.
 #### Gate Fit Modes
 The Gate Fit mode you choose determines how Unity resizes the resolution gate (and consequently, the camera’s view frustum). The film gate always stays the same size.
 
-- Vertical
+- Vertical \
   When Gate Fit is set to Vertical, Unity fits the resolution gate to the height (Y axis) of the film gate. Any change you make to the sensor width (Sensor Size > X) has no effect on the rendered image.
 
   > If the sensor aspect ratio is larger than the game view aspect ratio, Unity crops the rendered image at the sides. If the sensor aspect ratio is smaller than the game view aspect ratio, Unity overscans the rendered image at the sides
 
-- Horizontal
+- Horizontal \
   When Gate Fit is set to Horizontal, Unity fits the resolution gate to the width (X axis) of the film gate. Any change you make to the sensor height (Sensor Size > Y) has no effect on the rendered image.
   > If the sensor aspect ratio is larger than the Game view aspect ratio, Unity overscans the rendered image on the top and bottom. If the sensor aspect ratio is smaller than the game view aspect ratio, the rendered image is cropped on the top and bottom
 
 
-- None
+- None \
   When Gate Fit is set to None, Unity fits the resolution gate to the width and height (X and Y axes) of the film gate. Unity stretches the rendered image to fit the Game view aspect ratio.
   
 - 
