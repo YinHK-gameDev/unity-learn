@@ -14,6 +14,14 @@ Any GameObject that is likely to be occluded at runtime is a good candidate to b
 - Have any type of Renderer component
 - Not move at runtime
 
+When you have identified the GameObjects that you would like to be Static Occluders and Static Occludees, you can set up your Scene.
+
+1. Select all of the GameObjects that you would like to be Static Occluders.
+2. In the Inspector window, open the Static Editor Flags drop-down menu and select Occluder Static.
+3. Select all of the GameObjects that you would like to be Static Occludees.
+4. In the Inspector window, open the Static Editor Flags drop-down menu and select Occludee Static.
+5. Add a Camera to your Scene and select it, or select an existing Camera.
+6. In the Inspector window, ensure that the Camera’s Occlusion Culling property is enabled.
 
 **Static editor flags**: \
 ![](./static_editor+flag.png)
