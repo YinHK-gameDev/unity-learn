@@ -28,7 +28,11 @@ void OpenDoor() {
     …
 }
 ```
-
+| Property: | Function: |
+| --- | --- |
+| Open | If enabled, the Occlusion Portal is open, and does not occlude Renderers. If disabled, the Occlusion Portal is closed, and occludes Renderers. |
+| Center | Set the center of the Occlusion Portal. The default value is 0,0,0. |
+| Size | Define the size of the Occlusion Portal. |
 
 
 https://docs.unity3d.com/Manual/class-OcclusionPortal.html
