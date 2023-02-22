@@ -30,6 +30,8 @@ When you have identified the GameObjects that you would like to be Static Occlud
 > Open the Occlusion Culling window by navigating to the top menu and selecting **Window > Rendering > Occlusion Culling**.
 
 ### Object tab
+![](./OcclusionCullingInspectorObject.png)
+
 Occlusion Culling Window for a Mesh Renderer
 In the Object tab, you can click the All, Renderers, and Occlusion Areas buttons to filter the contents of the Hierarchy window.
 
