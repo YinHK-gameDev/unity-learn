@@ -35,6 +35,7 @@ Occlusion culling inspector **bake** tab.
 - In the bottom right hand corner of the Inspector window, press the Bake button. Unity generates the occlusion culling data, saves the data as an asset in your Project, and links the asset with the current Scene(s).
 
 ### Visualizion
+![](./OcclusionCullingInspectorVisualization.png)
 
 Occlusion Culling window **Visualization** tab.
 - Ensure that the Occlusion Culling window and the Scene view are both visible. When the Occlusion Culling window is visible, Unity displays occlusion culling data and the Occlusion Culling popup in the Scene view.
