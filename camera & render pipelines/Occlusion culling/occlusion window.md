@@ -29,7 +29,7 @@ When you have identified the GameObjects that you would like to be Static Occlud
 ### Bake data
 ![](./OcclusionCullingInspectorBake.png)
 
-Occlusion culling inspector bake tab. \
+Occlusion culling inspector bake tab. 
 - In the top menu, select **Window > Rendering > Occlusion Culling** to open the Occlusion Culling window.
 - Select the **Bake** tab.
 - In the bottom right hand corner of the Inspector window, press the Bake button. Unity generates the occlusion culling data, saves the data as an asset in your Project, and links the asset with the current Scene(s).
