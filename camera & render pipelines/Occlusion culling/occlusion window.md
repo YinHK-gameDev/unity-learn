@@ -9,5 +9,8 @@ Good candidates for Static Occluders are medium to large solid GameObjects, such
 - Be opaque
 - Not move at runtime
 
+Any GameObject that is likely to be occluded at runtime is a good candidate to be a Static Occludee, including small or transparent GameObjects. To be a Static Occludee, a GameObject must:
 
+- Have any type of Renderer component
+- Not move at runtime
 
