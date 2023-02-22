@@ -56,6 +56,8 @@ Occlusion culling inspector **bake** tab.
 - In the bottom right hand corner of the Inspector window, press the Bake button. Unity generates the occlusion culling data, saves the data as an asset in your Project, and links the asset with the current Scene(s).
 
 ### Visualizion
+When you select a Camera in the Scene view or Hierarchy window while the Visualization tab is visible, Unity updates the Scene view to show the effects of occlusion culling from the perspective of the selected Camera. You can use the Occlusion Culling popup in the Scene view to configure the visualization.
+
 ![](./OcclusionCullingInspectorVisualization.png)
 
 Occlusion Culling window **Visualization** tab.
@@ -64,3 +66,16 @@ Occlusion Culling window **Visualization** tab.
 - Move the Camera around, and observe the Scene view. You should see GameObjects disappear from view when the Camera cannot see them, due to either frustum culling or occlusion culling.
 - Use the Occlusion Culling popup in the Scene view to configure the visualization.
 - If required, tweak the bake settings in the Bake tab of the Occlusion Culling window, and repeat the baking process.
+
+#### Edit mode
+| Setting | Description |
+| --- | --- |
+| View Volumes | When this is enabled, the Scene view contains blue lines that show the cells in the occlusion culling data. The cell size is affected by the Smallest Occluder setting: a lower value results in more, smaller cells, which in turn results in increased precision, and a larger file size. |
+
+#### Visualize mode
+Visualize mode allows you to preview the results of occlusion culling from the perspective of a given Camera.
+| Setting | Description |
+| --- | --- |
+| Camera Volumes | When this is enabled, you can see yellow lines that indicate the area of the Scene for which Unity has generated occlusion culling data. This is determined based on Scene geometry, and on any View Volumes that you have defined in your Scene using Occlusion Areas. When the Camera is outside of the yellow lines, Unity does not perform occlusion culling.You can also see grey lines that indicate the cell in the occlusion culling data that the Camera’s current position corresponds to, and the subdivisions within the current cell. The Smallest Hole setting defines the minimum size of the subdivisions within cells: a lower value results in more, smaller subdivisions per cells, which in turn results in increased precision, and a larger file size. |
+| Visibility Lines | When this is enabled, you can see green lines that indicate what the currently selected Camera can see. |
+| Portals | When this is enabled, you can see lines that represent connections between cells in the occlusion data. The currently visible portals are the ones that the currently selected Camera can see. |
