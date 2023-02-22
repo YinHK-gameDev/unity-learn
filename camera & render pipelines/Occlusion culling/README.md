@@ -12,6 +12,9 @@ Occlusion culling generates data about your Scene in the Unity Editor, and then 
 
 When you bake occlusion culling data, Unity divides the Scene into cells and generates data that describes the geometry within cells, and the visibility between adjacent cells. Unity then merges cells where possible, to reduce the size of the generated data.
 
+> To configure the baking process, you can change parameters in the **Occlusion Culling window**, and use **Occlusion Areas** in your Scene.
+
+### Why use occlusion culling
 - Preventing wasted rendering operations can save on both CPU and GPU time. Unity’s built-in occlusion culling performs runtime calculations on the CPU, which can offset the CPU time that it saves. Occlusion culling is therefore most likely to result in performance improvements when a Project is GPU-bound due to overdraw.
 - Unity loads occlusion culling data into memory at runtime. You must ensure that you have sufficient memory to load this data.
 - Occlusion culling works best in Scenes where small, well-defined areas are clearly separated from one another by solid GameObjects. A common example is rooms connected by corridors.
