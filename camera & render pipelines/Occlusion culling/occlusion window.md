@@ -16,17 +16,20 @@ Any GameObject that is likely to be occluded at runtime is a good candidate to b
 
 When you have identified the GameObjects that you would like to be Static Occluders and Static Occludees, you can set up your Scene.
 
-1. Select all of the GameObjects that you would like to be Static Occluders.
-2. In the Inspector window, open the Static Editor Flags drop-down menu and select Occluder Static.
-3. Select all of the GameObjects that you would like to be Static Occludees.
-4. In the Inspector window, open the Static Editor Flags drop-down menu and select Occludee Static.
+1. Select all of the GameObjects that you would like to be **Static Occluders**.
+2. In the Inspector window, open the **Static Editor Flags** drop-down menu and select **Occluder Static**.
+3. Select all of the GameObjects that you would like to be **Static Occludees**.
+4. In the Inspector window, open the **Static Editor Flags** drop-down menu and select **Occludee Static**.
 5. Add a Camera to your Scene and select it, or select an existing Camera.
 6. In the Inspector window, ensure that the Camera’s Occlusion Culling property is enabled.
 
 **Static editor flags**: \
 ![](./static_editor+flag.png)
 
-
+### Bake data
 ![](./OcclusionCullingInspectorBake.png)
 
-
+Occlusion culling inspector bake tab. \
+- In the top menu, select **Window > Rendering > Occlusion Culling** to open the Occlusion Culling window.
+- Select the **Bake** tab.
+- In the bottom right hand corner of the Inspector window, press the Bake button. Unity generates the occlusion culling data, saves the data as an asset in your Project, and links the asset with the current Scene(s).
