@@ -14,3 +14,6 @@ Any GameObject that is likely to be occluded at runtime is a good candidate to b
 - Have any type of Renderer component
 - Not move at runtime
 
+![](./OcclusionCullingInspectorBake.png)
+
+
