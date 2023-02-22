@@ -15,7 +15,8 @@ Any GameObject that is likely to be occluded at runtime is a good candidate to b
 - Not move at runtime
 
 
-**Static editor flags**:
+**Static editor flags**: \
+![](./static_editor+flag.png)
 
 
 ![](./OcclusionCullingInspectorBake.png)
