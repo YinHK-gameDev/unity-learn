@@ -21,7 +21,7 @@ When you have identified the GameObjects that you would like to be Static Occlud
 3. Select all of the GameObjects that you would like to be **Static Occludees**.
 4. In the Inspector window, open the **Static Editor Flags** drop-down menu and select **Occludee Static**.
 5. Add a Camera to your Scene and select it, or select an existing Camera.
-6. In the Inspector window, ensure that the Camera’s Occlusion Culling property is enabled.
+6. In the Inspector window, ensure that the **Camera’s Occlusion Culling property is enabled**.
 
 **Static editor flags**: \
 ![](./static_editor+flag.png)
