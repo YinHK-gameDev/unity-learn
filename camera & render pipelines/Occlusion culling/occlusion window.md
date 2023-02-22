@@ -29,7 +29,16 @@ When you have identified the GameObjects that you would like to be Static Occlud
 ### Bake data
 ![](./OcclusionCullingInspectorBake.png)
 
-Occlusion culling inspector bake tab. 
+Occlusion culling inspector **bake** tab. 
 - In the top menu, select **Window > Rendering > Occlusion Culling** to open the Occlusion Culling window.
 - Select the **Bake** tab.
 - In the bottom right hand corner of the Inspector window, press the Bake button. Unity generates the occlusion culling data, saves the data as an asset in your Project, and links the asset with the current Scene(s).
+
+### Visualizion
+
+Occlusion Culling window **Visualization** tab.
+- Ensure that the Occlusion Culling window and the Scene view are both visible. When the Occlusion Culling window is visible, Unity displays occlusion culling data and the Occlusion Culling popup in the Scene view.
+- Select a Camera in the Scene.
+- Move the Camera around, and observe the Scene view. You should see GameObjects disappear from view when the Camera cannot see them, due to either frustum culling or occlusion culling.
+- Use the Occlusion Culling popup in the Scene view to configure the visualization.
+- If required, tweak the bake settings in the Bake tab of the Occlusion Culling window, and repeat the baking process.
