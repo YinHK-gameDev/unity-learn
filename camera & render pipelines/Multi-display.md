@@ -32,6 +32,13 @@ public class ActivateAllDisplays : MonoBehaviour
 }
 ```
 
+To preview different Camera views: \
+In the Camera’s Inspector, select a **Target Display** for that Camera.
+
+From the Display menu in the top-left corner, select the Display to Preview.
+
+
+
 ### ref
 
 https://docs.unity3d.com/Manual/MultiDisplay.html
