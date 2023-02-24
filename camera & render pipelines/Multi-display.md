@@ -37,6 +37,7 @@ In the Camera’s Inspector, select a **Target Display** for that Camera.
 
 From the Display menu in the top-left corner, select the Display to Preview.
 
+![](./TargetDisplay.png)
 
 
 ### ref
