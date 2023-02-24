@@ -1,6 +1,12 @@
 ## Render pipelines
-A render pipeline performs a series of operations that **take the contents of a Scene
+A render pipeline performs a series of **operations** that **take the contents of a Scene
 , and displays them on a screen**.
+
+These operations are:
+
+- Culling
+- Rendering
+- Post-processing
 
 In Unity, you can choose between different render pipelines. Unity provides three prebuilt render pipelines with different capabilities and performance characteristics, or you can create your own.
 
