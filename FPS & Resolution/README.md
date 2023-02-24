@@ -15,6 +15,8 @@ Playing games at a higher resolution does come at a tradeoff with lower frames p
 
 
 
+![](./upload_2021-1-25_12-11-57.png)
+
 
 
 ### ref
