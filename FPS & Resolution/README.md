@@ -13,7 +13,8 @@
 Playing games at a higher resolution does come at a tradeoff with lower frames per second. The lowering of frames per second occurs due to the additional generated pixels on screen. This additional need to draw more pixels requires more processing power & memory, thus lowering your frame rate. The alternative is also true, **the lower resolution you choose to run, a greater amount of frames can run in the same time frame**.
 
 
-
+### Eable FPS stat in unity
+**Edit > Project Setting**s, then select the **Player** category, under **Other setting** check the Enable **Frame Timing Stats** checkbox.
 
 ![](./upload_2021-1-25_12-11-57.png)
 
