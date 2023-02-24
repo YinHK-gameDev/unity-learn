@@ -20,7 +20,7 @@ It can be difficult to switch a Project from one render pipeline to another, bec
 - The **Built-in Render Pipeline** is Unity’s default render pipeline. It is a general-purpose render pipeline that has limited options for customization.
 - The **Universal Render Pipeline (URP)** is a Scriptable Render Pipeline that is quick and easy to customize, and lets you create optimized graphics across a wide range of platforms.
 - The **High Definition Render Pipeline (HDRP)** is a Scriptable Render Pipeline that lets you create cutting-edge, high-fidelity graphics on high-end platforms.
-- You can create your **own custom render pipeline** using Unity’s Scriptable **Render Pipeline API**.
+- You can create your **own custom render pipeline** using Unity’s **Scriptable Render Pipeline API**.
 
 
 ### Render pipeline feature comparison
