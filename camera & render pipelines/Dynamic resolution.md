@@ -12,6 +12,15 @@ With dynamic resolution, render targets have the DynamicallyScalable flag. You c
 
 ![](./DynamicResolution.png)
 
+> When you enable Allow Dynamic Resolution on the Camera, Unity scales all of that Camera’s targets.
+
+
+### Controlling scalling
+You can control the scale through the `ScalableBufferManager`. The `ScalableBufferManager` gives you control of the dynamic width and height scale for all render targets you have marked for the dynamic resolution system to scale.
+
+As an example, assume your application is running at a desirable frame rate, but under some circumstances the GPU performance decreases, due to a combination of increased particles, post-effects and screen complexity. The Unity `FrameTimingManager` allows you to detect when the CPU or GPU performance start to decrease. So you can use the `FrameTimingManager` to calculate a new desired width and height scale to keep the frame rate within your desired range, and bring the scale down to that value to keep performance stable (either instantly or gradually over a set amount of frames).
+
+
 
 
 
