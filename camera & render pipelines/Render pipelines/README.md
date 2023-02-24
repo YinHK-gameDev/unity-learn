@@ -23,5 +23,8 @@ It can be difficult to switch a Project from one render pipeline to another, bec
 - You can create your **own custom render pipeline** using Unity’s Scriptable **Render Pipeline API**.
 
 
+### Render pipeline feature comparison
+https://docs.unity3d.com/Manual/render-pipelines-feature-comparison.html
+
 ### ref
 https://docs.unity3d.com/Manual/render-pipelines.html
