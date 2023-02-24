@@ -1,6 +1,6 @@
 ## Frame Rate(FPS) & Resolution for Gaming 
 
-- **Frame Rate or FPS** dictates **how smooth a game runs**, improving playability and frame speed. 
+- **Frame Rate or FPS** dictates **how smooth a game runs**, improving playability and frame speed. Frame rate is **how often the video updates with a new frame** and this gets measured in frames per second (FPS).
 - **Resolution** determines the number of pixels on screen, making a game more visually appealing.
 
 
