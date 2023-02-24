@@ -74,6 +74,8 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 
 **https://dev.twsiyuan.com/p/unity.html**
 
+**https://gamedevbeginner.com/**
+
 ✒️ **Live streaming from other expert**
 
 **https://learn.unity.com/live-calendar/?tab=previous**
