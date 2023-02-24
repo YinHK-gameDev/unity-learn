@@ -8,7 +8,7 @@
 
 
 ### Does Higher Resolution Lower FPS?
-Playing games at a higher resolution does come at a tradeoff with lower frames per second. The lowering of frames per second occurs due to the additional generated pixels on screen. This additional need to draw more pixels requires more processing power & memory, thus lowering your frame rate. The alternative is also true, the lower resolution you choose to run, a greater amount of frames can run in the same time frame.
+Playing games at a higher resolution does come at a tradeoff with lower frames per second. The lowering of frames per second occurs due to the additional generated pixels on screen. This additional need to draw more pixels requires more processing power & memory, thus lowering your frame rate. The alternative is also true, **the lower resolution you choose to run, a greater amount of frames can run in the same time frame**.
 
 
 
