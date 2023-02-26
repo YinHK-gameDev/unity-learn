@@ -12,7 +12,8 @@ The **Scriptable Render Pipeline** is a thin API layer that lets you schedule an
 - A **Render Pipeline Asset**. This is an asset in your Unity Project that stores data about which Render Pipeline Instance to use, and how to configure it. Its script inherits from **`RenderPipelineAsset`** and overrides its **`CreatePipeline()`** method.
 
 
-
+###  `ScriptableRenderContext`
+**`ScriptableRenderContext`** is a class that acts as an interface between the custom C# code in the render pipeline and Unity’s low-level graphics code.
 
 
 
