@@ -40,5 +40,23 @@ Unity determines the active render pipeline like this:
   - If **Graphics Settings** > **Scriptable Render Pipeline** Setting references a Render Pipeline Asset, Unity uses that value.
   - Otherwise, Unity uses the **Built-in Render Pipeline**.
 
+### Activating the Built-in Render Pipeline
+To set the active render pipeline to the Built-in Render Pipeline, remove any Render Pipeline Assets from Graphics Settings and Quality Settings.
+
+= **Select Edit > Project Settings > Quality**.
+- For each quality level, if a **Render Pipeline Asset** is assigned to the **Render Pipeline field**, unassign it.
+Select **Edit > Project Settings > Graphics**.
+- If a Render Pipeline Asset is assigned t**o the **Scriptable Render Pipeline Setting** field, unassign it.
+
+
+
+
+
+
+
+
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/render-pipelines.html
