@@ -53,8 +53,11 @@ public class ExampleRenderPipeline : RenderPipeline
 }
 ```
 
+### Executing CommandBuffers immediately
+You can execute CommandBuffers immediately without using the ScriptableRenderContext, by calling **`Graphics.ExecuteCommandBuffer`**. Calls to this API take place outside of the render pipeline.
+
 ### Entry points and callbacks
-When working with SRP, use these to make Unity call your C# code at specific times.
+When working with **SRP**, use these to make Unity call your C# code at specific times.
 
 - **`RenderPipeline.Render`** is the main entry point to the SRP. Unity calls this method automatically. If you are writing a custom render pipeline, this is where you begin to write your code.
 - The **`RenderPipelineManager`** class has the following events that you can subscribe to, so that you can execute custom code at **specific points** in the render loop:
