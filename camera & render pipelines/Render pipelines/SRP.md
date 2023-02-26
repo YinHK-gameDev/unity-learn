@@ -2,6 +2,8 @@
 
 The **Scriptable Render Pipeline** is a thin API layer that lets you **schedule and configure rendering commands using C# scripts**. Unity passes these commands to its low-level graphics architecture, which then sends instructions to the graphics API.
 
+Unity provides two prebuilt render pipelines based on the **Scriptable Render Pipeline (SRP)**: the **High Definition Render Pipeline (HDRP)**, and the **Universal Render Pipeline (URP)**. 
+
 **URP** and **HDRP** are built on top of **SRP**. You can also create your own custom render pipeline on top of **SRP**.
 
 **Every render pipeline based on SRP has two key customized elements:**
