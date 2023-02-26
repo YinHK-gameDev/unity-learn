@@ -28,5 +28,16 @@ It can be difficult to switch a Project from one render pipeline to another, bec
 ### Render pipeline feature comparison
 https://docs.unity3d.com/Manual/render-pipelines-feature-comparison.html
 
+
+### Determining the active render pipeline
+To get or set the default render pipeline, use **Edit > Project Setting > Graphics Settings > Scriptable Render Pipeline Setting** (or its equivalent API, `GraphicsSettings.defaultRenderPipeline`). To get or set the render pipeline that overrides the default for a given quality level, **Edit > Project Setting > Quality Settings > Render Pipeline** (or its equivalent API, `QualitySettings.renderPipeline`).
+
+Unity determines the active render pipeline like this:
+
+If the current **Quality Settings > Render Pipeline** references a Render Pipeline Asset, Unity uses that value.
+Otherwise:
+If **Graphics Settings** > **Scriptable Render Pipeline** Setting references a Render Pipeline Asset, Unity uses that value.
+Otherwise, Unity uses the **Built-in Render Pipeline**.
+
 ### ref
 https://docs.unity3d.com/Manual/render-pipelines.html
