@@ -7,6 +7,11 @@ The **Scriptable Render Pipeline** is a thin API layer that lets you schedule an
 
 **Every render pipeline based on SRP has two key customized elements:**
 
+
+In SRP, you use C# scripts to configure and schedule rendering commands. You then tell Unity’s low-level graphics architecture to execute them, which sends instructions to the graphics API.
+
+The main way of doing this is by making API calls to the `ScriptableRenderContext`, but you can also execute **CommandBuffers** immediately.
+
 ### Render Pipeline Instance and Render Pipeline Asset
 - A **Render Pipeline Instance**. 
   This is an instance of a class defines the functionality of your render pipeline. Its script inherits from **`RenderPipeline`**, and overrides its **`Render()`** method.
