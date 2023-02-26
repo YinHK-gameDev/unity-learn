@@ -4,16 +4,16 @@ The **Scriptable Render Pipeline** is a thin API layer that lets you **schedule 
 
 Unity provides two prebuilt render pipelines based on the **Scriptable Render Pipeline (SRP)**: the **High Definition Render Pipeline (HDRP)**, and the **Universal Render Pipeline (URP)**. 
 
+If you want even more control over your rendering pipeline, you can create your own custom render pipeline based on SRP.
+
 **URP** and **HDRP** are built on top of **SRP**. You can also create your own custom render pipeline on top of **SRP**.
-
-**Every render pipeline based on SRP has two key customized elements:**
-
 
 In **SRP**, you use C# scripts to configure and schedule rendering commands. You then tell Unity’s low-level graphics architecture to execute them, which sends instructions to the graphics API.
 
 The main way of doing this is by making API calls to the `ScriptableRenderContext`, but you can also execute **CommandBuffers** immediately.
 
 ### Render Pipeline Instance and Render Pipeline Asset
+**Every render pipeline based on SRP has two key customized elements:**
 - A **Render Pipeline Instance**. 
   This is an instance of a class defines the functionality of your render pipeline. Its script inherits from **`RenderPipeline`**, and overrides its **`Render()`** method.
 - A **Render Pipeline Asset**. This is an asset in your Unity Project that stores data about which Render Pipeline Instance to use, and how to configure it. Its script inherits from **`RenderPipelineAsset`** and overrides its **`CreatePipeline()`** method.
