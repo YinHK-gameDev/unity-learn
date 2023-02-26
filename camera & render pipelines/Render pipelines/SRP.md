@@ -31,7 +31,7 @@ To schedule rendering commands, you can:
 To tell Unity to perform the commands that you have scheduled, call `**ScriptableRenderContext.Submit**`. Note that it does not matter whether you used a CommandBuffer to schedule the command, or whether you scheduled the command by calling an API; Unity schedules all rendering commands on the ScriptableRenderContext in the same way, and does not execute any of them until you call **`Submit()`**.
 
 
-EG:
+Eg:
 ```cs
 using UnityEngine;
 using UnityEngine.Rendering;
