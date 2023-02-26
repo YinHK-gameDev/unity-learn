@@ -192,4 +192,4 @@ public class ActiveRenderPipelineExample : MonoBehaviour
 ```
 
 ### ref
-https://docs.unity3d.com/Manual/render-pipelines.html
+https://docs.unity3d.com/Manual/BestPracticeLightingPipelines.html
