@@ -59,10 +59,15 @@ Select **Edit > Project Settings > Graphics**.
   2. Drag the Render Pipeline Asset on to the **Render Pipeline** field.
 
 
+###  Get and set the active render pipeline in C# scripts
+In C# scripts, you can get and set the active render pipeline and receive a callback when the active render pipeline changes.
 
-
-
-
+- There are several ways to get the active render pipeline:
+  - To get a reference to the Render Pipeline Asset that defines the active render pipeline, use `GraphicsSettings.currentRenderPipeline`.
+  - To get a reference to the Render Pipeline Asset that defines the active render pipeline and to determine whether Unity is using the default value or an override value, get the values of `GraphicsSettings.defaultRenderPipeline` and `QualitySettings.renderPipeline`. 
+  - To get the RenderPipeline instance for the active render pipeline, use RenderPipelineManager.currentPipeline. **Note: Unity updates this property only after it has rendered at least one frame with the active render pipeline.**
+- To set the active render pipeline, set the values of `GraphicsSettings.defaultRenderPipeline` and `QualitySettings.renderPipeline`. 
+- To detect and execute code when the type of the active render pipeline changes, use `RenderPipelineManager.activeRenderPipelineTypeChanged`.
 
 
 ### ref
