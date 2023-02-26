@@ -34,10 +34,10 @@ To get or set the default render pipeline, use **Edit > Project Setting > Graphi
 
 Unity determines the active render pipeline like this:
 
-If the current **Quality Settings > Render Pipeline** references a Render Pipeline Asset, Unity uses that value.
-Otherwise:
-If **Graphics Settings** > **Scriptable Render Pipeline** Setting references a Render Pipeline Asset, Unity uses that value.
-Otherwise, Unity uses the **Built-in Render Pipeline**.
+- If the current **Quality Settings > Render Pipeline** references a Render Pipeline Asset, Unity uses that value.
+- Otherwise:
+  - If **Graphics Settings** > **Scriptable Render Pipeline** Setting references a Render Pipeline Asset, Unity uses that value.
+  - Otherwise, Unity uses the **Built-in Render Pipeline**.
 
 ### ref
 https://docs.unity3d.com/Manual/render-pipelines.html
