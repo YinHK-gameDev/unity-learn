@@ -49,7 +49,14 @@ Select **Edit > Project Settings > Graphics**.
 - If a Render Pipeline Asset is assigned t**o the **Scriptable Render Pipeline Setting** field, unassign it.
 
 
-
+### Activating URP, HDRP, or a custom render pipeline
+- In your Project folder, locate the **Render Pipeline Asset(s)** that you want to use.
+- Set the default render pipeline, which Unity uses when there is no override for a given quality level. If you do not set this, Unity uses the Built-in Render Pipeline when no override applies.
+  1. **Select Edit > Project Settings > Graphics**.
+  2. Drag the Render Pipeline Asset on to the **Scriptable Render Pipeline** Setting field.
+- Optional: Set override Render Pipeline Assets for different quality levels.
+  1. Select **Edit > Project Settings > Quality**.
+  2. Drag the Render Pipeline Asset on to the **Render Pipeline** field.
 
 
 
