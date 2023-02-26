@@ -20,7 +20,7 @@ The **Scriptable Render Pipeline** is a thin API layer that lets you schedule an
 When working with SRP, use these to make Unity call your C# code at specific times.
 
 - **`RenderPipeline.Render`** is the main entry point to the SRP. Unity calls this method automatically. If you are writing a custom render pipeline, this is where you begin to write your code.
-- The **`RenderPipelineManager`** class has the following events that you can subscribe to, so that you can execute custom code at specific points in the render loop:
+- The **`RenderPipelineManager`** class has the following events that you can subscribe to, so that you can execute custom code at **specific points** in the render loop:
   - **`beginFrameRendering`** - **Note**: This can generate garbage. Use **`beginContextRendering`** instead.
   - **`endFrameRendering`** - **Note**: This can generate garbage. Use **`endContextRendering`** instead.
 - **`beginContextRendering`**
