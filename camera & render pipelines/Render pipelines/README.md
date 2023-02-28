@@ -193,3 +193,8 @@ public class ActiveRenderPipelineExample : MonoBehaviour
 
 ### ref
 https://docs.unity3d.com/Manual/BestPracticeLightingPipelines.html
+
+https://www.youtube.com/watch?v=xS6g15XL8jQ
+
+
+
