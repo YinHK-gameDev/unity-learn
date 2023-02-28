@@ -75,3 +75,7 @@ When working with **SRP**, use these to make Unity call your C# code at specific
 https://docs.unity3d.com/Manual/scriptable-render-pipeline-introduction.html
 
 https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@16.0/manual/index.html
+
+https://www.youtube.com/watch?v=91zUwJwkXNQ
+
+
