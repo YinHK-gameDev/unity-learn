@@ -11,8 +11,13 @@ Lighting in Unity works by approximating how light behaves in the real world.
   It is light that is emitted, hits a surface once, and is then reflected directly into a sensor (for example, the eye’s retina or a camera).
   
 - **Indirect light**:
-  It is all other light that is ultimately reflected into a sensor, including light that hits surfaces several times, and sky light. To achieve realistic lighting results, you need to simulate both direct and indirect light.
+  It is all other light that is ultimately reflected into a sensor, including light that hits surfaces several times, and sky light. 
+  
+> To achieve realistic lighting results, you need to simulate both direct and indirect light.
 
+- **Real-time lighting**:
+  It is when Unity calculates lighting at runtime.
 
+- 
 
 
