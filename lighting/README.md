@@ -18,6 +18,11 @@ Lighting in Unity works by approximating how light behaves in the real world.
 - **Real-time lighting**:
   It is when Unity calculates lighting at runtime.
 
-- 
+- **Baked lighting**:
+  It is when Unity performs lighting calculations in advance and saves the results as lighting data, which is then applied at runtime.
+  
+>  In Unity, your Project can use real-time lighting, baked lighting, or a mix of the two (called **mixed lighting**).
+  
+  
 
 
