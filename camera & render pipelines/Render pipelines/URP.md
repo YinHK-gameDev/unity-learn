@@ -6,3 +6,6 @@ The Universal Render Pipeline (URP) is a prebuilt Scriptable Render Pipeline, ma
 https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@16.0/manual/index.html
 
 https://www.youtube.com/watch?v=aJ1OpirisGM
+
+https://www.youtube.com/watch?v=m6YqTrwjpP0
+
