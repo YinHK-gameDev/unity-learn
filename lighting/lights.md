@@ -1,0 +1,14 @@
+## Lights
+
+### Types of light
+- Point Light
+- Spot Light
+- Directional Light
+- Area Light
+
+
+
+### ref
+https://docs.unity3d.com/Manual/Lighting.html
+
+
