@@ -6,7 +6,6 @@ Lights can be added to your scene from the **GameObject > Light** menu. You will
 
 Lighting in Unity works by approximating how light behaves in the real world.
 
-
 - **Direct light**:
   It is light that is emitted, hits a surface once, and is then reflected directly into a sensor (for example, the eye’s retina or a camera).
   
@@ -23,6 +22,6 @@ Lighting in Unity works by approximating how light behaves in the real world.
   
 >  In Unity, your Project can use real-time lighting, baked lighting, or a mix of the two (called **mixed lighting**).
   
-  
-
+- **Global illumination**:
+  Global illumination is **a group of techniques** that **model both direct and indirect lighting to provide realistic lighting results**. Unity has two global illumination systems, which combine direct and indirect lighting.
 
