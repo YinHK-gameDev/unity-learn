@@ -34,7 +34,7 @@ The Modes are:
   
   At runtime, Unity loads the **baked lighting data**, and **uses it to light the Scene**. 
   
-  Because the complex calculations are performed in advance, Baked Lights reduce shading cost at runtime, and reduce the rendering cost of shadows.
+  Because the complex calculations are performed in advance, Baked Lights reduce shading cost at runtime, and **reduce the rendering cost of shadows**.
   
 - **Realtime**: \
   Unity **calculates and updates the lighting of Realtime Lights every frame at runtime**. Unity does not precompute any calculations for Realtime Lights. 
