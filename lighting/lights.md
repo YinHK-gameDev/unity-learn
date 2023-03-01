@@ -10,6 +10,10 @@
 
 ![](./img/Light-Point.jpg)
 
+![](./img/SpotLightDiagram.svg)
+
+![](./img/Light-Spot.jpg)
+
 ### ref
 https://docs.unity3d.com/Manual/Lighting.html
 
