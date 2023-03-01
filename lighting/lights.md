@@ -92,6 +92,8 @@ You can toggle whether cookies are enabled for Baked Lights and Mixed Lights in 
 - Toggle Enable **baked cookies support**.
 
 #### Creating cookies for lighting texture
+In cookies field, just click to select your texture asset.
+
 
 Example: 
 
