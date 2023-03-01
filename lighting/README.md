@@ -33,3 +33,5 @@ Lighting in Unity works by approximating how light behaves in the real world.
 ### ref
 
 https://www.youtube.com/watch?v=DlxuvvYZO4Q
+
+https://www.youtube.com/watch?v=VnG2gOKV9dw
