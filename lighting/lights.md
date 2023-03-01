@@ -18,6 +18,8 @@
 
 ![](./img/Light-Direct.jpg)
 
+![](./img/AreaLightDiagram.svg)
+
 ### ref
 https://docs.unity3d.com/Manual/Lighting.html
 
