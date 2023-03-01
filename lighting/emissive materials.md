@@ -17,6 +17,9 @@ Materials with an emission above zero will still appear to glow brightly on-scre
 > **Note**: Emissive materials only directly affect static geometry in your scene. If you need dynamic, or non-static geometry - such as characters, to pick up light from emissive materials, **Light Probes**
  must be used.
  
+### Set up emissive materials
+In the material inspecter, check the checkbox and change its color in emission field.
+Open **Lighting window**, click generating lighting.
  
 ### ref
 https://vintay.medium.com/creating-emissive-materials-in-unity-efc6f352971
