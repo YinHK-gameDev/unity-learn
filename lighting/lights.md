@@ -53,8 +53,7 @@ The Modes are:
   Unity **performs some calculations for Mixed Lights in advance, and some calculations at runtime**. Mixed Lights combine elements of both real-time and baked lighting. You can use Mixed Lights to combine dynamic shadows with baked lighting from the same light source, or when you want a light to contribute direct real-time lighting and baked indirect lighting.
   
   > **Note**:  if you disable Baked Global Illumination
- in your Scene, Unity forces Mixed Lights to behave as though you set their Mode to Realtime. When this happens, Unity displays a warning on the Light component Inspector
-.
+ in your Scene, Unity forces Mixed Lights to behave as though you set their Mode to Realtime. When this happens, Unity displays a warning on the Light component Inspector.
 
 ### ref
 https://docs.unity3d.com/Manual/Lighting.html
