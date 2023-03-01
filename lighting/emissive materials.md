@@ -18,3 +18,5 @@ Materials with an emission above zero will still appear to glow brightly on-scre
  must be used.
  
  
+### ref
+https://vintay.medium.com/creating-emissive-materials-in-unity-efc6f352971
