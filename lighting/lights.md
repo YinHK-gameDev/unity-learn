@@ -32,7 +32,7 @@ The Modes are:
 - **Baked**: \
   Unity **pre-calculates** the illumination from **Baked Lights before runtime**, and **does not include them in any runtime lighting calculations**.
   
-  At runtime, Unity loads the baked lighting data, and uses it to light the Scene. 
+  At runtime, Unity loads the **baked lighting data**, and **uses it to light the Scene**. 
   
   Because the complex calculations are performed in advance, Baked Lights reduce shading cost at runtime, and reduce the rendering cost of shadows.
   
