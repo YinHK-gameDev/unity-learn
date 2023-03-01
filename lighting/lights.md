@@ -94,6 +94,7 @@ You can toggle whether cookies are enabled for Baked Lights and Mixed Lights in 
 #### Creating cookies for lighting texture
 In cookies field, just click to select your texture asset.
 
+> Note: If you are creating a cookie to use with a **Point Light**, lay your texture out as a **cubemap**. If you are creating a cookie to use with a **Spot Light** or **Directional Light**, lay your texture out as a regular **2D texture**.
 
 Example: 
 
