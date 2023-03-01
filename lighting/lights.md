@@ -36,6 +36,10 @@ The Modes are:
   
   Because the complex calculations are performed in advance, Baked Lights reduce shading cost at runtime, and **reduce the rendering cost of shadows**.
   
+  **Baked Light behavior:**
+  - Unity bakes both direct lighting and indirect lighting from **Baked Lights into lightmaps**.
+  - Unity bakes both direct and indirect lighting from **Baked Lights into Light Probes**.
+  
 - **Realtime**: \
   Unity **calculates and updates the lighting of Realtime Lights every frame at runtime**. Unity does not precompute any calculations for Realtime Lights. 
   
@@ -58,6 +62,9 @@ The Modes are:
   
   > **Note**:  if you disable Baked Global Illumination
  in your Scene, Unity forces Mixed Lights to behave as though you set their Mode to Realtime. When this happens, Unity displays a warning on the Light component Inspector.
+
+
+
 
 ### ref
 https://docs.unity3d.com/Manual/Lighting.html
