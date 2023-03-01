@@ -91,6 +91,8 @@ You can toggle whether cookies are enabled for Baked Lights and Mixed Lights in 
 - Navigate to the Graphics section.
 - Toggle Enable **baked cookies support**.
 
+#### Creating cookies for the Built-in Render Pipeline
+https://docs.unity3d.com/Manual/creating-cookies-built-in-render-pipeline.html
 
 ### ref
 https://docs.unity3d.com/Manual/Lighting.html
