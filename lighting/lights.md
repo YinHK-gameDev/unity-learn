@@ -6,6 +6,7 @@
 - Directional Light
 - Area Light
 
+![](./img/PointLightDiagram.svg)
 ![](./img/Light-Point.jpg)
 
 ### ref
