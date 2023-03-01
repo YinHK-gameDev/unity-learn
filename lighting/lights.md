@@ -93,7 +93,11 @@ You can toggle whether cookies are enabled for Baked Lights and Mixed Lights in 
 
 #### Creating cookies for lighting texture
 
-Eg: 
+Example: 
+
+![](./img/Cookie.png)
+
+![](./img/CookieExample.png)
 
 https://docs.unity3d.com/Manual/creating-cookies-built-in-render-pipeline.html
 
