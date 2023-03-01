@@ -45,8 +45,8 @@ The Modes are:
   - Baked Lights do not contribute to specular lighting.
   - **Dynamic GameObjects do not receive light or shadow from Baked Lights**.
   
-  > **Note**: if you disable Baked Global Illumination
- in your Scene, Unity forces Baked Lights to behave as though you set their Mode to Realtime. When this happens, Unity displays a warning on the Light component Inspector.
+  
+> **Note**: if you disable Baked Global Illumination in your Scene, Unity forces Baked Lights to behave as though you set their Mode to Realtime. When this happens, Unity displays a warning on the Light component Inspector.
 
 - **Realtime**: \
   Unity **calculates and updates the lighting of Realtime Lights every frame at runtime**. Unity does not precompute any calculations for Realtime Lights. 
