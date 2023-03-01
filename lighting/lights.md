@@ -14,6 +14,10 @@
 
 ![](./img/Light-Spot.jpg)
 
+![](./img/DirectionalLightDiagram.svg)
+
+![](./img/Light-Direct.jpg)
+
 ### ref
 https://docs.unity3d.com/Manual/Lighting.html
 
