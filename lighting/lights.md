@@ -72,7 +72,12 @@ The Modes are:
  in your Scene, Unity forces Mixed Lights to behave as though you set their Mode to Realtime. When this happens, Unity displays a warning on the Light component Inspector.
 
 
+### Cookies
+A cookie is a **mask** that you place on a Light to create a shadow with a specific shape or color, which changes the appearance and intensity of the Light. 
 
+To apply a cookie to a Light in Unity, assign a texture to the Cookie field of a a Light component.
+
+Cookies may support different features depending on the render pipeline you are using.  Cookies are an efficient way of simulating complex lighting effects with minimal or no runtime performance impact. Effects you can simulate with cookies include caustics, soft shadows, and light shapes.
 
 ### ref
 https://docs.unity3d.com/Manual/Lighting.html
