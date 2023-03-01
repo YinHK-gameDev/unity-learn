@@ -12,7 +12,7 @@ For Prefabs, you can
 - Instantiate a Prefab using one line of code. Creating equivalent GameObjects from scratch requires many more lines of code.
 - Set up, test, and modify the Prefab quickly and easily using the Scene
  view, **Hierarchy** and **Inspector**.
-- Set up, test, and modify the Prefab quickly and easily using the Scene view, Hierarchy and Inspector.
+
 
 ### How to create Prefabs?
 Prefabs are created automatically when an object is **dragged from the Hierarchy into the Project window**.
