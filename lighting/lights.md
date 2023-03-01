@@ -1,5 +1,9 @@
 ## Lights
 
+
+**GameObject > Light**
+ 
+ 
 ### Types of light
 - Point Light
 - Spot Light
