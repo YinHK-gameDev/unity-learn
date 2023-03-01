@@ -2,7 +2,8 @@
 
 ### What are prefabs in Unity?
 
-**Prefabs** are a special type of component that allows fully configured GameObjects to be saved in the Project for **reuse**.
+> **Prefabs** are a special type of component that allows fully configured GameObjects to be saved in the Project for **reuse**.
+
 These assets can then be shared between scenes, or even other projects without having to be configured again. This is quite useful for objects that will be used many times, such as platforms.
 
 **Prefabs is that they are essentially linked copies of the asset** that exist in the Project window. 
