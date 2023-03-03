@@ -16,6 +16,8 @@ If you imagine a Camera at the same location as the Light, the areas of the Scen
 
 Unity **populates the shadow map with information about how far rays from the Light travel before they hit a surface**, and then **samples the shadow map to calculate real-time shadows for GameObjects that the Light hits**.
 
+https://en.wikipedia.org/wiki/Shadow_mapping
+
 ### Shadow map resolution
 
 To calculate the resolution of a shadow map, Unity:
@@ -30,12 +32,28 @@ To calculate the resolution of a shadow map, Unity:
 - Medium: 0.25
 - Low: 0.125
 
+### Configuring shadows
+Tp configure the real-time and baked shadow settings for each Light component using the Inspector.
 
 
+> Each** Mesh Renderer** in the Scene also has a **Cast Shadow**s and a **Receive Shadows** property, which **must be enabled** as required.
+
+Enable Cast Shadows by selecting On from the drop-down menu to enable or disable shadow casting for the mesh
+. Alternatively, select Two Sided to allow shadows to be cast by either side of the surface (so backface culling is ignored for shadow casting purposes), or Shadows Only to allow shadows to be cast by an invisible GameObject.
 
 
+### Shadow distance
 
-https://en.wikipedia.org/wiki/Shadow_mapping
+Use the Shadow Distance property to determine the distance from the Camera up to which Unity renders real-time shadows.
+
+Shadows from GameObjects
+ become less noticeable the farther the GameObjects are from the Camera. This is both because the shadows appear smaller on the screen, and because distant GameObjects are usually not the focus of attention. You can take advantage of this effect by disabling real-time shadow rendering for distant GameObjects.  
+This saves on wasted rendering operations, and can improve runtime performance. Additionally, the Scene
+ often looks better without distant shadows.
+ 
+ To disguise missing shadows beyond the Shadow Distance, you can use visual effects such as **fog**.
+ 
+ 
 
 
 
