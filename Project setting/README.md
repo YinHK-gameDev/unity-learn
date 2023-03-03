@@ -26,3 +26,6 @@ The list below shows the default settings categories that are available in the P
 - UI Builder
 - Version Control
 - XR Plugin Management
+
+
+https://docs.unity3d.com/Manual/comp-ManagerGroup.html
