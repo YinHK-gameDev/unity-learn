@@ -61,5 +61,7 @@ In the **Universal Render Pipeline (URP)**, set the Shadow Distance property in 
 In the **High Definition Render Pipeline (HDRP)**, set the Shadow Distance property for each Volume.
 
 
-
+If your Scene uses the Shadowmask Lighting Mode, Unity renders shadows from Mixed Lights
+ beyond the Shadow Distance, using either Light Probes
+ or a shadow mask Texture. You can configure how Unity renders shadows beyond the Shadow Distance.
 
