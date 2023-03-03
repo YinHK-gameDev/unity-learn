@@ -54,7 +54,11 @@ This saves on wasted rendering operations, and can improve runtime performance. 
  To disguise missing shadows beyond the Shadow Distance, you can use visual effects such as **fog**.
  
  
+In the **Built-in Render Pipeline**, set the Shadow Distance property in your Project’s Quality Settings.
 
+In the **Universal Render Pipeline (URP)**, set the Shadow Distance property in the Universal Render Pipeline Asset.
+
+In the **High Definition Render Pipeline (HDRP)**, set the Shadow Distance property for each Volume.
 
 
 
