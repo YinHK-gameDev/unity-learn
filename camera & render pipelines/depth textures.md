@@ -5,3 +5,5 @@ A Camera can generate a depth, depth+normals, or motion vector texture. This is 
 
 
 
+https://www.youtube.com/watch?v=yUVrtPCsCb0
+
