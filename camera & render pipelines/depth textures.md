@@ -4,6 +4,7 @@ A Camera can generate a depth, depth+normals, or motion vector texture. This is 
  
 These are mostly used by effects; for example, post-processing effects often use depth information.
 
+https://docs.unity3d.com/Manual/SL-CameraDepthTexture.html
 
 https://www.youtube.com/watch?v=yUVrtPCsCb0
 
