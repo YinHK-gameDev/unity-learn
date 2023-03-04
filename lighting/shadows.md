@@ -92,7 +92,8 @@ When you configure Shadow Cascades in your Project, you can choose to use **0, 2
 
 - In the **`High Definition Render Pipeline (HDRP)`**, configure Shadow Cascades for each Volume.
 
-
+### Shadow troubleshooting
+https://docs.unity3d.com/Manual/ShadowPerformance.html
 
 ### ref
 Realistic Shadows in Unity with HDRP \
