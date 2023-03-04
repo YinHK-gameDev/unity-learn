@@ -29,9 +29,13 @@ Lighting in Unity works by approximating how light behaves in the real world.
   - **Real-time Global Illumination system**: 
     It is Enlighten Realtime Global Illumination.
     
-    
-### ref
+### Lighting window
+The Lighting window (menu: **Window > Rendering > Lighting**) is the main control point for Unity’s lighting features.
 
+
+
+
+### ref
 https://www.youtube.com/watch?v=DlxuvvYZO4Q
 
 https://www.youtube.com/watch?v=VnG2gOKV9dw
