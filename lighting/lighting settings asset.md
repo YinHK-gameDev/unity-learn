@@ -24,6 +24,17 @@ To create and automatically assign Lighting Settings Asset from the Lighting win
 > You can also create a **Lighting Settings Asset** from a script. To do this, create an instance of the **`LightingSettings`** class and either save it to disk, or assign it to a Scene and save that Scene.
 
 
+### Assigning a Lighting Settings Asset to a Scene
+
+To assign a Lighting Settings Asset to a Scene in the Unity Editor:
+
+1. Open the Scene that you want to assign the Lighting Settings Asset to.
+2. If you have more than one Scene open, ensure that the Scene that you want to assign the Lighting Settings Asset to is the active Scene.
+Open the Lighting window (menu: **Window > Rendering > Lighting**).
+3. Open the Scene tab.
+4. Either drag the Lighting Settings Asset to the **Lighting Settings** field, or click the icon to the right of the **Lighting Settings** field and choose the Lighting Settings Asset from the list.
+
+You can also assign a Lighting Settings Asset to the active Scene from a script. To do this, load the Lighting Settings Asset to obtain an instance of the `LightingSettings` class, then use the `Lightmapping.lightingSettings` API to assign that `LightingSettings` instance to the active Scene.
 
 https://docs.unity3d.com/Manual/class-LightingSettings.html
 
