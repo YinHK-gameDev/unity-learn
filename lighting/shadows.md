@@ -71,3 +71,10 @@ Shadow Cascades help solve a problem called perspective aliasing, where real-tim
 > **Shadow Cascades** only work with **Directional Lights**.
 
 
+
+
+### ref
+Realistic Shadows in Unity with HDRP \
+https://www.youtube.com/watch?v=N_TeKoMC3hg
+
+
