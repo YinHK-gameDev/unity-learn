@@ -7,9 +7,9 @@ Unity uses a technique called **shadow mapping** to render real-time shadows.
 Shadow mapping or shadowing projection is a process by which shadows are added to 3D computer graphics.
 
 
-Shadow mapping uses textures called **shadow maps**. Shadow maps are similar to depth textures. 
+**Shadow mapping** uses textures called **shadow maps**. **Shadow maps are similar to depth textures**. 
 
-A Light generates a shadow map in a similar way to how a Camera generates a depth texture. 
+A Light **generates a shadow map** in a similar way to how a **Camera generates a depth texture**.
 
 If you imagine a Camera at the same location as the Light, the areas of the Scene that the Camera cannot see are the same areas of the Scene that rays from the Light cannot reach; therefore, they are in shadow.
  
