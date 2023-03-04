@@ -46,7 +46,11 @@ You can view and edit the properties of Lighting Settings Asset in two places in
 
 > You can also read from or write to the properties of a **Lighting Settings Asset** from a script. To do this, load the Lighting Settings Asset to obtain an instance of the `LightingSettings` class, and access its properties.
 
+When a Scene does not have a Lighting Settings Asset assigned to it, Unity uses the **default** **LightingSettings object** for that Scene. The **default LightingSettings object** is an internal, read-only instance of the `LightingSettings` class.
 
+> You **cannot make any changes to the LightingSettings data for a Scene that uses the default LightingSettings, but Unity can perform a bake using its settings.**
+
+To make changes to the **LightingSettings data** for a Scene, you must use the Unity Editor to **create and assign a Lighting Settings Asset, or use a script to create, configure, and assign a `LightingSettings` object.** For more information and code examples, see the LightingSettings API documentation.
 
 https://docs.unity3d.com/Manual/class-LightingSettings.html
 
