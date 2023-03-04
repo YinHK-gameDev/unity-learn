@@ -21,7 +21,7 @@ To create and automatically assign Lighting Settings Asset from the Lighting win
 2. Open the Scene tab.
 3. Click **New Lighting Asset**. Unity creates a new Lighting Settings Asset in the Project view, and immediately assigns it to the active Scene.
 
-
+> You can also create a **Lighting Settings Asset** from a script. To do this, create an instance of the **`LightingSettings`** class and either save it to disk, or assign it to a Scene and save that Scene.
 
 
 
