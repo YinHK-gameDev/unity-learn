@@ -51,14 +51,14 @@ Shadows from GameObjects
 This saves on wasted rendering operations, and can improve runtime performance. Additionally, the Scene
  often looks better without distant shadows.
  
- To disguise missing shadows beyond the Shadow Distance, you can use visual effects such as **fog**.
+> To disguise missing shadows beyond the Shadow Distance, you can use visual effects such as **fog**.
  
  
-In the **Built-in Render Pipeline**, set the Shadow Distance property in your Project’s Quality Settings.
+- In the **Built-in Render Pipeline**, set the Shadow Distance property in your Project’s Quality Settings.
 
-In the **Universal Render Pipeline (URP)**, set the Shadow Distance property in the Universal Render Pipeline Asset.
+- In the **Universal Render Pipeline (URP)**, set the Shadow Distance property in the Universal Render Pipeline Asset.
 
-In the **High Definition Render Pipeline (HDRP)**, set the Shadow Distance property for each Volume.
+- In the **High Definition Render Pipeline (HDRP)**, set the Shadow Distance property for each Volume.
 
 
 If your Scene uses the Shadowmask Lighting Mode, Unity renders shadows from Mixed Lights
