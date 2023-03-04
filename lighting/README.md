@@ -25,7 +25,10 @@ Lighting in Unity works by approximating how light behaves in the real world.
 - **Global illumination**:
   Global illumination is **a group of techniques** that **model both direct and indirect lighting to provide realistic lighting results**. Unity has two global illumination systems, which combine direct and indirect lighting.
   - **Baked Global Illumination system**:
-    Consists of lightmappers, Light Probes, and Reflection Probes. There are three options for baking: the Progressive Lightmapper (CPU or GPU), and Enlighten Baked Global Illumination.
+    Consists of **lightmappers**, **Light Probes**, and **Reflection Probes**. \
+    **There are three options for baking**: 
+    - The **Progressive Lightmapper (CPU or GPU)**, and
+    - **Enlighten Baked Global Illumination**.
   - **Real-time Global Illumination system**: 
     It is **Enlighten Realtime Global Illumination**. \
     https://www.siliconstudio.co.jp/middleware/enlighten/en/
