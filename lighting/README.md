@@ -32,7 +32,7 @@ Lighting in Unity works by approximating how light behaves in the real world.
 ### Lighting window
 The Lighting window (menu: **Window > Rendering > Lighting**) is the main control point for Unity’s lighting features.
 
-
+You can use the Lighting window to **adjust settings related to the lighting** in your Scene, and to **optimise your precomputed lighting data for quality, bake time, and storage space**.
 
 
 ### ref
