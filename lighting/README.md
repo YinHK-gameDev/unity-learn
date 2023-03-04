@@ -27,7 +27,8 @@ Lighting in Unity works by approximating how light behaves in the real world.
   - **Baked Global Illumination system**:
     Consists of lightmappers, Light Probes, and Reflection Probes. There are three options for baking: the Progressive Lightmapper (CPU or GPU), and Enlighten Baked Global Illumination.
   - **Real-time Global Illumination system**: 
-    It is Enlighten Realtime Global Illumination.
+    It is **Enlighten Realtime Global Illumination**. \
+    https://www.siliconstudio.co.jp/middleware/enlighten/en/
     
 ### Lighting window
 The Lighting window (menu: **Window > Rendering > Lighting**) is the main control point for Unity’s lighting features.
