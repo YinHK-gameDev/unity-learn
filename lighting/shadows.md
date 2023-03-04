@@ -18,6 +18,8 @@ Unity **populates the shadow map with information about how far rays from the Li
 
 https://en.wikipedia.org/wiki/Shadow_mapping
 
+https://www.youtube.com/watch?v=PTIC1oQzxno
+
 ### Shadow map resolution
 
 To calculate the resolution of a shadow map, Unity:
