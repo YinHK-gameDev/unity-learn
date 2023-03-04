@@ -65,3 +65,9 @@ If your Scene uses the Shadowmask Lighting Mode, Unity renders shadows from Mixe
  beyond the Shadow Distance, using either Light Probes
  or a shadow mask Texture. You can configure how Unity renders shadows beyond the Shadow Distance.
 
+### Shadow cascades
+Shadow Cascades help solve a problem called perspective aliasing, where real-time shadows from Directional Lights appear pixelated when they are near the Camera.
+
+> **Shadow Cascades** only work with **Directional Lights**.
+
+
