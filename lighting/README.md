@@ -36,6 +36,12 @@ You can use the Lighting window to **adjust settings related to the lighting** i
 
 > You can perform many of the functions available in the **Lighting window** in scripts, using the **`LightingSettings`** and **`Lightmapping`** APIs.
 
+#### Scene tab
+The Scene tab displays information about the **Lighting Settings Asset** that is assigned to the active Scene. If no Lighting Settings Asset is assigned to the active Scene, it displays information about the **default LightingSettings object**.
+
+
+
+
 ### ref
 https://www.youtube.com/watch?v=DlxuvvYZO4Q
 
