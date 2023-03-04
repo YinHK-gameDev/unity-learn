@@ -75,6 +75,10 @@ Cascaded Shadow maps (CSM) is a know approach that helps to fix the aliasing pro
 
 > **Shadow Cascades** only work with **Directional Lights**.
 
+#### Perspective aliasing
+Perspective aliasing means that shadow map pixels close to the Camera look enlarged and chunky compared to those farther away.
+
+
 
 
 
