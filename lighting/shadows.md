@@ -84,7 +84,7 @@ https://docs.unity3d.com/Manual/shadow-cascades.html
 
 
 #### Using Shadow Cascades
-When you configure Shadow Cascades in your Project, you can choose to use 0, 2 or 4 cascades. Unity calculates the positioning of the cascades within the Camera’s frustum.
+When you configure Shadow Cascades in your Project, you can choose to use **0, 2 or 4 cascades**. Unity calculates the positioning of the cascades within the Camera’s frustum.
 
 - In the **`Built-in Render Pipeline`**, configure Shadow Cascades per quality level property in your Project’s **Quality Settings**.
 
