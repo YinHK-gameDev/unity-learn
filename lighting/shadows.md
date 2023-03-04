@@ -70,6 +70,9 @@ If your Scene uses the Shadowmask Lighting Mode, Unity renders shadows from Mixe
 ### Shadow cascades
 Shadow Cascades help solve a problem called perspective aliasing, where real-time shadows from Directional Lights appear pixelated when they are near the Camera.
 
+**What are shadow cascades in unity?** \
+Cascaded Shadow maps (CSM) is a know approach that helps to fix the aliasing problem by providing higher resolution of the depth texture near the viewer and lower resolution far away.
+
 > **Shadow Cascades** only work with **Directional Lights**.
 
 
