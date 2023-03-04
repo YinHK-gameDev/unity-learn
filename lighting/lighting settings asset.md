@@ -36,6 +36,18 @@ Open the Lighting window (menu: **Window > Rendering > Lighting**).
 
 You can also assign a Lighting Settings Asset to the active Scene from a script. To do this, load the Lighting Settings Asset to obtain an instance of the `LightingSettings` class, then use the `Lightmapping.lightingSettings` API to assign that `LightingSettings` instance to the active Scene.
 
+
+### Viewing and editing the properties of a Lighting Settings Asset
+You can view and edit the properties of Lighting Settings Asset in two places in the Unity Editor:
+
+- In the Project view, if you select a Lighting Settings Asset, you can view and edit its properties in the Inspector.
+- If the active Scene has a Lighting Settings Asset assigned to it, you can view and edit the properties of that Lighting Settings Asset in the Lighting Window’s Scene tab.
+
+
+> You can also read from or write to the properties of a **Lighting Settings Asset** from a script. To do this, load the Lighting Settings Asset to obtain an instance of the `LightingSettings` class, and access its properties.
+
+
+
 https://docs.unity3d.com/Manual/class-LightingSettings.html
 
 
