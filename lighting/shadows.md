@@ -80,6 +80,18 @@ Perspective aliasing means that shadow map pixels close to the Camera look enlar
 
 ![](./img/DirShadowAliasing.jpg)
 
+https://docs.unity3d.com/Manual/shadow-cascades.html
+
+
+#### Using Shadow Cascades
+When you configure Shadow Cascades in your Project, you can choose to use 0, 2 or 4 cascades. Unity calculates the positioning of the cascades within the Camera’s frustum.
+
+- In the **`Built-in Render Pipeline`**, configure Shadow Cascades per quality level property in your Project’s **Quality Settings**.
+
+- In the **`Universal Render Pipeline (URP)`**, configure Shadow Cascades in the Universal Render Pipeline Asset.
+
+- In the **`High Definition Render Pipeline (HDRP)`**, configure Shadow Cascades for each Volume.
+
 
 
 ### ref
