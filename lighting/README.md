@@ -34,6 +34,7 @@ The Lighting window (menu: **Window > Rendering > Lighting**) is the main contro
 
 You can use the Lighting window to **adjust settings related to the lighting** in your Scene, and to **optimise your precomputed lighting data for quality, bake time, and storage space**.
 
+> You can perform many of the functions available in the **Lighting window** in scripts, using the **`LightingSettings`** and **`Lightmapping`** APIs.
 
 ### ref
 https://www.youtube.com/watch?v=DlxuvvYZO4Q
