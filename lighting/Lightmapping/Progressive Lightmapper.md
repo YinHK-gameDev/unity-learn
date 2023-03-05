@@ -3,9 +3,7 @@
 The Progressive Lightmapper is a **fast path-tracing-based lightmapper system** that provides **baked lightmaps** and **Light Probes**
  with progressive updates in the Editor. It requires non-overlapping UVs with small area and angle errors, and sufficient padding between the charts.
  
- 
 The default value is Progressive CPU, because Enlighten Baked Global Illumination is deprecated (unlike Enlighten Realtime Global Illumination).
-
 
 ### Using the Progressive Lightmapper
 To use the Progressive Lightmapper:
@@ -75,10 +73,22 @@ If your development machine cannot run OptiX, the Progressive Lightmapper uses a
 . For more information, see Advanced Filtering settings, below.
   
   
+###  The Progressive GPU Lightmapper
+The Progressive GPU Lightmapper is a backend for the Progressive Lightmapper which uses your computer’s GPU and Dedicated Video Ram (VRAM) to generate baked lightmaps and Light Probes
   
-  
-  
-  
+The Progressive GPU Lightmapper bakes faster than the Progressive CPU Lightmapper, unless lightmapper tiling is active.
+
+Other applications competing for GPU resources also have an impact on baking performance. Depending on your hardware vendor, reductions in the amount of VRAM available to Unity can slow down the bake, cause it to fail, or even result in the Progressive GPU Lightmapper falling back to the CPU if the GPU cannot meet minimum memory requirements. Closing other applications while you are working with this functionality can improve stability and performance.
+
+https://docs.unity3d.com/Manual/GPUProgressiveLightmapper.html  
+
+
+### The Progressive CPU Lightmapper and the Progressive GPU Lightmapper 
+
+You can choose between two backends for the Progressive Lightmapper. 
+- The **Progressive CPU Lightmapper** backend is a backend for the Progressive Lightmapper that uses your **computer’s CPU and system RAM**.  
+- The **Progressive GPU Lightmapper** is a backend for the Progressive Lightmapper that uses your **computer’s GPU and VRAM**.
+
 
 
 ### ref
