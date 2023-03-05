@@ -8,8 +8,8 @@ Lightmapping is the **process of pre-calculating the brightness of surfaces in a
 
 **Unity provides the following lightmappers for generating lightmaps:**
 
-- Progressive Lightmapper
-- Enlighten Baked Global Illumination
+- **Progressive Lightmapper**
+- **Enlighten Baked Global Illumination**
 
 
 ### ref
