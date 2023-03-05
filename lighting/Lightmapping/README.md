@@ -125,6 +125,35 @@ Use the Light Probes component to place Light Probes around the LOD GameObjects.
 
 https://docs.unity3d.com/Manual/LODForBakedGI.html
 
+### Ambient occlusion
+
+**Ambient occlusion(AO)** is a feature that simulates the soft shadows that occur in creases, holes, and surfaces that are close to each another. These areas occlude (block out) ambient light, so they appear darker.
+
+It works by approximating how much ambient light can hit a point on a surface. It then darkens creases, holes and surfaces that are close to each other.
+
+You can use ambient occlusion to add realism to your lighting.
+
+#### Baked Ambient Occlusion
+
+If Baked Global Illuminationis enabled in your Scene, Unity can bake ambient occlusion into the lightmap. This is known as **Baked Ambient Occlusion**.
+
+To enable baked ambient occlusion in your Scene:
+
+- Open the Lighting window (menu: **Window > Rendering > Lighting**)
+- Navigate to the **Mixed Lighting** section
+- Enable **Baked Global Illumination**
+- Navigate to the Lightmapping Settings section
+- Enable **Ambient Occlusion**
+
+#### Realtime ambient occlusion
+If Global Illumination is not enabled in your Scene but you still want the effect of ambient occlusion, you can use a post-processing effect to apply real-time ambient occlusion to your Scene.
+
+If Enlighten Realtime Global Illumination is enabled in your Scene, the resolution for indirect lighting does not capture fine details or dynamic objects. We recommend using a real-time ambient occlusion post-processing effect, which has much more detail and results in higher quality lighting.
+
+
+https://docs.unity3d.com/Manual/LightingBakedAmbientOcclusion.html
+
+
 
 ### ref
 https://www.youtube.com/watch?v=KJ4fl-KBDR8
