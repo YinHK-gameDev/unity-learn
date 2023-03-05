@@ -57,7 +57,7 @@ Unity automatically generates an ambient probe and a default Reflection Probe to
 
 ### Properties for Lighting Settings Asset
 
-**Realtime Lighting**
+#### Realtime Lighting
 
 Contains settings related to the **`Enlighten Realtime Global Illumination system`**.
 | Property | Function |
@@ -66,11 +66,24 @@ Contains settings related to the **`Enlighten Realtime Global Illumination syste
 | Realtime Environment Lighting | Enable this property to use the Enlighten Realtime Global Illumination system to calculate and update ambient light in real-time.This property is only available when both Enlighten Realtime Global Illumination and Baked Global Illumination are enabled in the Scene. |
 
 
+#### Mixed Lighting
+
+Contains settings that affect the behavior of Baked Lights and Mixed Lights in Scenes that use this Lighting Settings Asset.
+
+**Baked Global Illumination:** \
+When this setting is enabled, Unity enables the Baked Global Illumination system for the Scenes that use this Lighting Settings Asset. When this setting is disabled, Unity disables the Baked Global Illumination system for the Scenes that use this Lighting Settings Asset.
+
+When the Baked Global Illumination system is enabled, Unity uses Baked lights in the Scene for lightmapping only, and Mixed lights behave according to the Lighting Mode setting. When the Baked Global Illumination system is disabled, Unity forces all Baked and Mixed lights in the Scene to act as though they were Realtime Lights.
+
+**Lighting Mode** \
+- Baked Indirect: Use Baked Indirect Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
+- Subtractive: Use Subtractive Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
+- Shadowmask: Use Shadowmask Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
 
 
 
 
-**Lightmapping Settings**
+#### Lightmapping Settings
 
 | Property | Function |
 | --- | --- |
