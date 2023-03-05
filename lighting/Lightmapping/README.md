@@ -6,6 +6,11 @@ Lightmapping is the **process of pre-calculating the brightness of surfaces in a
 
 > The data baked into lightmaps cannot change at runtime. Real-time lights can be overlaid and used additively on top of a lightmapped scene, but cannot interactively change the lightmaps themselves.
 
+**Unity provides the following lightmappers for generating lightmaps:**
+
+- Progressive Lightmapper
+- Enlighten Baked Global Illumination
+
 
 ### ref
 https://www.youtube.com/watch?v=KJ4fl-KBDR8
