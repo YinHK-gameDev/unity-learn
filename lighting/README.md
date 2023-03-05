@@ -73,7 +73,7 @@ The Light Explorer window allows you to select and edit light sources. To open t
 
 ![](./img/2d-light-explorer.png)
 
-Use the four tabs at the top of the panel to view settings for the Lights, 2D Lights, Reflection Probes, Light Probes, and Static Emissives in the current Scene. The editable parameters are the most commonly-used fields for each component type.
+Use the four tabs at the top of the panel to view settings for the **Lights, 2D Lights, Reflection Probes, Light Probes, and Static Emissives** in the current Scene. The editable parameters are the most commonly-used fields for each component type.
 
 Use the search field to filter each table for names. You can also select the lights you want to work on, then tick the Lock Selection checkbox. Only the lights that were selected when the checkbox was ticked remain listed in the Light Explorer, even if you select a different Light in the Scene.
 
