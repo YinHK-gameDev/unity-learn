@@ -123,6 +123,24 @@ The **Lighting Mode** determines the **behavior of all Mixed Lights in all Scene
 - **Shadowmask**
 - **Subtractive** 
  
+#### Baked Indirect
+When you set a Scene’s Lighting Mode to Baked Indirect, **Mixed Lights behave like Realtime Lights**, with the additional benefit of baking indirect lighting into lightmaps. GameObjects lit by Mixed Lights cast real-time shadows up to the Shadow Distance you define in the Project.
+
+When you set a Scene’s Lighting Mode to Baked Indirect, Mixed Lights behave as follows:
+
+- Dynamic GameObjects lit by Mixed Lights receive:
+  - Real-time direct lighting.
+  - Baked indirect lighting, using Light Probes.
+  - Shadows from dynamic GameObjects, using the shadow map, up to the Shadow Distance.
+  - Real-time shadows from static GameObjects, using the shadow map, up to the Shadow Distance.
+- Static GameObjects lit by Mixed Lights receive:
+  - Real-time direct lighting.
+  - Baked indirect lighting, using lightmaps.
+  - Real-time shadows from static GameObjects, using the shadow map, up to the Shadow Distance.
+  - Real-time shadows from dynamic GameObjects, using the shadow map, up to the Shadow Distance.
+
+
+
 
 
 
