@@ -147,6 +147,12 @@ Shadowmask Lighting Mode provides the highest fidelity shadows among all the Lig
 https://docs.unity3d.com/Manual/LightMode-Mixed-Shadowmask.html
 
 
+#### Subtractive
+In Subtractive Lighting Mode, all Mixed Lights in your Scene provide baked direct and indirect lighting. Unity bakes shadows cast by static GameObjects
+ into the lightmaps
+. In addition to the baked shadows, one Directional Light, known as the Main Directional Light, provides real-time shadows for dynamic GameObjects.
+
+Because shadows are baked into the lightmaps, Unity doesn’t have the information it needs to accurately combine baked and real-time shadows at runtime. Instead, Unity provides a Realtime Shadow Color for reducing the contribution from the lightmap to create the illusion of a correct blend between baked and real-time shadows. You can also tweak the color to achieve a certain artistic style.
 
 
-
+https://docs.unity3d.com/Manual/LightMode-Mixed-Subtractive.html
