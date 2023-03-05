@@ -25,7 +25,7 @@ To use the Progressive Lightmapper:
   > The default value is Progressive CPU
 
 - Progressive Updates \
-  Enable this to make the Progressive Lightmapper apply changes to the texels that are currently visible in the Scene View, then apply changes to the out-of-view texels.
+  Enable this to make the Progressive Lightmapper apply changes to the **texels** that are currently visible in the Scene View, then apply changes to the **out-of-view texels**.
 
 
 
