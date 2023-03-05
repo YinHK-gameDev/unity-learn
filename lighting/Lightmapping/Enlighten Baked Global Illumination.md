@@ -4,8 +4,9 @@ Enlighten Baked Global Illumination relies on precomputed real-time global illum
 Enlighten Baked Global Illumination is deprecated (unlike Enlighten Realtime Global Illumination).
 
 
+### Using the Enlighten lightmapper
 
-
+To use Enlighten Baked Global Illumination, go to **Window > Rendering > Lighting**, navigate to **Lightmapping Settings**, and **set Lightmapper to Enlighten**.
 
 
 ### ref
