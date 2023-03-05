@@ -87,8 +87,8 @@ There are two Directional Modes for lightmaps:
 
 > The default mode is Directional
 
-
-
+![](./img/DirectionalLightmapping1.jpg)
+![](./img/DirectionalLightmapping2.jpg)
 
 
 
