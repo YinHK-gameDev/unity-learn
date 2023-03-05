@@ -75,7 +75,7 @@ When this setting is enabled, Unity enables the Baked Global Illumination system
 
 When the Baked Global Illumination system is enabled, Unity uses Baked lights in the Scene for lightmapping only, and Mixed lights behave according to the Lighting Mode setting. When the Baked Global Illumination system is disabled, Unity forces all Baked and Mixed lights in the Scene to act as though they were Realtime Lights.
 
-**Lighting Mode** \
+**Lighting Mode** 
 - Baked Indirect: Use Baked Indirect Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
 - Subtractive: Use Subtractive Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
 - Shadowmask: Use Shadowmask Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
@@ -102,6 +102,13 @@ When the Baked Global Illumination system is enabled, Unity uses Baked lights in
 | Albedo Boost | Specifies the amount of light Unity bounces between surfaces. This value is between 1 and 10. Increasing this value pulls the albedo value towards white for indirect light computation. The default value of 1 is physically accurate. |
 | Lightmap Parameters | A Lightmap Parameters Asset stores values for settings relevant to Baked Global Illumination. The Editor provides several default Lightmap Parameters Assets to choose from, but you can also create your own lightmap parameters file using the Create New option. See Lightmap Parameters for more information. The default value is Default-Medium. The options are Default-Medium, Default-HighResolution, Default-LowResolution, and Default-VeryLowResolution. |
 
+
+### Auto Generation
+When you view a Lighting Settings Asset in the Inspector, this property is at the top of the Inspector. When you view a Lighting Settings Asset in the Lighting window, this property is at the bottom of the Lighting window, near the Generate Lighting button.
+
+| Property | Function: |
+| --- | --- |
+| Auto Generate | If Auto Generate is enabled, Unity precomputes lighting data automatically when you make changes to the Scene.This data includes lightmaps for the Baked Global Illumination system, data for the Enlighten Realtime Global Illumination system, Light Probes, and Reflection Probes.Unity usually begins the bake a few seconds after you make a change to the Scene. If Auto Generate is disabled, you must manually invoke a bake yourself, using the Generate Lighting button in the Lighting window, or the Lightmapping.Bake or Lightmapping.BakeAsync APIs.Note that when you precompute lighting data using Auto Generate, the precomputed lighting data is not stored as Assets in your Project. It is instead stored in memory, and serialized as part of the Scene. |
 
 
 
