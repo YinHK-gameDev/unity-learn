@@ -139,6 +139,12 @@ When you set a Scene’s Lighting Mode to Baked Indirect, Mixed Lights behave as
   - Real-time shadows from static GameObjects, using the shadow map, up to the Shadow Distance.
   - Real-time shadows from dynamic GameObjects, using the shadow map, up to the Shadow Distance.
 
+#### Shadowmask
+Similar to Baked Indirect Lighting Mode, Shadowmask Lighting Mode combines real-time direct lighting with baked indirect lighting. However, Shadowmask Lighting Mode differs from Baked Indirect Lighting Mode in the way that it renders shadows. Shadowmask Lighting Mode allows Unity to combine baked and real-time shadows at runtime, and to render shadows in the far distance. It does this by using an additional lightmap Texture known as a shadow mask, and by storing additional information in Light Probes.
+
+Shadowmask Lighting Mode provides the highest fidelity shadows among all the Lighting Modes, but has the highest performance cost and memory requirements. It is suitable for rendering realistic scenes where distant GameObjects are visible, such as open worlds, on high-end or mid-range hardware.
+
+https://docs.unity3d.com/Manual/LightMode-Mixed-Shadowmask.html
 
 
 
