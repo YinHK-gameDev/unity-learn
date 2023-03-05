@@ -77,6 +77,20 @@ To assign a Lightmap Parameters Asset to a **Terrain** component:
 - In **Terrain Settings**, go to **Lightmapping > Lightmap Parameters.**
 - Select an option from the menu. Select **Scene Default Parameter** to use the same Lightmap Parameters Asset that’s assigned to the whole Scene.
 
+### Directional Mode
+There are two Directional Modes for lightmaps: 
+- **Directional** 
+- **Non-Directional**. 
+
+ Both modes are compatible with real-time lightmaps from Unity’s **Enlighten Realtime Global Illumination
+ system**, and **baked lightmaps from Unity’s Progressive Lightmapper**.
+
+> The default mode is Directional
+
+
+
+
+
 
 
 ### ref
