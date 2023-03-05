@@ -117,7 +117,9 @@ When you use the **Progressive Lightmapper**, there is no need to place **Light 
 > If you do not place Light Probes, your lower LOD models may appear visually incorrect because they only receive direct light.
 
 
+To set up LOD models correctly for baked lighting, mark the LOD GameObjects as Contribute GI. To do this, select the GameObject, and at the top of the Inspector window, select the drop-down menu next to the Static checkbox:
 
+![](../img/LODForBakedGI-2.png)
 
 ### ref
 https://www.youtube.com/watch?v=KJ4fl-KBDR8
