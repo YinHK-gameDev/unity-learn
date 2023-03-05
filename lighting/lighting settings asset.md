@@ -52,6 +52,9 @@ When a Scene does not have a Lighting Settings Asset assigned to it, Unity uses 
 
 To make changes to the **LightingSettings data** for a Scene, you must use the Unity Editor to **create and assign a Lighting Settings Asset, or use a script to create, configure, and assign a `LightingSettings` object.** For more information and code examples, see the LightingSettings API documentation.
 
+Unity automatically generates an ambient probe and a default Reflection Probe to ensure that environment lighting affects your scene and the GameObjects in it by default.
+
+
 https://docs.unity3d.com/Manual/class-LightingSettings.html
 
 
