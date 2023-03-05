@@ -154,6 +154,16 @@ If Enlighten Realtime Global Illumination is enabled in your Scene, the resoluti
 https://docs.unity3d.com/Manual/LightingBakedAmbientOcclusion.html
 
 
+### Lightmapping and shaders
+#### The Meta Pass
+A Meta Pass is a **Shader pass that provides albedo and emission values to the Global Illumination
+ system**. These values are separate from those used in real-time rendering, meaning that you can use the Meta Pass to control how a GameObject
+ looks from the point of view of the lighting baking system without affecting its appearance at runtime.
+ 
+ All of Unity’s built-in Materials have a **Meta Pass**, and the Standard Shader contains a **Meta pass**. If you are using these, you do not need to do anything to enable the **Meta Pass**. If you are using a custom Shader, you can add your own **Meta Pass**.
+
+
+https://docs.unity3d.com/Manual/MetaPass.html
 
 ### ref
 https://www.youtube.com/watch?v=KJ4fl-KBDR8
