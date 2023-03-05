@@ -70,7 +70,7 @@ Contains settings related to the **`Enlighten Realtime Global Illumination syste
 
 Contains settings that affect the behavior of Baked Lights and Mixed Lights in Scenes that use this Lighting Settings Asset.
 
-**Baked Global Illumination:** \
+**Baked Global Illumination:** 
 When this setting is enabled, Unity enables the Baked Global Illumination system for the Scenes that use this Lighting Settings Asset. When this setting is disabled, Unity disables the Baked Global Illumination system for the Scenes that use this Lighting Settings Asset.
 
 When the Baked Global Illumination system is enabled, Unity uses Baked lights in the Scene for lightmapping only, and Mixed lights behave according to the Lighting Mode setting. When the Baked Global Illumination system is disabled, Unity forces all Baked and Mixed lights in the Scene to act as though they were Realtime Lights.
