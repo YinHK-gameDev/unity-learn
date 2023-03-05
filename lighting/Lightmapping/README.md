@@ -106,6 +106,19 @@ Open the **Lighting window** (**Window > Lighting > Settings**), click **Scene**
 https://docs.unity3d.com/Manual/LightmappingDirectional.html
 
 
+### Lightmaps and LOD
+
+Baking light into models that use **Unity’s LOD (level of detail) system**.
+
+When you use the **Progressive Lightmapper**, there is no need to place **Light Probes** around an **LOD Group** to generate baked indirect lighting.
+
+**Enlighten Baked Global Illumination** can **only compute direct lighting for lower LODs**, and the **LOD system** **must rely on Light Probes** to sample indirect lighting.
+
+> If you do not place Light Probes, your lower LOD models may appear visually incorrect because they only receive direct light.
+
+
+
+
 ### ref
 https://www.youtube.com/watch?v=KJ4fl-KBDR8
 
