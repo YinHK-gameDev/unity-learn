@@ -119,9 +119,13 @@ https://docs.unity3d.com/Manual/class-LightingSettings.html
 
 The **Lighting Mode** determines the **behavior of all Mixed Lights in all Scenes** that use the Lighting Settings Asset. 
 
-- **Baked Indirect**
-- **Shadowmask**
-- **Subtractive** 
+- **Baked Indirect**: \
+  combines real-time direct lighting with baked indirect lighting. It provides real-time shadows. This Lighting Mode offers realistic lighting and reasonable shadow fidelity, and is suitable for mid-range hardware.
+- **Shadowmask**: \
+  combines real-time direct lighting with baked indirect lighting. It enables baked shadows for distant GameObjects
+, and blends them automatically with real-time shadows. It is the most realistic, but also the most resource-intensive Lighting Mode. You can use Quality Settings to configure its performance and visual fidelity. This Lighting Mode is suitable for high-end or mid-range hardware.
+- **Subtractive** \
+  provides baked direct and indirect lighting. It renders direct real-time shadows for one Directional Light only. This Lighting Mode doesn’t provide particularly realistic lighting results, and is suitable for stylized art or low-end hardware.
  
 #### Baked Indirect
 When you set a Scene’s Lighting Mode to Baked Indirect, **Mixed Lights behave like Realtime Lights**, with the additional benefit of baking indirect lighting into lightmaps. GameObjects lit by Mixed Lights cast real-time shadows up to the Shadow Distance you define in the Project.
