@@ -6,6 +6,10 @@ Lightmapping is the **process of pre-calculating the brightness of surfaces in a
 
 
 
+
+### ref
+https://www.youtube.com/watch?v=KJ4fl-KBDR8
+
 https://docs.unity3d.com/Manual/Lightmappers.html
 
 
