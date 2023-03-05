@@ -96,7 +96,7 @@ The barrels in this image have baked **Directional lightmaps**.
 
 #### Setting your lightmap mode
 
-open the **Lighting window** (**Window > Lighting > Settings**), click **Scene**, navigate to the **Lightmapping Settings**, and select **Directional Mode**.
+Open the **Lighting window** (**Window > Lighting > Settings**), click **Scene**, navigate to the **Lightmapping Settings**, and select **Directional Mode**.
 
 > The default mode is Directional
 
