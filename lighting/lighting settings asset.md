@@ -57,7 +57,7 @@ Unity automatically generates an ambient probe and a default Reflection Probe to
 
 ### Properties for Lighting Settings Asset
 
-**Realtime Lighting** \
+**Realtime Lighting**
 
 Contains settings related to the **`Enlighten Realtime Global Illumination system`**.
 | Property | Function |
@@ -70,6 +70,7 @@ Contains settings related to the **`Enlighten Realtime Global Illumination syste
 
 
 
+**Lightmapping Settings**
 
 | Property | Function |
 | --- | --- |
