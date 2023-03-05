@@ -112,9 +112,17 @@ When you view a Lighting Settings Asset in the Inspector, this property is at th
 
 
 
-
-
-
 https://docs.unity3d.com/Manual/class-LightingSettings.html
+
+
+### Lighting Mode
+
+The **Lighting Mode** determines the **behavior of all Mixed Lights in all Scenes** that use the Lighting Settings Asset. 
+
+- **Baked Indirect**
+- **Shadowmask**
+- **Subtractive** 
+ 
+
 
 
