@@ -10,7 +10,20 @@ To use Enlighten Baked Global Illumination, go to **Window > Rendering > Lightin
 
 > You can perform many of the functions available in this window via scripts, using the **`LightingSettings`** API.
 
-### ref
+### Properties
+- Final Gather \
+  Calculates the final global illumination light bounce of at the same resolution as the baked lightmap. This improves visual quality, but requires additional time to bake the lighting. If Final Gather is enabled, it exposes the settings Ray Count and Denoising.
+  
+- Indirect Resolution \
+  Use this to specify **the number of samples the lightmapper uses for indirect lighting calculations**. Higher values can improve the quality of the lightmaps, but increase the time it takes to bake them.
+  - Ray Count: 	Specifies the number of rays the lightmapper emits for every final gather point.
+  - Denoising:  Applies a denoising filter to the final gather output.
 
+
+  
+
+
+
+### ref
 https://docs.unity3d.com/Manual/GI-Enlighten.html
 
