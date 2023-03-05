@@ -37,6 +37,39 @@ When lightmapping is complete, Unity’s Scene and Game views update automatical
 > When you manually generate lighting, Unity adds Lighting Data Assets, baked lightmaps and Reflection Probes
  to the Assets folder.
 
+
+To create a new Lightmap Parameters Asset, right-click in the Project window and go to Create > New Parameters Asset. Unity stores this in your Project folder.
+
+### Lightmap Parameters Asset
+
+A LightmapParameters Asset contains a set of values for the parameters that control Unity’s lighting features. These Assets allow you to define and save different sets of values for lighting, for use in different situations.
+
+Lightmap Parameters Assets allow you to quickly create presets optimized for different types of GameObjects
+, or for different platforms and different Scene types (for example, indoor or outdoor Scenes).
+
+
+To create a new Lightmap Parameters Asset, right-click in the **Project window** and go to** Create > Lightmap Parameters**. Unity stores this in your Project folder. Or **Assets > Create > Lightmap Parameters**.
+
+### Assigning Lightmap Parameters Assets
+
+#### Scenes
+To assign a **Lightmap Parameters Asset** **to the whole Scene**:
+
+- Open the Lighting window (**Window > Rendering > Lighting**)
+- Click the **Scene** tab
+- Navigate to the **Lightingmapping Settings**.
+- Use the **Lightmap Parameters** drop-down to assign a default Lightmap Parameters Asset. This drop-down lists all available Lightmap Parameters Assets.
+
+#### GameObjects
+To assign a **Lightmap Parameters Asset** to a single **GameObject**, ensure the GameObject has a **Mesh Renderer** or **Terrain component** attached.
+
+To assign a Lightmap Parameters Asset to a Mesh Renderer component:
+
+- In the Inspector, go to **Mesh Renderer > Lighting**
+- Enable **Contribute Global Illumination**
+- In the mesh Renderer component, go to **Lightmapping > Lightmap Parameters**.
+- Select an option from the menu. Select **Scene Default Parameter** to use the same Lightmap Parameters Asset that’s assigned to the whole Scene.
+
 ### ref
 https://www.youtube.com/watch?v=KJ4fl-KBDR8
 
