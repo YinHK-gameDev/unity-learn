@@ -85,12 +85,25 @@ There are two Directional Modes for lightmaps:
  Both modes are compatible with real-time lightmaps from Unity’s **Enlighten Realtime Global Illumination
  system**, and **baked lightmaps from Unity’s Progressive Lightmapper**.
 
+
+The barrels in this image have baked **Non-directional lightmaps**.
+
+![](../img/DirectionalLightmapping1.jpg)
+
+The barrels in this image have baked **Directional lightmaps**.
+
+![](../img/DirectionalLightmapping2.jpg)
+
+#### Setting your lightmap mode
+
+open the **Lighting window** (**Window > Lighting > Settings**), click **Scene**, navigate to the **Lightmapping Settings**, and select **Directional Mode**.
+
 > The default mode is Directional
 
-![](./img/DirectionalLightmapping1.jpg)
-![](./img/DirectionalLightmapping2.jpg)
 
+> You can set the lightmap mode for an instance of the Lighting Settings asset which can apply to one or more Scenes. You cannot set the lightmap mode for individual lightmaps.
 
+https://docs.unity3d.com/Manual/LightmappingDirectional.html
 
 
 ### ref
