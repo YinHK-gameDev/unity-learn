@@ -31,7 +31,16 @@ All instances of the **same mesh share the same input data**, but different inst
 
 Unity calculates the UVs for the **Realtime Global Illumination system** during the **precompute stage**. This calculation takes per-mesh UVs as its input, and uses that data to create per-Mesh Renderer UVs. Unity can generate the input per-mesh UVs when you import a model, or you can provide your own data.
  
- 
+- Unity can use data in the Mesh.uv3 channel as input for the real-time lightmap UV calculations. Mesh.uv3 maps to the TEXCOORD2 shader semantic, and is commonly called “UV2”.
+- If there is no data in Mesh.uv3 but there is data in Mesh.uv2 , Unity falls back to using the data in Mesh.uv2 as input for the real-time lightmap UV calculations. Mesh.uv2 is used for baked lightmap UVs. It is common to use the baked lightmap UVs as input data for the real-time lightmap UVs.
+- The results of the calculations are stored per-MeshRenderer, in **`MeshRenderer.enlightenVertexStream`**. If Realtime Global Illumination is enabled and a given MeshRenderer component contributes to global illumination and receives its global illumination from lightmaps, Unity automatically passes the data in **`MeshRenderer.enlightenVertexStream`** to **`TEXCOORD2`** in shaders, instead of the data in **`Mesh.uv3`**.
+
+
+> **Note**: If you want to use Mesh.uv3 for another purpose in a mesh that uses Realtime Global Illumination, you must ensure that all MeshRenderer components that use the mesh receive global illumination from Light Probes rather than lightmaps. Change this with the Mesh Renderer component Inspector, or the MeshRenderer.receiveGI API.
+
+
+
+
 https://docs.unity3d.com/Manual/LightingGiUvs.html
 
 
