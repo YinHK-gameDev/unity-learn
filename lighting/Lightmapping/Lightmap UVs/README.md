@@ -22,8 +22,7 @@ Unity stores baked lightmap UVs in its mesh in the **`Mesh.uv2`** channel. This 
 
 If Baked Global Illumination is enabled and a given MeshRenderer receives its global illumination from lightmaps, Unity uses the data in the Mesh.uv2 channel to correctly map the baked lightmaps to the mesh.
 
-> **Note**: If you want to use Mesh.uv2 for another purpose in a given mesh, you must ensure that all MeshRenderer components that use the mesh receive global illumination from Light Probes
- rather than lightmaps. Change this with the Mesh Renderer component Inspector, or the MeshRenderer.receiveGI API.
+> **Note**: If you want to use **`Mesh.uv2`** for another purpose in a given mesh, you must ensure that all MeshRenderer components that use the mesh receive global illumination from **Light Probes** rather than lightmaps. Change this with the Mesh Renderer component Inspector, or the **`MeshRenderer.receiveGI API`**.
  
 
 ### Real-time lightmap UVs
