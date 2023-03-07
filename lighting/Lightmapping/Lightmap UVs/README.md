@@ -39,9 +39,38 @@ Unity calculates the UVs for the **Realtime Global Illumination system** during 
 > **Note**: If you want to use Mesh.uv3 for another purpose in a mesh that uses Realtime Global Illumination, you must ensure that all MeshRenderer components that use the mesh receive global illumination from Light Probes rather than lightmaps. Change this with the Mesh Renderer component Inspector, or the MeshRenderer.receiveGI API.
 
 
-
-
 https://docs.unity3d.com/Manual/LightingGiUvs.html
+
+
+### Generating lightmap UVs
+
+> Unity can calculate the UVs for baked lightmaps when you import a model, or you can provide your own data.
+
+You can author your own lightmap UVs in the content creation software of your choice. Unity uses these UVs as input for its calculations.
+
+Where you put this data depends on whether you are providing UVs for baked lightmaps, real-time lightmaps, or both:
+
+- For baked lightmaps, you must place lightmap UVs in the **`Mesh.uv2`**. This channel is also called “UV1”.
+- For real-time lightmaps:
+  - If you already have baked lightmap UVs in the **`Mesh.uv2`** of your mesh
+, and you want to use the same UVs as input for the real-time lightmaps, you do not need to do anything. Unity falls back to sharing the baked lightmap UVs.
+  - If you already have baked lightmap UVs in **Mesh.uv2**, and you want to provide different UVs as input for your real-time lightmaps, place the real-time lightmap UVs in **Mesh.uv3**, also called **"UV2"**.
+  - If you do not already have baked lightmap UVs in the second channel of your mesh, it’s your choice whether you use **Mesh.uv2** or **Mesh.uv3** for real-time lightmap UVs.
+
+
+A good UV set for lightmaps should adhere to the following rules:
+
+- It should be within the **`[0,1] x [0,1]`** UV space.
+- It should have a wide enough margin between individual charts. For more information, see UV overlap feedback.
+- It should not have any overlapping faces.
+- There should be a low difference between the angles in the UV and the angles in the original geometry.
+- There should be a low difference between the relative scale of triangles in the UV and the relative scale of the triangles in the original geometry), unless you want some areas to have a higher lightmap resolution.
+
+
+
+
+
+
 
 
 
