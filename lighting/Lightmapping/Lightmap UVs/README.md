@@ -67,8 +67,14 @@ A good UV set for lightmaps should adhere to the following rules:
 - There should be a low difference between the relative scale of triangles in the UV and the relative scale of the triangles in the original geometry), unless you want some areas to have a higher lightmap resolution.
 
 
+### Automatically generate lightmap UVs
+You can tell Unity to automatically generate lightmap UVs for a Model, using the Model Import Settings.
 
-
+- Select the Model in your Project view. Unity opens the Model Import Settings in the Inspector.
+- In the Model Import Settings, navigate to the Model tab, and then the Geometry section.
+- Tick the **Generate Lightmap UVs** checkbox. The **Lightmap UVs settings** section appears below the Generate Lightmap UVs checkbox.
+4. Optional: Configure the settings in the **Lightmap UVs settings** section. See Settings for more information.
+5. Click the **Apply** button. Unity generates lightmap UVs into the **`Mesh.uv2`** channel.
 
 
 
