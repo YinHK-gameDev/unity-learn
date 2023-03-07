@@ -16,9 +16,9 @@ Unity uses separate sets of lightmap UVs for the **Realtime Global Illumination 
 
 
 ### Baked lightmap UVs
-**Baked lightmap UVs** are **per-mesh**: all instances of the same mesh share the same baked lightmap UVs. Unity can calculate the UVs for baked lightmaps when you import a model, or you can provide your own data.
+**Baked lightmap UVs** are **per-mesh**: all instances of the **same mesh share the same baked lightmap UVs**. **Unity can calculate the UVs for baked lightmaps when you import a model**, or you can provide your own data.
 
-Unity stores baked lightmap UVs in its mesh in the Mesh.uv2 channel. This channel maps to the TEXCOORD1 shader semantic, and is commonly called **"UV1"**.
+Unity stores baked lightmap UVs in its mesh in the **`Mesh.uv2`** channel. This channel maps to the TEXCOORD1 shader semantic, and is commonly called **"UV1"**.
 
 If Baked Global Illumination is enabled and a given MeshRenderer receives its global illumination from lightmaps, Unity uses the data in the Mesh.uv2 channel to correctly map the baked lightmaps to the mesh.
 
@@ -26,7 +26,7 @@ If Baked Global Illumination is enabled and a given MeshRenderer receives its gl
 
 ### Real-time lightmap UVs
 **Real-time lightmap UVs** are **per-Mesh Renderer**: 
-All instances of the **same mesh share the same input data**, but different instances of **Mesh Renderers** can use different real-time lightmap UVs at runtime. 
+All instances of the **same mesh share the same input data**, but different instances of **Mesh Renderers** can **use different real-time lightmap UVs at runtime**. 
 
 Unity calculates the UVs for the **Realtime Global Illumination system** during the **precompute stage**. This calculation takes per-mesh UVs as its input, and uses that data to create per-Mesh Renderer UVs. Unity can generate the input per-mesh UVs when you import a model, or you can provide your own data.
  
