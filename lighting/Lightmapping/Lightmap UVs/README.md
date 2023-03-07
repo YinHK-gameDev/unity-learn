@@ -54,8 +54,8 @@ Where you put this data depends on whether you are providing UVs for baked light
 - For real-time lightmaps:
   - If you already have baked lightmap UVs in the **`Mesh.uv2`** of your mesh
 , and you want to use the same UVs as input for the real-time lightmaps, you do not need to do anything. Unity falls back to sharing the baked lightmap UVs.
-  - If you already have baked lightmap UVs in **Mesh.uv2**, and you want to provide different UVs as input for your real-time lightmaps, place the real-time lightmap UVs in **Mesh.uv3**, also called **"UV2"**.
-  - If you do not already have baked lightmap UVs in the second channel of your mesh, it’s your choice whether you use **Mesh.uv2** or **Mesh.uv3** for real-time lightmap UVs.
+  - If you already have baked lightmap UVs in **`Mesh.uv2`**, and you want to provide different UVs as input for your real-time lightmaps, place the real-time lightmap UVs in **`Mesh.uv3`**, also called **"UV2"**.
+  - If you do not already have baked lightmap UVs in the second channel of your mesh, it’s your choice whether you use **`Mesh.uv2`** or **`Mesh.uv3`** for real-time lightmap UVs.
 
 
 A good UV set for lightmaps should adhere to the following rules:
