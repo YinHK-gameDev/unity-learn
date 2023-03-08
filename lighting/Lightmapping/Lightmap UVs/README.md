@@ -91,3 +91,19 @@ These are the settings that appear in the **Model** tab of the **Model Import Se
 | Min Lightmap Resolution | The minimum lightmap resolution (in texels per unit) of the MeshRenderers that use this Mesh, across all Scenes. The lightmap resolution of a MeshRenderer is a combination of the MeshRenderer’s Scale in Lightmap property, and the Lightmap Resolution property of the Lighting Settings Asset of the Scene it appears in.For more information, see Min Lightmap Resolution and Min Object Scale.Unity uses this information to calculate pack margin. This property is only visible when Margin Method is set to Calculate. |
 | Min Object Scale | The minimum transform scale that of the GameObjects that use this Mesh, across all Scenes.For more information, see Min Lightmap Resolution and Min Object Scale.Unity uses this information to calculate pack margin. This property is only visible when Margin Method is set to Calculate. |
  
+
+### Visualizing lightmap UVs
+To preview the UVs lightmaps, go to the **Window > Rendering > Lighting**, click **Baked Lightmaps** or **Realtime Lightmaps** and click the lightmaps UVs to open preview.
+
+Or click the gameobject, under the mesh renderer component, in Lightmapping field, under the Baked Lightmap open the preview.
+
+
+
+
+
+
+
+
+
+
+
