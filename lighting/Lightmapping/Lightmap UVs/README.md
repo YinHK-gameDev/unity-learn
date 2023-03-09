@@ -117,6 +117,10 @@ When you enable seam stitching, the lightmapper identifies the pair of edges tha
 Seam stitching works with the Progressive Lightmapper. **Seam stitching only works on single GameObjects**; multiple GameObjects cannot be smoothly stitched together.
 
 
+**Using seam stitching:**
+You can enable seam stitching on any GameObject with a **Mesh Renderer** component. In the **Mesh Renderer** Inspector, navigate to the **Lightmapping** section and **Stitch Seams**.
+
+> Alternatively, you can use the **`MeshRenderer.stitchLightmapSeams`** API.
 
 
 
