@@ -104,6 +104,19 @@ Seam stitching is a feature that smooths unwanted hard edges in GameObjects rend
 
 ![](../../img/stitch_off.jpg)
 
+When Unity bakes lightmaps, it identifies mesh faces that are close together but separate from each other as being separate in lightmap space; the edges of these meshes are called “seams”. Ideally, seams are invisible; however, they can sometimes appear to have hard edges. This is because the GPU cannot blend texel values between charts that are separated in the lightmap.
+
+**Seam stitching** fixes this issue. When you enable seam stitching, Unity does **extra computations to amend the lightmap** to improve each seam’s appearance.
+
+Stitching is not perfect, but it often improves the final result substantially. **Seam stitching takes extra time during baking due to extra calculations** Unity makes, so **Unity disables it by default**.
+
+When you enable seam stitching, the lightmapper identifies the pair of edges that it should stitch together, and produces illumination which is as smooth as possible across the seam. This applies only to straight edges which run horizontally or vertically along chart boundaries in the atlas, and is designed to work with rectangles which are axis-aligned in UV space.
+
+
+**Limitations of seam stiching:**
+Seam stitching works with the Progressive Lightmapper. **Seam stitching only works on single GameObjects**; multiple GameObjects cannot be smoothly stitched together.
+
+
 
 
 
