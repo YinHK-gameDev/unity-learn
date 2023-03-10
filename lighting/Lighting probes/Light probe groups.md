@@ -36,3 +36,13 @@ In this example Scene, the two lamps are baked, so moving objects get their dire
 
 https://docs.unity3d.com/Manual/class-LightProbeGroup.html
 
+This is an undesired effect - the ambulance remains brightly lit while passing through a dark area, because no Light Probes were placed in the dark area.
+
+To solve this, you should place more Light Probes in the dark area, as shown below:
+![](../img/class-LightProbeGroup-14.png)
+
+
+Now the Scene has Light Probes in the dark area too. As a result, the moving ambulance takes on the darker lighting as it travels from one side of the Scene to the other.
+
+
+
