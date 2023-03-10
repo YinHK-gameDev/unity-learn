@@ -24,10 +24,12 @@ At runtime, the indirect light that hits dynamic GameObjects is approximated usi
 > When using light probes for either of these two distinct purposes, many of the techniques you need to use are the same. It’s important to understand how light probes work so that you can choose where to place your probes in the scene.
 
 
-### Light Probes for moving objects
+### Light Probes for moving objects (For bounced light)
 
 Lightmapping adds greatly to the realism of a scene by capturing **realistic bounced light as textures** which are **"baked"** onto the **surface of static objects**. However, due to the **nature of lightmapping**, it can **only be applied to non-moving objects marked as Contribute GI**.
 
+
+**Realtime and mixed mode lights** can cast **direct light** on moving objects, moving objects **do not receive bounced light** from your **static** environment unless you use **light probes**. 
 
 > Light probes **store information about how light is bouncing around in your scene**. Gameobjects move through the spaces in your game environment, they can use the information stored in your light probes to show an approximation of the bounced light at their current position.
 
