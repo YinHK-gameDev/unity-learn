@@ -10,11 +10,15 @@ Similar to lightmaps, **light probes** store **"baked"** information about light
 
 - **Light Probes** add high-quality lighting effects to moving objects. They allow you to use Baked lighting — such as Emissive Materials and Area Lights — to illuminate objects passing through your Scene.
 
-- **Light Probes** are positions in the scene where the light is measured (probed) during the bake. 
+- **Light Probes** are **positions in the scene where the light is measured** (probed) during the bake. 
 
 At runtime, the indirect light that hits dynamic GameObjects is approximated using the values from the nearest Light Probes to that object.
 
 
+#### Light Probes have two main uses:
+- The primary use of light probes is to **provide high quality lighting** (**including indirect bounced light**) **on moving objects** in your scene.
+
+- The secondary use of light probes is to provide the lighting information for **static scenery** when that scenery is using **Unity’s LOD system**.
 
 
 
