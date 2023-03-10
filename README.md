@@ -159,7 +159,17 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 
 **https://www.linkedin.com/groups/4565934/**
 
+► **Join Discord: https://discord.gg/brackeys**
 
+► **Follow on Twitter: https://twitter.com/BrackeysTweet/**
+
+● **Brackeys Forum: https://forum.brackeys.com/**
+
+● **Dev Assets: https://devassets.com/**
+
+● **Line of Code: https://lineofcode.io/**
+
+● **Website: http://brackeys.com/**
 
 ✒️ **遊戲社群**
 
