@@ -25,7 +25,7 @@ To **disable Realtime GI** altogether, open the Lighting window (menu: **Window 
  
  In order to react to runtime changes in Scene lighting, they sample lighting iteratively at runtime.
 
-When you disable Enlighten Realtime Global Illumination in a Scene, Light Probes only use baked lighting data. This means that they don’t react to runtime changes in Scene lighting.
+When you** disable Enlighten Realtime Global Illumination** in a Scene, **Light Probes only use baked lighting data**. This means that they **don’t react to runtime changes in Scene lighting**.
 
  
 https://learn.unity.com/project/lighting-optimization-with-precomputed-realtime-gi
