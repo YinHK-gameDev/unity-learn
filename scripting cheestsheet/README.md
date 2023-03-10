@@ -43,7 +43,7 @@ private  scriptName/className  variableName;
 
 
 ### Life cycle
-![](./monobehaviour_flowchart.svg)
+![](./img/monobehaviour_flowchart.svg)
 
 https://docs.unity3d.com/Manual/ExecutionOrder.html
 
