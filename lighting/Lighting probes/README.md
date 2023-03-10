@@ -17,5 +17,4 @@ https://docs.unity3d.com/Manual/LightProbes.html
 
 https://www.youtube.com/watch?v=_E0JXOZDTKA
 
-
-
+https://www.youtube.com/watch?v=DlxuvvYZO4Q
