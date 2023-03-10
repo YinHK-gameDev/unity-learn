@@ -37,7 +37,7 @@ Lightmapping adds greatly to the realism of a scene by capturing **realistic bou
 
 > Light probes **store information about how light is bouncing around in your scene**. Gameobjects move through the spaces in your game environment, they can use the information stored in your light probes to show an approximation of the bounced light at their current position.
 
-
+https://docs.unity3d.com/Manual/LightProbes-MovingObjects.html
 
 
 
