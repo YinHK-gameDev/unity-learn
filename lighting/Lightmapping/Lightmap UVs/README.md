@@ -113,11 +113,11 @@ Stitching is not perfect, but it often improves the final result substantially. 
 When you enable seam stitching, the lightmapper identifies the pair of edges that it should stitch together, and produces illumination which is as smooth as possible across the seam. This applies only to straight edges which run horizontally or vertically along chart boundaries in the atlas, and is designed to work with rectangles which are axis-aligned in UV space.
 
 
-**Limitations of seam stiching:**
+**Limitations of seam stiching:** \
 Seam stitching works with the Progressive Lightmapper. **Seam stitching only works on single GameObjects**; multiple GameObjects cannot be smoothly stitched together.
 
 
-**Using seam stitching:**
+**Using seam stitching:** \
 You can **enable seam stitching** on any GameObject with a **Mesh Renderer** component. In the **Mesh Renderer** Inspector, navigate to the **Lightmapping** section and **Stitch Seams**.
 
 > Alternatively, you can use the **`MeshRenderer.stitchLightmapSeams`** API.
