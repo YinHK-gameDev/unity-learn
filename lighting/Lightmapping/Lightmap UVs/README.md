@@ -118,7 +118,7 @@ Seam stitching works with the Progressive Lightmapper. **Seam stitching only wor
 
 
 **Using seam stitching:**
-You can enable seam stitching on any GameObject with a **Mesh Renderer** component. In the **Mesh Renderer** Inspector, navigate to the **Lightmapping** section and **Stitch Seams**.
+You can **enable seam stitching** on any GameObject with a **Mesh Renderer** component. In the **Mesh Renderer** Inspector, navigate to the **Lightmapping** section and **Stitch Seams**.
 
 > Alternatively, you can use the **`MeshRenderer.stitchLightmapSeams`** API.
 
