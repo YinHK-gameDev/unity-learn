@@ -10,10 +10,25 @@ Enlighten Realtime Global Illumination (Realtime GI) is useful for Lights that c
  is suitable for games targeting mid-level to high-end PC systems and consoles. Some high-end mobile devices may also be powerful enough to make use of this feature, but you should keep Scenes small and the resolution for real-time lightmaps low to ensure acceptable performance.
  
  
+ ### Using Enlighten Realtime Global Illumination
+ To enable Enlighten Realtime Global Illumination in your Scene, open the **Lighting window** (menu: **Window > Rendering > Lighting**) and **enable Realtime Global Illumination**.
  
+To disable the effect of **Realtime GI** on a specific Light, select the Light GameObject
+ and, in the Light component, set the **Indirect Multiplier** to 0. This means that the Light doesn’t contribute any indirect light to the Scene.
+ 
+To **disable Realtime GI** altogether, open the Lighting window (menu: **Window > Rendering > Lighting**) and uncheck Realtime Global Illumination.
+ 
+ 
+### Light Probes and Enlighten Realtime Global Illumination
+> **Note**: Light Probes
+ behave differently when you enable Enlighten Realtime Global Illumination.
+ 
+ In order to react to runtime changes in Scene lighting, they sample lighting iteratively at runtime.
 
+When you disable Enlighten Realtime Global Illumination in a Scene, Light Probes only use baked lighting data. This means that they don’t react to runtime changes in Scene lighting.
 
-
+ 
+https://learn.unity.com/project/lighting-optimization-with-precomputed-realtime-gi
 
 https://docs.unity3d.com/Manual/realtime-gi-using-enlighten.html
 
