@@ -14,6 +14,7 @@ Similar to lightmaps, **light probes** store **"baked"** information about light
 
 At runtime, the indirect light that hits dynamic GameObjects is approximated using the values from the nearest Light Probes to that object.
 
+![](./img/Light probe.png)
 
 #### Light Probes have two main uses:
 - The primary use of light probes is to **provide high quality lighting** (**including indirect bounced light**) **on moving objects** in your scene.
@@ -32,5 +33,7 @@ https://www.youtube.com/watch?v=_E0JXOZDTKA
 https://www.youtube.com/watch?v=DlxuvvYZO4Q
 
 https://www.google.com/search?rlz=1C1RXMK_enCA1034CA1034&tbm=vid&sxsrf=AJOqlzW0_zOqDoP7476DkYiCrAFKNSBZ5w:1678419702782&q=unity+light+probe&sa=X&ved=2ahUKEwj0_qvRuND9AhUajIkEHTqzBx8Q8ccDegQICxAD&biw=1021&bih=909&dpr=1#fpstate=ive&vld=cid:bbada050,vid:pzbebc0Ryv8
+
+https://fistfullofshrimp.com/unity-vr-optimization-light-probes/
 
 
