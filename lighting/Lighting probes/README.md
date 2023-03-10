@@ -14,7 +14,7 @@ Similar to lightmaps, **light probes** store **"baked"** information about light
 
 At runtime, the indirect light that hits dynamic GameObjects is approximated using the values from the nearest Light Probes to that object.
 
-![](./img/Light probe.png)
+![](./img/Lightprobe.png)
 
 #### Light Probes have two main uses:
 - The primary use of light probes is to **provide high quality lighting** (**including indirect bounced light**) **on moving objects** in your scene.
