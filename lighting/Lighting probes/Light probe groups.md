@@ -18,6 +18,28 @@ Adding the **Light Probe Group** component to any GameObject in the Scene. Howev
 | Duplicate Selected | Click this to duplicate the selected Light Probes. |
 
 
+
+### Ringing 
+Under certain circumstances, **Light Probes** exhibit an **unwanted behaviour called "ringing"**.
+
+This often happens when there are significant differences in the light surrounding a Light Probe. For example, if you have bright light on one side of a Light Probe, and no light on the other side, the light intensity can “overshoot” on the back side. This overshoot causes a light spot on the back side.
+
+There are several ways to deal with this:
+
+- In the Light Probe Group component, enable Remove Ringing. Unity automatically removes the unintended light spots. However, this generally makes the Light Probes less accurate, and reduces light contrast, so you must check the visual results.
+- Place in-game obstacles in such a way that players can’t get to a position where they can see the light spot.
+- Avoid baking direct light into Light Probes. Direct light tends to have sharp discontinuities (such as shadow edges), which makes it unsuitable for Light Probes. To only bake indirect light, use Mixed lighting.
+
+
+### Choosing Light Probe positions
+Unlike lightmaps, which usually have a continuous resolution across the surface of an object, the resolution of the Light Probe information depends on how closely packed you choose to position the Light Probes.
+
+
+You might place Light Probes in a more condensed pattern around areas that **have complex or highly contrasting light**, and you might place them in a much more spread out pattern over areas where the light **does not significantly change**.
+
+
+> Light Probes individually do not store a large amount of information. From a technical perspective, each probe is a spherical, panoramic HDR image of the view from the sample point, encoded using Spherical Harmonics L2 which is stored as 27 floating point values. However, in large Scenes with hundreds of Light Probes they can add up, and having unnecessarily densely packed Light Probes can result in large amounts of wasted memory in your game.
+
 ### Troubleshooting Light Probe placement
 Your choice of Light Probe positions must take into account that the lighting is **interpolated between sets of Light Probes**. Problems can arise if your Light Probes **don’t adequately cover the changes in lighting across your Scene**.
 
