@@ -1,12 +1,12 @@
 ## Light Probes
 
-**Light Probes** provide a way to capture and use information about light that is passing through the empty space in your scene.
+**Light Probes** provide a way to **capture and use information about light that is passing through the empty space** in your scene.
 
-Similar to lightmaps, **light probes** store **"baked"** information about lighting in your scene. The difference is that while **lightmaps store lighting information about light hitting the surfaces in your scene**, 
+Similar to lightmaps, **light probes** store **"baked" information about lighting** in your scene. The difference is that while **lightmaps store lighting information about light hitting the surfaces in your scene**, 
 
 - **Light Probes store information about light passing through empty space in your scene**.
 
-- Use **light probes** in a scene to cast baked light onto dynamic objects.
+- Use **light probes** in a scene to **cast baked light** onto dynamic objects.
 
 - **Light Probes** add high-quality lighting effects to moving objects. They allow you to use Baked lighting — such as Emissive Materials and Area Lights — to **illuminate objects passing through your Scene**.
 
