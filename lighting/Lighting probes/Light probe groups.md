@@ -55,9 +55,6 @@ The example below shows a night-time Scene with two bright street lamps on eithe
 
 In this example Scene, the two lamps are baked, so moving objects get their direct light from Light Probes. Here you can see the result - a moving object (the ambulance) remains brightly lit while passing through the dark area, which is not the desired effect. The yellow wireframe tetrahedron shows that the interpolation is occurring between one brightly lit end of the street to the other.
 
-
-https://docs.unity3d.com/Manual/class-LightProbeGroup.html
-
 This is an undesired effect - the ambulance remains brightly lit while passing through a dark area, because no Light Probes were placed in the dark area.
 
 To solve this, you should place more Light Probes in the dark area, as shown below:
@@ -67,4 +64,7 @@ To solve this, you should place more Light Probes in the dark area, as shown bel
 Now the Scene has Light Probes in the dark area too. As a result, the moving ambulance takes on the darker lighting as it travels from one side of the Scene to the other.
 
 ![](../img/class-LightProbeGroup-15.png)
+
+### ref
+https://docs.unity3d.com/Manual/class-LightProbeGroup.html
 
