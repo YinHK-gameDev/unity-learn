@@ -12,7 +12,7 @@ Adding the **Light Probe Group** component to any GameObject in the Scene. Howev
 ### Troubleshooting Light Probe placement
 Your choice of Light Probe positions must take into account that the lighting is **interpolated between sets of Light Probes**. Problems can arise if your Light Probes **don’t adequately cover the changes in lighting across your Scene**.
 
-
+![](../img/class-LightProbeGroup-12.png)
 The example below shows a night-time Scene with two bright street lamps on either side, and a dark area in the middle. If Light Probes are only placed near the street lamps, and none in the dark area, the lighting from the lamps “bleeds” across the dark gap, on moving objects. This is because the lighting is being interpolated from one bright point to another, with no information about the dark area in-between.
 
 
