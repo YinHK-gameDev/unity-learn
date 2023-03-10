@@ -30,3 +30,9 @@ The Static Editor Flags checkbox and drop-down menu, as seen when viewing a Game
 | Navigation Static | Include the GameObject when precomputing navigation data. For more information, see the documentation on the Navigation system. |
 | Off Mesh Link Generation | Attempt to generate an OffMesh Link that starts from this GameObject when precomputing navigation data. For more information, see the documentation on automatically building OffMesh Links. |
 | Reflection Probe | Include this GameObject when precomputing data for Reflection Probes whose Type property is set to Baked. For more information, see the documentation on Reflection Probes. |
+
+
+
+
+### ref
+https://docs.unity3d.com/Manual/StaticObjects.html
