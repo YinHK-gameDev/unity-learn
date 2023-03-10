@@ -20,7 +20,7 @@ At runtime, the indirect light that hits dynamic GameObjects is approximated usi
 
 - The secondary use of light probes is to provide the lighting information for **static scenery** when that scenery is using **Unity’s LOD system**.
 
-
+> When using light probes for either of these two distinct purposes, many of the techniques you need to use are the same. It’s important to understand how light probes work so that you can choose where to place your probes in the scene.
 
 ### ref
 https://docs.unity3d.com/Manual/LightProbes.html
