@@ -15,4 +15,7 @@ At runtime, the indirect light that hits dynamic GameObjects is approximated usi
 ### ref
 https://docs.unity3d.com/Manual/LightProbes.html
 
+https://www.youtube.com/watch?v=_E0JXOZDTKA
+
+
 
