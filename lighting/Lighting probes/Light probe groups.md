@@ -15,6 +15,9 @@ Your choice of Light Probe positions must take into account that the lighting is
 ![](../img/class-LightProbeGroup-12.png)
 The example below shows a night-time Scene with two bright street lamps on either side, and a dark area in the middle. If Light Probes are only placed near the street lamps, and none in the dark area, the lighting from the lamps “bleeds” across the dark gap, on moving objects. This is because the lighting is being interpolated from one bright point to another, with no information about the dark area in-between.
 
+> If you are using **Realtime or Mixed lights**, this problem may be **less noticeable**, because **only the indirect light bleeds across the gap**. **The problem is more noticable if you are using fully baked lights**, because in this situation the **direct light on moving objects is also interpolated from the Light Probes**. 
+
+
 
 https://docs.unity3d.com/Manual/class-LightProbeGroup.html
 
