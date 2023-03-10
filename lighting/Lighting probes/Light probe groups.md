@@ -18,6 +18,10 @@ The example below shows a night-time Scene with two bright street lamps on eithe
 > If you are using **Realtime or Mixed lights**, this problem may be **less noticeable**, because **only the indirect light bleeds across the gap**. **The problem is more noticable if you are using fully baked lights**, because in this situation the **direct light on moving objects is also interpolated from the Light Probes**. 
 
 
+![](../img/class-LightProbeGroup-13.png)
+
+In this example Scene, the two lamps are baked, so moving objects get their direct light from Light Probes. Here you can see the result - a moving object (the ambulance) remains brightly lit while passing through the dark area, which is not the desired effect. The yellow wireframe tetrahedron shows that the interpolation is occurring between one brightly lit end of the street to the other.
+
 
 https://docs.unity3d.com/Manual/class-LightProbeGroup.html
 
