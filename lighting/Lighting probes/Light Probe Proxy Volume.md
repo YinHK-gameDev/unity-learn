@@ -20,6 +20,29 @@ The **Standard Shader** supports this feature. To add this to a custom shader, u
 You can add a **LPPV component** on the same GameObject, or you can use (borrow) a **LPPV component** from another GameObject using the **Proxy Volume Override** property. If Unity cannot find a **LPPV component** in the current GameObject or in the Proxy Volume Override GameObject, a warning message is displayed at the bottom of the Renderer.
 
 
+### Properties:
+#### Bounding Box Mode 
+| Bounding Box Mode: | Function: |
+| --- | --- |
+| Automatic Local (default value) | A local-space bounding box is computed. The interpolated Light Probe positions are generated inside this bounding box. If a Renderer component isn’t attached to the GameObject, then a default bounding box is generated. The bounding box computation encloses the current Renderer, and sets all the Renderers down the hierarchy that have the Light Probes property to Use Proxy Volume. |
+| Automatic World | A bounding box is computed which encloses the current Renderer and all the Renderers down the hierarchy that have the Light Probes property set to Use Proxy Volume. The bounding box is world-aligned. |
+| Custom | A custom bounding box is used. The bounding box is specified in the local-space of the GameObject. The bounding box editing tools are available. You can edit the bounding volume manually by modifying the Size and Origin values in the UI. |
+
+The main difference between Automatic Local and Automatic World is that in Automatic Local, the bounding box is more resource-intensive to compute when a large hierarchy of GameObjects uses the same LPPV component from a parent GameObject. However, the resulting bounding box may be smaller in size, meaning the lighting data is more compact.
+
+
+#### Proxy Volume Resolution
+The number of interpolated Light Probes from within the bounding volume is affected by the Proxy Volume Resolution property.
+- **Automatic (default value)**: \
+  The resolution on each axis is computed using the number of interpolated Light Probes per unit area that you specify (**Density**), and the size of the bounding box. 
+- **Custom**: \
+  Allows you to specify a different resolution on each axis.
+  
+
+> **Note**: The final resolution on each axis must be a **power of two**, and the maximum value of the resolution is **32**.
+
+
+
 ### ref 
 
 https://docs.unity3d.com/Manual/class-LightProbeProxyVolume.html
