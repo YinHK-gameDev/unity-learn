@@ -10,7 +10,7 @@ Because of this, GameObjects have constant ambient lighting across the surface. 
 The Standard Shader supports this feature. To add this to a custom shader, use the ShadeSHPerPixel function.
 
 
-
+ > When you set the **Light Probes** property in the Mesh Renderer component to **Use Proxy Volume**, the GameObject must have a **Light Probe Proxy Volume (LPPV)** component attached.
 
 
 ### ref 
