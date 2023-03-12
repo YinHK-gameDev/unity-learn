@@ -46,7 +46,7 @@ To use Light Probes on your moving GameObjects, the Mesh Renderer component on t
 This means that by default, all GameObjects will use light probes and will **blend between the nearest probes** as it changes position in your scene.
 
 
-You can change this setting to either “off” or “use proxy volume”. Switching the light probes setting to off will disable the light probe’s effect on this GameObject.
+You can change this setting to either **"off"** or **"use proxy volume"**. Switching the light probes setting to off will disable the light probe’s effect on this GameObject.
 
 
 **Light Probe Proxy Volumes** are a special setting which you can use for situations where a large moving object might be too big to be sensibly lit by the results of a single tetrahedron from the light probe group
