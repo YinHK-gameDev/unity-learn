@@ -12,6 +12,8 @@ The Standard Shader supports this feature. To add this to a custom shader, use t
 
  > When you set the **Light Probes** property in the Mesh Renderer component to **Use Proxy Volume**, the GameObject must have a **Light Probe Proxy Volume (LPPV)** component attached.
 
+You can add a **LPPV component** on the same GameObject, or you can use (borrow) a **LPPV component** from another GameObject using the **Proxy Volume Override** property. If Unity cannot find a **LPPV component** in the current GameObject or in the Proxy Volume Override GameObject, a warning message is displayed at the bottom of the Renderer.
+
 
 ### ref 
 
