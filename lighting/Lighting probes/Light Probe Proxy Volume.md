@@ -1,7 +1,7 @@
 ## Light Probe Proxy Volume component
 ![](../img/LPPV.png)
 
-The **Light Probe Proxy Volume (LPPV)** component allows you to use more lighting information **for large dynamic GameObjects** that cannot use baked lightmaps(for example, **large Particle Systems** or **skinned Meshes**).
+The **Light Probe Proxy Volume (LPPV)** component allows you to use more lighting information **for large dynamic GameObjects** that cannot use baked lightmaps (for example, **large Particle Systems** or **skinned Meshes**).
 
 By default, **a probe-lit Renderer receives lighting from a single Light Probe that is interpolated between the surrounding Light Probes in the Scene**.
 
