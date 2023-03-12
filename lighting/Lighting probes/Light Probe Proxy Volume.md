@@ -45,9 +45,12 @@ The number of interpolated Light Probes from within the bounding volume is affec
   
 > **Note**: The final resolution on each axis must be a **power of two**, and the maximum value of the resolution is **32**.
 
+### Data Format 
+Specifies which format the associated 3D texture uses.
 
+- **Float (default value)** - The texture uses the 32-bit floating-point channel format to store the spherical harmonics coefficients.
 
-
+- **Half Float** - The texture uses the half-float (16-bit float) channel format to store the spherical harmonics coefficients. The advantage of this format is that half-float linear texture sampling is supported by the majority of devices and the precision difference between this format and the 32-bit floating point channel format is not noticeable. Also, the texture sampling performance on the GPU is better with this data format.
 
 ### ref 
 https://docs.unity3d.com/Manual/class-LightProbeProxyVolume.html
