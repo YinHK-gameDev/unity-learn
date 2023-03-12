@@ -8,9 +8,9 @@ Similar to lightmaps, **light probes** store **"baked" information about lightin
 
 - Use **light probes** in a scene to **cast baked light** onto dynamic objects. 
 
-- **Light probes** used if there need light variation on gameobject when moving one position to another position. For example moving from bright area to dark area.
+- **Light probes** used if there is **light variation** on gameobject when moving one position to another position. For example moving from bright area to dark area.
 
-- **Light probes** used if need to bake bounced light on game object.
+- **Light probes** used if need to bake **bounced light** on game object.
 
 - **Light Probes** add high-quality lighting effects to moving objects. They allow you to use Baked lighting — such as Emissive Materials and Area Lights — to **illuminate objects passing through your Scene**.
 
