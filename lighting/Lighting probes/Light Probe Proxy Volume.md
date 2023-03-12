@@ -32,16 +32,19 @@ The main difference between Automatic Local and Automatic World is that in Autom
 
 
 #### Proxy Volume Resolution
+#### Probe Position Mode 
+**Probe Position Mode** specifies the **relative position** of an interpolated Light Probe to a cell center. This option may be useful in situations when some of the interpolated Light Probes pass through walls or other geometries and cause light leaking. The example below shows the difference between Cell Corner and Cell Center in a 2D view, using a 4x4 grid resolution:
+
+
 The number of interpolated Light Probes from within the bounding volume is affected by the Proxy Volume Resolution property.
 - **Automatic (default value)**: \
   The resolution on each axis is computed using the number of interpolated Light Probes per unit area that you specify (**Density**, maximum is 1), and the size of the bounding box. 
 - **Custom**: \
   Allows you to specify a different resolution on each axis.
   
-
 > **Note**: The final resolution on each axis must be a **power of two**, and the maximum value of the resolution is **32**.
 
-#### 
+
 
 ### ref 
 
