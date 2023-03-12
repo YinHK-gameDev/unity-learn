@@ -52,6 +52,17 @@ Specifies which format the associated 3D texture uses.
 
 - **Half Float** - The texture uses the half-float (16-bit float) channel format to store the spherical harmonics coefficients. The advantage of this format is that half-float linear texture sampling is supported by the majority of devices and the precision difference between this format and the 32-bit floating point channel format is not noticeable. Also, the texture sampling performance on the GPU is better with this data format.
 
+
+
+
+![](../img/LightProbeProxyVolumeExample1.png)
+
+![](../img/LightProbeProxyVolumeExample2.png)
+
+
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/class-LightProbeProxyVolume.html
 
