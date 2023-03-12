@@ -53,7 +53,7 @@ The example below shows a night-time Scene with two bright street lamps on eithe
 
 ![](../img/class-LightProbeGroup-13.png)
 
-In this example Scene, the two lamps are baked, so moving objects get their direct light from Light Probes. Here you can see the result - a moving object (the ambulance) remains brightly lit while passing through the dark area, which is not the desired effect. The yellow wireframe tetrahedron shows that the interpolation is occurring between one brightly lit end of the street to the other.
+In this example Scene, the two lamps are baked, so moving objects get their direct light from Light Probes. Here you can see the result - a moving object (the ambulance) remains brightly lit while passing through the dark area, which is not the desired effect. The yellow wireframe **tetrahedron** shows that the interpolation is occurring between one brightly lit end of the street to the other.
 
 This is an undesired effect - the ambulance remains brightly lit while passing through a dark area, because no Light Probes were placed in the dark area.
 
