@@ -35,6 +35,7 @@ The main difference between Automatic Local and Automatic World is that in Autom
 #### Probe Position Mode 
 **Probe Position Mode** specifies the **relative position** of an interpolated Light Probe to a cell center. This option may be useful in situations when some of the interpolated Light Probes pass through walls or other geometries and cause light leaking. The example below shows the difference between Cell Corner and Cell Center in a 2D view, using a 4x4 grid resolution:
 
+![](../img/LightProbeProxyVolumeWindow4.png)
 
 The number of interpolated Light Probes from within the bounding volume is affected by the Proxy Volume Resolution property.
 - **Automatic (default value)**: \
@@ -46,8 +47,9 @@ The number of interpolated Light Probes from within the bounding volume is affec
 
 
 
-### ref 
 
+
+### ref 
 https://docs.unity3d.com/Manual/class-LightProbeProxyVolume.html
 
 
