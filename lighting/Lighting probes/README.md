@@ -59,7 +59,11 @@ If you assign a different GameObject to this field, it is up to you to move that
 
 The anchor override may be useful when a GameObject contains two separate adjoining meshes; if both meshes are lit individually according to their bounding box positions then the lighting will be discontinuous at the place where they join. This can be prevented by using the same Transform (for example the parent or a child object) as the interpolation point for both Mesh Renderers or by using a Light Probe Proxy Volume.
 
+Most of the Renderer components in Unity contain Light Probes. There are three options for Light Probes:
 
+- **Off**: the Renderer doesn’t use any interpolated Light Probes.
+- **Blend Probes (default value)**: the Renderer uses one interpolated Light Probe.
+- **Use Proxy Volume**: the Renderer uses a **3D grid** of interpolated Light Probes.
 
 ### ref
 https://docs.unity3d.com/Manual/LightProbes.html
