@@ -33,6 +33,8 @@ Reflection probes improve on this by allowing you to set up many **predefined po
 
 A probe also has a zone of effect defined by an invisible box shape in the scene. A reflective object that passes within a probe’s zone has its reflection cubemap supplied temporarily by that probe. As the object moves from one zone to another, the cubemap changes accordingly.
 
+### Types of Reflection Probe
+
 
 
 ### ref
