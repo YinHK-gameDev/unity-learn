@@ -18,7 +18,7 @@ You should generally place them at every point where the appearance of a reflect
 
 ### How Reflection Probes Work
 
-The visual environment for a point in the scene can be represented by a **cubemap**. This is conceptually like a box with flat images of the view from six directions (up, down, left, right, forward and backward) painted on its interior surfaces.
+The visual environment for a point in the scene can be represented by a **cubemap**. This is conceptually like a box with flat images of the view from six directions (up, down, left, right, forward and backward) painted on its **interior surfaces**. Reflective object pass through this box will have those reflective images painted on its surface.
 
 ![](../img/CubemapDiagram.svg)
 
@@ -35,6 +35,8 @@ A probe also has a zone of effect defined by an invisible box shape in the scene
 
 ### ref
 https://www.youtube.com/watch?v=lhELeLnynI8
+
+https://bootcamp.uxdesign.cc/reflection-probe-vs-screen-space-reflection-4b134c46ca16
 
 https://docs.unity3d.com/Manual/ReflectionProbes.html
 
