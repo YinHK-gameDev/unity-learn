@@ -51,7 +51,15 @@ A probe also has a zone of effect defined by an invisible box shape in the scene
 > When the **Auto** option is switched on (from the Lighting window), the **baked reflections** will update automatically as you position objects in the scene. If you are not making use of auto baking then you will need to click the Bake button in the Reflection Probe inspector to update the probes. (The **Generate Lighting** button in the Lighting window will also trigger the probes to update.)
 
 
+### Using Custom Probes
+By default, Custom probes work the **same way as Baked probes** but they also have additional options that change this behaviour.
 
+
+The **Dynamic Objects** property on a custom probe’s inspector allows objects that are not marked as **Reflection Probe Static** to be included in the **reflection cubemap**.
+
+> **Note**: The positions of these objects are still “frozen” in the reflection at the time of baking.
+
+The **Cubemap** property allows you to assign your **own cubemap** to the probe and therefore make it completely independent of what it can **"see"** from its view point. You could use this, say, to set a **skybox** or a **cubemap** generated from your 3D modelling app as the **source for reflection**s.
 
 ### ref
 https://www.youtube.com/watch?v=lhELeLnynI8
