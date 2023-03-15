@@ -17,6 +17,10 @@ You should generally place them at every point where the appearance of a reflect
 
 
 
+
+![](../img/CubemapDiagram.svg)
+
+
 ### ref
 https://www.youtube.com/watch?v=lhELeLnynI8
 
