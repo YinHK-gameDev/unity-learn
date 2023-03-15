@@ -42,8 +42,15 @@ A probe also has a zone of effect defined by an invisible box shape in the scene
 
 
 
-
+### Using Baked probes
 > Baked probes are useful for many purposes and have good runtime performance but they have the disadvantage of not updating live within the player. This means that objects can move around in the scene without their reflections moving along with them. In cases where this is too limiting, you can use Realtime probes, which update the reflection cubemap at runtime. This effect comes with a higher processing overhead but offers greater realism.
+
+
+> The reflections captured by baked probes can **only** include scene objects marked as **Reflection Probe Static**(using the Static menu at the top left of the inspector panel for all objects). You can further refine the objects that get included in the **reflection cubemap** using the **Culling Mask** and **Clipping Planes** properties, which work the same way as for a Camera (the probe is essentially like a camera that is rotated to view each of the six cubemap faces).
+
+> When the **Auto** option is switched on (from the Lighting window), the **baked reflections** will update automatically as you position objects in the scene. If you are not making use of auto baking then you will need to click the Bake button in the Reflection Probe inspector to update the probes. (The **Generate Lighting** button in the Lighting window will also trigger the probes to update.)
+
+
 
 
 ### ref
