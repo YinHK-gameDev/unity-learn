@@ -61,6 +61,14 @@ The **Dynamic Objects** property on a custom probe’s inspector allows objects 
 
 The **Cubemap** property allows you to assign your **own cubemap** to the probe and therefore make it completely independent of what it can **"see"** from its view point. You could use this, say, to set a **skybox** or a **cubemap** generated from your 3D modelling app as the **source for reflection**s.
 
+
+
+### Using Realtime Probes
+To enable a probe to update at runtime, you should set its Type property to Realtime in the **Reflection Probe** Inspector. You don’t need to mark objects as **Reflection Probe Static** to capture their reflections (as you would with a baked probe). However, you can **selectively exclude objects from the reflection cubemap** using the** Culling Mask** and **Clipping Planes** properties, which work the same way as for a Camera (the probe is essentially like a camera that is rotated to view each of the six cubemap faces).
+
+> **Note**: Currently, real-time probes will only update their reflections in the Scene view
+ when Reflection Probe Static objects are moved or change their appearance. This means that moving dynamic objects won’t cause an update even though those objects appear in the reflection. You should choose the Bake Reflection Probes option from the Generate Lighting button dropdown in the Lighting window to update reflections when a dynamic object is changed.
+
 ### ref
 https://www.youtube.com/watch?v=lhELeLnynI8
 
