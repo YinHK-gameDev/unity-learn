@@ -34,8 +34,11 @@ Reflection probes improve on this by allowing you to set up many **predefined po
 A probe also has a zone of effect defined by an invisible box shape in the scene. A reflective object that passes within a probe’s zone has its reflection cubemap supplied temporarily by that probe. As the object moves from one zone to another, the cubemap changes accordingly.
 
 ### Types of Reflection Probe
-- **Baked**
-- **Realtime** 
+- **Baked** \
+  Baked probes store a reflection cubemap generated (**"baked"**) within the editor. You can trigger the baking by clicking either the Bake button at the bottom of the Reflection Probe inspector or the Generate Lighting button in the Lighting window. The reflection from a **baked probe** can only show objects marked as **Reflection Probe Static** in the inspector. This indicates to Unity that the objects will not move at runtime.
+- **Realtime** \
+  
+- **Custom**
 
 
 ### ref
