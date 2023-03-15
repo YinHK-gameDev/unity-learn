@@ -41,6 +41,12 @@ A probe also has a zone of effect defined by an invisible box shape in the scene
 - **Custom**
   **Custom probe** let you bake the view in the editor, as with Baked probes, but you can also supply a custom cubemap for the reflections. Custom probes cannot be updated at runtime.
 
+
+
+
+> Baked probes are useful for many purposes and have good runtime performance but they have the disadvantage of not updating live within the player. This means that objects can move around in the scene without their reflections moving along with them. In cases where this is too limiting, you can use Realtime probes, which update the reflection cubemap at runtime. This effect comes with a higher processing overhead but offers greater realism.
+
+
 ### ref
 https://www.youtube.com/watch?v=lhELeLnynI8
 
