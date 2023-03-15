@@ -9,7 +9,6 @@
 - (D) The **Scene view** allows you to visually navigate and edit your Scene. The Scene view
  can display a 3D or 2D perspective, depending on the type of Project you are working on.
 - (E) **Overlays** contain the basic tools for manipulating the Scene view and the GameObjects within it. You can also add custom Overlays to improve your workflow.
-- (F) The **Inspector window** allows you to view and edit all the properties of the currently selected GameObject. Because different types of GameObjects have different sets of properties, the layout and contents of the Inspector
- window change each time you select a different GameObject.
+- (F) The **Inspector window** allows you to view and edit all the properties(components) of the currently selected GameObject. Because different types of GameObjects have different sets of properties, the layout and contents of the Inspector window change each time you select a different GameObject. (You can copy component from one gameobject to paste it to another gameobject)
 - (G) The **Project window** displays your library of Assets that are available to use in your Project. When you import Assets into your Project, they appear here.
 - (H) The **status bar** provides notifications about various Unity processes, and quick access to related tools and settings.
