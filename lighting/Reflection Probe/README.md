@@ -21,11 +21,11 @@ The visual environment for a point in the scene can be represented by a **cubema
 
 ![](../img/reflection_probe-example.jpg)
 
-For an object to show the reflections, its **shader** **must have access to the images representing the cubemap**. Each point of the object’s surface can “see” a small area of cubemap in the direction the surface faces (ie, the direction of the surface normal vector).
+For an object to show the reflections, its **shader** **must have access to the images representing the cubemap**. Each point of the object’s surface can "see" a small area of cubemap in the direction the surface faces (ie, the direction of the surface normal vector).
 
 The **cubemap** can be **painted by an artist** or it can be obtained by taking six **"snapshots"** from a point in the scene, with one shot for each cube face.
 
-Reflection probes improve on this by allowing you to set up many **predefined points** in the scene where **cubemap** **snapshots can be taken**. You can therefore** record the surrounding view** at any point in the scene where the reflections differ noticeably.
+Reflection probes improve on this by allowing you to set up many **predefined points** in the scene where **cubemap** **snapshots can be taken**. You can therefore **record the surrounding view** at any point in the scene where the reflections differ noticeably.
 
 
 A probe also has a zone of effect defined by an invisible box shape in the scene. A reflective object that passes within a probe’s zone has its reflection cubemap supplied temporarily by that probe. As the object moves from one zone to another, the cubemap changes accordingly.
