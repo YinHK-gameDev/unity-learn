@@ -17,7 +17,8 @@ You should generally place them at every point where the appearance of a reflect
 
 
 
-
+### ref
+https://www.youtube.com/watch?v=lhELeLnynI8
 
 https://docs.unity3d.com/Manual/ReflectionProbes.html
 
