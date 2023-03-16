@@ -69,6 +69,18 @@ To enable a probe to update at runtime, you should set its Type property to Real
 > **Note**: Currently, real-time probes will only update their reflections in the Scene view
  when Reflection Probe Static objects are moved or change their appearance. This means that moving dynamic objects won’t cause an update even though those objects appear in the reflection. You should choose the Bake Reflection Probes option from the Generate Lighting button dropdown in the Lighting window to update reflections when a dynamic object is changed.
 
+
+### Dfault Reflection Probe
+Unity includes a dedicated manager—the **SkyManager**—to ensure that environment lighting affects your scene
+by default. The **SkyManager** automatically generates an ambient probe and default reflection probe to capture nvironment lighting.
+
+Unity updates these probes each time environment lighting in your scene changes, until the moment you generate lighting. After you generate lighting, Unity bakes the current environment light values into the probes.
+
+
+When you specifically use the Generate Lighting control to manually bake your lighting, Unity stops updating the probes from that point onward and only updates them again at the next bake. If you want Unity to continue to update the **probes** each time the environment lighting changes, enable the Auto Generate option.
+
+If you remove the Lighting Data Asset from your project, Unity continues to update the probes each time the environment lighting changes.
+
 ### ref
 https://www.youtube.com/watch?v=lhELeLnynI8
 
