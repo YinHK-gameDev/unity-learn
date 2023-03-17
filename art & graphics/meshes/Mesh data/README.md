@@ -18,7 +18,9 @@ The elements of vertex data are called **vertex attributes**.
 
 Every **vertex** can have the following attributes:
 
-- **Position**
+- **Position** \
+  The vertex position represents the position of the vertex in object space. Unity uses this value to determine the surface of the mesh. In the **Mesh class**, the simplest way to access this data is with **`Mesh.GetVertices`** and **`Mesh.SetVertices`**. Unity also stores this data in **`Mesh.vertices`**, but this older property is less efficient and user-friendly.
+  > This vertex attribute is **required** for all meshes.
 - **Normal**
 - **Tangent**
 - **Color**
