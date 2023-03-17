@@ -17,4 +17,6 @@ Unity gradually **fades out one probeâ€™s cubemap** while **fading in the otherâ
 
 
 
+### ref
+https://docs.unity3d.com/Manual/UsingReflectionProbes.html
 
