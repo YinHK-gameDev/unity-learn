@@ -21,7 +21,11 @@ Every **vertex** can have the following attributes:
 - **Position** \
   The vertex position represents the position of the vertex in object space. Unity uses this value to determine the surface of the mesh. In the **Mesh class**, the simplest way to access this data is with **`Mesh.GetVertices`** and **`Mesh.SetVertices`**. Unity also stores this data in **`Mesh.vertices`**, but this older property is less efficient and user-friendly.
   > This vertex attribute is **required** for all meshes.
-- **Normal**
+- **Normal** \
+  The vertex normal represents the **direction** that points directly **"out"** from the surface at the position of the vertex. 
+  In the **Mesh class**, the simplest way to access this data is with **`Mesh.GetNormals`** and **`Mesh.SetNormals`**. Unity also stores this data in **`Mesh.normals`**, but this older property is less efficient and user-friendly.
+  > Unity uses this value to calculate the way that **light reflects off the surface of a mesh**.
+  > However, this vertex attribute is **optional**.
 - **Tangent**
 - **Color**
 - **Up to 8 texture coordinates**
