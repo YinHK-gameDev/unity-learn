@@ -87,6 +87,21 @@ If you remove the Lighting Data Asset from your project, Unity continues to upda
 - Optionally set other properties on the probe to customise its behaviour.
 - Continue adding probes until all required locations have been assigned.
 
+To see the reflections, you will also need at least one reflective object in the scene. A simple test object can be created as follows:
+
+- Add a **primitive object** such as a Sphere to the scene (menu: **GameObject > 3D Object > Sphere**).
+- Create a new material (menu: **Assets > Create > Material**) and leave the **default Standard shader** in place.
+- Make the **material reflecti**ve by setting both the **Metall**ic and **Smoothness** properties to **1.0**.
+- Drag the newly-created material onto the sphere object to assign it.
+
+The sphere can now show the reflections obtained from the probes. A simple arrangement with a single probe is enough to see the basic effect of the reflections.
+
+The probes must be baked before the reflections become visible. If you have the Auto Generate option enabled in the Lighting window (this is the default setting) then the reflections will update as you position or change objects in the scene, although the response is not instantaneous.
+
+
+
+
+
 
 
 
