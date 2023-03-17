@@ -8,7 +8,7 @@ reflective objects viewed by a probe are shown as black. With a **count of 2**, 
 are visible, with a **count of 3**, the first two levels will be visible, and so on.
  
  
-
+> **Note**: the reflection bounce count also equals the number of times the probe must be baked with a corresponding increase in the time required to complete the full bake. You should therefore set the count higher than one only when you know that reflective objects will be clearly visible in one or more probes.
 
 
 
