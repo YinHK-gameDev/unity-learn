@@ -41,7 +41,14 @@ Every **vertex** can have the following attributes:
   > > However, this vertex attribute is **optional**.
 
   In the **Mesh class**, the simplest way to access this data is with **`Mesh.GetTangents`** and **`Mesh.SetTangents`**. Unity also stores this data in **`Mesh.tangents`**, but this older property is less efficient and user-friendly.
-- **Color**
+- **Color** \
+  The vertex color represents the **base color** of a vertex, if any.
+  
+  This color exists independently of any textures that the mesh may use.
+  > This vertex attribute is **optional**.
+
+  In the **Mesh class**, the simplest way to access this data is with **`Mesh.GetColors`** and **`Mesh.SetColors`**. Unity also stores this data in **Mesh.colors**, but this older property is less efficient and user-friendly.
+  
 - **Up to 8 texture coordinates**
 - **Bone weights and blend indices (skinned meshes only)**
 
