@@ -142,7 +142,7 @@ The right button (Origin) allows you to drag the probe’s origin relative to th
 > **Note**: he origin handle resembles the Transform position handle but the two positions are not the same. Also, the rotation and scale operations are not available for the probe box.
 
 
-![](../img/RefProbeOrigin.png
+![](../img/RefProbeOrigin.png)
 
 
 
