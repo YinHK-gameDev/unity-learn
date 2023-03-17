@@ -129,7 +129,7 @@ The probes must be baked before the reflections become visible. If you have the 
 
 
 
-
+![](../img/reflection_probe.png)
 
 ### ref
 https://www.youtube.com/watch?v=lhELeLnynI8
