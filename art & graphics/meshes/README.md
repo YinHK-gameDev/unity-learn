@@ -26,6 +26,18 @@ In addition to regular meshes, Unity also supports **deformable meshes**.
 - Meshes that work with a **Cloth component** component for realistic **fabric simulation**.
 
 
+### Creating meshes
+
+You can add meshes to a Unity project in the following ways:
+
+- Create a mesh as part of a model
+ in a 3D modeling program, then import it. **Unity creates a mesh asset as a part of the model hierarchy when you import a model**.
+- Create a mesh directly with **in-Editor tools**. Unity has **built-in primitive** shapes such as **spheres and capsules** that you can place directly into a Scene. 
+- You can also use a package like **ProBuilder** to model a custom mesh in the Editor.
+- Create meshes with code, either at **runtime** or in the **Editor**.
+
+
+
 
 
 https://docs.unity3d.com/Manual/mesh-introduction.html
