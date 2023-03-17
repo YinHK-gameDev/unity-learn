@@ -41,10 +41,10 @@ Every **vertex** can have the following attributes:
 
 
 
-
+### ref
 
 https://docs.unity3d.com/Manual/AnatomyofaMesh.html
 
-
+https://gamedev.stackexchange.com/questions/51399/what-are-normal-tangent-and-binormal-vectors-and-how-are-they-used
 
 
