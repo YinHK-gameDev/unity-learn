@@ -33,7 +33,7 @@ Every **vertex** can have the following attributes:
 - **Tangent** \
   The vertex tangent represents the **direction that points along the "u"** (horizontal texture) axis of the surface at the position of the vertex.
   
-  Unity stores the vertex tangent with an additional piece of data, in a four-component vector. The x,y,z components of the vector describe the tangent, and the w component of the vector describes its orientation. Unity uses the w value to compute the binormal, which is the cross product of the tangent and normal.
+  Unity stores the **vertex tangent** with an additional piece of data, in a **four-component vector**. The x,y,z components of the vector describe the tangent, and the w component of the vector describes its orientation. Unity uses the **w** value to compute the **binormal**, which is the **cross-product of the tangent and normal**.
   
   ![](../img/unit-tangent-normal-and-binormal-vectors.png)
 - **Color**
