@@ -16,6 +16,10 @@ In addition to this, **deformable meshes** contain either:
 ### Vertex data
 The elements of vertex data are called **vertex attributes**.
 
+
+![](../img/tAQNN.png)
+
+
 Every **vertex** can have the following attributes:
 
 - **Position** \
