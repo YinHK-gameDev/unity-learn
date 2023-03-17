@@ -128,8 +128,24 @@ The probes must be baked before the reflections become visible. If you have the 
 | Clipping Planes | Near and far clipping planes of the probe’s "camera". |
 
 
+There are two buttons at the top of the **Reflection Probe Inspector window** that are used for editing the **Size** and **Probe Origin** properties directly within the Scene.
+With the left button (Size) selected, the probe’s zone of effect is shown in the scene as a yellow box shape with handles to adjust the box’s size.
 
 ![](../img/reflection_probe.png)
+
+With the left button (Size) selected, the probe’s zone of effect is shown in the scene as a yellow box shape with handles to adjust the box’s size.
+
+![](../img/RefProbeHandles.png)
+
+The right button (Origin) allows you to drag the probe’s origin relative to the box. 
+
+> **Note**: he origin handle resembles the Transform position handle but the two positions are not the same. Also, the rotation and scale operations are not available for the probe box.
+
+
+![](../img/RefProbeOrigin.png
+
+
+
 
 ### ref
 https://www.youtube.com/watch?v=lhELeLnynI8
