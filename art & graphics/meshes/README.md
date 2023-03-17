@@ -37,6 +37,20 @@ You can add meshes to a Unity project in the following ways:
 - Create meshes with code, either at **runtime** or in the **Editor**.
 
 
+### Working with meshes
+
+Unity stores meshes in your project as **mesh assets**, and represents them in **C#** code with the **Mesh class**.
+
+Depending on how you use meshes, they work with **different components**:
+
+- In **graphics**, Unity **renders regular meshe**s with **Mesh Renderer components**, and **deformable meshes** with **Skinned Mesh Renderer components**.
+- In **physics**, Unity uses the **Mesh Collider component** to **determine the shape of a collider**.
+
+
+
+
+
+
 
 
 
