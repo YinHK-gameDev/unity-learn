@@ -5,6 +5,6 @@
 
 
 
-![](./img/GraphicsSettings_BoxProjection.jpg)
+![](../img/GraphicsSettings_BoxProjection.jpg)
 
 
