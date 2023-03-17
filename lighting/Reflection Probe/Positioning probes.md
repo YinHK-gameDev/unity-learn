@@ -14,3 +14,11 @@ By default, Unity calculates the intersection between the reflective object’s 
 
 > You can modify the calculation using the probes’ **Importance properties**. Probes with a **higher importance value** have **priority** over those of lower importance within overlap zones. This is useful, say, if you have a small probe zone that is contained completely inside a larger zone
 
+
+
+
+
+
+
+
+
