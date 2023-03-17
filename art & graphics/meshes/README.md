@@ -20,9 +20,10 @@ In addition to regular meshes, Unity also supports **deformable meshes**.
 **Deformable meshes** fall into the following categories:
 
 - **Skinned meshes**: \
-  These meshes work with **additional data** called **bones**. **Bones** form a structure called a **skeleton** (also called a **rig**, or **joint** hierarchy), and the **skinned mesh** contains data that allows it to deform in a realistic way when the skeleton moves. You usually use skinned meshes for skeletal animation with Unity’s Animation features, but you can also use them with Rigidbody components to create “ragdoll” effects.
-- Meshes with blend shapes: These meshes contain data called blend shapes. Blend shapes describe versions of the mesh that are deformed into different shapes, which Unity interpolates between. You use blend shapes for morph target animation, which is a common technique for facial animation.
-- Meshes that work with a Cloth component component for realistic fabric simulation.
+  These meshes work with **additional data** called **bones**. **Bones** form a structure called a **skeleton** (also called a **rig**, or **joint** hierarchy), and the **skinned mesh** contains data that allows it to deform in a realistic way when the **skeleton moves**. You usually use **skinned meshes** for **skeletal animation** with Unity’s Animation features, but you can also use them with **`Rigidbody`** components to create **"ragdoll"** effects.
+- **Meshes with blend shapes**: \
+  These meshes contain data called **blend shapes**. **Blend shapes** describe **versions of the mesh** that are **deformed into different shapes**, which Unity **interpolates between**. You use blend shapes for **`morph target animation`**, which is a common technique for **facial animation**.
+- Meshes that work with a **Cloth component** component for realistic **fabric simulation**.
 
 
 
