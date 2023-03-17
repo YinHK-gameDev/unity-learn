@@ -13,6 +13,8 @@ A 3D mesh is the structural build of a 3D model consisting of polygons. 3D meshe
 The polygons used are typically quadrangles or triangles; these geometric shapes can be further broken down into vertices in X, Y, Z coordinates and lines.
 
 ### Deformable meshes
+(Deformable means that **capable of being reshaped**)
+
 In addition to regular meshes, Unity also supports **deformable meshes**.
 
 **Deformable meshes** fall into the following categories:
