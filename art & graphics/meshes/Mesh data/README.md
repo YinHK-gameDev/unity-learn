@@ -36,6 +36,10 @@ Every **vertex** can have the following attributes:
   Unity stores the **vertex tangent** with an additional piece of data, in a **four-component vector**. The x,y,z components of the vector describe the tangent, and the w component of the vector describes its orientation. Unity uses the **w** value to compute the **binormal**, which is the **cross-product of the tangent and normal**.
   
   ![](../img/unit-tangent-normal-and-binormal-vectors.png)
+  
+  > Unity uses the tangent and binormal values in **normal mapping**.
+  > > However, this vertex attribute is **optional**.
+
 - **Color**
 - **Up to 8 texture coordinates**
 - **Bone weights and blend indices (skinned meshes only)**
