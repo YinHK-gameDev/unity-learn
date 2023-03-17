@@ -30,7 +30,12 @@ Every **vertex** can have the following attributes:
   In the **Mesh class**, the simplest way to access this data is with **`Mesh.GetNormals`** and **`Mesh.SetNormals`**. Unity also stores this data in **`Mesh.normals`**, but this older property is less efficient and user-friendly.
   > Unity uses this value to calculate the way that **light reflects off the surface of a mesh**.
   > However, this vertex attribute is **optional**.
-- **Tangent**
+- **Tangent** \
+  The vertex tangent represents the **direction that points along the "u"** (horizontal texture) axis of the surface at the position of the vertex.
+  
+  Unity stores the vertex tangent with an additional piece of data, in a four-component vector. The x,y,z components of the vector describe the tangent, and the w component of the vector describes its orientation. Unity uses the w value to compute the binormal, which is the cross product of the tangent and normal.
+  
+  
 - **Color**
 - **Up to 8 texture coordinates**
 - **Bone weights and blend indices (skinned meshes only)**
