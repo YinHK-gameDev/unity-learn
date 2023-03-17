@@ -81,6 +81,15 @@ When you specifically use the Generate Lighting control to manually bake your li
 
 If you remove the Lighting Data Asset from your project, Unity continues to update the probes each time the environment lighting changes.
 
+### Adding Reflection Probes
+- Create a new empty GameObject (menu: **GameObject > Create Empty**) and then add the **Reflection Probe** component to it (menu: **Component > Rendering > Reflection Probe**). Alternatively, if you already have a probe in the scene you will probably find it easier to duplicate that instead (menu: **Edit > Duplicate**).
+- Place the new probe in the desired location and set its Offset point and the size of its zone of effect.
+- Optionally set other properties on the probe to customise its behaviour.
+- Continue adding probes until all required locations have been assigned.
+
+
+
+
 ### ref
 https://www.youtube.com/watch?v=lhELeLnynI8
 
