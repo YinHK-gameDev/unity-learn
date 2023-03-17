@@ -13,7 +13,7 @@ In addition to this, **deformable meshes** contain either:
 - **Bind poses**: Data that describes the **"base" pose** of the **skeleton** in a **skinned mesh**.
 
 
-## Vertex data
+### Vertex data
 The elements of vertex data are called **vertex attributes**.
 
 Every **vertex** can have the following attributes:
@@ -25,9 +25,9 @@ Every **vertex** can have the following attributes:
 - **Up to 8 texture coordinates**
 - **Bone weights and blend indices (skinned meshes only)**
 
+> Internally, all vertex data is stored in separate arrays of the same size. If your mesh contains an array with 10 vertex positions, it also has arrays with 10 elements for each other vertex attribute that it uses.
 
-
-
+> In C#, Unity describes the available vertex attributes with the **`VertexAttribute`** enum. You can check whether an instance of the **Mesh class** has a given **vertex attribute** with the **`Mesh.HasVertexAttribute`** function.
 
 
 
