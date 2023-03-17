@@ -13,6 +13,29 @@ In addition to this, **deformable meshes** contain either:
 - **Bind poses**: Data that describes the **"base" pose** of the **skeleton** in a **skinned mesh**.
 
 
+## Vertex data
+The elements of vertex data are called **vertex attributes**.
+
+Every **vertex** can have the following attributes:
+
+- **Position**
+- **Normal**
+- **Tangent**
+- **Color**
+- **Up to 8 texture coordinates**
+- **Bone weights and blend indices (skinned meshes only)**
+
+
+
+
+
+
+
+
+
+
+
+
 
 https://docs.unity3d.com/Manual/AnatomyofaMesh.html
 
