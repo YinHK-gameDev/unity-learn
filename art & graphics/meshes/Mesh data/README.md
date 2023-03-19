@@ -82,11 +82,34 @@ Every **vertex** can have the following attributes:
 > In C#, Unity describes the available vertex attributes with the **`VertexAttribute`** enum. You can check whether an instance of the **Mesh class** has a given **vertex attribute** with the **`Mesh.HasVertexAttribute`** function.
 
 
+### Topology
+Topology describes the type of face that a mesh has.
 
+A mesh’s topology defines the structure of the index buffer, which in turn describes how the vertex positions combine into faces. Each type of topology uses a different number of elements in the index array to define a single face.
+
+Unity supports the following mesh topologies:
+
+- Triangle
+- Quad
+- Lines
+- LineStrip
+- Points
+
+> Note: The Points topology doesn’t create faces; instead, Unity renders a single point at each position. All other mesh topologies use more than one index to create either faces or edges.
+
+In the **Mesh class**, you can get the topology with **`Mesh.GetTopology`**, and set it as a parameter of **`Mesh.SetIndices`**.
+
+For more information on supported **mesh topologies**, see the documentation for the **`MeshTopology enum`**.
+
+### Index data
+The index array contains integers that **refer to elements in the vertex positions array**. These integers are called **indices**.
+
+Unity uses the indices to connect the vertex positions into faces. The number of indices that make up each face depends on the topology of the mesh.
+
+In the **Mesh class**, you can get this data with **`Mesh.GetIndices`**, and set it with **`Mesh.SetIndices`**. Unity also stores this data in **`Mesh.triangles`**, but this older property is less efficient and user-friendly.
 
 
 ### ref
-
 https://docs.unity3d.com/Manual/AnatomyofaMesh.html
 
 https://gamedev.stackexchange.com/questions/51399/what-are-normal-tangent-and-binormal-vectors-and-how-are-they-used
