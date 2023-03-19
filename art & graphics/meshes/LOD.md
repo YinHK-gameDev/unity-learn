@@ -19,6 +19,20 @@ the **lower-detail LOD level** Unity renders.
 This technique reduces the load on the hardware for these distant GameObjects, and can therefore improve rendering performance.
 
 
+### LOD Levels
+A **LOD level** is a mesh that defines the level of detail Unity renders for a GameObject’s geometry.
+
+When a GameObject uses LOD, Unity displays the **appropriate LOD level** for that GameObject based on the **GameObject’s distance** from the Camera.
+
+Each LOD level exists in a separate GameObject, each of which has a Mesh Renderer component that displays that **LOD level**. For the very lowest level of detail, you can use a **Billboard Asset**, which Unity displays instead of a 3D mesh.
+ 
+> Unity shows and hides these GameObjects as required. **LOD levels** **must be child GameObjects** to the GameObject they relate to.
+
+
+![](./img/LOD0Image.png)
+
+At LOD 0, the Camera shows a mesh with a large number of small triangles. At LOD 1, the Camera shows the mesh with far fewer triangles, which are much larger in size.
+
 ### ref
 https://docs.unity3d.com/Manual/LevelOfDetail.html
 
