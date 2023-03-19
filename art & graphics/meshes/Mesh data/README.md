@@ -16,6 +16,7 @@ In addition to this, **deformable meshes** contain either:
   Data that describes the **"base" pose** of the **skeleton** in a **skinned mesh**.
   In a **skinned mesh**, the **bind pose** of a bone describes its position when the **skeleton is in its default** position (also called its bind pose or rest pose).
   In the **Mesh class**, you can get and set this data with **`Mesh.bindposes`**. Each element contains data for the bone with the **same index**.
+  > This data is required for skinned meshes.
 
 ### Vertex data
 The elements of vertex data are called **vertex attributes**.
