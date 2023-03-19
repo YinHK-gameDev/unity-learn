@@ -43,6 +43,13 @@ You can set up LOD in Unity two ways:
 -  You can **manually** create a GameObject with a **LOD Group** component, and **configure** the **LOD levels** manually.
 
 
+### Configuring LOD levels
+To manually configure the distance from the camera at which Unity displays each LOD level, use the **LOD Group component’s selection bar**.
+
+> The **LOD Group component** accepts a maximum of **8 LOD levels**. **LOD 0** is the closest to the Camera, and therefore the **most detailed LOD level**.
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/LevelOfDetail.html
 
