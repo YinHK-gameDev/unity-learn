@@ -41,7 +41,7 @@ mesh.triangles = tris;
 
 ### Normals
 
-A Mesh with vertices and triangles is visible in the Scene, but Unity does not shade it correctly because it has no normals yet. The normals for this example are simple because they are all identical. Every normal points in the negative z-axis direction in the quad’s local space. When you add the normals, Unity correctly shades the quad, but you need a Light in the Scene to see the effect.
+A Mesh with vertices and triangles is visible in the Scene, but Unity does not shade it correctly because it has no normals yet. The normals for this example are simple because they are all identical. Every normal points in the negative z-axis direction in the quad’s local space. When you add the normals, U**nity correctly shades the quad, but you need a Light in the Scene to see the effect.**
 
 ```cs
 Vector3[] normals = new Vector3[4]
