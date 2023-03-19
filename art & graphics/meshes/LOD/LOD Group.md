@@ -5,7 +5,7 @@
 
 ![](../img/LOD_component.png)
 
-
+![](../img/InspectorLODGroup.png)
 
 
 
