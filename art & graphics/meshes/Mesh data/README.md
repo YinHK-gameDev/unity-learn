@@ -64,6 +64,18 @@ Every **vertex** can have the following attributes:
   In the **Mesh class**, the simplest way to access this data is with **`Mesh.GetUVs`** and **`Mesh.SetUVs`**. Unity also stores this data in the following properties: **`Mesh.uv`**, **`Mesh.uv2`**, **`Mesh.uv3`** and so on, up to **`Mesh.uv8`**.
   
 - **Bone weights and blend indices (skinned meshes only)**
+  In a skinned mesh, 
+  - **blend indices** indicate which bones affects a vertex.
+  - **bone weights** describe how much influence those bones have on the vertex.
+  
+  Unity uses **blend indices** and **bone weights** to **deform a skinned mesh** based on the movement of its skeleton.
+
+  > These vertex attributes are required for **skinned meshes**.
+
+  In the past, Unity only allowed up to **4 bones** to influence a vertex. It stored this data in a **`BoneWeight`** struct, in the **Mesh.boneWeights array**. Now, Unity allows up to **256 bones** to influence a vertex. It stores this data in a **`BoneWeight1`** struct, and you can access it with Mesh.GetAllBoneWeights and Mesh.SetBoneWeights.
+  
+  
+  
 
 > Internally, all vertex data is stored in separate arrays of the same size. If your mesh contains an array with 10 vertex positions, it also has arrays with 10 elements for each other vertex attribute that it uses.
 
