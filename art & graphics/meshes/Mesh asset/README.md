@@ -1,7 +1,7 @@
 ## Mesh asset
 A mesh asset represents a mesh in your Unity project.
 
-Usually, Unity creates mesh assets when it imports model,
+Usually, Unity creates mesh assets **when it imports model**,
 
 but you can also create mesh assets directly in Unity; for example, by creating a mesh with code and saving the results as an asset.
 
@@ -38,6 +38,16 @@ Each view displays the following data about the mesh underneath the preview of t
 - The names of all UV maps in the mesh.
 - For skinned meshes, the name of the skin weights property.
 
+
+### View mode
+
+- **Shaded**:  Provides a visualization of the mesh with a basic light. This is the default view.
+- **UV Checker**: Applies a checkerboard texture to the mesh to visualize how the mesh’s UV map applies textures.
+- **UV Layout**: Displays how the vertices of the mesh are organized in the unwrapped **UV map**. This view disables the Wireframe toggle.
+- **Vertex Color**: Visualizes any vertex colors that the vertices in this mesh have. If no vertices have a vertex color, this menu item is disabled. 
+- **Normals**: Visualizes the **relative directions of the normals** in the mesh with color.
+- **Tangents**: Visualizes the **tangent data** in the mesh with **colo**r. 
+- **Blendshapes**: Lets you preview blend shape deformations to the mesh. If the mesh has no blend shapes, this menu item is disabled.
 
 ### ref
 
