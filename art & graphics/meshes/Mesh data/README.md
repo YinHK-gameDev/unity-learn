@@ -9,9 +9,13 @@ A **mesh** is defined by these properties:
 
 In addition to this, **deformable meshes** contain either:
 
-- **Blend shapes**: Data that describes different **deformed versions of the mesh**, for use with animation.
-- **Bind poses**: Data that describes the **"base" pose** of the **skeleton** in a **skinned mesh**.
-
+- **Blend shapes**: \
+  Data that describes different **deformed versions of the mesh**, for use with animation.
+  **Blend shapes** describe **versions of the mesh** that are deformed into different shapes. Unity **interpolates** between these shapes. You use blend shapes for morph target animation, which is a common technique for facial animation.
+- **Bind poses**: \
+  Data that describes the **"base" pose** of the **skeleton** in a **skinned mesh**.
+  In a **skinned mesh**, the **bind pose** of a bone describes its position when the **skeleton is in its default** position (also called its bind pose or rest pose).
+  In the **Mesh class**, you can get and set this data with **`Mesh.bindposes`**. Each element contains data for the bone with the **same index**.
 
 ### Vertex data
 The elements of vertex data are called **vertex attributes**.
