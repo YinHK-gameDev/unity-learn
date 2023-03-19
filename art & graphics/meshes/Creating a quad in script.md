@@ -41,7 +41,7 @@ int[] tris = new int[6]
 mesh.triangles = tris;
 ```
 
-## Normals
+### Normals
 
 A Mesh with vertices and triangles is visible in the Scene, but Unity does not shade it correctly because it has no normals yet. The normals for this example are simple because they are all identical. Every normal points in the negative z-axis direction in the quad’s local space. When you add the normals, Unity correctly shades the quad, but you need a Light in the Scene to see the effect.
 
@@ -58,7 +58,7 @@ mesh.normals = normals;
 
 If you do not want to define the normals yourself, you can use [Mesh.RecalculateNormals()](https://docs.unity3d.com/Manual/Example-CreatingaBillboardPlane.html../ScriptReference/Mesh.RecalculateNormals.html).
 
-## Texture coordinates
+### Texture coordinates
 
 Finally, to display Textures on the Mesh’s Material correctly, add texture coordinates to the Mesh. Texture coordinates are between 0 and 1. Each vertex in the Mesh has a texture coordinate which specifies where on the Material’s Texture to sample from. To show the whole Texture across the quad, the texture coordinate values on each vertex should all be 0 or 1 so that each corner of the quad corresponds to a corner of the Texture.
 
@@ -73,7 +73,7 @@ Vector2[] uv = new Vector2[4]
 mesh.uv = uv;
 ```
 
-## Final script
+### Final script
 
 The following script combines everything above to create a quad in your Scene. To use it: Create a new C# script (menu: Assets > Create > C# Script) and name it QuadCreator. Open the QuadCreator script, copy the example code into it, and save the script. Back in the Editor, create a new GameObject in your Scene (menu: GameObject > Create Empty). In the Inspector, select Add Component > Scripts > Quad Creator. Position the **GameObject**The fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it. [More info](https://docs.unity3d.com/Manual/Example-CreatingaBillboardPlane.htmlclass-GameObject.html)  
 See in [Glossary](https://docs.unity3d.com/Manual/Example-CreatingaBillboardPlane.htmlGlossary.html#GameObject) wherever you want in the Scene. Enter Play Mode. If you can not see the quad in the Scene or Game view, make sure you are viewing it from the correct side; Unity does not render the back face of this Mesh.
@@ -137,7 +137,7 @@ public class QuadCreator : MonoBehaviour
 
 ```
 
-Note: This example code is in the Start function, which means that it executes once when you enter Play Mode, and the Mesh does not change throughout the application. However, you can add code in the Update function to make the Mesh change each frame. Be aware that this greatly increases the resource intensity of the Mesh generation.
+> **Note**: This example code is in the Start function, which means that it executes once when you enter Play Mode, and the Mesh does not change throughout the application. However, you can add code in the Update function to make the Mesh change each frame. Be aware that this greatly increases the resource intensity of the Mesh generation.
 
 
 
