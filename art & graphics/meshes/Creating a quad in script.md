@@ -58,7 +58,7 @@ If you do not want to define the normals yourself, you can use [Mesh.Recalculate
 
 ### Texture coordinates
 
-Finally, to display Textures on the Mesh’s Material correctly, add texture coordinates to the Mesh. Texture coordinates are between 0 and 1. Each vertex in the Mesh has a texture coordinate which specifies where on the Material’s Texture to sample from. To show the whole Texture across the quad, the texture coordinate values on each vertex should all be 0 or 1 so that each corner of the quad corresponds to a corner of the Texture.
+Finally, to display Textures on the Mesh’s Material correctly, add texture coordinates to the Mesh. Texture coordinates are **between 0 and 1**. Each vertex in the Mesh has a texture coordinate which specifies where on the Material’s Texture to sample from. To show the whole Texture across the quad, the texture coordinate values on each vertex should all be **0 or 1** so that each corner of the quad corresponds to a corner of the Texture.
 
 ```cs
 Vector2[] uv = new Vector2[4]
