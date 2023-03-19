@@ -35,7 +35,7 @@ At LOD 0, the Camera shows a mesh with a large number of small triangles. At LOD
 
 
 ### Set up LOD in Unity
-To use LOD, you must have a GameObject with a **LOD Group** component. The **LOD Group component provides controls to define how LOD behaves on this GameObject, and references the GameObjects that Unity shows or hides for each LOD level**.
+**To use LOD, you must have a GameObject with a **LOD Group** component**. The **LOD Group component provides controls to define how LOD behaves on this GameObject, and references the GameObjects that Unity shows or hides for each LOD level**.
 
 You can set up LOD in Unity two ways:
 
