@@ -28,7 +28,15 @@ You can use the following mouse and keyboard controls to navigate the mesh view:
 > The **"UV Layout"** view displays the **UV map** of your mesh as a 2D image. Unity disables rotation in this view. To pan the camera, click and drag any of the left, right, or middle mouse buttons.
 
 
+Each view displays the following data about the mesh underneath the preview of the mesh:
 
+- The name of the mesh.
+- The number of vertices in the mesh.
+- The type and number of faces in the mesh. Most meshes use triangles to define faces.
+- The number of blend shapes in the mesh, if any.
+- The number of sub-meshes in the mesh, if there is more than one.
+- The names of all UV maps in the mesh.
+- For skinned meshes, the name of the skin weights property.
 
 
 ### ref
