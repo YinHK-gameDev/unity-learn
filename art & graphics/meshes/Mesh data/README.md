@@ -50,6 +50,19 @@ Every **vertex** can have the following attributes:
   In the **Mesh class**, the simplest way to access this data is with **`Mesh.GetColors`** and **`Mesh.SetColors`**. Unity also stores this data in **Mesh.colors**, but this older property is less efficient and user-friendly.
   
 - **Up to 8 texture coordinates**
+  A mesh can contain up to **eight sets of texture coordinates**. Texture coordinates are commonly called **UVs**, and the sets are called **channels**.
+  
+  Unity uses texture coordinates when it **"wraps"** a texture around the mesh. The **UVs** indicate **which part of the texture aligns with the mesh surface at the vertex position**.
+  
+  **UV channels** are commonly called **"UV0"** for the first channel, **"UV1"** for the second channel, and so on up to **"UV7"**. The **channels** respectively **map to the shader** semantics `TEXCOORD0`, `TEXCOORD1`, and so on up to `TEXCOORD7`.
+  
+  By default, Unity uses the **first channel (UV0)** to store **UVs** for regular textures such as **diffuse maps** and **specular maps**. Unity can use the **second channel (UV1)** to store **baked lightmap
+ UVs**, and the **third channel (UV2)** to store input data for **real-time lightmap UVs**.
+  
+  > All eight texture coordinate attributes are **optional**.
+  
+  
+  
 - **Bone weights and blend indices (skinned meshes only)**
 
 > Internally, all vertex data is stored in separate arrays of the same size. If your mesh contains an array with 10 vertex positions, it also has arrays with 10 elements for each other vertex attribute that it uses.
