@@ -48,6 +48,12 @@ To manually configure the distance from the camera at which Unity displays each 
 
 > The **LOD Group component** accepts a maximum of **8 LOD levels**. **LOD 0** is the closest to the Camera, and therefore the **most detailed LOD level**.
 
+In the [Quality settings](https://docs.unity3d.com/Manual/LevelOfDetail.htmlclass-QualitySettings.html) window, you can **configure LOD settings** that affect all GameObjects in your Project.
+
+There are **two LOD settings** you can configure:
+
+-   **Maximum LOD Level**: Exclude meshes above a specified LOD level from your build.
+-   **LOD Bias**: Determine whether to favor higher or lower LOD levels at threshold distances.
 
 
 ### ref
