@@ -29,7 +29,7 @@ Each LOD level exists in a separate GameObject, each of which has a Mesh Rendere
 > Unity shows and hides these GameObjects as required. **LOD levels** **must be child GameObjects** to the GameObject they relate to.
 
 
-![](./img/LOD0Image.png)
+![](../img/LOD0Image.png)
 
 At LOD 0, the Camera shows a mesh with a large number of small triangles. At LOD 1, the Camera shows the mesh with far fewer triangles, which are much larger in size.
 
