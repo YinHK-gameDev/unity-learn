@@ -73,8 +73,8 @@ mesh.uv = uv;
 
 ### Final script
 
-The following script combines everything above to create a quad in your Scene. To use it: Create a new C# script (menu: Assets > Create > C# Script) and name it QuadCreator. Open the QuadCreator script, copy the example code into it, and save the script. Back in the Editor, create a new GameObject in your Scene (menu: GameObject > Create Empty). In the Inspector, select Add Component > Scripts > Quad Creator. Position the **GameObject**The fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it. [More info](https://docs.unity3d.com/Manual/Example-CreatingaBillboardPlane.htmlclass-GameObject.html)  
-See in [Glossary](https://docs.unity3d.com/Manual/Example-CreatingaBillboardPlane.htmlGlossary.html#GameObject) wherever you want in the Scene. Enter Play Mode. If you can not see the quad in the Scene or Game view, make sure you are viewing it from the correct side; Unity does not render the back face of this Mesh.
+The following script combines everything above to create a quad in your Scene. To use it: Create a new C# script (menu: **Assets > Create > C# Script**) and name it QuadCreator. Open the QuadCreator script, copy the example code into it, and save the script. Back in the Editor, create a new GameObject in your Scene (menu: **GameObject > Create Empty**). In the Inspector, select **Add Component > Scripts > Quad Creator**. Position the **GameObject**The fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it.
+ wherever you want in the Scene. Enter Play Mode. If you can not see the quad in the Scene or Game view, make sure you are viewing it from the correct side; Unity does not render the back face of this Mesh.
 
 ```cs
 using UnityEngine;
