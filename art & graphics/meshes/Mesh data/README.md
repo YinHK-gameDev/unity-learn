@@ -61,15 +61,13 @@ Every **vertex** can have the following attributes:
   
   > All eight texture coordinate attributes are **optional**.
   
-  
+  In the **Mesh class**, the simplest way to access this data is with **`Mesh.GetUVs`** and **`Mesh.SetUVs`**. Unity also stores this data in the following properties: **`Mesh.uv`**, **`Mesh.uv2`**, **`Mesh.uv3`** and so on, up to **`Mesh.uv8`**.
   
 - **Bone weights and blend indices (skinned meshes only)**
 
 > Internally, all vertex data is stored in separate arrays of the same size. If your mesh contains an array with 10 vertex positions, it also has arrays with 10 elements for each other vertex attribute that it uses.
 
 > In C#, Unity describes the available vertex attributes with the **`VertexAttribute`** enum. You can check whether an instance of the **Mesh class** has a given **vertex attribute** with the **`Mesh.HasVertexAttribute`** function.
-
-
 
 
 
