@@ -1,9 +1,7 @@
 ## Creating a quad in script
 
-To represent flat surfaces, Unity includes the Plane and Quad
- primitive GameObjects that you can instantiate in your Scenes
-. However, it is useful to understand how to use a script to construct a quadrilateral mesh
- yourself. This is essential for procedural mesh generation.
+To represent flat surfaces, Unity includes the **Plane** and **Quad
+ primitive GameObjects** that you can instantiate in your Scenes. However, it is useful to understand how to use a script to construct a **quadrilateral mesh** yourself. This is essential for procedural mesh generation.
 
 ### Vertex array
 
