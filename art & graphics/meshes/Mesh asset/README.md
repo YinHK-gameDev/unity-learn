@@ -14,6 +14,18 @@ This Inspector **displays information about the mesh**, such as the total number
 > The Mesh Inspector displays information about how the mesh asset stores
  its data, but not the values in the data itself. 
 
+### Mesh preview
+In the Mesh Inspector, you can preview the appearance of a mesh and explore the mesh data in a visual way.
+
+You can use the following mouse and keyboard controls to navigate the mesh view:
+
+- Rotate the view: left-click and drag.
+- Rotate the light source: right-click and drag. A light source is present only in the “Shaded” and “Blendshapes” views.
+- Pan the camera: middle-click and drag.
+- Zoom the camera in and out: scroll the mouse wheel.
+- Reset the zoom and pan settings: hover the mouse cursor inside the preview and press the **“F”** key. This does not reset the rotation.
+
+> The **"UV Layout"** view displays the **UV map** of your mesh as a 2D image. Unity disables rotation in this view. To pan the camera, click and drag any of the left, right, or middle mouse buttons.
 
 
 
