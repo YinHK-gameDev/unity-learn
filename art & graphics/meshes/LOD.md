@@ -33,6 +33,16 @@ Each LOD level exists in a separate GameObject, each of which has a Mesh Rendere
 
 At LOD 0, the Camera shows a mesh with a large number of small triangles. At LOD 1, the Camera shows the mesh with far fewer triangles, which are much larger in size.
 
+
+### Set up LOD in Unity
+To use LOD, you must have a GameObject with a **LOD Group** component. The **LOD Group component provides controls to define how LOD behaves on this GameObject, and references the GameObjects that Unity shows or hides for each LOD level**.
+
+You can set up LOD in Unity two ways:
+
+-  You can **configure** **LOD levels** in your **external 3D modeling application**, and Unity can automatically **create** and **configure the required GameObjects and components** for you. See [Importing LOD Meshes](https://docs.unity3d.com/Manual/LevelOfDetail.htmlimporting-lod-meshes.html) for details on the correct configuration.
+-  You can **manually** create a GameObject with a **LOD Group** component, and **configure** the **LOD levels** manually.
+
+
 ### ref
 https://docs.unity3d.com/Manual/LevelOfDetail.html
 
