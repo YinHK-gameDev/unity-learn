@@ -70,11 +70,26 @@ To set a renderer Mesh for the current LOD level, click the **Add** box and choo
 
 
 ### Transitioning between LOD levels
-**Smooth transitions** between LOD levels improves the player’s experience of your game. As the Camera moves closer or farther away, you don’t want players to see an obvious switchover (sometimes called _popping_) from the current LOD level to the next.
+**Smooth transitions** between LOD levels improves the player’s experience of your game. As the Camera moves closer or farther away, you **don’t want players to see an obvious switchover (sometimes called _popping_)** from the current LOD level to the next.
 
 Smooth transitions take place inside _transition zones_, where Unity renders both the current and next LOD levels separately, and then cross-fades them together.
 
-**Cross-fading** is the technique of rendering two levels at the same time, with a weighting of 1 to 0 for the _current_ LOD level and 0 to 1 for the _next_ LOD level:
+> **Cross-fading** is the technique of **rendering two levels at the same time**, with a weighting of 1 to 0 for the _current_ LOD level and 0 to 1 for the _next_ LOD level.
+
+
+Unity usually implements the cross-fading by using either screen-space dithering or transparency. For the last LOD level, there is no cross-fading: the current level just fades out.
+
+To set up smooth transitions on your LOD levels:
+
+1.  Select the **Fade Mode** drop-down menu and choose **Cross Fade**:
+    
+    > **Note:** If your Tree Asset was made with [SpeedTree](https://store.speedtree.com/unity/), choose the **Speed Tree** mode instead. For more information, see [Working with SpeedTree Models](https://docs.unity3d.com/Manual/class-LODGroup.html#SpeedTreeModels).
+    
+2.  By default, the **Animate Cross-fading** option is enabled, meaning that Unity performs a time-based transition. If you want to define your own transition zone based on the Camera’s position, disable the **Animate Cross-fading** option and set the **Fade Transition Width** property.
+    
+    For more information, see [Customizing the transition zone](https://docs.unity3d.com/Manual/class-LODGroup.html#width) value.
+
+
 
 ### ref
 https://docs.unity3d.com/Manual/class-LODGroup.html#width
