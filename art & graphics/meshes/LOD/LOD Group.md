@@ -29,6 +29,21 @@ In addition there are two buttons at the bottom of the component:
     See in [Glossary](https://docs.unity3d.com/Manual/class-LODGroup.htmlGlossary.html#MeshRenderer), based on the changes you made to the LOD level boundaries.
 
 
+### LOD Group selection bar
+The LOD Group selection bar represents the different LOD levels as colored boxes.
 
+The percentage that appears in each LOD level box represents the threshold at which that level becomes active, based on the ratio of the GameObject’s screen space height to the total screen height. For example, if the threshold for LOD 1 is set to 50%, then LOD 1 becomes active when the camera pulls back far enough that the GameObject’s height fills half of the view.
+ 
+![](../img/LODGroup-selectionbar.png)
 
+LOD Group selection bar
 
+- **A** : The playhead for [the LOD preview](https://docs.unity3d.com/Manual/class-LODGroup.html#preview). You can scrub the camera icon back and forth to test the LOD levels and their transitions. At the bottom of the playhead you can see the current percentage.
+
+- **B** : To select a level, click on the level box. For each LOD level you select, you can [pick the Renderer to use](https://docs.unity3d.com/Manual/class-LODGroup.html#renderers) or [customize the transition zone](https://docs.unity3d.com/Manual/class-LODGroup.html#width).
+
+- **C** : To add and remove LOD levels from the selection bar, right-click the LOD level box and then choose **Insert Before** or **Delete** from the context menu.
+
+- **D** : Level adjustment control. To change the percentage value for the LOD level, drag the left border of the LOD level box’s boundary.
+
+> **Note**: If the [Lod Bias](https://docs.unity3d.com/Manual/class-LODGroup.htmlclass-QualitySettings.html#LODBias) property is not set to 1, the Camera position might not match the position where each LOD level actually transitions from the next. In this case, a warning message appears below the selection bar.
