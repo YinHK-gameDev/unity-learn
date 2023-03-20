@@ -70,11 +70,11 @@ To set a renderer Mesh for the current LOD level, click the **Add** box and choo
 
 
 ### Transitioning between LOD levels
-Smooth transitions between LOD levels improves the player’s experience of your game. As the Camera moves closer or farther away, you don’t want players to see an obvious switchover (sometimes called _popping_) from the current LOD level to the next.
+**Smooth transitions** between LOD levels improves the player’s experience of your game. As the Camera moves closer or farther away, you don’t want players to see an obvious switchover (sometimes called _popping_) from the current LOD level to the next.
 
 Smooth transitions take place inside _transition zones_, where Unity renders both the current and next LOD levels separately, and then cross-fades them together.
 
-_Cross-fading_ is the technique of rendering two levels at the same time, with a weighting of 1 to 0 for the _current_ LOD level and 0 to 1 for the _next_ LOD level:
+**Cross-fading** is the technique of rendering two levels at the same time, with a weighting of 1 to 0 for the _current_ LOD level and 0 to 1 for the _next_ LOD level:
 
 ### ref
 https://docs.unity3d.com/Manual/class-LODGroup.html#width
