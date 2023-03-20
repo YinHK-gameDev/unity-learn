@@ -94,3 +94,6 @@ To set up smooth transitions on your LOD levels:
 ### ref
 https://docs.unity3d.com/Manual/class-LODGroup.html#width
 
+https://www.youtube.com/watch?v=ifNyVS2_6f8
+
+https://www.youtube.com/watch?v=-mE4qreuqJY
