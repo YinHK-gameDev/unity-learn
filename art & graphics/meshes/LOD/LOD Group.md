@@ -121,6 +121,15 @@ Use the **Fade Transition Width** property to define the transition zone on each
 3.  Set the **Fade Transition Width** property to define the width of the cross-fade transition zone as a proportion (**between 0.0 and 1.0**) of the current LOD level’s entire length. For example, specify a smaller value to delay the onset of the blending and create a faster transition.
 
 
+### SpeedTree Models
+
+SpeedTree geometries store the _next_ LOD position for each vertex. Every vertex then knows how to interpolate between the current LOD position and the next LOD position. When Unity imports Models created in SpeedTree, it automatically sets them to the **Speed Tree** mode.
+
+
+> **Note:** The **Speed Tree** mode is only used for blending between two _Mesh LOD levels_: that is, when both current and next LOD levels have a Mesh Renderer. When transitioning to a _Billboard LOD level_ or when fading out entirely, Unity performs **Cross Fade**\-style blending.
+
+
+
 
 ### ref
 https://docs.unity3d.com/Manual/class-LODGroup.html#width
