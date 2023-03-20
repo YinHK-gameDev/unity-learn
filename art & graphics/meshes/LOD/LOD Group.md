@@ -94,9 +94,9 @@ To set up smooth transitions on your LOD levels:
 
 ### Customizing the transition zone
 
+The transition between two LOD levels begins the moment the Model’s height ratio crosses the next LOD threshold. For example, if the **LOD 1** threshold is set at **60%**, the **transition between the LOD 0 and LOD 1 levels always begins as soon as the height of the Model is 60%**. The transition lasts for a **short period of time**:
 
-
-
+![](../img/LODGroup-AnimateCrossFading.png)
 
 
 
