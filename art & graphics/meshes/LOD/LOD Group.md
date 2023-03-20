@@ -32,7 +32,9 @@ In addition there are two buttons at the bottom of the component:
 ### LOD Group selection bar
 The LOD Group selection bar represents the different LOD levels as colored boxes.
 
-The percentage that appears in each LOD level box represents the threshold at which that level becomes active, based on the ratio of the GameObject’s screen space height to the total screen height. For example, if the threshold for LOD 1 is set to 50%, then LOD 1 becomes active when the camera pulls back far enough that the GameObject’s height fills half of the view.
+The percentage that appears in each LOD level box represents the threshold at which that level becomes active, based on the ratio of the GameObject’s screen space height to the total screen height. 
+
+**For example, if the threshold for LOD 1 is set to 50%, then LOD 1 becomes active when the camera pulls back far enough that the GameObject’s height fills half of the view.**
  
 ![](../img/LODGroup-selectionbar.png)
 
@@ -49,19 +51,31 @@ LOD Group selection bar
 > **Note**: If the [Lod Bias](https://docs.unity3d.com/Manual/class-LODGroup.htmlclass-QualitySettings.html#LODBias) property is not set to 1, the Camera position might not match the position where each LOD level actually transitions from the next. In this case, a warning message appears below the selection bar.
 
 
+The Scene view displays a **preview of the transitions between LOD levels when you move the camera icon on the LOD Group selection bar**. The camera icon acts like a playhead which you can use to scrub back and forth to control the exact position to preview along the LOD Group selection bar. The preview shows what the Camera will render at each LOD level.
+
+The LOD preview playhead shows the exact position as a percentage along the LOD Group selection bar from 100% on the left to 0% on the right. The percentage represents the ratio of the GameObject’s screen space height to the total screen height.
 
 
-The Scene view displays a** preview of the transitions between LOD levels when you move the camera icon on the LOD Group selection bar**. The camera icon acts like a playhead which you can use to scrub back and forth to control the exact position to preview along the LOD Group selection bar. The preview shows what the Camera will render at each LOD level.
+
+### Renderers for LOD Meshes
+When you select an LOD level box on the LOD Group selection bar, a Renderers panel appears.
+
+Renderers panel with the Billboard Renderer for LOD 3
+
+The **"Renderers"** are actually GameObjects that hold the Mesh for that LOD level. Usually this is a child of the GameObject that has the **LODGroup** component.
+
+To set a renderer Mesh for the current LOD level, click the **Add** box and choose the GameObject for that LOD level from the object picker.
+
+> You can choose any GameObject for the renderer, but if you choose a GameObject that isn’t already a child, Unity prompts you to parent it to the **LODGroup** GameObject.
 
 
+### Transitioning between LOD levels
+Smooth transitions between LOD levels improves the player’s experience of your game. As the Camera moves closer or farther away, you don’t want players to see an obvious switchover (sometimes called _popping_) from the current LOD level to the next.
 
+Smooth transitions take place inside _transition zones_, where Unity renders both the current and next LOD levels separately, and then cross-fades them together.
 
+_Cross-fading_ is the technique of rendering two levels at the same time, with a weighting of 1 to 0 for the _current_ LOD level and 0 to 1 for the _next_ LOD level:
 
 ### ref
-
 https://docs.unity3d.com/Manual/class-LODGroup.html#width
-
-
-
-
 
