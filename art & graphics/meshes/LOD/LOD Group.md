@@ -101,6 +101,12 @@ Animate Cross-fading (by time)
 ![](../img/LODGroup-AnimateCrossFading.png)
 
 
+Above is animated by **time**, so you don’t need to set any properties once you enable the **Animate Cross-fading** property. The exact duration of the **cross-fade** is the same for every LOD level.
+
+Alternatively, you can manually define **transition zones** inside each LOD level by **its position**. Each zone **begins and ends before the next LOD level’s threshold**. You define what proportion of each LOD level to use as the transition zone; that is, you **set how far before the next level’s threshold the transition begins**:
+
+![](../img/LODGroup-FadeTransitionWidth.png)
+
 
 ### ref
 https://docs.unity3d.com/Manual/class-LODGroup.html#width
