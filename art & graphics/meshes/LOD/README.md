@@ -69,9 +69,9 @@ To import a Model with **LOD** level into Unity, you must do the following:
     -   ExampleMeshName\_LOD0 for the first LOD level (i.e., the **most detailed version**)
     -   ExampleMeshName\_LOD1
     -   ExampleMeshName\_LOD2
-3.  Export your Model as an FBX file. Alternatively, if you are using Maya, export the mesh group directly into Unity; to do this, go to **File > Send to Unity > Selection.**
+3.  Export your Model as an **FBX file**. Alternatively, if you are using Maya, export the **mesh group** directly into Unity; to do this, go to **File > Send to Unity > Selection.**
     
-4.  Import the FBX into Unity. Unity recognizes the grouped Meshes and naming convention, and automatically creates an [LOD Group](https://docs.unity3d.com/Manual/class-LODGroup.html) component with the appropriate settings.
+4.  Import the FBX into Unity. Unity recognizes the **grouped Meshes and naming convention**, and automatically creates an **LOD Group component** with the appropriate settings.
 
 
 
