@@ -85,9 +85,18 @@ To set up smooth transitions on your LOD levels:
     
     > **Note:** If your Tree Asset was made with [SpeedTree](https://store.speedtree.com/unity/), choose the **Speed Tree** mode instead. For more information, see [Working with SpeedTree Models](https://docs.unity3d.com/Manual/class-LODGroup.html#SpeedTreeModels).
     
-2.  By default, the **Animate Cross-fading** option is enabled, meaning that Unity performs a time-based transition. If you want to define your own transition zone based on the Camera’s position, disable the **Animate Cross-fading** option and set the **Fade Transition Width** property.
+2.  By default, the **Animate Cross-fading** option is enabled, meaning that Unity **performs a time-based transition**. If you want to **define your own transition zone based on the Camera’s position**, disable the **Animate Cross-fading** option and set the **Fade Transition Width** property.
     
     For more information, see [Customizing the transition zone](https://docs.unity3d.com/Manual/class-LODGroup.html#width) value.
+
+
+
+
+### Customizing the transition zone
+
+
+
+
 
 
 
