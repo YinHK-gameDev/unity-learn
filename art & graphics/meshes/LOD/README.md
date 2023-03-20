@@ -56,7 +56,15 @@ There are **two LOD settings** you can configure:
 -   **LOD Bias**: Determine whether to favor higher or lower LOD levels at threshold distances.
 
 
+
+
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/LevelOfDetail.html
+
+Creating LODs in Maya for Unity \
+https://learn.unity.com/tutorial/creating-lods-in-maya-for-unity#
 
 
