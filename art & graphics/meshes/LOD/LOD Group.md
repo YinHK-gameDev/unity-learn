@@ -47,3 +47,21 @@ LOD Group selection bar
 - **D** : Level adjustment control. To change the percentage value for the LOD level, drag the left border of the LOD level box’s boundary.
 
 > **Note**: If the [Lod Bias](https://docs.unity3d.com/Manual/class-LODGroup.htmlclass-QualitySettings.html#LODBias) property is not set to 1, the Camera position might not match the position where each LOD level actually transitions from the next. In this case, a warning message appears below the selection bar.
+
+
+
+
+The Scene view displays a** preview of the transitions between LOD levels when you move the camera icon on the LOD Group selection bar**. The camera icon acts like a playhead which you can use to scrub back and forth to control the exact position to preview along the LOD Group selection bar. The preview shows what the Camera will render at each LOD level.
+
+
+
+
+
+### ref
+
+https://docs.unity3d.com/Manual/class-LODGroup.html#width
+
+
+
+
+
