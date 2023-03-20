@@ -105,7 +105,22 @@ Above is animated by **time**, so you don’t need to set any properties once yo
 
 Alternatively, you can manually define **transition zones** inside each LOD level by **its position**. Each zone **begins and ends before the next LOD level’s threshold**. You define what proportion of each LOD level to use as the transition zone; that is, you **set how far before the next level’s threshold the transition begins**:
 
+Fade Transition Width (by position)
+
 ![](../img/LODGroup-FadeTransitionWidth.png)
+
+
+
+se the **Fade Transition Width** property to define the transition zone on each LOD level:
+
+1.  Disable the **Animate Cross-fading** option.
+    
+2.  Click on the specific LOD level box that you want to set.
+    
+    The **Fade Transition Width** property appears below the **LOD Group** selection bar.
+    
+3.  Set the **Fade Transition Width** property to define the width of the cross-fade transition zone as a proportion (**between 0.0 and 1.0**) of the current LOD level’s entire length. For example, specify a smaller value to delay the onset of the blending and create a faster transition.
+
 
 
 ### ref
