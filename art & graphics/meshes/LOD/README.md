@@ -78,6 +78,8 @@ To import a Model with **LOD** level into Unity, you must do the following:
 ### ref
 https://docs.unity3d.com/Manual/LevelOfDetail.html
 
+https://docs.unity3d.com/Manual/importing-lod-meshes.html
+
 Creating LODs in Maya for Unity \
 https://learn.unity.com/tutorial/creating-lods-in-maya-for-unity#
 
