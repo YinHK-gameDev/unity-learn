@@ -28,5 +28,9 @@ To render a **particle system** in the** Built-in Particle System** using a **ma
 1. Add a **Renderer Module** to the **Particle System**.
 2. Assign the **material asset** to the Renderer Module’s **Material** property.
 
+
+> The properties that the Unity Editor displays for a material depend on the material properties defined in the **shader** that the material uses.
+
+
 ### ref
 https://docs.unity3d.com/Manual/materials-introduction.html
