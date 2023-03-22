@@ -32,5 +32,20 @@ To render a **particle system** in the** Built-in Particle System** using a **ma
 > The properties that the Unity Editor displays for a material depend on the material properties defined in the **shader** that the material uses.
 
 
+
+### Physically Based Rendering Material Validator
+
+The Physically Based Rendering Material Validator is a draw mode in the Scene
+ View. It allows you to make sure your materials use values which fall within the recommended reference values for physically-based shaders
+. If pixel
+ values in a particular material fall outside of the reference ranges, the Material Validator highlights the pixels in different colors to indicate failure.
+
+To use the Material Validator, select the Scene View’s draw mode drop-down menu, which is is usually set to Shaded by default.
+
+
+Navigate to the **Material Validation section**. The **Material Validato**r has two modes:** Validate Albedo** and **Validate Metal Specular**.
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/materials-introduction.html
