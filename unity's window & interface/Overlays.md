@@ -8,12 +8,12 @@ You can also create custom Overlays.
 
 ![](./img/overlays-default-view.png)
 
-- **Tools**: https://docs.unity3d.com/Manual/PositioningGameObjects.html
-- **View Options**: https://docs.unity3d.com/Manual/ViewModes.html
-- **Grid and Snap Toolbar**: https://docs.unity3d.com/Manual/GridSnapping.html
-- **Orientation**: https://docs.unity3d.com/Manual/SceneViewNavigation.html
-- **Search**: https://docs.unity3d.com/Manual/Searching.html
-- **Tool Settings**: https://docs.unity3d.com/Manual/PositioningGameObjects.html#GizmoHandlePositions
+- **A** - **Tools**: https://docs.unity3d.com/Manual/PositioningGameObjects.html
+- **B** -  **View Options**: https://docs.unity3d.com/Manual/ViewModes.html
+- **C** - **Grid and Snap Toolbar**: https://docs.unity3d.com/Manual/GridSnapping.html
+- **D** -  **Orientation**: https://docs.unity3d.com/Manual/SceneViewNavigation.html
+- **E** -  **Search**: https://docs.unity3d.com/Manual/Searching.html
+- **F** - **Tool Settings**: https://docs.unity3d.com/Manual/PositioningGameObjects.html#GizmoHandlePositions
   
 https://docs.unity3d.com/Manual/overlays.html
 
