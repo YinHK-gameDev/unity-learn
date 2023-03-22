@@ -45,7 +45,7 @@ To use the Material Validator, select the Scene View’s draw mode drop-down men
 
 Navigate to the **Material Validation section**. The **Material Validato**r has two modes:** Validate Albedo** and **Validate Metal Specular**.
 
-
+https://docs.unity3d.com/Manual/MaterialValidator.html
 
 ### ref
 https://docs.unity3d.com/Manual/materials-introduction.html
