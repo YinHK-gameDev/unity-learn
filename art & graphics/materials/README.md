@@ -14,8 +14,7 @@ A **material asset** is a file with the **`.mat`** extension. It represents a ma
 
 ### Creating a material asset
 -   To create a new material asset in your project, from the main menu or the Project View context menu, select **Assets** > **Create** > **Material**.
--   To assign a shader to the material asset, in the Inspector window use the **Shader** drop-down menu.
--   
+-   To assign a **shader** to the material asset, in the Inspector window use the **Shader** drop-down menu.
 
 
 ### ref
