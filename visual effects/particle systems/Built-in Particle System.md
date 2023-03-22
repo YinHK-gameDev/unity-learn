@@ -55,7 +55,7 @@ Because the component is quite complicated, the Inspector is divided into a numb
 
 
 ### Properties
-The Particle System component has many properties, and for convenience, the Inspector organises them into collapsible sections called “modules”. 
+The **Particle System component** has many **properties**, and for convenience, the Inspector organises them into collapsible sections called **"modules"**. 
 
 ![](./PartSysMainInsp.png)
 
