@@ -17,5 +17,13 @@ A **material asset** is a file with the **`.mat`** extension. It represents a ma
 -   To assign a **shader** to the material asset, in the Inspector window use the **Shader** drop-down menu.
 
 
+### Assigning a material asset to a GameObject
+To render a GameObject using a **material**:
+
+1. Add a component that inherits from **Renderer**.**1MeshRenderer1** is the most common and is suitable for most use cases, but **`SkinnedMeshRenderer`**, **`LineRenderer`**, or **`TrailRenderer`** might be more suitable if your GameObject has **special requirements**.
+2. Assign the **material asset** to the component’s **Material** property.
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/materials-introduction.html
