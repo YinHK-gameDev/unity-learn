@@ -6,6 +6,7 @@ Unity authoring tools are available as Overlay panels in the Scene view
 
 You can also create custom Overlays.
 
+![](./img/overlays-default-view.png)
 
 - **Tools**: https://docs.unity3d.com/Manual/PositioningGameObjects.html
 - **View Options**: https://docs.unity3d.com/Manual/ViewModes.html
