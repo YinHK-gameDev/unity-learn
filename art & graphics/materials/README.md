@@ -47,5 +47,17 @@ Navigate to the **Material Validation section**. The **Material Validato**r has 
 
 https://docs.unity3d.com/Manual/MaterialValidator.html
 
+
+### Using materials with C# scripts
+All the parameters of a material asset that you see in the Inspector window are accessible via script, giving you the power to change or animate how a material works at runtime.
+
+This allows you to modify numeric values on the material, change colours, and swap textures dynamically during gameplay. 
+
+Using **Material class**
+
+https://docs.unity3d.com/Manual/ViewModes.html
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/materials-introduction.html
