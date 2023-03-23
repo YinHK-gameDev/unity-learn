@@ -1,7 +1,6 @@
 ## Textures
 
-Normally, the mesh geometry of an object only gives a **rough approximation** of the shape while most of the fine detail is supplied by Textures
-. A **texture** is just a **standard bitmap image** that is applied over the **mesh surface**. You can think of a texture image as though it were printed on a rubber sheet that is stretched and pinned onto the mesh at appropriate positions. 
+Normally, the mesh geometry of an object only gives a **rough approximation** of the shape while most of the **fine detail is supplied by Textures**. A **texture** is just a **standard bitmap image** that is applied over the **mesh surface**. You can think of a texture image as though it were printed on a rubber sheet that is stretched and pinned onto the mesh at appropriate positions. 
 The positioning of the texture is done with the 3D modelling software that is used to create the mesh.
 
 
