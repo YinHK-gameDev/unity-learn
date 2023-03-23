@@ -11,7 +11,8 @@ Textures are applied to objects using Materials. Materials use specialised graph
 
 You should make your textures in **dimensions** that are to the **power of two** (e.g. **32x32, 64x64, 128x128, 256x256**, etc.) Simply placing them in your project’s Assets folder is sufficient, and they will appear in the Project View.
 
-
+Once your texture has been imported, you should **assign it to a Material**. The **material can then be applied to a mesh**, **Particle System**, or **GUI Texture**. Using the **Import Settings**, it can also be converted to a **Cubemap**
+ or **Normalmap** for different types of applications in the game
 
 
 https://docs.unity3d.com/Manual/Textures.html
