@@ -6,8 +6,9 @@ To access this window, select the image file in the **Project window**. The **Te
 
 > **Note**: Some of the less commonly used properties are hidden by default. Expand the Advanced section in the Inspector window to view these properties.
 
+![](../img/class-TextureImporter.png)
 
-
+### ref
 https://docs.unity3d.com/Manual/class-TextureImporter.html
 
 
