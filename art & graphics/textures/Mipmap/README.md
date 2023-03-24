@@ -32,9 +32,18 @@ When you enable this setting, the Quality settings window reveals the settings s
 > By default, this enables Mipmap Streaming for all Cameras in your project.
 
 ### Making textures work with the Mipmap Streaming system
-You can set up Mipmap Streaming on individual textures. Select a texture asset, navigate to the Inspector window and view the Texture Import settings. Open the Advanced settings, and **enable the Streaming Mip Maps checkbox**.
+You can set up Mipmap Streaming on individual textures. Select a texture asset, navigate to the Inspector window and view the Texture Import settings. 
 
+Open the Advanced settings, and **enable the Streaming Mip Maps checkbox**.
 
+Unity loads mips at the highest resolution possible while observing the memory budget. You can configure the priority of a texture with the **Mip Map Priority** setting in the Texture Import Settings.
+
+Unity uses this setting to determine:
+
+-   Which textures to prioritize when assigning resources.
+-   As a mip bias value when choosing a mip level that fits in the memory budget. For example, with a priority of 2, the mipmap streaming system tries to use a mipmap two mip levels higher than Textures with a priority of 0.
+
+Positive numbers give higher priority. Valid values range from –128 to 127.
 
 ### ref
 https://docs.unity3d.com/Manual/texture-mipmaps-introduction.html
