@@ -22,7 +22,7 @@ There are several sections on the Texture Import Settings window:
 **(E)** **Texture preview**. You can preview the Texture and adjust its values here.
 
 
-## Texture Type
+### Texture Type
 
 Use the **Texture Type** property to select the type of Texture you want to create from the source image file. The other properties in the Texture Import settings window change depending on the value you set.
 
@@ -39,6 +39,17 @@ For information about specific Texture Types, see the [Texture Types](https://do
 | Cookie | Select this to set your Texture up with the basic parameters used for the Cookies of your Scene’s Lights. For more information, see the Cookie Texture type documentation. |
 | Lightmap | Select this if you are using the Texture as a Lightmap. This option enables encoding into a specific format (RGBM or dLDR, depending on the platform) and a post-processing step on Texture data (a push-pull dilation pass). For more information, see the Lightmap Texture type documentation. |
 | Single Channel | Select this if you only need one channel in the Texture. For information on the properties available only for the this type |
+
+
+### Texture Shape
+
+Use the **Texture Shape** property to select and define the shape and structure of the Texture. There are four shape types:
+
+-   **2D** is the most common setting for all Textures; it defines the image file as a 2D Texture. These are used to map Textures to 3D Meshes and GUI elements, among other Project elements.
+-   **Cube** defines the Texture as a [cubemap](https://docs.unity3d.com/Manual/class-TextureImporter.htmlclass-Cubemap.html). You could use this for Skyboxes or **Reflection Probes**A rendering component that captures a spherical view of its surroundings in all directions, rather like a camera. The captured image is then stored as a Cubemap that can be used by objects with reflective materials. [More info](https://docs.unity3d.com/Manual/class-TextureImporter.htmlclass-ReflectionProbe.html)  
+    See in [Glossary](https://docs.unity3d.com/Manual/class-TextureImporter.htmlGlossary.html#ReflectionProbe), for example. This type is only available with the [Default](https://docs.unity3d.com/Manual/class-TextureImporter.htmlTextureTypes.html#Default), [Normal Map](https://docs.unity3d.com/Manual/class-TextureImporter.htmlTextureTypes.html#NormalMap), and [Single Channel](https://docs.unity3d.com/Manual/class-TextureImporter.htmlTextureTypes.html#SingleChannel) Texture types.
+-   **2D Array** defines the Texture as a [2D array texture](https://docs.unity3d.com/Manual/class-TextureImporter.htmlclass-Texture2DArray.html). This is commonly used as an optimization for some rendering techniques, where many textures of the same size & format are used.
+-   **3D** defines the Texture as a [3D texture](https://docs.unity3d.com/Manual/class-TextureImporter.htmlclass-Texture3D.html). 3D textures are used by some rendering techniques to represent volumetric data.
 
 ### ref
 https://docs.unity3d.com/Manual/class-TextureImporter.html
