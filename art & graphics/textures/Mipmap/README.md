@@ -21,6 +21,8 @@ This system forces Unity to **only load the mip levels needed to render the curr
 
 You can set a **total memory limit** for all textures in an application, and the system automatically reduces mip levels to stay within this budget.
 
+You can control the way that Unity **loads mipmaps** at runtime with **Mipmap Streaming**.
+
 ### Enabling Mipmap Streaming
 
 To enable **Mipmap Streaming**, go to Unity’s Quality Settings (**Edit > Project Settings > Quality**) and **enable the Texture Streaming checkbox**.
