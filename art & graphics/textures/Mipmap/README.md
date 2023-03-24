@@ -38,6 +38,8 @@ Open the Advanced settings, and **enable the Streaming Mip Maps checkbox**.
 
 Unity loads mips at the highest resolution possible while observing the memory budget. You can configure the priority of a texture with the **Mip Map Priority** setting in the Texture Import Settings.
 
+If you’re developing for Android, you also need to open the Build Settings and set the Compression Method to **LZ4 or LZ4HC**. Unity requires one of these compression methods for asynchronous Texture loading, which the Mipmap Streaming system relies upon.
+
 Unity uses this setting to determine:
 
 -   Which textures to prioritize when assigning resources.
