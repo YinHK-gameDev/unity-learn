@@ -21,5 +21,13 @@ In 2D games, the **Sprites** are implemented using textures applied to flat mesh
 An object in a 2D game may require a set of related graphic images to represent animation frames or different states of a character. Special techniques are available to allow these sets of images to be designed and rendered efficiently.
 
 
+### GUI
+
+A game’s _graphic user interface_ (GUI) consists of graphics that are not used directly in the game **scene** but are there to allow the player to make choices and see information. For example, the score display and the options menu are typical examples of game GUI. These graphics are clearly very different from the kind used to detail a mesh surface but they are handled using standard Unity textures nevertheless.
+
+
+
+
+
 https://docs.unity3d.com/Manual/Textures.html
 
