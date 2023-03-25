@@ -53,8 +53,8 @@ Positive numbers give higher priority. Valid values range from –128 to 127.
 ### Mip bias
 A setting called mip bias can do two things while sampling, based on the sampler settings:
 
--   The mip bias can change the threshold for the GPU selecting a lower or higher mip for a sample. The GPU selects a specific mip when you use point and linear filtering in a sampler. For example, the GPU’s might decide that the texture at a set of UVs uses a sample from Mip 3. With a mip bias of –2, the GPU would use the higher resolution Mip 1 for the sample, instead.
--   The mip bias can tell the GPU to prefer one mip over another by an exact percentage when blending samples from different mips. The GPU blends mips when you use trilinear filtering in a sampler. For example, the GPU’s calculations might return a value of 0.5. The 0.5 value tells the GPU to take 50% of the texture information it needs from one mip, and the remaining 50% from the next mip in the mipmap. With an added mip bias of 0.2, the 0.5 value would change to 0.7, and the GPU would take 70% of the texture information from the first mip and only 30% from the second.
+-  The **mip bias** can change the **threshold for the GPU** selecting a lower or higher mip for a sample. The GPU selects a specific mip when you use point and linear filtering in a sampler. For example, the GPU’s might decide that the texture at a set of UVs uses a sample from Mip 3. With a mip bias of –2, the GPU would use the higher resolution Mip 1 for the sample, instead.
+-  The **mip bias** can tell the GPU to prefer one mip over another by an exact percentage when blending samples from different mips. The GPU blends mips when you use trilinear filtering in a sampler. For example, the GPU’s calculations might return a value of 0.5. The 0.5 value tells the GPU to take 50% of the texture information it needs from one mip, and the remaining 50% from the next mip in the mipmap. With an added mip bias of 0.2, the 0.5 value would change to 0.7, and the GPU would take 70% of the texture information from the first mip and only 30% from the second.
 
 
 
@@ -75,10 +75,25 @@ The **Memory Budget** property determines the **maximum amount of memory** Unity
 
 This can cause textures to pop or load slowly. However, the **memory budget should be as small as possible** to allow memory for other resources.
 
+> When the memory budget is full, Unity **discards mipmaps it’s not using**, to **make room for those it needs to use**. You can control how many unused mipmaps it discards with the **Max Level Reduction**.
+
+This value is also the **mipmap** level that the **Mipmap Streaming system** **initially loads** at startup. For example, when this is set to 2, Unity skips the two highest mipmaps on first load.
+
+> Set this value in the **Quality Settings** window, with the **Texture Streaming > Max Level Reduction** property.
+
+> **Note**: Unity prioritises the **Max Level Reduction** value over the memory budget. It never discards more mipmaps than the **Max Level Reduction** value, even if this causes the textures memory to exceed the budget.
 
 
+The memory budget includes textures that do not use Mipmap Streaming. For example, if your budget is 100MB and you have 90MB of textures that don’t use Mipmap Streaming, Unity tries to fit all the streaming mipmaps in the remaining 10MB. If it can’t, it loads them at a lower resolution. 
 
+> Unity always **loads textures that don’t use Mipmap Streaming at full resolution, even if that exceeds the budget**.
 
+To figure out what your memory budget should be:
+
+- Look at the **`Texture.desiredTextureMemory`** value when your project is running.
+- Set the **Memory Budget** value slightly higher than the **`Texture.desiredTextureMemory`** value.
+
+This makes sure there is enough texture memory available for the most resource-intensive areas of your scene and prevents textures from dropping to a lower resolution. If you have extra memory available, you can set a larger memory budget so that Unity can keep texture data that is not visible in your scene in the streaming cache.
 
 
 ### ref
