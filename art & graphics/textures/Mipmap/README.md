@@ -55,5 +55,15 @@ A setting called mip bias can do two things while sampling, based on the sampler
 -   The mip bias can tell the GPU to prefer one mip over another by an exact percentage when blending samples from different mips. The GPU blends mips when you use trilinear filtering in a sampler. For example, the GPU’s calculations might return a value of 0.5. The 0.5 value tells the GPU to take 50% of the texture information it needs from one mip, and the remaining 50% from the next mip in the mipmap. With an added mip bias of 0.2, the 0.5 value would change to 0.7, and the GPU would take 70% of the texture information from the first mip and only 30% from the second.
 
 
+
+### Streaming Lightmaps
+You can use the **Mipmap Streaming system** to stream mip levels for **lightmaps**.
+
+You can edit the **Mip Map Streaming** settings of the lightmap assets in the same way that you can any other texture, but they reset to their default values when Unity regenerates the lightmaps. To solve this, you can tell Unity to apply these values when it generates the lightmaps. The Player Settings
+ (**Edit > Project Settings > Player**) provide two controls to set streaming and priority for generated lightmaps: **Lightmap Streaming Enabled** and **Streaming Priority**.
+
+Enabling Mip Map Streaming and configuring priority work in the same way for lightmaps as for regular textures.
+
+
 ### ref
 https://docs.unity3d.com/Manual/texture-mipmaps-introduction.html
