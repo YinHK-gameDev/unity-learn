@@ -29,6 +29,8 @@ To enable **Mipmap Streaming**, go to Unity’s Quality Settings (**Edit > Proje
 
 When you enable this setting, the Quality settings window reveals the settings specific to the Mipmap Streaming system.
 
+![](../img/texture_streaming.png)
+
 > By default, this enables Mipmap Streaming for all Cameras in your project.
 
 ### Making textures work with the Mipmap Streaming system
