@@ -66,6 +66,20 @@ You can edit the **Mip Map Streaming** settings of the lightmap assets in the sa
 
 Enabling Mip Map Streaming and configuring priority work in the same way for lightmaps as for regular textures.
 
+### Configuring Mipmap Streaming
+You can configure default settings in the Unity Editor, and then use the **Mipmap Streaming API** to override these settings if required.
+
+
+#### Setting the memory budget
+The **Memory Budget** property determines the **maximum amount of memory** Unity uses for **textures**. If your memory budget is too small, Unity **lowers the resolution** of textures in your scene.
+
+This can cause textures to pop or load slowly. However, the **memory budget should be as small as possible** to allow memory for other resources.
+
+
+
+
+
+
 
 ### ref
 https://docs.unity3d.com/Manual/texture-mipmaps-introduction.html
