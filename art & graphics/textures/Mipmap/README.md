@@ -118,8 +118,6 @@ When Mipmap Streaming is enabled in Play mode, but not enabled in Edit mode (or 
 
 > **Edit > Project Settings > Editor > Streaming Settings**
 
-
-
 ### Debugging Mipmap Streaming
 Unity has a **built-in Mipmap Streaming debugging** view mode. To access it, click the **Scene view control drop-down** and **select Texture Streaming**. This view mode tints GameObjects the following colours, depending on their status in the Mipmap Streaming system:
 
@@ -130,6 +128,12 @@ Unity has a **built-in Mipmap Streaming debugging** view mode. To access it, cli
 You can also write your own custom debug tools and visualizations using the **Debugging API**
 
 > **Important**: When the main texture is set using the **MainTexture** attribute, it is not visible in the game view when you use the texture **streaming debugging view mode** or a custom debug tool.
+
+
+### How Unity calculates the required mip level
+
+
+
 
 ### ref
 https://docs.unity3d.com/Manual/texture-mipmaps-introduction.html
