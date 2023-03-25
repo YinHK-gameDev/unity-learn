@@ -101,11 +101,24 @@ By default, when you enable the Mipmap Streaming system, Unity enables it for al
 
 Control whether Unity enables **mipmap Streaming** for all Cameras in the **Quality Settings** window, with the **Texture Streaming > Add All Cameras** property.
 
-If you want to **exclude a specific Camera**, add a **Streaming Controller component** to that Camera and then **disable it**.
+> If you want to **exclude a specific Camera**, add a **Streaming Controller component** to that Camera and then **disable it**.
 
-If you **disable Add All Cameras**, then you must **enable mipmap Streaming per-Camera**. To do this, add a** Streaming Controller component** to the same GameObject as the Camera component.
+> If you **disable Add All Cameras**, then you must **enable mipmap Streaming per-Camera**. To do this, add a** Streaming Controller component** to the same GameObject as the Camera component.
 
 This component also allows you to adjust the **mip bias** setting per-Camera.
+
+
+### Configuring Play Mode behavior
+**Mipmap Streaming** is enabled in **Play Mode** by **default**.
+
+Control whether Unity enables **Mipmap Streaming** in Play Mode in the **Editor Settings** window, with the **Streaming Settings > Enable Texture Streaming in Play Mode** property.
+
+When Mipmap Streaming is enabled in Play mode, but not enabled in Edit mode (or the other way around), toggling in and out of Play mode takes slightly longer. This prevents Unity from unloading and reloading mipmap data, and should speed up the Play Mode workflow.
+
+
+
+> **Edit > Project Settings > Editor > Streaming Settings**
+
 
 ### ref
 https://docs.unity3d.com/Manual/texture-mipmaps-introduction.html
