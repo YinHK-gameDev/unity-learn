@@ -116,9 +116,20 @@ Control whether Unity enables **Mipmap Streaming** in Play Mode in the **Editor 
 When Mipmap Streaming is enabled in Play mode, but not enabled in Edit mode (or the other way around), toggling in and out of Play mode takes slightly longer. This prevents Unity from unloading and reloading mipmap data, and should speed up the Play Mode workflow.
 
 
-
 > **Edit > Project Settings > Editor > Streaming Settings**
 
+
+
+### Debugging Mipmap Streaming
+Unity has a **built-in Mipmap Streaming debugging** view mode. To access it, click the **Scene view control drop-down** and **select Texture Streaming**. This view mode tints GameObjects the following colours, depending on their status in the Mipmap Streaming system:
+
+- **Green** for Textures that have reduced mipmaps due to the Mipmap Streaming system.
+- **Red** for Textures that have fewer mipmaps because the Mipmap Streaming system does not have enough resources to load them all.
+- **Blue** for Textures that are not set to stream, or if there is no renderer calculating the mip levels.
+
+You can also write your own custom debug tools and visualizations using the **Debugging API**
+
+> **Important**: When the main texture is set using the **MainTexture** attribute, it is not visible in the game view when you use the texture **streaming debugging view mode** or a custom debug tool.
 
 ### ref
 https://docs.unity3d.com/Manual/texture-mipmaps-introduction.html
