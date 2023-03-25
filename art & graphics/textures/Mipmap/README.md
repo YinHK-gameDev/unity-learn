@@ -95,6 +95,17 @@ To figure out what your memory budget should be:
 
 This makes sure there is enough texture memory available for the most resource-intensive areas of your scene and prevents textures from dropping to a lower resolution. If you have extra memory available, you can set a larger memory budget so that Unity can keep texture data that is not visible in your scene in the streaming cache.
 
+### Configuring Cameras
+
+By default, when you enable the Mipmap Streaming system, Unity enables it for all cameras. You can disable this setting if you like.
+
+Control whether Unity enables **mipmap Streaming** for all Cameras in the **Quality Settings** window, with the **Texture Streaming > Add All Cameras** property.
+
+If you want to **exclude a specific Camera**, add a **Streaming Controller component** to that Camera and then **disable it**.
+
+If you **disable Add All Cameras**, then you must **enable mipmap Streaming per-Camera**. To do this, add a** Streaming Controller component** to the same GameObject as the Camera component.
+
+This component also allows you to adjust the **mip bias** setting per-Camera.
 
 ### ref
 https://docs.unity3d.com/Manual/texture-mipmaps-introduction.html
