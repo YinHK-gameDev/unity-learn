@@ -108,6 +108,13 @@ Control whether Unity enables **mipmap Streaming** for all Cameras in the **Qual
 
 This component also allows you to adjust the **mip bias** setting per-Camera.
 
+### Streaming Controller component
+
+Use the **Streaming Controller** component to enable **Mipmap Streaming** for a Camera in your scene when the the Add All Cameras setting in Quality settings (**Edit > Project Settings > Quality**) is **disabled**. You can also use it to change the **mip bias** setting per-Camera.
+
+This component takes the location and **Camera** settings (such as Field of View) directly from the Camera component.
+
+If the Camera is disabled, Unity does not calculate Mipmap Streaming for it, unless the Streaming Controller is enabled and in the preloading state.
 
 ### Configuring Play Mode behavior
 **Mipmap Streaming** is enabled in **Play Mode** by **default**.
