@@ -143,5 +143,13 @@ For textures that use **Mipmap Streaming**, Unity calculates the correct mip lev
 - **Reflection probe** textures: Lower resolution mips are a lookup table for roughness. Therefore, if Unity uses a lower mipmap level, it renders materials using the wrong roughness.
 - **Shaders** that use UV texture coordinates in a channel other than **`Mesh.uv`** (also called UV0), or change texture coordinates in the shader. The only exceptions are changes to scale and translation (see below).
 
+
+### Mipmap Streaming system API
+You can use the API to override behavior for specific situations, while the Mipmap Streaming system automatically manages the default settings.
+
+This is useful if you know that Unity needs to fully load certain textures; for example, if they relate to GameObjects that move large distances quickly, or if you use instantaneous camera cuts.
+ 
+https://docs.unity3d.com/Manual/TextureStreaming-API.html
+
 ### ref
 https://docs.unity3d.com/Manual/texture-mipmaps-introduction.html
