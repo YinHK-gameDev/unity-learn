@@ -103,7 +103,8 @@ Control whether Unity enables **mipmap Streaming** for all Cameras in the **Qual
 
 > If you want to **exclude a specific Camera**, add a **Streaming Controller component** to that Camera and then **disable it**.
 
-> If you **disable Add All Cameras**, then you must **enable mipmap Streaming per-Camera**. To do this, add a** Streaming Controller component** to the same GameObject as the Camera component.
+> If you **disable Add All Cameras**, then you must **enable mipmap Streaming per-Camera**. To do this, add a
+**Streaming Controller component** to the same GameObject as the Camera component.
 
 This component also allows you to adjust the **mip bias** setting per-Camera.
 
