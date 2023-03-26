@@ -113,7 +113,7 @@ This component also allows you to adjust the **mip bias** setting per-Camera.
 
 Control whether Unity enables **Mipmap Streaming** in Play Mode in the **Editor Settings** window, with the **Streaming Settings > Enable Texture Streaming in Play Mode** property.
 
-When Mipmap Streaming is enabled in Play mode, but not enabled in Edit mode (or the other way around), toggling in and out of Play mode takes slightly longer. This prevents Unity from unloading and reloading mipmap data, and should speed up the Play Mode workflow.
+When **Mipmap Streaming** is enabled in **Play mode**, but not enabled in Edit mode (or the other way around), toggling in and out of Play mode takes slightly longer. This prevents Unity from unloading and reloading mipmap data, and should speed up the Play Mode workflow.
 
 
 > **Edit > Project Settings > Editor > Streaming Settings**
