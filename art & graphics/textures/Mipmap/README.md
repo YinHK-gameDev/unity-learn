@@ -131,9 +131,16 @@ You can also write your own custom debug tools and visualizations using the **De
 
 
 ### How Unity calculates the required mip level
+For textures that use **Mipmap Streaming**, Unity calculates the correct mip level using one of the following methods:
 
+- If you assign the texture to a material that is used by a Unity **Renderer** componennt, Unity calculates the **mip level automatically**.
+- Otherwise, you must request **mip levels** manually using **`Texture2D.requestedMipmapLevel`**.
 
+> **Note**: The following systems don’t use standard Renderer components. This means you must manually set the requested mips for these systems:
 
+- Decal projector textures.
+- **Reflection probe** textures: Lower resolution mips are a lookup table for roughness. Therefore, if Unity uses a lower mipmap level, it renders materials using the wrong roughness.
+- **Shaders** that use UV texture coordinates in a channel other than **`Mesh.uv`** (also called UV0), or change texture coordinates in the shader. The only exceptions are changes to scale and translation (see below).
 
 ### ref
 https://docs.unity3d.com/Manual/texture-mipmaps-introduction.html
