@@ -84,7 +84,8 @@ The Unity Editor has three different visualization modes you can use to preview 
 - **Slice** visualization mode renders a single slice of each of the three axes of the 3D texture
 - **SDF** visualization mode renders the texture as a Signed Distance Field in 3D space
 
-
+You can preview the 3D texture in the Inspector, or you can write a script to preview it in the Scene
+ view using the Handles API. Using the Inspector is quick and convenient, but does not allow the use of custom gradients. The Handles API lets you configure the preview to your exact requirements, and allows the use of custom gradients.
 
 ### ref
 https://docs.unity3d.com/Manual/class-Texture3D.html
