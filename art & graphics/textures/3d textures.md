@@ -76,5 +76,15 @@ public class ExampleEditorScript : MonoBehaviour
 }
 ```
 
+### Previewing a 3D texture
+The Unity Editor has three different visualization modes you can use to preview a 3D texture:
+
+
+- **Volumetric** visualization mode renders the 3D texture as a translucent cube
+- **Slice** visualization mode renders a single slice of each of the three axes of the 3D texture
+- **SDF** visualization mode renders the texture as a Signed Distance Field in 3D space
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/class-Texture3D.html
