@@ -35,7 +35,7 @@ You can import texture arrays from source texture files that are divided into ce
 
 To create a **texture array** from a C# script, use the **`Texture2DArray`** class to **initialize the texture** and set **pixel** **data**, and save the object as an asset file using **AssetDatabase.CreateAsset**.
 
-Normally, texture arrays are used purely within GPU memory, but you can use **`Graphics.CopyTexture`**, **`Texture2DArray.GetPixels`** and **`Texture2DArray.SetPixels`** to transfer pixels to and from system memory.
+> Normally, texture arrays are used purely within GPU memory, but you can use **`Graphics.CopyTexture`**, **`Texture2DArray.GetPixels`** and **`Texture2DArray.SetPixels`** to **transfer pixels to and from system memory**.
 
 
 
