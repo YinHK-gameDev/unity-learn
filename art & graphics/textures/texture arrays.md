@@ -8,11 +8,16 @@ or other special effects where you need an efficient way of accessing many textu
 
 
 
+### Platform Support
 
+**Texture arrays need to be supported by the underlying graphics API and the GPU. They are available on:**
 
+- Direct3D 11/12 (Windows)
+- OpenGL Core (Mac OS X, Linux)
+- Metal (iOS, Mac OS X)
+- OpenGL ES 3.0 (Android, WebGL 2.0)
 
-
-
+> Other platforms do not support texture arrays (OpenGL ES 2.0 or WebGL 1.0). Use SystemInfo.supports2DArrayTextures to determine texture array support at runtime.
 
 
 ### ref
