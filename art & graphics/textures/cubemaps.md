@@ -13,7 +13,7 @@ The fastest way to create cubemaps is to import them from specially laid out Tex
 
 
 
-![](../img/CubeImportInspector.png)
+![](./img/CubeImportInspector.png)
 
 
 
