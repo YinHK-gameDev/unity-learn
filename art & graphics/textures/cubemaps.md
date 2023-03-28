@@ -25,8 +25,12 @@ Selecting **Glossy Reflection** option is useful for cubemap textures that will 
 ![](./img/CubeOptionGlossyReflections.png)
 
 
+### Cubemap arrays
+A **cubemap array** is an array of cubemaps that are the **same size and format**, and that the GPU can access as a single texture resource. Cubemap arrays are often used for implementing efficient **reflection probe**, **lighting and** **shadowing systems**.
 
-
-
+In your Unity Project, the Unity Editor represents cubemap arrays as Texture Assets.To configure a Texture Asset’s import settings you can use the Inspector
+, or write a script that uses the TextureImporter API. In the Unity engine, Unity uses the CubemapArray class to represent cubemap arrays.
 ### ref
 https://docs.unity3d.com/Manual/class-Cubemap.html
+
+https://docs.unity3d.com/Manual/class-CubemapArray.html
