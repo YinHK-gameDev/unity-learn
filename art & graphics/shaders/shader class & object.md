@@ -1,4 +1,7 @@
 ## The Shader class & its instance
+In Unity, when you work with shaders that are part of the graphics pipeline, you usually work with instances of the **Shader** class. An instance of the **Shader** class is called a **Shader object**.
+ 
+A **Shader object** is a Unity-specific way of working with shader programs; it is a **wrapper** for **shader programs** and other information. It lets you define multiple shader programs in the same file, and tell Unity how to use them. 
 
 
 ### Shader object fundamentals
