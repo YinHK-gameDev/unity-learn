@@ -14,8 +14,23 @@ You can create Shader objects in two ways. Each has its own type of asset:
 - You can **write code** to create a **shader asset**, which is a text file with the **`.shader`** extension.
 - You can use **Shader Graph** to create a Shader Graph asset.
 
+> Whichever way you create your Shader object, Unity represents the results in the same way internally.
+
+A **Shader objec**t has a **nested structure**. It organizes information into structures called **SubShaders** and **Passes**. It organises shader programs into **shader variants**.
 
 
+A **Shader object** contains: 
+- Information about itself, such as its **name**
+- An optional **fallback Shader object**, which Unity uses if it can’t use this one
+- One or more **SubShaders**
+
+### SubShaders
+SubShaders let you **separate your Shader object into parts** that are compatible with different **hardware, render pipelines**, and **runtime settings**.
+
+A **SubShader** contains: 
+- Information about which **hardware, render pipelines, and runtime settings this SubShader is compatible with**
+- **SubShader tags**, which are **key-value pairs** that provide information about the **SubShader**.
+- One or more **Passes**.
 
 ### ref
 https://docs.unity3d.com/Manual/shader-objects.html
