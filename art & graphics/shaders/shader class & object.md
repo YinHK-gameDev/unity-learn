@@ -32,6 +32,18 @@ A **SubShader** contains:
 - **SubShader tags**, which are **key-value pairs** that provide information about the **SubShader**.
 - One or more **Passes**.
 
+You can also define additional information, such as render state that is common to all of its Passes.
+
+
+### Passes
+A **Pass** contains:
+
+- **Pass tags**, which are **key-value pairs** that provide information about the **Pass**
+- Instructions for **updating the render state** before running its shader programs
+- Shader programs, organised into one or more **shader variants**.
+
+You can also define additional information such as a name.
+
 ### ref
 https://docs.unity3d.com/Manual/shader-objects.html
 
