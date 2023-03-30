@@ -44,6 +44,13 @@ A **Pass** contains:
 
 You can also define additional information such as a name.
 
+
+### Shader variants
+
+Shader variants share common code, but have different functionality when a given keyword is enabled or disabled.
+
+The number of shader variants in a Pass depends on how many keywords you define in your shader code, and the target platform. Each Pass contains at least one variant.
+
 ### ref
 https://docs.unity3d.com/Manual/shader-objects.html
 
