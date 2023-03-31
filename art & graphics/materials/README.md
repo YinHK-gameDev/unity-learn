@@ -32,6 +32,7 @@ To render a **particle system** in the **Built-in Particle System** using a **ma
 > The properties that the Unity Editor displays for a material depend on the material properties defined in the **shader** that the material uses.
 
 
+https://www.c-sharpcorner.com/article/how-to-apply-materials-shaders-and-textures-to-objects-in-unity2/
 
 ### Material inspector
 #### Setting
