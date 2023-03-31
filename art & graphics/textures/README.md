@@ -6,7 +6,7 @@ The positioning of the texture is done with the 3D modelling software that is us
 
 ### Textures for use on 3D models
 
-Textures are applied to objects **using Materials**. **Materials** use specialised **graphics programs** called **Shaders** to render a texture on the mesh surface. **Shaders** can implement lighting and colouring effects to simulate shiny or bumpy surfaces among many other things. They can also make use of two or more textures at a time, combining them for even greater flexibility.
+Textures are applied to objects **using Materials**. **Materials** use specialised **graphics programs** called **Shaders** to render a texture on the mesh surface. **Shaders** can **implement lighting and colouring effects** to simulate shiny or bumpy surfaces among many other things. They can also make use of two or more textures at a time, combining them for even greater flexibility.
 
 You should make your textures in **dimensions** that are to the **power of two** (e.g. **32x32, 64x64, 128x128, 256x256**, etc.) Simply placing them in your project’s Assets folder is sufficient, and they will appear in the Project View.
 
@@ -40,6 +40,10 @@ In a **3D** Project, Unity imports image and movie files in the Assets folder as
 4. To use the imported Assets in your Project:
    - For 3D Projects, **create a Material** and **assign the Texture** to the new Material.
    - For 2D Projects, use the **Sprite Editor**.
+
+
+### Assign texture to an gameobject
+**Texture must assigned in Material** to apply in an gameobject's appearance. 
 
 
 ### Texture dimension sizes
