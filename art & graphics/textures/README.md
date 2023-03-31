@@ -52,7 +52,7 @@ You can assign texture in the following ways:
 
   ![](./img/material_asset.png)
   
- - In the **Materials folder** or **Assets folder** in Project window, **right click >  Create > Material**. This create your material first, then choose appropriate **shader** or just use **Standard shader**(default), Locate the **Albedo**o field, click to select texture or just drag and drop the texture into it.
+ - In the **Materials folder** or **Assets folder** in Project window, **right click >  Create > Material**. This create your material first, then choose an appropriate **shader** or just use **Standard shader**(default),  locate the **Albedo**o field, click to select texture or just drag and drop the texture into it.
 
 https://www.c-sharpcorner.com/article/how-to-apply-materials-shaders-and-textures-to-objects-in-unity2/
 
