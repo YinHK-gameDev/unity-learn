@@ -26,10 +26,16 @@ To render a GameObject using a **material**:
 To render a **particle system** in the **Built-in Particle System** using a **material**:
 
 1. Add a **Renderer Module** to the **Particle System**.
-2. Assign the **material asset** to the Renderer Module’s **Material** property.
+2. Assign the **material asset** to the Renderer Module’s **Material** property, or just drag the **material asset** directly into the gameobject in the scene.
 
 
 > The properties that the Unity Editor displays for a material depend on the material properties defined in the **shader** that the material uses.
+
+
+
+
+
+![](./img/material_setting.png)
 
 
 
