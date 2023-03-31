@@ -71,7 +71,7 @@ The Physically Based Rendering Material Validator is a draw mode in the Scene
 To use the Material Validator, select the Scene View’s draw mode drop-down menu, which is is usually set to Shaded by default.
 
 
-Navigate to the **Material Validation section**. The **Material Validato**r has two modes:** Validate Albedo** and **Validate Metal Specular**.
+Navigate to the **Material Validation section**. The **Material Validator** has two modes: **Validate Albedo** and **Validate Metal Specular**.
 
 https://docs.unity3d.com/Manual/MaterialValidator.html
 
