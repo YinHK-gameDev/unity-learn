@@ -47,10 +47,8 @@ Click the **3 dot icon** in the top right of the Inspector to open the Settings 
 | Create Material Preset | Creates a duplicate of the material at the same location in your project. |
 | Copy Material Properties | Copies the material properties to the clipboard. |
 | Paste Material Properties | If the clipboard contains material properties, Unity pastes them into this material. Otherwise, it has no effect. |
-| Copy Atlas | If the material is a Text Mesh
- Pro material, Unity copies the font atlas to the clipboard. Otherwise, it has no effect. |
-| Paste Atlas | If the material is a Text Mesh
- Pro material and the clipboard contains a Text Mesh Pro font atlas, Unity pastes it into this material. Otherwise, it has no effect. |
+| Copy Atlas | If the material is a Text Mesh Pro material, Unity copies the font atlas to the clipboard. Otherwise, it has no effect. |
+| Paste Atlas | If the material is a Text Mesh Pro material and the clipboard contains a Text Mesh Pro font atlas, Unity pastes it into this material. Otherwise, it has no effect. |
 | Reset | Reset all material properties to the default values defined in the shader asset. |
 
 #### Shader
