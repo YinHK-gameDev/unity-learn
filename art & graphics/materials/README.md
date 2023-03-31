@@ -53,6 +53,9 @@ Click the **3 dot icon** in the top right of the Inspector to open the Settings 
  Pro material and the clipboard contains a Text Mesh Pro font atlas, Unity pastes it into this material. Otherwise, it has no effect. |
 | Reset | Reset all material properties to the default values defined in the shader asset. |
 
+#### Shader
+Use this drop-down menu to assign a **shader asset** to this material. (Shaders assets are organised according to their name). You can also click edit button to edit your **shader asset** (**`.shader`** extension).
+
 ### Physically Based Rendering Material Validator
 
 The Physically Based Rendering Material Validator is a draw mode in the Scene
