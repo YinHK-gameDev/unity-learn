@@ -46,7 +46,9 @@ In a **3D** Project, Unity imports image and movie files in the Assets folder as
 **Texture must assigned in Material** to apply in an gameobject's appearance. 
 
 You can assign texture in the following ways:
-- Drag your texture from asset folder directly into an gameobject in the scene. Then Unity will automatically create a new
+- Drag your texture asset from asset folder directly into an gameobject in the scene. Then Unity will automatically create a new material asset(with the same name as the texture asset) in the **Materials folder**.
+  
+  ![](./img/texture.png)
 
 
 
