@@ -45,6 +45,12 @@ In a **3D** Project, Unity imports image and movie files in the Assets folder as
 ### Assign texture to an gameobject
 **Texture must assigned in Material** to apply in an gameobject's appearance. 
 
+You can assign texture in the following ways:
+- Drag your texture from asset folder directly into an gameobject in the scene. Then Unity will automatically create a new
+
+
+
+https://www.c-sharpcorner.com/article/how-to-apply-materials-shaders-and-textures-to-objects-in-unity2/
 
 ### Texture dimension sizes
 Ideally, Texture dimension sizes should be powers of two on each side (that is, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048 pixels (px), and so on). The Textures do not have to be square; the width can be different from height.
@@ -74,6 +80,6 @@ Unity can read the following file formats:
 
 
 
-
+### ref
 https://docs.unity3d.com/Manual/Textures.html
 
