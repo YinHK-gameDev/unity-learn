@@ -6,6 +6,7 @@ Unity comes with a number of built-in shaders that you can use in your projects.
 - Legacy shaders
 - URP prebuilt shaders
 - HDRP prebuilt shaders
+- Autodesk Interactive shader
 
 
 | **Feature name** | **Built-in Render Pipeline** | **Universal Render Pipeline (URP)** | **High Definition Render Pipeline (HDRP)** | **Custom SRP** |
