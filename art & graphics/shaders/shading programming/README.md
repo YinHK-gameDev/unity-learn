@@ -10,7 +10,7 @@ When you write shaders for Unity, you use the following languages:
 
 
 
-![](./img/shaderprogramremark.png)
+![](../img/shaderprogramremark.png)
 
 
 
