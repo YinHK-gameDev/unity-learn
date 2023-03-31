@@ -34,3 +34,5 @@ https://www.arkaistudio.com/blog/2016/10/04/%E4%B8%80%E8%B5%B7%E5%AD%B8-unity-sh
 
 https://medium.com/ericzhan-publication/shader%E7%AD%86%E8%A8%98-shader-development-using-unity-01-b1cde1f23adf
 
+https://kendevlog.wordpress.com/2017/08/12/unity%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%984-%E5%AF%AB%E5%80%8B%E7%B0%A1%E5%96%AEshader/
+
