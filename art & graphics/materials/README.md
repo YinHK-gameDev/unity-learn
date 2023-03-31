@@ -5,7 +5,7 @@ To draw something in Unity, you must provide information that describes its shap
 
 > **Materials** and **shaders** are closely linked; you always use materials with shaders.
 
-A material contains a reference to a **Shader** object. If that Shader object defines material properties, then the material can also contain data such as **colors** or **references to textures**.
+A **material contains a reference to a Shader object**. If that **Shader object** defines **material properties**, then the material can also contain data such as **colors** or **references to textures**.
 
 The **Material class** represents a material in C# code. 
 
