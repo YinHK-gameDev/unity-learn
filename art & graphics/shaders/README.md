@@ -19,8 +19,18 @@ In Unity, shaders are divided into **three broad categories**. You use each cate
 - Compute shaders perform calculations on the GPU, outside of the regular graphics pipeline.
 - Ray tracing shaders perform calculations related to ray tracing.
 
-
+### Shader assets
+A **shader asset** is an asset in your Unity project that defines a Shader object. It is a text file with a **`.shader`** extension. It contains **shader code**.
 
 
 ### ref
 https://docs.unity3d.com/Manual/ShadersOverview.html
+
+https://www.youtube.com/watch?v=fhmf5PacfVg
+
+https://kendevlog.wordpress.com/2017/08/12/unity%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%984-%E5%AF%AB%E5%80%8B%E7%B0%A1%E5%96%AEshader/
+
+https://www.arkaistudio.com/blog/2016/10/04/%E4%B8%80%E8%B5%B7%E5%AD%B8-unity-shader-%E4%B8%80%EF%BC%9A%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80/
+
+https://medium.com/ericzhan-publication/shader%E7%AD%86%E8%A8%98-shader-development-using-unity-01-b1cde1f23adf
+
