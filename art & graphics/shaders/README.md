@@ -33,7 +33,7 @@ To create a new shader asset, use **Assets > Create > Shader** from the main men
 
 ![](./img/create_shader.png)
 
-
+![](./img/shader_inspector.png)
 
 ### ref
 https://docs.unity3d.com/Manual/ShadersOverview.html
