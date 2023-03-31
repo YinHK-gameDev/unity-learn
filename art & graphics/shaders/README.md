@@ -29,6 +29,11 @@ In Unity, shaders are divided into **three broad categories**. You use each cate
 ### Shader assets
 A **shader asset** is an asset in your Unity project that defines a Shader object. It is a text file with a **`.shader`** extension. It contains **shader code**.
 
+To create a new shader asset, use **Assets > Create > Shader** from the main menu or the Project View context menu.
+
+![](./img/create_shader.png)
+
+
 
 ### ref
 https://docs.unity3d.com/Manual/ShadersOverview.html
