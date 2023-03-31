@@ -50,7 +50,7 @@ You can assign texture in the following ways:
   
   ![](./img/texture.png)
 
-
+  ![](./img/material_asset.png)
 
 https://www.c-sharpcorner.com/article/how-to-apply-materials-shaders-and-textures-to-objects-in-unity2/
 
