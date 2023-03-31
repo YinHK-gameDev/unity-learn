@@ -39,7 +39,7 @@ The Import settings section of the Inspector lets you set the **default textures
 
 Whenever a new **Material** is created with this **shader**, these **textures are automatically assigned**.
 
-The** Imported object** section of the Inspector lets you view and edit settings related to the Shader object itself, and how the shader compiler handles it.
+The **Imported object** section of the Inspector lets you view and edit settings related to the Shader object itself, and how the shader compiler handles it.
 
 ### ref
 https://docs.unity3d.com/Manual/ShadersOverview.html
