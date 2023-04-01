@@ -1,5 +1,5 @@
 ## Render pipelines
-A render pipeline performs a series of **operations** that **take the contents of a Scene
+A render pipeline performs **a series of** **operations** that **take the contents of a Scene
 , and displays them on a screen**.
 
 These operations are:
@@ -197,4 +197,4 @@ https://docs.unity3d.com/Manual/BestPracticeLightingPipelines.html
 https://www.youtube.com/watch?v=xS6g15XL8jQ
 
 
-
+https://hackmd.io/@IM23/rkpebgif5#What-is-render-pipelines
