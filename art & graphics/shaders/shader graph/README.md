@@ -13,7 +13,7 @@ Modern video game development platforms such as Unity, Unreal Engine and Godot i
 
 
 ### ref
-https://docs.unity3d.com/Packages/com.unity.shadergraph@14.0/manual/index.html
+https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/index.html
 
 https://www.youtube.com/watch?v=Ar9eIn4z6XE
 
