@@ -6,7 +6,7 @@ Modern video game development platforms such as Unity, Unreal Engine and Godot i
 
 
 
-
+Shader Graph is available through the **Package Manager window** in supported versions of the Unity Editor. If you install a **Scriptable Render Pipeline (SRP)** such as the **Universal Render Pipeline (URP)** or the **High Definition Render Pipeline (HDRP)**, Unity **automatically installs Shader Graph in your project**.
 
 
 
