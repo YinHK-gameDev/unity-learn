@@ -26,3 +26,5 @@ https://www.youtube.com/watch?v=u9pbpypdq0Q&t=3s
 
 https://hackmd.io/@IM23/rkpebgif5
 
+https://youtube.com/playlist?list=PLpPd_BKEUoYjcFaqriaMchx5gOqBs2tDh
+
