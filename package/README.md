@@ -7,7 +7,17 @@ In the Editor, you can access the Package Manager window through this menu: **Wi
 https://docs.unity3d.com/Manual/Packages.html
 
 
+### Core packages
+Core packages are similar to other Unity packages, except that they are bound to the Editor version and they never appear on the Unity package registry. This means that you cannot find them in the Unity Registry list context. And unlike regular Unity packages, their version number is typically 1.0.0, because core package versioning is fixed to the Editor version.
 
+
+https://docs.unity3d.com/Manual/pack-core.html
+
+
+### Built-in packages
+Built-in packages allow users to toggle Unity features on or off through the Package Manager. Enabling or disabling a package reduces the run-time build size. 
+
+https://docs.unity3d.com/Manual/pack-build.html
 
 ### ref
 https://docs.unity3d.com/Manual/PackagesList.html
