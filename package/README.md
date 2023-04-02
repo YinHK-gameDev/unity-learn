@@ -2,7 +2,14 @@
 A **package** contains features to **fit the various needs of your project**. This can include any core Unity features included during the Editor installation, or other packages that you can install as needed.
 
 ### Unity’s Package Manager
-In the Editor, you can access the Package Manager window through this menu: **Window > Package Manager**.
+A **package** is a **container** that stores **various types of features or assets**, such as:
+
+- **Editor tools** and **libraries**, such as a **text editor**, an **animation viewer**, or **test frameworks**.
+- **Runtime tools** and **libraries**, such as the **Physics API** or a **Graphics pipeline**.
+- **Asset collections**, such as **Textures** or **animations**.
+- **Project templates** to share common project types with others.
+
+In the Editor, you can access the **Package Manager window** through this menu: **Window > Package Manager**.
 
 https://docs.unity3d.com/Manual/Packages.html
 
@@ -29,5 +36,16 @@ https://docs.unity3d.com/Manual/pack-core.html
 Built-in packages allow users to toggle Unity features on or off through the Package Manager. Enabling or disabling a package reduces the run-time build size. 
 
 https://docs.unity3d.com/Manual/pack-build.html
+
+
+### Creating custom packages
+The Unity Package Manager is the official package management system for Unity. It does the following:
+
+- Allows Unity to **distribute new features and update existing features** quickly and easily.
+- Provides a platform for users to **discover and share reusable components**.
+- Promotes Unity as an **extendable and open platform**.
+
+
+https://docs.unity3d.com/Manual/CustomPackages.html
 
 
