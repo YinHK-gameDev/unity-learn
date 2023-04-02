@@ -15,6 +15,10 @@ Use Shader Graph with either of the **Scriptable Render Pipelines (SRPs)** avail
 
 > As of Unity version **2021.2**, you can also use Shader Graph with the **Built-In Render Pipeline**.
 
+> **Note**: Shader Graph support for the Built-In Render Pipeline is for compatibility purposes only. Shader Graph doesn't receive updates for Built-In Render Pipeline support, aside from bug fixes for existing features. It's recommended to use Shader Graph with the Scriptable Render Pipelines.
+
+
+
 ### Creating a new Shader Graph Asset
 After you configure an SRP, you can create a new Shader Graph Asset. **Right-click the Project window**, locate **Create > Shader** in the context menu, then **select your desired type of Shader Graph**.
 
