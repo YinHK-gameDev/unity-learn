@@ -54,6 +54,9 @@ https://docs.unity3d.com/Manual/upm-manifestPrj.html
 ### Finding packages and feature sets
 https://docs.unity3d.com/Manual/upm-ui-find.html
 
+### Adding and removing packages
+https://docs.unity3d.com/Manual/upm-ui-actions.html
+
 ### Finding package documentation
 To access the documentation for a specific package, you have two options:
 
