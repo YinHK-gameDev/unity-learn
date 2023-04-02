@@ -33,7 +33,9 @@ Use the **Scripting API** to **interact with the Package Manager** using **C#** 
 
 For example, you might want to install a specific package or version depending on the platform of the target machine.
 
-The system relies heavily on the **`PackageManager.Client` class**, which you can use to find packages, browse the list of packages, and install and uninstall packages through scripting.
+The system relies heavily on the **`PackageManager.Client` class**, which you can use to **find packages**, **browse the list of packages**, and **install and uninstall packages** through scripting.
+
+Another important class is **`PackageManager.PackageInfo`**, which contains the **state of a package,** including **metadata obtained from the package manifest and the registry**.
 
 https://docs.unity3d.com/Manual/upm-api.html
 
