@@ -21,6 +21,10 @@ https://docs.unity3d.com/Manual/Packages.html
 > Unity provides **3** Package Manager interfaces:   **Package Manager window**, **Scripting API**, and **manifest files**.
 
 #### For Package Manager window:
+Find packages and manage them in your project, and resolve conflicts in package dependencies. The Package Manager provides a **user interface** that makes changes to the **Project manifest** directly.
+
+Use the Unity Package Manager (in Unity’s top menu: **Window > Package Manager**) to view which packages and feature sets are available for installation or already installed in your project. In addition, you can use this window to see which versions are available, and install, remove, disable, or update packages and feature sets for each project.
+ 
 https://docs.unity3d.com/Manual/upm-ui.html
 
 
