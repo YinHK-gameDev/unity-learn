@@ -51,9 +51,16 @@ You can find the **project manifest** file, called **`manifest.json`**, in the P
 
 https://docs.unity3d.com/Manual/upm-manifestPrj.html
 
-
 ### Finding packages and feature sets
 https://docs.unity3d.com/Manual/upm-ui-find.html
+
+### Finding package documentation
+To access the documentation for a specific package, you have two options:
+
+- Get documentation for the latest version (from the **Unity Manual**).
+- Get documentation for a specific package version (from the **Package Manager window**).
+
+https://docs.unity3d.com/Manual/upm-docs.html
 
 ### Released packages
 **"Released"** packages are packages that have undergone testing with a specific version of Unity, and all other packages released for that version. The package also contains complete and accurate documentation, an updated changelog, and valid licensing.
