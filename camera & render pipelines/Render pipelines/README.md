@@ -55,7 +55,7 @@ To set the active render pipeline to the Built-in Render Pipeline, remove any Re
 = **Select Edit > Project Settings > Quality**.
 - For each quality level, if a **Render Pipeline Asset** is assigned to the **Render Pipeline field**, unassign it.
 Select **Edit > Project Settings > Graphics**.
-- If a Render Pipeline Asset is assigned t**o the **Scriptable Render Pipeline Setting** field, unassign it.
+- If a Render Pipeline Asset is assigned to the **Scriptable Render Pipeline Setting** field, unassign it.
 
 
 ### Activating URP, HDRP, or a custom render pipeline
