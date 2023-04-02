@@ -1,4 +1,5 @@
 ## Package 
+A **package** contains features to **fit the various needs of your project**. This can include any core Unity features included during the Editor installation, or other packages that you can install as needed.
 
 ### Unity’s Package Manager
 In the Editor, you can access the Package Manager window through this menu: **Window > Package Manager**.
