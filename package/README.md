@@ -37,6 +37,8 @@ The system relies heavily on the **`PackageManager.Client` class**, which you ca
 
 Another important class is **`PackageManager.PackageInfo`**, which contains the **state of a package,** including **metadata obtained from the package manifest and the registry**.
 
+For example, you can get a list of versions available for the package, or the list of any errors that might occur while locating or installing the package.
+
 https://docs.unity3d.com/Manual/upm-api.html
 
 
