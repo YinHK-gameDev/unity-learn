@@ -28,6 +28,13 @@ Use the Unity Package Manager (in Unity’s top menu: **Window > Package Manager
 https://docs.unity3d.com/Manual/upm-ui.html
 
 
+#### Scripting API for packages:
+Use the** Scripting API** to **interact with the Package Manager** using **C#** scripts.
+
+
+https://docs.unity3d.com/Manual/upm-api.html
+
+
 ### Finding packages and feature sets
 https://docs.unity3d.com/Manual/upm-ui-find.html
 
