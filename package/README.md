@@ -9,7 +9,14 @@ A **package** is a **container** that stores **various types of features or asse
 - **Asset collections**, such as **Textures** or **animations**.
 - **Project templates** to share common project types with others.
 
+Packages deliver a **wide range of enhancements** to Unity through the **Package Manager**. To help find and use these packages, the Package Manager window **provides collections of package**s that you can use together, called **feature sets**.
+
+The Package Manager also supports management of packages you download or import from the **Unity Asset Store**.
+
 In the Editor, you can access the **Package Manager window** through this menu: **Window > Package Manager**.
+
+
+Unity provides **3** Package Manager interfaces: **Package Manager window**, **Scripting API**, and **manifest files**.
 
 https://docs.unity3d.com/Manual/Packages.html
 
