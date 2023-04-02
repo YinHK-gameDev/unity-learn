@@ -8,6 +8,12 @@ Modern video game development platforms such as Unity, Unreal Engine and Godot i
 
 Shader Graph is available through the **Package Manager window** in supported versions of the Unity Editor. If you install a **Scriptable Render Pipeline (SRP)** such as the **Universal Render Pipeline (URP)** or the **High Definition Render Pipeline (HDRP)**, Unity **automatically installs Shader Graph in your project**.
 
+Use Shader Graph with either of the **Scriptable Render Pipelines (SRPs)** available in Unity version **2018.1 and later**:
+
+- The High Definition Render Pipeline (HDRP)
+- The Universal Render Pipeline (URP)
+
+> As of Unity version **2021.2**, you can also use Shader Graph with the **Built-In Render Pipeline**.
 
 ### Creating a new Shader Graph Asset
 After you configure an SRP, you can create a new Shader Graph Asset. **Right-click the Project window**, locate **Create > Shader** in the context menu, then **select your desired type of Shader Graph**.
