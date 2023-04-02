@@ -15,9 +15,13 @@ The Package Manager also supports management of packages you download or import 
 
 In the Editor, you can access the **Package Manager window** through this menu: **Window > Package Manager**.
 
-> Unity provides **3** Package Manager interfaces:   **Package Manager window**, **Scripting API**, and **manifest files**.
 
 https://docs.unity3d.com/Manual/Packages.html
+
+> Unity provides **3** Package Manager interfaces:   **Package Manager window**, **Scripting API**, and **manifest files**.
+
+#### For Package Manager window:
+https://docs.unity3d.com/Manual/upm-ui.html
 
 
 ### Finding packages and feature sets
