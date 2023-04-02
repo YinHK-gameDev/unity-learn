@@ -20,8 +20,7 @@ https://docs.unity3d.com/Manual/pack-preview.html
 
 
 ### Core packages
-Core packages are similar to other Unity packages, except that they are bound to the Editor version and they never appear on the Unity package registry. This means that you cannot find them in the Unity Registry list context. And unlike regular Unity packages, their version number is typically 1.0.0, because core package versioning is fixed to the Editor version.
-
+**Core packages** are similar to other Unity packages, except that they are bound to the Editor version and they never appear on the Unity package registry. This means that you cannot find them in the Unity Registry list context. And unlike regular Unity packages, their version number is typically 1.0.0, because core package versioning is fixed to the Editor version.
 
 https://docs.unity3d.com/Manual/pack-core.html
 
