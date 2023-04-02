@@ -29,8 +29,11 @@ https://docs.unity3d.com/Manual/upm-ui.html
 
 
 #### Scripting API for packages:
-Use the** Scripting API** to **interact with the Package Manager** using **C#** scripts.
+Use the **Scripting API** to **interact with the Package Manager** using **C#** scripts.
 
+For example, you might want to install a specific package or version depending on the platform of the target machine.
+
+The system relies heavily on the **`PackageManager.Client` class**, which you can use to find packages, browse the list of packages, and install and uninstall packages through scripting.
 
 https://docs.unity3d.com/Manual/upm-api.html
 
