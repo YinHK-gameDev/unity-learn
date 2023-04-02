@@ -1,7 +1,12 @@
 ## Unity assets
 
 ### assets for model or environment
-#### unity asset store
+
+#### Unity's asset store
+The Unity Asset Store contains a library of free and commercial assets that Unity Technologies and members of the community create. A wide variety of assets are available, including textures, models, animations, entire project examples, tutorials, and Editor extensions
+
+Starting from Unity 2020.1, the dedicated Asset Store window is no longer hosted inside the Unity Editor. However, you can still access the Asset Store website at **https://assetstore.unity.com/** and you can still search for your purchased and downloaded Asset Store packages, and import and download them directly in the **Package Manager window**.
+
 **https://assetstore.unity.com/**
 
 #### 3D model - sketchfab
