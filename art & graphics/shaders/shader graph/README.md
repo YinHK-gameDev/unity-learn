@@ -1,4 +1,4 @@
-## Shader graph
+## Shader graph 16.0.0
 
 Modern video game development platforms such as Unity, Unreal Engine and Godot increasingly include **node-based editors** that can create shaders **without the need for actual code**.
 
@@ -31,6 +31,5 @@ https://youtube.com/playlist?list=PLpPd_BKEUoYjcFaqriaMchx5gOqBs2tDh
 https://youtu.be/V5XFrIhLpGQ
 
 https://youtube.com/playlist?list=PLzDRvYVwl53tpvp6CP6e-Mrl6dmxs9uhx
-
 
 
