@@ -42,7 +42,7 @@ For example, you can get a list of versions available for the package, or the li
 https://docs.unity3d.com/Manual/upm-api.html
 
 
-### For Project manifest
+#### For Project manifest
 When Unity loads a project, the Unity Package Manager reads the project manifest so that it can compute a list of which packages to retrieve and load. When a user installs or uninstalls a package through the Package Manager window, the Package Manager stores those changes in the project manifest file. The project manifest file manages the list of packages through the dependencies object.
 
 In addition, the project manifest serves as a configuration file for the Package Manager, which uses the manifest to customize the registry URL and register custom registries.
