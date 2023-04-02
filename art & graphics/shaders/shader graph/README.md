@@ -10,8 +10,8 @@ Shader Graph is available through the **Package Manager window** in supported ve
 
 Use Shader Graph with either of the **Scriptable Render Pipelines (SRPs)** available in Unity version **2018.1 and later**:
 
-- The High Definition Render Pipeline (HDRP)
-- The Universal Render Pipeline (URP)
+- **The High Definition Render Pipeline (HDRP)**
+- **The Universal Render Pipeline (URP)**
 
 > As of Unity version **2021.2**, you can also use Shader Graph with the **Built-In Render Pipeline**.
 
