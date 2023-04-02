@@ -3,13 +3,16 @@
 ### Unity’s Package Manager
 In the Editor, you can access the Package Manager window through this menu: **Window > Package Manager**.
 
-
 https://docs.unity3d.com/Manual/Packages.html
 
 
 ### Finding packages and feature sets
 https://docs.unity3d.com/Manual/upm-ui-find.html
 
+### Released packages
+**"Released"** packages are packages that have undergone testing with a specific version of Unity, and all other packages released for that version. The package also contains complete and accurate documentation, an updated changelog, and valid licensing.
+
+https://docs.unity3d.com/Manual/pack-safe.html
 
 ### Pre-release packages
 https://docs.unity3d.com/Manual/pack-preview.html
