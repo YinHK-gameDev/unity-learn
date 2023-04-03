@@ -1,5 +1,5 @@
 ## Universal Render Pipeline(URP)
-The Universal Render Pipeline (URP) is a prebuilt Scriptable Render Pipeline, made by Unity. URP provides artist-friendly workflows that let you quickly and easily create optimized graphics across a range of platforms, from mobile to high-end consoles and PCs.
+The **Universal Render Pipeline (URP)** is a **prebuilt Scriptable Render Pipeline**, made by Unity. **URP** provides artist-friendly workflows that let you quickly and easily create optimized graphics across a range of platforms, from mobile to high-end consoles and PCs.
 
 
 ### ref
