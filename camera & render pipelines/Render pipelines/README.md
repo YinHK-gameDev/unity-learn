@@ -52,7 +52,7 @@ Unity determines the active render pipeline like this:
 ### Activating the Built-in Render Pipeline
 To set the active render pipeline to the Built-in Render Pipeline, remove any Render Pipeline Assets from Graphics Settings and Quality Settings.
 
-= **Select Edit > Project Settings > Quality**.
+- **Select Edit > Project Settings > Quality**.
 - For each quality level, if a **Render Pipeline Asset** is assigned to the **Render Pipeline field**, unassign it.
 Select **Edit > Project Settings > Graphics**.
 - If a Render Pipeline Asset is assigned to the **Scriptable Render Pipeline Setting** field, unassign it.
