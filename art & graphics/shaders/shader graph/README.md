@@ -24,6 +24,12 @@ After you configure an SRP, you can create a new Shader Graph Asset. **Right-cli
 
 The type of Shader Graph available is dependent on the render pipelines present in your project. Some options may or may not be present based on the render pipelines.
 
+The following options are always available:
+|  |  |
+| --- | --- |
+| Blank Shader Graph | A completely blank shader graph. No target is selected and no blocks are added to the Master Stack. |
+| Sub Graph | A blank sub graph asset. |
+
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/index.html
