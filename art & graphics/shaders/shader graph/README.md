@@ -31,6 +31,18 @@ The following options are always available:
 | Sub Graph | A blank sub graph asset. |
 
 
+### Shader Graph window
+
+The Shader Graph window consists of the Master Stack, the Preview Window, the Blackboard, and the Graph Inspector.
+
+![](../img/ShaderGraphWindow.png)
+
+![](../img/MainPreview.png)
+
+![](../img/Blackboard.png)
+
+![](../img/Inspector.png)
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/index.html
 
