@@ -71,6 +71,17 @@ In the menu, you can type in the search bar to look for specific nodes, or brows
 
 To build a graph, you need to connect nodes together. To do so, **click the Output Slot of a node, and drag that connection into the Input Slot of another node**.
 
+#### Create a Material
+After saving your graph, use the shader to create a new Material. The process of creating a new Material and assigning it a Shader Graph shader is the same as that for regular shaders. In either the main menu or the Project View context menu, select Assets > Create > Material. Select the Material you just created. In its Inspector window, select the Shader drop-down menu, click Shader Graphs, and choose the Shader Graph shader you wish to apply to the Material.
+
+You can also right-click the Shader Graph shader, and select Create > Material. This method automatically assigns that Shader Graph shader to the newly created Material.
+
+
+A Material is also automatically generated as a subasset of the Shader Graph. You can assign it directly to an object in your scene. Modifying a property from the Blackboard on the Shader Graph will update this material in real time, which allows for quick visualization in the scene.
+
+
+### Node library
+Right-click the node and select **"Open documentation or F1"**, to see documentation about the slected node in Node library.
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/index.html
