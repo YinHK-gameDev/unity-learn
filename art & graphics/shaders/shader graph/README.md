@@ -80,6 +80,24 @@ You can also right-click the Shader Graph shader, and select Create > Material. 
 A Material is also automatically generated as a subasset of the Shader Graph. You can assign it directly to an object in your scene. Modifying a property from the Blackboard on the Shader Graph will update this material in real time, which allows for quick visualization in the scene.
 
 
+### properties
+You can also use properties to alter your shader's appearance. 
+Properties are options that are visible from the Material's Inspector, which lets others change settings in your shader without the need to open the Shader Graph.
+
+To create a new property, use the **Add (+)** button on the top right corner of the Blackboard, and select the type of property to create.
+
+This adds a new property in the Blackboard with the following options in the Node Settings tab of the Graph Inspector when the property is selected.
+
+There are two ways to reference a property in your graph(create a node from property):
+
+- Drag the property from the Blackboard onto the graph.
+- Right-click and select Create Node. The property is listed in the Properties category.
+
+Convert a node to property:
+
+Some nodes can be converted to property and show on blackboard. If you create a node which is in the proprty list, you can right click the node and select **Convert to > Property**.
+
+
 ### Node library
 Right-click the node and select **"Open documentation or F1"**, to see documentation about the slected node in Node library.
 
