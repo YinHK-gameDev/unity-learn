@@ -57,6 +57,12 @@ An area that contains information contextual to whatever the user is currently c
 
 ![](../img/Inspector.png)
 
+#### Graph inspector
+The Graph Inspector makes it possible for you to interact with any selectable graph elements and graph-wide settings for a Shader Graph Asset. You can use the Graph Inspector to edit attributes and default values.
+
+When you open a Shader Graph, the Graph Inspector displays the Graph Settings tab by default. Graph-wide settings for that specific Shader Graph appear in this tab.
+
+
 
 #### Create a new node
 
