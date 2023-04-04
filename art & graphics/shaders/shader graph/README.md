@@ -58,6 +58,20 @@ An area that contains information contextual to whatever the user is currently c
 ![](../img/Inspector.png)
 
 
+#### Create a new node
+
+Use the Create Node menu to create new nodes. There are two ways to open the menu:
+
+- Right click, and select Create Node from the context menu.
+- Press the spacebar.
+
+In the menu, you can type in the search bar to look for specific nodes, or browse all nodes in the library.
+
+#### Connect nodes
+
+To build a graph, you need to connect nodes together. To do so, **click the Output Slot of a node, and drag that connection into the Input Slot of another node**.
+
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/index.html
 
