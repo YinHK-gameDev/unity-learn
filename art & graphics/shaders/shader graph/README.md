@@ -101,6 +101,8 @@ Some nodes can be converted to property and show on blackboard. If you create a 
 ### Node library
 Right-click the node and select **"Open documentation or F1"**, to see documentation about the slected node in Node library.
 
+https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Node-Library.html
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/index.html
 
