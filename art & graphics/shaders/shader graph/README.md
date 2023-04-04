@@ -40,6 +40,13 @@ The Shader Graph window consists of the Master Stack, the Preview Window, the Bl
 #### Master Stack
 The final connection that determines your shader output. Refer to Master Stack for more information.
 
+The Master Stack is the end point of a Shader Graph that defines the final surface appearance of a shader. Your Shader Graph should always contain only one Master Stack.
+
+The content of the Master Stack might change depending on the Graph Settings you select. The Master Stack is made up of Contexts, which contain Block nodes.
+
+The Master Stack contains two Contexts: Vertex and Fragment. These represent the two stages of a shader. Nodes that you connect to Blocks in the Vertex Context become part of the final shader's vertex function. Nodes that you connect to Blocks in the Fragment Context become part of the final shader's fragment (or pixel) function. If you connect any nodes to both Contexts, they are executed twice, once in the vertex function and then again in the fragment function. You can't cut, copy, or paste Contexts.
+
+![](../img/MasterStack_Populated.png)
 
 #### Preview window
 
@@ -61,7 +68,6 @@ An area that contains information contextual to whatever the user is currently c
 The Graph Inspector makes it possible for you to interact with any selectable graph elements and graph-wide settings for a Shader Graph Asset. You can use the Graph Inspector to edit attributes and default values.
 
 When you open a Shader Graph, the Graph Inspector displays the Graph Settings tab by default. Graph-wide settings for that specific Shader Graph appear in this tab.
-
 
 
 #### Create a new node
