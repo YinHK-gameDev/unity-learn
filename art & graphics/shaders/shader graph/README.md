@@ -37,11 +37,26 @@ The Shader Graph window consists of the Master Stack, the Preview Window, the Bl
 
 ![](../img/ShaderGraphWindow.png)
 
+#### Master Stack
+The final connection that determines your shader output. Refer to Master Stack for more information.
+
+
+#### Preview window
+
 ![](../img/MainPreview.png)
+
+
+#### Blackboard
+An area that contains all of the shader's properties in a single, collected view. Use the Blackboard to add, remove, rename, and reorder properties.
 
 ![](../img/Blackboard.png)
 
+
+#### Internal Inspector
+An area that contains information contextual to whatever the user is currently clicking on. It's a window that automatically is hidden by default and only appears when something is selected that can be edited by the user. Use the Internal Inspector to display and modify properties, node options, and the graph settings.
+
 ![](../img/Inspector.png)
+
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/index.html
