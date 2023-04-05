@@ -9,6 +9,9 @@ For information about the components of a Sub Graph, see Sub Graph Asset.
 
 ![](../img/SubGraph-Output-Node.png)
 
+
+The Output Node defines the output ports of a Sub Graph Node when you reference the Sub Graph from inside another graph. To add and remove ports, use the Custom Port Menu in the Node Settings tab of the Graph Inspector by clicking on the Sub Graph Output node.
+
 ### Subgraph Asset
 
 The **Subgraph Asset** is a new Asset type introduced with the Shader Graph. A Subgraph Asset defines a Subgraph. This is different to a Shader Graph. You can create a Subgraph Asset from the Project window from the Create menu via Subgraph in the Shader sub-menu.
