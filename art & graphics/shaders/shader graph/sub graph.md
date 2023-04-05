@@ -22,3 +22,5 @@ You can open the Shader Graph Window by double clicking a Subgraph Asset or by c
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Sub-graph.html
+
+https://www.youtube.com/watch?v=zElng0TRsY8
