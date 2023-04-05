@@ -7,6 +7,7 @@ A Sub Graph has its own Asset type. For more information, including instructions
 A Sub Graph does not have a Master Stack. Instead, it has a Node called Output.
 For information about the components of a Sub Graph, see Sub Graph Asset.
 
+![](../img/SubGraph-Output-Node.png)
 
 ### Subgraph Asset
 
