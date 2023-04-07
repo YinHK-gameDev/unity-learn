@@ -48,6 +48,12 @@ In unity the default color for shader is pink. When changing rendering pipeline,
 ![](./img/rendering_pipeline.png)
 
 
+Another method is to reimport the model, in import settings click **Materials** tab and choose **「Use External Materials (Legacy)」** in Location field, then hit Apply button.
+
+
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/ShadersOverview.html
 
