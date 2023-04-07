@@ -109,7 +109,9 @@ Convert a node to property:
 
 Some nodes can be converted to property and show on blackboard. If you create a node which is in the proprty list, you can right click the node and select **Convert to > Property**.
 
+**Property type**
 
+https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Property-Types.html
 
 ### Add nodes to a group - Group selection
 Press **Ctrl + G** for Group selection, adding Group name for all selected nodes
