@@ -126,6 +126,8 @@ https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/index.html
 
 https://learn.unity.com/tutorial/introduction-to-shader-graph#5f500900edbc2a0022843fb3
 
+https://www.twblogs.net/a/5f0463a35352062f754edb05
+
 https://www.youtube.com/watch?v=Ar9eIn4z6XE
 
 https://www.youtube.com/watch?v=-QcwEYOHt2I
