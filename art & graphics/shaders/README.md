@@ -43,7 +43,7 @@ Whenever a new **Material** is created with this **shader**, these **textures ar
 The **Imported object** section of the Inspector lets you view and edit settings related to the Shader object itself, and how the shader compiler handles it.
 
 ### Default shader 
-In unity the default color for shader is pink. When changing rendering pipeline, it set all shader into default(standard), to fix it you need to select the material and change the shader to the rendering pipeline you want. Or click Edit > Rendering > Materials to convert to specified rendering pipeline material you want.
+In unity the default color for shader is pink. When changing rendering pipeline, it set all shader into default(standard), to fix it you need to select the material and change the shader to the rendering pipeline you want. Or **click Edit > Rendering > Materials** to convert to specified rendering pipeline material you want.
 
 ![](./img/rendering_pipeline.png)
 
