@@ -19,6 +19,7 @@ In computer graphics, a shader is a **computer program** that calculates the app
 - **Shader Graph asset** - a file in your Unity project. It defines a Shader object.
 
 
+
 ### Types of shader
 In Unity, shaders are divided into **three broad categories**. You use each category for different things, and work with them differently.
 
