@@ -93,7 +93,8 @@ A Material is also automatically generated as a subasset of the Shader Graph. Yo
 
 ### properties
 You can also use properties to alter your shader's appearance. 
-Properties are options that are visible from the Material's Inspector, which lets others change settings in your shader without the need to open the Shader Graph.
+
+**Properties are options that are visible from the Material's Inspector**, which lets others **change settings** in your shader without the need to open the Shader Graph.
 
 To create a new property, use the **Add (+)** button on the top right corner of the Blackboard, and select the type of property to create.
 
