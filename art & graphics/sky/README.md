@@ -35,11 +35,12 @@ To prevent the environment contribution from automatically affecting the lightin
  To disable these probes, navigate to **Window** > **Rendering** > **Lighting Settings** > **Environment**, then make one of the following changes:
 
 -   Option 1: Set **Intensity Multiplier** to 0.
--   Option 2: Use a black ****Skybox** 
+-   Option 2: Use a black **Skybox** 
 -   Option 3: Set either the **Color** or **Gradient** for the **Source** to black.
 
+#### Disable the SkyManager for all scenes
 
-
+To prevent the environment contribution from automatically affecting the lighting result for all scenes, navigate to **Window** > **Rendering** > **Lighting Settings** > **Scene**, then disable **Recalculate Environment Lighting**.
 
 
 
