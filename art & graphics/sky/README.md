@@ -127,3 +127,23 @@ If you want to have **fog** in your Scene, match the fog color to the color of t
 3.  In the **Other Settings** section, enable the **Fog** checkbox.
 4.  Set the **Color** property to a color that suits your skybox. For this, you can use the ink dropper tool to select a color from the Scene.
  
+
+### Skybox shaders
+
+Unity provides multiple **Skybox**A special type of Material used to represent skies. Usually six-sided. [More info](https://docs.unity3d.com/Manual/skybox-shaders.htmlclass-Skybox.html)  
+See in [Glossary](https://docs.unity3d.com/Manual/skybox-shaders.htmlGlossary.html#Skybox) Shaders for you to use. Each **Shader**A program that runs on the GPU. [More info](https://docs.unity3d.com/Manual/skybox-shaders.htmlShaders.html)  
+See in [Glossary](https://docs.unity3d.com/Manual/skybox-shaders.htmlGlossary.html#Shader) uses a different set of properties and generation techniques. Each Shader falls into one of the following two categories:
+
+**Textured**: Generates a skybox from one or multiple textures. The source textures represent the view of the background from all directions. The Skybox Shaders in this category are:
+
+-   [6 Sided](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-6sided.html).
+-   [Cubemap](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-cubemap.html)A collection of six square textures that can represent the reflections in an environment or the skybox drawn behind your geometry. The six squares form the faces of an imaginary cube that surrounds an object; each face represents the view along the directions of the world axes (up, down, left, right, forward and back). [More info](https://docs.unity3d.com/Manual/skybox-shaders.htmlclass-Cubemap.html)  
+    See in [Glossary](https://docs.unity3d.com/Manual/skybox-shaders.htmlGlossary.html#Cubemap).
+-   [Panoramic](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-panoramic.html).
+
+**Procedural**: Does not use textures and instead uses properties on the Material to generate a skybox. The Skybox Shader in this category is:
+
+-   [Procedural](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-procedural.html).
+
+
+
