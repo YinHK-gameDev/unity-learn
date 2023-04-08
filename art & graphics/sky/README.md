@@ -64,5 +64,16 @@ Similar to other sky implementations, you can use a skybox to do the following:
 2. The **High Definition Render Pipeline (HDRP)** does not support skybox Materials and instead includes multiple sky generation solutions.
 
 
+### Creating a skybox Material
+To create a new **skybox Material**:
+
+1. From the menu bar, click **Assets > Create > Material**.
+2. In the **Shader** drop-down, click **Skybox** then the **skybox Shader** you want to use.
+3. You can now **fill out the properties on the Material** to set up the skybox. The properties available on the Material depend on the skybox Shader the Material uses.
+
+> **Note**: Each skybox Shader has its own set of prerequisite Textures that differ in number and Texture format
+. For information on the Textures a particular skybox Shader requires, see the documentation for that skybox Shader.
+
+
 
 
