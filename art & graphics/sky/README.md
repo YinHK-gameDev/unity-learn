@@ -144,3 +144,28 @@ Unity provides multiple **Skybox** Shaders for you to use. Each **Shader** uses 
 
 
 
+#### 6 Sided skybox
+This **skybox Shader** generates a skybox from six separate Textures. Each texture represents a view of the sky along a particular world axis. To illustrate this, think of the Scene as being inside a cube. Each Texture represents one of the interior faces of the cube and all six combine to create a seamless environment.
+
+#### Cubemap skybox
+This **skybox Shader** generates a skybox from a single Cubemap Asset. This **Cubemap** consists of six square Textures and represents the entire view of the sky from every direction.
+ 
+ 
+#### Panoramic skybox
+To generate a skybox, the **Panoramic Shaderwraps** a single Texture **spherically** around the Scene.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
