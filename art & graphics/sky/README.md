@@ -90,7 +90,7 @@ After you create a **skybox Material**, you can render it in your **Scene**. To 
 
 If you only want to draw a skybox in the background of a particular Camera, use the **Skybox component**. When you **attach this component to a GameObject with a Camera**, it **overrides the skybox that the Camera draws**. To attach and set up the **Skybox component**:
  
-1. Select a Camera in your Scene and view it in the **Inspector** window.
+1. Select a **Camera** in your Scene and view it in the **Inspector** window.
 2. Click **Add Component > Rendering > Skybox**.
 3. On the Skybox component, assign the skybox Material to the **Custom Skybox** property.
  
