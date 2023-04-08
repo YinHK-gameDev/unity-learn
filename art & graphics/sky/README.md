@@ -111,4 +111,19 @@ You can also specify **when Unity updates the ambient lighting**. To do this, ch
 
 
 
+
+
+
+If your Skybox includes a sun, moon, or other light in it, set up a Directional Light that points in the same direction as the light. This makes it appear as though the light in your skybox creates shadows in your Scene. If there are multiple Directional Lights in your Scene, you can choose which Directional Light the Skybox uses. To do this:
+
+1.  From the menu bar, click **Window > Rendering > Lighting Settings**.
+2.  Click the **Scene** tab.
+3.  Assign the Directional Light you want to use to the **Sun Source** property.
+
+If you want to have fog in your Scene, match the fog color to the color of the skybox. This makes the fog blend to the color of the Scene sky. To do this:
+
+1.  From the menu bar, click **Window > Rendering > Lighting Settings**.
+2.  Click the **Environment** tab.
+3.  In the **Other Settings** section, enable the **Fog** checkbox.
+4.  Set the **Color** property to a color that suits your skybox. For this, you can use the ink dropper tool to select a color from the Scene.
  
