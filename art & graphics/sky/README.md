@@ -154,12 +154,15 @@ This **skybox Shader** generates a skybox from a single Cubemap Asset. This **Cu
 #### Panoramic skybox
 To generate a skybox, the **Panoramic Shaderwraps** a single Texture **spherically** around the Scene.
 
+> To create a Panoramic skybox, you need a **single 2D** Texture that uses **latitude-longitude (cylindrical) mapping**,
+
+To make sure the Texture is 2D:
+
+- In the **Project window**, select the **Texture**.
+- In the **Inspector**, make sure the **Texture Shape** is set to **2D**.
 
 
-
-
-
-
+> To generate the best ambient lighting, the Texture should use a **high dynamic range (HDR)**.
 
 
 
