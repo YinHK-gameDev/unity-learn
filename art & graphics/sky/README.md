@@ -50,5 +50,8 @@ Similar to other sky implementations, you can use a skybox to do the following:
 - Configure your lighting settings to create realistic ambient lighting based on the skybox.
 - Override the skybox that an individual Camera uses, using the **skybox component**. 
  
+**Notes:**
 
+1. The Built-in Render Pipeline, and the Universal Render Pipeline (URP) both exclusively use skyboxes to render a sky. These skyboxes are Materials that use a skybox Shader.
+2. The High Definition Render Pipeline (HDRP) does not support skybox Materials and instead includes multiple sky generation solutions.
 
