@@ -12,3 +12,11 @@ The Unity Editor allows you to work in traditional **gamma color space** as well
 
 ### ref
 https://docs.unity3d.com/Manual/LinearLighting.html
+
+https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html
+
+https://docs.unity3d.com/Manual/LinearRendering-GammaTextures.html
+
+https://docs.unity3d.com/Manual/LinearRendering-LinearTextures.html
+
+
