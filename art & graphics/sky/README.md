@@ -75,5 +75,25 @@ To create a new **skybox Material**:
 . For information on the Textures a particular skybox Shader requires, see the documentation for that skybox Shader.
 
 
+### Drawing a skybox in your Scene
 
+After you create a **skybox Material**, you can render it in your **Scene**. To do this:
 
+1. From the menu bar, click **Window > Rendering > Lighting** Settings.
+2. In the window that appears, click the **Environment** tab.
+3. Assign the skybox Material to the **Skybox Material** property.
+
+> **Note**: This draws the skybox in the background of every Camera
+ in your Scene. If you instead only want to draw the skybox for a particular Camera.
+ 
+### Drawing a skybox for a particular Camera
+
+If you only want to draw a skybox in the background of a particular Camera, use the **Skybox component**. When you **attach this component to a GameObject with a Camera**, it **overrides the skybox that the Camera draws**. To attach and set up the **Skybox component**:
+ 
+1. Select a Camera in your Scene and view it in the **Inspector** window.
+2. Click **Add Component > Rendering > Skybox**.
+3. On the Skybox component, assign the skybox Material to the **Custom Skybox** property.
+ 
+
+ 
+ 
