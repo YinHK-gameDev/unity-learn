@@ -27,9 +27,7 @@ If you remove the Lighting Data Asset from your project, Unity continues to upda
 #### Disabling the SkyManager
 
 To prevent the environment contribution from automatically affecting the lighting result for a scene or GameObject
- that does not have manually created light maps and Light Probes
-, disable the default Reflection Probe
- and the ambient probe.
+ that does not have manually created light maps and Light Probes, **disable the default Reflection Probe and the ambient probe**.
  
  
  To disable these probes, navigate to **Window** > **Rendering** > **Lighting Settings** > **Environment**, then make one of the following changes:
