@@ -95,5 +95,20 @@ If you only want to draw a skybox in the background of a particular Camera, use 
 3. On the Skybox component, assign the skybox Material to the **Custom Skybox** property.
  
 
- 
+###  Using a skybox Material for ambient light settings
+
+After you create a **skybox Material**, Unity can use it to generate **ambient lighting** in your Scene. To make Unity do this:
+
+1.  Open the Lighting window (menu: **Window > Rendering > Lighting Settings**).
+2.  Assign your chosen skybox to the **Skybox Material** property.
+3.  Click the **Source** drop-down and, from the list, click **Skybox**.
+
+You can also specify when Unity updates the ambient lighting. To do this, change the **Ambient Mode**. The two values are:
+
+-   **Realtime**: Unity constantly regenerates ambient lighting for your Scene. This is useful if you alter the skybox at run-time
+-   **Baked**: Unity only generates ambient lighting for your Scene when you click the **Generate Lighting** button at the bottom of the Lighting window. This is useful if your skybox does not change during run-time because it saves computational resources.
+
+
+
+
  
