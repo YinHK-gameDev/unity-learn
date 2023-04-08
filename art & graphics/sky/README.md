@@ -64,6 +64,12 @@ Similar to other sky implementations, you can use a skybox to do the following:
 2. The **High Definition Render Pipeline (HDRP)** does not support skybox Materials and instead includes multiple sky generation solutions.
 
 
+The **Skybox component** overrides the skybox that Cameras on the same GameObject
+ draw. It gives you control over what skybox a Camera
+ renders and is useful when you have multiple Cameras in your Scene
+ and want to draw different skyboxes depending on the Camera.
+ 
+ 
 ### Creating a skybox Material
 To create a new **skybox Material**:
 
