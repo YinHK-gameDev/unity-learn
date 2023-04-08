@@ -171,10 +171,7 @@ The **Procedural skybox Shader** does not require any input Textures and instead
 
 | **Property** | **Description** |
 | --- | --- |
-| **Sun** | The method Unity uses the generate a sun disk in the skybox. The options are:  
-• **None:** Disables the sun disk in the skybox.  
-• **Simple:** Draws a simplified sun disk into the skybox  
-• **High Quality:** Draws a sun disk into the skybox. This is similar to the **Simple** sun disk, but with this mode, you can use **Sun Size Convergence** to further customize the appearance of the sun disk. |
+| **Sun** | The method Unity uses the generate a sun disk in the skybox. The options are:  • **None:** Disables the sun disk in the skybox.  • **Simple:** Draws a simplified sun disk into the skybox  • **High Quality:** Draws a sun disk into the skybox. This is similar to the **Simple** sun disk, but with this mode, you can use **Sun Size Convergence** to further customize the appearance of the sun disk. |
 | **Sun Size** | The size modifier for the sun disk. Larger values make the sun disk appear larger and setting this value to **0** makes the sun disk disappear. |
 | **Sun Size Convergence** | The size convergence of the sun. Smaller values make the sun disk appear larger. This property only appears if you set **Sun** to **High Quality**. |
 | **Atmosphere Thickness** | The density of the atmosphere. An atmosphere of higher density absorbs more light. Unity uses the Rayleigh scattering method to absorb light. |
