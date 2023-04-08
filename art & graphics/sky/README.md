@@ -103,10 +103,10 @@ After you create a **skybox Material**, Unity can use it to generate **ambient l
 2.  Assign your chosen skybox to the **Skybox Material** property.
 3.  Click the **Source** drop-down and, from the list, click **Skybox**.
 
-You can also specify when Unity updates the ambient lighting. To do this, change the **Ambient Mode**. The two values are:
+You can also specify **when Unity updates the ambient lighting**. To do this, change the **Ambient Mode**. The two values are:
 
 -   **Realtime**: Unity constantly regenerates ambient lighting for your Scene. This is useful if you alter the skybox at run-time
--   **Baked**: Unity only generates ambient lighting for your Scene when you click the **Generate Lighting** button at the bottom of the Lighting window. This is useful if your skybox does not change during run-time because it saves computational resources.
+-   **Baked**: Unity only generates ambient lighting for your Scene when you click the **Generate Lighting** button at the bottom of the Lighting window. This is useful if **your skybox does not change during run-time** because it saves computational resources.
 
 
 
