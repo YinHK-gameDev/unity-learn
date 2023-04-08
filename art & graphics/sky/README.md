@@ -35,8 +35,7 @@ To prevent the environment contribution from automatically affecting the lightin
  To disable these probes, navigate to **Window** > **Rendering** > **Lighting Settings** > **Environment**, then make one of the following changes:
 
 -   Option 1: Set **Intensity Multiplier** to 0.
--   Option 2: Use a black ****Skybox**A special type of Material used to represent skies. Usually six-sided. [More info](https://docs.unity3d.com/Manual/using-skymanager.htmlclass-Skybox.html)  
-    See in [Glossary](https://docs.unity3d.com/Manual/using-skymanager.htmlGlossary.html#Skybox) Material**.
+-   Option 2: Use a black ****Skybox** 
 -   Option 3: Set either the **Color** or **Gradient** for the **Source** to black.
 
 
