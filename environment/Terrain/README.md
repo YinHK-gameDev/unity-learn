@@ -6,5 +6,14 @@ To add a Terrain GameObject to your Scene, **select GameObject** > **3D Object**
  
 This also adds a corresponding Terrain Asset to the Project view. When you do this, the landscape is initially a large, flat plane. The Terrain’s Inspector window provides a number of tools to create detailed landscape features.
  
+ 
+### Creating and editing Terrains
+
+To add a Terrain GameObject to your Scene, select **GameObject > 3D Object > Terrain** from the menu. This also adds a corresponding Terrain Asset to the Project view. When you do this, the landscape is initially a large, flat plane. The Terrain’s Inspector window provides a number of tools to create detailed landscape features.
+
+
+![](./img/Terrain.png)
+
+
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
