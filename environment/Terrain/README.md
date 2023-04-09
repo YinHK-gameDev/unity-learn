@@ -52,6 +52,11 @@ Terrain component provides six distinct tools:
 -   **Smooth Height**: smooth the heightmap to soften Terrain features.
 -   **Stamp Terrain**: stamp a brush shape on top of the current heightmap.
 
+> **Note**: You can also create your own custom Terrain tools.
+> - Using scripting API : **`TerrainAPI.TerrainPaintTool`** 
+>   https://docs.unity3d.com/ScriptReference/TerrainTools.TerrainPaintTool_1.html
+> - Using Terrin Tools package
+>   https://docs.unity3d.com/Packages/com.unity.terrain-tools@5.1/manual/index.html
 
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
