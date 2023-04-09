@@ -45,6 +45,8 @@ To add material on tree, just create a new Material in your project using **Asse
 
 Now we’ll follow the same steps for creating a Leaf Material. Create a new Material and assign the shader as Nature > Tree Creator Leaves. Assign the texture slots with the leaf textures from the Tree Creator Package.
 
+![](./img/Tree_material.png)
+
 
 ### ref 
 https://docs.unity3d.com/Manual/class-Tree.html
