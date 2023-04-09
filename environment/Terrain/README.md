@@ -34,7 +34,10 @@ The Terrain Inspector has the following keyboard shortcuts enabled by default.
 | Open Bracket ( [ ) and Close Bracket ( ] ) | Decrease and increase the Brush Size |
 | Minus ( - ) and Equal ( = ) | Decrease and increase Brush Opacity |
 
+To set your own custom shortcuts, use the **Shortcuts Manager**.
 
+- On Windows and Linux, select **Edit > Shortcuts**.
+- On macOS, select **Unity > Shortcuts**.
 
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
