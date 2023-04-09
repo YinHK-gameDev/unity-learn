@@ -43,6 +43,15 @@ To set your own custom shortcuts, use the **Shortcuts Manager**.
 ### Terrain tools
 To access the **Terrain painting tools**, click on a Terrain object in the **Hierarchy** window and open an Inspector window. In the Inspector, click the **Paint Terrain (paintbrush)** icon to reveal the list of Terrain tools.
 
+Terrain component provides six distinct tools:
+
+-   **Raise or Lower Terrain**: paint the **heightmap** with a paintbrush tool.
+-   **Paint Holes**: hide portions of the Terrain.
+-   **Paint Texture**: apply surface textures.
+-   **Set Height**: adjust the heightmap toward a specific value.
+-   **Smooth Height**: smooth the heightmap to soften Terrain features.
+-   **Stamp Terrain**: stamp a brush shape on top of the current heightmap.
+
 
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
