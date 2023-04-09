@@ -23,5 +23,18 @@ The **toolbar** provides five options to adjust your Terrain:
 -   Change general settings for the selected Terrain.
 
 
+### Keyboard shortcuts
+The Terrain Inspector has the following keyboard shortcuts enabled by default.
+ 
+ 
+| Keys | Function |
+| --- | --- |
+| Comma ( , ) and Period ( . ) | Cycle through the available Brushes |
+| Shift-Comma ( < ) and Shift-Period ( > ) | Cycle through the available objects for trees, textures, and details |
+| Open Bracket ( [ ) and Close Bracket ( ] ) | Decrease and increase the Brush Size |
+| Minus ( - ) and Equal ( = ) | Decrease and increase Brush Opacity |
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
