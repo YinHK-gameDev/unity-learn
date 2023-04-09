@@ -1,4 +1,7 @@
-## Tree
+## Tree Editor
+
+Unity provides a tool called Tree Editor that lets you design trees directly within the editor.
+
 
 
 
