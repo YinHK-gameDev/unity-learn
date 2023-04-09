@@ -14,6 +14,14 @@ To add a Terrain GameObject to your Scene, select **GameObject > 3D Object > Ter
 
 ![](./img/Terrain.png)
 
+The **toolbar** provides five options to adjust your Terrain:
+
+-   Create adjacent Terrain tiles.
+-   Sculpt and paint your Terrain.
+-   Add trees.
+-   Add details such as grass, flowers, and rocks.
+-   Change general settings for the selected Terrain.
+
 
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
