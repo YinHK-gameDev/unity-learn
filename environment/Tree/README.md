@@ -38,7 +38,12 @@ View the tree hierarchy in the **Tree Hierarchy window**.
 
 
 
+### Adding mateials
 
+To add material on tree, just create a new Material in your project using **Assets > Create > Material**. Rename it to **"My Tree Bark"**, and choose **Nature > Tree Creator Bark** from the **Shader** drop-down. From here you can assign the Textures
+ provided in the Tree Creator Package to the Base, Normalmap, and Gloss properties of the Bark Material. We recommend using the texture **"BigTree_bark_diffuse"** for the **Base** and **Gloss** properties, and **"BigTree_bark_normal"** or the **Normalmap** property.
+
+Now we’ll follow the same steps for creating a Leaf Material. Create a new Material and assign the shader as Nature > Tree Creator Leaves. Assign the texture slots with the leaf textures from the Tree Creator Package.
 
 
 ### ref 
