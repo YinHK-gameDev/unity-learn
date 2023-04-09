@@ -28,6 +28,15 @@ In the **Tree Hierarchy**, select the **Branch Group**, which acts as the trunk 
 ![](./img/TreeCreator-AddingBranches1.jpg)
 
 
+Select a branch you can either add a new **branch group** or **leaf group** to that branch. 
+
+View the tree hierarchy in the **Tree Hierarchy window**.
+
+
+- Select a leave in the **Tree Hierarchy window**, you can choose to **move or rotate** the leaf
+- Select a branch in the **Tree Hierarchy window**, you can choose to **move or rotate** the branch, or even draw and reshape the branch.
+
+
 
 
 
