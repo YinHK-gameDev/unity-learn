@@ -16,7 +16,7 @@ transition, fast billboarding and natural wind animation,
 To create a new Tree asset, select **GameObject > 3D Object > Tree**. You’ll see a new Tree asset is created in your Project View, and instantiated in the currently open Scene. This new tree is very basic with only a single branch, so let’s add some character to it.
 
 
-
+![](./img/tree_inspector.png)
 
 
 ### ref 
