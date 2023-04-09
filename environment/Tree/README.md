@@ -25,7 +25,7 @@ In the **Tree Hierarchy**, select the **Branch Group**, which acts as the trunk 
 
 
 
-
+![](./img/TreeCreator-AddingBranches1.jpg)
 
 
 
