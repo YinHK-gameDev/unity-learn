@@ -47,6 +47,10 @@ Now we’ll follow the same steps for creating a Leaf Material. Create a new Mat
 
 ![](./img/Tree_material.png)
 
+After create the material, assign them to the different Group Nodes of the Tree. Select your Tree and click any Branch or Leaf node, then expand the **Geometry** section of the **Branch Group Properties**. You will see a Material assignment slot for the type of node you’ve selected. Assign the relevant Material you created and view the results.
+
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/class-Tree.html
