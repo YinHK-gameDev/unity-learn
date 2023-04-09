@@ -39,5 +39,10 @@ To set your own custom shortcuts, use the **Shortcuts Manager**.
 - On Windows and Linux, select **Edit > Shortcuts**.
 - On macOS, select **Unity > Shortcuts**.
 
+
+### Terrain tools
+To access the **Terrain painting tools**, click on a Terrain object in the **Hierarchy** window and open an Inspector window. In the Inspector, click the **Paint Terrain (paintbrush)** icon to reveal the list of Terrain tools.
+
+
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
