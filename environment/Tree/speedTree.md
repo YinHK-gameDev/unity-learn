@@ -17,3 +17,6 @@ https://docs.unity3d.com/Manual/SpeedTree.html
 
 SpeedTree \
 https://store.speedtree.com/
+
+https://store.speedtree.com/unityannouncement/
+
