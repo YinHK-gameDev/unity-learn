@@ -68,6 +68,14 @@ You can add Textures to the surface of a Terrain to create coloration and fine d
  
 You can use multiple Terrain Layers, each with different Textures, to build up interesting, varied Terrain surfaces. 
  
+#### Creating Terrain Layers
+To create a **Terrain Layer** directly in the Terrain Inspector, click the **paintbrush** icon in the toolbar
+ at the top of the Terrain Inspector, and select **Paint Texture** from the drop-down menu. At the bottom of the **Terrain Layers** section, click the **Edit Terrain Layers** button, and choose **Create Layer**.
+
+![](./img/1.4-CreateLayer.png)
+
+
+
 
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
