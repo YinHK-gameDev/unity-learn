@@ -131,7 +131,10 @@ The **Paint Trees** button on the toolbar enables Tree painting:
 
 Initially, the Terrain has no tree prototypes available. To start painting onto the Terrain, you need to add a tree prototype. Click the **Edit Trees** button, and select **Add Tree**. From here, you can select a Tree Asset from your Project, and add it as a **Tree Prefab** for use with the Brush
 
-To help prototyping, SpeedTree provides six SpeedTree models in the free Unity Terrain - HDRP Demo Scene on the Asset Store. Alternatively, you can create your own Trees.
+To help prototyping, SpeedTree provides six SpeedTree models in the **free Unity Terrain - HDRP Demo Scene** on the Asset Store. Alternatively, you can create your own Trees.
+
+If the Tree **Prefab** that you are importing supports **Bend Factor**, the **Add Tree** window displays a **Bend Factor** property for adjusting wind responsiveness. Trees created with the **SpeedTree Modeler** don’t have a **Bend Factor**; only those created with **Tree Editor** do. 
+
 
 
 ### ref
