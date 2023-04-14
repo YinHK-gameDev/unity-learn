@@ -107,6 +107,11 @@ The number of Terrain Layers you assign to a Terrain tile might impact the perfo
 - If your Project uses the **High Definition Render Pipeline (HDRP)**, you can add **up to eight Terrain Layers per Terrain tile**, and the system renders them in a single pass. No additional passes are possible. If you add more than eight Terrain Layers, they appear in the Unity Editor, but are ignored at run time.
 
 
+### Brushes
+
+
+
+
 
 
 ### ref
