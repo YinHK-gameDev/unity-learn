@@ -11,6 +11,7 @@ You can set the Mode to **Directional** or **Spherical**.
 - In **Directional mode**, the wind affects the whole Terrain at once. This is useful for creating effects like the natural movement of the trees.
 - In **Spherical mode**, the wind blows outwards within a sphere defined by the **Radius** property. This is useful for creating special effects like **explosions**.
 
+![](./img/1.7-WindZones_grey.png)
 
 
 ### ref
