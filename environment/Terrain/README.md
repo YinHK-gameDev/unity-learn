@@ -139,6 +139,20 @@ When you have configured your Settings, you can paint Trees onto the Terrain in 
 
 > To remove Trees from an area, hold the **Shift** key while you paint. To remove just the currently selected Tree type, hold down the **Control** key while you paint.
 
+#### Settings
+After you select which Tree to place, adjust its settings to customize Tree placement and characteristics.
+
+| Property | Function |
+| --- | --- |
+| Mass Place Trees | Create an overall covering of Trees without painting over the whole landscape. After mass placement, you can still use painting to add or remove Trees to create denser or sparser areas. |
+| Brush Size | Controls the size of the area that you can add Trees to. |
+| Tree Density | Tree Density controls the average number of Trees painted onto the area defined by Brush Size. |
+| Tree Height | Control the Tree’s minimal height and maximal height using a slider. Drag the slider to the left for short Trees, and right for tall Trees. If you uncheck Random, you can specify the exact scale for the height of all newly painted Trees within the range of 0.01 to 2. |
+| Lock Width to Height | By default, a Tree’s width is locked to its height so that Trees are always scaled uniformly. However, you can disable the Lock Width to Height option, and specify the width separately. |
+| Tree Width | If the Tree’s width is not locked to its height, you can control the Tree’s minimal width and maximal width using a slider. Drag the slider to the left for thin Trees, and right for wide Trees. If you uncheck Random, you can specify the exact scale for the width of all newly painted Trees within the range of 0.01 to 2. |
+| Random Tree Rotation | If you configure the Tree with an LOD Group, use the Random Tree Rotation setting to help create the impression of a random, natural-looking forest rather than an artificial plantation of identical Trees. Uncheck this option if you want to place Trees with fixed, identical rotations. |
+| Color Variation | The amount of random shading applied to Trees. This only works if your shader reads the _TreeInstanceColor property. For example, shaders for all trees you create with Tree Editor read the _TreeInstanceColor property. |
+| Tree Contribute Global Illumination | Enable this check box to indicate to Unity that the Tree influences Global Illumination computations. |
 
 
 
