@@ -67,6 +67,28 @@ Then, select **Add Component > Physics > Capsule Collider** to add the collider.
 ![](./img/TerrainTreesTerrainCollider.png)
 
 
+
+### Make Trees bend in the wind
+
+**Wind Zones** can bend Trees to simulate the **direct effect of wind**.
+
+This feature is only available for Trees that you place through the Terrain menu.
+
+To do this, select the Terrain, click the Paint Trees button in the Inspector, then select Edit Trees > Add Tree and select your Tree Prefab. If you did not create the Tree in Unity, set the Bend Factor to 1. Click on the Terrain to place the selected Tree.
+
+Terrain-based Trees that have a **Bend Factor** react to Wind Zones by bending and swaying, according to the values of the Wind Zone’s **Turbulence** and **Main** properties. The **Turbulence** setting controls the fluttering of leaves. Reducing this value smooths the fluttering effect. The **Main** value controls the main force of the wind. To create a Wind Zone, select **GameObject > 3D Object > Wind Zone**.
+
+If the Wind Zone’s **Mode** is **Directional**, then its position relative to the Tree does not matter. The Trees will sway in the direction of the Wind Zone. However, if your Wind Zone’s **Mode** is **Spherical**, then its **Radius** has to overlap the Tree’s radius. This results in multi-directional gusts of wind, with a falloff from the center towards the edge.
+
+With the default settings, Trees such as the Broadleaf Prefab (which is provided in the Standard Assets Environment pack) sway in a smooth and realistic way. However, if you’re using your own Tree Prefab, you might need to adjust the Wind Zone property values. If your Tree Prefab trunk is bent all the way to one side, try reducing the Main value. Alternatively, if the branches of your Tree Prefab bend or stretch excessively, reduce the Turbulence value.
+
+
+### Tree Level of Detail (LOD) transition zone
+
+For Tree Editor Trees, Unity’s LOD system uses a 2D to 3D transition zone to seamlessly blend 2D billboards with 3D Tree models. This prevents any sudden popping of 2D and 3D Trees, which is vital in VR. Note that billboard
+ Trees don’t receive local lighting such as Point Lights and Spot Lights. They work with directional lights, but lighting on the billboards only updates when you rotate the Camera
+.
+
 ### ref 
 https://docs.unity3d.com/Manual/class-Tree.html
 
