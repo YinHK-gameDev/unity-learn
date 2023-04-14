@@ -86,6 +86,17 @@ Initially, a Terrain has no Terrain Layers assigned to it. By default, it uses a
 
 After you create a Terrain Layer in your Project, click the **Edit Terrain Layers** button and select **Add Layer** to open the **Select TerrainLayer** window. Double-click on a Terrain Layer in this window to add it to your Terrain.
 
+
+### Terrain Layer properties
+> Depending on the Material that is set in the Terrain Settings, as well as the Render Pipeline that is currently in use, you might see different options and properties in the Inspector.
+
+### Texture painting
+Unity **applies the first Terrain Layer you add to the entire landscape**. If you add **multiple Terrain Layers**, use the **Paint Texture tool** to apply **subsequent Textures** to your Terrain.
+
+If you add a new Terrain tile without any Terrain Layers, and paint on it, the system automatically adds the selected Terrain Layer to that new Terrain tile. Because this is the first Terrain Layer, that Texture becomes the base layer, and fills the entire Terrain tile.
+
+In the Terrain Inspector, under Brushes, there is a box that displays the available Brushes, along with the Brush Size and Opacity options underneath.
+
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
 
