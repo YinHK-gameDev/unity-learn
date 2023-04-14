@@ -60,13 +60,13 @@ Terrain component provides six distinct tools:
 >   https://docs.unity3d.com/Packages/com.unity.terrain-tools@5.1/manual/index.html
 
 ### Terrain layers
-A **Terrain Layer** is an **Asset** that defines a Terrain’s surface qualities. A Terrain Layer holds Textures
- and other properties that the Terrain’s Material uses to render the Terrain surfaces. Because Terrain Layers are Assets, you can easily reuse them on multiple Terrain tiles.
+A **Terrain Layer** is an **Asset** that defines a Terrain’s surface qualities. A Terrain Layer **holds Textures
+ and other properties that the Terrain’s Material uses to render the Terrain surfaces**. Because Terrain Layers are Assets, you can easily reuse them on multiple Terrain tiles.
 
 
 You can add Textures to the surface of a Terrain to create coloration and fine detail. Terrain GameObjects are usually large, so it is best to use a base Terrain Layer with Textures that tile over the surface and repeat seamlessly. 
  
- 
+You can use multiple Terrain Layers, each with different Textures, to build up interesting, varied Terrain surfaces. 
  
 
 ### ref
