@@ -74,10 +74,20 @@ To create a **Terrain Layer** directly in the Terrain Inspector, click the **pai
 
 ![](./img/1.4-CreateLayer.png)
 
+When you select **Create Layer**, Unity opens the **Select Texture2D** window. Here, choose the image to use as the Diffuse channel of the Terrain Layer. To assign a Normal Map
+ or Mask Map Texture to your Terrain Layer, select the corresponding Terrain Layer in the Project view, and use its Inspector window.
+
+Alternatively, to create a Terrain Layer Asset that isn’t automatically associated with a Terrain, right-click the Project window, and select Create > Terrain Layer from the context menu. Then, configure the various properties in the Inspector window for your new Terrain Layer.
 
 
+### Adding Terrain Layers
+Initially, a Terrain has no Terrain Layers assigned to it. By default, it uses a checkerboard Texture until you add a Terrain Layer.
+
+After you create a Terrain Layer in your Project, click the **Edit Terrain Layers** button and select **Add Layer** to open the **Select TerrainLayer** window. Double-click on a Terrain Layer in this window to add it to your Terrain.
 
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
 
 https://docs.unity3d.com/Manual/terrain-Tools.html
+
+https://docs.unity3d.com/Manual/class-TerrainLayer.html#Performance
