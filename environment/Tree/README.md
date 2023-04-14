@@ -39,7 +39,11 @@ View the tree hierarchy in the **Tree Hierarchy window**.
 - Select a leave in the **Tree Hierarchy window**, you can choose to **move or rotate** the leaf
 - Select a branch in the **Tree Hierarchy window**, you can choose to **move or rotate** the branch, or even draw and reshape the branch.
 
+Trees you create using Tree Editor must use the **Nature/Soft Occlusion Leaves** and **Nature/Soft Occlusion Bark** shader. To use those shaders, you have to place Trees in a specific folder named _Ambient-Occlusion_, otherwise the Trees don’t render correctly. When you place a model in this folder and re-import it Unity calculates soft ambient occlusion in a way that is specifically designed for Trees.
 
+If you change an imported Tree Asset in a separate 3D modelling application, you need to click the Refresh button in the Editor to see the updated Trees on your Terrain.
+
+> **Note**: When you import and alter a SpeedTree model in a 3D modeling program, then re-export it (as an .fbx or .obj), you might lose the natural wind animation functionality that comes with SpeedTree models.
 
 ### Adding mateials
 
