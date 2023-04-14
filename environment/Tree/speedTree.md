@@ -23,3 +23,8 @@ https://store.speedtree.com/
 https://store.speedtree.com/unityannouncement/
 
 https://store.speedtree.com/buy-try/#tab_games-subscription
+
+
+Tutorial \
+https://www.youtube.com/watch?v=NMaOBpVqJiM
+
