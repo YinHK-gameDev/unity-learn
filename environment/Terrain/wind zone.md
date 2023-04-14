@@ -13,6 +13,9 @@ You can set the Mode to **Directional** or **Spherical**.
 
 ![](./img/1.7-WindZones_grey.png)
 
+The **Main** property determines the overall strength of the wind, and you can use **Turbulence** to give these some random variation.
+
+The wind blows over the trees in pulses to create a more natural effect. You can control the strength of the pulses with **Pulse Magnitude**, and the time interval between them with **Pulse Frequency**.
 
 ### ref
 https://docs.unity3d.com/Manual/class-WindZone.html
