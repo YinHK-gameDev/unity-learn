@@ -1,6 +1,5 @@
 ## Wind Zones
-To create the effect of wind on your Terrain
- and Particle Systems, you can add one or more GameObjects with Wind Zone components. Trees within a wind zone bend in a realistic animated fashion, and the wind itself moves in pulses to create natural patterns of movement among the trees.
+To create the **effect of wind** on your **Terrain** and **Particle Systems**, you can add one or more GameObjects with Wind Zone components. Trees within a wind zone bend in a realistic animated fashion, and the wind itself moves in pulses to create natural patterns of movement among the trees.
 
 ### Using Wind Zones
 To create a Wind Zone GameObject directly, go to Unity’s top menu and then go to **GameObject > 3D Object > Wind Zone**. You can add the Wind Zone component to any suitable GameObject already in the Scene(menu: **Component > Miscellaneous > Wind Zone**). The Inspector for the Wind Zone has a number of settings to control its behavior.
