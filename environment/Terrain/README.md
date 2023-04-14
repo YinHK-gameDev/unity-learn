@@ -126,9 +126,20 @@ Alternatively, right-click in the **Project window**, and choose **Create > Brus
 
 
 
+### Painting Trees
+The **Paint Trees** button on the toolbar enables Tree painting:
+
+Initially, the Terrain has no tree prototypes available. To start painting onto the Terrain, you need to add a tree prototype. Click the **Edit Trees** button, and select **Add Tree**. From here, you can select a Tree Asset from your Project, and add it as a **Tree Prefab** for use with the Brush
+
+To help prototyping, SpeedTree provides six SpeedTree models in the free Unity Terrain - HDRP Demo Scene on the Asset Store. Alternatively, you can create your own Trees.
+
+
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
 
 https://docs.unity3d.com/Manual/terrain-Tools.html
 
 https://docs.unity3d.com/Manual/class-TerrainLayer.html#Performance
+
+https://docs.unity3d.com/Manual/terrain-Trees.html
+
