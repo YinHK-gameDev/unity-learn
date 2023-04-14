@@ -1,11 +1,14 @@
-## Tree Editor
+## Tree
+There are two ways to create new Tree models. Use the **SpeedTree Modeler** from IDV, Inc. to create Trees with advanced visual effects, such as smooth LOD transition, fast billboarding, and natural wind animation. 
 
+Alternatively, use the **Tree Editor** to create Tree Models.
+
+
+
+### Tree Editor
 Unity provides a tool called Tree Editor that lets you design trees directly within the editor.
 
-
-
 ### SpeedTree
-
 You can use **SpeedTree Modeler** from IDV, Inc. to create trees with advanced visual effects such as smooth LOD
 transition, fast billboarding and natural wind animation,
  
@@ -63,4 +66,4 @@ https://docs.unity3d.com/Manual/tree-Branches.html
 **Leaf Group Properties:** \
 https://docs.unity3d.com/Manual/tree-Leaves.html
 
-
+https://docs.unity3d.com/Manual/terrain-Trees.html
