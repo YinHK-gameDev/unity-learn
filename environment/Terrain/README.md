@@ -135,6 +135,11 @@ To help prototyping, SpeedTree provides six SpeedTree models in the **free Unity
 
 If the Tree **Prefab** that you are importing supports **Bend Factor**, the **Add Tree** window displays a **Bend Factor** property for adjusting wind responsiveness. Trees created with the **SpeedTree Modeler** don’t have a **Bend Factor**; only those created with **Tree Editor** do. 
 
+When you have configured your Settings, you can paint Trees onto the Terrain in the same way you paint textures or heightmaps.
+
+> To remove Trees from an area, hold the **Shift** key while you paint. To remove just the currently selected Tree type, hold down the **Control** key while you paint.
+
+
 
 
 ### ref
