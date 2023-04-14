@@ -108,10 +108,19 @@ The number of Terrain Layers you assign to a Terrain tile might impact the perfo
 
 
 ### Brushes
+When you apply a tool such as Paint Texture or Smooth Height to the Terrain, Unity uses a Brush, which is a ScriptableObject in the Terrain system. 
 
+The Brush defines the tool’s shape and strength of influence.
 
+You can use Unity's **build-in brushes** or **custom brushes**. 
 
+You can create your own custom Brushes with unique shapes or specific parameters for your needs. For example, use the heightmap Texture of a specific geological feature to define a Brush, then use the Stamp Terrain tool to place that feature on your Terrain.
 
+To create a new Brush, click the **New Brush button** in the Terrain Inspector window.
+
+After you click **New Brush**, the **Select Texture2D** window appears. Choose a Texture to define the shape of your new Brush, then click **"open"** button  to use the **Brush Inspector** to adjust the **Falloff** and **Radius Scale values**.
+
+![](./img/brush_inspector.png)
 
 
 ### ref
