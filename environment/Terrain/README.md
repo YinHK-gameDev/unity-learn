@@ -48,7 +48,8 @@ Terrain component provides six distinct tools:
 
 -   **Raise or Lower Terrain**: paint the **heightmap** with a paintbrush tool.
 -   **Paint Holes**: hide portions of the Terrain.
--   **Paint Texture**: apply surface textures.
+-   **Paint Texture**: apply surface textures, 山se the Paint Texture tool to add textures, such as grass, snow, or sand, to your Terrain.
+. It allows you to draw areas of tiled texture directly onto the Terrain. 
 -   **Set Height**: adjust the heightmap toward a specific value.
 -   **Smooth Height**: smooth the heightmap to soften Terrain features.
 -   **Stamp Terrain**: stamp a brush shape on top of the current heightmap.
