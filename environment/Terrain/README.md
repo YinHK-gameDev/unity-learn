@@ -122,6 +122,9 @@ After you click **New Brush**, the **Select Texture2D** window appears. Choose a
 
 ![](./img/brush_inspector.png)
 
+Alternatively, right-click in the **Project window**, and choose **Create > Brush** to create a new Brush. The default Brush shows a simple circle defined by a white **Mask Texture**, a **Falloff** curve, and a **Radius Scale** of 1. Use the Brush Inspector to change these values, or set a Texture to define the shape of the Brush. You can also use the **Remap** slider and the **Invert Remap Range** option to further modify the grayscale values of the **Brush** Texture.
+
+
 
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
