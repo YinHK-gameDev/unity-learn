@@ -97,6 +97,18 @@ If you add a new Terrain tile without any Terrain Layers, and paint on it, the s
 
 In the Terrain Inspector, under Brushes, there is a box that displays the available Brushes, along with the Brush Size and Opacity options underneath.
 
+
+### Rendering performance
+The number of Terrain Layers you assign to a Terrain tile might impact the performance of the renderer. The maximum recommended number of Terrain Layers depends on which render pipeline your Project uses.
+ 
+ 
+- If your Project uses the **Universal Render Pipeline (URP)** or **Built-in Render Pipeline**, you can use four Terrain Layers per Texture pass, with no limit on the number of passes. This means that although you are allowed to use as many Terrain Layers as you want, each pass increases the time spent rendering the Terrain. For maximum performance, limit each of your Terrain tiles to four Terrain Layers.
+
+- If your Project uses the **High Definition Render Pipeline (HDRP)**, you can add up to eight Terrain Layers per Terrain tile, and the system renders them in a single pass. No additional passes are possible. If you add more than eight Terrain Layers, they appear in the Unity Editor, but are ignored at run time.
+
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/terrain-UsingTerrains.html
 
