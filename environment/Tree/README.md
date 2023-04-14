@@ -56,7 +56,15 @@ Now we’ll follow the same steps for creating a Leaf Material. Create a new Mat
 
 After create the material, assign them to the different Group Nodes of the Tree. Select your Tree and click any Branch or Leaf node, then expand the **Geometry** section of the **Branch Group Properties**. You will see a Material assignment slot for the type of node you’ve selected. Assign the relevant Material you created and view the results.
 
+### Using Colliders with Trees
 
+You can add a **Capsule Collider** to a **Tree Asset**. First, **click > next** to the Tree Asset to open the Prefab.
+
+Then, select **Add Component > Physics > Capsule Collider** to add the collider. To return to the Scene, **click < next** to the Prefab name.
+
+> You **must** also check **Enable Tree Colliders** in the Terrain Collidercomponent.
+
+![](./img/TerrainTreesTerrainCollider.png)
 
 
 ### ref 
