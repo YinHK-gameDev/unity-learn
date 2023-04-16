@@ -62,6 +62,12 @@ The **Min Width**, **Max Width**, **Min Height**, **Max Height**, **Noise Seed**
 Finally, when you enable the **Billboard** option, the grass images rotate so that they always face the **Camera**. This is useful when you want to show a dense field of grass because clumps are two-dimensional, and not visible from the side. However, with sparse grass, the rotations of individual clumps might become apparent to the viewer, creating a strange effect.
 
 
+
+### Remove 
+To remove a detail, select the detail to remove, click the **Edit Details** button, then select **Remove**. When you remove a detail, Unity clears the data that represents the Terrain area on which you scattered that detail.
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/terrain-Grass.html
 
