@@ -27,8 +27,30 @@ Initially, a Terrain has no grass or details available. In the Inspector, click 
 
 ![](./img/TerrainDetailAddWindow.png)
 
+Use the **Detail Prefab** field to select a Prefab from your Project. To create an authentic look, each mesh is affected by a random factor to determine the size and color. Unity uses the Perlin noise algorithm to generate such random factors.
+
+
+The **Min Width**, **Max Width**, **Min Height**, and **Max Height** values specify the upper and lower scalings along the X and Y axes with which the meshes are randomly generated.
+
+The **Noise Seed** setting sets the random number generator seed. Each seed value represents a unique generation. If you set the same seed for two types of details, the generated instances become identical. The **Noise Spread** value refers to the scaling of the noise pattern over the X-Z plane, with higher values indicating more variations within a given area.
+
+The **Hole Edge Padding (%)** setting controls how far away detail objects are from the edge of the hole area. 
+
+**Healthy Color** and **Dry Color** settings control the color variation. Unity performs linear interpolation between the healthy and dry colors, and selects a color based on the size of the mesh. For example, the system considers bigger-sized meshes to be healthier, thus the linear interpolation results for such meshes lean more towards the **Healthy** Color tint. These color settings disappear when you select **Use GPU Instancing** because they have no effect on instanced meshes.
+
+
+You can set the **Render Mode** to **Vertex Lit** or **Grass**.
+
+| Render Mode | Description |
+| --- | --- |
+| Vertex Lit | Renders detail meshes as solid, vertex lit GameObjects in the scene, which don’t move in the wind. |
+| Grass | Renders detail meshes in the scene with simplified lighting similar to Grass Textures, and do move in the wind. |
+
 ### Add Grass Texture
 ![](./img/TerrainGrassAddWindow.png)
+
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/terrain-Grass.html
