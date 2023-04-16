@@ -26,7 +26,7 @@ Under Texture Resolutions (On Terrain Data), there are two buttons labelled **Im
 - **Export Raw** allows Unity to write a heightmap from the Editor to the **RAW file** format.
 
 
-### Import and export options
+#### Import and export options
 | Property | Description |
 | --- | --- |
 | Depth | Determines how many bits Unity uses per pixel in the imported or exported heightmap.• Bit 16: Uses 16 bits (2 bytes)• Bit 8: Uses 8 bits (1 byte) |
