@@ -53,7 +53,11 @@ You can set the **Render Mode** to **Vertex Lit** or **Grass**.
 ### Add Grass Texture
 ![](./img/TerrainGrassAddWindow.png)
 
+**Detail Texture** is the Texture that represents the grass. You can download Textures from the **Asset Store**, or create your own Textures. A Texture is a small image with alpha set to zero for the empty areas. Note that “Grass” is a generic term; it is possible for a Texture to represent flowers or man-made objects such as barbed wire coils.
 
+The **Min Width**, **Max Width**, **Min Height**, **Max Height**, **Noise Seed**, **Noise Spread**, **Hole Edge Padding (%)**, **Healthy Color**, and **Dry Color** settings work the same as they do for meshes, and are described in the Add Detail Mesh section above.
+
+Finally, when you enable the **Billboard** option, the grass images rotate so that they always face the **Camera**. This is useful when you want to show a dense field of grass because clumps are two-dimensional, and not visible from the side. However, with sparse grass, the rotations of individual clumps might become apparent to the viewer, creating a strange effect.
 
 
 ### ref 
