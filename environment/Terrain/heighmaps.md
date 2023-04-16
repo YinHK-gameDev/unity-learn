@@ -13,12 +13,13 @@ This is useful when you want to use real world height data to replicate a landma
 You can also use 3D modelling applications, such as **Houdini** and **World Machine**, to **generate Terrain**, then import your Terrain into Unity as a **heightmap**.
 
 
+It’s good practice to store heightmaps as **RAW files**. A **RAW file** uses a 16-bit grayscale format that is compatible with most image and landscape editors. The Unity Editor enables you to import and export RAW heightmap files for a Terrain.
+
+To access the import and export settings into the Editor, select the **Terrain component** in the Inspector
+, and click the **Terrain Settings** button (gear icon in the toolbar). Select **"Import Raw"** or **"Export Raw"**.
 
 
-
-
-
-
+![](./img/heightmap.png)
 
 ### ref 
 https://docs.unity3d.com/Manual/terrain-Heightmaps.html
