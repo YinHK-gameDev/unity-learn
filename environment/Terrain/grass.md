@@ -12,8 +12,16 @@ depending on the **level of detail** and performance you require.
 | Grass mesh | Works similar to the vertex list mesh, but Unity treats these meshes as grass so they always have up-facing normals and move in the wind.To add a grass mesh, select Add Detail Mesh and set the Render Mode to Grass. |
 | Grass Texture | Lets you create grass quad meshes directly from Texture, which move in the wind. You don’t need to specify any custom meshes, and there’s also an option you can enable to make grass quads always face the camera for a billboard effect.Select Add Grass Texture for this option. |
 
+
+### Paint details
+To enable grass and detail painting, select the Paint Details button on the Terrain Inspector
+ toolbar.
+ 
 ![](./img/paint_details.png)
 
+Paint Details in the Terrain Inspector
+Initially, a Terrain has no grass or details available. In the Inspector, click the **Edit Details** button to display a menu with the **Add Detail Mesh** and **Add Grass Texture** options. Click either option to bring up a window that lets you choose **Assets** to add to the Terrain for painting.
+ 
 
 ### ref 
 https://docs.unity3d.com/Manual/terrain-Grass.html
