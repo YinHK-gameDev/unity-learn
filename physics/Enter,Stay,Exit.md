@@ -39,5 +39,7 @@ void OnTriggerExit(Collider other){ ... }
 ```
 
 
+### Temporarily ignore collision?
 
+https://gamedev.stackexchange.com/questions/164544/temporarily-ignore-collision
 
