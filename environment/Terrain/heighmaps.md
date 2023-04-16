@@ -18,8 +18,23 @@ It’s good practice to store heightmaps as **RAW files**. A **RAW file** uses a
 To access the import and export settings into the Editor, select the **Terrain component** in the Inspector
 , and click the **Terrain Settings** button (gear icon in the toolbar). Select **"Import Raw"** or **"Export Raw"**.
 
+Under Texture Resolutions (On Terrain Data), there are two buttons labelled **Import Raw and Export Raw**.
 
 ![](./img/heightmap.png)
+
+- **Import Raw** allows Unity to read a heightmap from the **RAW file** format, and generate it in the Editor.
+- **Export Raw** allows Unity to write a heightmap from the Editor to the **RAW file** format.
+
+
+### Import and export options
+| Property | Description |
+| --- | --- |
+| Depth | Determines how many bits Unity uses per pixel in the imported or exported heightmap.• Bit 16: Uses 16 bits (2 bytes)• Bit 8: Uses 8 bits (1 byte) |
+| Resolution | The texture resolution (width and height) of the imported heightmap. |
+| Byte Order | Determines how Unity orders the bytes for each pixel in the imported or exported heightmap. This mainly applies to bit–16 depth heightmaps, and is platform-dependent. |
+| Flip Vertically | Determines whether Unity flips the exported heightmap vertically across the x-axis. |
+| Terrain Size | The size of Terrain that Unity will apply the imported heightmap to. |
+
 
 ### ref 
 https://docs.unity3d.com/Manual/terrain-Heightmaps.html
