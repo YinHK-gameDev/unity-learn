@@ -46,6 +46,10 @@ You can set the **Render Mode** to **Vertex Lit** or **Grass**.
 | Vertex Lit | Renders detail meshes as solid, vertex lit GameObjects in the scene, which don’t move in the wind. |
 | Grass | Renders detail meshes in the scene with simplified lighting similar to Grass Textures, and do move in the wind. |
 
+> **Note**: To apply a texture on a detail using Vertex Lit or Grass render mode, their material should have a texture assigned to the **MainTex** material property (default property name for Base Color Map in built-in/URP). No other material properties are considered for non-instanced details._
+
+
+
 ### Add Grass Texture
 ![](./img/TerrainGrassAddWindow.png)
 
