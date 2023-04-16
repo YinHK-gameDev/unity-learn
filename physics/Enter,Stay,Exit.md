@@ -38,6 +38,7 @@ void OnTriggerStay(Collider other){ ... }
 void OnTriggerExit(Collider other){ ... }
 ```
 
+![](./img/trigger&collider.png)
 
 ### Temporarily ignore collision?
 
