@@ -12,7 +12,7 @@ depending on the **level of detail** and performance you require.
 | Grass mesh | Works similar to the vertex list mesh, but Unity treats these meshes as grass so they always have up-facing normals and move in the wind.To add a grass mesh, select Add Detail Mesh and set the Render Mode to Grass. |
 | Grass Texture | Lets you create grass quad meshes directly from Texture, which move in the wind. You don’t need to specify any custom meshes, and there’s also an option you can enable to make grass quads always face the camera for a billboard effect.Select Add Grass Texture for this option. |
 
-
+![](./img/paint_details.png)
 
 
 ### ref 
