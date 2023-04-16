@@ -23,6 +23,13 @@ Paint Details in the Terrain Inspector
 Initially, a Terrain has no grass or details available. In the Inspector, click the **Edit Details** button to display a menu with the **Add Detail Mesh** and **Add Grass Texture** options. Click either option to bring up a window that lets you choose **Assets** to add to the Terrain for painting.
  
 
+### 
+
+![](./img/TerrainDetailAddWindow.png)
+
+
+![](./img/)
+
 ### ref 
 https://docs.unity3d.com/Manual/terrain-Grass.html
 
