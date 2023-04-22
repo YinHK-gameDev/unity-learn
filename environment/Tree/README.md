@@ -4,7 +4,6 @@ There are two ways to create new Tree models. Use the **SpeedTree Modeler** from
 Alternatively, use the **Tree Editor** to create Tree Models.
 
 
-
 ### Tree Editor
 Unity provides a tool called Tree Editor that lets you design trees directly within the editor.
 
