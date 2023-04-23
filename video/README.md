@@ -7,4 +7,7 @@ Video footage can add realism, save on rendering complexity, or help you integra
 ### ref
 https://docs.unity3d.com/Manual/VideoPlayer.html
 
+https://www.youtube.com/watch?v=3gtGPLELKBs
+
+https://www.youtube.com/watch?v=1903h0KI7tE
 
