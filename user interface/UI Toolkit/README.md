@@ -47,5 +47,15 @@ Use the following asset types to build UI similar to how you develop web applica
 - **UXML documents**: **HTML** and **XML** inspired markup language defines the structure of UI and reusable UI templates. Although you can build interfaces directly in C# files, Unity recommends using UXML documents if possible.
 - **Unity Style Sheets (USS)**: Style sheets apply visual styles and behaviors to UI. They’re similar to **Cascading Style Sheets (CSS) used on the web**, and support a subset of standard CSS properties. Although you can apply styles directly in C# files, Unity recommends using USS files if possible.
 
+
+### UI tools and resources
+
+Use the following tools to create and debug your interfaces, and learn how to use the UI Toolkit:
+
+- **UI Debugger**: A diagnostic tool that resembles a web browser’s debugging view. Use it to explore a hierarchy of elements and get information about its underlying UXML structure and USS styles. You can find it in the Editor under **Window > UI Toolkit > Debugger**.
+- **UI Builder**: A UI tool lets you visually create and edit UI Toolkit assets such as UXML and USS files.
+- **UI Samples**: A library of code samples for UI controls that you can view in the Editor under** Window > UI Toolkit > Samples**.
+
+
 ### ref
 https://docs.unity3d.com/Manual/UIElements.html
