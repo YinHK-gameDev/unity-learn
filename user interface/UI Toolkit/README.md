@@ -25,7 +25,19 @@ UI Toolkit includes:
 - UI Asset types inspired by standard web formats such as HTML, XML, and CSS. Use them to structure and style UI.
 - Tools and resources for learning to use UI Toolkit, and for creating and debugging your interfaces.
 
+### UI system
+The core of UI Toolkit is a retained-mode UI system based on recognized web technologies. It supports stylesheets, and dynamic and contextual event handling.
 
+The UI system includes the following features:
+
+- **Visual tree**: An object graph, made of lightweight nodes, that holds all the elements in a window or panel. It defines every UI you build with the UI Toolkit.
+- **Controls**: A library of standard UI controls such as buttons, popups, list views, and color pickers. You can use them as is, customize them, or create your own controls.
+- **Data binding system**: A system links properties to the controls that modify their values.
+- **Layout Engine**: A layout system based on the CSS Flexbox model. It positions elements based on layout and styling properties.
+- **Event System**: A system communicates user interactions to elements, such as input, touch and pointer interactions, drag-and-drop operations, and other event types. The system includes a dispatcher, a handler, a synthesizer, and a library of event types.
+- **UI Renderer**: A rendering system built directly on top of Unity’s graphics device layer.
+- **Editor UI support**: A set of components to create Editor UI.
+- **Runtime UI Support**: A set of components to create runtime UI.
 
 ### ref
 https://docs.unity3d.com/Manual/UIElements.html
