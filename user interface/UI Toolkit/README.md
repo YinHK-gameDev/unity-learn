@@ -39,5 +39,13 @@ The UI system includes the following features:
 - **Editor UI support**: A set of components to create Editor UI.
 - **Runtime UI Support**: A set of components to create runtime UI.
 
+
+
+### UI assets
+Use the following asset types to build UI similar to how you develop web applications:
+
+- **UXML documents**: **HTML** and **XML** inspired markup language defines the structure of UI and reusable UI templates. Although you can build interfaces directly in C# files, Unity recommends using UXML documents if possible.
+- **Unity Style Sheets (USS)**: Style sheets apply visual styles and behaviors to UI. They’re similar to **Cascading Style Sheets (CSS) used on the web**, and support a subset of standard CSS properties. Although you can apply styles directly in C# files, Unity recommends using USS files if possible.
+
 ### ref
 https://docs.unity3d.com/Manual/UIElements.html
