@@ -68,6 +68,31 @@ Click the **⋮** icon in the top right corner of the Hierarchy pane header to a
 - Select Attached StyleSheets to display any locally attached StyleSheets next to their element.  
   
 
+
+### Library
+The Library pane **3** is similar to the Project window in the Unity Editor. It lists available **UI elements**.
+
+### Viewport
+The Viewport pane **4** displays the output of a **UI Document (UXML)** on a floating resizable edit-time Canvas. 
+
+The toolbar contains menus of UI Builder-specific commands, Viewport settings, **Theme** selector, and the **Preview** button. You can find additional UI Builder settings in the top-right corner of the **Viewport** under the **⋮** menu, including a shortcut to the UI Builder’s Settings in Unity’s **Project Settings**.
+
+#### Navigate in the Viewport
+
+**Pan** and **zoom** to navigate in the Viewport. The UI Builder saves each UI Document (UXML)’s current pan and zoom state, and restores them after the UI Builder window reloads, a domain reloads, or when you close and re-open the same UI Document (UXML).
+
+When you create and open a new document, the UI Builder resets the pan and zoom states.
+
+To pan, do one of the following:
+
+Middle-click and drag in the Viewport.
+Hold down Ctrl/Cmd + Alt/Option and click and drag in the Viewport.
+To zoom in and out, position the mouse pointer in the Viewport and do one of the following:
+
+Position the mouse pointer in the Viewport, and rotate the mouse wheel.
+Hold down Alt/Option and right-mouse drag. Drag right to zoom in, and left to zoom out.
+
+
 ### ref 
 
 https://docs.unity3d.com/Manual/UIBuilder.html
@@ -75,4 +100,6 @@ https://docs.unity3d.com/Manual/UIBuilder.html
 https://docs.unity3d.com/Manual/UIB-interface-overview.html
 
 https://www.youtube.com/watch?v=NQYHIH0BJbs&t=36s
+
+https://www.youtube.com/watch?v=-PNFnJnGlAA
 
