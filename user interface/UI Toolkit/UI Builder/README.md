@@ -12,7 +12,7 @@ To open the **UI Builder** window:
 Select **Window > UI Toolkit > UI Builder**. This opens a **UXML** document that has been previously loaded with **UIBuilder**. From the Project window, double-click a **UXML** file.
 
 
-
+![](./img/UIBuilderAnnotatedMainWindow.png)
 
 
 ### ref 
