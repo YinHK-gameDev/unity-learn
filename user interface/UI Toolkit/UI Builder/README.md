@@ -83,14 +83,16 @@ The toolbar contains menus of UI Builder-specific commands, Viewport settings, *
 
 When you create and open a new document, the UI Builder resets the pan and zoom states.
 
-To pan, do one of the following:
+To **pan**, do one of the following:
 
-Middle-click and drag in the Viewport.
-Hold down Ctrl/Cmd + Alt/Option and click and drag in the Viewport.
-To zoom in and out, position the mouse pointer in the Viewport and do one of the following:
+- Middle-click and drag in the Viewport.
+- Hold down **Ctrl/Cmd** + **Alt**/Option and click and drag in the Viewport.
 
-Position the mouse pointer in the Viewport, and rotate the mouse wheel.
-Hold down Alt/Option and right-mouse drag. Drag right to zoom in, and left to zoom out.
+
+To **zoom** in and out, position the mouse pointer in the Viewport and do one of the following:
+
+- Position the mouse pointer in the Viewport, and rotate the mouse wheel.
+- Hold down **Alt/Option** and right-mouse drag. Drag right to zoom in, and left to zoom out.
 
 
 ### ref 
