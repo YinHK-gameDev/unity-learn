@@ -16,6 +16,29 @@ Select **Window > UI Toolkit > UI Builder**. This opens a **UXML** document that
 
 https://docs.unity3d.com/Manual/UIB-interface-overview.html
 
+### Open and save UI Documents (UXML)
+
+To open a UI Document in UI Builder:
+
+- Use the File menu inside the UI Builder Viewport pane toolbar and select Open….
+- In the Project tab of the Library pane, right-click on the document and select Open in UI Builder.
+
+To open a UI Document (UXML) in your default text editor or IDE:
+
+- Use the inlineStyle file icon.
+  1. Go to the Project window > Assets.
+  2. Click the arrow in the middle of the UXML file icon.
+  3. Double-click the inlineStyle file icon.
+- Use the Open with IDE button.
+  1. In UI Builder, go to Library > Project tab.
+  2. Open the Assets folder.
+  3. Right-click on the UI Document (UXML) and select Open with IDE.
+- Use the UXML Preview pane.
+  1. In UI Builder, make sure your UI Document (UXML) is currently loaded.
+  2. Go to the UXML Preview pane.
+  3. Select the top-right icon.
+
+
 
 ### ref 
 
