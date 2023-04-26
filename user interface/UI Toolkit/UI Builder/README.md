@@ -33,12 +33,40 @@ To open a UI Document (UXML) in your default text editor or IDE:
   1. In UI Builder, go to Library > Project tab.
   2. Open the Assets folder.
   3. Right-click on the UI Document (UXML) and select Open with IDE.
-- Use the UXML Preview pane.
+- Use the **UXML** Preview pane.
   1. In UI Builder, make sure your UI Document (UXML) is currently loaded.
   2. Go to the UXML Preview pane.
   3. Select the top-right icon.
 
 
+
+### StyleSheets
+**StyleSheets** and the **USS Selectors** in UI Toolkit are used to share and apply styles across many elements and **UI Documents (UXML)**.
+
+The StyleSheets pane **1** is where you can:
+
+- Add, reorder, or remove StyleSheets (USS) in the current UI Document (UXML).
+- Create, reorder, copy, or remove USS Selectors within StyleSheets to share styles across different elements.
+
+
+### Hierarchy
+
+The Hierarchy pane **2** contains the tree view representing the element hierarchy of the current document. It’s a superset of the hierarchy you see in the UXML text representation of the UI Document (UXML). Besides the elements created directly from UXML, the Hierarchy pane also contains elements created dynamically that only exist in the runtime of the UI. For example, the Hierarchy pane includes elements that are part of a Template instance (a different document instanced inside the current document), whereas the UXML would just have a single **`<Instance>`** tag.
+
+  
+You can use the Hierarchy pane to:
+
+- Select elements for inspecting or editing.
+- Cut, copy, delete, or reorder elements.
+- Open instanced template documents as sub-documents for in-place (in context) editing.
+- Check at once many elements’ style class lists, name attributes, and locally attached StyleSheets. 
+  
+Click the **⋮** icon in the top right corner of the Hierarchy pane header to access a menu of display options.
+
+- Select Type to force the Hierarchy to display each element’s C# type, regardless of whether it has a name.
+- Select Class List to display each element’s style class list next to its Hierarchy entry.
+- Select Attached StyleSheets to display any locally attached StyleSheets next to their element.  
+  
 
 ### ref 
 
