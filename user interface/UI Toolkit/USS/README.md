@@ -37,6 +37,12 @@ When you define a style sheet, you can apply it to a **visual tree**
 | Name selector | **`#name {..}`** | Elements with an assigned name attribute. |
 | Universal selector | **`* {...}`** | Any elements. |
 
+| Selector type | Syntax | Matches |
+| --- | --- | --- |
+| Descendant selector | **`selector1 selector2 {...}`** | Elements that are the descendant of another element in the visual tree. |
+| Child selector | **`selector1 > selector2 {...}`** | Elements that are the children of another element in the visual tree. |
+| Multiple selector | **`selector1selector2 {...}`** | Elements that match all the simple selectors. |
+
 | Topic | Description |
 | --- | --- |
 | Type selectors | Match elements based on their element types. |
