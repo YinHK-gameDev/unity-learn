@@ -1,10 +1,21 @@
-## USS 
+## USS selectors
+
+A **Unity Style Sheet (USS)** is a text file recognized as an asset that supports style rules. The USS text file must have the **`.uss`** extension.
 
 Selectors decide which elements that USS rules affect.
 
 USS supports a set of simple selectors that are analogous, but not identical, to simple selectors in CSS. A simple selector matches elements by element type, USS class, element name, and wildcard.
 
 You can combine simple selectors into complex selectors, or append pseudo-classes to them to target elements in specific states. USS supports descendant, child, and multiple complex selectors.
+
+### Syntax
+```
+selector {
+  property1: value;
+  property2: value;
+}
+```
+
 
 | Topic | Description |
 | --- | --- |
