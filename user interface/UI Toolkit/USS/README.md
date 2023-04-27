@@ -42,6 +42,10 @@ When you define a style sheet, you can apply it to a **visual tree**
 | Pseudo-classes | Use pseudo-classes with selectors to target elements that are in a specific state. |
 | Selector precedence | Understand USS precedence when multiple USS rules target the same elements. |
 
+
+> If an element matches more than one selector, USS applies the styles from whichever selector **takes precedence**. Note: All selectors are **case-sensitive**.
+
+
 ### ref 
 
 https://docs.unity3d.com/Manual/UIE-USS-Selectors.html
