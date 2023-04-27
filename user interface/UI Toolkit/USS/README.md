@@ -19,6 +19,15 @@ selector {
 When you define a style sheet, you can apply it to a **visual tree**
 . Selectors match against elements to resolve which properties apply from the USS file. If a selector matches an element, the style declarations apply to the element.
 
+**USS** supports several types of simple and complex selectors that match elements based on different criteria, such as the following:
+
+- Element **C#** type name
+- An assigned **name** property
+- A list of **USS** classes
+- The element’s position in the **visual tree** and its relationship to other elements
+
+
+**USS** also supports pseudo classes that you can use with selectors to target elements that are in a specific state or select the **`:root`** element.
 
 | Topic | Description |
 | --- | --- |
