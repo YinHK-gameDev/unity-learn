@@ -15,6 +15,9 @@ selector {
   property2: value;
 }
 ```
+#### Style matching with rules
+When you define a style sheet, you can apply it to a **visual tree**
+. Selectors match against elements to resolve which properties apply from the USS file. If a selector matches an element, the style declarations apply to the element.
 
 
 | Topic | Description |
