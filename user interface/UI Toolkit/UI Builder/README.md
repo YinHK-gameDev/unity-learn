@@ -95,6 +95,16 @@ To **zoom** in and out, position the mouse pointer in the Viewport and do one of
 - Hold down **Alt/Option** and right-mouse drag. Drag right to zoom in, and left to zoom out.
 
 
+### To create UI in the UI Builder
+1. Create a new UI Document (UXML).
+2. Add elements to create your UI hierarchy.
+3. Set up attributes and style properties in the Inspector.
+4. When more than one element starts to need the same style properties, create **USS style sheets and selectors**.
+5. Test your UI and if you are satisfied with the results, extract inline style properties to USS classes.
+6. Save the **UI Document (UXML)**.
+ 
+
+
 ### ref 
 
 https://docs.unity3d.com/Manual/UIBuilder.html
