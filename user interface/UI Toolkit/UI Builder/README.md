@@ -95,6 +95,13 @@ To **zoom** in and out, position the mouse pointer in the Viewport and do one of
 - Hold down **Alt/Option** and right-mouse drag. Drag right to zoom in, and left to zoom out.
 
 
+### Inspector
+![](./img/inspector.png)
+
+### Code Previews
+As you build your UI, UI Builder automatically generates the underlying **UXML** and **USS** text, and displays them in the **UXML** Preview and **USS** Preview panes **5**.
+
+
 ### To create UI in the UI Builder
 1. Create a new UI Document (UXML).
 2. Add elements to create your UI hierarchy.
