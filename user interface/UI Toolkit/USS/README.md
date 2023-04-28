@@ -59,6 +59,13 @@ When you define a style sheet, you can apply it to a **visual tree**
 
 > If an element matches more than one selector, USS applies the styles from whichever selector **takes precedence**. Note: All selectors are **case-sensitive**.
 
+### Connect styles to elements
+You can connect styles to elements by the following methods:
+
+- In **UI Builder**, style an element with **inline styles** or **USS selectors**. 
+- In **UXML**, style an element with inline styles or attach a style sheet with selectors matching this element. 
+- In a **C#** script, set styles directly to the **style** properties or add a **USS** style sheet to the styleSheet property with selectors matching an element. 
+
 
 ### ref 
 
