@@ -111,6 +111,17 @@ As you build your UI, UI Builder automatically generates the underlying **UXML**
 6. Save the **UI Document (UXML)**.
  
 
+### Extract inline styles
+In UI Builder, you can create elements and use inline styles only to experiment while the number of elements is still small. As you build a more complex UI, it’s easier to manage styles using style sheets. You can extract inline styles to a style sheet in UI Builder.
+
+
+1. Select the root visual element.
+2. In the Inspector window, in the **Style Class** List field, enter **`.background`** as the class name.
+3. Select **Extract Inlined Styles to New Class**. This creates a **`.background`** class selector with the inline styles you set for the root element and updates the UI Document (**UXML**) for the root visual element to use the class selector instead of the inline styles.
+4. In the Viewport window, select **File > Save**.
+
+
+
 
 ### ref 
 
