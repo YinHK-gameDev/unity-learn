@@ -120,6 +120,15 @@ In UI Builder, you can create elements and use inline styles only to experiment 
 3. Select **Extract Inlined Styles to New Class**. This creates a **`.background`** class selector with the inline styles you set for the root element and updates the UI Document (**UXML**) for the root visual element to use the class selector instead of the inline styles.
 4. In the Viewport window, select **File > Save**.
 
+### Add elements
+
+You need to add elements to the hierarchy to create UI. To add an element to the hierarchy in UI Builder, drag it from the Library tab into the Hierarchy window. You can also double-click on an element in the Library to append it to the Hierarchy. By default, elements aren’t named, so they appear in the Hierarchy as their type name.
+
+To name an element, double-click on the item in the Hierarchy, or update the Name attribute in the element’s Inspector window.
+ 
+ Unique naming in UI Toolkit isn’t enforced, so they’re only for identification within the UI. UI Builder doesn’t use element names for any internal identification or functionality.
+
+To build a hierarchy, you can drag one or more elements in the Hierarchy to reorder them or move them between parents.
 
 
 
