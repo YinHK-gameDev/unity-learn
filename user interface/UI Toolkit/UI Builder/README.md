@@ -134,6 +134,12 @@ To build a hierarchy, you can drag one or more elements in the Hierarchy to reor
 When you drag an element from the Library tab to the Hierarchy tab, you might notice additional child elements appearing in a dimmed state. These are read-only elements. This happens with some **built-in UI controls**, and some **custom elements that create their internal hierarchy upon creation**.
 
 
+### Use UXML instances as templates
+You can instantiate existing **UXML Documents** as Templates inside your **UXML** Documents as **Template Instances**, similar to how **Prefabs** work in Unity.
+
+https://docs.unity3d.com/Manual/UIB-structuring-ui-templates.html
+
+
 ### ref 
 
 https://docs.unity3d.com/Manual/UIBuilder.html
