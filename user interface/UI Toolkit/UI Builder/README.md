@@ -130,6 +130,8 @@ To name an element, double-click on the item in the Hierarchy, or update the Nam
 
 To build a hierarchy, you can drag one or more elements in the Hierarchy to reorder them or move them between parents.
 
+### Read-only elements
+When you drag an element from the Library tab to the Hierarchy tab, you might notice additional child elements appearing in a dimmed state. These are read-only elements. This happens with some **built-in UI controls**, and some **custom elements that create their internal hierarchy upon creation**.
 
 
 ### ref 
