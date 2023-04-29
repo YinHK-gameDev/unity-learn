@@ -137,6 +137,24 @@ When you drag an element from the Library tab to the Hierarchy tab, you might no
 ### Use UXML instances as templates
 You can instantiate existing **UXML Documents** as Templates inside your **UXML** Documents as **Template Instances**, similar to how **Prefabs** work in Unity.
 
+
+To use an existing **UXML** Document in your project as a **template**, do the following:
+
+1. Under the Library’s Project tab, find the **UXML Asset (`.uxml`)** you wish to instantiate.
+2. **Drag it into the Hierarchy** like an element in the Library.
+
+
+A Template Instance appears in the Hierarchy like a normal element of type **`TemplateContainer`**. The name of the **`.uxml`** file displays as **greyed font** to the right of its name. If you expand the Template Instance, you can see the internal hierarchy of the instance.
+
+#### Make a Sub-Document as a template
+You can make a Sub-Document within a UXML Document as a Template Instance, so you can reuse it.
+
+1. Right-click on the Sub-Document.
+2. Select Create Template.
+3. Select a location to save the file.
+
+This also instantiates the Sub-Document as Template Instances in the existing document.
+
 https://docs.unity3d.com/Manual/UIB-structuring-ui-templates.html
 
 
