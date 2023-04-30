@@ -54,8 +54,16 @@ VisualTreeAsset uxml = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/
 StyleSheet uss = AssetDatabase.LoadAssetAtPath<StyleSheet>("Packages/<name-of-the-package>/main_styles.uss");
 ```
 
+### Use a Resources folder
+If you add a **`Resources`** folder in your project and place your UI assets in it, you can use the **`Resources.Load`** method to load your assets.
 
+The following examples shows how to load an asset in the **`Resources`** folder:
+```cs
+VisualTreeAsset uxml = Resources.Load<VisualTreeAsset>("main_window");
+StyleSheet uss = Resources.Load<StyleSheet>("main_styles");
+```
 
+> **Note**: This method increases the final build size significantly. If you are concerned with the build size, use **`Addressables`** instead.
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-manage-asset-reference.html
