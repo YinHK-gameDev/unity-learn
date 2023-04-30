@@ -5,7 +5,7 @@ The **UXML** format is inspired by **HTML, XAML, and XML**.
 . UXML along with USS makes it easier for less technical users to define the layout and the style of the UI. 
 This leaves developers with technical tasks, such as importing assets, defining logic, and processing data.
 
-```uxml
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <UXML
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
