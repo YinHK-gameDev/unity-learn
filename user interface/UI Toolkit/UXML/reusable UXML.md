@@ -17,6 +17,22 @@ For example, if you have a portrait UI element that has an **image, a name, and 
 </ui:UXML>
 
 ```
+You can then reuse the Portrait template like this:
+
+```xml
+<ui:UXML ...>
+    <ui:Template src="/Assets/Portrait.uxml" name="Portrait"/>
+    <ui:VisualElement name="players">
+        <ui:Instance template="Portrait" name="player1"/>
+        <ui:Instance template="Portrait" name="player2"/>
+    </ui:VisualElement>
+</ui:UXML>
+```
+
+### Override UXML attributes
+
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-reuse-uxml-files.html
