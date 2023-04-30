@@ -12,4 +12,4 @@ You can’t create USS variables with UI Builder. You **must use a text editor**
 ### ref 
 https://docs.unity3d.com/Manual/UIB-styling-ui-using-uss-variables.html
 
-
+https://docs.unity3d.com/Manual/UIE-USS-variables.html
