@@ -22,6 +22,23 @@ public class MyBehaviour : MonoBehaviour
 ```
 
 
+The following example `EditorWindow` class receives default references from the Inspector:
+
+```csharp
+using UnityEditor;
+using UnityEngine.UIElements;
+
+public class MyWindow : EditorWindow
+{
+  [SerializeField]
+  private VisualTreeAsset uxml;
+  [SerializeField]
+  private StyleSheet uss;
+}
+```
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-manage-asset-reference.html
 
