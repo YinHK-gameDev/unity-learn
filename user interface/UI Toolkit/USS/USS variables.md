@@ -4,7 +4,12 @@
 
 You can’t create USS variables with UI Builder. You **must use a text editor** to create a new USS variable in the USS file.
 
+To assign a variable:
 
+1. In the StyleSheet window, select the selector.
+2. In the Inspector window, right-click a style field.
+3. Select **Set Variable**. This converts the style field into a text field.
+4. Enter the name of the **USS** variable. As you type the name of the variable, a dropdown list displays the available variables.
 
 
 
