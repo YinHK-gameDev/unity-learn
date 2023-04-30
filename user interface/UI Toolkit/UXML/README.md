@@ -34,7 +34,7 @@ In **UI Toolkit**, each element is defined in either the **`UnityEngine.UIElemen
 
 To make specifying namespaces easier, you can define a namespace prefix. For example, **`xmlns:engine="UnityEngine.UIElements"`** defines the `engine` prefix as **`UnityEngine.UIElements`**. Once you define a namespace prefix, you can use it to specify namespaces. For example, **`<engine:Button />`** is equivalent to **`<UnityEngine.UIElements:Button />`**
 
-You can also define a default namespace by excluding a prefix. For example, **`xmlns="UnityEngine.UIElements"`** defines **`UnityEngine.UIElements`** as the default namespace. This means that specifying, for example, **`<Button /`**
+You can also define a default namespace by excluding a prefix. For example, **`xmlns="UnityEngine.UIElements"`** defines **`UnityEngine.UIElements`** as the default namespace. This means that specifying, for example, **`<Button />`** is equivalent to `<UnityEngine.UIElements:Button />`
 
 
 > **Note**: If you define your own elements, don’t define the custom control class in the **`UnityEngine.UIElements`** or **`UnityEditor.UIElements`** namespace. Otherwise, UI Builder will hide your custom controls.
