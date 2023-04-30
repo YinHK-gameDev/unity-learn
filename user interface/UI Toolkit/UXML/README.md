@@ -37,5 +37,7 @@ To make specifying namespaces easier, you can define a namespace prefix. For exa
 You can also define a default namespace by excluding a prefix. For example, **`xmlns="UnityEngine.UIElements"`** defines **`UnityEngine.UIElements`** as the default namespace. This means that specifying, for example, **`<Button /`**
 
 
+> **Note**: If you define your own elements, don’t define the custom control class in the **`UnityEngine.UIElements`** or **`UnityEditor.UIElements`** namespace. Otherwise, UI Builder will hide your custom controls.
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-WritingUXMLTemplate.html
