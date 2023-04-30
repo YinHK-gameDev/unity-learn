@@ -133,8 +133,15 @@ The following example finds the child cancel button of the “container2”:
 VisualElement result = root.Query<VisualElement>("container2").Children<Button>("Cancel").First();
 ```
 
+#### Use **`ForEach`**
 
+You can use the **ForEach** method to operate directly on the **query results**.
 
+The following example adds a tool tip for any elements that have no tool tips:
+
+```csharp
+root.Query().Where(elem => elem.tooltip == "").ForEach(elem => elem.tooltip="This is a tooltip!");
+```
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-UQuery.html
