@@ -77,6 +77,22 @@ The following example finds the last element named “Ok”:
 VisualElement result4 = root.Query("OK").Last();
 ```
 
+####  Query by USS class
+
+To find elements by a **USS class**, use `Query(className: "class-name")` or `Q(className: "class-name")`.
+
+The following example finds all the elements that have the class “yellow” and assigns them to a list:
+
+```csharp
+List<VisualElement> result = root.Query(className: "yellow").ToList();
+```
+
+The following example finds the first element that has the class “yellow”:
+
+```csharp
+VisualElement result = root.Q(className: "yellow");
+```
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-UQuery.html
 
