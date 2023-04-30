@@ -101,6 +101,16 @@ For example, if you have a **USS** file named styles.uss in the same folder of t
 
 ```
 
+You can reference it like this:
+
+```xml
+<ui:UXML ...>
+    <Style src="styles.uss" />
+    <ui:VisualElement name="root" />
+</ui:UXML>
+```
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-WritingUXMLTemplate.html
