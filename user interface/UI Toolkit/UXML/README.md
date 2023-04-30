@@ -90,7 +90,7 @@ For example, if you have a **USS** file named styles.uss in the same folder of t
 
 To reference a stylesheet file, add the **`<Style>`** element under the root element of a **UXML** file.
 
-For example, if you have a **USS** file named styles.uss in the same folder of the **UXML** file with the following content:
+For example, if you have a **USS** file named **`styles.uss`** in the **same folder** of the **UXML** file with the following content:
 
 ```css
 #root {
