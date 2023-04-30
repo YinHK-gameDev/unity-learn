@@ -40,7 +40,7 @@ To match USS style class to elements, do any of the following:
 - Drag a style class label onto the element in either the Hierarchy or the Canvas.
 - Enter the name of the selector into the **StyleSheet > Style Class List** field in the element’s Inspector window and then select **Add Style Class to List**:
 
-
+  ![](./img/AddingStyleClassToList.png)
 
 #### Style matching with rules
 When you define a style sheet, you can apply it to a **visual tree**
