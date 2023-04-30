@@ -109,7 +109,14 @@ The following example finds the third button:
 ```csharp
 VisualElement result = root.Query<Button>().AtIndex(2);
 ```
+#### Query with a predicate
+Other than to query element by **name, class, and type**, you can also use the **`Where`** method to select all elements that satisfy a **predicate**. The **predicate** must be a **function callback** that takes a single **`VisualElement`** argument.
 
+The following example finds the all the elements with the “yellow” USS class that have no tool tips:
+
+```csharp
+List<VisualElement> result = root.Query(className: "yellow").Where(elem => elem.tooltip == "").ToList();
+```
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-UQuery.html
