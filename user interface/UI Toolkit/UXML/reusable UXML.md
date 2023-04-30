@@ -71,7 +71,7 @@ Then, instance it from another UXML file and override its attributes to display 
 
 #### Override multiple attributes
 
-You can specify more than one attribute per override. For example, the following syntax finds any element in the instance named `player-name-label`, and
+You can **specify more than one attribute per override**. For example, the following syntax finds any element in the instance named `player-name-label`, and
 
 -   Overrides the default value of its `text` attribute with the new value, `Alice`.
 -   Overrides the default value of its `tooltip` attribute with the new value, `Tooltip 1`.
