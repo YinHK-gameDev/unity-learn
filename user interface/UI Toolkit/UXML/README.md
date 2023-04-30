@@ -23,9 +23,18 @@ This leaves developers with technical tasks, such as importing assets, defining 
         <Button name="ok" text="OK" />
     </Box>
 </UXML>
-
 ```
 
+
+### Namespace
+In **UI Toolkit**, each element is defined in either the **`UnityEngine.UIElements`** or the **`UnityEditor.UIElements`** namespace:
+
+-   The **`UnityEngine.UIElements`** namespace contains elements that are defined as part of the Unity runtime.
+-   The **`UnityEditor.UIElements`** namespace contains elements that are available in the Unity Editor. To fully specify an element, you must prefix it with its namespace.
+
+To make specifying namespaces easier, you can define a namespace prefix. For example, **`xmlns:engine="UnityEngine.UIElements"`** defines the `engine` prefix as **`UnityEngine.UIElements`**. Once you define a namespace prefix, you can use it to specify namespaces. For example, **`<engine:Button />`** is equivalent to **`<UnityEngine.UIElements:Button />`**
+
+You can also define a default namespace by excluding a prefix. For example, `xmlns="UnityEngine.UIElements"` defines `UnityEngine.UIElements` as the default namespace. This means that specifying, for example, `<Button /`
 
 
 ### ref 
