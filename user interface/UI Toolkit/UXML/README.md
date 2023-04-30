@@ -66,6 +66,21 @@ The element name corresponds to the C# class name of the element to instantiate.
 -   `tooltip`: A string that displays as a tooltip when the mouse hovers over the element.
 -   `view-data-key` : A string that defines the key used for serialization of the element.
 
+### Add styles to UXML
+In **UI Toolkit**, you can use USS to customize the appearance of visual elements
+. The suggested workflow for USS is that you visually style an element in UI Builder, extract the style to a USS file, and then reference it in **UXML**.
+
+If you style an element in UI Builder, the style is added as an inline style to the style attribute of UXML elements:
+
+```xml
+<ui:UXML ...>
+    <ui:VisualElement style="width: 200px; height: 200px; background-color: red;" />
+</ui:UXML>
+```
+
+
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-WritingUXMLTemplate.html
