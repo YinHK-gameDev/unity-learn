@@ -118,6 +118,24 @@ The following example finds the all the elements with the “yellow” USS class
 List<VisualElement> result = root.Query(className: "yellow").Where(elem => elem.tooltip == "").ToList();
 ```
 
+#### Complex hierarchical queries
+You can **combine name, class, and type to make complex hierarchical queries**.
+
+The following example finds the first button named “OK” that has a class of “yellow”:
+
+```csharp
+VisualElement result = root.Query<Button>(className: "yellow", name: "OK").First();
+```
+
+The following example finds the child cancel button of the “container2”:
+
+```csharp
+VisualElement result = root.Query<VisualElement>("container2").Children<Button>("Cancel").First();
+```
+
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-UQuery.html
 
