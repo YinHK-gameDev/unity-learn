@@ -37,6 +37,24 @@ public class MyWindow : EditorWindow
 }
 ```
 
+### Use the Asset Database (Editor only)
+You can load your **UI Assets** by **path** or **GUID** with the **`AssetDatabase`** class.
+
+The following example shows how to locate an asset by path:
+
+```csharp
+VisualTreeAsset uxml = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Editor/main_window.uxml");
+StyleSheet uss = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Editor/main_styles.uss");
+```
+
+The following example shows how to locate an asset by path from a package:
+
+```csharp
+VisualTreeAsset uxml = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/<name-of-the-package>/main_window.uxml");
+StyleSheet uss = AssetDatabase.LoadAssetAtPath<StyleSheet>("Packages/<name-of-t
+```
+
+
 
 
 ### ref 
