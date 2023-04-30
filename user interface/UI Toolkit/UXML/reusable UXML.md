@@ -80,6 +80,14 @@ You can **specify more than one attribute per override**. For example, the follo
 <AttributeOverrides element-name="player-name-label" text="Alice" tooltip="Toolt
 ```
 
+
+### Nest attribute overrides
+
+Attribute overrides propagate through nested templates in the element hierarchy. For example, if template A instances template B, and template B instances template C, both template A and template B can override attributes in template C.
+
+When you override attributes in nested templates, the deepest override takes precedence. In the example above, if template A and template B both override the same attribute of template C, the override in template B determines what actually appears in the rendered UI.
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-reuse-uxml-files.html
 
