@@ -88,6 +88,16 @@ Attribute overrides propagate through nested templates in the element hierarchy.
 When you override attributes in nested templates, the deepest override takes precedence. In the example above, if template A and template B both override the same attribute of template C, the override in template B determines what actually appears in the rendered UI.
 
 
+
+
+#### Limitations
+Attribute overrides have the following limitations:
+
+- Attribute overrides find matching attributes according to the element name you specify. You can’t use **USS Selectors** or **UQuery** to match elements.
+- Although you can override an element’s **`binding-path`** attribute, data binding doesn’t work with attribute overrides.
+You can’t override an element’s **name** or **style** attributes.
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-reuse-uxml-files.html
 
