@@ -39,5 +39,19 @@ You can also define a default namespace by excluding a prefix. For example, **`x
 
 > **Note**: If you define your own elements, don’t define the custom control class in the **`UnityEngine.UIElements`** or **`UnityEditor.UIElements`** namespace. Otherwise, UI Builder will hide your custom controls.
 
+
+### Schema
+
+The schema definition validates your UXML files. It specifies which attributes and child elements each UXML element can contain.
+
+In a UXML file, the `xsi:noNamespaceSchemaLocation` or the `xsi:schemaLocation` attributes of the `<UXML>` root element specify the location of the schema definition files.
+
+To create a UXML file with the latest schema definition, select **Assets** > **Create** > **UI Toolkit** > **UI Document**. This creates a file with the `xsi:noNamespaceSchemaLocation` attribute for the root element.
+
+**Note**: If your text editor doesn’t recognize the `xsi:noNamespaceSchemaLocation` attribute, use the `xsi:schemaLocation` attribute instead.
+
+To force an update of the UXML schema definition, select **Assets** > **Update UXML Schema**.
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-WritingUXMLTemplate.html
