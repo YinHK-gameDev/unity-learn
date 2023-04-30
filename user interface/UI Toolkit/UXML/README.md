@@ -113,5 +113,36 @@ You can reference it like this:
 ### Visual tree
 The **most basic building block** in UI Toolkit is a **visual element**. The visual elements are ordered into a hierarchy tree with parent-child relationships. This is called the visual tree.
 
+
+
+### Reference other files from UXML
+In a UXML file, you can use the `<Template>` and the `<Style>` elements to reference other UXML or USS files. The two elements both accept either an `src` attribute or a `path` attribute.
+
+#### The `src` attribute
+
+The `src` attribute accepts relative paths and offers error messages at import time if an error happens, such as files are missing.
+
+The `src` attribute expects the file path to be relative to either the project root or the folder that contains the UXML file.
+
+**Important**: You must include the file extension.
+
+For example, to reference a UXML files that is located at `Assets\Editor\UXML` and a USS file that is located at `Assets\Editor\USS`, use any of the following formats:
+
+-   `src="../USS/styles.uss"` or `src="template.uxml"`
+-   `src="/Assets/Editor/USS/styles.uss"` or `src="project:/Assets/Editor/UXML/template.uxml"`
+
+
+
+#### The `path` attribute
+
+The `path` attribute uses the Unity Resources mechanisms, but doesn’t offer error reporting at import time and doesn’t allow relative paths.
+
+The `path` attribute accepts files located in either the `Resources` folder or the `Editor Default Resources` folder, with the following rules:
+
+-   If the file is in the `Resources` folder, don’t include the file extension. For example, write `path="template"` for a file located at `Assets/Resources/template.uxml`.
+-   If the file is in the `Editor Default Resources` folder, you must include the file extension. For example, write `path="template.uxml"` for a file located at `Assets/Editor Default Resources/template.uxml`.
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-WritingUXMLTemplate.html
