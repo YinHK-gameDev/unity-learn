@@ -16,6 +16,8 @@ To use **UQuery** to find elements, you **must load and instantiate** the **UXML
 Returns a list of elements that match the selection rules. You can filter the return results of **Query** with the public methods of **`UQueryBuilder`**, such as **First, Last, AtIndex, Children, and Where**.
 
 
+#### Q 
+Is the **shorthan**d for **`Query<T>.First()`**. It **returns the first element that matches the selection rules**.
 
 
 
