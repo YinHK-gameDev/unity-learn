@@ -98,6 +98,36 @@ Attribute overrides have the following limitations:
 You can’t override an element’s **name** or **style** attributes.
 
 
+### Specify where child elements are nested in a UXML template
+You can use the **`content-container`** attribute of a visual element
+ to specify where **child elements are nested in a UXML template**. For example, if you have the following UXML template file as `Assets/MyTemplate.uxml`:
+
+
+<ui:UXML xmlns:ui="UnityEngine.UIElements" ...>
+    <ui:Label text="Group Title" name="groupTitle" />
+    <ui:VisualElement name="group-container" content-container="anyValue">
+         <!--Add child elements here -->
+    </ui:VisualElement>
+    <ui:VisualElement/>
+</ui:UXML>
+
+You can then apply the template with nested child elements as this:
+
+<ui:UXML xmlns:ui="UnityEngine.UIElements" ...>
+    <Template path="Assets/MyTemplate.uxml" name="my-template"/>
+    <ui:Instance template="my-template">
+        <ui:Label text="Test"/> <!--This label element will be instantiated inside the `group-container` element.-->
+    </ui:Instance>
+    <ui:Instance template="my-template">
+        <ui:Label text="Test"/> <!--This label element will be instantiated in the template -->
+    </ui:Instance>
+</ui:UXML>
+
+> **Note**: You can provide any value to the **`content-container`** attribute.
+
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-reuse-uxml-files.html
 
