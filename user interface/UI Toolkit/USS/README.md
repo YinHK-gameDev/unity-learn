@@ -57,6 +57,14 @@ When you define a style sheet, you can apply it to a **visual tree**
 **USS** also supports pseudo classes that you can use with selectors to target elements that are in a specific state or select the **`:root`** element.
 
 
+### Manipulate USS selectors
+To copy, paste, duplicate, rename, or delete one or more USS selectors:
+
+1. In the StyleSheets window, select the group.
+2. Right-click the group and select the desired action.
+
+> **Tip**: You can copy and paste a USS selector between the UI Builder’s StyleSheets window and a text editor.
+
 | Selector type | Syntax | Matches |
 | --- | --- | --- |
 | Type selector | **`Type {...}`** | Elements of a specific C# or visual element type. |
