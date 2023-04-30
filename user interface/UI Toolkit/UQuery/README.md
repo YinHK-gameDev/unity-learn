@@ -21,6 +21,62 @@ Is the **shorthan**d for **`Query<T>.First()`**. It **returns the first element 
 
 
 
+You can query elements by their **name**, their **USS class**, or their **element type**. You can also query with a **predicate** or make **complex hierarchical queries**.
+
+
+Example:
+
+```xml
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement name="container1">
+      <Button name="OK" text="OK" />
+      <Button name="Cancel" text="Cancel" />
+    </VisualElement>
+     <VisualElement name="container2">
+      <Button name="OK" class="yellow" text="OK" />
+      <Button name="Cancel" text="Cancel" />
+    </VisualElement>
+    <VisualElement name="container3">
+      <Button name="OK" class="yellow" text="OK" />
+      <Button name="Cancel" class="yellow" text="Cancel" />
+    </VisualElement>
+</UXML>
+```
+
+#### Query by name
+
+To find elements by their [name](https://docs.unity3d.com/Manual/UIE-UQuery.htmlUIE-USS-Selectors-name.html), use `Query(name: "element-name")` or `Q(name: "element-name")`. You can omit `name` as it’s the first argument. For example:
+
+The following example finds a list of elements named “Ok”:
+
+```csharp
+List<VisualElement> result = root.Query("OK").ToList();
+```
+
+The following example use `Query` to find the first element named “Ok”:
+
+```csharp
+VisualElement result = root.Query("OK").First(); //or VisualElement result = root.Q("OK");            
+```
+
+The following example use `Q` to find the first element named “Ok”:
+
+```csharp
+VisualElement result = root.Q("OK");            
+```
+
+The following example finds the second element named “Ok”:
+
+```csharp
+VisualElement result3 = root.Query("OK").AtIndex(1);
+```
+
+The following example finds the last element named “Ok”:
+
+```csharp
+VisualElement result4 = root.Query("OK").Last();
+```
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-UQuery.html
 
