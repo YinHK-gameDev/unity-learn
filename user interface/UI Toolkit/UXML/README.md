@@ -110,7 +110,8 @@ You can reference it like this:
 </ui:UXML>
 ```
 
-
+### Visual tree
+The **most basic building block** in UI Toolkit is a **visual element**. The visual elements are ordered into a hierarchy tree with parent-child relationships. This is called the visual tree.
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-WritingUXMLTemplate.html
