@@ -40,6 +40,18 @@ Style fields that appear **bold** with a solid line on the left of the field lab
 > **Note**: You can’t use inline style to style **pseudo-classes** or **read-only elements**.
 
 
+### Manage a style sheet
+To add a style sheet, use the **`+`** dropdown menu and select one of the following options:
+
+- **Create New USS**: This opens a Save File Dialog to create a new style sheet in your project.
+- **Add Existing USS**: This opens the Open File Dialog to add an existing style sheet to the UI Document.
+
+- To remove a style sheet from the active UI Document, right-click on the style sheet and select Remove USS.
+
+- To make a style sheet active, right-click on a style sheet and select Set as Active USS. An Active StyleSheet appears bold.
+
+
+
 ### Match USS style class to elements
 You can match USS classes to elements.
 
