@@ -93,6 +93,24 @@ The following example finds the first element that has the class “yellow”:
 VisualElement result = root.Q(className: "yellow");
 ```
 
+#### Query by element type
+
+To find elements by their **element type**, use `Query<Type>` or `Q<Type>`.
+
+The following example finds the first button and add a tool tip for it:
+
+```csharp
+VisualElement result = root.Q<Button>();
+result.tooltip = "This is a tooltip!";
+```
+
+The following example finds the third button:
+
+```csharp
+VisualElement result = root.Query<Button>().AtIndex(2);
+```
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-UQuery.html
 
