@@ -45,7 +45,7 @@ Example:
 
 #### Query by name
 
-To find elements by their [name](https://docs.unity3d.com/Manual/UIE-UQuery.htmlUIE-USS-Selectors-name.html), use `Query(name: "element-name")` or `Q(name: "element-name")`. You can omit `name` as it’s the first argument. For example:
+To find elements by their **name**, use `Query(name: "element-name")` or `Q(name: "element-name")`. You can omit `name` as it’s the first argument. For example:
 
 The following example finds a list of elements named “Ok”:
 
