@@ -52,6 +52,20 @@ To create a UXML file with the latest schema definition, select **Assets** > **C
 
 To force an update of the UXML schema definition, select **Assets** > **Update UXML Schema**.
 
+### UXML elements
+The definition of the UI is within the `<UXML>` root. The UI definition is a series of nested UXML elements, each representing a visual element.
+
+The element name corresponds to the C# class name of the element to instantiate. Most elements have attributes and their values are mapped to the corresponding class properties in C#. Each element has its own set of attributes in addition to the inherited attributes of its parent class. `VisualElement` is the base class for all elements and it provides the following attributes for all elements:
+
+-   `name`: An identifier for the element. The name should be unique.
+-   `picking-mode`: Set to either `Position` to respond to mouse events or `Ignore` to ignore mouse events.
+-   `focus-index`: (**OBSOLETE**) Use `tabIndex` and `focusable`.
+-   `tabindex`: An integer that defines the tabbing position of the current element.
+-   `focusable`: A Boolean that indicates whether the element is focusable.
+-   `class`: A space-separated list of identifiers that characterize the element. Use classes to assign visual styles to elements. You can also use classes to select a set of elements in UQuery.
+-   `tooltip`: A string that displays as a tooltip when the mouse hovers over the element.
+-   `view-data-key` : A string that defines the key used for serialization of the element.
+
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-WritingUXMLTemplate.html
