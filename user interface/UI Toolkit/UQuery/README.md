@@ -143,6 +143,16 @@ The following example adds a tool tip for any elements that have no tool tips:
 root.Query().Where(elem => elem.tooltip == "").ForEach(elem => elem.tooltip="This is a tooltip!");
 ```
 
+### Best practices
+Consider the following when you use UQuery:
+
+-   UQuery traverses through the hierarchy to find elements by name, class or type. Cache results from UQuery at initialization.
+-   If you need to retrieve multiple elements, use the `QueryState` struct (returned by the `element.Query()` method) and enumerate it to avoid creating lists. You can also construct a query once and execute it on different elements.
+-   UI Toolkit doesn’t destroy visual elements that are no longer needed, it uses C# garbage collector to collect them. Be mindful to not accidentally retain references to visual elements in a class that outlives the UIDocuments or Window where the elements came from.
+-   Capture **`VisualElement`** variables inside closures.
+-   When you create or release lots of elements, enable incremental garbage collection to avoid garbage collector spikes.
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-UQuery.html
 
