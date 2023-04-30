@@ -15,6 +15,33 @@ selector {
   property2: value;
 }
 ```
+
+### Create USS selectors
+You can create any new USS selectors in the StyleSheets window. You can also create a new class selector in the StyleSheets section in the Inspector window.
+
+- To create a new selector in the StyleSheets window:
+  1. In the StyleSheets window, click in the Add new selector… field. This opens a USS selector syntax reference window on top of the Viewport
+  2. Enter the selector with the correct syntax. For example, a class selector should start with **`.`**.
+  3. Press the Enter key.
+  4. In the StyleSheets window, select the newly-created selector.
+  5. In the selector’s Inspector window, set the desired styles for the selector.
+  
+- To create a new class selector in an element’s Inspector window:
+  1. In the Hierarchy window, select the element.
+  2. In the Inspector window, enter the class selector in the **Style Class List** text field.
+  3. Select **Add Style Class to List**. A yellow-style class label appears in **Style Class List**.
+  
+
+### Match USS style class to elements
+You can match USS classes to elements.
+
+To match USS style class to elements, do any of the following:
+
+- Drag a style class label onto the element in either the Hierarchy or the Canvas.
+- Enter the name of the selector into the **StyleSheet > Style Class List** field in the element’s Inspector window and then select **Add Style Class to List**:
+
+
+
 #### Style matching with rules
 When you define a style sheet, you can apply it to a **visual tree**
 . Selectors match against elements to resolve which properties apply from the USS file. If a selector matches an element, the style declarations apply to the element.
@@ -65,6 +92,7 @@ You can connect styles to elements by the following methods:
 - In **UI Builder**, style an element with **inline styles** or **USS selectors**. 
 - In **UXML**, style an element with inline styles or attach a style sheet with selectors matching this element. 
 - In a **C#** script, set styles directly to the **style** properties or add a **USS** style sheet to the styleSheet property with selectors matching an element. 
+
 
 
 ### ref 
