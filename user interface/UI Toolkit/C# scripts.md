@@ -54,6 +54,14 @@ VisualTreeAsset uxml = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/
 StyleSheet uss = AssetDatabase.LoadAssetAtPath<StyleSheet>("Packages/<name-of-the-package>/main_styles.uss");
 ```
 
+### Use Addressables
+The Addressables system provides tools and scripts to organize and package content for your application and an API to load and release assets at runtime.
+
+You can use UXML and USS assets with the Addressable system.
+
+For information about how to set up Addressables for any assets in Unity, see [Getting started with Addressables](https://docs.unity3d.com/Packages/com.unity.addressables@1.19/manual/AddressableAssetsGettingStarted.html).
+
+
 ### Use a Resources folder
 If you add a **`Resources`** folder in your project and place your UI assets in it, you can use the **`Resources.Load`** method to load your assets.
 
