@@ -20,7 +20,7 @@ selector {
 You can create any new USS selectors in the StyleSheets window. You can also create a new class selector in the StyleSheets section in the Inspector window.
 
 - To create a new selector in the StyleSheets window:
-  1. In the StyleSheets window, click in the Add new selector… field. This opens a USS selector syntax reference window on top of the Viewport
+  1. In the StyleSheets window, click in the **Add new selector…** field. This opens a USS selector syntax reference window on top of the Viewport
   2. Enter the selector with the correct syntax. For example, a class selector should start with **`.`**.
   3. Press the Enter key.
   4. In the StyleSheets window, select the newly-created selector.
@@ -31,6 +31,14 @@ You can create any new USS selectors in the StyleSheets window. You can also cre
   2. In the Inspector window, enter the class selector in the **Style Class List** text field.
   3. Select **Add Style Class to List**. A yellow-style class label appears in **Style Class List**.
   
+### Set inline styles to elements
+You can set inline styles to elements in the Inlined Styles section in the element’s Inspector window.
+ 
+ 
+Style fields that appear **bold** with a solid line on the left of the field label represent style properties that are already set or overridden. It’s important to keep track of these **overridden** style properties, as they always override the same property coming from a StyleSheet or from a C# default. To unset or remove the **override** for a style property, right-click on the style field and select **Unset**.
+
+> **Note**: You can’t use inline style to style **pseudo-classes** or **read-only elements**.
+
 
 ### Match USS style class to elements
 You can match USS classes to elements.
