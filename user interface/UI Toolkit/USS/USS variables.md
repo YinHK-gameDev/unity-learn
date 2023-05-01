@@ -57,8 +57,7 @@ For example, the following USS snippet defines one style rule that declares two 
 
 To update the color scheme, you can change the two variable values instead of the four color values.
 
-Variables make it easier to manage styles for complex **UI**(User Interface) Allows a user to interact with your application. Unity currently supports three UI systems. [More info](https://docs.unity3d.com/Manual/UIE-USS-CustomProperties.htmlUI-system-compare.html)  
-See in [Glossary](https://docs.unity3d.com/Manual/UIE-USS-CustomProperties.htmlGlossary.html#UI), where multiple rules, sometimes in different style sheets, use the same values.
+Variables make it easier to manage styles for complex **UI** where multiple rules, sometimes in different style sheets, use the same values.
 
 ### ref 
 https://docs.unity3d.com/Manual/UIB-styling-ui-using-uss-variables.html
