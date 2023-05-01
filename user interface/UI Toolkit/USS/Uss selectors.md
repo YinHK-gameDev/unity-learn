@@ -137,7 +137,25 @@ selector1, selector2 {...}
 ```
 
 
+The following two USS snippets have the same effect.
 
+```css
+#container2 {
+  background-color: pink;
+  border-radius: 10px;
+}
+
+Button {
+  background-color: pink;
+  border-radius: 10px;
+}
+```
+
+```css
+#container2, Button {
+   background-color: pink;
+     border-radius: 10px;
+```
 
 
 
