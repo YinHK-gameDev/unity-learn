@@ -232,5 +232,20 @@ Selector specificity is a measure of relevance. The higher the specificity, the 
 -   **Universal** selectors have the lowest specificity.
 
 
+
+### Style overrides
+You can style an element in **UI Toolkit** by the following:
+
+- In a **USS** file, write a selector that can affect the element.
+- In the **UXML** document where the element is defined, set inline styles.
+- In a C# script, get a reference to an element and set its inline style.
+- For an inherited property, the element gets the value from its parent element.
+
+
+If you apply multiple styling methods to an element, it will undergo style overrides.
+
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-USS-Selectors.html
