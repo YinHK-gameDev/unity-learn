@@ -102,7 +102,7 @@ You can include the wildcard selector in complex selectors. For example, the fol
 
 
 ### Multiple selectors
-A multiple selector is an combination of multiple simple selectors. It selects any elements that match all the simple selectors.
+A multiple selector is an combination of multiple simple selectors. It selects any elements that **match all the simple selectors**.
 
 A multiple selector consists of multiple simple selector without anything to separate them:
 
