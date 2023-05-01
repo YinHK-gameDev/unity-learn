@@ -121,8 +121,11 @@ ListViewButton{...}
 The USS parser can’t separate the two element types, it interprets them as a single class called ListViewButton, which might not be the desired result.
 
 
+You can combine USS class selectors and name selectors into multiple selectors. Because they’re are with the period (.) and number sign (#) respectively, the parser can clearly identify them. Type selectors have no identifying character, so you can only use one of them in a multiple selector, and it must be the first selector in the combination. For example:
 
-
+```css
+ListView.yellow#vertical-list{...}
+```
 
 
 
