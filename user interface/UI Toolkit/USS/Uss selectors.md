@@ -223,6 +223,14 @@ When an element matches multiple selectors in different style sheets, Unity dete
 4. **The selectors’ positions in their style sheets**: If you apply both style sheets at the same level of the hierarchy, the selector closest to the end of its USS file takes precedence.
 
 
+### Selector specificity
+Selector specificity is a measure of relevance. The higher the specificity, the more relevant the selector is to the elements it matches.
+
+-   **Name** selectors are more specific than **Class** selectors.
+-   **Class** selectors are more specific than **Type** selectors.
+-   **Type** selectors are more specific than the **Universal** (`*`) selector.
+-   **Universal** selectors have the lowest specificity.
+
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-USS-Selectors.html
