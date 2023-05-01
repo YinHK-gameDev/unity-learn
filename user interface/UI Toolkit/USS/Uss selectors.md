@@ -205,6 +205,23 @@ For example, the following USS rule sets a default font. Any element that doesn�
 A common use for the `:root` selector is to declare “global” variables (custom properties), that other style rules can use instead of specific values.
 
 
+### Selector precedence
+
+#### Precedence for selectors in the same style sheet
+
+When an element matches multiple selectors from the same style sheet, the selector with the highest **specificity** takes precedence.
+
+If both selectors have the same **specificity**, the selector that appears last in the USS file takes precedence.
+
+
+#### Precedence for selectors in different style sheets
+When an element matches multiple selectors in different style sheets, Unity determines precedence according to the following factors in this order:
+
+1. **The type of style sheet**: Selectors from user-defined style sheets takes precedence over selectors from default Unity style sheets.
+2. **Selector specificity**: If both selectors are in the same type of style sheet, the selector with the highest **specificity** takes precedence
+3. **The style sheets’ positions in the element hierarchy**: If both selectors have the same specificity, the selector whose style sheet is applied lowest in the element hierarchy takes precedence.
+4. **The selectors’ positions in their style sheets**: If you apply both style sheets at the same level of the hierarchy, the selector closest to the end of its USS file takes precedence.
+
 
 
 ### ref 
