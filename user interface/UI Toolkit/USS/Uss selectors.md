@@ -90,11 +90,15 @@ A descendant selector consists of multiple simple selectors separated by a space
 selector1 selector2 {...}
 ```
 
+### Child selectors
 
+USS child selectors match elements that are the child of another element in the visual tree.
 
+You can include the wildcard selector in complex selectors. For example, the following USS rule uses the wildcard selector in a **child selector**. This USS rule matches buttons that are children of elements that are children of an element with the USS class **yellow** assigned to it.
 
-
-
+```css
+.yellow > * > Button{..}
+```
 
 
 
