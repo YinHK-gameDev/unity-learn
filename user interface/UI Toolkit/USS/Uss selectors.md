@@ -81,6 +81,16 @@ The following is the syntax for a USS universal selector:
 * { ... }
 ```
 
+### Descendant selectors
+USS descendant selectors match elements that are the **descendant of another element** in the visual tree.
+
+A descendant selector consists of multiple simple selectors separated by a space:
+
+```css
+selector1 selector2 {...}
+```
+
+
 
 
 
