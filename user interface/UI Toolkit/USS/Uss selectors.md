@@ -181,5 +181,31 @@ Button:hover {
 | `:checked` | The element is a `Toggle` or `RadioButton` element and it’s selected. |
 | `:root` | The element is the highest-level element in the **visual tree**. |
 
+#### Chain pseudo-classes
+You can chain pseudo-classes together to apply the same style for multiple concurrent states. For example, the following USS rule chains the `:checked` and `:hover` pseudo-classes together to change the color of checked `Toggle` elements when a user hovers the pointer over them.
+
+```css
+Toggle:checked:hover {
+  background-color: yellow;
+}
+```
+
+
+### The root pseudo-class
+The `:root` pseudo-class matches the highest element in a visual tree. It’s slightly different from other supported pseudo-classes because you use it by itself to define default styles for the elements the style sheet affects.
+
+For example, the following USS rule sets a default font. Any element that doesn’t get its font from a more specific style rule uses that font.
+
+```
+:root {
+  -unity-font: url("../Resources/fonts/OpenSans-Regular.ttf");
+}
+```
+
+A common use for the `:root` selector is to declare “global” variables (custom properties), that other style rules can use instead of specific values.
+
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-USS-Selectors.html
