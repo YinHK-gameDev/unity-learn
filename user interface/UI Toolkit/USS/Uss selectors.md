@@ -157,8 +157,29 @@ Button {
      border-radius: 10px;
 ```
 
+### Pseudo-classes
 
+A pseudo-class narrows a selector’s scope so it only matches elements when they enter a specific state.
 
+Append a pseudo-class to a simple selector to match specific elements when they’re in a specific state. For example, the following USS rule uses the `:hover` pseudo-class to change the color of `Button` elements when a user hovers the pointer over them.
+
+```css
+Button:hover {
+    background-color: palegreen;
+}
+```
+
+| Pseudo-class | Matches an element when |
+| --- | --- |
+| `:hover` | The cursor is positioned over the element. |
+| `:active` | A user interacts with the element. |
+| `:inactive` | A user stops to interact with the element. |
+| `:focus` | The element has focus. |
+| `:selected` | USS doesn’t support this pseudo-state. Use `:checked` instead. |
+| `:disabled` | The element is in a disabled state. |
+| `:enabled` | The element is in an enabled state. |
+| `:checked` | The element is a `Toggle` or `RadioButton` element and it’s selected. |
+| `:root` | The element is the highest-level element in the **visual tree**. |
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-USS-Selectors.html
