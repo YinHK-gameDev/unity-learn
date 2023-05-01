@@ -59,6 +59,19 @@ To update the color scheme, you can change the two variable values instead of th
 
 Variables make it easier to manage styles for complex **UI** where multiple rules, sometimes in different style sheets, use the same values.
 
+### Specify default values for USS variables
+
+The `var()` function accepts an optional default value. The UI system uses the default value when it cannot resolve the variable. For example, if you remove a variable from a style sheet but forget to remove a reference to it.
+
+To specify a default value for a variable, add it after the variable value, separated by a comma `,`.
+
+The following USS snippet calls the `--color-1` variable. If the UI system can’t resolve the variable, it uses the hex value for red (`#FF0000`).
+
+```css
+var(--color-1, #FF0000);
+```
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIB-styling-ui-using-uss-variables.html
 
