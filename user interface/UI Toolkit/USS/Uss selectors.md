@@ -70,6 +70,20 @@ When an element has more than one class assigned, a selector only has to match o
 You can also specify multiple classes in a selector, in which case an element must have all of those classes assigned in order to match.
 
 
+### Universal selectors
+
+A USS universal selector, also called the wildcard selector, matches any element. USS universal selectors are analogous to CSS universal selectors.
+
+
+The following is the syntax for a USS universal selector:
+
+```css
+* { ... }
+```
+
+
+
+
 
 
 
