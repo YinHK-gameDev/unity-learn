@@ -31,6 +31,24 @@ This selector is invalid:
 UnityEngine.UIElements.Button { ... }
 ```
 
+### Name selectors
+
+USS name selectors match elements based on the name of an element. USS Name selectors are analogous to CSS ID selectors that match elements with a specific `id` attribute.
+
+To set the name of an element:
+
+-   In C# script, use `VisualElement.name`.
+-   In UXML, use the `name` attribute. For example: `<VisualElement name="my-nameName">`.
+
+To avoid unexpected matches, make element names unique within a panel.
+
+A name selector consists of an element’s assigned name prefixed with a number sign (`#`).
+
+```css
+#ElementName { ... }
+```
+
+**Note**: Only use the number sign (`#`) when you write the selector in a USS file. Don’t use it when you assign the name to an element in a UXML or C# file. An element name that includes the number sign is invalid. For example `<Button name="#OK" />` is invalid.
 
 
 
