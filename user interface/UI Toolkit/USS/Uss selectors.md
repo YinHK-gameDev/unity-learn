@@ -101,6 +101,26 @@ You can include the wildcard selector in complex selectors. For example, the fol
 ```
 
 
+### Multiple selectors
+A multiple selector is an combination of multiple simple selectors. It selects any elements that match all the simple selectors.
+
+A multiple selector consists of multiple simple selector without anything to separate them:
+
+```css
+selector1selector2 {...}
+```
+
+The USS parser can’t parse a multiple selector if it can’t distinguish each selector in the combination.
+
+For example, the following USS rule combines two type selectors: `ListView`, and `Button`.
+
+```css
+ListViewButton{...}
+```
+
+The USS parser can’t separate the two element types, it interprets them as a single class called ListViewButton, which might not be the desired result.
+
+
 
 
 
