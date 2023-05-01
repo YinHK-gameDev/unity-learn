@@ -71,6 +71,17 @@ The following USS snippet calls the `--color-1` variable. If the UI system can�
 var(--color-1, #FF0000);
 ```
 
+### Differences from CSS variables
+
+Variables work mostly the same way in USS as they do in CSS. For detailed information about CSS variables, see the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties). However, USS doesn’t support some of the functionalites of CSS:
+
+-   USS doesn’t support the `var()` function inside of other functions, such as shown below:
+
+```css
+  background-color: rgb(var(--red), 0, 0);
+```
+
+-   USS doesn’t support mathematical operations on variables.
 
 ### ref 
 https://docs.unity3d.com/Manual/UIB-styling-ui-using-uss-variables.html
