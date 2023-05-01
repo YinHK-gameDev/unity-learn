@@ -9,6 +9,17 @@ To create a custom control, you must create a custom control C# class and initia
 
 Create a C# class derived from the `VisualElement` class or a **subclass** of the `VisualElement` class.
 
+### Initialize a custom control
+Custom controls inherit from **`VisualElement`**. A **`VisualElement`** isn’t bound to the lifetime of a GameObject and doesn’t receive any of these callbacks:
+
+-   `Awake()`
+-   `OnEnable()`
+-   `OnDisable()`
+-   `OnDestroy()`
+
+
+
+
 
 ```cs
 void OnEnable()
