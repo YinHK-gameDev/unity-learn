@@ -18,7 +18,7 @@ Custom controls inherit from **`VisualElement`**. A **`VisualElement`** isn’t 
 -   `OnDestroy()`
 
 
-
+You can initialize a custom control in its constructor. However, if your application needs, you can delay initialization until the custom control is added to the UI. To do this, register a callback for an [`AttachToPanelEvent`](https://docs.unity3d.com/Manual/UIE-create-custom-controls.html../ScriptReference/UIElements.AttachToPanelEvent.html). To detect that your custom control has been removed from the UI, use the [`DetachFromPanelEvent`](https://docs.unity3d.com/Manual/UIE-create-custom-controls.html../ScriptReference/UIElements.DetachFromPanelEvent.html) callback.
 
 
 ```cs
