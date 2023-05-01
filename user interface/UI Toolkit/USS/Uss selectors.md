@@ -127,6 +127,19 @@ You can combine USS class selectors and name selectors into multiple selectors. 
 ListView.yellow#vertical-list{...}
 ```
 
+### Selector lists
+A selector list is a comma-separated list of selectors that share the same style rule.
+
+A selector list consists of multiple selectors separated by commas:
+
+```css
+selector1, selector2 {...}
+```
+
+
+
+
+
 
 
 ### ref 
