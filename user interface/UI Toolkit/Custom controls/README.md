@@ -10,6 +10,16 @@ To create a custom control, you must create a custom control C# class and initia
 Create a C# class derived from the `VisualElement` class or a **subclass** of the `VisualElement` class.
 
 
+```cs
+void OnEnable()
+{
+    var myCustomElement = rootVisualElement.Q(className: "my-custom-element");
+    myCustomElement.RegisterCallback<AttachToPanelEvent>(e =>
+        { /* do something here when element is added to UI */ });
+    myCustomElement.RegisterCallback<DetachFromPanelEvent>(e =>
+        { /* do something here when element is removed from UI */ });
+}
+```
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-custom-controls.html
