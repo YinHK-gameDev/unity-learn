@@ -100,6 +100,23 @@ Each part of the name shows the types of USS rules that use the variable.
 - Sub-Element: An element or control the variable affects.
 - Pseudo States: Lists the states Unity uses the variable for.
 
+For example, the following variable name:
+
+`--unity-colors-button-text-hover`
+
+Provides the following information about how Unity uses the variable:
+
+  
+|  | **Value** | **Meaning** |
+| --- | --- | --- |
+| **Group** | `colors` | Represents color data. |
+| **Role/Control** | `button` | Affects buttons. |
+| **Sub-Element** | `text` | Affects text. Its `group` is `colors`, so it affects text color. |
+| **Pseudo-States** | `hover` | Applies to elements when the mouse pointer hovers over them. |
+
+This USS built-in variable changes the color of button text when a user hovers over the button.
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIB-styling-ui-using-uss-variables.html
 
