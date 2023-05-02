@@ -87,7 +87,7 @@ Variables work mostly the same way in USS as they do in CSS. For detailed inform
 ### USS built-in variables
 **USS built-in** variables specify default values for Editor and runtime UI. You can use these variables in your own USS to match your custom interfaces with Unity style.
 
-The name of each built-in variable indicates how and where the variable is used. A variable name consists of one or more parts, separated by hyphens. Each part consists of one or more words separated by underscores.
+The name of each built-in variable indicates how and where the variable is used. A variable name consists of one or more parts, **separated by hyphens**. Each part consists of one or more words **separated by underscores**.
 
 ```css
 --unity-{group}-{role_and_control}-{sub_element}-{pseudo_state_sequence}
