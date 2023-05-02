@@ -129,6 +129,58 @@ The variable names have the following groups:
 | `icons` | Standard Unity icon images |
 
 
+#### Role and Control
+Roles and controls are two ways of grouping elements conceptually.
+
+-   **Role** refers to a group of elements that have the same purpose, regardless of what type each element is. For example, the `error` role includes all elements that display error messages to users.
+-   **Control** refers to a group of elements of the same type, regardless of what they do. For example, `buttons` includes all buttons in the Editor.
+
+Each variable has either a role or a control.
+
+The variable names have the following roles and controls:
+
+**Roles**
+| **Role** | **Description** |
+| --- | --- |
+| `default` | Default style settings such as text color, background, and margin. |
+| `alternated_rows` | Elements that display tabular data with alternating row colors. For example, list items in a list view. |
+| `error` | Elements that communicate error states to users. |
+| `highlight` | Highlighted parts of the UI. For example, text selections, or selected items in tree views. |
+| `link` | Parts of the UI (typically text) that are clickable links. This is the un-clicked state. |
+| `play_mode` | Elements displayed when the Editor is in Play mode. |
+| `visited_link` | Parts of the UI, typically text, that are clickable links that a user has already clicked. |
+| `warning` | Elements that communicate a warning message to users. |
+
+**Controls**
+
+ 
+| **Control** | **Description** |
+| --- | --- |
+| `app_toolbar` | The main Unity **toolbar**A row of buttons and basic controls at the top of the Unity Editor that allows you to interact with the Editor in various ways (e.g. scaling, translation). [More info](https://docs.unity3d.com/Manual/UIE-USS-UnityVariables.html#groupToolbar.html)  
+See in [Glossary](https://docs.unity3d.com/Manual/UIE-USS-UnityVariables.html#groupGlossary.html#Toolbar) |
+| `app_toolbar_button` | Buttons in the main Unity toolbar |
+| `box` | Boxes used to group elements in the Editor UI |
+| `button` | Buttons in the UI, except for toolbars |
+| `dropdown` | Dropdown lists or menus |
+| `helpbox` | Boxes used to display help information |
+| `input_field` | Fields used to input text or numeric values |
+| `label` | Text labels in the Editor UI |
+| `object_field` | Fields used for object values. For example, property values for a **GameObject**The fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it. [More info](https://docs.unity3d.com/Manual/UIE-USS-UnityVariables.html#groupclass-GameObject.html)  
+See in [Glossary](https://docs.unity3d.com/Manual/UIE-USS-UnityVariables.html#groupGlossary.html#GameObject) or Asset. |
+| `popup` | Popup menu and other popup controls |
+| `preview` | Views used to display previews. For example, of Assets such as meshes and textures. |
+| `scrollbar_groove` | The background element of a scrollbar in which users drag the scrollbar thumb |
+| `scrollbar_thumb` | The draggable handle element in a scrollbar |
+| `slider_groove` | The background element of a slider in which users drag the slider thumb |
+| `slider_thumb` | The draggable handle element in a slider |
+| `slider_thumb_halo` | An overlay displayed around the slider thumb when the user drags it |
+| `tab` | Tab items in tab controls |
+| `toolbar` | Any Editor toolbar except for the main Unity toolbar (`app_toolbar`) |
+| `toolbar_button` | Buttons in an Editor toolbar |
+| `window` | Editor windows |
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIB-styling-ui-using-uss-variables.html
 
