@@ -117,6 +117,18 @@ Provides the following information about how Unity uses the variable:
 This USS built-in variable changes the color of button text when a user hovers over the button.
 
 
+#### Group
+The group specifies what kind of data the variable represents. Each group has several possible **sub-elements**.
+
+The variable names have the following groups:
+
+| **Group** | **Used for** |
+| --- | --- |
+| `colors` | Color properties, such as `background-color` and `border-color` |
+| `metrics` | Properties that control dimensions and shapes. For example, `border-radius`, `border-width`, `margin`, and `padding` |
+| `icons` | Standard Unity icon images |
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIB-styling-ui-using-uss-variables.html
 
