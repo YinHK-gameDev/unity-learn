@@ -177,9 +177,22 @@ The variable names have the following roles and controls:
 | `toolbar_button` | Buttons in an Editor toolbar |
 | `window` | Editor windows |
 
+### Sub-Element
+The sub-element is the part of an element that the variable affects. Together with a variable’s group, the sub-element shows what kind of data the variable represents.
+
+For example, when you see a variable name with the colors group and the text sub-element, it means Unity uses the variable in styles that affect text color.
+
+The variable names have the following sub-elements:
+
+
+
+
 
 
 ### ref 
 https://docs.unity3d.com/Manual/UIB-styling-ui-using-uss-variables.html
 
 https://docs.unity3d.com/Manual/UIE-USS-variables.html
+
+https://docs.unity3d.com/Manual/UIE-USS-UnityVariables.html
+
