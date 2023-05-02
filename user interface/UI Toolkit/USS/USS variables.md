@@ -186,6 +186,31 @@ The variable names have the following sub-elements:
 
 
 
+### Pseudo-States
+
+The pseudo-state sequence is a list of UI states that Unity uses a variable for.
+
+For example, when you see a variable name with the `hover` pseudo state, it means Unity uses the variable in styles that affect elements when a user hovers the pointer over them.
+
+For example: `--unity-colors-toolbar_button-text-hover`.
+
+A variable name can have more than one pseudo-state. Multiple pseudo states appear in alphabetical order, separated by underscores `_`.
+
+For example: `--unity-colors-toolbar_button-text-focus_selected`.
+
+Unity variable names can have any combination of the following pseudo-states:
+
+
+| **Pseudo-state** | **Description** |
+| --- | --- |
+| (none) | Normal state |
+| `checked` | A checkbox-type control is checked |
+| `disabled` | A control is disabled |
+| `focus` | A control has focus |
+| `hover` | A user hovers over a control |
+| `inactive` | A control doesn’t have focus |
+| `pressed` | A control is pressed |
+| `selected` | A control is selected |
 
 
 
