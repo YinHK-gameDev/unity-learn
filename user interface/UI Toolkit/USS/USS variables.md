@@ -156,8 +156,7 @@ The variable names have the following roles and controls:
  
 | **Control** | **Description** |
 | --- | --- |
-| `app_toolbar` | The main Unity **toolbar**A row of buttons and basic controls at the top of the Unity Editor that allows you to interact with the Editor in various ways (e.g. scaling, translation). [More info](https://docs.unity3d.com/Manual/UIE-USS-UnityVariables.html#groupToolbar.html)  
-See in [Glossary](https://docs.unity3d.com/Manual/UIE-USS-UnityVariables.html#groupGlossary.html#Toolbar) |
+| `app_toolbar` | The main Unity **toolbar** |
 | `app_toolbar_button` | Buttons in the main Unity toolbar |
 | `box` | Boxes used to group elements in the Editor UI |
 | `button` | Buttons in the UI, except for toolbars |
@@ -165,8 +164,7 @@ See in [Glossary](https://docs.unity3d.com/Manual/UIE-USS-UnityVariables.html#gr
 | `helpbox` | Boxes used to display help information |
 | `input_field` | Fields used to input text or numeric values |
 | `label` | Text labels in the Editor UI |
-| `object_field` | Fields used for object values. For example, property values for a **GameObject**The fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it. [More info](https://docs.unity3d.com/Manual/UIE-USS-UnityVariables.html#groupclass-GameObject.html)  
-See in [Glossary](https://docs.unity3d.com/Manual/UIE-USS-UnityVariables.html#groupGlossary.html#GameObject) or Asset. |
+| `object_field` | Fields used for object values. For example, property values for a **GameObject** or Asset. |
 | `popup` | Popup menu and other popup controls |
 | `preview` | Views used to display previews. For example, of Assets such as meshes and textures. |
 | `scrollbar_groove` | The background element of a scrollbar in which users drag the scrollbar thumb |
