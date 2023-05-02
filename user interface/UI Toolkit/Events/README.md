@@ -46,4 +46,7 @@ As an event moves along the propagation path, the `Event.currentTarget` property
 https://docs.unity3d.com/Manual/UIE-Events.html
 
 
+https://docs.unity3d.com/Manual/UIE-Events-Handling.html
+
+
 
