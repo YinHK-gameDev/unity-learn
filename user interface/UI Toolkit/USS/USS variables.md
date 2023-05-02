@@ -212,7 +212,8 @@ Unity variable names can have any combination of the following pseudo-states:
 | `pressed` | A control is pressed |
 | `selected` | A control is selected |
 
-
+### USS built-in variable references
+https://docs.unity3d.com/Manual/UIE-uss-built-in-variable-reference.html
 
 ### ref 
 https://docs.unity3d.com/Manual/UIB-styling-ui-using-uss-variables.html
