@@ -93,7 +93,12 @@ The name of each built-in variable indicates how and where the variable is used.
 --unity-{group}-{role_and_control}-{sub_element}-{pseudo_state_sequence}
 ```
 
+Each part of the name shows the types of USS rules that use the variable.
 
+- Group: The kind of data the variable represents.
+- Role/Control: A conceptual grouping for the elements the variable affects.
+- Sub-Element: An element or control the variable affects.
+- Pseudo States: Lists the states Unity uses the variable for.
 
 ### ref 
 https://docs.unity3d.com/Manual/UIB-styling-ui-using-uss-variables.html
