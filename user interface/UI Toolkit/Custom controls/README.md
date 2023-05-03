@@ -117,7 +117,7 @@ When handling an event inside a callback or a default action, you can stop furth
 
 You can’t prevent the execution of the `EventBase.PreDispatch()` and `EventBase.PostDispatch()` methods inside the event class itself.
 
-The following methods affect event propagation and default actions:
+The following methods affect **event propagation** and **default actions**:
 
 -   `StopImmediatePropagation()`: Stops the event propagation process immediately, so no other callbacks execute for the event. However, the `ExecuteDefaultActionAtTarget()` and `ExecuteDefaultAction()` default actions still execute.
 -   `StopPropagation()`: Stops the event propagation process after the last callback on the current element. This ensures that all callbacks execute on the current element, but no further elements react to the event. The `ExecuteDefaultActionAtTarget()` and `ExecuteDefaultAction()` default actions still execute.
