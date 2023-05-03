@@ -50,6 +50,40 @@ The differences between callbacks and default actions are:
 
 
 
+### Implement a default action
+
+A default action applies to all instances of the class. A class that implements default actions can also have callbacks registered on its instances.
+
+When a class implements a default action, it must derive a new subclass of `VisualElement` and implement either the `ExecuteDefaultActionAtTarget()` method, the `ExecuteDefaultAction()` method, or both.
+
+Default actions execute on each instance of a visual element sub-class when that instance receives an event. To customize default actions, you can override `ExecuteDefaultActionAtTarget()` and `ExecuteDefaultAction()`, as shown in the example below:
+
+```csharp
+override void ExecuteDefaultActionAtTarget(EventBase evt)
+{
+    // Call the base function.
+    base.ExecuteDefaultActionAtTarget(evt);
+
+    if (evt.eventTypeId == MouseDownEvent.TypeId())
+    {
+        // ...
+    }
+    else if (evt.eventTypeId == MouseUpEvent.TypeId())
+    {
+        // ...
+    }
+    // More event types
+}
+```
+
+Implementing your default actions in `ExecuteDefaultAction()` allows you to stop or prevent the execution of a default action.
+
+If you want the target default action to execute before its parent callback, implement the default actions in `ExecuteDefaultActionAtTarget()`.
+
+You should view default actions as the behaviors that an element type should have when it receives an event. For example, a checkbox should toggle its state in response to a click event. To execute this, you can override a default action virtual function, instead of registering callbacks on all checkboxes.
+
+
+
 
 
 
