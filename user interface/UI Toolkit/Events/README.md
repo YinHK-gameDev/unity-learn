@@ -134,7 +134,42 @@ void MyCallback(MouseDownEvent evt) { /* ... */ }
 
 You can register multiple callbacks for an event. However, you can only register the same callback function on the same event and propagation phase once.
 
-To remove a callback from a `VisualElement`, call the `myElement.UnregisterCallback()` method.
+> To remove a callback from a `VisualElement`, call the `myElement.UnregisterCallback()` method.
+
+
+
+### Listen to value changes
+UI controls can use the `value` property to hold data for their internal state. For example:
+
+-   A `Toggle` holds a Boolean value that changes when the `Toggle` is turned on or off.
+-   An `IntegerField` holds an integer that holds the field’s value.
+
+You can get the value of the control by the following:
+
+-   Get the value from the control directly: `int val = myIntegerField.value;`.
+    
+-   Listen to a `ChangeEvent` sent by the control and process the change when it happens. You must register your callback to the event like this:
+    
+    ```csharp
+    //RegisterValueChangedCallback is a shortcut for RegisterCallback<ChangeEvent>. 
+    //It constrains the right type of T for any VisualElement that implements an 
+    //INotifyValueChange interface.
+    myIntegerField.RegisterValueChangedCallback(OnIntegerFieldChange); 
+    ```
+    
+    The signature for the callback function looks like this:
+    
+    ```csharp
+    void OnIntegerFieldChange(ChangeEvent<int> evt) { /* ... */ }
+    ```
+    
+
+You can change the value of a control by the following:
+
+-   Directly change the `value` variable: `myControl.value = myNewValue;`. This will trigger a new `ChangeEvent`.
+-   Use `myControl.SetValueWithoutNotify(myNewValue);`. This won’t trigger a new `ChangeEvent`.
+
+
 
 
 
