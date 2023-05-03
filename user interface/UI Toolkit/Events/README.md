@@ -193,8 +193,7 @@ The event system uses a pool of events to avoid allocating event objects repeate
 3.  Enclose the event in a `using` block to ensure it’s returned to the event pool.
 4.  Pass the event to `panel.visualTree.SendEvent()`.
 
-You can send operating system events, such as keyboard and mouse events. To do so, use a `UnityEngine.Event` to initialize the **UI**(User Interface) Allows a user to interact with your application. Unity currently supports three UI systems. [More info](https://docs.unity3d.com/Manual/UIE-Events-Synthesizing.htmlUI-system-compare.html)  
-See in [Glossary](https://docs.unity3d.com/Manual/UIE-Events-Synthesizing.htmlGlossary.html#UI) Toolkit event.
+You can send operating system events, such as keyboard and mouse events. To do so, use a `UnityEngine.Event` to initialize the **UI** Toolkit event.
 
 The following example demonstrates how to synthesize and send events:
 
