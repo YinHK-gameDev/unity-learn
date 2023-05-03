@@ -217,6 +217,7 @@ void SynthesizeAndSendKeyDownEvent(IPanel panel, KeyCode code,
 }
 ```
 
+> **Note**: Don’t send events that don’t come from the operating system and can’t be found in the UnityEngine.Event types. Some events are sent by UI Toolkit as a reaction to internal state changes and must not be sent by external processes. For example, if you send PointerCaptureEvent, visual elements assume that the underlying conditions for that event are met and won’t set pointer capture for them. This might break the internal configurations of the visual element and cause undefined behaviors.
 
 
 ### ref
