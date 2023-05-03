@@ -119,6 +119,25 @@ This informs the dispatcher to execute the callback at the target phase and the 
 To add a custom behavior to a specific visual element, register an event callback on that element.
 
 
+The following example registers a callback for the `MouseDownEvent`:
+
+```csharp
+// Register a callback on a mouse down event
+myElement.RegisterCallback<MouseDownEvent>(MyCallback);
+```
+
+The signature for the callback function looks like this:
+
+```csharp
+void MyCallback(MouseDownEvent evt) { /* ... */ }
+```
+
+You can register multiple callbacks for an event. However, you can only register the same callback function on the same event and propagation phase once.
+
+To remove a callback from a `VisualElement`, call the `myElement.UnregisterCallback()` method.
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/UIE-Events.html
 
