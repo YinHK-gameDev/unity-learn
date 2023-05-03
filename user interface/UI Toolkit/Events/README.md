@@ -40,6 +40,20 @@ As an event moves along the propagation path, the `Event.currentTarget` property
 -   `Event.target` is the visual element where the original event occurs.
 
  
+### Register an event callback
+
+You can register an event callback to customize the behavior of an individual instance of an existing class, such as reacting to a mouse click on a text label.
+
+Each element along the propagation path (except the target) can receive an event twice:
+
+-   Once during the trickle-down phase.
+-   Once during the bubble-up phase.
+
+By default, a registered callback executes during the target phase and the bubble-up phase. This default behavior ensures that a parent element reacts after its child element.
+
+On the other hand, if you want a parent element to react before its child, register your callback with the `TrickleDown.TrickleDown` option:
+
+
 
 
 ### ref
