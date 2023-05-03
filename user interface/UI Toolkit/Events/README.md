@@ -56,7 +56,7 @@ If you hide or disable an element, it won’t receive events. Events still propa
 As an event travels along the propagation path, `Event.currentTarget` updates to the element handling the event. Within an event callback function, there are two properties that log the dispatch behavior:
 
 -   `Event.currentTarget` is the visual element on which the callback was registered.
--   `Event.target` is the element\
+-   `Event.target` is the element
 
 
 
