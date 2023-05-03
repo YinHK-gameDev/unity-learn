@@ -47,6 +47,19 @@ After the event dispatcher selects the event target, it computes the propagation
 
 ![](./img/UIElementsEvents.png)
 
+Propagation path
+
+Most event types are sent to all elements along the propagation path. Some event types skip the bubble-up phase, and some event types are sent to the event target only.
+
+If you hide or disable an element, it won’t receive events. Events still propagate to the ancestors and descendants of a hidden or disabled element.
+
+As an event travels along the propagation path, `Event.currentTarget` updates to the element handling the event. Within an event callback function, there are two properties that log the dispatch behavior:
+
+-   `Event.currentTarget` is the visual element on which the callback was registered.
+-   `Event.target` is the element\
+
+
+
 
 ### Dispatch behavior of event types
 
