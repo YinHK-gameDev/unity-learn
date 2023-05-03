@@ -170,6 +170,21 @@ You can change the value of a control by the following:
 -   Use `myControl.SetValueWithoutNotify(myNewValue);`. This won’t trigger a new `ChangeEvent`.
 
 
+### Handle input events for a control
+> You can use an **event handler** or use a **manipulator** to handle input events.
+
+#### Use a manipulator to handle events
+If you want to **separate your event logic from your UI code**, use a **manipulator** to handle events. A **manipulator** is a dedicated class that **stores, registers, and unregisters event callbacks**. You can use or inherit from one of the manipulators that UI Toolkit supports to handle events.
+
+| Manipulator | Inherits from | Description |
+| --- | --- | --- |
+| Manipulator |  | Base class for all provided manipulators. |
+| KeyboardNavigationManipulator | Manipulator | Handles translation of device-specific input events to higher-level navigation operations with a keyboard. |
+| MouseManipulator | Manipulator | Handles mouse input. Has a list of activation filters. |
+| ContextualMenuManipulator | MouseManipulator | Displays a contextual menu when the user clicks the right mouse button or presses the menu key on the keyboard. |
+| PointerManipulator | MouseManipulator | Handles pointer input. Has a list of activation filters. |
+| Clickable | PointerManipulator | Tracks mouse events on an element and callbacks when a user clicks a mouse button while the pointer hovers over an element. |
+
 
 
 
