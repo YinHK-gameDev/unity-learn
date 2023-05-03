@@ -185,6 +185,37 @@ If you want to **separate your event logic from your UI code**, use a **manipula
 | PointerManipulator | MouseManipulator | Handles pointer input. Has a list of activation filters. |
 | Clickable | PointerManipulator | Tracks mouse events on an element and callbacks when a user clicks a mouse button while the pointer hovers over an element. |
 
+### Synthesize and send events
+The event system uses a pool of events to avoid allocating event objects repeatedly. To synthesize and send your own events:
+
+1.  Get an event object from the pool of events.
+2.  Fill in the event properties.
+3.  Enclose the event in a `using` block to ensure it’s returned to the event pool.
+4.  Pass the event to `panel.visualTree.SendEvent()`.
+
+You can send operating system events, such as keyboard and mouse events. To do so, use a `UnityEngine.Event` to initialize the **UI**(User Interface) Allows a user to interact with your application. Unity currently supports three UI systems. [More info](https://docs.unity3d.com/Manual/UIE-Events-Synthesizing.htmlUI-system-compare.html)  
+See in [Glossary](https://docs.unity3d.com/Manual/UIE-Events-Synthesizing.htmlGlossary.html#UI) Toolkit event.
+
+The following example demonstrates how to synthesize and send events:
+
+```csharp
+void SynthesizeAndSendKeyDownEvent(IPanel panel, KeyCode code,
+     char character = '\0', EventModifiers modifiers = EventModifiers.None)
+{
+    // Create a UnityEngine.Event to hold initialization data.
+    var evt = new Event() {
+        type = EventType.KeyDownEvent,
+        keyCode = code,
+        character = character,
+        modifiers = modifiers
+    };
+
+    using (KeyDownEvent keyDownEvent = KeyDownEvent.GetPooled(evt))
+    {
+        panel.visualTree.SendEvent(keyDownEvent);
+    }
+}
+```
 
 
 
