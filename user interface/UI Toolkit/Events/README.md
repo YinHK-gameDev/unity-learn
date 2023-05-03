@@ -186,7 +186,7 @@ If you want to **separate your event logic from your UI code**, use a **manipula
 | Clickable | PointerManipulator | Tracks mouse events on an element and callbacks when a user clicks a mouse button while the pointer hovers over an element. |
 
 ### Synthesize and send events
-The event system uses a pool of events to avoid allocating event objects repeatedly. To synthesize and send your own events:
+The event system uses a pool of events to avoid allocating event objects repeatedly. To synthesize and send your **own events**:
 
 1.  Get an event object from the pool of events.
 2.  Fill in the event properties.
