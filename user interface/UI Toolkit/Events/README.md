@@ -45,6 +45,8 @@ After the event dispatcher selects the event target, it computes the propagation
 2.  The event target receives the event.
 3.  The event then ascends the tree towards the root. This is the **bubble-up phase**.
 
+![](./img/UIElementsEvents.png)
+
 
 ### Dispatch behavior of event types
 
@@ -72,7 +74,8 @@ As an event moves along the propagation path, the `Event.currentTarget` property
 -   `Event.currentTarget` is the visual element that the callback registers on.
 -   `Event.target` is the visual element where the original event occurs.
 
- 
+
+
 ### Register an event callback
 
 You can register an event callback to customize the behavior of an individual instance of an existing class, such as reacting to a mouse click on a text label.
@@ -105,7 +108,6 @@ To add a custom behavior to a specific visual element, register an event callbac
 
 ### ref
 https://docs.unity3d.com/Manual/UIE-Events.html
-
 
 https://docs.unity3d.com/Manual/UIE-Events-Handling.html
 
