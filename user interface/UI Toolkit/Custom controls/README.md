@@ -40,3 +40,7 @@ https://docs.unity3d.com/Manual/UIE-create-custom-controls.html
 https://docs.unity3d.com/Manual/UIE-expose-custom-control-to-uxml.html
 
 https://docs.unity3d.com/Manual/UIE-custom-tag-name-and-attributes.html
+
+https://docs.unity3d.com/Manual/UIE-Events-Handling.html
+
+
