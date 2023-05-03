@@ -32,6 +32,27 @@ void OnEnable()
 }
 ```
 
+### Respond to events with custom controls
+
+If you’re implementing custom controls, you can respond to UI Toolkit events in two ways:
+
+-   Registering an event callback.
+-   Implementing a default action.
+
+How you choose to respond to events depends on the situation.
+
+The differences between callbacks and default actions are:
+
+-   Callbacks must register on instances of the class. Default actions run as virtual functions on the class.
+-   Callbacks execute for all visual elements in the propagation path. Default actions run only for the event target.
+-   Callbacks might perform additional checks to determine whether they should react to an event. For example, a callback handling a mouse click might check if the element is the target of the event. Default actions can skip this step.
+-   Default actions have a slight performance advantage because they don’t require a lookup in the callback registry during the propagation phase.
+
+
+
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-custom-controls.html
 
