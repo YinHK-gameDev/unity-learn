@@ -84,6 +84,47 @@ You should view default actions as the behaviors that an element type should hav
 
 
 
+### Best practices for custom controls
+
+
+#### Implement behaviors
+You should implement behaviors from your element with default actions. You can call `PreventDefault()` in a callback attached to an instance to cancel default element behaviors.
+
+Additional benefits of implementing behaviors as default actions are:
+
+-   Default actions don’t require a lookup in the callback registry.
+-   Instances without callbacks don’t enter the propagation process.
+
+For greater flexibility, you can execute default actions of the event target at two moments during the event dispatch process:
+
+-   Between the trickle-down and the bubble-up propagation phase, immediately after execution of the target callbacks, override `ExecuteDefaultActionsAtTarget()`.
+-   At the end of the event dispatch process, override `ExecuteDefaultActions()`.
+
+
+
+#### Default actions on a class
+
+Implement your class default actions in `ExecuteDefaultActions()`, if possible. This allows more options to override the class. You can call `PreventDefault()` to override the class during the trickle-down phase or the bubble-up phase of the event propagation process.
+
+You must stop propagation of an event during a default action if the event shouldn’t propagate to the parent element. For example, a text field receives a `KeyDownEvent` that modifies its value, such as the `Delete` key to delete content. This event must not propagate to the parent visual element. Use `ExecuteDefaultActionsAtTarget()` to implement a default action, and call `StopPropagation()` to make sure the event isn’t processed during the bubble-up phase.
+
+Default actions only execute for an event target. For a class to react to events that target their child or parent elements, you must register a callback to receive the event either during the trickle-down or the bubble-up propagation phase. Avoid registering callbacks in your class to improve performance.
+
+
+#### Stop event propagation and cancel default actions
+
+When handling an event inside a callback or a default action, you can stop further event propagation and the execution of default actions. For example, a parent panel could stop propagation during the trickle-down phase to prevent its children from receiving events.
+
+You can’t prevent the execution of the `EventBase.PreDispatch()` and `EventBase.PostDispatch()` methods inside the event class itself.
+
+The following methods affect event propagation and default actions:
+
+-   `StopImmediatePropagation()`: Stops the event propagation process immediately, so no other callbacks execute for the event. However, the `ExecuteDefaultActionAtTarget()` and `ExecuteDefaultAction()` default actions still execute.
+-   `StopPropagation()`: Stops the event propagation process after the last callback on the current element. This ensures that all callbacks execute on the current element, but no further elements react to the event. The `ExecuteDefaultActionAtTarget()` and `ExecuteDefaultAction()` default actions still execute.
+-   `PreventDefaultAction()`: Prevents the event propagation process from calling the `ExecuteDefaultActionAtTarget()` and `ExecuteDefaultAction()` default actions. `PreventDefaultAction()` doesn’t prevent the execution of other callbacks and doesn’t affect the `ExecuteDefaultActionAtTarget()` action during the bubble-up phase.
+
+
+
 
 
 
