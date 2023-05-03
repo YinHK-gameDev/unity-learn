@@ -53,7 +53,21 @@ By default, a registered callback executes during the target phase and the bubbl
 
 On the other hand, if you want a parent element to react before its child, register your callback with the `TrickleDown.TrickleDown` option:
 
+```csharp
+using UnityEngine;
+using UnityEngine.UIElements;
 
+...
+VisualElement myElement = new VisualElement();
+
+// Register a callback for the trickle-down phase.
+myElement.RegisterCallback<MouseDownEvent>(MyCallback, TrickleDown.TrickleDown);
+...
+```
+
+This informs the dispatcher to execute the callback at the target phase and the trickle-down phase.
+
+To add a custom behavior to a specific visual element, register an event callback on that element.
 
 
 ### ref
