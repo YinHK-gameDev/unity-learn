@@ -90,9 +90,23 @@ You can add **UI controls** into your window in the following ways:
 > You can use any of these methods individually, or combine.
 
 
+### Use UI Builder to add UI controls
 
+To visually add UI controls to your window, use **UI Builder**. The following steps add a button and a toggle into your custom Editor window in addition to the default label.
 
-
+-   In the `Editor` folder, double-click `MyCustomEditor.uxml` to open the UI Builder.
+-   In the UI Builder, drag **Button** and **Toggle** from **Library** > **Controls** into the **Hierarchy** or the window preview in the **Viewport**.
+-   In the Hierarchy window, select **Label**.
+-   In the Inspector window, change the default text to "These controls were created in UI Builder" in the **Text** field.
+-   In the Hierarchy window, select **Button**.
+-   In the Inspector window, enter `This is button1` in the **Text** field.
+-   Enter `button1` in the **Name** field.
+-   In the Hierarchy window, select **Toggle**.
+-   In the Inspector window, enter `Number?` in the **Label** field.
+-   Enter `toggle1` in the **Name** field.  
+-   Save and close the UI Builder window.
+-   Close your custom Editor window if you haven’t done so.
+-   Select **Window** > **UI Toolkit** > **MyCustomEditor** to re-open your custom Editor window to see the button and the toggle you just added.
 
 ### Define the behavior of your UI controls
 
