@@ -108,6 +108,45 @@ To visually add UI controls to your window, use **UI Builder**. The following st
 -   Close your custom Editor window if you haven’t done so.
 -   Select **Window** > **UI Toolkit** > **MyCustomEditor** to re-open your custom Editor window to see the button and the toggle you just added.
 
+### Use UXML to add UI controls
+If you prefer to define your **UI** in a text file, you can edit the **UXML** to add the UI controls. The following steps add another set of label, button, and toggle into your window.
+
+1. In the `Editor` folder, click **Assets** > **Create** > **UI Toolkit** > **UI Document** to create a UXML file called `MyCustomEditor_UXML.uxml`.
+2. Click the arrow on **`MyCustomEditor_UXML.uxml`** in the Project window.
+3. Double-click `inlineStyle` to open `MyCustomEditor_UXML.uxml` in a text editor.
+4. Replace the contents of `MyCustomEditor_UXML.uxml` with the following:
+    
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <engine:UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:engine="UnityEngine.UIElements"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+    >
+        <engine:Label text="These controls were created with UXML." />
+        <engine:Button text="This is button2" name="button2"/>
+        <engine:Toggle label="Number?" name="toggle2"/>
+    </engine:UXML>
+    ```
+    
+5. Open `MyCustomEditor.cs`.
+    
+6. Add a private `VisualTreeAsset` field called `m_UXMLTree` to the `MyCustomEditor` class. Put the attribute `[SerializeField]` above it:
+   ```cs
+    [SerializeField]
+    private VisualTreeAsset m_UXMLTree;
+   ```
+7. Add the following code to the end of `CreateGUI()`.
+    
+    ```cs
+    root.Add(m_UXMLTree.Instantiate());
+    ```
+    
+8. In the Project window, select `MyCustomEditor.cs`.
+9. Drag `MyCustomEditor_UXML.uxml` from the Project window into the **UXML Tree** field in the **Inspector**. This assigns your UXML to the visual tree.
+10. Select **Window** > **UI Toolkit** > **MyCustomEditor**. This opens your custom Editor window with three labels, two buttons, and two toggles.
+
 ### Define the behavior of your UI controls
 
 You can set up event handlers for your UI controls so that when you click the button, and select or clear the toggle, your UI controls perform some tasks.
@@ -203,44 +242,48 @@ public class MyCustomEditor : EditorWindow
 }
 ```
 
-### Use UXML to add UI controls
-If you prefer to define your **UI** in a text file, you can edit the **UXML** to add the UI controls. The following steps add another set of label, button, and toggle into your window.
+### Use C# script to add UI controls
 
-1. In the `Editor` folder, click **Assets** > **Create** > **UI Toolkit** > **UI Document** to create a UXML file called `MyCustomEditor_UXML.uxml`.
-2. Click the arrow on **`MyCustomEditor_UXML.uxml`** in the Project window.
-3. Double-click `inlineStyle` to open `MyCustomEditor_UXML.uxml` in a text editor.
-4. Replace the contents of `MyCustomEditor_UXML.uxml` with the following:
-    
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <engine:UXML
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:engine="UnityEngine.UIElements"
-        xmlns:editor="UnityEditor.UIElements"
-        xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
-    >
-        <engine:Label text="These controls were created with UXML." />
-        <engine:Button text="This is button2" name="button2"/>
-        <engine:Toggle label="Number?" name="toggle2"/>
-    </engine:UXML>
-    ```
-    
-5. Open `MyCustomEditor.cs`.
-    
-6. Add a private `VisualTreeAsset` field called `m_UXMLTree` to the `MyCustomEditor` class. Put the attribute `[SerializeField]` above it:
-   ```cs
-    [SerializeField]
-    private VisualTreeAsset m_UXMLTree;
-   ```
-7. Add the following code to the end of `CreateGUI()`.
+If you prefer coding, you can add UI Controls to your window with a C# script. The following steps add another set of label, button, and toggle into your window.
+
+1.  Open `MyCustomEditor.cs`.   
+2.  Unity uses `UnityEngine.UIElements` for basic UI controls like label, button, and toggle. To work with UI controls, you must add the following declaration if it’s not already present.
     
     ```cs
-    root.Add(m_UXMLTree.Instantiate());
-    ```
-    
-8. In the Project window, select `MyCustomEditor.cs`.
-9. Drag `MyCustomEditor_UXML.uxml` from the Project window into the **UXML Tree** field in the **Inspector**. This assigns your UXML to the visual tree.
-10. Select **Window** > **UI Toolkit** > **MyCustomEditor**. This opens your custom Editor window with three labels, two buttons, and two toggles.
+    using UnityEngine.UIElements;
+    ``` 
+3.  Change the text of the existing label from `"Hello World! From C#"` to `"These controls were created using C# code."`.
+4.  The **`EditorWindow`** class has a property called **`rootVisualElement`**. To add the UI controls to your window, first instantiate the element class with some attributes, and then use the **`Add`** methods of the **`rootVisualElement`**.
+    Your finished **`CreateGUI()`** method should look like the following:
+    ```cs
+      public void CreateGUI()
+{
+    // Each editor window contains a root VisualElement object
+    VisualElement root = rootVisualElement;
+
+    // VisualElements objects can contain other VisualElements following a tree hierarchy.
+    Label label = new Label("These controls were created using C# code.");
+    root.Add(label);
+
+    Button button = new Button();
+    button.name = "button3";
+    button.text = "This is button3.";
+    root.Add(button);
+
+    Toggle toggle = new Toggle();
+    toggle.name = "toggle3";
+    toggle.label = "Number?";
+    root.Add(toggle);
+
+    // Import UXML
+    var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Editor/MyCustomEditor.uxml");
+    VisualElement labelFromUXML = visualTree.Instantiate();
+    root.Add(labelFromUXML);
+}
+```
+
+
+
 
 
 
