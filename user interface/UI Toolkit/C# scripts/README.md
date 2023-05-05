@@ -104,4 +104,8 @@ public class MyWindow : EditorWindow  {
 ### ref 
 https://docs.unity3d.com/Manual/UIE-manage-asset-reference.html
 
+https://docs.unity3d.com/Manual/UIE-Controls.html
+
+https://docs.unity3d.com/Manual/UIE-apply-styles-with-csharp.html
+
 
