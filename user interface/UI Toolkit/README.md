@@ -70,11 +70,11 @@ Use the following tools to create and debug your interfaces, and learn how to us
 ### Create a custom Editor window
 -   Create a project in Unity Editor with any template.
 -   In the Project window, right-click in the `Assets` folder, and then select **Create** > **UI Toolkit** > **Editor Window**.
--   In **UI Toolkit Editor Window Creator**, enter `MyCustomEditor`.
+-   In **UI Toolkit Editor Window Creator**, enter eg: **`MyCustomEditor`** in **C**# and **UXML** field.
 -   Clear the **USS** checkbox.
 -   Click **Confirm**.
 
-
+![](./img/Editor_window.png)
 
 > This creates a **custom Editor window** with two labels. You can open the Editor window from the menu (**Window** > **UI Toolkit** > **MyCustomEditor**). You can find the source files for it in the `Assets/Editor` folder.
 
