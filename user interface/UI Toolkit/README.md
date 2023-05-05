@@ -62,6 +62,10 @@ Use the following tools to create and debug your interfaces, and learn how to us
 -   Click **Confirm**.
 
 
+
+> This creates a **custom Editor window** with two labels. You can open the Editor window from the menu (**Window** > **UI Toolkit** > **MyCustomEditor**). You can find the source files for it in the `Assets/Editor` folder.
+
+
 ### ref
 https://learn.unity.com/tutorial/ui-toolkit-first-steps
 
