@@ -174,7 +174,7 @@ In a C# script, you can set styles directly to the **`style`** properties of a v
 button.style.backgroundColor = Color.red
 ```
 
-You can also add a **Unity style sheet (USS)** to any visual element. Unity represents **USS files as StyleSheet objects** in C# scripts.
+You can also add a **Unity style sheet (USS)** to any visual element. Unity represents **USS files as `StyleSheet` objects** in C# scripts.
 
 To add style sheets to a visual element:
 
