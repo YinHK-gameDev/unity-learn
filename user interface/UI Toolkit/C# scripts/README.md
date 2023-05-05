@@ -178,10 +178,10 @@ You can also add a **Unity style sheet (USS)** to any visual element. Unity repr
 
 To add style sheets to a visual element:
 
-1.  Load `StyleSheet` objects with standard Unity APIs such as `AssetDatabase.Load()` or `Resources.Load()`.
-2.  Use the `styleSheets` property of a visual element to add the `StyleSheet` object.
+1.  Load **`StyleSheet`** objects with standard Unity APIs such as **`AssetDatabase.Load()`** or **`Resources.Load()`**.
+2.  Use the **`styleSheets`** property of a visual element to add the **`StyleSheet`** object.
 
-For example, given a style sheet in the local variable `styleSheet` and an element in the local variable `element`, the following example adds the style sheet to the element:
+For example, given a style sheet in the local variable **`styleSheet`** and an element in the local variable **`element`**, the following example adds the style sheet to the element:
 
 ```csharp
 element.styleSheets.Add(styleSheet);
