@@ -11,6 +11,15 @@ UI Toolkit is inspired by standard web technologies. If you have experience deve
 
 UI Toolkit is inspired by standard **web technologies**. If you have experience developing web pages or applications, your knowledge is transferable and the core concepts are familiar.
 
+
+
+In UI Toolkit, user interfaces are composed of individual visual elements. Combinations of multiple visual elements are designed and stored in UI template files, with the extension “*.uxml”. A UXML file stores the hierarchy, the styling and the layout of all the visual elements it contains. A UI hierarchy of one or more visual elements is called a **Visual Tree**.
+
+User interfaces are built up from one or more visual trees. A screen or panel holds a reference to a **`root VisualElement`**, called the **`rootVisualElement`**. Visual trees loaded from UI template files or created via script can be added to the root element, which will make them appear on the screen.
+Each EditorWindow comes with a **`rootVisualElement`** for all the UI in it.
+
+![](./img/rootVisualElement.png)
+
 > **Note**: Unity recommends you to use **UI Toolkit** for your new UI development projects. However, Unity **UI (uGUI)** and **IMGUI** are appropriate for certain use cases, and are required to support deprecated projects.
 
 > If you perform a **specific task** often, you can use UI Toolkit to create a **dedicated UI** for it. For example you can create a **custom Editor window**. The example demonstrates how to create a custom Editor window and add UI controls into your custom Editor window with **UI Builder, UXML, and C# script**.
