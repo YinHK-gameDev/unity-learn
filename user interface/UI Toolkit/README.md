@@ -74,6 +74,8 @@ You can add **UI controls** into your window in the following ways:
 -  Use an **XML-like** text file (**UXML**) to add the UI controls
 -  Use **C#** script to add the UI controls
 
+> You can use any of these methods individually, or combine.
+
 
 ### ref
 https://learn.unity.com/tutorial/ui-toolkit-first-steps
