@@ -32,7 +32,7 @@ Create a UIDocument **GameObject** in the SampleScene and add the UI Document as
  
 1. In the SampleScene, select **GameObject** > **UI Toolkit** > **UI Document**. This creates the following:
     -  A UI Toolkit folder with a Panel Settings asset and a default runtime theme.
-    -  A GameObject with a UI Document component attached, and the UI Document component is connected to the Panel Settings asset.
+    -  A GameObject with a UI Document component attached, and the **UI Document component** is connected to the **Panel Settings asset**.
 2. Select the **UIDocument GameObject** in the hierarchy and drag **`SimpleRuntimeUI.uxml`** from your Project window to the **Source Asset** field of the UI Document component in the Inspector window. 
 
 
