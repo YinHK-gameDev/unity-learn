@@ -187,6 +187,23 @@ For example, given a style sheet in the local variable **`styleSheet`** and an e
 element.styleSheets.Add(styleSheet);
 ```
 
+
+Eg:
+```cs
+private void CreateGUI()
+{
+    // Reference to the root of the window.
+    var root = rootVisualElement;
+
+    // Associates a stylesheet to our root. Thanks to inheritance, all root’s
+    // children will have access to it.
+    root.styleSheets.Add(Resources.Load<StyleSheet>(Path));
+
+    ...
+}
+```
+
+
 > **Note**: Style rules apply to the visual element and all its descendants, but don’t apply to the parent or siblings of the element. Any change to the USS file automatically refreshes the UI
  that uses this style sheet.
 
