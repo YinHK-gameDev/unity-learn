@@ -164,6 +164,31 @@ For example, you can bind a **FloatField control** to a **public float variable*
 
 https://docs.unity3d.com/Manual/UIE-Binding.html
 
+
+## Apply styles in C# scripts
+
+In a C# script, you can set styles directly to the **`style`** properties of a visual element
+. For example, the following code sets the background color of a button to red:
+
+```cs
+button.style.backgroundColor = Color.red
+```
+
+You can also add a **Unity style sheet (USS)** to any visual element. Unity represents **USS files as StyleSheet objects** in C# scripts.
+
+To add style sheets to a visual element:
+
+1.  Load `StyleSheet` objects with standard Unity APIs such as `AssetDatabase.Load()` or `Resources.Load()`.
+2.  Use the `styleSheets` property of a visual element to add the `StyleSheet` object.
+
+For example, given a style sheet in the local variable `styleSheet` and an element in the local variable `element`, the following example adds the style sheet to the element:
+
+```csharp
+element.styleSheets.Add(styleSheet);
+```
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-manage-asset-reference.html
 
