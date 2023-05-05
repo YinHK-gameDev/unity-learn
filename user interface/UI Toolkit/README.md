@@ -68,7 +68,7 @@ Use the following tools to create and debug your interfaces, and learn how to us
 
 ### Add UI controls to the window
 
-You can add UI controls into your window in the following ways:
+You can add **UI controls** into your window in the following ways:
 
 -  Use the **UI Builder** to visually add the UI controls
 -  Use an **XML-like** text file (**UXML**) to add the UI controls
