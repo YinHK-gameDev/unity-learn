@@ -17,6 +17,7 @@ UI Toolkit is inspired by standard **web technologies**. If you have experience 
 
 > **Note**: Unity recommends you to use **UI Toolkit** for your new UI development projects. However, Unity **UI (uGUI)** and **IMGUI** are appropriate for certain use cases, and are required to support deprecated projects.
 
+> If you perform a specific task often, you can use UI Toolkit to create a **dedicated UI** for it. For example you can create a custom Editor window. The example demonstrates how to create a custom Editor window and add UI controls into your custom Editor window with **UI Builder, UXML, and C# script**.
 
 
 UI Toolkit includes:
@@ -55,6 +56,9 @@ Use the following tools to create and debug your interfaces, and learn how to us
 - **UI Debugger**: A diagnostic tool that resembles a web browser’s debugging view. Use it to explore a hierarchy of elements and get information about its underlying UXML structure and USS styles. You can find it in the Editor under **Window > UI Toolkit > Debugger**.
 - **UI Builder**: A UI tool lets you visually create and edit UI Toolkit assets such as UXML and USS files.
 - **UI Samples**: A library of code samples for UI controls that you can view in the Editor under **Window > UI Toolkit > Samples**.
+
+
+
 
 
 ### ref
