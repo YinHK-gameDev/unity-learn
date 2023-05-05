@@ -1,4 +1,4 @@
-### Load UXML and USS C# scripts
+## Load UXML and USS C# scripts
 Unity represents UXML files as `VisualTreeAsset` objects in C# and represents USS files as `StyleSheet` objects in C#. Since `VisualTreeAsset` and `StyleSheet` are regular Unity assets, you can use Unity’s standard workflows to load them.
 
 Unity automatically detect fields from your C# scripts
@@ -99,6 +99,25 @@ public class MyWindow : EditorWindow  {
         w.rootVisualElement.Add(ui);
     }
 }
+```
+
+
+## Structure UI with C# scripts
+
+Technical users can define the layout of the **UI** directly in C# scripts.
+
+> You can define the **look of controls** in a **USS** file, or **modify the style properties** of the control in your C# script.
+
+Controls are interactive and represent a value that you can change. For example, a **FloatField** represents a float value. You can create C# scripts to change the value of a control, register a callback, or apply data binding.
+
+
+### Add controls to a UI with C# scripts
+To use a control in a UI, add it to the visual tree.
+
+The following example adds a Button control to an existing visual tree.
+```cs
+var newButton = new Button("Click me!");
+rootVisualElement.Add(newButton);
 ```
 
 ### ref 
