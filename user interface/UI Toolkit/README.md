@@ -257,31 +257,33 @@ If you prefer coding, you can add UI Controls to your window with a C# script. T
     Your finished **`CreateGUI()`** method should look like the following:
     ```cs
       public void CreateGUI()
-{
-    // Each editor window contains a root VisualElement object
-    VisualElement root = rootVisualElement;
+      {
+          // Each editor window contains a root VisualElement object
+          VisualElement root = rootVisualElement;
 
-    // VisualElements objects can contain other VisualElements following a tree hierarchy.
-    Label label = new Label("These controls were created using C# code.");
-    root.Add(label);
+          // VisualElements objects can contain other VisualElements following a tree hierarchy.
+          Label label = new Label("These controls were created using C# code.");
+          root.Add(label);
 
-    Button button = new Button();
-    button.name = "button3";
-    button.text = "This is button3.";
-    root.Add(button);
+          Button button = new Button();
+          button.name = "button3";
+          button.text = "This is button3.";
+          root.Add(button);
 
-    Toggle toggle = new Toggle();
-    toggle.name = "toggle3";
-    toggle.label = "Number?";
-    root.Add(toggle);
+          Toggle toggle = new Toggle();
+          toggle.name = "toggle3";
+          toggle.label = "Number?";
+          root.Add(toggle);
 
-    // Import UXML
-    var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Editor/MyCustomEditor.uxml");
-    VisualElement labelFromUXML = visualTree.Instantiate();
-    root.Add(labelFromUXML);
-}
-```
-
+          // Import UXML
+          var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Editor/MyCustomEditor.uxml");
+          VisualElement labelFromUXML = visualTree.Instantiate();
+          root.Add(labelFromUXML);
+      }
+    ```
+5.  Close your **custom Editor window** if you haven’t done so.
+    
+6.   Select **Window** > **UI Toolkit** > **MyCustomEditor** to re-open your custom Editor window to see three labels, three buttons, and three toggles.
 
 
 
