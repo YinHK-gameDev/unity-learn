@@ -120,6 +120,33 @@ var newButton = new Button("Click me!");
 rootVisualElement.Add(newButton);
 ```
 
+> When adding controls to a UI hierarchy, the **layout engine** automatically handles the **sizing** and **positioning**. You can also **override the size and position of visual elements**.
+
+### Acess or change the control value
+
+To access or change the value of a control, use its `value` property.
+
+
+The following example creates a Toggle control and a Button control. When you click the button, the value of the toggle flips.
+
+```csharp
+// Create a toggle and register callback
+m_MyToggle = new Toggle("Test Toggle") { name = "My Toggle" };
+rootVisualElement.Add(m_MyToggle);
+
+// Create button to flip the toggle's value
+Button button01 = new Button() { text = "Toggle" };
+button01.clicked += () =>
+{
+    m_MyToggle.value = !m_MyToggle.value;
+};
+rootVisualElement.Add(button01);
+```
+
+
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-manage-asset-reference.html
 
