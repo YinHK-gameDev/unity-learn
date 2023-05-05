@@ -300,6 +300,8 @@ public class MyCustomEditor : EditorWindow
 ### ref
 https://learn.unity.com/tutorial/ui-toolkit-first-steps
 
+https://www.youtube.com/watch?v=Ex2MwYl1Dk0
+
 https://docs.unity3d.com/Manual/UIE-simple-ui-toolkit-workflow.html#use-uxml
 
 https://docs.unity3d.com/Manual/UIElements.html
