@@ -190,6 +190,7 @@ element.styleSheets.Add(styleSheet);
 > **Note**: Style rules apply to the visual element and all its descendants, but don’t apply to the parent or siblings of the element. Any change to the USS file automatically refreshes the UI
  that uses this style sheet.
 
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-manage-asset-reference.html
 
