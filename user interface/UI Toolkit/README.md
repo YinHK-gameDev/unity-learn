@@ -203,6 +203,45 @@ public class MyCustomEditor : EditorWindow
 }
 ```
 
+### Use UXML to add UI controls
+If you prefer to define your **UI** in a text file, you can edit the **UXML** to add the UI controls. The following steps add another set of label, button, and toggle into your window.
+
+1. In the `Editor` folder, click **Assets** > **Create** > **UI Toolkit** > **UI Document** to create a UXML file called `MyCustomEditor_UXML.uxml`.
+2. Click the arrow on **`MyCustomEditor_UXML.uxml`** in the Project window.
+3. Double-click `inlineStyle` to open `MyCustomEditor_UXML.uxml` in a text editor.
+4. Replace the contents of `MyCustomEditor_UXML.uxml` with the following:
+    
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <engine:UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:engine="UnityEngine.UIElements"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+    >
+        <engine:Label text="These controls were created with UXML." />
+        <engine:Button text="This is button2" name="button2"/>
+        <engine:Toggle label="Number?" name="toggle2"/>
+    </engine:UXML>
+    ```
+    
+5. Open `MyCustomEditor.cs`.
+    
+6. Add a private `VisualTreeAsset` field called `m_UXMLTree` to the `MyCustomEditor` class. Put the attribute `[SerializeField]` above it:
+   ```cs
+    [SerializeField]
+    private VisualTreeAsset m_UXMLTree;
+   ```
+7. Add the following code to the end of `CreateGUI()`.
+    
+    ```cs
+    root.Add(m_UXMLTree.Instantiate());
+    ```
+    
+8. In the Project window, select `MyCustomEditor.cs`.
+9. Drag `MyCustomEditor_UXML.uxml` from the Project window into the **UXML Tree** field in the **Inspector**. This assigns your UXML to the visual tree.
+10. Select **Window** > **UI Toolkit** > **MyCustomEditor**. This opens your custom Editor window with three labels, two buttons, and two toggles.
+
 
 
 ### ref
