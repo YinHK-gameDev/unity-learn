@@ -143,6 +143,17 @@ button01.clicked += () =>
 rootVisualElement.Add(button01);
 ```
 
+### Register a callback
+Controls that have `value` properties send an event if the value changes. You can register a callback to receive this event.
+
+The following example creates a Toggle control and registers a callback:
+
+```csharp
+// Create a toggle and register callback
+m_MyToggle = new Toggle("Test Toggle") { name = "My Toggle" };
+m_MyToggle.RegisterValueChangedCallback((evt) => { Debug.Log("Change Event received"); });
+rootVisualElement.Add(m_MyToggle);
+```
 
 
 
