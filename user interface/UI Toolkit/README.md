@@ -78,7 +78,7 @@ Use the following tools to create and debug your interfaces, and learn how to us
 
 > This creates a **custom Editor window** with two labels. You can open the Editor window from the menu (**Window** > **UI Toolkit** > **MyCustomEditor**). You can find the source files for it in the `Assets/Editor` folder.
 
-
+![](./img/mycustomeditor.png)
 ### Add UI controls to the window
 
 You can add **UI controls** into your window in the following ways:
