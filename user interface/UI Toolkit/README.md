@@ -25,7 +25,7 @@ UI Toolkit includes:
 ### UI system
 The core of UI Toolkit is a retained-mode UI system based on recognized web technologies. It supports stylesheets, and dynamic and contextual event handling.
 
-The UI system includes the following features:
+The **UI system** includes the following features:
 
 - **Visual tree**: An object graph, made of lightweight nodes, that holds all the elements in a window or panel. It defines every UI you build with the UI Toolkit.
 - **Controls**: A library of standard UI controls such as buttons, popups, list views, and color pickers. You can use them as is, customize them, or create your own controls.
