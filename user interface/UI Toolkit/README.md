@@ -147,6 +147,52 @@ If you prefer to define your **UI** in a text file, you can edit the **UXML** to
 9. Drag `MyCustomEditor_UXML.uxml` from the Project window into the **UXML Tree** field in the **Inspector**. This assigns your UXML to the visual tree.
 10. Select **Window** > **UI Toolkit** > **MyCustomEditor**. This opens your custom Editor window with three labels, two buttons, and two toggles.
 
+
+### Use C# script to add UI controls
+
+If you prefer coding, you can add UI Controls to your window with a C# script. The following steps add another set of label, button, and toggle into your window.
+
+1.  Open `MyCustomEditor.cs`.   
+2.  Unity uses `UnityEngine.UIElements` for basic UI controls like label, button, and toggle. To work with UI controls, you must add the following declaration if it’s not already present.
+    
+    ```cs
+    using UnityEngine.UIElements;
+    ``` 
+3.  Change the text of the existing label from `"Hello World! From C#"` to `"These controls were created using C# code."`.
+4.  The **`EditorWindow`** class has a property called **`rootVisualElement`**. To add the UI controls to your window, first instantiate the element class with some attributes, and then use the **`Add`** methods of the **`rootVisualElement`**.
+    Your finished **`CreateGUI()`** method should look like the following:
+    ```cs
+      public void CreateGUI()
+      {
+          // Each editor window contains a root VisualElement object
+          VisualElement root = rootVisualElement;
+
+          // VisualElements objects can contain other VisualElements following a tree hierarchy.
+          Label label = new Label("These controls were created using C# code.");
+          root.Add(label);
+
+          Button button = new Button();
+          button.name = "button3";
+          button.text = "This is button3.";
+          root.Add(button);
+
+          Toggle toggle = new Toggle();
+          toggle.name = "toggle3";
+          toggle.label = "Number?";
+          root.Add(toggle);
+
+          // Import UXML
+          var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Editor/MyCustomEditor.uxml");
+          VisualElement labelFromUXML = visualTree.Instantiate();
+          root.Add(labelFromUXML);
+      }
+    ```
+5.  Close your **custom Editor window** if you haven’t done so.
+    
+6.   Select **Window** > **UI Toolkit** > **MyCustomEditor** to re-open your custom Editor window to see three labels, three buttons, and three toggles.
+
+
+
 ### Define the behavior of your UI controls
 
 You can set up event handlers for your UI controls so that when you click the button, and select or clear the toggle, your UI controls perform some tasks.
@@ -241,53 +287,6 @@ public class MyCustomEditor : EditorWindow
     }
 }
 ```
-
-### Use C# script to add UI controls
-
-If you prefer coding, you can add UI Controls to your window with a C# script. The following steps add another set of label, button, and toggle into your window.
-
-1.  Open `MyCustomEditor.cs`.   
-2.  Unity uses `UnityEngine.UIElements` for basic UI controls like label, button, and toggle. To work with UI controls, you must add the following declaration if it’s not already present.
-    
-    ```cs
-    using UnityEngine.UIElements;
-    ``` 
-3.  Change the text of the existing label from `"Hello World! From C#"` to `"These controls were created using C# code."`.
-4.  The **`EditorWindow`** class has a property called **`rootVisualElement`**. To add the UI controls to your window, first instantiate the element class with some attributes, and then use the **`Add`** methods of the **`rootVisualElement`**.
-    Your finished **`CreateGUI()`** method should look like the following:
-    ```cs
-      public void CreateGUI()
-      {
-          // Each editor window contains a root VisualElement object
-          VisualElement root = rootVisualElement;
-
-          // VisualElements objects can contain other VisualElements following a tree hierarchy.
-          Label label = new Label("These controls were created using C# code.");
-          root.Add(label);
-
-          Button button = new Button();
-          button.name = "button3";
-          button.text = "This is button3.";
-          root.Add(button);
-
-          Toggle toggle = new Toggle();
-          toggle.name = "toggle3";
-          toggle.label = "Number?";
-          root.Add(toggle);
-
-          // Import UXML
-          var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Editor/MyCustomEditor.uxml");
-          VisualElement labelFromUXML = visualTree.Instantiate();
-          root.Add(labelFromUXML);
-      }
-    ```
-5.  Close your **custom Editor window** if you haven’t done so.
-    
-6.   Select **Window** > **UI Toolkit** > **MyCustomEditor** to re-open your custom Editor window to see three labels, three buttons, and three toggles.
-
-
-
-
 
 ### ref
 https://learn.unity.com/tutorial/ui-toolkit-first-steps
