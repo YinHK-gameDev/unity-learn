@@ -33,13 +33,13 @@ Add the following function inside the **`MyCustomEditor`** class created in the 
 
 
 ```cs
-
+// The MenuItem attribute allows you to add menu items to the main menu and Inspector window context menus.
 [MenuItem("Tools/My Custom Editor")]
-public static void ShowMyEditor()
+public static void ShowMyEditor()  
 {
-  // This method is called when the user selects the menu item in the Editor
+  // This method is called when the user selects the menu item in the Editor, the EditorWindow.GetWindow()   // method to create and display the window
   EditorWindow wnd = GetWindow<MyCustomEditor>();
-  wnd.titleContent = new GUIContent("My Custom Editor");
+  wnd.titleContent = new GUIContent("My Custom Editor");  // To set the window title, change the EditorWindow.titleContent property.
 }
 
 ```
