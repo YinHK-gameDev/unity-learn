@@ -47,9 +47,20 @@ public static void ShowMyEditor()
 
 
 ### Add UI controls to the window
+**UI Toolkit** uses the **`CreateGUI`** method to **add controls** to **Editor UI**, and Unity calls the `CreateGUI` method automatically when the window needs to display. This method works the same way as methods such as **`Awake`** or **`Update`**.
+
+You can add UI controls to the UI by adding **visual elements** to the **visual tree**. The **`VisualElement.Add()`** method is used to **add children** to an existing visual element. The **visual tree** of an Editor window is accessed via the **`rootvisualElement`** **property**.
 
 
+Example: \
+To get started, add a **`CreateGUI()`** function to your custom Editor class and add a **"Hello"** label:
 
+```cs
+public void CreateGUI()
+{
+  rootVisualElement.Add(new Label("Hello"));
+}
+```
 
 
 ### ref 
