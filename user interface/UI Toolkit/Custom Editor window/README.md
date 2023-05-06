@@ -22,8 +22,32 @@ public class MyCustomEditor : EditorWindow
 > This is an **Editor-only** window that includes the **UnityEditor** namespace, so the file must be placed under the **Editor folder**, or inside an **Editor-only** Assembly Definition.
 
 
+### Create a menu entry to open the window
+To open the new Editor window, you must create an entry in the Editor menu.
 
-### 
+Add the `MenuItem` attribute to a static method. In this example, the name of the static method is `ShowMyEditor()`.
+
+Inside **`ShowMyEditor()`**, call the **`EditorWindow.GetWindow()`** method to create and display the window. It returns an **`EditorWindow`** object. To set the window title, change the **`EditorWindow.titleContent`** property.
+
+Add the following function inside the **`MyCustomEditor`** class created in the previous step.
+
+
+```cs
+
+[MenuItem("Tools/My Custom Editor")]
+public static void ShowMyEditor()
+{
+  // This method is called when the user selects the menu item in the Editor
+  EditorWindow wnd = GetWindow<MyCustomEditor>();
+  wnd.titleContent = new GUIContent("My Custom Editor");
+}
+
+```
+
+
+
+
+
 
 
 
