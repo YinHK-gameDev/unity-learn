@@ -46,6 +46,7 @@ public static void ShowMyEditor()
 > To open your new window in above example by opening it via the Unity Editor menu **Tools > My Custom Editor**.
 
 
+### Add UI controls to the window
 
 
 
@@ -53,3 +54,7 @@ public static void ShowMyEditor()
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-HowTo-CreateEditorWindow.html
+
+https://docs.unity3d.com/ScriptReference/EditorWindow.CreateGUI.html
+
+
