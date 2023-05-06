@@ -10,7 +10,7 @@ Reason to write a custom inspector:
 Creating custom inspectors using UI Toolkit is similar to using Immediate Mode GUI (IMGUI), but UI Toolkit has several advantages, such as automatic data binding and automatic undo support. Where IMGUI creates the UI for the inspector entirely through script, UI Toolkit allows you to build the UI via script, visually in UI Builder, or a combination of both.
 
 ### Create a custom inspector script
-To create a custom inspector for any serialized object, you need to create a class deriving from the **Editor** base class, and add the **`CustomEditor`** attribute to it. This attribute lets Unity know which class this custom inspector represents.
+To create a custom inspector for any serialized object, you need to create a class deriving from the **Editor** base class, and add the **`CustomEditor`** attribute to it. This attribute **lets Unity know which class this custom inspector represents**.
 
 EG: \
 Create a file `Car_Inspector.cs` inside **Assets/Scripts/Editor** and copy the following code into it.
@@ -21,7 +21,8 @@ using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 
-[CustomEditor(typeof(Car))]
+
+[CustomEditor(typeof(Car))]  // This attribute lets Unity know which class this custom inspector represents
 public class Car_Inspector : Editor
 {
    ...
