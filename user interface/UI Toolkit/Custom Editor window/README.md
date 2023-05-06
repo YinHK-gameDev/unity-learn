@@ -43,7 +43,7 @@ public static void ShowMyEditor()
 }
 
 ```
-
+> To open your new window in above example by opening it via the Unity Editor menu **Tools > My Custom Editor**.
 
 
 
