@@ -125,6 +125,9 @@ The advantage of a `PropertyField` is the inspector UI will automatically adjust
 
 
 
+![](../img/uie-howto-custominspector-custompropertydrawer.png)
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-HowTo-CreateCustomInspector.html
