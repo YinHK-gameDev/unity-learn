@@ -73,7 +73,7 @@ Select the `<unsaved file>*.uxml` in the **Hierarchy** view in the UI Builder an
 ![](../img/uie-howto-custominspector-uibuilder-extensionauthoring.png)
 
 
-
+> **Note**: If you use UI Toolkit to create Editor windows and custom inspectors, you can enable this setting by default in **Project Settings > UI Builder**.
 
 
 
