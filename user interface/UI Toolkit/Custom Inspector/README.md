@@ -76,7 +76,7 @@ Select the `<unsaved file>*.uxml` in the **Hierarchy** view in the UI Builder an
 > **Note**: If you use UI Toolkit to create Editor windows and custom inspectors, you can enable this setting by default in **Project Settings > UI Builder**.
 
 
-Example: \
+Example: 
 
 After creating **`Car_Inspector_UXML.uxml`** in UI Builder, save it. To use it in your custom inspector UI. 
 
