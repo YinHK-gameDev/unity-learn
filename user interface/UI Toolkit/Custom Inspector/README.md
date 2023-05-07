@@ -54,6 +54,31 @@ public override VisualElement CreateInspectorGUI()
 
 ```
 
+### Use UXML inside a custom inspector
+UI Toolkit allows you to add UI controls in two ways:
+
+-   Implementing a script
+-   Loading a UXML file containing a pre-made UI tree.
+
+
+Using the UI Builder to create a UXML file containing the UI, and use code to load and instantiate the UI from the UXML file.
+
+Open the UI Builder via the menu **Window > UI Toolkit > UI Builder** and create a new Visual Tree Asset using the **File > New** menu entry inside the UI Builder.
+
+
+UI Toolkit offers additional controls types when you’re using it to create Editor windows and custom inspectors. By default, these Editor-only controls aren’t visible in UI Builder. To make them available, you need to enable the checkbox **Editor Extension Authoring**.
+
+Select the `<unsaved file>*.uxml` in the **Hierarchy** view in the UI Builder and enable the **Editor Extension Authoring** checkbox.
+
+![](../img/uie-howto-custominspector-uibuilder-extensionauthoring.png)
+
+
+
+
+
+
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-HowTo-CreateCustomInspector.html
