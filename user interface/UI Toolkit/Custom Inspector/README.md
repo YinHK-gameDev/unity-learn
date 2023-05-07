@@ -105,6 +105,19 @@ public override VisualElement CreateInspectorGUI()
 
 > Default references only work in the Editor. They do not work with runtime components in standalone builds using the `AddComponent()` method.
 
+
+### Property fields
+To display properties of the `Car` class, you must add a control for each field. The control must match the property type so that it can be bound. For example, an `int` should be bound to an Integer field or an Integer Slider.
+
+Instead of adding a specific control based on the property type, you can also make use of the generic **`PropertyField`** control. This control **works for most types of serialized properties**, and generates the default inspector UI for this property type.
+
+Eg:
+
+Add a `PropertyField` control for the `m_YearBuilt` and the `m_Color` properties of the `Car` class. Assign the binding path for each and fill in the `Label` text.
+
+![](../img/uie-howto-custominspector-uibuilder-propertyfield.png)
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-HowTo-CreateCustomInspector.html
 
