@@ -9,6 +9,26 @@ Reason to write a custom inspector:
 
 Creating custom inspectors using UI Toolkit is similar to using Immediate Mode GUI (IMGUI), but UI Toolkit has several advantages, such as automatic data binding and automatic undo support. Where IMGUI creates the UI for the inspector entirely through script, UI Toolkit allows you to build the UI via script, visually in UI Builder, or a combination of both.
 
+
+### Create a new MonoBehaviour
+To begin, you need to create a custom class that you can create a custom inspector for, which is either a `MonoBehaviour` or a `ScriptableObject`. This guide works with a `MonoBehaviour` script that represents a simple car with properties, such as model and color.
+
+Create a new script file `Car.cs` inside **Assets/Scripts** and copy the following code into it.
+
+```csharp
+using UnityEngine;
+
+public class Car : MonoBehaviour
+{
+  public string m_Make = "Toyota";
+  public int m_YearBuilt = 1980;
+  public Color m_Color = Color.black;
+}
+
+
+![](../img/uie-howto-custominspector-custominspector.png)
+
+
 ### Create a custom inspector script
 To create a custom inspector for any serialized object, you need to create a class deriving from the **Editor** base class, and add the **`CustomEditor`** attribute to it. This attribute **lets Unity know which class this custom inspector represents**.
 
