@@ -170,6 +170,26 @@ public class Car_Inspector : Editor
 ![](../img/uie-howto-custominspector-custompropertydrawer.png)
 
 
+#### Car_Inspector_UXML.uxml
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:TextField label="Make of the car" text="&lt;not set&gt;" binding-path="m_Make" />
+    <uie:PropertyField label="Year Built" binding-path="m_YearBuilt" />
+    <uie:PropertyField binding-path="m_Color" label="Paint Color" />
+    <uie:PropertyField binding-path="m_Tires" label="Tires" />
+    <ui:Foldout text="Default Inspector" name="Default_Inspector" />
+</ui:UXML>
+```
+
+#### Tire.cs
+```cs
+[System.Serializable]
+public class Tire
+{
+  public float m_AirPressure = 21.5f;
+  public int m_ProfileDepth = 4;
+}
+```
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-HowTo-CreateCustomInspector.html
