@@ -125,6 +125,48 @@ The advantage of a `PropertyField` is the inspector UI will automatically adjust
 
 
 
+
+#### Car.cs
+```cs
+using UnityEngine;
+
+public class Car : MonoBehaviour
+{
+  public string m_Make = "Toyota";
+  public int m_YearBuilt = 1980;
+  public Color m_Color = Color.black;
+
+  // This car has four tires
+  public Tire[] m_Tires = new Tire[4];
+}
+```
+
+#### Car_Inspector.cs
+```cs
+using UnityEditor;
+using UnityEditor.UIElements;
+using UnityEngine.UIElements;
+
+[CustomEditor(typeof(Car))]
+public class Car_Inspector : Editor
+{
+  public VisualTreeAsset m_InspectorXML;
+
+  public override VisualElement CreateInspectorGUI()
+  {
+    // Create a new VisualElement to be the root of our inspector UI
+    VisualElement myInspector = new VisualElement();
+
+    // Load from default reference
+    m_InspectorXML.CloneTree(myInspector);
+
+    // Return the finished inspector UI
+    return myInspector;
+  }
+}
+
+```
+
 ![](../img/uie-howto-custominspector-custompropertydrawer.png)
 
 
