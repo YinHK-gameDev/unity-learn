@@ -75,12 +75,16 @@ Select the `<unsaved file>*.uxml` in the **Hierarchy** view in the UI Builder an
 
 > **Note**: If you use UI Toolkit to create Editor windows and custom inspectors, you can enable this setting by default in **Project Settings > UI Builder**.
 
+To use the **UXML** file inside your custom inspector, you need to **clone** it inside the **`CreateInspectorGUI()`** function and add it to the **visual tree**. To do this, you use the **`CloneTree`** method. You can pass any **VisualElement as a parameter** to act as **a parent** for the created elements.
+
 
 Example: 
 
 After creating **`Car_Inspector_UXML.uxml`** in UI Builder, save it. To use it in your custom inspector UI. 
 
 Create a public variable for a `VisualTreeAsset` in your script, and assign the `Car_Inspector_UXML.uxml` file as a default reference in the Editor.
+
+
 
 ```cs
 public VisualTreeAsset m_InspectorXML;
