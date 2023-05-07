@@ -118,6 +118,14 @@ Add a `PropertyField` control for the `m_YearBuilt` and the `m_Color` properties
 ![](../img/uie-howto-custominspector-uibuilder-propertyfield.png)
 
 
+The advantage of a `PropertyField` is the inspector UI will automatically adjust when you change the variable type inside your script. However, you can’t get a preview of the control inside the UI Builder, since the control type needed is unknown until the visual tree is bound to a serialized object, and UI Toolkit can determine the property type.
+
+
+![](../img/uie-howto-custominspector-custominspector.png)
+
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-HowTo-CreateCustomInspector.html
 
