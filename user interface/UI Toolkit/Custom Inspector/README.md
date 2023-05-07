@@ -58,5 +58,7 @@ public override VisualElement CreateInspectorGUI()
 ### ref 
 https://docs.unity3d.com/Manual/UIE-HowTo-CreateCustomInspector.html
 
+https://docs.unity3d.com/ScriptReference/UIElements.PropertyField.html
+
 
 
