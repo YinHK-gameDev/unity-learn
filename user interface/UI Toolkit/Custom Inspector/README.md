@@ -24,7 +24,7 @@ public class Car : MonoBehaviour
   public int m_YearBuilt = 1980;
   public Color m_Color = Color.black;
 }
-
+```
 
 ![](../img/uie-howto-custominspector-custominspector.png)
 
