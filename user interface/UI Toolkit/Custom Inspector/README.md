@@ -76,9 +76,30 @@ Select the `<unsaved file>*.uxml` in the **Hierarchy** view in the UI Builder an
 > **Note**: If you use UI Toolkit to create Editor windows and custom inspectors, you can enable this setting by default in **Project Settings > UI Builder**.
 
 
+Example: \
+
+After creating **`Car_Inspector_UXML.uxml`** in UI Builder, save it. To use it in your custom inspector UI. 
+
+Create a public variable for a `VisualTreeAsset` in your script, and assign the `Car_Inspector_UXML.uxml` file as a default reference in the Editor.
+
+```cs
+public VisualTreeAsset m_InspectorXML;
+
+public override VisualElement CreateInspectorGUI()
+{
+  // Create a new VisualElement to be the root of our inspector UI
+  VisualElement myInspector = new VisualElement();
+
+  // Load from default reference
+  m_InspectorXML.CloneTree(myInspector);
+
+  // Return the finished inspector UI
+  return myInspector;
+}
+```
 
 
-
+> Default references only work in the Editor. They do not work with runtime components in standalone builds using the `AddComponent()` method.
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-HowTo-CreateCustomInspector.html
