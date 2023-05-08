@@ -140,6 +140,9 @@ To connect **more than one UI Document asset** to a panel:
 
 
 ### ref 
+Panel Settings properties reference \
+https://docs.unity3d.com/Manual/UIE-Runtime-Panel-Settings.html
+
 https://docs.unity3d.com/Manual/UIE-get-started-with-runtime-ui.html
 
 https://docs.unity3d.com/Manual/UIE-render-runtime-ui.html
