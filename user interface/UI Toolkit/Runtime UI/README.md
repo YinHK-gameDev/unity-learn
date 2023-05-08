@@ -89,6 +89,36 @@ Unity loads a UI Document component’s source UXML when **`OnEnable`** is calle
     ```
  2.  Add **SimpleRuntimeUI.cs** as a component of the UIDocument GameObject.
 
+
+
+### Render UI in the Game view
+
+To render UI and react to input from the users in the Game view, connect the UI Document assets to a Panel Settings asset by a UI Document component.
+ 
+ 
+Every UI Document component references a UI Document asset (`.uxml` file) that defines the UI and a Panel Settings asset that renders it. You can connect more than one UI Document asset to a single Panel Settings asset.
+
+### Configure a panel
+A **Panel Settings** asset defines a panel in the Scene. The panel provides the **root visual element**
+ that UI hierarchies are attached to, and draws the UI in the Scene at runtime. How you **configure the Panel Settings asset determines how the UI is rendered**. It also determines how the UI reacts to input. For example, the panel that’s visually in the front intercepts clicks from the user before the panels that are visually in the back
+ 
+ 
+ You can configure the Panel Settings asset to do the following:
+
+-   Control scale and resolution
+-   Apply default styles
+-   Display UI on Render Textures
+-   Set the panel’s sort order
+
+To configure a panel:
+
+1.  In your project, select **Assets** > **Create** > **UI Toolkit** > **Panel Settings Asset** to create a Panel Settings asset if you don’t have it.
+2.  In the Inspector window of the Panel Settings, configure the **Panel Settings properties**.
+
+
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-get-started-with-runtime-ui.html
 
