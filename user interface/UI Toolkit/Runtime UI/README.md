@@ -13,7 +13,7 @@ Create a UI Document with a label, a button, and a Toggle.
 
 1.   Create a project in Unity Editor with any template.
     
-2.   Create a UI Document named `SimpleRuntimeUI.uxml` with the following contents:
+2.   Create a UI Document named **`SimpleRuntimeUI.uxml`** with the following contents:
     
      ```xml
       <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
