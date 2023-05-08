@@ -132,7 +132,7 @@ To connect **more than one UI Document asset** to a panel:
 2. Select **Component > UI Toolkit > UI Document** to add a UI Document component.
 3. In the Inspector window of the UIDocument, do the following:
    - Set the **Panel Settings** to the Panel Settings asset to display the UI.
-   - Set the **Source Asset** to the UI Document (.uxml file) asset that contains the UI you want to display.
+   - Set the **Source Asset** to the UI Document (**`.uxml` file**) asset that contains the UI you want to display.
    - set the **Sort Order**. UI Document with a smaller number rendered first.
 4. Repeat the process for each UI Document asset.
 
