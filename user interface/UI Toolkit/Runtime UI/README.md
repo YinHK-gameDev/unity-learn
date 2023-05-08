@@ -96,7 +96,7 @@ Unity loads a UI Document component’s source UXML when **`OnEnable`** is calle
 To render UI and react to input from the users in the Game view, **connect the UI Document assets to a Panel Settings asset by a UI Document component**.
  
  
-Every UI Document component references a UI Document asset (`.uxml` file) that defines the UI and a Panel Settings asset that renders it. You can connect more than one UI Document asset to a single Panel Settings asset.
+Every UI Document component references a UI Document asset (**`.uxml` file**) that defines the UI and a Panel Settings asset that renders it. You can connect more than one UI Document asset to a single Panel Settings asset.
 
 ### Configure a panel
 A **Panel Settings** asset defines a **panel** in the Scene. The panel provides the **root visual element**
