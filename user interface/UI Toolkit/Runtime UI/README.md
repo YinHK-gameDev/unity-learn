@@ -125,7 +125,18 @@ A panel can display UI from more than one UI Document asset. Each UI Document ha
 -   UI Documents components that are at the same level of the hierarchy are rendered in sequence according to their **Sort Order**.
 
 
+To connect **more than one UI Document asset** to a panel:
 
+
+1. Select or create a GameObject to host the UI.
+2. Select **Component > UI Toolkit > UI Document** to add a UI Document component.
+3. In the Inspector window of the UIDocument, do the following:
+   - Set the **Panel Settings** to the Panel Settings asset to display the UI.
+   - Set the **Source Asset** to the UI Document (.uxml file) asset that contains the UI you want to display.
+   - set the **Sort Order**. UI Document with a smaller number rendered first.
+4. Repeat the process for each UI Document asset.
+
+> **Note**: If there are multiple UI documents attached to the same Panel Settings asset, all these documents have a common focus navigation context. If they have distinct Panel Settings, navigation won’t jump automatically from one to the other even if they’re arranged side by side.
 
 
 ### ref 
