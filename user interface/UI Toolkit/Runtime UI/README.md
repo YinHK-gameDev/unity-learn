@@ -105,10 +105,10 @@ A **Panel Settings** asset defines a panel in the Scene. The panel provides the 
  
  You can configure the Panel Settings asset to do the following:
 
--   Control scale and resolution
--   Apply default styles
--   Display UI on Render Textures
--   Set the panel’s sort order
+-   **Control scale and resolution**
+-   **Apply default styles**
+-   **Display UI on Render Textures**
+-   **Set the panel’s sort order**
 
 To configure a panel:
 
