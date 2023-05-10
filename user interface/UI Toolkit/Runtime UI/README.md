@@ -167,6 +167,21 @@ The following table describes the required components and settings for each inpu
 _You can find the **Active Input Handling** setting in **Edit** > **Project Settings** > **Player** > **Active Input Handling**._
 
 
+### Use uGUI with UI Toolkit
+You can use UI Toolkit UI Documents and uGUI components at the same time.
+
+When you add your first uGUI element in the Scene, an **Event System** and a **Standalone Input Module** are automatically added to the Scene:
+
+- The **Event System** allows uGUI objects to respond to events.
+- The **Standalone Input Module** dispatches events to UI Toolkit elements.
+
+The Event System reads the scene and executes events, whereas the Standalone Input Module interprets the input and requests event execution. You can replace the Standalone Input Module with other input modules. Other input modules change what input is consumed, but all events still go through the Event System to execute.
+
+UI Toolkit uses the sorting order of the Panel and compares it with the sorting order of uGUI canvases and other valid raycast targets, to decide whether pointer events should be sent to a UI Toolkit element or to a uGUI object, or to something else in the scene. Similarly, UI Toolkit sets the Event System’s `currentSelectedGameObject` to make sure that when a UI Toolkit panel wants to get focus, it removes the focus from other uGUI objects, and when a uGUI object becomes selected, UI Toolkit panels automatically lose their focus.
+
+To add the event system manually, select **GameObject** > **UI** > **Event System**.
+
+
 ### Use Input System package
 You can use **UI Toolkit** with the **Input System package**:
 
