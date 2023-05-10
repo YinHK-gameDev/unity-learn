@@ -139,6 +139,18 @@ To connect **more than one UI Document asset** to a panel:
 > **Note**: If there are multiple UI documents attached to the same Panel Settings asset, all these documents have a common focus navigation context. If they have distinct Panel Settings, navigation won’t jump automatically from one to the other even if they’re arranged side by side.
 
 
+### Runtime UI event system
+
+**UI Toolkit** uses an **event system** to handle input and send events to all active panels.
+ 
+### Event system with multiple Panel Settings assets
+
+If the Scene uses more than one Panel Settings asset, the event system sends pointer events to their panels according to their **Sort Order**. A pointer event propagates through the panels until a panel reacts to it.
+
+The first panel that uses an event to affect the focused element becomes the focused panel for the event system. That panel continues to receive keyboard events until another event causes a different panel to become the focused panel.
+
+> **Note**: Stopping an event’s propagation and giving an element focus are two separate things. For example, when you click a button, it stops the propagation and allows only the button to react to being pressed, but it doesn’t prevent the other default actions for the click, such as giving focus to the button or, in general, any focusable element that is clicked.
+
 ### ref 
 Panel Settings properties reference \
 https://docs.unity3d.com/Manual/UIE-Runtime-Panel-Settings.html
