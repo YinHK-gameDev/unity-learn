@@ -151,6 +151,22 @@ The first panel that uses an event to affect the focused element becomes the foc
 
 > **Note**: Stopping an event’s propagation and giving an element focus are two separate things. For example, when you click a button, it stops the propagation and allows only the button to react to being pressed, but it doesn’t prevent the other default actions for the click, such as giving focus to the button or, in general, any focusable element that is clicked.
 
+### Use the event system and the input system with UI Toolkit
+When you use UI Toolkit (and uGUI) with different input systems, you need to choose different input module and event system.
+
+The following table describes the required components and settings for each input system usage:
+
+  
+| **Usage** | **Required components** | **Active Input Handling** |
+| --- | --- | --- |
+| **UI Toolkit elements with legacy Input Manager** | Uses the default event system. No scene component is required. | **Input Manager (Old)**. |
+| **UI Toolkit elements with Input System package** | An **Input System UI Input Module** and an **Event System** components. | **Input System Package (New)** |
+| **UI Toolkit elements and uGUI components with legacy Input Manager** | A **Standalone Input Module** and an **Event System** components. | **Input Manager (Old)** or **Both**. |
+| **UI Toolkit elements and uGUI components with Input System package** | An **Input System UI Input Module** and an **Event System** components. | **Input System Package (New)** or **Both** |
+
+_You can find the **Active Input Handling** setting in **Edit** > **Project Settings** > **Player** > **Active Input Handling**._
+
+
 ### Use Input System package
 You can use **UI Toolkit** with the **Input System package**:
 
