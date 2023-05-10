@@ -151,6 +151,17 @@ The first panel that uses an event to affect the focused element becomes the foc
 
 > **Note**: Stopping an event’s propagation and giving an element focus are two separate things. For example, when you click a button, it stops the propagation and allows only the button to react to being pressed, but it doesn’t prevent the other default actions for the click, such as giving focus to the button or, in general, any focusable element that is clicked.
 
+### Use Input System package
+You can use **UI Toolkit** with the **Input System package**:
+
+1. Use the **Package Manager** to install the **Input System** package.
+2. Select **Edit > Project Settings > Player**.
+3. Set **Active Input Handling** to **Input System Package (New)**.
+4. Select **GameObject > UI > Event System**. This adds an **Event System GameObject** that includes a **Standalone Input Module** in the Scene. The module shows an error message along with a button in the Inspector
+ window.
+5. Select **Replace with InputSystemUIInputModule** to replace the **Standalone Input Module** with the **Input System UI Input Module**. The Input System UI Input Module and its accompanying **Event System** allows the events of both UI Toolkit and uGUI elements to be dispatched correctly.
+
+
 ### ref 
 Panel Settings properties reference \
 https://docs.unity3d.com/Manual/UIE-Runtime-Panel-Settings.html
