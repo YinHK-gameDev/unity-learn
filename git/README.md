@@ -1,4 +1,4 @@
-## Git
+## Version control for unity - Git
 
 Once in the directory of your existing project proceed to execute the following commands below:
 
