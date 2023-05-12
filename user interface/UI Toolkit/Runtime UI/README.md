@@ -36,6 +36,8 @@ Create a UIDocument **GameObject** in the SampleScene and add the UI Document as
 2. Select the **UIDocument GameObject** in the hierarchy and drag **`SimpleRuntimeUI.uxml`** from your Project window to the **Source Asset** field of the UI Document component in the Inspector window. 
 
 ### Panel settings
+Defines a Panel Settings asset that instantiates a panel at runtime. The panel makes it possible for Unity to display UXML-file based UI in the Game view.
+
 
 
 #### Define the behavior of your UI controls
@@ -104,7 +106,10 @@ Every UI Document component references a UI Document asset (**`.uxml` file**) th
 A **Panel Settings** asset defines a **panel** in the Scene. The panel provides the **root visual element**
  that **UI hierarchies are attached to**, and **draws the UI in the Scene at runtime**. 
  
- How you **configure the Panel Settings asset determines how the UI is rendered**. It also determines how the UI reacts to input. For example, the panel that’s visually in the front intercepts clicks from the user before the panels that are visually in the back
+ 
+**Panel** defines an **area** that will by default stretch to fit it's parent RectTransform dimensions, more likely usable as container of other RectTransforms (could be called panels if these have same setup) that can define other types of UI elements, depending on what UI components you add to these RTs (Image, Button, ScrollRect...).
+ 
+How you **configure the Panel Settings asset determines how the UI is rendered**. It also determines how the UI reacts to input. For example, the panel that’s visually in the front intercepts clicks from the user before the panels that are visually in the back
  
  
  You can configure the Panel Settings asset to do the following:
@@ -197,7 +202,8 @@ You can use **UI Toolkit** with the **Input System package**:
 
 ### ref 
 Panel Settings properties reference \
-https://docs.unity3d.com/Manual/UIE-Runtime-Panel-Settings.html
+https://docs.unity3d.com/Manual/UIE-Runtime-Panel-Settings.html \
+https://docs.unity3d.com/ScriptReference/UIElements.PanelSettings.html
 
 Runtime UI event system \
 https://docs.unity3d.com/Manual/UIE-Runtime-Event-System.html
