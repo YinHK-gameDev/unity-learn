@@ -109,7 +109,7 @@ A **Panel Settings** asset defines a **panel** in the Scene. The panel provides 
  
 **Panel** defines an **area** that will by default stretch to fit it's parent RectTransform dimensions, more likely usable as container of other RectTransforms (could be called panels if these have same setup) that can define other types of UI elements, depending on what UI components you add to these RTs (Image, Button, ScrollRect...).
 
-**By default panel display fit to the Main camera size.**
+> **By default panel display fit to the Main camera size.**
  
 How you **configure the Panel Settings asset determines how the UI is rendered**. It also determines how the UI reacts to input. For example, the panel that’s visually in the front intercepts clicks from the user before the panels that are visually in the back
  
