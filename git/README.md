@@ -18,8 +18,12 @@ git add .
 ```
 
 
-### GitHub for Unity
-https://github.com/github-for-unity/Unity/blob/master/docs/using/getting-started.md
+### Git for Unity
+A Git client for your Unity Editor. 
+
+
+https://github.com/unity-technologies/git-for-unity \
+https://github.com/spoiledcat/git-for-unity
 
 
 ### ref 
