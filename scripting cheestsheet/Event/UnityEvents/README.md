@@ -31,6 +31,40 @@ When configuring a UnityEvent in the Inspector there are two types of function c
 - Using `UnityEvent`, you can use editor to add event listener manually in inspector.
 
 
+### Declare UnityEvent
+```cs
+using UnityEngine;
+using UnityEngine.Events;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour
+{
+    UnityEvent m_MyEvent;
+
+    void Start()
+    {
+        if (m_MyEvent == null)
+            m_MyEvent = new UnityEvent();
+
+        m_MyEvent.AddListener(Ping);
+    }
+
+    void Update()
+    {
+        if (Input.anyKeyDown && m_MyEvent != null)
+        {
+            m_MyEvent.Invoke();
+        }
+    }
+
+    void Ping()
+    {
+        Debug.Log("Ping");
+    }
+}
+```
+
+
 ### Add Listener
 ```cs
 void Start()
@@ -40,6 +74,10 @@ void Start()
 }
 ```
 
+### Remove listener
+```cs
+m_MyEvent.RemoveListener(MyAction);
+```
 
 
 ### ref 
