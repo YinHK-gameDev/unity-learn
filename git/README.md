@@ -8,7 +8,7 @@ git init
 ```
 Create a .gitignore File for Unity
 
-You can find the latest gitignore content for Unity here: \ **https://github.com/github/gitignore/blob/master/Unity.gitignore**
+You can find the latest gitignore content for Unity here:  **https://github.com/github/gitignore/blob/master/Unity.gitignore**
 
 Copy and paste the syntax into the console and then type the following to close the creation of the gitignore file.
 
