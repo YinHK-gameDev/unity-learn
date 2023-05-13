@@ -31,6 +31,17 @@ When configuring a UnityEvent in the Inspector there are two types of function c
 - Using `UnityEvent`, you can use editor to add event listener manually in inspector.
 
 
+### Add Listener
+```cs
+void Start()
+    {
+        //Add a listener to the new Event. Calls MyAction method when invoked
+        m_MyEvent.AddListener(MyAction);
+    }
+```
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UnityEvents.html \
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
