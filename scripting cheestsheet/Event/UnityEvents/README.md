@@ -25,14 +25,15 @@ When configuring a UnityEvent in the Inspector there are two types of function c
 . This means that when the callback is invoked, the target function is invoked with the argument that has been entered into the UI.
 - **Dynamic**. Dynamic calls are invoked using an argument that is sent from code, and this is bound to the type of UnityEvent that is being invoked. The UI filters the callbacks and only shows the dynamic calls that are valid for the UnityEvent.
 
-https://docs.unity3d.com/Manual/UnityEvents.html \
-https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
-https://www.youtube.com/watch?v=oc3sQamIh-Q \
-https://www.youtube.com/watch?v=TWxXD-UpvSg
-
 
 ### Event vs UnityEvents
 - In c#  declare an event must use script to add event listener.
 - Using `UnityEvent`, you can use editor to add event listener manually in inspector.
 
+
+### ref 
+https://docs.unity3d.com/Manual/UnityEvents.html \
+https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
+https://www.youtube.com/watch?v=oc3sQamIh-Q \
+https://www.youtube.com/watch?v=TWxXD-UpvSg
 
