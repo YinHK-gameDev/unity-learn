@@ -34,10 +34,10 @@ When configuring a UnityEvent in the Inspector there are two types of function c
 ### Add Listener
 ```cs
 void Start()
-    {
-        //Add a listener to the new Event. Calls MyAction method when invoked
-        m_MyEvent.AddListener(MyAction);
-    }
+{
+   //Add a listener to the new Event. Calls MyAction method when invoked
+   m_MyEvent.AddListener(MyAction);
+}
 ```
 
 
