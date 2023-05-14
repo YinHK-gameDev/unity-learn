@@ -20,6 +20,13 @@ https://docs.unity3d.com/Manual/Packages.html
 
 > Unity provides **3** Package Manager interfaces:   **Package Manager window**, **Scripting API**, and **manifest files**.
 
+
+### Scoped registries
+**Scoped registries** allow Unity to communicate the location of any custom package registry server to the Package Manager so that the user has access to several collections of packages at the same time. 
+
+
+https://docs.unity3d.com/Manual/upm-scoped.html
+
 #### For Package Manager window:
 Find packages and manage them in your project, and resolve conflicts in package dependencies. The Package Manager provides a **user interface** that makes changes to the **Project manifest** directly.
 
