@@ -1,7 +1,13 @@
 ## Unity Machine Learning  Agent
 
+### How Unity ML-Agents works
 
-
+- **Integrate** \
+  Integrate the ML-Agents Unity package.
+- **Train** \
+  Connect your integrated Unity project and start training the agents to learn the right behaviour. 
+- **Embed** \
+  When training is complete, embed the trained agent model back into your Unity project.
 
 
 ### ref
