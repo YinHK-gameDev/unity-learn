@@ -12,6 +12,8 @@
 - **Embed** \
   When training is complete, embed the trained agent model back into your Unity project.
 
+### Installation
+https://unity-technologies.github.io/ml-agents/Installation/
 
 ### ref
 web doc \
