@@ -37,5 +37,6 @@ https://youtu.be/HcWbggArjXo
 在Unity環境中訓練強化學習AI \
 https://www.youtube.com/watch?v=aOb0GSfA1pw&t=52s \
 https://youtu.be/61j0q81hoIw \
-https://www.youtube.com/watch?v=RjWpb7BazdA
+https://www.youtube.com/watch?v=RjWpb7BazdA \
+https://www.youtube.com/watch?v=UIaywmBsCFM
 
