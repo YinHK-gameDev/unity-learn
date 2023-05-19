@@ -29,6 +29,8 @@ https://a0707127.medium.com/unity-ml-agents-installation-%E7%AD%86%E8%A8%98-3f2f
 
 https://youtu.be/Z6fjTZAtziQ
 
+https://medium.com/@fgriasa123/unity-ml-agents-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%BB%BA%E6%A7%8B%E7%92%B0%E5%A2%83-ee27391cf4b0
+
 AI LEARNS TENNIS \
 https://youtu.be/HcWbggArjXo
 
