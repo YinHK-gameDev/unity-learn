@@ -24,6 +24,8 @@ web doc \
 https://unity-technologies.github.io/ml-agents/ \
 https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 
+package doc \
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.0/manual/index.html
 
 https://github.com/Unity-Technologies/ml-agents
 
