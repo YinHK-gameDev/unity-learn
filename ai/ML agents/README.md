@@ -84,6 +84,15 @@ https://learn.unity.com/course/ml-agents-hummingbirds
 
 https://thomassimonini.medium.com/an-introduction-to-unity-ml-agents-with-hugging-face-efbac62c8c80
 
+Example environment \
+https://www.gocoder.one/blog/introduction-to-unity-ml-agents/#whats-unity-ml-agents \
+https://www.gocoder.one/blog/build-a-reinforcement-learning-environment-using-unity-mlagents/ \
+https://www.gocoder.one/blog/designing-reinforcement-learning-agents-using-unity-ml-agents/ \
+https://www.gocoder.one/blog/training-agents-using-ppo-with-unity-ml-agents/ \
+https://www.gocoder.one/blog/competitive-self-play-unity-ml-agents/ \
+
+
+
 AI LEARNS TENNIS \
 https://youtu.be/HcWbggArjXo
 
