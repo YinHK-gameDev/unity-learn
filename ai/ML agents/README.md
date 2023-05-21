@@ -22,6 +22,17 @@ https://unity-technologies.github.io/ml-agents/Using-Virtual-Environment/
 ### Example for getting started guide from official doc
 https://github.com/Unity-Technologies/ml-agents/blob/release_20_docs/docs/Getting-Started.md
 
+### Sample projects
+Unity ml agents provide 18+ example environments for demo. 
+
+load the sample Unity Project provided by ml-agents.
+
+- In the Unity Hub, click **Open** > **Add project from disk**.
+- Navigate to wherever you cloned or downloaded the **ml-agents repository** from github.
+- Select the **'Project'** folder, and click **'Select Folder'** in the file browser
+
+https://github.com/Unity-Technologies/ml-agents/blob/release_18_docs/docs/Learning-Environment-Examples.md
+
 ### ref
 web doc \
 https://unity-technologies.github.io/ml-agents/ \
