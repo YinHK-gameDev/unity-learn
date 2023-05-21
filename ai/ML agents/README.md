@@ -15,9 +15,12 @@
 ### Installation
 https://unity-technologies.github.io/ml-agents/Installation/
 
-
 ### Using virtual environment
 https://unity-technologies.github.io/ml-agents/Using-Virtual-Environment/
+
+
+### Example for getting started guide from official doc
+https://github.com/Unity-Technologies/ml-agents/blob/release_20_docs/docs/Getting-Started.md
 
 ### ref
 web doc \
