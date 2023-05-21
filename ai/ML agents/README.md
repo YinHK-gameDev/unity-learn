@@ -33,6 +33,32 @@ load the sample Unity Project provided by ml-agents.
 
 https://github.com/Unity-Technologies/ml-agents/blob/release_18_docs/docs/Learning-Environment-Examples.md
 
+
+### Train your agent with reinforcement learning
+Run in your terminal from the **root** directory
+```
+mlagents-learn
+```
+> run `mlagents-learn` from any directory.
+
+### Observing Training Progress
+Once you start training using `mlagents-learn`, while training, you'll receive information about the training progress from the console. You'll also be able to visualize the training by running in a separate terminal:
+```
+tensorboard --logdir results
+```
+
+### Embedding the model back into your Unity Environment
+Once training has been completed, the training process saves the model. Your trained model will be at **`results/<run-identifier>/<behavior_name>.onnx`** where **`<behavior_name>`** is the name of the Behavior Name of the agents corresponding to the model.  
+
+> **Note**: Do not just close the Unity Window once the Saved Model message appears. Either wait for the training process to close the window or press `Ctrl+C` at the command-line prompt. If you close the window manually, the **`.onnx`** file containing the trained model is not exported.
+
+
+- In the Hierarchy panel, select the **Agent object**.
+- Drag your model (**`behavior_name>.onnx`** file) te*Model** field under **Behavior Parameters** in the Inspector panel.
+- Set inference device to CPU (for most of the models generated with the ML-Agents toolkit, CPU will be faster than GPU)
+
+
+
 ### ref
 web doc \
 https://unity-technologies.github.io/ml-agents/ \
