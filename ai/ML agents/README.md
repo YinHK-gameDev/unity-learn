@@ -54,7 +54,7 @@ Once training has been completed, the training process saves the model. Your tra
 
 
 - In the Hierarchy panel, select the **Agent object**.
-- Drag your model (**`behavior_name>.onnx`** file) te*Model** field under **Behavior Parameters** in the Inspector panel.
+- Drag your model (**`behavior_name>.onnx`** file) the *Model** field under **Behavior Parameters** in the Inspector panel.
 - Set inference device to CPU (for most of the models generated with the ML-Agents toolkit, CPU will be faster than GPU)
 
 
