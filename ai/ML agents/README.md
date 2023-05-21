@@ -42,6 +42,8 @@ https://medium.com/@fgriasa123/unity-ml-agents-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%B
 
 https://learn.unity.com/course/ml-agents-hummingbirds
 
+https://thomassimonini.medium.com/an-introduction-to-unity-ml-agents-with-hugging-face-efbac62c8c80
+
 AI LEARNS TENNIS \
 https://youtu.be/HcWbggArjXo
 
