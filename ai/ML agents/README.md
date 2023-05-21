@@ -89,7 +89,7 @@ https://www.gocoder.one/blog/introduction-to-unity-ml-agents/#whats-unity-ml-age
 https://www.gocoder.one/blog/build-a-reinforcement-learning-environment-using-unity-mlagents/ \
 https://www.gocoder.one/blog/designing-reinforcement-learning-agents-using-unity-ml-agents/ \
 https://www.gocoder.one/blog/training-agents-using-ppo-with-unity-ml-agents/ \
-https://www.gocoder.one/blog/competitive-self-play-unity-ml-agents/ \
+https://www.gocoder.one/blog/competitive-self-play-unity-ml-agents/ 
 
 
 
