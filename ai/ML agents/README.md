@@ -40,6 +40,8 @@ https://youtu.be/Z6fjTZAtziQ
 
 https://medium.com/@fgriasa123/unity-ml-agents-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%BB%BA%E6%A7%8B%E7%92%B0%E5%A2%83-ee27391cf4b0
 
+https://learn.unity.com/course/ml-agents-hummingbirds
+
 AI LEARNS TENNIS \
 https://youtu.be/HcWbggArjXo
 
