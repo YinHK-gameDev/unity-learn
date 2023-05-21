@@ -92,6 +92,8 @@ https://www.gocoder.one/blog/training-agents-using-ppo-with-unity-ml-agents/ \
 https://www.gocoder.one/blog/competitive-self-play-unity-ml-agents/ 
 
 
+Python Mlagents package \
+https://pypi.org/project/mlagents/
 
 AI LEARNS TENNIS \
 https://youtu.be/HcWbggArjXo
