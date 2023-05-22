@@ -66,6 +66,9 @@ Your trained model will be at **root directory of your project > `results/<run-i
 ![](./img/onnx.png)
 
 
+> You can find the configurations for this training process in `.yaml` file.
+
+
 ### Observing Training Progress
 Once you start training using `mlagents-learn`, while training, you'll receive information about the training progress from the console. You'll also be able to visualize the training by running in a separate terminal:
 ```
