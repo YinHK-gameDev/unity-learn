@@ -91,7 +91,7 @@ https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-ML-Agents.md
 
 - Your customed **Agent script**(with your own customed logic) by drag script into the agent.
 - Add a **Decision Requester script** with the Add Component button.
-- Add a Behavior Parameters script with the Add Component button.
+- Add a **Behavior Parameters script** with the Add Component button.
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
 
