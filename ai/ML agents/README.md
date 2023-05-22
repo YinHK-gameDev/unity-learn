@@ -76,6 +76,10 @@ Use the `mlagents-learn` command to train agents. `mlagents-learn` supports trai
 mlagents-learn <trainer-config-file> --env=<env_name> --run-id=<run-identifier> --train
 ```
 
+-   `<trainer-config-file>` is the file path of the trainer configuration yaml.
+-   `<env_name>`**(Optional)** is the name (including path) of your Unity executable containing the agents to be trained. If `<env_name>` is not passed, the training will happen in the Editor. Press the ▶️ button in Unity when the message _"Start training by pressing the Play button in the Unity Editor"_ is displayed on the screen.
+-   `<run-identifier>` is an optional identifier you can use to identify the results of individual training runs.
+
 https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-ML-Agents.md
 
 ### Observing Training Progress
