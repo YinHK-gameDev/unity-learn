@@ -46,6 +46,8 @@ Once you start training using `mlagents-learn`, while training, you'll receive i
 ```
 tensorboard --logdir results
 ```
+hen navigate to **`localhost:6006`** in your browser to view the TensorBoard summary statistics
+
 
 ### Embedding the model back into your Unity Environment
 Once training has been completed, the training process saves the model. Your trained model will be at **`results/<run-identifier>/<behavior_name>.onnx`** where **`<behavior_name>`** is the name of the Behavior Name of the agents corresponding to the model.  
