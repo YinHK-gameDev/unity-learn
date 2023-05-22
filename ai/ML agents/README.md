@@ -69,6 +69,15 @@ Your trained model will be at **root directory of your project > `results/<run-i
 > You can find the configurations for this training process in `.yaml` file.
 
 
+#### More details of how to use `mlagents-learn` to train your agents
+Use the `mlagents-learn` command to train agents. `mlagents-learn` supports training with [reinforcement learning](https://github.com/gzrjzcx/ML-agents/blob/master/docs/Background-Machine-Learning.md#reinforcement-learning), [curriculum learning](https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-Curriculum-Learning.md), and [behavioral cloning imitation learning](https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-Imitation-Learning.md).
+
+```
+mlagents-learn <trainer-config-file> --env=<env_name> --run-id=<run-identifier> --train
+```
+
+https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-ML-Agents.md
+
 ### Observing Training Progress
 Once you start training using `mlagents-learn`, while training, you'll receive information about the training progress from the console. You'll also be able to visualize the training by running in a separate terminal:
 ```
