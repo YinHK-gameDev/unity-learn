@@ -85,6 +85,23 @@ https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-ML-Ag
 https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-ML-Agents.md
 
 
+#### Multiple Training Areas within the Same Scene
+To generally speeds up training, allow multiple training within the same scene. 
+
+This can be achieved simply by instantiating many Agents with the **same Behavior Name**.
+
+1. Drag the TrainingArea GameObject, along with its attached GameObjects, into your Assets browser, turning it into a prefab.
+2. You can now instantiate copies of the **TrainingArea prefab**. Drag them into your scene, positioning them so that they do not overlap.
+
+Alternatively, you can use the `TrainingAreaReplicator` to replicate training areas. Use the following steps:
+
+1.  Create a new empty Game Object in the scene.
+2.  Click on the new object and add a TrainingAreaReplicator component to the empty Game Object through the inspector.
+3.  Drag the training area to `Base Area` in the Training Area Replicator.
+4.  Specify the number of areas to replicate and the separation between areas.
+5.  Hit play and the areas will be replicated automatically.
+
+
 ### Set up & start training envrionment
 
 3 script need to be added as component to your agent.
@@ -94,7 +111,6 @@ https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-ML-Agents.md
 - Add a **Behavior Parameters script** with the Add Component button.
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
-
 
 
 ### Training Configuration File
@@ -131,8 +147,6 @@ example:
     summary_freq: 10000
   ```
   
-
-
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-Configuration-File.md
 
 ### Observing Training Progress
@@ -141,7 +155,6 @@ Once you start training using `mlagents-learn`, while training, you'll receive i
 tensorboard --logdir results
 ```
 Then navigate to **`localhost:6006`** in your browser to view the TensorBoard summary statistics
-
 
 ### Agents
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Design-Agents.md#decisions
