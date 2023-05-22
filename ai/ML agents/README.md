@@ -49,7 +49,8 @@ You can see this on terminal:
 ```
 [INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
 ```
-Now go to your Unity project and click the ▶️ button to start the training process. You can click the ▶️ button to stop the training process. At any time you will be able to resume training by adding the `--resume` flag on terminal:
+Now go to your Unity project and click the ▶️ button to start the training process. You can click the ▶️ button to stop the training process. At any time you will be able to resume training by adding the `--resume` flag on terminal.
+
 eg:
 
 ```
