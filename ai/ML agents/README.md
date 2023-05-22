@@ -41,7 +41,14 @@ mlagents-learn
 ```
 > run `mlagents-learn` from any directory in your project.
 
+If `mlagents-learn` runs correctly, you can see this in the terminal:
+
+![](./img/mlagents.png)
+
 Your trained model will be at **root directory of your project > `results/<run-identifier>/<behavior_name>.onnx`** where **<behavior_name>** is the name of the Behavior Name of the agents corresponding to the model.
+
+
+
 
 ![](./img/results.png)
 
