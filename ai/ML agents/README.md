@@ -39,7 +39,14 @@ Run in your terminal from the **root** directory of your project.
 ```
 mlagents-learn
 ```
-> run `mlagents-learn` from any directory.
+> run `mlagents-learn` from any directory in your project.
+
+Your trained model will be at **root directory of your project > `results/<run-identifier>/<behavior_name>.onnx`** where **<behavior_name>** is the name of the Behavior Name of the agents corresponding to the model.
+
+![](./img/results.png)
+
+![](./img/onnx.png)
+
 
 ### Observing Training Progress
 Once you start training using `mlagents-learn`, while training, you'll receive information about the training progress from the console. You'll also be able to visualize the training by running in a separate terminal:
@@ -67,7 +74,7 @@ https://unity-technologies.github.io/ml-agents/ \
 https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 
 package doc \
-https://docs.unity3d.com/Packages/com.unity.ml-agents@2.0/manual/index.html
+https://docs.unity3d.com/Packages/com.unity.ml-agents@1.0/api/Unity.MLAgents.html
 
 https://github.com/Unity-Technologies/ml-agents
 
