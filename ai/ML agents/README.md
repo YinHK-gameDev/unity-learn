@@ -85,6 +85,10 @@ https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-ML-Ag
 https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-ML-Agents.md
 
 
+### Set up & start training envrionment
+https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
+
+
 ### Training Configuration File
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-Configuration-File.md
