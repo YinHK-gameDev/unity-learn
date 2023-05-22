@@ -98,6 +98,40 @@ https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Envir
 
 
 ### Training Configuration File
+The **hyperparameters** for training are specified in a configuration file that you pass to the `mlagents-learn` program. 
+
+Create a new **<trainer-config-file>**(**`_config.yaml`**) file under **`config/`** with **hyperparameter values**.
+  
+example:
+```yaml
+  behaviors:
+  RollerBall:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 10
+      buffer_size: 100
+      learning_rate: 3.0e-4
+      beta: 5.0e-4
+      epsilon: 0.2
+      lambd: 0.99
+      num_epoch: 3
+      learning_rate_schedule: linear
+      beta_schedule: constant
+      epsilon_schedule: linear
+    network_settings:
+      normalize: false
+      hidden_units: 128
+      num_layers: 2
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+    max_steps: 500000
+    time_horizon: 64
+    summary_freq: 10000
+  ```
+  
+
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-Configuration-File.md
 
