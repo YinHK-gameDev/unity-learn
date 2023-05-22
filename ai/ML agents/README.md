@@ -46,7 +46,7 @@ Once you start training using `mlagents-learn`, while training, you'll receive i
 ```
 tensorboard --logdir results
 ```
-hen navigate to **`localhost:6006`** in your browser to view the TensorBoard summary statistics
+Then navigate to **`localhost:6006`** in your browser to view the TensorBoard summary statistics
 
 
 ### Embedding the model back into your Unity Environment
