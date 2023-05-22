@@ -157,7 +157,7 @@ tensorboard --logdir results
 Then navigate to **`localhost:6006`** in your browser to view the TensorBoard summary statistics
 
 ### Agents
-https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Design-Agents.md#decisions
+https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Learning-Environment-Design-Agents.md
 
 ### Embedding the model back into your Unity Environment
 Once training has been completed, the training process saves the model. Your trained model will be at **`results/<run-identifier>/<behavior_name>.onnx`** where **`<behavior_name>`** is the name of the Behavior Name of the agents corresponding to the model.  
