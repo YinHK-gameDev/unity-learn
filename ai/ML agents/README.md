@@ -82,6 +82,11 @@ mlagents-learn <trainer-config-file> --env=<env_name> --run-id=<run-identifier> 
 
 https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-ML-Agents.md
 
+
+### Training Configuration File
+
+https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-Configuration-File.md
+
 ### Observing Training Progress
 Once you start training using `mlagents-learn`, while training, you'll receive information about the training progress from the console. You'll also be able to visualize the training by running in a separate terminal:
 ```
