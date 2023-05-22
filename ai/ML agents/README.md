@@ -45,9 +45,19 @@ If `mlagents-learn` runs correctly, you can see this in the terminal:
 
 ![](./img/mlagents.png)
 
+You can see this on terminal:
+```
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+```
+Now go to your Unity project and click the ▶️ button to start the training process. You can click the ▶️ button to stop the training process. At any time you will be able to resume training by adding the `--resume` flag on terminal:
+eg:
+
+```
+mlagents-learn config/ppo/3DBall.yaml --run-id=first3DBallRun --resume
+```
+
+
 Your trained model will be at **root directory of your project > `results/<run-identifier>/<behavior_name>.onnx`** where **<behavior_name>** is the name of the Behavior Name of the agents corresponding to the model.
-
-
 
 
 ![](./img/results.png)
