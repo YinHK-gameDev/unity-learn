@@ -29,7 +29,7 @@ To start using Unity services, you must first link your Unity project to a Proje
 
 To link your project from the Unity Editor:
 
-1. Open the Services window (Window > General > Services).
+1. Open the Services window (**Window > General > Services**).
 2. Click **General settings** to open the Services section of the **Project settings** menu.
 3. Select your Organization from the dropdown. You must be signed in to Unity Hub in order to view a list of associated Organizations.
 4. Click **Use an existing Unity project ID** to link a project to an ID you previously created on the developer dashboard, or **Create project ID** to link your project to a new ID.
