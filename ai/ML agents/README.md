@@ -60,7 +60,7 @@ https://github.com/Unity-Technologies/ml-agents/blob/release_18_docs/docs/Learni
 
 
 ### Train your agent with reinforcement learning
-Run in your terminal from the **root** directory of your project. Under your virtual environment mode in terminal:
+Run in your terminal from the **root** directory of your project. Under your **virtual environment** mode in terminal:
 ```
 mlagents-learn
 ```
