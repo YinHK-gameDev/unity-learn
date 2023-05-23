@@ -201,6 +201,13 @@ example:
   
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-Configuration-File.md
 
+#### Behavior Configurations
+The primary section of the trainer config file is a set of configurations for each Behavior in your scene. These are defined under the sub-section `behaviors` in your trainer config file. Some of the configurations are required while others are optional. To help us get started, below is a sample file that includes all the possible settings if we're using a PPO trainer with all the possible training functionalities enabled (memory, behavioral cloning, curiosity, GAIL and self-play). You will notice that curriculum and environment parameter randomization settings are not part of the `behaviors` configuration, but in their own section called `environment_parameters`.
+  
+#### Default Behavior Settings
+In some cases, you may want to specify a set of default configurations for your Behaviors. This may be useful, for instance, if your Behavior names are generated procedurally by the environment and not known before runtime, or if you have many Behaviors with very similar settings. To specify a default configuraton, insert a `default_settings` section in your YAML. This section should be formatted exactly like a configuration for a Behavior.
+  
+  
   
 #### Create a yaml file:
 Using `echo` (Win) :
