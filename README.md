@@ -186,7 +186,7 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 **https://www.codecks.io/**
 
 
-### ➡️ BEST PRACTICES FOR ORGANIZING YOUR UNITY PROJECT
+### ➡️ Organize your unity project and folder structure
 **https://unity.com/how-to/organizing-your-project**
 
 ### ➡️ Unity release
