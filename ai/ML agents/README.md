@@ -74,6 +74,12 @@ To view a description of all the CLI options accepted by `mlagents-learn`, use t
 mlagents-learn --help
 ```
 
+> **Note**: **ML-Agents** defaults to a **time scale of 20** to speed up training. You can modify by the flag **`--time-scale`**. This is useful for simulate the physics like free fall in the training, Because the physics in this environment is **time-dependant**. So you can explicitly setting the flag **`--time-scale=1`** for normal speed.
+
+eg: 
+```
+mlagents-learn <trainer-config-file> --run-id=<run-identifier> --time-scale=1
+```
 
 If `mlagents-learn` runs correctly, you can see this in the terminal:
 
