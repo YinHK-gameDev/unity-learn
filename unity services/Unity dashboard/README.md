@@ -2,6 +2,7 @@
 
  Unity’s developer dashboard is to **manage your Organizations**, and **configure Unity services** for your projects.
  
+https://dashboard.unity3d.com/gaming/login?redirectTo=Lw==
  
 #### Develop
 Manage services that enhance the development of your projects, including:
