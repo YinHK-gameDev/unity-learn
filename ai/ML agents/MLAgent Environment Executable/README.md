@@ -32,6 +32,12 @@ https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html
 
 
 #### Running on Google colab
+https://colab.research.google.com/github/Unity-Technologies/ml-agents/blob/release_20_docs/colab/Colab_UnityEnvironment_1_Run.ipynb
+
+https://colab.research.google.com/github/Unity-Technologies/ml-agents/blob/release_20_docs/colab/Colab_UnityEnvironment_2_Train.ipynb
+
+https://colab.research.google.com/github/Unity-Technologies/ml-agents/blob/release_20_docs/colab/Colab_UnityEnvironment_3_SideChannel.ipynb
+
 https://dhyeythumar.medium.com/training-ml-agents-with-google-colab-cb166c3dca46 
 
 https://colab.research.google.com/drive/1tz04VDRmCNPDrqa2ehtR1Kk9mOmUsFbA?hl=en
@@ -39,7 +45,12 @@ https://colab.research.google.com/drive/1tz04VDRmCNPDrqa2ehtR1Kk9mOmUsFbA?hl=en
 
 
 
+### Training on Headless Server
 
+To run training on headless server with no graphics rendering support, you need to turn off graphics display in the Unity executable. There are two ways to achieve this:
+
+1.  Pass **`--no-graphics`** option to mlagents-learn training command. This is equivalent to adding **`-nographics -batchmode`** to the Unity executable's commandline.
+2.  Build your Unity executable with **Server Build**. You can find this setting in Build Settings in the Unity Editor.
 
 
 ### ref 
