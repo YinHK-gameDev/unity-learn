@@ -91,6 +91,7 @@ eg:
 mlagents-learn config/ppo/3DBall.yaml --run-id=first3DBallRun --resume
 ```
 
+If you would like to **re-run a previously interrupted or completed training run** and **re-use the same run ID** , then use the **`--force`** flag.
 
 Your trained model will be at **root directory of your project > `results/<run-identifier>/<behavior_name>.onnx`** where **<behavior_name>** is the name of the Behavior Name of the agents corresponding to the model.
 
