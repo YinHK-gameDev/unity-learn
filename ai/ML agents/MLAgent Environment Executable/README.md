@@ -13,6 +13,23 @@ Using an executable file has some advantages over using the Editor for training:
 - Remote Training
   You can put your executable file on a remote machine for faster training.
 
+
+### Training for your executable file
+After you build your executable unity project. You can start training by your executable file through **local terminal window or remote machine**.
+
+For local terminal: \
+Run
+```
+mlagents-learn <trainer-config-file> --env=<env_name> --run-id=<run-identifier>
+```
+-   `<trainer-config-file>` is the file path of the trainer configuration yaml
+-   `<env_name>` is the name and path to the executable you exported from Unity (without extension)
+-   `<run-identifier>` is a string used to separate the results of different training runs
+
+
+
+
+
 ### ref 
 https://werplay.medium.com/unitys-ml-agents-and-effective-ways-of-training-3-3-e8e519af5ab7
 
