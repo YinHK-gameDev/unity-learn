@@ -68,6 +68,13 @@ mlagents-learn
 
 > If you don't specify any config yaml file for the training, unity will use default configuration. If you have own customed configuration for the training, specify the path of locating it by following `mlagents-learn` command
 
+To view a description of all the CLI options accepted by `mlagents-learn`, use the `--help`:
+
+```shell
+mlagents-learn --help
+```
+
+
 If `mlagents-learn` runs correctly, you can see this in the terminal:
 
 ![](./img/mlagents.png)
