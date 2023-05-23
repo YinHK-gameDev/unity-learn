@@ -66,6 +66,8 @@ mlagents-learn
 ```
 > run `mlagents-learn` from any directory in your project.
 
+> If you don't specify any config yaml file for the training, unity will use default configuration. If you have own customed configuration for the training, specify the path of locating it by following `mlagents-learn` command
+
 If `mlagents-learn` runs correctly, you can see this in the terminal:
 
 ![](./img/mlagents.png)
