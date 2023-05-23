@@ -153,7 +153,7 @@ https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-Confi
 #### Create a yaml file:
 Using `echo` (Win) :
 ```
-echo "apiVersion: apps/v1" > config.yml
+echo > config.yaml
 ```
 Using `touch` (Mac) :
 ```
