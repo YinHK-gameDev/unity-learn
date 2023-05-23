@@ -142,6 +142,15 @@ Alternatively, you can use the `TrainingAreaReplicator` to replicate training ar
 4.  **Specify the number of areas** to replicate and the separation between areas.
 5.  Hit play and the areas will be replicated automatically.
 
+#### Training Using Concurrent Unity Instances
+Unity enable developers to **run concurrent, parallel instances** of the Unity executable during training.
+
+Another level of parallelization comes by training using **concurrent Unity instances**. 
+```
+mlagents-learn <trainer-config-file> --env=<env_name> --run-id=<run-identifier> --num-envs=<n>
+```
+
+Above will start **ML Agents training** with **N** environment instances. **Combining multiple training areas within the same scene**, with concurrent Unity instances, effectively gives you two levels of parallelism to speed up training. The command line option **`--num-envs=<n>`** controls the number of concurrent Unity instances that are executed in parallel during training.
 
 ### Set up & start training envrionment
 
