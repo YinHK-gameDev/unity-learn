@@ -153,11 +153,11 @@ https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-Confi
 #### Create a yaml file:
 Using `echo` (Win) :
 ```
-echo > config.yaml
+echo > XXX_config.yaml
 ```
 Using `touch` (Mac) :
 ```
-touch config.yml  
+touch XXX_config.yaml  
 ```
 
 YAML Formatter tool \
