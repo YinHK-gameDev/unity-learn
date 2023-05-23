@@ -319,7 +319,7 @@ https://unity-technologies.github.io/ml-agents/ \
 https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 
 package doc \
-https://docs.unity3d.com/Packages/com.unity.ml-agents@1.0/api/Unity.MLAgents.html
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.html
 
 https://github.com/Unity-Technologies/ml-agents
 
