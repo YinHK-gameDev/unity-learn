@@ -149,6 +149,22 @@ example:
   
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-Configuration-File.md
 
+  
+#### Create a yaml file:
+Using `echo` (Win) :
+```
+echo "apiVersion: apps/v1" > config.yml
+```
+Using `touch` (Mac) :
+```
+touch config.yml  
+```
+
+YAML Formatter tool \
+https://codebeautify.org/yaml-beautifier
+  
+  
+  
 ### Observing Training Progress
 Once you start training using `mlagents-learn`, while training, you'll receive information about the training progress from the console. You'll also be able to visualize the training by running in a separate terminal:
 ```
