@@ -208,6 +208,55 @@ The primary section of the trainer config file is a set of configurations for ea
 #### Default Behavior Settings
 In some cases, you may want to specify a set of default configurations for your Behaviors. This may be useful, for instance, if your Behavior names are generated procedurally by the environment and not known before runtime, or if you have many Behaviors with very similar settings. To specify a default configuraton, insert a `default_settings` section in your YAML. This section should be formatted exactly like a configuration for a Behavior.
   
+#### Adding CLI Arguments to the Training Configuration file  
+Additional CLI arguments are grouped into environment, engine, checkpoint and torch. The available settings and example values are shown below.
+
+- Environment settings
+  ```
+  env_settings:
+  env_path: FoodCollector
+  env_args: null
+  base_port: 5005
+  num_envs: 1
+  seed: -1
+  max_lifetime_restarts: 10
+  restarts_rate_limit_n: 1
+  restarts_rate_limit_period_s: 60
+  ```
+- Engine settings
+  ```
+  engine_settings:
+  width: 84
+  height: 84
+  quality_level: 5
+  time_scale: 20
+  target_frame_rate: -1
+  capture_frame_rate: 60
+  no_graphics: false
+  ```
+  
+ - Checkpoint settings
+  ```
+  checkpoint_settings:
+  run_id: foodtorch
+  initialize_from: null
+  load_model: false
+  resume: false
+  force: true
+  train_model: false
+  inference: false
+  ```
+  
+ - Torch settings:
+ ```
+  torch_settings:
+  device: cpu
+  
+ ```
+  
+  
+  
+  
   
   
 #### Create a yaml file:
