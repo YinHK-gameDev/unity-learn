@@ -16,8 +16,33 @@
 https://unity-technologies.github.io/ml-agents/Installation/
 
 ### Using virtual environment
+A Virtual Environment is a self contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages. 
+
+A Virtual Environment keeps all dependencies for the Python project separate from dependencies of other projects.
+
+Use your virtual environment for specific python version and pip version, and also python package such as mlagents.
+
+
+To create a new environment named sample-env execute:
+```
+python -m venv python-envs\sample-env
+```
+
+To activate the environment execute:
+```
+python-envs\sample-env\Scripts\activate
+```
+To deactivate the environment execute:
+```
+deactivate
+```
+
+> To run `mlagents-learn`, it is recommend to activate virtual environment first
+
+
 https://unity-technologies.github.io/ml-agents/Using-Virtual-Environment/
 
+https://docs.python.org/3/library/venv.html
 
 ### Example for getting started guide from official doc
 https://github.com/Unity-Technologies/ml-agents/blob/release_20_docs/docs/Getting-Started.md
