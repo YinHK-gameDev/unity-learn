@@ -23,7 +23,7 @@ Run
 mlagents-learn <trainer-config-file> --env=<env_name> --run-id=<run-identifier>
 ```
 -   `<trainer-config-file>` is the file path of the trainer configuration yaml
--   `<env_name>` is the name and path to the executable you exported from Unity (without extension)
+-   `<env_name>` is the name and path to the executable you exported from Unity (without extension). It is the name and path to the executable file you exported from unity
 -   `<run-identifier>` is a string used to separate the results of different training runs
 
 
