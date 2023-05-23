@@ -165,6 +165,10 @@ Above will start **ML Agents training** with **N** environment instances. **Comb
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
 
+### Designing a learning environment
+
+https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Learning-Environment-Design.md
+
 
 ### Training Configuration File
 The **hyperparameters** for training are specified in a configuration file that you pass to the `mlagents-learn` program. 
