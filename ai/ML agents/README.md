@@ -110,6 +110,8 @@ Your trained model will be at **root directory of your project > `results/<run-i
 > You can find the configurations for this training process in `.yaml` file.
 
 
+> **Note**: There is a known bug on Windows that causes the saving of the model to fail when you early terminate the training, it's recommended to wait until Step has reached the max_steps parameter you set in your config YAML.
+
 #### More details of how to use `mlagents-learn` to train your agents
 Use the `mlagents-learn` command to train agents. `mlagents-learn` supports training with [reinforcement learning](https://github.com/gzrjzcx/ML-agents/blob/master/docs/Background-Machine-Learning.md#reinforcement-learning), [curriculum learning](https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-Curriculum-Learning.md), and [behavioral cloning imitation learning](https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-Imitation-Learning.md).
 
