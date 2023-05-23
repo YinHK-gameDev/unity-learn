@@ -68,11 +68,12 @@ mlagents-learn
 
 > If you don't specify any config yaml file for the training, unity will use default configuration. If you have own customed configuration for the training, specify the path of locating it by following `mlagents-learn` command
 
-To view a description of all the CLI options accepted by `mlagents-learn`, use the `--help`:
+To view a description of all the **CLI** options accepted by `mlagents-learn`, use the `--help`:
 
 ```shell
 mlagents-learn --help
 ```
+Possible flags and detailed description of all the **CLI** arguments can be found by `--help` flag
 
 > **Note**: **ML-Agents** defaults to a **time scale of 20** to speed up training. You can modify by the flag **`--time-scale`**. This is useful for simulate the physics like free fall in the training, Because the physics in this environment is **time-dependant**. So you can explicitly setting the flag **`--time-scale=1`** for normal speed.
 
