@@ -4,6 +4,12 @@
  
 https://dashboard.unity3d.com
  
+ 
+### Introduction to the Unity Dashboard
+The Unity Dashboard is your primary point for managing your Organization’s Unity Gaming Services.
+
+https://docs.unity.com/ugs-overview/en/manual/unity-dashboard-introduction
+ 
 ### Unity ID account
 https://id.unity.com/en/account/edit
  
