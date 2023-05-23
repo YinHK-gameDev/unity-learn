@@ -201,7 +201,18 @@ https://codebeautify.org/yaml-beautifier
   
   
 ### Observing Training Progress
-Once you start training using `mlagents-learn`, while training, you'll receive information about the training progress from the console. You'll also be able to visualize the training by running in a separate terminal:
+Once you start training using `mlagents-learn`, while training, you'll receive information about the training progress from the console. 
+  
+Regardless of which training methods, configurations or hyperparameters you provide, the training process will always generate three artifacts, all found in the `results/<run-identifier>` folder:
+
+1. **Summaries**: these are training metrics that are updated throughout the training process. They are helpful to monitor your training performance and may help inform how to update your hyperparameter values.
+2. **Models**: these contain the model checkpoints that are updated throughout training and the final model file (**`.onnx`**). This final model file is generated once either when training completes or is interrupted.
+3. **Timers file** (under **`results/<run-identifier>/run_logs`**): this contains aggregated metrics on your training process, including time spent on specific code blocks.
+  
+These artifacts are updated throughout the training process and finalized when training is completed or is interrupted.
+  
+  
+You'll also be able to visualize the training by running in a separate terminal:
 ```
 tensorboard --logdir results
 ```
