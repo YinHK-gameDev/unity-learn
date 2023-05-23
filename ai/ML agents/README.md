@@ -291,6 +291,8 @@ You'll also be able to visualize the training by running in a separate terminal:
 tensorboard --logdir results
 ```
 Then navigate to **`localhost:6006`** in your browser to view the TensorBoard summary statistics
+  
+https://unity-technologies.github.io/ml-agents/Using-Tensorboard/
 
 ### Agents
 https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Learning-Environment-Design-Agents.md
