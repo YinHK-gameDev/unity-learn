@@ -22,3 +22,5 @@ There are multiple ways to integrate your application content with Cloud Content
 - The **CCD Management SDK** allows you to manage your CCD content from inside the editor. This pairs with the Addressables package, and allows you to build and release from a single location.
 
 https://docs.unity.com/ccd/UnityCCD.html
+
+https://unity.com/products/cloud-content-delivery
