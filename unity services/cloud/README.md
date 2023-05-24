@@ -21,6 +21,17 @@ There are multiple ways to integrate your application content with Cloud Content
 - The **Content Delivery Management API** and **Content Delivery Client API** allow you to manage application content through programming.
 - The **CCD Management SDK** allows you to manage your CCD content from inside the editor. This pairs with the Addressables package, and allows you to build and release from a single location.
 
+#### How it work
+
+- **Upload your content**: Upload and store content to the cloud by using our online dashboard, CLI, API, or in the Unity Editor.
+- **Get organized**: Bucket and badge assets to easily identify and organize your content by using our asset management system.
+- **Deploy to players**: Make sure the right players get the right content at the right time through our **content delivery network (CDN)**.
+
+
+
+
+
+
 https://docs.unity.com/ccd/UnityCCD.html
 
 https://unity.com/products/cloud-content-delivery
