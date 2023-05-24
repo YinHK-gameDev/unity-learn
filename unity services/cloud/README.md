@@ -12,7 +12,7 @@ https://docs.unity.com/devops/en/manual/unity-devops-home
 ###  Cloud Content Delivery (CCD)
 **Cloud Content Delivery (CCD)** is Unity's managed cloud service that **hosts and delivers content to your application’s users worldwide without having to reinstall a new version of the application**.
 
-
+Cloud Content Delivery is an end-to-end service for live game updates combining powerful asset management, cloud storage, and a reliable content delivery network (CDN).
 
 There are multiple ways to integrate your application content with Cloud Content Delivery (CCD):
 
