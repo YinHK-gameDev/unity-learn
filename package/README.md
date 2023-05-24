@@ -101,6 +101,11 @@ The Unity Package Manager is the official package management system for Unity. I
 - Promotes Unity as an **extendable and open platform**.
 
 
+
+
+> To combine multiple unity projects, just export custom packages and then import all of them into a single unity project.
+
+
 https://docs.unity3d.com/Manual/CustomPackages.html
 
 
