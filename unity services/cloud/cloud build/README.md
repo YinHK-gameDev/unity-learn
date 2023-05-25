@@ -1,4 +1,6 @@
 ## Unity Build Automation
+**Unity Build Automation** is our new name for **Cloud Build**. 
+
 Unity Build Automation is a continuous integration that automatically creates multi-platform builds in the Cloud in minutes. You can point Build Automation toward your version control system to:
 
 
