@@ -31,6 +31,13 @@ You can **build your project on your own computer**, or you can use **Unity’s 
 4. **Deploy**: Your team is notified when the build is complete and ready to use.
 
 
+## Unity build server
+Build Server can scale your on-prem build capacity with on-demand or automated builds on dedicated network hardware.
+
+Unity Build Server is a more cost-effective licensing solution for building Unity projects that helps studios iterate quickly and complete projects faster by offloading computationally expensive project builds to network hardware.
+
+https://unity.com/products/unity-build-server
+
 ### ref 
 https://docs.unity3d.com/Manual/UnityCloudBuild.html
 
