@@ -28,8 +28,8 @@ There are multiple ways to integrate your application content with Cloud Content
 - **Deploy to players**: Make sure the right players get the right content at the right time through our **content delivery network (CDN)**.
 
 
-
-
+This demo game is built to teach developers how to use Content Cloud Delivery and the Addressable Assets package in a production-ready environment. \
+https://unity.com/demos/loady-dungeons
 
 
 https://docs.unity.com/ccd/UnityCCD.html
