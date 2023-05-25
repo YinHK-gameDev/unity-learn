@@ -48,3 +48,12 @@ https://blog.unity.com/games/how-to-deploy-live-game-content-using-cloud-content
 https://docs.unity.com/ccd/UnityCCD.html
 
 https://unity.com/products/cloud-content-delivery
+
+
+
+
+### LiveOps
+
+Live Operations (Live Ops) is a style of game management and operations that treats a game as a live service and continually delivers new features, updates, promotions, in-game events, and improvements to the launched game to improve the experience for the player community.
+
+https://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/live-ops.html
