@@ -11,6 +11,15 @@ Unity Build Automation is a continuous integration that automatically creates mu
 
 Build Automation supports most popular version control systems and builds for multiple platforms simultaneously, including iOS.
 
+
+### What is CI/CD ?
+**CI/CD**, or **continuous integration/continuous delivery or deployment**, is a software development practice enabled by **automation**. Frequent, reliable updates accelerate release cycles via continuous code delivery.
+
+Continuous integration requires developers to frequently checkin/commit their units of code to a central shared repository many times a day. 
+
+
+https://unity.com/solutions/what-is-ci-cd
+
 ### Unity’s Cloud Build service 
 You can **build your project on your own computer**, or you can use **Unity’s Cloud Build service which provides automated build** generation and continuous integration for your Unity projects.
 
