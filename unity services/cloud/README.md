@@ -14,6 +14,8 @@ https://docs.unity.com/devops/en/manual/unity-devops-home
 
 Cloud Content Delivery is an end-to-end service for live game updates combining powerful asset management, cloud storage, and a reliable content delivery network (CDN).
 
+Cloud Content Delivery allows you to quickly release game updates via the cloud 
+
 There are multiple ways to integrate your application content with Cloud Content Delivery (CCD):
 
 - The **command-line interface (CLI)** is the **recommended interface** for interacting with CCD because it is the main mechanism by which you would upload content into a bucket (you can also upload content using the dashboard or the API).
