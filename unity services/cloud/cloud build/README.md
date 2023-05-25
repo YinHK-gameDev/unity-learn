@@ -10,9 +10,7 @@ Unity Build Automation is a continuous integration that automatically creates mu
 Build Automation supports most popular version control systems and builds for multiple platforms simultaneously, including iOS.
 
 ### Unity’s Cloud Build service 
-You can build your project on your own computer, or you can use Unity’s Cloud Build service which provides automated build generation and continuous integration for your Unity projects.
-
-
+You can **build your project on your own computer**, or you can use **Unity’s Cloud Build service which provides automated build** generation and continuous integration for your Unity projects.
 
 
 ### ref 
