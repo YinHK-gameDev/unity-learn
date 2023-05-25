@@ -24,6 +24,13 @@ https://unity.com/solutions/what-is-ci-cd
 You can **build your project on your own computer**, or you can use **Unity’s Cloud Build service which provides automated build** generation and continuous integration for your Unity projects.
 
 
+### How Build Automation works?
+1. **SetUp**: Point Build Automation to your version control system.
+2. **Trigger**: Commit a change to your project.
+3. **Build**: On trigger, a build is automatically created.
+4. **Deploy**: Your team is notified when the build is complete and ready to use.
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UnityCloudBuild.html
 
