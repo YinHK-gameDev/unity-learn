@@ -19,10 +19,15 @@ Cloud Content Delivery allows you to quickly release game updates via the cloud
 There are multiple ways to integrate your application content with Cloud Content Delivery (CCD):
 
 - The **command-line interface (CLI)** is the **recommended interface** for interacting with CCD because it is the main mechanism by which you would upload content into a bucket (you can also upload content using the dashboard or the API).
+  https://docs.unity.com/ccd/en/manual/UnityCCDCLI
 - The **Dashboard** provides the same functionality as the CLI.
-- The **Content Delivery Management API** and **Content Delivery Client API** allow you to manage application content through programming.
+  https://docs.unity.com/ccd/en/manual/UnityCCDDashboard
+- The **Content Delivery Management API** and **Content Delivery Client API** allow you to manage application content through **programming**.
+  https://content-api.cloud.unity3d.com/doc/ \
+  https://content-api.cloud.unity3d.com/doc_client/ \
 - The **CCD Management SDK** allows you to manage your CCD content from inside the editor. This pairs with the Addressables package, and allows you to build and release from a single location.
-
+  https://docs.unity.com/ccd/en/manual/UnityCCDManagementSDK
+  
 #### How it work
 
 - **Upload your content**: Upload and store content to the cloud by using our online dashboard, CLI, API, or in the Unity Editor.
