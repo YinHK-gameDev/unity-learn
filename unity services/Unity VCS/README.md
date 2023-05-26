@@ -9,3 +9,4 @@ https://unity.com/solutions/version-control?utm_source=google&utm_medium=cpc&utm
 
 https://docs.unity.com/devops/en/manual/unity-version-control
 
+https://resources.unity.com/games/create-without-compromise-plastic-scm-webinar
