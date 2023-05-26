@@ -41,6 +41,8 @@ There are multiple ways to integrate your application content with Cloud Content
 This demo game is built to teach developers how to use Content Cloud Delivery and the Addressable Assets package in a production-ready environment. \
 https://unity.com/demos/loady-dungeons
 
+https://youtu.be/J9XbISBpfp0
+
 How to deploy live game content using Cloud Content Delivery \
 https://blog.unity.com/games/how-to-deploy-live-game-content-using-cloud-content-delivery
 
