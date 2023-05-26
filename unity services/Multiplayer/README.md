@@ -30,4 +30,6 @@ https://docs.unity3d.com/Manual/UNet.html
 https://docs-multiplayer.unity3d.com/netcode/current/tutorials/helloworld/index.html \
 https://github.com/Unity-Technologies/com.unity.netcode.gameobjects
 
+`com.unity.multiplayer.docs` \
+https://github.com/Unity-Technologies/com.unity.multiplayer.docs
 
