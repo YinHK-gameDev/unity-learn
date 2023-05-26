@@ -19,3 +19,5 @@ By using Unity's Cloud Code to write stateless server-side code on a fully manag
 ### ref 
 https://docs.unity.com/cloud-code/en/manual
 
+Cloud code SDK Scripting API \
+https://docs.unity.com/cloud-code/en/packages/com.unity.services.cloudcode/2.1/api/Unity.Services.CloudCode
