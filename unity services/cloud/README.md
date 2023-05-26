@@ -46,6 +46,8 @@ https://youtu.be/J9XbISBpfp0
 How to deploy live game content using Cloud Content Delivery \
 https://blog.unity.com/games/how-to-deploy-live-game-content-using-cloud-content-delivery
 
+CCD + Addressables walkthrough \
+https://docs.unity.com/ccd/manual/UnityCCDWalkthrough#Configuring_game_assets_as_addressable
 
 https://docs.unity.com/ccd/UnityCCD.html
 
