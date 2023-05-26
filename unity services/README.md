@@ -9,7 +9,11 @@ https://unity.com/solutions/gaming-services?_ga=2.140249203.1981099051.168465668
 
 https://docs.unity.com/ugs-overview/en/manual/overview-of-services
 
+### Unity Services Web APIs
 
+Unity's Web APIs allow you to use Unity Services to build and manage your projects with your preferred language and engine.
+
+https://services.docs.unity.com/?_ga=2.211027029.1981099051.1684656689-1095169982.1671075740&_gac=1.228159087.1685054585.CjwKCAjw67ajBhAVEiwA2g_jELfgZqYdQzSUK9i0UiLijiFjhJpzmkfKZ_t0NlWiWxhNMwrAGLMG4RoC62YQAvD_BwE
 
 ### ref 
 https://docs.unity.com/ugs-overview/en/manual/unity-gaming-services-home
