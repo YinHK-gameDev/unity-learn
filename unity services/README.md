@@ -9,6 +9,55 @@ https://unity.com/solutions/gaming-services?_ga=2.140249203.1981099051.168465668
 
 https://docs.unity.com/ugs-overview/en/manual/overview-of-services
 
+
+### Unity Gaming Services (UGS) CLI
+The Unity Gaming Services (UGS) CLI is a unified command line interface tool for gaming services.
+
+#### Install the CLI
+To install the CLI with npm, make sure you have node and npm installed, then run:
+
+```
+  npm install -g ugs
+```
+
+This installs the CLI as an npm package and adds **`ugs`** to your PATH.
+
+After installation, you should be able to call **`ugs --version`** and other commands directly from your command line.
+
+https://services.docs.unity.com/guides/ugs-cli/latest/general/overview/
+
+
+### Services Core SDK API
+The **Services Core package** provides a solution for initializing all Unity Gaming Services with a single call, and defines common components used by multiple packages.
+
+You need to initialize all Unity Gaming Services that are currently installed in your project.
+
+The following example initializes all services at once, using the [Environments](https://docs.unity.com/ugs-overview/en/manual/ServiceEnvironments) initialization extension:
+
+```cs
+using System;
+using Unity.Services.Core;
+using Unity.Services.Core.Environments;
+using UnityEngine;
+ 
+public class InitializeUGS : MonoBehaviour {
+    
+    public string environment = "production";
+ 
+    async void Start() {
+        try {
+            var options = new InitializationOptions()
+                .SetEnvironmentName(environment);
+ 
+            await UnityServices.InitializeAsync(options);
+        }
+        catch (Exception exception) {
+            // An error occurred during initialization.
+        }
+    }
+}
+```
+
 ### Unity Gaming Services REST APIs
 
 Unity's Web APIs allow you to use Unity Services to build and manage your projects with your preferred language and engine.
