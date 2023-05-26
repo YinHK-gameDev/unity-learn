@@ -10,7 +10,7 @@ For usage samples, see github.com/Unity-Technologies/Addressables-Sample
 
 The Addressables system provides tools and scripts to organize and package content for your application and an API to load and release assets at runtime.
 
-When you make an asset "Addressable," you can use that asset's address to load it from anywhere. Whether that asset resides in the local application or on a content delivery network, the Addressable system locates and returns it.
+When you make an asset **"Addressable"**, you can use that **asset's address to load it from anywhere**. Whether that asset resides in the **local application or on a content delivery network**, the **Addressable system locates and returns it**.
 
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html
