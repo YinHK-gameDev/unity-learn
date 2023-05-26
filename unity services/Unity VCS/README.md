@@ -10,3 +10,7 @@ https://unity.com/solutions/version-control?utm_source=google&utm_medium=cpc&utm
 https://docs.unity.com/devops/en/manual/unity-version-control
 
 https://resources.unity.com/games/create-without-compromise-plastic-scm-webinar
+
+
+Version control and project organization best practices for game developers \
+https://resources.unity.com/games/version-control-project-organization-best-practices-ebook
