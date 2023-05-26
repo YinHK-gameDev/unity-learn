@@ -3,7 +3,6 @@
 
 Unity Build Automation is a continuous integration that automatically creates multi-platform builds in the Cloud in minutes. You can point Build Automation toward your version control system to:
 
-
 - Automate new builds
 - Build faster
 - Catch problems earlier
@@ -22,6 +21,12 @@ https://unity.com/solutions/what-is-ci-cd
 
 ### Unity’s Cloud Build service 
 You can **build your project on your own computer**, or you can use **Unity’s Cloud Build service which provides automated build** generation and continuous integration for your Unity projects.
+
+
+Build Automation connects to either Unity VCS or your source control system and monitors that system for changes to your project. When it detects changes to your project, Build Automation downloads and builds your project for your target platforms. When the builds are complete, Build Automation notifies you of the results and links to download, share, and install the builds. If there are errors, Build automation informs you immediately, so you can quickly fix them, commit the changes, and trigger new builds.
+
+You can integrate different software for notifications such as **Slack, Discord, and Jira**. \
+https://docs.unity3d.com/Manual/UnityIntegrations.html
 
 
 ### How Build Automation works?
