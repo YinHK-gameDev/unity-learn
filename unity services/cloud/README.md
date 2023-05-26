@@ -23,7 +23,7 @@ There are multiple ways to integrate your application content with Cloud Content
 
 - The **command-line interface (CLI)** is the **recommended interface** for interacting with CCD because it is the main mechanism by which you would upload content into a bucket (you can also upload content using the dashboard or the API).
   https://docs.unity.com/ccd/en/manual/UnityCCDCLI
-- The **Dashboard** provides the same functionality as the CLI.
+- The **Dashboard** provides the same functionality as the CLI. \
   https://docs.unity.com/ccd/en/manual/UnityCCDDashboard
 - The **Content Delivery Management API** and **Content Delivery Client API** allow you to manage application content through **programming**.
   https://content-api.cloud.unity3d.com/doc/ \
