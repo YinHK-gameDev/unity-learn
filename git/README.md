@@ -25,6 +25,11 @@ https://github.com/spoiledcat/git-for-unity \
 https://github.com/unity-technologies/git-for-unity 
 
 
+### Large file
+using `git lfs` (large file storage) for file larger than 100 Gb.  regular checkins on files smaller than 100mb and lfs on files larger than that. There's a free tier of LFS per repo and it's enough to cover personal projects. If you really need extra data it's only like $5/mo
+
+https://www.reddit.com/r/gamedev/comments/yjsx0p/should_i_use_github_with_unity_if_i_am_working_by/
+
 
 ### ref 
 
