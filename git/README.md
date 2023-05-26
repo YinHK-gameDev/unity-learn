@@ -31,6 +31,10 @@ using `git lfs` (large file storage) for file larger than 100 Gb.  regular check
 https://www.reddit.com/r/gamedev/comments/yjsx0p/should_i_use_github_with_unity_if_i_am_working_by/
 
 
+### Using gitignore
+Using gitignore, it only commits the essential files. Without gitignore, the first commit of an empty project will be a few thousand files and so LFS is needed. With the right gitignore settings it’s about 40 files and you can commit like normal. 
+
+
 ### ref 
 
 https://cadacreate.medium.com/how-to-add-existing-unity-project-to-github-916ad75160e7
