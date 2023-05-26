@@ -8,3 +8,10 @@
 - you only export those to your level builder project (which may be separated from your prototype mechanics project, and so on).
 - 
 https://forum.unity.com/threads/how-do-you-organize-your-project-to-reduce-its-complexity-and-size.526687/
+
+### Reducing the file size of your build
+https://docs.unity3d.com/Manual/ReducingFilesize.html
+
+
+### ref 
+https://docs.unity3d.com/Manual/PublishingBuilds.html
