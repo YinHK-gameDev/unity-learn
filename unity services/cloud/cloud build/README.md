@@ -36,7 +36,11 @@ https://docs.unity3d.com/Manual/UnityIntegrations.html
 4. **Deploy**: Your team is notified when the build is complete and ready to use.
 
 
-## Unity build server
+### Using Addressables in Unity Build Automation
+https://docs.unity.com/devops/en/manual/addressables-in-build-automation
+
+
+### Unity build server
 Build Server can scale your on-prem build capacity with on-demand or automated builds on dedicated network hardware.
 
 Unity Build Server is a more cost-effective licensing solution for building Unity projects that helps studios iterate quickly and complete projects faster by offloading computationally expensive project builds to network hardware.
