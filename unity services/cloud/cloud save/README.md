@@ -16,5 +16,8 @@ https://docs.unity.com/cloud-save/en/manual/implementation
 
 https://unity.com/products/cloud-save
 
-Cloud Save API \
+Cloud Save REST API \
 https://services.docs.unity.com/cloud-save/v1/index.html
+
+Cloud Save SDK Scripting API \
+https://docs.unity.com/cloud-save/en/packages/com.unity.services.cloudsave/2.0/api/Unity.Services.CloudSave
