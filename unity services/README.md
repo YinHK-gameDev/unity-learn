@@ -66,6 +66,10 @@ A great option if you are not using the Unity Engine or if you prefer more flexi
 
 https://services.docs.unity.com/?_ga=2.211027029.1981099051.1684656689-1095169982.1671075740&_gac=1.228159087.1685054585.CjwKCAjw67ajBhAVEiwA2g_jELfgZqYdQzSUK9i0UiLijiFjhJpzmkfKZ_t0NlWiWxhNMwrAGLMG4RoC62YQAvD_BwE
 
+
+### Unity Gaming Services Use Cases
+https://docs.unity.com/ugs-use-cases/en/manual/Welcome
+
 ### ref 
 https://docs.unity.com/ugs-overview/en/manual/unity-gaming-services-home
 
