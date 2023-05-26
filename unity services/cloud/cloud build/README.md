@@ -37,6 +37,8 @@ https://docs.unity3d.com/Manual/UnityIntegrations.html
 
 
 ### Using Addressables in Unity Build Automation
+> **Addressable Assets** are assets that have a unique address which you can use to load them from **local or remote AssetBundles**.
+
 https://docs.unity.com/devops/en/manual/addressables-in-build-automation
 
 
