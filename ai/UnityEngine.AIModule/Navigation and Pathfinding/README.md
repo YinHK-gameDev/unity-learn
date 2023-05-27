@@ -8,3 +8,8 @@ Dynamic obstacles allow you to alter the navigation of the characters at runtime
 
 ### ref 
 https://docs.unity3d.com/Manual/Navigation.html
+
+Scripting API \
+https://docs.unity3d.com/ScriptReference/AI.NavMesh.html
+
+
