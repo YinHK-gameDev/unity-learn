@@ -12,4 +12,5 @@ https://docs.unity3d.com/Manual/Navigation.html
 Scripting API \
 https://docs.unity3d.com/ScriptReference/AI.NavMesh.html
 
-
+Navigation tutorial \
+https://learn.unity.com/search?k=%5B%22q%3ANavigation%22%5D
