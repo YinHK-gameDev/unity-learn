@@ -1,0 +1,10 @@
+## Navigation and Pathfinding
+The **navigation system** allows you to create characters that can **intelligently move around the game world**, using **navigation meshes** that are created automatically from your Scene
+geometry. 
+ 
+Dynamic obstacles allow you to alter the navigation of the characters at runtime, while OffMesh links let you build specific actions like opening doors or jumping down from a ledge.
+ 
+
+
+### ref 
+https://docs.unity3d.com/Manual/Navigation.html
