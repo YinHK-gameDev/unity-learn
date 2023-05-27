@@ -9,13 +9,13 @@ Dynamic obstacles allow you to alter the navigation of the characters at runtime
 ### ref 
 https://docs.unity3d.com/Manual/Navigation.html
 
-Scripting API \
+**Scripting API** \
 https://docs.unity3d.com/ScriptReference/AI.NavMesh.html
 
-Navigation tutorial \
+**Navigation tutorial** \
 https://learn.unity.com/search?k=%5B%22q%3ANavigation%22%5D
 
-Brackeys Unity NavMesh Tutorial \
+**Brackeys Unity NavMesh Tutorial** \
 https://www.youtube.com/watch?v=CHV1ymlw-P8
 
 https://www.youtube.com/watch?v=FkLJ45Pt-mY
