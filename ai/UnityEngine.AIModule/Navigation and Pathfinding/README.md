@@ -15,9 +15,11 @@ https://docs.unity3d.com/ScriptReference/AI.NavMesh.html
 Navigation tutorial \
 https://learn.unity.com/search?k=%5B%22q%3ANavigation%22%5D
 
-Unity NavMesh tutorial \
+Brackeys Unity NavMesh Tutorial \
 https://www.youtube.com/watch?v=CHV1ymlw-P8
 
 https://www.youtube.com/watch?v=FkLJ45Pt-mY
 
 https://www.youtube.com/watch?v=atCOd4o7tG4
+
+https://www.youtube.com/watch?v=blPglabGueM
