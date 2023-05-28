@@ -14,6 +14,29 @@ The **Navigation System** allows you to create characters which can navigate the
 -   **NavMesh Obstacle** component allows you to describe moving obstacles the agents should avoid while navigating the world. A barrel or a crate controlled by the physics system is a good example of an obstacle. While the obstacle is moving the agents do their best to avoid it, but once the obstacle becomes stationary it will carve a hole in the navmesh so that the agents can change their paths to steer around it, or if the stationary obstacle is blocking the path way, the agents can find a different route.
  
 
+### Telling a NavMeshAgent to Move to a Destination
+```cs
+// MoveDestination.cs
+    using UnityEngine;
+    
+    public class MoveDestination : MonoBehaviour {
+       
+       public Transform goal;
+       
+       void Start () {
+          NavMeshAgent agent = GetComponent<NavMeshAgent>();
+          agent.destination = goal.position; 
+       }
+    }
+```
+
+
+
+
+
+
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/Navigation.html
