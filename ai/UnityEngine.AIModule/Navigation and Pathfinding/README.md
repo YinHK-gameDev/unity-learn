@@ -167,9 +167,13 @@ In the Update function, the script checks how close the agent is to the destinat
 
 ```
 
-
 https://docs.unity3d.com/Manual/nav-AgentPatrol.html
 
+
+### Coupling Animation and Navigation
+Setup navigating humanoid characters to move using the navigation system.
+
+https://docs.unity3d.com/Manual/nav-CouplingAnimationAndNavigation.html
 
 ### ref 
 https://docs.unity3d.com/Manual/Navigation.html
