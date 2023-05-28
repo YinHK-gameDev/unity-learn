@@ -15,6 +15,7 @@ The **Navigation System** allows you to create characters which can navigate the
  
 
 ### Telling a NavMeshAgent to Move to a Destination
+You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
 ```cs
 // MoveDestination.cs
 using UnityEngine;
@@ -31,6 +32,38 @@ public class MoveDestination : MonoBehaviour
 ```
 
 
+You can choose the destination point on the **`NavMesh`** by clicking the mouse on the object’s surface. The position of the click is determined by a raycast, rather like pointing a laser beam at the object to see where it hits(Rays from the Camera).
+
+
+```cs
+
+// MoveToClickPoint.cs
+    using UnityEngine;
+    using UnityEngine.AI;
+    
+    public class MoveToClickPoint : MonoBehaviour 
+    {
+        NavMeshAgent agent;
+        
+        void Start() 
+        {
+            agent = GetComponent<NavMeshAgent>();
+        }
+        
+        void Update() 
+        {
+            if (Input.GetMouseButtonDown(0)) 
+            {
+                RaycastHit hit;
+                
+                if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100)) 
+                {
+                    agent.destination = hit.point;
+                }
+            }
+        }
+    }
+  ```
 
 
 
