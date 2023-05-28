@@ -66,9 +66,106 @@ You can choose the destination point on the **`NavMesh`** by clicking the mouse 
   ```
 
 
+### Making an Agent Patrol Between a Set of Points
+Many games feature **NPCs** that patrol automatically **around the playing area**.
+
+The patrol points are supplied to the script using a public array of Transforms. This array can be assigned from the inspector using GameObjects to mark the points’ positions. The **`GotoNextPoint`** function sets the destination point for the agent (which also starts it moving) and then selects the new destination that will be used on the next call. As it stands, the code cycles through the points in the sequence they occur in the array but you can easily modify this, say by using **`Random.Range`** to choose an array index at random.
+
+In the Update function, the script checks how close the agent is to the destination using the **`remainingDistance`** property. When this distance is very small, a call to GotoNextPoint is made to start the next leg of the patrol.
+
+```cs
+// Patrol.cs
+    using UnityEngine;
+    using UnityEngine.AI;
+    using System.Collections;
 
 
+    public class Patrol : MonoBehaviour {
 
+        public Transform[] points;
+        private int destPoint = 0;
+        private NavMeshAgent agent;
+
+
+        void Start () {
+            agent = GetComponent<NavMeshAgent>();
+
+            // Disabling auto-braking allows for continuous movement
+            // between points (ie, the agent doesn't slow down as it
+            // approaches a destination point).
+            agent.autoBraking = false;
+
+            GotoNextPoint();
+        }
+
+
+        void GotoNextPoint() {
+            // Returns if no points have been set up
+            if (points.Length == 0)
+                return;
+
+            // Set the agent to go to the currently selected destination.
+            agent.destination = points[destPoint].position;
+
+            // Choose the next point in the array as the destination,
+            // cycling to the start if necessary.
+            destPoint = (destPoint + 1) % points.Length;
+        }
+
+
+        void Update () {
+            // Choose the next destination point when the agent gets
+            // close to the current one.
+            if (!agent.pathPending && agent.remainingDistance < 0.5f)
+                GotoNextPoint();
+        }
+    }
+```
+
+```cs
+// Patrol.js
+    var points: Transform[];
+    var destPoint: int = 0;
+    var agent: NavMeshAgent;
+
+
+    function Start() {
+        agent = GetComponent.<NavMeshAgent>();
+
+        // Disabling auto-braking allows for continuous movement
+        // between points (ie, the agent doesn't slow down as it
+        // approaches a destination point).
+        agent.autoBraking = false;
+
+        GotoNextPoint();
+    }
+
+
+    function GotoNextPoint() {
+        // Returns if no points have been set up
+        if (points.Length == 0)
+            return;
+            
+        // Set the agent to go to the currently selected destination.
+        agent.destination = points[destPoint].position;
+
+        // Choose the next point in the array as the destination,
+        // cycling to the start if necessary.
+        destPoint = (destPoint + 1) % points.Length;
+    }
+
+
+    function Update() {
+        // Choose the next destination point when the agent gets
+        // close to the current one.
+        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+            GotoNextPoint();
+    }
+
+```
+
+
+https://docs.unity3d.com/Manual/nav-AgentPatrol.html
 
 
 ### ref 
