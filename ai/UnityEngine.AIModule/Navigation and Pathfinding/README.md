@@ -31,6 +31,8 @@ public class MoveDestination : MonoBehaviour
  }
 ```
 
+https://docs.unity3d.com/Manual/nav-MoveToDestination.html
+
 ### Moving an Agent to a Position Clicked by the Mouse
 You can choose the destination point on the **`NavMesh`** by clicking the mouse on the object’s surface. The position of the click is determined by a raycast, rather like pointing a laser beam at the object to see where it hits(Rays from the Camera).
 
@@ -63,8 +65,9 @@ You can choose the destination point on the **`NavMesh`** by clicking the mouse 
             }
         }
     }
-  ```
+```
 
+https://docs.unity3d.com/Manual/nav-MoveToClickPoint.html
 
 ### Making an Agent Patrol Between a Set of Points
 Many games feature **NPCs** that patrol automatically **around the playing area**.
