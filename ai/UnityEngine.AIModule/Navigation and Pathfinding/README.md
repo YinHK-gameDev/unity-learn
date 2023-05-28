@@ -193,6 +193,8 @@ https://www.youtube.com/watch?v=atCOd4o7tG4
 
 https://www.youtube.com/watch?v=blPglabGueM
 
+https://www.youtube.com/watch?v=blPglabGueM&t=11s
+
 https://www.youtube.com/watch?v=G9Otw12OUvE
 
 
