@@ -31,7 +31,7 @@ public class MoveDestination : MonoBehaviour
  }
 ```
 
-
+### Moving an Agent to a Position Clicked by the Mouse
 You can choose the destination point on the **`NavMesh`** by clicking the mouse on the object’s surface. The position of the click is determined by a raycast, rather like pointing a laser beam at the object to see where it hits(Rays from the Camera).
 
 
