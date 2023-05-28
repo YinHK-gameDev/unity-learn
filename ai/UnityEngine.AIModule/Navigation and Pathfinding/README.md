@@ -14,6 +14,21 @@ The **Navigation System** allows you to create characters which can navigate the
 -   **NavMesh Obstacle** component allows you to describe moving obstacles the agents should avoid while navigating the world. A barrel or a crate controlled by the physics system is a good example of an obstacle. While the obstacle is moving the agents do their best to avoid it, but once the obstacle becomes stationary it will carve a hole in the navmesh so that the agents can change their paths to steer around it, or if the stationary obstacle is blocking the path way, the agents can find a different route.
  
 
+### Building a NavMesh
+
+n Unity, `NavMesh` generation is handled from the Navigation window (menu: Window > AI > Navigation).
+
+Building a `NavMesh` for your scene can be done in 4 quick steps:
+
+-   **Select** scene geometry that should affect the navigation – walkable surfaces and obstacles.
+-   **Check Navigation Static** on to include selected objects in the NavMesh baking process.
+-   **Adjust** the bake settings to match your agent size.
+    -   _Agent Radius_ defines how close the agent center can get to a wall or a ledge.
+    -   _Agent Height_ defines how low the spaces are that the agent can reach.
+    -   _Max Slope_ defines how steep the ramps are that the agent walk up.
+    -   _Step Height_ defines how high obstructions are that the agent can step on.
+ 
+
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
 ```cs
