@@ -14,14 +14,17 @@ The most common use of a Ray from the camera is to perform a raycast out into th
 using UnityEngine;
 using System.Collections;
 
-public class ExampleScript : MonoBehaviour {
+public class ExampleScript : MonoBehaviour 
+{
     public Camera camera;
 
-    void Start(){
+    void Start()
+    {
         RaycastHit hit;
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         
-        if (Physics.Raycast(ray, out hit)) {
+        if (Physics.Raycast(ray, out hit)) 
+        {
             Transform objectHit = hit.transform;
             
             // Do something with the object that was hit by the raycast.
