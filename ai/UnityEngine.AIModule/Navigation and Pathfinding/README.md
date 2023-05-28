@@ -17,17 +17,17 @@ The **Navigation System** allows you to create characters which can navigate the
 ### Telling a NavMeshAgent to Move to a Destination
 ```cs
 // MoveDestination.cs
-    using UnityEngine;
-    
-    public class MoveDestination : MonoBehaviour {
-       
-       public Transform goal;
-       
-       void Start () {
-          NavMeshAgent agent = GetComponent<NavMeshAgent>();
-          agent.destination = goal.position; 
-       }
+using UnityEngine;
+
+public class MoveDestination : MonoBehaviour 
+{
+   public Transform goal;
+   void Start () 
+   {
+      NavMeshAgent agent = GetComponent<NavMeshAgent>();
+      agent.destination = goal.position; 
     }
+ }
 ```
 
 
