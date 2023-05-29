@@ -16,7 +16,7 @@ The **Navigation System** allows you to create characters which can navigate the
 
 ### Building a NavMesh
 
-In Unity, `NavMesh` generation is handled from the Navigation window (menu: Window > AI > Navigation).
+In Unity, `NavMesh` generation is handled from the Navigation window (menu: **Window > AI > Navigation**).
 
 Building a `NavMesh` for your scene can be done in 4 quick steps:
 
