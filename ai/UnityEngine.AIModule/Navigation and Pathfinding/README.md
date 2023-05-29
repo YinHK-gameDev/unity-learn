@@ -27,7 +27,13 @@ Building a `NavMesh` for your scene can be done in 4 quick steps:
     -   _Agent Height_ defines how low the spaces are that the agent can reach.
     -   _Max Slope_ defines how steep the ramps are that the agent walk up.
     -   _Step Height_ defines how high obstructions are that the agent can step on.
- 
+
+### NavMesh building components
+**NavMesh** building components provide additional controls for generating and using NavMeshes in the Unity Editor and at runtime.
+
+**`NavMesh`** building components are available through the AI Navigation package. To install this package, follow the instructions on adding a registry package by name and add the `com.unity.ai.navigation package`.
+
+
 
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
@@ -189,6 +195,8 @@ https://docs.unity3d.com/Manual/nav-AgentPatrol.html
 Setup navigating humanoid characters to move using the navigation system.
 
 https://docs.unity3d.com/Manual/nav-CouplingAnimationAndNavigation.html
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/Navigation.html
