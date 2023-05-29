@@ -29,7 +29,7 @@ Building a `NavMesh` for your scene can be done in 4 quick steps:
     -   _Step Height_ defines how high obstructions are that the agent can step on.
 
 ### NavMesh building components
-**NavMesh** building components provide additional controls for generating and using NavMeshes in the Unity Editor and at runtime.
+**`NavMesh`** building components provide additional controls for generating and using NavMeshes in the Unity Editor and at runtime.
 
 **`NavMesh`** building components are available through the AI Navigation package. To install this package, follow the instructions on adding a registry package by name and add the `com.unity.ai.navigation package`.
 
