@@ -118,6 +118,11 @@ https://docs.unity3d.com/Manual/nav-CreateOffMeshLink.html
 #### Building OffMesh Links Automatically
 https://docs.unity3d.com/Manual/nav-BuildingOffMeshLinksAutomatically.html
 
+
+### Height Mesh
+https://docs.unity3d.com/Manual/nav-HeightMesh.html
+
+
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
 ```cs
