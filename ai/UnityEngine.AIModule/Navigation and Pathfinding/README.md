@@ -37,6 +37,19 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/index.html
 
 
 
+### Voxel Size
+Manual voxel size allows you to change the accuracy at which the bake process operates.
+
+The NavMesh bake process uses voxelization to build the NavMesh from arbitrary level geometry. In the first pass of the algorithm, the scene
+ is rasterized into voxels, then the walkable surfaces are extracted, and finally the walkable surfaces are turned into a navigation mesh
+. The voxel size describes how accurately the resulting NavMesh represents the scene geometry.
+
+The default accuracy is set so that there are 3 voxels per agent radius, that is, the whole agent width is 6 voxels. This is a good trade off between accuracy and bake speed. Halving the voxel size will increase the memory usage by 4x and it will take 4x longer to build the scene.
+
+> Generally you should not need to adjust the voxel size, there are two scenarios where this might be necessary: building a smaller agent radius, or more accurate NavMesh.
+
+https://docs.unity3d.com/Manual/nav-AdvancedSettings.html
+
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
 ```cs
