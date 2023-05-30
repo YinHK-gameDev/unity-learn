@@ -103,6 +103,18 @@ https://docs.unity3d.com/Manual/nav-CreateNavMeshAgent.html
 
 https://docs.unity3d.com/Manual/nav-CreateNavMeshObstacle.html
 
+### Creating an OffMesh Link
+OffMesh Links are used to create paths crossing outside the walkable navigation mesh surface. For example, jumping over a ditch or a fence, or opening a door before walking through it, can be all described as OffMesh links.
+
+1. First create **two cylinders**: **Game Object > 3D Object > cylinder**.
+2. You can scale the cylinders to **(0.1, 0.5, 0.1)** to make it easier to work with them.
+3. Move the **first cylinder** at the edge of the top platform, close to the **NavMesh** surface.
+4. Place the **second cylinder** on the ground, close to the **NavMesh**, at the location where the link should land.
+5. Select the **first cylinder** cylinder and add an Off-Mesh Link component to it. Choose **Add Component** from the inspector and choose **Navigation > Off Mesh Link**.
+6. Assign the **first cylinder** in the **Start** field and the **second cylinder** in the **End** field.
+ 
+https://docs.unity3d.com/Manual/nav-CreateOffMeshLink.html
+
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
 ```cs
