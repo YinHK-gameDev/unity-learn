@@ -35,6 +35,8 @@ Building a `NavMesh` for your scene can be done in 4 quick steps:
 
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/index.html
 
+
+
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
 ```cs
@@ -205,6 +207,8 @@ https://docs.unity3d.com/Manual/Navigation.html
 **Scripting API** \
 https://docs.unity3d.com/ScriptReference/AI.NavMesh.html
 
+**Advanced NavMesh Bake Settings** \
+https://docs.unity3d.com/Manual/nav-AdvancedSettings.html
 
 **NavMesh Agent** \
 https://docs.unity3d.com/Manual/class-NavMeshAgent.html
