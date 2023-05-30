@@ -198,11 +198,22 @@ https://docs.unity3d.com/Manual/nav-CouplingAnimationAndNavigation.html
 
 
 
+
 ### ref 
 https://docs.unity3d.com/Manual/Navigation.html
 
 **Scripting API** \
 https://docs.unity3d.com/ScriptReference/AI.NavMesh.html
+
+
+**NavMesh Agent** \
+https://docs.unity3d.com/Manual/class-NavMeshAgent.html
+
+**Nav Mesh Obstacle** \
+https://docs.unity3d.com/Manual/class-NavMeshObstacle.html
+
+**OffMesh Link** \
+https://docs.unity3d.com/Manual/class-OffMeshLink.html
 
 **Navigation tutorial** \
 https://learn.unity.com/search?k=%5B%22q%3ANavigation%22%5D
