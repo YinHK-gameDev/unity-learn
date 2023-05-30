@@ -92,6 +92,17 @@ First let’s create the character:
 
 https://docs.unity3d.com/Manual/nav-CreateNavMeshAgent.html
 
+
+### Creating a NavMesh Obstacle
+1. First create a **cube** to depict the crate: **Game Object > 3D Object > Cube**.
+2. Move the cube to the platform at the top, the default size of the cube is good for a crate so leave it as it is.
+3. Add a **NavMesh Obstacle component** to the cube. Choose **Add Component** from the inspector and choose **Navigation > NavMesh Obstacle**.
+4. Set the shape of the obstacle to **box**, changing the shape will automatically fit the center and size to the render **mesh**.
+5. Add a **Rigid body** to the obstacle. Choose **Add Component** from the inspector and choose **Physics > Rigid Body**.
+6. Finally turn on the **Carve** setting from the **`NavMesh`** Obstacle inspector so that the agent knows to find a path around the obstacle.
+
+
+
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
 ```cs
