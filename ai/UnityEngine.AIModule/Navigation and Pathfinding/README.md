@@ -33,7 +33,7 @@ Building a `NavMesh` for your scene can be done in 4 quick steps:
 
 **`NavMesh`** building components are available through the AI Navigation package. To install this package, follow the instructions on adding a registry package by name and add the `com.unity.ai.navigation package`.
 
-
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/index.html
 
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
