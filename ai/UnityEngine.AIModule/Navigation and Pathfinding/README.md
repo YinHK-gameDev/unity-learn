@@ -78,6 +78,20 @@ If you need smaller corridors than the NavMesh baking can support, please consid
 
 https://docs.unity3d.com/Manual/nav-AdvancedSettings.html
 
+
+### Creating a NavMesh Agent
+Once you have a **NavMesh** baked for your level it is time to create a character which can navigate the **scene**. We’re going to build our prototype agent from a cylinder and set it in motion. This is done using a NavMesh Agent component and a simple script.
+
+First let’s create the character:
+
+1.  Create a **cylinder**: **GameObject > 3D Object > Cylinder**.
+2.  The default cylinder dimensions (height 2 and radius 0.5) are good for a humanoid shaped agent, so we will leave them as they are.
+3.  Add a **NavMesh Agent** component: **Component > Navigation > NavMesh Agent**.
+
+
+
+https://docs.unity3d.com/Manual/nav-CreateNavMeshAgent.html
+
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
 ```cs
