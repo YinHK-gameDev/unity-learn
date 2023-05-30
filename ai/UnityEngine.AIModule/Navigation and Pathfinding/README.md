@@ -131,6 +131,7 @@ The area types are specified in the Navigation Window’s Areas tab. There are 2
 -   **Not Walkable** is a generic area type which prevents navigation. It is useful for cases where you want to mark certain object to be an obstacle, but without getting NavMesh on top of it.
 -   **Jump** is an area type that is assigned to all auto-generated OffMesh Links.
 
+> If several objects of different area types are overlapping, the resulting navmesh area type will generally be the one with the highest index. There is one exception however: Not Walkable always takes precedence. Which can be helpful if you need to block out an area.
 
 https://docs.unity3d.com/Manual/nav-AreasAndCosts.html
 
