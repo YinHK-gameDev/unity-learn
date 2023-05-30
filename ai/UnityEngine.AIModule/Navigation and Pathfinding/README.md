@@ -41,8 +41,6 @@ The **Min Region Area** advanced build settings allows you to cull away small no
 Please note that some areas may not get removed despite the **Min Region Area** setting. The NavMesh is built in parallel as a grid of tiles. If an area straddles a tile boundary, the area is not removed. The reason for this is that the area pruning happens at a stage in the build process where surrounding tiles are not accessible.
 
 
-
-
 ### Voxel Size
 Manual voxel size allows you to change the accuracy at which the bake process operates.
 
@@ -53,8 +51,6 @@ The NavMesh bake process uses voxelization to build the NavMesh from arbitrary l
 The default accuracy is set so that there are 3 voxels per agent radius, that is, the whole agent width is 6 voxels. This is a good trade off between accuracy and bake speed. Halving the voxel size will increase the memory usage by 4x and it will take 4x longer to build the scene.
 
 > Generally you should not need to adjust the voxel size, there are two scenarios where this might be necessary: building a smaller agent radius, or more accurate NavMesh.
-
-
 
 #### Smaller Agent Radius
 
@@ -75,7 +71,6 @@ When you intentionally build tight corridors in your game, please note that you 
 If you need smaller corridors than the NavMesh baking can support, please consider using OffMesh Links. These have the additional benefit that you can detect when they are being used and can, for example, play a specific animation.
 
 
-
 https://docs.unity3d.com/Manual/nav-AdvancedSettings.html
 
 
@@ -87,8 +82,6 @@ First let’s create the character:
 1.  Create a **cylinder**: **GameObject > 3D Object > Cylinder**.
 2.  The default cylinder dimensions (height 2 and radius 0.5) are good for a humanoid shaped agent, so we will leave them as they are.
 3.  Add a **NavMesh Agent** component: **Component > Navigation > NavMesh Agent**.
-
-
 
 https://docs.unity3d.com/Manual/nav-CreateNavMeshAgent.html
 
@@ -124,6 +117,22 @@ While navigating, the NavMesh Agent is constrained on the surface of the NavMesh
 
 https://docs.unity3d.com/Manual/nav-HeightMesh.html
 
+### Navigation Areas and Costs
+The **Navigation Areas** define how difficult it is to walk across a specific area, the **lower cost** areas will be preferred during path finding. In addition each NavMesh Agent has an Area Mask which can be used to specify on which areas the agent can move.
+
+
+#### Pathfinding Cost
+In a nutshell, the cost allows you to control which areas the pathfinder favors when finding a path. For example, if you set the cost of an area to 3.0, traveling across that area is considered to be three times longer than alternative routes.
+
+#### Area Types
+The area types are specified in the Navigation Window’s Areas tab. There are 29 custom types, and 3 built-in types: Walkable, Not Walkable, and Jump.
+
+-   **Walkable** is a generic area type which specifies that the area can be walked on.
+-   **Not Walkable** is a generic area type which prevents navigation. It is useful for cases where you want to mark certain object to be an obstacle, but without getting NavMesh on top of it.
+-   **Jump** is an area type that is assigned to all auto-generated OffMesh Links.
+
+
+https://docs.unity3d.com/Manual/nav-AreasAndCosts.html
 
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
