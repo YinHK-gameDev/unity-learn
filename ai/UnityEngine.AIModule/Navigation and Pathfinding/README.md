@@ -127,6 +127,8 @@ In a nutshell, the cost allows you to control which areas the pathfinder favors 
 #### Area Types
 The area types are specified in the Navigation Window’s Areas tab. There are 29 custom types, and 3 built-in types: Walkable, Not Walkable, and Jump.
 
+![](./img/NavMeshAreaTypeList.png)
+
 -   **Walkable** is a generic area type which specifies that the area can be walked on.
 -   **Not Walkable** is a generic area type which prevents navigation. It is useful for cases where you want to mark certain object to be an obstacle, but without getting NavMesh on top of it.
 -   **Jump** is an area type that is assigned to all auto-generated OffMesh Links.
