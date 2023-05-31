@@ -64,6 +64,12 @@ https://docs.unity3d.com/Manual/upm-ui-find.html
 ### Adding and removing packages
 https://docs.unity3d.com/Manual/upm-ui-actions.html
 
+#### Installing from a Git URL
+https://docs.unity3d.com/2021.2/Documentation/Manual/upm-ui-quick.html
+
+#### Adding a registry package by name
+https://docs.unity3d.com/2021.2/Documentation/Manual/upm-ui-quick.html
+
 ### Finding package documentation
 To access the documentation for a specific package, you have two options:
 
