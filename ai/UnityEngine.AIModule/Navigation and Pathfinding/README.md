@@ -35,6 +35,48 @@ Building a `NavMesh` for your scene can be done in 4 quick steps:
 
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/index.html
 
+#### NavMesh Surface
+The NavMesh Surface component represents the walkable area for a specific NavMesh Agent type, and defines a part of the Scene where a NavMesh should be built.
+
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshSurface.html
+
+#### NavMeshModifier
+Use for affecting the NavMesh generation of NavMesh area types based on the transform hierarchy.
+ 
+NavMesh Modifiers adjust how a specific GameObject behaves during NavMesh baking at runtime.
+
+To use the NavMesh Modifier component, navigate to **GameObject** > **AI** > **NavMesh Modifier**.
+
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshModifier.html
+
+#### NavMeshModifierVolume
+Use for affecting the NavMesh generation of NavMesh area types based on volume.
+
+NavMesh Modifier Volume marks a defined area as a certain type (for example, **Lava** or **Door**). Whereas [NavMesh Modifier](https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshModifierVolume.htmlNavMeshModifier.html) marks certain GameObjects with an area type. NavMesh Modifier Volume allows you to change an area type locally based on a specific volume.
+
+To use the NavMesh Modifier Volume component, navigate to **GameObject** > **AI** > **NavMesh Modifier Volume**.
+
+NavMesh Modifier Volume is useful for marking certain areas of walkable surfaces that might not be represented as separate geometry, for example danger areas. You can also use It to make certain areas non-walkable.
+
+The NavMesh Modifier Volume also affects the NavMesh generation process, meaning the NavMesh has to be updated to reflect any changes to NavMesh Modifier Volumes.
+
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshModifierVolume.html
+
+
+#### NavMeshLink 
+Use for connecting the same or different NavMesh surfaces for one type of Agent.
+
+NavMesh Link creates a navigable link between two locations that use NavMeshes.
+
+This link can be from point to point or it can span a gap, in which case the Agent uses the nearest location along the entry edge to cross the link.
+
+You must use a NavMesh Link to connect different NavMesh Surfaces.
+
+To use the NavMesh Link component, navigate to **GameObject** > **AI** > **NavMesh Link**.
+
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshLink.html
+
+
 ### Min Region Area
 The **Min Region Area** advanced build settings allows you to cull away small non-connected **NavMesh regions**. **NavMesh regions** whose surface area is smaller than the specified value, will be removed.
 
