@@ -150,6 +150,8 @@ OffMesh Links are used to create paths crossing outside the walkable navigation 
  
 https://docs.unity3d.com/Manual/nav-CreateOffMeshLink.html
 
+https://vionixstudio.com/2022/05/10/unity-off-mesh-link-tutorial/
+
 #### Building OffMesh Links Automatically
 https://docs.unity3d.com/Manual/nav-BuildingOffMeshLinksAutomatically.html
 
