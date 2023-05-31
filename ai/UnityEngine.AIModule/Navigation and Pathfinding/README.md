@@ -361,6 +361,8 @@ https://docs.unity3d.com/Manual/nav-CouplingAnimationAndNavigation.html
 ### ref 
 https://docs.unity3d.com/Manual/Navigation.html
 
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/index.html
+
 **Scripting API** \
 https://docs.unity3d.com/ScriptReference/AI.NavMesh.html
 
