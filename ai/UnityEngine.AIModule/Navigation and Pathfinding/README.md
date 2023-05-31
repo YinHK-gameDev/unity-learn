@@ -27,6 +27,7 @@ Building a `NavMesh` for your scene can be done in 4 quick steps:
     -   _Agent Height_ defines how low the spaces are that the agent can reach.
     -   _Max Slope_ defines how steep the ramps are that the agent walk up.
     -   _Step Height_ defines how high obstructions are that the agent can step on.
+-   Click **bake** to build the NavMesh.
 
 ### NavMesh building components
 **`NavMesh`** building components provide additional controls for generating and using **`NavMeshes`** in the Unity Editor and at runtime.
