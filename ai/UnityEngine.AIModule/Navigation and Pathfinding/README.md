@@ -117,6 +117,19 @@ If you need smaller corridors than the NavMesh baking can support, please consid
 
 https://docs.unity3d.com/Manual/nav-AdvancedSettings.html
 
+### Create a NavMesh
+You can create a **NavMesh** to define an area of your scene within which a character can navigate intelligently.
+
+To create a NavMesh do the following:
+
+1. Select the scene geometry where you want to add the NavMesh.
+2. In the Inspector window, click **Add Component**.
+3. Select **Navigation > NavMesh Surface**.
+4. In the NavMesh Surface component, specify the necessary settings. 
+5. When you are finished, click **Bake**.
+The NavMesh is generated and displayed in the scene as a blue overlay on the underlying scene geometry whenever the Navigation window is open and visible.
+
+
 
 ### Creating a NavMesh Agent
 Once you have a **NavMesh** baked for your level it is time to create a character which can navigate the **scene**. We’re going to build our prototype agent from a cylinder and set it in motion. This is done using a NavMesh Agent component and a simple script.
