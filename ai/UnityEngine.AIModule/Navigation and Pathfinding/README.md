@@ -120,7 +120,6 @@ https://docs.unity3d.com/Manual/nav-HeightMesh.html
 ### Navigation Areas and Costs
 The **Navigation Areas** define how difficult it is to walk across a specific area, the **lower cost** areas will be preferred during path finding. In addition each NavMesh Agent has an Area Mask which can be used to specify on which areas the agent can move.
 
-
 #### Pathfinding Cost
 In a nutshell, the cost allows you to control which areas the pathfinder favors when finding a path. For example, if you set the cost of an area to 3.0, traveling across that area is considered to be three times longer than alternative routes.
 
@@ -141,6 +140,8 @@ https://docs.unity3d.com/Manual/nav-AreasAndCosts.html
 Each agent has an **Area Mask** which describes which areas it can use when navigating. The area mask can be set in the agent properties, or the bitmask can be manipulated using a script at runtime.
 
 The area mask is useful when you want only certain types characters to be able to walk through an area. For example, in a zombie evasion game, you could mark the area under each door with a Door area type, and uncheck the Door area from the zombie character’s Area Mask.
+
+![](./img/NavMeshAreaMask.svg)
 
 https://docs.unity3d.com/Manual/nav-AreasAndCosts.html
 
