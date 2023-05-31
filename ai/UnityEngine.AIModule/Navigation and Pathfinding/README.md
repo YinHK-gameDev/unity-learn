@@ -371,17 +371,39 @@ https://docs.unity3d.com/ScriptReference/AI.NavMesh.html
 **Advanced NavMesh Bake Settings** \
 https://docs.unity3d.com/Manual/nav-AdvancedSettings.html
 
+**Navigation window reference** \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavigationWindow.html
+
+**AI Navigation preferences** \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavEditorPreferences.html
+
 **NavMesh Agent** \
-https://docs.unity3d.com/Manual/class-NavMeshAgent.html
+https://docs.unity3d.com/Manual/class-NavMeshAgent.html \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshAgent.html
 
 **Nav Mesh Obstacle** \
-https://docs.unity3d.com/Manual/class-NavMeshObstacle.html
+https://docs.unity3d.com/Manual/class-NavMeshObstacle.html \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshObstacle.html
 
 **OffMesh Link** \
-https://docs.unity3d.com/Manual/class-OffMeshLink.html
+https://docs.unity3d.com/Manual/class-OffMeshLink.html \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/OffMeshLink.html
+
+**NavMeshLink** \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshLink.html
+
+**NavMesh Modifier** \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshModifier.html
+
+**NavMeshModifierVolume** \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshModifierVolume.html
+
+**NavMesh Surface** \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshSurface.html
 
 **Navigation tutorial** \
 https://learn.unity.com/search?k=%5B%22q%3ANavigation%22%5D
+
 
 **Brackeys Unity NavMesh Tutorial** \
 https://www.youtube.com/watch?v=CHV1ymlw-P8
