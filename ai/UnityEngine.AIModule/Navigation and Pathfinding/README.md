@@ -15,6 +15,7 @@ The **Navigation System** allows you to create characters which can navigate the
  
 
 ### Building a NavMesh
+The process of creating a NavMesh from the level geometry is called **NavMesh Baking**. The process collects the Render Meshes and Terrains of all Game Objects which are marked as **Navigation Static**, and then processes them to create a navigation mesh that approximates the walkable surfaces of the level.
 
 In Unity, `NavMesh` generation is handled from the Navigation window (menu: **Window > AI > Navigation**).
 
