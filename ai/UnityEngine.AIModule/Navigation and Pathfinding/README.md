@@ -137,6 +137,13 @@ The area types are specified in the Navigation Window’s Areas tab. There are 2
 
 https://docs.unity3d.com/Manual/nav-AreasAndCosts.html
 
+#### Area Mask
+Each agent has an **Area Mask** which describes which areas it can use when navigating. The area mask can be set in the agent properties, or the bitmask can be manipulated using a script at runtime.
+
+The area mask is useful when you want only certain types characters to be able to walk through an area. For example, in a zombie evasion game, you could mark the area under each door with a Door area type, and uncheck the Door area from the zombie character’s Area Mask.
+
+https://docs.unity3d.com/Manual/nav-AreasAndCosts.html
+
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
 ```cs
