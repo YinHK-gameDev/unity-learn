@@ -187,7 +187,7 @@ Each agent has an **Area Mask** which describes which areas it can use when navi
 
 The area mask is useful when you want only certain types characters to be able to walk through an area. For example, in a zombie evasion game, you could mark the area under each door with a Door area type, and uncheck the Door area from the zombie character’s Area Mask.
 
-![](./img/NavMeshAreaMask.svg)
+![](./img/agent.png)
 
 https://docs.unity3d.com/Manual/nav-AreasAndCosts.html
 
