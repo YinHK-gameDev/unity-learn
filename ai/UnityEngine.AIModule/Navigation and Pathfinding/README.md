@@ -145,6 +145,11 @@ The area mask is useful when you want only certain types characters to be able t
 
 https://docs.unity3d.com/Manual/nav-AreasAndCosts.html
 
+
+### Loading Multiple NavMeshes using Additive Loading
+The **NavMeshes** in different Scenes are not connected by default. When you load another level using **`Application.LoadLevelAdditive()`** you will need to use OffMesh links to connect the **NavMeshe**s in different scenes.
+
+
 ### Telling a NavMeshAgent to Move to a Destination
 You can tell an agent to start calculating a path simply by setting the **`NavMeshAgent.destination`** property with the point you want the agent to move to. As soon as the calculation is finished, the agent will automatically move along the path until it reaches its destination. 
 ```cs
