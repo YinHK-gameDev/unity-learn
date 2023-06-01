@@ -224,8 +224,6 @@ public class MoveDestination : MonoBehaviour
    {
       NavMeshAgent agent = GetComponent<NavMeshAgent>();
       agent.destination = goal.position; 
-      // or use SetDestination() method
-      // agent.SetDestination(hit.point);
     }
  }
 ```
@@ -260,6 +258,8 @@ You can choose the destination point on the **`NavMesh`** by clicking the mouse 
                 if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100)) 
                 {
                     agent.destination = hit.point;
+                    // or use SetDestination() method
+                    // agent.SetDestination(hit.point);
                 }
             }
         }
