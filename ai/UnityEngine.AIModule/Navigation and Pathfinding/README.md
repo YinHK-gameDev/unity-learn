@@ -30,6 +30,8 @@ Building a `NavMesh` for your scene can be done in 4 quick steps:
     -   _Step Height_ defines how high obstructions are that the agent can step on.
 -   Click **bake** to build the NavMesh.
 
+
+Or using **NavMesh Surface** component in the selected scene geometry to bake the **NavMesh**.
 ### NavMesh building components
 **`NavMesh`** building components provide additional controls for generating and using **`NavMeshes`** in the Unity Editor and at runtime.
 
