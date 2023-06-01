@@ -152,6 +152,7 @@ https://docs.unity3d.com/Manual/nav-CreateNavMeshAgent.html
 4. Set the shape of the obstacle to **box**, changing the shape will automatically fit the center and size to the render **mesh**.
 5. Add a **Rigid body** to the obstacle. Choose **Add Component** from the inspector and choose **Physics > Rigid Body**.
 6. Finally turn on the **Carve** setting from the **`NavMesh`** Obstacle inspector so that the agent knows to find a path around the obstacle.
+   > Disable **"Carve Only Stationary"** checkbox under **Carve** field for Dynamic moving NavMesh Obstacles.
 
 https://docs.unity3d.com/Manual/nav-CreateNavMeshObstacle.html
 
