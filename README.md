@@ -225,3 +225,6 @@ https://www.youtube.com/watch?v=WH4ccUV2VCU
 ### Unity racing game tutorial
 https://www.youtube.com/watch?v=6Y1bAvRYqbU&list=PLhWBaV_gmpGXxscZr8PIcreyYkw8VlnKn&index=1
 
+https://www.youtube.com/watch?v=SPMdChcRqHY&list=PLqMHVlo2BjjDsNHLOqWT4klt_mNzhTlJX
+
+https://www.youtube.com/watch?v=vEu51oYWnRQ&list=PLA-xaldQ72ryy6vHEj5tfLUnufcNXV9sM
