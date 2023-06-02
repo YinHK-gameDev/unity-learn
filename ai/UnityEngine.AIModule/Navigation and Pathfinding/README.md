@@ -132,7 +132,6 @@ To create a NavMesh do the following:
 The NavMesh is generated and displayed in the scene as a blue overlay on the underlying scene geometry whenever the Navigation window is open and visible.
 
 
-
 ### Creating a NavMesh Agent
 Once you have a **NavMesh** baked for your level it is time to create a character which can navigate the **scene**. We’re going to build our prototype agent from a cylinder and set it in motion. This is done using a NavMesh Agent component and a simple script.
 
@@ -159,12 +158,37 @@ https://docs.unity3d.com/Manual/nav-CreateNavMeshObstacle.html
 ### Creating an OffMesh Link
 OffMesh Links are used to create paths crossing outside the walkable navigation mesh surface. For example, jumping over a ditch or a fence, or opening a door before walking through it, can be all described as OffMesh links.
 
+
+#### Creating off mesh link Manually
+To create a manually off mesh link, you need two gameobjects. They can be empty or you can have a simple model to represent the mesh link.
+
 1. First create **two cylinders**: **Game Object > 3D Object > cylinder**.
 2. You can scale the cylinders to **(0.1, 0.5, 0.1)** to make it easier to work with them.
 3. Move the **first cylinder** at the edge of the top platform, close to the **NavMesh** surface.
 4. Place the **second cylinder** on the ground, close to the **NavMesh**, at the location where the link should land.
-5. Select the **first cylinder** cylinder and add an Off-Mesh Link component to it. Choose **Add Component** from the inspector and choose **Navigation > Off Mesh Link**.
+5. Select the **first cylinder** cylinder and add an **Off-Mesh Link component** to it. Choose **Add Component** from the inspector and choose **Navigation > Off Mesh Link**.
 6. Assign the **first cylinder** in the **Start** field and the **second cylinder** in the **End** field.
+ 
+ 
+####  Creating off mesh link automatically
+
+There are some limitations to off mesh links when generated automatically.
+
+1.  For jump links both your Navmesh should be at the same elevation.
+2.  For drop links the bottom surface should be directly below the top one or it should be a part of the same Navmesh.
+
+To generate the off mesh links
+
+-   Select the planes you want the player to move across.
+-   Go to Windows>AI>Navigation.
+-   In the navigation window select the object tag.
+-   Set both the planes as Navigation static and check Generate OffMeshLinks.
+
+![](./img/Offmesh_settings.jpg)
+
+![](./img/drop-and-jump-settings.jpg)
+ 
+ 
  
 https://docs.unity3d.com/Manual/nav-CreateOffMeshLink.html
 
