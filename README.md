@@ -220,3 +220,8 @@ Tech Stream releases are for creators who value exploring in-progress features t
 
 **Game dev is hard** \
 https://www.youtube.com/watch?v=WH4ccUV2VCU
+
+
+### Unity racing game tutorial
+https://www.youtube.com/watch?v=6Y1bAvRYqbU&list=PLhWBaV_gmpGXxscZr8PIcreyYkw8VlnKn&index=1
+
