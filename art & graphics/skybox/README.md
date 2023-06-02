@@ -15,6 +15,9 @@ The **High Definition Render Pipeline (HDRP)** does not support skybox Materials
 ### using skyboxes
 https://docs.unity3d.com/Manual/skyboxes-using.html
 
+### Skybox shaders
+https://docs.unity3d.com/Manual/skybox-shaders.html
+
 ### ref 
 https://docs.unity3d.com/Manual/skyboxes.html
 
