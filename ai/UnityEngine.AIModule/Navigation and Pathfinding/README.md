@@ -180,7 +180,7 @@ There are some limitations to off mesh links when generated automatically.
 To generate the off mesh links
 
 -   Select the planes you want the player to move across.
--   Go to Windows>AI>Navigation.
+-   Go to **Windows > AI > Navigation**.
 -   In the navigation window select the object tag.
 -   Set both the planes as Navigation static and check Generate OffMeshLinks.
 
