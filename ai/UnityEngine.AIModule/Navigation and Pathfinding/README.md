@@ -188,7 +188,12 @@ To generate the off mesh links
 
 ![](./img/drop-and-jump-settings.jpg)
  
- 
+
+Jump links \
+![](./img/Offmesh-jump-links.jpg)
+
+Drop links \
+![](./img/Offmesh-drop-links.jpg)
  
 https://docs.unity3d.com/Manual/nav-CreateOffMeshLink.html
 
