@@ -19,7 +19,7 @@ The **High Definition Render Pipeline (HDRP)** does not support skybox Materials
 To create a new skybox Material:
 
 1.  From the menu bar, click **Assets > Create > Material**.
-2.  In the **Shader** drop-down, click **Skybox** then the skybox Shader you want to use.
+2.  In the **Shader** drop-down, click **Skybox** then the **skybox Shader** you want to use.
 3.  You can now fill out the properties on the Material to set up the skybox. The properties available on the Material depend on the skybox Shader the Material uses.
 
 > **Note**: Each skybox Shader has its own set of prerequisite Textures that differ in number and Texture format.
@@ -57,6 +57,14 @@ If you only want to draw a skybox in the background of a **particular Camera**, 
 https://docs.unity3d.com/Manual/skyboxes-using.html
 
 ### Skybox shaders
+Unity provides multiple **Skybox Shaders** for you to use. Each **Shader** uses a different set of properties and generation techniques. Each Shader falls into one of the following two categories:
+
+1. **Textured**: Generates a skybox from **one or multiple textures**. The source textures represent the view of the background from all directions. The Skybox Shaders in this category are:
+   -   [6 Sided](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-6sided.html)
+   -   [Cubemap](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-cubemap.html)
+   -   [Panoramic](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-panoramic.html)
+2. **Procedural**: Does not use textures and instead uses properties on the Material to generate a skybox. The Skybox Shader in this category is: [Procedural](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-procedural.html).
+
 https://docs.unity3d.com/Manual/skybox-shaders.html
 
 ### ref 
