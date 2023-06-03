@@ -45,7 +45,14 @@ You can also specify when Unity updates the ambient lighting. To do this, change
 
 -   **Realtime**: Unity constantly regenerates ambient lighting for your Scene. This is useful if you alter the skybox at run-time
 -   **Baked**: Unity only generates ambient lighting for your Scene when you click the **Generate Lighting** button at the bottom of the Lighting window. This is useful if your skybox does not change during run-time because it saves computational resources.
--   
+
+
+#### Drawing a skybox for a particular Camera
+If you only want to draw a skybox in the background of a **particular Camera**, use the **Skybox component**. When you attach this component to a **GameObject with a Camera**, it **overrides the skybox that the Camera draws**. 
+
+1. Select a **Camera** in your Scene and view it in the **Inspector** window.
+2. Click **Add Component > Rendering > Skybox**.
+3. On the **Skybox component**, assign the **skybox Material** to the **Custom Skybox property**.
 
 https://docs.unity3d.com/Manual/skyboxes-using.html
 
