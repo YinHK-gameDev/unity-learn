@@ -446,7 +446,8 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/OffMeshLink
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshLink.html
 
 **NavMesh Modifier** \
-https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshModifier.html
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshModifier.html \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshModifier.html
 
 **NavMeshModifierVolume** \
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshModifierVolume.html
