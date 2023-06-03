@@ -62,3 +62,4 @@ https://docs.unity3d.com/Manual/skybox-shaders.html
 ### ref 
 https://docs.unity3d.com/Manual/skyboxes.html
 
+https://www.youtube.com/watch?v=anYBZzxy1FA
