@@ -115,7 +115,7 @@ Unity supports different rendering paths. You should choose which one you use de
 
 ### Clear Flags
 
-Each Camera **stores color and depth information** when it** renders its view**.
+Each Camera **stores color and depth information** when it **renders its view**.
 
 The portions of the screen that are not drawn in are empty, and will **display the skybox by default**. When you are using multiple Cameras, each one stores its own color and depth information in buffers, accumulating more data as each Camera renders. 
 
