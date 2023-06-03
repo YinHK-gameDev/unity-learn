@@ -1,6 +1,6 @@
 ## Camera
 
-Cameras are the devices that capture and display the world to the player
+Cameras are the devices that **capture and display the world** to the player, the scene capture in the camera will display in the Game.
 
 ### View Frustum
 The word frustum refers to a solid shape that looks like a pyramid with the top cut off parallel to the base. This is the shape of the region that can be seen and rendered by a perspective camera.
@@ -115,7 +115,16 @@ Unity supports different rendering paths. You should choose which one you use de
 
 ### Clear Flags
 
-Each Camera stores color and depth information when it renders its view. The portions of the screen that are not drawn in are empty, and will display the skybox by default. When you are using multiple Cameras, each one stores its own color and depth information in buffers, accumulating more data as each Camera renders. As any particular Camera in your scene renders its view, you can set the Clear Flags to clear different collections of the buffer information. To do this, choose one of the following four options:
+Each Camera **stores color and depth information** when it** renders its view**.
+
+The portions of the screen that are not drawn in are empty, and will **display the skybox by default**. When you are using multiple Cameras, each one stores its own color and depth information in buffers, accumulating more data as each Camera renders. 
+
+As any particular Camera in your scene renders its view, you can set the Clear Flags to clear different collections of the buffer information. To do this, choose one of the following four options:
+
+- Skybox
+- Solid Color
+- Deep Only
+- Don't clear
 
 #### Skybox
 This is the default setting. Any empty portions of the screen will display the current Camera’s skybox. If the current Camera has no skybox set, it will default to the skybox chosen in the Lighting Window (menu: Window > Rendering > Lighting). It will then fall back to the Background Color. Alternatively a Skybox component can be added to the camera
