@@ -27,6 +27,7 @@ https://docs-multiplayer.unity3d.com/
 
 https://docs-multiplayer.unity3d.com/netcode/current/about/
 
+https://www.youtube.com/watch?v=3yuBOB3VrCk
 
 ### Tutorial for multi player online
 https://medium.com/@GamingRoy/unity-%E5%A4%9A%E4%BA%BA%E9%80%A3%E7%B7%9A-mlapi-1-739fccc98bd3
@@ -38,6 +39,8 @@ https://www.youtube.com/watch?v=eymqAMmnqPg
 https://www.youtube.com/watch?v=IvCVFywNXMc&t=19s
 
 https://www.youtube.com/watch?v=aTnBAzin9vE&t=32s
+
+https://www.youtube.com/watch?v=eymqAMmnqPg&t=51s
 
 ### ref 
 https://unity.com/solutions/build-backend#multiplayer
