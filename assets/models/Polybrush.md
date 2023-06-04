@@ -1,6 +1,6 @@
-## Polyrush
+## Polybrush
 
-Polyrush enables you to sculpt, paint and blend in the Unity Editor
+Polybrush enables you to sculpt, paint and blend in the Unity Editor
 
 
 
