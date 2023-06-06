@@ -27,6 +27,22 @@ You can add Prefabs to the list shown in the inspector labelled **Registered Spa
 
 > **Note:** If you have only one Network Manager, you need to register to it all prefabs which might be spawned in any Scene. If you have a separate Network Manager in each Scene, you only need to register the prefabs relevant for that Scene.
 
+### Customizing Player Instantiation
+
+The Network Manager spawns player GameObjects using its implementation of **`NetworkManager.OnServerAddPlayer()`**.
+
+ If you want to customize the way player GameObjects are created, you can override that virtual function.
+ 
+ ```cs
+ public virtual void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
+{
+    var player = (GameObject)GameObject.Instantiate(playerPrefab, playerSpawnPos, Quaternion.identity);
+    NetworkServer.AddPlayerForConnection(conn, player, playerControllerId);
+}
+```
+
+
+
 ### ref 
 https://docs.unity.cn/Manual/UNetManager.html
 
