@@ -25,7 +25,7 @@ In addition to the player Prefab, you **must also register other Prefabs** that 
 
 You can add Prefabs to the list shown in the inspector labelled **Registered Spawnable Prefabs**. You can also can **register prefabs via code**, with the **`ClientScene.RegisterPrefab()`** method.
 
-If you have only one Network Manager, you need to register to it all prefabs which might be spawned in any Scene. If you have a separate Network Manager in each Scene, you only need to register the prefabs relevant for that Scene.
+> **Note:** If you have only one Network Manager, you need to register to it all prefabs which might be spawned in any Scene. If you have a separate Network Manager in each Scene, you only need to register the prefabs relevant for that Scene.
 
 ### ref 
 https://docs.unity.cn/Manual/UNetManager.html
