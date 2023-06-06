@@ -21,6 +21,11 @@ Most games have a Prefab which represents the player, so the Network Manager has
 
 Once you have assigned a player Prefab, you can start the game as a host and see the player GameObject spawn. Stopping the game destroys the player GameObject. If you build and run another copy of the game and connect it as a client to _localhost_, the Network Manager makes another player GameObject appear. When you stop that client, it destroys that player’s GameObject.
 
+In addition to the player Prefab, you **must also register other Prefabs** that you want to dynamically spawn during gameplay with the Network Manager.
+
+You can add Prefabs to the list shown in the inspector labelled **Registered Spawnable Prefabs**. You can also can **register prefabs via code**, with the **`ClientScene.RegisterPrefab()`** method.
+
+If you have only one Network Manager, you need to register to it all prefabs which might be spawned in any Scene. If you have a separate Network Manager in each Scene, you only need to register the prefabs relevant for that Scene.
 
 ### ref 
 https://docs.unity.cn/Manual/UNetManager.html
