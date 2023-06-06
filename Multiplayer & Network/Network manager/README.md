@@ -11,6 +11,17 @@ If you’re using the **Network Manager HUD**, it automatically tells the Networ
 - **`NetworkManager.StartHost`**
 
 
+### Spawn management
+
+Use the **Network Manager** to manage the spawning (networked instantiation) of networked GameObjects from Prefabs.
+
+The **"Spawn Info"** section of the **Network Manager** component.
+
+Most games have a Prefab which represents the player, so the Network Manager has a Player Prefab slot. You should assign this slot with your player Prefab. When you have a player Prefab set, a player GameObject is automatically spawned from that Prefab for each user in the game. This applies to the local player on a hosted server, and remote players on remote clients. You must attach a **`Network Identity` component** to the Player Prefab.
+
+
+
+
 ### ref 
 https://docs.unity.cn/Manual/UNetManager.html
 
