@@ -9,6 +9,12 @@
 - Scripts and GameObjects which are multiplayer-aware
 
 
+### Network Manager component
+The Network Manager is responsible for managing the networking aspects of your multiplayer game. You should have one (and only one) Network Manager active in your Scene at a time.
+ 
+Unity’s built-in Network Manager component wraps up all of the features for managing your multiplayer game into one single component. If you have custom requirements which aren’t covered by this component, you can write your own network manager in script instead of using this component. If you’re just starting out with multiplayer games, you should use this component.
+
+https://docs.unity.cn/Manual/UNetManager.html
 
 
 ### Photon fusion
