@@ -17,6 +17,16 @@ Unity’s built-in Network Manager component wraps up all of the features for ma
 https://docs.unity.cn/Manual/UNetManager.html
 
 
+### Multiplayer-aware Scripts
+Writing scripts for a multiplayer game is different to writing scripts for a single-player game. This is because when you write a script for a multiplayer game, you need to think about the different contexts that the scripts run in.
+
+
+For example, the scripts you place on your player Prefab should allow the “owner” of that player instance to control it, but it should not allow other people to control it.
+
+For player GameObjects, each person usually has active control over their own player instance. This means each client has local authority over its own player, and the server accepts what the client tells it about what the player is doing.
+
+For non-player GameObjects, the server usually has authority over what happens (such as whether an item has been collected), and all clients accept what the server tells them about what has happened to that GameObject.
+
 ### Photon fusion
 https://www.photonengine.com/fusion#
 
