@@ -60,6 +60,27 @@ The Network Manager has a **Player Spawn Method** property, which allows you to 
 
 You can customize how the start positions are selected by using code. You can access the available Network Start Position components by the list **`NetworkManager.startPositions`**, and you can use the helper method **`GetStartPosition()`** on the **Network Manager** that can be used in implementation of **`OnServerAddPlayer`** to find a start position.
 
+
+### Scene management
+There are two slots on the NetworkManager Inspector for scenes: 
+- the **Offline** Scene  
+- the **Online** Scene.
+
+When a server or host is started, the **Online Scene is loaded**. This then becomes the current network Scene. Any clients that connect to that server are instructed to also load that Scene. The **name of this Scene** is stored in the **`networkSceneName` property**.
+
+When the network is stopped, by stopping the server or host or by a **client disconnecting**, the **offline Scene is loaded**. This allows the game to automatically return to a **menu Scene** when **disconnected from a multiplayer game**.
+
+
+Change Scenes while the game is active by calling **`NetworkManager.ServerChangeScene()`**. This makes all the currently connected clients change Scene too, and updates **`networkSceneName`** so that new clients also load the new Scene.
+
+While networked Scene management is active, any calls to **game state management functions** such as **`NetworkManager.StartHost()`** or **`NetworkManager.StopClient()`** can **cause Scene changes**. 
+
+> **Note**: Scene changes cause all the GameObjects in the previous Scene to be destroyed.
+
+You should normally make sure the Network Manager persists between Scenes, otherwise the network connection is broken upon a Scene change. To do this, ensure the **Don’t Destroy On Load box** is checked in the Inspector. However it is also possible to have a separate Network Manager in each Scene with different settings, which may be helpful if you wish to control incremental Prefab loading, or different Scene transitions.
+
+
+
 ### ref 
 https://docs.unity.cn/Manual/UNetManager.html
 
