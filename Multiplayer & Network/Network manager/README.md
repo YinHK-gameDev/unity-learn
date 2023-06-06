@@ -85,6 +85,26 @@ There are virtual functions on the NetworkManager class that you can customize b
 
 https://docs.unity3d.com/Packages/com.unity.multiplayer-hlapi@0.2/api/UnityEngine.Networking.NetworkManager.html
 
+The inspector for the NetworkManager provides the ability to change some connection parameters and timeouts. Some parameters have not been exposed here but can be changed through code.
+
+```cs
+using UnityEngine;
+using UnityEngine.Networking;
+
+public class CustomManager : NetworkManager {
+    // Set custom connection parameters early, so they are not too late to be enforced
+    void Start()
+    {
+        customConfig = true;
+        connectionConfig.MaxCombinedReliableMessageCount = 40;
+        connectionConfig.MaxCombinedReliableMessageSize = 800;
+        connectionConfig.MaxSentMessageQueueSize = 2048;
+        connectionConfig.IsAcksLong = true;
+        globalConfig.ThreadAwakeTimeout = 1;
+    }
+}
+```
+
 ### ref 
 https://docs.unity.cn/Manual/UNetManager.html
 
