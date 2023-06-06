@@ -10,6 +10,11 @@ If you’re using the **Network Manager HUD**, it automatically tells the Networ
 - **`NetworkManager.StartServer`**
 - **`NetworkManager.StartHost`**
 
+Whichever mode the game starts in (client, server, or host), the Network Address and Network Port properties are used.
+
+In client mode, the game attempts to connect to the address and port specified. 
+
+In server or host mode, the game listens for incoming connections on the port specified.
 
 ### Spawn management
 
