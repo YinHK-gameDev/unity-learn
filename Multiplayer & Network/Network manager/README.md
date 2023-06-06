@@ -79,6 +79,9 @@ While networked Scene management is active, any calls to **game state management
 
 You should normally make sure the Network Manager persists between Scenes, otherwise the network connection is broken upon a Scene change. To do this, ensure the **Don’t Destroy On Load box** is checked in the Inspector. However it is also possible to have a separate Network Manager in each Scene with different settings, which may be helpful if you wish to control incremental Prefab loading, or different Scene transitions.
 
+### Customization
+There are virtual functions on the NetworkManager class that you can customize by creating **your own derived class** that inherits from **NetworkManager**. When implementing these functions, be sure to take care of the functionality that the default implementations provide.
+
 
 
 ### ref 
