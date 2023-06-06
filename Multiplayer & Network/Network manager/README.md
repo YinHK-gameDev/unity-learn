@@ -42,6 +42,15 @@ The Network Manager spawns player GameObjects using its implementation of **`Net
 ```
 Note: If you are implementing a custom version of OnServerAddPlayer, the method **`NetworkServer.AddPlayerForConnection()`** **must be called for the newly created player GameObject**, so that it is spawned and associated with the client’s connection. 
 
+### Start positions
+To control where players are spawned, you can use the **Network Start Position component**. To use these, attach a **Network Start Position component** to a GameObject in the Scene, and position the GameObject where you would like one of the players to start. 
+
+
+The Network Manager has a **Player Spawn Method** property, which allows you to configure how start positions are chosen.
+
+- Choose Random to spawn players at randomly chosen startPosition options.
+- Choose Round Robin to cycle through startPosition options in a set list.
+
 
 ### ref 
 https://docs.unity.cn/Manual/UNetManager.html
