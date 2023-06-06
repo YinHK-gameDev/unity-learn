@@ -14,6 +14,9 @@ The Network Manager is responsible for managing the networking aspects of your m
  
 Unity’s built-in Network Manager component wraps up all of the features for managing your multiplayer game into one single component. If you have custom requirements which aren’t covered by this component, you can write your own network manager in script instead of using this component. If you’re just starting out with multiplayer games, you should use this component.
 
+The **Network Manager** is the core controlling component of a multiplayer game. To get started, create an **empty GameObject** in your starting Scene, and add the **NetworkManager** component. 
+
+
 https://docs.unity.cn/Manual/UNetManager.html
 
 
