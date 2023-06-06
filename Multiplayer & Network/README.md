@@ -25,3 +25,6 @@ https://www.youtube.com/watch?v=7glCsF9fv3s
 https://docs.unity3d.com/Manual/UNet.html
 
 https://www.youtube.com/watch?v=swIM2z6Foxk
+
+**MLAPI documentation** \
+https://github.com/Unity-Technologies/com.unity.netcode.gameobjects
