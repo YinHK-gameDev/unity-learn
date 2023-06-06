@@ -83,6 +83,7 @@ You should normally make sure the Network Manager persists between Scenes, other
 There are virtual functions on the NetworkManager class that you can customize by creating **your own derived class** that inherits from **NetworkManager**. When implementing these functions, be sure to take care of the functionality that the default implementations provide.
 
 
+https://docs.unity3d.com/Packages/com.unity.multiplayer-hlapi@0.2/api/UnityEngine.Networking.NetworkManager.html
 
 ### ref 
 https://docs.unity.cn/Manual/UNetManager.html
