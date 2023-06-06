@@ -16,6 +16,8 @@ In client mode, the game attempts to connect to the address and port specified.
 
 In server or host mode, the game listens for incoming connections on the port specified.
 
+You might want your players to be able to choose the host they want to connect to. When you get to that stage, the **Network Discovery component** can be used for broadcasting and finding **addresses** and **ports** on a **local area network (LAN)**, and the **Matchmaker** service can be used for players to find internet matches to connect to 
+
 ### Spawn management
 
 Use the **Network Manager** to manage the spawning (networked instantiation) of networked GameObjects from Prefabs.
