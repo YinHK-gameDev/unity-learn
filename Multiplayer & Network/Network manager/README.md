@@ -40,7 +40,7 @@ The Network Manager spawns player GameObjects using its implementation of **`Net
     NetworkServer.AddPlayerForConnection(conn, player, playerControllerId);
 }
 ```
-
+Note: If you are implementing a custom version of OnServerAddPlayer, the method **`NetworkServer.AddPlayerForConnection()`** **must be called for the newly created player GameObject**, so that it is spawned and associated with the client’s connection. 
 
 
 ### ref 
