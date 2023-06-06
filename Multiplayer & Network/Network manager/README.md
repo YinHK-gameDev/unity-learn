@@ -51,6 +51,7 @@ The Network Manager has a **Player Spawn Method** property, which allows you to 
 - Choose Random to spawn players at randomly chosen startPosition options.
 - Choose Round Robin to cycle through startPosition options in a set list.
 
+You can customize how the start positions are selected by using code. You can access the available Network Start Position components by the list **`NetworkManager.startPositions`**, and you can use the helper method **`GetStartPosition()`** on the **Network Manager** that can be used in implementation of **`OnServerAddPlayer`** to find a start position.
 
 ### ref 
 https://docs.unity.cn/Manual/UNetManager.html
