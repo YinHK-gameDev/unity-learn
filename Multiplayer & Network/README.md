@@ -1,5 +1,16 @@
 ## Multiplayer & Network
 
+
+### Setting up a multiplayer project
+
+- A **Network Manager**
+- A **user interface** (for players to find and join games)
+- **Networked Player Prefabs** (for players to control)
+- Scripts and GameObjects which are multiplayer-aware
+
+
+
+
 ### Photon fusion
 https://www.photonengine.com/fusion#
 
