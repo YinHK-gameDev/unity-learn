@@ -69,6 +69,18 @@ A **"match"** (also sometimes referred to as a game session, or a game instance)
 
 In order to use **Matchmaker mode**, you must first enable **Unity Multiplayer Service** for your project. Once you have enabled Unity Multiplayer Service for your project, you can use the **HUD** in **Matchmaker mode** to **create or connect to instances of your game** (also sometimes referred to as **"matches" or "sessions"**) hosted on the internet.
 
+### Create Internet Match
+Click **Create Internet Match **to start a new match. **Unity’s Multiplayer Service** creates **a new instance of the game** (a **"match"**), which other players can then **find and join**.
+
+
+### Find Internet Match
+Click **Find Internet Match** to send a request to the Unity Multiplayer Service. The **Unity Multiplayer Service** returns **a list of all matches that currently exist** for this game.
+
+
+For example, if two separate players connect, and create a match each **named** **"Match A"** and **"Match B"** respectively, when a third player connects and presses the **Find Internet Match butto**n, **Match A** and **Match B** are listed as **available matches to join**.
+
+In the **Network manager HUD**, the available matches appear as a series of buttons, with the text **"Join Match: match name"** (where match name is the name chosen by the player who created the match).
+
 
 
 
