@@ -180,6 +180,16 @@ Fix non-player prefabs such as enemies:
 - Add the **`NetworkStartPosition` component** to the new GameObjec
 
 
+#### Lobby
+
+-   Create Lobby Scene
+-   Add a new GameObject to the Scene and rename it to “NetworkLobbyManager”.
+-   Add the NetworkLobbyManager component to the new GameObject.
+-   Configure the Manager:
+    -   Scenes
+    -   Prefabs
+    -   Spawners
+
 
 
 
