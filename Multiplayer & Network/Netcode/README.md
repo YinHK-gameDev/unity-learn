@@ -1,5 +1,5 @@
 ## Netcode
-
+Netcode for GameObjects (Netcode) is a high-level networking library built for Unity for you to abstract networking logic. It enables you to send GameObjects and world data across a networking session to many players at once.
 
 
 
