@@ -33,6 +33,17 @@ The default host address is “localhost”, which means the client looks on its
 
 Use the default "localhost" in this field if you are running** multiple instances of your game on one computer**, to test multiplayer interactivity. To do this, you can **create a standalone build of your game**, and then **launch it multiple times on your computer**.
 
+This is a common way to quickly test that your networked game interactions are functioning as you expect, without you needing to deploy your game to multiple computers or devices.
+
+When you want to test your game on **multiple machines within the same network (that is, on a LAN)**, you need to put the address of the person acting as host into the **"localhost"** text field.
+
+The **person acting** as the host needs to tell their **IP address** to everyone running LAN clients, so that you can type this into the box.
+
+When the client is attempting to connect, the HUD displays a **Cancel Connection Attempt button**. Click this if you want to stop trying to connect to the host.
+
+If the connection is successful, the HUD displays the **Stop (X) button**. Click this if you want to stop the game on the client and disconnect from the host:
+
+> Unity has a built-in **Network Discovery system**, which **allows clients to automatically find hosts on the same local network**. However, this is not built into the **Network Manager HUD**, so you need to enter the address manually. You can integrate the **Network Discovery system** into your game when you replace the **Network Manager HUD** with your own UI.
 
 
 
