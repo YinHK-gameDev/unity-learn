@@ -105,6 +105,63 @@ public class CustomManager : NetworkManager {
 }
 ```
 
+### Converting a single-player game to Unity Multiplayer
+
+#### NetworkManager set-up
+- Add a new **GameObject** to the Scene and rename it **"NetworkManager"**.
+- Add the **NetworkManager component** to the **"NetworkManager"** GameObject.
+- Add the **NetworkManagerHUD component** to the GameObject. This provides the default UI
+ for managing the network game state.
+ 
+ 
+#### Player Prefab set-up
+- Find the Prefab for the player GameObject in the game, or create a Prefab from the player GameObject.
+- Add the **NetworkIdentity component** to the player Prefab.
+- Check the **LocalPlayerAuthority box** on the NetworkIdentity
+- Set the **playerPrefab** in the **NetworkManager’s Spawn Info** section to the **player Prefab**
+- Remove the player GameObject instance from the Scene if it exists in the Scene
+
+#### Player movement
+
+- Add a NetworkTransform component to the player Prefab
+- Update input and control scripts to respect `isLocalPlayer`
+- Fix **Camera **to use spawned player and `isLocalPlayer`
+
+eg:
+
+```cs
+using UnityEngine;
+using UnityEngine.Networking;
+
+public class Controls : NetworkBehaviour
+{
+    void Update()
+    {
+        if (!isLocalPlayer)
+        {
+            // exit from update if this is not the local player
+            return;
+        }
+
+        // handle player input for movement
+    }
+}
+```
+
+#### Basic player game state
+
+- Make scripts that contain important data into NetworkBehaviours instead of MonoBehaviours
+- Make important member variables into SyncVars
+
+#### Networked actions
+-   Make scripts that perform important actions into NetworkBehaviours instead of MonoBehaviours
+-   Update functions that perform important player actions to be commands
+
+
+
+
+
+
 ### ref 
 https://docs.unity.cn/Manual/UNetManager.html
 
