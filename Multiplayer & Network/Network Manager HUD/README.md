@@ -17,6 +17,25 @@ The **Network Manager HUD** starts in **LAN mode**, and displays buttons relatin
 
 > **Note**: Remember that the Network Manager HUD feature is a temporary aid to development. It allows you to get your multiplayer game running quickly, but you should replace it with your own UI controls when you are ready.
 
+### LaN Host 
+Click the **LAN Host** button to start a game as a host on the local network. This client is both the **host and one of the players** in the game.
+
+It uses the information from the Network Info section in the inspector to host the game. When you click this button, the **HUD** switches to a simple display of network details, and a **Stop (X)** button which allows you to **stop hosting the game and return to the main LAN menu**.
+
+When you have started a game as a host, other players of the game can then connect to the host to join the game.
+
+Click the **Stop (X)** button to disconnect any players that are connected to the host player. Clicking **Stop (X)** also returns the **HUD to the LAN menu**.
+
+### LAN Client
+To connect to a host on the local network, use the text field to the right of the LAN Client button to specify the address of the host. 
+The default host address is “localhost”, which means the client looks on its own computer for the game host. Click LAN Client (C) to attempt to connect to the host address you have specified.
+
+
+Use the default "localhost" in this field if you are running** multiple instances of your game on one computer**, to test multiplayer interactivity. To do this, you can **create a standalone build of your game**, and then **launch it multiple times on your computer**.
+
+
+
+
 
 
 ### ref 
