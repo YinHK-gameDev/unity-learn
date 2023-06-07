@@ -123,7 +123,7 @@ public class CustomManager : NetworkManager {
 
 #### Player movement
 
-- Add a NetworkTransform component to the player Prefab
+- Add a **`NetworkTransform` component** to the player Prefab
 - Update input and control scripts to respect `isLocalPlayer`
 - Fix **Camera **to use spawned player and `isLocalPlayer`
 
@@ -150,13 +150,34 @@ public class Controls : NetworkBehaviour
 
 #### Basic player game state
 
-- Make scripts that contain important data into NetworkBehaviours instead of MonoBehaviours
+- Make scripts that contain important data into **NetworkBehaviours** instead of **MonoBehaviours**
 - Make important member variables into SyncVars
 
 #### Networked actions
 -   Make scripts that perform important actions into NetworkBehaviours instead of MonoBehaviours
 -   Update functions that perform important player actions to be commands
 
+
+#### Non-player GameObjects
+
+Fix non-player prefabs such as enemies:
+
+- Add the **`NetworkIdentify`** component
+- Add the **`NetworkTransform`** component
+- Register spawnable Prefabs with the **NetworkManager**
+- Update scripts with **game state and actions**
+
+
+#### Spawners
+
+- Potentially change spawner scripts to be **NetworkBehaviours**
+- Modify spawners to only run on the server (use isServer property or the **`OnStartServer()`** function)
+- Call **`NetworkServer.Spawn()`** for created GameObjects
+
+#### Spawn positions for players
+
+- Add a new GameObject and place it at player’s start location
+- Add the **`NetworkStartPosition` component** to the new GameObjec
 
 
 
