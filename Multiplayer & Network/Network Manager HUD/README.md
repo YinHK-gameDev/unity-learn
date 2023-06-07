@@ -18,7 +18,7 @@ The **Network Manager HUD** starts in **LAN mode**, and displays buttons relatin
 > **Note**: Remember that the Network Manager HUD feature is a temporary aid to development. It allows you to get your multiplayer game running quickly, but you should replace it with your own UI controls when you are ready.
 
 ### LaN Host 
-Click the **LAN Host** button to start a game as a host on the local network. This client is both the **host and one of the players** in the game.
+Click the **LAN Host** button to start a game **as a host on the local network**. This client is both the **host and one of the players** in the game.
 
 It uses the information from the Network Info section in the inspector to host the game. When you click this button, the **HUD** switches to a simple display of network details, and a **Stop (X)** button which allows you to **stop hosting the game and return to the main LAN menu**.
 
@@ -45,7 +45,15 @@ If the connection is successful, the HUD displays the **Stop (X) button**. Click
 
 > Unity has a built-in **Network Discovery system**, which **allows clients to automatically find hosts on the same local network**. However, this is not built into the **Network Manager HUD**, so you need to enter the address manually. You can integrate the **Network Discovery system** into your game when you replace the **Network Manager HUD** with your own UI.
 
+### LAN Server Only
 
+Click **LAN Server Onl**y to start a game which **acts as a server** that **other clients can connect to**, but which does not act as a client to the game itself. This type of game is often called a **"dedicated server"**.
+
+A user **cannot play the game on this particular instance of your game**. All players must connect as clients, and nobody plays on the instance that is running as the server.
+
+A dedicated server on a LAN results in better performance for all connected players, because the server doesn’t need to process a local player’s gameplay in addition to acting as server.
+
+You might also choose this option if you want to host a game that can be **played over the internet (rather than just within a local network)**, but **want to maintain control of the server yourself - for example, to **prevent cheating by one of the clients, because only the server has authority over the game**. To do this, you** would need to run the game in Server Only mode on a computer with a **public IP address**.
 
 
 
