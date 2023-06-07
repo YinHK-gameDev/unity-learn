@@ -9,7 +9,13 @@ To start using the Network Manager HUD, create an empty GameObject in your Scene
 
 The **Network Manager HUD** has two basic modes: **LAN (Local Area Network) mode** and **Matchmaker mode**. 
 
+-  **LAN mode** is for creating or joining games hosted on a **local area network** (that is, multiple computers connected to the same network)
+-  **Matchmaker mode** is for creating, finding and joining games across the internet (multiple computers connected to separate networks)
 
+The **Network Manager HUD** starts in **LAN mode**, and displays buttons relating to hosting and joining a **LAN-based multiplayer game**. To switch the HUD to **Matchmaker mode**, click the **Enable Match Maker (M) button**.
+
+
+> **Note**: Remember that the Network Manager HUD feature is a temporary aid to development. It allows you to get your multiplayer game running quickly, but you should replace it with your own UI controls when you are ready.
 
 
 
