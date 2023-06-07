@@ -1,5 +1,6 @@
-## Network Manager HUD
+# Network Manager HUD
 
+## Network Manager HUD in LAN mode
 The **Network Manager HUD ("heads-up display")** provides the basic functions so that people playing your game can start hosting a networked game, or find and join an existing networked game. Unity displays the **Network Manager HUD** as a **collection of simple UI** buttons in the Game view.
 
 The Network Manager HUD is a quick-start tool to help you start building your multiplayer game straight away, without first having to build a user interface for game creation/connection/joining. The idea is that these controls are useful to get you started, but you should create your own UI later on, to allow your players to find and join games in a way that suits your game.
@@ -58,6 +59,16 @@ You might also choose this option if you want to host a game that can be **playe
 ### Enable Match Maker
 
 Click **Enable Match Maker (M)** to change the **HUD** to **Matchmaker mode**. You need to use **Matchmaker mode** if you want to create or connect to games hosted on the internet using Unity’s **Matchmaker multiplayer service**. Click **Enable Match Maker (M)** to display the Matchmaker controls in the **Network Manager HUD**.
+
+
+## Network Manager HUD in Matchmaker mode
+**Matchmaker mode** provides a simple interface that allows players to create, find and join matches hosted on Unity’s Multiplayer Service.
+
+A **"match"** (also sometimes referred to as a game session, or a game instance), is **a unique instance of your game** hosted by Unity’s Multiplayer Service.
+
+
+In order to use **Matchmaker mode**, you must first enable **Unity Multiplayer Service** for your project. Once you have enabled Unity Multiplayer Service for your project, you can use the **HUD** in **Matchmaker mode** to **create or connect to instances of your game** (also sometimes referred to as **"matches" or "sessions"**) hosted on the internet.
+
 
 
 
