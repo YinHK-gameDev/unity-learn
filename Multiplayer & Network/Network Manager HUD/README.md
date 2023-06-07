@@ -55,6 +55,10 @@ A dedicated server on a LAN results in better performance for all connected play
 
 You might also choose this option if you want to host a game that can be **played over the internet (rather than just within a local network)**, but **want to maintain control of the server yourself - for example, to **prevent cheating by one of the clients, because only the server has authority over the game**. To do this, you** would need to run the game in Server Only mode on a computer with a **public IP address**.
 
+### Enable Match Maker
+
+Click **Enable Match Maker (M)** to change the **HUD** to **Matchmaker mode**. You need to use **Matchmaker mode** if you want to create or connect to games hosted on the internet using Unity’s **Matchmaker multiplayer service**. Click **Enable Match Maker (M)** to display the Matchmaker controls in the **Network Manager HUD**.
+
 
 
 ### ref 
