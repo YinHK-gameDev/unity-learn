@@ -81,8 +81,22 @@ For example, if two separate players connect, and create a match each **named** 
 
 In the **Network manager HUD**, the available matches appear as a series of buttons, with the text **"Join Match: match name"** (where match name is the name chosen by the player who created the match).
 
+To join one of the available matches, click on the **"Join Match: match name" button** for that match. Alternatively, click **Back to Match Menu** to go back to the **Matchmaker menu**.
 
+When you replace the HUD with **your own UI**, there are better ways to **list the available matches**. Many multiplayer games **display available matches in a scrollable list**.
 
+You might want to make each entry on the list show the match name, the current and maximum number of players, and other information such as the match mode type, if your decide to make your game have different match modes (such as “capture the flag”, “1 vs 1”, or “cooperative”).
+
+**Note**: There are some special characters which, if used in a match name, appear modified in the list of available matches in the Network manager HUD. These characters are:
+
+-   Open square brace: **\[**
+    
+-   percent symbol: **%**
+    
+-   Underscore: **\_**
+    
+
+If a match name contains these characters, they are surrounded by square braces in the list of available matches. So a match named “my\_game” is listed as “my\[\_\]game”.
 
 ### ref 
 https://docs.unity.cn/Manual/UNetManagerHUD.html
