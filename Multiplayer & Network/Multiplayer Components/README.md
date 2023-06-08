@@ -58,6 +58,10 @@ The **Network Lobby Player** stores **per-player state** for the **Network Lobby
 https://docs.unity.cn/Manual/class-NetworkLobbyPlayer.html
 
 
+### Network Manager HUD
+The **Network Manager HUD** is a simple and quick way to provide the basic functions that players of your game need in order to host a networked game, or find and join an existing networked game. It displays a collection of simple UI buttons which appear in the Game view when the Editor is in Play mode. It is intended as a helpful short term solution to get you started quickly with making your game. You should replace the UI it provides with your own that better suits your game when you are ready.
+ 
+https://docs.unity.cn/Manual/class-NetworkManagerHUD.html
 
 
 ### ref
