@@ -63,6 +63,30 @@ The **Network Manager HUD** is a simple and quick way to provide the basic funct
  
 https://docs.unity.cn/Manual/class-NetworkManagerHUD.html
 
+### Network Manager 
+The **Network Manager component** allows you to control the state of a networked game. It provides an interface in the Editor for you to configure the network, the Prefabs you use for spawning GameObjects, and the Scenes you use for different game states.
+ 
+https://docs.unity.cn/Manual/class-NetworkManagerUNet.html 
+
+
+### Network Proximity Checker
+The **Network Proximity Checker** component controls the visibility of GameObjects for network clients, based on proximity to players.
+ 
+ 
+https://docs.unity.cn/Manual/class-NetworkProximityChecker.html
+
+
+### NetworkStartPosition
+**NetworkStartPosition** is used by the **NetworkManager** when creating player objects. The position and rotation of the **NetworkStartPosition** are used to place the newly created player object.
+ 
+https://docs.unity.cn/Manual/class-NetworkStartPosition.html
+
+### Network Transform
+The **Network Transform component** **synchronizes the movement and rotation** of GameObjects across the network. 
+> **Note**: the network Transform component **only synchronizes spawned networked GameObjects**.
+
+https://docs.unity.cn/Manual/class-NetworkTransform.html
+
 
 ### ref
 https://docs.unity.cn/Manual/UNetReference.html
