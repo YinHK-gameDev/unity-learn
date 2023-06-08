@@ -5,6 +5,7 @@ Netcode for GameObjects (Netcode) is a high-level networking library built for U
 -   [Netcode for GameObjects](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects) - Unity's official netcode SDK for GameObject workflows.
 
 ### Netcode tutorial
+https://www.youtube.com/watch?v=7glCsF9fv3s
 
 https://www.youtube.com/watch?v=dKrdrPjJG04
 
