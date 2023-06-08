@@ -103,6 +103,7 @@ The **Network Transform Visualizer** is a utility component that allows you to v
  
 To use it, add it to a GameObject that already has a **Network Transform component**, and assign a Prefab in the Inspector. The Prefab can be anything you choose, it will be used as a visual representation of the incoming transform data for GameObject.
 
+![](./img/NetworkTransformVisualizerExample2.gif)
 
  https://docs.unity.cn/Manual/class-NetworkTransformVisualizer.html
  
@@ -110,8 +111,5 @@ To use it, add it to a GameObject that already has a **Network Transform compone
 
  
  
- 
-
-
 ### ref
 https://docs.unity.cn/Manual/UNetReference.html
