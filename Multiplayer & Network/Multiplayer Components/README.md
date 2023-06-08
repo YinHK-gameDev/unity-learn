@@ -99,7 +99,14 @@ https://docs.unity.cn/Manual/class-NetworkTransformChild.html
 
 ### Network Transform Visualizer
 
+The **Network Transform Visualizer** is a utility component that allows you to visualize the interpolation of GameObjects that use the **Network Transform component**.
+ 
+To use it, add it to a GameObject that already has a **Network Transform component**, and assign a Prefab in the Inspector. The Prefab can be anything you choose, it will be used as a visual representation of the incoming transform data for GameObject.
 
+
+ https://docs.unity.cn/Manual/class-NetworkTransformVisualizer.html
+ 
+ 
 
  
  
