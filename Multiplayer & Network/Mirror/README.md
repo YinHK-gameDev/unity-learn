@@ -12,6 +12,8 @@ https://mirror-networking.com/
 
 https://mirror-networking.gitbook.io/docs/
 
+https://storage.googleapis.com/mirror-api-docs/html/df/d6f/class_mirror_1_1_network_client.html
+
 https://github.com/MirrorNetworking/Mirror
 
 https://ithelp.ithome.com.tw/articles/10233515
