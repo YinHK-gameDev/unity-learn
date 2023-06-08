@@ -88,5 +88,23 @@ The **Network Transform component** **synchronizes the movement and rotation** o
 https://docs.unity.cn/Manual/class-NetworkTransform.html
 
 
+### Network Transform Child
+
+The **Network Transform Child component** **synchronizes the position and rotation of the child GameObject of a GameObject with a Network Transform component.**
+
+You should use this component in situations where you need to synchronize an independently-moving child object of a Networked GameObject.
+
+https://docs.unity.cn/Manual/class-NetworkTransformChild.html
+
+
+### Network Transform Visualizer
+
+
+
+ 
+ 
+ 
+
+
 ### ref
 https://docs.unity.cn/Manual/UNetReference.html
