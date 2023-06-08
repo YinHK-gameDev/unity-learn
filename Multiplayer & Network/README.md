@@ -59,5 +59,5 @@ https://www.youtube.com/watch?v=swIM2z6Foxk
 **MLAPI documentation** \
 https://github.com/Unity-Technologies/com.unity.netcode.gameobjects
 
-**`UnityEngine.Networking` API** \
+**`UnityEngine.Networking` Svripting API** \
 https://docs.unity3d.com/Packages/com.unity.multiplayer-hlapi@0.2/api/UnityEngine.Networking.html
