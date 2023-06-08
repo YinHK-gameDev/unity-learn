@@ -9,9 +9,40 @@ You can create **scripts**A piece of code that allows you to create your own Com
 -   The [NetworkServerSimple](https://docs.unity.cn/Manual/UNetClassesReference.htmlclass-NetworkServerSimple.html) is a basic server class with no game-related functionality. While the NetworkServer class handles game-like things such as spawning, local clients, and player manager, and has a static interface, the NetworkServerSimple class is a pure network server with no game related functionality. It also has no static interface or singleton, so more than one instance can exist in a process at a time.
 
 
+### NetworkBehaviour
+https://docs.unity.cn/Manual/class-NetworkBehaviour.html
+
+https://docs.unity.cn/Packages/com.unity.multiplayer-hlapi@1.0/api/UnityEngine.Networking.html
+
+### NetworkClient
+https://docs.unity.cn/Manual/class-NetworkClient.html
+
+https://docs.unity.cn/Packages/com.unity.multiplayer-hlapi@1.0/api/UnityEngine.Networking.NetworkClient.html
+
+
+### NetworkConnection
+
+https://docs.unity.cn/Manual/class-NetworkConnection.html
+
+https://docs.unity.cn/Packages/com.unity.multiplayer-hlapi@1.0/api/UnityEngine.Networking.NetworkConnection.html
+
+
+### NetworkServer
+
+https://docs.unity.cn/Manual/class-NetworkServer.html
+
+https://docs.unity.cn/Packages/com.unity.multiplayer-hlapi@1.0/api/UnityEngine.Networking.NetworkServer.html
+
+
+### NetworkServerSimple
+
+https://docs.unity.cn/Manual/class-NetworkServerSimple.html
+
+https://docs.unity.cn/Packages/com.unity.multiplayer-hlapi@1.0/api/UnityEngine.Networking.NetworkServerSimple.html
 
 
 
 ### ref 
 https://docs.unity.cn/Manual/UNetClassesReference.html
 
+https://docs.unity.cn/Packages/com.unity.multiplayer-hlapi@1.0/api/UnityEngine.Networking.html
