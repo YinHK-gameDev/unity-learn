@@ -103,3 +103,4 @@ https://docs.unity.cn/Manual/UNetManagerHUD.html
 
 https://docs.unity.cn/Manual/UNetManagerHUDMatchMakerMode.html
 
+https://docs.unity.cn/Manual/class-NetworkManagerHUD.html
