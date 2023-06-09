@@ -2,7 +2,7 @@
 
 Multiplayer Play Mode (MPPM) enables you to test multiplayer functionality without leaving the Unity Editor. You can simulate up to four Players (the Main Editor Player plus three Virtual Players) simultaneously on the same development device while using the same source assets on disk.
 
-
+> **Note**: **MPPM** is only supported in Unity Editor version 2023.1 and later.
 
 
 ### ref 
