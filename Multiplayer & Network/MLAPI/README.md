@@ -3,6 +3,9 @@
 
 **MLAPI is a mid-level networking library built for the Unity game engine to abstract networking**. This allows developers to focus on the game rather than low level protocols and networking frameworks.
 
+> It is recommended to upgrade to Netcode from MLAPI as soon as possible. MLAPI isn't maintained and won't have future updates. MLAPI should be considered a deprecated product.
+
+
 ### ref 
 https://docs-multiplayer.unity3d.com/netcode/0.1.0/getting-started/about/
 
