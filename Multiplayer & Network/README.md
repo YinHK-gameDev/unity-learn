@@ -30,8 +30,11 @@ For player GameObjects, each person usually has active control over their own pl
 
 For non-player GameObjects, the server usually has authority over what happens (such as whether an item has been collected), and all clients accept what the server tells them about what has happened to that GameObject.
 
-### Photon fusion
-https://www.photonengine.com/fusion#
+### A listen server
+A listen server acts as both a server and client on a single player's machine for multiplayer game play. This means one player both plays the game and owns the game world while other players connect to this server.
+
+Personal computers are hidden behind NATs (Network Address Translation devices) and routers to protect them from direct access. To connect to a listen server, you may choose an option such as [port forwarding](https://docs-multiplayer.unity3d.com/netcode/current/learn/listen-server-host-architecture/#port-forwarding#port-forwarding), a [relay server](https://docs-multiplayer.unity3d.com/netcode/current/learn/listen-server-host-architecture/#port-forwarding#relay-server), [NAT punch-through](https://docs-multiplayer.unity3d.com/netcode/current/learn/listen-server-host-architecture/#port-forwarding#nat-punchthrough), or a [NAT punch with relay fallback](https://docs-multiplayer.unity3d.com/netcode/current/learn/listen-server-host-architecture/#port-forwarding#nat-punch-and-relay-fallback).
+
 
 ### Tutorial for multi player online
 https://medium.com/@GamingRoy/unity-%E5%A4%9A%E4%BA%BA%E9%80%A3%E7%B7%9A-mlapi-1-739fccc98bd3
