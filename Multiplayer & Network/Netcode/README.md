@@ -11,6 +11,11 @@ The **Netcode for Entities**, part of the Unity's **Data Oriented Technology Sta
 ### Starting NGO guide
 https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/
 
+### Create a command line helper
+Shows how to create a command line helper that launches the project outside the Unity Editor to make testing builds easier.
+
+https://docs-multiplayer.unity3d.com/netcode/current/tutorials/command-line-helper/
+
 ### Netcode tutorial
 https://www.youtube.com/watch?v=3yuBOB3VrCk
 
