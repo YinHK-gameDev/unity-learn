@@ -125,7 +125,7 @@ public class CustomManager : NetworkManager {
 
 - Add a **`NetworkTransform` component** to the player Prefab
 - Update input and control scripts to respect `isLocalPlayer`
-- Fix **Camera **to use spawned player and `isLocalPlayer`
+- Fix **Camera** to use spawned player and `isLocalPlayer`
 
 eg:
 
