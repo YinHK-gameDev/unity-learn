@@ -8,7 +8,7 @@ The **Netcode for Entities**, part of the Unity's **Data Oriented Technology Sta
 -   [Netcode for GameObjects](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects) - Unity's official netcode SDK for GameObject workflows. \
     https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/
 
-### Start guide
+### Starting NGO guide
 https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/
 
 ### Netcode tutorial
