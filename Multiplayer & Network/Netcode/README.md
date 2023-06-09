@@ -16,6 +16,15 @@ Shows how to create a command line helper that launches the project outside the 
 
 https://docs-multiplayer.unity3d.com/netcode/current/tutorials/command-line-helper/
 
+
+### Sample project better understanding Netcode
+
+#### Boss Room
+https://docs-multiplayer.unity3d.com/netcode/current/learn/bossroom/bossroom/
+
+#### Bitesize Samples
+https://docs-multiplayer.unity3d.com/netcode/current/learn/bitesize/bitesize-introduction/
+
 ### Netcode tutorial
 https://www.youtube.com/watch?v=3yuBOB3VrCk
 
