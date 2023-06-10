@@ -12,7 +12,7 @@ To enter **Flythrough mode** and navigate through the Scene view in Flythrough m
 - **Click and hold the right mouse button**.
 - Do the following to navigate through the Scene view:
 - Use your mouse to move the view.
-- To move forward or backward,** press W or S**.
+- To move forward or backward, **press W or S**.
 - To move left or right, **press A or D**.
 - To move up or down, **press Q or E**.
 - To move faster, **press and hold Shift**.
