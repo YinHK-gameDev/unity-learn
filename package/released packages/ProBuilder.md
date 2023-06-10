@@ -15,6 +15,8 @@ Advanced features include UV editing, vertex colors, parametric shapes, and text
 ### Mapping Textures with UVs
 https://docs.unity.cn/Packages/com.unity.probuilder@5.0/manual/workflow-uvs.html
 
+https://docs.unity.cn/Packages/com.unity.probuilder@5.0/manual/uv-editor.html
+
 ### ref 
 https://unity.com/features/probuilder
 
