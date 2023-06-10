@@ -11,6 +11,10 @@ Build, edit, and texture custom geometry in Unity. Use ProBuilder for in-scene l
 
 Advanced features include UV editing, vertex colors, parametric shapes, and texture blending. With ProBuilder's model export feature it's easy to tweak your levels in any external 3D modelling suite.
 
+
+### Mapping Textures with UVs
+https://docs.unity.cn/Packages/com.unity.probuilder@5.0/manual/workflow-uvs.html
+
 ### ref 
 https://unity.com/features/probuilder
 
