@@ -20,6 +20,8 @@ https://docs-multiplayer.unity3d.com/netcode/current/tutorials/command-line-help
 ### Sample project better understanding Netcode
 
 #### Boss Room
+https://unity.com/demos/small-scale-coop-sample?_ga=2.100857537.1177058850.1686617745-1095169982.1671075740&_gac=1.221831914.1686617745.CjwKCAjwhJukBhBPEiwAniIcNT_ODysZ3wmhZlXGoXup3iC7aEHgtkcVtYcP2gLPMuESHpxH-IR4qhoCnroQAvD_BwE
+
 https://docs-multiplayer.unity3d.com/netcode/current/learn/bossroom/bossroom/
 
 https://github.com/Unity-Technologies/com.unity.multiplayer.samples.coop
