@@ -11,9 +11,9 @@ Relay **allows players to connect and enjoy immersive multiplayer gaming experie
 ### What Is A Relay Server?
 By default Sync does its best to establish direct connection between peers to achieve maximum speed. However, sometimes direct connection is not possible due to sophisticated NATs, firewalls, proxy servers, etc. that block Sync's port. In this case relay server will allow Sync to establish connection to other peers and transfer data without direct connection. This will impact the speed at which the files sync though. Files are synced to the relay server and passed over to other peers. Files are always encrypted and are not exposed to a third party server, relay cannot read them and they are not stored anywhere.
 
-
-
 The Relay service facilitates multiplayer support without dedicated game servers by allowing players to communicate with each other through Relay servers. **Relay servers deliver messages between connected players using low-latency datagram exchange between game clients**, so no two players ever connect directly to each other. Relay servers are ideal for games that use a listen server pattern where one player (the host player) acts as the **"server"** and the other players (the joining players) act as **"clients"**.
+
+The peer-to-peer client server model hosts games on the machine of a player, saving you the cost of renting or maintaining dedicated servers.
 
 **Relay supports DTLS (Datagram Transport Layer Security) encryption of all UDP communication to and from the Relay servers which enables users to deliver data that is authenticated and encrypted**.
 
