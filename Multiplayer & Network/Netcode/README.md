@@ -16,6 +16,13 @@ Shows how to create a command line helper that launches the project outside the 
 
 https://docs-multiplayer.unity3d.com/netcode/current/tutorials/command-line-helper/
 
+### Test & Debugging
+
+**Testing multiplayer games locally** \
+https://docs-multiplayer.unity3d.com/netcode/current/tutorials/testing/testing_locally/
+
+**Testing multiplayer games with artificial network conditions** \
+https://docs-multiplayer.unity3d.com/netcode/current/tutorials/testing/testing_with_artificial_conditions/#system-wide-network-conditioners
 
 ### Sample project better understanding Netcode
 
