@@ -15,7 +15,7 @@ By default Sync does its best to establish direct connection between peers to ac
 
 The Relay service facilitates multiplayer support without dedicated game servers by allowing players to communicate with each other through Relay servers. **Relay servers deliver messages between connected players using low-latency datagram exchange between game clients**, so no two players ever connect directly to each other. Relay servers are ideal for games that use a listen server pattern where one player (the host player) acts as the **"server"** and the other players (the joining players) act as **"clients"**.
 
-
+**Relay supports DTLS (Datagram Transport Layer Security) encryption of all UDP communication to and from the Relay servers which enables users to deliver data that is authenticated and encrypted**.
 
 ### ref 
 https://docs.unity.com/relay/en/manual/introduction
