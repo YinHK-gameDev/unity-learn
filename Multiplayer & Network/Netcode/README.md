@@ -48,6 +48,12 @@ https://github.com/Unity-Technologies/com.unity.multiplayer.samples.coop
 #### Bitesize Samples
 https://docs-multiplayer.unity3d.com/netcode/current/learn/bitesize/bitesize-introduction/
 
+
+#### Galactic Kittens (2D cooperative game)
+
+https://unity.com/demos/galactic-kittens
+
+
 ### Netcode tutorial
 
 https://www.youtube.com/watch?v=3yuBOB3VrCk
