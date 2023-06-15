@@ -10,3 +10,5 @@ Lobby allows your players to connect before or during a game session. Players cr
 https://docs-multiplayer.unity3d.com/netcode/current/learn/bossroom/bossroom/
 
 https://unity.com/products/lobby
+
+https://www.youtube.com/watch?v=-KDlEBfCBiU
