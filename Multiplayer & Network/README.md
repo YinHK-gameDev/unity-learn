@@ -36,7 +36,7 @@ A listen server acts as both a server and client on a single player's machine fo
 Personal computers are hidden behind NATs (Network Address Translation devices) and routers to protect them from direct access. To connect to a listen server, you may choose an option such as [port forwarding](https://docs-multiplayer.unity3d.com/netcode/current/learn/listen-server-host-architecture/#port-forwarding#port-forwarding), a [relay server](https://docs-multiplayer.unity3d.com/netcode/current/learn/listen-server-host-architecture/#port-forwarding#relay-server), [NAT punch-through](https://docs-multiplayer.unity3d.com/netcode/current/learn/listen-server-host-architecture/#port-forwarding#nat-punchthrough), or a [NAT punch with relay fallback](https://docs-multiplayer.unity3d.com/netcode/current/learn/listen-server-host-architecture/#port-forwarding#nat-punch-and-relay-fallback).
 
 
-### Tutorial for multi player online
+### Tutorial for multiplayer online
 https://medium.com/@GamingRoy/unity-%E5%A4%9A%E4%BA%BA%E9%80%A3%E7%B7%9A-mlapi-1-739fccc98bd3
 
 https://www.cg.com.tw/UnityMultiplayerNetworking/
