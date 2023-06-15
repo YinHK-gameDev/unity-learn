@@ -24,6 +24,18 @@ https://docs-multiplayer.unity3d.com/netcode/current/tutorials/testing/testing_l
 **Testing multiplayer games with artificial network conditions** \
 https://docs-multiplayer.unity3d.com/netcode/current/tutorials/testing/testing_with_artificial_conditions/#system-wide-network-conditioners
 
+
+#### Local multiplayer setup
+First, build an executable by selecting **File > Build Settings > Build**.
+
+After you have the build, you can **launch several instances of the build executable to host or join a game**.
+
+#### Multiplayer over Internet
+First, build an executable and distribute it to all players.
+Next, you need to set up Uunity **relay**. 
+
+Alternatively you can use Port Forwarding. The [https://portforward.com/](https://portforward.com/) site has guides on how to enable port forwarding on a huge number of routers.
+
 ### Sample project better understanding Netcode
 
 #### Boss Room
