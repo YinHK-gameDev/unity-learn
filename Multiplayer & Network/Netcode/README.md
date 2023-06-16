@@ -66,6 +66,10 @@ https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-sys
 #### ServerRpc
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/serverrpc/
 
+#### RPC Params
+
+https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/rpc-params/
+
 #### RPC usage checklist:
 To use RPCs, make sure
 ​
