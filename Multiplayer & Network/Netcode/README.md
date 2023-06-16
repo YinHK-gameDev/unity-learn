@@ -65,6 +65,8 @@ To use RPCs, make sure
 ​
 -   **`[ClientRpc]`** or **`[ServerRpc]`** attributes are on your method
 -   Your method name ends with **`ClientRpc`** or **`ServerRpc`** (ex: **`DoSomethingServerRpc()`**)
+    > You must mark client RPC methods with the **[ClientRpc]** attribute and use the **ClientRpc** method suffix; failing to do so results in an error message.
+    > 
 -   your method is declared in a class that inherits from **`NetworkBehaviour`**
     -   your GameObject has a **NetworkObject component** attached
 -   Make sure to call your RPC method server side or client side (using **`isClient`** or **`isServer`**)
