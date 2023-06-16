@@ -43,4 +43,24 @@ NetworkManager.Singleton.StartClient();      // Starts the NetworkManager as jus
 
 https://docs-multiplayer.unity3d.com/netcode/current/components/networkmanager/
 
+### NetworkTransform
+
+It requires synchronization of an object's transform.
+
+- Determine which transform axis you want to have synchronized
+- Serialize the values
+- Send the serialized values as messages to all other connected clients
+- Process the messages and deserialize the values
+- Apply the values to the appropriate axis
+
+https://docs-multiplayer.unity3d.com/netcode/current/components/networktransform/
+
+### NetworkAnimator
+The NetworkAnimator component provides you with a fundamental example of how to synchronize animations during a network session. 
+
+
+https://docs-multiplayer.unity3d.com/netcode/current/components/networkanimator/
+
+
+
 
