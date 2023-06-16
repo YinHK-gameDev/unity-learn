@@ -1,12 +1,27 @@
 ## Multiplayer & Network
 
-### Gaming networking concept
+### Gaming networking topologies
 
+
+#### Local or couch multiplayer
+Using just client runtime Couch multiplayer games consist of local multiplayer games that can be played on the same screen, such as a TV, from one couch.
+
+#### Lan game (offline)
+Server and Client Runtime involved and transport, usually a hosted server on a site.
+
+#### Peer-to-Peer (P2P)
+
+A peer-to-peer network is created when two or more PCs are connected and share resources without going through a separate server computer.
 
 ![](./img/peer2peer1-ead2681c659d6587ef6adf05b1b70d70.png)
 
+#### Client hosted (Listen server)
 ![](./img/client-hosted-16be0b1c9b5020f21325b1e6a7beca73.png)
 
+> Note: They function like dedicated servers, but typically have the disadvantage of having to communicate with remote players over the residential internet connection of the hosting player. Performance is also reduced by the simple fact that the machine running the server is also generating an output image.
+
+
+#### Dedicated Game Server (DGS)
 ![](./img/ded_server-d5369721966357b9b4d5e1fa96b05b22.png)
 
 https://docs-multiplayer.unity3d.com/netcode/current/terms-concepts/network-topologies/
