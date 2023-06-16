@@ -5,3 +5,5 @@ Serialization is the process of converting a data object—a combination of code
 
 ### ref 
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/serialization/serialization-intro/
+
+https://hazelcast.com/glossary/serialization/
