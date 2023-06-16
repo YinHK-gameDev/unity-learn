@@ -26,4 +26,21 @@ NetworkBehaviours can contain RPC methods and NetworkVariables.
 https://docs-multiplayer.unity3d.com/netcode/current/basics/networkbehavior/
 
 
+### Physics
+
+https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/physics/
+
+
+### NetworkManager
+The NetworkManager is a required Netcode for GameObjects (Netcode) component that has all of your project's netcode related settings. Think of it as the "central netcode hub" for your netcode enabled project.
+
+#### Starting a Server, Host, or Client
+```cs
+NetworkManager.Singleton.StartServer();      // Starts the NetworkManager as just a server (that is, no local client).
+NetworkManager.Singleton.StartHost();        // Starts the NetworkManager as both a server and a client (that is, has local client)
+NetworkManager.Singleton.StartClient();      // Starts the NetworkManager as just a client.
+```
+
+https://docs-multiplayer.unity3d.com/netcode/current/components/networkmanager/
+
 
