@@ -36,6 +36,13 @@ Next, you need to set up Uunity **relay**.
 
 Alternatively you can use Port Forwarding. The [https://portforward.com/](https://portforward.com/) site has guides on how to enable port forwarding on a huge number of routers.
 
+### Network Synchronizing
+https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/ways-synchronize/
+
+#### Remote Procedure Calls
+https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/messaging-system/
+
+
 ### Sample project better understanding Netcode
 
 #### Boss Room
