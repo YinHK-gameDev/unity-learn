@@ -36,7 +36,10 @@ https://moddingcommunity.com/topic/108-tutorial-a-complete-guide-to-remove-unity
 
 https://github.com/kiraio-moe/remove-unity-splash-screen
 
+#### Customize and change your Unity splash screen in personal edition
+https://www.youtube.com/watch?v=BY40xbA5qYQ
 
+https://www.youtube.com/watch?v=05ymbWXdZ-8
 
 ### ref 
 https://docs.unity3d.com/Manual/PublishingBuilds.html
