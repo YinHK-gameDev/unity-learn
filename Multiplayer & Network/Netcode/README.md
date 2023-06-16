@@ -60,6 +60,12 @@ Netcode has two variations of RPCs to execute logic on either server-side or cli
 
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/messaging-system/
 
+#### ClientRpc
+https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/clientrpc/
+
+#### ServerRpc
+https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/serverrpc/
+
 #### RPC usage checklist:
 To use RPCs, make sure
 ​
@@ -73,7 +79,6 @@ To use RPCs, make sure
 -   **Only accept value types as parameters**
 
 #### Serialization Types and RPCs
-
 
 [](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/messaging-system//#serialization-types-and-rpcs "Direct link to Serialization Types and RPCs")
 
