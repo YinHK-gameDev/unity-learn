@@ -48,6 +48,11 @@ If you call an **`RPC`** method on your side, it will execute on a different mac
 
 Netcode has two variations of RPCs to execute logic on either server-side or client-side: [`ServerRpc`](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/serverrpc/) and [`ClientRpc`](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/clientrpc/).
 
+
+![](../img/ServerRPCs.png)
+
+
+
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/messaging-system/
 
 
