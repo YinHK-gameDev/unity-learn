@@ -51,9 +51,10 @@ Netcode has two variations of RPCs to execute logic on either server-side or cli
 
 ![](../img/ServerRPCs.png)
 ![](../img/ServerRPCs_ClientHosts_CalledByClient.png)
+![](../img/ServerRPCs_ClientHosts_CalledByClientHost.png)
 
 ![](../img/ClientRPCs.png)
-
+![](../img/ClientRPCs_ClientHosts_CalledByClientHost.png)
 
 ![](../img/table.png)
 
