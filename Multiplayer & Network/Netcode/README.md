@@ -134,7 +134,7 @@ private void ApprovalCheck(NetworkManager.ConnectionApprovalRequest request, Net
     response.Pending = false;
 }
 ```
-**Connection Management example code on github** \
+**Connection Management example code on github** 
 
 https://github.com/Unity-Technologies/com.unity.multiplayer.samples.coop/blob/v2.1.0/Assets/Scripts/ConnectionManagement/ConnectionState/HostingState.cs
 
