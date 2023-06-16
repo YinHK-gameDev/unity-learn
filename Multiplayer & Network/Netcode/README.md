@@ -53,6 +53,7 @@ https://docs-multiplayer.unity3d.com/netcode/current/learn/bitesize/bitesize-int
 
 https://unity.com/demos/galactic-kittens
 
+https://github.com/UnityTechnologies/GalacticKittens
 
 ### Netcode tutorial
 
