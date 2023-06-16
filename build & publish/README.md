@@ -12,6 +12,17 @@ https://forum.unity.com/threads/how-do-you-organize-your-project-to-reduce-its-c
 ### Reducing the file size of your build
 https://docs.unity3d.com/Manual/ReducingFilesize.html
 
+### Managing scenes in a build
+When you build your application, Unity builds all selected scenes in the **Scenes In Build** pane. Unity builds scenes in the order in which they appear in the list.
+
+You can add, exclude, remove, and reorder scenes in the list:
+
+-   **To add all currently open scenes to the list**: Select **Add Open Scenes**. You can also drag scenes from your **Project** window into the list.
+-   **To exclude a scene in the list from the build**: Clear the checkbox next to that scene. This removes the scene from the build, but not from the list.
+-   **To remove a scene from the list**: Select the scene and press **Delete**.
+-   **To adjust the scene order**: Drag and drop scenes in the list to reorder them.
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/PublishingBuilds.html
