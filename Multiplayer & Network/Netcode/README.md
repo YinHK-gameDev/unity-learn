@@ -134,6 +134,10 @@ private void ApprovalCheck(NetworkManager.ConnectionApprovalRequest request, Net
     response.Pending = false;
 }
 ```
+
+#### Changing the player Prefab
+There might be times when you want to specify an alternate player Prefab to use for a player connecting. For example, allow client to choose a player or game character before starting game.
+
 https://docs-multiplayer.unity3d.com/netcode/current/basics/connection-approval/
 
 
