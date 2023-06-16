@@ -50,8 +50,12 @@ Netcode has two variations of RPCs to execute logic on either server-side or cli
 
 
 ![](../img/ServerRPCs.png)
+![](../img/ServerRPCs_ClientHosts_CalledByClient.png)
 
 ![](../img/ClientRPCs.png)
+
+
+![](../img/table.png)
 
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/messaging-system/
 
