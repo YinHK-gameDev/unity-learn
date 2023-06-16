@@ -60,6 +60,24 @@ Netcode has two variations of RPCs to execute logic on either server-side or cli
 
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/messaging-system/
 
+#### RPC usage checklist:
+To use RPCs, make sure
+​
+-   `[ClientRpc]` or `[ServerRpc]` attributes are on your method
+-   Your method name ends with `ClientRpc` or `ServerRpc` (ex: `DoSomethingServerRpc()`)
+-   your method is declared in a class that inherits from NetworkBehaviour
+    -   your GameObject has a NetworkObject component attached
+-   Make sure to call your RPC method server side or client side (using `isClient` or `isServer`)
+-   Only accept value types as parameters
+
+#### Serialization Types and RPCs
+
+
+[](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/messaging-system//#serialization-types-and-rpcs "Direct link to Serialization Types and RPCs")
+
+Instances of Serializable Types are passed into an RPC as parameters and are serialized and replicated to the remote side.
+
+See [Serialization](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/serialization/serialization-intro/) for more information.
 
 ### Sample project better understanding Netcode
 
