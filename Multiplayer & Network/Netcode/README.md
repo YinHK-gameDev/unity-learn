@@ -143,6 +143,15 @@ There might be times when you want to specify an alternate player Prefab to use 
 
 https://docs-multiplayer.unity3d.com/netcode/current/basics/connection-approval/
 
+### Limiting the maximum number of players
+
+eg:
+```cs
+if( m_Portal.NetManager.ConnectedClientsIds.Count >= CharSelectData.k_MaxLobbyPlayers )
+{
+    return ConnectStatus.ServerFull;
+}
+```
 
 ### Sample project better understanding Netcode
 
