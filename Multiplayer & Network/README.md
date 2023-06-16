@@ -3,7 +3,11 @@
 ### Gaming networking concept
 
 
+![](./img/peer2peer1-ead2681c659d6587ef6adf05b1b70d70.png)
 
+![](./img/client-hosted-16be0b1c9b5020f21325b1e6a7beca73.png)
+
+![](./img/ded_server-d5369721966357b9b4d5e1fa96b05b22.png)
 
 https://docs-multiplayer.unity3d.com/netcode/current/terms-concepts/network-topologies/
 
