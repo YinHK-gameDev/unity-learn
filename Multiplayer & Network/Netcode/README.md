@@ -63,12 +63,12 @@ https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/messaging-s
 #### RPC usage checklist:
 To use RPCs, make sure
 ​
--   `[ClientRpc]` or `[ServerRpc]` attributes are on your method
--   Your method name ends with `ClientRpc` or `ServerRpc` (ex: `DoSomethingServerRpc()`)
--   your method is declared in a class that inherits from NetworkBehaviour
-    -   your GameObject has a NetworkObject component attached
--   Make sure to call your RPC method server side or client side (using `isClient` or `isServer`)
--   Only accept value types as parameters
+-   **`[ClientRpc]`** or **`[ServerRpc]`** attributes are on your method
+-   Your method name ends with **`ClientRpc`** or **`ServerRpc`** (ex: **`DoSomethingServerRpc()`**)
+-   your method is declared in a class that inherits from **`NetworkBehaviour`**
+    -   your GameObject has a **NetworkObject component** attached
+-   Make sure to call your RPC method server side or client side (using **`isClient`** or **`isServer`**)
+-   **Only accept value types as parameters**
 
 #### Serialization Types and RPCs
 
