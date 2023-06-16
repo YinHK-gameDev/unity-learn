@@ -1,5 +1,12 @@
 ## Multiplayer & Network
 
+### Gaming networking concept
+
+
+
+
+https://docs-multiplayer.unity3d.com/netcode/current/terms-concepts/network-topologies/
+
 
 ### Setting up a multiplayer project
 
