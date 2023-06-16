@@ -40,6 +40,14 @@ Alternatively you can use Port Forwarding. The [https://portforward.com/](https:
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/ways-synchronize/
 
 #### Remote Procedure Calls
+At a high level, when calling an **`RPC`** client side, the SDK will take a note of the object, component, method and any parameters for that **`RPC`** and send that information over the network. The server will receive that information, find the specified object, find the specified method and call it on the specified object with the received parameters.
+
+When calling an **`RPC`**, you call a method remotely on an object that can be anywhere in the world. They're **"events"** you can trigger when needed.
+
+If you call an **`RPC`** method on your side, it will execute on a different machine.
+
+Netcode has two variations of RPCs to execute logic on either server-side or client-side: [`ServerRpc`](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/serverrpc/) and [`ClientRpc`](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/clientrpc/).
+
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/messaging-system/
 
 
