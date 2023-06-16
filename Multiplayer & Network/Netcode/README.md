@@ -55,6 +55,8 @@ https://unity.com/demos/galactic-kittens
 
 https://github.com/UnityTechnologies/GalacticKittens
 
+https://github.com/UnityTechnologies/GalacticKittens/wiki/Setup-Instructions
+
 ### Netcode tutorial
 
 https://www.youtube.com/watch?v=3yuBOB3VrCk
