@@ -134,6 +134,9 @@ private void ApprovalCheck(NetworkManager.ConnectionApprovalRequest request, Net
     response.Pending = false;
 }
 ```
+**Connection Management example code on github** \
+
+https://github.com/Unity-Technologies/com.unity.multiplayer.samples.coop/blob/v2.1.0/Assets/Scripts/ConnectionManagement/ConnectionState/HostingState.cs
 
 #### Changing the player Prefab
 There might be times when you want to specify an alternate player Prefab to use for a player connecting. For example, allow client to choose a player or game character before starting game.
