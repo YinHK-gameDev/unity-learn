@@ -11,7 +11,8 @@ To properly link data to a specific player, we need an ID that isn't tied to the
 
 -   A login system with unique player accounts
     
--   A **Globally Unique Identifier (GUID)**. For example, a GUID generated via `System.Guid.NewGuid()` and then saved to the `PlayerPrefs` client side.
+-   A **Globally Unique Identifier (GUID)**. For example, a GUID generated via `System.Guid.NewGuid()` and then saved to the `PlayerPrefs` client side. \
+    https://learn.microsoft.com/en-us/dotnet/api/system.guid.newguid?view=net-7.0
 
 
 **With this unique identifier, you can map each player's data** (that's needed when reconnecting), such as the current state of their character (last known position, health, and the like). 
