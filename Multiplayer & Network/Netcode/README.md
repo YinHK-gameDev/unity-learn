@@ -90,6 +90,12 @@ Instances of Serializable Types are passed into an RPC as parameters and are ser
 
 See [Serialization](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/serialization/serialization-intro/) for more information.
 
+
+### NetworkTime and Ticks
+Messages take time to transmit over the network. That's why `RPCs` and `NetworkVariable` won't happen immediately on other machines. `NetworkTime` allows to use time while considering those transmission delays.
+
+https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/networktime-ticks/#network-ticks
+
 ### Connection Approval
 To ensures the NetworkConfig on the client matches the server's NetworkConfig. You can enable ConnectionApproval in the NetworkManager or via code by setting `NetworkManager.NetworkConfig.ConnectionApproval` to `true`.
 
