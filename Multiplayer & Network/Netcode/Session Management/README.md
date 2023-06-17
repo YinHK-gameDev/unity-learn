@@ -47,7 +47,7 @@ You need to keep all the important data that you want to restore and map it to t
 
 
 
-**Simple session management** 
+**Simple session management example:** 
 ```cs
 using System;
 using System.Collections.Generic;
