@@ -36,7 +36,7 @@ You need to keep all the important data that you want to restore and map it to t
 
 
 
-
+In cases where we don't use the Player Object approach and instead manually attribute client ownership to `NetworkObject`(s), we can keep the objects that a player owns when they disconnect, and set the reconnected player as their new owner. To accomplish this, the only data we would need to keep would be the mapping between those objects and their owning player's identifier, then when a player reconnects we can use this mapping to set them as the new owner. This mapping can be as simple as a dictionary mapping the player identifier with the `NetworkObjectId`(s) of the `NetworkObject`(s) they own. Then, in the `OnClientConnectedCallback` from the `NetworkManager`, the server can set the ownership of these objects.
 
 
 
