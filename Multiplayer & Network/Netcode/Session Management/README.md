@@ -3,7 +3,7 @@ You can use **session management** to **keep data when a player disconnects and 
 
 
 
-**Simple session management** \
+**Simple session management** 
 ```cs
 using System;
 using System.Collections.Generic;
