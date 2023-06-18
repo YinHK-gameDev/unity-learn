@@ -111,7 +111,32 @@ Messages take time to transmit over the network. That's why `RPCs` and `NetworkV
 -   For everything on non client controlled `NetworkObjects`.
 
 
+#### Network Ticks
+Network ticks are run at a fixed rate. The 'Tick Rate' field on the `NetworkManager` can be used to set the tick rate.
+
+What does changing the network tick affect? Changes to `NetworkVariables` aren't sent immediately. Instead during each network tick changes to `NetworkVariables` are collected and sent out to other peers.
+
+To run custom code once per network tick (before `NetworkVariable` changes are collected) the `Tick` event on the `NetworkTickSystem` can be used.
+
+
+> When using `FixedUpdate` or physics in your game, set the network tick rate to the same rate as the fixed update rate. The `FixedUpdate` rate can be changed in `Edit > Project Settings > Time > Fixed Timestep`
+
+
+#### Network FixedTime
+`Network FixedTime` can be used to get a time value representing the time during a network tick. This works similar to `FixedUpdate` where `Time.fixedTime` represents the time during the `FixedUpdate`.
+
+
+```cs
+public void Update()
+{
+    double time = NetworkManager.Singleton.LocalTime.Time; // time during this Update
+    double fixedTime = NetworkManager.Singleton.LocalTime.FixedTime; // time during the previous network tick
+}
+```
+
+
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/networktime-ticks/#network-ticks
+
 
 ### Connection Approval
 To ensures the NetworkConfig on the client matches the server's NetworkConfig. You can enable ConnectionApproval in the NetworkManager or via code by setting `NetworkManager.NetworkConfig.ConnectionApproval` to `true`.
