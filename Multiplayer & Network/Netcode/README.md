@@ -92,6 +92,8 @@ See [Serialization](https://docs-multiplayer.unity3d.com/netcode/current/advance
 
 
 ### NetworkTime and Ticks
+
+#### LocalTime and ServerTime
 Messages take time to transmit over the network. That's why `RPCs` and `NetworkVariable` won't happen immediately on other machines. `NetworkTime` allows to use time while considering those transmission delays.
 
 -   `LocalTime` on a client is ahead of the server. If a server RPC is sent at `LocalTime` from a client it will roughly arrive at `ServerTime` on the server.
