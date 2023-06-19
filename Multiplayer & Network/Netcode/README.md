@@ -121,6 +121,8 @@ To run custom code once per network tick (before `NetworkVariable` changes are c
 
 > When using `FixedUpdate` or physics in your game, set the network tick rate to the same rate as the fixed update rate. The `FixedUpdate` rate can be changed in `Edit > Project Settings > Time > Fixed Timestep`
 
+https://daposto.medium.com/game-networking-1-interval-and-ticks-b39bb51ccca9
+
 
 #### Network FixedTime
 `Network FixedTime` can be used to get a time value representing the time during a network tick. This works similar to `FixedUpdate` where `Time.fixedTime` represents the time during the `FixedUpdate`.
