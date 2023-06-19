@@ -147,6 +147,10 @@ public void Update()
 }
 ```
 
+#### NetworkTime Precision
+Network time values are calculated using double precisions. This allows time to stay accurate on long running servers. For game servers which run sessions for a long time (multiple hours or days) don't convert this value in a float and always use doubles for time related calculations.
+
+For games with short play sessions casting the time to float is safe or `TimeAsFloat` can be used.
 
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/networktime-ticks/#network-ticks
 
