@@ -9,8 +9,8 @@ At a high level, a `NetworkVariable` is a way to synchronize a property ("variab
 -   Connected clients
     -   When a `NetworkVariable` value changes, any connected clients that subscribed to `NetworkVariable.OnValueChanged` event (prior to the value being changed) will be notified of the change.
         -   Two parameters are passed to any `NetworkVariable.OnValueChanged` subscribed callback method:
-            -   First parameter (Previous): The previous value before the value was changed
-            -   Second parameter (Current): The newly changed `NetworkVariable.Value`.
+            -   First parameter (**Previous**): The previous value before the value was changed
+            -   Second parameter (**Current**): The newly changed `NetworkVariable.Value`.
 
 A `NetworkVariable`:
 
