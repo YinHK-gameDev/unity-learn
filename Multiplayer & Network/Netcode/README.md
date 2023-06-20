@@ -165,6 +165,7 @@ https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/networktime
     
     
 - **NetworkVariables system**
+  A **`NetworkVariable`** is most commonly used to **synchronize state between both connected and late joining clients**. The **`NetworkVariable`** system only supports non-nullable value `type`s, but also provides support for **`INetworkSerializable`** implementations as well you can create your own `NetworkVariable` class by deriving from the **`NetworkVariableBase`** abstract class.
   - Handled by the "internal" messaging system and categorized under "Networking".
 
 > While each of the above options can be used for the same thing, synchronizing states or events, they all have specific use cases and limitations.
