@@ -156,10 +156,15 @@ https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/networktime
 
 ### Synchronizing States & Events
 
-- Messaging System
-  - Remote Procedure Calls (RPCs)
-  - Custom Messages
-- NetworkVariables
+- **Messaging System**
+  The Netcode messaging system provides you with the ability to handle sending and receiving messages or events. The entire messaging system supports the serialization of most primitive value types as well as any classes and/or structures that implement the  `INetworkSerializable` interface.
+  - Remote Procedure Calls (RPCs): 
+  - Custom Messages:
+    Custom messages provide you with the ability to create your own "netcode message type" to handle scenarios where you might just need to create your own custom message. \
+    https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/message-system/custom-messages/
+    
+    
+- **NetworkVariables system**
   - Handled by the "internal" messaging system and categorized under "Networking".
 
 > While each of the above options can be used for the same thing, synchronizing states or events, they all have specific use cases and limitations.
