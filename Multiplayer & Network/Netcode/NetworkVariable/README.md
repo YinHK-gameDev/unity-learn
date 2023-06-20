@@ -20,5 +20,19 @@ A `NetworkVariable`:
     -   Initializing the property (either when it's declared or within the Awake method)
     -   While the associated `NetworkObject` is spawned (upon being spawned or any time while it's still spawned).
 
+
+| Dynamically Spawned | In-Scene Placed |
+| --- | --- |
+| Awake | Awake |
+| OnNetworkSpawn | Start |
+| Start | OnNetworkSpawn |
+
+
+#### In-Scene (Placed) NetworkObjects
+ An in-scene placed **NetworkObject** means a GameObject with a **NetworkObject component** was added to a scene from within the editor. 
+
+https://docs-multiplayer.unity3d.com/netcode/current/basics/scenemanagement/inscene-placed-networkobjects/
+
+
 ### ref 
 https://docs-multiplayer.unity3d.com/netcode/current/basics/networkvariable/
