@@ -154,6 +154,20 @@ For games with short play sessions casting the time to float is safe or `TimeAsF
 
 https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/networktime-ticks/#network-ticks
 
+### Synchronizing States & Events
+
+- Messaging System
+  - Remote Procedure Calls (RPCs)
+  - Custom Messages
+- NetworkVariables
+  - Handled by the "internal" messaging system and categorized under "Networking".
+
+> While each of the above options can be used for the same thing, synchronizing states or events, they all have specific use cases and limitations.
+
+
+
+https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/ways-synchronize/
+
 
 ### Connection Approval
 To ensures the NetworkConfig on the client matches the server's NetworkConfig. You can enable ConnectionApproval in the NetworkManager or via code by setting `NetworkManager.NetworkConfig.ConnectionApproval` to `true`.
