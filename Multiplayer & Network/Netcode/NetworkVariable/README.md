@@ -12,7 +12,13 @@ At a high level, a `NetworkVariable` is a way to synchronize a property ("variab
             -   First parameter (Previous): The previous value before the value was changed
             -   Second parameter (Current): The newly changed `NetworkVariable.Value`.
 
+A `NetworkVariable`:
 
+-   Property _must_ be defined within a `NetworkBehaviour` derived class attached to a `GameObject`
+    -   The `GameObject` or a parent `GameObject` **must** also have a `NetworkObject` component attached to it.
+-   A `NetworkVariable`'s value can only be set when:
+    -   Initializing the property (either when it's declared or within the Awake method)
+    -   While the associated `NetworkObject` is spawned (upon being spawned or any time while it's still spawned).
 
 ### ref 
 https://docs-multiplayer.unity3d.com/netcode/current/basics/networkvariable/
