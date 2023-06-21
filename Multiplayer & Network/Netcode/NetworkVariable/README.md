@@ -86,6 +86,11 @@ public class Door : NetworkBehaviour
 In the above example, we show how you can keep a server authoritative `NetworkVariable` by using a non-ownership based server RPC (that is, `RequireOwnership = false` means non-owners can invoke it) so any client can notify the server that it's performing an "action" on the door. For this example, each time the door is used by a client the `Door.ToggleServerRpc` is invoked and the server-side toggles the state of the door. Upon the `Door.State.Value` changing, all connected clients are synchronized to the (new) current `Value` and the `OnStateChanged` method is invoked locally on each client.
 
 
+### Permission
+You can adjust who can write to or read from the **`NetworkVariable`**. Use `NetworkVariable` permissions.
+
+
+
 
 
 ### ref 
