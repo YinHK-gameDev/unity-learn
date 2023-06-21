@@ -248,6 +248,19 @@ Sending state with RPCs won't be transmitted to late joining clients.
 > NetworkVariables are **eventually consistent**. This means **not all value changes will be synced**, contrary to RPCs, where 5 calls to an RPC will produce 5 RPC sends on the network.
 
 
+#### Why not use NetworkVariables for everything?
+
+**RPCs are simpler**.
+
+If you have a temporary event like an explosion, you don't need a replicated state for this. It would not make sense. You would have an "unexploded" state that would need to be synced everytime a new player connected? From a design perspective, you might not want to represent these events as state.
+
+An explosion can use an RPC for the event, but the effect of the explosion should be using NetworkVariables ( for example player's knockback and health decrease).  A newly connected player doesn't care about an explosion that happened 5 seconds ago. They do care about the current health of the players around that explosion though.
+
+
+
+
+
+
 
 ### ref 
 https://docs-multiplayer.unity3d.com/netcode/current/basics/networkvariable/
