@@ -180,7 +180,7 @@ public class PlayerState : NetworkBehaviour
 
 ```
 
-> Note: You might be wondering about the above door example and why we chose to use a **server RPC** for clients to notify the server that the door's open/closed state has changed. Under that scenario, the owner of the door will most likely be owned by the server just like **non-player characters** will almost always be **owned by the server**. Under a server owned scenario, using an RPC to handle updating a **NetworkVariable** is the proper choice above permissions for most cases.
+> **Note**: You might be wondering about the above door example and why we chose to use a **server RPC** for clients to notify the server that the door's open/closed state has changed. Under that scenario, the owner of the door will most likely be owned by the server just like **non-player characters** will almost always be **owned by the server**. Under a server owned scenario, using an RPC to handle updating a **NetworkVariable** is the proper choice above permissions for most cases.
 
 
 
