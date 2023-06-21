@@ -218,8 +218,13 @@ In order to create your own `NetworkVariableBase` derived container, you should:
     -   `void ReadDelta(FastBufferReader reader, bool keepDirtyDelta)`
 -   Depdending upon your custom `NetworkVariableBase` container, you might look at `NetworkVariable<T>` or `NetworkList` to see how those two examples were implemented.
 
+### RPC vs NetworkVariable
 
+> Choosing the wrong data syncing mecanism can create bugs, generate too much bandwidth and add too much complexity to your code.
 
+Netcode for GameObjects (Netcode) has two main ways of syncing information between players. 
+1. RPC (Remote Procedure Call)
+2. replicated state (NetworkVariable)
 
 
 ### ref 
