@@ -183,6 +183,28 @@ public class PlayerState : NetworkBehaviour
 > **Note**: You might be wondering about the above door example and why we chose to use a **server RPC** for clients to notify the server that the door's open/closed state has changed. Under that scenario, the owner of the door will most likely be owned by the server just like **non-player characters** will almost always be **owned by the server**. Under a server owned scenario, using an RPC to handle updating a **NetworkVariable** is the proper choice above permissions for most cases.
 
 
+### Supported Types
+
+`NetworkVariable` provides support for the following types:
+
+-   C# unmanaged [primitive types](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/serialization/cprimitives/) (which are serialized by direct memcpy into/out of the buffer): `bool`, `byte`, `sbyte`, `char`, `decimal`, `double`, `float`, `int`, `uint`, `long`, `ulong`, `short`, and `ushort`
+    
+-   Unity unmanaged [built-in types](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/serialization/unity-primitives/) (which will be serialized by direct memcpy into/out of the buffer.): `Vector2`, `Vector3`, `Vector2Int`, `Vector3Int`, `Vector4`, `Quaternion`, `Color`, `Color32`, `Ray`, `Ray2D`
+    
+-   Any [`enum`](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/serialization/enum_types/) types (which will be serialized by direct memcpy into/out of the buffer).
+    
+-   Any type (managed or unmanaged) that implements [`INetworkSerializable`](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/serialization/inetworkserializable/) (which will be serialized by calling their `NetworkSerialize` method.) **On the reading side, these values are deserialized in-place, meaning the existing instance will be reused and any non-serialized values will be left in their current state.**
+    
+-   Any unmanaged struct type that implements [`INetworkSerializeByMemcpy`](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/serialization/inetworkserializebymemcpy/) (which will be serialized by direct memcpy of the entire struct into/out of the buffer).
+    
+-   Unity [fixed string](https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/serialization/fixedstrings/) types: `FixedString32Bytes`, `FixedString64Bytes`, `FixedString128Bytes`, `FixedString512Bytes`, and `FixedString4096Bytes` (which are serialized intelligently, only sending the used part across the network and adjusting the "length" of the string on the other side to fit the received data).
+
+
+
+> Netcode for GameObjects also supports **complex types** (as mentioned in the above), and can support both **unmanaged types** and **managed types** (although avoiding managed types where possible will improve your game's performance).
+
+
+
 
 
 ### ref 
