@@ -245,5 +245,9 @@ Sending state with RPCs won't be transmitted to late joining clients.
 
 > Using the Boss Room's door as an example. A player's client needs to receive the information that the door is open to play the right animations. If we sent an `RPC` to all clients, then all players connecting mid game after that `RPC` are sent will miss that information and have the wrong visual on their clients.
 
+> NetworkVariables are **eventually consistent**. This means **not all value changes will be synced**, contrary to RPCs, where 5 calls to an RPC will produce 5 RPC sends on the network.
+
+
+
 ### ref 
 https://docs-multiplayer.unity3d.com/netcode/current/basics/networkvariable/
