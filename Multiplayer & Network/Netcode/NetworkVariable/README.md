@@ -124,15 +124,64 @@ There are two options for writing a `NetworkVariable.Value`:
         -   This might be a player's skin or other cosmetics
 
 
-
-
-
-
-
-
-
-
 https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/blob/release/1.0.0/com.unity.netcode.gameobjects/Runtime/NetworkVariable/NetworkVariablePermission.cs
+
+#### Permissions Example
+
+
+```cs
+public class PlayerState : NetworkBehaviour
+{
+    private const float k_DefaultHealth = 100.0f;
+    /// <summary>
+    /// Default Permissions: Everyone can read, server can only write
+    /// Player health is typically something determined (updated/written to) on the server
+    ///  side, but a value everyone should be synchronized with (that is, read permissions).
+    /// </summary>
+    public NetworkVariable<float> Health = new NetworkVariable<float>(k_DefaultHealth);
+
+    /// <summary>
+    /// Owner Read Permissions: Owner or server can read
+    /// Owner Write Permissions: Only the Owner can write
+    /// A player's ammo count is something that you might want, for convenience sake, the
+    /// client-side to update locally. This might be because you are trying to reduce 
+    /// bandwidth consumption for the server and all non-owners/ players or you might be 
+    /// trying to incorporate a more client-side "hack resistant" design where non-owners 
+    /// are never synchronized with this value.
+    /// </summary>
+    public NetworkVariable<int> AmmoCount = new NetworkVariable<int>(default, 
+        NetworkVariableReadPermission.Owner, NetworkVariableWritePermission.Owner);
+
+    /// <summary>
+    /// Owner Write & Everyone Read Permissions:
+    /// A player's model's skin selection index. You might have the option to allow players
+    /// to select different skin materials as a way to further encourage a player's personal
+    /// association with their player character.  It would make sense to make the permissions 
+    /// setting of the NetworkVariable such that the client can change the value, but everyone 
+    /// will be notified when it changes to visually reflect the new skin selection.
+    /// </summary>
+    public NetworkVariable<int> SkinSelectionIndex = new NetworkVariable<int>(default,
+        NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
+
+    /// <summary>
+    /// Owner Read & Server Write Permissions:
+    /// You might incorporate some form of reconnection logic that stores a player's state on 
+    /// the server side and can be used by the client to reconnect a player if disconnected
+    /// unexpectedly.  In order for the client to let the server know it's the "same client" 
+    /// you might have implemented a keyed array (that is, Hashtable, Dictionary, etc, ) to track
+    /// each connected client. The key value for each connected client would only be written to
+    /// the each client's PlayerState.ReconnectionKey. Under this scenario, you only want the 
+    /// server to have write permissions and the owner (client) to be synchronized with this 
+    /// value (via owner only read permissions).
+    /// </summary>
+    public NetworkVariable<ulong> ReconnectionKey = new NetworkVariable<ulong>(default,
+    NetworkVariableReadPermission.Owner, NetworkVariableWritePermission.Server);
+}
+
+```
+
+
+
 
 
 
