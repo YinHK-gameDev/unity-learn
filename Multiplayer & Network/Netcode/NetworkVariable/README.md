@@ -204,6 +204,21 @@ public class PlayerState : NetworkBehaviour
 > Netcode for GameObjects also supports **complex types** (as mentioned in the above), and can support both **unmanaged types** and **managed types** (although avoiding managed types where possible will improve your game's performance).
 
 
+### Custom NetworkVariable Implementations
+
+In order to create your own `NetworkVariableBase` derived container, you should:
+
+-   Create a class deriving from `NetworkVariableBase`.
+    
+-   Assure the the following methods are overridden:
+    
+    -   `void WriteField(FastBufferWriter writer)`
+    -   `void ReadField(FastBufferReader reader)`
+    -   `void WriteDelta(FastBufferWriter writer)`
+    -   `void ReadDelta(FastBufferReader reader, bool keepDirtyDelta)`
+-   Depdending upon your custom `NetworkVariableBase` container, you might look at `NetworkVariable<T>` or `NetworkList` to see how those two examples were implemented.
+
+
 
 
 
