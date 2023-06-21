@@ -233,13 +233,17 @@ They both send messages over the network.
 -   Use `RPC`s for **transient events**, information only useful **for a moment** when it's received.
 -   Use `NetworkVariable`s for **persistent states**, for information that will be **around more than a moment**.
 
-A quick way to choose which to use is to ask yourself: **"Should a player joining mid-game get that information?"**
+> A quick way to choose which to use is to ask yourself: **"Should a player joining mid-game get that information?"**
 
+Network Variables allow to seamlessly catch up late joining clients by sending the current state as soon as the tick happens. 
 ![](./img/NetworkVariables_LateJoinClient.png)
 
+
+Sending state with RPCs won't be transmitted to late joining clients.
 ![](./img/RPCsLateJoin.png)
 
 
+> Using the Boss Room's door as an example. A player's client needs to receive the information that the door is open to play the right animations. If we sent an `RPC` to all clients, then all players connecting mid game after that `RPC` are sent will miss that information and have the wrong visual on their clients.
 
 ### ref 
 https://docs-multiplayer.unity3d.com/netcode/current/basics/networkvariable/
