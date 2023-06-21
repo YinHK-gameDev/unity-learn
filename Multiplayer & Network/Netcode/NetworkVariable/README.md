@@ -226,6 +226,20 @@ Netcode for GameObjects (Netcode) has two main ways of syncing information betwe
 1. RPC (Remote Procedure Call)
 2. replicated state (NetworkVariable)
 
+They both send messages over the network.
+
+#### Choosing between NetworkVariables or RPCs
+
+-   Use `RPC`s for **transient events**, information only useful **for a moment** when it's received.
+-   Use `NetworkVariable`s for **persistent states**, for information that will be **around more than a moment**.
+
+A quick way to choose which to use is to ask yourself: **"Should a player joining mid-game get that information?"**
+
+![](./img/NetworkVariables_LateJoinClient.png)
+
+![](./img/RPCsLateJoin.png)
+
+
 
 ### ref 
 https://docs-multiplayer.unity3d.com/netcode/current/basics/networkvariable/
