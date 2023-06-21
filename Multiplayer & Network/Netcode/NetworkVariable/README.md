@@ -31,7 +31,65 @@ A `NetworkVariable`:
 #### In-Scene (Placed) NetworkObjects
  An in-scene placed **NetworkObject** means a GameObject with a **NetworkObject component** was added to a scene from within the editor. 
 
+
+#### OnValueChanged Example
+
+While the first example highlighted the differences between synchronizing a NetworkVariable with newly joining clients and notifying connected clients when a NetworkVariable changes, it didn't provide any concrete example usage. The next example shows a simple server authoritative NetworkVariable being used to track the state of a door (that is, open or closed):
+
+
+```cs
+public class Door : NetworkBehaviour
+{
+    public NetworkVariable<bool> State = new NetworkVariable<bool>();
+
+    public override void OnNetworkSpawn()
+    {
+        State.OnValueChanged += OnStateChanged;
+    }
+
+    public override void OnNetworkDespawn()
+    {
+        State.OnValueChanged -= OnStateChanged;
+    }
+
+    public void OnStateChanged(bool previous, bool current)
+    {
+        // note: `State.Value` will be equal to `current` here
+        if (State.Value)
+        {
+            // door is open:
+            //  - rotate door transform
+            //  - play animations, sound etc.
+        }
+        else
+        {
+            // door is closed:
+            //  - rotate door transform
+            //  - play animations, sound etc.
+        }
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void ToggleServerRpc()
+    {
+        // this will cause a replication over the network
+        // and ultimately invoke `OnValueChanged` on receivers
+        State.Value = !State.Value;
+    }
+}
+```
+
+In the above example, we show how you can keep a server authoritative `NetworkVariable` by using a non-ownership based server RPC (that is, `RequireOwnership = false` means non-owners can invoke it) so any client can notify the server that it's performing an "action" on the door. For this example, each time the door is used by a client the `Door.ToggleServerRpc` is invoked and the server-side toggles the state of the door. Upon the `Door.State.Value` changing, all connected clients are synchronized to the (new) current `Value` and the `OnStateChanged` method is invoked locally on each client.
+
+
+
+
+
 https://docs-multiplayer.unity3d.com/netcode/current/basics/scenemanagement/inscene-placed-networkobjects/
+
+
+
+
 
 
 ### ref 
