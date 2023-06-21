@@ -90,6 +90,49 @@ In the above example, we show how you can keep a server authoritative `NetworkVa
 You can adjust who can write to or read from the **`NetworkVariable`**. Use `NetworkVariable` permissions.
 
 
+The **NetworkVariable constructor** can take up to **3 parameters**:
+
+```cs
+public NetworkVariable(T value = default, 
+NetworkVariableReadPermission readPerm = NetworkVariableReadPermission.Everyone, 
+NetworkVariableWritePermission writePerm = NetworkVariableWritePermission.Server);
+```
+
+The default permissions are:
+- **Server**: Has read and write permissions
+- **Clients**: Have read only permissions.
+
+#### Read permission
+There are two options for reading a `NetworkVariable.Value`:
+
+-   _Everyone(_default_):_ this means the owner and non-owners of the `NetworkObject` can read the value.
+    -   This is useful for "global states" that everyone should be aware of.
+    -   We provided an example of maintaining a door's open or closed state using the everyone permission.
+        -   You might also use this for player scores, health, or any other state that "everyone" should know about.
+-   _Owner:_ This means only the owner of the `NetworkObject` and the server can read the value.
+    -   This is useful if your `NetworkVariable` represents something specific to the client's player that only the server and client should know about
+        -   This might be a player's inventory or gun's ammo count (etc.)
+
+#### Write Permissions
+There are two options for writing a `NetworkVariable.Value`:
+
+-   _Server(_default_):_ the server is the only one that can write the value.
+    -   This is useful for server side specific states that all clients should should be aware of but can't change.
+        -   Some examples would be an NPC's status (health, alive, dead, etc) or some global world environment state (that is, is it night or day time?).
+-   _Owner:_ This means only the owner of the `NetworkObject` can write to the value.
+    -   This is useful if your `NetworkVariable` represents something specific to the client's player that only the owning client should be able to set
+        -   This might be a player's skin or other cosmetics
+
+
+
+
+
+
+
+
+
+
+https://github.com/Unity-Technologies/com.unity.netcode.gameobjects/blob/release/1.0.0/com.unity.netcode.gameobjects/Runtime/NetworkVariable/NetworkVariablePermission.cs
 
 
 
