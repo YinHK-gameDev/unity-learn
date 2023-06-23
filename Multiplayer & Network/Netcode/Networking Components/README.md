@@ -32,7 +32,7 @@ https://docs-multiplayer.unity3d.com/netcode/current/advanced-topics/physics/
 
 
 ### NetworkManager
-The NetworkManager is a required Netcode for GameObjects (Netcode) component that has all of your project's netcode related settings. Think of it as the "central netcode hub" for your netcode enabled project.
+The NetworkManager is a required Netcode for GameObjects (Netcode) component that has all of your project's netcode related settings. Think of it as the **"central netcode hub"** for your netcode enabled project.
 
 #### Starting a Server, Host, or Client
 ```cs
