@@ -30,8 +30,57 @@ Install the Netcode for GameObjects package:
 
 ### Starting NGO guide
 
+- Install Netcode for GameObjects follow above installation guide
+- Add the basic components
+   - A NetworkManager component
+   - A player object
+   - A scene
+- Create an object to spawn for each connected player
+- Add simple RPCs use
+- Add a NetworkTransform
+- Extend the functionality with scripts
+- Add your scene to the build
 
 
+#### Create the NetworkManager component
+
+First, create the NetworkManager component:
+
+1.  Right-click in the **Hierarchy** tab, then select **Create Empty** to create an empty GameObject.
+2.  Rename the empty GameObject **NetworkManager**.
+3.  Select **NetworkManager**, then select Add Component from the Inspector tab.
+4.  In the Inspector tab, locate the Unity Transport section, then select UnityTransport as the Protocol type.
+5.  Save the scene by pressing **Ctrl/Cmd + S** (or by selecting File > Save).
+
+
+#### Create an object to spawn for each connected player
+
+> When you drop the prefab into the **PlayerPrefab** slot, you're telling the library that when a client connects to the game, it automatically spawns this prefab as the character for the connecting client. NGO won’t spawn a player object if you don't have any prefab set as the **PlayerPrefab**. Refer to Player Objects.
+
+-   In the Unity Editor, right-click within the **Hierarchy** tab, then select **3D Object** > **Capsule**.
+-   Name the Capsule Object **Player**.
+-   With Player selected, add a NetworkObject component in the **Inspector** tab by selecting **Add Component** > **Netcode** > **NetworkObject**.
+-   Right-click within the **Assets** folder under the **Project** tab, then select **Create** > **Folder**.
+-   Name the folder **Prefabs**.
+-   Make the **Player** object you created earlier into a prefab by dragging it from the **Hierarchy** tab into the **Prefabs** folder.
+-   Delete the Player from the scene by selecting the Player capsule within the **Scene** tab, then pressing the **Delete** key (or **Cmd** + **Delete** for macOS).
+
+
+> You can remove the Player GameObject from the scene because you assign this network prefab to the Player prefab property in the NetworkManager component. The library doesn't support defining a player object as an in-scene placed NetworkObject.
+
+-   Select **NetworkManager**.
+-   With NetworkManager selected, locate the **PlayerPrefab** field in the **Inspector** tab.
+-   Drag the **Player** prefab from the **Project** tab into the **PlayerPrefab** slot you created in the **Inspector** tab.
+-   Add a 3D Plane (centered at 0,0,0) to the scene by right-clicking in the **Hierarchy** tab, then selecting **3D Object** > **Plane**.
+-   Save the scene by pressing **Ctrl/Cmd** + **S** (selecting **File** > **Save**).
+
+#### Add a NetworkTransform
+
+Add a NetworkTransform component to the Player prefab:
+
+1.  Select the **Player** prefab in Assets > Prefabs.
+2.  In the **Inspector** tab (with the Player prefab selected), select **Add Component**.
+3.  Select **Netcode** > **NetworkTransform**.
 
 https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/
 
