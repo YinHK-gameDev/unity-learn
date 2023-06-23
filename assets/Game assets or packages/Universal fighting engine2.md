@@ -7,3 +7,8 @@ https://assetstore.unity.com/packages/templates/systems/universal-fighting-engin
 
 showcase \
 https://www.youtube.com/watch?v=dl5rGxJHQ0s&t=634s
+
+Fantasy Strike 
+https://www.fantasystrike.com/
+
+https://www.reddit.com/r/Fighters/comments/vgtqyx/has_anyone_made_a_game_using_unitys_universal/
