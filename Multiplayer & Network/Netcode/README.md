@@ -8,7 +8,31 @@ The **Netcode for Entities**, part of the Unity's **Data Oriented Technology Sta
 -   [Netcode for GameObjects](https://github.com/Unity-Technologies/com.unity.netcode.gameobjects) - Unity's official netcode SDK for GameObject workflows. \
     https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/
 
+
+### Installing NGO with the Package Manager
+
+Install the Netcode for GameObjects package:
+
+1.  From the Unity Editor, select **Window** > **Package Manager**.
+2.  From the Package Manager, select **Add (+)** > **Add package by name…**
+3.  Type (or copy and paste) `com.unity.netcode.gameobjects` into the package name field, then select **Add**.
+
+
+> **Note**: \
+> If you're using Unity Editor version 2020.3 LTS or earlier, there's no option to add a package by name. In this case, use Add package from git URL instead:
+> - From the Unity Editor, select **Window > Package Manager**.
+> - From the Package Manager, select **Add (+) > Add package by git URL…**
+> - Type (or copy and paste) **https://github.com/Unity-Technologies/com.unity.netcode.gameobjects** into the git URL field, then select **Add**.
+
+
+
+
+
 ### Starting NGO guide
+
+
+
+
 https://docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/
 
 ### Create a command line helper
