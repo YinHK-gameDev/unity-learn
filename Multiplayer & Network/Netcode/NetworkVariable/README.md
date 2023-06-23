@@ -257,8 +257,18 @@ If you have a temporary event like an explosion, you don't need a replicated sta
 An explosion can use an RPC for the event, but the effect of the explosion should be using NetworkVariables ( for example player's knockback and health decrease).  A newly connected player doesn't care about an explosion that happened 5 seconds ago. They do care about the current health of the players around that explosion though.
 
 
+> **Note**: \
+> If you want to make sure two variables are received at the same time, RPCs are great for this. \
+> If you change **NetworkVariables** **"a"** and **"b"**, there is no guarantee they will both be received client side at the same time. \
+> Different Network Variables updated within the same tick aren't guranteed to be delivered to the clients at the same time.
+> ![](./img/NetVarDataUpdates.png)
+> Sending them as two parameters in the same RPC allows to make sure they will be received at the same time client side. \
+> To ensure that several different Network Variables are all synchronized at the same exact time we can use client RPC to join these value changes together.
+> ![](./img/ManagingNetVarData_RPCs.png)
 
 
+- **NetworkVariables** are great when you only care about the **latest value**, for managing state, to make sure everyone has the latest value. Use them when you want to make sure newly connected players get an up to date world state.
+- **RPCs** are great for sending **transient events**. Use them when transmiting **short lived events**.
 
 
 
