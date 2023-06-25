@@ -39,5 +39,7 @@ You can **generate a join code** as the host player either with the **Relay SDK*
 You can use a join code to **join a Relay server** as a joining player with the **Relay SDK** or the **Relay API**.
 
 
+### Connection data
+
 ### ref
 https://docs.unity.com/relay/en-us/manual/connection-flow
