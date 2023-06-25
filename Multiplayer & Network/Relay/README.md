@@ -134,6 +134,73 @@ https://docs.unity.com/authentication/en-us/manual/use-anon-signin
 https://docs.unity.com/authentication/en-us/manual/platform-specific-signin
 
 
+### Host player
+
+When your game client functions as a host player, it must be able to **create an allocation, request a join code**, **configure the connection type**, and **create a Singleton instance** of the **`NetworkDriver`** to **bind the Relay server** and listen for connection requests from joining players.
+
+#### Create an allocation and request a join code
+The following code snippet has a function, **`AllocateRelayServerAndGetJoinCode`**, that shows how to use the Relay SDK to create an allocation, request a join code, and configure the connection type as [DTLS](https://docs.unity.com/relay/en-us/manual/dtls-encryption).
+
+```cs
+public static async Task<RelayServerData> AllocateRelayServerAndGetJoinCode(int maxConnections, string region = null)
+{
+    Allocation allocation;
+    string createJoinCode;
+    try
+    {
+        allocation = await RelayService.Instance.CreateAllocationAsync(maxConnections, region);
+    }
+    catch (Exception e)
+    {
+        Debug.LogError($"Relay create allocation request failed {e.Message}");
+        throw;
+    }
+
+    Debug.Log($"server: {allocation.ConnectionData[0]} {allocation.ConnectionData[1]}");
+    Debug.Log($"server: {allocation.AllocationId}");
+
+    try
+    {
+        createJoinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
+    }
+    catch
+    {
+        Debug.LogError("Relay create join code request failed");
+        throw;
+    }
+
+    return new RelayServerData(allocation, "dtls");
+}
+Configure The transport and start NGO#
+The following code snippet has a function, ConfigureTransportAndStartNgoAsHost, that shows how to use the Relay SDK and NGO SDK to configure the transport and start NGO as a host player.
+
+Note: When starting a Relay server as a host player, both instances of connection data are identical to one another.
+
+IEnumerator Example_ConfigureTransportAndStartNgoAsHost()
+{
+    var serverRelayUtilityTask = AllocateRelayServerAndGetJoinCode(m_MaxConnections);
+    while (!serverRelayUtilityTask.IsCompleted)
+    {
+        yield return null;
+    }
+    if (serverRelayUtilityTask.IsFaulted)
+    {
+        Debug.LogError("Exception thrown when attempting to start Relay Server. Server not started. Exception: " + serverRelayUtilityTask.Exception.Message);
+        yield break;
+    }
+
+    var relayServerData = serverRelayUtilityTask.Result;
+
+    // Display the joinCode to the user.
+
+    NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
+    NetworkManager.Singleton.StartHost();
+    yield return null;
+}
+```
+
+
+
 ### ref 
 https://docs.unity.com/relay/en/manual/introduction
 
