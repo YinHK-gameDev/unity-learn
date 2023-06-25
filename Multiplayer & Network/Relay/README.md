@@ -108,7 +108,6 @@ using NetworkEvent = Unity.Networking.Transport.NetworkEvent;
 #### Set up the NetworkManager
 After installing the packages from the Unity Dashboard, set up the NetworkManager for Relay and NGO in your project from the Unity Editor.
 
-
 -   Add a new **GameObject** to your scene.
 -   Add the **NetworkManager MonoBehavior**.
 -   In the **MonoBehavior Properties**, select the **UnityTransport** transport. After selecting UnityTransport, you’ll see a `MonoBehavior` called Unity Transport (script) at the bottom of the components list.
@@ -120,13 +119,13 @@ You’ll also need to initialize some variables, such as the maximum number of c
 ```cs
 const int m_MaxConnections = 4;
 
-		public string RelayJoinCode;
+	public string RelayJoinCode;
 ```
 
 
 #### Authenticate a player
 
-You must authenticate both the host player and the connecting players. The simplest way to authenticate players is with the Authentication service's **`SignInAnonymouslyAsync()`** method. 
+You **must authenticate both the host player and the connecting players**. The simplest way to authenticate players is with the Authentication service's **`SignInAnonymouslyAsync()`** method. 
 
 ```cs
 async void Example_AuthenticatingAPlayer()
