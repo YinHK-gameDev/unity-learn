@@ -51,12 +51,18 @@ The peer-to-peer client server model hosts games on the machine of a player, sav
 https://docs.unity.com/relay/en-us/manual/get-started
 
 
+### Relay integrations
 
-### Authentication
+#### Lobby
+The **Lobby service** allows you to connect players before or during a game session with public or private lobbies. You can use the **Lobby service** to group players together in a lobby before starting a game session or prevent connection loss if a host player becomes unavailable.
+
+https://docs.unity.com/lobby/en-us/manual/unity-lobby-service
+
+#### Authentication
 
 You can use Unity Authentication to authenticate players with Unity services, including Relay.
 
-### Unity Transport Package (UTP)
+#### Unity Transport Package (UTP)
 Relay leverages the Unity Transport Package (UTP) to offer a connection-based abstraction layer over UDP sockets with optional functionality like reliability, ordering, and fragmentation. You can use [Relay with UTP and NGO](https://docs.unity.com/relay/en-us/manual/relay-and-ngo), or [only UTP](https://docs.unity.com/relay/en-us/manual/relay-and-utp) if you prefer an alternative netcode library.
 
 
