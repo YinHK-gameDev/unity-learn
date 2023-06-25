@@ -1,5 +1,5 @@
 ## Allocations
-An allocation is a request to the Allocations service from the host player to reserve space on a Relay server for the host plus the number of players the host is expecting to join their game.
+An allocation is a **request to the Allocations service from the host player to reserve space on a Relay server** for the host plus the number of players the host is expecting to join their game.
 
 > After a player joins the host player’s allocation, they receive a **unique allocation ID**, and Relay **considers the player allocated**.
 
