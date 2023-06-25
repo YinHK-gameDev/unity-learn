@@ -1,5 +1,22 @@
 ## Connection flow
 
+### Player
+There are two types of players:
+
+- **The host player** \
+  Host players are players who create a game session and then generate a join code to share with other players. There is only one host player per session. A host player receives its **connection data** after making an allocation request, which is then used to author a **BIND message**.
+- **The joining players** \
+  Joining players are players who receive the join code from the host player and then use the join code to join the game match. Joining players receive their own connection data, and the host's connection data, after making a join request using the join code. These connection data are used to request a connection to the host through the Relay server.
+
+
+#### Maximum connections
+The maximum number of players that can join and connect to the host in a session depends on the maximum number of connections configured by the host when they make the allocation request.
+
+Players can leave at any time by sending a DISCONNECT message. Additional players can join the Relay server and connect to the host, as long as the number of connected players remains under the maximum allowed connections.
+
+
+https://docs.unity.com/relay/en-us/manual/players
+
 
 ### Join codes
 
