@@ -326,6 +326,12 @@ IEnumerator Example_ConfigureTransportAndStartNgoAsConnectingPlayer()
 
 ```
 
+### Relay vs Lobby
+| Relay | Lobby |
+| --- | --- |
+| Relay is a networking solution that connects players in a peer-to-peer fashion using a server-client environment. | Lobby facilitates grouping players and configuration settings before game sessions. |
+| Relay facilitates a multiplayer game session without a dedicated game server (DGS) or the complications of direct peer-to-peer connections. | Lobby isn’t limited to peer-to-peer (P2P) sessions or use with Relay. You can also use Lobby with a traditional multiplaye |
+
 
 
 ### ref 
