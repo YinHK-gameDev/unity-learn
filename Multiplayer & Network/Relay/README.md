@@ -38,7 +38,19 @@ The peer-to-peer client server model hosts games on the machine of a player, sav
     3.  Select the package and click the Install button.
 5. Check out **Simple Relay sample** to learn how to interact with the sample project.
 
+
+#### Steps in using relay for connection
+
+-   **Sign In (Anonymously)** uses Unity’s [Anonymous authentication](https://docs.unity.com/authentication/UsingAnonSignIn.htm) to sign into Relay. This generates a player ID.
+-   **Get Regions** lists all the [regions](https://docs.unity.com/relay/en-us/manual/locations-and-regions) in which a [Relay server](https://docs.unity.com/relay/en-us/manual/relay-servers) is available.
+-   **Create Relay** creates a Relay [allocation](https://docs.unity.com/relay/en-us/manual/allocations-service) and returns the host allocation ID.
+-   **Get Join Code** generates a [join code](https://docs.unity.com/relay/en-us/manual/join-codes) for the host to share with other players.
+-   **Join Relay** joins the Relay allocation and returns a player allocation ID.
+
+
 https://docs.unity.com/relay/en-us/manual/get-started
+
+
 
 ### Authentication
 
@@ -46,7 +58,6 @@ You can use Unity Authentication to authenticate players with Unity services, in
 
 ### Unity Transport Package (UTP)
 Relay leverages the Unity Transport Package (UTP) to offer a connection-based abstraction layer over UDP sockets with optional functionality like reliability, ordering, and fragmentation. You can use [Relay with UTP and NGO](https://docs.unity.com/relay/en-us/manual/relay-and-ngo), or [only UTP](https://docs.unity.com/relay/en-us/manual/relay-and-utp) if you prefer an alternative netcode library.
-
 
 
 ### Use Relay with Netcode for GameObjects (NGO)
@@ -171,11 +182,14 @@ public static async Task<RelayServerData> AllocateRelayServerAndGetJoinCode(int 
 
     return new RelayServerData(allocation, "dtls");
 }
-Configure The transport and start NGO#
-The following code snippet has a function, ConfigureTransportAndStartNgoAsHost, that shows how to use the Relay SDK and NGO SDK to configure the transport and start NGO as a host player.
+```
 
-Note: When starting a Relay server as a host player, both instances of connection data are identical to one another.
+#### Configure The transport and start NGO
 
+The following code snippet has a function, **`ConfigureTransportAndStartNgoAsHost`**, that shows how to use the Relay SDK and NGO SDK to configure the transport and start NGO as a host player.
+
+
+```cs
 IEnumerator Example_ConfigureTransportAndStartNgoAsHost()
 {
     var serverRelayUtilityTask = AllocateRelayServerAndGetJoinCode(m_MaxConnections);
@@ -197,7 +211,13 @@ IEnumerator Example_ConfigureTransportAndStartNgoAsHost()
     NetworkManager.Singleton.StartHost();
     yield return null;
 }
+
 ```
+
+### Joining player
+
+When your game client functions as a joining player, it must be able to join an allocation, configure the connection type, and create a singleton instance of the `NetworkDriver` to bind to the Relay server and send a connection request to the host player.
+
 
 
 
