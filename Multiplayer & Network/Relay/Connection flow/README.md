@@ -1,4 +1,28 @@
 ## Connection flow
+The connection flow is the process by which the Allocations service reserves slots on a Relay server to group players into a match. The process involves two types of players: a host player and joining players.
+
+**flow:** \
+1. The host player requests allocation
+2. The Allocations service selects a Relay server
+3. The Allocations service sends the connection data to the host player
+4. The host player binds to the Relay server
+5. The host player requests a join code
+6. The Allocations service returns a join code to the host player
+7. The host player shares the join code with joining players
+8. The joining players use the join code
+9. The Allocations service sends connection data to the joining player
+10. The joining player binds to the Relay server
+11. The joining player sends connection request
+
+
+
+
+
+
+
+
+
+
 
 ### Player
 There are two types of players:
