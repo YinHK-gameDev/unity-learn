@@ -49,7 +49,22 @@ https://docs.unity.com/relay/manual/relay-message-protocol#PING
 https://docs.unity.com/relay/en-us/manual/client-timeouts
 
 
+### Host migration(Relay host role transfer)
+
+Host migration is the act of transferring the Relay host role from one player to another.
+
+> **Note**: Relay doesn't have any method to migrate the host role when a host player disconnects from the Relay server. If the host player disconnects from the Relay server, Relay ends the host player’s allocation and disconnects the remaining players.
+
+you can add custom logic to your game to migrate the Relay host role to another player if the original host player disconnects.
+
+But you can add custom logic to your game to migrate the Relay host role to another player if the original host player disconnects.
+
+The logic might include a workflow similar to the following:
+
+1. Detect if the host player disconnects prematurely.
+2. Place the remaining players in a **lobby**.
+3. Select one of the remaining players to fill the host role.
+4. Start a **new Relay allocation**.
 
 ### ref
-
 https://docs.unity.com/relay/en-us/manual/clients
