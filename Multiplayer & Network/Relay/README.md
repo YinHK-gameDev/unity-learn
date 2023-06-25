@@ -86,8 +86,18 @@ using Unity.Networking.Transport;
 using Unity.Networking.Transport.Relay;
 using NetworkEvent = Unity.Networking.Transport.NetworkEvent;
 
-
 ```
+
+#### Set up the NetworkManager
+After installing the packages from the Unity Dashboard, set up the NetworkManager for Relay and NGO in your project from the Unity Editor.
+
+
+-   Add a new **GameObject** to your scene.
+-   Add the **NetworkManager MonoBehavior**.
+-   In the **MonoBehavior Properties**, select the **UnityTransport** transport. After selecting UnityTransport, you’ll see a `MonoBehavior` called Unity Transport (script) at the bottom of the components list.
+-   Set the **Protocol Type** of the new component to **Relay Unity Transport**.
+
+
 
 ### ref 
 https://docs.unity.com/relay/en/manual/introduction
