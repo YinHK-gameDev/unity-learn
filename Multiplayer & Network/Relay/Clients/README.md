@@ -30,6 +30,21 @@ https://docs.unity.com/relay/en-us/manual/relay-message-protocol#CLOSE
 
 https://docs.unity.com/relay/en-us/manual/disconnection
 
+### Client timeouts
+
+Client timeouts, also called idle timeouts, occur when Relay disconnects a client from a Relay server **due to inactivity**. The default **time to live (TTL)** before Relay disconnects a client is **10 seconds**. The disconnect TTL is **60 seconds** when the **host is alone** (after the **BIND message** but before a peer connects to them with a **CONNECT message**).
+
+A **timeout (controlled by a TTL value)** is a mechanism that limits the lifetime of idle connections to a Relay server. Relay uses a TTL to decide when a client times out from lack of network activity.
+
+Because some game types might have a low message rate, such as turn-based strategy games, you might need to configure the game client to send **PING messages** to the Relay server to **keep the connection alive to prevent a timeout**. The **PING message** **resets the idle timeout** for a player connection.
+
+> When an allocation expires through a client timeout, the **Allocations service** **removes the allocation** from the Relay server, which sends the client a **timeout error message**.
+
+> **Note**: If an allocation times out, the Relay server responds with an **allocation ID** not found error. It's common for **allocation IDs** to expire due to a lack of **PING messages**.
+
+https://docs.unity.com/relay/en-us/manual/client-timeouts
+
+
 
 ### ref
 
