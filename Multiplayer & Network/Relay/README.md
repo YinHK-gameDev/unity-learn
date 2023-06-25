@@ -111,7 +111,21 @@ const int m_MaxConnections = 4;
 
 You must authenticate both the host player and the connecting players. The simplest way to authenticate players is with the Authentication service's **`SignInAnonymouslyAsync()`** method. 
 
-
+```cs
+async void Example_AuthenticatingAPlayer()
+{
+    try
+    {
+        await UnityServices.InitializeAsync();
+        await AuthenticationService.Instance.SignInAnonymouslyAsync();
+        var playerID = AuthenticationService.Instance.PlayerId;
+    }
+    catch (Exception e)
+    {
+        Debug.Log(e);
+    }
+}
+```
 
 https://docs.unity.com/authentication/en-us/manual/intro-unity-authentication
 
