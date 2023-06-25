@@ -13,6 +13,14 @@ Disconnection is what happens when a joining player sends a DISCONNECT message t
 
 For a player to **deallocate from a Relay server (remove their allocation from the Relay server)**, they must send a **CLOSE message** to the Relay server. As a result, players must rebind to the Relay server through the connection flow after closing their connection.
 
+In a typical game session, every player closes their own connection, with the host closing their connection last. Because the host player is the one who created the join code, closing their connection triggers Relay to:
+
+- Release the host player’s allocation and the join code they created.
+- End the host player’s connection to the Relay server.
+
+When a player closes a connection, the Relay server updates all connected players to remove the disconnected player.
+
+> Relay servers also disconnect players if the **connection times out**. You can prevent timeouts by keeping the connection alive.
 
 DISCONNECT message \
 https://docs.unity.com/relay/en-us/manual/relay-message-protocol#DISCONNE
