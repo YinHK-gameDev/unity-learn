@@ -68,6 +68,49 @@ Relay leverages the Unity Transport Package (UTP) to offer a connection-based ab
 
 The Relay SDK works well with the Unity Transport Package (UTP), a modern networking library built for the Unity game engine to abstract networking. UTP lets developers focus on the game rather than low-level protocols and networking frameworks. UTP is netcode-agnostic, which means it can work with various high-level networking code abstractions, supports all Unity’s netcode solutions, and works with other netcode libraries.
 
+#### DTLS encryption
+
+Relay supports DTLS encryption of all UDP communication to and from the Relay servers.
+
+Set the Relay server **connectionType** to **dtls** when creating an allocation as a host player to enable **DTLS encryption**.
+
+The following code snippet has a function, AllocateRelayServerAndGetJoinCode, that shows how to use the Relay SDK to create an allocation, request a join code, and **configure the connection type as DTLS**.
+
+
+```cs
+public static async Task<(string ipv4address, ushort port, byte[] allocationIdBytes, byte[] connectionData, byte[] key, string joinCode)> AllocateRelayServerAndGetJoinCode(int maxConnections, string region = null)
+{
+    Allocation allocation;
+    string createJoinCode;
+    try
+    {
+        allocation = await RelayService.Instance.CreateAllocationAsync(maxConnections, region);
+    }
+    catch (Exception e)
+    {
+        Debug.LogError($"Relay create allocation request failed {e.Message}");
+        throw;
+    }
+
+    Debug.Log($"server connection data: {allocation.ConnectionData[0]} {allocation.ConnectionData[1]}");
+    Debug.Log($"server allocation ID: {allocation.AllocationId}");
+
+    try
+    {
+        createJoinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
+    }
+    catch
+    {
+        Debug.LogError("Relay create join code request failed");
+        throw;
+    }
+
+    var dtlsEndpoint = allocation.ServerEndpoints.First(e => e.ConnectionType == "dtls");
+    return (dtlsEndpoint.Host, (ushort)dtlsEndpoint.Port, allocation.AllocationIdBytes, allocation.ConnectionData, allocation.Key, createJoinCode);
+}
+
+```
+
 ### Use Relay with Netcode for GameObjects (NGO)
 You **must configure your Unity project for Unity before using Relay with NGO**. Check out Get started with Relay. After you’ve enabled the Relay service and linked your Unity Project ID through the Unity Editor, you can **import the requirements**, set up the **`NetworkManager`**, **authenticate the player with Unity services**, and start working with the Relay SDK.
 
