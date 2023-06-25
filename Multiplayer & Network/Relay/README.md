@@ -17,6 +17,27 @@ The peer-to-peer client server model hosts games on the machine of a player, sav
 
 **Relay supports DTLS (Datagram Transport Layer Security) encryption of all UDP communication to and from the Relay servers which enables users to deliver data that is authenticated and encrypted**.
 
+### Get started with Relay
+
+#### Set up a Relay project
+**Relay is a PAYG (pay as you go) service** with a free tier. If you exceed the free tier monthly usage limit, you must enter payment information to keep full access to Relay and any other services.
+
+1. Create a Unity Dashboard project.
+2. Enable the Relay service.
+    1.  From the Unity Dashboard, select **Multiplayer** > **Relay**.
+    2.  Select **Set up Relay**.
+    3.  Continue to the Relay **Setup guide** embedded in the Unity Dashboard.
+3. Link your Relay project in the Unity Editor.
+    1.  Open your project in the Unity Engine and navigate to **Edit** > **Project Settings**.
+    2.  From the **Project Settings** window, go to the **Services** tab.
+    3.  Select **Use an existing Unity project ID** and link to the Dashboard project displayed in the **Setup guide**.
+    4.  After you the project links successfully, you're ready to move on to the next step of the integration process.
+4. Install the Relay package.
+    1.  In Unity, navigate to **Window** > **Package Manager**.
+    2.  From the Package Manager, search or scroll to find the “Relay” package within the Unity Registry.
+    3.  Select the package and click the Install button.
+5. Check out **Simple Relay sample** to learn how to interact with the sample project.
+
 ### ref 
 https://docs.unity.com/relay/en/manual/introduction
 
