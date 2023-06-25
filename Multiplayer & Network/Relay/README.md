@@ -1,5 +1,5 @@
 ## Unity Relay
-**Netcode for GameObjects (Netcode)** allows you to connect to a host by its IP and port. However, if the host isn't on the same network as you (for example, somewhere over the Internet), you will need some extra services to achieve a successful connection and, as a result, a successful game.
+**Netcode for GameObjects (Netcode)** allows you to connect to a host by its IP and port. However, if the **host isn't on the same network as you** (for example, somewhere over the Internet), you will need some **extra services to achieve a successful connection** and, as a result, a successful game.
 
 Unity Relay exposes a way for game developers to securely offer increased connectivity between players by using a join code style workflow without needing to invest in a third-party solution, maintain dedicated game servers (DGS), or worry about the network complexities of a peer-to-peer game. Instead of using DGS, the Relay service **provides connectivity through a universal Relay server** **acting as a proxy**.
 
