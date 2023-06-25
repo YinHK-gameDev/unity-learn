@@ -49,6 +49,15 @@ https://docs.unity.com/relay/manual/relay-message-protocol#PING
 https://docs.unity.com/relay/en-us/manual/client-timeouts
 
 
+### Keep a connection alive
+Relay servers automatically disconnect clients after a period of inactivity.
+
+For games with a **lower message frequency**, it’s important to **keep the connection alive** with a method that you regularly call, such as in the **`Update()`** loop.
+
+> If you’re using **Relay with NGO**, the **network manager (NetworkManager)** **keeps the connection alive automatically**. However, it will only do so after you’ve successfully called **`StartClient`** or **`StartHost`**.
+
+https://docs.unity.com/relay/en-us/manual/keep-connection-alive
+
 ### Host migration(Relay host role transfer)
 
 Host migration is the act of transferring the Relay host role from one player to another.
