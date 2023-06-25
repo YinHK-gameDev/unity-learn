@@ -65,7 +65,11 @@ private IEnumerator StartRelayServer()
 }
 ```
 
+> A **maximum of 100 players can join the host** in the same game session. Not all game types will scale to that high amount of players without the use of a dedicated game server. Carefully consider the impact on the host player when attempting high player count sessions with Relay. This limit's aligned with the maximum number of players allowed in a Lobby.
 
+> Currently, there is no region-locking functionality; anyone can request an allocation in any region if the region has enough capacity to support the request.
+
+> 
 
 ### ref 
 https://docs.unity.com/relay/en-us/manual/relay-servers
