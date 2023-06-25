@@ -20,8 +20,6 @@ https://docs.unity.com/relay/en-us/manual/relay-message-protocol#DISCONNE
 CLOSE message \
 https://docs.unity.com/relay/en-us/manual/relay-message-protocol#CLOSE
 
-https://docs.unity.com/relay/en-us/manual/relay-message-protocol#CLOSE
-
 https://docs.unity.com/relay/en-us/manual/disconnection
 
 
