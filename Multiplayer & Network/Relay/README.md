@@ -61,6 +61,8 @@ https://docs.unity.com/lobby/en-us/manual/unity-lobby-service
 
 You can use Unity Authentication to authenticate players with Unity services, including Relay.
 
+https://docs.unity.com/relay/en-us/manual/authentication
+
 #### Unity Transport Package (UTP)
 Relay leverages the Unity Transport Package (UTP) to offer a connection-based abstraction layer over UDP sockets with optional functionality like reliability, ordering, and fragmentation. You can use [Relay with UTP and NGO](https://docs.unity.com/relay/en-us/manual/relay-and-ngo), or [only UTP](https://docs.unity.com/relay/en-us/manual/relay-and-utp) if you prefer an alternative netcode library.
 
