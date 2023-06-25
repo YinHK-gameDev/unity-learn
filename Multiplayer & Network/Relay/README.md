@@ -38,6 +38,8 @@ The peer-to-peer client server model hosts games on the machine of a player, sav
     3.  Select the package and click the Install button.
 5. Check out **Simple Relay sample** to learn how to interact with the sample project.
 
+https://docs.unity.com/relay/en-us/manual/get-started
+
 ### ref 
 https://docs.unity.com/relay/en/manual/introduction
 
