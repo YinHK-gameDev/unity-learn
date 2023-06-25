@@ -2,17 +2,27 @@
 The connection flow is the process by which the Allocations service reserves slots on a Relay server to group players into a match. The process involves two types of players: a host player and joining players.
 
 **flow:** 
-1. The host player requests allocation
-2. The Allocations service selects a Relay server
-3. The Allocations service sends the connection data to the host player
-4. The host player binds to the Relay server
-5. The host player requests a join code
-6. The Allocations service returns a join code to the host player
-7. The host player shares the join code with joining players
-8. The joining players use the join code
-9. The Allocations service sends connection data to the joining player
-10. The joining player binds to the Relay server
-11. The joining player sends connection request
+1. **The host player requests allocation**
+2. **The Allocations service selects a Relay server** 
+   > When the Allocations service finds a Relay server, it reserves a space on the Relay server for the game session. At this point, the Relay server also generates **a unique secret key**. The Relay server returns the **secret key** to the Allocations service, in addition to the **Relay server IP**, the **Relay server ports**, and the **connection data**.
+3. **The Allocations service sends the connection data to the host player**
+4. **The host player binds to the Relay server**
+   > The host sends a **BIND message** to the selected **Relay server** using the data received from the response from the allocation request. The **BIND message** has the **connection data**, the** **accept mode, nonce, and HMAC**. If the host doesn’t send the bind to the Relay server within **60 seconds after making the allocation, the allocation **times out from inactivity**.
+6. **The host player requests a join code**
+   > **Once bound to the Relay server**, the host player can request a join code from the **Allocations service**.
+8. **The Allocations service returns a join code to the host player**
+   > The join code the Allocations service returns uniquely represents the host player’s allocation to the Relay server, and allows joining players to bind to the same Relay server and connect to the host player.
+10. **The host player shares the join code with joining players**
+11. **The joining players use the join code**
+    > The host player shares the unique join code with other players through any method, including verbally, through a text message, or through a Lobby. The join codes are short and easy to remember to ease sharing. \
+    > The players that use the join code with a join request to the Allocations service become the joining players. \
+    > Any number of joining players can use the same join code so long as the number doesn't exceed the maximum number of connections specified in the initial allocation request.
+13. **The Allocations service sends connection data to the joining player**
+    > The **Allocations service** uses the join code to look up the host player’s allocation and returns the data to the joining players. \
+    > The response from the Allocations service has the **Relay server IP address**, the **Relay server port**, the **secret key**, the **encrypted joining player’s connection data**, the **joining player’s allocation ID**, and the **encrypted host connection data**. The joining player can then use the **secret key** to **decrypt and use the host connection data to connect to the host**.
+15. **The joining player binds to the Relay server**
+16. **The joining player sends connection request**
+    > The joining player sends a BIND message to the Relay server using its connection data it received from the response to the join request made to the Allocations service.
 
 
 
