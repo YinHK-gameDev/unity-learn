@@ -42,6 +42,10 @@ Because some game types might have a low message rate, such as turn-based strate
 
 > **Note**: If an allocation times out, the Relay server responds with an **allocation ID** not found error. It's common for **allocation IDs** to expire due to a lack of **PING messages**.
 
+
+PING message \
+https://docs.unity.com/relay/manual/relay-message-protocol#PING
+
 https://docs.unity.com/relay/en-us/manual/client-timeouts
 
 
