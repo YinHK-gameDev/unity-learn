@@ -14,5 +14,13 @@ After a host player creates a game session, they then request a join code from t
 > Allocations and join codes are valid for as long as the host player is connected to the Relay server. If the host player disconnects from the Relay server, or if the connection times out, the allocation and join code become invalid. There is no way to explicitly invalidate a join code.
 
 
+#### Generate a join code
+You can **generate a join code** as the host player either with the **Relay SDK** or directly via the **Relay REST API**.
+
+
+#### Use a join code to join a game
+You can use a join code to **join a Relay server** as a joining player with the **Relay SDK** or the **Relay API**.
+
+
 ### ref
 https://docs.unity.com/relay/en-us/manual/connection-flow
