@@ -221,8 +221,65 @@ IEnumerator Example_ConfigureTransportAndStartNgoAsHost()
 
 ### Joining player
 
-When your game client functions as a joining player, it must be able to join an allocation, configure the connection type, and create a singleton instance of the `NetworkDriver` to bind to the Relay server and send a connection request to the host player.
+When your game client functions as a joining player, it must be able to **join an allocation, configure the connection type**, and **create a singleton instance** of the **`NetworkDriver`** to **bind to the Relay server** and **send a connection request to the host player**.
 
+#### Join An allocation
+
+The following code snippet has a function, `JoinRelayServerFromJoinCode`, that shows how to use the Relay SDK to join an allocation with a join code and configure the connection type as [DTLS](https://docs.google.com/document/d/1MoQqubsoL5hzkx9JsDmLrZx9xaOBxjx9YPmwemNRhQU/edit#heading=h.h9iajtxrxw1h).
+
+```cs
+
+public static async Task<RelayServerData> JoinRelayServerFromJoinCode(string joinCode)
+{
+    JoinAllocation allocation;
+    try
+    {
+        allocation = await RelayService.Instance.JoinAllocationAsync(joinCode);
+    }
+    catch
+    {
+        Debug.LogError("Relay create join code request failed");
+        throw;
+    }
+
+    Debug.Log($"client: {allocation.ConnectionData[0]} {allocation.ConnectionData[1]}");
+    Debug.Log($"host: {allocation.HostConnectionData[0]} {allocation.HostConnectionData[1]}");
+    Debug.Log($"client: {allocation.AllocationId}");
+
+    return new RelayServerData(allocation, "dtls");
+}
+```
+
+#### Configure the transport and start NGO as a joining player
+
+The following sample code demonstrates how to **configure the transport** and **start Netcode for GameObjects (NGO) as a joining player**.
+
+```cs
+IEnumerator Example_ConfigureTransportAndStartNgoAsConnectingPlayer()
+{
+    // Populate RelayJoinCode beforehand through the UI
+    var clientRelayUtilityTask = JoinRelayServerFromJoinCode(RelayJoinCode);
+
+    while (!clientRelayUtilityTask.IsCompleted)
+    {
+        yield return null;
+    }
+
+    if (clientRelayUtilityTask.IsFaulted)
+    {
+        Debug.LogError("Exception thrown when attempting to connect to Relay Server. Exception: " + clientRelayUtilityTask.Exception.Message);
+        yield break;
+    }
+
+    var relayServerData = clientRelayUtilityTask.Result;
+
+    NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
+
+    NetworkManager.Singleton.StartClient();
+    yield return null;
+}
+
+```
 
 
 
