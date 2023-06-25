@@ -343,5 +343,5 @@ https://help.resilio.com/hc/en-us/articles/204754779-What-is-a-Relay-Server-
 
 https://docs-multiplayer.unity3d.com/netcode/current/relay/
 
-Relay Scripting API \
+Relay SDK Scripting API \
 https://docs.unity.com/relay/en-us/packages/com.unity.services.relay/1.0/api/Unity.Services.Relay
