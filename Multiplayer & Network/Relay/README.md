@@ -97,6 +97,27 @@ After installing the packages from the Unity Dashboard, set up the NetworkManage
 -   In the **MonoBehavior Properties**, select the **UnityTransport** transport. After selecting UnityTransport, you’ll see a `MonoBehavior` called Unity Transport (script) at the bottom of the components list.
 -   Set the **Protocol Type** of the new component to **Relay Unity Transport**.
 
+#### Set variables and utility functions
+You’ll also need to initialize some variables, such as the maximum number of connections and the join code.
+
+```cs
+const int m_MaxConnections = 4;
+
+		public string RelayJoinCode;
+```
+
+
+#### Authenticate a player
+
+You must authenticate both the host player and the connecting players. The simplest way to authenticate players is with the Authentication service's **`SignInAnonymouslyAsync()`** method. 
+
+
+
+https://docs.unity.com/authentication/en-us/manual/intro-unity-authentication
+
+https://docs.unity.com/authentication/en-us/manual/use-anon-signin
+
+https://docs.unity.com/authentication/en-us/manual/platform-specific-signin
 
 
 ### ref 
