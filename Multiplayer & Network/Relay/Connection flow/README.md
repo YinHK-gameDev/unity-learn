@@ -40,6 +40,14 @@ You can use a join code to **join a Relay server** as a joining player with the 
 
 
 ### Connection data
+Connection data is **a collection of opaque data that uniquely represents a player's connection to a Relay server**. The primary purpose of connection data is to establish a communication channel between the host player and the joining players.
+
+A joining player receives the host player connection data from the Allocations service after requesting to join a session. After the player is bound to a Relay server, they can use the connection data to request permission to open a message channel with the host player. If the Allocations service accepts the request, the joining player can send messages through the Relay server to the host player.
+
+> To send messages through the Relay server, the message must have the **allocation ID** of the recipient. Players aren't aware of the **allocation ID** until they successfully request a connection to the Relay server and the host player.
+
+
+https://docs.unity.com/relay/en-us/manual/connection-data
 
 ### ref
 https://docs.unity.com/relay/en-us/manual/connection-flow
