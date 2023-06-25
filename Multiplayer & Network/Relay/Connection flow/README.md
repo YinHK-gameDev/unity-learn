@@ -25,6 +25,25 @@ The connection flow is the process by which the Allocations service reserves slo
     > The joining player sends a BIND message to the Relay server using its connection data it received from the response to the join request made to the Allocations service.
 
 
+### Allocating
+Allocating is when a host player tells the **Allocations service** about their intent to **connect to a Relay server**, and the Allocations service reserves slots on a Relay server.
+
+### Binding
+Binding is when the player establishes a connection with the Relay server that the Allocations service reserved for the player during the allocating process. After the player completes the binding process, the Relay server can discover the player’s IP address and exchange packets.
+
+> A BIND is a specific message sent via the Relay protocol from the game client to the Relay server to establish its connection to the Relay server.
+>
+> **Note**: You typically send **BIND messages** after calling the allocate and join APIs, which retrieve the Relay server’s destination address for use with the **BIND message**.
+
+
+### Joining 
+Joining is when a joining player **joins the host player’s allocation on a Relay server**. After the joining player completes the joining process, they can exchange messages with the host player.
+
+> Allocating and joining are similar processes. The primary difference is that the **join API response has the host connection data**. Note: A join is when a joining player (a non-host player) client joins the host client’s game session. Under the hood, it’s another allocate call to the Relay service.
+
+
+
+
 
 ### Player
 There are two types of players:
