@@ -49,7 +49,45 @@ Relay leverages the Unity Transport Package (UTP) to offer a connection-based ab
 
 
 
+### Use Relay with Netcode for GameObjects (NGO)
+You **must configure your Unity project for Unity before using Relay with NGO**. Check out Get started with Relay. After you’ve enabled the Relay service and linked your Unity Project ID through the Unity Editor, you can **import the requirements**, set up the **`NetworkManager`**, **authenticate the player with Unity services**, and start working with the Relay SDK.
 
+After setting up the Relay SDK, configure the game client to perform the tasks required to join a **Relay game session** as a **host player** and as a **connecting player**.
+
+#### Import the requirements
+
+Before using the Relay service, you **must import the Relay SDK and UTP along with other namespaces**. Use the **code snippet you generated from the Packages and SDK Download Center**.
+
+1.  Sign in to the Unity Dashboard.
+2.  Navigate to the **Packages and SDK Download Center**.
+3.  Select the following packages:
+    - Relay    
+    - Netcode for GameObjects   
+4.  Select **Generate Code Snippet**, then follow the instructions.
+    
+
+The following code sample demonstrates an example of requirement imports.
+
+```cs
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using UnityEngine;
+using Unity.Services.Core;
+using Unity.Services.Authentication;
+using Unity.Services.Relay;
+using Unity.Services.Relay.Http;
+using Unity.Services.Relay.Models;
+using Unity.Netcode;
+using Unity.Netcode.Transports.UTP;
+using Unity.Networking.Transport;
+using Unity.Networking.Transport.Relay;
+using NetworkEvent = Unity.Networking.Transport.NetworkEvent;
+
+
+```
 
 ### ref 
 https://docs.unity.com/relay/en/manual/introduction
