@@ -47,7 +47,6 @@ The peer-to-peer client server model hosts games on the machine of a player, sav
 -   **Get Join Code** generates a [join code](https://docs.unity.com/relay/en-us/manual/join-codes) for the host to share with other players.
 -   **Join Relay** joins the Relay allocation and returns a player allocation ID.
 
-
 https://docs.unity.com/relay/en-us/manual/get-started
 
 
@@ -65,6 +64,7 @@ You can use Unity Authentication to authenticate players with Unity services, in
 #### Unity Transport Package (UTP)
 Relay leverages the Unity Transport Package (UTP) to offer a connection-based abstraction layer over UDP sockets with optional functionality like reliability, ordering, and fragmentation. You can use [Relay with UTP and NGO](https://docs.unity.com/relay/en-us/manual/relay-and-ngo), or [only UTP](https://docs.unity.com/relay/en-us/manual/relay-and-utp) if you prefer an alternative netcode library.
 
+The Relay SDK works well with the Unity Transport Package (UTP), a modern networking library built for the Unity game engine to abstract networking. UTP lets developers focus on the game rather than low-level protocols and networking frameworks. UTP is netcode-agnostic, which means it can work with various high-level networking code abstractions, supports all Unity’s netcode solutions, and works with other netcode libraries.
 
 ### Use Relay with Netcode for GameObjects (NGO)
 You **must configure your Unity project for Unity before using Relay with NGO**. Check out Get started with Relay. After you’ve enabled the Relay service and linked your Unity Project ID through the Unity Editor, you can **import the requirements**, set up the **`NetworkManager`**, **authenticate the player with Unity services**, and start working with the Relay SDK.
