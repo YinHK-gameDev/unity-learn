@@ -70,7 +70,7 @@ The Relay SDK works well with the Unity Transport Package (UTP), a modern networ
 
 #### DTLS encryption
 
-Relay supports DTLS encryption of all UDP communication to and from the Relay servers.
+**Relay supports DTLS encryption** of all **UDP communication** to and from the Relay servers.
 
 Set the Relay server **connectionType** to **dtls** when creating an allocation as a host player to enable **DTLS encryption**.
 
