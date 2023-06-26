@@ -47,7 +47,7 @@ When a player creates a new lobby, they can set the following properties with th
 
 #### Public lobby
 
-Public lobbies do not require a lobby code to join and are displayed in query results for anyone to join.
+Public lobbies do not require a lobby code to join and are **displayed in query results** for anyone to join.
 
 The following code sample shows how to create a public lobby:
 
@@ -56,11 +56,26 @@ The following code sample shows how to create a public lobby:
 string lobbyName = "new lobby";
 int maxPlayers = 4;
 CreateLobbyOptions options = new CreateLobbyOptions();
-options.IsPrivate = false;
+//Set IsPrivate to false for public lobby
+options.IsPrivate = false;  //set IsPrivate to false for public lobby
 
 Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
 
 ```
+
+#### Private lobby
+Private lobbies are **never visible in query results** and **require the lobby code or I**D to be manually provided to new players.
+
+```cs
+string lobbyName = "new lobby";
+int maxPlayers = 4;
+CreateLobbyOptions options = new CreateLobbyOptions();
+//Set IsPrivate to true for private lobby
+options.IsPrivate = true;
+
+Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
+```
+
 
 
 
