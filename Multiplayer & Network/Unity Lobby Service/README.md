@@ -26,6 +26,18 @@ Unity Package named **`com.unity.services.lobby`**.
 
 
 ### Game Lobby Sample
+This sample demonstrates how to use the Lobby and Relay packages to create a typical game lobby experience.
+
+
+-   **Anonymous Auth login**: Track player credentials without a persistent account.
+-   **Lobby creation**: Players host lobbies for others to join.
+-   **Lobby query**: Find a list of lobbies with filters, or use lobby codes.
+-   **Relay obfuscation**: Players in a lobby are connected through an anonymous IP.
+-   **UTP communication**: Players transmit basic data to lobby members in real time.
+-   **Lobby + Relay connection management**: Together, the services automatically handle new connections and disconnections.
+-   **Vivox Voice**: Create a voice channel for the lobby to allow for voice communication, with per-user volume control and muting.
+
+  
 https://github.com/Unity-Technologies/com.unity.services.samples.game-lobby
 
 ### ref 
