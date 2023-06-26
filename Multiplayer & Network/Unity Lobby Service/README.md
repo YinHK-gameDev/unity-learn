@@ -196,3 +196,8 @@ https://docs.unity.com/lobby/en/manual/unity-lobby-service
 https://unity.com/products/lobby
 
 https://www.youtube.com/watch?v=-KDlEBfCBiU
+
+Lobby SDK Scripting API \
+https://docs.unity.com/lobby/en-us/packages/com.unity.services.lobby/1.0/api/Unity.Services.Lobbies
+
+
