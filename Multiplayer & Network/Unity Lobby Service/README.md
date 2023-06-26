@@ -76,6 +76,95 @@ options.IsPrivate = true;
 Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
 ```
 
+#### Create a lobby with standard, non-indexed data
+
+Lobby data can be included in the create request as well as in subsequent update requests.
+
+The following code sample shows how to create a lobby with standard, non-indexed data:
+
+```cs
+string lobbyName = "new lobby";
+int maxPlayers = 4;
+CreateLobbyOptions options = new CreateLobbyOptions();
+options.Data = new Dictionary<string, DataObject>()
+{
+    {
+        "ExamplePublicLobbyData", new DataObject(
+            visibility: DataObject.VisibilityOptions.Public, // Visible publicly.
+            value: "ExamplePublicLobbyData")
+    },
+};
+
+Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
+```
+
+
+#### Create a lobby with indexed string data
+The following code sample shows how to create a lobby with indexed string data:
+
+```cs
+string lobbyName = "new lobby";
+int maxPlayers = 4;
+CreateLobbyOptions options = new CreateLobbyOptions();
+options.Data = new Dictionary<string, DataObject>()
+{
+    {
+        "GameMode", new DataObject(
+            visibility: DataObject.VisibilityOptions.Public, // Visible publicly.
+            value: "Conquest",
+            index: DataObject.IndexOptions.S1)
+    },
+};
+
+Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
+
+```
+#### Create a lobby with indexed numeric data
+
+The following code sample shows how to create a lobby with indexed numeric data:
+
+```cs
+string lobbyName = "new lobby";
+int maxPlayers = 4;
+CreateLobbyOptions options = new CreateLobbyOptions();
+options.Data = new Dictionary<string, DataObject>()
+{
+    {
+        "MinimumSkillLevel", new DataObject(
+            visibility: DataObject.VisibilityOptions.Public, // Visible publicly.
+            value: "25",
+            index: DataObject.IndexOptions.N1)
+    },
+};
+
+Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
+```
+
+#### Create a lobby with player data for the host
+As with lobby data, player data for the host can also be included in the create request instead of adding it with a separate update request.
+
+The following code sample shows how to create a lobby with player data for the host:
+
+```cs
+string lobbyName = "new lobby";
+int maxPlayers = 4;
+CreateLobbyOptions options = new CreateLobbyOptions();
+// Ensure you sign-in before calling Authentication Instance.
+// See IAuthenticationService interface.
+options.Player = new Player(
+    id: AuthenticationService.Instance.PlayerId,
+    data: new Dictionary<string, PlayerDataObject>()
+    {
+        {
+            "ExampleMemberPlayerData", new PlayerDataObject(
+                visibility: PlayerDataObject.VisibilityOptions.Member, // Visible only to members of the lobby.
+                value: "ExampleMemberPlayerData")
+        }
+    });
+
+Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
+
+```
 
 
 
