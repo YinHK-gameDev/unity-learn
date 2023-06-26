@@ -13,6 +13,17 @@ Lobby service can do:
 - Query for lobbies that match a specific set of requirements (e.g. game mode, map type).
 
 
+### Install Lobby SDK
+Unity Package named **`com.unity.services.lobby`**.
+
+
+1.  In Unity, navigate to **Window** > **Package Manager**.
+2.  From the **Package Manager**, search for **`com.unity.services.lobby`** or scroll through the **Unity Registry** to find the **Lobby** package.
+3.  Select the package and click **Install**.
+
+   
+
+
 
 ### Game Lobby Sample
 https://github.com/Unity-Technologies/com.unity.services.samples.game-lobby
