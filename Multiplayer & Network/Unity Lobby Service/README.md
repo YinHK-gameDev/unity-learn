@@ -166,7 +166,9 @@ Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers
 
 ```
 
+#### Active and inactive lobbies
 
+Lobbies are marked as **inactive** if they haven’t been updated or sent a heartbeat request in the past 30 seconds. You can configure this timeout period. Inactive public lobbies do not appear in query results, and both public and private inactive lobbies are automatically deleted. **Inactive lobbies** can be reactivated by being updated or sending a heartbeat request.
 
 ### Game Lobby Sample
 This sample demonstrates how to use the Lobby and Relay packages to create a typical game lobby experience.
@@ -182,11 +184,6 @@ This sample demonstrates how to use the Lobby and Relay packages to create a typ
 
 https://docs.unity.com/lobby/en-us/manual/game-lobby-sample \  
 https://github.com/Unity-Technologies/com.unity.services.samples.game-lobby
-
-### Active and inactive lobbies
-
-Lobbies are marked as **inactive** if they haven’t been updated or sent a heartbeat request in the past 30 seconds. You can configure this timeout period. Inactive public lobbies do not appear in query results, and both public and private inactive lobbies are automatically deleted. **Inactive lobbies** can be reactivated by being updated or sending a heartbeat request.
-
 
 
 
