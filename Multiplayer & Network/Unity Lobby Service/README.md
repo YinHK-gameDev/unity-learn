@@ -22,6 +22,9 @@ Unity Package named **`com.unity.services.lobby`**.
 3.  Select the package and click **Install**.
 
    
+### Authentication
+To use the Lobby service, authenticate yourself using [Unity Authentication](https://docs.unity.com/authentication/en/manual/intro-unity-authentication). Make sure to [initialize the authentication service](https://docs.unity.com/authentication/en/manual/initialize-sdk) and sign in before making any calls using the Lobby SDK. While there are many sign in methods, the easiest way to get started is with Anonymous sign in. See the [Unity Authentication anonymous sign in guide](https://docs.unity.com/authentication/en/manual/use-anon-signin) to get started.
+
 
 
 
@@ -37,7 +40,7 @@ This sample demonstrates how to use the Lobby and Relay packages to create a typ
 -   **Lobby + Relay connection management**: Together, the services automatically handle new connections and disconnections.
 -   **Vivox Voice**: Create a voice channel for the lobby to allow for voice communication, with per-user volume control and muting.
 
-  
+https://docs.unity.com/lobby/en-us/manual/game-lobby-sample \  
 https://github.com/Unity-Technologies/com.unity.services.samples.game-lobby
 
 ### ref 
