@@ -228,7 +228,7 @@ Lobby hosts can delete their lobbies. Deleted lobbies are no longer accessible; 
 
 > **Note**: The lobby is automatically deleted when the last player leaves the lobby.
 
-Clients should expect that they can be removed from a lobby at any time. This could be due to the lobby being deleted, the player being removed from a lobby by the host, the player being removed from the lobby due to a relay disconnect, or a service outage.
+> Clients should expect that they can be removed from a lobby at any time. This could be due to the lobby being deleted, the player being removed from a lobby by the host, the player being removed from the lobby due to a relay disconnect, or a service outage.
 
 
 ```cs
