@@ -3,6 +3,32 @@ Players can join a lobby by specifying a **lobby ID** or by providing a **lobby 
 
 
 
+### Join by specifying a lobby ID
+```cs
+try
+{
+    await LobbyService.Instance.JoinLobbyByIdAsync("lobbyId");
+}
+catch (LobbyServiceException e)
+{
+    Debug.Log(e);
+}
+```
+
+### Join by providing a lobby code
+
+```cs
+try
+{
+    await LobbyService.Instance.JoinLobbyByCodeAsync("lobbyCode");
+}
+catch (LobbyServiceException e)
+{
+    Debug.Log(e);
+}
+
+```
+
 
 ### ref 
 https://docs.unity.com/lobby/en-us/manual/join-a-lobby
