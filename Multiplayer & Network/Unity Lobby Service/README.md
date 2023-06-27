@@ -170,6 +170,31 @@ Lobby lobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, maxPlayers
 
 Lobbies are marked as **inactive** if they haven’t been updated or sent a heartbeat request in the **past 30 seconds**. You can **configure this timeout period**. **Inactive public lobbies do not appear in query results**, and **both public and private inactive lobbies are automatically deleted**. **Inactive lobbies** can be **reactivated** by being updated or sending a **heartbeat request**.
 
+
+#### Lobby data and player data
+
+Lobbies support two types of **custom data**:
+
+-   **Lobby-scoped data** is associated with the entire lobby and can include fields that are indexed for querying.
+-   **Player-scoped data** is associated with a specific player in a specific lobby. Each player in the lobby can have different set properties.
+
+#### Limits
+
+**Lobby data**
+
+-   **Maximum properties**: 20
+-   **Non-indexed**: 2 KB / each
+-   **Indexed**: 128 B / each
+-   **Maximum number of indexed strings**: 5
+-   **Maximum number of indexed numbers**: 5
+
+**Player data**
+
+-   **Maximum properties**: 10/player
+-   **Maximum size**: 2KB
+-   Not indexable
+
+
 ### Game Lobby Sample
 This sample demonstrates how to use the Lobby and Relay packages to create a typical game lobby experience.
 
