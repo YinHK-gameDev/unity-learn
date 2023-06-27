@@ -81,9 +81,60 @@ var queryFilter = new List<QueryFilter>()
         value: "Conquest")
 };
 
+```
+
+### Randomized query results
+When multiple players with the same query filter want to query for lobbies at the same time and there are more results available than requested, the lobby service uses randomized sampling to return different query results. This helps to minimize contention and to distribute players evenly between lobbies so they can start their games as soon as possible. This alleviates the load time and facilitates connection to games when multiple players are looking to connect to similar games.
+
+Randomized sampling ensures that players with the same search criteria are not shown the same query result, which could lead to players trying to join lobbies that have filled up since the query was performed. However, there is always a potential race condition where players might attempt to join a lobby that has already filled up; client logic should expect this to happen and should plan to gracefully handle lobby join failures.
+
+
+### Pagination
+Clients can also choose not to randomize their query results, in which case results can be paginated. When querying for non-randomized results, a continuation token is returned in the response. This token can be provided to a subsequent query to fetch the next page of results. Note that even if the next page has 0 lobbies, a continuation token will still be provided.
+
+The following code sample shows the basic pattern for using continuation tokens:
+
+```cs
+
+// Common query options to use for paging
+        var queryOptions = new QueryLobbiesOptions
+        {
+            SampleResults = false, // Paging cannot use randomized results
+            Filters = new List<QueryFilter>
+                    {
+                        // Only include open lobbies in the pages
+                        new QueryFilter(
+                            field: QueryFilter.FieldOptions.AvailableSlots,
+                            op: QueryFilter.OpOptions.GT,
+                            value: "0")
+                    },
+            Order = new List<QueryOrder>
+                    {
+                        // Show the oldest lobbies first
+                        new QueryOrder(true, QueryOrder.FieldOptions.Created),
+                    }
+        };
+
+        var response = await LobbyService.Instance.QueryLobbiesAsync(queryOptions);
+        var lobbies = response.Results;
+
+        // A continuation token will still be returned when the next page is empty,
+        // so continue paging until there are no new lobbies in the response
+        while (lobbies.Count > 0)
+        {
+            // Do something here with the lobbies in the current page
+
+            // Get the next page. Be careful not to modify the filter or order in the
+            // query options, as this will return an error
+            queryOptions.ContinuationToken = response.ContinuationToken;
+            response = await LobbyService.Instance.QueryLobbiesAsync(queryOptions);
+            lobbies = response.Results;
+        }
 
 
 ```
+
+
 
 
 ### ref 
