@@ -1,4 +1,4 @@
-## Lobby data
+## Update Lobby data
 The **lobby host is the only player that can update the lobby’s data**. Other players can read this data depending on the visibility option
 
 
