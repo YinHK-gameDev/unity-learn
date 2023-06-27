@@ -41,7 +41,7 @@ async Task<Lobby> CreateLobbyWithHeartbeatAsync()
 ```
 While hosts should periodically heartbeat their lobbies when in use, hosts should also be mindful of these lobbies and delete them afterward. A very simple way to do this is to loop over created lobbies during shutdown.
 
-The following code sample shows how to utilize a **MonoBehavior**’s **OnApplicationQuit()** function to delete created lobbies:
+The following code sample shows how to utilize a **MonoBehavior**’s **`OnApplicationQuit()`** function to delete created lobbies:
 
 
 
