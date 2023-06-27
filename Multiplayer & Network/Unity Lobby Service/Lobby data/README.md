@@ -24,8 +24,8 @@ try
             options.MaxPlayers = 4;
             options.IsPrivate = false;
 
-            //Ensure you sign-in before calling Authentication Instance
-            //See IAuthenticationService interface
+            // Ensure you sign-in before calling Authentication Instance
+            // See IAuthenticationService interface
             options.HostId = AuthenticationService.Instance.PlayerId;
 
             options.Data = new Dictionary<string, DataObject>()
