@@ -199,8 +199,7 @@ Lobbies support two types of **custom data**:
 
 There are three levels of access to data:
 
-##### Public data(https://docs.unity.com/lobby/en-us/manual/lobby-data-and-player-data#Public_data)
-
+##### Public data
 -   Data that is visible to anyone, including players who are not in the lobby.
 -   Examples of public data include maps and profile icons.
 
