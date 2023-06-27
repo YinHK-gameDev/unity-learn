@@ -195,6 +195,34 @@ Lobbies support two types of **custom data**:
 -   Not indexable
 
 
+#### Data access and visibility
+
+There are three levels of access to data:
+
+##### Public data(https://docs.unity.com/lobby/en-us/manual/lobby-data-and-player-data#Public_data)
+
+-   Data that is visible to anyone, including players who are not in the lobby.
+-   Examples of public data include maps and profile icons.
+
+##### Member data
+
+-   Data that is only visible to players who have joined the lobby.
+
+##### Private data
+
+-   Data that is only visible to an individual player who is in the lobby.
+-   Lobby data that is only visible to the host, player data that is only visible to the owning player and the host.
+
+Depending on a player's role in the lobby (host, member, or non-member), they have different access restrictions to data:
+
+| Role of Player | Write lobby data | Read lobby data | Write player data for their player | Write player data for other players | Read player data with the following visibility |
+| --- | --- | --- | --- | --- | --- |
+| Lobby Host | Yes | Yes: **Public, Member & Private** | Yes | No | Yes: **Public & Member** |
+| Lobby Member | No | Yes: **Public** & **Member** | Yes | No | Yes: **Public & Member** |
+| Non-member | No | Yes: **Public** | No | No | Yes: **Public** |
+
+> **Note**: Only the host can modify lobby data. In addition, a player’s data can only be modified by the player themselves.
+
 ### Game Lobby Sample
 This sample demonstrates how to use the Lobby and Relay packages to create a typical game lobby experience.
 
