@@ -222,6 +222,30 @@ Depending on a player's role in the lobby (host, member, or non-member), they ha
 
 > **Note**: Only the host can modify lobby data. In addition, a player’s data can only be modified by the player themselves.
 
+
+### Delete a lobby
+Lobby hosts can delete their lobbies. Deleted lobbies are no longer accessible; deleted lobbies do not appear in queries and all APIs targeting a deleted lobby (for example, **Get** and **Update**) fail.
+
+> **Note**: The lobby is automatically deleted when the last player leaves the lobby.
+
+Clients should expect that they can be removed from a lobby at any time. This could be due to the lobby being deleted, the player being removed from a lobby by the host, the player being removed from the lobby due to a relay disconnect, or a service outage.
+
+
+```cs
+try
+{
+    await LobbyService.Instance.DeleteLobbyAsync("lobbyId");
+}
+catch (LobbyServiceException e)
+{
+    Debug.Log(e);
+}
+
+
+
+```
+
+
 ### Game Lobby Sample
 This sample demonstrates how to use the Lobby and Relay packages to create a typical game lobby experience.
 
