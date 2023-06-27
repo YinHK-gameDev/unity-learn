@@ -14,6 +14,16 @@ Lobby-level data can be used in various ways:
     
     -   This can be used to set data that might be used on reconnects or for the next host if there is a host migration.
 
+
+#### Lobby data: 
+
+-   **Maximum properties**: 20
+-   **Non-indexed**: 2 KB / each
+-   **Indexed**: 128 B / each
+-   **Maximum number of indexed strings**: 5
+-   **Maximum number of indexed numbers**: 5
+
+
 The following code sample shows how to update lobby data:
 
 ```cs
