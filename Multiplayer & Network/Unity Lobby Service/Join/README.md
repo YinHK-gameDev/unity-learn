@@ -29,6 +29,24 @@ catch (LobbyServiceException e)
 
 ```
 
+### Join a password-protected lobby
+
+```cs
+try
+{
+    // Join by ID:
+    var idOptions = new JoinLobbyByIdOptions{Password ="mySecret"};
+    await Lobbies.Instance.JoinLobbyByIdAsync("lobbyId", idOptions);
+
+    // Join by Code:
+    var codeOptions = new JoinLobbyByCodeOptions{Password ="mySecret"};
+    await Lobbies.Instance.JoinLobbyByCodeAsync("lobbyId", codeOptions);
+}
+catch (LobbyServiceException e)
+{
+    Debug.Log(e);
+}
+```
 
 ### ref 
 https://docs.unity.com/lobby/en-us/manual/join-a-lobby
