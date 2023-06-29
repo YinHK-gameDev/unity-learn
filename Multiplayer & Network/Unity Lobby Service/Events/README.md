@@ -160,7 +160,7 @@ if (newLobby != null)
 
 ### OnLobbyEventConnectionStateChanged
 
-The connection status for the Lobby Events indicates whether or not you will be receiving events.
+The **connection status** for the **Lobby Events** indicates whether or not you will be receiving events.
 
 The following are the connection statuses:
 
