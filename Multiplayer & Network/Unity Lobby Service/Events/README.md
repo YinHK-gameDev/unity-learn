@@ -52,5 +52,23 @@ catch (LobbyServiceException ex)
 }
 ```
 
+The following code sample provides an example handler for OnLobbyChanged. It demonstrates how to handle a deleted lobby instance.
+
+```cs
+private void OnLobbyChanged(ILobbyChanges changes)
+{
+    if (changes.LobbyDeleted)
+    {
+        // Handle lobby being deleted
+        // Calling changes.ApplyToLobby will log a warning and do nothing
+    }
+    else
+    {
+        changes.ApplyToLobby(m_Lobby);
+    }
+    // Refresh the UI in some way
+}
+```
+
 ### ref 
 https://docs.unity.com/lobby/en-us/manual/lobby-events
