@@ -29,6 +29,10 @@ Lobbies.Instance.SubscribeToLobbyEventsAsync(lobbyId, callbacks);
 > **Note**: A player can only receive events for a lobby if they are in that lobby.
 
 ```cs
+
+// OnLobbyChanged, OnKickedFromLobby and OnLobbyEventConnectionStateChanged handle the events.
+
+
 m_Lobby = await Lobbies.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
 var callbacks = new LobbyEventCallbacks();
 callbacks.LobbyChanged += OnLobbyChanged;
