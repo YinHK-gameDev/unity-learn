@@ -30,4 +30,7 @@ https://youtu.be/r_mu_34WoDQ
 
 https://youtu.be/bv6_OKkHZKY
 
+Unity new AI tools \
+https://www.youtube.com/watch?v=9iUWTEv-fFE
+
 
