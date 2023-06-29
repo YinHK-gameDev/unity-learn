@@ -261,6 +261,13 @@ catch (LobbyServiceException e)
 }
 ```
 
+### Relay integration
+
+https://docs.unity.com/lobby/en-us/manual/relay-integration
+
+
+
+
 
 ### Game Lobby Sample
 This sample demonstrates how to use the Lobby and Relay packages to create a typical game lobby experience.
@@ -288,5 +295,8 @@ https://www.youtube.com/watch?v=-KDlEBfCBiU
 
 Lobby SDK Scripting API \
 https://docs.unity.com/lobby/en-us/packages/com.unity.services.lobby/1.0/api/Unity.Services.Lobbies
+
+Lobby REST API \
+https://services.docs.unity.com/lobby/v1/index.html
 
 
