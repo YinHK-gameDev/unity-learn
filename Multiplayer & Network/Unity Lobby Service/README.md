@@ -281,7 +281,7 @@ This sample demonstrates how to use the Lobby and Relay packages to create a typ
 -   **Lobby + Relay connection management**: Together, the services automatically handle new connections and disconnections.
 -   **Vivox Voice**: Create a voice channel for the lobby to allow for voice communication, with per-user volume control and muting.
 
-https://docs.unity.com/lobby/en-us/manual/game-lobby-sample \  
+https://docs.unity.com/lobby/en-us/manual/game-lobby-sample  
 https://github.com/Unity-Technologies/com.unity.services.samples.game-lobby
 
 
