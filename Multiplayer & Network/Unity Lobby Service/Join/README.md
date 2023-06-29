@@ -55,6 +55,37 @@ The **Quick Join API** allows players to quickly find and join a lobby **without
 
 Quick Join is designed to solve the common problem where a player manually does a query, looks at the results, selects a lobby to try to join, and then repeatedly fails to join because the lobby has already filled up by the time they attempt to join. It can also be used as a form of basic matchmaking (although only in existing lobbies, it does not create new ones).
 
+> if there are **no lobbies** that match the query criteria, or if the join is attempted and then fails. In these scenarios, clients should expect to receive a **404** Not Found error. If a failure happens, clients can try to Quick Join again, or can fall back to creating a new lobby and assuming the host role.
+
+```cs
+try
+{
+    // Quick-join a random lobby with a maximum capacity of 10 or more players.
+    QuickJoinLobbyOptions options = new QuickJoinLobbyOptions();
+
+    options.Filter = new List<QueryFilter>()
+    {
+        new QueryFilter(
+            field: QueryFilter.FieldOptions.MaxPlayers,
+            op: QueryFilter.OpOptions.GE,
+            value: "10")
+    };
+
+    var lobby = await LobbyService.Instance.QuickJoinLobbyAsync(options);
+
+    // ...
+}
+catch (LobbyServiceException e)
+{
+      Debug.Log(e);
+}
+
+
+```
+
+
+
+
 
 
 
