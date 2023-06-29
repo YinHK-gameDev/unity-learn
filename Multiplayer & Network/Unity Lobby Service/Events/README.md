@@ -156,8 +156,45 @@ if (newLobby != null)
 
 }
 
-
 ```
+
+### OnLobbyEventConnectionStateChanged
+
+The connection status for the Lobby Events indicates whether or not you will be receiving events.
+
+The following are the connection statuses:
+
+**Unsubscribed**
+
+-   You have chosen to unsubscribe using `ILobbyEvents.UnsubscribeAsync`
+-   You will not receive lobby events anymore.
+
+**Subscribing**
+
+-   The Lobby Events is trying to connect.
+-   You will not receive lobby events.
+
+**Subscribed**
+
+-   The Lobby Events connects successfully.
+-   You will receive lobby events.
+
+**Unsynced**
+
+-   There is a temporary problem with the connection.
+-   Lobby Events will automatically try to reconnect.
+-   You will not receive lobby events.
+
+**Error**
+
+-   There is an unrecoverable problem with the connection.
+-   This might indicate a larger issue, such as an internet outage. A solution will require manual intervention and you might have to subscribe again.
+-   You will not receive lobby events.
+-   
+
+
+
+
 
 ### ref 
 https://docs.unity.com/lobby/en-us/manual/lobby-events
