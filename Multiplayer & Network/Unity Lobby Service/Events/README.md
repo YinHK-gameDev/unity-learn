@@ -190,10 +190,6 @@ The following are the connection statuses:
 -   There is an unrecoverable problem with the connection.
 -   This might indicate a larger issue, such as an internet outage. A solution will require manual intervention and you might have to subscribe again.
 -   You will not receive lobby events.
--   
-
-
-
 
 
 ### ref 
