@@ -241,8 +241,24 @@ catch (LobbyServiceException e)
     Debug.Log(e);
 }
 
+```
 
 
+### Leave a lobby
+When players leave a lobby, their player ID is removed from the players list. If the host leaves the lobby, another player in the lobby is randomly selected as the host. The host also has the ability to remove other players from the lobby. The same **`RemovePlayerAsync API`** call is used in both cases where the host simply specifies the other player's playerId instead of their own. Lobbies are automatically deleted when the last player in the lobby leaves.
+
+```cs
+try
+{
+            //Ensure you sign-in before calling Authentication Instance
+            //See IAuthenticationService interface
+            string playerId = AuthenticationService.Instance.PlayerId;
+            await LobbyService.Instance.RemovePlayerAsync("lobbyId", playerId);
+}
+catch (LobbyServiceException e)
+{
+            Debug.Log(e);
+}
 ```
 
 
