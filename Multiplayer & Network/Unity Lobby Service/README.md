@@ -245,7 +245,7 @@ catch (LobbyServiceException e)
 
 
 ### Leave a lobby
-When players leave a lobby, their player ID is removed from the players list. If the host leaves the lobby, another player in the lobby is randomly selected as the host. The host also has the ability to remove other players from the lobby. The same **`RemovePlayerAsync API`** call is used in both cases where the host simply specifies the other player's playerId instead of their own. Lobbies are automatically deleted when the last player in the lobby leaves.
+When players leave a lobby, their **player ID** is removed from the **players list**. If the host leaves the lobby, another player in the lobby is randomly selected as the host. The host also has the ability to remove other players from the lobby. The same **`RemovePlayerAsync API`** call is used in both cases where the host simply specifies the other player's playerId instead of their own. Lobbies are automatically deleted when the last player in the lobby leaves.
 
 ```cs
 try
