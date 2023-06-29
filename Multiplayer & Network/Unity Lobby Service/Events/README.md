@@ -106,7 +106,58 @@ private void OnLobbyEventConnectionStateChanged(LobbyEventConnectionState state)
 }
 ```
 
+### Apply changes to a lobby
 
+When you subscribe to the **`LobbyEventCallbacks.LobbyChanged`** event, you receive **a set of changes** each time the lobby updates. It’s possible for a lobby to have **a large number of changes** at any given time, so the Lobby package includes a helper function to apply these changes to a lobby.
+
+The following code snippet shows how to use the **`ApplyToLobby`** helper function to apply lobby changes:
+
+```cs
+private void OnLobbyChanged(ILobbyChanges changes)
+{
+    changes.ApplyToLobby(m_Lobby);
+    // Refresh the UI in some way
+}
+```
+
+Calling **`changes.ApplyToLobby`** updates all fields that have changed on a lobby in-place. When changes occur to a lobby in-place, the call modifies the values of the lobby object that were passed into the **`ApplyToLobby`** function. If you need to check whether a specific change was applied, check the **`ChangedLobbyValue`** members on the **`ILobbyChanges`** interface.
+
+```cs
+private void OnLobbyChanged(ILobbyChanges changes)
+{
+    changes.ApplyToLobby(m_Lobby);
+    if (changes.Name.Changed)
+    {
+        // Do something specific due to this change
+    }
+    // Refresh the UI in some way
+}
+```
+
+### Lobby versions
+
+Lobby versions are useful for checking if a newly fetched lobby has changed since the last observed lobby. Every lobby exposes a **`Version`** property. **Versions start at 1 and are incremented every time member**-**observable player/lobby state is changed**.
+
+If the version associated with a new set of lobby changes is not exactly one greater than the last observed lobby version, an update has been received out of order or lost. If you have a missing message, perform a get to retrieve the latest version.
+
+The **`GetLobby`** API can optionally accept the version of the lobby as an argument. To save bandwidth, a lobby is only returned if the specified version doesn’t match the current version.
+
+```cs
+var lobby = await Lobbies.Instance.GetLobbyAsync("lobbyId");
+var version = lobby.Version;
+
+// check if a newer version of the lobby is available:
+var newLobby = await Lobbies.Instance.GetLobbyAsync("lobbyId", version);
+if (newLobby != null)
+{
+    // New lobby version received
+    version = lobby.Version;
+    // observe changed values in newLobby:
+
+}
+
+
+```
 
 ### ref 
 https://docs.unity.com/lobby/en-us/manual/lobby-events
