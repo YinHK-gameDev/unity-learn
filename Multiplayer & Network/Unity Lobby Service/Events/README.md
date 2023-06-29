@@ -166,7 +166,7 @@ The following are the connection statuses:
 
 **Unsubscribed**
 
--   You have chosen to unsubscribe using `ILobbyEvents.UnsubscribeAsync`
+-   You have chosen to unsubscribe using **`ILobbyEvents.UnsubscribeAsync`**
 -   You will not receive lobby events anymore.
 
 **Subscribing**
