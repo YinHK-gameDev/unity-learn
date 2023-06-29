@@ -224,7 +224,7 @@ Depending on a player's role in the lobby (host, member, or non-member), they ha
 
 
 ### Delete a lobby
-Lobby hosts can delete their lobbies. Deleted lobbies are no longer accessible; deleted lobbies do not appear in queries and all APIs targeting a deleted lobby (for example, **Get** and **Update**) fail.
+**Lobby hosts can delete their lobbies**. **Deleted lobbies are no longer accessible**; deleted lobbies **do not appear in queries** and all APIs targeting a deleted lobby (for example, **Get** and **Update**) fail.
 
 > **Note**: The lobby is automatically deleted when the last player leaves the lobby.
 
