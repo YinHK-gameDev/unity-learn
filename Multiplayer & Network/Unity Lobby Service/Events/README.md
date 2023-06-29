@@ -11,7 +11,42 @@ Call the **`SubscribeToLobbyEventsAsync`** method on a Lobby instance to subscri
 
 
 
+### Receive updates
 
+To subscribe to a lobby’s real-time updates, you must call:
+
+```cs 
+Lobbies.Instance.SubscribeToLobbyEventsAsync(lobbyId, callbacks);
+```
+
+```cs 
+Lobbies.Instance.SubscribeToLobbyEventsAsync(lobbyId, callbacks);
+```
+
+-   The callbacks object provides the callbacks for consuming the real-time changes.
+-   The callbacks parameter accepts an instance of **`LobbyEventsCallbacks`**, which you must create and subscribe to.
+
+> **Note**: A player can only receive events for a lobby if they are in that lobby.
+
+```cs
+m_Lobby = await Lobbies.Instance.CreateLobbyAsync(lobbyName, maxPlayers, options);
+var callbacks = new LobbyEventCallbacks();
+callbacks.LobbyChanged += OnLobbyChanged;
+callbacks.KickedFromLobby += OnKickedFromLobby;
+callbacks.LobbyEventConnectionStateChanged += OnLobbyEventConnectionStateChanged;
+try {
+    m_LobbyEvents = await Lobbies.Instance.SubscribeToLobbyEventsAsync(m_Lobby.Id, callbacks);
+}
+catch (LobbyServiceException ex)
+{
+    switch (ex.Reason) {
+        case LobbyExceptionReason.AlreadySubscribedToLobby: Debug.LogWarning($"Already subscribed to lobby[{m_Lobby.Id}]. We did not need to try and subscribe again. Exception Message: {ex.Message}"); break;
+        case LobbyExceptionReason.SubscriptionToLobbyLostWhileBusy: Debug.LogError($"Subscription to lobby events was lost while it was busy trying to subscribe. Exception Message: {ex.Message}"); throw;
+        case LobbyExceptionReason.LobbyEventServiceConnectionError: Debug.LogError($"Failed to connect to lobby events. Exception Message: {ex.Message}"); throw;
+        default: throw;
+    }
+}
+```
 
 ### ref 
 https://docs.unity.com/lobby/en-us/manual/lobby-events
