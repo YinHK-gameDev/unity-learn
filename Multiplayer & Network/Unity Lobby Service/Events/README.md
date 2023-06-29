@@ -1,3 +1,14 @@
+## Lobby events
+
+The Lobby package includes the Lobby Events system, which allows you to subscribe to real-time lobby events. Events are sent every time member-observable player/lobby state is changed. For example, when a player joins or leaves, a player updates public/member data, or the host updates public/member lobby data. Events are not sent if a player or the host updates a private property of the lobby.
+
+
+Using events can be more efficient than polling for lobby state through gets, especially since it requires no action until some data is changed. Events are efficient when the number of gets per second is significantly larger than the number of events received per second. Furthermore, event payloads only contain patches, so in general, they have the additional benefit that their payloads are much smaller than those returned by a get. The biggest downside to events is that they are unreliable and do not guarantee in-order delivery. See Lobby versions for more.
+
+> **Note**: Events can be unreliable and do not guarantee in-order delivery.
+
+Call the **`SubscribeToLobbyEventsAsync`** method on a Lobby instance to subscribe to receiving updates for that instance. Once subscribed, the Lobby service invokes the **`LobbyChanged`** event each time a change occurs. You can also use the **`ApplyToLobby`** helper method to apply the changes to the **`Models.Lobby`** object.
+
 
 
 
