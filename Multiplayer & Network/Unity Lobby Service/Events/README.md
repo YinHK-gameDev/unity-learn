@@ -70,5 +70,43 @@ private void OnLobbyChanged(ILobbyChanges changes)
 }
 ```
 
+### KickedFromLobby
+
+The Lobby Event service uses the **`KickedFromLobby`** handler to remove a user from the lobby. This can happen for a number of reasons. For example, when the connection fails or if the host removes the user from the lobby. When a user gets kicked out of a lobby, they receive a message that the lobby event connection state has changed ( **`LobbyEventConnectionStateChanged`**) to **`unsubscribed`**.
+
+The following code sample provides an example handler for **`OnKickedFromLobby`**:
+
+```cs
+private void OnKickedFromLobby()
+{
+
+
+    // These events will never trigger again, so let’s remove it.
+    this.m_LobbyEvents = null;
+    // Refresh the UI in some way
+}
+```
+
+The following code sample provides an example handler for OnLobbyEventConnectionStateChanged:
+
+> **Note**: When there’s an error with the connection to Lobby Events, Lobby will not attempt to reconnect.
+
+
+```cs
+private void OnLobbyEventConnectionStateChanged(LobbyEventConnectionState state)
+{
+    switch (state)
+    {
+        case LobbyEventConnectionState.Unsubscribed: /* Update the UI if necessary, as the subscription has been stopped. */ break;
+        case LobbyEventConnectionState.Subscribing: /* Update the UI if necessary, while waiting to be subscribed. */ break;
+        case LobbyEventConnectionState.Subscribed: /* Update the UI if necessary, to show subscription is working. */ break;
+        case LobbyEventConnectionState.Unsynced: /* Update the UI to show connection problems. Lobby will attempt to reconnect automatically. */ break;
+        case LobbyEventConnectionState.Error: /* Update the UI to show the connection has errored. Lobby will not attempt to reconnect as something has gone wrong. */
+    }
+}
+```
+
+
+
 ### ref 
 https://docs.unity.com/lobby/en-us/manual/lobby-events
