@@ -23,6 +23,24 @@ async Task Reconnect()
 
 ```
 
+### Get joined lobbies
+
+If players need to determine their current lobby membership, they can use the **GetJoinedLobbies** API. This API returns a list of lobby IDs for the lobbies that the active player is currently a member of.
+
+One common use for **`GetJoinLobbies`** is handling **unexpected disconnects**. If a game crashes or the user disconnects from a lobby for any reason, you can use this API to get a **list of all lobbies a player is a member** of and then use the GetLobby API to retrieve the full lobby details or Reconnect to lobby.
+
+```CS
+try
+{
+        var lobbyIds = await LobbyService.Instance.GetJoinedLobbiesAsync();
+}
+catch (LobbyServiceException e)
+{
+        Debug.Log(e);
+}
+```
+
+> **Note**: You can't get a private lobby unless you're a member of the lobby.
 
 
 
