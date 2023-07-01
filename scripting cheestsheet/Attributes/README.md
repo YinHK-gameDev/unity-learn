@@ -15,3 +15,5 @@ Unity provides a number of attributes which are listed in the API Reference docu
 
 ### ref
 https://docs.unity3d.com/Manual/Attributes.html
+
+https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/reflection-and-attributes/
