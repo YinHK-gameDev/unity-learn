@@ -11,9 +11,23 @@ The primary roles of the Event System are as follows:
 -   Updating all Input Modules as required
 
 
+Unity’s EventSystem allows your UI to respond to events.
+
+> An **EventSystem component** is automatically created alongside your UI and contains several Input Modules. These modules are responsible for deciding how GameObjects in your UI respond to input — if a corresponding GameObject within your UI contains the same Input Module as the one in your EventSystem, it can be interacted with.
+
+
+
+
+
+
+
+
+
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/EventSystem.html
+
+https://learn.unity.com/tutorial/working-with-the-event-system#
 
 https://www.youtube.com/watch?v=gx0Lt4tCDE0
 
