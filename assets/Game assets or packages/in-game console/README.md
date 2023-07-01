@@ -15,3 +15,7 @@ https://assetstore.unity.com/packages/tools/gui/azes-in-game-console-191452
 
 ### In-game debug console
 https://assetstore.unity.com/packages/tools/gui/in-game-debug-console-68068#content
+
+
+### Realtime In Game Log Console
+https://assetstore.unity.com/packages/tools/gui/realtime-in-game-log-console-212758
