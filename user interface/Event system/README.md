@@ -27,7 +27,11 @@ Unity’s EventSystem allows your UI to respond to events.
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/EventSystem.html
 
+**learn event system** \
 https://learn.unity.com/tutorial/working-with-the-event-system#
+
+**Event** \
+https://learn.unity.com/tutorial/events-uh#5c894782edbc2a1410355442
 
 https://www.youtube.com/watch?v=gx0Lt4tCDE0
 
