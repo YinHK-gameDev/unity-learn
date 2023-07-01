@@ -1,5 +1,5 @@
 ## Unity Environments
-Environments are logical partitions for Unity Game Services that contain data associated with your project. Examples can include game code using Cloud Code, or game configurations using Remote Config.
+Environments are **logical partitions for Unity Game Services that contain data associated with your project**. Examples can include game code using Cloud Code, or game configurations using Remote Config.
 
 
 -   Environments are isolated. This means that if you change data in one environment, data in other environments is not affected.
