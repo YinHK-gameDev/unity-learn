@@ -8,6 +8,8 @@ https://assetstore.unity.com/packages/templates/systems/universal-fighting-engin
 showcase \
 https://www.youtube.com/watch?v=dl5rGxJHQ0s&t=634s
 
+https://youtube.com/playlist?list=PLlcOmi7_IKT2Qw6jA8cQfB5GMXf6s9II3
+
 Fantasy Strike 
 https://www.fantasystrike.com/
 
