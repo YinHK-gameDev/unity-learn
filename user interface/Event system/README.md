@@ -24,5 +24,5 @@ https://www.youtube.com/watch?v=EvqdcyTgZNg
 **`UnityEngine.EventSystems`** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.html
 
-**UnityEditor.EventSystems** \
+**`UnityEditor.EventSystems`** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEditor.EventSystems.html
