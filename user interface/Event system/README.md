@@ -26,3 +26,7 @@ https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystem
 
 **`UnityEditor.EventSystems`** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEditor.EventSystems.html
+
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/SupportedEvents.html
+
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/Raycasters.html
