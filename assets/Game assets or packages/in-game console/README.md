@@ -13,3 +13,5 @@ https://assetstore.unity.com/packages/tools/utilities/quantum-console-211046#des
 ### AzeS - In Game Console
 https://assetstore.unity.com/packages/tools/gui/azes-in-game-console-191452
 
+### In-game debug console
+https://assetstore.unity.com/packages/tools/gui/in-game-debug-console-68068#content
