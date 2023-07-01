@@ -47,6 +47,9 @@ The peer-to-peer client server model hosts games on the machine of a player, sav
 -   **Get Join Code** generates a [join code](https://docs.unity.com/relay/en-us/manual/join-codes) for the host to share with other players.
 -   **Join Relay** joins the Relay allocation and returns a player allocation ID.
 
+
+![](../img/relay_example.png)
+
 https://docs.unity.com/relay/en-us/manual/get-started
 
 
