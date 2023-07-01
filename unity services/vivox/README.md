@@ -9,3 +9,5 @@ Deliver the best player experience with our hosted managed solution for voice an
 ### ref 
 
 https://unity.com/products/vivox
+
+https://docs.vivox.com/v5/general/unity/15_1_200000/en-us/Default.htm#Unity/Unity.htm%3FTocPath%3DUnity%7C_____0
