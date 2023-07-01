@@ -287,7 +287,7 @@ This sample demonstrates how to use the Lobby and Relay packages to create a typ
 https://docs.unity.com/lobby/en-us/manual/game-lobby-sample  
 https://github.com/Unity-Technologies/com.unity.services.samples.game-lobby
 
-
+https://www.youtube.com/watch?v=mgIDwkaVAqw&t=153s
 
 ### ref 
 https://docs.unity.com/lobby/en/manual/unity-lobby-service
