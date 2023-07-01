@@ -21,6 +21,9 @@ Unity Package named **`com.unity.services.lobby`**.
 2.  From the **Package Manager**, search for **`com.unity.services.lobby`** or scroll through the **Unity Registry** to find the **Lobby** package.
 3.  Select the package and click **Install**.
 
+> To use Unity Lobby service, link your unity project to Unity gaming service in project setting first.
+
+
    
 ### Authentication
 To use the Lobby service, authenticate yourself using [Unity Authentication](https://docs.unity.com/authentication/en/manual/intro-unity-authentication). Make sure to [initialize the authentication service](https://docs.unity.com/authentication/en/manual/initialize-sdk) and sign in before making any calls using the Lobby SDK. While there are many sign in methods, the easiest way to get started is with Anonymous sign in. See the [Unity Authentication anonymous sign in guide](https://docs.unity.com/authentication/en/manual/use-anon-signin) to get started.
