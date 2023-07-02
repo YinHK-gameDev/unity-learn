@@ -25,5 +25,15 @@ https://docs.unity3d.com/Manual/UI-system-compare.html
 | Technical Artist | Partial | Yes | No | Technical artists who are familiar with Unity’s GameObject-based tools and workflows are likely to be comfortable working with GameObjects, Components, and the Scene view.They might not be comfortable with UI Toolkit’s web-like approach or IMGUI’s pure C# approach. |
 | UI Designer | Yes | Partial | No | UI designers who are familiar with UI creation tools are likely to be comfortable with UI Toolkit’s document-based approach and can use the https://docs.unity3d.com/Manual/UIBuilder.html to visually edit their UI.If they are not familiar with GameObject-based workflows, they might require help from programmers or level designers. |
 
+### Type of UI
+
+- Non-Diegetic UI
+- Diegetic UI
+- Spatial UI
+- Meta UI
+
+
+https://www.gameres.com/890547.html
+
 ### ref 
 https://www.youtube.com/watch?v=8w0qvO4Vumc
