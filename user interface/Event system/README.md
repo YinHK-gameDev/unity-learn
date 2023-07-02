@@ -179,9 +179,22 @@ Add **Event System** component to an UI gameobject.
 | **Drag Threshold** | The soft area for dragging in pixels. |
 
 
-### Build your customed Event in Unity
+### Build your customed Event in Unity(Using C# delefate event)
 ![](./img/custom_event_system.png)
 
+
+### C# Delegate Events VS UnityEvent
+he only advantage and reason to use UnityEvent is that it allows you to use events in the Editor. That's for drag and drop people or those making Editor plugins.
+
+Another advantage of UnityEvent is that it prevents the problem of Unity Object not being freed due to the misuse of delegates or using anonymous delegates with Unity Objects. Although they get freed when the main script that's holding them is destroyed. The reason for this is because UnityEvent is implemented with weak references therefore removing/minimizing this problem. These two things are still not worth it to use UnityEvent over native C# events.
+
+UnityEvent generates less garbage than C# events.
+
+You should always use native event and delegate over UnityEvent if you are not making an Editor plugin because of its fast performance and small memory usage. See this and this post post for more information.
+
+https://www.youtube.com/watch?v=oc3sQamIh-Q
+
+https://forum.unity.com/threads/why-choose-unityevents-over-native-c-events.479311/
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/EventSystem.html
