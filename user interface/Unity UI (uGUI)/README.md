@@ -32,7 +32,7 @@ https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIInteractionCompone
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIInteraction.html
 
-Selectable Base Class \
+Selectable Base Class 
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Selectable.html
 
