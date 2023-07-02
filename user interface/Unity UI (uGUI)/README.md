@@ -43,8 +43,16 @@ Selectable Base Class
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Selectable.html
 
+### UI Effect Components
+
+The effects components allow adding simple effects to Text and Image graphics, such as **shadow and outline**.
+
+ - Shadow
+ - Outline
+ - Position as UV1
 
 
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIEffects.html
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html
