@@ -1,5 +1,5 @@
 ## Event system
-The **Event System** is a way of sending events to objects in the application based on **input, be it keyboard, mouse, touch, or custom input**. The Event System consists of a few components that work together to send events.
+The **Event System** is a way of sending events to objects in the application based on **input, be it keyboard, mouse, touch, or custom input**. The **Event System** consists of a few components that work together to send events.
 
 When you add an Event System component to a GameObject you will notice that it does not have much functionality exposed, this is because the Event System itself is designed as a manager and facilitator of communication between Event System modules.
 
@@ -56,7 +56,7 @@ UnityEvents are useful for a number of things:
 -   Preconfigured call events
 
 
-**`UnityEvents`** can be added to any **`MonoBehaviour`** and are executed from code like a standard .net delegate. When a **`UnityEvent`** is added to a **`MonoBehaviour`** it appears in the Inspector
+**`UnityEvents`** can be added to any **`MonoBehaviour`** and are executed from code like a standard .net delegate. When a **`UnityEvent`** is added to a **`MonoBehaviour`** it appears in the **Inspector**
  and persistent callbacks can be added.
 
 **`UnityEvents`** have similar limitations to standard delegates. That is, they hold references to the element that is the target and this stops the target being garbage collected. If you have a `**UnityEngine.Object`** as the target and the native representation disappears the callback will not be invoked.
@@ -65,22 +65,23 @@ UnityEvents are useful for a number of things:
 
 To configure a callback in the editor there are a few steps to take:
 
-1.  Make sure your script imports/uses `UnityEngine.Events`.
+1.  Make sure your script imports/uses **`UnityEngine.Events`**.
     
-2.  Select the + icon to add a slot for a callback
+2.  Select the **"+"** icon to add a slot for a **callback**
     
-3.  Select the UnityEngine.Object you wish to receive the callback (You can use the object selector for this)
+3.  Select the **`UnityEngine.Object`** you wish to receive the callback (You can use the **object selector** for this)
     
-4.  Select the function you wish to be called
+4.  Select the **function** you wish to be called
     
 5.  You can add more than one callback for the event
-    
 
-When configuring a `UnityEvent` in the Inspector there are two types of function calls that are supported:
+![](./img/callback.png)
+
+When configuring a **`UnityEvent`** in the Inspector there are two types of function calls that are supported:
 
 -   Static. Static calls are preconfigured calls, with preconfigured values that are set in the **UI**(User Interface) Allows a user to interact with your application. Unity currently supports three UI systems. This means that when the callback is invoked, the target function is invoked with the argument that has been entered into the UI.
 -   Dynamic. Dynamic calls are invoked using an argument that is sent from code, and this is bound to the type of UnityEvent that is being invoked. The UI filters the callbacks and only shows the dynamic calls that are valid for the UnityEvent.
--   
+
 
 #### Generic UnityEvents
 
