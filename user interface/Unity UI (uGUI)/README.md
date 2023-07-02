@@ -39,7 +39,7 @@ https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIInteractionCompone
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIInteraction.html
 
-#### Selectable Base Class 
+#### Selectable Base Class(Add selectable component to a UI element)
 The Selectable Class is the base class for all the interaction components and it handles the items that are in common.
 
 | **Property:** | **Function:** |
@@ -49,6 +49,21 @@ The Selectable Class is the base class for all the interaction components and it
 | **Navigation** | There are also a number of Navigation Optionsto control how keyboard navigation of the controls is implemented. |
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Selectable.html
+
+**Transition Options:**
+
+Within a selectable component there are several transition options depending on what state the selectable is currently in. The different states are: normal, highlighted, pressed and disabled.
+
+| **Transition Options:** | **Function:** |
+| --- | --- |
+| **None** | This option is for the button to have no state effects at all. |
+| **Color Tint** | Changes the colour of the button depending on what state it is in. It is possible to select the colour for each individual state. It is also possible to set the Fade Duration between the different states. The higher the number is, the slower the fade between colors will be. |
+| **Sprite Swap** | Allows different sprites to display depending on what state the button is currently in, the sprites can be customised. |
+| **Animation** | Allows animations to occur depending on the state of the button, an animator component must exist in order to use animation transition. It’s important to make sure root motion is disabled. To create an animation controller click on generate animation (or create your own) and make sure that an animation controller has been added to the animator component of the button. |
+
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-SelectableTransition.html
+
+
 
 ### UI Effect Components
 
