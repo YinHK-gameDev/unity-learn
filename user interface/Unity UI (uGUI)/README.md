@@ -1,6 +1,6 @@
 ## Unity UI
 
-Unity UI is a UI toolkit for developing user interfaces for games and applications. The Unity User Interface (Unity UI) package (also called uGUI) is **an older, GameObject-based UI system** that you can use to develop runtime UI for games and applications. 
+Unity UI is a set of tools for developing user interfaces for games and applications. The Unity User Interface (Unity UI) package (also called uGUI) is **an older, GameObject-based UI system** that you can use to develop runtime UI for games and applications. 
 
 It is a **GameObject-based UI system** that uses **Components and the Game View to arrange, position, and style user interfaces**. 
 
