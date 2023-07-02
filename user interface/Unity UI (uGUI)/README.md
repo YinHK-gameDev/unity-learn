@@ -94,7 +94,7 @@ https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIEffects.html
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html
 
-**Scripting API** \
+**`UnityEngine.UI` scripting API** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.UI.html
 
 **UI reference** \
