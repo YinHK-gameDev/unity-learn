@@ -3,7 +3,7 @@
 ### Rect Transform
 The **Rect Transform** is a new transform component that is used for all UI elements instead of the regular **Transform** component.
 
-![](../img/Rect_transform.png)
+![](./img/Rect_transform.png)
 
 
 
