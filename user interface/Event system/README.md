@@ -192,7 +192,7 @@ https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/SupportedEvents.html
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/Raycasters.html
 
 **Event System Reference** \
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-PhysicsRaycaster.html
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-EventSystem.html
 
 **Creating a Simple Messaging System** \
 https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#5cf5960fedbc2a281acd21fa
