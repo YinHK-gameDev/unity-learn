@@ -25,6 +25,8 @@ The Canvas has a **Render Mode** setting which can be used to make it render in 
 
 - **Screen Space - Overlay**
   This render mode places UI elements on the screen rendered on top of the scene. If the screen is resized or changes resolution, the Canvas will automatically change size to match this.
+  In this mode, the Canvas is scaled to fit the screen and then rendered directly without reference to the scene or a camera (the UI will be rendered even if there is no camera in the scene at all). If the screen's size or resolution are changed then the UI will automatically rescale to fit. The UI will be drawn over any other graphics such as the camera view.
+  ![](./img/CanvasOverlay.png)
 
 - **Screen Space - Camera**
 This is similar to **Screen Space - Overl**ay, but in this render mode the Canvas is placed a **given distance in front of a specified Camera**.
