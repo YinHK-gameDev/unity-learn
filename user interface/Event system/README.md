@@ -170,7 +170,7 @@ Add **Event System** component to an UI gameobject.
 
 ![](./img/EventSystemManager.png)
 
-### Properties
+#### Properties
 
 | **_Property:_** | **_Function:_** |
 | --- | --- |
@@ -179,8 +179,10 @@ Add **Event System** component to an UI gameobject.
 | **Drag Threshold** | The soft area for dragging in pixels. |
 
 
-
+### Build your customed Event System in Unity
 ![](./img/custom_event_system.png)
+
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/EventSystem.html
 
