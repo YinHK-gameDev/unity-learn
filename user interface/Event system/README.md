@@ -56,7 +56,7 @@ https://www.youtube.com/watch?v=70PcP_uPuUc
 
 https://www.youtube.com/watch?v=EvqdcyTgZNg
 
-UnityEvents \
+**UnityEvents** \
 https://docs.unity3d.com/Manual/UnityEvents.html
 
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html
