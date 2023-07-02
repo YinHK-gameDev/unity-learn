@@ -194,6 +194,12 @@ https://www.youtube.com/watch?v=70PcP_uPuUc
 
 https://www.youtube.com/watch?v=EvqdcyTgZNg
 
+**C# event** \
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/event
+
+**UnityEngine.Event** \
+https://docs.unity3d.com/ScriptReference/Event.html
+
 **UnityEvents** \
 https://docs.unity3d.com/Manual/UnityEvents.html
 
