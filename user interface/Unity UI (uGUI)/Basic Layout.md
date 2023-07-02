@@ -38,8 +38,20 @@ In the Inspector, the **Anchor Preset** button can be found in the upper left co
 ![](./img/UI_AnchorPreset.png)
 
 
+### Anchor and position fields in the Inspector
+
+You can click the Anchors expansion arrow to reveal the anchor number fields if they are not already visible. Anchor Min corresponds to the lower left anchor handle in the Scene View, and Anchor Max corresponds to the upper right handle.
+
+The position fields of rectangle are shown differently depending on whether the anchors are together (which produces a fixed width and height) or separated (which causes the rectangle to stretch together with the parent rectangle).
+
 
 ![](./img/UI_RectTransform.png)
+
+When all the anchor handles are together the fields displayed are Pos X, Pos Y, Width and Height. The Pos X and Pos Y values indicate the position of the pivot relative to the anchors.
+
+When the anchors are separated the fields can change partially or completely to Left, Right, Top and Bottom. These fields define the padding inside the rectangle defined by the anchors. The Left and Right fields are used if the anchors are separated horizontally and the Top and Bottom fields are used if they are separated vertically.
+
+Note that changing the values in the anchor or pivot fields will normally counter-adjust the positioning values in order to make the rectangle stay in place. In cases where this is not desired, enable Raw edit mode by clicking the R button in the Inspector. This causes the anchor and pivot value to be able to be changed without any other values changing as a result. This will likely cause the rectangle to be visually moved or resized, since its position and size is dependent on the anchor and pivot values.
 
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html
