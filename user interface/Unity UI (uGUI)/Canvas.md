@@ -42,4 +42,15 @@ The **UI elements are rendered by this camera**, which means that the **Camera s
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UICanvas.html
 
+Canvas \
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/class-Canvas.html
+
+Canvas scaler \
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-CanvasScaler.html
+
+Canvas Group \
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/class-CanvasGroup.html
+
+Canvas Renderer \
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/class-CanvasRenderer.html
 
