@@ -86,10 +86,30 @@ When configuring a `UnityEvent` in the Inspector there are two types of function
 
 By default a `UnityEvent` in a `Monobehaviour` binds dynamically to a void function. This does not have to be the case as dynamic invocation of UnityEvents supports binding to functions with up to 4 arguments. To do this you need to define a custom `UnityEvent` class that supports multiple arguments. This is quite easy to do:
 
-```
+```cs
 [Serializable]
-
 public class StringEvent : UnityEvent <string> {}
+```
+
+```cs
+public class MyIntEvent : UnityEvent<T0>
+{
+}
+```
+```cs
+public class MyIntEvent : UnityEvent<T0,T1>
+{
+}
+```
+```cs
+public class MyIntEvent : UnityEvent<T0,T1,T2>
+{
+}
+```
+```cs
+public class MyIntEvent : UnityEvent<T0,T1,T2,T3>
+{
+}
 ```
 
 By adding an instance of this to your class instead of the base `UnityEvent` it will allow the callback to bind dynamically to string functions.
