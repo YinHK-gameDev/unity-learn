@@ -161,6 +161,24 @@ This can then be invoked by calling the **`Invoke()`** function with a `string` 
 UnityEvents can be defined with up to **4 arguments** in their generic definition.
 
 
+### Event System Component
+This subsystem is responsible for controlling all the other elements that make up eventing. It coordinates which Input Module is currently active, which GameObject is currently considered 'selected', and a host of other high level Event System concepts.
+
+Each 'Update' the Event System receives the call, looks through its Input Modules and figures out which is the Input Module that should be used for this tick. It then delegates the processing to the modules.
+
+Add **Event System** component to an UI gameobject.
+
+![](./img/EventSystemManager.png)
+
+### Properties
+
+| **_Property:_** | **_Function:_** |
+| --- | --- |
+| **First Selected** | The GameObject that was selected first. |
+| **Send Navigation Events** | Should the EventSystem allow navigation events (move / submit / cancel). |
+| **Drag Threshold** | The soft area for dragging in pixels. |
+
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/EventSystem.html
 
