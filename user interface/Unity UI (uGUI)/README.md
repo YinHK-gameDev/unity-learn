@@ -64,6 +64,21 @@ Within a selectable component there are several transition options depending on 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-SelectableTransition.html
 
 
+**Navigation Options:**
+| **Property:** | **Function:** |
+| --- | --- |
+| **Navigation** | The Navigation options refers to how the navigation of UI elements in play mode will be controlled. |
+| **None** | No keyboard navigation. Also ensures that it does not receive focus from clicking/tapping on it. |
+| **Horizontal** | Navigates Horizontally. |
+| **Vertical** | Navigates Vertically. |
+| **Automatic** | Automatic Navigation. |
+| **Explicit** | In this mode you can explicitly specify where the control navigates to for different arrow keys. |
+| **Visualize** | Selecting Visualize gives you a visual representation of the navigation you have set up in the scene window. See below. |
+
+
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-SelectableNavigation.html
+
+
 
 ### UI Effect Components
 
