@@ -97,6 +97,9 @@ https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html
 **`UnityEngine.UI` scripting API** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.UI.html
 
+**`UnityEditor.UI` scripting API** \
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEditor.UI.html
+
 **uGUI reference** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIReference.html
 
