@@ -26,7 +26,14 @@ Most of the interaction components have some things in common. They are selectab
 
 > The interaction components have at least one UnityEvent that is invoked when user interacts with the component in specific way. The UI system catches and logs any exceptions that propagate out of code attached to UnityEvent.
 
-
+- Selectable Base Class
+- Button
+- Toggle
+- Toggle Group
+- Slider
+- Scrollbar
+- Scroll Rect
+- InputField
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIInteractionComponents.html
 
