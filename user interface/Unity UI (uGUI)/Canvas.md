@@ -50,6 +50,20 @@ The **UI elements are rendered by this camera**, which means that the **Camera s
 
   ![](./img/CanvasWorldSpace.png)
 
+
+### Canvas Scaler component
+The **Canvas Scaler component** is used for controlling the overall scale and pixel density of UI elements in the Canvas. This **scaling affects everything under the Canvas**, including font sizes and image borders.
+
+
+### Canvas Group
+The Canvas Group can be used to **control certain aspects of a whole group of UI elements** from one place without needing to handle them each individually. The properties of the Canvas Group affect the GameObject it is on **as well as all children**.
+
+Typical uses of Canvas Group are:
+
+-   Fading in or out a whole window by adding a Canvas Group on the GameObject of the Window and control its Alpha property.
+-   Making a whole set of controls non-interactable ("grayed out") by adding a Canvas Group to a parent GameObject and setting its Interactable property to false.
+-   Making one or more UI elements not block mouse events by placing a Canvas Group component on the element or one of its parents and setting its Block Raycasts property to false.
+
 ### ref 
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UICanvas.html
