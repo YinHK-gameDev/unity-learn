@@ -184,6 +184,72 @@ Add **Event System** component to an UI gameobject.
 
 https://medium.com/xrpractices/lets-build-a-custom-event-system-in-unity3d-d39f38b223d1
 
+https://vionixstudio.com/2022/06/20/unity-events-and-delegates/
+
+
+Example of using **delegate** in **event**: 
+```cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Events : MonoBehaviour
+{
+    public delegate void ActionClick();
+
+    public static event ActionClick OnClick;
+    
+    public void Button_Click()
+    {
+        OnClick?.Invoke();
+    }
+}
+```
+```cs
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Cube : MonoBehaviour
+{
+    void Start()
+    {
+        Events.OnClick += TurnRed;
+    }
+
+    private void TurnRed()
+    {
+        GetComponent<MeshRenderer>().material.color = Color.red;
+    }
+
+    private void OnDisable()
+    {
+        Events.OnClick -= TurnRed;
+    }
+}
+
+```
+https://github.com/tunchasan/Unity-Delegates-and-Events-Cheatseet/tree/main/Assets/_Main/Scripts/Event%20Example%202
+
+
+> 1. Declare a Delegate
+  ```cs
+    public delegate void OnGameStart();
+  ```
+> 2.Create an Event
+  ```cs
+    public static event OnGameStart onGameStart;
+  ```
+> 3. Point to method
+  ```cs
+    onGameStart += Move;
+  ```
+> 4. Invoke an Event
+  ```cs
+    onGameStart ();
+  ```
+
 ### C# Delegate Events VS UnityEvent
 he only advantage and reason to use UnityEvent is that it allows you to use events in the Editor. That's for drag and drop people or those making Editor plugins.
 
@@ -196,6 +262,7 @@ You should always use native event and delegate over UnityEvent if you are not m
 https://www.youtube.com/watch?v=oc3sQamIh-Q
 
 https://forum.unity.com/threads/why-choose-unityevents-over-native-c-events.479311/
+
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/EventSystem.html
