@@ -182,6 +182,7 @@ Add **Event System** component to an UI gameobject.
 ### Build your customed Event in Unity(Using C# delefate event)
 ![](./img/custom_event_system.png)
 
+https://medium.com/xrpractices/lets-build-a-custom-event-system-in-unity3d-d39f38b223d1
 
 ### C# Delegate Events VS UnityEvent
 he only advantage and reason to use UnityEvent is that it allows you to use events in the Editor. That's for drag and drop people or those making Editor plugins.
