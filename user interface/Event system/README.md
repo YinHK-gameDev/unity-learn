@@ -161,6 +161,7 @@ This can then be invoked by calling the **`Invoke()`** function with a `string` 
 UnityEvents can be defined with up to **4 arguments** in their generic definition.
 
 
+
 ### Event System Component
 This subsystem is responsible for controlling all the other elements that make up eventing. It coordinates which Input Module is currently active, which GameObject is currently considered 'selected', and a host of other high level Event System concepts.
 
@@ -249,6 +250,10 @@ https://github.com/tunchasan/Unity-Delegates-and-Events-Cheatseet/tree/main/Asse
   ```cs
     onGameStart ();
   ```
+
+#### Action and Func Delegates in Unity
+https://medium.com/nerd-for-tech/action-and-func-delegates-d60fe913e26c
+
 
 ### C# Delegate Events VS UnityEvent
 he only advantage and reason to use UnityEvent is that it allows you to use events in the Editor. That's for drag and drop people or those making Editor plugins.
