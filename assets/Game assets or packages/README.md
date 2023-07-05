@@ -18,3 +18,5 @@ https://assetstore.unity.com/add-ons?clickref=1101lwV9a5rr&utm_source=partnerize
 https://benic360.com/unity-asset-store-review/
 
 https://crazyoystergames.com/blog/the-best-unity-plugins-to-save-time/
+
+https://gamedevplugins.com/plugins/
