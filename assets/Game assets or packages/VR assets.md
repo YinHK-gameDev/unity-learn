@@ -1,5 +1,9 @@
 ## VR assets
 
 
-
+**Auto Hand - VR Physics Interaction** \
 https://assetstore.unity.com/packages/tools/game-toolkits/auto-hand-vr-physics-interaction-165323#content
+
+
+**VR Panorama 360 PRO Renderer** \
+https://assetstore.unity.com/packages/tools/video/vr-panorama-360-pro-renderer-35102?aid=1101l4bPZ&utm_campaign=unity_affiliate&utm_medium=affiliate&utm_source=partnerize-linkmaker
