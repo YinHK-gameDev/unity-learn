@@ -61,7 +61,9 @@ namespace Player
 
 
 ### Change root namespace in Unity
-Edit - Project Settings... - Editor - Root namespace
+This will automatically add namespace to C# script
+
+**Edit > Project Settings > Editor > C# Project Generation > Root namespace**
 
 ### useful namespace used in unity
 - `using System`
