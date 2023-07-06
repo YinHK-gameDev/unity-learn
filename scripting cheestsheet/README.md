@@ -41,9 +41,67 @@ private  scriptName/className  variableName;
    variable’s name.GetComponent<Script name>();
   ```
 
+#### Using namespace
+For **static** method:
+
+```cs
+namespace ImportantStuff
+{
+    public class Foo
+    {
+        public static void SomeHelperMethod()
+        {
+            // [ ... ]
+        }
+    }
+}
+
+```
+```cs
+using ImportantStuff;
+
+public class someOtherClass : MonoBehaviour
+{
+    void Start()
+    {
+        Foo.SomeHelperMethod();
+    }
+}
+
+```
+For non **static** method:
+
+```cs
+namespace ImportantStuff
+{
+    public class Foo
+    {
+        public void Somenethod()
+        {
+            // [ ... ]
+        }
+    }
+}
+```
+```cs
+using ImportantStuff;
+
+public class someOtherClass : MonoBehaviour
+{
+    void Start()
+    {
+        Foo fool = new Fool();
+        foo.SomeMethod();
+    }
+}
+
+```
+
 https://www.youtube.com/watch?v=Y7pp2gzCzUI
 
 https://www.youtube.com/watch?v=2pCkInvkwZ0
+
+https://discussions.unity.com/t/how-to-reference-a-class-in-another-script-properly/185295/5
 
 ### Life cycle
 ![](./img/monobehaviour_flowchart.svg)
