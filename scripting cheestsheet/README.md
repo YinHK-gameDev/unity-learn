@@ -41,6 +41,9 @@ private  scriptName/className  variableName;
    variable’s name.GetComponent<Script name>();
   ```
 
+https://www.youtube.com/watch?v=Y7pp2gzCzUI
+
+https://www.youtube.com/watch?v=2pCkInvkwZ0
 
 ### Life cycle
 ![](./img/monobehaviour_flowchart.svg)
