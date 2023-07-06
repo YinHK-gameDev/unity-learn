@@ -23,6 +23,8 @@ namespace Enemy {
 
 ```
 
+### Change root namespace in Unity
+Edit - Project Settings... - Editor - Root namespace
 
 ### useful namespace used in unity
 - `using System`
