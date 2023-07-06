@@ -9,6 +9,10 @@ https://assetstore.unity.com/templates/systems
 
 https://assetstore.unity.com/templates?clickref=1100lwUXU5zv&utm_source=partnerize&utm_medium=affiliate&utm_campaign=unity_affiliate
 
+Ball pool game template \
+https://assetstore.unity.com/packages/templates/packs/8-ball-pool-billiard-multiplayer-completed-game-251121
+
+
 ### Tools & Add-Ons
 https://assetstore.unity.com/tools?clickref=1011lwVL8GwT&utm_source=partnerize&utm_medium=affiliate&utm_campaign=unity_affiliate
 
