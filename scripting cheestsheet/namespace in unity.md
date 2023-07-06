@@ -23,6 +23,43 @@ namespace Enemy {
 
 ```
 
+### Adding namespace manually
+
+```cs
+public class PlayerController : MonoBehaviour
+{
+  
+  void Start(){
+  
+  }
+  
+  void Update(){
+    
+  }
+  
+}
+```
+
+Add customed namespace manually
+
+```cs
+namespace Player
+{
+    public class PlayerController : MonoBehaviour
+    {
+      void Start(){
+      }
+      
+      void Update(){
+      }
+    }
+}
+
+```
+
+
+
+
 ### Change root namespace in Unity
 Edit - Project Settings... - Editor - Root namespace
 
