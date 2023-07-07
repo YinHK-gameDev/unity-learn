@@ -27,6 +27,7 @@ Quantum Console is a powerful and easy to use in-game command console. By simply
 
 https://assetstore.unity.com/packages/tools/utilities/quantum-console-211046#description
 
+https://www.youtube.com/watch?v=bOf6CjpuSFs
 
 ### AzeS - In Game Console
 https://assetstore.unity.com/packages/tools/gui/azes-in-game-console-191452
