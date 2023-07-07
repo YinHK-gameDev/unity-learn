@@ -22,4 +22,5 @@ To change the default style sheet, set the **Default Style Sheet > Default Style
 ### ref
 https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/manual/RichText.html
 
-
+Textmesh Pro setting \
+https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/manual/Settings.html
