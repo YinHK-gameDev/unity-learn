@@ -3,6 +3,10 @@ A common way to compose a game scene in Unity is attaching one GameObject to ano
 
 Using **Event** is a good way to trigger something happen in game without declaring public gameobject field and dragging and dropping in inspector for detecting the trigger happen.
 
+
+> To use event, you can choose using **UnityEvents** or **C# delegate & event**
+
+
 ### Create Event Manager
 In order to overcome these problems, just created a pure C# Event Manager to implement an event-driven architecture.
 allow items in our projects to subscribe to events, and have events trigger actions in our games. This will reduce dependencies and allow easier maintenance of our projects.
@@ -16,9 +20,7 @@ allow items in our projects to subscribe to events, and have events trigger acti
 - **`void OnEnable()`** to subcribe the event.
 - **`void OnDisable()`** to unsubscribethe event. 
 
-
 https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#
-
 
 ### Using UnityEvents
 
@@ -112,10 +114,68 @@ This can then be invoked by calling the **`Invoke()`** function with a `string` 
 UnityEvents can be defined with up to **4 arguments** in their generic definition.
 
 
-
-
 ### Events & Delegates
 https://gamedevbeginner.com/events-and-delegates-in-unity/
 
 ### Using C# event
+
+> using **`even`**t keyword with **`Func`** delegate or **`Action`** delegate. If any return type, use **`Func`** delegate, otherwise use **`Action`** delegate.
+
+Eg:
+
+```cs
+// EventManager.cs
+public class EventManager : MonoBehaviour
+{
+    public static event Action OpenDoorEvent;
+
+    public static void StartDoorEvent()
+    {
+        OpenDoorEvent?.Invoke();
+    }
+}
+
+```
+
+```cs
+// Door triger.cs
+
+public class DoorTrigger : Monobehavior
+{
+    private void onTriggerEnter2D(Collider2D collision)
+    {
+        EventManager.StartDoorEvent();
+    }
+}
+```
+
+```cs
+public class Door : Monobehavior
+{
+    private void start()
+    {
+        EventManager.OpenDoorEvent += OpenDoor;
+    }
+
+    void Updaye()
+    {
+        if (open == true)
+            transform.positiion = vector2.MoveTowards(transform.position, movePoint.position, 5 * time.deltaTime);
+    }
+
+
+    private void OnDisable()
+    {
+        EventManager.OpenDoorEvent -= OpenDoor;
+    }
+
+}
+
+```
+
+
+> You can also subcribe the event in `OnEable()` and unscribe the event in `OnDisable()`
+
+
+
 
