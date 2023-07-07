@@ -119,7 +119,7 @@ https://gamedevbeginner.com/events-and-delegates-in-unity/
 
 ### Using C# event
 
-> using **`even`**t keyword with **`Func`** delegate or **`Action`** delegate. If any return type, use **`Func`** delegate, otherwise use **`Action`** delegate.
+> using **`event`** keyword with **`Func`** delegate or **`Action`** delegate. If any return type, use **`Func`** delegate, otherwise use **`Action`** delegate.
 
 Eg:
 
