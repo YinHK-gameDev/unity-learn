@@ -25,6 +25,14 @@ Quantum Console is a powerful and easy to use in-game command console. By simply
 
 - Full C# source included
 
+In order to get started as quickly as possible, simply follow the following steps:
+
+1.  Ensure the Text Mesh Pro package is installed; this is done by default for new projects
+2.  Add an Event System to your scene if you do not already have one `GameObject > UI > EventSystem`
+3.  Navigate to `Assets/Plugins/QFSW/Quantum Console/Source/Prefabs` and add the `Quantum Console` prefab to your scene.
+
+After this, you are ready to try out Quantum Console!
+
 https://assetstore.unity.com/packages/tools/utilities/quantum-console-211046#description
 
 https://www.youtube.com/watch?v=bOf6CjpuSFs
