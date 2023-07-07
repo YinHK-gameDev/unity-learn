@@ -29,6 +29,8 @@ https://assetstore.unity.com/packages/tools/utilities/quantum-console-211046#des
 
 https://www.youtube.com/watch?v=bOf6CjpuSFs
 
+https://qfsw.co.uk/docs/QC/
+
 ### AzeS - In Game Console
 https://assetstore.unity.com/packages/tools/gui/azes-in-game-console-191452
 
