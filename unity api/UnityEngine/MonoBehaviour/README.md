@@ -23,6 +23,41 @@ Update is called every frame, if the MonoBehaviour is enabled.
 
 > **FixedUpdate**  is used for being in-step with the physics engine, so anything that needs to be applied to a rigidbody should happen in FixedUpdate.
 
+### `OnEnable()`
+This function is called when the object becomes **enabled and active**.
+
+Because this function is executed when the object is enabled, it will be executed whenever entering the Play Mode (with the object enabled).
+
+
+### `OnDisable()`
+This function is called when the behaviour becomes disabled.
+
+This is also called when the object is **destroyed** and can be **used for any** **cleanup code**. When scripts are reloaded after compilation has finished, OnDisable will be called, followed by an OnEnable after the script has been loaded.
+
+
+### `OnGUI()`
+
+**`OnGUI`** is called for rendering and handling **GUI events**.
+
+**`OnGUI`** is the only function that can implement the **"Immediate Mode"** GUI (IMGUI) system for rendering and handling GUI events. Your OnGUI implementation might be called several times per frame (one call per event).
+
+Eg:
+```cs
+using UnityEngine;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour
+{
+    void OnGUI()
+    {
+        if (GUI.Button(new Rect(10, 10, 150, 100), "I am a button"))
+        {
+            print("You clicked the button!");
+        }
+    }
+}
+```
+
 ### Update  vs  Fixedupdate
 
 > fixedUpdate called every physics step
