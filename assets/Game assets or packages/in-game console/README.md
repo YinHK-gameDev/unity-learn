@@ -33,6 +33,27 @@ In order to get started as quickly as possible, simply follow the following step
 
 After this, you are ready to try out Quantum Console!
 
+
+#### Quantum Registry
+The Quantum Console Processor supports a feature called the registry.
+
+By using the registry in conjunction with **`MonoTargetType.Registry`**, you can fully control which objects are used for target
+
+Objects can be added to the registry with:
+
+-   `QuantumRegistry.RegisterObject<T>(T target)` programmatically
+-   `register-object<T>` command
+
+Multiple objects can be registered per type, and will not be removed from the registry unless they are destroyed or manually removed.
+
+Objects can be removed from the registry with:
+
+-   `QuantumRegistry.DeregisterObject<T>(T target)` 
+-   `deregister-object<T>`
+
+
+
+
 https://assetstore.unity.com/packages/tools/utilities/quantum-console-211046#description
 
 https://www.youtube.com/watch?v=bOf6CjpuSFs
