@@ -150,6 +150,7 @@ public class DoorTrigger : Monobehavior
 ```
 
 ```cs
+// Door.cs
 public class Door : Monobehavior
 {
     private void start()
