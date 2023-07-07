@@ -14,6 +14,7 @@ You can switch to other versions of TextMesh Pro from the Packages Window.
 
 To use TextMesh Pro, you must import the TMP Essential Resources package
 
+TMP can be use to create  **UI Text GameObjects** or **3D Text GameObjects**.
 
 You can also import the TMP Examples & Extras package to help you learn TextMesh Pro.
 
