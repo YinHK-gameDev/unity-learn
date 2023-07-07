@@ -254,6 +254,67 @@ https://github.com/tunchasan/Unity-Delegates-and-Events-Cheatseet/tree/main/Asse
 #### Action and Func Delegates in Unity
 https://medium.com/nerd-for-tech/action-and-func-delegates-d60fe913e26c
 
+> using **`event`** keyword with **`Func`** delegate or **`Action`** delegate. If any return type, use **`Func`** delegate, otherwise use **`Action`** delegate.
+
+Eg:
+
+```cs
+// EventManager.cs
+public class EventManager : MonoBehaviour
+{
+    public static event Action OpenDoorEvent;
+
+    public static void StartDoorEvent()
+    {
+        OpenDoorEvent?.Invoke();
+    }
+}
+
+```
+
+```cs
+// Door triger.cs
+
+public class DoorTrigger : Monobehavior
+{
+    private void onTriggerEnter2D(Collider2D collision)
+    {
+        EventManager.StartDoorEvent();
+    }
+}
+```
+
+```cs
+// Door.cs
+public class Door : Monobehavior
+{
+    private void start()
+    {
+        EventManager.OpenDoorEvent += OpenDoor;
+    }
+
+    void Updaye()
+    {
+        if (open == true)
+            transform.positiion = vector2.MoveTowards(transform.position, movePoint.position, 5 * time.deltaTime);
+    }
+
+
+    private void OnDisable()
+    {
+        EventManager.OpenDoorEvent -= OpenDoor;
+    }
+
+}
+
+```
+
+
+> You can also subcribe the event in `OnEable()` and unscribe the event in `OnDisable()`
+
+
+
+
 
 ### C# Delegate Events VS UnityEvent
 he only advantage and reason to use UnityEvent is that it allows you to use events in the Editor. That's for drag and drop people or those making Editor plugins.
