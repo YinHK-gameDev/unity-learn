@@ -41,6 +41,8 @@ https://qfsw.co.uk/docs/QC/
 
 https://qfsw.co.uk/docs/QC/articles/docs/commands.html
 
+https://www.youtube.com/watch?v=3fltFRFa6Mg
+
 ### AzeS - In Game Console
 https://assetstore.unity.com/packages/tools/gui/azes-in-game-console-191452
 
