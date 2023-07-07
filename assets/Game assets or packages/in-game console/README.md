@@ -52,19 +52,31 @@ Objects can be removed from the registry with:
 -   `deregister-object<T>`
 
 
-
-
 https://assetstore.unity.com/packages/tools/utilities/quantum-console-211046#description
 
 https://www.youtube.com/watch?v=bOf6CjpuSFs
 
 https://qfsw.co.uk/docs/QC/
 
-https://qfsw.co.uk/docs/QC/articles/docs/commands.html
-
 https://www.youtube.com/watch?v=3fltFRFa6Mg
 
 https://www.youtube.com/watch?v=3fltFRFa6Mg&t=1s
+
+**Command** \
+https://qfsw.co.uk/docs/QC/articles/docs/commands.html
+
+**Command Actio**ns \
+https://qfsw.co.uk/docs/QC/articles/docs/actions.html
+
+**Quantum Registry** \
+https://qfsw.co.uk/docs/QC/articles/docs/registry.html
+
+**Included commands** \
+https://qfsw.co.uk/docs/QC/articles/docs/incl-cmds.html
+
+**Events and Callbacks about QC** \
+https://qfsw.co.uk/docs/QC/articles/docs/events.html
+
 
 ### AzeS - In Game Console
 https://assetstore.unity.com/packages/tools/gui/azes-in-game-console-191452
