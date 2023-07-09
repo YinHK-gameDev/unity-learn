@@ -4,10 +4,11 @@ The character in a first- or third-person game usually needs some collision-base
 
 A simple, capsule-shaped collider component with specialized features for behaving as a character in a game. Unlike true collider components, a Rigidbody is not needed and the momentum effects are not realistic.
 
-A character controller cannot walk through static colliders in a scene
-, and so will follow floors and be obstructed by walls. It can push rigidbody objects aside while moving but will not be accelerated by incoming collisionsA collision occurs when the physics engine detects that the colliders of two GameObjects make contact or overlap, when at least one has a Rigidbody component and is in motion. More info
+A character controller **cannot walk through static colliders in a scene**, and so will follow floors and be obstructed by walls. It can push rigidbody objects aside while moving but will not be accelerated by incoming collisionsA collision occurs when the physics engine detects that the colliders of two GameObjects make contact or overlap, when at least one has a Rigidbody component and is in motion. More info
 See in Glossary.
 
+In a first-person or third-person application, a user’s character or avatar
+ usually needs some collision-based physics, so that it doesn’t fall through the floor or walk through walls. In 3D physics, you can **create and configure character physics** and **control with a Character Controller**.
 
 > The **Character Controller** is mainly **used for third-person or first-person player control** that **does not make use of Rigidbody
  physics**.
