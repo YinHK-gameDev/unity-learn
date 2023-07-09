@@ -12,5 +12,10 @@ See in Glossary.
 > The **Character Controller** is mainly **used for third-person or first-person player control** that **does not make use of Rigidbody
  physics**.
 
-
+### ref
 https://docs.unity3d.com/Manual/class-CharacterController.html
+
+Character Controller component reference \
+https://docs.unity3d.com/Manual/class-CharacterController.html
+
+
