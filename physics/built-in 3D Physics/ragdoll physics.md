@@ -39,6 +39,10 @@ https://www.youtube.com/watch?v=DInV-jHm9rk
 
 https://www.youtube.com/watch?v=KuMe6Iz8pFI
 
+https://www.youtube.com/watch?v=Iyqo-hjLg20
+
+https://www.youtube.com/watch?v=4_QCbilpOzQ
+
 **Improving Joint and Ragdoll stability** \
 https://docs.unity3d.com/Manual/RagdollStability.html
 
