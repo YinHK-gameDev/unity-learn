@@ -16,6 +16,20 @@ In a first-person or third-person application, a user’s character or avatar
 > The **Character Controller** is mainly **used for third-person or first-person player control** that **does not make use of Rigidbody
  physics**.
 
+
+
+
+| **_Property:_** | **_Function:_** |
+| --- | --- |
+| **Slope Limit** | Limits the collider to only climb slopes that are less steep (in degrees) than the indicated value. |
+| **Step Offset** | The character will step up a stair only if it is closer to the ground than the indicated value. This should not be greater than the Character Controller’s height or it will generate an error. |
+| **Skin width** | Two colliders can penetrate each other as deep as their Skin Width. Larger Skin Widths reduce jitter. Low Skin Width can cause the character to get stuck. A good setting is to make this value 10% of the Radius. |
+| **Min Move Distance** | If the character tries to move below the indicated value, it will not move at all. This can be used to reduce jitter. In most situations this value should be left at 0. |
+| **Center** | This will offset the Capsule Collider in world space, and won’t affect how the Character pivots. |
+| **Radius** | Length of the Capsule Collider’s radius. This is essentially the width of the collider. |
+| **Height** | The Character’s **Capsule Collider** height. Changing this will scale the collider along the Y axis in both positive and negative directions. |
+
+
 ### ref
 https://docs.unity3d.com/Manual/class-CharacterController.html
 
