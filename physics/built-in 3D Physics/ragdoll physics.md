@@ -35,5 +35,5 @@ https://docs.unity3d.com/Manual/ragdoll-physics-section.html
 
 https://docs.unity3d.com/Manual/wizard-RagdollWizard.html
 
-
+**Improving Joint and Ragdoll stability** \
 https://docs.unity3d.com/Manual/RagdollStability.html
