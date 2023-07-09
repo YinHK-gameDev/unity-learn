@@ -76,7 +76,7 @@ To apply a **constant linear or rotational force** to a GameObject’s Rigidbody
 
 To make a GameObject constantly accelerate forward (for example, to make it behave like a rocket), do the following:
 
-1.  Add a Constant Force component to the GameObject.
+1.  Add a **Constant Force component** to the GameObject.
 2.  On the Constant Force component, set the **Relative Force** Z axis to a positive value.
 3.  On the Rigidbody, disable **Use Gravity**. This ensures that there is no competing gravitational force acting upon the GameObject.
 4.  On the Rigidbody component, set the **Drag** property so that the Rigidbody does not exceed your preferred maximum velocity (the higher the drag, the lower the maximum velocity will be). This might require some trial and error to get the effect you want.
