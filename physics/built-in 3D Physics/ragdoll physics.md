@@ -37,5 +37,8 @@ https://docs.unity3d.com/Manual/wizard-RagdollWizard.html
 
 https://www.youtube.com/watch?v=DInV-jHm9rk
 
+https://www.youtube.com/watch?v=KuMe6Iz8pFI
+
 **Improving Joint and Ragdoll stability** \
 https://docs.unity3d.com/Manual/RagdollStability.html
+
