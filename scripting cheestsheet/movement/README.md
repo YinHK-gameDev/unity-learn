@@ -170,6 +170,12 @@ public class Example : MonoBehaviour
 
 https://docs.unity3d.com/ScriptReference/CharacterController.html
 
+
+### Character Controller vs Rigidbody approach
+
+Rigidbody code less, a lot more functions to interact with physic whereas the Character Controller doesn’t.
+Character Controller approach doesn't need to take care about any physics.
+
 https://medium.com/ironequal/unity-character-controller-vs-rigidbody-a1e243591483
 
 
