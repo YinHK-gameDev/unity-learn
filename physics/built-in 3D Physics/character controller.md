@@ -10,6 +10,9 @@ See in Glossary.
 In a first-person or third-person application, a user’s character or avatar
  usually needs some collision-based physics, so that it doesn’t fall through the floor or walk through walls. In 3D physics, you can **create and configure character physics** and **control with a Character Controller**.
 
+
+
+### Character Controller component
 > The **Character Controller** is mainly **used for third-person or first-person player control** that **does not make use of Rigidbody
  physics**.
 
