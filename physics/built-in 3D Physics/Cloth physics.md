@@ -1,4 +1,4 @@
-## Cloth
+## Cloth physics
 The Cloth component works with the Skinned Mesh
  Renderer to provide a physics-based solution for simulating fabrics. It is specifically designed for character clothing, and only works with the Skinned Mesh Renderer
 . If you add a Cloth component to a GameObject
