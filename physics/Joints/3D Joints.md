@@ -1,4 +1,9 @@
 ## 3D Joints
+
+A joint connects a Rigidbody
+ to another Rigidbody or a fixed point in space. Joints apply forces that move rigid bodies, and joint limits restrict that movement.
+
+ 
 | Property: | Function: |
 | --- | --- |
 | Character Joint | Emulates a ball and socket joint, like a hip or shoulder. Constrains rigid body movement along all linear degrees of freedom, and enables all angular freedoms. Rigidbodies attached to a Character Joint orient around each axis and pivot from a shared origin. |
