@@ -9,5 +9,7 @@
 
 
 
+### ref
+https://docs.unity3d.com/Manual/Joints.html
 
 https://www.youtube.com/watch?v=MElbAwhMvTc
