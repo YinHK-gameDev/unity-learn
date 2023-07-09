@@ -114,6 +114,11 @@ When using (or running) scripts within the Editor, use:
 - `EditorSceneManager` API: This class is only available only in the Editor and has several functions to implement all the Multi-Scene editing features described in the pages Setup multiple scenes and Bake data in multiple scenes.
 - `SceneSetup utility` class: A utility class that you can use to store information about a scene that is in the Hierarchy window.
 
+https://www.youtube.com/watch?v=zObWVOv1GlE
+
+https://www.youtube.com/watch?v=91kJtsDLTyE
+
+https://www.youtube.com/watch?v=kJCEW0ECuqk
 
 **runtime scripts:**
 
