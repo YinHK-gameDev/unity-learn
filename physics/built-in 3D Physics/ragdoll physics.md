@@ -26,7 +26,8 @@ Drag the different Transforms of your character instance to the appropriate prop
 
 When you are done, click the **Create Button**. Now when you enter **Play Mode**, you will see your character go limp as a ragdoll.
 
-The final step is to save the setup **ragdoll** as a **Prefab**. Choose **Assets -> Create -> Prefab** from the menu bar. You will see a New Prefab appear in the Project View. Rename it to “Ragdoll Prefab”. Drag the ragdoll character instance from the Hierarchy on top of the **"Ragdoll Prefab"**. You now have a completely set-up, re-usable ragdoll character to use as much as you like in your game.
+The final step is to save the setup **ragdoll** as a **Prefab**. Choose **Assets > Create > Prefab** from the menu bar. You will see a New Prefab appear in the Project View. Rename it to **"Ragdoll Prefab"**. 
+Drag the ragdoll character instance from the Hierarchy **on top** of the **"Ragdoll Prefab"**. You now have a completely set-up, re-usable **ragdoll character** to use as much as you like in your game.
 
 
 ### ref
