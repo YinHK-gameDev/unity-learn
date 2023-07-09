@@ -69,5 +69,26 @@ Constant Force adds constant forces to a Rigidbody. This is useful for **GameObj
 | Relative Torque | Define the local axes that the Rigidbody rotates around. |
 
 
+### Apply constant force to a Rigidbody
+To apply a **constant linear or rotational force** to a GameObject’s Rigidbody, add the **`Constant Force component`**.
+
+#### Set maximum velocity limitations
+
+
+
+
+
+### ref
+**Rigidbody Scripting API** \
+https://docs.unity3d.com/ScriptReference/Rigidbody.html
+
+
+
+
+
+
+
+
+
 
 
