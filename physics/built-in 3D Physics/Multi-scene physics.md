@@ -21,4 +21,8 @@ More precisely, to get the expected physics results, you must **write a script t
 ### ref
 https://docs.unity3d.com/Manual/physics-multi-scene.html
 
+https://www.youtube.com/watch?v=GLu1T5Y2SSc
+
+https://www.youtube.com/watch?v=DcGiUcfLbes&t=1s
+
 
