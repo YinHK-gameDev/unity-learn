@@ -42,7 +42,7 @@
    https://www.youtube.com/watch?v=Micpv8SOXcg
 
 11. **Spring Joint 2D** 
-   - allows two game objects controlled by rigidbody physics to be attached together as if by a spring.
+   - allows two game objects controlled by rigidbody physics to be attached together as if by a spring. Spring Joint 2D works in a similar way to distance joints. However, while distance joints enforce a fixed distance, spring joints apply tension to a connection, causing objects to bounce
   
    https://docs.unity3d.com/Manual/class-SpringJoint2D.html
 
