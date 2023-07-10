@@ -49,7 +49,7 @@
    https://www.youtube.com/watch?v=zvHB1fsRadQ
    
 11. **Target Joint 2D** 
-   - connects to a specified target, rather than another rigid body object, as other joints do. It is a spring type joint, which you could use for picking up and moving an object acting under gravity, for example.
+   - connects to a specified target, rather than another rigid body object, as other joints do. It is a spring type joint, which you could use for picking up and moving an object acting under gravity, for example. The Target Joint 2D does not connect to another object with a rigid body; instead, it connects to a specific target. This is a spring type joint and can be used for picking up and moving objects acting under gravity, like our moving platform.
   
     https://docs.unity3d.com/Manual/class-TargetJoint2D.html
 
