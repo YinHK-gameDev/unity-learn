@@ -28,6 +28,7 @@ public void LoadPrefs()
 
 ```
 
+> Since each Unity application stores all its PlayerPrefs in a single file, it’s not well-suited for handling multiple save files or cloud saves, both of which require you to store and receive save data from a different location.
 
 
 ### ref 
