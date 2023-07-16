@@ -8,6 +8,28 @@ Saving data is critical for any game. Whether you need to save high scores, pref
 **PlayerPrefs** are not made to save game states. However, they’re useful, so we’ll discuss them. You can use PlayerPrefs to store a player’s preferences between sessions, such as quality settings, audio volume or other non-essential data. PlayerPrefs are stored somewhere on your device, separate from your project. The exact location varies depending on your operating system, but it’s usually somewhere that’s globally accessible and managed by your OS. The stored data is in simple key-value pairs. Because of their ease of access, they aren’t safe from users who wish to open and modify them, and they can be deleted by accident since they’re saved outside of the project and managed by your OS.
 
 
+PlayerPrefs are relatively easy to implement and require only a few lines of code, but they only support Float, Int and String-type values, making it challenging to serialize large, complex objects. A determined user can overcome this limitation by converting their saved data into some format represented by one of these basic types
+
+
+
+eg:
+```cs
+public void SavePrefs()
+{
+    PlayerPrefs.SetInt("Volume", 50);
+    PlayerPrefs.Save();
+}
+ 
+public void LoadPrefs()
+{
+    int volume = PlayerPrefs.GetInt("Volume", 0); 
+}
+
+
+```
+
+
+
 ### ref 
 https://www.youtube.com/watch?v=XOjd_qU2Ido
 
