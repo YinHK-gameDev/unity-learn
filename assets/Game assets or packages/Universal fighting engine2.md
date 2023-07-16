@@ -1,6 +1,8 @@
 ## Universal fighting engine 2
 
 
+### Upgrade & updating UFE 2
+https://www.youtube.com/watch?v=-6QriL3973k
 
 ### ref
 https://assetstore.unity.com/packages/templates/systems/universal-fighting-engine-2-standard-126331
