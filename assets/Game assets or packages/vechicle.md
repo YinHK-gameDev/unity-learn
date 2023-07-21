@@ -30,3 +30,7 @@ https://assetstore.unity.com/packages/tools/physics/wheel-controller-3d-74512#co
 ### Realistic Car Controller Pro
 https://assetstore.unity.com/packages/tools/physics/realistic-car-controller-pro-178967
 
+### Burnout Drift Multiplayer
+https://assetstore.unity.com/packages/templates/packs/burnout-drift-multiplayer-226272
+
+
