@@ -38,15 +38,15 @@ Use parameter to control animation and transitions between Animator states:
     
 - **Animator.SetBool**
     
-    [Animator.SetBool](https://docs.unity3d.com/ScriptReference/Animator.SetBool.html)
+    https://docs.unity3d.com/ScriptReference/Animator.SetBool.html
     
 - **Animator.SetInteger**
     
-    [Animator.SetInteger](https://docs.unity3d.com/ScriptReference/Animator.SetInteger.html)
+    https://docs.unity3d.com/ScriptReference/Animator.SetInteger.html
     
 - **Unity animation transition has exit time**
     
-    [【Unity】Mecanim動畫系統Part3 - 動畫轉換的建立和屬性設定(1)](https://jerrard-liu.blogspot.com/2016/04/MecanimPart3.html)
+    https://jerrard-liu.blogspot.com/2016/04/MecanimPart3.html
     
 - **Five tips for keeping animator controllers nice & tidy**
     
