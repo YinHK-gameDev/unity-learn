@@ -1,4 +1,4 @@
-### Enter/Stay/Exit 分析
+### Enter/Stay/Exit analysis
 
 以Trigger為例，就是**OnTriggerEnter**、**OnTriggerStay**、**OnTriggerExit**
 
