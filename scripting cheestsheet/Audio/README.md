@@ -68,7 +68,7 @@ public class Example : MonoBehaviour
 
 https://docs.unity3d.com/ScriptReference/AudioSource.html
 
-`AudioSource.PlayClipAtPoint`
+#### `AudioSource.PlayClipAtPoint`
 Plays an AudioClip at a given position in world space.
 
 This function creates an audio source but automatically disposes of it once the clip has finished playing.
@@ -100,6 +100,9 @@ https://docs.unity3d.com/ScriptReference/AudioClip.html
 Representation of a listener in 3D space.
 
 This class implements a microphone-like device. It records the sounds around it and plays that through the player's speakers. You can only have one listener in a Scene.
+
+> 📌 use **"AudioListener.Pause = true"** to pause all audios and use in update() only.
+
 
 
 https://docs.unity3d.com/ScriptReference/AudioListener.html
