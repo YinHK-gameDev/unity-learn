@@ -17,3 +17,6 @@ See in Glossary window differs depending on which Body Type you have selected. Y
 ### ref 
 https://github.com/YinHK-gameDev/unity-learn/blob/2021.3.0(LTS)/physics/built-in%202D%20physics/Rigidbody%202D.md
 
+
+**Rigidbody2D scripting API** \
+https://docs.unity3d.com/ScriptReference/Rigidbody2D.html
