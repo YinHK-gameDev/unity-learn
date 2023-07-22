@@ -68,6 +68,27 @@ public class Example : MonoBehaviour
 
 https://docs.unity3d.com/ScriptReference/AudioSource.html
 
+`AudioSource.PlayClipAtPoint`
+Plays an AudioClip at a given position in world space.
+
+This function creates an audio source but automatically disposes of it once the clip has finished playing.
+
+```cs
+using UnityEngine;
+
+[RequireComponent(typeof(AudioSource))]
+public class Example : MonoBehaviour
+{
+    public AudioClip clip; //make sure you assign an actual clip here in the inspector
+
+    void Start()
+    {
+        AudioSource.PlayClipAtPoint(clip, new Vector3(5, 1, 2));
+    }
+}
+```
+https://docs.unity3d.com/ScriptReference/AudioSource.PlayClipAtPoint.html
+
 ### AudioClip
 
 An AudioClip stores the audio file either compressed as ogg vorbis or uncompressed. AudioClips are referenced and used by AudioSources to play sounds.
@@ -82,6 +103,9 @@ This class implements a microphone-like device. It records the sounds around it 
 
 
 https://docs.unity3d.com/ScriptReference/AudioListener.html
+
+
+
 
 
 ### 
