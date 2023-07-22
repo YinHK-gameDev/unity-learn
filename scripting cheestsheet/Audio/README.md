@@ -89,6 +89,37 @@ public class Example : MonoBehaviour
 ```
 https://docs.unity3d.com/ScriptReference/AudioSource.PlayClipAtPoint.html
 
+
+#### A game object has different audio source, play two different audio source depend on the situation
+eg:
+
+```cs
+public currentBullets = 1;
+
+private AudioSource gunAudio;
+private AudioSource outOfAmmo;
+
+void Awake()
+{
+    gunAudio = GetComponent<AudioSource>();
+    outOfAmmo = GetComponent<AudioSource>();
+}
+
+void Update()
+{
+    if (currentBullets == 0)
+    {
+        outOfAmmo.Play();
+    }
+    else 
+    {
+        gunAudio.Play();
+    }
+}
+
+
+```
+
 ### AudioClip
 
 An AudioClip stores the audio file either compressed as ogg vorbis or uncompressed. AudioClips are referenced and used by AudioSources to play sounds.
