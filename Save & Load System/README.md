@@ -104,3 +104,6 @@ https://www.youtube.com/watch?v=aUi9aijvpgs
 Persistent data: How to save your game states and settings \
 https://blog.unity.com/games/persistent-data-how-to-save-your-game-states-and-settings \
 https://www.youtube.com/watch?v=uD7y4T4PVk0
+
+
+https://github.com/UnityTechnologies/UniteNow20-Persistent-Data/tree/main
