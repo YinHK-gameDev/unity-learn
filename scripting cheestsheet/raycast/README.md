@@ -58,6 +58,55 @@ void Update()
 ```
 
 
+#### Use the Raycast Hit variable
+The **Raycast Hit** variable is a data struct that stores information about Ray’s collision.
+
+It records information like where the hit happened in the world, what object did the Ray collide with and how far away it was from the origin of the Ray.
+
+```cs
+// Container for hit data
+RaycastHit hit;
+
+```
+You can get **the position of the hit** in the world using **`RaycastHit.point`**:
+```cs
+Vector3 hitPosition = hit.point;
+```
+
+You also can get **the distance from the Ray’s origin to the point of impact** using **`RaycastHit.distance`**:
+```cs
+float hitDistance = hit.distance;
+```
+
+You can also get information about the **Collider that was hit**, such as its **`Tag`**.
+```cs
+// Reads the Collider tag
+string tag = hit.collider.tag;
+```
+
+You could even use Raycast Hit to get a **reference** to an object’s **Transform**:
+```cs
+// Gets a Game Object reference from its Transform
+GameObject hitObject = hit.transform.gameObject;
+```
+
+> Using a **Raycast Hit variable** with Raycast will store information about the first object that is hit by the Ray.
+
+
+#### Use the Raycast function
+While the **Ray** and **Raycast Hit variables** define where a Ray will go and how information from hits will be stored, they don’t do anything on their own.
+
+To fire Rays into the scene, and check if they hit anything, you need **Raycast function** for help.
+
+
+Raycast function:
+
+- **`Physics.Raycast`**: \
+  https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
+- **`Plane.Raycast`**: \
+  https://docs.unity3d.com/2018.4/Documentation/ScriptReference/Plane.Raycast.html
+- **`Collider.Raycast`**: \
+  https://docs.unity3d.com/ScriptReference/Collider.Raycast.html
 
 
 
@@ -70,6 +119,7 @@ Ray ray = new Ray(transform.position, transform.forward);
 // Render a visible line using Draw Ray, passing in the same value
 Debug.DrawRay(ray.origin, ray.direction * 10);
 ```
+
 
 
 ### ref
