@@ -36,15 +36,21 @@ GameObject.SetActive
 https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
 
 
-### Find specific Game object 
+### Find Game object 
 
-- **`GameObject.Find()`**
+- **`GameObject.Find()`** \
+  Finds a GameObject by name and returns it. \
   https://docs.unity3d.com/ScriptReference/GameObject.Find.html
-- **`GameObject.FindWithTag()`**
+- **`GameObject.FindWithTag()`** \
+  Returns one active GameObject tagged tag. Returns null if no GameObject was found. \
   https://docs.unity3d.com/ScriptReference/GameObject.FindWithTag.html
+- **`GameObject.FindGameObjectsWithTag`** \
+  Returns an array of active GameObjects tagged `tag`. Returns empty array if no GameObject was found. \
+  https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
 - **`GameObject.CompareTag()`**
   https://docs.unity3d.com/ScriptReference/GameObject.CompareTag.html
   
+ 
 
 ### Creating gameobject
 Some games keep a constant number of objects in the scene, but it is very common for characters, treasures and other object to be created and removed during gameplay. In Unity, 
