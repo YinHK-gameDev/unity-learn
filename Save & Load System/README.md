@@ -109,6 +109,8 @@ it’s best to go with a **binary-based serializer**.
   https://github.com/protobuf-net/protobuf-net
 - **BinaryFormatter** \
   .Net library to store your objects in a binary format directly. \
+  > The BinaryFormatter type is dangerous and is not recommended for data processing. Applications should stop using BinaryFormatter as soon as possible, even if they believe the data they're processing to be trustworthy. BinaryFormatter is insecure and can't be made secure.
+  
   https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter?view=net-5.0
 - **EasySave** \
   a well-supported and popular plug-in available on the Unity Asset Store. \
