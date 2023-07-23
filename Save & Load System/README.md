@@ -108,6 +108,7 @@ it’s best to go with a **binary-based serializer**.
 - **protobuf-net** \
   https://github.com/protobuf-net/protobuf-net
 - **BinaryFormatter** \
+  .Net library to store your objects in a binary format directly. \
   https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter?view=net-5.0
 - **EasySave** \
   a well-supported and popular plug-in available on the Unity Asset Store. \
