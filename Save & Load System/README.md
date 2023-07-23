@@ -101,8 +101,10 @@ https://www.youtube.com/watch?v=gZ3wtNGB3nU
 
 https://www.youtube.com/watch?v=aUi9aijvpgs
 
-Persistent data: How to save your game states and settings \
+**Persistent data: How to save your game states and settings** \
 https://blog.unity.com/games/persistent-data-how-to-save-your-game-states-and-settings \
+
+**Persistent Data – How to save your game states and settings | Unite Now 2020** \
 https://www.youtube.com/watch?v=uD7y4T4PVk0
 
 
