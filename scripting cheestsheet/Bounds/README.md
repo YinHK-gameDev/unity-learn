@@ -16,7 +16,7 @@ This is the axis-aligned bounding box of the mesh in its own space, so the bound
 https://docs.unity3d.com/ScriptReference/Mesh-bounds.html
 
 ### `Renderer.bounds`
-The bounding box of the renderer in world space.
+The bounding box of the renderer in world space. \
 This is the axis-aligned bounding box fully enclosing the object in world space.
 
 https://docs.unity3d.com/ScriptReference/Renderer-bounds.html
