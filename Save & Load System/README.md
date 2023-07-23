@@ -94,6 +94,34 @@ Unity does not support passing other types directly to the API, such as **primit
 
 https://docs.unity3d.com/2021.2/Documentation/Manual/JSONSerialization.html
 
+### Other libraries
+Aside from the built-in serialization options, there are other external libraries for serialization.
+
+it’s best to go with a **binary-based serializer**.
+
+- **MessagePack** \
+  An efficient binary serializer \
+  https://msgpack.org/index.html \
+  https://github.com/MessagePack-CSharp/MessagePack-CSharp
+- **ProtoBuf** \
+  https://github.com/protocolbuffers/protobuf/tree/main/csharp
+- **protobuf-net** \
+  https://github.com/protobuf-net/protobuf-net
+- **BinaryFormatter** \
+  https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter?view=net-5.0
+- **EasySave** \
+  a well-supported and popular plug-in available on the Unity Asset Store. \
+  https://assetstore.unity.com/packages/tools/utilities/easy-save-the-complete-save-data-serializer-system-768
+- **.NET System.Xml** \
+  an alternative data format. Like JSON, it’s relatively human-readable and has some features that may be useful for your specific application, such as namespaces. DotNet has built-in support for XML.
+  https://learn.microsoft.com/en-us/dotnet/api/system.xml?view=net-5.0
+
+  
+
+
+
+  
+
 
 ### Security
 Security means encryption of data. 
