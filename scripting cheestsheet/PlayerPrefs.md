@@ -1,6 +1,6 @@
 ### PlayerPrefs
 
-The **PlayerPrefs** class in Unity allows you to save basic data between gameplay sessions, such as options settings, that can be saved and reloaded, even after a game has been closed.
+The **PlayerPrefs** class in Unity allows you to save basic data between gameplay sessions, such as options settings, that can be **saved and reloaded, even after a game has been closed.**
 
 It works by storing a string, float or integer value to disk with a key, which is a text string that’s used to store and recall a preference.
 
