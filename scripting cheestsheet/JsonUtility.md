@@ -62,7 +62,35 @@ public class PlayerState : MonoBehaviour
 }
 ```
 
+### `JsonUtility.ToJson`
+Generate a JSON representation of the **public fields** of an object.
 
+```cs
+public static string ToJson(object obj);
+```
+```cs
+using UnityEngine;
+
+public class PlayerState : MonoBehaviour
+{
+    public string playerName;
+    public int lives;
+    public float health;
+
+    public string SaveToString()
+    {
+        return JsonUtility.ToJson(this);
+    }
+
+    // Given:
+    // playerName = "Dr Charles"
+    // lives = 3
+    // health = 0.8f
+    // SaveToString returns:
+    // {"playerName":"Dr Charles","lives":3,"health":0.8}
+}
+
+```
 
 ### ref
 https://docs.unity3d.com/2021.2/Documentation/ScriptReference/JsonUtility.html
