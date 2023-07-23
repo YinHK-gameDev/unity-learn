@@ -1,7 +1,7 @@
 ## Raycast
-- Raycasting is the process of shooting an invisible ray from a point, in a specified direction to detect whether any colliders lay in the path of the array.
+- **Raycasting** is the process of shooting an invisible ray from a point, in a specified direction to detect whether any colliders lay in the path of the array.
 
-- A raycast sends an imaginary “laser beam” along the ray from its origin until it hits a collider
+- A **raycast** sends an imaginary “laser beam” along the ray from its origin until it hits a collider
  in the scene. 
 
 Eg:
