@@ -4,6 +4,7 @@
 - A raycast sends an imaginary “laser beam” along the ray from its origin until it hits a collider
  in the scene. 
 
+Eg:
 ```cs
 
 void FireRay()
