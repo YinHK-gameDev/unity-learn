@@ -12,7 +12,7 @@ public bool isVisible;
 https://docs.unity3d.com/ScriptReference/Renderer-isVisible.html
 
 ### `Renderer.enabled`
-Makes the rendered 3D object visible if enabled.
+Makes the rendered 3D object **visible if enabled**.
 
 ```cs
 public bool enabled;
