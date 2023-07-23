@@ -16,3 +16,8 @@ https://docs.unity3d.com/Manual/AssetStorePublishing.html
 ### Input class 
 use this scripting api to access user input \
 https://docs.unity3d.com/ScriptReference/Input.html
+
+### ref 
+https://www.youtube.com/watch?v=p-3S73MaDP8
+
+
