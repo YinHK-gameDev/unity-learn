@@ -1,6 +1,6 @@
 ## 2d animation
 
-
+The 2D Animation package includes features and tools that allow you to quickly rig and animate 2D characters in Unity in a variety of ways. 
 
 
 
