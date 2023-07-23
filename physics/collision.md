@@ -41,6 +41,8 @@ private IEnumerator EnableCollision( float delay )
 
 
 **Changing the layer**
+
+By scripting using Layermask:
 ```cs
 gameObject.layer = LayerMask.NameToLayer("PhantomBall") ;
 StartCoroutine( EnableCollision( 3 ) ) ;
@@ -54,7 +56,7 @@ private IEnumerator EnableCollision( float delay )
 }
 ```
 
-
+Create different layer manually:
 > 📌 Set the two game objects into **different layers** → **project setting** → **physics** → **Layer collision matrix** untick two layer for collision.
 
 
