@@ -50,7 +50,7 @@ https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
 - **`GameObject.CompareTag()`**
   https://docs.unity3d.com/ScriptReference/GameObject.CompareTag.html
   
- 
+> **Note**: Use **tag** rather than **name** to detect/find game objects, tag is suitable for finding game objects with same tag/name, whereas , name can’t.
 
 ### Creating gameobject
 Some games keep a constant number of objects in the scene, but it is very common for characters, treasures and other object to be created and removed during gameplay. In Unity, 
