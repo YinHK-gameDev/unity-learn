@@ -1,4 +1,4 @@
-## Save & Load System in Unity 
+## Save & Load System in Unity - How to save your game states and settings?
 
 Saving data is critical for any game. Whether you need to save high scores, preferences, or a game state, Unity offers a variety of methods – from PlayerPrefs to serializing data, encrypting it, and writing to a file.
 
@@ -28,8 +28,67 @@ public void LoadPrefs()
 
 ```
 
-> Since each Unity application stores all its PlayerPrefs in a single file, it’s not well-suited for handling multiple save files or cloud saves, both of which require you to store and receive save data from a different location.
+> Since each Unity application stores all its PlayerPrefs **in a single file**, it’s **not well-suited for handling multiple save files or cloud saves**, both of which require you to store and receive save data from a **different location**.
 
+
+### JSON
+**JSON** is standardized and widely used in many different applications. As a result, all platforms support it strongly, which is helpful when building cross-platform games.
+
+JSON is excellent for sending and receiving data from a **server backend**.
+
+
+### JsonUtility
+
+**JsonUtility** is Unity’s built-in API for **serializing and deserializing JSON data**.
+
+Use the JsonUtility class to convert Unity objects to and from the JSON format.
+
+For example, you can use JSON Serialization to interact with web services, or to easily pack and unpack data to a text-based format.
+
+JSON Serialization uses a notion of “structured” JSON: you create a class or structure to describe what variables you want to store in your JSON data. For example:
+
+```cs
+[Serializable]
+public class MyClass
+{
+    public int level;
+    public float timeElapsed;
+    public string playerName;
+}
+```
+This defines a plain C# class containing three variables (**level**, **timeElapsed**, and **playerName**) and marks it with the `Serializable` attribute, in order to work with the JSON serializer. To create an instance of your class, you can use something like this:
+
+```cs
+MyClass myObject = new MyClass();
+myObject.level = 1;
+myObject.timeElapsed = 47.5f;
+myObject.playerName = "Dr Charles Francis";
+```
+use the `JsonUtility.ToJson` method to serialize it (convert it) to the JSON format:
+```cs
+string json = JsonUtility.ToJson(myObject);
+// json now contains: '{"level":1,"timeElapsed":47.5,"playerName":"Dr Charles Francis"}'
+```
+
+To convert the JSON back into an object, use `JsonUtility.FromJson`:
+
+```cs
+myObject = JsonUtility.FromJson<MyClass>(json);
+```
+This creates a new instance of `MyClass` and sets the values on it using the JSON data. If the JSON data contains values that do not map to fields in `MyClass`, then the serializer ignores those values. If the JSON data is missing values for fields in `MyClass`, then the serializer leaves the constructed values for those fields in the returned object.
+
+Overwriting objects with JSON, you can also deserialize JSON data over an existing object, which overwrites any existing data:
+```cs
+JsonUtility.FromJsonOverwrite(json, myObject);
+```
+> If the JSON data does not contain a value for a field, the serializer does not change that field’s value.
+
+### Supported types
+The JSON Serializer API supports any **`MonoBehaviour` subclass**, **`ScriptableObject` subclass**, or **plain class** or **struct with the `[Serializable]` attribute**. When you pass in an object to the standard Unity serializer for processing, the same rules and limitations apply as they do in the Inspector: Unity serializes fields only; and types like **`Dictionary<>` are not supported**.
+
+Unity does not support passing other types directly to the API, such as **primitive types or arrays**. If you need to convert those, wrap them in a `class` or `struct` of some sort.
+
+https://docs.unity3d.com/2021.2/Documentation/Manual/JSONSerialization.html
 
 ### ref 
 https://www.youtube.com/watch?v=XOjd_qU2Ido
