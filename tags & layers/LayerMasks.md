@@ -39,3 +39,5 @@ originalLayerMask &= ~(1 << layerToRemove);
 ### ref
 https://docs.unity3d.com/Manual/layers-and-layermasks.html
 
+**Scripting API for LayerMask** \
+https://docs.unity3d.com/ScriptReference/LayerMask.html
