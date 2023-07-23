@@ -90,3 +90,6 @@ public static RaycastHit2D BoxCast(Vector2 origin, Vector2 size, float angle, Ve
 
 
 ### ref
+https://docs.unity3d.com/2020.1/Documentation/ScriptReference/Physics.BoxCast.html
+
+https://docs.unity3d.com/2020.1/Documentation/ScriptReference/Physics2D.BoxCast.html
