@@ -45,7 +45,11 @@ Use the JsonUtility class to convert Unity objects to and from the JSON format.
 
 For example, you can use JSON Serialization to interact with web services, or to easily pack and unpack data to a text-based format.
 
-JSON Serialization uses a notion of “structured” JSON: you create a class or structure to describe what variables you want to store in your JSON data. For example:
+
+> **Note**: You **must save the JSON data yourself**, either in a **file or over a network**. Handling the data storage yourself makes it easy to **manage multiple save files** because you can store each file in a different location.
+
+
+JSON Serialization uses a notion of "structured" JSON: you create a class or structure to describe what variables you want to store in your JSON data. For example:
 
 ```cs
 [Serializable]
