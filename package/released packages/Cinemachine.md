@@ -5,7 +5,7 @@
 **Cinemachin**e enables you to **create complex 3D camera setups, allowing movement and cuts between multiple cameras**,
 
 
-
+Cinemachine to automatically control your camera without the need for code. You want the camera to follow your main character so they can start exploring a bigger world.
 
 ### ref 
 https://docs.unity3d.com/Manual/com.unity.cinemachine.html
