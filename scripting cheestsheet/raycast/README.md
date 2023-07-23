@@ -42,8 +42,35 @@ Ray ray = new Ray(transform.position, transform.forward);
 ```cs
 // Creates a Ray from the center of the viewport
 Ray ray = Camera.main.ViewportPointToRay(new Vector3 (0.5f, 0.5f, 0));
-
 ```
+
+```cs
+// Creates a Ray from the mouse position
+Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+```
+
+```cs
+Ray ray;
+void Update()
+{
+    ray = transform.position, transform.forward;
+}
+```
+
+
+
+
+
+### Visualise Raycast in the scene
+> The **Debug** Class includes a function, **`Draw Ray`**, that allows you to **render a Ray** in the world.
+
+```cs
+Ray ray = new Ray(transform.position, transform.forward);
+
+// Render a visible line using Draw Ray, passing in the same value
+Debug.DrawRay(ray.origin, ray.direction * 10);
+```
+
 
 ### ref
 https://learn.unity.com/tutorial/let-s-try-shooting-with-raycasts#
