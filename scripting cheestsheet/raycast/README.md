@@ -92,6 +92,7 @@ GameObject hitObject = hit.transform.gameObject;
 
 > Using a **Raycast Hit variable** with Raycast will store information about the first object that is hit by the Ray.
 
+https://docs.unity3d.com/ScriptReference/RaycastHit.html
 
 #### Use the Raycast function
 While the **Ray** and **Raycast Hit variables** define where a Ray will go and how information from hits will be stored, they don’t do anything on their own.
@@ -138,3 +139,5 @@ https://docs.unity3d.com/ScriptReference/Physics.html
 https://docs.unity3d.com/2018.4/Documentation/ScriptReference/Plane.Raycast.html
 
 https://docs.unity3d.com/ScriptReference/Collider.Raycast.html
+
+https://docs.unity3d.com/ScriptReference/RaycastHit.html
