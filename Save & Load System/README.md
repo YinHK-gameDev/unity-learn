@@ -94,6 +94,19 @@ Unity does not support passing other types directly to the API, such as **primit
 
 https://docs.unity3d.com/2021.2/Documentation/Manual/JSONSerialization.html
 
+
+### Security
+Security means encryption of data. 
+
+when it comes to storing data locally on a player’s device, encryption is relatively easy to manipulate.
+
+Without breaking the encryption, users can manipulate the data directly in memory with freely available tools.
+
+If security of player data is high concern, the best option is to keep your data on a server where users can’t modify it. 
+
+The application shouldn’t send any data directly to the server because users could still manipulate it. Instead, the application can only send commands to the server, let the server change the data, and then send the results back to the application.
+
+
 ### ref 
 https://www.youtube.com/watch?v=XOjd_qU2Ido
 
