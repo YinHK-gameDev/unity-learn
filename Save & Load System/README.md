@@ -122,9 +122,25 @@ it’s best to go with a **binary-based serializer**.
   
 
 
+### `Application.persistentDataPath`
 
-  
+This method Contains the path to a persistent data directory (Read Only).
 
+Windows Store Apps: `Application.persistentDataPath` points to `C:\Users\<user>\AppData\LocalLow\<company name>`.
+
+WebGL: `Application.persistentDataPath` points to `/idbfs/<md5 hash of data path>` where the data path is the URL stripped of everything including and after the last `'/'` before any `'?'` components.
+
+https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html
+
+Linux: `Application.persistentDataPath` points to `$XDG_CONFIG_HOME/unity3d or $HOME/.config/unity3d`.
+
+iOS: `Application.persistentDataPath` points to `/var/mobile/Containers/Data/Application/<guid>/Documents`.
+
+tvOS: `Application.persistentDataPath` is not supported and returns an empty string.
+
+Android: `Application.persistentDataPath` points to `/storage/emulated/<userid>/Android/data/<packagename>/files` on most devices
+
+Mac: `Application.persistentDataPath` points to the user Library folder. (This folder is often hidden.) In recent Unity releases user data is written into `~/Library/Application Support/company name/product name`.
 
 ### Security
 Security means encryption of data. 
