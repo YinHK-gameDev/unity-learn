@@ -1,5 +1,5 @@
 ## Tilemap
-Unity’s Tilemap system stores and handles Tile Assets for creating 2D levels, which makes it easy to create and iterate level design cycles within Unity. The Tilemap system transfers the required information from the Tiles placed on it to other related components such as the Tilemap Renderer and the Tilemap Collider 2D.
+Unity’s Tilemap system **stores and handles Tile Assets** for creating 2D levels, which makes it easy to create and iterate level design cycles within Unity. The Tilemap system transfers the required information from the Tiles placed on it to other related components such as the Tilemap Renderer and the Tilemap Collider 2D.
 
 By default, the Tilemap package isn’t included in the Unity Editor, so you must download the **2D Tilemap** Editor package from the Package Manager.
 
