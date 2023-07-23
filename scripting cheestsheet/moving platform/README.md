@@ -20,7 +20,7 @@ if (moveRight){
 ```
 
 ### Player stand on a moving platform
-> using `transform.parent` method
+> using **`transform.parent`** method
 
 ```cs
 void OnCollisionEnter2D(Collision2D col){    
@@ -36,7 +36,7 @@ void OnCollisionExit2D(Collision2D col){
 > For player's transform, this method sets player as a child of platform, player will move 
 together with platform.
 
-[Transform.parent](https://docs.unity3d.com/ScriptReference/Transform-parent.html)
+https://docs.unity3d.com/ScriptReference/Transform-parent.html
 
 
 ### Creating a falling platform
