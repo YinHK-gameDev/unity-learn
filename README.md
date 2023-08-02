@@ -221,8 +221,8 @@ Tech Stream releases are for creators who value exploring in-progress features t
 
 **https://www.circuitstream.com/blog/unity-certification-exam#z2**
 
-
-
+**Cert Prep: Unity Certified Associate Game Developer Fundamentals** \
+**https://www.linkedin.com/learning/cert-prep-unity-certified-associate-game-developer-fundamentals**
 
 https://www.youtube.com/watch?v=s6-bZwXS-KI&t=33s
 **Game dev is hard** \
