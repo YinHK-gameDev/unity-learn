@@ -123,6 +123,10 @@ https://www.youtube.com/watch?v=AoAzOFSuvg4
 
 **https://learn.unity.com/course/create-with-code**
 
+✒️ **Publish your first mobile runner game**
+
+**https://learn.unity.com/tutorial/publish-your-first-mobile-runner-game**
+
 ✒️ **Audio tutorial**
 
 **https://learn.unity.com/tutorial/working-with-audio-components-2019-3**
