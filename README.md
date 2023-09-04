@@ -87,6 +87,10 @@ https://www.youtube.com/watch?v=AoAzOFSuvg4
 
 **https://www.youtube.com/@Roundbeargames/videos**
 
+✒️ **Bliz Studio**
+
+**https://www.youtube.com/@BlizStudio**
+
 ✒️ **Unity 筆記文章**
 
 **https://dev.twsiyuan.com/p/unity.html**
