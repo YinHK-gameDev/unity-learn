@@ -27,6 +27,9 @@ Unity stores the internal representation of your assets in the Library folder, w
 > **Note**: If your project is not open in Unity, you can safely delete the Library folder, because Unity can regenerate all of its data from the Assets and ProjectSettings folders the next time you launch your project.
 
 
+### Assets workflow
+https://docs.unity3d.com/Manual/AssetWorkflow.html
+
 ### Asset packages
 **Asset packages are collections of files and data from Unity projects, or elements of projects, which Unity compresses and stores in one file with the `.unitypackage` extension.** Like a zip file, an asset package maintains its original directory structure when it is unpacked, as well as metadata about assets (such as import settings and links to other assets).
 
