@@ -6,6 +6,7 @@ https://assetstore.unity.com/packages/tools/game-toolkits/auto-hand-vr-physics-i
 
 https://earnestrobot.notion.site/earnestrobot/Auto-Hand-f78a404f6baf4d85ab705c0d1f92c30e
 
+https://www.youtube.com/@earnestrobot3158/videos
 
 **Hurricane VR - Physics Interaction Toolkit** \
 https://assetstore.unity.com/packages/tools/physics/hurricane-vr-physics-interaction-toolkit-177300
