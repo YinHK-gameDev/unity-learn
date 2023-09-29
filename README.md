@@ -239,6 +239,11 @@ https://www.youtube.com/watch?v=WH4ccUV2VCU
 **Prepare for Unity Certification** \
 https://www.linkedin.com/learning/paths/prepare-for-unity-certification
 
+**Cert Prep: Unity Certified Associate Game Developer Fundamentals** \
+https://www.linkedin.com/learning/cert-prep-unity-certified-associate-game-developer-fundamentals
+
+**Cert Prep: Unity Certified Associate Game Developer Scripting with C#** \
+https://www.linkedin.com/learning/cert-prep-unity-certified-associate-game-developer-scripting-with-c-sharp
 
 ### ➡️ Unity DEMOS
 https://unity.com/demos
