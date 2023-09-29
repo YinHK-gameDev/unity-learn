@@ -256,6 +256,9 @@ https://www.linkedin.com/learning/cert-prep-unity-certified-associate-game-devel
 **Save up to 40% by purchasing a combination of certification materials** \
 https://unityedustore-global3.pearsonvue.com/unity-bundles/c/13133
 
+**How to Pass the Unity Certification Exam and Earn Your Unity Badge** \
+https://circuitstream.com/blog/unity-certification-exam
+
 ### ➡️ Unity DEMOS
 https://unity.com/demos
 
