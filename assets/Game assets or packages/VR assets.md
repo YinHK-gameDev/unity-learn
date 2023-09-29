@@ -21,3 +21,10 @@ https://assetstore.unity.com/packages/templates/systems/vr-interaction-framework
 
 
 http://beardedninjagames.com/vr-framework/
+
+Documentation \
+https://wiki.beardedninjagames.com/
+
+API \
+http://beardedninjagames.com/vr-framework/api/
+
