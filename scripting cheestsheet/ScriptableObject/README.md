@@ -21,8 +21,8 @@ Data that you save from Editor Tools to ScriptableObjects as an asset is written
 
 The main use cases for ScriptableObjects are:
 
--   Saving and storing data during an Editor session
--   Saving data as an Asset in your Project to use at run time
+-   **Saving and storing data during an Editor session**
+-   **Saving data as an Asset** in your Project to use at **run time**
 
 ```cs
 using UnityEngine;
