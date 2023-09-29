@@ -231,6 +231,9 @@ Tech Stream releases are for creators who value exploring in-progress features t
 **Practice Tests** \
 **https://unityedustore-global3.pearsonvue.com/unity-practice-tests/c/13109**
 
+**Practice Tests Exam** \
+**https://practicetestgeeks.com/unity-practice-test-exam**/
+
 **Prepare for unity certificate** \
 **https://www.linkedin.com/learning/paths/prepare-for-unity-certification**
 
