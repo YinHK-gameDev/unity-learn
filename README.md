@@ -222,6 +222,9 @@ Tech Stream releases are for creators who value exploring in-progress features t
 ### ➡️ Unity certificate
 **https://unity.com/products/unity-certifications**
 
+**Unity Certification Vouchers** \
+**https://unityedustore-global3.pearsonvue.com/unity-vouchers/c/13102**
+
 **https://www.credly.com/organizations/unity/badges**
 
 **Prepare for unity certificate** \
@@ -244,6 +247,7 @@ https://www.linkedin.com/learning/cert-prep-unity-certified-associate-game-devel
 
 **Cert Prep: Unity Certified Associate Game Developer Scripting with C#** \
 https://www.linkedin.com/learning/cert-prep-unity-certified-associate-game-developer-scripting-with-c-sharp
+
 
 ### ➡️ Unity DEMOS
 https://unity.com/demos
