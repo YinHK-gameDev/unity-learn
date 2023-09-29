@@ -13,7 +13,9 @@ When you use the Editor, you can save data to ScriptableObjects while editing an
 
 Data that you save from Editor Tools to ScriptableObjects as an asset is written to disk and is therefore persistent between sessions.
 
+![](./)
 
+![](./sciptableObject_Class.png)
 
 ### Using a ScriptableObject
 
