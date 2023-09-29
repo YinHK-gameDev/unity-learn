@@ -18,3 +18,6 @@ https://assetstore.unity.com/packages/tools/video/vr-panorama-360-pro-renderer-3
 
 **VR Interaction Framework** \
 https://assetstore.unity.com/packages/templates/systems/vr-interaction-framework-161066?aid=1101l4bPZ&utm_campaign=unity_affiliate&utm_medium=affiliate&utm_source=partnerize-linkmaker
+
+
+http://beardedninjagames.com/vr-framework/
