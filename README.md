@@ -48,7 +48,6 @@ https://www.youtube.com/watch?v=AoAzOFSuvg4
 
 ✒️ **Brackeys**
 
-
 **https://www.youtube.com/c/Brackeys**
 
 ✒️ **DitzelGames**
@@ -228,6 +227,9 @@ Tech Stream releases are for creators who value exploring in-progress features t
 **https://unityedustore-global3.pearsonvue.com/**
 
 **https://www.credly.com/organizations/unity/badges**
+
+**Practice Tests** \
+**https://unityedustore-global3.pearsonvue.com/unity-practice-tests/c/13109**
 
 **Prepare for unity certificate** \
 **https://www.linkedin.com/learning/paths/prepare-for-unity-certification**
