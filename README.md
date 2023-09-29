@@ -236,6 +236,9 @@ https://www.youtube.com/watch?v=s6-bZwXS-KI&t=33s
 **Game dev is hard** \
 https://www.youtube.com/watch?v=WH4ccUV2VCU
 
+**Prepare for Unity Certification** \
+https://www.linkedin.com/learning/paths/prepare-for-unity-certification
+
 
 ### ➡️ Unity DEMOS
 https://unity.com/demos
