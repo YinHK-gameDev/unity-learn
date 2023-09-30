@@ -265,6 +265,9 @@ https://circuitstream.com/blog/unity-certification-exam
 ### ➡️ Unity DEMOS
 https://unity.com/demos
 
+### ➡️ Unity How-to & E-Books
+https://unity.com/how-to
+
 ### Unity racing game tutorial
 https://www.youtube.com/watch?v=6Y1bAvRYqbU&list=PLhWBaV_gmpGXxscZr8PIcreyYkw8VlnKn&index=1
 
