@@ -89,3 +89,5 @@ https://unity.com/how-to/architect-game-code-scriptable-objects
 https://www.youtube.com/watch?v=raQ3iHhE_Kk
 
 https://home.gamer.com.tw/creationDetail.php?sn=4786801
+
+https://home.gamer.com.tw/creationDetail.php?sn=4786801
