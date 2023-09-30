@@ -1,5 +1,7 @@
 ## ScriptableObject
 
+ScriptableObject is a **serializable Unity class** that allows you to **store large quantities of shared data independent from script instances**. Using ScriptableObjects makes it easier to manage changes and debugging. You can build in a level of flexible communication between the different systems in your game, so that it’s more manageable to change and adapt them throughout production, as well as reuse components.
+
 A ScriptableObject is a data container that you can use to save large amounts of data, independent of class instances. One of the main use cases for ScriptableObjects is to reduce your Project’s memory usage by avoiding copies of values. This is useful if your Project has a Prefab
  that stores unchanging data in attached MonoBehaviour scripts
 .
@@ -82,4 +84,5 @@ public class Spawner : MonoBehaviour
 ### ref 
 https://docs.unity3d.com/Manual/class-ScriptableObject.html
 
+https://unity.com/how-to/architect-game-code-scriptable-objects
 
