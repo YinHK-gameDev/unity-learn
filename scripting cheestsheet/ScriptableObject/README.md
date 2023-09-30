@@ -91,3 +91,9 @@ https://www.youtube.com/watch?v=raQ3iHhE_Kk
 https://home.gamer.com.tw/creationDetail.php?sn=4786801
 
 https://xjoshua.github.io/2018/07/04/Intro-to-ScriptableObject/
+
+https://www.youtube.com/watch?v=VPlOVUc16Ek
+
+https://www.youtube.com/watch?v=0nW5PhQTWbQ
+
+https://www.youtube.com/watch?v=cy49zMBZvhg
