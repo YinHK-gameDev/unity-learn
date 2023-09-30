@@ -86,3 +86,4 @@ https://docs.unity3d.com/Manual/class-ScriptableObject.html
 
 https://unity.com/how-to/architect-game-code-scriptable-objects
 
+https://www.youtube.com/watch?v=raQ3iHhE_Kk
