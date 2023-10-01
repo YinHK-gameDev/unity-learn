@@ -79,7 +79,13 @@ public class Spawner : MonoBehaviour
     }
 }
 ```
+> **Note**: The script file must have the same name as the class.
 
+Attach the above script to a GameObject in your  Scene. Then, in the Inspector, set the **Spawn Manager Values** field to the new **`SpawnManagerScriptableObject`** that you set up.
+
+Set the ****Entity To Spawn**** field to any Prefab in your Assets folder, then click **Play** in the Editor. The Prefab you referenced in the **`Spawner`** instantiates using the values you set in the **`SpawnManagerScriptableObject`** instance.
+
+If you’re working with ScriptableObject references in the Inspector, you can double click the reference field to open the Inspector for your ScriptableObject. You can also create a custom Editor to define the look of the Inspector for your type to help manage the data that it represents.
 
 ### ref 
 https://docs.unity3d.com/Manual/class-ScriptableObject.html
