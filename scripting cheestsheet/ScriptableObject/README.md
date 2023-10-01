@@ -91,7 +91,6 @@ If you’re working with ScriptableObject references in the Inspector, you can d
 > **Note**: 保存資料 在Editor中的RunTime更改ScriptableObjectk的數據，即使離開Runtime也會保留(所以調用的時候要特別注意) 但Build後就不會保留，關閉後會自動恢復到Build時的資料
 
 
-
 ### ref 
 https://docs.unity3d.com/Manual/class-ScriptableObject.html
 
