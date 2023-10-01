@@ -65,7 +65,7 @@ Here's an example of how to create and use a ScriptableObject in Unity:
 
 Now, when you run your game, the `GameManager` script can access and use the data stored in the `PlayerData` ScriptableObject. This allows you to centralize and manage your game's data in a reusable and organized manner.
 
-ScriptableObjects are a powerful tool for creating and managing custom assets in Unity, and they are commonly used for everything from storing game settings to defining level configurations and more.
+ScriptableObjects are a powerful tool for creating and managing custom assets in Unity, and they are commonly used for everything from **storing game settings** to **defining level configurations** and more.
 
 ![](./scriptableObject.png)
 
