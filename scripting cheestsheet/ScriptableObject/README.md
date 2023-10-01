@@ -78,6 +78,8 @@ The main use cases for ScriptableObjects are:
 -   **Saving and storing data during an Editor session**
 -   **Saving data as an Asset** in your Project to use at **run time**
 
+
+Just like a database, ScriptableObject let you read data in Unity no need to read data outside
 ```cs
 using UnityEngine;
 
