@@ -101,6 +101,7 @@ GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject();
 
 > Unity already has one built in if you are using Unity 2021.
 
+`ObjectPool` class \
 https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html
 
 
