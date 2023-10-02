@@ -2,7 +2,7 @@
 
 Object pooling is a design pattern that will allow you to **reduce the amount of garbage collection** you have when working with instantiating multiple objects. 
 
-It allows you to store destroyed network objects in a pool to reuse later. This is useful for often used objects, such as projectiles, and is a way to increase the application's overall performance. By pre-instantiating and reusing the instances of those objects, object pooling removes the need to create or destroy objects at runtime, which can save a lot of work for the CPU. This means that instead of creating or destroying the same object over and over again, it's simply deactivated after use, then, when another object is needed, the pool recycles one of the deactivated objects and reactivates it.
+It allows you to store destroyed network objects in a pool to reuse later. This is useful for often used objects, such as projectiles, and is a way to increase the application's overall performance. By **pre-instantiating and reusing the instances of those objects**, **object pooling removes the need to create or destroy objects at runtime, which can save a lot of work for the CPU**. This means that instead of creating or destroying the same object over and over again, it's simply deactivated after use, then, when another object is needed, the pool recycles one of the **deactivated objects and reactivates** it.
 
 
 
