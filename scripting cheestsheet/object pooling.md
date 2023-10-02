@@ -66,6 +66,14 @@ public class GameObjectPool
 
 ```
 **example:**
+
+
+1\. Create a new script and call it “Object Pool”
+
+2\. Attach the script to your game controller.
+
+3\. Open the script and write the following within the class definit
+
 ```cs
 public List<GameObject> pooledObjects;
 public GameObject objectToPool;
@@ -92,7 +100,7 @@ public GameObject GetPooledObject() {
 
 Instantiate(playerBullet, turret.transform.position, turret.transform.rotation);
 
-GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject(); 
+GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(); 
   if (bullet != null) {
     bullet.transform.position = turret.transform.position;
     bullet.transform.rotation = turret.transform.rotation;
@@ -101,8 +109,25 @@ GameObject bullet = ObjectPooler.SharedInstance.GetPooledObject();
 
 ```
 
+The code will request a GameObject to become active, and set the properties of that given GameObject. It removes the need to instantiate a new object and efficiently requests and acquires a GameObject that is only pre-instantiated, relieving the burden from the CPU of having to create and destroy a new one.
 
-> Unity already has one built in if you are using Unity 2021.
+Next, replace any code that destroys the bullets, such as:
+
+```cs
+Destroy(gameObject);
+```
+
+Instead of destroying the GameObject, deactivate it to return it to the pool.
+
+```cs
+gameobject.SetActive(false);
+```
+
+
+> **Note**: Instantiting an amount of game objects needed for the pool, Keep set pooled objects setting active and inactive return to the pool. This way let you keeping reuse the game objects without destroy them and instantiating again.
+
+
+> Unity already has one built in class if you are using Unity 2021.
 
 `ObjectPool` class \
 https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html
