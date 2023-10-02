@@ -109,7 +109,7 @@ GameObject bullet = ObjectPool.SharedInstance.GetPooledObject();
 
 ```
 
-The code will request a GameObject to become active, and set the properties of that given GameObject. It removes the need to instantiate a new object and efficiently requests and acquires a GameObject that is only pre-instantiated, relieving the burden from the CPU of having to create and destroy a new one.
+The code will request a GameObject to become active, and set the properties of that given GameObject. It removes the need to instantiate a new object and efficiently requests and acquires a GameObject that is **only pre-instantiated**, relieving the burden from the CPU of having to create and destroy a new one.
 
 Next, replace any code that destroys the bullets, such as:
 
@@ -124,7 +124,7 @@ gameobject.SetActive(false);
 ```
 
 
-> **Note**: Instantiting an amount of game objects needed for the pool, Keep set pooled objects setting active and inactive return to the pool. This way let you keeping reuse the game objects without destroy them and instantiating again.
+> **Note**: Pre-instantiting an amount of game objects needed for the pool, Keep pooled objects setting active and inactive return to the pool. This way let you keeping reuse the game objects without destroy them and instantiating again.
 
 
 > Unity already has one built in class if you are using Unity 2021.
