@@ -271,7 +271,8 @@ https://circuitstream.com/blog/unity-certification-exam
 https://gamedevacademy.org/unity-certifications-tutorial/#Unity_Certification_Helps_With_Job_Hunting
 
 **Online exam** \
-https://forum.unity.com/threads/how-to-take-the-online-version.1105105/
+https://forum.unity.com/threads/how-to-take-the-online-version.1105105/ \
+https://home.pearsonvue.com/Test-owners/Deliver/Online-proctored.aspx
 
 ### ➡️ Unity DEMOS
 https://unity.com/demos
