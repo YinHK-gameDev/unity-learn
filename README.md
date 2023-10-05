@@ -270,6 +270,9 @@ https://circuitstream.com/blog/unity-certification-exam
 **The Beginner’s Simple Guide to Unity Certification** \
 https://gamedevacademy.org/unity-certifications-tutorial/#Unity_Certification_Helps_With_Job_Hunting
 
+**Online exam** \
+https://forum.unity.com/threads/how-to-take-the-online-version.1105105/
+
 ### ➡️ Unity DEMOS
 https://unity.com/demos
 
