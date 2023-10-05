@@ -267,6 +267,9 @@ https://unityedustore-global3.pearsonvue.com/unity-bundles/c/13133
 **How to Pass the Unity Certification Exam and Earn Your Unity Badge** \
 https://circuitstream.com/blog/unity-certification-exam
 
+**The Beginner’s Simple Guide to Unity Certification** \
+https://gamedevacademy.org/unity-certifications-tutorial/#Unity_Certification_Helps_With_Job_Hunting
+
 ### ➡️ Unity DEMOS
 https://unity.com/demos
 
