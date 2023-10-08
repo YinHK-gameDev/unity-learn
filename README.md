@@ -233,6 +233,8 @@ Tech Stream releases are for creators who value exploring in-progress features t
 
 **https://www.credly.com/organizations/unity/badges**
 
+**https://unityedustore-global3.pearsonvue.com/unity-bundles/c/13133**
+
 **Practice Tests** \
 **https://unityedustore-global3.pearsonvue.com/unity-practice-tests/c/13109**
 
