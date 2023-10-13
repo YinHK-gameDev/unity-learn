@@ -233,6 +233,9 @@ Tech Stream releases are for creators who value exploring in-progress features t
 
 **https://unityedustore-global3.pearsonvue.com/unity-bundles/c/13133**
 
+**Special offer** \
+https://unityedustore-global3.pearsonvue.com/unity-bundles/c/13133
+
 **Practice Tests** \
 **https://unityedustore-global3.pearsonvue.com/unity-practice-tests/c/13109**
 
@@ -254,7 +257,6 @@ https://www.youtube.com/watch?v=WH4ccUV2VCU
 
 **Prepare for Unity Certification** \
 https://www.linkedin.com/learning/paths/prepare-for-unity-certification
-
 
 **Cert Prep: Unity Certified Associate Game Developer Fundamentals** \
 https://www.linkedin.com/learning/cert-prep-unity-certified-associate-game-developer-fundamentals
