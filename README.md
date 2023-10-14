@@ -290,6 +290,9 @@ https://gamedevacademy.org/unity-certifications-tutorial/#Unity_Certification_He
 https://forum.unity.com/threads/how-to-take-the-online-version.1105105/ \
 https://home.pearsonvue.com/Test-owners/Deliver/Online-proctored.aspx
 
+Unity Certified Programmer 檢定心得 \
+https://featherchung.wordpress.com/2020/06/21/2897/
+
 ### ➡️ Unity DEMOS
 https://unity.com/demos
 
