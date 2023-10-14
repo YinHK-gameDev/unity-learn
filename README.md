@@ -293,6 +293,9 @@ https://home.pearsonvue.com/Test-owners/Deliver/Online-proctored.aspx
 Unity Certified Programmer 檢定心得 \
 https://featherchung.wordpress.com/2020/06/21/2897/
 
+**Pearson VUE™ Authorized Test Centers** \
+https://home.pearsonvue.com/unity
+
 ### ➡️ Unity DEMOS
 https://unity.com/demos
 
