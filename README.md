@@ -91,6 +91,9 @@ https://www.youtube.com/watch?v=AoAzOFSuvg4
 
 https://www.youtube.com/@RemptyGame/videos
 
+✒️ **Raymond Cripps (Indle game developer)**
+
+https://www.youtube.com/@RaymondCripps/videos
 
 ✒️ **Unity 筆記文章**
 
