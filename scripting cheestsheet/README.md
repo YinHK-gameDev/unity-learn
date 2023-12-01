@@ -11,7 +11,7 @@ When declare variables or array, it must specify its data type:   **value type**
 **public variable/array**: \
 Inside script set variable/array 做`public`, 在unity inspector 會顯示該variable/array, 並可於inspector 修改其value, 作更改. `private` variable can’t.  Value of variable/array in inspector can override that in script.
 
-### Debug
+### `Debug.Log()`
 ```cs
 // Use this for initialization
 void Start () 
@@ -22,6 +22,16 @@ void Start ()
 
 > **`Debug.Log`** is a simple command that just prints a message to Unity’s console output. If you press Play now, you should see the message at the bottom of the main Unity editor window and in the Console window (menu: Window > General > Console
 ).
+
+### `print()`
+**`MonoBehaviour.print`** method identical to `Debug.Log()`
+```cs
+// Use this for initialization
+void Start () 
+{
+  print("Hello world!");
+}
+```
 
 ### How to access another script / get access variable/method from other script?
 從script B access variables/method from script A, the variable/method to be accessed must be public,  declare class variable in script B,
