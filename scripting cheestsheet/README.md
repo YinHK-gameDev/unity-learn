@@ -152,3 +152,5 @@ https://blog.devgenius.io/unity-3d-c-scripting-cheatsheet-for-beginners-be6030b5
 
 https://gamedev.stackexchange.com/questions
 
+https://learn.unity.com/project/intermediate-gameplay-scripting
+
