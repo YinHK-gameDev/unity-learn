@@ -33,6 +33,13 @@ void Start ()
 }
 ```
 
+
+### Debugging C# code in Unity using Visual Studio
+https://docs.unity3d.com/Manual/ManagedCodeDebugging.html#AttachToEditor
+
+https://unity.com/how-to/debugging-with-microsoft-visual-studio-2022
+
+
 ### How to access another script / get access variable/method from other script?
 從script B access variables/method from script A, the variable/method to be accessed must be public,  declare class variable in script B,
 ```cs
