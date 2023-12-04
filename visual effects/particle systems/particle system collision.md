@@ -23,7 +23,7 @@ https://docs.unity3d.com/Manual/PartSysCollisionModule.html
 
 ### `MonoBehaviour.OnParticleCollision(GameObject)`
 
-**`OnParticleCollision**` is called when a particle hits a Collider.
+**`OnParticleCollision`** is called when a particle hits a Collider.
 
 This can be used to apply damage to a GameObject when hit by particles.
 
