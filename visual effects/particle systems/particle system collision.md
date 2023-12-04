@@ -27,42 +27,37 @@ https://docs.unity3d.com/Manual/PartSysCollisionModule.html
 
 This can be used to apply damage to a GameObject when hit by particles.
 
+Detecting collisions between particles and game objects in Unity involves using Unity's physics system and collision events. Unity's Particle System provides a built-in collision module that allows particles to interact with colliders in the scene. Here's a step-by-step guide on how to achieve collision detection between particles and game objects:
+
+1. Set up Particle System with Collision Module:
+Create a particle system by selecting **"GameObject" > "Effects" > "Particle System"** in the Unity editor.
+
+In the Inspector window, find the **"Collision Module"** under the Particle System module.
+
+Enable the **"Collision Module"** by checking the checkbox.
+
+Adjust the settings in the Collision Module according to your requirements. You can specify the type of collision, bounce, and other parameters.
+
+2. Add Collider to Game Object:
+Make sure the game object with which you want particles to collide has a collider component attached to it (e.g., Box Collider, Sphere Collider, etc.).
+3. Handle Collision Events in Script:
+- Create a C# script to handle collision events. Attach this script to the game object that has the collider.
+
 ```cs
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-
-public class ExampleClass : MonoBehaviour
+public class ParticleCollisionHandler : MonoBehaviour
 {
-    public ParticleSystem part;
-    public List<ParticleCollisionEvent> collisionEvents;
-
-    void Start()
+    private void OnParticleCollision(GameObject other)
     {
-        part = GetComponent<ParticleSystem>();
-        collisionEvents = new List<ParticleCollisionEvent>();
-    }
-
-    void OnParticleCollision(GameObject other)
-    {
-        int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);
-
-        Rigidbody rb = other.GetComponent<Rigidbody>();
-        int i = 0;
-
-        while (i < numCollisionEvents)
-        {
-            if (rb)
-            {
-                Vector3 pos = collisionEvents[i].intersection;
-                Vector3 force = collisionEvents[i].velocity * 10;
-                rb.AddForce(force);
-            }
-            i++;
-        }
+        Debug.Log("Particle collided with: " + other.name);
+        
+        // Add your custom logic here
     }
 }
 ```
+The **`OnParticleCollision`** method is called when a particle collides with the collider attached to the game object.
+
+4. Fine-Tune Collision Events (Optional):
+- You can customize the collision events further by using the information provided by the **`OnParticleCollision`** method, such as getting the collision point, normal, and other relevant data.
 
 ```cs
 private void OnParticleCollision(GameObject other)
@@ -79,7 +74,6 @@ private void OnParticleCollision(GameObject other)
         // Add your custom logic here
     }
 }
-
 ```
 
 
