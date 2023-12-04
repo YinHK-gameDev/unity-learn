@@ -76,5 +76,38 @@ private void OnParticleCollision(GameObject other)
 }
 ```
 
+### `MonoBehaviour.OnTriggerEnter(Collider)`
 
+Detecting collisions between a game object and a particle system itself (as opposed to individual particles) is not directly supported by Unity's built-in physics system, as particle systems don't have collider components by default. However, you can implement a workaround using script-based solutions.
 
+Here's an example using a script to detect when a game object collides with a particle system:
+
+1. Create a C# Script:
+
+```cs
+public class GameObjectCollisionHandler : MonoBehaviour
+{
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("ParticleSystem"))
+        {
+            Debug.Log("Game object collided with particle system!");
+
+            // Add your custom logic here
+        }
+    }
+}
+
+```
+
+2. Add a Collider to the Particle System:
+- Add a collider component (e.g., **Box Collider, Sphere Collider**) to the GameObject containing the Particle System.
+
+3. Tag the Particle System:
+- Tag the GameObject with the Particle System with a unique tag (e.g., **"ParticleSystem"**).
+
+4. Attach the Script:
+- Attach the script to the GameObject that should detect collisions with the particle system.
+
+5. Adjust Collider Settings:
+- Make sure the collider on the GameObject is properly configured and set as a trigger.
