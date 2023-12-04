@@ -76,6 +76,45 @@ private void OnParticleCollision(GameObject other)
 }
 ```
 
+
+```cs
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class ExampleClass : MonoBehaviour
+{
+    public ParticleSystem part;
+    public List<ParticleCollisionEvent> collisionEvents;
+
+    void Start()
+    {
+        part = GetComponent<ParticleSystem>();
+        collisionEvents = new List<ParticleCollisionEvent>();
+    }
+
+    void OnParticleCollision(GameObject other)
+    {
+        int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);
+
+        Rigidbody rb = other.GetComponent<Rigidbody>();
+        int i = 0;
+
+        while (i < numCollisionEvents)
+        {
+            if (rb)
+            {
+                Vector3 pos = collisionEvents[i].intersection;
+                Vector3 force = collisionEvents[i].velocity * 10;
+                rb.AddForce(force);
+            }
+            i++;
+        }
+    }
+}
+
+```
+
 ### `MonoBehaviour.OnTriggerEnter(Collider)`
 
 Detecting collisions between a game object and a particle system itself (as opposed to individual particles) is not directly supported by Unity's built-in physics system, as particle systems don't have collider components by default. However, you can implement a workaround using script-based solutions.
