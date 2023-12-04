@@ -111,3 +111,14 @@ public class GameObjectCollisionHandler : MonoBehaviour
 
 5. Adjust Collider Settings:
 - Make sure the collider on the GameObject is properly configured and set as a trigger.
+
+#### Additional Notes:
+
+-   This method treats the entire particle system as a single collider. If you want more detailed interaction with individual particles, you may need a more complex solution, potentially involving custom particle collision detection in your script.
+    
+-   Always ensure that you set up the collider and trigger settings correctly on both the GameObject and Particle System.
+    
+-   Adjust the script and collider settings according to your specific requirements.
+    
+
+Remember that this workaround is a simplified solution and may not provide detailed interactions with individual particles within the particle system. If you need more granular control, you might consider using a custom particle collision system or a physics-based solution tailored to your specific use case.
