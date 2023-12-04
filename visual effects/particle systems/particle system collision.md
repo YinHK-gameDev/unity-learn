@@ -17,6 +17,54 @@ With the Collision module enabled, particles can collide with objects in the Sce
 
 A Particle System can be set so its particles collide with any Collider in the scene by selecting **World** mode from the pop-up. Colliders can also be disabled according to the layer they are on by using the **Collides With** property. The pop-up also has a **Planes** mode option which allows you to add a set of planes to the Scene that don’t need to have Colliders. This option is useful for simple floors, walls and similar objects, and has a lower processor overhead than **World** mode.
 
-### ref 
+
 https://docs.unity3d.com/Manual/PartSysCollisionModule.html
+
+
+### `MonoBehaviour.OnParticleCollision(GameObject)`
+
+**`OnParticleCollision**` is called when a particle hits a Collider.
+
+This can be used to apply damage to a GameObject when hit by particles.
+
+```cs
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class ExampleClass : MonoBehaviour
+{
+    public ParticleSystem part;
+    public List<ParticleCollisionEvent> collisionEvents;
+
+    void Start()
+    {
+        part = GetComponent<ParticleSystem>();
+        collisionEvents = new List<ParticleCollisionEvent>();
+    }
+
+    void OnParticleCollision(GameObject other)
+    {
+        int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);
+
+        Rigidbody rb = other.GetComponent<Rigidbody>();
+        int i = 0;
+
+        while (i < numCollisionEvents)
+        {
+            if (rb)
+            {
+                Vector3 pos = collisionEvents[i].intersection;
+                Vector3 force = collisionEvents[i].velocity * 10;
+                rb.AddForce(force);
+            }
+            i++;
+        }
+    }
+}
+```
+
+
+
+
 
