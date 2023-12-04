@@ -64,7 +64,23 @@ public class ExampleClass : MonoBehaviour
 }
 ```
 
+```cs
+private void OnParticleCollision(GameObject other)
+{
+    ContactPoint[] collisionPoints = new ContactPoint[particleCollisionEvent.intersectionCount];
+    int count = particleCollisionEvent.GetContacts(collisionPoints);
 
+    for (int i = 0; i < count; i++)
+    {
+        ContactPoint contact = collisionPoints[i];
+        Debug.Log("Collision Point: " + contact.point);
+        Debug.Log("Collision Normal: " + contact.normal);
+        
+        // Add your custom logic here
+    }
+}
+
+```
 
 
 
