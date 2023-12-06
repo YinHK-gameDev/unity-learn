@@ -11,6 +11,7 @@ When declare variables or array, it must specify its data type:   **value type**
 **public variable/array**: \
 Inside script set variable/array 做`public`, 在unity inspector 會顯示該variable/array, 並可於inspector 修改其value, 作更改. `private` variable can’t.  Value of variable/array in inspector can override that in script.
 
+
 ### `Debug.Log()`
 ```cs
 // Use this for initialization
@@ -20,8 +21,11 @@ void Start ()
 }
 ```
 
+
 > **`Debug.Log`** is a simple command that just prints a message to Unity’s console output. If you press Play now, you should see the message at the bottom of the main Unity editor window and in the Console window (menu: Window > General > Console
 ).
+
+https://docs.unity3d.com/ScriptReference/Debug.html
 
 ### `print()`
 **`MonoBehaviour.print`** method identical to `Debug.Log()`
