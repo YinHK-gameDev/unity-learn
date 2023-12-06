@@ -75,6 +75,11 @@ The Physic Material adjusts friction and bouncing effects of colliding GameObjec
 
 https://docs.unity3d.com/Manual/class-PhysicMaterial.html
 
+
+### Multiple collider detecting which collider to hit
+https://forum.unity.com/threads/detecting-which-collider-was-hit.738020/
+
+
 ### Trigger
 A collider configured as a **Trigger** (using the **Is Trigge**r property) does not behave as a solid object and **will simply allow other colliders to pass through**. When a collider enters its space, a **trigger will call the `OnTriggerEnter` function** on the trigger object’s scripts
 
