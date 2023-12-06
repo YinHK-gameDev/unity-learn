@@ -33,6 +33,7 @@ void Start ()
 }
 ```
 
+https://learn.unity.com/tutorial/introduction-to-the-console-window#5f68b4eeedbc2a002022b83c
 
 ### Debugging C# code in Unity using Visual Studio
 https://docs.unity3d.com/Manual/ManagedCodeDebugging.html#AttachToEditor
