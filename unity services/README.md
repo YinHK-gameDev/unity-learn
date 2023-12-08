@@ -70,6 +70,10 @@ https://services.docs.unity.com/?_ga=2.211027029.1981099051.1684656689-109516998
 ### Unity Gaming Services Use Cases
 https://docs.unity.com/ugs-use-cases/en/manual/Welcome
 
+
+### UGS product and price
+https://unity.com/solutions/gaming-services/pricing
+
 ### ref 
 https://docs.unity.com/ugs-overview/en/manual/unity-gaming-services-home
 
