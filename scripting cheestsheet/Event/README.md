@@ -186,6 +186,54 @@ public class Door : Monobehavior
 > You can also subcribe the event in `OnEable()` and unscribe the event in `OnDisable()`
 
 
+eg:
+
+```cs
+public class TestingEvents : MonoBehaviour {
+
+    public event EventHandler<OnSpacePressedEventArgs> OnSpacePressed;
+    public class OnSpacePressedEventArgs : EventArgs {
+        public int spaceCount;
+    }
+
+    public event TestEventDelegate OnFloatEvent;
+    public delegate void TestEventDelegate(float f);
+
+    public event Action<bool, int> OnActionEvent;
+
+    privateint spaceCount;
+
+    private void Update() {
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            spaceCount++;
+            OnSpacePressed?.Invoke(this, new OnSpacePressedEventArgs { spaceCount = spaceCount });
+
+            OnFloatEvent?.Invoke(1.0f);
+        }
+    }
+}
+
+public class TestingEventSubscriber : MonoBehaviour {
+
+    private void Start() {
+        TetsingEvents testingEvents = GetComponent<TetsingEvents>();
+        testingEvents.OnSpacePressed += TestingEvents_OnSpacePressed;
+        testingEvents.OnFlostEvent += TestingEvents_OnFloatEvent;
+    }
+
+    private void TestingEvents_OnFloatEvent(float f) {
+        Debug.Log("Float: " + f);
+    }
+
+    private void TestingEvents_OnSpacePressed(object sendetr, TestingEvents.OnspacePressedEventArgs e) {
+        Debug.Log("Space! " + e.spaceCount);
+    }
+
+}
+
+
+```
 
 ### ref 
 https://www.youtube.com/watch?v=OuZrhykVytg
