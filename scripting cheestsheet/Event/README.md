@@ -127,6 +127,8 @@ https://gamedevbeginner.com/events-and-delegates-in-unity/
 
 > using **`event`** keyword with **`Func`** delegate or **`Action`** delegate. If any return type, use **`Func`** delegate, otherwise use **`Action`** delegate.
 
+> Or using built-in delegate types **`EventHandler`** or **`EventHandler<TEventArgs>`** 
+
 Eg:
 
 ```cs
