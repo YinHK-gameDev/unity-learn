@@ -192,6 +192,8 @@ eg:
 public class TestingEvents : MonoBehaviour {
 
     public event EventHandler<OnSpacePressedEventArgs> OnSpacePressed;
+    public event EventHandler OnSpacePressedTwo;
+
     public class OnSpacePressedEventArgs : EventArgs {
         public int spaceCount;
     }
@@ -207,7 +209,10 @@ public class TestingEvents : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space)) {
             spaceCount++;
+
             OnSpacePressed?.Invoke(this, new OnSpacePressedEventArgs { spaceCount = spaceCount });
+
+            OnSpacePressedTwo?.Invoke(this. EventArgs.Empty);
 
             OnFloatEvent?.Invoke(1.0f);
         }
@@ -219,6 +224,7 @@ public class TestingEventSubscriber : MonoBehaviour {
     private void Start() {
         TetsingEvents testingEvents = GetComponent<TetsingEvents>();
         testingEvents.OnSpacePressed += TestingEvents_OnSpacePressed;
+        testingEvents.OnSpacePressedTwo += TestingEvents_OnSpacePressedTwo;
         testingEvents.OnFlostEvent += TestingEvents_OnFloatEvent;
     }
 
@@ -228,6 +234,12 @@ public class TestingEventSubscriber : MonoBehaviour {
 
     private void TestingEvents_OnSpacePressed(object sender, TestingEvents.OnspacePressedEventArgs e) {
         Debug.Log("Space! " + e.spaceCount);
+    }
+
+    private void TestingEvents_OnSpacePressedTwo(object sender, EventArgs e) {
+        Debug.Log("Space!");
+        TetsingEvents testingEvents = GetComponent<TetsingEvents>();
+        testingEvents.OnSpacePressedTwo -= TestingEvents_OnSpacePressedTwo; // unscribe an event
     }
 
 }
