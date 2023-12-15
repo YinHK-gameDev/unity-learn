@@ -32,7 +32,7 @@ To configure a callback in the editor there are a few steps to take:
 
 3. Declare **`UnityEvent`** & **`Invoke()`** function to invoke the event
 
-4. Declare a callback function/event handler for this event some where.
+4. Create a callback function/event handler for this event some where.
     
 5. In inspecter, the Event section you declared UnityEvent in the script, select the **"+"** icon to add a slot for a **callback**.
     
