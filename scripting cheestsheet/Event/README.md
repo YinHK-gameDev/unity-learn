@@ -38,7 +38,7 @@ To configure a callback in the editor there are a few steps to take:
     
 6. Select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this)
     
-7. Select the **function** you wish to be called(a method that subscribe to the event - event handler)
+7. Select the **function** you wish to be called (a method that subscribe to the event - event handler)
     
 8. You can add more than one callback for the event
 
