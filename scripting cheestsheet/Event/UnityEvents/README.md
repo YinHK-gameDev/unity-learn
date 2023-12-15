@@ -52,10 +52,36 @@ To configure a callback in the editor there are a few steps to take:
 
 ### Event vs UnityEvents
 - In c#  declare an event **must** use script to add event listener.
-- Using `UnityEvent`, you can use editor to add event listener manually in inspector.
+- Using **`UnityEvent`**, you can use editor to add event listener manually in inspector.
 
 
 ### Declare UnityEvent
+
+```cs
+public class TestingEvents : MonoBehaviour {
+
+    public UnityEvent OnUnityEvent;
+    private void Update() {
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            OnUnityEvent?.Invoke();
+        }
+    }
+}
+```
+
+```cs
+public class TestingEventSubscriber : MonoBehaviour {
+
+    private void TestingUnityEvent() {
+        Debug.Log("TestingUnityEvent");
+    }
+
+}
+```
+
+In inspecter, the Event section you declared UnityEvent in the script, select the **"+"** icon to add a slot for a **callback**, select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this), select the **function** you wish to be called (a method that subscribe to the event - event handler).
+
 ```cs
 using UnityEngine;
 using UnityEngine.Events;
@@ -63,7 +89,7 @@ using System.Collections;
 
 public class ExampleClass : MonoBehaviour
 {
-    UnityEvent m_MyEvent;
+    public UnityEvent m_MyEvent;
 
     void Start()
     {
@@ -181,10 +207,10 @@ This can then be invoked by calling the **`Invoke()`** function with a `string` 
 UnityEvents can be defined with up to **4 arguments** in their generic definition.
 
 
-
 ### ref 
 https://docs.unity3d.com/Manual/UnityEvents.html \
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
 https://www.youtube.com/watch?v=oc3sQamIh-Q \
 https://www.youtube.com/watch?v=TWxXD-UpvSg \
-https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#
+https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events# \
+https://www.youtube.com/watch?v=J01z1F-du-E
