@@ -69,6 +69,7 @@ public class TestingEvents : MonoBehaviour {
     }
 }
 ```
+In inspecter, the Event section you declared UnityEvent in the script, select the **"+"** icon to add a slot for a **callback**, select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this), select the **function** you wish to be called (a method that subscribe to the event - event handler).
 
 ```cs
 public class TestingEventSubscriber : MonoBehaviour {
@@ -79,8 +80,6 @@ public class TestingEventSubscriber : MonoBehaviour {
 
 }
 ```
-
-In inspecter, the Event section you declared UnityEvent in the script, select the **"+"** icon to add a slot for a **callback**, select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this), select the **function** you wish to be called (a method that subscribe to the event - event handler).
 
 ```cs
 using UnityEngine;
