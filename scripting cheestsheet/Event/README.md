@@ -26,7 +26,7 @@ https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#
 
 To configure a callback in the editor there are a few steps to take:
 
-!. Set up event manager script for using **`UnityEvent`** 
+1. Set up event manager script for using **`UnityEvent`** 
 
 2. Inside the script make sure your script imports/uses **`UnityEngine.Events`**
 
