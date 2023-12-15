@@ -18,26 +18,30 @@ allow items in our projects to subscribe to events, and have events trigger acti
 - in **`void TriggerEvent`** , **`Invoke()`** to invoke the event.
 - other game object, in its script subscribe and unscribe to the event listener.
 - **`void OnEnable()`** or other **`OnEventName`** method to subcribe the event.
-- **`void OnDisable()`** or other **`OnEventName`** method to unsubscribethe event. 
+- **`void OnDisable()`** or other **`OnEventName`** method to unsubscribe the event. 
 
 https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#
 
-### Using UnityEvents
+### Steps for Using UnityEvents
 
 To configure a callback in the editor there are a few steps to take:
 
-1.  Make sure your script imports/uses **`UnityEngine.Events`**.
+!. Set up event manager script for using **`UnityEvent`** 
+
+2. Inside the script make sure your script imports/uses **`UnityEngine.Events`**
+
+3. Declare **`UnityEvent`** & 
     
-2.  Select the **"+"** icon to add a slot for a **callback**
+4. In inspecter, the Event section you declared UnityEvent in the script, select the **"+"** icon to add a slot for a **callback**.
     
-3.  Select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this)
+5. Select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this)
     
-4.  Select the **function** you wish to be called
+6. Select the **function** you wish to be called(a method that subscribe to the event - event handler)
     
-5.  You can add more than one callback for the event
+7. You can add more than one callback for the event
 
 
-#### Generic UnityEvents
+### Generic UnityEvents
 **Create your custom UnityEvents**:
 
 
