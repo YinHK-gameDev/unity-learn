@@ -16,7 +16,7 @@
 
 Here's an example of how to create and use a ScriptableObject in Unity:
 
-1. Create a ScriptableObject:
+1. **Create a ScriptableObject**:
 
    To create a ScriptableObject, you need to create a C# script that derives from `ScriptableObject`. For example, let's create a simple ScriptableObject for storing player data:
 
@@ -33,15 +33,15 @@ Here's an example of how to create and use a ScriptableObject in Unity:
 
    In this example, we've created a `PlayerData` class that inherits from `ScriptableObject` and includes some fields for player information.
 
-2. Create an instance of the ScriptableObject:
+2. **Create an instance of the ScriptableObject**:
 
    In Unity, you can create an instance of your ScriptableObject by right-clicking in the Assets folder, selecting "Create," and then choosing "Custom/Player Data" (or whatever menu name you specified in the `CreateAssetMenu` attribute).
 
-3. Modify and use the ScriptableObject:
+3. **Modify and use** the ScriptableObject**:
 
    You can now select the newly created instance of the ScriptableObject in the Unity Inspector and edit its fields. For example, you can set the player's name and score.
 
-4. Access the ScriptableObject in your scripts:
+4. **Access the ScriptableObject in your scripts**:
 
    You can access the data stored in your ScriptableObject from any script by creating a reference to it:
 
