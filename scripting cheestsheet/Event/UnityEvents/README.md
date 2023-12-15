@@ -18,6 +18,9 @@ To configure a callback in the editor there are a few steps to take:
 - Select the `UnityEngine.Object` you wish to receive the callback (You can use the object selector for this)
 - Select the function(inside that object) you wish to be called
 - You can add more than one callback for the event.
+- other game object, in its script subscribe and unscribe to the event listener.
+- **`void OnEnable()`** or other **`OnEventName`** method to subcribe the event.
+- **`void OnDisable()`** or other **`OnEventName`** method to unsubscribe the event.
 
 When configuring a UnityEvent in the Inspector there are two types of function calls that are supported:
 
