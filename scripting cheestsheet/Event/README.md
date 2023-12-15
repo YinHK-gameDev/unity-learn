@@ -117,7 +117,7 @@ UnityEvents can be defined with up to **4 arguments** in their generic definitio
 ### Events & Delegates
 https://gamedevbeginner.com/events-and-delegates-in-unity/
 
-### Using C# event
+#### Using C# event
 
 > using **`event`** keyword with **`Func`** delegate or **`Action`** delegate. If any return type, use **`Func`** delegate, otherwise use **`Action`** delegate.
 
