@@ -27,7 +27,7 @@ When configuring a UnityEvent in the Inspector there are two types of function c
 
 
 ### Event vs UnityEvents
-- In c#  declare an event must use script to add event listener.
+- In c#  declare an event **must** use script to add event listener.
 - Using `UnityEvent`, you can use editor to add event listener manually in inspector.
 
 
