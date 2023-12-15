@@ -8,7 +8,7 @@
 
 - Just like MonoBehaviours, ScriptableObjects derive from the base Unity object but, unlike MonoBehaviours, you **can not attach a ScriptableObject to a GameObject**. Instead, you need to **save them as Assets** in your Project.
 
-- When you use the Editor, you can **save data to ScriptableObjects while editing** and **at run time** because ScriptableObjects use the Editor namespace and Editor scripting. In a deployed build, however, you can’t use ScriptableObjects to save data, but you can use the saved data from the ScriptableObject Assets that you set up during development.
+- When you use the Editor, you can **save data to ScriptableObjects while editing** and **at run time** because ScriptableObjects use the Editor namespace and Editor scripting. In a deployed build, however, you **can’t use ScriptableObjects to save data**, but you can **use the saved data from the ScriptableObject Assets** that you set up during development.
 
 - Data that you save from Editor Tools to ScriptableObjects as **an asset is written to disk** and is therefore persistent between sessions.
 
