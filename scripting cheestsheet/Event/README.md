@@ -201,7 +201,7 @@ public class TestingEvents : MonoBehaviour {
 
     public event Action<bool, int> OnActionEvent;
 
-    privateint spaceCount;
+    private int spaceCount;
 
     private void Update() {
 
@@ -226,7 +226,7 @@ public class TestingEventSubscriber : MonoBehaviour {
         Debug.Log("Float: " + f);
     }
 
-    private void TestingEvents_OnSpacePressed(object sendetr, TestingEvents.OnspacePressedEventArgs e) {
+    private void TestingEvents_OnSpacePressed(object sender, TestingEvents.OnspacePressedEventArgs e) {
         Debug.Log("Space! " + e.spaceCount);
     }
 
