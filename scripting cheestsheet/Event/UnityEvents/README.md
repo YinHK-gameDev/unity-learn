@@ -104,6 +104,84 @@ m_MyEvent.RemoveListener(MyAction);
 ```
 
 
+### Generic UnityEvents
+**Create your custom UnityEvents**:
+
+
+By default a `UnityEvent` in a `Monobehaviour` binds dynamically to a void function. This does not have to be the case as dynamic invocation of **`UnityEvents`** supports binding to functions with up to **4 arguments**. To do this you need to define a **custom** **`UnityEvent`** class that supports multiple arguments. This is quite easy to do:
+
+```cs
+[Serializable]
+public class StringEvent : UnityEvent <string> {}
+```
+
+```cs
+public class MyIntEvent : UnityEvent<T0>
+{
+}
+```
+```cs
+public class MyIntEvent : UnityEvent<T0,T1>
+{
+}
+```
+```cs
+public class MyIntEvent : UnityEvent<T0,T1,T2>
+{
+}
+```
+```cs
+public class MyIntEvent : UnityEvent<T0,T1,T2,T3>
+{
+}
+```
+
+Eg:
+```cs
+using UnityEngine;
+using UnityEngine.Events;
+
+
+[System.Serializable]
+public class MyIntEvent : UnityEvent<int, int, int, int>
+{
+}
+
+public class ExampleClass : MonoBehaviour
+{
+    public MyIntEvent m_MyEvent;
+
+    void Start()
+    {
+        if (m_MyEvent == null)
+            m_MyEvent = new MyIntEvent();
+
+        m_MyEvent.AddListener(Ping);
+    }
+
+    void Update()
+    {
+        if (Input.anyKeyDown && m_MyEvent != null)
+        {
+            m_MyEvent.Invoke(5, 6, 7, 8);
+        }
+    }
+
+    void Ping(int i, int j, int k, int l)
+    {
+        Debug.Log("Ping" + i + j + k + l);
+    }
+}
+```
+
+By adding an instance of this to your class instead of the base **`UnityEvent`** it will allow the callback to bind dynamically to  functions.
+
+This can then be invoked by calling the **`Invoke()`** function with a `string` as argument.
+
+UnityEvents can be defined with up to **4 arguments** in their generic definition.
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UnityEvents.html \
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
