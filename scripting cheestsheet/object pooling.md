@@ -15,7 +15,7 @@ The primary goal of object pooling is to improve performance by reducing the ove
 
 > **Note**: Instead of instantiating and destroying, object pooling method is to reuse the disable object. Just disable after using the object and enable to reuse it when is needed. 
 
-
+Eg:
 ```cs
 using System.Collections.Generic;
 using UnityEngine;
@@ -90,6 +90,7 @@ public class ExampleUsage : MonoBehaviour
 
 ```
 
+Eg:
 ```cs
 public class GameObjectPool 
      {
