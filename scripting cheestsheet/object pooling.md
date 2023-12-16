@@ -17,6 +17,80 @@ The primary goal of object pooling is to improve performance by reducing the ove
 
 
 ```cs
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ObjectPool : MonoBehaviour
+{
+    public GameObject prefab;
+    public int poolSize = 10;
+
+    private List<GameObject> objectPool = new List<GameObject>();
+
+    void Start()
+    {
+        InitializeObjectPool();
+    }
+
+    void InitializeObjectPool()
+    {
+        for (int i = 0; i < poolSize; i++)
+        {
+            GameObject obj = Instantiate(prefab, transform);
+            obj.SetActive(false);
+            objectPool.Add(obj);
+        }
+    }
+
+    public GameObject GetObjectFromPool()
+    {
+        foreach (GameObject obj in objectPool)
+        {
+            if (!obj.activeInHierarchy)
+            {
+                obj.SetActive(true);
+                return obj;
+            }
+        }
+
+        // If all objects are in use, consider expanding the pool or handling it as needed.
+        return null;
+    }
+
+    public void ReturnObjectToPool(GameObject obj)
+    {
+        obj.SetActive(false);
+    }
+}
+
+```
+
+```cs
+public class ExampleUsage : MonoBehaviour
+{
+    private ObjectPool objectPool;
+
+    void Start()
+    {
+        objectPool = GetComponent<ObjectPool>();
+        UsePooledObject();
+    }
+
+    void UsePooledObject()
+    {
+        GameObject obj = objectPool.GetObjectFromPool();
+        if (obj != null)
+        {
+            // Do something with the object.
+            // When done, return it to the pool.
+            objectPool.ReturnObjectToPool(obj);
+        }
+    }
+}
+
+```
+
+```cs
 public class GameObjectPool 
      {
          private int maxObjects;
