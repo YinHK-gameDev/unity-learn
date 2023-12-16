@@ -6,6 +6,11 @@ It allows you to store destroyed network objects in a pool to reuse later. This 
 
 Object Pooling is a great way to optimize your projects and lower the burden that is placed on the CPU when having to rapidly create and destroy GameObjects. It is a good practice and design pattern to keep in mind to help relieve the processing power of the CPU to handle more important tasks and not become inundated by repetitive create and destroy calls. In this tutorial, you will learn to use Object Pooling to optimize your projects. 
 
+In Unity, object pooling typically involves creating a pool of objects at the start of the game and reusing them as needed, rather than instantiating and destroying objects dynamically during runtime. This can be particularly beneficial for things like bullets, enemies, particle effects, or any other objects that are frequently created and destroyed.
+
+The primary goal of object pooling is to improve performance by reducing the overhead associated with creating and destroying objects frequently.
+
+
 > 📌 better than instantiate and destroy method
 
 > **Note**: Instead of instantiating and destroying, object pooling method is to reuse the disable object. Just disable after using the object and enable to reuse it when is needed. 
