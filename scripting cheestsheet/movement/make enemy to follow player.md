@@ -20,5 +20,9 @@ void Update()
 }
 ```
 
+or
 
+```cs
+Transform.LookAt
+```
 
