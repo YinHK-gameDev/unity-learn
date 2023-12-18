@@ -77,8 +77,9 @@ public class ExampleClass : MonoBehaviour
 
 ### Update  vs  Fixedupdate
 
-> fixedUpdate called every physics step
-> fixeUpdate intervals are consistent
+> fixedUpdate called **every physics step**
+
+> fixeUpdate **intervals are consistent**
 
 Update Order:  
 When you’re keeping track of game logic and interactions, animations, camera positions, etc., there are a few different events you can use. The common pattern is to perform most tasks inside the Update function, but there are also other functions you can use.
