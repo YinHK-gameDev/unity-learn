@@ -54,7 +54,7 @@ When scripts are reloaded **after compilation has finished**, **`OnDisable()` wi
 
 ### `OnGUI()`
 
-**`OnGUI`** is called for **rendering and handling** **GUI events**.
+**`OnGUI`** is called for **rendering** and **handling** **GUI events**.
 
 **`OnGUI`** is the only function that can implement the **"Immediate Mode"** GUI (IMGUI) system for rendering and handling GUI events. Your **`OnGUI`** implementation might be called several times per frame (**one call per event**).
 
