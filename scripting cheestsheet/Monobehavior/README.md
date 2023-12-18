@@ -12,12 +12,18 @@ MonoBehaviour is the **base class from which every Unity script derives**. When 
 ### `Awake()`
 `Awake` is **called when the script instance is being loaded**. `Awake` is used to **initialize any variables** or **game state** **before the game starts**. `Awake` is called **when the script object is initialised**, **regardless of whether or not the script is enabled**. 
 
+
+> **Note**: **`Awake()`** only being called one time for the script
+
 `Start` may not be called on the same frame as `Awake` if the script is not enabled at initialisation time.
 
 ### `Start()`
-`Start` is called on the frame when a **script is enabled** just before any of the Update methods are called the first time. Difference between `start()` and `awake()`:  However, `Awake` is called when the **script object is initialised**, **regardless of whether or not the script is enabled**. 
+`Start` is called on the frame when a **script is enabled** just before any of the Update methods **are called the first time**. Difference between `start()` and `awake()`:  However, `Awake` is called when the **script object is initialised**, **regardless of whether or not the script is enabled**. 
 
 `Start` may not be called on the same frame as `Awake` if the script is not enabled at initialisation time.
+
+
+> **Note**: **`Start()`** only being called one time for the script enable
 
 ### `Update()`
 `Update` is called every frame, if the **MonoBehaviour is enabled**.
