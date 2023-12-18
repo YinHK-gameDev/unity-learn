@@ -39,15 +39,17 @@ MonoBehaviour is the **base class from which every Unity script derives**. When 
 > **`FixedUpdate`**  is used for being in-step with the physics engine, so anything that needs to be applied to a **rigidbody** should happen in **`FixedUpdate`**.
 
 ### `OnEnable()`
-This function is called when the object becomes **enabled and active**.
+This function is called when the **object** becomes **enabled and active**.
 
-Because this function is executed when the object is enabled, it will be executed whenever entering the Play Mode (with the object enabled).
+Because this function is **executed when the object is enabled**, it will be executed whenever entering the **Play Mode** (with the object enabled).
 
 
 ### `OnDisable()`
-This function is called when the behaviour becomes disabled.
+This function is called when the **behaviour becomes disabled**.
 
-This is also called when the object is **destroyed** and can be **used for any** **cleanup code**. When scripts are reloaded after compilation has finished, OnDisable will be called, followed by an OnEnable after the script has been loaded.
+This is also called when the **object** is **destroyed** and can be **used for any cleanup code**. 
+
+When scripts are reloaded **after compilation** has finished, **`OnDisable()` will be called**, followed by an **`OnEnable()`** after the script has been loaded.
 
 
 ### `OnGUI()`
