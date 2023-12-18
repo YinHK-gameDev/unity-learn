@@ -16,12 +16,12 @@ Vector3.up;       // Shorthand for writing Vector3(0, 1, 0)
 Vector3.zero;     // Shorthand for writing Vector3(0, 0, 0)
 Vector3.one;      // Shorthand for writing Vector3(1, 1, 1)
 
-Vector3.magnitude;       // Returns the length of this vector (Read Only)
-Vector3.normalized;      // Returns this vector with a magnitude of 1 (Read Only)
-
 
 // Properties
 public Vector3 v;
+
+v.magnitude;       // Returns the length of this vector (Read Only)
+v.normalized;      // Returns this vector with a magnitude of 1 (Read Only)
 
 Vector3.this[int];    // Access the x, y, z components using [0], [1], [2] respectively
 v[0] = 5.0f;
