@@ -16,6 +16,14 @@ Rotates the transform so the forward vector points at /target/'s current positio
 https://docs.unity3d.com/ScriptReference/Transform.LookAt.html
 
 
+### `Transform.parent`
+The parent of the transform.
+
+Changing the parent will modify the parent-relative position, scale and rotation but keep the world space position, rotation and scale the same.
+
+https://docs.unity3d.com/ScriptReference/Transform-parent.html
+
+
 ### `Transform.SetParent`
 Set the parent of the transform.
 
