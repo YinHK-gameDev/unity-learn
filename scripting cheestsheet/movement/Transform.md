@@ -6,7 +6,7 @@ https://docs.unity3d.com/ScriptReference/Transform.html
 
 https://docs.unity3d.com/ScriptReference/Transform.Translate.html
 
-### `transform.Rotate()`
+### `Transform.Rotate()`
 
 https://docs.unity3d.com/ScriptReference/Transform.Rotate.html
 
