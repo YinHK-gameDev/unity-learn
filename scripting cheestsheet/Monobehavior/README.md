@@ -29,7 +29,7 @@ MonoBehaviour is the **base class from which every Unity script derives**. When 
 `Update` is **called every frame**, if the **MonoBehaviour is enabled**.
 
 ### `Fixedupdate()`
-`FixedUpdate` **execute in fixed time** and i**ndependent to frame**(not affected by frame**), used especially in **calculating any physics** or **movemen**t.
+`FixedUpdate` **execute in fixed time** and **independent to frame**(**not affected by frame**), used especially in **calculating any physics** or **movemen**t.
 
 > **`FixedUpdate`**  is used for being in-step with the physics engine, so anything that needs to be applied to a **rigidbody** should happen in **`FixedUpdate`**.
 
