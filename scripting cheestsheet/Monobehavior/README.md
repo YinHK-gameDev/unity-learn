@@ -86,7 +86,7 @@ When you’re keeping track of game logic and interactions, animations, camera p
 
 - **FixedUpdate:** \
 **`FixedUpdate`** is often called **more frequently** than **`Update`**. It can be called **multiple times per frame**, if the frame rate is low   and it may not be called between frames at all if the frame rate is high. All physics calculations and updates occur immediately after **`FixedUpdate`**. \
-  When applying movement calculations inside **`FixedUpdate`**, you do not need to multiply your values by **`Time.deltaTime`**. This is because **`FixedUpdate`** is called on a reliable timer, **independent of the frame rate**.
+  When applying movement calculations inside **`FixedUpdate`**, you do not need to multiply your values by **`Time.deltaTime`**. This is because **`FixedUpdate`** is called on a reliable **timer**, **independent of the frame rate**.
 
 - **Update:** \
 **`Update`** is called **once per frame**. It is the main workhorse function for **frame updates**.
