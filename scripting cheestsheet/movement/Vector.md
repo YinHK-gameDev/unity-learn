@@ -35,6 +35,21 @@ v.Z   // Z component of the vector
 ```
 
 
-
 https://docs.unity3d.com/ScriptReference/Vector3.html
+
+
+### Vector3Int
+Representation of 3D vectors and points using integers.
+
+This structure is used in some places to represent 3D positions and vectors that don't require the precision of floating-point.
+
+https://docs.unity3d.com/ScriptReference/Vector3Int.html
+
+
+
+
+
+
+
+
 
