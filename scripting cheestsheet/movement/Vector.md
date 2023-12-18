@@ -4,6 +4,13 @@ Representation of 3D vectors and points.
 This structure is used throughout Unity to pass 3D positions and directions around. It also contains functions for doing common vector operations.
 
 ```cs
+
+// Constructor
+public Vector3(float x, float y, float z);
+
+private Vector3 myVector = new Vector3(0.0f, 1.0f, 0.0f);
+
+
 // Static Properties
 
 Vector3.back;     // Shorthand for writing Vector3(0, 0, -1)
