@@ -96,7 +96,7 @@ public class RigidbodyCharacter : MonoBehaviour
 
 ### Basic movement from user input
 
-- Declare a new `private` float speed variable
+- Declare a new **`private`** float speed variable
 - If using physics, declare a new **Rigidbody playerRb variable** for it and initialize it in `Start()`
 - If using arrow keys, declare new **vertical Input** and/or **horizontal Input variables**.
 - If basing your movement off a key press, create the if-statement to test for the KeyCode.
