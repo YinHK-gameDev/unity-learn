@@ -2,6 +2,9 @@
 
 https://docs.unity3d.com/ScriptReference/Transform.html
 
+### `Transform.Translate`
+
+https://docs.unity3d.com/ScriptReference/Transform.Translate.html
 
 ### `transform.Rotate()`
 
