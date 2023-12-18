@@ -84,14 +84,14 @@ public class ExampleClass : MonoBehaviour
 Update Order:  
 When you’re keeping track of game logic and interactions, animations, camera positions, etc., there are a few different events you can use. The common pattern is to perform most tasks inside the Update function, but there are also other functions you can use.
 
-- **FixedUpdate:** \
-**FixedUpdate** is often called more frequently than **Update**. It can be called multiple times per frame, if the frame rate is low   and it may not be called between frames at all if the frame rate is high. All physics calculations and updates occur immediately after **FixedUpdate**. When applying movement calculations inside **FixedUpdate**, you do not need to multiply your values by **Time.deltaTime**. This is because **FixedUpdate** is called on a reliable timer, independent of the frame rate.
+- **`FixedUpdate`:** \
+**`FixedUpdate`** is often called **more frequently** than **`Update`**. It can be called **multiple times per frame**, if the frame rate is low   and it may not be called between frames at all if the frame rate is high. All physics calculations and updates occur immediately after **`FixedUpdate`**. When applying movement calculations inside **`FixedUpdate`**, you do not need to multiply your values by **`Time.deltaTime`**. This is because **`FixedUpdate`** is called on a reliable timer, independent of the frame rate.
 
-- **Update:** \
-Update is called once per frame. It is the main workhorse function for frame updates.
+- **`Update`:** \
+**`Update`** is called **once per frame**. It is the main workhorse function for **frame updates**.
 
-- **LateUpdate:** \
-LateUpdate is called once per frame, after Update has finished. Any calculations that are performed in Update will have completed when LateUpdate begins. A common use for LateUpdate would be a following third-person camera. If you make your character move and turn inside Update, you can perform all camera movement and rotation calculations in LateUpdate. This will ensure that the character has moved completely before the camera tracks its position.
+- **`LateUpdate`:** \
+**`LateUpdate`** is called **once per frame**, after **`Update`** has finished. Any calculations that are performed in Update will have completed when **`LateUpdate`** begins. A common use for **`LateUpdate`** would be a following third-person camera. If you make your character move and turn inside **`Update`**, you can perform all camera movement and rotation calculations in **`LateUpdate`**. This will ensure that the character has moved completely before the camera tracks its position.
 
 **Flowchart:**
 ![](./monobehaviour-flowchart.png)
