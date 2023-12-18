@@ -88,8 +88,8 @@ LateUpdate is called once per frame, after Update has finished. Any calculations
 **Flowchart:**
 ![](./monobehaviour-flowchart.png)
 
-[[Unity] LateUpdate()、FixedUpdate()、Update() 的差異 - Clay-Technology World](https://clay-atlas.com/blog/2021/07/04/unity-cn-update-fixedupdate-lateupdate-diffierence/)
+https://clay-atlas.com/blog/2021/07/04/unity-cn-update-fixedupdate-lateupdate-diffierence/
 
-[Update and FixedUpdate - Unity Learn](https://learn.unity.com/tutorial/update-he-fixedupdate?language=zh&projectId=5e3afd88edbc2a2998252c77#)
+https://learn.unity.com/tutorial/update-he-fixedupdate?language=zh&projectId=5e3afd88edbc2a2998252c77#
 
 https://docs.unity3d.com/ScriptReference/MonoBehaviour.html
