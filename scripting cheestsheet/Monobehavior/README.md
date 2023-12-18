@@ -26,7 +26,7 @@ MonoBehaviour is the **base class from which every Unity script derives**. When 
 > **Note**: **`Start()`** only being called one time for the script enable
 
 ### `Update()`
-`Update` is called every frame, if the **MonoBehaviour is enabled**.
+`Update` is **called every frame**, if the **MonoBehaviour is enabled**.
 
 ### `Fixedupdate()`
 `FixedUpdate` **execute in fixed time** and i**ndependent to frame**(not affected by frame**), used especially in **calculating any physics** or **movemen**t.
