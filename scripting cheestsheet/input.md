@@ -18,6 +18,39 @@ This is frame-rate independent; you do not need to be concerned about varying fr
 To set up your input or view the options for `axisName`, go to **Edit** > **Project Settings** > **Input Manager**. This brings up the Input Manager. Expand **Axis** to see the list of your current inputs. You can use one of these as the `axisName`. To rename the input or change the positive button etc., expand one of the options, and change the name in the **Name** field or **Positive Button** field. Also, change the **Type** to **Joystick Axis**. To add a new input, add 1 to the number in the **Size** field.
 
 
+```cs
+using UnityEngine;
+using System.Collections;
+
+// A very simplistic car driving on the x-z plane.
+
+public class ExampleClass : MonoBehaviour
+{
+    public float speed = 10.0f;
+    public float rotationSpeed = 100.0f;
+
+    void Update()
+    {
+        // Get the horizontal and vertical axis.
+        // By default they are mapped to the arrow keys.
+        // The value is in the range -1 to 1
+        float translation = Input.GetAxis("Vertical") * speed;
+        float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
+
+        // Make it move 10 meters per second instead of 10 meters per frame...
+        translation *= Time.deltaTime;
+        rotation *= Time.deltaTime;
+
+        // Move translation along the object's z-axis
+        transform.Translate(0, 0, translation);
+
+        // Rotate around our y-axis
+        transform.Rotate(0, rotation, 0);
+    }
+}
+```
+
+
 https://docs.unity3d.com/ScriptReference/Input.GetAxis.html
 
 
