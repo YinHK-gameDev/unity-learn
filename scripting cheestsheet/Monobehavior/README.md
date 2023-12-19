@@ -98,6 +98,46 @@ Any calculations that are performed in Update will have completed when **`LateUp
 **Flowchart:**
 ![](./monobehaviour-flowchart.png)
 
+
+### `Reset()`
+
+Reset to default values.
+
+Reset is called when the user hits the Reset button in the Inspector's context menu or when adding the component the first time. This function is only called in editor mode. Reset is most commonly used to give good default values in the Inspector.
+
+### `StartCoroutine`
+Starts a Coroutine
+
+### `StopCoroutine`
+Stops the first coroutine named methodName, or the coroutine stored in routine running on this behaviour.
+
+### `print`
+Logs message to the Unity Console (identical to Debug.Log).
+
+### `Instantiate`
+Clones the object original and returns the clone.
+
+### `Destroy`
+Removes a GameObject, component or asset
+
+### `GetComponent`
+Gets a reference to a component of type T on the same GameObject as the component specified.
+
+### `GetComponents`
+Gets references to all components of type T on the same GameObject as the component specified.
+
+### `gameObject`
+The game object this component is attached to. A component is always attached to a game object.
+
+### `name`
+
+The name of the object.
+
+Components share the same name with the game object and all attached components. If a class derives from **`MonoBehaviour`** it inherits the "name" field from MonoBehaviour. If this class is also attached to GameObject, then **"name"** field is set to the name of that GameObject.
+
+
+### ref 
+
 https://docs.unity3d.com/ScriptReference/MonoBehaviour.html
 
 https://clay-atlas.com/blog/2021/07/04/unity-cn-update-fixedupdate-lateupdate-diffierence/
