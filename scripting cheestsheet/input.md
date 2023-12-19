@@ -11,7 +11,7 @@ https://docs.unity3d.com/ScriptReference/Input.GetAxis.html
 
 
 ### `Input.GetKeyDown`
-[Input.GetKeyDown](https://docs.unity3d.com/ScriptReference/Input.GetKeyDown.html)
+https://docs.unity3d.com/ScriptReference/Input.GetKeyDown.html
 
 
 ### keycode
