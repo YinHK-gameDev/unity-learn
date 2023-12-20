@@ -49,7 +49,7 @@ Invokes the method methodName in time seconds, then repeatedly every repeatRate 
 
 
 ```cs
-InvokeRepeating(string methodName, float time, float repeatRate)
+public void InvokeRepeating(string methodName, float time, float repeatRate);
 ```
 
 ```cs 
