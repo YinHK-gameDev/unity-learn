@@ -41,3 +41,30 @@ public class Example : MonoBehaviour
 
 ```
 
+#### `Random.onUnitSphere`
+
+Returns a random point on the surface of a sphere with radius 1.0 (Read Only).
+
+```cs
+public static Vector3 onUnitSphere;
+```
+
+
+```cs
+using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+    void Start()
+    {
+        // Sets the rigidbody velocity to 10 and in a random direction.
+
+        GetComponent<Rigidbody>().velocity = Random.onUnitSphere * 10;
+    }
+}
+
+```
+
+
+
+
