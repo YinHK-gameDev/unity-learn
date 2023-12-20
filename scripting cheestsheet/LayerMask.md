@@ -3,7 +3,7 @@ Specifies Layers to use in a **`Physics.Raycast`**.
 
 A GameObject can use up to **32 LayerMasks** supported by the Editor. The **first 8** of these Layers are specified by Unity; the following **24 are controllable by the user**.
 
-**Bitmasks** represent the** 32 Layers** and define them as **true** or **false**. Each bitmask describes **whether the Layer is used**. As an example, bit 5 can be set to 1 (true). This will allow the use of the built-in Water setting.
+**Bitmasks** represent the **32 Layers** and define them as **true** or **false**. Each bitmask describes **whether the Layer is used**. As an example, bit 5 can be set to 1 (true). This will allow the use of the built-in Water setting.
 
 LayerMask is an integer formatted as a **bitmask** where every **1 represents a layer to includ**e and **every 0 represents a layer to exclude**.
 
