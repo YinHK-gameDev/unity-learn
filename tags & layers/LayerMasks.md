@@ -10,7 +10,7 @@ LayerMask is an integer formatted as a **bitmask** where every **1 represents a 
 ### Set up a layerMask
 
 **Convert from a layer** \
-If you want to **convert a layer to a layermask in a script at runtime**, use the binary left-shift operator to left-shift 1 by the layer. The result is a layermask that represents the single layer.
+If you want to **convert a layer to a layermask in a script at runtime**, use the **binary left-shift operator** to **left-shift 1** by the layer. The result is a layermask that represents the single layer.
 
 ```cs
 using UnityEngine;
