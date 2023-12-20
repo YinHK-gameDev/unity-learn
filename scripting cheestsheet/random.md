@@ -65,6 +65,17 @@ public class Example : MonoBehaviour
 
 ```
 
+#### `Random.rotation`
+
+Returns a random rotation (Read Only).
+
+Randomize the x, y, z, and w of a Quaternion each to [-1.0..1.0] (inclusive) via Range and normalize the result. See also rotationUniform for a slower but higher quality algorithm.
 
 
+
+
+
+### ref
+
+https://docs.unity3d.com/ScriptReference/Random.html
 
