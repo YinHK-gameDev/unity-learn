@@ -5,7 +5,7 @@
 public void Invoke(string methodName, float time);
 ```
 
-Invokes the method methodName in time seconds.
+**Invokes the method methodName in time seconds**.
 
 If time is set to 0 and Invoke is called before the first frame update, the method is invoked at the next Update cycle before MonoBehaviour.Update. In this case, it's better to call the function directly.
 
