@@ -1,7 +1,7 @@
 ## Randam
 Use to generating random data.(Eg: generate random game object)
   
-**`Random.Range()`**
+#### `Random.Range()`
 
 ```cs
 public static float Range(float minInclusive, float maxInclusive);
@@ -13,4 +13,31 @@ Returns a random float within **[minInclusive..maxInclusive]** (range is inclusi
 
 https://docs.unity3d.com/ScriptReference/Random.Range.html
 
+
+#### `Random.insideUnitSphere`
+
+Returns a random point inside or on a sphere with radius 1.0 (Read Only).
+
+Note that the probability space includes the surface of the sphere because value, which is inclusive to 1.0, is used to acquire a random radius.
+
+```cs
+public static Vector3 insideUnitSphere;
+```
+
+Eg:
+```cs
+using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+    void Start()
+    {
+        // Sets the position to be somewhere inside a sphere
+        // with radius 5 and the center at zero.
+
+        transform.position = Random.insideUnitSphere * 5;
+    }
+}
+
+```
 
