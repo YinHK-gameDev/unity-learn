@@ -85,6 +85,18 @@ public class ExampleScript : MonoBehaviour
 }
 ```
 
+#### `LayerMask.value`
+Converts a layer mask value to an integer value
+
+#### `LayerMask.GetMask`
+Given a set of layer names as defined by either a Builtin or a User Layer in the Tags and Layers manager, returns the equivalent layer mask for all of them.
+
+#### `LayerMask.NameToLayer`
+Given a layer name, returns the layer index as defined by either a Builtin or a User Layer in the Tags and Layers manager.
+
+Returns -1 if not found.
+
+
 
 ### ref
 
