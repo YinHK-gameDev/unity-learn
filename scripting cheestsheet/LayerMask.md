@@ -1,5 +1,5 @@
 ## LayerMask
-Specifies Layers to use in a Physics.Raycast.
+Specifies Layers to use in a **`Physics.Raycast`**.
 
 A GameObject can use up to 32 LayerMasks supported by the Editor. The first 8 of these Layers are specified by Unity; the following 24 are controllable by the user.
 
