@@ -116,6 +116,11 @@ In other cases, the order of execution of the method depends on the timing of th
 
 If you need to pass parameters to your method, consider using Coroutine instead. Coroutines also provide better performance.
 
+
+### `Invokerepeating()`
+
+Invokes the method methodName in time seconds, then repeatedly every repeatRate seconds.
+
 ### `StartCoroutine`
 Starts a Coroutine
 
