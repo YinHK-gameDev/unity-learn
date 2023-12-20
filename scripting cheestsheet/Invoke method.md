@@ -2,7 +2,7 @@
 
 
 ```cs
-Invoke(string methodName, float time)
+public void Invoke(string methodName, float time);
 ```
 
 Invokes the method methodName in time seconds.
