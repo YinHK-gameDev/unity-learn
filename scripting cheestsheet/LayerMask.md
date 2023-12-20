@@ -10,7 +10,7 @@ As an example, bit 5 can be set to 1 (true). This will allow the use of the buil
 LayerMask is an integer formatted as a **bitmask** where every **1 represents a layer to includ**e and **every 0 represents a layer to exclude**.
 
 
-`Edit->Settings->Tags and Layers` option shows the use of the 32 bitmasks. Each `Layer` is shown with a string setting. As an example `Built-in Layer 0` is set as `Default`; `Built-in Layer 1` is set as `TransparentFX`. New named `Layer`s are added above bitmask layer 8. A selected `GameObject` will show the chosen `Layer` at top right of the Inspector. The example below has `User Layer 13` set to "Wall". This causes the assigned `GameObject` to be treated as part of a building.
+**Edit > Settings > Tags and Layers** option shows the use of the 32 bitmasks. Each `Layer` is shown with a string setting. As an example `Built-in Layer 0` is set as `Default`; `Built-in Layer 1` is set as `TransparentFX`. New named `Layer`s are added above bitmask layer 8. A selected `GameObject` will show the chosen `Layer` at top right of the Inspector. The example below has `User Layer 13` set to "Wall". This causes the assigned `GameObject` to be treated as part of a building.
 
 Eg:
 ```cs
