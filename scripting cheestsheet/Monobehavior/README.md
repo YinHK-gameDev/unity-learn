@@ -105,6 +105,17 @@ Reset to default values.
 
 Reset is called when the user hits the Reset button in the Inspector's context menu or when adding the component the first time. This function is only called in editor mode. Reset is most commonly used to give good default values in the Inspector.
 
+### `Invoke`
+Invokes the method methodName in time seconds.
+
+If time is set to 0 and Invoke is called before the first frame update, the method is invoked at the next Update cycle before MonoBehaviour.Update. In this case, it's better to call the function directly.
+
+Note: Setting time to negative values is identical to setting it to 0.
+
+In other cases, the order of execution of the method depends on the timing of the invocation.
+
+If you need to pass parameters to your method, consider using Coroutine instead. Coroutines also provide better performance.
+
 ### `StartCoroutine`
 Starts a Coroutine
 
