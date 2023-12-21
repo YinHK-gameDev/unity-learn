@@ -1,7 +1,7 @@
 ## `Raycast`
 The **`Raycast` function** is useful for **creating connections between objects** in Unity.
 
-> **Raycast** in Unity is a Physics function that **projects a Ray into the scene**, **returning a boolean value if a target was successfully hit**. When this happens, information about the hit, such as the distance, position or a reference to the object’s Transform, can be stored in a **Raycast Hit variable** for further use.
+> **Raycast** in Unity is a Physics function that **projects a Ray into the scene**, **returning a boolean value if a target was successfully hit**. When this happens, information about the hit, such as the distance, position or a reference to the object’s Transform, can be stored in a **Raycast Hit variable** for further use. To **fire Rays** into the scene, and check if it hits anything or not
 
 
 - **Raycasting** is the process of **shooting an invisible ray from a point**, in a **specified direction** to detect **whether any colliders lay in the path of the array.**
@@ -27,7 +27,7 @@ The basic version of Raycast is made up of three different parts:
 -   The **Raycast** function
 
 #### Create a ray
-A **Ray** is simply a **data struc**t in Unity that represents **a point of origin** and **a direction** for the **Ray to travel**.
+A **Ray** is simply a **data struc**t in Unity that represents **a point of origin** and **a direction** for the **Ray to travel**. It **defines where a Ray will go**.
 
 - The **origin** is the position in the world that the Ray will start from. 
 - The **direction** property takes a trajectory in the form of a normalised Vector 3.
@@ -93,9 +93,9 @@ GameObject hitObject = hit.transform.gameObject;
 https://docs.unity3d.com/ScriptReference/RaycastHit.html
 
 #### Use the Raycast function
-While the **Ray** and **Raycast Hit variables** define where a Ray will go and how information from hits will be stored, they don’t do anything on their own.
+While the **Ray** and **Raycast Hit variables** define where a **Ray will go** and how **information from hits will be stored**, they don’t do anything on their own.
 
-To fire Rays into the scene, and check if they hit anything, you need **Raycast function** for help.
+To **fire Rays** into the scene, and check if they hit anything, you need **Raycast function** for help.
 
 
 Raycast function:
