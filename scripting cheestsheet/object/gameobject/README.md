@@ -6,7 +6,7 @@
 
 or
 
-> Declare **`private GameObject <name>`** in script, then use GameObject.Find( ) method to find out the game object in the hierchy.
+> Declare **`private GameObject <name>`** in script, then use **`GameObject.Find( )`** method to find out the game object in the hierchy.
 
 
 ### Get access component in gameobject
