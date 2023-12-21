@@ -58,8 +58,7 @@ void Update()
 
 
 #### Use the Raycast Hit variable
-The **Raycast Hit** variable is a **data struct** that **stores information about Ray’s collision.
-**
+The **Raycast Hit** variable is a **data struct** that **stores information about Ray’s collision**.
 It records information like where the hit happened in the world, what object did the Ray collide with and how far away it was from the origin of the Ray.
 
 ```cs
