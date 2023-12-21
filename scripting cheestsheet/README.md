@@ -28,6 +28,8 @@ void Start ()
 - **`Debug.LogError`**
 - **`Debug.LogWarning`**
 - **`Debug.LogException`**
+- **`Debug.DrawRay`**
+- **`Debug.DrawLine`**
 
 https://docs.unity3d.com/ScriptReference/Debug.html
 
