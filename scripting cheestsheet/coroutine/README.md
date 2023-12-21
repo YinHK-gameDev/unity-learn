@@ -33,15 +33,15 @@ A **coroutine** is a function that can **suspend its execution** (**`yield`**) u
 
 **StartCoroutine**
 
-[MonoBehaviour.StartCoroutine](https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html)
+https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html
 
 **StopCoroutine**
 
-[MonoBehaviour.StopCoroutine](https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopCoroutine.html)
+https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopCoroutine.html
 
 **WaitForSeconds**
 
-[WaitForSeconds](https://docs.unity3d.com/ScriptReference/WaitForSeconds.html)
+https://docs.unity3d.com/ScriptReference/WaitForSeconds.html
 
 
 ### Start coroutine once
