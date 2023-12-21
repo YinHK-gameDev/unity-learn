@@ -1,4 +1,4 @@
-## Raycast
+## `Raycast`
 The Raycast function is useful for creating connections between objects in Unity.
 
 > **Raycast** in Unity is a Physics function that **projects a Ray into the scene**, **returning a boolean value if a target was successfully hit**. When this happens, information about the hit, such as the distance, position or a reference to the object’s Transform, can be stored in a **Raycast Hit variable** for further use.
@@ -121,6 +121,14 @@ Ray ray = new Ray(transform.position, transform.forward);
 Debug.DrawRay(ray.origin, ray.direction * 10);
 ```
 
+#### `RaycastHit`
+Structure used to **get information** back from a **raycast**.
+
+
+#### `Ray`
+Representation of **rays**.
+
+A **ray** is an **infinite line** starting at **origin and going in some direction**.
 
 
 ### ref
