@@ -10,8 +10,21 @@ or
 
 
 ### Get access component in gameobject
+Gets a reference to a component of type T on the specified GameObject.
+
+The typical usage for this method is to call it on a reference to a different GameObject than the one your script is on. For example:
+
 ```cs
-GameObject.GetComponent<Type>()
+
+public GameObject otherGameObject;
+
+myResults = otherGameObject.GetComponent<ComponentType>()'
+```
+
+However if you are writing code inside a MonoBehaviour class, you can omit the preceding GameObject reference to get a component from the same GameObject your script is attached to. In this instance, you are actually calling Component.GetComponent because the script itself is a type of component, but the result is the same as if you had referenced the GameObject itself. For example:
+
+```cs
+myResults = GetComponent<ComponentType>()'
 ```
 
 > **GetComponent()**  should be declared in **`void start()`**
