@@ -1,12 +1,12 @@
 ## `Raycast`
-The Raycast function is useful for creating connections between objects in Unity.
+The **`Raycast` function** is useful for **creating connections between objects** in Unity.
 
 > **Raycast** in Unity is a Physics function that **projects a Ray into the scene**, **returning a boolean value if a target was successfully hit**. When this happens, information about the hit, such as the distance, position or a reference to the object’s Transform, can be stored in a **Raycast Hit variable** for further use.
 
 
-- **Raycasting** is the process of shooting an invisible ray from a point, in a specified direction to detect whether any colliders lay in the path of the array.
-
-- A **raycast** sends an imaginary “laser beam” along the ray from its origin until it hits a collider
+- **Raycasting** is the process of **shooting an invisible ray from a point**, in a **specified direction** to detect **whether any colliders lay in the path of the array.
+**
+- A **raycast** sends an imaginary **"laser beam"** along the ray from its origin until it **hits a collider**
  in the scene. 
 
 Eg:
