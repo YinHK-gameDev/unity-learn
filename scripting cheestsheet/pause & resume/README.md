@@ -38,3 +38,5 @@ https://www.reddit.com/r/unity_tutorials/comments/n4ioec/how_to_pause_and_resume
 
 https://blog.gamedev.tv/how-to-basic-pause-system-in-unity/
 
+https://docs.unity3d.com/ScriptReference/Time-timeScale.html
+
