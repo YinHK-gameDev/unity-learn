@@ -27,7 +27,7 @@ The basic version of Raycast is made up of three different parts:
 -   The **Raycast** function
 
 #### Create a ray
-A **Ray** is simply a **data struc**t in Unity that represents **a point of origin** and **a direction** for the Ray to travel.
+A **Ray** is simply a **data struc**t in Unity that represents **a point of origin** and **a direction** for the **Ray to travel**.
 
 The **origin** is the position in the world that the Ray will start from. \
 The direction property takes a trajectory in the form of a normalised Vector 3.
