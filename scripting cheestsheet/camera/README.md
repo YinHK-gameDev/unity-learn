@@ -1,6 +1,6 @@
 ## Camera
 
-#### Camera.main
+#### `Camera.main`
 The first enabled Camera component that is tagged **"MainCamera"** (Read Only).
 
 If there is no enabled Camera component with the "MainCamera" tag, this property is null.
