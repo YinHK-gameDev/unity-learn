@@ -1,7 +1,7 @@
 ## Rays from the Camera
 
 The Ray corresponds to a point in the view, 
-so the Camera class provides the `ScreenPointToRay` and `ViewportPointToRay` functions. 
+so the Camera class provides the **`ScreenPointToRay`** and **`ViewportPointToRay` **functions. 
 
 Any point in the camera’s view corresponds to a line in world space.
 
