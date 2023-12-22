@@ -1,4 +1,4 @@
-### Mathf
+### Mathf & Lerp
 
 #### `Mathf.SmoothDamp`
 
@@ -23,6 +23,17 @@ When `t` = 1 return `b`. \
 When `t` = 0.5 returns the midpoint of `a` and `b`.
 
 > A common use for Lerp is to produce an effect over a fixed period of time. For example, to animate a button, fade the screen to black or move an object to a new position in a fixed amount of time. Most commonly it’s used for **moving** or **changing values over a period of time**.
+
+
+#### `Vector3.Lerp`
+
+Linearly interpolates between two points.
+
+Interpolates between the points `a` and `b` by the interpolant `t`. The parameter `t` is clamped to the range \[0, 1\]. This is most commonly used to find a point some fraction of the way along a line between two endpoints (e.g. to move an object gradually between those points).  
+  
+The value returned equals **a + (b - a) \* t** (which can also be written **a \* (1-t) + b\*t**).  
+When `t` = 0, **Vector3.Lerp(a, b, t)** returns `a`.  
+When `t` = 1, **Vector3.Lerp(a, b, t)** returns `b`.
 
 Eg:
 
@@ -124,3 +135,5 @@ https://docs.unity3d.com/ScriptReference/Mathf.SmoothDamp.html
 https://docs.unity3d.com/ScriptReference/Mathf.MoveTowards.html
 
 https://docs.unity3d.com/ScriptReference/Mathf.Lerp.html
+
+https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html
