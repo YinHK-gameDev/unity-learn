@@ -24,9 +24,95 @@ When `t` = 0.5 returns the midpoint of `a` and `b`.
 
 > A common use for Lerp is to produce an effect over a fixed period of time. For example, to animate a button, fade the screen to black or move an object to a new position in a fixed amount of time.
 
+Eg:
 
+**Lerp a Vector in movement**
 
+```cs
+float lerpDuration = 3; 
+float startValue = 0; 
+float endValue = 10; 
+float valueToLerp;
+void Start()
+    {
+        StartCoroutine(Lerp());
+    }
+IEnumerator Lerp()
+    {
+        float timeElapsed = 0;
+        while (timeElapsed < lerpDuration)
+        {
+            valueToLerp = Mathf.Lerp(startValue, endValue, timeElapsed / lerpDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        valueToLerp = endValue;
+    }
+```
 
+```cs
+public float targetValue;
+void Start()
+{
+  StartCoroutine(LerpFunction(targetValue, 5));
+}
+IEnumerator LerpFunction(float endValue, float duration)
+{
+  float time = 0;
+  float startValue = valueToChange;
+  while (time < duration)
+  {
+    valueToChange = Mathf.Lerp(startValue, endValue, time / duration);
+    time += Time.deltaTime;
+    yield return null;
+  }
+  valueToChange = endValue;
+}
+```
+```cs
+public class LerpToPosition : MonoBehaviour
+{
+    public Vector3 positionToMoveTo;
+    void Start()
+    {
+        StartCoroutine(LerpPosition(positionToMoveTo, 5));
+    }
+    IEnumerator LerpPosition(Vector3 targetPosition, float duration)
+    {
+        float time = 0;
+        Vector3 startPosition = transform.position;
+        while (time < duration)
+        {
+            transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = targetPosition;
+    }
+}
+```
+```cs
+public class Lerp2D : MonoBehaviour
+{
+    public Vector2 positionToMoveTo;
+    void Start()
+    {
+        StartCoroutine(LerpPosition(positionToMoveTo, 5));
+    }
+    IEnumerator LerpPosition(Vector2 targetPosition, float duration)
+    {
+        float time = 0;
+        Vector2 startPosition = transform.position;
+        while (time < duration)
+        {
+            transform.position = Vector2.Lerp(startPosition, targetPosition, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = targetPosition;
+    }
+}
+```
 
 
 ### ref
