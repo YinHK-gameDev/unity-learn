@@ -73,6 +73,17 @@ public class SmoothScopeZoom : MonoBehaviour
 }
 ```
 
+Using **`Lerp`**
+
+```cs
+[Range(0f, 1f)]
+public float zoomLerpFactor = 0.3f;
+
+
+Vector3 goalPosition =   cameraTarget.position - (transform.rotation * Vector3.forward * distance);
+transform.position = Vector3.Lerp(transform.position, goalPosition, zoomLerpFactor);
+
+```
 
 
 
@@ -91,4 +102,6 @@ https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/
 https://docs.unity3d.com/ScriptReference/Mathf.MoveTowards.html
 
 https://docs.unity3d.com/ScriptReference/Mathf.Lerp.html
+
+https://www.youtube.com/watch?v=HxnpWhxjJwE
 
