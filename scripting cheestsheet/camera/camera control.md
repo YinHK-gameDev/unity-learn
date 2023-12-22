@@ -143,6 +143,12 @@ The **`orthographicSize`** property defines the viewing volume of an **orthograp
 Orthographic size is ignored when the camera is not orthographic 
 
 
+#### `Mathf.SmoothDamp`
+
+Gradually changes a value towards a desired goal over time.
+
+The value is smoothed by some spring-damper like function, which will never overshoot. The function can be used to smooth any kind of value, positions, colors, scalars.
+
 
 
 ### ref 
@@ -153,4 +159,5 @@ https://learn.unity.com/tutorial/camera-control?courseId=5c87c0a2edbc2a001fbc38e
 
 https://docs.unity3d.com/ScriptReference/Camera-orthographicSize.html
 
+https://docs.unity3d.com/ScriptReference/Mathf.SmoothDamp.html
 
