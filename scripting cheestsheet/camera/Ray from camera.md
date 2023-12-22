@@ -60,6 +60,32 @@ A 3D point, with the x and y coordinates containing a 2D screenspace point in pi
 Optional argument that can be used to specify which eye transform to use. Default is **Mono**.
 
 
+### `Camera.ViewportToScreenPoint`
+
+Transforms **`position`** from viewport space into screen space.
+
+Viewport space is normalized and relative to the camera. The bottom-left of the camera is (0,0); the top-right is (1,1). The z position is in world units from the camera.
+
+
+
+```cs
+using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+    // Draw an image based on normalized view coordinates
+    // rather than pixel positions.
+    Texture2D bottomPanel;
+
+    void VPToScreenPtExample()
+    {
+        var origin = Camera.main.ViewportToScreenPoint(new Vector3(0.25f, 0.1f, 0));
+        var extent = Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.2f, 0));
+
+        GUI.DrawTexture(new Rect(origin.x, origin.y, extent.x, extent.y), bottomPanel);
+    }
+}
+```
 
 
 
