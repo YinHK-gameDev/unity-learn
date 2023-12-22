@@ -60,29 +60,37 @@ A 3D point, with the x and y coordinates containing a 2D screenspace point in pi
 Optional argument that can be used to specify which eye transform to use. Default is **Mono**.
 
 
-### `Camera.ViewportToScreenPoint`
+### `Camera.ViewportPointToRay`
 
-Transforms **`position`** from viewport space into screen space.
+Returns a ray going from camera through a viewport point.
 
-Viewport space is normalized and relative to the camera. The bottom-left of the camera is (0,0); the top-right is (1,1). The z position is in world units from the camera.
-
+Resulting ray is in world space, starting on the near plane of the camera and going through position's (x,y) coordinates on the viewport (position.z is ignored).  
+  
+Viewport coordinates are normalized and relative to the camera. The bottom-left of the camera is (0,0); the top-right is (1,1).
 
 
 ```cs
+// Prints the name of the object camera is directly looking at
 using UnityEngine;
+using System.Collections;
 
-public class Example : MonoBehaviour
+public class ExampleClass : MonoBehaviour
 {
-    // Draw an image based on normalized view coordinates
-    // rather than pixel positions.
-    Texture2D bottomPanel;
+    Camera cam;
 
-    void VPToScreenPtExample()
+    void Start()
     {
-        var origin = Camera.main.ViewportToScreenPoint(new Vector3(0.25f, 0.1f, 0));
-        var extent = Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.2f, 0));
+        cam = GetComponent<Camera>();
+    }
 
-        GUI.DrawTexture(new Rect(origin.x, origin.y, extent.x, extent.y), bottomPanel);
+    void Update()
+    {
+        Ray ray = cam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+            print("I'm looking at " + hit.transform.name);
+        else
+            print("I'm looking at nothing!");
     }
 }
 ```
