@@ -24,6 +24,25 @@ When `t` = 0.5 returns the midpoint of `a` and `b`.
 
 > A common use for Lerp is to produce an effect over a fixed period of time. For example, to animate a button, fade the screen to black or move an object to a new position in a fixed amount of time. Most commonly it’s used for **moving** or **changing values over a period of time**.
 
+```cs
+public float targetValue;
+void Start()
+{
+  StartCoroutine(LerpFunction(targetValue, 5));
+}
+IEnumerator LerpFunction(float endValue, float duration)
+{
+  float time = 0;
+  float startValue = valueToChange;
+  while (time < duration)
+  {
+    valueToChange = Mathf.Lerp(startValue, endValue, time / duration);
+    time += Time.deltaTime;
+    yield return null;
+  }
+  valueToChange = endValue;
+}
+```
 
 #### `Vector3.Lerp`
 
@@ -59,26 +78,6 @@ IEnumerator Lerp()
         }
         valueToLerp = endValue;
     }
-```
-
-```cs
-public float targetValue;
-void Start()
-{
-  StartCoroutine(LerpFunction(targetValue, 5));
-}
-IEnumerator LerpFunction(float endValue, float duration)
-{
-  float time = 0;
-  float startValue = valueToChange;
-  while (time < duration)
-  {
-    valueToChange = Mathf.Lerp(startValue, endValue, time / duration);
-    time += Time.deltaTime;
-    yield return null;
-  }
-  valueToChange = endValue;
-}
 ```
 ```cs
 public class LerpToPosition : MonoBehaviour
