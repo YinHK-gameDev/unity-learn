@@ -156,6 +156,15 @@ Moves a value `current` towards `target`.
 
 This is essentially the same as `Mathf.Lerp` but instead the function will ensure that the speed never exceeds `maxDelta`. Negative values of `maxDelta` pushes the value away from `target`.
 
+#### `Mathf.Lerp`
+Linearly interpolates between `a` and `b` by `t`.
+
+The parameter `t` is clamped to the range \[0, 1\].  
+  
+When `t` = 0 returns `a`. \
+When `t` = 1 return `b`. \
+When `t` = 0.5 returns the midpoint of `a` and `b`.
+
 
 
 ### ref 
@@ -169,4 +178,9 @@ https://docs.unity3d.com/ScriptReference/Camera-orthographicSize.html
 https://docs.unity3d.com/ScriptReference/Mathf.SmoothDamp.html
 
 https://docs.unity3d.com/ScriptReference/Mathf.MoveTowards.html
+
+https://docs.unity3d.com/ScriptReference/Mathf.Lerp.html
+
+https://gamedevbeginner.com/the-right-way-to-lerp-in-unity-with-examples/
+
 
