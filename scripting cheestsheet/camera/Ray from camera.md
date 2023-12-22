@@ -33,6 +33,32 @@ public class ExampleScript : MonoBehaviour {
 }
 ```
 
+### `Camera.ScreenPointToRay`
+
+Returns a ray going from camera through a screen point.
+
+Resulting ray is in world space, starting on the near plane of the camera and going through position's (x,y) pixel coordinates on the screen (position.z is ignored).
+
+Screenspace is defined in pixels. The bottom-left of the screen is (0,0); the right-top is **`(pixelWidth-1, pixelHeight -1)`**.
+
+```cs
+public Ray ScreenPointToRay(Vector3 pos);
+```
+or
+```cs
+public Ray ScreenPointToRay(Vector3 pos, Camera.MonoOrStereoscopicEye eye);
+```
+
+- **pos**: \
+A 3D point, with the x and y coordinates containing a 2D screenspace point in pixels. The lower left pixel of the screen is (0,0). The upper right pixel of the screen is (screen width in pixels - 1, screen height in pixels - 1). Unity ignores the z coordinate.
+
+- **eye**: \
+Optional argument that can be used to specify which eye transform to use. Default is **Mono**.
+
+
+
+
+
 ### ref
 https://www.scratchapixel.com/lessons/3d-basic-rendering/ray-tracing-generating-camera-rays/definition-ray.html
 
