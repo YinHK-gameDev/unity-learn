@@ -33,3 +33,11 @@ public class ExampleScript : MonoBehaviour {
 }
 ```
 
+### ref
+https://www.scratchapixel.com/lessons/3d-basic-rendering/ray-tracing-generating-camera-rays/definition-ray.html
+
+https://docs.unity3d.com/Manual/CameraRays.html
+
+https://docs.unity3d.com/ScriptReference/Camera.ScreenPointToRay.html
+
+https://docs.unity3d.com/ScriptReference/Camera.ViewportPointToRay.html
