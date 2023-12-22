@@ -13,6 +13,31 @@ Each of these functions returns a Ray which consists of a point of origin and a 
  
  > The Ray originates from the near clipping plane rather than the Camera’s **`transform.position`** point.
 
+```cs
+//Attach this script to your Camera
+//This draws a line in the Scene view going through a point 200 pixels from the lower-left corner of the screen
+//To see this, enter Play Mode and switch to the Scene tab. Zoom into your Camera's position.
+using UnityEngine;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour
+{
+    Camera cam;
+    Vector3 pos = new Vector3(200, 200, 0);
+
+
+    void Start()
+    {
+        cam = GetComponent<Camera>();
+    }
+
+    void Update()
+    {
+        Ray ray = cam.ScreenPointToRay(pos);
+        Debug.DrawRay(ray.origin, ray.direction * 10, Color.yellow);
+    }
+}
+```
 
 ### Moving the Camera Along a Ray
 
