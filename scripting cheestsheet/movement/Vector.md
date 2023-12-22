@@ -54,6 +54,39 @@ public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 cu
  transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 ```
 
+#### `Vector3.Lerp`
+
+Linearly interpolates between two points.
+
+Interpolates between the points `a` and `b` by the interpolant `t`. The parameter `t` is clamped to the range \[0, 1\]. This is most commonly used to find a point some fraction of the way along a line between two endpoints (e.g. to move an object gradually between those points).  
+  
+The value returned equals **a + (b - a) \* t** (which can also be written **a \* (1-t) + b\*t**).  
+When `t` = 0, **Vector3.Lerp(a, b, t)** returns `a`.  
+When `t` = 1, **Vector3.Lerp(a, b, t)** returns `b`.
+
+```cs
+public class LerpToPosition : MonoBehaviour
+{
+    public Vector3 positionToMoveTo;
+    void Start()
+    {
+        StartCoroutine(LerpPosition(positionToMoveTo, 5));
+    }
+    IEnumerator LerpPosition(Vector3 targetPosition, float duration)
+    {
+        float time = 0;
+        Vector3 startPosition = transform.position;
+        while (time < duration)
+        {
+            transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.position = targetPosition;
+    }
+}
+```
+
 
 https://docs.unity3d.com/ScriptReference/Vector3.html
 
