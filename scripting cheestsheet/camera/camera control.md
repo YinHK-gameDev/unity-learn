@@ -165,7 +165,7 @@ When `t` = 0 returns `a`. \
 When `t` = 1 return `b`. \
 When `t` = 0.5 returns the midpoint of `a` and `b`.
 
-
+> A common use for Lerp is to produce an effect over a fixed period of time. For example, to animate a button, fade the screen to black or move an object to a new position in a fixed amount of time.
 
 ### ref 
 
