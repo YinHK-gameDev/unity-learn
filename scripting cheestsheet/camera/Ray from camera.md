@@ -91,7 +91,7 @@ Returns a ray going from camera through a **viewport point**.
 
 Resulting ray is in world space, starting on the **near plane of the camera** and going through position's (x,y) coordinates on the viewport (position.z is ignored).  
   
-Viewport coordinates are normalized and relative to the camera. The bottom-left of the camera is (0,0); the top-right is (1,1).
+Viewport coordinates are normalized and relative to the camera. The **bottom-left of the camera is (0,0)**; the **top-right is (1,1)**.
 
 
 ```cs
