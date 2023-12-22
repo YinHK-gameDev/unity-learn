@@ -86,12 +86,84 @@ transform.position = Vector3.Lerp(transform.position, goalPosition, zoomLerpFact
 ```
 
 
+#### Zoom an object by moving it closer (the movement method)
 
+```cs
+public class CameraMovement : MonoBehaviour
+{
+    public float speed = 25;
+    void Update()
+    {
+        MoveCamera(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+    }
+    void MoveCamera(float x, float y)
+    {
+        Vector3 movementAmount = new Vector3(x, 0, y) * speed * Time.deltaTime;
+        transform.Translate(movementAmount);
+    }
+}
+```
 
+```cs
+public class MovementZoom : MonoBehaviour
+{
+    public float zoomLevel;
+    public Transform parentObject;
+    void Update()
+    {
+        transform.position = parentObject.position + (transform.forward * zoomLevel);
+    }
+}
+```
 
+#### Zoom a camera using the mouse scroll wheel
 
+```cs
+public float zoomLevel;
+public float sensitivity=1;
+void Update()
+{
+    zoomLevel += Input.mouseScrollDelta.y * sensitivity;
+}
+```
 
+```cs
+using UnityEngine;
+public class MovementZoom : MonoBehaviour
+{
+    // Movement based Scroll Wheel Zoom.
+    public Transform parentObject;
+    public float zoomLevel;
+    public float sensitivity=1;
+    public float speed = 30;
+    public float maxZoom=30;
+    float zoomPosition;
+    void Update()
+    {
+        zoomLevel += Input.mouseScrollDelta.y * sensitivity;
+        zoomLevel = Mathf.Clamp(zoomLevel, 0, maxZoom);
+        zoomPosition = Mathf.MoveTowards(zoomPosition, zoomLevel, speed * Time.deltaTime);
+        transform.position = parentObject.position + (transform.forward * zoomPosition);
+    }
+}
+```
 
+#### Zoom the camera out to avoid collisions with objects
+
+```cs
+void ClipCheck()
+    {
+        Ray ray = new Ray(parentObject.position, transform.forward);
+        if (Physics.SphereCast(ray, 3, out RaycastHit hit, maxZoom))
+        {
+            if (hit.distance < zoomLevel+3)
+            {
+                zoomLevel = hit.distance - 3;
+            }
+        }
+    }
+
+```
 
 ### ref
 
