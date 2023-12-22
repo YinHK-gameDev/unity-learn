@@ -95,6 +95,17 @@ Viewport coordinates are normalized and relative to the camera. The **bottom-lef
 
 
 ```cs
+public Ray ViewportPointToRay(Vector3 pos);
+```
+
+Or
+
+```cs
+public Ray ViewportPointToRay(Vector3 pos, Camera.MonoOrStereoscopicEye eye);
+```
+
+
+```cs
 // Prints the name of the object camera is directly looking at
 using UnityEngine;
 using System.Collections;
