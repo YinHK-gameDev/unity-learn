@@ -80,7 +80,7 @@ Using **`Lerp`**
 public float zoomLerpFactor = 0.3f;
 
 
-Vector3 goalPosition =   cameraTarget.position - (transform.rotation * Vector3.forward * distance);
+Vector3 goalPosition = cameraTarget.position - (transform.rotation * Vector3.forward * distance);
 transform.position = Vector3.Lerp(transform.position, goalPosition, zoomLerpFactor);
 
 ```
