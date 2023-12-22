@@ -41,6 +41,19 @@ v.Z   // Z component of the vector
 
 ```
 
+#### `Vector3.SmoothDamp`
+Gradually changes a vector towards a desired goal over time.
+
+The vector is smoothed by some spring-damper like function, which will never overshoot. The most common use is for smoothing a follow camera.
+
+```cs
+public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime, float maxSpeed = Mathf.Infinity, float deltaTime = Time.deltaTime);
+```
+
+```cs
+ transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+```
+
 
 https://docs.unity3d.com/ScriptReference/Vector3.html
 
