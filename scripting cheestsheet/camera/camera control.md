@@ -134,8 +134,23 @@ public class CameraControl : MonoBehaviour
 }
 ```
 
+#### `Camera.orthographicSize`
+
+Camera's half-size when in orthographic mode.
+
+The **`orthographicSize`** property defines the viewing volume of an **orthographic** Camera. In order to edit this size, set the Camera to be orthographic first through script or in the Inspector. The **`orthographicSize`** is half the size of the vertical viewing volume. The horizontal size of the viewing volume depends on the aspect ratio.
+
+Orthographic size is ignored when the camera is not orthographic 
+
+
+
+
+### ref 
 
 https://youtu.be/llEJtLuQyPM
 
 https://learn.unity.com/tutorial/camera-control?courseId=5c87c0a2edbc2a001fbc38ed&projectId=5c5149c5edbc2a001fd5be95#5c7f8528edbc2a002053b398
+
+https://docs.unity3d.com/ScriptReference/Camera-orthographicSize.html
+
 
