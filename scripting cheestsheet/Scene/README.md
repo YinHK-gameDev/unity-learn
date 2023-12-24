@@ -13,6 +13,11 @@ Loads the Scene by its name or index in Build Settings.
 ```cs
 public static void LoadScene(int sceneBuildIndex, SceneManagement.LoadSceneMode mode = LoadSceneMode.Single);
 ```
+
+```cs
+public static void LoadScene(string sceneName, SceneManagement.LoadSceneMode mode = LoadSceneMode.Single);
+```
+
 Eg:
 ```cs
 using UnityEngine;
