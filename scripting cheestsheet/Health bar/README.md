@@ -13,3 +13,5 @@ https://www.youtube.com/watch?v=S0gmSDRXzgs
 
 https://www.youtube.com/watch?v=pLzyj9dQ7n8
 
+### ref 
+https://docs.unity3d.com/2021.2/Documentation/ScriptReference/UIElements.Slider.html
