@@ -106,6 +106,13 @@ Right click the scene, in the list you can:
 
 When you are in Play mode and have multiple scenes in the Hierarchy window, the Editor displays an additional scene called DontDestroyOnLoad. You can’t access the DontDestroyOnLoad scene and it’s also not available at runtime.
 
+
+https://docs.unity3d.com/Manual/MultiSceneEditing.html
+
+https://docs.unity3d.com/Manual/setupmultiplescenes.html
+
+
+
 ### Use scripts to edit multiple scenes
 
 When using (or running) scripts within the Editor, use:
