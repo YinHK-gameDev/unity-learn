@@ -43,6 +43,20 @@ public class ExampleClass : MonoBehaviour
 }
 ```
 
+#### `Renderer.material`
+Returns the first instantiated Material assigned to the renderer.
+```cs
+public Material material;
+```
+
+
+#### `Renderer.materials`
+Returns all the instantiated materials of this object.
+
+```cs
+public Material[] materials;
+```
+
 
 ### ref 
 https://docs.unity3d.com/ScriptReference/Renderer.html
