@@ -29,6 +29,12 @@ Colliders on a GameObject that has a Rigidbody are known as **dynamic colliders*
 ### Rigidbody colliders
 This is a GameObject with a Collider and a normal, non-kinematic Rigidbody attached. Rigidbody colliders are fully simulated by the physics engine and can react to collisions and forces
 
+
+> Adding a **Rigidbody component** to an object will **put its motion under the control of Unity's physics engine**. 
+
+Even without adding any code, a Rigidbody object will be **pulled downward by gravity** and will react to collisions with incoming objects if the right Collider component is also present.
+
+
 ### Kinematic Rigidbody collider
 A a GameObject with a Collider and **a kinematic Rigidbody attached** (ie, the **`IsKinematic`** property of the Rigidbody is **enabled**).
 
