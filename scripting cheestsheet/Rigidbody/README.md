@@ -18,6 +18,10 @@ The rotation of the Rigidbody.
 
 Use Rigidbody.rotation to get and set the rotation of a Rigidbody using the physics engine.
 
+#### `AddForce`
+Adds a force to the Rigidbody.
+
+#### 
 
 ### ref
 https://docs.unity3d.com/2020.1/Documentation/ScriptReference/Rigidbody.html
