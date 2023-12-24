@@ -1,5 +1,5 @@
 ## Scene
-Run-time data structure for *.unity file.
+Run-time data structure for `*.unity` file.
 
 
 ### SceneManager
