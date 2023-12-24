@@ -13,7 +13,7 @@ To configure a callback in the editor there are a few steps to take:
 - Create `XXXManager` and attach `XXXManager.cs`.
 - Make sure your script **`imports/uses UnityEngine.Events`**.
 - Declare UnityEvent variable: **`[SerializeField] private UnityEvent trigger_name`**.
-- Inside trigger menthod, use **`invode()`** method(eg: **`trigger_name.invoke()`**) to trigger callback.
+- Inside trigger menthod, use **`invoke()`** method(eg: **`trigger_name.invoke()`**) to trigger callback.
 - Select the **`+`** icon to add a slot for a callback
 - Select the `UnityEngine.Object` you wish to receive the callback (You can use the object selector for this)
 - Select the function(inside that object) you wish to be called
