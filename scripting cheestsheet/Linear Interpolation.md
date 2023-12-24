@@ -1,9 +1,9 @@
 ## Lerp(Linear Interpolation)
 
 
-Lerp, or Linear Interpolation, is a mathematical function in Unity that returns a value between two others at a point on a linear scale.
+Lerp, or Linear Interpolation, is a mathematical function in Unity that **returns a value between two others at a point on a linear scale**.
 
-Most commonly it’s used for moving or changing values over a period of time.
+Most commonly it’s used for **moving or changing values over a period of time**.
 
 ```cs
 lerpValue = Mathf.Lerp(minValue, maxValue, interpolationPoint);
