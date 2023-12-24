@@ -160,3 +160,6 @@ using UnityEngine;// create a randomly placed cubepublic class ExampleScript2 : 
 
 ### ref
 https://docs.unity3d.com/2018.4/Documentation/ScriptReference/SceneManagement.Scene.html
+
+https://docs.unity3d.com/2018.4/Documentation/ScriptReference/SceneManagement.SceneManager.html
+
