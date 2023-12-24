@@ -34,7 +34,7 @@ public class PlayerInfo
 ```
 
 ### `JsonUtility.FromJsonOverwrite`
-Overwrite data in an object by reading from its JSON representation.
+**Overwrite data in an object** by reading from its JSON representation.
 
 ```cs
 public static void FromJsonOverwrite(string json, object objectToOverwrite);
