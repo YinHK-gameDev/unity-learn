@@ -1,5 +1,5 @@
 ## JsonUtility
-JsonUtility is Unity’s built-in API for serializing and deserializing JSON data.
+JsonUtility is Unity’s built-in API for **serializing and deserializing JSON data**.
 
 Utility functions for working with JSON data.
 
