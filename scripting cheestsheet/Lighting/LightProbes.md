@@ -43,6 +43,8 @@ public class PlaceLightProbes : MonoBehaviour
 ```
 
 
+### ref
+https://docs.unity3d.com/ScriptReference/LightProbeGroup.html
 
 
 
