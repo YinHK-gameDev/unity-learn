@@ -1,7 +1,7 @@
 ### Placing Light Probes using scripting
 Placing Light Probes over large levels by hand can be time consuming. You can automate the placing of light probes by writing your own editor scripts.
 
-Your script can create a new GameObject with a LightProbeGroup component, and you can add probe positions individually according to any rules that you choose to program.   
+Your script can create a new GameObject with a **LightProbeGroup** component, and you can add **probe positions** individually according to any rules that you choose to program.   
 
 Using **`LightProbeGroup`** API:
 
