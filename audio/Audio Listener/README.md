@@ -1,5 +1,7 @@
 ## Audio Listener
-The Audio Listener acts as a microphone-like device. It receives input from any given Audio Source in the scene and plays sounds through the computer speakers. For most applications it makes the most sense to **attach the listener to the Main Camera**.
+The Audio Listener acts as a **microphone-like device**. It **receives input from any given Audio Source** in the scene and **plays sounds through the computer speakers**. 
+
+> For most applications it makes the most sense to **attach the listener to the Main Camera**.
 
 If an audio listener is within the boundaries of a Reverb Zone reverberation is applied to all audible sounds in the scene.
 
