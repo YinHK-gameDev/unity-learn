@@ -44,14 +44,13 @@ Use parameter to control animation and transitions between Animator states:
     
     https://docs.unity3d.com/ScriptReference/Animator.SetInteger.html
     
-- **Unity animation transition has exit time**
+#### Unity animation transition has exit time
     
     https://jerrard-liu.blogspot.com/2016/04/MecanimPart3.html
     
-- **Five tips for keeping animator controllers nice & tidy**
+#### Five tips for keeping animator controllers nice & tidy
     
-    https://unity3d.com/how-to/build-animator-controllers
-    
+    https://unity3d.com/how-to/build-animator-controllers \
     https://www.studica.com/blog/game-design-tutorial-blend-trees-unity
 
 
