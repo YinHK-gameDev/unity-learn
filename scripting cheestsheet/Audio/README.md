@@ -132,9 +132,9 @@ https://docs.unity3d.com/ScriptReference/AudioClip.html
 ### AudioListener
 Representation of a listener in 3D space.
 
-This class implements a microphone-like device. It records the sounds around it and plays that through the player's speakers. You can only have one listener in a Scene.
+This class implements a microphone-like device. It **records the sounds around it** and **plays that through the player's speakers**. You can only have **one listener in a Scene**.
 
-> 📌 use **"AudioListener.Pause = true"** to pause all audios and use in update() only.
+> 📌 use **"AudioListener.Pause = true"** to pause all audios and use in **`update()`** only.
 
 
 
