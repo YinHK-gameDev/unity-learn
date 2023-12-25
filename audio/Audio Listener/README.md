@@ -5,7 +5,7 @@ The Audio Listener acts as a **microphone-like device**. It **receives input fro
 
 If an audio listener is within the boundaries of a Reverb Zone reverberation is applied to all audible sounds in the scene.
 
-When the Audio Listener is attached to a GameObject in your scene, any Sources that are close enough to the Listener will be picked up and output to the computer’s speakers.
+When the Audio Listener is **attached to a GameObject** in your scene, any Sources that are **close enough to the Listener** will be **picked up** and **output to the computer’s speakers**.
 
 If the Sources are 3D, the Listener will emulate position, velocity and orientation of the sound in the 3D world, 2D will ignore any 3D processing.
 
