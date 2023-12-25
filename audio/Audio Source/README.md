@@ -44,3 +44,10 @@ The Source is like a controller for **starting and stopping** playback of that c
 | - Logarithmic Rolloff | The sound is loud when you are close to the audio source, but when you get away from the object it decreases significantly fast. |
 | - Linear Rolloff | The further away from the audio source you go, the less you can hear it. |
 | - Custom Rolloff | The sound from the audio source behaves accordingly to how you set the graph of roll offs. |
+
+
+
+### ref 
+https://docs.unity3d.com/Manual/class-AudioSource.html
+
+
