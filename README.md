@@ -32,6 +32,8 @@ This is notes about unity C# base on version 2021.3.0(LTS)
 **https://learn.unity.com/**
 
 ### ➡️ UnityCsReference
+The C# part of the Unity engine and editor source code. May be used for reference purposes only.
+
 **https://github.com/Unity-Technologies/UnityCsReference/tree/master**
 
 ✒️ **BEST Unity Tutorials of 2022**
