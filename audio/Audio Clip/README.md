@@ -15,3 +15,6 @@ Audio Clips contain the audio data used by Audio Sources. Unity supports mono, s
 - **Ambisonic**: \
   Ambisonic audio sources store audio in a format which represents a soundfield that can be rotated based on the listener’s orientation. It is useful
   for 360-degree videos and XR applications. Enable this option if your audio file contains Ambisonic-encoded audio.
+
+### ref
+https://github.com/YinHK-gameDev/unity-learn/tree/2021.3.0(LTS)/audio/Audio%20Clip
