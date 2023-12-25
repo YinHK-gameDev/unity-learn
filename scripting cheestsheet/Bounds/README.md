@@ -24,5 +24,7 @@ https://docs.unity3d.com/ScriptReference/Renderer-bounds.html
 ### ref
 https://docs.unity3d.com/ScriptReference/Bounds.html
 
+https://www.youtube.com/watch?v=EVVk9ewmXGM
+
 
 
