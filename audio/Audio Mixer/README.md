@@ -1,6 +1,6 @@
 ##  Audio Mixer
 
- It allows you to mix various audio sources, apply effects to them.
+ It allows you to **mix various audio sources**, **apply effects** to them.
  
 | Property: | Function: |
 | --- | --- |
