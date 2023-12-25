@@ -2,7 +2,7 @@
 
 
 ### Animation 
-The animation component is used to play back animations.
+The animation component is used to **play back animations**.
 
 You can assign animation clips to the animation component and control playback from your script.
 
