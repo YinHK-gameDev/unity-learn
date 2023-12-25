@@ -34,7 +34,7 @@ Use parameter to control animation and transitions between Animator states:
 
 - **Animator.SetTrigger**
     
-    [Animator.SetTrigger](https://docs.unity3d.com/ScriptReference/Animator.SetTrigger.html)
+    https://docs.unity3d.com/ScriptReference/Animator.SetTrigger.html
     
 - **Animator.SetBool**
     
@@ -50,9 +50,9 @@ Use parameter to control animation and transitions between Animator states:
     
 - **Five tips for keeping animator controllers nice & tidy**
     
-    [Neat and tidy animator controllers | Unity](https://unity3d.com/how-to/build-animator-controllers)
+    https://unity3d.com/how-to/build-animator-controllers
     
-    [Game Design Tutorial: How to Use Blend Trees in Unity](https://www.studica.com/blog/game-design-tutorial-blend-trees-unity)
+    https://www.studica.com/blog/game-design-tutorial-blend-trees-unity
 
 
 
