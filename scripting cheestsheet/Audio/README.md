@@ -3,8 +3,8 @@
 
 
 ### AudioSource
-An AudioSource is **attached to a GameObject for playing back sounds** in a 3D environment. In order to play 3D sounds you also need to have a **AudioListener**. The audio listener is normally attached to the camera you want to use. 
-**
+An AudioSource is **attached to a GameObject for playing back sounds** in a 3D environment. In order to play 3D sounds you also need to have a **AudioListener**. The audio listener is normally **attached to the camera** you want to use. 
+
 You can play a single audio clip using Play, Pause and Stop. You can also adjust its volume while playing using the volume property, or seek using time. Multiple sounds can be played on one AudioSource using PlayOneShot. You can play a clip at a static position in 3D space using PlayClipAtPoint.
 
 Eg:
