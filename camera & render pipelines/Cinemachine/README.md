@@ -1,6 +1,6 @@
 ## Cinemachine
 
-Cinemachine is a suite of modules for operating the Unity camera. Cinemachine solves the complex mathematics and logic of tracking targets, composing, blending, and cutting between shots.
+Cinemachine is a suite of modules for operating the Unity camera. Cinemachine solves the **complex mathematics and logic of tracking targets, composing, blending, and cutting between shots**.
 
 Cinemachine enables you to create complex 3D camera setups, allowing movement and cuts between multiple cameras.
 
