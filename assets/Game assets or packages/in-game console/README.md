@@ -56,6 +56,8 @@ https://assetstore.unity.com/packages/tools/utilities/quantum-console-211046#des
 
 https://qfsw.co.uk/docs/QC/articles/docs/commands.html
 
+https://qfsw.co.uk/docs/QC/articles/docs/incl-cmds.html
+
 https://www.youtube.com/watch?v=bOf6CjpuSFs
 
 https://qfsw.co.uk/docs/QC/
