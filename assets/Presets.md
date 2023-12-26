@@ -1,6 +1,6 @@
 ## Presets
-**Presets** to apply custom default settings for types of assets.
-
+**Presets** to apply **custom default settings for types of assets.
+**
 
 Presets are assets that you can use to save and apply identical property settings across multiple components, assets, or Project Settings windows. You can also use Presets to specify default settings for new components and default import settings for assets in the Preset Manager The Preset Manager supports any importers, components, or scriptable objects you add to the Unity Editor.
 
