@@ -52,8 +52,8 @@ Objects can be removed from the registry with:
 -   `deregister-object<T>`
 
 #### Common used API in QFSW
-- Namespace QFSW.QC
-- QFSW.QC.Actions
+- Namespace `QFSW.QC`
+- `QFSW.QC.Actions`
 
 
 https://assetstore.unity.com/packages/tools/utilities/quantum-console-211046#description
