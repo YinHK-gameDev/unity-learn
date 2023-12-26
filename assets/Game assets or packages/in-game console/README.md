@@ -54,6 +54,8 @@ Objects can be removed from the registry with:
 
 https://assetstore.unity.com/packages/tools/utilities/quantum-console-211046#description
 
+https://qfsw.co.uk/docs/QC/articles/docs/commands.html
+
 https://www.youtube.com/watch?v=bOf6CjpuSFs
 
 https://qfsw.co.uk/docs/QC/
