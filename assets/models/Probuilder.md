@@ -17,3 +17,5 @@ https://www.youtube.com/watch?v=CBa_opm3_GM
 
 https://forum.unity.com/threads/probuilder-convert-to-mesh.1027114/
 
+Exporting & importing \
+https://docs.unity3d.com/Packages/com.unity.probuilder@4.2/manual/workflow-exporting.html
