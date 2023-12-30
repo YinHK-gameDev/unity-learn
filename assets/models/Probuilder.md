@@ -14,3 +14,6 @@ https://docs.unity.cn/Packages/com.unity.probuilder@5.0/manual/index.html
 https://www.youtube.com/watch?v=GioRYdZbGGk
 
 https://www.youtube.com/watch?v=CBa_opm3_GM
+
+https://forum.unity.com/threads/probuilder-convert-to-mesh.1027114/
+
