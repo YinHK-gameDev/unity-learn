@@ -19,3 +19,6 @@ https://forum.unity.com/threads/probuilder-convert-to-mesh.1027114/
 
 Exporting & importing \
 https://docs.unity3d.com/Packages/com.unity.probuilder@4.2/manual/workflow-exporting.html
+
+Component and window reference \
+https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/ref_windows.html
