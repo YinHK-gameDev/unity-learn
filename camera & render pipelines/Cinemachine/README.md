@@ -101,7 +101,7 @@ To add a Virtual Camera to a Scene:
 
 ### Switching virtual camera
 
-Setting priority value in virtual camera determine which virtual camera to be used. Therefore, to switch between these virtual cameras we can **adjust the priority value in these virtual cameras**. Another method is to **activa or deactive the virtual cameras**. 
+Setting priority value in virtual camera determine which virtual camera to be used. Therefore, to switch between these virtual cameras we can **adjust the priority value in these virtual cameras**. Another method is to **active or deactive the virtual cameras**. 
 
 
 #### Adjust priority value
