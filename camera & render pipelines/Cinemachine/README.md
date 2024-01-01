@@ -242,7 +242,7 @@ https://delightcollab.com/programming-tpl-cinemachine-tutorial-2022/
 ### ref
 https://unity.com/unity/features/editor/art-and-design/cinemachine
 
-https://docs.unity3d.com/Packages/com.unity.cinemachine@2.4/manual/index.html
+https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/index.html
 
-https://docs.unity3d.com/Packages/com.unity.cinemachine@2.4/manual/CinemachineUsing.html
+https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/manual/index.html
 
