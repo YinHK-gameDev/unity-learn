@@ -47,6 +47,26 @@ A Virtual Camera has two targets:
 - The **Follow** target specifies a GameObject for the Virtual Camera to move with.
 - The **Look At** target specifies the GameObject to aim at.
 
+Cinemachine includes a variety of procedural algorithms to control moving and aiming. Each algorithm solves a specific problem, and has properties to customize the algorithm for your specific needs. Cinemachine implements these algorithms as **`CinemachineComponent`** objects. Use the **`CinemachineComponent`** class to implement a custom moving or aiming behavior.
+
+The **Body** properties offer the following procedural algorithms for moving the Virtual Camera in a Scene:
+
+-   **Transposer**: Move in a fixed relationship to the **Follow** target, with optional damping.
+-   **Do Nothing**: Do not move the Virtual Camera.
+-   **Framing Transposer**: Move in a fixed screen-space relationship to the **Follow** target, with optional damping.
+-   **Orbital Transposer**: Move in a variable relationship to the **Follow** target, optionally accepting player input.
+-   **Tracked Dolly**: Move along a predefined path.
+-   **Hard Lock to Target**: Use the same position at the **Follow** target.
+
+The **Aim** properties offer the following procedural algorithms for rotating a Virtual Camera to face the **Look At** target:
+
+-   **Composer**: Keep the **Look At** target in the camera frame, with compositional constraints.
+-   **Group Composer**: Keep multiple **Look At** targets in the camera frame.
+-   **Do Nothing**: Do not rotate the Virtual Camera.
+-   **POV**: Rotate the Virtual Camera based on the user’s input.
+-   **Same As Follow Target**: Set the camera’s rotation to the rotation of the **Follow** target.
+-   **Hard Look At**: Keep the **Look At** target in the center of the camera frame.
+  
 ### Usage and tutorial
 https://delightcollab.com/programming-tpl-cinemachine-tutorial-2022/
 
