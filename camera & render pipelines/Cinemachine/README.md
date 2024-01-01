@@ -93,7 +93,7 @@ To add a Virtual Camera to a Scene:
     Choose the algorithm for following and looking at, and adjust settings such as the follow offset, the follow damping, the screen composition, and the damping used when re-aiming the camera.
 
 
-    
+ ![](./CinemachineNewVCam.png)   
 
   
 ### Usage and tutorial
