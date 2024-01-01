@@ -33,6 +33,18 @@ It is recommended that you use a single Virtual Camera for a single shot. Take a
 
 One Virtual Camera has control of the Unity camera at any point in time. This is the **live** Virtual Camera. The exception to this rule is when a blend occurs from one Virtual Camera to the next. During the blend, both Virtual Cameras are live.
 
+
+Use the **Aim**, **Body**, and **Noise** properties to specify how the Virtual Camera animates position, rotation, and other properties. The Virtual Camera applies these settings to the Unity Camera when **Cinemachine Brain** or **Timeline** transfers control of the Unity camera to the Virtual Camera.
+
+At any time, each Virtual Camera may be in one of these states:
+
+-   **Live**: The Virtual Camera actively controls a Unity camera that has a Cinemachine Brain. When a Cinemachine Brain blends from one Virtual Camera to the next, both Virtual Cameras are live. When the blend is complete, there is only one live Virtual Camera.
+    
+-   **Standby**: The Virtual Camera doesn’t control the Unity camera. However, it still follows and aims at its targets, and updates at every frame. A Virtual Camera in this state is activated and has a priority that is the same as or lower than the live Virtual Camera.
+    
+-   **Disabled**: The Virtual Camera doesn’t control the Unity camera and doesn’t actively follow or aim at its targets. A Virtual Camera in this state doesn’t consume processing power. To disable a Virtual Camera, deactivate its game object. The Virtual Camera is present but disabled in the Scene. However, even though the game object is deactivated, the virtual camera can still control the Unity camera if the virtual camera is participating in a blend, or if it is invoked by Timeline.
+
+
 ### Cinemachine Brain
 
 The Cinemachine Brain is a component in the Unity Camera itself. The Cinemachine Brain **monitors all active Virtual Cameras** in the Scene. 
