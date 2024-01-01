@@ -37,7 +37,8 @@ One Virtual Camera has control of the Unity camera at any point in time. This is
 
 The Cinemachine Brain is a component in the Unity Camera itself. The Cinemachine Brain **monitors all active Virtual Cameras** in the Scene. 
 
-To specify the next live Virtual Camera, you **activate or deactivate the desired Virtual Camera's game object**. Cinemachine Brain then **chooses the most recently activated Virtual Camera with the same or higher priority as the live Virtual Camera**. 
+To specify the next live Virtual Camera, you **activate or deactivate the desired Virtual Camera's game object**. Cinemachine Brain then **chooses the most recently activated Virtual Camera with the same or higher priority as the live Virtual Camera**.
+我們可以藉由改變虛擬攝影機的優先順序以決定要使用哪個鏡頭.
 
 It **chooses the next Virtual Camera to control the Unity camera**. It also **controls the cut** or **blend from the current Virtual Camera to the next**.
 
@@ -96,6 +97,74 @@ To add a Virtual Camera to a Scene:
 
 
  ![](./CinemachineNewVCam.png)   
+
+
+### Switching virtual camera
+
+Setting priority value in virtual camera determine which virtual camera to be used. Therefore, to switch between these virtual cameras we can **adjust the priority value in these virtual cameras**. Another method is to **activa or deactive the virtual cameras**. 
+
+
+#### Adjust priority value
+
+Eg:
+
+```cs
+using System.Collections;
+
+using System.Collections.Generic;
+
+using UnityEngine;
+
+using Cinemachine;
+
+public class CamSwitcher_SetPriority : MonoBehaviour
+
+{
+
+    public CinemachineVirtualCamera cam1, cam2;
+
+    void Start()
+
+    {
+
+        cam1.m_Priority = 10;
+
+        cam2.m_Priority = 0;
+
+    }
+
+    void Update()
+
+    {
+
+        if (Input.GetMouseButtonDown(0))
+
+        {
+
+            cam1.m_Priority = 10;
+
+            cam2.m_Priority = 0;
+
+        }
+
+        else if (Input.GetMouseButtonDown(1))
+
+        {
+
+            cam1.m_Priority = 0;
+
+            cam2.m_Priority = 10;
+
+        }
+
+    }
+
+}
+
+```
+
+
+
 
   
 ### Usage and tutorial
