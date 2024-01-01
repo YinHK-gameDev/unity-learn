@@ -250,7 +250,16 @@ public class CamSwitcher_SetActive : MonoBehaviour
 }
 ```
 
-  
+### Blending between Virtual Cameras
+Use blending properties to specify how the Cinemachine Brain component performs a blend between virtual cameras.
+
+A Cinemachine blend is not a fade, wipe, or dissolve. Rather, Cinemachine Brain performs a smooth animation of the position, rotation, and other settings of the Unity camera from one Virtual Camera to the next.
+
+For blends between specific Virtual Cameras, use the **Custom Blends** list in the Cinemachine Brain component. Use the **Default Blend** property in Cinemachine Brain to specify blends between Virtual Cameras that do not have custom blends.
+
+
+https://docs.unity3d.com/Packages/com.unity.cinemachine@2.8/manual/CinemachineBlending.html
+
 ### Usage and tutorial
 https://delightcollab.com/programming-tpl-cinemachine-tutorial-2022/
 
