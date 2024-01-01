@@ -260,6 +260,23 @@ For blends between specific Virtual Cameras, use the **Custom Blends** list in t
 
 https://docs.unity3d.com/Packages/com.unity.cinemachine@2.8/manual/CinemachineBlending.html
 
+
+### Virtual camera extension
+Extensions are components that augment the behavior of a Virtual Camera. For example, the Collider extension moves a camera out of the way of GameObjects that obstruct the camera’s view of its target.
+
+Cinemachine includes a variety of extensions. Create your own custom extensions by deriving from the CinemachineExtension class.
+
+To add an extension to a Virtual Camera:
+
+- Select your Virtual Camera in the Scene view or Hierarchy window.
+
+- In the Inspector, use the **Add Extension drop-down menu** to choose the extension.
+
+
+
+
+https://docs.unity3d.com/Packages/com.unity.cinemachine@2.8/manual/CinemachineVirtualCameraExtensions.html
+
 ### Usage and tutorial
 https://delightcollab.com/programming-tpl-cinemachine-tutorial-2022/
 
