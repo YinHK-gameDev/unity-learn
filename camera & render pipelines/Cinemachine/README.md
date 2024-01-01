@@ -75,6 +75,22 @@ The **Aim** properties offer the following procedural algorithms for rotating a 
 -   **Same As Follow Target**: Set the camera’s rotation to the rotation of the **Follow** target.
 -   **Hard Look At**: Keep the **Look At** target in the center of the camera frame.
 
+The **Noise** properties in a Virtual Camera to simulate **camera shake**.
+
+Cinemachine includes a **Basic Multi Channel Perlin** component, which adds Perlin noise to the movement of the Virtual Camera. **Perlin noise** is a technique to compute random movement with a natural behavior.
+
+The Basic Multi Channel Perlin component applies a noise profile. A noise profile is an Asset that defines the behavior of noise over time. Cinemachine includes a few noise profile assets. You can edit these and create your own.
+
+To apply noise:
+
+1.  Select your Virtual Camera in the Scene window.
+    
+2.  In the Inspector, use the **Noise** drop-down menu to choose **Basic Multi Channel Perlin**.
+    
+3.  In **Noise Profile**, choose an existing profile asset or create your own profile.
+    
+4.  Use **Amplitude Gain** and **Frequency Gain** to fine-tune the noise.
+
 
 ### Setting up Virtual Cameras
 In your project, organize your Scene Hierarchy to have a **single Unity camera** with a **CinemachineBrain component** and **many Virtual Cameras**.
