@@ -66,6 +66,31 @@ The **Aim** properties offer the following procedural algorithms for rotating a 
 -   **POV**: Rotate the Virtual Camera based on the user’s input.
 -   **Same As Follow Target**: Set the camera’s rotation to the rotation of the **Follow** target.
 -   **Hard Look At**: Keep the **Look At** target in the center of the camera frame.
+
+
+### Setting up Virtual Cameras
+In your project, organize your Scene Hierarchy to have a single Unity camera with a CinemachineBrain component and many Virtual Cameras.
+
+To add a Virtual Camera to a Scene:
+
+1.  In the Unity menu, choose **Cinemachine > Create Virtual Camera**.  
+    Unity adds a new GameObject with a Cinemachine Virtual Camera component. If necessary, Unity also adds a Cinemachine Brain component to the Unity camera GameObject for you.
+    
+2.  Use the **Follow** property to specify a GameObject to follow.  
+    
+    The Virtual Camera automatically positions the Unity camera relative to this GameObject at all times, even as you move it in the Scene.
+    
+3.  Use the **Look At** property to specify the GameObject that the Virtual Camera should aim at.  
+    
+    The Virtual Camera automatically rotates the Unity camera to face this GameObject at all times, even as you move it in the Scene.
+    
+4.  Customize the Virtual Camera as needed.  
+    
+    Choose the algorithm for following and looking at, and adjust settings such as the follow offset, the follow damping, the screen composition, and the damping used when re-aiming the camera.
+
+
+    
+
   
 ### Usage and tutorial
 https://delightcollab.com/programming-tpl-cinemachine-tutorial-2022/
