@@ -75,7 +75,7 @@ The **Aim** properties offer the following procedural algorithms for rotating a 
 
 
 ### Setting up Virtual Cameras
-In your project, organize your Scene Hierarchy to have a single Unity camera with a CinemachineBrain component and many Virtual Cameras.
+In your project, organize your Scene Hierarchy to have a **single Unity camera** with a **CinemachineBrain component** and **many Virtual Cameras**.
 
 To add a Virtual Camera to a Scene:
 
