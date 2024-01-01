@@ -18,9 +18,9 @@ The **Virtual Cameras are separate GameObjects from the Unity Camera, and behave
 
 The main tasks that the Virtual Camera does for you:
 
--   Positions the Unity camera in the Scene.
--   Aims the Unity camera at something.
--   Adds procedural noise to the Unity camera. Noise simulates things like handheld effects or vehicle shakes.
+-   **Positions the Unity camera** in the Scene.
+-   **Aims the Unity camera** at something.
+-   **Adds procedural noise** to the Unity camera. Noise simulates things like handheld effects or vehicle shakes.
 
 Cinemachine encourages you to create many Virtual Cameras. The Virtual Camera is designed to consume little processing power. If your Scene is performance-sensitive, deactivate all but the essential Virtual Cameras at any given moment for best performance.
 
