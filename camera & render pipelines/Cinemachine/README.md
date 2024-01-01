@@ -37,7 +37,7 @@ One Virtual Camera has control of the Unity camera at any point in time. This is
 
 The Cinemachine Brain is a component in the Unity Camera itself. The Cinemachine Brain monitors all active Virtual Cameras in the Scene. To specify the next live Virtual Camera, you activate or deactivate the desired Virtual Camera's game object. Cinemachine Brain then chooses the most recently activated Virtual Camera with the same or higher priority as the live Virtual Camera. It performs a cut or blend between the previous and new Virtual Cameras.
 
-**Tip**: Use Cinemachine Brain to respond to dynamic game events in real time. It allows your game logic to control the camera by manipulating priorities. This is particularly useful for live gameplay, where action isn’t always predictable. Use Timeline to choreograph cameras in predictable situations, like cutscenes. Timeline overrides the Cinemachine Brain priority system to give you precise, to-the-frame camera control.
+> **Tip**: Use Cinemachine Brain to respond to dynamic game events in real time. It allows your game logic to control the camera by manipulating priorities. This is particularly useful for live gameplay, where action isn’t always predictable. Use Timeline to choreograph cameras in predictable situations, like cutscenes. Timeline overrides the Cinemachine Brain priority system to give you precise, to-the-frame camera control.
 
 
 
