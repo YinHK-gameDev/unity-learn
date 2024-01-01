@@ -39,7 +39,13 @@ The Cinemachine Brain is a component in the Unity Camera itself. The Cinemachine
 
 > **Tip**: Use Cinemachine Brain to respond to dynamic game events in real time. It allows your game logic to control the camera by manipulating priorities. This is particularly useful for live gameplay, where action isn’t always predictable. Use Timeline to choreograph cameras in predictable situations, like cutscenes. Timeline overrides the Cinemachine Brain priority system to give you precise, to-the-frame camera control.
 
+### Moving and aiming
+> Use the **Body properties** in a Virtual Camera to specify **how to move** it in the Scene. Use the **Aim properties** to specify **how to rotate** it.
 
+A Virtual Camera has two targets:
+
+- The **Follow** target specifies a GameObject for the Virtual Camera to move with.
+- The **Look At** target specifies the GameObject to aim at.
 
 ### Usage and tutorial
 https://delightcollab.com/programming-tpl-cinemachine-tutorial-2022/
