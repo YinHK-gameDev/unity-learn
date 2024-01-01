@@ -277,6 +277,10 @@ To add an extension to a Virtual Camera:
 
 https://docs.unity3d.com/Packages/com.unity.cinemachine@2.8/manual/CinemachineVirtualCameraExtensions.html
 
+### Moving camera in the scene
+Create animation clips for transform position of virtual camera and set up animator controller to control all the animation clips
+
+
 ### Usage and tutorial
 https://delightcollab.com/programming-tpl-cinemachine-tutorial-2022/
 
