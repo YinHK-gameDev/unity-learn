@@ -14,7 +14,7 @@ public static Object Instantiate(Object original, Vector3 position, Quaternion r
 public static Object Instantiate(Object original, Vector3 position, Quaternion rotation, Transform parent);
 ```
 
-<table class="list"><tbody><tr><td class="name lbl">original</td><td class="desc">An existing object that you want to make a copy of.</td></tr><tr><td class="name lbl">position</td><td class="desc">Position for the new object.</td></tr><tr><td class="name lbl">rotation</td><td class="desc">Orientation of the new object.</td></tr><tr><td class="name lbl">parent</td><td class="desc">Parent that will be assigned to the new object.</td></tr><tr><td class="name lbl">instantiateInWorldSpace</td><td class="desc">When you assign a parent Object, pass true to position the new object directly in world space. Pass false to set the Object’s position relative to its new parent</td></tr></tbody></table>
+<table class="list"><tbody><tr><td class="name lbl">original</td><td class="desc">An existing object that you want to make a copy of.</td></tr><tr><td class="name lbl">position</td><td class="desc">Position for the new object.</td></tr><tr><td class="name lbl">rotation</td><td class="desc">Orientation of the new object.</td></tr><tr><td class="name lbl">parent</td><td class="desc">Parent that will be assigned to the new object.</td></tr><tr><td class="name lbl">instantiateInWorldSpace</td><td class="desc">When you assign a parent Object, pass **true** to position the new object directly in world space. Pass **false** to set the Object’s position relative to its new parent</td></tr></tbody></table>
 
 
 
