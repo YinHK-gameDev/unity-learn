@@ -105,6 +105,10 @@ Reset to default values.
 
 Reset is called when the user hits the Reset button in the Inspector's context menu or when adding the component the first time. This function is only called in editor mode. Reset is most commonly used to give good default values in the Inspector.
 
+### `transform`
+
+The Transform attached to this GameObject.
+
 ### `Invoke`
 Invokes the method methodName in time seconds.
 
