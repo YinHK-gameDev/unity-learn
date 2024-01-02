@@ -30,3 +30,16 @@ Set the parent of the transform.
 This method is the same as the parent property except that it also lets the Transform keep its local orientation rather than its global orientation. 
 
 https://docs.unity3d.com/ScriptReference/Transform.SetParent.html
+
+### `Transform.TransformDirection`
+
+Transforms `direction` from local space to world space.
+
+This operation is not affected by scale or position of the transform. The returned vector has the same length as `direction`.
+
+https://docs.unity3d.com/ScriptReference/Transform.TransformDirection.html
+
+
+
+
+
