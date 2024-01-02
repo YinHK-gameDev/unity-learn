@@ -80,6 +80,58 @@ Spherically interpolates between quaternions a and b by ratio t. The parameter t
 - b : End value, returned when t = 1. 
 - t : Interpolation ratio.
 
+```cs
+// Interpolates rotation between the rotations "from" and "to"
+// (Choose from and to not to be the same as
+// the object you attach this script to)
+
+using UnityEngine;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour
+{
+    public Transform from;
+    public Transform to;
+
+    private float timeCount = 0.0f;
+
+    void Update()
+    {
+        transform.rotation = Quaternion.Slerp(from.rotation, to.rotation, timeCount);
+        timeCount = timeCount + Time.deltaTime;
+    }
+}
+```
+
+
+#### `Quaternion.FromToRotation`
+
+Creates a rotation which rotates from `fromDirection` to `toDirection`.
+
+Usually you use this to rotate a transform so that one of its axes eg. the y-axis - follows a target direction `toDirection` in world space.
+
+
+
+```cs
+public static Quaternion FromToRotation(Vector3 fromDirection, Vector3 toDirection);
+```
+
+```cs
+using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+    void Start()
+    {
+        // Sets the rotation so that the transform's y-axis goes along the z-axis
+        transform.rotation = Quaternion.FromToRotation(Vector3.up, transform.forward);
+    }
+}
+```
+
+
+
+
 
 ### ref
 https://docs.unity3d.com/ScriptReference/Quaternion-ctor.html
