@@ -41,7 +41,7 @@ Here's an example of how to create and use a ScriptableObject in Unity:
 
 3. **Modify and use the ScriptableObject**:
 
-   You can now select the newly created instance of the ScriptableObject in the Unity Inspector and edit its fields. For example, you can set the player's name and score.
+   You can now select the newly created instance of the ScriptableObject in the Unity Inspector and **edit its fields**. For example, you can set the player's name and score.
 
 4. **Access the ScriptableObject in your scripts**:
 
