@@ -129,9 +129,24 @@ public class Example : MonoBehaviour
 }
 ```
 
+#### `Quaternion.identity`
 
+The identity rotation (Read Only).
+```cs
+public static Quaternion identity;
+```
 
+```cs
+using UnityEngine;
 
+public class Example : MonoBehaviour
+{
+    void Start()
+    {
+        transform.rotation = Quaternion.identity;
+    }
+}
+```
 
 ### ref
 https://docs.unity3d.com/ScriptReference/Quaternion-ctor.html
