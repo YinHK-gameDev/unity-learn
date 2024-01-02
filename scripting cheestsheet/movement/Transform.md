@@ -11,7 +11,7 @@ https://docs.unity3d.com/ScriptReference/Transform.Translate.html
 https://docs.unity3d.com/ScriptReference/Transform.Rotate.html
 
 ### `Transform.LookAt()`
-Rotates the transform so the forward vector points at /target/'s current position. For example: camera point at the target object.
+Rotates the transform so the forward vector points at target's current position. For example: camera point at the target object.
 
 https://docs.unity3d.com/ScriptReference/Transform.LookAt.html
 
