@@ -1,6 +1,6 @@
 ## Player input
 
-> input must call the input’s methods in **update** function.
+> **Note**: input must call the input’s methods in **update** function.
 
 
 https://docs.unity3d.com/ScriptReference/Input.html
@@ -54,6 +54,36 @@ public class ExampleClass : MonoBehaviour
 https://docs.unity3d.com/ScriptReference/Input.GetAxis.html
 
 
+### `Input.GetButtonDown`
+
+Returns true during the frame the user pressed down the **virtual button** identified by `buttonName`.
+
+Call this function from the Update function, since the state gets reset each frame. It will not return true until the user has released the key and pressed it again.
+
+Use this only when implementing action **like events** eg: shooting a weapon.
+Use `Input.GetAxis` for any kind of movement behaviour.
+
+
+```cs
+using UnityEngine;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour
+{
+    public GameObject projectile;
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+            Instantiate(projectile, transform.position, transform.rotation);
+    }
+}
+```
+
+
+
+https://docs.unity3d.com/ScriptReference/Input.GetButtonDown.html
+
+
 
 ### `Input.GetKeyDown`
 
@@ -66,6 +96,17 @@ https://docs.unity3d.com/ScriptReference/Input.GetKeyDown.html
 
 https://docs.unity3d.com/ScriptReference/KeyCode.html
 
+
+### `Input.GetMouseButtonDown`
+Returns true during the frame the user pressed the given mouse button.
+
+https://docs.unity3d.com/ScriptReference/Input.GetMouseButtonDown.html
+
+
+### `Input.GetTouch`
+Input.GetTouch returns Touch for a selected screen touch (for example, from a finger or stylus). Touch describes the screen touch. The index argument selects the screen touch.
+
+https://docs.unity3d.com/ScriptReference/Input.GetTouch.html
 
 
 
