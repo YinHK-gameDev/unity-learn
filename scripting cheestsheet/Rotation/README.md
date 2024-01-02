@@ -76,8 +76,8 @@ public static Quaternion Slerp(Quaternion a, Quaternion b, float t);
 Spherically interpolates between quaternions a and b by ratio t. The parameter t is clamped to the range [0, 1].
 
 
-- a : Start value, returned when t = 0. \
-- b : End value, returned when t = 1. \
+- a : Start value, returned when t = 0. 
+- b : End value, returned when t = 1. 
 - t : Interpolation ratio.
 
 
