@@ -1,4 +1,4 @@
-## Position gameobject
+## postion, rotation, scaling & view
 
 ### For position
 Use the dropdown menu to switch between Pivot and Center.
