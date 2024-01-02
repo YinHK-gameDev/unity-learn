@@ -27,3 +27,13 @@ Pivot / Center toggle button:
 
 > **Note**: By default any game object's pivot and center will be at the current position of the game object.
 On parenting a parent game object’s pivot will be at the current position of the game object, & it's center will be shifted to average center / middle point of its hierarchy.
+
+### Difference between world coordinates and local coordinates
+
+-   **World coordinates**: These are absolute coordinates of where the game object is located (with respect to the world frame, which is considered to be absolute in the game)
+-   **Local coordinates**: These are the coordinates of where the game object is with **respect to its parent**
+
+
+
+
+
