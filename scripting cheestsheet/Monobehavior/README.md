@@ -151,6 +151,24 @@ The name of the object.
 
 Components share the same name with the game object and all attached components. If a class derives from **`MonoBehaviour`** it inherits the "name" field from MonoBehaviour. If this class is also attached to GameObject, then **"name"** field is set to the name of that GameObject.
 
+### `OnCollisionXXX`
+```cs
+void OnCollisionEnter(Collision collision){ ... }　
+
+void OnCollisionStay(Collision collisionInfo){ ... }
+
+void OnCollisionExit(Collision other){ ... }
+```
+
+### `OnTriggerXXX`
+```cs
+void OnTriggerEnter(Collider other){ ... }
+
+void OnTriggerStay(Collider other){ ... }
+
+void OnTriggerExit(Collider other){ ... }
+```
+
 
 ### ref 
 
