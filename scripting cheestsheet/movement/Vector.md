@@ -35,10 +35,13 @@ v[0] = 5.0f;
 v[1] = 5.0f;
 v[2] = 5.0f;
 
-v.X   // X component of the vector
-v.Y   // Y component of the vector
-v.Z   // Z component of the vector
+v.X;   // X component of the vector
+v.Y;   // Y component of the vector
+v.Z;   // Z component of the vector
 
+v.magnitude;     //Returns the length of this vector (Read Only).
+v.normalized;    //Returns this vector with a magnitude of 1 (Read Only).
+v.sqrMagnitude;  //Returns the squared length of this vector (Read Only).
 ```
 
 #### `Vector3.SmoothDamp`
