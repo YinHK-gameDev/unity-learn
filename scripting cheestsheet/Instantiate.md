@@ -8,3 +8,6 @@ Returns a rotation that rotates z degrees around the z axis, x degrees around th
 
 ### Instantiate vs Instantiate as gameObject
 https://docs.unity3d.com/ScriptReference/Quaternion.Euler.html
+
+https://docs.unity3d.com/ScriptReference/Object.Instantiate.html
+
