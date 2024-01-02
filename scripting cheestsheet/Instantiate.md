@@ -19,7 +19,7 @@ public static Object Instantiate(Object original, Vector3 position, Quaternion r
 
 
 ### Instantiate vs Instantiate as gameObject
-https://docs.unity3d.com/ScriptReference/Quaternion.Euler.html
+Using `as` is called casting, and it’s used to convert an object from one type to another. 
 
 
 ### ref
