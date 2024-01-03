@@ -1,4 +1,5 @@
 // Collider  
+// A base class of all colliders, eg:  BoxCollider, SphereCollider, CapsuleCollider, MeshCollider
 
 
 // property
