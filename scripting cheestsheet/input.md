@@ -103,6 +103,14 @@ Returns true during the frame the user pressed the given mouse button.
 https://docs.unity3d.com/ScriptReference/Input.GetMouseButtonDown.html
 
 
+### `Input.mouseScrollDelta`
+The current mouse scroll delta. (Read Only)
+
+`Input.mouseScrollDelta` is stored in a Vector2.y property. (The Vector2.x value is ignored.) `Input.mouseScrollDelta` can be positive (up) or negative (down). The value is zero when the mouse scroll is not rotated.
+
+https://docs.unity3d.com/ScriptReference/Input-mouseScrollDelta.html
+
+
 ### `Input.GetTouch`
 Input.GetTouch returns Touch for a selected screen touch (for example, from a finger or stylus). Touch describes the screen touch. The index argument selects the screen touch.
 
