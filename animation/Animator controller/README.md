@@ -2,7 +2,8 @@
 An Animator Controller allows you to arrange and maintain a set of Animation Clips and associated Animation Transitions for a character or object.
 
 When you have animation clips ready to use, you need to use an Animator Controller to bring them together. An Animator Controller asset is created within Unity and allows you to maintain a set of animations for a character or object.
- 
+
+![](./MecanimAnimatorControllerWindow.png)
  
 The various ways an Animator Controller can be created:
 
