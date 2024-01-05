@@ -56,6 +56,7 @@ If one of collider is trigger, both collider will pass through each other wherea
 **Requirement for collision generating collision detection messages**:
 - Both objects **must** have a collider.
 - There is **at least one dynamic collider**(**Rigidbody** & **Isn't kinematic**), the other collider is either a **static collider**, or a **kinematic rigidbody collider**, or another **dynamic collider**.
+- If none of **dynamic colliders**, no collision detection.
 - If **at least one of them** have **`Collider.isTrigger` enabled** enabled, no collision detection.
 - If **both** do not have a **rigidbody**, no collision detection.
 - If **both** are **kinematic rigidbody collider**, no collision detection.
