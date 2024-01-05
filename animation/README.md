@@ -1,5 +1,13 @@
 ### Animation 
 
+Unity has two animation systems with different capabilities and performance characteristics:
+
+- **Unity’s animation system**, also known as **Mecanim**, is a rich and sophisticated animation system. It uses the **Animator component**, the **Animation window**, and the **Animator window**.
+- **Unity’s Legacy Animation system** has a smaller feature set. It uses the Animation component and was the only animation system available before Unity 4.
+
+
+> **Unity’s animation system** is recommended in most situations and provides better performance for complex animations with many **animation curves** and **blending**. 
+
 
 ### Animation System
 
