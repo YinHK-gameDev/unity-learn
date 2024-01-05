@@ -6,6 +6,8 @@ The Animator component requires a **reference to an Animator Controller** which 
 If the GameObject is a humanoid character with an Avatar definition, the Avatar should also be assigned in this component
 
 
+![](./MecanimAnimatorComponent.png)
+
 ### Properties
 
 - Controller:  The animator controller attached to this character.
