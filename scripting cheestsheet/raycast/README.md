@@ -147,7 +147,7 @@ https://learn.unity.com/tutorial/let-s-try-shooting-with-raycasts#
 
 https://www.youtube.com/watch?v=EINgIoTG8D4
 
-https://docs.unity3d.com/ScriptReference/Physics.html
+https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
 
 https://docs.unity3d.com/2018.4/Documentation/ScriptReference/Plane.Raycast.html
 
