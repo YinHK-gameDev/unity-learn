@@ -46,12 +46,13 @@ A Rigidbody component can be switched between normal and kinematic behavior at a
 
 If the object with the Collider needs to be moved during gameplay then you should also attach a **Rigidbody component** to the object. The Rigidbody can be set to be kinematic if you don't want the object to have **physical interaction with other objects**. 
 
-When you make something a kinematic, what you are essentially trying to do is disable, **the physics behaviour of a `Rigidbody` component**. This means that a **kinematic Rigidbody** does not get affected by **external forces**. **In essence, they can still push other rigid bodies, but they cannot be pushed by other rigid bodies.**
+When you make something a kinematic, what you are essentially trying to do is disable, **the physics behaviour of a `Rigidbody` component**. This means that a **kinematic Rigidbody** does not get affected by **external forces**. **In essence, they can still push other rigid body colliders, but they cannot be pushed by other rigid bodies.**
 
 > **Note**: **Kinematic rigidbodies** should be used for colliders that can be moved or disabled/enabled **occasionally** \
 > Unlike a **static collider**, a moving kinematic rigidbody **will apply friction** to other objects \
 > You can move a **kinematic rigidbody object** from a script by modifying its Transform Component
  but it **will not respond to collisions and forces**. \
+> Kinematic rigidbodies still can apply force and push other rigidbody colliders, but cannot be pushed by others because  external force doesn't affect on the Kinematic rigidbodies. \
 > Even both game objects have colliders and they don't pass through each others, there is **no collision detection** because **kinematic rigidbodies will never compute collisions**. 
 
 https://doc.stride3d.net/4.0/en/manual/physics/kinematic-rigid-bodies.html \
