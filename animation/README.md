@@ -11,7 +11,7 @@ Unity has two animation systems with different capabilities and performance char
 
 ### Animation System
 
-Unity has a rich and sophisticated animation system (sometimes referred to as ‘Mecanim’). It provides:
+Unity has a rich and sophisticated animation system (sometimes referred to as **‘Mecanim’**). It provides:
 
 - Easy workflow and setup of animations for all elements of Unity including objects, characters, and properties.
 - Support for imported animation clips and animation created within Unity Humanoid animation retargeting -the ability to apply animations from one character model onto another.
