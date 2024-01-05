@@ -8,8 +8,7 @@ You can assign animation clips to the animation component and control playback f
 
 
 ```cs
-public Animation anim;
-
+    public Animation anim;
     void Start()
     {
         anim = GetComponent<Animation>();
@@ -21,6 +20,19 @@ public Animation anim;
 
 ```
 
+```cs
+public Animation anim;
+```
+
+// properties
+
+// The default animation.
+anim.clip;
+
+// Is an animation currently being played?
+
+
+```
 
 https://docs.unity3d.com/ScriptReference/Animation.html
 
