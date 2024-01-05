@@ -55,11 +55,10 @@ If one of collider is trigger, both collider will pass through each other wherea
 
 **Requirement for collision generating collision detection messages**:
 - Both objects **must** have a collider.
-- There is **at least one dynamic collider**(Rigidbody & not kinematic), the other collider is either a **static collider**, or a **kinematic rigidbody collider**, or another **dynamic collider**.
+- There is **at least one dynamic collider**(**Rigidbody** & **Isn't kinematic**), the other collider is either a **static collider**, or a **kinematic rigidbody collider**, or another **dynamic collider**.
 - If **at least one of them** have **`Collider.isTrigger` enabled** enabled, no collision detection.
 - If **both** do not have a **rigidbody**, no collision detection.
 - If **both** are **kinematic rigidbody collider**, no collision detection.
-- If one is **kinematic**, another one is **no rigidbody**, no collision detection.
 
 > Unity only applies physics forces to collider GameObjects that have a physics body (a **Rigidbody or ArticulationBody**). When a **physics body collider** collides with a **static collider**, **only** the **physics body collider** behavior changes as a result of the collision (for example, it might bounce or slow down as a result of the collision).
 
