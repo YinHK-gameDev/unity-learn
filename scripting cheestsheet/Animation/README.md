@@ -66,6 +66,40 @@ https://www.studica.com/blog/game-design-tutorial-blend-trees-unity
 ### AnimationClip
 AnimationClip is used by Animation to play back animations.
 
+```cs
+// properties
+
+// Animation length in seconds. (Read Only)
+public float length;
+
+// Returns true if the animation clip has no curves and no events.
+public bool empty;
+
+// Returns true if the AnimationClip has root Curves.
+public bool hasRootCurves;
+
+// Returns true if the AnimationClip has root motion curves.
+public bool hasMotionCurves;
+
+// Returns true if the AnimationClip has editor curves for its root motion.
+public bool hasMotionFloatCurves;
+
+// Animation Events for this animation clip.
+public AnimationEvent[] events;
+
+
+// Methods
+
+// Adds an animation event to the clip
+public void AddEvent(AnimationEvent evt);
+
+// Clears all curves from the clip
+public void ClearCurves();
+
+// Assigns the curve to animate a specific property.
+public void SetCurve(string relativePath, Type type, string propertyName, AnimationCurve curve);
+
+```
 
 https://docs.unity3d.com/ScriptReference/AnimationClip.html
 
