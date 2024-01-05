@@ -42,8 +42,13 @@ void OnTriggerExit(Collider other){ ... }
 
 > **`OnTriggerEnter`** happens on the **FixedUpdate** function when two GameObjects collide. The Colliders involved are not always at the point of initial contact.
 
-> **Note**: Both GameObjects must contain a **Collider component**. One must have **`Collider.isTrigger`** enabled, and contain a **Rigidbody**. If both GameObjects have **`Collider.isTrigger`** enabled, no collision happens. The same applies when **both** GameObjects **do not have a Rigidbody component**.
+> **Note**: Both GameObjects **must** contain a **Collider component**. **One must** have **`Collider.isTrigger`** enabled, and contain a **Rigidbody**. If both GameObjects have **`Collider.isTrigger`** enabled, no collision happens. The same applies when **both** GameObjects **do not have a Rigidbody component**.
 
+**Requirement for trigger happen**:
+- Both objects **must** have a collider.
+- At least one of them **contaib a rigidbody**.
+- Only one of them has **`Collider.isTrigger` enabled**. If both enabled, no collision happens.
+- If both do not have a rigidbody, no collision happens.
 
 
 
