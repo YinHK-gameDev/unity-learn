@@ -32,15 +32,15 @@ https://docs.unity3d.com/ScriptReference/Animator.html
 
 Use parameter to control animation and transitions between Animator states:
 
-- **Animator.SetTrigger**
+- **`Animator.SetTrigger`**
     
     https://docs.unity3d.com/ScriptReference/Animator.SetTrigger.html
     
-- **Animator.SetBool**
+- **`Animator.SetBool`**
     
     https://docs.unity3d.com/ScriptReference/Animator.SetBool.html
     
-- **Animator.SetInteger**
+- **`Animator.SetInteger`**
     
     https://docs.unity3d.com/ScriptReference/Animator.SetInteger.html
     
