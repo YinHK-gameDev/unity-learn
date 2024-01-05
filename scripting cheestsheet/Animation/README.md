@@ -2,6 +2,43 @@
 
 ### Animator
 
+```cs
+// Properties
+
+// The playback speed of the Animator. 1 is normal playback speed.
+public float speed;
+
+// The AnimatorControllerParameter list used by the animator. (Read Only)
+public AnimatorControllerParameter[] parameters;
+
+// Gets/Sets the current Avatar.
+public Avatar avatar;
+
+
+// Methods
+
+// Plays a state.
+public void Play(string stateName, int layer = -1, float normalizedTime = float.NegativeInfinity);
+
+// Evaluates the animator based on deltaTime.
+public void Update(float deltaTime);
+
+// Returns the value of the given boolean parameter.
+public bool GetBool(string name);
+
+// Returns the value of the given float parameter.
+public float GetFloat(string name);
+
+// Returns the value of the given integer parameter.
+public int GetInteger(string name);
+public int GetInteger(int id);
+
+```
+
+
+
+
+
 https://docs.unity3d.com/ScriptReference/Animator.html
 
 Use parameter to control animation and transitions between Animator states:
