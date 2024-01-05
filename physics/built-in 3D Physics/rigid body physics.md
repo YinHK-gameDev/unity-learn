@@ -92,6 +92,13 @@ When you apply a constant force, the speed of movement accelerates over time bas
 > You can change these maximum velocities in code, via the properties **`Rigidbody.maxLinearVelocity`** and **`Rigidbody.maxAngularVelocity`**.
 
 
+### Sleeping
+
+When a Rigidbody is moving slower than a defined minimum linear or rotational speed, the physics engine assumes it has come to a halt. When this happens, the GameObject does not move again until it receives a collision or force, and so it is set to **"sleeping"  mode**. This optimisation means that **no processor time is spent updating the Rigidbody** until the next time it is **"awoken" (that is, set in motion again)**.
+
+For most purposes, the sleeping and waking of a Rigidbody component happens transparently. However, a GameObject might fail to wake up if a Static Collider (that is, one without a Rigidbody) is moved into it or away from it by modifying the Transform position. This might result, say, in the Rigidbody GameObject hanging in the air when the floor has been moved out from beneath it. In cases like this, the GameObject can be woken explicitly using the WakeUp function. 
+
+
 ### ref
 **Rigidbody Scripting API** \
 https://docs.unity3d.com/ScriptReference/Rigidbody.html
