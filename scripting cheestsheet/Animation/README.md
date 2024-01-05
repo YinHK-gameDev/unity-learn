@@ -21,8 +21,7 @@ You can assign animation clips to the animation component and control playback f
 ```
 
 ```cs
-public Animation anim;
-```
+ public Animation anim;
 
 // properties
 
