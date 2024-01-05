@@ -56,8 +56,8 @@ If one of collider is trigger, both collider will pass through each other wherea
 
 **Requirement for collision happen**:
 - Both objects **must** have collider
-- If both **`Collider.isTrigger` enabled** enabled, no collision happens.
-- If both do not have a **rigidbody**, no collision happens.
+- If **at least one of them** have **`Collider.isTrigger` enabled** enabled, no collision happens.
+- If **both** do not have a **rigidbody**, no collision happens.
 
 
 
