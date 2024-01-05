@@ -21,6 +21,10 @@ You can add colliders to a GameObject without a Rigidbody component to create fl
 
 Static colliders can interact with dynamic colliders but since they don’t have a Rigidbody, they don’t move in response to collisions.
 
+A Static collider is a collider that has **no associated Rigidbody** or **ArticulationBody** (that is, there is **no Rigidbody or ArticulationBody on the associated GameObject**), and therefore **doesn’t respond to simulated physics forces**. Other colliders **can collide with Static colliders**, but **Static colliders don’t move in response to collisions**.
+
+The only way to move a static collider at run time is via the Transform. However, in most cases you should not do this. The physics system cannot immediately take Transform-led movement into consideration while calculating physics updates, and you might see unintended side-effects if you move a static collider via the Transform. Instead, you should only use Static colliders for collider geometry that does not move at run time.
+
 > A static collider is a GameObject that has a Collider but **no Rigidbody**. For motionless gameobject(**死物**), its collider is static collider(**no rigid body**)
 
 ### Dynamic colliders
@@ -29,9 +33,13 @@ Dynamic colliders: The GameObject’s physics body is dynamic (that is, it has *
 
 > **Note**: with **Rigidbody** & **`IsKinematic` disabled**
 
+### Physics body colliders
+A physics body collider is a collider on the same GameObject as a physics body (a **Rigidbody** or an **ArticulationBody**). Physics body colliders are included in **physics calculations**, but behave differently depending on whether they are **dynamic** or **kinematic** (that is, whether **Is Kinematic is disabled or enabled**).
+
+> **Note**: A Rigidbody can be either **dynamic** or **kinematic**. An **ArticulationBody** can **only be dynamic**; it **cannot be kinematic**.
+
 ### Rigidbody colliders
 This is a GameObject with a Collider and a normal, non-kinematic Rigidbody attached. Rigidbody colliders are fully simulated by the physics engine and can react to collisions and forces
-
 
 > Adding a **Rigidbody component** to an object will **put its motion under the control of Unity's physics engine**. 
 
