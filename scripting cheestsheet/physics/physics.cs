@@ -32,7 +32,6 @@ public static RaycastHit[] RaycastAll(Ray ray, float maxDistance = Mathf.Infinit
 // Makes the collision detection system ignore all collisions between collider1 and collider2.
 public static void IgnoreCollision(Collider collider1, Collider collider2, bool ignore = true);
 
-
 // Makes the collision detection system ignore all collisions between any collider in layer1 and any collider in layer2.
 public static void IgnoreLayerCollision(int layer1, int layer2, bool ignore = true);
 
