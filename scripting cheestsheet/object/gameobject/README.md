@@ -18,13 +18,13 @@ The typical usage for this method is to call it on a reference to a different Ga
 
 public GameObject otherGameObject;
 
-myResults = otherGameObject.GetComponent<ComponentType>()'
+myResults = otherGameObject.GetComponent<ComponentType>();
 ```
 
 However if you are writing code inside a MonoBehaviour class, you can omit the preceding GameObject reference to get a component from the same GameObject your script is attached to. In this instance, you are actually calling Component.GetComponent because the script itself is a type of component, but the result is the same as if you had referenced the GameObject itself. For example:
 
 ```cs
-myResults = GetComponent<ComponentType>()'
+myResults = GetComponent<ComponentType>();
 ```
 
 > **GetComponent()**  should be declared in **`void start()`**
