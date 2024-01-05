@@ -1,7 +1,7 @@
 ## Animator component
 
-Use the Animator component to assign animation to a GameObject in your Scene.
-The Animator component requires a reference to an Animator Controller which defines which animation clips to use, and controls when and how to blend and transition between them.
+Use the **Animator component to assign animation to a GameObject** in your Scene. \
+The Animator component requires a **reference to an Animator Controller** which defines which **animation clips** to **use**, and **controls** when and how to **blend** and **transition between them**.
 
 If the GameObject is a humanoid character with an Avatar definition, the Avatar should also be assigned in this component
 
