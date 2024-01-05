@@ -63,7 +63,7 @@ To edit the script:
 Unity’s Legacy Animation system is a simpler alternative to Unity’s animation system.
 
 
-The animation component is used to **play back animations**. This is the Legacy Animation component, which was used on GameObjects
+The **animation component** is used to **play back animations**. This is the Legacy Animation component, which was used on GameObjects
  for animation purposes prior to the introduction of Unity’s current animation system. This component is retained in Unity for backwards-compatibility only. For new projects, please use the **Animator component**.
 
 You can assign animation clips to the animation component and control playback from your script. The animation system in Unity is weight-based and supports Animation Blending, Additive animations, Animation Mixing, Layers and full control over all aspects of playback.
