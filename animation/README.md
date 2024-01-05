@@ -1,6 +1,6 @@
 ### Animation
 
-The animation component is used to play back animations.
+The animation component is used to **play back animations**.
 
 You can assign animation clips to the animation component and control playback from your script. The animation system in Unity is weight-based and supports Animation Blending, Additive animations, Animation Mixing, Layers and full control over all aspects of playback.
 
