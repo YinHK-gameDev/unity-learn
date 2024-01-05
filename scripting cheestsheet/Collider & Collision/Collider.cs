@@ -35,15 +35,11 @@ Collider.OnCollisionExit(Collision);
 // OnCollisionStay is called once per frame for every collider/rigidbody that is touching rigidbody/collider.
 Collider.OnCollisionStay(Collision);
 
-// OnCollisionEnter is called when this collider/rigidbody has begun touching another rigidbody/collider.
+// OnTriggerEnter happens on the FixedUpdate function when two GameObjects collide.
 Collider.OnTriggerEnter(Collider);
 
-// OnCollisionStay is called once per frame for every Collider or Rigidbody that touches another Collider or Rigidbody.
-Collider.OnCollisionStay(Collision);
+// OnTriggerExit is called when the Collider other has stopped touching the trigger.
+Collider.OnTriggerExit(Collider);
 
-// OnCollisionExit is called when this collider/rigidbody has stopped touching another rigidbody/collider.
-Collider.OnCollisionExit(Collision);
-
-
-
-
+// OnTriggerStay is called almost all the frames for every Collider other that is touching the trigge
+Collider.OnTriggerStay(Collider);
