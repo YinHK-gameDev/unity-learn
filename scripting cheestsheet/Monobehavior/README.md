@@ -140,6 +140,9 @@ Clones the object original and returns the clone.
 ### `Destroy`
 Removes a GameObject, component or asset
 
+### `DontDestroyOnLoad`
+Do not destroy the target Object when loading a new Scene.
+
 ### `GetComponent`
 Gets a reference to a component of type T on the same GameObject as the component specified.
 
