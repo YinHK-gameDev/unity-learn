@@ -1,5 +1,5 @@
 // Physics 
-
+// Global physics properties and helper methods.
 
 // Property
 
