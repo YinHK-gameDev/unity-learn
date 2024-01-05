@@ -1,6 +1,9 @@
 ## Animation Clips
 Animation Clips are one of the core elements to Unity’s animation system. Unity **supports importing animation from external sources**, and **offers the ability to create animation clips from scratch** within the editor using the **Animation window**.
- 
+
+![](./AnimationClipInspector.jpg)
+
+
 ### Animation from External Sources
 
 Animation clips imported from external sources could include:
