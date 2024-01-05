@@ -18,7 +18,7 @@ Before any animation can be used in Unity, it must first be imported into your p
 
 To create a new Animation Clip, select a GameObject in your Scene, and open the Animation Window (top menu:) **Window > Animation > Animation**.
 
-If the GameObject does not yet have any Animation Clips assigned, the "**Create**" button appears in the centre of the Animation Window timeline area
+If the GameObject does not yet have any Animation Clips assigned, the "**Create**" button appears in the centre of the **Animation Window** timeline area
 
 When you save this new empty Animation Clip, Unity does the following:
 
