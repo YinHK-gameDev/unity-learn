@@ -2,7 +2,7 @@
 
 Unity has two animation systems with different capabilities and performance characteristics:
 
-- **Unity’s animation system**, also known as **Mecanim**, is a rich and sophisticated animation system. It uses the **Animator component**, the **Animation window**, and the **Animator window**.
+- **Unity’s animation system**, also known as **Mecanim**, is a rich and sophisticated animation system. It uses the **Animator component**, the **Animation window**, **Animator controller** and the **Animator window**.
 - **Unity’s Legacy Animation system** has a smaller feature set. It uses the Animation component and was the only animation system available before Unity 4.
 
 
@@ -21,7 +21,7 @@ Unity has a rich and sophisticated animation system (sometimes referred to as **
 - Animating different body parts with different logic.
 - Layering and masking features
 
-
+> *Unity’s animation system* use **Animator controller** and **Animator component** to control animations 
 
 https://docs.unity3d.com/Manual/AnimationOverview.html
 
