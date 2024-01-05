@@ -38,6 +38,8 @@ A physics body collider is a collider on the same GameObject as a physics body (
 
 > **Note**: A Rigidbody can be either **dynamic** or **kinematic**. An **ArticulationBody** can **only be dynamic**; it **cannot be kinematic**.
 
+> **Note**: Physics body colliders are **dynamic** by **default**.
+
 ### Rigidbody colliders
 This is a GameObject with a Collider and a normal, non-kinematic Rigidbody attached. Rigidbody colliders are fully simulated by the physics engine and can react to collisions and forces
 
