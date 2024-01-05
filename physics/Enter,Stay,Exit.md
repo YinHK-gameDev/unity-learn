@@ -46,9 +46,14 @@ void OnTriggerExit(Collider other){ ... }
 
 **Requirement for trigger happen**:
 - Both objects **must** have a collider.
-- At least one of them **contaib a rigidbody**.
-- Only one of them has **`Collider.isTrigger` enabled**. If both enabled, no collision happens.
-- If both do not have a rigidbody, no collision happens.
+- At least one of them **contain a rigidbody**.
+- At least one of them has **`Collider.isTrigger` enabled**.
+
+
+**Requirement for collision happen**:
+- Both objects **must** have collider
+- If both **`Collider.isTrigger` enabled** enabled, no collision happens.
+- If both do not have a **rigidbody**, no collision happens.
 
 
 
