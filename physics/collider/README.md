@@ -52,7 +52,8 @@ If the object with the Collider needs to be moved during gameplay then you shoul
  but it **will not respond to collisions and forces**. \
 > Even both game objects have colliders and they don't pass through each others, there is **no collision detection** because **kinematic rigidbodies will never compute collisions**. 
 
-https://doc.stride3d.net/4.0/en/manual/physics/kinematic-rigid-bodies.html
+https://doc.stride3d.net/4.0/en/manual/physics/kinematic-rigid-bodies.html \
+https://blog.terresquall.com/2023/09/what-is-a-kinematic-rigid-body-and-how-are-they-used-in-unity/
 
 
 ### Box Collider 
