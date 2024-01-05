@@ -44,7 +44,7 @@ You can switch the **`IsKinematic`** property to make the gameobject a normal ph
 
 A Rigidbody component can be switched between normal and kinematic behavior at any time using the **`IsKinematic`** property.
 
-If the object with the Collider needs to be moved during gameplay then you should also attach a **Rigidbody component** to the object. The Rigidbody can be set to be kinematic if you don't want the object to have **physical interaction with other objects**. 
+If the object with the Collider needs to be moved during gameplay then you should also attach a **Rigidbody component** to the object. The Rigidbody can be set to be **kinematic** if you don't want the object to have **physical interaction with other objects**. 
 
 When you make something a kinematic, what you are essentially trying to do is disable, **the physics behaviour of a `Rigidbody` component**. This means that a **kinematic Rigidbody** does not get affected by **external forces**. **In essence, they can still push other rigid body colliders, but they cannot be pushed by other rigid bodies.**
 
