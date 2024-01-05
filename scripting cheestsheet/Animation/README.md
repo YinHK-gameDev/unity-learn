@@ -63,6 +63,12 @@ https://unity3d.com/how-to/build-animator-controllers \
 https://www.studica.com/blog/game-design-tutorial-blend-trees-unity
 
 
+### AnimationClip
+AnimationClip is used by Animation to play back animations.
+
+
+https://docs.unity3d.com/ScriptReference/AnimationClip.html
+
 
 
 
