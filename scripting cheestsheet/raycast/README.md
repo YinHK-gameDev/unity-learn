@@ -112,12 +112,19 @@ Raycast function:
 ### Visualise Raycast in the scene
 > The **Debug** Class includes a function, **`Draw Ray`**, that allows you to **render a Ray** in the world.
 
+
+```cs
+public static void DrawRay(Vector3 start, Vector3 dir, Color color = Color.white, float duration = 0.0f, bool depthTest = true);
+```
+
+
 ```cs
 Ray ray = new Ray(transform.position, transform.forward);
 
 // Render a visible line using Draw Ray, passing in the same value
 Debug.DrawRay(ray.origin, ray.direction * 10);
 ```
+https://docs.unity3d.com/ScriptReference/Debug.DrawRay.html
 
 #### `RaycastHit`
 Structure used to **get information** back from a **raycast**.
