@@ -28,18 +28,25 @@ public bool Raycast(Ray ray, out RaycastHit hitInfo, float maxDistance);
 
 // OnCollisionEnter is called when this collider/rigidbody has begun touching another rigidbody/collider.
 Collider.OnCollisionEnter(Collision);
+void OnCollisionEnter(Collision collision);
 
 // OnCollisionExit is called when this collider/rigidbody has stopped touching another rigidbody/collider.
 Collider.OnCollisionExit(Collision);
+void OnCollisionExit(Collision collision);
 
 // OnCollisionStay is called once per frame for every collider/rigidbody that is touching rigidbody/collider.
 Collider.OnCollisionStay(Collision);
+void OnCollisionStay(Collision collision);
 
 // OnTriggerEnter happens on the FixedUpdate function when two GameObjects collide.
 Collider.OnTriggerEnter(Collider);
+void OnTriggerEnter(Collider other);
 
 // OnTriggerExit is called when the Collider other has stopped touching the trigger.
 Collider.OnTriggerExit(Collider);
+void OnTriggerExit(Collider other);
 
 // OnTriggerStay is called almost all the frames for every Collider other that is touching the trigge
 Collider.OnTriggerStay(Collider);
+void OnTriggerStay(Collider other);
+
