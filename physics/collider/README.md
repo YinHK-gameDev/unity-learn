@@ -52,7 +52,7 @@ When you make something a kinematic, what you are essentially trying to do is di
 > Unlike a **static collider**, a moving kinematic rigidbody **will apply friction** to other objects \
 > You can move a **kinematic rigidbody object** from a script by modifying its Transform Component
  but it **will not respond to collisions and forces**. \
-> Kinematic rigidbodies still can apply force and push other rigidbody colliders, but cannot be pushed by others because  external force doesn't affect on the Kinematic rigidbodies. \
+> Kinematic rigidbodies **still can apply force and push other rigidbody colliders**, but cannot be pushed by others because  external force doesn't affect on the Kinematic rigidbodies. \
 > Even both game objects have colliders and they don't pass through each others, there is **no collision detection** because **kinematic rigidbodies will never compute collisions**. 
 
 https://doc.stride3d.net/4.0/en/manual/physics/kinematic-rigid-bodies.html \
