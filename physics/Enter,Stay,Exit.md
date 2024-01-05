@@ -67,3 +67,7 @@ If one of collider is trigger, both collider will pass through each other wherea
 
 https://gamedev.stackexchange.com/questions/164544/temporarily-ignore-collision
 
+
+### ref
+https://docs.unity3d.com/Manual/collider-types-interaction.html
+
