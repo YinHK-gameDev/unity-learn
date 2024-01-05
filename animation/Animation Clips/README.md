@@ -13,13 +13,13 @@ Animation clips imported from external sources could include:
 - Animation sets from 3rd-party libraries (eg, from Unity’s asset store)
 - Multiple clips cut and sliced from a single imported timeline.
 
-### Importing animation files
+#### Importing animation files
 
 Before any animation can be used in Unity, it must first be imported into your project. Unity can import native Autodesk® Maya® (.mb or .ma), Autodesk® 3ds Max® (.max), and Blender™ (.blend), and also generic FBX files which can be exported from most animation packages. Note that importing from .blend files requires a local installation of Blender™.
 
-### Creating a new Animation Clip
+### Creating a new Animation Clip from scratch using Animation window
 
-To create a new Animation Clip, select a GameObject in your Scene, and open the Animation Window (top menu:) **Window > Animation > Animation**.
+To create a new Animation Clip, select a GameObject in your Scene, and open the **Animation Window** (top menu:) **Window > Animation > Animation**.
 
 If the GameObject does not yet have any Animation Clips assigned, the "**Create**" button appears in the centre of the **Animation Window** timeline area
 
@@ -32,7 +32,7 @@ When you save this new empty Animation Clip, Unity does the following:
 
 All the required elements of the animation system are now set up, and you can begin animating the GameObject.
 
-### Adding another Animation Clip
+#### Adding another Animation Clip
 
 If the GameObject already has one or more Animation Clips assigned, the “Create” button is not visible. Instead, one of the existing clips is visible in the Animation window. To switch between Animation Clips, use the menu in the **top-left of the Animation window**
 .
