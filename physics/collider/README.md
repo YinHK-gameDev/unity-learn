@@ -38,7 +38,7 @@ Even without adding any code, a Rigidbody object will be **pulled downward by gr
 ### Kinematic Rigidbody collider
 A a GameObject with a Collider and **a kinematic Rigidbody attached** (ie, the **`IsKinematic`** property of the Rigidbody is **enabled**).
 
-If you don’t want the **trigger to fall under gravity** or otherwise **be affected by physics** then you can set the **`IsKinematic`** property on its rigidbody.
+Kinematic rigidbody **cannot be affected by collisions and other forces**. If you don’t want the **trigger to fall under gravity** or otherwise **be affected by physics** then you can set the **`IsKinematic`** property on its rigidbody.
 
 You can switch the **`IsKinematic`** property to make the gameobject a normal physics object, which will affected by physics. Like gravity or physical interaction pushed by other game objects.
 
