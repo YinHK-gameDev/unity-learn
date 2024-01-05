@@ -55,6 +55,13 @@ When you make something a kinematic, what you are essentially trying to do is di
 > Kinematic rigidbodies **still can apply force and push other rigidbody colliders**, but cannot be pushed by others because  external force doesn't affect on the Kinematic rigidbodies. \
 > Even both game objects have colliders and they don't pass through each others, there is **no collision detection** because **kinematic rigidbodies will never compute collisions**. 
 
+
+
+#### kinematics used for?
+- **Moving platforms**: They need to be able to collide with objects, otherwise you cannot stand on them. They cannot be affected by physical forces, or they will be knocked out of their defined paths.
+- **Animated obstacles or platforms**
+- **Projectiles**
+
 https://doc.stride3d.net/4.0/en/manual/physics/kinematic-rigid-bodies.html \
 https://blog.terresquall.com/2023/09/what-is-a-kinematic-rigid-body-and-how-are-they-used-in-unity/ \
 https://youtube.com/shorts/_77c2KnCdq4?si=VriPT47o8Bu4n39R
