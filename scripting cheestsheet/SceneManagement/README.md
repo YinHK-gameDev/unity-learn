@@ -1,12 +1,20 @@
 ## SceneManagement
-Run-time data structure for `*.unity` file.
 
 ### Scene
+Run-time data structure for **`*.unity`** file.
+
+#### Properties
+
+<table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-buildIndex.html">buildIndex</a></td><td class="desc">Return the index of the Scene in the Build Settings.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-isDirty.html">isDirty</a></td><td class="desc">Returns true if the Scene is modified.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-isLoaded.html">isLoaded</a></td><td class="desc">IsLoaded is set to true after loading has completed and objects have been enabled.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-name.html">name</a></td><td class="desc">Returns the name of the Scene that is currently active in the game or app.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-path.html">path</a></td><td class="desc">Returns the relative path of the Scene. For example: "Assets/MyScenes/MyScene.unity".</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-rootCount.html">rootCount</a></td><td class="desc">The number of root transforms of this Scene.</td></tr></tbody></table>
+
+#### Public Methods
+
+<table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene.GetRootGameObjects.html">GetRootGameObjects</a></td><td class="desc">Returns all the root game objects in the Scene.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene.IsValid.html">IsValid</a></td><td class="desc">Whether this is a valid Scene. A Scene may be invalid if, for example, you tried to open a Scene that does not exist. In this case, the Scene returned from EditorSceneManager.OpenScene would return False for IsValid.</td></tr></tbody></table>
 
 
 ### SceneManager
 Use this class for Scene management at run-time.
-Using SceneManagement to transition scene in the game.
+Using SceneManagement to **transition scene** in the game.
 
 
 ### `SceneManager.LoadScene`
