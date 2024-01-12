@@ -3,6 +3,10 @@
 ### Scene
 Run-time **data structure** for **`*.unity`** file.
 
+```cs
+ Scene newScene = SceneManager.CreateScene("New Scene");
+```
+
 #### Properties
 
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-buildIndex.html">buildIndex</a></td><td class="desc">Return the index of the Scene in the Build Settings.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-isDirty.html">isDirty</a></td><td class="desc">Returns true if the Scene is modified.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-isLoaded.html">isLoaded</a></td><td class="desc">IsLoaded is set to true after loading has completed and objects have been enabled.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-name.html">name</a></td><td class="desc">Returns the name of the Scene that is currently active in the game or app.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-path.html">path</a></td><td class="desc">Returns the relative path of the Scene. For example: "Assets/MyScenes/MyScene.unity".</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene-rootCount.html">rootCount</a></td><td class="desc">The number of root transforms of this Scene.</td></tr></tbody></table>
