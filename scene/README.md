@@ -79,7 +79,7 @@ To open a scene, do one of the following:
 We can **open and edit multiple scenes** in the Unity Editor simultaneously. Open multi scenes at once.
 Having multiple scenes open at once also lets you improve the workflow, especially if you often have to edit scenes collaboratively.
 
-> If you have multiple active scenes, all the game objects in multiple scenes will be showed unless you deactivate the scene or gameobjects.
+> **Note**: If you have multiple active scenes, all the game objects in multiple scenes will be showed unless you deactivate the scene or gameobjects.
 
 To add multi scenes at editor: 
 
