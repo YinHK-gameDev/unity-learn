@@ -34,7 +34,9 @@ public class SceneTemplate
 You can create your **own scene templates** to customize the types of new scene you can create in a project. For example, you might create templates for each level in a game so that everyone working on the project can start their scenes with the correct assets and configuration.
 
 https://docs.unity3d.com/Manual/scene-templates.html \
-https://docs.unity3d.com/Packages/com.unity.scene-template@1.0/manual/index.html
+https://docs.unity3d.com/Packages/com.unity.scene-template@1.0/manual/index.html \
+https://docs.unity3d.com/Manual/scene-templates-editing.html \
+https://docs.unity3d.com/Manual/scene-templates-settings.html
 
 ### Creating scene templates
 You can create a new scene template in one of the following ways:
