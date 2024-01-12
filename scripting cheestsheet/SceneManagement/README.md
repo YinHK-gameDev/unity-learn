@@ -9,7 +9,7 @@ Run-time **data structure** for **`*.unity`** file.
 
 #### Public Methods
 
-<table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene.GetRootGameObjects.html">GetRootGameObjects</a></td><td class="desc">Returns all the root game objects in the Scene.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene.IsValid.html">IsValid</a></td><td class="desc">Whether this is a valid Scene. A Scene may be invalid if, for example, you tried to open a Scene that does not exist. In this case, the Scene returned from **`EditorSceneManager.OpenScene`** would return False for IsValid.</td></tr></tbody></table>
+<table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene.GetRootGameObjects.html">GetRootGameObjects</a></td><td class="desc">Returns all the root game objects in the Scene.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene.IsValid.html">IsValid</a></td><td class="desc">Whether this is a valid Scene. A Scene may be invalid if, for example, you tried to open a Scene that does not exist. In this case, the Scene returned from EditorSceneManager.OpenScene would return False for IsValid.</td></tr></tbody></table>
 
 
 ### SceneManager
