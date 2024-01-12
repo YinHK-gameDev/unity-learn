@@ -2,6 +2,7 @@
 Run-time data structure for `*.unity` file.
 
 
+
 ### SceneManager
 Use this class for Scene management at run-time.
 Using SceneManagement to transition scene in the game.
