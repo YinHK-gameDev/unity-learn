@@ -213,8 +213,8 @@ By default, when a Scene is created or loaded, any 2D or 3D physics component ad
 
 
 - **`None`**: No local 2D or 3D physics Scene will be created.
-- **Physics2D**: A local 2D physics Scene will be created and owned by the Scene.
-- **Physics3D**: A local 3D physics Scene will be created and owned by the Scene.
+- **`Physics2D`**: A local 2D physics Scene will be created and owned by the Scene.
+- **`Physics3D`**: A local 3D physics Scene will be created and owned by the Scene.
 
 
 ### ref
