@@ -175,7 +175,7 @@ using UnityEngine;// create a randomly placed cubepublic class ExampleScript2 : 
 
 #### Static Properties
 
-<table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-loadedSceneCount.html">loadedSceneCount</a></td><td class="desc">The number of loaded Scenes.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-sceneCount.html">sceneCount</a></td><td class="desc">The current number of Scenes.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-sceneCountInBuildSettings.html">sceneCountInBuildSettings</a></td><td class="desc">Number of Scenes in Build Settings.</td></tr></tbody></table>
+<table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-loadedSceneCount.html">loadedSceneCount</a></td><td class="desc">The number of loaded Scenes.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-sceneCount.html">sceneCount</a></td><td class="desc">The current number of Scenes. Returns the current number Scenes. This includes the Scenes that are currently loading or unloading.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-sceneCountInBuildSettings.html">sceneCountInBuildSettings</a></td><td class="desc">Number of Scenes in Build Settings.</td></tr></tbody></table>
 
 #### Static Methods
 
