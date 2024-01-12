@@ -59,7 +59,8 @@ You can create a new scene template in one of the following ways:
     ```cs
      SceneTemplate.CreateTemplateFromScene(SceneAsset sourceSceneAsset, string sceneTemplatePath);
     ```
-  https://docs.unity3d.com/Packages/com.unity.scene-template@1.0/api/UnityEditor.SceneTemplate.SceneTemplate.html
+  https://docs.unity3d.com/Packages/com.unity.scene-template@1.0/api/UnityEditor.SceneTemplate.SceneTemplate.html \
+  https://docs.unity3d.com/Packages/com.unity.scene-template@1.0/manual/creating-scene-templates.html
 
 ### Load scene
 To open a scene, do one of the following:
