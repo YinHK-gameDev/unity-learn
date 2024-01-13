@@ -56,6 +56,7 @@ void Update()
 }
 ```
 
+https://docs.unity3d.com/ScriptReference/Ray.html
 
 #### Use the Raycast Hit variable
 The **Raycast Hit** variable is a **data struct** that **stores information about Ray’s collision**.
