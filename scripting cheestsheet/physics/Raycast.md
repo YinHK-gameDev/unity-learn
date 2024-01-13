@@ -44,6 +44,8 @@ public class ExampleClass : MonoBehaviour
 public static bool Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction);
 ```
 
+> 
+
 Eg:
 ```cs
 using UnityEngine;
@@ -60,6 +62,22 @@ public class RaycastExample : MonoBehaviour
     }
 }
 
+```
+
+```cs
+using UnityEngine;
+
+public class RaycastExample : MonoBehaviour
+{
+    // See Order of Execution for Event Functions for information on FixedUpdate() and Update() related to physics queries
+    void FixedUpdate()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, -Vector3.up, out hit, 100.0f))
+            print("Found an object - distance: " + hit.distance);
+    }
+}
 ```
 
 ```cs
