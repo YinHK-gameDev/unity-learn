@@ -117,7 +117,7 @@ Raycast function:
 public static void DrawRay(Vector3 start, Vector3 dir, Color color = Color.white, float duration = 0.0f, bool depthTest = true);
 ```
 
-
+Eg:
 ```cs
 Ray ray = new Ray(transform.position, transform.forward);
 
