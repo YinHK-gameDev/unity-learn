@@ -45,6 +45,12 @@ Force can be applied only to an active rigidbody. If a GameObject is inactive, A
 ### ref
 https://docs.unity3d.com/2020.1/Documentation/ScriptReference/Rigidbody.html
 
+Using AddForce/AddTorque \
+https://www.youtube.com/watch?v=Gin9nVJ2nYc
+
+AddTorque \
+https://www.youtube.com/watch?v=De0PoxaKlww
+
 
 
 
