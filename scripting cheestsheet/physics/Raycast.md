@@ -44,7 +44,7 @@ public class ExampleClass : MonoBehaviour
 public static bool Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction);
 ```
 
-> 
+> **`hitInfo`**:	If true is returned, hitInfo will contain more information about where the closest collider was hit. (Additional resources: RaycastHit).
 
 Eg:
 ```cs
