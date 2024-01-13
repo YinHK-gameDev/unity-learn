@@ -40,6 +40,70 @@ public class ExampleClass : MonoBehaviour
 
 ```
 
+```cs
+public static bool Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction);
+```
+
+Eg:
+```cs
+using UnityEngine;
+
+public class RaycastExample : MonoBehaviour
+{
+    // See Order of Execution for Event Functions for information on FixedUpdate() and Update() related to physics queries
+    void FixedUpdate()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, -Vector3.up, out hit))
+            print("Found an object - distance: " + hit.distance);
+    }
+}
+
+```
+
+```cs
+public static bool Raycast(Ray ray, float maxDistance = Mathf.Infinity, int layerMask = DefaultRaycastLayers, QueryTriggerInteraction queryTriggerInteraction = QueryTriggerInteraction.UseGlobal);
+```
+
+Eg:
+```cs
+using UnityEngine;
+
+public class ExampleClass : MonoBehaviour
+{
+    // See Order of Execution for Event Functions for information on FixedUpdate() and Update() related to physics queries
+    void FixedUpdate()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, 100))
+            print("Hit something!");
+    }
+}
+
+```
+```cs
+public static bool Raycast(Ray ray, out RaycastHit hitInfo, float maxDistance = Mathf.Infinity, int layerMask = DefaultRaycastLayers, QueryTriggerInteraction queryTriggerInteraction = QueryTriggerInteraction.UseGlobal);
+```
+
+Eg:
+
+```cs
+using UnityEngine;
+
+public class ExampleClass : MonoBehaviour
+{
+    // See Order of Execution for Event Functions for information on FixedUpdate() and Update() related to physics queries
+    void FixedUpdate()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+            Debug.DrawLine(ray.origin, hit.point);
+    }
+}
+```
 
 ### `Physics2D.Raycast`
 ```cs
