@@ -21,11 +21,16 @@ Use Rigidbody.rotation to get and set the rotation of a Rigidbody using the phys
 #### `AddForce`
 Adds a force to the Rigidbody.
 
+Just a force pushing an object.
+
 #### `AddTorque`
 Adds a torque to the rigidbody.
 
 Force can be applied only to an active rigidbody. If a GameObject is inactive, AddTorque has no effect.
 
+ use the AddTorque function to add a **rotational force** onto the object.
+ Torque is rotational force. Think of an imaginary axle that spins the object.
+ 
 
 ### Properties
 
