@@ -147,16 +147,22 @@ m_MyEvent.RemoveListener(MyAction);
 
 By default a `UnityEvent` in a `Monobehaviour` binds dynamically to a void function. This does not have to be the case as dynamic invocation of **`UnityEvents`** supports binding to functions with up to **4 arguments**. To do this you need to define a **custom** **`UnityEvent`** class that supports multiple arguments. This is quite easy to do:
 
-```cs
-[Serializable]
-public class StringEvent : UnityEvent <string> {}
-```
+
 
 ```cs
 public class MyIntEvent : UnityEvent<T0>
 {
 }
 ```
+If you wish to use a generic UnityEvent type you must override the class type.
+
+Eg:
+```cs
+[Serializable]
+public class StringEvent : UnityEvent <string> {}
+```
+
+
 ```cs
 public class MyIntEvent : UnityEvent<T0,T1>
 {
