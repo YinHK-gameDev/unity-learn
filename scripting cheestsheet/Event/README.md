@@ -20,7 +20,6 @@ allow items in our projects to subscribe to events, and have events trigger acti
 - **`void OnEnable()`** or other **`OnEventName`** method to subcribe the event.
 - **`void OnDisable()`** or other **`OnEventName`** method to unsubscribe the event. 
 
-https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#
 
 ### Steps for Using UnityEvents
 
