@@ -94,6 +94,11 @@ If no parameter required, no predefined value can be set in UI editor. \
 Then predefined value can be set in UI editor. \
 ![](./img/UnityEvent6.png)
 
+**If having more than one parameter**: \
+![](./img/UnityEvent7.png)
+Callback function cannot be found in search, Generic UnityEvents should be used for for than one paramter \
+![](./img/UnityEvent8.png)
+
 ### Event vs UnityEvents
 - In c#  declare an event **must** use script to **add event listener**.
 - Using **`UnityEvent`**, you can use editor to **add event listener manually** in inspector.
