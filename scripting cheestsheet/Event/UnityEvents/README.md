@@ -229,7 +229,6 @@ https://docs.unity3d.com/Manual/UnityEvents.html \
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
 https://www.youtube.com/watch?v=oc3sQamIh-Q \
 https://www.youtube.com/watch?v=TWxXD-UpvSg \
-https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events# \
 https://www.youtube.com/watch?v=J01z1F-du-E 
 
 **`UnityEvent`** \
