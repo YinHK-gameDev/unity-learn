@@ -248,6 +248,18 @@ This can then be invoked by calling the **`Invoke()`** function with a `string` 
 UnityEvents can be defined with up to **4 arguments** in their generic definition.
 
 
+#### `UnityAction` delegate
+Zero argument delegate used by UnityEvents.
+
+Use this to create some dynamic functionality in your scripts. Unity Actions allow you to dynamically call multiple functions. Since Unity Actions have no arguments, functions they call must also have no arguments
+
+```cs
+public delegate void UnityAction();
+```
+
+
+https://docs.unity3d.com/ScriptReference/Events.UnityAction.html
+
 ### ref 
 https://docs.unity3d.com/Manual/UnityEvents.html \
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
