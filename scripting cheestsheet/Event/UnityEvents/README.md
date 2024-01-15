@@ -63,8 +63,8 @@ To configure a callback in the editor there are a few steps to take:
 
 
 ### Event vs UnityEvents
-- In c#  declare an event **must** use script to add event listener.
-- Using **`UnityEvent`**, you can use editor to add event listener manually in inspector.
+- In c#  declare an event **must** use script to **add event listener**.
+- Using **`UnityEvent`**, you can use editor to **add event listener manually** in inspector.
 
 
 ### Declare UnityEvent
