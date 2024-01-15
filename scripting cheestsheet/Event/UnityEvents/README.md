@@ -78,6 +78,7 @@ To configure a callback in the editor there are a few steps to take:
 
 > Adding callback function through UI editor is for static calls only, with no parameters or exactly one parameter.
 
+> You can select **"off"**, **"Editor and Runtime"** or **"Runtime only"**.
 
 ![](./img/UnityEvent1.png)
 
