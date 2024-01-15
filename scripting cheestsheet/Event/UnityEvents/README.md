@@ -363,7 +363,7 @@ public class Player : MonoBehaviour
 {
     public void PrintMessage(int x, int y)
     {
-        print($"This is printed message + {x} + {y}");
+        print("This is printed message:" + $"{x}" + "+" + $"{y}" + "=" + $"{x + y}");
     }
 }
 
