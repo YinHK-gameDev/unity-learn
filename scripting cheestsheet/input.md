@@ -119,56 +119,56 @@ https://docs.unity3d.com/ScriptReference/Input.GetTouch.html
 
 |**Static Properties**|**Description**|
 | --- | --- |
-| acceleration | Last measured linear acceleration of a device in three-dimensional space. (Read Only) |
-| accelerationEventCount | Number of acceleration measurements which occurred during last frame. |
-| accelerationEvents | Returns list of acceleration measurements which occurred during the last frame. (Read Only) (Allocates temporary variables). |
-| anyKey | Is any key or mouse button currently held down? (Read Only) |
-| anyKeyDown | Returns true the first frame the user hits any key or mouse button. (Read Only) |
-| backButtonLeavesApp | Should Back button quit the application?Only usable on Android, Windows Phone or Windows Tablets. |
-| compass | Property for accessing compass (handheld devices only). (Read Only) |
-| compensateSensors | This property controls if input sensors should be compensated for screen orientation. |
-| compositionCursorPos | The current text input position used by IMEs to open windows. |
-| compositionString | The current IME composition string being typed by the user. |
-| deviceOrientation | Device physical orientation as reported by OS. (Read Only) |
-| gyro | Returns default gyroscope. |
-| imeCompositionMode | Controls enabling and disabling of IME input composition. |
-| imeIsSelected | Does the user have an IME keyboard input source selected? |
-| inputString | Returns the keyboard input entered this frame. (Read Only) |
-| location | Property for accessing device location (handheld devices only). (Read Only) |
-| mousePosition | The current mouse position in pixel coordinates. (Read Only). |
-| mousePresent | Indicates if a mouse device is detected. |
-| mouseScrollDelta | The current mouse scroll delta. (Read Only) |
-| multiTouchEnabled | Property indicating whether the system handles multiple touches. |
-| penEventCount | Returns the number of queued pen events that can be accessed by calling [[GetPenEvent()]]. |
-| simulateMouseWithTouches | Enables/Disables mouse simulation with touches. By default this option is enabled. |
-| stylusTouchSupported | Returns true when Stylus Touch is supported by a device or platform. |
-| touchCount | Number of touches. Guaranteed not to change throughout the frame. (Read Only) |
-| touches | Returns list of objects representing status of all touches during last frame. (Read Only) (Allocates temporary variables). |
-| touchPressureSupported | Bool value which let's users check if touch pressure is supported. |
-| touchSupported | Returns whether the device on which application is currently running supports touch input. |
+| `acceleration` | Last measured linear acceleration of a device in three-dimensional space. (Read Only) |
+| `accelerationEventCount` | Number of acceleration measurements which occurred during last frame. |
+| `accelerationEvents` | Returns list of acceleration measurements which occurred during the last frame. (Read Only) (Allocates temporary variables). |
+| `anyKey` | Is any key or mouse button currently held down? (Read Only) |
+| `anyKeyDown` | Returns true the first frame the user hits any key or mouse button. (Read Only) |
+| `backButtonLeavesApp` | Should Back button quit the application?Only usable on Android, Windows Phone or Windows Tablets. |
+| `compass` | Property for accessing compass (handheld devices only). (Read Only) |
+| `compensateSensors` | This property controls if input sensors should be compensated for screen orientation. |
+| `compositionCursorPos` | The current text input position used by IMEs to open windows. |
+| `compositionString` | The current IME composition string being typed by the user. |
+| `deviceOrientation` | Device physical orientation as reported by OS. (Read Only) |
+| `gyro` | Returns default gyroscope. |
+| `imeCompositionMode` | Controls enabling and disabling of IME input composition. |
+| `imeIsSelected` | Does the user have an IME keyboard input source selected? |
+| `inputString` | Returns the keyboard input entered this frame. (Read Only) |
+| `location` | Property for accessing device location (handheld devices only). (Read Only) |
+| `mousePosition` | The current mouse position in pixel coordinates. (Read Only). |
+| `mousePresent` | Indicates if a mouse device is detected. |
+| `mouseScrollDelta` | The current mouse scroll delta. (Read Only) |
+| `multiTouchEnabled` | Property indicating whether the system handles multiple touches. |
+| `penEventCount` | Returns the number of queued pen events that can be accessed by calling [[GetPenEvent()]]. |
+| `simulateMouseWithTouches` | Enables/Disables mouse simulation with touches. By default this option is enabled. |
+| `stylusTouchSupported` | Returns true when Stylus Touch is supported by a device or platform. |
+| `touchCount` | Number of touches. Guaranteed not to change throughout the frame. (Read Only) |
+| `touches` | Returns list of objects representing status of all touches during last frame. (Read Only) (Allocates temporary variables). |
+| `touchPressureSupported` | Bool value which let's users check if touch pressure is supported. |
+| `touchSupported` | Returns whether the device on which application is currently running supports touch input. |
 
 
 |**Static Methods**|**Description**|
 | --- | --- |
-| ClearLastPenContactEvent | Clears the last stored pen event. Calling this function may impact event handling for UIToolKit elements. |
-| GetAccelerationEvent | Returns specific acceleration measurement which occurred during last frame. (Does not allocate temporary variables). |
-| GetAxis | Returns the value of the virtual axis identified by axisName. |
-| GetAxisRaw | Returns the value of the virtual axis identified by axisName with no smoothing filtering applied. |
-| GetButton | Returns true while the virtual button identified by buttonName is held down. |
-| GetButtonDown | Returns true during the frame the user pressed down the virtual button identified by buttonName. |
-| GetButtonUp | Returns true the first frame the user releases the virtual button identified by buttonName. |
-| GetJoystickNames | Retrieves a list of input device names corresponding to the index of an Axis configured within Input Manager. |
-| GetKey | Returns true while the user holds down the key identified by name. |
-| GetKeyDown | Returns true during the frame the user starts pressing down the key identified by name. |
-| GetKeyUp | Returns true during the frame the user releases the key identified by name. |
-| GetLastPenContactEvent | Returns the PenData for the last stored pen up or down event. |
-| GetMouseButton | Returns whether the given mouse button is held down. |
-| GetMouseButtonDown | Returns true during the frame the user pressed the given mouse button. |
-| GetMouseButtonUp | Returns true during the frame the user releases the given mouse button. |
-| GetPenEvent | Returns the PenData for the pen event at the given index in the pen event queue. |
-| GetTouch | Call Input.GetTouch to obtain a Touch struct. |
-| IsJoystickPreconfigured | Determine whether a particular joystick model has been preconfigured by Unity. (Linux-only). |
-| ResetInputAxes | Resets all input. After ResetInputAxes all axes return to 0 and all buttons return to 0 for one frame. |
-| ResetPenEvents | Clears the pen event queue. |
+| `ClearLastPenContactEvent` | Clears the last stored pen event. Calling this function may impact event handling for UIToolKit elements. |
+| `GetAccelerationEvent` | Returns specific acceleration measurement which occurred during last frame. (Does not allocate temporary variables). |
+| `GetAxis` | Returns the value of the virtual axis identified by axisName. |
+| `GetAxisRaw` | Returns the value of the virtual axis identified by axisName with no smoothing filtering applied. |
+| `GetButton` | Returns true while the virtual button identified by buttonName is held down. |
+| `GetButtonDown` | Returns true during the frame the user pressed down the virtual button identified by buttonName. |
+| `GetButtonUp` | Returns true the first frame the user releases the virtual button identified by buttonName. |
+| `GetJoystickNames` | Retrieves a list of input device names corresponding to the index of an Axis configured within Input Manager. |
+| `GetKey` | Returns true while the user holds down the key identified by name. |
+| `GetKeyDown` | Returns true during the frame the user starts pressing down the key identified by name. |
+| `GetKeyUp` | Returns true during the frame the user releases the key identified by name. |
+| `GetLastPenContactEvent` | Returns the PenData for the last stored pen up or down event. |
+| `GetMouseButton` | Returns whether the given mouse button is held down. |
+| `GetMouseButtonDown` | Returns true during the frame the user pressed the given mouse button. |
+| `GetMouseButtonUp` | Returns true during the frame the user releases the given mouse button. |
+| `GetPenEvent` | Returns the PenData for the pen event at the given index in the pen event queue. |
+| `GetTouch` | Call Input.GetTouch to obtain a Touch struct. |
+| `IsJoystickPreconfigured` | Determine whether a particular joystick model has been preconfigured by Unity. (Linux-only). |
+| `ResetInputAxes` | Resets all input. After ResetInputAxes all axes return to 0 and all buttons return to 0 for one frame. |
+| `ResetPenEvents` | Clears the pen event queue. |
 
 
