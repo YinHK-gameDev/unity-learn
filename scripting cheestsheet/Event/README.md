@@ -148,7 +148,9 @@ public class TestingEventSubscriber : MonoBehaviour {
 ```
 
 #### Events & Delegates in C#
-https://gamedevbeginner.com/events-and-delegates-in-unity/
+https://gamedevbeginner.com/events-and-delegates-in-unity/ 
+
+https://learn.unity.com/tutorial/delegates
 
 ### ref 
 https://www.youtube.com/watch?v=OuZrhykVytg
