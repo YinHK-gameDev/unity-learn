@@ -332,6 +332,44 @@ public class MyEventName : UnityEvent<T0,T1>
 }
 ```
 
+```cs
+//EvenManager.cs
+public class MyUnityEvent : UnityEvent<int, int>
+{
+}
+
+public class EventManager : MonoBehaviour
+{
+    public MyUnityEvent OnUnityEvent;
+    void Start()
+    {
+        OnUnityEvent = new MyUnityEvent();
+        //OnUnityEvent.AddListener(player.GetComponent<Player>().PrintMessage);
+
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            OnUnityEvent.Invoke(1, 2);
+        }
+
+    }
+}
+
+//Player.cs
+public class Player : MonoBehaviour
+{
+    public void PrintMessage(int x, int y)
+    {
+        print($"This is printed message + {x} + {y}");
+    }
+}
+
+```
+
+
 #### `UnityEvent<T0,T1,T2>`
 Three argument version of UnityEvent
 ```cs
