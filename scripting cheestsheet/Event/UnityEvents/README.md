@@ -42,12 +42,17 @@ When configuring a **`UnityEvent`** in the Inspector there are **two types of fu
 
 > Dynamic calls vs Static calls: dynamic using the arguments sending from code, static using preconfigured values as argument entered into UI
 
+> In inspector, the dynamic calls are the methods that the parameters are passed to invoke() from code, not **preconfigured values**/**static paramete**r in inspector. Multiple parameters(Up to 4 arguments) can be passed to the invoker. 
+
+> Static calls are the method with static parameters, he method can only take a single argument and that argument is serialized in the inspector. 
+
 > A UnityEvent only supports the following static types, since they need to be serialized inside the UnityEvent itself:
 > - int
 > - float
 > - string
 > - bool
 > - `UnityEngine.Object` reference
+
 
 https://forum.unity.com/threads/unityevent-passing-parameters-with-the-inspector.1249816/
 
@@ -331,7 +336,7 @@ public class ExampleClass : MonoBehaviour
 
 By adding an instance of this to your class instead of the base **`UnityEvent`** it will allow the callback to bind dynamically to  functions.
 
-This can then be invoked by calling the **`Invoke()`** function with a `string` as argument.
+This can then be invoked by calling the **`Invoke()`** function with a **`string`** as argument.
 
 UnityEvents can be defined with up to **4 arguments** in their generic definition.
 
