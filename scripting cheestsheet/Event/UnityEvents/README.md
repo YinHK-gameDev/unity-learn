@@ -3,7 +3,7 @@
 
 
 不管是UnityEvent、Event，基本上都是基於Delegate所產生變體，而一旦使用了Event後，便可以極大幅的減少腳本之間的依賴，也不用在苦惱要在start還是update中**getComponet**了，因為幾乎都可以用註冊的方式直接完成這些操作。
-而其中 **`UnityEvent`** 更是將其完全盡可能極簡化，特別是如果不需要有額外參數傳入的 **`UnityEvent`** 更是可以直接 **在Editor中進行操作**
+而其中 **`UnityEvent`** 更是將其完全盡可能極簡化，特別是如果不需要有額外參數傳入的 **`UnityEvent`** 更是可以直接 **在Editor中進行操作**.
 
 為什麼要用事件機制，主要是為了降低程式之間的耦合度(Coupling)，日後維護起來就方便許多。
 
@@ -36,11 +36,20 @@ To configure a callback in the editor there are a few steps to take:
 
 When configuring a **`UnityEvent`** in the Inspector there are **two types of function calls** that are supported:
 
-- **Static**: **Static calls** are **preconfigured** calls, with **preconfigured values** that are set in the UI. This means that when the callback is invoked, the target function is invoked with the **argument that has been entered into the UI**.
+- **Static**: **Static calls** are **preconfigured** calls, with **preconfigured values** that are **set in the UI**. This means that when the callback is invoked, the target function is invoked with the **argument that has been entered into the UI**.
   
-- **Dynamic**: **Dynamic calls** are invoked using an **argument** that is **sent from code**, and this is bound to the type of **`UnityEvent`** that is being invoked. The **UI filters the callbacks** and only shows the **dynamic calls** that are valid for the **`UnityEvent`**.
+- **Dynamic**: **Dynamic calls** are invoked using an **argument** that is **sent from code**, and this is bound to the type of **`UnityEvent`** that is being invoked. The **UI filters the callbacks** and only shows the **dynamic calls** that are valid for the **`UnityEvent`**. **A method the argument(s) passed by the invoker would be passed down to the actual method**
 
-> Dynamic calls vs Static calls: dynamic using the argument sending from code, static using preconfigured values as argument entered into UI
+> Dynamic calls vs Static calls: dynamic using the arguments sending from code, static using preconfigured values as argument entered into UI
+
+> A UnityEvent only supports the following static types, since they need to be serialized inside the UnityEvent itself:
+> - int
+> - float
+> - string
+> - bool
+> - `UnityEngine.Object` reference
+
+https://forum.unity.com/threads/unityevent-passing-parameters-with-the-inspector.1249816/
 
 ### Steps for Using UnityEvents
 
@@ -100,9 +109,11 @@ public class TestingEventSubscriber : MonoBehaviour {
 
 **`UnityEvent`** has several generic overloads which you can use to add parameters(event data) through scripting.
 
-By default a **`UnityEvent`** in a **`Monobehaviour`** **binds dynamically to a void function**. This does not have to be the case as dynamic invocation of **`UnityEvents`** supports binding to functions with up to **4 arguments**. 
+By default a **`UnityEvent`** in a **`Monobehaviour`** **binds dynamically to a void function**. This does not have to be the case as dynamic invocation of **`UnityEvents`** supports **binding** to functions with up to **4 arguments**. 
 
-> To do this you need to define a **custom** **`UnityEvent`** class that supports multiple arguments. This is quite easy to do.
+> To do this you need to define a **custom** **`UnityEvent`** class that **supports multiple arguments**. This is quite easy to do.
+
+> Generic UnityEvents mainly used for dynamic binding, **a method the argument(s) passed by the invoker would be passed down to the actual method**.You can even us **UnityEvents** with **more than one argument** as the arguments are passed by the invoker.
 
 #### `UnityEventBase`
 
@@ -341,6 +352,7 @@ https://docs.unity3d.com/ScriptReference/Events.UnityAction.html
 https://docs.unity3d.com/Manual/UnityEvents.html \
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
 https://medium.com/geekculture/how-to-use-events-to-implement-a-messaging-system-in-unity-c-342ab4806d53 \
+https://forum.unity.com/threads/unityevent-passing-parameters-with-the-inspector.1249816/ \
 https://www.youtube.com/watch?v=oc3sQamIh-Q \
 https://www.youtube.com/watch?v=TWxXD-UpvSg \
 https://www.youtube.com/watch?v=J01z1F-du-E \
