@@ -227,9 +227,8 @@ UnityEvents can be defined with up to **4 arguments** in their generic definitio
 ### ref 
 https://docs.unity3d.com/Manual/UnityEvents.html \
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
+https://medium.com/geekculture/how-to-use-events-to-implement-a-messaging-system-in-unity-c-342ab4806d53 \
 https://www.youtube.com/watch?v=oc3sQamIh-Q \
 https://www.youtube.com/watch?v=TWxXD-UpvSg \
-https://www.youtube.com/watch?v=J01z1F-du-E 
-
-**`UnityEvent`** \
+https://www.youtube.com/watch?v=J01z1F-du-E \
 https://www.youtube.com/watch?v=djW7g6Bnyrc
