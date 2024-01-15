@@ -34,7 +34,7 @@ To configure a callback in the editor there are a few steps to take:
 
 4. Create a callback function/event handler for this event some where.
     
-5. In inspecter, the Event section you declared UnityEvent in the script, select the **"+"** icon to add a slot for a **callback**.
+5. In inspecter, the Event section you declared **`UnityEvent`** in the script, select the **"+"** icon to add a slot for a **callback**.
     
 6. Select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this)
     
@@ -47,7 +47,7 @@ To configure a callback in the editor there are a few steps to take:
 **Create your custom UnityEvents**:
 
 
-By default a `UnityEvent` in a `Monobehaviour` binds dynamically to a void function. This does not have to be the case as dynamic invocation of **`UnityEvents`** supports binding to functions with up to **4 arguments**. To do this you need to define a **custom** **`UnityEvent`** class that supports multiple arguments. This is quite easy to do:
+By default a **`UnityEvent`** in a **`Monobehaviour`** binds dynamically to a void function. This does not have to be the case as dynamic invocation of **`UnityEvents`** supports binding to functions with up to **4 arguments**. To do this you need to define a **custom** **`UnityEvent`** class that supports multiple arguments. This is quite easy to do:
 
 ```cs
 [Serializable]
