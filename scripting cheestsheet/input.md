@@ -7,7 +7,7 @@ https://docs.unity3d.com/ScriptReference/Input.html
 
 
 ### `Input.GetAxis( string axisName )`
-Returns the value of the virtual axis identified by axisName.
+Returns the value of the **virtual axis** identified by axisName.
 
 The value will be in the range **-1...1** for keyboard and joystick input devices.
 
