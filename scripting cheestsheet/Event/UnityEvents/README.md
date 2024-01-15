@@ -2,10 +2,20 @@
 **UnityEvents** are a way of allowing user driven callback to be persisted from edit time to run time without the need for additional programming and script configuration.
 
 
-不管是UnityEvent、Event，基本上都是基於Delegate所產生變體，而一旦使用了Event後，便可以極大幅的減少腳本之間的依賴，也不用在苦惱要在start還是update中getcomponet了，因為幾乎都可以用註冊的方式直接完成這些操作。
+不管是UnityEvent、Event，基本上都是基於Delegate所產生變體，而一旦使用了Event後，便可以極大幅的減少腳本之間的依賴，也不用在苦惱要在start還是update中**getComponet**了，因為幾乎都可以用註冊的方式直接完成這些操作。
 而其中UnityEvent更是將其完全盡可能極簡化，特別是如果不需要有額外參數傳入的UnityEvevt更是可以直接在Editor中進行操作
 
 為什麼要用事件機制，主要是為了降低程式之間的耦合度(Coupling)，日後維護起來就方便許多。
+
+UnityEvents are useful for a number of things:
+-   Content driven callbacks
+-   Decoupling systems
+-   Persistent callbacks
+-   Preconfigured call events
+
+  
+
+
 
 ### Using UnityEvents
 To configure a callback in the editor there are a few steps to take:
@@ -24,9 +34,9 @@ To configure a callback in the editor there are a few steps to take:
 
 When configuring a UnityEvent in the Inspector there are two types of function calls that are supported:
 
-- **Static**. Static calls are preconfigured calls, with preconfigured values that are set in the UI
-. This means that when the callback is invoked, the target function is invoked with the argument that has been entered into the UI.
-- **Dynamic**. Dynamic calls are invoked using an argument that is sent from code, and this is bound to the type of UnityEvent that is being invoked. The UI filters the callbacks and only shows the dynamic calls that are valid for the UnityEvent.
+- **Static**: Static calls are **preconfigured** calls, with **preconfigured values** that are set in the UI. This means that when the callback is invoked, the target function is invoked with the argument that has been entered into the UI.
+  
+- **Dynamic**: Dynamic calls are invoked using an **argument** that is sent from code, and this is bound to the type of **`UnityEvent`** that is being invoked. The **UI filters the callbacks** and only shows the **dynamic calls** that are valid for the **`UnityEvent`**.
   
 
 ### Steps for Using UnityEvents
