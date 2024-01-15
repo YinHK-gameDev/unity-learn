@@ -14,7 +14,9 @@ UnityEvents are useful for a number of things:
 -   Preconfigured call events
 
   
+**`UnityEvent`**s can be added to any **`MonoBehaviour`** and are executed from code like a standard **`.NET`** delegate. When a **`UnityEvent`** is added to a **`MonoBehaviour`** it appears in the Inspector and persistent callbacks can be added.
 
+**`UnityEvent`**s have similar limitations to standard delegates. That is, they hold references to the element that is the target and this stops the target being garbage collected. If you have a **`UnityEngine.Object`** as the target and the native representation disappears the callback will not be invoked.
 
 
 ### Using UnityEvents
