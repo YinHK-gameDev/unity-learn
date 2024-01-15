@@ -22,7 +22,7 @@ UnityEvents are useful for a number of things:
 ### Using UnityEvents
 To configure a callback in the editor there are a few steps to take:
 
-- Create `XXXManager` and attach `XXXManager.cs`.
+- Create **`XXXManager`** and attach **`XXXManager.cs`**.
 - Make sure your script **`imports/uses UnityEngine.Events`**.
 - Declare UnityEvent variable: **`[SerializeField] private UnityEvent trigger_name`**.
 - Inside trigger menthod, use **`invoke()`** method(eg: **`trigger_name.invoke()`**) to trigger callback.
