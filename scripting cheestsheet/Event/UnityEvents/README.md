@@ -3,7 +3,7 @@
 
 
 不管是UnityEvent、Event，基本上都是基於Delegate所產生變體，而一旦使用了Event後，便可以極大幅的減少腳本之間的依賴，也不用在苦惱要在start還是update中**getComponet**了，因為幾乎都可以用註冊的方式直接完成這些操作。
-而其中UnityEvent更是將其完全盡可能極簡化，特別是如果不需要有額外參數傳入的UnityEvevt更是可以直接在Editor中進行操作
+而其中UnityEvent更是將其完全盡可能極簡化，特別是如果不需要有額外參數傳入的 **`UnityEvent`**更是可以直接在Editor中進行操作
 
 為什麼要用事件機制，主要是為了降低程式之間的耦合度(Coupling)，日後維護起來就方便許多。
 
@@ -94,55 +94,8 @@ public class TestingEventSubscriber : MonoBehaviour {
 }
 ```
 
-```cs
-using UnityEngine;
-using UnityEngine.Events;
-using System.Collections;
 
-public class ExampleClass : MonoBehaviour
-{
-    public UnityEvent m_MyEvent;
-
-    void Start()
-    {
-        if (m_MyEvent == null)
-            m_MyEvent = new UnityEvent();
-
-        m_MyEvent.AddListener(Ping);
-    }
-
-    void Update()
-    {
-        if (Input.anyKeyDown && m_MyEvent != null)
-        {
-            m_MyEvent.Invoke();
-        }
-    }
-
-    void Ping()
-    {
-        Debug.Log("Ping");
-    }
-}
-```
-
-
-### Add Listener
-```cs
-void Start()
-{
-   //Add a listener to the new Event. Calls MyAction method when invoked
-   m_MyEvent.AddListener(MyAction);
-}
-```
-
-### Remove listener
-```cs
-m_MyEvent.RemoveListener(MyAction);
-```
-
-
-### Generic UnityEvents
+### Using Generic UnityEvents in script
 **Create your custom UnityEvents**:
 
 
@@ -170,6 +123,71 @@ This class provides the base functionality for the UnityEvents.
 
 
 https://docs.unity3d.com/ScriptReference/Events.UnityEventBase.html
+
+#### `UnityEvent`
+zero argument 
+
+```cs
+//constructor
+public UnityEvent();
+
+//declaration
+UnityEvent m_MyEvent;
+m_MyEvent = new UnityEvent();
+```
+
+Eg:
+```cs
+using UnityEngine;
+using UnityEngine.Events;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour
+{
+    UnityEvent m_MyEvent;
+
+    void Start()
+    {
+        if (m_MyEvent == null)
+            m_MyEvent = new UnityEvent();
+
+        m_MyEvent.AddListener(Ping);
+    }
+
+    void Update()
+    {
+        if (Input.anyKeyDown && m_MyEvent != null)
+        {
+            m_MyEvent.Invoke();
+        }
+    }
+
+    void Ping()
+    {
+        Debug.Log("Ping");
+    }
+}
+```
+
+**`UnityEvent.AddListener`**:
+
+Add listener in **`void Start()`**. Use this to add a runtime callback. Adding multiple identical listeners results in only a single call being made.
+```cs
+public void AddListener(Events.UnityAction call);
+```
+
+```cs
+void Start()
+{
+   //Add a listener to the new Event. Calls MyAction method when invoked
+   m_MyEvent.AddListener(MyAction);
+}
+```
+
+### Remove listener
+```cs
+m_MyEvent.RemoveListener(MyAction);
+```
 
 ####  `UnityEvent<T0>`
 One argument version of **`UnityEvent`**. If you wish to use a generic **`UnityEvent`** type you **must override** the class type.
