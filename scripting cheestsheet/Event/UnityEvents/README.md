@@ -172,33 +172,61 @@ This class provides the base functionality for the UnityEvents.
 https://docs.unity3d.com/ScriptReference/Events.UnityEventBase.html
 
 ####  `UnityEvent<T0>`
+One argument version of **`UnityEvent`**. If you wish to use a generic **`UnityEvent`** type you **must override** the class type.
 
 ```cs
-public class MyIntEvent : UnityEvent<T0>
+public class MyEventName : UnityEvent<T0>
 {
 }
 ```
-If you wish to use a generic UnityEvent type you must override the class type.
 
 Eg:
 ```cs
-[Serializable]
-public class StringEvent : UnityEvent <string> {}
+[System.Serializable]
+public class MyIntEvent : UnityEvent<int>
+{
+}
+
+public class ExampleClass : MonoBehaviour
+{
+    public MyIntEvent m_MyEvent;
+
+    void Start()
+    {
+        if (m_MyEvent == null)
+            m_MyEvent = new MyIntEvent();
+
+        m_MyEvent.AddListener(Ping);
+    }
+
+    void Update()
+    {
+        if (Input.anyKeyDown && m_MyEvent != null)
+        {
+            m_MyEvent.Invoke(5);
+        }
+    }
+
+    void Ping(int i)
+    {
+        Debug.Log("Ping" + i);
+    }
+}
 ```
 
 
 ```cs
-public class MyIntEvent : UnityEvent<T0,T1>
+public class MyEventName : UnityEvent<T0,T1>
 {
 }
 ```
 ```cs
-public class MyIntEvent : UnityEvent<T0,T1,T2>
+public class MyEventName : UnityEvent<T0,T1,T2>
 {
 }
 ```
 ```cs
-public class MyIntEvent : UnityEvent<T0,T1,T2,T3>
+public class MyEventName : UnityEvent<T0,T1,T2,T3>
 {
 }
 ```
