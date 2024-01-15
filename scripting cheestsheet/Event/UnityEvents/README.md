@@ -342,4 +342,5 @@ https://medium.com/geekculture/how-to-use-events-to-implement-a-messaging-system
 https://www.youtube.com/watch?v=oc3sQamIh-Q \
 https://www.youtube.com/watch?v=TWxXD-UpvSg \
 https://www.youtube.com/watch?v=J01z1F-du-E \
-https://www.youtube.com/watch?v=djW7g6Bnyrc
+https://www.youtube.com/watch?v=djW7g6Bnyrc \
+https://www.youtube.com/watch?v=k_RMhQ19aQA
