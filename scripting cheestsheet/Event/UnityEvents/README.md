@@ -184,10 +184,31 @@ void Start()
 }
 ```
 
-### Remove listener
+**`UnityEvent.RemoveListener`**:
+
+Remove a non persistent listener from the **`UnityEvent`**. If you have added the same listener multiple times, this method will remove all occurrences of it.
+
+Use this to remove a runtime callback.
+
+```cs
+public void RemoveListener(Events.UnityAction call);
+```
+
 ```cs
 m_MyEvent.RemoveListener(MyAction);
 ```
+
+**`UnityEvent.Invoke`**:
+Invoke all registered callbacks (runtime and persistent).
+
+```cs
+public void Invoke();
+```
+
+```cs
+m_MyEvent.Invoke();
+```
+
 
 ####  `UnityEvent<T0>`
 One argument version of **`UnityEvent`**. If you wish to use a generic **`UnityEvent`** type you **must override** the class type.
