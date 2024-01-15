@@ -79,6 +79,21 @@ To configure a callback in the editor there are a few steps to take:
 > Adding callback function through UI editor is for static calls only, with no parameters or exactly one parameter.
 
 
+![](./img/UnityEvent1.png)
+
+Dont pass any parameter in `Invoke()`, as parameter only be predefined and passed in UI editor. \
+![](./img/UnityEvent2.png)
+
+**With no parameter**: \
+![](./img/UnityEvent3.png) \
+If no parameter required, no predefined value can be set in UI editor. \
+![](./img/UnityEvent4.png)
+
+**With exactly one parameter**: \
+![](./img/UnityEvent5.png) \
+Then predefined value can be set in UI editor. \
+![](./img/UnityEvent6.png)
+
 ### Event vs UnityEvents
 - In c#  declare an event **must** use script to **add event listener**.
 - Using **`UnityEvent`**, you can use editor to **add event listener manually** in inspector.
