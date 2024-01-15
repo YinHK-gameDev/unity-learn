@@ -76,7 +76,7 @@ To configure a callback in the editor there are a few steps to take:
     
 8. You can add more than one callback for the event
 
-> Adding event listener in UI editor is for static calls only, with no parameters or exactly one parameter.
+> Adding callback function through UI editor is for static calls only, with no parameters or exactly one parameter.
 
 
 ### Event vs UnityEvents
