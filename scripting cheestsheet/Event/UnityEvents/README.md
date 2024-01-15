@@ -44,7 +44,7 @@ When configuring a **`UnityEvent`** in the Inspector there are **two types of fu
 
 > In inspector, the dynamic calls are the methods that the parameters are passed to invoke() from code, not **preconfigured values**/**static paramete**r in inspector. Multiple parameters(Up to 4 arguments) can be passed to the invoker. 
 
-> Static calls are the method with static parameters, he method can only take a single argument and that argument is serialized in the inspector. 
+> Static calls are the method with static parameters, the method without any parameter or exactly one parameter that argument is serialized in the inspector. 
 
 > A UnityEvent only supports the following static types, since they need to be serialized inside the UnityEvent itself:
 > - int
