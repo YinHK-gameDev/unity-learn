@@ -34,13 +34,13 @@ To configure a callback in the editor there are a few steps to take:
 - **`void OnEnable()`** or other **`OnEventName`** method to subcribe the event.
 - **`void OnDisable()`** or other **`OnEventName`** method to unsubscribe the event.
 
-When configuring a UnityEvent in the Inspector there are two types of function calls that are supported:
+When configuring a **`UnityEvent`** in the Inspector there are **two types of function calls** that are supported:
 
-- **Static**: Static calls are **preconfigured** calls, with **preconfigured values** that are set in the UI. This means that when the callback is invoked, the target function is invoked with the **argument that has been entered into the UI**.
+- **Static**: **Static calls** are **preconfigured** calls, with **preconfigured values** that are set in the UI. This means that when the callback is invoked, the target function is invoked with the **argument that has been entered into the UI**.
   
-- **Dynamic**: Dynamic calls are invoked using an **argument** that is **sent from code**, and this is bound to the type of **`UnityEvent`** that is being invoked. The **UI filters the callbacks** and only shows the **dynamic calls** that are valid for the **`UnityEvent`**.
+- **Dynamic**: **Dynamic calls** are invoked using an **argument** that is **sent from code**, and this is bound to the type of **`UnityEvent`** that is being invoked. The **UI filters the callbacks** and only shows the **dynamic calls** that are valid for the **`UnityEvent`**.
 
-> Dynamic vs Static: dynamic using the argument sending from code, static using preconfigured values as argument entered into UI
+> Dynamic calls vs Static calls: dynamic using the argument sending from code, static using preconfigured values as argument entered into UI
 
 ### Steps for Using UnityEvents
 
