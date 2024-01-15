@@ -214,17 +214,24 @@ public class ExampleClass : MonoBehaviour
 }
 ```
 
-
+#### `UnityEvent<T0,T1>`
+Two argument version of **`UnityEvent`**.
 ```cs
 public class MyEventName : UnityEvent<T0,T1>
 {
 }
 ```
+
+#### `UnityEvent<T0,T1,T2>`
+Three argument version of UnityEvent
 ```cs
 public class MyEventName : UnityEvent<T0,T1,T2>
 {
 }
 ```
+
+#### `UnityEvent<T0,T1,T2,T3>`
+Four argument version of UnityEvent
 ```cs
 public class MyEventName : UnityEvent<T0,T1,T2,T3>
 {
