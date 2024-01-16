@@ -27,10 +27,25 @@ To return the contents of a Prefab instance into a regular GameObject
 
 You can unpack a Prefab instance by **right-clicking on it in the Hierarchy to select Prefab and selecting Unpack Prefab.** The resulting GameObject in the Scene no longer has any link to its former Prefab Asset. The Prefab Asset itself is not affected by this operation and there may still be other instances of it in your Project.
 
+### Instance overrides
+Instance overrides allow you to create variations between Prefab
+ instances, while still linking those instances to the same Prefab Asset.
+
+When you modify a Prefab Asset, the changes are reflected in all of its instances. However, you can also make modifications directly to an individual instance. Doing this creates an instance override on that particular instance.
+
+https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html
+
+### Unused Overrides
+Instance override values are stored as data in the scene or prefab in which they are defined. However, an override becomes “unused” if its target object is either invalid or its Property Path is unknown. In this case, the data becomes unused. It is still stored in the scene file, but is redundant.
+ 
+https://docs.unity3d.com/Manual/UnusedOverrides.html
+
+
 
 ### ref
 https://learn.unity.com/tutorial/prefabs-e# \
 https://docs.unity3d.com/Manual/InstantiatingPrefabs.html \
 https://docs.unity3d.com/Manual/UnpackingPrefabInstances.html
 
+https://docs.unity3d.com/Manual/EditingPrefabViaInstance.html
 
