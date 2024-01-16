@@ -17,6 +17,8 @@ This is frame-rate independent; you do not need to be concerned about varying fr
   
 To set up your input or view the options for `axisName`, go to **Edit** > **Project Settings** > **Input Manager**. This brings up the Input Manager. Expand **Axis** to see the list of your current inputs. You can use one of these as the `axisName`. To rename the input or change the positive button etc., expand one of the options, and change the name in the **Name** field or **Positive Button** field. Also, change the **Type** to **Joystick Axis**. To add a new input, add 1 to the number in the **Size** field.
 
+- `Input.GetAxis("Vertical")` get the vertical axis. By default map to the arrow key up and down
+- `Input.GetAxis("Horizontal")` get the horizontal axis. By default map to the arrow keyleft and right
 
 ```cs
 using UnityEngine;
