@@ -113,6 +113,8 @@ https://www.youtube.com/@RemptyGame/videos
 
 **https://gamedevbeginner.com/**
 
+**https://kdoore.gitbook.io/cs2335/introduction/readme**
+
 ✒️ **Live streaming from other expert**
 
 **https://learn.unity.com/live-calendar/?tab=previous**
@@ -261,7 +263,7 @@ https://unity.com/products/unity-certifications/professional-programmer
 **https://unityedustore-global3.pearsonvue.com/unity-bundles/c/13133**
 
 **Special offer** \
-https://unityedustore-global3.pearsonvue.com/unity-bundles/c/13133
+**https://unityedustore-global3.pearsonvue.com/unity-bundles/c/13133**
 
 **Practice Tests** \
 **https://unityedustore-global3.pearsonvue.com/unity-practice-tests/c/13109**
