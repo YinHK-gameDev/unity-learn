@@ -31,6 +31,9 @@ Axis values can be:
 -   Between –1 and 1 for joystick and keyboard input. The neutral position for these axes is 0. Some types of controls, such as buttons on a keyboard, aren’t sensitive to input intensity, so they can’t produce values other than –1, 0, or 1.
 -   Mouse delta (how much the mouse has moved during the last frame) for mouse input. The values for mouse input axes can be larger than 1 or smaller than –1 when the user moves the mouse quickly.
 
+
+> To set up your input or view the options for `axisName`, go to **Edit** > **Project Settings** > **Input Manager**. This brings up the Input Manager. Expand **Axis** to see the list of your current inputs. You can use one of these as the `axisName`. To rename the input or change the positive button etc., expand one of the options
+
 ### Mapping virtual axes to controls
 
 To map a key or button to an axis, enter its name in the **Positive Button** or **Negative Button** property in the Input Manager.
