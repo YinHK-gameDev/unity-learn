@@ -5,9 +5,58 @@ The Input Manager window allows you to define input axes and their associated ac
 
 The Input Manager uses the following types of controls:
 
-- **Key** refers to any key on a physical keyboard, such as W, Shift, or the space bar.
+- **Key** refers to **any key on a physical keyboard**, such as W, Shift, or the space bar. The Physical keys option allows you to map key codes to the physical keyboard layout, rather than to the language-specific layout that may vary between users in different regions.
 - **Button** refers to **any button on a physical controller** (for example, gamepads), such as the X button on a remote control.
-- A **virtual axis** is **mapped to a control**, such as a **button or a key**. When the user activates the control, the axis receives a value in the range of **`[–1..1]`**. You can **use this value in your scripts**.
+- A **virtual axis** is **mapped to a control**, such as a **button or a key**. When the user activates the control, the axis receives a value in the range of **`[–1..1]`**. You can **use this value in your scripts**. Every Project you create has a number of input axes created by default. These axes enable you to use keyboard, mouse, and joystick input in your Project straight away.
+
+
+### Virtual axes
+
+| Property | Function |
+| --- | --- |
+| Name | Axis name. You can use this to access the axis from scripts. |
+| Descriptive Name, Descriptive Negative Name | These values are deprecated and do not work. Previously, they displayed for the user on the Rebind Controls screen at startup, but this screen has also been deprecated. |
+| Negative Button, Positive Button | The controls to push the axis in the negative and positive direction respectively. These can be keys on a keyboard, or buttons on a joystick or mouse. |
+| Alt Negative Button, Alt Positive Button | Alternative controls to push the axis in the negative and positive direction respectively. |
+| Gravity | Speed in units per second that the axis falls toward neutral when no input is present. |
+| Dead | How far the user needs to move an analog stick before your application registers the movement. At runtime, input from all analog devices that falls within this range will be considered null. |
+| Sensitivity | Speed in units per second that the axis will move toward the target value. This is for digital devices only. |
+| Snap | If enabled, the axis value will reset to zero when pressing a button that corresponds to the opposite direction. |
+| Type | The type of input that controls the axis. Select from these values:- Key or Mouse button- Mouse Movement- Joystick Axis |
+| Axis | The axis of a connected device that controls this axis. |
+| JoyNum | The connected Joystic |
+
+Axis values can be:
+
+-   Between –1 and 1 for joystick and keyboard input. The neutral position for these axes is 0. Some types of controls, such as buttons on a keyboard, aren’t sensitive to input intensity, so they can’t produce values other than –1, 0, or 1.
+-   Mouse delta (how much the mouse has moved during the last frame) for mouse input. The values for mouse input axes can be larger than 1 or smaller than –1 when the user moves the mouse quickly.
+
+### Mapping virtual axes to controls
+
+To map a key or button to an axis, enter its name in the **Positive Button** or **Negative Button** property in the Input Manager.
+
+Key names follow these naming conventions:
+
+ 
+| **Key family** | **Naming convention** |
+| --- | --- |
+| Letter keys | `a`, `b`, `c`… |
+| Number keys | `1`, `2`, `3`… |
+| Arrow keys | `up`, `down`, `left`, `right` |
+| Numpad keys | `[1]`, `[2]`, `[3]`, `[+]`, `[equals]`… |
+| Modifier keys | `right shift`, `left shift`, `right ctrl`, `left ctrl`, `right alt`, `left alt`, `right cmd`, `left cmd` |
+| Special keys | `backspace`, `tab`, `return`, `escape`, `space`, `delete`, `enter`, `insert`, `home`, `end`, `page up`, `page down` |
+| Function keys | `f1`, `f2`, `f3`… |
+
+Mouse buttons are named `mouse 0, mouse 1, mouse 2,` and so on.
+
+Joystick buttons follow these naming conventions:
+
+ 
+| **Button origin** | **Naming convention** |
+| --- | --- |
+| A specific button on any joystick | `joystick button 0`, `joystick button 1`, `joystick button 2`… |
+| A specific button on a specific joystick | `joystick 1 button 0`, `joystick 1 button 1`, `joystick 2 button 0`… |
 
 https://docs.unity3d.com/Manual/class-InputManager.html
 
