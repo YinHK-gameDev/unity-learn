@@ -59,12 +59,107 @@ Add **Event System** component to an UI gameobject.
 | **Drag Threshold** | The soft area for dragging in pixels. |
 
 
+### Events
+
+#### Messaging System
+The new UI system uses a messaging system designed to replace SendMessage. The system is pure C# and aims to address some of the issues present with SendMessage.
+
+**Defining A Custom Message**
+
+If you wish to define a custom message it is relatively simple. In the UnityEngine.EventSystems namespace there is a base interface called 'IEventSystemHandler'. Anything that extends from this can be considered as a target for receiving events via the messaging system.
+
+```
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">ICustomMessageTarget</span> : <span class="hljs-title">IEventSystemHandler</span>
+{
+    <span class="hljs-comment">// functions that can be called via the messaging system</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Message1</span>(<span class="hljs-params"></span>)</span>;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Message2</span>(<span class="hljs-params"></span>)</span>;
+}
+```
+
+Once this interface is defined then it can be implemented by a MonoBehaviour. When implemented it defines the functions that will be executed if the given message is issued against this MonoBehaviours GameObject.
+
+```
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> CustomMessageTarget : MonoBehaviour, ICustomMessageTarget
+{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Message1</span><span class="hljs-params">()</span>
+    </span>{
+        Debug.Log (<span class="hljs-string">"Message 1 received"</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Message2</span><span class="hljs-params">()</span>
+    </span>{
+        Debug.Log (<span class="hljs-string">"Message 2 received"</span>);
+    }
+}
+```
+
+Now that a script exists that can receive the message we need to issue the message. Normally this would be in response to some loosely coupled event that occurs. For example, in the UI system we issue events for such things as PointerEnter and PointerExit, as well as a variety of other things that can happen in response to user input into the application.
+
+To send a message a static helper class exists to do this. As arguments it requires a target object for the message, some user specific data, and a functor that maps to the specific function in the message interface you wish to target.
+
+```
+ExecuteEvents.Execute&lt;ICustomMessageTarget&gt;(target, <span class="hljs-literal">null</span>, <span class="hljs-function"><span class="hljs-params">(x,y)</span>=&gt;</span>x.Message1());
+```
+
+This code will execute the function Message1 on any components on the GameObject target that implement the ICustomMessageTarget interface. The scripting documentation for the ExecuteEvents class covers other forms of the Execute functions, such as Executing in children or in parents.
+
+
+#### Input Modules
+An Input Module is where the main logic of an event system can be configured and customized. Out of the box there are two provided Input Modules, one designed for Standalone, and one designed for Touch input. Each module receives and dispatches events as you would expect on the given configuration.
+
+Input modules are where the 'business logic' of the Event System take place. When the Event System is enabled it looks at what Input Modules are attached and passes update handling to the specific module.
+
+Input modules are designed to be extended or modified based on the input systems that you wish to support. Their purpose is to map hardware specific input (such as touch, joystick, mouse, motion controller) into events that are sent via the messaging system.
+
+The built in Input Modules are designed to support common game configurations such as touch input, controller input, keyboard input, and mouse input. They send a variety of events to controls in the application, if you implement the specific interfaces on your MonoBehaviours. All of the UI components implement the interfaces that make sense for the given component.
+
+#### Supported Events
+
+The Event System supports a number of events, and they can be customized further in user custom user written Input Modules.
+
+The events that are supported by the Standalone Input Module and Touch Input Module are provided by interface and can be implemented on a MonoBehaviour by implementing the interface. If you have a valid Event System configured the events will be called at the correct time.
+
+
+-   [IPointerEnterHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IPointerEnterHandler.html) - OnPointerEnter - Called when a pointer enters the object
+-   [IPointerExitHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IPointerExitHandler.html) - OnPointerExit - Called when a pointer exits the object
+-   [IPointerDownHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IPointerDownHandler.html) - OnPointerDown - Called when a pointer is pressed on the object
+-   [IPointerUpHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IPointerUpHandler.html)\- OnPointerUp - Called when a pointer is released (called on the GameObject that the pointer is clicking)
+-   [IPointerClickHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IPointerClickHandler.html) - OnPointerClick - Called when a pointer is pressed and released on the same object
+-   [IInitializePotentialDragHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IInitializePotentialDragHandler.html) - OnInitializePotentialDrag - Called when a drag target is found, can be used to initialize values
+-   [IBeginDragHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IBeginDragHandler.html) - OnBeginDrag - Called on the drag object when dragging is about to begin
+-   [IDragHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IDragHandler.html) - OnDrag - Called on the drag object when a drag is happening
+-   [IEndDragHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IEndDragHandler.html) - OnEndDrag - Called on the drag object when a drag finishes
+-   [IDropHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IDropHandler.html) - OnDrop - Called on the object where a drag finishes
+-   [IScrollHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IScrollHandler.html) - OnScroll - Called when a mouse wheel scrolls
+-   [IUpdateSelectedHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IUpdateSelectedHandler.html) - OnUpdateSelected - Called on the selected object each tick
+-   [ISelectHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.ISelectHandler.html) - OnSelect - Called when the object becomes the selected object
+-   [IDeselectHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IDeselectHandler.html) - OnDeselect - Called on the selected object becomes deselected
+-   [IMoveHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IMoveHandler.html) - OnMove - Called when a move event occurs (left, right, up, down)
+-   [ISubmitHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.ISubmitHandler.html) - OnSubmit - Called when the submit button is pressed
+-   [ICancelHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.ICancelHandler.html) - OnCancel - Called when the cancel button is pressed
+
+
+
+
 
 ### ref
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/EventSystem.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/EventSystem.html
 
 **learn event system** \
 https://learn.unity.com/tutorial/working-with-the-event-system#
+
+**Messaging System** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/MessagingSystem.html
+
+**Input Modules** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/InputModules.html
+
+**Supported Events** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html
+
+**Raycasters** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/Raycasters.html
 
 **`UnityEngine.EventSystems`** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.html
@@ -77,7 +172,7 @@ https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/SupportedEvents.html
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/Raycasters.html
 
 **Event System Reference** \
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-EventSystem.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-EventSystem.html
 
-**Creating a Simple Messaging System** \
-https://learn.unity.com/tutorial/create-a-simple-messaging-system-with-events#5cf5960fedbc2a281acd21fa
+**ULTIMATE Event System for Unity Beginners** \
+https://www.youtube.com/watch?v=7_dyDmF0Ktw&t=1s
