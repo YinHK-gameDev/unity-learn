@@ -1,6 +1,6 @@
 ## Event System
 
-An EventSystem component is automatically created alongside your UI and contains several Input Modules. These modules are responsible for deciding how GameObjects in your UI respond to input — if a corresponding GameObject within your UI contains the same Input Module as the one in your EventSystem, it can be interacted with.
+An **`EventSystem`** component is automatically created **alongside your UI** and contains **several Input Modules**. These modules are responsible for deciding how GameObjects in your **UI respond to input** — if a corresponding GameObject within your UI contains the same Input Module as the one in your **`EventSystem`**, it can be interacted with.
 
 
 ### ref
