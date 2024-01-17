@@ -121,23 +121,23 @@ The Event System supports a number of events, and they can be customized further
 The events that are supported by the Standalone Input Module and Touch Input Module are provided by interface and can be implemented on a MonoBehaviour by implementing the interface. If you have a valid Event System configured the events will be called at the correct time.
 
 
--   [IPointerEnterHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IPointerEnterHandler.html) - OnPointerEnter - Called when a pointer enters the object
--   [IPointerExitHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IPointerExitHandler.html) - OnPointerExit - Called when a pointer exits the object
--   [IPointerDownHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IPointerDownHandler.html) - OnPointerDown - Called when a pointer is pressed on the object
--   [IPointerUpHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IPointerUpHandler.html)\- OnPointerUp - Called when a pointer is released (called on the GameObject that the pointer is clicking)
--   [IPointerClickHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IPointerClickHandler.html) - OnPointerClick - Called when a pointer is pressed and released on the same object
--   [IInitializePotentialDragHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IInitializePotentialDragHandler.html) - OnInitializePotentialDrag - Called when a drag target is found, can be used to initialize values
--   [IBeginDragHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IBeginDragHandler.html) - OnBeginDrag - Called on the drag object when dragging is about to begin
--   [IDragHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IDragHandler.html) - OnDrag - Called on the drag object when a drag is happening
--   [IEndDragHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IEndDragHandler.html) - OnEndDrag - Called on the drag object when a drag finishes
--   [IDropHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IDropHandler.html) - OnDrop - Called on the object where a drag finishes
--   [IScrollHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IScrollHandler.html) - OnScroll - Called when a mouse wheel scrolls
--   [IUpdateSelectedHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IUpdateSelectedHandler.html) - OnUpdateSelected - Called on the selected object each tick
--   [ISelectHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.ISelectHandler.html) - OnSelect - Called when the object becomes the selected object
--   [IDeselectHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IDeselectHandler.html) - OnDeselect - Called on the selected object becomes deselected
--   [IMoveHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.IMoveHandler.html) - OnMove - Called when a move event occurs (left, right, up, down)
--   [ISubmitHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.ISubmitHandler.html) - OnSubmit - Called when the submit button is pressed
--   [ICancelHandler](https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html../api/UnityEngine.EventSystems.ICancelHandler.html) - OnCancel - Called when the cancel button is pressed
+-   `IPointerEnterHandler` - OnPointerEnter - Called when a pointer enters the object
+-   `IPointerExitHandler` - OnPointerExit - Called when a pointer exits the object
+-   `IPointerDownHandler` - OnPointerDown - Called when a pointer is pressed on the object
+-   `IPointerUpHandler`- OnPointerUp - Called when a pointer is released (called on the GameObject that the pointer is clicking)
+-   `IPointerClickHandler` - OnPointerClick - Called when a pointer is pressed and released on the same object
+-  `IInitializePotentialDragHandle` - OnInitializePotentialDrag - Called when a drag target is found, can be used to initialize values
+-   `IBeginDragHandler` - OnBeginDrag - Called on the drag object when dragging is about to begin
+-   `IDragHandler` - OnDrag - Called on the drag object when a drag is happening
+-   `IEndDragHandler` - OnEndDrag - Called on the drag object when a drag finishes
+-   `IDropHandler` - OnDrop - Called on the object where a drag finishes
+-   `IScrollHandler` - OnScroll - Called when a mouse wheel scrolls
+-   `IUpdateSelectedHandler` - OnUpdateSelected - Called on the selected object each tick
+-   `ISelectHandler` - OnSelect - Called when the object becomes the selected object
+-   `IDeselectHandler` - OnDeselect - Called on the selected object becomes deselected
+-   `IMoveHandler` - OnMove - Called when a move event occurs (left, right, up, down)
+-   `ISubmitHandler` - OnSubmit - Called when the submit button is pressed
+-   `ICancelHandler` - OnCancel - Called when the cancel button is pressed
 
 
 
