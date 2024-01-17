@@ -75,28 +75,28 @@ The new UI system uses a messaging system designed to replace SendMessage. The s
 
 If you wish to define a custom message it is relatively simple. In the UnityEngine.EventSystems namespace there is a base interface called 'IEventSystemHandler'. Anything that extends from this can be considered as a target for receiving events via the messaging system.
 
-```
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">ICustomMessageTarget</span> : <span class="hljs-title">IEventSystemHandler</span>
+```cs
+public interface ICustomMessageTarget : IEventSystemHandler
 {
-    <span class="hljs-comment">// functions that can be called via the messaging system</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Message1</span>(<span class="hljs-params"></span>)</span>;
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Message2</span>(<span class="hljs-params"></span>)</span>;
+    // functions that can be called via the messaging system
+    void Message1();
+    void Message2();
 }
 ```
 
 Once this interface is defined then it can be implemented by a MonoBehaviour. When implemented it defines the functions that will be executed if the given message is issued against this MonoBehaviours GameObject.
 
-```
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> CustomMessageTarget : MonoBehaviour, ICustomMessageTarget
+```cs
+public class CustomMessageTarget : MonoBehaviour, ICustomMessageTarget
 {
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Message1</span><span class="hljs-params">()</span>
-    </span>{
-        Debug.Log (<span class="hljs-string">"Message 1 received"</span>);
+    public void Message1()
+    {
+        Debug.Log ("Message 1 received");
     }
 
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Message2</span><span class="hljs-params">()</span>
-    </span>{
-        Debug.Log (<span class="hljs-string">"Message 2 received"</span>);
+    public void Message2()
+    {
+        Debug.Log ("Message 2 received");
     }
 }
 ```
@@ -105,8 +105,8 @@ Now that a script exists that can receive the message we need to issue the messa
 
 To send a message a static helper class exists to do this. As arguments it requires a target object for the message, some user specific data, and a functor that maps to the specific function in the message interface you wish to target.
 
-```
-ExecuteEvents.Execute&lt;ICustomMessageTarget&gt;(target, <span class="hljs-literal">null</span>, <span class="hljs-function"><span class="hljs-params">(x,y)</span>=&gt;</span>x.Message1());
+```cs
+ExecuteEvents.Execute<ICustomMessageTarget>(target, null, (x,y)=>x.Message1());
 ```
 
 This code will execute the function Message1 on any components on the GameObject target that implement the ICustomMessageTarget interface. The scripting documentation for the ExecuteEvents class covers other forms of the Execute functions, such as Executing in children or in parents.
