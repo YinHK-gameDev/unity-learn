@@ -32,7 +32,7 @@ If you want to write a custom Input Module, send events supported by existing UI
 
 ### Raycasters
 
-Raycasters are used for figuring out what the pointer is over. It is common for Input Modules to use the Raycasters configured in the Scene to calculate what the pointing device is over.
+Raycasters are used for figuring out **what the pointer is over**. It is common for Input Modules to **use the Raycasters configured in the Scene to calculate what the pointing device is over**.
 
 There are 3 provided Raycasters that exist by default:
 
