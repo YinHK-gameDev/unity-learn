@@ -34,11 +34,18 @@ If you want to write a custom Input Module, send events supported by existing UI
 
 Raycasters are used for figuring out **what the pointer is over**. It is common for Input Modules to **use the Raycasters configured in the Scene to calculate what the pointing device is over**.
 
+The Event System needs a method for detecting where current input events need to be sent to, and this is provided by the Raycasters. Given a screen space position they will collect all potential targets, figure out if they are under the given position, and then return the object that is closest to the screen. 
+
 There are 3 provided Raycasters that exist by default:
 
 - **Graphic Raycaster** - Used for UI elements
 - **Physics 2D Raycaster** - Used for 2D physics elements
 - **Physics Raycaster** - Used for 3D physics elements
+
+When a Raycaster is present and enabled in the scene it will be used by the Event System whenever a query is issued from an Input Module.
+
+If multiple Raycasters are used then they will all have casting happen against them and the results will be sorted based on distance to the elements.
+
 
 
 ### Event System Component
