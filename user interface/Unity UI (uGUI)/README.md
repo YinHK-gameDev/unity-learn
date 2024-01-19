@@ -95,19 +95,13 @@ https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIEffects.html
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/index.html
 
 **`UnityEngine.UI` scripting API** \
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.UI.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.html
 
 **`UnityEditor.UI` scripting API** \
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEditor.UI.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEditor.UI.html
 
 **uGUI reference** \
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIReference.html
-
-**`UnityEngine.UIElements`** \
-https://docs.unity3d.com/Packages/com.unity.ui@1.0/api/UnityEngine.UIElements.html
-
-**`UnityEditor.UIElements`** \
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Toggle.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIReference.html
 
 
 
