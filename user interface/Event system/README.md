@@ -21,9 +21,9 @@ Unity’s EventSystem allows your UI to respond to events.
 
 An Input Module is where the main logic of how you want the Event System to behave lives, they are used for:
 
--   Handling Input
--   Managing event state
--   Sending events to scene objects.
+- **Handling Input**
+- **Managing event state**
+- **Sending events** to scene objects.
 
 Only one Input Module can be active in the Event System at a time, and they must be components on the same GameObject as the Event System component.
 
