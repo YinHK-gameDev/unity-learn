@@ -50,6 +50,38 @@ When a **Raycaster** is present and enabled in the scene it will be used by the 
 
 If multiple Raycasters are used then they will all have casting happen against them and the results will be sorted based on distance to the elements.
 
+#### Graphic Raycaster
+The Graphic Raycaster is used to **raycast against a Canvas**. The Raycaster looks at all Graphics on the canvas and determines if any of them have been hit.
+
+The Graphic Raycaster can be configured to ignore backfacing Graphics as well as be blocked by 2D or 3D objects that exist in front of it. A manual priority can also be applied if you want processing of this element to be forced to the front or back of the Raycasting.
+
+| **_Property:_** | **_Function:_** |
+| --- | --- |
+| **Ignore Reversed Graphics** | Should graphics facing away from the raycaster be considered? |
+| **Blocked Objects** | Type of objects that will block graphic raycasts. |
+| **Blocking Mask** | Type of objects that will block graphic raycasts. |
+
+#### Physics Raycaster
+
+The Raycaster raycasts against 3D objects in the scene. This allows messages to be sent to 3D physics objects that implement event interfaces.
+
+| **_Property:_** | **_Function:_** |
+| --- | --- |
+| **Depth** | Get the depth of the configured camera. |
+| **Event Camera** | Get the camera that is used for this module. |
+| **Event Mask** | Logical and of Camera mask and eventMask. |
+| **Final Event Mask** | Logical and of Camera mask and eventMask. |
+
+#### Physics 2D Raycaster
+The 2D Raycaster raycasts against 2D objects in the scene. This allows messages to be sent to 2D physics objects that implement event interfaces. The Camera GameObject needs to be used and will be added to the GameObject if the Physics 3D Raycaster is not added to the Camera GameObject
+
+| **_Property:_** | **_Function:_** |
+| --- | --- |
+| **Event Camera** | The camera that will generate rays for this raycaster. |
+| **Priority** | Priority of the caster relative to other casters. |
+| **Sort Order Priority** | Priority of the raycaster based upon sort order. |
+| **Render Order Priority** | Priority of the raycaster based upon render order. |
+
 
 
 ### Event System Component
