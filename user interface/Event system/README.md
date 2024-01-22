@@ -123,6 +123,17 @@ Input modules are designed to be extended or modified based on the input systems
 
 The built in Input Modules are designed to support common game configurations such as touch input, controller input, keyboard input, and mouse input. They send a variety of events to controls in the application, if you implement the specific interfaces on your MonoBehaviours. All of the UI components implement the interfaces that make sense for the given component.
 
+
+#### Event Trigger
+
+The Event Trigger receives events from the Event System and calls registered functions for each event.
+
+The Event Trigger can be used to specify functions you wish to be called for each Event System event. You can assign multiple functions to a single event and whenever the Event Trigger receives that event it will call those functions.
+
+Note that attaching an Event Trigger component to a GameObject will make that object intercept all events, and no event bubbling will occur from this object!
+
+
+
 #### Supported Events
 
 The Event System supports a number of events, and they can be customized further in user custom user written Input Modules.
@@ -147,7 +158,6 @@ The events that are supported by the Standalone Input Module and Touch Input Mod
 -   `IMoveHandler` - OnMove - Called when a move event occurs (left, right, up, down)
 -   `ISubmitHandler` - OnSubmit - Called when the submit button is pressed
 -   `ICancelHandler` - OnCancel - Called when the cancel button is pressed
-
 
 
 
@@ -184,6 +194,9 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-PhysicsRaycas
 
 **Physics 2D Raycaster** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-Physics2DRaycaster.html
+
+**Event Trigger** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-EventTrigger.html
 
 **`UnityEngine.EventSystems`** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.html
