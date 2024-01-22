@@ -1,6 +1,8 @@
 ## Event system
 The **Event System** is a way of **sending events to objects** in the application based on **input, be it keyboard, mouse, touch, or custom input**. 
 
+**Objects receive these events based on on user input**.
+
 The **Event System** consists of a **few components** that work together to send events.
 
 When you add an **Event System component** to a GameObject you will notice that it does not have much functionality exposed, this is because the Event System itself is designed as a manager and facilitator of communication between **Event System** modules.
@@ -16,8 +18,6 @@ The primary roles of the **Event System** are as follows:
 Unity’s EventSystem allows your UI to respond to events.
 
 > An **EventSystem component** is **automatically created alongside your UI** and **contains several Input Modules**. These modules are responsible for deciding how GameObjects in your UI respond to input — if a corresponding GameObject within your UI contains the same Input Module as the one in your EventSystem, it can be interacted with.
-
-
 
 ### Input Modules
 
