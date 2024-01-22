@@ -162,13 +162,28 @@ https://learn.unity.com/tutorial/working-with-the-event-system#
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/MessagingSystem.html
 
 **Input Modules** \
-https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/InputModules.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/InputModules.html\
+
+**Standalone Input Module** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-StandaloneInputModule.html
+
+**Touch Input Module** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-TouchInputModule.html
 
 **Supported Events** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html
 
 **Raycasters** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/Raycasters.html
+
+**Graphic Raycaster** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-GraphicRaycaster.html
+
+**Physics Raycaster** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-PhysicsRaycaster.html
+
+**Physics 2D Raycaster** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-Physics2DRaycaster.html
 
 **`UnityEngine.EventSystems`** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.html
