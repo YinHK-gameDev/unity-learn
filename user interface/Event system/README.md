@@ -43,7 +43,7 @@ The built in Input Modules are designed to support common game configurations su
 
 #### Standalone Input Module
 
-The module is designed to work as you would expect a controller / mouse input to work. Events for button presses, dragging, and similar are sent in response to input.
+The module is designed to work as you would expect a **controller / mouse input to work**. Events for button presses, dragging, and similar are sent in response to input.
 
 The module sends pointer events to components as a mouse / input device is moved around, and uses the Graphics Raycaster and Physics Raycaster to calculate which element is currently pointed at by a given pointer device. You can configure these raycasters to detect or ignore parts of your Scene, to suit your requirements.
 
