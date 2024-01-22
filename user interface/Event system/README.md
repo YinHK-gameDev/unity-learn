@@ -178,8 +178,11 @@ https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/SupportedEvents.html
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/Raycasters.html
 
+**UI Reference** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIReference.html
+
 **Event System Reference** \
-https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-EventSystem.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/EventSystemReference.html
 
 **ULTIMATE Event System for Unity Beginners** \
 https://www.youtube.com/watch?v=7_dyDmF0Ktw&t=1s
