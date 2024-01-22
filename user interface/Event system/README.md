@@ -51,6 +51,8 @@ If multiple Raycasters are used then they will all have casting happen against t
 
 
 ### Event System Component
+An **EventSystem component** is automatically created alongside your UI and contains several Input Modules. 
+
 This subsystem is responsible for controlling all the other elements that make up eventing. It coordinates which Input Module is currently active, which GameObject is currently considered 'selected', and a host of other high level Event System concepts.
 
 Each 'Update' the Event System receives the call, looks through its Input Modules and figures out which is the Input Module that should be used for this tick. It then delegates the processing to the modules.
