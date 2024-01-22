@@ -175,7 +175,7 @@ https://learn.unity.com/tutorial/working-with-the-event-system#
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/MessagingSystem.html
 
 **Input Modules** \
-https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/InputModules.html\
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/InputModules.html
 
 **Standalone Input Module** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-StandaloneInputModule.html
