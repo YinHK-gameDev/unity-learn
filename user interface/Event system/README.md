@@ -82,6 +82,8 @@ The Graphic Raycaster is used to **raycast against a Canvas**. The Raycaster loo
 
 The Graphic Raycaster can be configured to ignore backfacing Graphics as well as be blocked by 2D or 3D objects that exist in front of it. A manual priority can also be applied if you want processing of this element to be forced to the front or back of the Raycasting.
 
+> When a UI is created, a Graphic Raycaster is **automatically included within the Canvas**.
+
 | **_Property:_** | **_Function:_** |
 | --- | --- |
 | **Ignore Reversed Graphics** | Should graphics facing away from the raycaster be considered? |
