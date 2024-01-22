@@ -105,5 +105,6 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEditor.UI.html
 **uGUI reference** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIReference.html
 
-
+**uGUI Scripting API** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/index.html
 
