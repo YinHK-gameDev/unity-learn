@@ -239,10 +239,12 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/Raycasters.html
 
 **Graphic Raycaster** \
-https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-GraphicRaycaster.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-GraphicRaycaster.html \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.GraphicRaycaster.html
 
 **Physics Raycaster** \
-https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-PhysicsRaycaster.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-PhysicsRaycaster.html \
+
 
 **Physics 2D Raycaster** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-Physics2DRaycaster.html
