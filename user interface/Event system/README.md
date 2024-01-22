@@ -3,6 +3,8 @@ The **Event System** is a way of **sending events to objects** in the applicatio
 
 **Objects receive these events based on on user input**.
 
+To make objects interact with sending events based on input, use Event System.
+
 The **Event System** consists of a **few components** that work together to send events.
 
 When you add an **Event System component** to a GameObject you will notice that it does not have much functionality exposed, this is because the Event System itself is designed as a manager and facilitator of communication between **Event System** modules.
@@ -17,7 +19,7 @@ The primary roles of the **Event System** are as follows:
 
 > **Unity’s Event System allows your UI to respond to events**.
 
-> An **EventSystem component** is **automatically created alongside your UI** and **contains several Input Modules**. These modules are responsible for deciding how GameObjects in your UI respond to input — if a corresponding GameObject within your UI contains the same Input Module as the one in your EventSystem, it can be interacted with.
+> An **Event System component** is **automatically created alongside your UI** and **contains several Input Modules**. These modules are responsible for deciding how GameObjects in your UI respond to input — if a corresponding GameObject within your UI contains the same Input Module as the one in your EventSystem, it can be interacted with.
 
 ### Input Modules
 
@@ -128,12 +130,11 @@ The built in Input Modules are designed to support common game configurations su
 
 #### Event Trigger
 
-The Event Trigger receives events from the Event System and calls registered functions for each event.
+The **Event Trigger** **receives events** from the **Event System** and **calls registered functions** for each event.
 
-The Event Trigger can be used to specify functions you wish to be called for each Event System event. You can assign multiple functions to a single event and whenever the Event Trigger receives that event it will call those functions.
+The **Event Trigger** can be used to **specify functions you wish to be called** for each **Event System event**. You can assign multiple functions to a single event and whenever the **Event Trigger** receives that event it will call those functions.
 
-Note that attaching an Event Trigger component to a GameObject will make that object intercept all events, and no event bubbling will occur from this object!
-
+> Note that attaching an **Event Trigger component** to a GameObject will make that **object intercept all events**, and no event bubbling will occur from this object!
 
 
 #### Supported Events
