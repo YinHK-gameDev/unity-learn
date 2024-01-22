@@ -61,7 +61,6 @@ The module sends move events and submit / cancel events in response to Input tra
 | **Force Module Active** | Enable this property to force this **Standalone Input Module** to be active. |
 
 
-
 ### Raycasters
 
 **Raycasters** are used for figuring out **what the pointer is over**. It is common for Input Modules to **use the Raycasters configured in the Scene to calculate what the pointing device is over**.
