@@ -60,9 +60,9 @@ The Canvas Group can be used to **control certain aspects of a whole group of UI
 
 Typical uses of Canvas Group are:
 
--   Fading in or out a whole window by adding a Canvas Group on the GameObject of the Window and control its Alpha property.
--   Making a whole set of controls non-interactable ("grayed out") by adding a Canvas Group to a parent GameObject and setting its Interactable property to false.
--   Making one or more UI elements not block mouse events by placing a Canvas Group component on the element or one of its parents and setting its Block Raycasts property to false.
+-   **Fading in or out a whole window** by adding a Canvas Group on the GameObject of the Window and **control its Alpha property**.
+-   **Making a whole set of controls non-interactable** ("grayed out") by adding a Canvas Group to a parent GameObject and setting its Interactable property to false.
+-   **Making one or more UI elements not block mouse events** by placing a Canvas Group component on the element or one of its parents and setting its Block Raycasts property to false.
 
 ### Canvas Renderer
 
