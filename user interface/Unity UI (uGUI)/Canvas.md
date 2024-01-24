@@ -23,7 +23,7 @@ The order can also be controlled from scripting by using these methods on the **
 ### Render Modes
 The Canvas has a **Render Mode** setting which can be used to make it render in **screen space** or **world space**.
 
-- **Screen Space - Overlay**
+- **Screen Space - Overlay** \
   This render mode places UI elements on the screen rendered on top of the scene. If the screen is resized or changes resolution, the Canvas will automatically change size to match this.
   In this mode, the Canvas is scaled to fit the screen and then rendered directly without reference to the scene or a camera (the UI will be rendered even if there is no camera in the scene at all). If the screen's size or resolution are changed then the UI will automatically rescale to fit. The UI will be drawn over any other graphics such as the camera view.
   > **Note**: The Screen Space - Overlay canvas needs to be stored at the top level of the hierarchy. If this is not used then the UI may disappear from the view. This is a built-in limitation. Keep the Screen Space - Overlay canvas at the top level of the hierarchy to get expected results.
@@ -31,7 +31,7 @@ The Canvas has a **Render Mode** setting which can be used to make it render in 
 
   ![](./img/CanvasOverlay.png)
 
-- **Screen Space - Camera**
+- **Screen Space - Camera** \
 This is similar to **Screen Space - Overl**ay, but in this render mode the Canvas is placed a **given distance in front of a specified Camera**.
 The **UI elements are rendered by this camera**, which means that the **Camera settings affect the appearance of the UI**.
   > If the Camera is set to Perspective, the UI elements will be rendered with perspective, and the amount of perspective distortion can be controlled by the Camera Field of View.
@@ -42,9 +42,9 @@ The **UI elements are rendered by this camera**, which means that the **Camera s
   ![](./img/CanvasCamera.png)
 
   
-- **Screen Space - Camera**
-  In this render mode, the Canvas will behave as any other object in the scene. The size of the Canvas can be set manually using its Rect Transform, and UI elements will render in front of or behind other objects in the scene based on 3D placement.
-  This mode renders the UI as if it were a plane object in the scene. Unlike Screen Space - Camera mode, however, the plane need not face the camera and can be oriented however you like. The size of the Canvas can be set using its Rect Transform but its onscreen size will depend on the viewing angle and distance of the camera. Other scene objects can pass behind, through or in front of the Canvas.
+- **World Space** \
+  In this render mode, the Canvas will behave as any other object in the scene. The size of the Canvas can be **set manually using its Rect Transform**, and UI elements will **render in front of or behind other objects in the scene** based on 3D placement.
+  This mode renders the UI as if it were a plane object in the scene. Unlike **Screen Space - Camera** mode, however, the plane need not face the camera and can be oriented however you like. The size of the Canvas can be set using its Rect Transform but its onscreen size will depend on the viewing angle and distance of the camera. Other scene objects can pass behind, through or in front of the Canvas.
   
   This is useful for UIs that are meant to be a part of the **world**. This is also known as a **"diegetic interface"**.
 
