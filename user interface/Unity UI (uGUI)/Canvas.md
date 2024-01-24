@@ -43,7 +43,7 @@ The **UI elements are rendered by this camera**, which means that the **Camera s
 
   
 - **World Space** \
-  In this render mode, the Canvas will behave as any other object in the scene. The size of the Canvas can be **set manually using its Rect Transform**, and UI elements will **render in front of or behind other objects in the scene** based on 3D placement.
+  In this render mode, the Canvas will behave as any other object in the scene. The size of the Canvas can be **set manually using its Rect Transform**, and UI elements will **render in front of or behind other objects in the scene** based on 3D placement. \
   This mode renders the UI as if it were a plane object in the scene. Unlike **Screen Space - Camera** mode, however, the plane need not face the camera and can be oriented however you like. The size of the Canvas can be set using its Rect Transform but its onscreen size will depend on the viewing angle and distance of the camera. Other scene objects can pass behind, through or in front of the Canvas.
   
   This is useful for UIs that are meant to be a part of the **world**. This is also known as a **"diegetic interface"**.
