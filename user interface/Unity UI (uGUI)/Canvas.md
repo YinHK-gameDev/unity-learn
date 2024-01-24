@@ -68,7 +68,7 @@ Typical uses of Canvas Group are:
 
 The **Canvas Renderer** component renders a graphical UI object contained within a Canvas
 
-The standard UI objects available from the menu (GameObject > Create UI) all have Canvas Renderers attached wherever they are required but you may need to add this component manually for custom UI objects. Although there are no properties exposed in the inspector, a few properties and function can be accessed from scripts -
+The standard UI objects available from the menu (**GameObject > Create UI**) all have Canvas Renderers attached wherever they are required but you may need to add this component manually for custom UI objects. Although there are no properties exposed in the inspector, a few properties and function can be accessed from scripts -
 
 ### ref 
 
