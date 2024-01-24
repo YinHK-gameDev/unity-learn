@@ -13,6 +13,7 @@ You cannot use Unity UI to create or change user interfaces in the Unity Editor.
 - Raw Image
 - Mask
 - RectMask2D
+- UI Effect Components
 
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIVisualComponents.html
 
