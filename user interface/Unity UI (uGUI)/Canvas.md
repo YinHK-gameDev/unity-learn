@@ -64,6 +64,12 @@ Typical uses of Canvas Group are:
 -   Making a whole set of controls non-interactable ("grayed out") by adding a Canvas Group to a parent GameObject and setting its Interactable property to false.
 -   Making one or more UI elements not block mouse events by placing a Canvas Group component on the element or one of its parents and setting its Block Raycasts property to false.
 
+### Canvas Renderer
+
+The **Canvas Renderer** component renders a graphical UI object contained within a Canvas
+
+The standard UI objects available from the menu (GameObject > Create UI) all have Canvas Renderers attached wherever they are required but you may need to add this component manually for custom UI objects. Although there are no properties exposed in the inspector, a few properties and function can be accessed from scripts -
+
 ### ref 
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UICanvas.html
