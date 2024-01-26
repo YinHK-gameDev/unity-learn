@@ -37,3 +37,18 @@ https://www.gameres.com/890547.html
 
 ### ref 
 https://www.youtube.com/watch?v=8w0qvO4Vumc
+
+**`UnityEngine.UI` scripting API** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.html
+
+**`UnityEditor.UI` scripting API** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEditor.UI.html
+
+**`UnityEngine.UIElements` scripting API** \
+https://docs.unity3d.com/Packages/com.unity.ui@1.0/api/UnityEngine.UIElements.html
+
+**`UnityEditor.UIElements` scripting API** \
+https://docs.unity3d.com/Packages/com.unity.ui@1.0/api/UnityEditor.UIElements.html
+
+
+
