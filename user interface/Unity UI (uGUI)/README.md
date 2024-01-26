@@ -73,3 +73,5 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIReference.html
 **uGUI Scripting API** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/index.html
 
+**solutions to common UI tasks** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIHowTos.html
