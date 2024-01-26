@@ -47,7 +47,8 @@ Animation allows for each transition between control states to be fully animated
 
 ![](./img/Animator_for_interaction_components.png)
 
-To use the Animation transition mode, an Animator Component needs to be attached to the controller element. This can be **done automatically** by clicking **"Auto Generate Animation"**. \
+To use the **Animation transition mode**, an **Animator Component** needs to be attached to the controller element. \
+This can be **done automatically** by clicking **"Auto Generate Animation"**. \
 This also **generates an Animator Controller with states already set up**, which will need to be saved.
 
 The new Animator controller is ready to use straight away. Unlike most Animator Controllers, this controller also stores the animations for the controller's transitions and these can be customised, if desired.
