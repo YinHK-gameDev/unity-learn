@@ -44,6 +44,7 @@ https://docs.unity3d.com/Manual/com.unity.textmeshpro.html
 https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/manual/index.html
 
 ### TMPro Scripting API
-https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/TMPro.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/TMPro.html \
+https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.2/api/TMPro.html
 
 
