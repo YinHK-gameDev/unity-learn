@@ -2,19 +2,12 @@
 
 **TextMeshPro** is the **ultimate text solution for Unity**. It’s the perfect **replacement for Unity’s UI Tex**t and the **legacy Text Mesh**.
 
-**TextMesh Pro** is a set of Unity tools for 2D and 3D text.
-
-**TextMesh Pro** provides better control over text formatting and layout than to Unity's UI Text & Text Mesh systems.
-
-
-The TextMesh Pro package is included in the Unity Editor. You do not need to install it.
-
-
-You can switch to other versions of TextMesh Pro from the Packages Window.
-
-To use TextMesh Pro, you must import the TMP Essential Resources package
-
-TMP can be use to create  **UI Text GameObjects** or **3D Text GameObjects**.
+- **TextMesh Pro** is a set of Unity tools for 2D and 3D text.
+- **TextMesh Pro** provides better control over text formatting and layout than to Unity's UI Text & Text Mesh systems.
+- The TextMesh Pro package is included in the Unity Editor. You do not need to install it.
+- You can switch to other versions of TextMesh Pro from the Packages Window.
+- To use TextMesh Pro, you must import the TMP Essential Resources package
+- TMP can be use to create  **UI Text GameObjects** or **3D Text GameObjects**.
 
 You can also import the TMP Examples & Extras package to help you learn TextMesh Pro.
 
