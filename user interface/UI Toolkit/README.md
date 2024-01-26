@@ -27,7 +27,7 @@ Each **EditorWindow** comes with a **`rootVisualElement`** for all the UI in it.
 UI Toolkit includes:
 
 - A retained-mode UI system that contains the core features and functionality required to create user interfaces.
-- UI Asset types inspired by standard web formats such as HTML, XML, and CSS. Use them to structure and style UI.
+- UI Asset types inspired by standard web formats such as **HTML, XML, and CSS**. Use them to structure and style UI.
 - Tools and resources for learning to use UI Toolkit, and for creating and debugging your interfaces.
 
 ### UI system
@@ -89,13 +89,13 @@ Use the following tools to create and debug your interfaces, and learn how to us
 ![](./img/mycustomeditor.png)
 ### Add UI controls to the window
 
-You can add **UI controls** into your window in the following ways:
+You can add **UI controls** into your window in the any following ways:
 
 -  Use the **UI Builder** to **visually add the UI controls** (Visualize, no adding code or UXML)
--  Use an **XML-like** text file (**UXML**) to add the UI controls
--  Use **C#** script to add the UI controls
+-  Use an **XML-like** text file (**UXML**) to **add the UI controls**
+-  Use **C#** script to **add the UI controls**
 
-> You can use any of these methods individually, or combine.
+> **Note**: You can use any of these methods individually, or combine.
 
 
 ### Use UI Builder to add UI controls
