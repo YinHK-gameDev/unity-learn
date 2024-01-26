@@ -215,4 +215,8 @@ https://docs.unity3d.com/Manual/UIE-Controls.html
 
 https://docs.unity3d.com/Manual/UIE-apply-styles-with-csharp.html
 
+**`UnityEngine.UIElements` scripting API** \
+https://docs.unity3d.com/Packages/com.unity.ui@1.0/api/UnityEngine.UIElements.html
 
+**`UnityEditor.UIElements` scripting API** \
+https://docs.unity3d.com/Packages/com.unity.ui@1.0/api/UnityEditor.UIElements.html
