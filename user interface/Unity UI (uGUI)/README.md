@@ -40,46 +40,6 @@ https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIInteractionCompone
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIInteraction.html
 
-#### Selectable Base Class(Add selectable component to a UI element)
-The Selectable Class is the base class for all the interaction components and it handles the items that are in common.
-
-| **Property:** | **Function:** |
-| --- | --- |
-| **Interactable** | This determines if this component will accept input. When it is set to false interaction is disabled and the transition state will be set to the disabled state. |
-| **Transition** | Within a selectable component there are several depending on what state the selectable is currently in. The different states are: normal, highlighted, pressed and disabled. |
-| **Navigation** | There are also a number of Navigation Options to control how keyboard navigation of the controls is implemented. |
-
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Selectable.html
-
-**Transition Options:**
-
-Within a selectable component there are several transition options depending on what state the selectable is currently in. The different states are: normal, highlighted, pressed and disabled.
-
-| **Transition Options:** | **Function:** |
-| --- | --- |
-| **None** | This option is for the button to have no state effects at all. |
-| **Color Tint** | Changes the colour of the button depending on what state it is in. It is possible to select the colour for each individual state. It is also possible to set the Fade Duration between the different states. The higher the number is, the slower the fade between colors will be. |
-| **Sprite Swap** | Allows different sprites to display depending on what state the button is currently in, the sprites can be customised. |
-| **Animation** | Allows animations to occur depending on the state of the button, an animator component must exist in order to use animation transition. It’s important to make sure root motion is disabled. To create an animation controller click on generate animation (or create your own) and make sure that an animation controller has been added to the animator component of the button. |
-
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-SelectableTransition.html
-
-
-**Navigation Options:**
-| **Property:** | **Function:** |
-| --- | --- |
-| **Navigation** | The Navigation options refers to how the navigation of UI elements in play mode will be controlled. |
-| **None** | No keyboard navigation. Also ensures that it does not receive focus from clicking/tapping on it. |
-| **Horizontal** | Navigates Horizontally. |
-| **Vertical** | Navigates Vertically. |
-| **Automatic** | Automatic Navigation. |
-| **Explicit** | In this mode you can explicitly specify where the control navigates to for different arrow keys. |
-| **Visualize** | Selecting Visualize gives you a visual representation of the navigation you have set up in the scene window. See below. |
-
-
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-SelectableNavigation.html
-
-
 
 ### UI Effect Components
 
