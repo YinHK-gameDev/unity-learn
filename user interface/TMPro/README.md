@@ -1,10 +1,10 @@
 ### TextMeshPro
 
-TextMeshPro is the ultimate text solution for Unity. It’s the perfect replacement for Unity’s UI Text and the legacy Text Mesh.
+**TextMeshPro** is the **ultimate text solution for Unity**. It’s the perfect **replacement for Unity’s UI Tex**t and the **legacy Text Mesh**.
 
-TextMesh Pro is a set of Unity tools for 2D and 3D text.
+**TextMesh Pro** is a set of Unity tools for 2D and 3D text.
 
-TextMesh Pro provides better control over text formatting and layout than to Unity's UI Text & Text Mesh systems.
+**TextMesh Pro** provides better control over text formatting and layout than to Unity's UI Text & Text Mesh systems.
 
 
 The TextMesh Pro package is included in the Unity Editor. You do not need to install it.
