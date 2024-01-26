@@ -16,10 +16,9 @@ The TextMesh Pro package is included in the Unity Editor. You do not need to ins
 
 You can switch to other versions of TextMesh Pro from the Packages Window.
 
-To use TextMesh Pro, you must import the TMP Essential Resources package (see the next section).
+To use **TextMesh Pro**, you **must import the TMP Essential Resources package**.
 
 You can also import the TMP Examples & Extras package to help you learn TextMesh Pro.
-
 
 
 ### Importing required resources into projects
