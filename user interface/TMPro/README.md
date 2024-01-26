@@ -7,7 +7,7 @@
 - The TextMesh Pro package is included in the Unity Editor. You do not need to install it.
 - You can switch to other versions of TextMesh Pro from the Packages Window.
 - To use TextMesh Pro, you must import the TMP Essential Resources package
-- TMP can be use to create  **UI Text GameObjects** or **3D Text GameObjects**.
+- TMP can be use to create  **UI Text GameObjects** (**GameObject > UI > Text - TextMeshPro**) or **3D Text GameObjects** (**GameObject > 3D Object > Text - TextMeshPro**).
 
 You can also import the TMP Examples & Extras package to help you learn TextMesh Pro.
 
