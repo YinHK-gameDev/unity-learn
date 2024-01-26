@@ -39,6 +39,9 @@ Within a selectable component there are several transition options depending on 
 | **Color Multiplier** | This multiplies the tint color for each transition by its value. With this you can create colors greater than 1 to brighten the colors (or alpha channel) on graphic elements whose base color is less than white (or less then full alpha). |
 | **Fade Duration** | The time taken, in seconds, to fade from one state to another |
 
+
+![](./img/color_tint)
+
 #### Sprite Swap
 
 | **Property:** | **Function:** |
@@ -48,6 +51,7 @@ Within a selectable component there are several transition options depending on 
 | **Pressed Sprite** | Sprite to use when the control is pressed |
 | **Disabled Sprite** | Sprite to use when the control is disabled |
 
+![](./sprite_swap)
 
 #### Animation
 
@@ -58,6 +62,7 @@ Within a selectable component there are several transition options depending on 
 | **Pressed Trigger** | Trigger to use when the control is pressed |
 | **Disabled Trigger** | Trigger to use when the control is disabled |
 
+![](./img/animation)
 
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-SelectableTransition.html
 
