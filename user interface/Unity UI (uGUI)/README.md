@@ -6,6 +6,9 @@ It is a **GameObject-based UI system** that uses **Components and the Game View 
 
 You cannot use Unity UI to create or change user interfaces in the Unity Editor.
 
+
+**GameObject > UI / Component > UI**
+
 ### Visual Components
 - Text
 - Image
