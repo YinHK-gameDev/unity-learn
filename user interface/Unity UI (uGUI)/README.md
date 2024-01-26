@@ -21,7 +21,7 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIVisualComponents.h
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/comp-UIVisual.html
 
 ### Interaction Components
-The interaction components are **not visible on their own**, and **must be combined with one or more visual components** in order to work correctly.
+The interaction components are **not visible on their own**, and **must be combined with one or more visual components** in order to work correctly. **Interaction components: Visual components + Selectable Base Class(Script)**.
 
 Most of the interaction components have some things in common. They are selectables, which means they have shared built-in functionality for visualising transitions between states (normal, highlighted, pressed, disabled), and for navigation to other **selectables** using keyboard or controller. 
 
@@ -38,6 +38,12 @@ Most of the interaction components have some things in common. They are selectab
 
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIInteractionComponents.html \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/comp-UIInteraction.html
+
+### Animation Integration
+
+Animation allows for each transition between control states to be fully animated using Unity's animation system. This is the most powerful of the transition modes due to the number of properties that can be animated simultaneously.
+
+
 
 
 ### ref
