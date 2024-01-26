@@ -75,3 +75,23 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/index.html
 
 **solutions to common UI tasks** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIHowTos.html
+
+**Creating Screen Transitions** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/HOWTO-UIScreenTransition.html
+
+**Creating a World Space UI** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/HOWTO-UIWorldSpace.html
+
+**Creating UI elements from scripting** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/HOWTO-UICreateFromScripting.html
+
+**Making UI elements fit the size of their content** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/HOWTO-UIFitContentSize.html
+
+**Designing UI for Multiple Resolutions** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/HOWTO-UIMultiResolution.html
+
+
+
+
+
