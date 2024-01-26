@@ -27,7 +27,7 @@ Within a selectable component there are several transition options depending on 
 > Each Transition option (except None) provides additional options for controlling the transitions. We'll go into details with those in each of the sections below.
 
 
-### Color Tint
+#### Color Tint
 
 | **Property:** | **Function:** |
 | --- | --- |
@@ -39,7 +39,7 @@ Within a selectable component there are several transition options depending on 
 | **Color Multiplier** | This multiplies the tint color for each transition by its value. With this you can create colors greater than 1 to brighten the colors (or alpha channel) on graphic elements whose base color is less than white (or less then full alpha). |
 | **Fade Duration** | The time taken, in seconds, to fade from one state to another |
 
-### Sprite Swap
+#### Sprite Swap
 
 | **Property:** | **Function:** |
 | --- | --- |
@@ -49,7 +49,7 @@ Within a selectable component there are several transition options depending on 
 | **Disabled Sprite** | Sprite to use when the control is disabled |
 
 
-### Animation
+#### Animation
 
 | **Property:** | **Function:** |
 | --- | --- |
