@@ -43,7 +43,11 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/comp-UIInteraction.h
 
 Animation allows for each transition between control states to be fully animated using Unity's animation system. This is the most powerful of the transition modes due to the number of properties that can be animated simultaneously.
 
+![](./img/Animation_integration.png)
 
+![](./img/Animator_for_interaction_components.png)
+
+![](./img/Animator_for_interaction_components2.png)
 
 
 ### ref
