@@ -36,16 +36,6 @@ Most of the interaction components have some things in common. They are selectab
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIInteractionComponents.html \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/comp-UIInteraction.html
 
-### UI Effect Components
-
-The effects components allow adding simple effects to Text and Image graphics, such as **shadow and outline**.
-
- - Shadow
- - Outline
- - Position as UV1
-
-
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIEffects.html
 
 ### ref
 https://github.com/Unity-Technologies/uGUI/tree/2019.1
