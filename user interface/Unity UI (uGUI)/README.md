@@ -22,7 +22,7 @@ The interaction components are **not visible on their own**, and **must be combi
 
 Most of the interaction components have some things in common. They are selectables, which means they have shared built-in functionality for visualising transitions between states (normal, highlighted, pressed, disabled), and for navigation to other **selectables** using keyboard or controller. 
 
-> The interaction components have at least one **`UnityEvent`** that is invoked when user interacts with the component in specific way. The UI system catches and logs any exceptions that propagate out of code attached to UnityEvent.
+> The interaction components have at least one **`UnityEvent`** that is invoked when user interacts with the component in specific way. The UI system catches and logs any exceptions that propagate out of code attached to **`UnityEvent`**.
 
 - Selectable Base Class
 - Button
