@@ -14,3 +14,6 @@ The button has a single event called _On Click_ that responds when the user comp
 https://docs.unity3d.com/2018.3/Documentation/ScriptReference/UI.Button.html
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Button.html
+
+**Button scripting API** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.Button.html
