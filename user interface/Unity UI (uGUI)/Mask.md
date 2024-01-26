@@ -7,7 +7,7 @@ A common use of a Mask is to **show a small section of a large Image**, using sa
 
 ![](./img/MaskDisabled.svg)
 
-Then, add a Mask component to the Panel. The areas of the child Image outside the panel will become invisible since they are masked by the shape of the Panel.
+Then, add a **Mask component** to the Panel. The areas of the child Image outside the panel will become invisible since they are masked by the shape of the Panel.
 
 ![](./img/MaskEnabled.svg)
 
