@@ -1,5 +1,8 @@
 ## Selectable Base Class
 
+![](./img/UI_SelectableNavigationExplicit.png)
+
+![](./img/GUIVisualizeNavigation.png)
 
 The Selectable Class is the base class for all the **interaction components** and it handles the items that are in common.
 
