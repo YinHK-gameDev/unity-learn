@@ -22,7 +22,7 @@ git add .
 A Git client for your Unity Editor. 
 
 https://github.com/spoiledcat/git-for-unity \
-https://github.com/unity-technologies/git-for-unity \
+https://github.com/unity-technologies/git-for-unity
 
 
 ### Large file
