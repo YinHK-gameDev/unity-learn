@@ -6,7 +6,6 @@ It is a **GameObject-based UI system** that uses **Components and the Game View 
 
 You cannot use Unity UI to create or change user interfaces in the Unity Editor.
 
-
 ### Visual Components
 - Text
 - Image
@@ -15,10 +14,8 @@ You cannot use Unity UI to create or change user interfaces in the Unity Editor.
 - RectMask2D
 - UI Effect Components
 
-https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIVisualComponents.html
-
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIVisualComponents.html \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/comp-UIVisual.html
-
 
 ### Interaction Components
 The interaction components are not visible on their own, and must be combined with one or more visual components in order to work correctly.
@@ -36,10 +33,8 @@ Most of the interaction components have some things in common. They are selectab
 - Scroll Rect(Scroll View)
 - InputField
 
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIInteractionComponents.html
-
-https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIInteraction.html
-
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIInteractionComponents.html \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/comp-UIInteraction.html
 
 ### UI Effect Components
 
