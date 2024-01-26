@@ -43,10 +43,18 @@ Installing the TMP Examples & Extras is not mandatory, but is strongly recommend
 
 https://docs.unity3d.com/Manual/com.unity.textmeshpro.html
 
-### Package doc
+### Class `TMP_Text`
+
+Base class which contains common properties and functions shared between the **TextMeshPro** and **TextMeshProUGUI** component.
+
+
+https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.2/api/TMPro.TMP_Text.html#properties
+### ref 
+
+**Package doc** \
 https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/manual/index.html
 
-### TMPro Scripting API
+**TMPro Scripting API** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/TMPro.html \
 https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.2/api/TMPro.html
 
