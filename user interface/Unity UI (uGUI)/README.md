@@ -18,7 +18,7 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIVisualComponents.h
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/comp-UIVisual.html
 
 ### Interaction Components
-The interaction components are not visible on their own, and must be combined with one or more visual components in order to work correctly.
+The interaction components are **not visible on their own**, and **must be combined with one or more visual components** in order to work correctly.
 
 Most of the interaction components have some things in common. They are selectables, which means they have shared built-in functionality for visualising transitions between states (normal, highlighted, pressed, disabled), and for navigation to other **selectables** using keyboard or controller. 
 
