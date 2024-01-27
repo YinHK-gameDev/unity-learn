@@ -77,6 +77,14 @@ The following table is a reference of all built-in controls available for UI Too
 | Vector3IntField | Yes | UnityEngine.Vector3Int | UnityEngine.UIElements | Any number of VisualElement | UnityEngine.UIElements.Vector3IntField |
 | Vector4Field | Yes | UnityEngine.Vector4 | UnityEngine.UIElements | Any number of VisualElement | UnityEngine.UIElements.Vector4Field |
 
+
+### Templates
+
+| Element | Description | Namespace | Permitted child elements | Attributes |
+| --- | --- | --- | --- | --- |
+| `Template` | A reference to another **UXML template** that can be instantiated using the `Instance` element. | `UnityEngine.UIElements` | None | `name`: A unique string identifier for this element `path`: The path of the UXML file to load |
+| `Instance` | Instance of a `Template` | `UnityEngine.UIElements` | None | `template`: The `name` of the `Template` to instantiate |
+
 ### ref 
 https://docs.unity3d.com/Manual/UIE-ElementRef.html
 
