@@ -219,6 +219,71 @@ void SynthesizeAndSendKeyDownEvent(IPanel panel, KeyCode code,
 > **Note**: Don’t send events that don’t come from the operating system and can’t be found in the UnityEngine.Event types. Some events are sent by UI Toolkit as a reaction to internal state changes and must not be sent by external processes. For example, if you send PointerCaptureEvent, visual elements assume that the underlying conditions for that event are met and won’t set pointer capture for them. This might break the internal configurations of the visual element and cause undefined behaviors.
 
 
+
+UI Builder is not meant for event management, nor is the UXML document. To handle a button-click or any other event, create a C# Script and link it to the UXML.
+
+eg:
+```cs
+public class UIEventHandler : MonoBehaviour
+{
+   [SerializeField]
+   private UIDocument m_UIDocument;
+ 
+   private Label m_Label;
+   private int m_ButtonClickCount = 0;
+   private Toggle m_Toggle;
+   private Button m_Button;
+ 
+   public void Start()
+   {
+       var rootElement = m_UIDocument.rootVisualElement;
+ 
+       // This searches for the VisualElement Button named “EventButton”
+       // rootElement.Query<> and rootElement.Q<> can both be used
+       m_Button = rootElement.Q<Button>("EventButton");
+ 
+       // Elements with no values like Buttons can register callBacks
+       // with clickable.clicked
+       m_Button.clickable.clicked += OnButtonClicked;
+ 
+       // This searches for the VisualElement Toggle named “ColorToggle”
+       m_Toggle = rootElement.Query<Toggle>("ColorToggle");
+ 
+       // Elements with changing values: toggle, TextField, etc... 
+       // implement the INotifyValueChanged interface,
+       // meaning they use RegisterValueChangedCallback and 
+       // UnRegisterValueChangedCallback
+       m_Toggle.RegisterValueChangedCallback(OnToggleValueChanged);
+ 
+       // Cache the reference to the Label since we will access it repeatedly.
+       // This avoids the relatively costly VisualElement search each time we update
+       // the label.
+       m_Label = rootElement.Q<Label>("IncrementLabel");
+       m_Label.text = m_ButtonClickCount.ToString();
+   }
+ 
+   private void OnDestroy()
+   {
+       m_Button.clickable.clicked -= OnClicked;
+       m_Toggle.UnregisterValueChangedCallback(OnToggleValueChanged);
+   }
+ 
+   private void OnButtonClicked()
+   {
+       m_ButtonClickCount++;
+       m_Label.text = m_ButtonClickCount.ToString();
+   }
+ 
+   private void OnToggleValueChanged(ChangeEvent<bool> evt)
+   {
+       Debug.Log("New toggle value is: " + evt.newValue);
+   }
+}
+
+```
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/UIE-Events.html
 
