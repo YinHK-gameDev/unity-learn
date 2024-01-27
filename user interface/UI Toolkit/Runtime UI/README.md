@@ -28,7 +28,7 @@ Create a UI Document with a label, a button, and a Toggle.
       </ui:UXML>
      ```
 #### Set up the scene
-Create a UIDocument **GameObject** in the SampleScene and add the UI Document as the source asset.
+Create a **UIDocument** **GameObject** in the SampleScene and add the UI Document as the source asset.
  
 1. In the SampleScene, select **GameObject** > **UI Toolkit** > **UI Document**. This creates the following:
     -  A UI Toolkit folder with a default **Panel Settings asset** and a **default runtime theme**. (You can change panel asset or use own customed panel setting asset in panel settings field)
