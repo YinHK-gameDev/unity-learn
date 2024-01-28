@@ -13,7 +13,7 @@ The Addressables system provides tools and scripts to organize and package conte
 
 When you make an asset **"Addressable"**, you can use that **asset's address to load it from anywhere**. Whether that asset resides in the **local application or on a content delivery network**, the **Addressable system locates and returns it**.
 
->** Addressable Assets** are assets that have a unique address which you can use to **load them from local or remote AssetBundles**.
+> **Addressable Assets** are assets that have a unique address which you can use to **load them from local or remote AssetBundles**.
 
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html
