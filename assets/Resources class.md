@@ -12,7 +12,9 @@ Loads the asset of the requested type stored at path in a Resources folder.
 ```cs
 public static T Load(string path);
 ```
-
+```cs
+Resources.Load(string path);
+```
 eg:
 
 ```cs
