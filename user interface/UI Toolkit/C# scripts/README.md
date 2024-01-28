@@ -238,6 +238,9 @@ https://docs.unity3d.com/ScriptReference/AssetDatabase.html
 **`Addressables`** \
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html
 
+**`Resources.Load`** \
+https://docs.unity3d.com/ScriptReference/Resources.Load.html
+
 **`UnityEngine.UIElements` scripting API** \
 https://docs.unity3d.com/Packages/com.unity.ui@1.0/api/UnityEngine.UIElements.html
 
