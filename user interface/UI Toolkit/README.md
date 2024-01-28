@@ -296,6 +296,11 @@ public class MyCustomEditor : EditorWindow
 }
 ```
 
+### Styling
+Styling is where UI Toolkit exhibits its full power. Adding Style to visual elements is done via **`USS`** files (**Assets > Create > UI Toolkit > StyleSheet**). They are the Unity equivalent to web CSS files, and use the same rule-based format.
+
+You can add Style selectors through the UI Builder Inspector StyleSheet panel and then edit them using code or UI Builder.
+
 ### ref
 https://learn.unity.com/tutorial/ui-toolkit-first-steps
 
