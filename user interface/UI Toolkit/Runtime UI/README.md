@@ -1,5 +1,5 @@
 ## Runtime UI
-### Use UXML: 
+### By UXML & C# script: 
 You can create a **runtime UI** and display it in a game view by the following steps:
 
 - Create a UI Document (**`.uxml`**) with controls.
@@ -36,7 +36,7 @@ Create a **UIDocument** **GameObject** in the SampleScene and add the UI Documen
 2. Select the **UIDocument GameObject** in the hierarchy and drag **`SimpleRuntimeUI.uxml`** from your Project window to the **Source Asset** field of the UI Document component in the Inspector window. 
 
 
-### Use C# Script:
+### By C# Script only:
 
 - Create UIDocument object in Hierachy first
 - Create C# script with `Monobehavior` class
