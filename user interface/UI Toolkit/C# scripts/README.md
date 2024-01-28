@@ -6,9 +6,9 @@ Unity automatically detect fields from your C# scripts
  to set references to specific UXML or USS files imported in your project. Such **references remain valid even when the location of your assets change in your project**.
 
 
-The following example `MonoBehaviour` class receives a UXML file and a list of USS files from the Inspector:
+The following example **`MonoBehaviour`** class(for run time UI) receives a UXML file and a list of USS files from the Inspector:
 
-```csharp
+```cs
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -27,7 +27,7 @@ Get root visual element
 VisualElement root = GetComponent<UIDocument>().rootVisualElement;
 ```
 
-The following example `EditorWindow` class receives default references from the Inspector:
+The following example **`EditorWindow`** class(for editor preview UI only) receives default references from the Inspector:
 
 ```csharp
 using UnityEditor;
@@ -139,7 +139,7 @@ To access or change the value of a control, use its `value` property.
 
 The following example creates a Toggle control and a Button control. When you click the button, the value of the toggle flips.
 
-```csharp
+```cs
 // Create a toggle and register callback
 m_MyToggle = new Toggle("Test Toggle") { name = "My Toggle" };
 rootVisualElement.Add(m_MyToggle);
@@ -158,7 +158,7 @@ Controls that have `value` properties send an event if the value changes. You ca
 
 The following example creates a Toggle control and registers a callback:
 
-```csharp
+```cs
 // Create a toggle and register callback
 m_MyToggle = new Toggle("Test Toggle") { name = "My Toggle" };
 m_MyToggle.RegisterValueChangedCallback((evt) => { Debug.Log("Change Event received"); });
