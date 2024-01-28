@@ -199,7 +199,38 @@ If you prefer coding, you can add UI Controls to your window with a C# script. T
     
 6.   Select **Window** > **UI Toolkit** > **MyCustomEditor** to re-open your custom Editor window to see three labels, three buttons, and three toggles.
 
+#### Use C# Script to add UXML
 
+```cs
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.UIElements;
+using UnityEditor.UIElements;
+
+
+public class MyCustomEditor : EditorWindow
+{
+
+    [SerializeField]
+    private VisualTreeAsset m_UXMLTree;
+
+
+    [MenuItem("Window/UI Toolkit/MyCustomEditor")]
+    public static void ShowExample()
+    {
+        MyCustomEditor wnd = GetWindow<MyCustomEditor>();
+        wnd.titleContent = new GUIContent("MyCustomEditor");
+    }
+
+    public void CreateGUI()
+    {
+        // Each editor window contains a root VisualElement object
+        VisualElement root = rootVisualElement;
+
+        root.Add(m_UXMLTree.Instantiate());
+    }
+}
+```
 
 ### Define the behavior of your UI controls
 
