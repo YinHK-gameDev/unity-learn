@@ -52,7 +52,6 @@ using UnityEngine.UIElements;
 
 public class RuntimeUI : MonoBehaviour
 {
-
 	void OnEnable()
 	{
 
@@ -75,12 +74,7 @@ public class RuntimeUI : MonoBehaviour
 		root.Add(toggle);
 
 	}
-
-
-
 }
-
-
 ```
 
 
