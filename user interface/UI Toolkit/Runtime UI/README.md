@@ -228,6 +228,19 @@ https://docs.unity3d.com/Manual/UIE-performance-consideration-runtime.html
 
 https://docs.unity3d.com/Manual/UIE-faq-event-and-input-system.html
 
+https://www.youtube.com/watch?v=vWvnY7ieH4E&list=PLmdJ8so4ffmvVKgECJF4FlnTfOq-2DcYa&index=4 
+
+https://www.youtube.com/watch?v=P_lJy3vAX5g&list=PLmdJ8so4ffmvVKgECJF4FlnTfOq-2DcYa&index=5
+
+https://www.youtube.com/watch?v=Bz349271Anc&list=PLmdJ8so4ffmvVKgECJF4FlnTfOq-2DcYa&index=6
+
+https://www.youtube.com/watch?v=tbWce-1fPJM&list=PLmdJ8so4ffmvVKgECJF4FlnTfOq-2DcYa&index=7
+
+https://www.youtube.com/watch?v=11Ngw3fFtAE&list=PLmdJ8so4ffmvVKgECJF4FlnTfOq-2DcYa&index=8
+
+https://www.youtube.com/watch?v=lIS2DbcbnIk&list=PLmdJ8so4ffmvVKgECJF4FlnTfOq-2DcYa&index=10
 
 
+**Switching menu screens** \
+https://www.youtube.com/watch?v=a8g-MqTUXiU
 
