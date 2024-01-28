@@ -1,5 +1,5 @@
 ## Runtime UI
-
+### Use UXML: 
 You can create a **runtime UI** and display it in a game view by the following steps:
 
 - Create a UI Document (**`.uxml`**) with controls.
@@ -7,7 +7,7 @@ You can create a **runtime UI** and display it in a game view by the following s
 - Create **`MonoBehaviours`** to define the behavior of your UI controls.
 
 
-### Example
+#### Example:
 #### Create a UI Document with controls
 Create a UI Document with a label, a button, and a Toggle.
 
@@ -34,6 +34,55 @@ Create a **UIDocument** **GameObject** in the SampleScene and add the UI Documen
     -  A UI Toolkit folder with a default **Panel Settings asset** and a **default runtime theme**. (You can change panel asset or use own customed panel setting asset in panel settings field)
     -  A GameObject with a UI Document component attached, and the **UI Document component** is connected to the **Panel Settings asset**.
 2. Select the **UIDocument GameObject** in the hierarchy and drag **`SimpleRuntimeUI.uxml`** from your Project window to the **Source Asset** field of the UI Document component in the Inspector window. 
+
+
+### Use C# Script:
+
+- Create UIDocument object in Hierachy first
+- Create C# script with `Monobehavior` class
+- Attach this script to the UIDocument object
+
+
+eg:
+```cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class RuntimeUI : MonoBehaviour
+{
+
+	void OnEnable()
+	{
+
+		//Get the root Visual Element in UIDocument
+		VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+
+
+		//create UI control and add to root visual element
+		Label label = new Label("These controls were created using C# code.");
+		root.Add(label);
+
+		Button button = new Button();
+		button.name = "button3";
+		button.text = "This is button3.";
+		root.Add(button);
+
+		Toggle toggle = new Toggle();
+		toggle.name = "toggle3";
+		toggle.label = "Number?";
+		root.Add(toggle);
+
+	}
+
+
+
+}
+
+
+```
+
 
 ### Panel settings
 Defines a Panel Settings asset that instantiates a panel at runtime. The panel makes it possible for Unity to display UXML-file based UI in the Game view.
