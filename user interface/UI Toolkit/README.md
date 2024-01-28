@@ -116,6 +116,9 @@ To visually add UI controls to your window, use **UI Builder**. The following st
 -   Close your custom Editor window if you haven’t done so.
 -   Select **Window** > **UI Toolkit** > **MyCustomEditor** to re-open your custom Editor window to see the button and the toggle you just added.
 
+
+> Note: the above is for editor only, not for runtime UI. 
+
 ### Use UXML to add UI controls
 If you prefer to define your **UI** in a text file, you can edit the **UXML** to add the UI controls. The following steps add another set of label, button, and toggle into your window.
 
@@ -155,6 +158,7 @@ If you prefer to define your **UI** in a text file, you can edit the **UXML** to
 9. Drag `MyCustomEditor_UXML.uxml` from the Project window into the **UXML Tree** field in the **Inspector**. This assigns your UXML to the visual tree.
 10. Select **Window** > **UI Toolkit** > **MyCustomEditor**. This opens your custom Editor window with three labels, two buttons, and two toggles.
 
+> Note: the above is for editor only, not for runtime UI. 
 
 ### Use C# script to add UI controls
 
@@ -205,6 +209,9 @@ If you prefer coding, you can add UI Controls to your window with a C# script. T
     
 6.   Select **Window** > **UI Toolkit** > **MyCustomEditor** to re-open your custom Editor window to see three labels, three buttons, and three toggles.
 
+> Note: the above is for editor only, not for runtime UI.
+
+
 #### Use C# Script to add UXML
 
 ```cs
@@ -237,6 +244,8 @@ public class MyCustomEditor : EditorWindow
     }
 }
 ```
+> Note: the above is for editor only, not for runtime UI.
+
 
 ### Define the behavior of your UI controls
 
