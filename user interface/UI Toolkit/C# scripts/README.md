@@ -21,6 +21,11 @@ public class MyBehaviour : MonoBehaviour
 }
 ```
 
+Get root visual element
+```cs
+//Get the root Visual Element in UIDocument
+VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+```
 
 The following example `EditorWindow` class receives default references from the Inspector:
 
@@ -35,6 +40,11 @@ public class MyWindow : EditorWindow
   [SerializeField]
   private StyleSheet uss;
 }
+```
+Get root visual element
+```cs
+// Each editor window contains a root VisualElement object
+VisualElement root = rootVisualElement;
 ```
 
 ### Use the Asset Database (Editor only)
