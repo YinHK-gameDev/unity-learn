@@ -39,7 +39,7 @@ Create a **UIDocument** **GameObject** in the SampleScene and add the UI Documen
 ### By C# Script only:
 
 - Create UIDocument object in Hierachy first
-- Create C# script with `Monobehavior` class
+- Create C# script inherite **`Monobehavior`** class & use its **`OnEnable()`** method
 - Attach this script to the UIDocument object
 
 ![](./UIDocument.png)
