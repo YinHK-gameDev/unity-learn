@@ -170,6 +170,12 @@ If you prefer coding, you can add UI Controls to your window with a C# script. T
 4.  The **`EditorWindow`** class has a property called **`rootVisualElement`**. To add the UI controls to your window, first instantiate the element class with some attributes, and then use the **`Add`** methods of the **`rootVisualElement`**.
     Your finished **`CreateGUI()`** method should look like the following:
     ```cs
+      [MenuItem("Window/UI Toolkit/MyCustomEditor")]
+      public static void ShowExample()
+      {
+          MyCustomEditor wnd = GetWindow<MyCustomEditor>();
+          wnd.titleContent = new GUIContent("MyCustomEditor");
+      }
       public void CreateGUI()
       {
           // Each editor window contains a root VisualElement object
