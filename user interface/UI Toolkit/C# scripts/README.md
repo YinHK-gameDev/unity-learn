@@ -70,11 +70,11 @@ StyleSheet uss = AssetDatabase.LoadAssetAtPath<StyleSheet>("Packages/<name-of-th
 ```
 
 ### Use Addressables
-The **Addressables** system provides tools and scripts to organize and package content for your application and an API to load and release assets at runtime.
+The **Addressables** system provides tools and scripts to organize and package content for your application and an API to load and release assets at **runtime**.
 
-You can use UXML and USS assets with the** Addressable** system.
+You can use UXML and USS assets with the **Addressable** system.
 
-For information about how to set up Addressables for any assets in Unity, 
+For information about how to set up **Addressables** for any assets in Unity, 
 
 https://docs.unity3d.com/Packages/com.unity.addressables@1.19/manual/AddressableAssetsGettingStarted.html \
 https://docs.unity3d.com/Packages/com.unity.addressables@2.0/manual/index.html
