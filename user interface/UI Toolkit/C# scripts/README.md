@@ -47,6 +47,11 @@ Get root visual element
 VisualElement root = rootVisualElement;
 ```
 
+
+> **Note**:  Inherite `EditorWindow` class for building UI in editor and use it to preview UI. If you want to build run time UI, use `Monobehavior` class instead
+
+
+
 ### Use the Asset Database (Editor only)
 You can load your **UI Assets** by **path** or **GUID** with the **`AssetDatabase`** class.
 
