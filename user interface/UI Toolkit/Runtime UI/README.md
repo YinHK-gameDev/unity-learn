@@ -42,9 +42,11 @@ Create a **UIDocument** **GameObject** in the SampleScene and add the UI Documen
 - Create C# script with `Monobehavior` class
 - Attach this script to the UIDocument object
 
+![](./UIDocument.png)
 
 eg:
 ```cs
+//RuntimeUI.cs
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
