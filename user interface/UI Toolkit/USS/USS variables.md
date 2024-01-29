@@ -83,6 +83,15 @@ Variables work mostly the same way in USS as they do in CSS. For detailed inform
 
 -   USS doesn’t support mathematical operations on variables.
 
+#### Using a prefix of two dashes (`--`)
+A custom property prefixed with two dashes begins with `--`, followed by the property name (e.g.,`--my-property`), and a property value that can be any valid CSS value. Like any other property, this is written inside a ruleset. The following example shows how to create a custom property `--main-bg-color` and uses a `<named-color>` value of brown:
+
+```
+section {
+  --main-bg-color: brown;
+}
+```
+
 
 ### USS built-in variables
 **USS built-in** variables specify default values for Editor and runtime UI. You can use these variables in your own USS to match your custom interfaces with Unity style.
