@@ -17,7 +17,7 @@ selector {
 ```
 
 ### Create USS selectors
-You can create any new USS selectors in the StyleSheets window. You can also create a new class selector in the StyleSheets section in the Inspector window.
+You can create any new USS selectors in the **StyleSheets window**. You can also create a new class selector in the StyleSheets section in the **Inspector window**.
 
 - To create a new selector in the StyleSheets window:
   1. In the StyleSheets window, click in the **Add new selector…** field. This opens a USS selector syntax reference window on top of the Viewport
