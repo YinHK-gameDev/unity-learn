@@ -1,5 +1,5 @@
 ## Custom controls
-You can create custom controls and implement custom logic for user interface elements. A good custom control is abstract, self-contained, and recurring.
+You can **create custom controls** and **implement custom logic for user interface elements**. A good custom control is abstract, self-contained, and recurring.
 
 After you have created a custom control, you can style it with USS, add logic to handle events in C#, and expose and use it in UI Builder.
 
