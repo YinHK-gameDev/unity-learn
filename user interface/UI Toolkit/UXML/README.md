@@ -53,7 +53,7 @@ To create a UXML file with the latest schema definition, select **Assets** > **C
 > **Note**: To force an update of the UXML schema definition, select **Assets** > **Update UXML Schema**.
 
 ### UXML elements
-The definition of the UI is within the `<UXML>` root. The UI definition is a series of nested UXML elements, each representing a visual element.
+The definition of the UI is within the `<UXML>` root. The UI definition is a series of nested UXML elements, each **representing a visual element**.
 
 The **element name corresponds to the C# class name of the element to instantiate**. Most elements have **attributes** and their **values** are **mapped to the corresponding class properties in C#**. \
 Each element has its own set of attributes in addition to the inherited attributes of its parent class. `VisualElement` is the base class for all elements and it provides the following attributes for all elements:
