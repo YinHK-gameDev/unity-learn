@@ -51,6 +51,18 @@ VisualElement root = rootVisualElement;
 > **Note**:  Inherite `EditorWindow` class for building UI in editor and use it to preview UI. If you want to build run time UI, use `Monobehavior` class instead
 
 
+### Create a VisualElement
+```cs
+var myElement = new VisualElement();
+```
+
+Add UI control to VisualElement \
+Eg:
+```cs
+myElement.Add(new Label("Hello World"));
+myElement.Add(new TextField());
+```
+
 
 ### Use the Asset Database (Editor only)
 You can load your **UI Assets** by **path** or **GUID** with the **`AssetDatabase`** class.
