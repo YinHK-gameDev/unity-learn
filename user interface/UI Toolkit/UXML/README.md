@@ -115,7 +115,7 @@ The `src` attribute accepts relative paths and offers error messages at import t
 
 The `src` attribute expects the file path to be relative to either the project root or the folder that contains the UXML file.
 
-**Important**: You must include the file extension.
+> **Important**: You must include the file extension.
 
 For example, to reference a UXML files that is located at `Assets\Editor\UXML` and a USS file that is located at `Assets\Editor\USS`, use any of the following formats:
 
@@ -130,7 +130,7 @@ The `path` attribute uses the Unity Resources mechanisms, but doesn’t offer er
 
 The `path` attribute accepts files located in either the `Resources` folder or the `Editor Default Resources` folder, with the following rules:
 
--   If the file is in the `Resources` folder, don’t include the file extension. For example, write `path="template"` for a file located at `Assets/Resources/template.uxml`.
+-   If the file is in the `Resources` folder, **don’t include the file extension**. For example, write `path="template"` for a file located at `Assets/Resources/template.uxml`.
 -   If the file is in the `Editor Default Resources` folder, you must include the file extension. For example, write `path="template.uxml"` for a file located at `Assets/Editor Default Resources/template.uxml`.
 
 
