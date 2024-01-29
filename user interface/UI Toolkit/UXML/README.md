@@ -134,6 +134,11 @@ The `path` attribute accepts files located in either the `Resources` folder or t
 -   If the file is in the `Editor Default Resources` folder, you must include the file extension. For example, write `path="template.uxml"` for a file located at `Assets/Editor Default Resources/template.uxml`.
 
 
+### UXML element VisualElement
+A **VisualElement** is the **basic element that you can use as a container for other elements**. You can use a VisualElement to group elements together and apply a common style to them. For example, you can use a VisualElement to group a label and a text field together, and then apply a common style to the VisualElement.
+
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-WritingUXMLTemplate.html
