@@ -62,6 +62,22 @@ Eg:
 myElement.Add(new Label("Hello World"));
 myElement.Add(new TextField());
 ```
+#### UXML element Box
+The Box element is a VisualElment with the following styling properties:
+```
+.unity-box {
+background-color: env(--theme-box-background-color);
+border-color: env(--theme-box-border-color);
+border-width: 1px;
+}
+```
+
+You can create a Box with UXML or C#. Eg:
+```cs
+var box = new Box();
+box.Add(new Label("Name:"));
+box.Add(new TextField());
+```
 
 
 ### Use the Asset Database (Editor only)
