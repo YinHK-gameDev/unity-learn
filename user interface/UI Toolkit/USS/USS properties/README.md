@@ -1,6 +1,6 @@
 ### USS properties
 
-A USS property assigns a style or behavior to a VisualElement. You can specify values for a USS property.
+A USS property **assigns a style or behavior** to a VisualElement. You can specify values for a USS property.
 
 
 
