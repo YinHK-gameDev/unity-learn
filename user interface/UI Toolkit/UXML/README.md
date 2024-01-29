@@ -42,7 +42,7 @@ You can also define a default namespace by excluding a prefix. For example, **`x
 
 ### Schema
 
-The schema definition validates your UXML files. It specifies which attributes and child elements each UXML element can contain.
+The **schema** definition **validates your UXML files**. It **specifies which attributes and child elements each UXML element can contain**.
 
 In a UXML file, the `xsi:noNamespaceSchemaLocation` or the `xsi:schemaLocation` attributes of the `<UXML>` root element specify the location of the schema definition files.
 
