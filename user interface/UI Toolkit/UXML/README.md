@@ -79,7 +79,7 @@ If you style an element in UI Builder, the style is added as an inline style to 
 </ui:UXML>
 ```
 
-To reference a stylesheet file, add the **`<Style>`** element under the root element of a **UXML** file.
+To reference a stylesheet file, add the **`<Style>`** element under the **root element** of a **UXML** file.
 
 For example, if you have a **USS** file named **`styles.uss`** in the **same folder** of the **UXML** file with the following content:
 
