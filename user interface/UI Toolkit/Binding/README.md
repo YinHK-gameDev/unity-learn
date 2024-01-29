@@ -13,7 +13,7 @@ A **binding** refers to the **link between the property and the visual control t
 ### ref 
 https://docs.unity3d.com/Manual/UIE-bindable-elements.html
 
-https://docs.unity3d.com/Manual/UIE-binding-examples.html
+https://docs.unity3d.com/Manual/UIE-Binding.html
 
 https://docs.unity3d.com/Manual/UIE-create-a-binding-csharp.html
 
@@ -24,4 +24,6 @@ https://docs.unity3d.com/Manual/UIE-binding-implementation-details.html
 https://docs.unity3d.com/Manual/UIE-bindable-elements.html
 
 https://docs.unity3d.com/Manual/UIE-binding-data-type-conversion.html
+
+https://docs.unity3d.com/Manual/UIE-binding-examples.html
 
