@@ -32,7 +32,7 @@ public class Car : MonoBehaviour
 ### Create a custom inspector script
 To create a custom inspector for any serialized object, you need to create a class deriving from the **Editor** base class, and add the **`CustomEditor`** attribute to it. This attribute **lets Unity know which class this custom inspector represents**.
 
-EG: \
+Eg: \
 Create a file `Car_Inspector.cs` inside **Assets/Scripts/Editor** and copy the following code into it.
 
 ```cs
