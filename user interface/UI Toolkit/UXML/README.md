@@ -50,7 +50,7 @@ To create a UXML file with the latest schema definition, select **Assets** > **C
 
 **Note**: If your text editor doesn’t recognize the `xsi:noNamespaceSchemaLocation` attribute, use the `xsi:schemaLocation` attribute instead.
 
-To force an update of the UXML schema definition, select **Assets** > **Update UXML Schema**.
+> **Note**: To force an update of the UXML schema definition, select **Assets** > **Update UXML Schema**.
 
 ### UXML elements
 The definition of the UI is within the `<UXML>` root. The UI definition is a series of nested UXML elements, each representing a visual element.
