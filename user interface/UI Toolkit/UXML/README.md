@@ -142,9 +142,9 @@ A **VisualElement** is the **basic element that you can use as a container for o
 The Box element is a VisualElment with the following styling properties:
 ```
 .unity-box {
-background-color: env(--theme-box-background-color);
-border-color: env(--theme-box-border-color);
-border-width: 1px;
+    background-color: env(--theme-box-background-color);
+    border-color: env(--theme-box-border-color);
+    border-width: 1px;
 }
 ```
 
