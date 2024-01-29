@@ -11,6 +11,7 @@ A **binding** refers to the **link between the property and the visual control t
 
 
 ### ref 
+https://docs.unity3d.com/Manual/UIE-bindable-elements.html
 
 https://docs.unity3d.com/Manual/UIE-binding-examples.html
 
