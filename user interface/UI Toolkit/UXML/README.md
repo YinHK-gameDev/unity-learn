@@ -137,6 +137,17 @@ The `path` attribute accepts files located in either the `Resources` folder or t
 ### UXML element VisualElement
 A **VisualElement** is the **basic element that you can use as a container for other elements**. You can use a VisualElement to group elements together and apply a common style to them. For example, you can use a VisualElement to group a label and a text field together, and then apply a common style to the VisualElement.
 
+#### UXML element Box
+
+The Box element is a VisualElment with the following styling properties:
+```
+.unity-box {
+background-color: env(--theme-box-background-color);
+border-color: env(--theme-box-border-color);
+border-width: 1px;
+}
+```
+
 
 
 
