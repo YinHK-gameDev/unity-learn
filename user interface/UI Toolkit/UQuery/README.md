@@ -153,7 +153,16 @@ Consider the following when you use UQuery:
 -   When you create or release lots of elements, enable incremental garbage collection to avoid garbage collector spikes.
 
 
+
+
+
 ### ref 
-https://docs.unity3d.com/Manual/UIE-UQuery.html
+https://docs.unity3d.com/Manual/UIE-UQuery.html \
+**`UQueryBuilder`**: \
+https://docs.unity3d.com/ScriptReference/UIElements.UQueryBuilder_1.html \
+
+
+
+
 
 
