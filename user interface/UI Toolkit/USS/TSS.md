@@ -1,7 +1,7 @@
 ## Theme Style Sheet (TSS)
 
-**Theme Style Sheet (TSS)** files are regular USS files. UI
- Toolkit treats TSS as a distinct asset type and uses it for management purposes.
+**Theme Style Sheet (TSS)** files are regular USS files. \
+UI Toolkit treats TSS as a **distinct asset type** and uses it for **management purposes**.
 
 Regular **USS syntax** and format apply to **TSS** files, but usually, a theme file contains references to other USS files through the **`@import rule`**.
 
