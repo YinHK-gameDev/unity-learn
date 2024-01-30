@@ -27,8 +27,36 @@ To create a new TSS:
 ![](./img/TSS_File.png)
 
 
+### Preview a TSS
+
+Your custom theme also appears in the theme list of the Viewport in UI Builder. To preview your theme, select it from the Viewport.
+
+### Apply a TSS
+You can **reference a TSS** in **UXML or C#** the **same way** as you do with **USS**.
+
+You can also set a TSS as the default theme for a Panel Setting asset. If you have more than one Panel Setting, each one can use a different TSS file.
+
+Note: If you set a TSS for a Panel Setting asset, it doesn’t make the TSS a global style for the whole project. You still need to reference the TSS in UXML or C#.
+
+
+### Import a theme
+
+You can use the **TSS asset’s Inspector window** or the **`@import`** rule to import a theme.
+
+#### Import a theme with the Inspector window
+
+1.  Select the TSS asset.
+2.  Go to the Inspector window > **Inherited Themes**.
+3.  Select **+**. This adds a new reference field.
+4.  Select the list icon in the reference field. A dropdown list displays with all the style sheets in your project.
+5.  Select the style sheet to use.
+6.  Select **Apply**.
+
+#### Import the default theme with the **`@import`** rule 
+```
+@import url("unity-theme://default");
+```
+
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-tss.html
-
-
