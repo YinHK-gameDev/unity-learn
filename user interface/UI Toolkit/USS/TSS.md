@@ -22,6 +22,11 @@ To create a new TSS:
     - Select **Assets > Create > UI Toolkit > Default Runtime Theme File** to create a copy of the default runtime theme file. You can rename the file if you want.
 3.  Import your style USS files to your theme.
 
+![](./img/TSS.png)
+
+![](./img/TSS_File.png)
+
+
 
 ### ref 
 https://docs.unity3d.com/Manual/UIE-tss.html
