@@ -11,7 +11,7 @@ Regular **USS syntax** and format apply to **TSS** files, but usually, a **theme
 You can create different TSS files for **different themes** and **switch between them at runtime**. \
 **Typically, you should use USS for styles**. Consider TSS when you customize the **look and feel for different platforms or devices**, or when you use **different fonts** for **different languages** if your games or applications **support multiple languages**.
 
-> **Note**: When you add your first UIDocument to a GameObject in your project, it generates a default runtime theme asset at **`Assets/UI Toolkit/UnityThemes/UnityDefaultTheme.tss`**. Although you can create a TSS from scratch, to get all the default UI controls to work, you must import the default runtime theme, and then overwrite or add new styles to create your custom theme.
+> **Note**: When you add your first UIDocument to a GameObject in your project, it generates a default runtime theme asset at **`Assets/UI Toolkit/UnityThemes/UnityDefaultTheme.tss`**. Although you can create a TSS from scratch, to get all the default UI controls to work, you **must import the default runtime theme**, and then **overwrite** or **add new styles to create your custom theme**.
 
 
 To create a new TSS:
