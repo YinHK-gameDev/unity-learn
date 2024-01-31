@@ -4,7 +4,7 @@
 The **UI Toolkit event** system shares the **same terminology** and event naming as **HTML events**.
  
  
-The UI Toolkit event system listens to events, coming from the operating system or scripts
+The UI Toolkit **event system listens to events**, coming from the operating system or scripts
 , and dispatches these events to visual elements using the **EventDispatcher**. 
 
 The **event dispatcher** determines an **appropriate dispatching strategy** for each event it sends. Once determined, the dispatcher **executes the strategy**.
