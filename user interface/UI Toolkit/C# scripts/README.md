@@ -278,6 +278,9 @@ https://docs.unity3d.com/Packages/com.unity.ui@1.0/api/UnityEditor.UIElements.ht
 **`UIDocument` class** \
 https://docs.unity3d.com/Packages/com.unity.ui@1.0/api/UnityEngine.UIElements.UIDocument.html
 
+**Interface IEventHandler** \
+https://docs.unity3d.com/Packages/com.unity.ui@1.0/api/UnityEngine.UIElements.IEventHandler.html?q=SendEvent
+
 **`VisualElement` class** \
 https://docs.unity3d.com/Packages/com.unity.ui@1.0/api/UnityEngine.UIElements.VisualElement.html#methods
 
