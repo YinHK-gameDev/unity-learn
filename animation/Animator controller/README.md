@@ -36,7 +36,7 @@ This allows you to create multiple variants of the same basic state machine, but
 
 > Reuse the original animation controller from other game object(with same logic, structure and parameters), just override the specific orignal animation clips
 
-To create a new Animator Override Controller, use the **Assets -> Create** menu, or the **Create** button in the Project view, and select **Animator Override Controller**.
+To create a new Animator Override Controller, use the **Assets > Create** menu, or the **Create** button in the Project view, and select **Animator Override Controller**.
 
 In the controller field in the **Animator Override Controller** component, dragging an existing controller into the Animator Override Controller’s inspector.
 
