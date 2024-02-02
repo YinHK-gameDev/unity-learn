@@ -100,7 +100,7 @@ Each element along the propagation path (except the target) can receive an event
 
 By default, a registered callback executes during the target phase and the bubble-up phase. This default behavior ensures that a parent element reacts after its child element.
 
-> On the other hand, if you want a parent element to react before its child, register your callback with the `TrickleDown.TrickleDown` option:
+> On the other hand, if you want a parent element to react before its child, register your callback with the **`TrickleDown.TrickleDown`** option:
 
 ```csharp
 using UnityEngine;
@@ -132,7 +132,7 @@ The signature for the callback function looks like this:
 void MyCallback(MouseDownEvent evt) { /* ... */ }
 ```
 
-You can register multiple callbacks for an event. However, you can only register the same callback function on the same event and propagation phase once.
+You can register **multiple callbacks** for an event. However, you can **only register the same callback function** on the **same event** and **propagation phase once**.
 
 > To remove a callback from a `VisualElement`, call the `myElement.UnregisterCallback()` method.
 
