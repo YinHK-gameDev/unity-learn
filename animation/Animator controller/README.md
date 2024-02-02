@@ -11,7 +11,7 @@ The various ways an Animator Controller can be created:
 
 - By right-clicking in the Project View and selecting `Create > Animator Controller`.
 
-- From the Assets menu by selecting `Assets > Create > Animator Controlle`.
+- From the Assets menu by selecting `Assets > Create > Animator Controller`.
 
 This creates a `.controller` asset on disk. In the Project Browser window the icon will look like:
 
