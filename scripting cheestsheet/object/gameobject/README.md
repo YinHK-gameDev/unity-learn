@@ -68,7 +68,8 @@ https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
 - **`GameObject.FindGameObjectsWithTag`** \
   Returns an array of active GameObjects tagged `tag`. Returns empty array if no GameObject was found. \
   https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
-- **`GameObject.CompareTag()`**
+- **`GameObject.CompareTag()`** \
+  Returns boolean if exists the tag in the gameobject. \
   https://docs.unity3d.com/ScriptReference/GameObject.CompareTag.html
   
 > **Note**: Use **tag** rather than **name** to detect/find game objects, tag is suitable for finding game objects with same tag/name, whereas , name can’t.
