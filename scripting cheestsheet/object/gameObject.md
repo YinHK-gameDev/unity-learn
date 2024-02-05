@@ -63,7 +63,7 @@ gameObject.transform.childCount;
 **e.g.** 
 
 ```csharp
-**int Obj_childCount;
+int Obj_childCount;
 Obj_childCount = gameObject.transform.childCount;**
 ```
 
