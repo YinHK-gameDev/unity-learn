@@ -1,5 +1,9 @@
 ## Gameobject
 
+Base class for all entities in Unity Scenes.
+
+Inherited from Unity Object class 
+
 
 ### Set game object
 > Declare **`public GameObject <name>`** in script, then drag game object into inspecter inside that GameObject field.
