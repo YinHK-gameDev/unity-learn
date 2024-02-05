@@ -97,7 +97,7 @@ Then predefined value can be set in UI editor. \
 
 **If having more than one parameter**: \
 ![](./img/UnityEvent7.png)
-Callback function cannot be found in search, Generic UnityEvents should be used for for than one paramter \
+Callback function cannot be found in search, **Generic UnityEvents** should be used for for than one paramter \
 ![](./img/UnityEvent8.png)
 
 ### Event vs UnityEvents
