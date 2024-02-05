@@ -143,6 +143,15 @@ By default a **`UnityEvent`** in a **`Monobehaviour`** **binds dynamically to a 
 
 > **Generic UnityEvents** mainly used for dynamic binding, **a method the argument(s) passed by the invoker would be passed down to the actual method**.You can even us **UnityEvents** with **more than one argument** as the arguments are passed by the invoker.
 
+
+**`UnityEngine.Events`** :
+- **`UnityEvent`** (No argument)
+- **`UnityEvent<T0>`**
+- **UnityEvent<T0,T1>**
+- **`UnityEvent<T0,T1,T2>`**
+- **`UnityEvent<T0,T1,T2,T3>`**
+- **`UnityEventBase`** (Abstract base class)
+
 #### `UnityEventBase`
 
 **Abstract base class** for UnityEvents. \
@@ -467,6 +476,11 @@ https://docs.unity3d.com/ScriptReference/Events.UnityAction.html
 ### ref 
 https://docs.unity3d.com/Manual/UnityEvents.html \
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
+https://docs.unity3d.com/ScriptReference/Events.UnityEventBase.html \
+https://docs.unity3d.com/ScriptReference/Events.UnityEvent_1.html \
+https://docs.unity3d.com/ScriptReference/Events.UnityEvent_2.html \
+https://docs.unity3d.com/ScriptReference/Events.UnityEvent_3.html \
+https://docs.unity3d.com/ScriptReference/Events.UnityEvent_4.html \
 https://medium.com/geekculture/how-to-use-events-to-implement-a-messaging-system-in-unity-c-342ab4806d53 \
 https://forum.unity.com/threads/unityevent-passing-parameters-with-the-inspector.1249816/ \
 https://www.youtube.com/watch?v=oc3sQamIh-Q \
