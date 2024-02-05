@@ -1,7 +1,7 @@
 ## Event
 A common way to compose a game scene in Unity is attaching one GameObject to another to share methods and properties. This practice causes a highly coupled architecture that is **hard to maintain**.
 
-Using **Event** is a good way to trigger something happen in game without declaring public gameobject field and dragging and dropping in inspector for detecting the trigger happen.
+Using **Event** is a good way to **trigger something happen** in game **without declaring public gameobject field** and **dragging and dropping in inspector for detecting the trigger happen**.
 
 > To use event, you can choose using **UnityEvents** or **C# delegate & event**
 
