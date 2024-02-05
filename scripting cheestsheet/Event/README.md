@@ -19,8 +19,8 @@ allow items in our projects to subscribe to events, and have events trigger acti
 
 #### Using event in Unity
 There are 3 ways to use event in Unity
-- C# event
-- C# delegate
+- C# `event`
+- C# `delegate`
 - `UnityEvent`
 
 
