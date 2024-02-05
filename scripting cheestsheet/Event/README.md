@@ -14,8 +14,8 @@ allow items in our projects to subscribe to events, and have events trigger acti
 - include **`void StartListening`**, **`void StopListening`**, **`void TriggerEvent`** methods. 
 - in **`void TriggerEvent`** , **`Invoke()`** to invoke the event.
 - other game object, in its script subscribe and unscribe to the event listener.
-- **`void OnEnable()`** or other **`OnEventName`** method to subcribe the event.
-- **`void OnDisable()`** or other **`OnEventName`** method to unsubscribe the event. 
+- **`void OnEnable()`** or other **`OnEventName`** method to **subcribe** the event.
+- **`void OnDisable()`** or other **`OnEventName`** method to **unsubscribe** the event. 
 
 #### Using event in Unity
 There are 3 ways to use event in Unity
