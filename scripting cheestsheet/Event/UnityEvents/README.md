@@ -147,7 +147,7 @@ By default a **`UnityEvent`** in a **`Monobehaviour`** **binds dynamically to a 
 **`UnityEngine.Events`** :
 - **`UnityEvent`** (No argument)
 - **`UnityEvent<T0>`**
-- **UnityEvent<T0,T1>**
+- **`UnityEvent<T0,T1>`**
 - **`UnityEvent<T0,T1,T2>`**
 - **`UnityEvent<T0,T1,T2,T3>`**
 - **`UnityEventBase`** (Abstract base class)
