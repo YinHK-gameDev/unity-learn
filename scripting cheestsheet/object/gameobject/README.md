@@ -125,7 +125,7 @@ https://docs.unity3d.com/ScriptReference/Object.Destroy.html
 
 https://docs.unity3d.com/ScriptReference/Object.Instantiate.html
 
-#### Creates a GameObject with a primitive
+### Creates a GameObject with a primitive
 ```cs
 public static GameObject CreatePrimitive(PrimitiveType type);
 ```
