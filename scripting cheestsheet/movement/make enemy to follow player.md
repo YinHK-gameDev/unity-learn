@@ -23,6 +23,6 @@ void Update()
 or
 
 ```cs
-Transform.LookAt
+Transform.LookAt(target)
 ```
 
