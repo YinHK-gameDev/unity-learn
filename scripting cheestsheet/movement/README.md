@@ -169,6 +169,9 @@ public class ExampleClass : MonoBehaviour
 public static Vector3 Lerp(Vector3 a, Vector3 b, float t);
 ```
 
+```
+transform.position = Vector3 Lerp(...);
+```
 
 ```cs
 public class ExampleClass : MonoBehaviour
