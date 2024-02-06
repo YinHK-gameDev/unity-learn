@@ -15,7 +15,7 @@ void start()
 
 void Update() 
 {
-  //Using AddForce: AddForce((player,transform.position - transform.position).normalized * speed)
+  //Using AddForce: AddForce((player.transform.position - transform.position).normalized * speed)
   enemyRb.AddForce((player.transform.position - transform.position).normalized * speed);
 }
 ```
