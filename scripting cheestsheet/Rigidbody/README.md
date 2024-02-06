@@ -23,6 +23,11 @@ Adds a force to the Rigidbody.
 
 Just a force pushing an object.
 
+```cs
+public void AddForce(Vector3 force, ForceMode mode = ForceMode.Force);
+```
+
+
 #### `AddTorque`
 Adds a torque to the rigidbody.
 
@@ -30,7 +35,10 @@ Force can be applied only to an active rigidbody. If a GameObject is inactive, A
 
  use the AddTorque function to add a **rotational force** onto the object.
  Torque is rotational force. Think of an imaginary axle that spins the object.
- 
+
+```cs
+public void AddTorque(Vector3 torque, ForceMode mode = ForceMode.Force);
+```
 
 ### Properties
 
