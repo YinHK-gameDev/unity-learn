@@ -1,7 +1,8 @@
 ## Input
 
 ### Input Manager
-The Input Manager window allows you to define input axes and their associated actions for your Project. To access it, from Unity’s main menu, go to **Edit > Project Settings**, then select Input Manager from the navigation on the right.
+The Input Manager window allows you to define input axes and their associated actions for your Project. To access it, from Unity’s main menu, go to **Edit > Project Settings**, then select Input Manager from the navigation on the right. \
+The Input Manager is part of the core Unity platform and is the **default**.
 
 The Input Manager uses the following types of controls:
 
