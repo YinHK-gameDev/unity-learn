@@ -1,5 +1,5 @@
 ## Component
-Base class for everything attached to a GameObject.
+**Base class** for **everything attached to a GameObject**.
 
 Note that your code will never directly create a Component. Instead, you write script code, and attach the
 
