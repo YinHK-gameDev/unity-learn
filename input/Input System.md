@@ -13,4 +13,11 @@ To use **Input System package**, you **must install it into your project** using
 
 
 ### ref
-https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/index.html
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/index.html \
+
+Scripting API \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/index.html
+
+https://www.youtube.com/watch?v=HmXU4dZbaMw \
+https://www.youtube.com/watch?v=Yjee_e4fICc \
+https://www.youtube.com/watch?v=UyUogO2DvwY
