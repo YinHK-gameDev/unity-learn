@@ -9,6 +9,9 @@ You cannot use Unity UI to create or change user interfaces in the Unity Editor.
 
 **GameObject > UI / Component > UI**
 
+
+> uGUI is using `UnityEngine.UI` namespace scripting API which is removed in latest Unity version. Try using UItool kit & namespace `UnityEngine.UIElements` scripting API instead.
+
 ### Visual Components
 - Text
 - Image
