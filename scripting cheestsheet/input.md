@@ -60,6 +60,10 @@ https://docs.unity3d.com/ScriptReference/Input.GetAxis.html
 
 Returns true during the frame the user pressed down the **virtual button** identified by **`buttonName`**.
 
+```
+public static bool GetButtonDown(string buttonName);
+```
+
 Call this function from the **`Update`** function, since the state **gets reset each frame**. It **will not return true until the user has released the key and pressed it again**.
 
 Use this only when implementing action **like events** eg: shooting a weapon.
