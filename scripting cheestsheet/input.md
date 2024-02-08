@@ -7,9 +7,9 @@ https://docs.unity3d.com/ScriptReference/Input.html
 
 
 ### `Input.GetAxis( string axisName )`
-Returns the value of the **virtual axis** identified by axisName.
+**Returns the value** of the **virtual axis** identified by **axisName**.
 
-The value will be in the range **-1...1** for keyboard and joystick input devices.
+The value will be in the range **`-1...1`** for keyboard and joystick input devices. Return value between **`-1...1`**.
 
 The meaning of this value depends on the type of input control, for example with a joystick's horizontal axis a value of 1 means the stick is pushed all the way to the right and a value of -1 means it's all the way to the left; a value of 0 means the joystick is in its neutral position.
 
