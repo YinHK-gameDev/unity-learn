@@ -119,6 +119,15 @@ Input.GetTouch returns Touch for a selected screen touch (for example, from a fi
 https://docs.unity3d.com/ScriptReference/Input.GetTouch.html
 
 
+
+### "Up", "Down" vs without "Down" or "Up"
+`GetXXXDown` vs `GetXXX` vs `GetXXXUp` difference:
+
+- `GetXXX`  will return value if user **"hold down"** input, only stop returning value when user release.
+- `GetXXXDown` only return value if user **hit/press down**, even user hold down it won't return value anymore. Unless user release it and **hit/press down** again.
+- `GetXXXUp` only return value if user **release**. 
+
+
 |**Static Properties**|**Description**|
 | --- | --- |
 | `acceleration` | Last measured linear acceleration of a device in three-dimensional space. (Read Only) |
