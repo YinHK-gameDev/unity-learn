@@ -58,9 +58,9 @@ https://docs.unity3d.com/ScriptReference/Input.GetAxis.html
 
 ### `Input.GetButtonDown`
 
-Returns true during the frame the user pressed down the **virtual button** identified by `buttonName`.
+Returns true during the frame the user pressed down the **virtual button** identified by **`buttonName`**.
 
-Call this function from the Update function, since the state gets reset each frame. It will not return true until the user has released the key and pressed it again.
+Call this function from the **`Update`** function, since the state **gets reset each frame**. It **will not return true until the user has released the key and pressed it again**.
 
 Use this only when implementing action **like events** eg: shooting a weapon.
 Use `Input.GetAxis` for any kind of movement behaviour.
@@ -90,6 +90,17 @@ https://docs.unity3d.com/ScriptReference/Input.GetButtonDown.html
 ### `Input.GetKeyDown`
 
 Returns true during the frame the user starts pressing down the key identified by name.
+
+```
+public static bool GetKeyDown(string name);
+```
+
+Returns true during the frame the user starts pressing down the key identified by the key KeyCode enum parameter.
+
+```
+public static bool GetKeyDown(KeyCode key);
+```
+
 
 https://docs.unity3d.com/ScriptReference/Input.GetKeyDown.html
 
@@ -124,7 +135,7 @@ https://docs.unity3d.com/ScriptReference/Input.GetTouch.html
 `GetXXXDown` vs `GetXXX` vs `GetXXXUp` difference:
 
 - `GetXXX`  will return value if user **"hold down"** input, only stop returning value when user release.
-- `GetXXXDown` only return value if user **hit/press down**, even user hold down it won't return value anymore. Unless user release it and **hit/press down** again.
+- `GetXXXDown` only return value if user **hit/press down**, even user hold down it won't return value anymore. Unless user release it and **hit/press down** again. **will not return anything until the user has released and pressed it again**
 - `GetXXXUp` only return value if user **release**. 
 
 
