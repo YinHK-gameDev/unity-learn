@@ -105,6 +105,8 @@ Returns true during the frame the user starts pressing down the key identified b
 public static bool GetKeyDown(KeyCode key);
 ```
 
+Call this function from the Update function, since the state gets reset each frame. It will not return true until the user has released the key and pressed it again.
+
 
 https://docs.unity3d.com/ScriptReference/Input.GetKeyDown.html
 
@@ -117,11 +119,44 @@ https://docs.unity3d.com/ScriptReference/KeyCode.html
 ### `Input.GetMouseButtonDown`
 Returns true during the frame the user pressed the given mouse button.
 
+```
+public static bool GetMouseButtonDown(int button);
+```
+Call this function from the Update function, since the state gets reset each frame. It will not return true until the user has released the mouse button and pressed it again. button values are 0 for left button, 1 for right button, 2 for the middle button.
+
+```cs
+using UnityEngine;
+using System.Collections;
+
+// Detects clicks from the mouse and prints a message
+// depending on the click detected.
+
+public class ExampleClass : MonoBehaviour
+{
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+            Debug.Log("Pressed left-click.");
+
+        if (Input.GetMouseButtonDown(1))
+            Debug.Log("Pressed right-click.");
+
+        if (Input.GetMouseButtonDown(2))
+            Debug.Log("Pressed middle-click.");
+    }
+}
+```
+
+
 https://docs.unity3d.com/ScriptReference/Input.GetMouseButtonDown.html
 
 
 ### `Input.mouseScrollDelta`
-The current mouse scroll delta. (Read Only)
+The current mouse **scroll delta**. (**Read Only**)
+
+```
+public static Vector2 mouseScrollDelta;
+```
 
 `Input.mouseScrollDelta` is stored in a Vector2.y property. (The Vector2.x value is ignored.) `Input.mouseScrollDelta` can be positive (up) or negative (down). The value is zero when the mouse scroll is not rotated.
 
