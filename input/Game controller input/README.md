@@ -65,3 +65,6 @@ public class Shooting : MonoBehaviour
 
 ### ref 
 https://docs.unity3d.com/Manual/ios-handle-game-controller-input.html
+
+Detect Game Controllers \
+https://docs.unity3d.com/Manual/ios-detect-game-controllers.html
