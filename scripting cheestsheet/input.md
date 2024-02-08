@@ -162,6 +162,16 @@ public static Vector2 mouseScrollDelta;
 
 https://docs.unity3d.com/ScriptReference/Input-mouseScrollDelta.html
 
+### `Input.mousePosition`
+The current **mouse position in pixel coordinates**. (**Read Only**).
+
+```
+public static Vector3 mousePosition;
+```
+
+> **`Input.mousePosition`** is a Vector3 for compatibility with functions that have Vector3 arguments. The z component of the Vector3 is always 0. The bottom-left of the screen or window is at (0, 0). The top-right of the screen or window is at (Screen.width, Screen.height).
+
+https://docs.unity3d.com/ScriptReference/Input-mousePosition.html
 
 ### `Input.GetTouch`
 Input.GetTouch returns Touch for a selected screen touch (for example, from a finger or stylus). Touch describes the screen touch. The index argument selects the screen touch.
