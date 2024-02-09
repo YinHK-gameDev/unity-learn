@@ -182,10 +182,14 @@ public static Vector3 mousePosition;
 https://docs.unity3d.com/ScriptReference/Input-mousePosition.html
 
 ### `Input.GetTouch`
-Input.GetTouch returns Touch for a selected screen touch (for example, from a finger or stylus). Touch describes the screen touch. The index argument selects the screen touch.
+**`Input.GetTouch`** returns Touch for a selected screen touch (for example, from a finger or stylus). Touch describes the screen touch. The index argument selects the screen touch.
+
+
+iOS and Android devices are capable of tracking multiple fingers touching the screen simultaneously. You can access data on the status of each finger touching screen during the last frame by using the `Input.touches` property array.
+
+
 
 https://docs.unity3d.com/ScriptReference/Input.GetTouch.html
-
 
 
 ### "Up", "Down" vs without "Down" or "Up"
