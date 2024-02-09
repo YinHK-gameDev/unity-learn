@@ -13,6 +13,9 @@ To use **Input System package**, you **must install it into your project** using
 ### Installing the package
 To install the new Input System, open Unity's package manager (menu: **Window > Package Manager**). Select the **Input System** package from the list, then click **Install**.
 
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Installation.html
+
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/index.html \
 
