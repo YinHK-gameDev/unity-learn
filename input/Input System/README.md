@@ -51,7 +51,7 @@ There are multiple ways to use the Input System, and the workflow that’s right
 
 
 ### ref
-https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/index.html \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/index.html 
 
 Scripting API \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/index.html
