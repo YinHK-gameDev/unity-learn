@@ -130,7 +130,7 @@ public class DocsExampleActionsAssetCsWrapper : MonoBehaviour
 ```
 
 
-> Whether you use the C# wrapper option, or the inspector reference option, using an Action Asset like this gives you the ability to organize and edit your actions in the Actions Window. It is more flexible than using embedded actions, and directly reading device states, and is generally a good solution for many projects. However, you can also add one more step of abstraction using the Player Input component, to set up calls to methods based on your Action definitions.
+> Whether you use the C# wrapper option, or the inspector reference option, using an Action Asset like this gives you the ability to organize and edit your actions in the Actions Window. It is more flexible than **using embedded actions**, and **directly reading device states**, and is generally **a good solution for many projects**. However, you can also add one more step of abstraction using the **Player Input component**, to **set up calls to methods based on your Action definitions**.
 
 
 
