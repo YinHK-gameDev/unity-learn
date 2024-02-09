@@ -13,6 +13,9 @@ The value will be in the range **`-1...1`** for keyboard and joystick input devi
 
 The meaning of this value depends on the type of input control, for example with a joystick's horizontal axis a value of 1 means the stick is pushed all the way to the right and a value of -1 means it's all the way to the left; a value of 0 means the joystick is in its neutral position.
 
+If the axis is mapped to the mouse, the value is different and** will not be in the range of -1...1**. Instead it'll be the current **mouse delta** multiplied by the **axis sensitivity**. Typically a **positive value means the mouse is moving right/down** and a **negative value means the mouse is moving left/up**.
+
+
 This is frame-rate independent; you do not need to be concerned about varying frame-rates when using this value.  
   
 To **set up your input** or **view the options** for **`axisName`**, go to **Edit** > **Project Settings** > **Input Manager**. This brings up the Input Manager. Expand **Axis** to see the list of your current inputs. You can use one of these as the `axisName`. To rename the input or change the positive button etc., expand one of the options, and change the name in the **Name** field or **Positive Button** field. Also, change the **Type** to **Joystick Axis**. To add a new input, add 1 to the number in the **Size** field.
@@ -52,6 +55,9 @@ public class ExampleClass : MonoBehaviour
 }
 ```
 
+
+- `Input.GetAxis("Mouse X")` get the horizontal movement of mouse
+- `Input.GetAxis("Mouse Y")` get the vertical movement of mouse
 
 https://docs.unity3d.com/ScriptReference/Input.GetAxis.html
 
