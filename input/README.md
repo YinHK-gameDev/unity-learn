@@ -43,7 +43,7 @@ Axis values can be:
 
 ### Adding, removing, and copying virtual axes
 
-To add a virtual axis, increase the number in the **Size** field. This creates a new axis at the bottom of the list. The new axis copies the properties of the previous axis in the list.
+To add a virtual axis, increase the number in the **Size** field. This creates a new axis at the bottom of the list. The **new axis copies the properties of the previous axis in the list**.
 
 To remove a virtual axis, you can either:
 
