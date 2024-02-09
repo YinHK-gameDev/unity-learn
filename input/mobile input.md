@@ -50,6 +50,13 @@ The touch lifecycle describes the state of a touch in any given frame:
 
 > The Touch struct is used by Unity to store data relating to a single touch instance and is returned by the `Input.GetTouch` function. Fresh calls to GetTouch will be required on each frame update to obtain the latest touch information from the device but the `Touch.fingerId` property can be used to identify the same touch between frames.
 
+### Mouse simulation
+
+On top of native touch support Unity iOS/Android provides a mouse simulation. You can use mouse functionality from the standard Input class. Note that iOS/Android devices are designed to support multiple finger touch. Using the mouse functionality will support just a single finger touch. Also, finger touch on mobile devices can move from one area to another with no movement between them. Mouse simulation on mobile devices will provide movement, so is very different compared to touch input. 
+> The recommendation is to use the mouse simulation during early development but to use touch input as soon as possible.
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/MobileInput.html
 
