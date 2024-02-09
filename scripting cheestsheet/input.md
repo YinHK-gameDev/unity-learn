@@ -277,6 +277,12 @@ public static Touch GetTouch(int index);
 
 https://docs.unity3d.com/ScriptReference/Input.GetTouch.html
 
+#### `Input.Touch` struct
+Structure describing the status of a finger touching the screen.
+
+
+https://docs.unity3d.com/ScriptReference/Touch.html
+
 
 ### "Up", "Down" vs without "Down" or "Up"
 `GetXXXDown` vs `GetXXX` vs `GetXXXUp` difference:
