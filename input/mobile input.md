@@ -181,5 +181,8 @@ https://docs.unity3d.com/Manual/MobileKeyboard.html
 **`Input.Touch` struct** \
 https://docs.unity3d.com/ScriptReference/Touch.html
 
+**Touch Input for Mobile Scripting** \
+https://learn.unity.com/tutorial/touch-input-for-mobile-scripting#
+
 **`Input.acceleration`** \
 https://docs.unity3d.com/ScriptReference/Input-acceleration.html
