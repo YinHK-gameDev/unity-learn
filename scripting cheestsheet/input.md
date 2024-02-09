@@ -72,6 +72,8 @@ public static bool GetButtonDown(string buttonName);
 
 Call this function from the **`Update`** function, since the state **gets reset each frame**. It **will not return true until the user has released the key and pressed it again**.
 
+To edit, set up, or remove buttons and their names (such as "Fire1"): 1. Go to **Edit > Project Settings > Input Manager** to bring up the Input Manager. 2. Expand Axis by clicking the arrow next to it. This shows the list of the current buttons you have. You can use one of these as the parameter "buttonName". 3. Expand one of the items in the list to access and change aspects such as the button's name and the key, joystick or mouse movement that triggers it. 
+
 Use this only when implementing action **like events** eg: shooting a weapon.
 Use `Input.GetAxis` for any kind of movement behaviour.
 
