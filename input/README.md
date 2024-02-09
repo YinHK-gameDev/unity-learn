@@ -110,15 +110,17 @@ You can map controller input in the Unity Input settings using the following:
 | `L2/R2` | joystick button 10 / joystick button 11 | joystick axis 10 / joystick axis 11 |
 
 
+https://docs.unity3d.com/Manual/ios-handle-game-controller-input.html \
 
 
-https://docs.unity3d.com/Manual/class-InputManager.html
+
 
 ### Input class 
 use this scripting api to access user input \
 https://docs.unity3d.com/ScriptReference/Input.html
 
 ### ref 
+https://docs.unity3d.com/Manual/class-InputManager.html \
 https://www.youtube.com/watch?v=p-3S73MaDP8
 
 
