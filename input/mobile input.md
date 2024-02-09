@@ -101,7 +101,14 @@ public class Accelerometer : MonoBehaviour
 
 https://www.youtube.com/watch?v=hZXLP9_VIso&t=534s
 
+### Create Joystick input in mobile device
 
+You can use Joystick pack asset  from Unity asset to create joustick in mobile game
+
+
+
+https://assetstore.unity.com/packages/tools/input-management/joystick-pack-107631 \
+https://www.youtube.com/watch?v=pRsCSPb6FXs
 
 ### ref
 https://docs.unity3d.com/Manual/MobileInput.html
