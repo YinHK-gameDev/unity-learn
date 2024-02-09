@@ -45,7 +45,112 @@ There are multiple ways to use the Input System, and the workflow that’s right
 - **Using an Actions Asset**: Your script does not define actions directly. Instead your script references an Input Actions asset which defines your actions. The Input Actions window provides a UI to define, configure, and organize all your Actions into useful groupings.
 - **Using an Actions Asset and a PlayerInput component**: In addition to using an Actions Asset, the PlayerInput component provides a UI in the inspector to connect actions to event handlers in your script, removing the need for any intermediary code between the Input System and your Action Methods.
 
+### Actions
 
+There are three key classes for Actions in the API:
+
+| Class | Description |
+| --- | --- |
+| `InputActionAsset` | An Asset that contains one or more Action Maps and, optionally, a sequence of Control Schemes. For more information on how to create, edit, and work with these Assets|
+| `InputActionMap` | A named collection of Actions. |
+| `InputAction` | A named Action that triggers callbacks in response to input. |
+
+
+### Creating Actions
+
+You can create Actions in any of the following ways:
+
+- Use the dedicated editor for Input Action Assets.
+- Embed them in MonoBehaviour components, then set up bindings in the Inspector.
+- Manually load them from JSON.
+- Create them entirely in code, including setting up the bindings.
+
+#### Creating Actions using the Action editor
+For information on how to create and edit Input Action Assets in the dedicated editor, see Action Assets. This is the recommended workflow if you want to organise all your input actions and bindings together into a single Asset, which is often the case for many types of game or app.
+
+![](./img/MyGameActions.png)
+
+#### Creating Actions by embedding them in MonoBehaviours
+
+As an alternative to using an **Action Asset**, You can embed individual **Input Action** and **Input Action Maps** as fields directly inside `MonoBehaviour` components, like this:
+
+```cs
+sing UnityEngine;
+using UnityEngine.InputSystem;
+
+public class ExampleScript : MonoBehaviour
+{
+    public InputAction move;
+    public InputAction jump;
+}
+
+```
+
+The result is similar to using an Action Asset, except the Actions are defined in the GameObject's properties and saved as Scene or Prefab data, instead of in a dedicated Asset.
+
+When you embed actions in a MonoBehaviour and assign that MonoBehaviour to a GameObject, the GameObject's Inspector window displays an interface similar to the Actions Asset window, which allows you to set up the bindings for those actions. For example:
+
+![](img/Workflow-EmbeddedActionsInspector.png)
+
+The visual editors work similarly to the Action Asset editor.
+
+  -   To add or remove Actions or Bindings, click the Add (+) or Remove (-) icon in the header.
+  -   To edit Bindings, double-click them.
+
+      ![](./img/InputBindingInspector.png)
+
+  - To edit Actions, double-click them in an Action Map, or click the gear icon on individual Action properties.
+
+    ![](./img/InputActionInspector.png)
+
+  - You can also right-click entries to bring up a context menu, and you can drag them. Hold the Alt key and drag an entry to duplicate it.
+
+You must manually enable and disable Actions and Action Maps that are embedded in MonoBehaviour components.
+
+```cs
+public class MyBehavior : MonoBehaviour
+{
+    // ...
+
+    void Awake()
+    {
+        fireAction.performed += OnFire;
+        lookAction.performed += OnLook;
+
+        gameplayActions["fire"].performed += OnFire;
+    }
+
+    void OnEnable()
+    {
+        fireAction.Enable();
+        lookAction.Enable();
+
+        gameplayActions.Enable();
+    }
+
+    void OnDisable()
+    {
+        fireAction.Disable();
+        lookAction.Disable();
+
+        gameplayActions.Disable();
+    }
+}
+
+```
+
+
+#### Loading Actions from JSON
+You can load Actions as JSON in the form of a set of Action Maps or as a full InputActionAsset. This also works at runtime in the Player.
+
+```cs
+// Load a set of action maps from JSON.
+var maps = InputActionMap.FromJson(json);
+
+// Load an entire InputActionAsset from JSON.
+var asset = InputActionAsset.FromJson(json);
+
+```
 
 
 ### Migrating from the old input system(Input Manager)
