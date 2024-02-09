@@ -10,7 +10,8 @@ The Input System package allows your users to control your game or app using a d
 
 To use **Input System package**, you **must install it into your project** using the **Package Manager**.
 
-
+### Installing the package
+To install the new Input System, open Unity's package manager (menu: **Window > Package Manager**). Select the **Input System** package from the list, then click **Install**.
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/index.html \
