@@ -56,6 +56,52 @@ On top of native touch support Unity iOS/Android provides a mouse simulation. Yo
 > The recommendation is to use the mouse simulation during early development but to use touch input as soon as possible.
 
 
+### Accelerometer
+
+As the mobile device moves, a built-in accelerometer reports linear acceleration changes along the three primary axes in three-dimensional space. Acceleration along each axis is reported directly by the hardware as G-force values. A value of 1.0 represents a load of about +1g along a given axis while a value of –1.0 represents –1g. If you hold the device upright (with the home button at the bottom) in front of you, the X axis is positive along the right, the Y axis is positive directly up, and the Z axis is positive pointing toward you.
+
+You can retrieve the accelerometer value by accessing the **`Input.acceleration`** property.
+
+```cs
+public static Vector3 acceleration;
+```
+```cs
+using UnityEngine;
+
+public class Accelerometer : MonoBehaviour
+{
+    float speed = 10.0f;
+
+    void Update()
+    {
+        Vector3 dir = Vector3.zero;
+        // we assume that the device is held parallel to the ground
+        // and the Home button is in the right hand
+
+        // remap the device acceleration axis to game coordinates:
+        // 1) XY plane of the device is mapped onto XZ plane
+        // 2) rotated 90 degrees around Y axis
+
+        dir.x = -Input.acceleration.y;
+        dir.z = Input.acceleration.x;
+
+        // clamp acceleration vector to the unit sphere
+        if (dir.sqrMagnitude > 1)
+            dir.Normalize();
+
+        // Make it move 10 meters per second instead of 10 meters per frame...
+        dir *= Time.deltaTime;
+
+        // Move object
+        transform.Translate(dir * speed);
+    }
+}
+```
+
+
+https://www.youtube.com/watch?v=hZXLP9_VIso&t=534s
+
+
 
 ### ref
 https://docs.unity3d.com/Manual/MobileInput.html
@@ -63,5 +109,8 @@ https://docs.unity3d.com/Manual/MobileInput.html
 **Mobile keyboard** \
 https://docs.unity3d.com/Manual/MobileKeyboard.html
 
-`Input.Touch` struct
+**`Input.Touch` struct** \
 https://docs.unity3d.com/ScriptReference/Touch.html
+
+**`Input.acceleration`** \
+https://docs.unity3d.com/ScriptReference/Input-acceleration.html
