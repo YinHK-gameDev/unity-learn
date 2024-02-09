@@ -110,7 +110,6 @@ You can use Joystick pack asset  from Unity asset to create joustick in mobile g
 https://assetstore.unity.com/packages/tools/input-management/joystick-pack-107631 \
 https://www.youtube.com/watch?v=pRsCSPb6FXs
 
-
 #### Example of using script creating joystick
 ```cs
 using System.Collections;
@@ -165,12 +164,15 @@ public class Joystick : MonoBehaviour {
 
 ```
 
-
 **Make a custom Joystick through UI set up & scripting in Unity** \
 https://blog.yarsalabs.com/make-a-joystick-in-unity/ \
 https://www.theappguruz.com/blog/beginners-guide-learn-to-make-simple-virtual-joystick-in-unity \
 https://www.youtube.com/watch?v=BxO59UyXPLc \
 https://pressstart.vip/tutorials/2018/06/22/39/mobile-joystick-in-unity.html
+
+### Creating mobile UI buttons in Unity
+
+https://www.youtube.com/watch?v=MlR2kYO4CPI&t=451s
 
 ### ref
 https://docs.unity3d.com/Manual/MobileInput.html
