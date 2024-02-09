@@ -48,7 +48,9 @@ There are multiple ways to use the Input System, and the workflow that’s right
 
 
 
+### Migrating from the old input system(Input Manager)
 
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Migration.html
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/index.html 
