@@ -82,7 +82,13 @@ Joystick buttons follow these naming conventions:
 | A specific button on a specific joystick | `joystick 1 button 0`, `joystick 1 button 1`, `joystick 2 button 0`… |
 
 ### Set up virtual button for game controller in Input Manager Axes
-### Game Controller input mapping
+-   Go to **Edit** > **Project Settings**.
+-   Select the **Input Manager** category. For the Axes
+-   Open the virtual button name or create new virtual button name.
+-   Set **Positive Button** to **the following game controller keycode**.
+
+
+#### Game Controller input mapping
 
 You can map controller input in the Unity Input settings using the following:
 
