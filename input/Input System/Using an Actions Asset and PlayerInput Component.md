@@ -9,7 +9,43 @@ so that your desired C# methods are called when the user performs an input actio
 
 
 
+![](./img/PlayerInputWithGameplayEvents.png)
 
+In the above example image, you can see the PlayerInput component set up to map the "move", "jump" actions to OnMove and OnJump methods in a script, via Unity Events.
+
+This is an example of the script which would provide an implementation of these methods
+
+```cs
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+// This script is designed to have the OnMove and
+// OnJump methods called by a PlayerInput component
+
+public class ExampleScript : MonoBehaviour
+{
+    Vector2 moveAmount;
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        // read the value for the "move" action each event call
+        moveAmount = context.ReadValue<Vector2>();
+    }
+
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        // your jump code goes here.
+    }
+
+    public void Update()
+    {
+        // to use the Vector2 value from the "move" action each
+        // frame, use the "moveAmount" variable here.
+    }
+
+}
+
+```
 
 
 ### ref
