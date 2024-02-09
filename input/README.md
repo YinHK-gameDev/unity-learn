@@ -43,15 +43,16 @@ Axis values can be:
 
 ### Adding, removing, and copying virtual axes
 
-To add a virtual axis, increase the number in the **Size** field. This creates a new axis at the bottom of the list. The **new axis copies the properties of the previous axis in the list**.
+1. To **add a virtual axis**, increase the number in the **Size** field. This creates a new axis at the bottom of the list. The **new axis copies the properties of the previous axis in the list**.
 
-To remove a virtual axis, you can either:
+2. To **remove a virtual axis**, you can either:
 
--   Decrease the number in the **Size** field. This removes the last axis in the list.
--   Right-click any axis, and select **Delete Array Element**.  
+   -   Decrease the number in the **Size** field. This removes the last axis in the list.
+   -   Right-click any axis, and select **Delete Array Element**.  
     **Note:** You can’t undo this action.
 
-To copy a virtual axis, right-click it and select **Duplicate Array Element**.
+3. To **copy a virtual axis**, right-click it and select **Duplicate Array Element**.
+4. To **reset a virtual axis to default**, click reset icon in the top right corner.
 
 ### Mapping virtual axes to controls
 
