@@ -12,6 +12,11 @@ The Input Manager uses the following types of controls:
 
 
 ### Virtual axes
+Every Project you create has a number of input axes created by default. These axes enable you to use **keyboard, mouse, and joystick input** in your Project straight away.
+
+To see more about these axes, open the **Input Manager** window, and click the arrow next to any axis name to expand its properties.
+
+Each input axis has the following properties:
 
 | Property | Function |
 | --- | --- |
@@ -29,11 +34,24 @@ The Input Manager uses the following types of controls:
 
 Axis values can be:
 
--   Between –1 and 1 for joystick and keyboard input. The neutral position for these axes is 0. Some types of controls, such as buttons on a keyboard, aren’t sensitive to input intensity, so they can’t produce values other than –1, 0, or 1.
--   Mouse delta (how much the mouse has moved during the last frame) for mouse input. The values for mouse input axes can be larger than 1 or smaller than –1 when the user moves the mouse quickly.
+-   **Between –1 and 1 for joystick and keyboard input**. The neutral position for these axes is 0. Some types of controls, such as buttons on a keyboard, aren’t sensitive to input intensity, so they can’t produce values other than –1, 0, or 1.
+-   Mouse delta (how much the mouse has moved during the last frame) for mouse input. The values for mouse input axes can be **larger than 1 or smaller than –1** when the user moves the mouse quickly.
 
 
 > To set up your input or view the options for `axisName`, go to **Edit** > **Project Settings** > **Input Manager**. This brings up the Input Manager. Expand **Axis** to see the list of your current inputs. You can use one of these as the `axisName`. To rename the input or change the positive button etc., expand one of the options
+
+
+### Adding, removing, and copying virtual axes
+
+To add a virtual axis, increase the number in the **Size** field. This creates a new axis at the bottom of the list. The new axis copies the properties of the previous axis in the list.
+
+To remove a virtual axis, you can either:
+
+-   Decrease the number in the **Size** field. This removes the last axis in the list.
+-   Right-click any axis, and select **Delete Array Element**.  
+    **Note:** You can’t undo this action.
+
+To copy a virtual axis, right-click it and select **Duplicate Array Element**.
 
 ### Mapping virtual axes to controls
 
