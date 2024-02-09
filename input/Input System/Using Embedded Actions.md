@@ -20,7 +20,7 @@ public class ExampleScript : MonoBehaviour
 
 The InputAction class provides a way to bind interactions from a device’s controls to named actions in the inspector. When you bind actions to controls from a device in the inspector, you can then design your script to respond when the actions are performed without hard-coding references to specific devices in your script. This layer of abstraction provides you with the flexibility to modify or add multiple bindings without needing to change your code.
 
-To read values from your Actions, you must first enable the action, and then either repeatedly poll the action in your game loop, or add event handlers to the action. You must also disable the action when you no longer want the input to trigger event handlers.
+> To read values from your Actions, you **must first enable the action**, and then either repeatedly poll the action in your game loop, or add event handlers to the action. You **must also disable the action** when you no longer want the input to trigger event handlers.
 
 
 ```cs
