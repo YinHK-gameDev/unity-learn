@@ -49,7 +49,8 @@ public class ExampleScript : MonoBehaviour
 
 
 ### ref
-https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Workflow-PlayerInput.html
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Workflow-PlayerInput.html \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/PlayerInput.html
 
 
 
