@@ -28,6 +28,17 @@ The touch lifecycle describes the state of a touch in any given frame:
 | `deltaPosition` | The screen position change since the last frame. |
 | `deltaTime` | Amount of time that has passed since the last state change. |
 | `tapCount` | The iPhone/iPad screen is able to distinguish quick finger taps by the user. This counter will let you know how many times the user has tapped the screen without moving a finger to the sides. Android devices do not count number of taps, this field is always 1. |
+| `altitudeAngle` |	Value of 0 radians indicates that the stylus is parallel to the surface, pi/2 indicates that it is perpendicular. |
+| `azimuthAngle` | Value of 0 radians indicates that the stylus is pointed along the x-axis of the device. |
+| `maximumPossiblePressure` | The maximum possible pressure value for a platform. If Input.touchPressureSupported returns false, the value of this property will always be 1.0f. |
+| `pressure` | The current amount of pressure being applied to a touch. 1.0f is considered to be the pressure of an average touch. If Input.touchPressureSupported returns false, the value of this property will always be 1.0f. |
+| `radius` | An estimated value of the radius of a touch. Add radiusVariance to get the maximum touch size, subtract it to get the minimum touch size. |
+| `radiusVariance` | 	This value determines the accuracy of the touch radius. Add this value to the radius to get the maximum touch size, subtract it to get the minimum touch size. |
+| `rawPosition` | The first position of the touch contact in screen space pixel coordinates. |
+| `tapCount` | 	Number of taps. |
+| `type` | 	A value that indicates whether a touch was of Direct, Indirect (or remote), or Stylus type. |
+
+
 
 | **phase:** | Describes the state of the touch, which can help you determine whether the user has just started to touch screen, just moved their finger or just lifted their finger. |
 |-|-|
