@@ -187,7 +187,17 @@ https://docs.unity3d.com/ScriptReference/Input-mousePosition.html
 
 iOS and Android devices are capable of tracking multiple fingers touching the screen simultaneously. You can access data on the status of each finger touching screen during the last frame by using the `Input.touches` property array.
 
+Call **`Input.GetTouch`** to obtain a Touch struct.
 
+**`Input.GetTouch`** **returns Touch for a selected screen touch** (for example, from a finger or stylus). Touch describes the screen touch. The index argument selects the screen touch.
+
+**`Input.touchCount`** provides the **current number of screen touches**. If `Input.touchCount` is greater than zero, the GetTouch index sets which screen touch to check. Touch returns a struct with the screen touch details. Each extra screen touch uses an increasing `Input.touchCount`.
+
+GetTouch returns a Touch struct. **Use zero to obtain the first screen touch**. As an example, Touch includes position in pixels.
+
+```cs
+public static Touch GetTouch(int index);
+```
 
 https://docs.unity3d.com/ScriptReference/Input.GetTouch.html
 
