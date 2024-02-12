@@ -197,6 +197,12 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/index.html
 **`UnityEngine.InputSystem`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.html
 
+**`UnityEngine.InputSystem.Controls`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.Controls.html
+
+**`UnityEngine.InputSystem.Composites`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.Composites.html
+
 https://www.youtube.com/watch?v=HmXU4dZbaMw \
 https://www.youtube.com/watch?v=Yjee_e4fICc \
 https://www.youtube.com/watch?v=UyUogO2DvwY
