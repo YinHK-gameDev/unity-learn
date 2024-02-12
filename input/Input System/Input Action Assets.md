@@ -52,8 +52,27 @@ This is difficult to implement with normal Bindings. You can bind a ButtonContro
 A Composite made of two buttons: one that pulls a 1D axis in its negative direction, and another that pulls it in its positive direction. Implemented in the `AxisComposite class`. The result is a `float`.
 
 
-#### 
+#### 2D vector
+A Composite that represents a **4-way button setup** like the **D-pad on gamepads**. Each button represents a cardinal direction. Implemented in the `Vector2Composite` class. The result is a `Vector2`.
 
+This Composite is most useful for representing up-down-left-right controls, such as WASD keyboard input.
+
+
+#### 3D vector
+
+A Composite that represents a **6-way button** where two combinations each control one axis of a 3D vector. Implemented in the `Vector3Composite` class. The result is a `Vector3`.
+
+
+#### One Modifier
+
+A Composite that requires the user to **hold down** a **"modifier"** **button** **in addition to another control** from which the **actual value** of the Binding is determined.
+
+
+#### Two Modifiers
+
+A Composite that requires the user to hold down **two "modifier" buttons** **in addition to another control** from which the **actual value** of the Binding is determined.
+
+This can be used, for example, for Bindings such as **"SHIFT+CTRL+1"**.
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/ActionAssets.html
