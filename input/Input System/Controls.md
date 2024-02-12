@@ -1,6 +1,6 @@
 ## Controls
 
-An Input Control represents a source of values. These values can be of any structured or primitive type. The only requirement is that the type is blittable.
+An Input Control **represents a source of values**. These values can be of **any structured or primitive type**. The only requirement is that the type is blittable.
 
 > **Note**: Controls are for input only. Output and configuration items on Input Devices are not represented as Controls.
 
@@ -18,6 +18,10 @@ An Input Control represents a source of values. These values can be of any struc
 | StickControl | A 2D stick control like the thumbsticks on gamepads or the stick control of a joystick. | `Gamepad.rightStick` |
 | DpadControl | A 4-way button control like the D-pad on gamepads or hatswitches on joysticks. | `Gamepad.dpad` |
 | TouchControl | A control that represents all the properties of a touch on a touch screen. | `Touchscreen.primaryTouch` |
+
+### Control paths
+The Input System can look up Controls using textual paths. Bindings on Input Actions rely on this feature to identify the Control(s) they read input from.
+
 
 
 
