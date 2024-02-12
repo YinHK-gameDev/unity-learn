@@ -15,6 +15,31 @@ The Action editor window is divided into three panes:
 
 If you select an Action, you can edit it's properties in the right-hand pane of the window
 
+![](,.img/ActionProperties.png)
+
+
+
+#### Editing Bindings
+
+-   To add a new Binding, select the Add **(+)** icon on the action you want to add it to, and select the binding type from the menu that appears.
+-   To delete an existing Binding, either right-click it and select **Delete** from the context menu, or use the **Delete** key (Windows) / **⌘⌫ (Mac)**.
+-   To duplicate an existing Binding, either right-click it and select **Duplicate** from the context menu, or use **Ctrl-D** (Windows) / **⌘D (Mac)**.
+
+If you select a Binding, you can edit its properties in the right-hand pane of the window:
+
+![](./img/BindingProperties.png)
+
+#### Picking Controls
+
+The most important property of any Binding is the control path. To edit it, open the **Path** drop-down list. This displays a Control picker window.
+
+![](./img/InputControlPicker.png)
+
+
+
+
+
+
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/ActionAssets.html
