@@ -25,7 +25,7 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Installation.
 | Concept | Description |
 | --- | --- |
 | User | The person playing your game or using your app, by holding or touching the input device and providing input. |
-| Input Device | Often referred to just as a "device" within the context of input. A physical piece of hardware, such as a keyboard, gamepad, mouse, or touchscreen which allows the user to send input into Unity. |
+| Input Device | Often referred to just as a "device" within the context of input. A physical piece of hardware, such as a keyboard, gamepad, mouse, or touchscreen which allows the user to send input into Unity.|
 | Controls | The separate individual parts of an input device which each send input values into Unity. For example, a gamepad’s controls comprise multiple buttons, sticks and triggers, and a mouse’s controls include the two X and Y sensors on the underside, and the various buttons and scroll wheels on the top side. |
 | Interactions | These describe different ways of using the controls on a device. For example, pressing a button down, releasing a button, a long press, or a double tap. Interactions can be thought of as "patterns of input". The Input System provides ways of identifying and responding to different types of interaction. |
 | Actions | These are things a user can do in your game or app as a result of input, regardless of what device or control they use to perform it. Actions generally have conceptual names that you choose to suit your project, and should usually be verbs. For example "Run", "Jump" "Crouch", "Use", "Start", "Quit". The Input System can help you manage and edit your actions, or you can implement them yourself. |
