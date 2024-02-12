@@ -8,7 +8,6 @@ The **Player Input component** takes a **reference to an Actions Asset**, and
 so that your desired C# methods are called when the user performs an input action.
 
 
-
 ![](./img/PlayerInputWithGameplayEvents.png)
 
 In the above example image, you can see the PlayerInput component set up to map the "move", "jump" actions to OnMove and OnJump methods in a script, via Unity Events.
@@ -47,7 +46,18 @@ public class ExampleScript : MonoBehaviour
 
 ```
 
-### Getting started
+### The Player Input component
+
+The Input System provides two related components that simplify how you set up and work with input: the **Player Input component** and the **Player Input Manager component**.
+
+The **Player Input component** represents a **single player**, and that player's associated **Input Actions**, whereas the **Player Input Manager component** handles setups that allow for** several concurrent users (for example, player lobbies and split-screen gameplay in a game)**.
+
+
+
+
+
+
+#### Getting started
 
 To get started using the Player Input component, use the following steps:
 
