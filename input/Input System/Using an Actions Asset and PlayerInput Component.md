@@ -1,4 +1,4 @@
-## Using an Actions Asset and PlayerInput Component
+## Using an Actions Asset and Player Input Component
 
 The highest level of abstraction provided by the Input System is when you use the **Actions Asset** and 
 the **Player Input component** together.
