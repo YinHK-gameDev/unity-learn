@@ -46,4 +46,8 @@ Composite Bindings are Bindings consisting of multiple parts, which form a Contr
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/ActionAssets.html
 
+**Input Bindings** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/ActionBindings.html
 
+**Interactions** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Interactions.html
