@@ -47,6 +47,26 @@ public class ExampleScript : MonoBehaviour
 
 ```
 
+### Getting started
+
+To get started using the Player Input component, use the following steps:
+
+1. **Add** a **Player Input** component to a GameObject. This would usually be the GameObject that represents the player in your game.
+
+2. **Create an Input Actions asset**. You can do this by clicking the "Create Actions..." button which is visible in the Player Input component inspector if you have not yet assigned actions to it (shown below).
+
+    ![](./img/PlayerInputCreateActions.png)
+
+3. When creating the actions asset, Unity asks you where to create the new Asset. Choose a name and folder inside the **Assets** folder of your Project (or just accept the defaults) and select Okay. This creates a new **`.inputactions`** Asset in your Project, connects it to the Player Input component, and brings up the editor window for the Input Action asset.
+
+4. **Configure the Actions Asset** so that it contains the actions you want your users to be able to perform, bound to the controls they should use to perform them.
+
+    ![](./img/MyGameActions.png)
+
+5. Set up Action responses, by selecting a **Behaviour** type from the Behaviour menu. The Behaviour type you select affects how you should implement the methods that handle your Action responses. See the **notification behaviors** section further down for details.
+
+    ![](./img/PlayerInputNotificationBehaviors.png)
+
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Workflow-PlayerInput.html \
