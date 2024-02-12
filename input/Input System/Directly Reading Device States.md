@@ -41,7 +41,7 @@ If you choose to use this technique:
 - It is harder to allow the user to remap their own controls to different actions at run time.
 
 
-
+You can find an example of this workflow in the sample projects included with the input system package. To find it, in the Project window, look in **Assets > Samples > SimpleDemo** and open the scene: **SimpleDemo_UsingState**.
 
 
 ### ref 
