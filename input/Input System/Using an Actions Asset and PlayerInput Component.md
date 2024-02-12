@@ -78,6 +78,21 @@ To get started using the Player Input component, use the following steps:
     ![](./img/PlayerInputNotificationBehaviors.png)
 
 
+#### Configuring the Player Input component
+
+
+You can use the following properties to configure `PlayerInput`:
+
+| Property | Description |
+| --- | --- |
+| **Actions** | The set of Input Actions associated with the player. To receive input, each player must have an associated set of Actions. See documentation on Actions for details. |
+| **Default Control Scheme** | Which Control Scheme (from what is defined in Actions) to enable by default.|
+| **Default Action Map** | Which Action Map in Actions to enable by default. If set to None, then the player starts with no Actions being enabled. |
+| **Camera** | The individual camera associated with the player. This is only required when employing split-screen setups and has no effect otherwise. |
+| **Behavior** | How the PlayerInput component notifies game code about things that happen with the player. See documentation on notification behaviors. |
+
+
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Workflow-PlayerInput.html \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/PlayerInput.html
