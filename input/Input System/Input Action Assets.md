@@ -13,6 +13,9 @@ The Action editor window is divided into three panes:
 2.  The middle pane contains the Actions in the currently selected Action Map, and the bindings associated with each Action.
 3.  The right pane contains the properties of the currently selected Action or Binding.
 
+If you select an Action, you can edit it's properties in the right-hand pane of the window
+
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/ActionAssets.html
 
