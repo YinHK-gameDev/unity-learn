@@ -168,9 +168,20 @@ The Action editor window is divided into three panes:
 2.  The middle pane contains the Actions in the currently selected Action Map, and the bindings associated with each Action.
 3.  The right pane contains the properties of the currently selected Action or Binding.
 
-
-
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/ActionAssets.html
+
+
+### Input settings
+
+To configure the Input System individually for each project, go to **Edit > Project Settings… > Input System Package** from Unity's main menu.
+
+The **Input System stores** input settings in Assets. If your Project doesn't contain an input settings Asset, click **Create settings asset** in the Settings window to create one. If your Project contains multiple settings Assets, use the gear menu in the top-right corner of the window to choose which one to use. You can also use this menu to create additional settings Assets.
+
+> **Note**: Unity saves changes to these settings when you save the Project.
+
+This page describes each input setting in detail.
+
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Settings.html
 
 ### Migrating from the old input system(Input Manager)
 
