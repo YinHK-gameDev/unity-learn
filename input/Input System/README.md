@@ -179,7 +179,10 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Migration.htm
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/index.html 
 
-Scripting API \
+**Supported Input Devices** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/SupportedDevices.html
+
+**Scripting API** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/index.html
 
 **`UnityEngine.InputSystem`** \
