@@ -37,6 +37,8 @@ The most important property of any Binding is the control path. To edit it, open
 
 
 
+#### Editing Composite Bindings
+Composite Bindings are Bindings consisting of multiple parts, which form a Control together. For instance, a 2D Vector Composite uses four buttons (left, right, up, down) to simulate a 2D stick input. 
 
 
 
