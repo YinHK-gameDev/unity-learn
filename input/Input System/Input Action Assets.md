@@ -41,6 +41,18 @@ The most important property of any Binding is the control path. To edit it, open
 Composite Bindings are Bindings consisting of multiple parts, which form a Control together. For instance, a 2D Vector Composite uses four buttons (left, right, up, down) to simulate a 2D stick input. 
 
 
+### Composite Bindings
+
+Sometimes, you might want to have several Controls act in unison to mimic a different type of Control. The most common example of this is using the W, A, S, and D keys on the keyboard to form a 2D vector Control equivalent to mouse deltas or gamepad sticks. Another example is to use two keys to form a 1D axis equivalent to a mouse scroll axis.
+
+
+This is difficult to implement with normal Bindings. You can bind a ButtonControl to an action expecting a Vector2, but doing so results in an exception at runtime when the Input System tries to read a Vector2 from a Control that can deliver only a float.
+
+#### 1D axis
+A Composite made of two buttons: one that pulls a 1D axis in its negative direction, and another that pulls it in its positive direction. Implemented in the `AxisComposite class`. The result is a `float`.
+
+
+#### 
 
 
 ### ref
