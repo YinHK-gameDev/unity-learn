@@ -3,8 +3,7 @@
 To create an Asset that contains Input Actions in Unity, right-click in the Project window or go to **Assets > Create > Input Actions** from Unity's main menu.
 
 
-
-
+![](./img/MyGameActions.png)
 
 
 ### ref
