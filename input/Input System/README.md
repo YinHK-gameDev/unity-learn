@@ -179,8 +179,6 @@ The **Input System stores** input settings in Assets. If your Project doesn't co
 
 > **Note**: Unity saves changes to these settings when you save the Project.
 
-This page describes each input setting in detail.
-
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Settings.html
 
 ### Migrating from the old input system(Input Manager)
