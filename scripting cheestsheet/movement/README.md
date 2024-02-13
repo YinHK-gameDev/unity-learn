@@ -163,6 +163,17 @@ public class ExampleClass : MonoBehaviour
 }
 ```
 
+### Using InputSystem player Input component
+
+
+```cs
+public void Move(InputAction.CallbackContext value)
+{
+        moveVal = value.ReadValue<Vector2>();
+        transform.Translate(new Vector3(moveVal.x, moveVal.y, 0));
+}
+```
+
 ### Moving object smoothly(**`Vector.Lerp`**)
 
 ```
