@@ -197,6 +197,9 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/index.html
 **`UnityEngine.InputSystem`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.html
 
+**Unity​Engine.​Input​System.Input​Action** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputAction.html
+
 **`UnityEngine.InputSystem.Controls`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.Controls.html
 
