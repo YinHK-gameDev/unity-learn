@@ -44,7 +44,7 @@ If you select a Binding, you can edit its properties in the right-hand pane of t
 
 ### Picking Controls
 
-The most important property of any Binding is the control path. To edit it, open the **Path** drop-down list. This displays a Control picker window.
+The most important property of any Binding is the **control path**. To edit it, open the **Path** drop-down list. This displays a Control picker window.
 
 ![](./img/InputControlPicker.png)
 
