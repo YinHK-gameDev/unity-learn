@@ -46,6 +46,17 @@ public class ExampleScript : MonoBehaviour
 
 ```
 
+
+For movement:
+
+```cs
+public void Move(InputAction.CallbackContext value)
+{
+    moveVal = value.ReadValue<Vector2>();
+    transform.Translate(new Vector3(moveVal.x, moveVal.y, 0));
+}
+```
+
 ### The Player Input component
 
 The Input System provides two related components that simplify how you set up and work with input: the **Player Input component** and the **Player Input Manager component**.
