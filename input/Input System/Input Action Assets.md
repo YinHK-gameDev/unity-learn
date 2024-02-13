@@ -64,21 +64,79 @@ This is difficult to implement with normal Bindings. You can bind a ButtonContro
 #### 1D axis
 A Composite made of two buttons: one that pulls a 1D axis in its negative direction, and another that pulls it in its positive direction. Implemented in the `AxisComposite class`. The result is a `float`.
 
+The axis Composite has two part bindings.
+
+| Part | Type |
+| --- | --- |
+| positive | Button |
+| negative | Button |
+
+| Parameter | Description |
+| --- | --- |
+| whichSideWins | What happens if both positive and negative are actuated. See table below. |
+| minValue | The value returned if the negative side is actuated. Default is -1. |
+| maxValue | The value returned if the positive side is actuated. Default is 1. |
+
+| WhichSideWins | Description |
+| --- | --- |
+| (0) Neither | Neither side has precedence. The Composite returns the midpoint between minValue and maxValue as a result. At their default settings, this is 0.This is the default value for this setting. |
+| (1) Positive | The positive side has precedence and the Composite returns maxValue. |
+| (2) Negative | The negative side has precedence and the Composite returns minValue. |
+
+
+
 
 #### 2D vector
 A Composite that represents a **4-way button setup** like the **D-pad on gamepads**. Each button represents a cardinal direction. Implemented in the `Vector2Composite` class. The result is a `Vector2`.
 
-This Composite is most useful for representing up-down-left-right controls, such as WASD keyboard input.
+This Composite is most useful for representing up-down-left-right controls, such as **WASD keyboard input**.
+
+The 2D vector Composite has four part Bindings.
+
+
+| Part | Type | Description |
+| --- | --- | --- |
+| up | Button | Controls representing (0,1) (+Y). |
+| down | Button | Controls representing (0,-1) (-Y). |
+| left | Button | Controls representing (-1,0) (-X). |
+| right | Button | Controls representing (1,0) (+X). |
+
+| Parameter | Description |
+| --- | --- |
+| mode | Whether to treat the inputs as digital or as analog controls.If this is set to Mode.DigitalNormalized, inputs are treated as buttons (off if below defaultButtonPressPoint and on if equal to or greater). Each input is 0 or 1 depending on whether the button is pressed or not. The vector resulting from the up/down/left/right parts is normalized. The result is a diamond-shaped 2D input range.If this is set to Mode.Digital, the behavior is essentially the same as Mode.DigitalNormalized except that the resulting vector is not normalized.Finally, if this is set to Mode.Analog, inputs are treated as analog (i.e. full floating-point values) and, other than down and left being inverted, values will be passed through as is.The default is Mode.DigitalNormalized. |
+
 
 
 #### 3D vector
 
 A Composite that represents a **6-way button** where two combinations each control one axis of a 3D vector. Implemented in the `Vector3Composite` class. The result is a `Vector3`.
 
+The 3D vector Composite has four part Bindings.
+
+| Part | Type | Description |
+| --- | --- | --- |
+| up | Button | Controls representing (0,1,0) (+Y). |
+| down | Button | Controls representing (0,-1,0) (-Y). |
+| left | Button | Controls representing (-1,0,0) (-X). |
+| right | Button | Controls representing (1,0,0) (+X). |
+| forward | Button | Controls representing (0,0,1) (+Z). |
+| backward | Button | Controls representing (0,0,-1) (-Z). |
+
+| Parameter | Description |
+| --- | --- |
+| mode | Whether to treat the inputs as digital or as analog controls.If this is set to Mode.DigitalNormalized, inputs are treated as buttons (off if below defaultButtonPressPoint and on if equal to or greater). Each input is 0 or 1 depending on whether the button is pressed or not. The vector resulting from the up/down/left/right/forward/backward parts is normalized.If this is set to Mode.Digital, the behavior is essentially the same as Mode.DigitalNormalized except that the resulting vector is not normalized.Finally, if this is set to Mode.Analog, inputs are treated as analog (that is, full floating-point values) and, other than down, left, and backward being inverted, values will be passed through as they are.The default is Analog. |
+
 
 #### One Modifier
 
 A Composite that requires the user to **hold down** a **"modifier"** **button** **in addition to another control** from which the **actual value** of the Binding is determined.
+
+The button with one modifier Composite has two part Bindings.
+
+| Part | Type | Description |
+| --- | --- | --- |
+| modifier | Button | Modifier that has to be held for binding to come through. If the user holds any of the buttons bound to the modifier at the same time as the button that triggers the action, the Composite assumes the value of the modifier Binding. If the user does not press any button bound to the modifier, the Composite remains at default value. |
+| binding | Any | The control(s) whose value the Composite assumes while the user holds down the modifier button. |
 
 
 #### Two Modifiers
@@ -86,6 +144,17 @@ A Composite that requires the user to **hold down** a **"modifier"** **button** 
 A Composite that requires the user to hold down **two "modifier" buttons** **in addition to another control** from which the **actual value** of the Binding is determined.
 
 This can be used, for example, for Bindings such as **"SHIFT+CTRL+1"**.
+
+
+The button with two modifiers Composite has three part Bindings.
+
+| Part | Type | Description |
+| --- | --- | --- |
+| modifier1 | Button | The first modifier the user must hold alongside modifier2, for binding to come through. If the user does not press any button bound to the modifier1, the Composite remains at default value. |
+| modifier2 | Button | The second modifier the user must hold alongside modifier1, for binding to come through. If the user does not press any button bound to the modifier2, the Composite remains at default value. |
+| binding | Any | The control(s) whose value the Composite assumes while the user presses both modifier1 and modifier2 at the same time. |
+
+
 
 ### Control Schemes
 
