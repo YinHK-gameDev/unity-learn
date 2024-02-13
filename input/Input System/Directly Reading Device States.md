@@ -47,6 +47,10 @@ You can find an example of this workflow in the sample projects included with th
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Workflow-Direct.html
 
-**Gamepad** \
+**`Gamepad`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Gamepad.html
+
+**`StickControl`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.Controls.StickControl.html
+
 
