@@ -209,6 +209,10 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.Inpu
 **`UnityEngine.InputSystem.Composites`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.Composites.html
 
+**`Unity​Engine.​Input​System.Input​Action​Asset`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputActionAsset.html
+
+
 https://www.youtube.com/watch?v=HmXU4dZbaMw \
 https://www.youtube.com/watch?v=Yjee_e4fICc \
 https://www.youtube.com/watch?v=UyUogO2DvwY
