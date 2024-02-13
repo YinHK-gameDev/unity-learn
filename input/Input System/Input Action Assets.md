@@ -17,9 +17,21 @@ If you select an Action, you can edit it's properties in the right-hand pane of 
 
 ![](,.img/ActionProperties.png)
 
+#### Action Type
+
+While all actions essentially function the same way, there are differences in how an action will react to changes in values on the controls it is bound to.
+
+The most straightforward type of behavior is **PassThrough** which does not expect any kind of value change pattern but simply triggers the action on every single value change. A **pass-through** action will not use started or canceled except on bindings that have an interaction added to them. **Pass-through** actions are most useful for sourcing input from arbitrary many controls and simply piping all input through without much processing on the side of the action.
+
+| Name | Description |
+| Value | An action that reads a single value from its connected sources. |
+| Button | An action that acts as a trigger. A button action has a defined trigger point that corresponds to Performed. After being performed, the action goes back to waiting state to await the next triggering. |
+| PassThrough | An action that has no specific type of behavior and instead acts as a simple pass-through for any value change on any bound control. |
 
 
-#### Editing Bindings
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputActionType.html?q=pass%20through
+
+### Editing Bindings
 
 -   To add a new Binding, select the Add **(+)** icon on the action you want to add it to, and select the binding type from the menu that appears.
 -   To delete an existing Binding, either right-click it and select **Delete** from the context menu, or use the **Delete** key (Windows) / **⌘⌫ (Mac)**.
@@ -29,7 +41,7 @@ If you select a Binding, you can edit its properties in the right-hand pane of t
 
 ![](./img/BindingProperties.png)
 
-#### Picking Controls
+### Picking Controls
 
 The most important property of any Binding is the control path. To edit it, open the **Path** drop-down list. This displays a Control picker window.
 
@@ -37,7 +49,7 @@ The most important property of any Binding is the control path. To edit it, open
 
 
 
-#### Editing Composite Bindings
+### Editing Composite Bindings
 Composite Bindings are Bindings consisting of multiple parts, which form a Control together. For instance, a 2D Vector Composite uses four buttons (left, right, up, down) to simulate a 2D stick input. 
 
 
