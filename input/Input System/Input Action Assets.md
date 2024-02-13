@@ -24,6 +24,7 @@ While all actions essentially function the same way, there are differences in ho
 The most straightforward type of behavior is **PassThrough** which does not expect any kind of value change pattern but simply triggers the action on every single value change. A **pass-through** action will not use started or canceled except on bindings that have an interaction added to them. **Pass-through** actions are most useful for sourcing input from arbitrary many controls and simply piping all input through without much processing on the side of the action.
 
 | Name | Description |
+|-|-|
 | Value | An action that reads a single value from its connected sources. |
 | Button | An action that acts as a trigger. A button action has a defined trigger point that corresponds to Performed. After being performed, the action goes back to waiting state to await the next triggering. |
 | PassThrough | An action that has no specific type of behavior and instead acts as a simple pass-through for any value change on any bound control. |
