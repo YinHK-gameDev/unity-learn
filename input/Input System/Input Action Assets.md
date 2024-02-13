@@ -89,7 +89,7 @@ This can be used, for example, for Bindings such as **"SHIFT+CTRL+1"**.
 
 ### Control Schemes
 
-A Binding can belong to any number of Binding groups. Unity stores these on the `InputBinding` class as a semicolon-separated string in the `InputBinding.groups` property, and you can use them for any arbitrary grouping of bindings. To enable different sets of binding groups for an `InputActionMap` or `InputActionAsset`, you can use the `InputActionMap.bindingMask`/`InputActionAsset.bindingMask` property. The Input System uses this to implement the concept of grouping Bindings into different `InputControlSchemes`.
+A Binding can belong to any number of **Binding groups**. Unity stores these on the `InputBinding` class as a semicolon-separated string in the `InputBinding.groups` property, and you can use them for any arbitrary grouping of bindings. To enable different sets of binding groups for an `InputActionMap` or `InputActionAsset`, you can use the `InputActionMap.bindingMask`/`InputActionAsset.bindingMask` property. The Input System uses this to implement the concept of grouping Bindings into different `InputControlSchemes`.
 
 Control Schemes use Binding groups to map Bindings in an `InputActionMap` or `InputActionAsset` to different types of Devices. The `PlayerInput` class uses these to enable a matching Control Scheme for a new user joining the game, based on the Device they are playing on.
 
