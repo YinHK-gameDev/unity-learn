@@ -98,10 +98,10 @@ The following options are available:
 
 | Behavior | Description |
 | --- | --- |
-| **Send Messages** | Uses GameObject.SendMessage on the GameObject that the PlayerInput component belongs to. |
-| **Broadcast Messages** | Uses GameObject.BroadcastMessage on the GameObject that the PlayerInput component belongs to. This broadcasts the message down the GameObject hierarchy. |
-| **Invoke Unity Events** | Uses a separate UnityEvent for each individual type of message. When this is selected, the events available on the PlayerInput are accessible from the Events foldout. The argument received by events triggered for Actions is the same as the one received by started, performed, and canceled callbacks. |
-| **Invoke CSharp Events** | Similar to Invoke Unity Events, except that the events are plain C# events available on the PlayerInput API. You cannot configure these from the Inspector. Instead, you have to register callbacks for the events in your scripts.The following events are available:onActionTriggered (collective event for all actions on the player)onDeviceLostonDeviceRegained |
+| **Send Messages** | Uses `GameObject.SendMessage` on the GameObject that the PlayerInput component belongs to. |
+| **Broadcast Messages** | Uses `GameObject.BroadcastMessage` on the GameObject that the PlayerInput component belongs to. This broadcasts the message down the GameObject hierarchy. |
+| **Invoke Unity Events** | Uses a separate `UnityEvent` for each individual type of message. When this is selected, the events available on the `PlayerInput` are accessible from the Events foldout. The argument received by events triggered for Actions is the same as the one received by started, performed, and canceled callbacks. |
+| **Invoke CSharp Events** | Similar to **Invoke Unity Events**, except that the events are plain C# events available on the `PlayerInput` API. You cannot configure these from the Inspector. Instead, you have to register callbacks for the events in your scripts.The following events are available: `onActionTriggered` (collective event for all actions on the player), `onDeviceLost`, `onDeviceRegained` |
 
 
 
