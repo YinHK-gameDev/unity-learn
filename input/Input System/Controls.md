@@ -26,5 +26,6 @@ The Input System can look up Controls using textual paths. Bindings on Input Act
 
 
 ### ref
-https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Controls.html
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Controls.html \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.Controls.html
 
