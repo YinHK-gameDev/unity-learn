@@ -87,6 +87,22 @@ A Composite that requires the user to hold down **two "modifier" buttons** **in 
 
 This can be used, for example, for Bindings such as **"SHIFT+CTRL+1"**.
 
+### Control Schemes
+
+A Binding can belong to any number of Binding groups. Unity stores these on the `InputBinding` class as a semicolon-separated string in the `InputBinding.groups` property, and you can use them for any arbitrary grouping of bindings. To enable different sets of binding groups for an `InputActionMap` or `InputActionAsset`, you can use the `InputActionMap.bindingMask`/`InputActionAsset.bindingMask` property. The Input System uses this to implement the concept of grouping Bindings into different `InputControlSchemes`.
+
+Control Schemes use Binding groups to map Bindings in an `InputActionMap` or `InputActionAsset` to different types of Devices. The `PlayerInput` class uses these to enable a matching Control Scheme for a new user joining the game, based on the Device they are playing on.
+
+
+
+
+#### Editing Control Schemes
+Input Action Assets can have **multiple Control Schemes**, which let you enable or disable different sets of Bindings for your Actions for different types of Devices.
+
+
+To see the Control Schemes in the Input Action Asset editor window, open the Control Scheme drop-down list in the top left of the window. This menu lets you add or remove Control Schemes to your Asset. If the Asset contains any Control Schemes, you can select a Control Scheme, and then the window only shows bindings that belong to that Scheme. If you select a binding, you can now pick the Control Schemes for which this binding should be active in the **Properties** view to the left of the window. When you add a new Control Scheme, or select an existing Control Scheme, and then select **Edit Control Scheme…**, you can edit the name of the Control Scheme and which devices the Scheme should be active for.
+
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/ActionAssets.html
 
