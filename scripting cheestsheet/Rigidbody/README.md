@@ -52,10 +52,10 @@ public void AddTorque(Vector3 torque, ForceMode mode = ForceMode.Force);
 
 | Properties | Description |
 | --- | --- |
-| `Force` | Add a continuous force to the rigidbody, using its mass. |
-| `Acceleration` | Add a continuous acceleration to the rigidbody, ignoring its mass. |
-| `Impulse` | Add an instant force impulse to the rigidbody, using its mass. |
-| `VelocityChange` | Add an instant velocity change to the rigidbody, ignoring its mass. |
+| `Force` | Add a continuous force to the rigidbody, using its mass. Apply the force in each FixedUpdate over a duration of time. |
+| `Acceleration` | Add a continuous acceleration to the rigidbody, ignoring its mass. Apply the acceleration in each FixedUpdate over a duration of time. |
+| `Impulse` | Add an instant force impulse to the rigidbody, using its mass. Apply the impulse force instantly with a single function call. |
+| `VelocityChange` | Add an instant velocity change to the rigidbody, ignoring its mass. Apply the velocity change instantly with a single function call. |
 
 ### ref
 https://docs.unity3d.com/2020.1/Documentation/ScriptReference/Rigidbody.html
