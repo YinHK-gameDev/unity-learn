@@ -27,9 +27,9 @@ public class ExampleScript : MonoBehaviour
     Rigidbody rb;
 
     private void Awake()
-	{
-		rb = GetComponent<Rigidbody>();
-	}
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     public void OnMove(InputAction.CallbackContext context)
     {
