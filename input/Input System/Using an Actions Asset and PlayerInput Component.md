@@ -24,6 +24,12 @@ using UnityEngine.InputSystem;
 public class ExampleScript : MonoBehaviour
 {
     Vector2 moveAmount;
+    Rigidbody rb;
+
+    private void Awake()
+	{
+		rb = GetComponent<Rigidbody>();
+	}
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -34,6 +40,8 @@ public class ExampleScript : MonoBehaviour
     public void OnJump(InputAction.CallbackContext context)
     {
         // your jump code goes here.
+		print("Is jumping!");
+		rb.AddForce(Vector3.up * 2f, ForceMode.Impulse);
     }
 
     public void Update()
