@@ -35,20 +35,21 @@ public class ExampleScript : MonoBehaviour
     {
         // read the value for the "move" action each event call
         moveAmount = context.ReadValue<Vector2>();
-	transform.Translate(new Vector3(moveVal.x, moveVal.y, 0));
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
         // your jump code goes here.
-		print("Is jumping!");
-		rb.AddForce(Vector3.up * 2f, ForceMode.Impulse);
+	print("Is jumping!");
+	print(context);
+	rb.AddForce(Vector3.up * 2f, ForceMode.Impulse);
     }
 
     public void Update()
     {
         // to use the Vector2 value from the "move" action each
         // frame, use the "moveAmount" variable here.
+	transform.Translate(new Vector3(moveAmount.x, 0, moveAmount.y));
     }
 
 }
