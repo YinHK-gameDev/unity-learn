@@ -35,6 +35,7 @@ public class ExampleScript : MonoBehaviour
     {
         // read the value for the "move" action each event call
         moveAmount = context.ReadValue<Vector2>();
+	transform.Translate(new Vector3(moveVal.x, moveVal.y, 0));
     }
 
     public void OnJump(InputAction.CallbackContext context)
