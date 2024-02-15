@@ -62,9 +62,15 @@ For movement:
 public void Move(InputAction.CallbackContext value)
 {
     moveVal = value.ReadValue<Vector2>();
-    transform.Translate(new Vector3(moveVal.x, moveVal.y, 0));
 }
+
+public void Update()
+{
+    transform.Translate(new Vector3(moveAmount.x, 0, moveAmount.y));
+}
+
 ```
+
 
 ### The Player Input component
 
