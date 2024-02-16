@@ -118,6 +118,13 @@ public void Update()
 public TValue ReadValue();
 ```
 
+**`Unity​Engine.​Input​System.Input​Action.ReadValue<TValue>()`**, any inherited class can use this method to read value:
+
+```cs
+public TValue ReadValue<TValue>()
+    where TValue : struct
+```
+
 **`Unity​Engine.​Input​System.Input​Action.​Callback​Context.ReadValue<TValue>()`**, pass Input​Action.​Callback​Context struct as a callback function can use this method to read value:
 ```cs
 public TValue ReadValue<TValue>()
