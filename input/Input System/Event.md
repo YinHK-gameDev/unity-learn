@@ -38,11 +38,39 @@
 
 ### InputAction Events
 
+- **canceled** \
+  Event that is triggered when the action has been started **but then canceled** before being fully performed.
+  ```cs
+    public event Action<InputAction.CallbackContext> canceled
+  ```
+  ```cs
+    InputAction.canceled += eventHandeler 
+  ```
+- **performed** \
+  Event that is triggered when the action has been fully performed.
+  ```cs
+    public event Action<InputAction.CallbackContext> performed
+  ```
+  ```cs
+    InputAction.performed += eventHandeler 
+  ```
+
+- **started** \
+  Event that is triggered when the action has been started.
+  ```cs
+    public event Action<InputAction.CallbackContext> started
+  ```
+  ```cs
+    InputAction.started += eventHandeler 
+  ```
 
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Events.html
 
 https://onewheelstudio.com/blog/2022/4/15/input-event-handlers-or-adding-juice-the-easy-way
+
+**`UnityEngine.InputSystem.InputAction`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputAction.html#events
 
 **`UnityEngine.EventSystems`** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.html
