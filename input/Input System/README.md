@@ -203,6 +203,9 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.Inpu
 **`Unity​Engine.​Input​System.Input​Action.​Callback​Context`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputAction.CallbackContext.html
 
+**`Unity​Engine.​Input​System.InputControl<TValue>`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputControl-1.html#UnityEngine_InputSystem_InputControl_1_ReadValue
+
 **`UnityEngine.InputSystem.Controls`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.Controls.html
 
