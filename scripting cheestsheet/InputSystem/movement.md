@@ -133,5 +133,7 @@ public TValue ReadValue<TValue>()
 
 
 
+### ref 
+https://matteolopiccolo.medium.com/unity-new-input-system-player-input-component-part-xii-17e4b932b544
 
 
