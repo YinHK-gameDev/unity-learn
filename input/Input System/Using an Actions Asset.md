@@ -86,8 +86,9 @@ To use your Actions Asset through a **C# wrapper**:
 1.  Select your Actions Asset in the project window
 2.  In the Inspector, enable **Generate C# Class** and select **Apply**. You should see a C# asset with the same name as your Actions Asset in your project window.
 3.  Create an instance of your Actions C# class in your script.
-4.  Access the Actions in your script by using the API of your Actions C# class.
+4.  Access the **Actions** in your script by **using the API of your Actions C# class**.
 
+> By referencing this Action Asset through C# wrapper, you can directly access Action Map & its Action without using **`FindActionMap()`** & **`FindAction()`** methods.
 
 ```cs
 using UnityEngine;
