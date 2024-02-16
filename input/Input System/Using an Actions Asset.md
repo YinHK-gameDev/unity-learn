@@ -99,6 +99,8 @@ public class DocsExampleActionsAssetCsWrapper : MonoBehaviour
     // this field will contain the actions wrapper instance
     ExampleActions actions;
 
+    Vector2 moveVector;
+
     void Awake()
     {
         // instantiate the actions wrapper class
@@ -106,19 +108,27 @@ public class DocsExampleActionsAssetCsWrapper : MonoBehaviour
 
         // Access specific Action map "Player" & the "jump" action, we add a callback method for when it is performed
         actions.Player.jump.performed += OnJump;
+
+        // Access specific Action map "Player" & the "move" action, we add a callback method for when it is performed
+        actions.Player.move.performed += OnMove;
     }
 
     void Update()
     {
-        // Access specific Action map "Player" & the "move" action,
-        // our update loop polls the "move" action value each frame
-        Vector2 moveVector = actions.Player.move.ReadValue<Vector2>();
+        transform.Translate(new Vector3(moveVector.x, 0, moveVector.y));
     }
 
     private void OnJump(InputAction.CallbackContext context)
     {
         // this is the "jump" action callback method
         Debug.Log("Jump!");
+    }
+
+    private void OnMove(InputAction.CallbackContext context)
+    {
+        // Access specific Action map "Player" & the "move" action,
+        // our update loop polls the "move" action value each frame
+        moveVector = actions.Player.move.ReadValue<Vector2>();
     }
 
     void OnEnable()
