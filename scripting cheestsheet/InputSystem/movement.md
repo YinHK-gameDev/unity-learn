@@ -13,7 +13,7 @@ public class MyPlayerScript : MonoBehaviour
             return; // No gamepad connected.
         }
 
-        Vector2 move = gamepad.current.leftStick.ReadValue();
+        Vector2 move = gamepad.leftStick.ReadValue();
         {
             // 'Move' code here
             transform.Translate(new Vector3(move.x, 0, move.y));
