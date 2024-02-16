@@ -59,6 +59,40 @@ public void OnDisable()
 ```
 
 ```cs
+
+// assign the actions asset to this field in the inspector:
+public InputActionAsset actions;
+
+// private field to store move action reference
+private InputAction moveAction;
+
+void Awake()
+{
+    // find the "move" action, and keep the reference to it, for use in Update
+    moveAction = actions.FindActionMap("gameplay").FindAction("move");
+
+}
+
+void Update()
+{
+   // our update loop polls the "move" action value each frame
+   Vector2 moveVector = moveAction.ReadValue<Vector2>();
+   transform.Translate(new Vector3(moveVector.x, 0, moveVector.y));
+}
+
+void OnEnable()
+{
+   actions.FindActionMap("gameplay").Enable();
+}
+
+void OnDisable()
+{
+    actions.FindActionMap("gameplay").Disable();
+}
+
+```
+
+```cs
 public void OnMove(InputAction.CallbackContext context)
 {
 
