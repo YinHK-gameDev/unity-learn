@@ -52,10 +52,10 @@ public void AddTorque(Vector3 torque, ForceMode mode = ForceMode.Force);
 
 | Properties | Description |
 | --- | --- |
-| `Force` | Add a continuous force to the rigidbody, using its mass. Apply the force in each FixedUpdate over a duration of time. |
-| `Acceleration` | Add a continuous acceleration to the rigidbody, ignoring its mass. Apply the acceleration in each FixedUpdate over a duration of time. |
-| `Impulse` | Add an instant force impulse to the rigidbody, using its mass. Apply the impulse force instantly with a single function call. |
-| `VelocityChange` | Add an instant velocity change to the rigidbody, ignoring its mass. Apply the velocity change instantly with a single function call. |
+| **`Force`** | Add a continuous force to the rigidbody, using its mass. Apply the force in each FixedUpdate over a duration of time.  **`ForceMode.Force`** - Applies a gradual force on the Object, taking mass into account. This is a literal pushing motion where the bigger the mass of the Object, the slower it will speed up.|
+| **`Acceleration`** | Add a continuous acceleration to the rigidbody, ignoring its mass. Apply the acceleration in each FixedUpdate over a duration of time. **`ForceMode.Acceleration`** - Same as ForceMode.Force except that it doesn’t take mass into account. No matter how big the mass of the object, it will accelerate at a constant rate. |
+| **`Impulse`** | Add an instant force impulse to the rigidbody, using its mass. Apply the impulse force instantly with a single function call. **`ForceMode.Impulse`** - Applies an instant force on the Object, taking mass into account. This pushes the Object using the entire force in a single frame. Again, the bigger the mass of the Object, the less effect this will have. Great for recoil or jump functions.|
+| **`VelocityChange`** | Add an instant velocity change to the rigidbody, ignoring its mass. Apply the velocity change instantly with a single function call. **`ForceMode.VelocityChange`** - Same as `ForceMode.Impulse` and again, doesn’t take mass into account. It will literally add the force to the Object’s velocity in a single frame.|
 
 ### ref
 https://docs.unity3d.com/2020.1/Documentation/ScriptReference/Rigidbody.html
@@ -68,5 +68,6 @@ https://www.youtube.com/watch?v=De0PoxaKlww
 
 https://www.youtube.com/watch?v=T99yH_gw3p8
 
-
+ForceMode \
+https://discussions.unity.com/t/difference-and-uses-of-rigidbody-force-modes/116629
 
