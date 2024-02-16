@@ -31,7 +31,7 @@ To use your **Actions Asset** through an inspector reference:
 
 - Create a `public InputActionsAsset` field in your script.
 - **Assign the reference** in the inspector.
-- Access the Actions in your script by name, using strings.
+- **Access the Action Maps & Actions**  in your script by name, **using strings**. Using **`FindActionMap()`** & **`FindAction()`** methods
 
 ```cs
 using UnityEngine;
@@ -47,11 +47,11 @@ public class ExampleScript : MonoBehaviour
 
     void Awake()
     {
-        // find the "move" action, and keep the reference to it, for use in Update
-        moveAction = actions.FindActionMap("gameplay").FindAction("move");
+        // Access specific Actions map & find the "move" action, and keep the reference to it, for use in Update
+        moveAction = actions.FindActionMap("Player").FindAction("move");
 
-        // for the "jump" action, we add a callback method for when it is performed
-        actions.FindActionMap("gameplay").FindAction("jump").performed += OnJump;
+        // Access specific Actions map & find the "jump" action, we add a callback method for when it is performed
+        actions.FindActionMap("Player").FindAction("jump").performed += OnJump;
     }
 
     void Update()
@@ -69,11 +69,11 @@ public class ExampleScript : MonoBehaviour
 
     void OnEnable()
     {
-        actions.FindActionMap("gameplay").Enable();
+        actions.FindActionMap("Player").Enable();
     }
     void OnDisable()
     {
-        actions.FindActionMap("gameplay").Disable();
+        actions.FindActionMap("Player").Disable();
     }
 }
 ```
@@ -105,13 +105,13 @@ public class DocsExampleActionsAssetCsWrapper : MonoBehaviour
         actions = new ExampleActions();
 
         // for the "jump" action, we add a callback method for when it is performed
-        actions.gameplay.jump.performed += OnJump;
+        actions.Player.jump.performed += OnJump;
     }
 
     void Update()
     {
         // our update loop polls the "move" action value each frame
-        Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
+        Vector2 moveVector = actions.Player.move.ReadValue<Vector2>();
     }
 
     private void OnJump(InputAction.CallbackContext context)
@@ -122,11 +122,11 @@ public class DocsExampleActionsAssetCsWrapper : MonoBehaviour
 
     void OnEnable()
     {
-        actions.gameplay.Enable();
+        actions.Player.Enable();
     }
     void OnDisable()
     {
-        actions.gameplay.Disable();
+        actions.Player.Disable();
     }
 }
 ```
