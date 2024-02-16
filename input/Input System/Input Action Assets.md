@@ -242,6 +242,8 @@ public class MyPlayerScript : MonoBehaviour, IGameplayActions
 
 > **Note**: To regenerate the **`.cs file`**, right-click the **`.inputactions`** asset in the Project Browser and choose **"Reimport"**.
 
+> By referencing this Action Asset through C# wrapper, you can directly access Action Map & its Action without using **`FindActionMap()`** & **`FindAction()`** methods.
+
 #### Using Action Assets with PlayerInput
 The **Player Input component** provides a convenient way to handle input for one or multiple players. It requires you to set up all your Actions in an Input Action Asset, which you can then assign to the Player Input component. The Player Input component can then automatically handle activating Action Maps and selecting Control Schemes for you.
 
