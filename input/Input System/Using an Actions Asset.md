@@ -25,7 +25,7 @@ When you use an Actions Asset, there are two distinct ways to access it from you
 Your choice affects how you access your actions from code. With an **inspector reference** to your Actions Asset, you must read the actions by name using strings. If you use the **Generate C# class** feature, Unity generates an accompanying class as a new **.cs** script asset, which acts as a wrapper for your actions. You can then create an instance of the generated wrapper class in your code and directly use its API members which are named after the names of the actions that you configured.
 
 
-#### Referencing the Actions Asset in the inspector
+#### 1. Referencing the Actions Asset in the inspector
 
 To use your **Actions Asset** through an inspector reference:
 
@@ -79,7 +79,7 @@ public class ExampleScript : MonoBehaviour
 ```
 
 
-#### Referencing the Actions Asset through a C# wrapper
+#### 2. Referencing the Actions Asset through a C# wrapper
 
 To use your Actions Asset through a **C# wrapper**:
 
