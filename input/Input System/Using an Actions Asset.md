@@ -29,7 +29,7 @@ Your choice affects how you access your actions from code. With an **inspector r
 
 To use your **Actions Asset** through an inspector reference:
 
-- Create a `public InputActionsAsset` field in your script.
+- Create a **`public InputActionsAsset`** field in your script.
 - **Assign the reference** in the inspector.
 - **Access the Action Maps & Actions**  in your script by name, **using strings**. Using **`FindActionMap()`** & **`FindAction()`** methods
 
@@ -47,10 +47,10 @@ public class ExampleScript : MonoBehaviour
 
     void Awake()
     {
-        // Access specific Actions map & find the "move" action, and keep the reference to it, for use in Update
+        // Access specific Action map & find the "move" action, and keep the reference to it, for use in Update
         moveAction = actions.FindActionMap("Player").FindAction("move");
 
-        // Access specific Actions map & find the "jump" action, we add a callback method for when it is performed
+        // Access specific Action map & find the "jump" action, we add a callback method for when it is performed
         actions.FindActionMap("Player").FindAction("jump").performed += OnJump;
     }
 
@@ -104,12 +104,13 @@ public class DocsExampleActionsAssetCsWrapper : MonoBehaviour
         // instantiate the actions wrapper class
         actions = new ExampleActions();
 
-        // for the "jump" action, we add a callback method for when it is performed
+        // Access specific Action map "Player" & the "jump" action, we add a callback method for when it is performed
         actions.Player.jump.performed += OnJump;
     }
 
     void Update()
     {
+        // Access specific Action map "Player" & the "move" action,
         // our update loop polls the "move" action value each frame
         Vector2 moveVector = actions.Player.move.ReadValue<Vector2>();
     }
