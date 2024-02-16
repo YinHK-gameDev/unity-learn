@@ -21,7 +21,7 @@ public class MyPlayerScript : MonoBehaviour
             // 'Use' code here
         }
 
-        Vector2 move = gamepad.leftStick.ReadValue();
+        Vector2 move = gamepad.current.leftStick.ReadValue();
         {
             // 'Move' code here
         }
