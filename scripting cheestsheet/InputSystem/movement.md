@@ -96,6 +96,36 @@ void OnDisable()
 ```
 
 ```cs
+
+// PlayerInputActions is the C# class that Unity auto-generated.
+// It encapsulates the data from the .inputactions asset we created
+// and automatically looks up all the maps and actions for us.
+PlayerInputActions input;
+
+Vector2 moveVector;
+
+void Awake()
+{
+   // instantiate the actions wrapper class
+   input = new PlayerInputActions();
+
+   // Access specific Action map "Player" & the "move" action, we add a callback method for when it is performed
+   input.Player.move.performed += OnMove;
+}
+
+private void OnMove(InputAction.CallbackContext context)
+{
+   moveVector = input.Player.move.ReadValue<Vector2>();
+}
+
+void Update()
+{
+   transform.Translate(new Vector3(moveVector.x, 0, moveVector.y));
+}
+
+```
+
+```cs
 public void OnMove(InputAction.CallbackContext context)
 {
 
@@ -108,6 +138,16 @@ public void Update()
 {
 	transform.Translate(new Vector3(moveAmount.x, 0, moveAmount.y));
         // or using Rigidbody.AddForce() method
+}
+
+void OnEnable()
+{
+    actions.Player.Enable();
+}
+
+void OnDisable()
+{
+   actions.Player.Disable();
 }
 ```
 
