@@ -171,6 +171,13 @@ The Action editor window is divided into three panes:
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/ActionAssets.html
 
 
+### Workflow
+- Directly Reading Device States
+- Using Embedded Actions
+- Using an Actions Asset(Recommend)
+- Using an Actions Asset and PlayerInput Component(Recommend)
+
+
 ### Input settings
 
 To configure the Input System individually for each project, go to **Edit > Project Settings… > Input System Package** from Unity's main menu.
