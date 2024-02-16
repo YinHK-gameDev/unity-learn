@@ -30,7 +30,7 @@ private void OnJump(InputAction.CallbackContext context)
 
 private void OnCancelAction(InputAction.CallbackContext context)
 {
-   input.Player.Disable();
+   //... your code is here 
 }
 
 ```
