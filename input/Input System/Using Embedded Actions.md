@@ -45,6 +45,7 @@ public class ExampleScript : MonoBehaviour
     {
         // read the value for the "move" action each frame.
         Vector2 moveAmount = moveAction.ReadValue<Vector2>();
+        transform.Translate(new Vector3(moveAmount.x, 0, moveAmount.y));
     }
 
     public void OnJump(InputAction.CallbackContext context)
