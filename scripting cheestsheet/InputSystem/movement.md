@@ -41,7 +41,7 @@ Gamepad.current.leftStick.right.ReadValue();
 // This embedded action is configurable in the inspector:
 public InputAction moveAction;
 
-public void Update()
+public void FixedUpdate()
 {
     // read the value for the "move" action each frame.
     Vector2 moveAmount = moveAction.ReadValue<Vector2>();
@@ -75,7 +75,7 @@ void Awake()
 
 }
 
-void Update()
+void FixedUpdate()
 {
    // our update loop polls the "move" action value each frame
    Vector2 moveVector = moveAction.ReadValue<Vector2>();
@@ -118,7 +118,7 @@ private void OnMove(InputAction.CallbackContext context)
    moveVector = input.Player.move.ReadValue<Vector2>();
 }
 
-void Update()
+void FixedUpdate()
 {
    transform.Translate(new Vector3(moveVector.x, 0, moveVector.y));
    // or using Rigidbody.AddForce() method
@@ -135,7 +135,7 @@ public void OnMove(InputAction.CallbackContext context)
 	moveAmount = context.ReadValue<Vector2>();  
 }
 
-public void Update()
+public void FixedUpdate()
 {
 	transform.Translate(new Vector3(moveAmount.x, 0, moveAmount.y));
         // or using Rigidbody.AddForce() method
