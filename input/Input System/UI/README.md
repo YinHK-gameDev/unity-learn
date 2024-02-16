@@ -26,5 +26,7 @@ You can use **on-screen Controls** to **simulate Input Devices with UI widgets**
 Working with UI and New Input System in Unity \
 https://www.youtube.com/watch?v=KH0KrAFNR_M
 
+**`UnityEngine.InputSystem.OnScreen`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.OnScreen.html
 
 
