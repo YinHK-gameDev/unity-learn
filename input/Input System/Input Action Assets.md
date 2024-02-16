@@ -1,5 +1,8 @@
 ## Input Action Assets
 
+An Input Action Asset is an Asset which **contains Input Actions and their associated Bindings and Control Schemes**. These Assets have the **`.inputactions` file extension** and are stored in a plain **JSON format**.
+
+
 To create an Asset that contains Input Actions in Unity, right-click in the Project window or go to **Assets > Create > Input Actions** from Unity's main menu.
 
 
@@ -170,6 +173,12 @@ Input Action Assets can have **multiple Control Schemes**, which let you enable 
 
 
 To see the Control Schemes in the Input Action Asset editor window, open the Control Scheme drop-down list in the top left of the window. This menu lets you add or remove Control Schemes to your Asset. If the Asset contains any Control Schemes, you can select a Control Scheme, and then the window only shows bindings that belong to that Scheme. If you select a binding, you can now pick the Control Schemes for which this binding should be active in the **Properties** view to the left of the window. When you add a new Control Scheme, or select an existing Control Scheme, and then select **Edit Control Scheme…**, you can edit the name of the Control Scheme and which devices the Scheme should be active for.
+
+
+### Using Input Action Assets
+
+#### Auto-generating script code for Actions
+
 
 
 ### ref
