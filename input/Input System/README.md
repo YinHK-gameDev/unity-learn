@@ -229,7 +229,8 @@ https://gamedevbeginner.com/input-in-unity-made-easy-complete-guide-to-the-new-s
 https://blog.yarsalabs.com/player-movement-with-new-input-system-in-unity/ \
 https://medium.com/nerd-for-tech/moving-with-the-new-input-system-unity-a6c9cb100808 \
 https://medium.com/@jdpetta21/unity-new-input-system-tap-n-hold-jump-68e54da4770d \
-https://discussions.unity.com/t/implementing-jump-w-new-input-system/237428/3
+https://discussions.unity.com/t/implementing-jump-w-new-input-system/237428/3 \
+https://matteolopiccolo.medium.com/unity-new-input-system-jump-part-viii-49f876f70e5f
 
 https://www.youtube.com/watch?v=HmXU4dZbaMw \
 https://www.youtube.com/watch?v=Yjee_e4fICc \
