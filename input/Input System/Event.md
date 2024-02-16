@@ -1,5 +1,6 @@
 ## Events
 
+### Event System
 
 - **`IPointerEnterHandler`** - **`OnPointerEnter`** - Called when a pointer enters the object
 
@@ -35,6 +36,8 @@
 
 - **`ICancelHandler`** - **`OnCancel`** - Called when the cancel button is pressed
 
+### InputAction Events
+
 
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Events.html
@@ -43,3 +46,7 @@ https://onewheelstudio.com/blog/2022/4/15/input-event-handlers-or-adding-juice-t
 
 **`UnityEngine.EventSystems`** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.html
+
+**UI Events reference** \
+https://docs.unity3d.com/Manual/UIE-Events-Reference.html
+
