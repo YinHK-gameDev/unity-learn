@@ -1,5 +1,25 @@
 ## Movemnet
 
+```cs
+using UnityEngine;
+using UnityEngine.InputSystem;
+public class MyPlayerScript : MonoBehaviour
+{
+    void Update()
+    {
+        var gamepad = Gamepad.current;
+        if (gamepad == null)
+        {
+            return; // No gamepad connected.
+        }
+
+        Vector2 move = gamepad.leftStick.ReadValue();
+        {
+            // 'Move' code here
+        }
+    }
+}
+```
 
 ```cs
 public void OnMove(InputAction.CallbackContext context)
