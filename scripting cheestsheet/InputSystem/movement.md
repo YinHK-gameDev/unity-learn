@@ -17,6 +17,7 @@ public class MyPlayerScript : MonoBehaviour
         {
             // 'Move' code here
             transform.Translate(new Vector3(move.x, 0, move.y));
+            // or using Rigidbody.AddForce() method
         }
     }
 }
@@ -45,6 +46,7 @@ public void Update()
     // read the value for the "move" action each frame.
     Vector2 moveAmount = moveAction.ReadValue<Vector2>();
     transform.Translate(new Vector3(moveAmount.x, 0, moveAmount.y));
+    // or using Rigidbody.AddForce() method
 }
 
 public void OnEnable()
@@ -78,6 +80,7 @@ void Update()
    // our update loop polls the "move" action value each frame
    Vector2 moveVector = moveAction.ReadValue<Vector2>();
    transform.Translate(new Vector3(moveVector.x, 0, moveVector.y));
+   // or using Rigidbody.AddForce() method
 }
 
 void OnEnable()
@@ -98,13 +101,13 @@ public void OnMove(InputAction.CallbackContext context)
 
 	// read the value for the "move" action each event call
 	print(context);
-	moveAmount = context.ReadValue<Vector2>();
-
+	moveAmount = context.ReadValue<Vector2>();  
 }
 
 public void Update()
 {
 	transform.Translate(new Vector3(moveAmount.x, 0, moveAmount.y));
+        // or using Rigidbody.AddForce() method
 }
 ```
 
