@@ -214,16 +214,16 @@ public class MyPlayerScript : MonoBehaviour, IGameplayActions
         if (controls == null)
         {
             input = new PlayerInputActions();
-            // Tell the "gameplay" action map that we want to get told about
+            // Tell the "Player" action map that we want to get told about
             // when actions get triggered.
-            input.gameplay.SetCallbacks(this);
+            input.Player.SetCallbacks(this);
         }
-        input.gameplay.Enable();
+        input.Player.Enable();
     }
 
     public void OnDisable()
     {
-        input.gameplay.Disable();
+        input.Player.Disable();
     }
 
     public void OnUse(InputAction.CallbackContext context)
