@@ -144,6 +144,7 @@ public void FixedUpdate()
 {
 	transform.Translate(new Vector3(moveAmount.x, 0, moveAmount.y));
         // or using Rigidbody.AddForce() method
+	rb.AddForce(new Vector3(moveAmount.x, 0, moveAmount.y) * 10f, ForceMode.Force);
 }
 
 void OnEnable()
