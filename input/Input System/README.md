@@ -232,6 +232,9 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.Inpu
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.PlayerInput.html?q=playerinput#methods
 
 
+Layouts \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Layouts.html
+
 https://gamedevbeginner.com/input-in-unity-made-easy-complete-guide-to-the-new-system/ \
 https://blog.yarsalabs.com/player-movement-with-new-input-system-in-unity/ \
 https://medium.com/nerd-for-tech/moving-with-the-new-input-system-unity-a6c9cb100808 \
