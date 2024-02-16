@@ -1,4 +1,4 @@
-## Movemnet
+## Movement
 
 ```cs
 using UnityEngine;
