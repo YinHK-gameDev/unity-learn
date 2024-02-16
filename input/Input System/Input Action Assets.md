@@ -179,6 +179,13 @@ To see the Control Schemes in the Input Action Asset editor window, open the Con
 
 #### Auto-generating script code for Actions
 
+One of the most convenient ways to work with **`.inputactions` Assets** in scripts is to **automatically generate a C# wrapper class** for them. 
+
+This removes the need to manually look up Actions and Action Maps using their names, and also provides an **easier way to set up callbacks**.
+
+To enable this option, tick the **Generate C#** Class checkbox in the importer properties in the Inspector of the **`.inputactions` Asset**, then select **Apply**.
+
+
 
 
 ### ref
