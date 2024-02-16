@@ -102,6 +102,12 @@ This optimisation means that **no processor time is spent updating the Rigidbody
 For most purposes, the sleeping and waking of a Rigidbody component happens transparently. However, a GameObject might fail to wake up if a Static Collider (that is, one without a Rigidbody) is moved into it or away from it by modifying the Transform position. This might result, say, in the Rigidbody GameObject hanging in the air when the floor has been moved out from beneath it. In cases like this, the GameObject can be woken explicitly using the WakeUp function. 
 
 
+### Scale of the object
+
+In unity, mass doesn't affect fall speed- gravity and drag do. Also the scale of object can make object looks weird(if large scale make object slow speed for motion) while falling. If your object isn’t at real world scale. It will be wonky.
+
+> Make sure your object scale in 1 as default
+
 ### ref
 **Rigidbody Scripting API** \
 https://docs.unity3d.com/ScriptReference/Rigidbody.html
