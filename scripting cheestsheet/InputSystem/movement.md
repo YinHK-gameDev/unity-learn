@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class MyPlayerScript : MonoBehaviour
 {
+    float speed = 10f;
     void Update()
     {
         var gamepad = Gamepad.current;
@@ -18,6 +19,7 @@ public class MyPlayerScript : MonoBehaviour
             // 'Move' code here
             transform.Translate(new Vector3(move.x, 0, move.y));
             // or using Rigidbody.AddForce() method
+            rb.AddForce(new Vector3(move.x, 0, move.y) * speed, ForceMode.Force);
         }
     }
 }
@@ -47,6 +49,7 @@ public void FixedUpdate()
     Vector2 moveAmount = moveAction.ReadValue<Vector2>();
     transform.Translate(new Vector3(moveAmount.x, 0, moveAmount.y));
     // or using Rigidbody.AddForce() method
+    rb.AddForce(new Vector3(moveAmount.x, 0, moveAmount.y) * 10f, ForceMode.Force);
 }
 
 public void OnEnable()
@@ -81,6 +84,7 @@ void FixedUpdate()
    Vector2 moveVector = moveAction.ReadValue<Vector2>();
    transform.Translate(new Vector3(moveVector.x, 0, moveVector.y));
    // or using Rigidbody.AddForce() method
+   rb.AddForce(new Vector3(moveVector.x, 0, moveVector.y) * 10f, ForceMode.Force);
 }
 
 void OnEnable()
@@ -122,6 +126,7 @@ void FixedUpdate()
 {
    transform.Translate(new Vector3(moveVector.x, 0, moveVector.y));
    // or using Rigidbody.AddForce() method
+   rb.AddForce(new Vector3(moveVector.x, 0, moveVector.y) * 10f, ForceMode.Force);
 }
 
 ```
