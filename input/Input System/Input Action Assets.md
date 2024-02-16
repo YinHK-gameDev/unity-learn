@@ -185,7 +185,7 @@ This removes the need to manually look up Actions and Action Maps using their na
 
 To enable this option, tick the **Generate C#** Class checkbox in the importer properties in the Inspector of the **`.inputactions` Asset**, then select **Apply**.
 
-
+![](./img/FireActionInputAssetInspector.png)
 
 
 ### ref
