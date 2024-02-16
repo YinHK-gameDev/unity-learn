@@ -139,3 +139,6 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/PlayerInput.h
 **`PlayerInput`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.PlayerInput.html?q=playerinput#events
 
+
+https://matteolopiccolo.medium.com/unity-new-input-system-player-input-component-part-xiii-3c83d35b1373 \
+https://matteolopiccolo.medium.com/unity-new-input-system-player-input-component-part-xii-17e4b932b544
