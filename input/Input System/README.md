@@ -218,6 +218,9 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.Inpu
 **`Unity​Engine.​Input​System.Input​Action​Map`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputActionMap.html
 
+**`Unity​Engine.​Input​System.Input​Action​Phase`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.InputActionPhase.html
+
 **PlayerInput** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.PlayerInput.html?q=playerinput#methods
 
