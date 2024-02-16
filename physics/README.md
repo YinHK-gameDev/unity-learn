@@ -18,3 +18,5 @@ If your project uses Unity’s Data-Oriented Technology Stack (DOTS), you need t
 
 
 
+### Adjust Physics setting 
+**Project Settings > Phusics**
