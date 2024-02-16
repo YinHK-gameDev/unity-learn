@@ -121,6 +121,7 @@ private void OnMove(InputAction.CallbackContext context)
 void Update()
 {
    transform.Translate(new Vector3(moveVector.x, 0, moveVector.y));
+   // or using Rigidbody.AddForce() method
 }
 
 ```
