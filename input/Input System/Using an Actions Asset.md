@@ -58,6 +58,7 @@ public class ExampleScript : MonoBehaviour
     {
         // our update loop polls the "move" action value each frame
         Vector2 moveVector = moveAction.ReadValue<Vector2>();
+        transform.Translate(new Vector3(moveVector.x, 0, moveVector.y));
     }
 
     private void OnJump(InputAction.CallbackContext context)
