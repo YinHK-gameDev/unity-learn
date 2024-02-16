@@ -3,7 +3,7 @@
 
 ### Default UI Action Map
 
-
+![](../img/UI_ActionMap.png)
 
 
 ### On-screen Controls
