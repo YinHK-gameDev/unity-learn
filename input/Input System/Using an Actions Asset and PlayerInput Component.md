@@ -136,5 +136,6 @@ The following options are available:
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Workflow-PlayerInput.html \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/PlayerInput.html
 
-
+**`PlayerInput`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.PlayerInput.html?q=playerinput#events
 
