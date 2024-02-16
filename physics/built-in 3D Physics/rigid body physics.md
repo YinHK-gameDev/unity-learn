@@ -106,8 +106,8 @@ For most purposes, the sleeping and waking of a Rigidbody component happens tran
 **Rigidbody Scripting API** \
 https://docs.unity3d.com/ScriptReference/Rigidbody.html
 
-
-
+**Falling too slow problem** \
+https://www.reddit.com/r/Unity3D/comments/sijgzo/why_is_it_falling_so_slow/
 
 
 
