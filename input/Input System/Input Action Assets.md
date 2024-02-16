@@ -187,6 +187,63 @@ To enable this option, tick the **Generate C#** Class checkbox in the importer p
 
 ![](./img/auto-generate.png)
 
+You can optionally choose a path name, class name, and namespace for the generated script, or keep the default values.
+
+This generates a C# script that simplifies working with the Asset.
+
+You can use this auto-generating class in other script by giving reference and creating object for that class.
+
+Eg:
+```cs
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+// IGameplayActions is an interface generated from the "gameplay" action map
+// we added (note that if you called the action map differently, the name of
+// the interface will be different). This was triggered by the "Generate Interfaces"
+// checkbox.
+public class MyPlayerScript : MonoBehaviour, IGameplayActions
+{
+    // PlayerInputActions is the C# class that Unity auto-generated.
+    // It encapsulates the data from the .inputactions asset we created
+    // and automatically looks up all the maps and actions for us.
+    PlayerInputActions input;
+
+    public void OnEnable()
+    {
+        if (controls == null)
+        {
+            input = new PlayerInputActions();
+            // Tell the "gameplay" action map that we want to get told about
+            // when actions get triggered.
+            input.gameplay.SetCallbacks(this);
+        }
+        input.gameplay.Enable();
+    }
+
+    public void OnDisable()
+    {
+        input.gameplay.Disable();
+    }
+
+    public void OnUse(InputAction.CallbackContext context)
+    {
+        // 'Use' code here.
+    }
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        // 'Move' code here.
+    }
+
+}
+
+```
+
+> **Note**: To regenerate the **`.cs file`**, right-click the **`.inputactions`** asset in the Project Browser and choose **"Reimport"**.
+
+#### Using Action Assets with PlayerInput
+The **Player Input component** provides a convenient way to handle input for one or multiple players. It requires you to set up all your Actions in an Input Action Asset, which you can then assign to the Player Input component. The Player Input component can then automatically handle activating Action Maps and selecting Control Schemes for you.
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/ActionAssets.html
