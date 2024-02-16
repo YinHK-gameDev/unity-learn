@@ -49,6 +49,36 @@ To create an on-screen stick:
 
 In-between, the stick moves according to the pointer being dragged (`IDragHandler.OnDrag`) within a box centered on the pointer-down screen point, and with an edge length defined in the component's Movement Range property. A movement range of 50, for example, means that the stick's on-screen area is 25 pixels up, down, left, and right of the pointer-down point on screen.
 
+#### Writing custom on-screen Controls
+You can add support for new types of Input Controls by **extending `OnScreenControl`**. An easy example to follow is **`OnScreenButton`**.
+
+Eg:
+```cs
+ [AddComponentMenu("Input/On-Screen Button")]
+    public class OnScreenButton : OnScreenControl, IPointerDownHandler, IPointerUpHandler
+    {
+        public void OnPointerUp(PointerEventData data)
+        {
+            SendValueToControl(0.0f);
+        }
+
+        public void OnPointerDown(PointerEventData data)
+        {
+            SendValueToControl(1.0f);
+        }
+
+        [InputControl(layout = "Button")]
+        [SerializeField]
+        private string m_ControlPath;
+
+        protected override string controlPathInternal
+        {
+            get => m_ControlPath;
+            set => m_ControlPath = value;
+        }
+    }
+```
+
 ### ref 
 Working with UI and New Input System in Unity \
 https://www.youtube.com/watch?v=KH0KrAFNR_M
