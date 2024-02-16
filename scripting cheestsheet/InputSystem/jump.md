@@ -19,11 +19,18 @@ void Start()
    input.Player.Enable();
    // Access specific Action map "Player" & the "move" action, we add a callback method for when it is performed
    input.Player.jump.performed += OnJump;
+
+   input.Player.jump.canceled += OnCancelAction;
 }
 
 private void OnJump(InputAction.CallbackContext context)
 {
    rb.AddForce(Vector3.up * 5f, ForceMode.Impulse);
+}
+
+private void OnCancelAction(InputAction.CallbackContext context)
+{
+   input.Player.Disable();
 }
 
 ```
