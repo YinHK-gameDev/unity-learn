@@ -47,9 +47,15 @@ public void Update()
     transform.Translate(new Vector3(moveAmount.x, 0, moveAmount.y));
 }
 
+public void OnEnable()
+{
+    moveAction.Enable();
+}
 
-
-
+public void OnDisable()
+{
+    moveAction.Disable();
+}
 ```
 
 ```cs
