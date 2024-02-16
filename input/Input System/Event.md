@@ -26,7 +26,7 @@
 
 - **`IUpdateSelectedHandler`** - **`OnUpdateSelected`** - Called on the selected object each tick
 
-- **`ISelectHandler**` - **`OnSelect`** - Called when the object becomes the selected object
+- **`ISelectHandler`** - **`OnSelect`** - Called when the object becomes the selected object
 
 - **`IDeselectHandler`** - **`OnDeselect`** - Called on the selected object becomes deselected
 
