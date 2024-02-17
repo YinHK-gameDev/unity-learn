@@ -119,4 +119,10 @@ https://www.youtube.com/watch?v=KH0KrAFNR_M
 **`UnityEngine.InputSystem.OnScreen`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.OnScreen.html
 
+**`UnityEngine.InputSystem.UI`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.UI.html
+
+**`UnityEngine.InputSystem.UI.InputSystemUIInputModule`** \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.UI.InputSystemUIInputModule.html
+
 
