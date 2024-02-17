@@ -193,7 +193,7 @@ To connect **more than one UI Document asset** to a panel:
    - set the **Sort Order**. UI Document with a smaller number rendered first.
 4. Repeat the process for each UI Document asset.
 
-> **Note**: If there are multiple UI documents attached to the same Panel Settings asset, all these documents have a common focus navigation context. If they have distinct Panel Settings, navigation won’t jump automatically from one to the other even if they’re arranged side by side.
+> **Note**: If there are **multiple UI documents** attached to the **same Panel Settings asset**, all these documents have a **common focus navigation context**. If they have **distinct** Panel Settings, **navigation won’t jump automatically** from one to the other even if they’re arranged side by side.
 
 
 ### Runtime UI event system
@@ -232,9 +232,9 @@ When you add your first uGUI element in the Scene, an **Event System** and a **S
 - The **Event System** allows uGUI objects to respond to events.
 - The **Standalone Input Module** dispatches events to UI Toolkit elements.
 
-The Event System reads the scene and executes events, whereas the Standalone Input Module interprets the input and requests event execution. You can replace the Standalone Input Module with other input modules. Other input modules change what input is consumed, but all events still go through the Event System to execute.
+The **Event System** **reads the scene** and **executes events**, whereas the Standalone Input Module interprets the input and requests event execution. You can **replace the Standalone Input Module** with other input modules. Other input modules change what input is consumed, but all events still go through the Event System to execute.
 
-UI Toolkit uses the sorting order of the Panel and compares it with the sorting order of uGUI canvases and other valid raycast targets, to decide whether pointer events should be sent to a UI Toolkit element or to a uGUI object, or to something else in the scene. Similarly, UI Toolkit sets the Event System’s `currentSelectedGameObject` to make sure that when a UI Toolkit panel wants to get focus, it removes the focus from other uGUI objects, and when a uGUI object becomes selected, UI Toolkit panels automatically lose their focus.
+UI Toolkit uses the **sorting order** of the Panel and compares it with the sorting order of uGUI canvases and other valid raycast targets, to decide whether pointer events should be sent to a UI Toolkit element or to a uGUI object, or to something else in the scene. Similarly, UI Toolkit sets the Event System’s `currentSelectedGameObject` to make sure that when a UI Toolkit panel wants to get focus, it removes the focus from other **uGUI** objects, and when a uGUI object becomes selected, UI Toolkit panels automatically lose their focus.
 
 To add the event system manually, select **GameObject** > **UI** > **Event System**.
 
