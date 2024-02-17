@@ -137,6 +137,7 @@ You can register **multiple callbacks** for an event. However, you can **only re
 > To remove a callback from a `VisualElement`, call the `myElement.UnregisterCallback()` method.
 
 
+> **Note**: registering a callback should be before **`Add()`**, otherwise noting happen with the callback
 
 ### Listen to value changes
 UI controls can use the `value` property to hold data for their internal state. For example:
