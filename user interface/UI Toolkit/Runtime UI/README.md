@@ -141,7 +141,7 @@ Unity loads a UI Document component’s source UXML when **`OnEnable`** is calle
 
 The **Panel Settings Asset** (**Assets > Create > UI Toolkit > Panel Settings Asset**) defines how the UXML is going to be instantiated and visualized within the game. It’s possible to have multiple Panel Settings Assets to enable different styles for the UIs. For example, employing certain Panel Settings for the HUD and others for the Minimap makes sense, as these are very different UIs with distinct needs.
 
-**Panel Settings** can be seen as a **UGUI Canvas + Canvas Scaler** with additional options like text settings, so that all text inside the panel uses the same base setting. This avoids time spent manually resetting each font – but of course, fonts can still be overridden inside the individual UI Documents, as needed.
+**Panel Settings** can be seen as a **UGUI Canvas + Canvas Scaler** with additional options like **text settings**, so that all text inside the panel uses the same base setting. This avoids time spent manually resetting each font – but of course, fonts can still be overridden inside the individual UI Documents, as needed.
 
 ### Render UI in the Game view
 
