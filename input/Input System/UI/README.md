@@ -12,7 +12,7 @@ If you have a **StandaloneInputModule** component on a GameObject, and the Input
 
 > The **InputSystemUIInputModule** is **pre-configured to use default Input Actions** to drive the UI, but you can **override that configuration** to suit your needs.
 
-Input support for both **Unity UI** and **UI Toolkit** is based on the same **`EventSystem`** and **`BaseInputModule` subsystem**. In other words, the same input setup based on **`InputSystemUIInputModule`** supports input in either UI solution and nothing extra needs to be done.
+Input support for both **Unity UI** and **UI Toolkit** is based on the same **`EventSystem`** and **`BaseInputModule` subsystem**. In other words, the same input setup based on **`InputSystemUIInputModule`** supports input in **either UI solution** and **nothing extra needs to be done**.
 
 Internally, **UI Toolkit installs an event listener in the form of the `PanelEventHandler` component** which intercepts events that **`InputSystemUIInputModule`** sends and translates them into UI Toolkit-specific events that are then routed into the visual tree. If you employ **`EventSystem.SetUITookitEventSystemOverride`**, this default mechanism is bypassed.
 
