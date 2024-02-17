@@ -114,7 +114,8 @@ UI Support \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.8/manual/UISupport.html
 
 Working with UI and New Input System in Unity \
-https://www.youtube.com/watch?v=KH0KrAFNR_M
+https://www.youtube.com/watch?v=KH0KrAFNR_M \
+https://www.youtube.com/watch?v=TBcfhJoCVQo
 
 **`UnityEngine.InputSystem.OnScreen`** \
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.OnScreen.html
