@@ -12,7 +12,7 @@ If you have a **StandaloneInputModule** component on a GameObject, and the Input
 
 > The **InputSystemUIInputModule** is **pre-configured to use default Input Actions** to drive the UI, but you can **override that configuration** to suit your needs.
 
-![](../img/InputSystemUIInputModule3.png)
+
 
 Input support for both **Unity UI** and **UI Toolkit** is based on the same **`EventSystem`** and **`BaseInputModule` subsystem**. In other words, the same input setup based on **`InputSystemUIInputModule`** supports input in **either UI solution** and **nothing extra needs to be done**.
 
