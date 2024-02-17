@@ -81,7 +81,7 @@ public class RuntimeUI : MonoBehaviour
 
 
 ### Panel settings
-Defines a Panel Settings asset that instantiates a panel at runtime. The panel makes it possible for Unity to display UXML-file based UI in the Game view.
+Defines a **Panel Settings asset** that **instantiates a panel at runtime**. The panel makes it possible for Unity to **display UXML-file based UI in the Game view**.
 
 
 
