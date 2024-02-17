@@ -225,7 +225,7 @@ _You can find the **Active Input Handling** setting in **Edit** > **Project Sett
 
 
 ### Use uGUI with UI Toolkit
-You can use UI Toolkit UI Documents and uGUI components at the same time.
+You can use **UI Toolkit UI Documents** and **uGUI components** at the **same time**.
 
 When you add your first uGUI element in the Scene, an **Event System** and a **Standalone Input Module** are automatically added to the Scene:
 
