@@ -200,6 +200,9 @@ m_MyToggle.RegisterValueChangedCallback((evt) => { Debug.Log("Change Event recei
 rootVisualElement.Add(m_MyToggle);
 ```
 
+> **Note**: registering a callback should be before **`Add()`**, otherwise noting happen with the callback
+
+
 ### Apply data binding
 You can **bind controls** to an **object** or a **serialized property**. 
 For example, you can bind a **FloatField control** to a **public float variable** that belongs to a `MonoBehaviour`. When the control binds to the property, it **automatically displays the value of the property**. When you modify the control, the value of the property updates.
