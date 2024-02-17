@@ -2,8 +2,13 @@
 
 
 ### Setting up UI input
+The **InputSystemUIInputModule** component acts as a **drop-in replacement** for the **StandaloneInputModule** component that the Unity UI package. **InputSystemUIInputModule** provides the same **functionality as StandaloneInputModule**, but it **uses the Input System instead of the legacy Input Manager to drive UI input**.
 
+![](../img/InputSystemUIInputModule.png)
 
+If you have a **StandaloneInputModule** component on a GameObject, and the Input System is installed, Unity shows a button in the Inspector offering to **automatically replace** it with a InputSystemUIInputModule for you.
+
+![](../img/InputSystemUIInputModule2.png)
 
 Input support for both **Unity UI** and **UI Toolkit** is based on the same **`EventSystem`** and **`BaseInputModule` subsystem**. In other words, the same input setup based on **`InputSystemUIInputModule`** supports input in either UI solution and nothing extra needs to be done.
 
