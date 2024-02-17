@@ -1,6 +1,27 @@
 ## UI with Input System
 
 
+### Setting up UI input
+
+
+
+Input support for both **Unity UI** and **UI Toolkit** is based on the same **`EventSystem`** and **`BaseInputModule` subsystem**. In other words, the same input setup based on **`InputSystemUIInputModule`** supports input in either UI solution and nothing extra needs to be done.
+
+Internally, **UI Toolkit installs an event listener in the form of the `PanelEventHandler` component** which intercepts events that **`InputSystemUIInputModule`** sends and translates them into UI Toolkit-specific events that are then routed into the visual tree. If you employ **`EventSystem.SetUITookitEventSystemOverride`**, this default mechanism is bypassed.
+
+To use UI Toolkit with the new Input System, for now you need to have a **GameObject in your scene with an `EventSystem`** and **`InputSystemUIInputModule` components** on it, exactly like you would if you were using **`UnityEngine.UI` objects** in your scene. We will eventually support the new Input System with nothing else added, but for now we need some additional configurations from the Input System action maps, hence the need for some sort of presence in a component from your scene.
+
+- UI Toolkit **handles raycasting internally**. **No separate raycaster component is needed** like for **uGUI**. This means that **`TrackedDeviceRaycaster` does not work together with UI Toolkit**.
+- A pointer click and a gamepad submit action are distinct at the event level in UI Toolkit. This means that if you, for example, do
+  ```cs
+    button.RegisterCallback<ClickEvent>(_ => ButtonWasClicked());
+  ```
+  the handler is not invoked when the button is "clicked" with the gamepad (a `NavigationSubmitEvent` and not a `ClickEvent`). If, however, you do
+  ```cs
+     button.clicked += () => ButtonWasClicked();
+  ```
+
+
 ### Default UI Action Map
 
 ![](../img/UI_ActionMap.png)
