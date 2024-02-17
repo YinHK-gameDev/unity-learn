@@ -202,7 +202,7 @@ To connect **more than one UI Document asset** to a panel:
  
 ### Event system with multiple Panel Settings assets
 
-If the Scene uses more than one Panel Settings asset, the event system sends pointer events to their panels according to their **Sort Order**. A pointer event propagates through the panels until a panel reacts to it.
+If the Scene uses **more than one Panel Settings asset**, the **event system sends pointer events** to their panels according to their **Sort Order**. A pointer event **propagates through the panels** until a panel reacts to it.
 
 The first panel that uses an event to affect the focused element becomes the focused panel for the event system. That panel continues to receive keyboard events until another event causes a different panel to become the focused panel.
 
