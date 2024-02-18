@@ -307,7 +307,7 @@ public void Invoke();
 ```
 
 ```cs
-m_MyEvent.Invoke();
+m_MyEvent?.Invoke();
 ```
 
 
