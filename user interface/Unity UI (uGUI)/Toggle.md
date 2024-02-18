@@ -24,3 +24,5 @@ void ToggleValueChanged(Toggle change)
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.Toggle.html
 
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.ToggleGroup.html#fields
+
