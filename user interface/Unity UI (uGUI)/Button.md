@@ -15,6 +15,20 @@ The button has a single event called _On Click_ that responds when the user comp
 -   Moving to a sub-menu in a GUI
 -   Cancelling an action in progress (eg, downloading a new scene)
 
+
+```cs
+ void Start()
+    {
+        Button btn = yourButton.GetComponent<Button>();
+        btn.onClick.AddListener(TaskOnClick);
+    }
+
+    void TaskOnClick()
+    {
+        Debug.Log("You have clicked the button!");
+    }
+```
+
 ### ref 
 
 https://docs.unity3d.com/2018.3/Documentation/ScriptReference/UI.Button.html
