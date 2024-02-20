@@ -85,6 +85,56 @@ In the above visualization mode, the arrows indicate how the change of focus is 
 
 Note that the vertical sliders can't be focused-away-from using up or down keys, because they control the value of the slider. The same is true of the horizontal sliders and the left/right arrow keys.
 
+
+
+### Selectable class
+**object(C#) -> Object(Unity) -> Component -> Behaviour -> MonoBehaviour -> ....**
+
+```cs
+public ColorBlock colors { get; set; }
+
+public Image image { get; set; }
+
+//How many selectable elements are currently active.
+public static int allSelectableCount { get; }
+
+//A List instance of the allSelectablesArray to maintain API compatibility.
+public static List<Selectable> allSelectables { get; }
+
+//Copy of the array of all the selectable objects currently active in the scene.
+public static Selectable[] allSelectablesArray { get; }
+
+//Convenience function to get the Animator component on the GameObject.
+public Animator animator { get; }
+
+public bool interactable { get; set; }
+
+//The Navigation setting for this selectable object.
+public Navigation navigation { get; set; }
+
+//The SpriteState for this selectable object.
+public SpriteState spriteState { get; set; }
+
+//The type of transition that will be applied to the targetGraphic when the state changes.
+public Selectable.Transition transition { get; set; }
+
+protected bool IsHighlighted();
+
+public virtual bool IsInteractable();
+
+protected bool IsPressed();
+
+protected override void OnValidate();
+
+public virtual void OnSelect(BaseEventData eventData);
+
+public virtual void Select();
+
+protected override void Reset();
+
+```
+
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-Selectable.html \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.Selectable.html
