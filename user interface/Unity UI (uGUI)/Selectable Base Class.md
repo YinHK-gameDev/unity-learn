@@ -67,6 +67,8 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-SelectableTra
 
 ### Navigation Options
 
+**Navigation Options** to control how **keyboard navigation** of the controls is implemented.
+
 | **Property:** | **Function:** |
 | --- | --- |
 | **Navigation** | The Navigation options refers to how the navigation of UI elements in play mode will be controlled. |
