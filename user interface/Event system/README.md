@@ -194,9 +194,9 @@ The **Event Trigger** can be used to **specify functions you wish to be called**
 
 #### Supported Events
 
-The Event System supports a number of events, and they can be customized further in user custom user written Input Modules.
+The **Event System supports a number of events**, and they can be customized further in user custom user written Input Modules.
 
-The events that are supported by the Standalone Input Module and Touch Input Module are provided by interface and can be implemented on a MonoBehaviour by implementing the interface. If you have a valid Event System configured the events will be called at the correct time.
+The events that are supported by the **Standalone Input Module** and **Touch Input Module** are provided by interface and can be implemented on a **`MonoBehaviour` by implementing the interface**. If you have a valid Event System configured the events will be called at the correct time.
 
 
 -   `IPointerEnterHandler` - `OnPointerEnter` - Called when a pointer enters the object
