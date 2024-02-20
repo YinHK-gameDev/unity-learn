@@ -37,7 +37,7 @@ The **UI elements are rendered by this camera**, which means that the **Camera s
   > If the Camera is set to Perspective, the UI elements will be rendered with perspective, and the amount of perspective distortion can be controlled by the Camera Field of View.
   > If the screen is resized, changes resolution, or the camera frustum changes, the Canvas will automatically change size to match as well.
   
-  In this mode, the Canvas is rendered as if it were drawn on a plane object some distance in front of a given camera. The onscreen size of the UI does not vary with the distance since it is always rescaled to fit exactly within the camera frustum. If the screen's size or resolution or the camera frustum are changed then the UI will automatically rescale to fit. Any 3D objects in the scene that are closer to the camera than the UI plane will be rendered in front of the UI, while objects behind the plane will be obscured.
+  In this mode, the Canvas is rendered as if it were drawn on a plane object some distance in front of a given camera. The onscreen size of the UI does not vary with the distance since it is always rescaled to fit exactly within the camera frustum. If the screen's size or resolution or the camera frustum are changed then the UI will automatically rescale to fit. **Any 3D objects in the scene that are closer to the camera than the UI plane will be rendered in front of the UI**, while **objects behind the plane will be obscured**.
 
   ![](./img/CanvasCamera.png)
 
