@@ -90,6 +90,10 @@ The Graphic Raycaster can be configured to ignore backfacing Graphics as well as
 | **Blocked Objects** | Type of objects that will block graphic raycasts. |
 | **Blocking Mask** | Type of objects that will block graphic raycasts. |
 
+```cs
+public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
+```
+
 #### Physics Raycaster
 
 The Raycaster raycasts against 3D objects in the scene. This allows messages to be sent to 3D physics objects that implement event interfaces.
@@ -101,6 +105,11 @@ The Raycaster raycasts against 3D objects in the scene. This allows messages to 
 | **Event Mask** | Logical and of Camera mask and eventMask. |
 | **Final Event Mask** | Logical and of Camera mask and eventMask. |
 
+
+```cs
+public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
+```
+
 #### Physics 2D Raycaster
 The 2D Raycaster raycasts against 2D objects in the scene. This allows messages to be sent to 2D physics objects that implement event interfaces. The **Camera GameObject needs to be used** and will be added to the GameObject if the **Physics 3D Raycaster is not added to the Camera GameObject**.
 
@@ -111,7 +120,9 @@ The 2D Raycaster raycasts against 2D objects in the scene. This allows messages 
 | **Sort Order Priority** | Priority of the raycaster based upon sort order. |
 | **Render Order Priority** | Priority of the raycaster based upon render order. |
 
-
+```cs
+public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
+```
 
 ### Event System Component
 An **EventSystem component** is automatically created **alongside your UI** and **contains several Input Modules**. 
