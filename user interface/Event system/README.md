@@ -90,6 +90,10 @@ The Graphic Raycaster can be configured to ignore backfacing Graphics as well as
 | **Blocked Objects** | Type of objects that will block graphic raycasts. |
 | **Blocking Mask** | Type of objects that will block graphic raycasts. |
 
+```cs
+public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
+```
+
 #### Physics Raycaster
 
 The Raycaster raycasts against 3D objects in the scene. This allows messages to be sent to 3D physics objects that implement event interfaces.
@@ -101,6 +105,10 @@ The Raycaster raycasts against 3D objects in the scene. This allows messages to 
 | **Event Mask** | Logical and of Camera mask and eventMask. |
 | **Final Event Mask** | Logical and of Camera mask and eventMask. |
 
+```cs
+public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
+```
+
 #### Physics 2D Raycaster
 The 2D Raycaster raycasts against 2D objects in the scene. This allows messages to be sent to 2D physics objects that implement event interfaces. The **Camera GameObject needs to be used** and will be added to the GameObject if the **Physics 3D Raycaster is not added to the Camera GameObject**.
 
@@ -111,7 +119,9 @@ The 2D Raycaster raycasts against 2D objects in the scene. This allows messages 
 | **Sort Order Priority** | Priority of the raycaster based upon sort order. |
 | **Render Order Priority** | Priority of the raycaster based upon render order. |
 
-
+```cs
+public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
+```
 
 ### Event System Component
 An **EventSystem component** is automatically created **alongside your UI** and **contains several Input Modules**. 
@@ -181,7 +191,7 @@ This code will execute the function Message1 on any components on the GameObject
 
 #### Event Trigger
 
-Apart from the event in **`Unity​Engine.​UIElements`** & **`Unity​Engine.​UI`**. The **Event Trigger** **receives events** from the **Event System** and **calls registered functions** for each event.
+Apart from the event in **`Unity​Engine.​UIElements`**, **`Unity​Engine.​UI`** & **`UnityEvent`**. The **Event Trigger** **receives events** from the **Event System** and **calls registered functions** for each event.
 
 The **Event Trigger** can be used to **specify functions you wish to be called** for each **Event System event**. You can **assign multiple functions to a single event** and whenever the **Event Trigger** receives that event it will call those functions.
 
@@ -252,9 +262,11 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.GraphicR
 
 **Physics Raycaster** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-PhysicsRaycaster.html \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.EventSystems.PhysicsRaycaster.html
 
 **Physics 2D Raycaster** \
-https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-Physics2DRaycaster.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-Physics2DRaycaster.html \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.EventSystems.Physics2DRaycaster.html
 
 **Event Trigger** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-EventTrigger.html
