@@ -189,6 +189,8 @@ The **Event Trigger** can be used to **specify functions you wish to be called**
 
 ![](./img/event_trigger_event.png)
 
+![](./img/event_trigger_callback.png)
+
 > **Note**: attaching an **Event Trigger component** to a **GameObject** (eg: **UI element in UItoolkit or UI component in uGUI**) will make that **object intercept all events**, and no event bubbling will occur from this object!
 
 
