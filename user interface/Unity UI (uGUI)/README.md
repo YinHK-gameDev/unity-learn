@@ -35,9 +35,11 @@ Most of the interaction components have some things in common. They are selectab
 - Toggle
 - Toggle Group
 - Slider
+- Dropdown
 - Scrollbar
 - Scroll Rect(Scroll View)
 - InputField
+  
 
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIInteractionComponents.html \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/comp-UIInteraction.html
