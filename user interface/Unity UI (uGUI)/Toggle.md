@@ -1,6 +1,6 @@
 ## Toggle
 
-
+**UIBeahviour -> Selectable -> Toggle**
 ```cs
 public bool isOn { get; set; }
 ```
