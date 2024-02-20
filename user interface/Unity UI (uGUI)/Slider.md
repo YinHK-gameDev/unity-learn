@@ -7,6 +7,8 @@ The slider has a single event called **_On Value Changed_** that responds as the
 -   Choosing a level of difficulty in a game, brightness of a light, etc.
 -   Setting a distance, size, time or angle.
 
+**UIBeahviour -> Selectable -> Slider**
+
 ```cs
 public virtual float value { get; set; }
 ```
