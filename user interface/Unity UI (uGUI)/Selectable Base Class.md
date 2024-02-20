@@ -84,4 +84,6 @@ In the above visualization mode, the arrows indicate how the change of focus is 
 Note that the vertical sliders can't be focused-away-from using up or down keys, because they control the value of the slider. The same is true of the horizontal sliders and the left/right arrow keys.
 
 ### ref
-https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-Selectable.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-Selectable.html \
+
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.Selectable.html
