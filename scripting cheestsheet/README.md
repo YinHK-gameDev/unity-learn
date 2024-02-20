@@ -12,6 +12,10 @@ When declare variables or array, it must specify its data type:   **value type**
 Inside script set variable/array 做`public`, 在unity inspector 會顯示該variable/array, 並可於inspector 修改其value, 作更改. `private` variable can’t.  Value of variable/array in inspector can override that in script.
 
 
+### Inheritance
+
+**object(C#) -> Object(Unity) -> Component -> Behaviour -> MonoBehaviour -> ....**
+
 ### `Debug.Log()`
 ```cs
 // Use this for initialization
@@ -68,6 +72,8 @@ private  scriptName/className  variableName;
   ```cs
    variable’s name.GetComponent<Script name>();
   ```
+
+- Another method is to use **UnityEvents** or **C# event**. This is much better.
 
 #### Using namespace
 For **static** method:
