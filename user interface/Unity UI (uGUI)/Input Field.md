@@ -4,6 +4,7 @@ The Input Field script can be added to any existing Text control object from the
 
 The _Text_ property of the Text control itself will change as the user types and the value can be retrieved from a script after editing. Note that Rich Text is intentionally not supported for editable Text controls; the field will apply any Rich Text markup instantly when typed but the markup essentially "disappears" and there is no subsequent way to change or remove the styling.
 
+**UIBeahviour -> Selectable -> InputField**
 
 ```cs
 //Whether the InputField has focus and whether it is able to process events.
