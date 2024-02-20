@@ -251,7 +251,6 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.GraphicR
 **Physics Raycaster** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-PhysicsRaycaster.html \
 
-
 **Physics 2D Raycaster** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-Physics2DRaycaster.html
 
@@ -261,12 +260,30 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-EventTrigger.
 **`UnityEngine.EventSystems`** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEngine.EventSystems.html
 
+**`UnityEngine.EventSystems.EventSystem`** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.EventSystems.EventSystem.html
+
 **`UnityEditor.EventSystems`** \
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/UnityEditor.EventSystems.html
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/SupportedEvents.html
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/Raycasters.html
+
+**`UnityEngine.EventSystems.EventTrigger`** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.EventSystems.EventTrigger.html#constructors
+
+**`UnityEngine.EventSystems.BaseEventData`** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.EventSystems.BaseEventData.html
+
+**`UnityEngine.EventSystems.PointerEventData`** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.EventSystems.PointerEventData.html
+
+**`UnityEngine.EventSystems.BaseInput`** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.EventSystems.BaseInput.html
+
+**`UnityEngine.EventSystems.BaseRaycaster`** \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.EventSystems.BaseRaycaster.html
 
 **UI Reference** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/UIReference.html
