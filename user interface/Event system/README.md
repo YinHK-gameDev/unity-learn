@@ -116,9 +116,9 @@ The 2D Raycaster raycasts against 2D objects in the scene. This allows messages 
 ### Event System Component
 An **EventSystem component** is automatically created **alongside your UI** and **contains several Input Modules**. 
 
-This subsystem is responsible for controlling all the other elements that make up eventing. It coordinates which Input Module is currently active, which GameObject is currently considered 'selected', and a host of other high level Event System concepts.
+This subsystem is responsible for controlling all the other elements that make up eventing. It coordinates which Input Module is currently active, which GameObject is currently considered **'selected'**, and a host of other high level Event System concepts.
 
-Each 'Update' the Event System receives the call, looks through its Input Modules and figures out which is the Input Module that should be used for this tick. It then delegates the processing to the modules.
+Each **'Update'** the Event System receives the call, looks through its Input Modules and figures out which is the Input Module that should be used for this tick. It then delegates the processing to the modules.
 
 Add **Event System** component to an UI gameobject.
 
@@ -181,7 +181,7 @@ This code will execute the function Message1 on any components on the GameObject
 
 #### Event Trigger
 
-The **Event Trigger** **receives events** from the **Event System** and **calls registered functions** for each event.
+Apart from the event in **`Unity​Engine.​UIElements`** & **`Unity​Engine.​UI`**. The **Event Trigger** **receives events** from the **Event System** and **calls registered functions** for each event.
 
 The **Event Trigger** can be used to **specify functions you wish to be called** for each **Event System event**. You can **assign multiple functions to a single event** and whenever the **Event Trigger** receives that event it will call those functions.
 
