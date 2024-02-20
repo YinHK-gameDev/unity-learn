@@ -31,7 +31,7 @@ public class Example : MonoBehaviour
 
 ```cs
 public Slider.SliderEvent onValueChanged { get; set; }
-````
+```
 ``cs
 using UnityEngine;
 using System.Collections;
