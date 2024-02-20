@@ -32,7 +32,7 @@ public class Example : MonoBehaviour
 ```cs
 public Slider.SliderEvent onValueChanged { get; set; }
 ```
-``cs
+```cs
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI; // Required when Using UI elements.
