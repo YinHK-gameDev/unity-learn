@@ -21,15 +21,15 @@ The button has a single event called _On Click_ that responds when the user comp
 
 ```cs
  void Start()
-    {
+{
         Button btn = yourButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
-    }
+}
 
-    void TaskOnClick()
-    {
+void TaskOnClick()
+{
         Debug.Log("You have clicked the button!");
-    }
+}
 ```
 
 ### ref 
