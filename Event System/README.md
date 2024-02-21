@@ -207,6 +207,7 @@ The **Event Trigger** can be used to **specify functions you wish to be called**
 
 > **Note**: attaching an **Event Trigger component** to a **GameObject** (eg: **UI element in UItoolkit or UI component in uGUI**) will make that **object intercept all events**, and no event bubbling will occur from this object!
 
+https://vasundhara.io/blogs/event-trigger-in-unity
 
 #### Supported Events
 
