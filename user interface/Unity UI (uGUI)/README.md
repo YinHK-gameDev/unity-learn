@@ -61,6 +61,15 @@ The new Animator controller is ready to use straight away. Unlike most Animator 
 ![](./img/Animator_for_interaction_components2.png)
 
 
+### Fixing UI component is not working 
+- Make sure add **Event system** in **Canvas** object
+- Make sure add **standalone input module** in **Event System**
+- Make sure **enable the Graphic raycaster component** in Canvas
+- Make sure the UI component enable **"Raycast Target"**
+
+
+
+
 ### ref
 https://github.com/Unity-Technologies/uGUI/tree/2019.1
 
