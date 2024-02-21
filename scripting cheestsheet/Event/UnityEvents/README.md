@@ -28,8 +28,8 @@ To configure a callback in the editor there are a few steps to take:
 - Inside trigger menthod, use **`invoke()`** method(eg: **`trigger_name.invoke()`**) to trigger callback.
 - Select the **`+`** icon to add a slot for a callback
 - Select the `UnityEngine.Object` you wish to receive the callback (You can use the object selector for this)
-- Select the function(inside that object) you wish to be called
-- You can add more than one callback for the event.
+- Select the function(inside that object) you wish to be called, the function/method should be **`public`**, otherwise you can't search it in inspector.
+- You can add **more than one callback** for the event.
 - other game object, in its script subscribe and unscribe to the event listener.
 - **`void OnEnable()`** or other **`OnEventName`** method to subcribe the event.
 - **`void OnDisable()`** or other **`OnEventName`** method to unsubscribe the event.
@@ -66,9 +66,9 @@ To configure a callback in the editor there are a few steps to take:
 
 3. Declare **`UnityEvent`** & **`Invoke()`** function to invoke the event
 
-4. Create a callback function/event handler for this event some where.
+4. Create a **callback function/event handler** for this event some where. The callback function should be **`public`**, otherwise you can't search it in inspector.
     
-5. In inspecter, the Event section you declared UnityEvent in the script, select the **"+"** icon to add a slot for a **callback**.
+5. In inspecter, the Event section you declared **`UnityEvent`** in the script, select the **"+"** icon to add a slot for a **callback**.
     
 6. Select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this)
     
@@ -99,6 +99,9 @@ Then predefined value can be set in UI editor. \
 ![](./img/UnityEvent7.png)
 Callback function cannot be found in search, **Generic UnityEvents** should be used for more than one paramter \
 ![](./img/UnityEvent8.png)
+
+> **Note**: The callback function should be **`public`**, otherwise you can't search it in inspector.
+
 
 ### Event vs UnityEvents
 - In c#  declare an `event` **must** use script to **add event listener**.
