@@ -134,6 +134,8 @@ Add **Event System** component to an UI gameobject.
 
 ![](./img/EventSystemManager.png)
 
+> **Note**: For uGUI, add this component with standalone input module into Canvas
+
 #### Properties
 
 | **_Property:_** | **_Function:_** |
