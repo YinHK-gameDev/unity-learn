@@ -40,6 +40,8 @@ Within a selectable component there are several transition options depending on 
 
 ![](./img/color_tint)
 
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_normalColor
+
 #### Sprite Swap
 
 | **Property:** | **Function:** |
@@ -137,4 +139,5 @@ protected override void Reset();
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-Selectable.html \
-https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.Selectable.html
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.Selectable.html \
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_normalColor
