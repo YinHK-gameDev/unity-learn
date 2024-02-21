@@ -1,0 +1,12 @@
+## Image
+
+Image is a textured element in the UI hierarchy. Every interaction component/ selectable component(eg: button, toggle etc.) has this component. 
+
+**object(C#) -> Object(Unity) -> Component -> Behaviour -> MonoBehaviour -> UIBehaviour -> Graphic -> MaskableGraphic -> Image**
+
+
+
+
+### ref 
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.Image.html
+
