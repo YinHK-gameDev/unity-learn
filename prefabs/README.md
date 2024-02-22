@@ -44,10 +44,9 @@ Alternatively, you can open a Prefab Asset in **Context** via an instance of tha
 
 
 ### Unpacking Prefab instances
-To return the contents of a Prefab instance into a regular GameObject
-, you unpack the Prefab instance. This is exactly the reverse operation of creating (packing) a Prefab, except that it doesn’t destroy the Prefab Asset but only affects the Prefab instance.
+To **return the contents of a Prefab instance** into a **regular GameObject**, you **unpack the Prefab instance**. This is exactly the **reverse operation of creating (packing) a Prefab**, except that **it doesn’t destroy the Prefab Asset** but **only affects the Prefab instance**.
 
-You can unpack a Prefab instance by **right-clicking on it in the Hierarchy to select Prefab and selecting Unpack Prefab.** The resulting GameObject in the Scene no longer has any link to its former Prefab Asset. The Prefab Asset itself is not affected by this operation and there may still be other instances of it in your Project.
+You can unpack a Prefab instance by **right-clicking on it in the Hierarchy to select Prefab and selecting Unpack Prefab.** The resulting GameObject in the Scene **no longer has any link to its former Prefab Asset**. The **Prefab Asset itself is not affected by this operation** and there **may still be other instances of it in your Project**.
 
 ### Instance overrides
 Instance overrides allow you to create variations between Prefab
