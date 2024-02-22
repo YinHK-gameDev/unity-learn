@@ -21,6 +21,14 @@ Prefabs look quite similar to other objects that appear in the Project window. H
 ### How to use Prefabs?
 Just drag Prefabs from project window into Hierarchy if you want to **reuse**. When prefabs are present in the Hierarchy, they’re represented with **blue text** and a **blue cube**.
 
+### Replacing existing prefabs
+
+You can replace a Prefab by **dragging a new GameObject from the Hierarchy window** and **dropping it on top of an existing Prefab asset** in the Project window.
+
+If you are **replacing an existing Prefab**, Unity tries to preserve references to the Prefab itself and the individual parts of the Prefab such as child GameObjects and Components. To do this, it matches the names of GameObjects between the new Prefab and the existing Prefab that you are replacing.
+
+> **Note:** _Because this matching is done by name only, if there are multiple GameObjects with the same name in the Prefab’s hierarchy, it is not possible to predict which will be matched. Therefore if you need to ensure your references are preserved when saving over an existing prefab, you must ensure all GameObjects within the Prefab have unique names.
+
 ### Unpacking Prefab instances
 To return the contents of a Prefab instance into a regular GameObject
 , you unpack the Prefab instance. This is exactly the reverse operation of creating (packing) a Prefab, except that it doesn’t destroy the Prefab Asset but only affects the Prefab instance.
