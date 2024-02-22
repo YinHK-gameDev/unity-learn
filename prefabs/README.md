@@ -19,7 +19,7 @@ Prefabs are created automatically when an object is **dragged from the Hierarchy
 Prefabs look quite similar to other objects that appear in the Project window. However, when selected, their file type will be a **`*.prefab`**. When the Prefab is selected, the Inspector displays all of the components that were configured on the original object.
 
 ### How to use Prefabs?
-Just drag Prefabs from project window into Hierarchy if you want to reuse. When prefabs are present in the Hierarchy, they’re represented with blue text and a **blue cube**.
+Just drag Prefabs from project window into Hierarchy if you want to **reuse**. When prefabs are present in the Hierarchy, they’re represented with **blue text** and a **blue cube**.
 
 ### Unpacking Prefab instances
 To return the contents of a Prefab instance into a regular GameObject
