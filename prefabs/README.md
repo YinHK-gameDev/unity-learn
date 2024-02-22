@@ -63,7 +63,14 @@ There are four different types of instance override:
 
 > **Note**: There are **some limitations** with Prefab instances: you **cannot reparent a GameObject that is part of a Prefab**, and you **cannot remove a GameObject that is part of the Prefab**. You can, however, **deactivate a GameObject**, which is a **good substitute for removing a GameObject** (this counts as a property override).
 
-https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html
+In the Hierarchy window, Prefab instances with overridden or non-default values have an override indicator to show that they have been edited, which Unity displays with a blue line in the left margin with the same appearance as the lines for instance overrides in the Inspector window.
+
+When you edit a Prefab instance in a Scene, Unity displays a indicator next to the parent GameObject in the hierarchy. This indicator highlights any Prefab that has non-default override values in any of its child GameObjects. To open the Overrides dropdown directly from the Hierarchy window click on the override indicator. The override indicator appears as a blue line in the left side of the margin and is identical to the instance override in the Inspector window. For more information, see Instance overrides.
+
+![](./img/hierarchy-override-indicator.png)
+
+https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html \
+https://docs.unity3d.com/Manual/Hierarchy.html#OverrideIndicator
 
 ### Unused Overrides
 Instance override values are stored as data in the scene or prefab in which they are defined. However, an override becomes “unused” if its target object is either invalid or its Property Path is unknown. In this case, the data becomes unused. It is still stored in the scene file, but is redundant.
