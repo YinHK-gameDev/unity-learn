@@ -49,10 +49,19 @@ To **return the contents of a Prefab instance** into a **regular GameObject**, y
 You can unpack a Prefab instance by **right-clicking on it in the Hierarchy to select Prefab and selecting Unpack Prefab.** The resulting GameObject in the Scene **no longer has any link to its former Prefab Asset**. The **Prefab Asset itself is not affected by this operation** and there **may still be other instances of it in your Project**.
 
 ### Instance overrides
-Instance overrides allow you to create variations between Prefab
- instances, while still linking those instances to the same Prefab Asset.
+Instance overrides allow you to **create variations between Prefab instances**, while still linking those instances to the same Prefab Asset.
 
-When you modify a Prefab Asset, the changes are reflected in all of its instances. However, you can also make modifications directly to an individual instance. Doing this creates an instance override on that particular instance.
+When you modify a Prefab Asset, the changes are reflected in all of its instances. However, you can also make modifications directly to an individual instance. Doing this **creates an instance override on that particular instance**.
+
+An example would be if you had a Prefab Asset **"Robot"**, which you placed in multiple levels in your game. However, each instance of the **"Robot"** has a **different speed value**, and a **different** **audio clip** assigned.
+
+There are four different types of instance override:
+- **Overriding the value** of a property
+- **Adding a component**
+- **Removing a component**
+- **Adding a child GameObject**
+
+> **Note**: There are **some limitations** with Prefab instances: you **cannot reparent a GameObject that is part of a Prefab**, and you **cannot remove a GameObject that is part of the Prefab**. You can, however, **deactivate a GameObject**, which is a **good substitute for removing a GameObject** (this counts as a property override).
 
 https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html
 
