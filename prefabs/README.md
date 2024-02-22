@@ -67,6 +67,13 @@ In the Hierarchy window, Prefab instances with overridden or non-default values 
 
 When you edit a Prefab instance in a Scene, Unity displays a indicator next to the parent GameObject in the hierarchy. This indicator highlights any Prefab that has non-default override values in any of its child GameObjects. To open the Overrides dropdown directly from the Hierarchy window click on the override indicator. The override indicator appears as a blue line in the left side of the margin and is identical to the instance override in the Inspector window. For more information, see Instance overrides.
 
+#### Overrides take precedence
+An **overridden property value** on a Prefab instance **always takes precedence over the value from the Prefab Asset**. This means that if you **change a property on a Prefab Asset**, it **doesn’t have any effect on instances where that property is overridden**.
+
+> If you make a change to a Prefab Asset, and it does not update all instances as expected, you should check whether that property is overridden on the instance. It is best to only use instance overrides when strictly necessary, because if you have a large number of instance overrides throughout your Project, it can be difficult to tell whether your changes to the Prefab Asset will or won’t have an effect on all of the instances.
+
+
+
 ![](./img/hierarchy-override-indicator.png)
 
 https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html \
