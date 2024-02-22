@@ -29,6 +29,20 @@ If you are **replacing an existing Prefab**, Unity tries to preserve references 
 
 > **Note:** _Because this matching is done by name only, if there are multiple GameObjects with the same name in the Prefab’s hierarchy, it is not possible to predict which will be matched. Therefore if you need to ensure your references are preserved when saving over an existing prefab, you must ensure all GameObjects within the Prefab have unique names.
 
+
+### Editing a Prefab in Prefab Mode
+You can begin to edit a Prefab in Prefab Mode in several ways. To open a Prefab Asset and edit it in **isolation** you can do it in the following ways:
+
+- Double-click the Prefab Asset in the Project window
+- Select a Prefab Asset in the Project window and click the **Open Prefab button** in the Inspector window
+
+Alternatively, you can open a Prefab Asset in **Context** via an instance of that Prefab. Ways of doing that include:
+
+- Select a Prefab instance in the Hierarchy window and click the **Open** button in the Inspector window
+- Select a Prefab instance in the Hierarchy window and press **P** on the **keyboard**. This is the default keyboard binding
+- Use the arrow button next to the Prefab instance in the Hierarchy window
+
+
 ### Unpacking Prefab instances
 To return the contents of a Prefab instance into a regular GameObject
 , you unpack the Prefab instance. This is exactly the reverse operation of creating (packing) a Prefab, except that it doesn’t destroy the Prefab Asset but only affects the Prefab instance.
