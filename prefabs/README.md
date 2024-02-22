@@ -50,5 +50,6 @@ https://learn.unity.com/tutorial/prefabs-e# \
 https://docs.unity3d.com/Manual/InstantiatingPrefabs.html \
 https://docs.unity3d.com/Manual/UnpackingPrefabInstances.html
 
-https://docs.unity3d.com/Manual/EditingPrefabViaInstance.html
+https://docs.unity3d.com/Manual/EditingPrefabViaInstance.html \
+https://docs.unity3d.com/Manual/CreatingAndUsingScripts.html
 
