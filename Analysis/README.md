@@ -20,7 +20,7 @@ Unity has several tools that you can use to **measure the performance** of your 
 
 ### The Unity Profiler
 
-The Unity Profiler is a tool you can use to get performance information about your application. You can connect it to devices on your network or devices connected to your machine to test how your application runs on your intended release platform. You can also run it in the Editor to get an overview of resource allocation while you’re developing your application.
+The Unity Profiler is a tool you can **use to get performance information about your application**. You can connect it to devices on your network or devices connected to your machine to test how your application runs on your intended release platform. You can also run it in the Editor to get an overview of resource allocation while you’re developing your application.
 
 
 To access the Profiler window go to menu: **Window > Analysis > Profiler**. 
