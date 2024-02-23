@@ -37,8 +37,6 @@ public class MyPlayer : MonoBehaviour
 }
 ```
 
-https://docs.unity3d.com/ScriptReference/AssetDatabase.html
-
 ### `Resources` class
 The Resources class allows you to find and access Objects including assets.
 
