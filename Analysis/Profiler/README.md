@@ -69,6 +69,41 @@ The top part of the Profiler window is divided into Profiler modules that profil
 | File Access | Displays information about file accesses in your application. See the File Access Profiler module. |
 
 
+### CPU Usage Profiler module
+
+| Category | Description |
+| --- | --- |
+| Rendering | How much time your application spends on rendering graphics. |
+| Scripts | How much time your application spends on running scripts. |
+| Physics | How much time your application spends on the physics engine. |
+| Animation | How much time your application spends on animating Skinned Mesh Renderers, GameObjects and other components in your application. This also includes the time spent on calculations for systems the Animation and Animator components use. |
+| GarbageCollector | How much time your application spends on running the Garbage Collector. |
+| VSync | How much time your application spends per frame waiting for the targetFrameRate or the next VBlank to sync with. This is according to the QualitySettings.vSyncCount value, the target framerate, or the VSync setting that is the default or enforced maximum of the platform your application is running on. For more information about VSync, see the section in this documentation on Rendering and VSync samples. |
+| Global Illumination | How much time your application spends on lighting. |
+| UI | How much time your application spends on displaying its UI. |
+| Others | How much time your application spends on code that does not fall into any of the other categories. This includes areas like the entire EditorLoop, or the Profiling overhead when you profile Play Mode in the Editor. |
+
+
+#### Module details pane
+
+| View | Function |
+| --- | --- |
+| Timeline | Displays a breakdown of the timings for a particular frame, alongside a time axis of the frame’s length. This is the only view mode that you can use to see timings on all threads at once and at the times within the frame at which they happened, so that you can correlate timings across threads (for example, Job System worker threads starting up after a system on the main thread schedules them). |
+| Hierarchy | Groups the timing data by its internal hierarchical structure. This option displays the elements that your application called in a descending list format, ordered by the time spent by default. You can also order the information by the amount of scripting memory allocated (GC Alloc), or the number of calls. To change the column that orders the table, click the table column’s header. |
+| Raw Hierarchy | Displays the timing data in a hierarchical structure that is similar to the call stacks where the timing occurred. Unity lists each call stack separately in this mode instead of merging them, as it does in Hierarchy view. |
+
+
+#### The Hierarchy view lists
+
+| Property | Function |
+| --- | --- |
+| Total | The total amount of time Unity spent on a particular function, as a percentage. |
+| Self | The total amount of time Unity spent on a particular function as a percentage, excluding the time Unity spends calling sub-functions.For example, in the screenshot, 16.7% of time is spent in the Camera.Render function. This is because it calls a lot of drawing and culling functions. However, when you exclude the functions it calls, only 0.2% of time is spent on the Camera.Render function itself. |
+| Calls | The number of calls made to this function in this frame. In the Raw Hierarchy view the values in this column are always 1 because the Profiler does not merge the hierarchy of samples. |
+| GC Alloc | How much scripting heap memory Unity has allocated in the current frame. The garbage collector manages the scripting heap memory.Whenever Unity calls GC.Collect() or there is a scripting heap allocation that does not fit within the heap’s current size, the garbage collector triggers. It marks all allocations that have no more references to them and collects them. This process appears as GC.Collect samples in the Profiler.Unity runs the garbage collector more frequently as your application allocates more on the heap. As the managed heap grows, it takes Unity longer to mark and collect the memory. As such, you should keep the GC Alloc value at zero while your application runs, to prevent the garbage collector from affecting your application’s framerate, and to keep the overall heap size small.For more details about the managed heap see the documentation on Understanding Automatic Memory Management. |
+| Time ms | The total amount of time Unity spent on a particular function, in milliseconds. If your application uses the Job System or multithreaded rendering, this information might be misleading, because it only contains the time Unity spent on the currently selected thread. To change the thread, select the Thread dropdown at the top of the Hierarchy pane. |
+| Self ms | The total amount of time Unity spent on a particular function, in milliseconds, excluding the time Unity spends calling sub-functions. |
+| Warning | Indicated by a warning icon, this displays how many times the application has triggered a warning during the current frame. For more information, see the Performance warnings section of this documentation. |
 
 
 
