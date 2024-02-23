@@ -25,9 +25,35 @@ To profile your application on its target release platform, connect the target d
 
 ![](./img/profiler-build-settings.png)
 
-When you enable the **Autoconnect Profiler** setting, the Unity Editor bakes its IP address into the built Player during the build process. When you start the Player, it **attempts to connect to the Profiler in the Editor located at the baked IP address**.
+When you enable the **Autoconnect Profiler** setting, the **Unity Editor bakes its IP address into the built Player during the build process**. When you **start the Player**, it **attempts to connect to the Profiler in the Editor located at the baked IP address**.
 
-If you additionally enable the **Deep Profiling Support** setting, Unity performs Deep Profiling when the built Player starts, which means that the Profiler profiles every part of your code, and not just code timings explicitly wrapped in ProfilerMarkers. This is useful to get Deep Profiling information on your application’s start up times, however, this adds a small amount of overhead to your build.
+If you additionally **enable** the **Deep Profiling Support** setting, Unity **performs Deep Profiling when the built Player starts**, which means that the Profiler profiles e**very part of your code**, and not just code timings explicitly wrapped in `ProfilerMarkers`. This is useful to get Deep Profiling information on your application’s start up times, however, this adds a small amount of overhead to your build.
+
+#### Connecting to your Player in the Profiler window
+To use the Profiler to manually connect to a platform running your application, configure the settings in the **Attach to Player** dropdown. You can only do this if **Autoconnect Profiler** is disabled.
+
+For a platform to appear in the Attach to Player dropdown, it must meet the following requirements:
+
+- The platform is visible on your local network or directly connected to your local machine by cable.
+- The platform is running a Player that you built with the **Development Build** option enabled. For instructions on how to enable this setting for a platform.
+- The platform is running your Player.
+
+The **Attach to Player** dropdown displays all Unity Players that Unity detects **through the network or by direct connection**. You can identify these Players by **Player Name** and the **Product Name** that is running the Player; for example, iPhonePlayer (My iPhone).
+
+You can also connect to a Player directly via its IP address. To do this, select the **Attach to Player** menu, and then select **`<Enter IP>`** in the dropdown. In the dialog box that appears, type the **IP address and (optionally) the port of the Player you want to connect to**.
+
+To collect profiling information on your application, select the Player from the dropdown menu, and then click **Record**.
+
+
+To continuously collect data while your application runs, enable the **Run In Background** setting in Player Settings (menu: **Edit** > **Project Settings** > **Player** > **Resolution and Presentation**). When you enable this setting, the **Profiler collects data even when you leave your application running in the background**. If you disable it, the Profiler only collects data when the application is running in an active window.
+
+**Using the Attach to Player search bar** \
+
+The **Attach to Player** dropdown includes a search bar that you can use to find information about your Player. You can search by **Player Name** or device category, for example **Remote**. When you search by category, the result displays all devices in that category.
+
+Select the name of a development Player to view it in the profiler.
+
+![](./img/attach-to-player.png)
 
 
 ### Profiler controls
