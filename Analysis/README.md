@@ -31,8 +31,18 @@ When you use the Unity Profiler to profile your application, there are three mai
 -   Profile your application in Play mode in the Unity Editor
 -   Profile the Unity Editor
 
+https://www.chunfuchao.com/posts/unity-profiling-tools/
 
+### Memory Profiler
+The **Memory Profiler** is a tool you can **use to inspect the memory usage of your Unity application and the Unity Editor**. The package adds a Memory Profiler window to the Unity Editor, which you can use to capture, inspect, and compare Snapshots of memory. Snapshots are a record of how the memory your application uses was organized when the Memory Profiler captured the snapshot.
+
+
+https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.0/manual/index.html
+
+
+### Input Debugger
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Debugging.html
 
 ### ref 
 https://docs.unity3d.com/Manual/analysis.html \
-https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Debugging.html
+
