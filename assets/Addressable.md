@@ -10,7 +10,7 @@ Use **Window > Asset Management > Addressables** to begin working with the syste
 
 
 
-> **Addressable Assets** are assets that have a unique address which you can use to **load them from local or remote AssetBundles**.
+> **Addressable Assets** are assets that have a **unique address** which you can use to **load them from local or remote AssetBundles**.
 
 ### ref
 
