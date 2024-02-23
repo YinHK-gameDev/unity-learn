@@ -213,6 +213,7 @@ There are multiple ways to create a Prefab Variant based on another Prefab.
 #### Editing a Prefab Variant
 When a **Prefab Variant** is opened in Prefab Mode, the root appears as a **Prefab instance** with the blue Prefab icon. This **Prefab instance** represents the **base Prefab** that the **Prefab Variant** inherits from; it doesn’t represent the **Prefab Variant** itself. Any edits you make to the **Prefab Variant** become **overrides to this base that exists in the Variant**.
 
+When you open the Overrides drop-down window, you can always see in its header which object the overrides are to, and in which context the overrides exist. For a Prefab Variant, the header will say that the overrides are to the base Prefab and exist in the Prefab Variant. To make it extra clear, the **Apply All** button also says **Apply All to Base**.
 
 ### Nested Prefabs
 You can include Prefab instances inside other Prefabs. This is called nesting Prefabs. Nested Prefabs retain their links to their own Prefab Assets, while also forming part of another Prefab Asset.
