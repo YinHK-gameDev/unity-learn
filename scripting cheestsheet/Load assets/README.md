@@ -4,7 +4,11 @@
 ### `AssetDatabase` class
 An Interface for accessing assets and performing operations on assets.
 
-#### `AssetDatabase.LoadAssetAtPath`
+#### `AssetDatabase` class
+
+**`AssetDatabase.LoadAssetAtPath`**, **`AssetDatabase.LoadMainAssetAtPath`**, **`AssetDatabase.LoadAllAssetRepresentationsAtPath`**, **`AssetDatabase.LoadAllAssetsAtPath`** & **`AssetDatabase.ImportAsset`**
+
+
 Returns the first asset object of type **type** at given path **assetPath**.
 
 Some asset files may contain multiple objects. (such as a Maya file which may contain multiple Meshes and GameObjects). All paths are relative to the project folder, for example: "Assets/MyTextures/hello.png".  
@@ -32,6 +36,8 @@ public class MyPlayer : MonoBehaviour
     }
 }
 ```
+
+https://docs.unity3d.com/ScriptReference/AssetDatabase.html
 
 ### `Resources` class
 The Resources class allows you to find and access Objects including assets.
