@@ -33,7 +33,10 @@ public class ExampleClass : MonoBehaviour
 
 
 ### ref 
-https://www.chunfuchao.com/posts/unity-profiling-tools/
+https://www.chunfuchao.com/posts/unity-profiling-tools/ 
+
+https://docs.unity3d.com/Manual/Profiler.html \
+https://docs.unity3d.com/Manual/profiler-profiling-applications.html
 
 **`Profiler`** \
 https://docs.unity3d.com/ScriptReference/Profiling.Profiler.html
