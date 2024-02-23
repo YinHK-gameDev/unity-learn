@@ -5,12 +5,6 @@ The Unity Profiler is a tool you can **use to get performance information about 
 
 To access the Profiler window go to menu: **Window > Analysis > Profiler**. 
 
-When you use the Unity Profiler to profile your application, there are three main ways to record data:
-
--   Profile your application in a player on your target platform
--   Profile your application in Play mode in the Unity Editor
--   Profile the Unity Editor
-
 The Profiler window is laid out as follows: 
 
 - **Profiler modules**. This is a list of all the modules you can profile in your application. Use the drop-down menu at the top of this area to add and remove modules from the window.
@@ -18,6 +12,25 @@ The Profiler window is laid out as follows:
 - **Frame charts**. This area contains charts of each module the Profiler profiles. This area is blank when you open the Profiler for the first time, and fills with information when you start profiling your application.
 - **Module details panel**. The information in this area of the window changes based on the module you have selected. For instance, when you select the CPU Usage Profiler module, it contains a detailed timeline and the option to switch to a Hierarchy view. When you select the Rendering Profiler module, this area displays a list of debugging information. This area is blank when you open the Profiler for the first time, and fills with information when you start profiling your application.
 
+
+### Profiling your application
+
+When you use the Unity Profiler to profile your application, there are three main ways to record data:
+
+-   Profile your application in a player on your target platform
+-   Profile your application in Play mode in the Unity Editor
+-   Profile the Unity Editor
+
+#### Profile your application on a target platform
+
+To profile your application on its target release platform, connect the target device to your network or directly to your computer via cable. You can also connect to a device via IP address. You can only profile your application as a **Development Build**. To set this up, go to **Build Settings** (menu: **File** > **Build Settings**) and select your application’s target platform. Enable the **Development Build** setting. When you enable this setting, two settings related to the Profiler become available: **Autoconnect Profiler** and **Deep Profiling Support**.
+
+
+![](./img/profiler-build-settings.png)
+
+
+
+https://docs.unity3d.com/Manual/profiler-profiling-applications.html
 
 ### Profiler controls
 The Profiler controls are in the toolbar at the top of the Profiler window. Use these to start or stop recording profiler data, and to navigate through profiled frames.
