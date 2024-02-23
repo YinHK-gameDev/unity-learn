@@ -31,6 +31,13 @@ If you are **replacing an existing Prefab**, Unity tries to preserve references 
 
 
 ### Editing a Prefab in Prefab Mode
+
+- In **isolation**: When you edit a Prefab in isolation, Unity **hides the rest of your current working Scene**, and you only see the GameObjects that relate to the Prefab itself.
+
+- In **context**: When you edit a Prefab in context, the** rest of your current working Scene remains visible**, **but locked for editing**.
+
+Editing in isolation
+
 You can begin to edit a Prefab in Prefab Mode in several ways. To open a Prefab Asset and edit it in **isolation** you can do it in the following ways:
 
 - Double-click the Prefab Asset in the Project window
@@ -73,11 +80,23 @@ An **overridden property value** on a Prefab instance **always takes precedence 
 > If you make a change to a Prefab Asset, and it does not update all instances as expected, you should check whether that property is overridden on the instance. It is best to only use instance overrides when strictly necessary, because if you have a large number of instance overrides throughout your Project, it can be difficult to tell whether your changes to the Prefab Asset will or won’t have an effect on all of the instances.
 
 
-
 ![](./img/hierarchy-override-indicator.png)
 
 https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html \
 https://docs.unity3d.com/Manual/Hierarchy.html#OverrideIndicator
+
+
+### Editing a Prefab via its instances
+
+The Inspector for the root of a Prefab instance has three more controls than a normal GameObject
+: **Open**, **Select** and **Overrides**.
+
+The three Prefab controls in the Inspector window for a Prefab instance.
+
+The **Open** button **opens the Prefab Asset that the instance is from in Prefab Mode**, allowing you to edit the Prefab Asset and thereby change all of its instances. The Select button selects the Prefab Asset that this instance is from in the Project window. The Overrides button opens the overrides drop-down window.
+
+![](./img/PrefabsInspectorControls1.png)
+
 
 ### Unused Overrides
 Instance override values are stored as data in the scene or prefab in which they are defined. However, an override becomes “unused” if its target object is either invalid or its Property Path is unknown. In this case, the data becomes unused. It is still stored in the scene file, but is redundant.
