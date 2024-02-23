@@ -124,7 +124,7 @@ The Overrides dropdown in the Inspector window when viewing a Prefab instance.
 ![](./img/removed_component2.png)
 
 #### Revert & Apply overrides
-The Overrides drop-down window also has** Revert All** and **Apply All** buttons for reverting or applying all changes at once.
+The Overrides drop-down window also has **Revert All** and **Apply All** buttons for reverting or applying all changes at once.
 
 You can also choose to **revert and apply** some of the overrides, not all. You can do this by clicking the override part in the Overrides dropdown, you can see an extension menu next to the Overrides drop-down window. Then you can click **Revert or Apply button** on that override part.
 
