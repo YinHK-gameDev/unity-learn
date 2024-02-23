@@ -119,6 +119,10 @@ The Overrides dropdown in the Inspector window when viewing a Prefab instance.
 
 > For the Overrides dropdown, you can see all the override details on this dropdown. If **adding a new component or adding a new child GameObject** on prefab instance, you can see a **"+"** on the icon. If **Removing a component** from prefab instance, you can see a **"-"** on the icon.
 
+![](./img/remove_component.png)
+
+![](./img/removed_component2.png)
+
 ### Unused Overrides
 Instance override values are stored as data in the scene or prefab in which they are defined. However, an override becomes “unused” if its target object is either invalid or its Property Path is unknown. In this case, the data becomes unused. It is still stored in the scene file, but is redundant.
  
