@@ -1,5 +1,5 @@
 ## Player setting 
-The **Player** settings window (menu: **Edit > Project Settings > Player**) contain settings that determine how Unity builds and displays your final application.
+The **Player** settings window (menu: **Edit > Project Settings > Player**) contain settings that determine **how Unity builds and displays your final application**.  You can also use the **`PlayerSettings`** API to control most of the settings available in this window.
 
 ###  Platform-specific settings
 
@@ -10,7 +10,7 @@ The platform-specific settings are divided into the following sections:
 -   **Splash Image**: the image shown while the game is launching. This section also includes common settings for creating a Splash Screen. 
 -   **Other Settings**: any remaining settings specific to the platform.
 -   **Publishing Settings**: details of how the built application is prepared for delivery from the app store or host webpage.
--   ****XR**An umbrella term encompassing Virtual Reality (VR), Augmented Reality (AR) and Mixed Reality (MR) applications.
+-   **XR Settings**: settings specific to **Virtual Reality (VR)**, **Augmented Reality (AR)** and **Mixed Reality (MR) applications**.
 
 ### ref 
 https://docs.unity3d.com/2021.3/Documentation/Manual/class-PlayerSettings.html
