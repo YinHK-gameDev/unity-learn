@@ -19,6 +19,21 @@ When you use the Unity Profiler to profile your application, there are three mai
 -   Profile your application in Play mode in the Unity Editor
 -   Profile the Unity Editor
 
+
+When you use the Profiler window to run and profile your application in the Editor, the **results are only an approximation of your application’s behavior when the target platform runs it**. This is because Play mode runs in the same process as the Editor, so you can’t fully isolate your application’s CPU, GPU, and memory usage from the Unity Editor’s usage. This skews the resulting profiling data.
+
+To get better profiling results, you should always profile your application on a target device, and only profile in the Editor to quickly iterate over issues you have already identified on a device.
+
+You can also profile in Play mode or profile the Editor to identify issues unrelated to the performance of your application, such as whether long load times or an unresponsive Editor slows down iteration time, or if your application performs badly in Play mode.
+
+Whenever you profile in the Editor, you should make sure that you open Play mode in maximized view, and reduce the amount of open Editor windows. This ensures that other Editor windows don’t use up time on the render thread and GPU, and therefore affect the performance data. When Play mode is in a maximized view it runs your application at a resolution closer to that of your target device, which directly affects performance issues such as those related to fill rate.
+
+
+**Profiling in Play mode**
+
+The Profiler’s default target is Play mode, which records activities when the Editor is running Play mode. Play mode profiling is useful to test out quick changes without having to rebuild a player, but you should not use it as a replacement for validating builds on your application’s target platform and devices. This is because Play mode runs in the same application and main thread as the Editor, which means that when you profile in Play mode, the Editor’s systems such as the UI, Inspectors, Scene View rendering, and asset management affect the performance and memory profiling measurements of your application.
+
+
 #### Profile your application on a target platform
 
 To profile your application on its target release platform, connect the target device to your network or directly to your computer via cable. You can also connect to a device via IP address. You can only profile your application as a **Development Build**. To set this up, go to **Build Settings** (menu: **File** > **Build Settings**) and select your application’s target platform. Enable the **Development Build** setting. When you enable this setting, two settings related to the Profiler become available: **Autoconnect Profiler** and **Deep Profiling Support**.
@@ -47,7 +62,7 @@ To collect profiling information on your application, select the Player from the
 
 To continuously collect data while your application runs, enable the **Run In Background** setting in Player Settings (menu: **Edit** > **Project Settings** > **Player** > **Resolution and Presentation**). When you enable this setting, the **Profiler collects data even when you leave your application running in the background**. If you disable it, the Profiler only collects data when the application is running in an active window.
 
-**Using the Attach to Player search bar** \
+**Using the Attach to Player search bar** 
 
 The **Attach to Player** dropdown includes a search bar that you can use to find information about your Player. You can search by **Player Name** or device category, for example **Remote**. When you search by category, the result displays all devices in that category.
 
@@ -55,6 +70,30 @@ Select the name of a development Player to view it in the profiler.
 
 ![](./img/attach-to-player.png)
 
+#### Player name device categories
+
+The Player Name category includes the following categories that display information about particular device types:
+
+
+| Property: | Description: |
+| --- | --- |
+| Play Mode | Select this property to profile your application in Play Mode. |
+| Edit Mode | Select this property to profile the Unity Editor. |
+| Local | This list contains any device that is running on the local machine, in the Unity Editor or in a standalone player.It also displays information for players that are physically connected to the host machine with a cable. |
+| Remote | This section displays information for devices running on the local network.This section only appears when Unity finds a remote device running on the local network. |
+| Connections without ID | This section only appears when Unity finds a device running a player older than Unity 2021.2.These players do not have Product Name, IP, or Port information. |
+| Direct Connection | Use this option to connect to a specific IP and port combination. This category displays the most recent IP you connected to. |
+
+#### Best practices for profiling your application
+When you profile your application, there are a few things that you can do to ensure consistency across profiling sessions, and to make sure that the processes that Unity uses do not affect your profiling data:
+
+- Only add the** Profiler modules related to the area** that you want to investigate to the Profiler window. To add and remove modules to the Profiler, select the dropdown in the top left of the Profiler window.
+
+- **Avoid using Deep Profiling**, because it **might create a high overhead when you use i**t. If you want to see more details on samples with markers such as GC.Alloc or JobFence.Complete, go to the Profiler window toolbar and enable the Call Stacks setting. This provides the sample’s full call stack, which gives you the information you need without incurring the overhead of Deep Profiling.
+
+- Disable the **Live setting**, if you **do not need to see the Hierarchy or Timeline view updating** as the Profiler collects data. To see the data update in the window, you can **stop recording**.
+
+- Use the **F9** shortcut to **enable or disable the Profiler**. You can use this shortcut to capture performance data without the Profiler window needing to be open. If you have the Standalone Profiler open, using this shortcut starts recording in this window.
 
 ### Profiler controls
 The Profiler controls are in the toolbar at the top of the Profiler window. Use these to start or stop recording profiler data, and to navigate through profiled frames.
