@@ -62,11 +62,13 @@ When you modify a Prefab Asset, the changes are reflected in all of its instance
 
 An example would be if you had a Prefab Asset **"Robot"**, which you placed in multiple levels in your game. However, each instance of the **"Robot"** has a **different speed value**, and a **different** **audio clip** assigned.
 
-There are four different types of instance override:
+There are four different types of **instance override**:
 - **Overriding the value** of a property
 - **Adding a component**
 - **Removing a component**
 - **Adding a child GameObject**
+
+> **You can create different prefab instances with different type of overrides**
 
 > **Note**: There are **some limitations** with Prefab instances: you **cannot reparent a GameObject that is part of a Prefab**, and you **cannot remove a GameObject that is part of the Prefab**. You can, however, **deactivate a GameObject**, which is a **good substitute for removing a GameObject** (this counts as a property override).
 
@@ -86,14 +88,14 @@ https://docs.unity3d.com/Manual/PrefabInstanceOverrides.html \
 https://docs.unity3d.com/Manual/Hierarchy.html#OverrideIndicator
 
 
-### Editing a Prefab via its instances
+### Editing a Prefab via its instances(Prefab instance)
 
 The Inspector for the root of a Prefab instance has three more controls than a normal GameObject
 : **Open**, **Select** and **Overrides**.
 
 The three Prefab controls in the Inspector window for a Prefab instance.
 
-The **Open** button **opens the Prefab Asset that the instance is from in Prefab Mode**, allowing you to edit the Prefab Asset and thereby change all of its instances. The Select button selects the Prefab Asset that this instance is from in the Project window. The Overrides button opens the overrides drop-down window.
+The **Open** button **opens the Prefab Asset that the instance is from in Prefab Mode**, allowing you to edit the Prefab Asset and thereby change all of its instances. The **Select** button selects the Prefab Asset that this instance is from in the Project window. The **Overrides** button opens the overrides drop-down window.
 
 ![](./img/PrefabsInspectorControls1.png)
 
