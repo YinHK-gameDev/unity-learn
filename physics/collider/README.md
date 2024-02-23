@@ -6,9 +6,12 @@ The simplest (and least processor-intensive) colliders are primitive collider ty
 
 
 ### Mesh colliders
-In 3D, you can use Mesh Colliders to match the shape of the GameObject’s mesh exactly.
+In 3D, you can use Mesh Colliders to **match the shape of the GameObject’s mesh exactly**.
 
-https://docs.unity3d.com/Manual/class-MeshCollider.html
+The precision of a Mesh collider comes with a **higher processing overhead than primitive colliders** (such as the **Sphere**, **Box**, and **Capsule colliders**). For this reason, it is best practice to **only use Mesh colliders for colliders that do not otherwise require a high amount of processing power**, or for collisions where primitive colliders or a compound collider would have a greater overhead. A good approach is to use Mesh colliders for static scene geometry, and compound colliders for moving GameObjects.
+
+https://docs.unity3d.com/Manual/class-MeshCollider.html \
+https://docs.unity3d.com/2023.3/Documentation/Manual/mesh-colliders-introduction.html
 
 ### Polygon Collider 2D
 The Collider’s shape is defined by a freeform edge made of line segments, that you can adjust to fit the shape of the Sprite or any other shape. 
