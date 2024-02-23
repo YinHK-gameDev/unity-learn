@@ -39,9 +39,8 @@ public class ImportAsset {
 ```
 
 ### Loading an Asset
-The editor loads assets only as needed, say if they are added to the scene
- or edited from the Inspector
- panel. However, you can load and access assets from a script using **`AssetDatabase.LoadAssetAtPath`**, **`AssetDatabase.LoadMainAssetAtPath`**, **`AssetDatabase.LoadAllAssetRepresentationsAtPath`** and **`AssetDatabase.LoadAllAssetsAtPath`**.
+The editor loads assets only as needed, say if they are **added to the scene
+ or edited from the Inspector panel**. However, you can **load and access assets from a script** using **`AssetDatabase.LoadAssetAtPath`**, **`AssetDatabase.LoadMainAssetAtPath`**, **`AssetDatabase.LoadAllAssetRepresentationsAtPath`** and **`AssetDatabase.LoadAllAssetsAtPath`**.
  
 ```cs
 using UnityEngine;
