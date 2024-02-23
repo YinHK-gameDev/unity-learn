@@ -11,7 +11,7 @@ When you use the Unity Profiler to profile your application, there are three mai
 -   Profile your application in Play mode in the Unity Editor
 -   Profile the Unity Editor
 
-The Profiler window is laid out as follows: \
+The Profiler window is laid out as follows: 
 
 - **Profiler modules**. This is a list of all the modules you can profile in your application. Use the drop-down menu at the top of this area to add and remove modules from the window.
 - **Profiler control**s. Use these controls to set which device to profile from and what kind of profiling Unity should perform, navigate between frames, and start recording data.
