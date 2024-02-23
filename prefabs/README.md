@@ -141,6 +141,31 @@ If you select multiple entries at once, the **Revert All** and **Apply All** but
 > After **reverting or applying the override changes**, the override dropdown don't show the changes anymore. If applying changes, the Prefab Asset now has that modification, and the Prefab instance no longer has that modification as an override, **the changes apply on the Prefab Asset and become part of Prefab Asset**, also **all the prefab instances associate from this Prefab asset apply the changes too**. If reverting changes, this essentially **discards your override** and **reverts it back to the state of the Prefab Asset**.
 
 
+You can also **revert** and **apply** individual overrides using the context menu in the Inspector, instead of using the Overrides drop-down window.
+
+Overridden properties are shown in bold. They can be reverted or applied via a context menu:
+
+![](./img/PrefabsContextSingleProperty1.png)
+
+Modified components can be reverted or applied via the cog drop-down button or context menu of the component header:
+
+![](./img/PrefabsContextModifiedComponent1.png)
+
+
+Added components have a plus badge that overlays the icon. They can be reverted or applied via the cog drop-down button or context menu of the component header:
+
+![](./img/PrefabsContextAddedComponent1.png)
+
+
+Removed components have a minus badge that overlays the icon. The removal can be reverted or applied via the cog drop-down button or context menu of the component header. Reverting the removal puts the component back, and applying the removal deletes it from the Prefab Asset as well:
+
+![](./img/PrefabsContextRemovedComponent1.png)
+
+GameObjects (including other Prefabs) that are added as children to a Prefab instance have a plus badge that overlays the icon in the Hierarchy. They can be reverted or applied via the context menu on the object in the Hierarchy:
+
+![](./img/PrefabsContextAddedGameObject1.png)
+
+
 ### Unused Overrides
 Instance override values are stored as data in the scene or prefab in which they are defined. However, an override becomes “unused” if its target object is either invalid or its Property Path is unknown. In this case, the data becomes unused. It is still stored in the scene file, but is redundant.
  
