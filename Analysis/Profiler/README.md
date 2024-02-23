@@ -37,6 +37,39 @@ The Profiler controls are in the toolbar at the top of the Profiler window. Use 
 | Load | Load saved Profiler data into the Profiler window. You can also load binary profile data that the Player has written out to file via the Profiler.logFile API.Hold down the Shift button and click the Load button to append the file contents to the current profile frames. |
 | Save | Save the Profiler data into a .data file in your Project folder. |
 
+
+#### Deep Profiling
+Usually the Profiler only profiles code timings that are explicitly wrapped in ProfilerMarkers. This **includes the first call stack depth of invocations from the engine’s native code into your scripting code**, such as a **MonoBehaviour’s Start, Update, or similar methods**
+
+When you enable the Deep Profile setting, the Profiler profiles every part of your script code and records all function calls, including at least the first call stack depth into any Unity API. This is useful information to help you work out where your code impacts on your application’s performance, but it comes with a large overhead.
+
+When you deep profile your application, Unity injects profiler instrumentation into all of your script methods to record all function calls. This is useful to understand where your application code spends the most time.
+
+Deep Profiling is resource-intensive and uses a lot of memory. As a result, your application runs significantly slower while it is profiling. Deep Profiling is better suited for small games with simple scripting. If you are using complex script code, your application might not be able to use Deep Profiling at all, and for many larger applications, Deep Profiling might make Unity run out of memory.
+
+
+### Profiler modules
+The top part of the Profiler window is divided into Profiler modules that profile specific areas of your game. When you profile your application, Unity displays the data related to each module in corresponding charts.
+
+| Profiler module | Function |
+| --- | --- |
+| CPU Usage | Displays an overview of where your application spends the most time, in areas such as physics, scripts, animation, and garbage collection. This module contains broad profiling information about your application, and you can use it to decide which further modules to use to investigate more specific issues in your application. This module is always active, even if you close it. See CPU Usage Profiler module |
+| GPU Usage | Displays information related to graphics processing. By default this module is not active, because it has a high overhead. See GPU Usage Profiler module. |
+| Rendering | Displays information on how Unity renders graphics in your application, including information on static and dynamic batching, SetPass and Draw calls, triangles, and vertices. See Rendering Profiler module. |
+| Memory | Displays information on how Unity allocates memory in your application. This is particularly useful for seeing how scripting allocations (GC.Alloc) lead up to garbage collection, or how your application’s Asset memory usage trends over time. See Memory Profiler module. |
+| Audio | Displays information related to the audio in your application, such as when and how many audio sources play, how much CPU usage the Audio system requires, and how much memory Unity allocates to it. See Audio Profiler module. |
+| Video | Displays information related to video in your application. See Video Profiler module. |
+| Physics | Displays information about the physics in your application that the physics engine has processed. See Physics Profiler module. |
+| Physics (2D) | Similar to the Physics Profiler module, this module displays information about where the physics engine has processed 2D physics in your application. See 2D Physics Profiler module. |
+| UI | Displays information about how Unity handles UI batching for your application, including why and how Unity batches items. See UI and UI Details Profiler module. |
+| UI Details | Similar to the UI Module, this module’s chart adds data about batch and vertices count, as well as markers which include information about user input events that trigger UI changes. See UI and UI Details Profiler module |
+| Global Illumination | Displays information on how much CPU resource Unity spends on the Global Illumination lighting subsystem in your application. See Global Illumination Profiler window. |
+| Virtual Texturing | Displays statistics about Streaming Virtual Texturing in your application. See the Virtual Texturing Profiler module. |
+| Asset Loading | Displays information about how your application loads assets. See the Asset Loading Profiler module. |
+| File Access | Displays information about file accesses in your application. See the File Access Profiler module. |
+
+
+
 ### Begaining profiling sample & ending profiling sample through scripting
 
 ```cs
