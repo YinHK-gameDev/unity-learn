@@ -199,7 +199,7 @@ Prefab Variants are useful when you want to have **a set of predefined variation
 For example, you might want to have several different types of GermSlimeTargets in your game, which are all based on the same basic GermSlimeTarget Prefab. However you may want some GermSlimeTargets to carry items, some to move at different speeds, or some to emit extra sound effects.
 
 
-A Prefab Variant inherits the properties of another Prefab, called the base. Overrides made to the Prefab Variant take precedent over the base Prefab’s values. A Prefab Variant can have any other Prefab as its base, including Model Prefabs or other Prefab Variants.
+A **Prefab Variant** **inherits the properties of another Prefab**, called the **base**. **Overrides made to the Prefab Variant take precedent over the base Prefab’s values**. A Prefab Variant can have **any other Prefab as its base**, including Model Prefabs or other Prefab Variants.
 
 #### Creating a Prefab Variant
 
