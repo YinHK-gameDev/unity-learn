@@ -18,9 +18,45 @@ To save property settings to a **Preset asset**, follow the instructions below. 
 1.  Select the GameObject, Asset import settings, or Project Settings window from which you want to reuse settings. When you select it, it appears in the **Inspector** window.
 2.  In the **Inspector** window, configure the properties as you want to save them. 
 3.  Click the Preset selector (the slider icon) at the top-right of the **Inspector** window.
+    ![](./img/preset-icon.png) 
+4. In the Select Preset window, click **"Save current to"**.
+5. Choose the location of your new Preset, enter its name, and **click Save**.
 
-   
 
+### Applying settings from a Preset
+
+There are two ways to **apply a Preset**: the **Select Preset window**, or **for component Presets**, you can also **drag and drop a Preset from the Project window onto the GameObject that contains that component**.
+
+
+To apply a Preset via the Select Preset window:
+
+1. For GameObjects or assets you want to apply a Preset to, select them so that they appear in the Inspector window. For Project Settings that you want to apply a Preset to, open them in the Project Settings window.
+2. In the Inspector, click the **Preset selector** (the **slider icon**).
+3. In the Select Preset window, **search for and select the Preset to apply**. Unity applies this Preset to the component, asset, or Project Settings window.
+4. Close the **Select Preset** window.
+
+If you apply a component Preset via drag-and-drop, Unity’s behavior depends on the state of your GameObject:
+
+-   If you drop the Preset on an existing GameObject in the Hierarchy window, Unity adds a new component and copies properties from the Preset.
+-   If you drop the Preset on an empty area in the Hierarchy window, Unity creates a new, empty GameObject and adds a component with properties copied from the Preset.
+-   If you drop the Preset on the Inspector window onto the title of an existing component, Unity copies properties from the Preset.
+-   If you drop the Preset on an empty area in the Inspector window, Unity adds a new component and copies properties from the Preset.
+
+
+#### Applying partial Presets
+
+You can choose to only apply some properties from a Preset and exclude others. To do this:
+
+1. Select your Preset in the **Project** window.
+2. In the **Inspector**, right-click a property and choose **Exclude Property**. The window displays a red horizontal line next to excluded properties.
+3. You can also include the property again by same step.
+4. **Apply the Preset** to the target component, asset, or Project settings.
+
+![](./img/exclude_property1.png)
+
+![](./img/exclude_property2.png)
+
+> **Note:** To select all or clear all checkboxes in a Preset, select the **More items** menu (**⋮**) or right-click the Preset name, and select **Include all properties** or **Exclude all properties**. You can still adjust individual properties if you need to.
 
 ### Supporting presets
 
