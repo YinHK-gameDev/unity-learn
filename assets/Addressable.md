@@ -44,3 +44,9 @@ https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html
 
 **`Addressable` API** \
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html
+
+**Tutorial** \
+https://learn.unity.com/course/get-started-with-addressables
+
+
+
