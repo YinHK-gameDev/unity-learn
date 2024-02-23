@@ -1,7 +1,9 @@
 ## Addressables
 Mainly used in assets.
 
-The **Addressable Asset System** allows the developer to ask for an **asset** **via its address**. Once an asset (e.g. a prefab) is marked **"addressable"**, it **generates an address which can be called from anywhere**. Wherever the asset resides (local or remote), the system will locate it and its dependencies, then return it.
+The **Addressable Asset System** allows the developer to ask for an **asset** **via its address**. Once an asset (e.g. a prefab) is marked **"addressable"**, it **generates an address which can be called from anywhere**. 
+
+Wherever the asset resides (**local or remote**), the system will **locate it and its dependencies**, then **return it**.
 
 Use **Window > Asset Management > Addressables** to begin working with the system.
 
