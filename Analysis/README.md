@@ -14,6 +14,9 @@ Unity has several tools that you can use to **measure the performance** of your 
 - **Memory Profiler (package)**
 - **Frame Debugger**
 - **Physics Debugger**
+- **Input Debugger**
+- **IMGUI Debugger**
 
 ### ref 
-https://docs.unity3d.com/Manual/analysis.html
+https://docs.unity3d.com/Manual/analysis.html \
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Debugging.html
