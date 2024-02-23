@@ -30,6 +30,23 @@ With the **smallest number**, the scene will be defult display during the game. 
 -   Next to each listed scene, you should see a number which indicates its build index which is the order in which the scene will appear in the build. Note that after 0 (the first scene), this doesn't really matter as you'll likely have a controller script in your game that handles scene switching for the lifespan of the process.
 -   Find the scene you want to move and drag and drop it to the desired index.
 
+
+### Build settings
+When you select a platform, Unity displays a list of options that you can adjust for the build. Some settings apply to all platforms, and some are platform-specific.
+
+
+The following settings apply to all platforms.
+
+| Setting: | Function: |
+| --- | --- |
+| Development Build | Include scripting debug symbols and the Profiler in your build. You should use this setting when you want to test your application.When you select this option, Unity sets the DEVELOPMENT_BUILD scripting define. Your build then includes preprocessor directives that set DEVELOPMENT_BUILD as a condition (see Platform-dependent compilations). |
+| Autoconnect Profiler | Automatically connect the Unity Profiler to your build.This option is only available if you selected Development Build. |
+| Deep Profiling Support | Turn on Deep Profiling in the Profiler. This makes the Profiler instrument every function call in your application so it returns more detailed profiling data. This option might slow down script execution.This option is only available if you selected Development Build. |
+| Script Debugging | Allow your script code to be debugged.This option is only available if you selected Development Build.This option is not available for WebGL. |
+| Wait for Managed Debugger | Make the Player wait for a debugger to be attached before it executes any script code.This option is only available if you selected Script Debugging. |
+
+https://docs.unity3d.com/Manual/BuildSettings.html
+
 ### Remove Unity Splash Screen ("Made with Unity" logo)
 https://moddingcommunity.com/topic/108-tutorial-a-complete-guide-to-remove-unity-splash-screen/
 
