@@ -43,11 +43,11 @@ https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.0/manual/index.html
 ### Input Debugger
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Debugging.html
 
-### Garbage collector
+### Garbage collector(GC)
 
 Enabled by default (**Project Settings > Player > Configuration**), this mode spreads out the process of garbage collection over multiple frames.
 
-ncremental garbage collection (GC) spreads out the process of garbage collection over multiple frames. This is the default garbage collection behavior in Unity.
+Incremental **garbage collection (GC)** spreads out the process of garbage collection over multiple frames. This is the default garbage collection behavior in Unity.
 
 
 
