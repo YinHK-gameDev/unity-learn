@@ -99,6 +99,25 @@ The **Open** button **opens the Prefab Asset that the instance is from in Prefab
 
 ![](./img/PrefabsInspectorControls1.png)
 
+#### Overrides dropdown
+
+The **Overrides** drop-down window shows all the overrides on the Prefab instance. It also lets you apply overrides from the instance to the Prefab Asset, or revert overrides on the instance back to the values on the Prefab Asset. The **Overrides** drop-down button only appears for the root Prefab instance, not for Prefabs that are inside other Prefabs.
+
+The **Overrides** drop-down window allows you to apply or revert prefab overrides individually, or apply or revert all the prefab overrides in one go.
+
+-   **Applying** an override modifies the Prefab Asset. This puts the override (which is currently only on your Prefab instance) onto the Asset. This means the Prefab Asset now has that modification, and the Prefab instance no longer has that modification as an override.
+    
+-   **Reverting** an override modifies the Prefab instance. This essentially discards your override and reverts it back to the state of the Prefab Asset.
+    
+
+The drop-down window shows a list of changes on the instance in the form of modified, added and removed components, and added GameObjects (including other Prefabs).
+
+
+![](./img/PrefabsOverridesDropdown1.png)
+
+The Overrides dropdown in the Inspector window when viewing a Prefab instance.
+
+> For the Overrides dropdown, you can see all the override details on this dropdown. If **adding a new component or adding a new child GameObject** on prefab instance, you can see a **"+"** on the icon. If **Removing a component** from prefab instance, you can see a **"-"** on the icon.
 
 ### Unused Overrides
 Instance override values are stored as data in the scene or prefab in which they are defined. However, an override becomes “unused” if its target object is either invalid or its Property Path is unknown. In this case, the data becomes unused. It is still stored in the scene file, but is redundant.
