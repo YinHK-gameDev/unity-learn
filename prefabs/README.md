@@ -134,6 +134,12 @@ For components with modified values, the view displays a side-by-side comparison
 
 ![](./img/override_menu2.png)
 
+If you select multiple entries at once, the **Revert All** and **Apply All** buttons are replaced by **Revert Selected** and **Apply Selected** buttons. You can use these to revert or apply multiple overrides at once. Similar to the **Apply All** button, the **Apply Selected** button always applies to the outermost Prefab.
+
+![](./img/override_menu3.png)
+
+> After **reverting or applying the override changes**, the override dropdown don't show the changes anymore. If applying changes, the Prefab Asset now has that modification, and the Prefab instance no longer has that modification as an override, **the changes apply on the Prefab Asset and become part of Prefab Asset**, also **all the prefab instances associate from this Prefab asset apply the changes too**. If reverting changes, this essentially **discards your override** and **reverts it back to the state of the Prefab Asset**.
+
 
 ### Unused Overrides
 Instance override values are stored as data in the scene or prefab in which they are defined. However, an override becomes “unused” if its target object is either invalid or its Property Path is unknown. In this case, the data becomes unused. It is still stored in the scene file, but is redundant.
