@@ -123,6 +123,18 @@ The Overrides dropdown in the Inspector window when viewing a Prefab instance.
 
 ![](./img/removed_component2.png)
 
+#### Revert & Apply overrides
+The Overrides drop-down window also has** Revert All** and **Apply All** buttons for reverting or applying all changes at once.
+
+You can also choose to **revert and apply** some of the overrides, not all. You can do this by clicking the override part in the Overrides dropdown, you can see an extension menu next to the Overrides drop-down window. Then you can click **Revert or Apply button** on that override part.
+
+For components with modified values, the view displays a side-by-side comparison of the component’s values on the Prefab Asset and the modified component on the Prefab instance. This allows you to compare the original Prefab Asset values with the current overrides, so that you can decide whether you would like to **revert or apply those values**.
+
+![](./img/overide_menu1.png)
+
+![](./img/override_menu2.png)
+
+
 ### Unused Overrides
 Instance override values are stored as data in the scene or prefab in which they are defined. However, an override becomes “unused” if its target object is either invalid or its Property Path is unknown. In this case, the data becomes unused. It is still stored in the scene file, but is redundant.
  
