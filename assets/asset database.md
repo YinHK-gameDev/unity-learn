@@ -24,7 +24,7 @@ Artifacts are the results of the import process. The Artifact database contains 
 
 
 ### Importing an Asset
-Unity normally imports assets automatically when they are dragged into the project but it is also possible to import them under script control. To do this you can use the AssetDatabase.ImportAsset method as in the example below.
+Unity **normally imports assets automatically when they are dragged into the project** but it is also possible to **import them under script control**. To do this you can use the AssetDatabase.ImportAsset method as in the example below.
 ```cs
 using UnityEngine;
 using UnityEditor;
