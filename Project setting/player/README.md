@@ -12,5 +12,7 @@ The platform-specific settings are divided into the following sections:
 -   **Publishing Settings**: details of how the built application is prepared for delivery from the app store or host webpage.
 -   **XR Settings**: settings specific to **Virtual Reality (VR)**, **Augmented Reality (AR)** and **Mixed Reality (MR) applications**.
 
+![](./player-settings-window.png)
+
 ### ref 
 https://docs.unity3d.com/2021.3/Documentation/Manual/class-PlayerSettings.html
