@@ -205,7 +205,7 @@ A Prefab Variant inherits the properties of another Prefab, called the base. Ove
 
 There are multiple ways to create a Prefab Variant based on another Prefab.
 
-- You can **right-click** on a Prefab in the Project view and select **Create > Prefab Variant**. This creates a variant of the selected Prefab, which initially doesn’t have any overrides. You can open the Prefab Variant in Prefab Mode to begin adding overrides to it.
+- You can **right-click** on a **Prefab in the Project view** and select **Create > Prefab Variant**. This creates a **variant of the selected Prefab**, which **initially doesn’t have any overrides**. You can open the **Prefab Variant** in Prefab Mode to begin adding overrides to it.
 
 - You can also **drag a Prefab instance in the Hierarchy into the Project window**. When you do this, a dialog asks if you want to create a new **Original Prefab** or a **Prefab Variant**. If you choose **Prefab Variant** you get a new **Prefab Variant** based on the **Prefab instance** you dragged. Any **overrides you had on that instance are now inside the new Prefab Variant**. You can open it in Prefab Mode to add additional overrides or edit or remove overrides.
 
