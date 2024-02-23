@@ -15,3 +15,6 @@ Use **Window > Asset Management > Addressables** to begin working with the syste
 ### ref
 
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html
+
+**`Addressable` API** \
+https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html
