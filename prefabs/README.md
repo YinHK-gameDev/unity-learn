@@ -167,7 +167,28 @@ GameObjects (including other Prefabs) that are added as children to a Prefab ins
 
 
 ### Unused Overrides
-Instance override values are stored as data in the scene or prefab in which they are defined. However, an override becomes “unused” if its target object is either invalid or its Property Path is unknown. In this case, the data becomes unused. It is still stored in the scene file, but is redundant.
+Instance override values are stored as data in the scene or prefab in which they are defined. However, an override becomes **"unused"** if its target object is **either invalid or its Property Path is unknown**. In this case, the **data becomes unused**. It is still stored in the scene file, but is **redundant**.
+
+For example, if you override the values of a **`public` field** on a script attached to a prefab, and then delete the script, the data that contains the override values becomes unused because it targets an object that no longer exists.
+
+Override data also becomes unused if you delete the public field definition, or rename it, because the Property Path no longer matches the stored data, although the component object itself still exists.
+
+
+To check for and remove unused overrides using the Inspector:
+
+-   Select the GameObject(s) that you want to work on.
+-   In the inspector, click the **Overrides** drop-down menu. If there are any unused overrides present, the menu will show an “Unused overrides” option, otherwise the “Unused overrides” option is not displayed.
+-   Click **Unused Overrides** to open the unused overrides panel.
+-   The unused overrides panel lists the unused overrides, and has a **Remove** button.
+-   Click the **Remove** button to remove the unused overrides.
+
+
+To check for and remove unused instance overrides from the Hierarchy window:
+
+1.  Select the GameObject(s) that you want to work on.
+2.  In the Hierarchy window, right-click on one of the selected objects, and select: **Prefab > Remove Unused Overrides**
+3.  Unity displays a dialog box showing the number of unused overrides, if any.
+4.  Click the **Remove** button to remove the unused overrides.
  
 https://docs.unity3d.com/Manual/UnusedOverrides.html
 
