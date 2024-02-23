@@ -40,13 +40,13 @@ public class MyPlayer : MonoBehaviour
 ### `Resources` class
 The Resources class allows you to find and access Objects including assets.
 
-In the editor, `Resources.FindObjectsOfTypeAll` can be used to locate assets and Scene objects.
+In the editor, **`Resources.FindObjectsOfTypeAll`** can be used to **locate assets and Scene objects**.
 
 #### `Resources.Load`
 Loads the asset of the requested type stored at path in a **Resources folder**.
 
-This method returns the asset at path if it can be found, otherwise it returns null.
-Note that the path is case insensitive and must not contain a file extension. All asset names and paths in Unity use forward slashes, so using backslashes in the path will not work.
+This method returns the asset at path if it can be found, otherwise it returns `null`.
+Note that the path is **case insensitive and must not contain a file extension**. All asset names and paths in Unity use **forward slashes**, so using **backslashes** in the path will not work.
 
 ```cs
 public static T Load(string path);
