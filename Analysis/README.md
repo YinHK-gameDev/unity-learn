@@ -49,7 +49,7 @@ Enabled by default (**Project Settings > Player > Configuration**), this mode sp
 
 Incremental **garbage collection (GC)** spreads out the process of garbage collection over multiple frames. This is the default garbage collection behavior in Unity.
 
-
+https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
 
 
 
