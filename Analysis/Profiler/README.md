@@ -2,14 +2,7 @@
 
 The Unity Profiler is a tool you can **use to get performance information about your application**. You can connect it to devices on your network or devices connected to your machine to test how your application runs on your intended release platform. You can also run it in the Editor to get an overview of resource allocation while you’re developing your application.
 
-
 To access the Profiler window go to menu: **Window > Analysis > Profiler**. 
-
-When you use the Unity Profiler to profile your application, there are three main ways to record data:
-
--   Profile your application in a player on your target platform
--   Profile your application in Play mode in the Unity Editor
--   Profile the Unity Editor
 
 The Profiler window is laid out as follows: 
 
@@ -17,6 +10,24 @@ The Profiler window is laid out as follows:
 - **Profiler control**s. Use these controls to set which device to profile from and what kind of profiling Unity should perform, navigate between frames, and start recording data.
 - **Frame charts**. This area contains charts of each module the Profiler profiles. This area is blank when you open the Profiler for the first time, and fills with information when you start profiling your application.
 - **Module details panel**. The information in this area of the window changes based on the module you have selected. For instance, when you select the CPU Usage Profiler module, it contains a detailed timeline and the option to switch to a Hierarchy view. When you select the Rendering Profiler module, this area displays a list of debugging information. This area is blank when you open the Profiler for the first time, and fills with information when you start profiling your application.
+
+### Profiling your application
+
+When you use the Unity Profiler to profile your application, there are three main ways to record data:
+
+-   Profile your application in a player on your target platform
+-   Profile your application in Play mode in the Unity Editor
+-   Profile the Unity Editor
+
+#### Profile your application on a target platform
+
+To profile your application on its target release platform, connect the target device to your network or directly to your computer via cable. You can also connect to a device via IP address. You can only profile your application as a **Development Build**. To set this up, go to **Build Settings** (menu: **File** > **Build Settings**) and select your application’s target platform. Enable the **Development Build** setting. When you enable this setting, two settings related to the Profiler become available: **Autoconnect Profiler** and **Deep Profiling Support**.
+
+![](./img/profiler-build-settings.png)
+
+When you enable the **Autoconnect Profiler** setting, the Unity Editor bakes its IP address into the built Player during the build process. When you start the Player, it **attempts to connect to the Profiler in the Editor located at the baked IP address**.
+
+If you additionally enable the **Deep Profiling Support** setting, Unity performs Deep Profiling when the built Player starts, which means that the Profiler profiles every part of your code, and not just code timings explicitly wrapped in ProfilerMarkers. This is useful to get Deep Profiling information on your application’s start up times, however, this adds a small amount of overhead to your build.
 
 
 ### Profiler controls
