@@ -25,7 +25,7 @@ The Profiler controls are in the toolbar at the top of the Profiler window. Use 
 | Control | Function |
 | --- | --- |
 | Attach to Player | Select which target to profile your application on. By default, this is set to Playmode. You can also select Editor to profile the Unity Editor and display the resources that the Editor is currently using.Unity also automatically detects any devices that are running on your network or connected via USB, and displays them in the drop-down. Click Enter IP in the drop-down to manually enter the IP address of the device you want to profile your application on. For more information, see Profiling your application. |
-| Record | Enable this setting to record profiling information for the active modules when you run your application. If you don’t have this button enabled, the Profiler doesn’t collect any data when you run your application. |
+| Record | Enable this setting to **record profiling information for the active modules when you run your application**. If you **don’t have this button enabled, the Profiler doesn’t collect any data when you run your application**. |
 | Back arrow | Navigate one frame back. |
 | Forward arrow | Navigate one frame forward. |
 | Current Frame | When you click the Current Frame button, the frame indicator line jumps to the last recorded frame, and the Profiler enters Current Frame mode. While the Profiler collects data in this mode, it stays on the current frame and displays the data it collects in real-time. Click the button again to exit Current Frame mode. |
@@ -67,6 +67,8 @@ The top part of the Profiler window is divided into Profiler modules that profil
 | Virtual Texturing | Displays statistics about Streaming Virtual Texturing in your application. See the Virtual Texturing Profiler module. |
 | Asset Loading | Displays information about how your application loads assets. See the Asset Loading Profiler module. |
 | File Access | Displays information about file accesses in your application. See the File Access Profiler module. |
+
+
 
 
 
