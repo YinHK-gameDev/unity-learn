@@ -79,6 +79,11 @@ https://doc.stride3d.net/4.0/en/manual/physics/kinematic-rigid-bodies.html \
 https://blog.terresquall.com/2023/09/what-is-a-kinematic-rigid-body-and-how-are-they-used-in-unity/ \
 https://youtube.com/shorts/_77c2KnCdq4?si=VriPT47o8Bu4n39R
 
+### Primitive collider shapes
+There are three primitive collider shapes in Unity:
+- **Box collider**: rectangular box-shaped collider that is suitable for most rectangular objects.
+- **Sphere collider**: A spherical collider that is suitable for most circular objects.
+- **Capsule collider**: A cylindrical collider that is suitable for objects that have a cylindrical shape, or for rounding out the collision edges on sharp corners. Capsule colliders are also useful for player and non-player characters.
 
 ### Box Collider 
 https://docs.unity3d.com/Manual/class-BoxCollider.html \
