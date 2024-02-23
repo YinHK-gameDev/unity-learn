@@ -192,6 +192,28 @@ To check for and remove unused instance overrides from the Hierarchy window:
  
 https://docs.unity3d.com/Manual/UnusedOverrides.html
 
+
+### Prefab Variants
+Prefab Variants are useful when you want to have **a set of predefined variations of a Prefab**.
+
+For example, you might want to have several different types of GermSlimeTargets in your game, which are all based on the same basic GermSlimeTarget Prefab. However you may want some GermSlimeTargets to carry items, some to move at different speeds, or some to emit extra sound effects.
+
+
+A Prefab Variant inherits the properties of another Prefab, called the base. Overrides made to the Prefab Variant take precedent over the base Prefab’s values. A Prefab Variant can have any other Prefab as its base, including Model Prefabs or other Prefab Variants.
+
+#### Creating a Prefab Variant
+
+There are multiple ways to create a Prefab Variant based on another Prefab.
+
+- You can **right-click** on a Prefab in the Project view and select **Create > Prefab Variant**. This creates a variant of the selected Prefab, which initially doesn’t have any overrides. You can open the Prefab Variant in Prefab Mode to begin adding overrides to it.
+
+- You can also **drag a Prefab instance in the Hierarchy into the Project window**. When you do this, a dialog asks if you want to create a new **Original Prefab** or a **Prefab Variant**. If you choose **Prefab Variant** you get a new Prefab Variant based on the Prefab instance you dragged. Any **overrides you had on that instance are now inside the new Prefab Variant**. You can open it in Prefab Mode to add additional overrides or edit or remove overrides.
+
+
+#### Editing a Prefab Variant
+When a **Prefab Variant** is opened in Prefab Mode, the root appears as a **Prefab instance** with the blue Prefab icon. This **Prefab instance** represents the **base Prefab** that the **Prefab Variant** inherits from; it doesn’t represent the **Prefab Variant** itself. Any edits you make to the **Prefab Variant** become **overrides to this base that exists in the Variant**.
+
+
 ### Nested Prefabs
 You can include Prefab instances inside other Prefabs. This is called nesting Prefabs. Nested Prefabs retain their links to their own Prefab Assets, while also forming part of another Prefab Asset.
 
