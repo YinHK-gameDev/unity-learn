@@ -58,6 +58,27 @@ You can choose to only apply some properties from a Preset and exclude others. T
 
 > **Note:** To select all or clear all checkboxes in a Preset, select the **More items** menu (**⋮**) or right-click the Preset name, and select **Include all properties** or **Exclude all properties**. You can still adjust individual properties if you need to.
 
+### Editing a Preset
+
+To edit a Preset asset, select it from the **Project** window and view it in the **Inspector** window.
+
+> **Note:** When you **change the properties in a Preset**, **your changes do not affect items you have already applied the Preset to**. For example, if you apply a Preset for a Rigidbody component to a GameObject, and then edit the Preset, the settings in the Rigidbody component do not change.
+
+### Exporting Preset Assets
+
+Use Presets to **streamline your team’s workflows**. You can even **use Presets to specify settings for Project Settings windows**, including the **Preset settings** themselves. Use this feature to configure a project then **export it as a custom asset package**. Your team members can **import this asset package into their projects**.
+
+!. In the Project window, select the **Presets** you want to **export**.
+2. In the Unity menu, go to **Assets > Export Package**, or right-click inside the Project window and choose **Export Package**.  The **Exporting package** window displays the items to export.
+3. If your Presets contain **references to assets** you want to include in the package, enable **Include dependencies**.
+4. Click **Export**.
+5. Choose **where you want to store the package**, enter a **filename, and click Save**. Unity saves the package as a **`.unitypackage`** file.
+
+
+### Using Presets for transitions of Animation State nodes
+You can **save and apply Presets for Animation State nodes**. However, the transitions in the Preset are shared among Presets and the nodes that you apply the Preset to. 
+
+
 ### Supporting presets
 
 In your Editor scripts, use the `ObjectFactory` class to create **new GameObjects
@@ -72,7 +93,13 @@ To support and enable Presets by default, your class must inherit from one of th
 
 The Preset Inspector creates a temporary instance of your class, so that users can modify its values, so make sure your class does not affect or rely on other objects such as static values, Project Assets or Scene instances.
 
- 
+
+### Applying default presets to Assets by folder
+
+For **large projects**, you **might use several Presets for importing the same type of Asset**. For example, for **texture Assets**, you might have a **Preset for importing Default textures** and another for **Lightmap textures**. In the Assets folder of your project, you have separate folders for each of these types of textures.
+
+https://docs.unity3d.com/2021.3/Documentation/Manual/DefaultPresetsByFolder.html
+
 
 ### ref
 https://docs.unity3d.com/Manual/Presets.html \
