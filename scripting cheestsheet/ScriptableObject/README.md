@@ -39,7 +39,7 @@ Here's an example of how to create and use a ScriptableObject in Unity:
 
 2. **Create an instance of the ScriptableObject**:
 
-   In Unity, you can create an instance of your ScriptableObject by right-clicking in the Assets folder, selecting "Create," and then choosing "Custom/Player Data" (or whatever menu name you specified in the `CreateAssetMenu` attribute).
+   In Unity, you can create an instance of your ScriptableObject by right-clicking in the Assets folder, selecting **"Create"** and then choosing **"Custom/Player Data"** (or whatever menu name you specified in the **`CreateAssetMenu`** attribute).
 
 3. **Modify and use the ScriptableObject**:
 
