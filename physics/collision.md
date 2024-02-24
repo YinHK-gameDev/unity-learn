@@ -74,5 +74,24 @@ private IEnumerator EnableCollision( float delay )
 }
 ```
 
+### Collision detection
+Collision detection is the physics engine
+’s process for detecting when a physics body (**Rigidbody** or **ArticulationBody**) comes into contact with a collider. Unity provides **different collision detection algorithms** for different situations, so that you can choose the most efficient approach for each individual physics body (**Rigidbody** or **Articulation Body**) in your scene.
+
+**Collision Detection** defines which **algorithm** the physics body (Rigidbody or ArticulationBody) uses to **detect collisions**. Different algorithms offer **different levels of accuracy**, but more accurate algorithms require more **computational resource**s.
+
+There are three algorithms available, represented by four collision detection modes:
+
+| Collision detection mode | Algorithm | Useful for | Not useful for |
+| --- | --- | --- | --- |
+| **Discrete** | Discrete | - Slow-moving collisions. | - Fast-moving collisions. |
+| **Continuous Speculative** | Speculative CCD | - Fast-moving collisions. | - Some fast-moving collisions that require an especially high degree of accuracy. |
+| **Continuous** | Sweep CCD | - Fast-moving linear collisions that require a high degree of accuracy.- Physics bodies that only collide with static colliders. | - Collisions that happen as a result of the physics body rotating.- Physics bodies that collide with moving colliders. |
+| **Continuous Dynamic** | Sweep CCD | - Fast-moving linear collisions that require a high degree of accuracy.- Physics bodies that collide with moving colliders. | - Collisions that happen as a result of the physics body rotating. |
+
+
+
+### ref
+https://docs.unity3d.com/Manual/collision-section.html
 
 
