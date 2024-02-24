@@ -90,6 +90,20 @@ There are three algorithms available, represented by four collision detection mo
 | **Continuous Dynamic** | Sweep CCD | - Fast-moving linear collisions that require a high degree of accuracy.- Physics bodies that collide with moving colliders. | - Collisions that happen as a result of the physics body rotating. |
 
 
+The following decision flow might provide a **starting point for selecting a collision detection typ**e. It starts with the **least computationally intensive mode**, and progresses to the **most computationally intensive mode**.
+
+1. Try Discrete first.
+2. If you notice missed collisions in **Discrete mode**, try **Continuous Speculative**.
+3. If you notice missed collisions or false collisions in **Continuous Speculative mode**, try **Continuous for collisions with static colliders**, or **Continuous Dynamic for collisions with dynamic Rigidbody colliders**.
+
+In some cases, you might find that the physics performance relies on a combination of the collision detection mode and the physics timestep frequency. Experiment with both and profile the results to find the right solution for your project.
+
+
+#### Select a collision detection mode
+
+To select an algorithm, set the physics body’s Collision Detection property in one of the following ways:
+- In the Editor: On the **Rigidbod**y or **Articulation Body component** Inspector, change the **Collision Detection property**.
+- In code: Use the API properties **`Rigidbody.collisionDetectionMode`** and **`ArticulationBody.collisionDetectionMode`**.
 
 ### ref
 https://docs.unity3d.com/Manual/collision-section.html
