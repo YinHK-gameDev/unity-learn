@@ -105,6 +105,27 @@ https://docs.unity3d.com/Manual/class-TerrainCollider.html
 ### Sphere Collider
 https://docs.unity3d.com/Manual/class-SphereCollider.html
 
+### compound colliders
+A compound collider is a **collection of colliders** on the **same Rigidbody GameObject**. \
+Compound colliders collectively behave like a **single Rigidbody collider**. They are useful when you need an **accurate collider for a concave shape**, or if you have a model that would be **too computationally demanding** to simulate with a **Mesh collider**.
+
+> A compound collider is made up of a **parent GameObject which has a Rigidbody component**, and **child GameObjects that have colliders**.
+
+#### Construction of a compound collider
+
+A compound collider is made of the following elements:
+
+-   A **parent GameObject** that has a **Rigidbody**
+-   Empty child GameObjects that **contain colliders**
+
+A compound collider should **only have one Rigidbody**, which should be on the **root GameObject**.
+
+This configuration offers more flexibility than a single GameObject that contains a Rigidbody and several colliders. When each collider is on a different GameObject, you can modify the Transform of each collider individually. However, you should monitor the Rigidbody’s behavior when you reposition colliders. Changes to collider position and scale can change the **Rigidbody’s center of mass**, which can result in some unexpected behavior if continuous change is made over several frames at runtime. If this happens, you can use **`rigidbody.centerOfMass`** to manually set the **center of mass**.
+
+> When you attach several colliders to the **same Rigidbody**, the p**hysics system treats the whole collection as a single Rigidbody collider**. The collider type (**dynamic or kinematic**) is defined by the **Rigidbody configuration**.
+
+> When a compound collider touches another collider, Unity registers collisions per each individual collider in the compound. For this reason, you should try to arrange your colliders so that you only get the collision pairs you want at runtime, or use collider labels to determine behaviors caused by specific colliders.
+
 ### Circle Collider 2D
 https://docs.unity3d.com/Manual/class-CircleCollider2D.html
 
