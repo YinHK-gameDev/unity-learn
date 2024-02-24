@@ -415,8 +415,12 @@ AI Navigation package: \
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/index.html
 
 **Scripting API** \
-Built-in AI module: \
-https://docs.unity3d.com/ScriptReference/AI.NavMesh.html
+**`UnityEngine.AI`** \
+https://docs.unity3d.com/ScriptReference/AI.NavMesh.html \
+https://docs.unity3d.com/2022.3/Documentation/ScriptReference/UnityEngine.AIModule.html
+
+**`Unity.AI.Navigation`** \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/api/index.html
 
 AI Navigation package: \
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavigationOverview.html
