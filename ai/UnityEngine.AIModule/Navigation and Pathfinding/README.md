@@ -419,7 +419,7 @@ Built-in AI module: \
 https://docs.unity3d.com/ScriptReference/AI.NavMesh.html
 
 AI Navigation package: \
-https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/index.html
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavigationOverview.html
 
 **Advanced NavMesh Bake Settings** \
 https://docs.unity3d.com/Manual/nav-AdvancedSettings.html
