@@ -44,6 +44,15 @@ To create a Physic Material asset, go to **Assets** > **Create** > **Physic Mate
 
 ![](./img/Physics_material2.png)
 
+
+| Property | Description |
+| --- | --- |
+| **Dynamic Friction** | Define **how much friction the collider’s surface has against another collider when the colliders are moving or sliding against each other**. This value is **between 0 and 1**. A **value of 0 means no friction** (like ice), while a **value of 1 means very high friction** (like rubber). **By default, Dynamic Friction is set to 0.6**.  Unity uses the friction value of both **touching colliders to calculate the friction between the**m, based on the Friction Combine property.|
+| **Static Friction** | Define **how much friction the collider’s surface has against another collider when the colliders are not moving**. This value is **between 0 and 1**. A **value of 0 means no friction** (like ice), while **a value of 1 means very high friction** (like rubber). By default, S**tatic Friction is set to 0.6**.  Unity uses the friction value of both **touching colliders to calculate the friction between them**, based on the **Friction Combine property**. |
+| **Bounciness** | Define **how bouncy the surface is**, and **how much other colliders can bounce off it**. A **value of 0 means the surface is not at all bouncy** (like soft clay), and other colliders **lose kinetic energy upon hitting it**. A **value of 1 means the surface is very bouncy** (like rubber), and **other colliders bounce without any loss of kinetic energy**. By default, **Bounciness is set to 0**.  Unity uses the **friction value of both touching colliders to calculate the friction between them**, based on the **Friction Combine property**. Note that the physics system’s bounce approximations might still add small amounts of energy to the simulation. |
+| **Friction Combine** | Define **how the physics system calculates friction between two colliders**, **based on each collider’s friction**. This selection applies to both **Dynamic Friction** and **Static Friction**. By default, Friction Combine is set to **Averag**e.|
+| **Bounce Combine** | Define **how the physics system calculates bounce between two colliders**, based on **each collider’s Bounciness value**. By default, Bounce Combine is set to **Averag**e.|
+
 #### Apply a custom Physic Material asset to a collider
 
 To apply a Physic Material asset to a collider:
@@ -76,4 +85,5 @@ To **change the default Physic Material values**:
 ### ref 
 https://docs.unity3d.com/Manual/collider-surfaces-combine.html \
 https://docs.unity3d.com/Manual/create-apply-physics-material.html \
-https://docs.unity3d.com/Manual/class-PhysicMaterial.html
+https://docs.unity3d.com/Manual/class-PhysicMaterial.html \
+https://docs.unity3d.com/Manual/collider-surfaces-combine.html
