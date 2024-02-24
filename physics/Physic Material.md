@@ -33,7 +33,34 @@ To create a Physic Material asset, go to **Assets** > **Create** > **Physic Mate
 
 ![](./img/Physics_material1.png)
 
+![](./img/Physics_material2.png)
+
 #### Apply a custom Physic Material asset to a collider
+
+To apply a Physic Material asset to a collider:
+
+1.  Navigate to the target **collider’s** **Material** property.
+2.  In the **Material** property field, select the picker icon.
+3.  Select the **Physic Material asset** you want to use.
+
+> Alternatively, you can **click and drag the Physic Material asset file directly** from the Project window onto the target collider’s Material field.
+
+
+> Each collider can only have **one assigned Physic Material asset at a time**. You can assign the **same Physic Material asset to multiple collider**s.
+
+
+#### Set a custom Physic Material asset as the project default
+
+You can use a custom Physic Material asset to replace the project-wide **default settings**. Unity applies the project-wide default settings to any collider that does not have an assigned Physic Material asset.
+
+To **change the default Physic Material values**: 
+1. Create a Physic Material asset and configure it to the default settings you want for the project. 2. Go to the Physics Settings (**Edit** > **Project Settings** > **Physics**).
+3. In the **Default Material** property field, select the **picker** icon.
+4. Select the **Physic Material** you want to use.
+
+
+
+
 
 
 
