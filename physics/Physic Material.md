@@ -17,6 +17,15 @@ The Physic Material asset provides two properties: \
 These properties each provide four options to control how the physics system calculates the total friction and bounce between two colliders:
 
 
+| Priority | Property | Description |
+| --- | --- | --- |
+| 1 | Maximum | Use the largest of the two values. |
+| 2 | Multiply | Use the sum of one value multiplied by the other. |
+| 3 | Minimum | Use the smallest of the two values. |
+| 4 | Average | Use the mean average of the two values; that is, the sum of both values, divided by two. |
+
+> **Friction Combine** applies to both **Dynamic Friction** and **Static Friction**.
+
 
 ### Create and apply a custom Physic Material
 
