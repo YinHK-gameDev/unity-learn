@@ -98,7 +98,11 @@ https://www.youtube.com/watch?v=AoAzOFSuvg4
 
 ✒️ **阿空的遊戲部屋**
 
-https://www.youtube.com/@RemptyGame/videos
+**https://www.youtube.com/@RemptyGame/videos**
+
+✒️ **荒神Kojin 3D Studio**
+
+**https://www.youtube.com/@Kojin3DStudio/videos**
 
 ✒️ **Raymond Cripps (Indle game developer)**
 
