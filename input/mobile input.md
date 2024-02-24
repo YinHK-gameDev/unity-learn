@@ -188,3 +188,6 @@ https://learn.unity.com/tutorial/touch-input-for-mobile-scripting#
 
 **`Input.acceleration`** \
 https://docs.unity3d.com/ScriptReference/Input-acceleration.html
+
+**mobile joystick in unity** \
+https://www.youtube.com/watch?v=sYDq5s1EXiI
