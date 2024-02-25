@@ -24,9 +24,7 @@ Use the Navigation window to specify the types of NavMesh agents and areas used 
 #### Agents tab
 | **Property** | **Description** |
 | --- | --- |
-| **Agent Types** | Select an agent type to modify.  
-Click the "+" icon to add an agent type.  
-Click the "-" icon to remove the currently selected agent type. |
+| **Agent Types** | Select an agent type to modify.  Click the **"+"** icon to add an agent type.  Click the **"-"** icon to remove the currently selected agent type. |
 | **Name** | Specify the name of the type of agent. |
 | **Radius** | Define how close the agent center can get to a wall or a ledge. |
 | **Height** | Specify the height of this type of agent in Unity units. |
