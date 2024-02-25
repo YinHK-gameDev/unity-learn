@@ -17,7 +17,7 @@ The **Navigation System** allows you to create characters which can navigate the
 ### Building a NavMesh
 The process of creating a NavMesh from the level geometry is called **NavMesh Baking**. The process collects the Render Meshes and Terrains of all Game Objects which are marked as **Navigation Static**, and then processes them to create a navigation mesh that approximates the walkable surfaces of the level.
 
-In Unity, `NavMesh` generation is handled from the Navigation window (menu: **Window > AI > Navigation**).
+In Unity, **`NavMesh`** generation is handled from the Navigation window (menu: **Window > AI > Navigation**).
 
 Building a `NavMesh` for your scene can be done in 4 quick steps:
 
@@ -30,6 +30,7 @@ Building a `NavMesh` for your scene can be done in 4 quick steps:
     -   _Step Height_ defines how high obstructions are that the agent can step on.
 -   Click **bake** to build the NavMesh.
 
+![](./img/navigation.png)
 
 Or using **NavMesh Surface** component in the selected scene geometry to bake the **NavMesh**.
 ### NavMesh building components
