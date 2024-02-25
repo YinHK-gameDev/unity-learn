@@ -14,6 +14,11 @@ The **Navigation System** allows you to create characters which can navigate the
 -   **NavMesh Obstacle** component allows you to describe moving obstacles the agents should avoid while navigating the world. A barrel or a crate controlled by the physics system is a good example of an obstacle. While the obstacle is moving the agents do their best to avoid it, but once the obstacle becomes stationary it will carve a hole in the navmesh so that the agents can change their paths to steer around it, or if the stationary obstacle is blocking the path way, the agents can find a different route.
  
 
+> **`UnityEngine.AI`** is a built-in package, you can also add **`Unity.AI.Navigation`** package to use addtional component and script. Some component is from **`Unity.AI.Navigation`** package.
+> You can install this package by going to package manager, adding a **registry package by name** and add the **`com.unity.ai.navigation package`**.
+
+
+
 ### Building a NavMesh
 The process of creating a NavMesh from the level geometry is called **NavMesh Baking**. The process collects the Render Meshes and Terrains of all Game Objects which are marked as **Navigation Static**, and then processes them to create a navigation mesh that approximates the walkable surfaces of the level.
 
@@ -65,7 +70,7 @@ Building a `NavMesh` for your scene can be done in 4 quick steps in **Navigation
 ### NavMesh building components
 **`NavMesh`** building components provide additional controls for generating and using **`NavMeshes`** in the Unity Editor and at runtime.
 
-**`NavMesh`** building components are available through the AI Navigation package. To install this package, follow the instructions on adding a registry package by name and add the `com.unity.ai.navigation package`.
+**`NavMesh`** building components are available through the AI Navigation package. To install this package, follow the instructions on adding a **registry package by name** and add the **`com.unity.ai.navigation package`**.
 
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/index.html
 
@@ -161,7 +166,7 @@ To create a NavMesh do the following:
 1. Select the scene geometry where you want to add the NavMesh.
 2. In the Inspector window, click **Add Component**.
 3. Select **Navigation > NavMesh Surface**.
-4. In the NavMesh Surface component, specify the necessary settings. 
+4. In the **NavMesh Surface component**, specify the necessary settings. 
 5. When you are finished, click **Bake**.
 The NavMesh is generated and displayed in the scene as a blue overlay on the underlying scene geometry whenever the Navigation window is open and visible.
 
