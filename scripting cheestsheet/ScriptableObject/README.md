@@ -16,7 +16,7 @@
 
 - In Unity, a ScriptableObject is a versatile and flexible class that allows you to create and manage custom data assets that can be used throughout your game. It's a scriptable asset that can store data and be shared between different parts of your game, such as scripts, scenes, and even across different game sessions. ScriptableObjects are particularly useful for creating and managing configurations, settings, and other data-driven assets in Unity.
 
-- Like a **database**, ScriptableObject let you access the storing game data/config/setting. Just create reference to that ScriptableObject and access it in script.
+- Like a **database**, ScriptableObject let you access the **storing game data/config/setting**. Just **create reference to that ScriptableObject** and **access it in script**, these data can be **reusable**.
 
 Here's an example of how to create and use a ScriptableObject in Unity:
 
