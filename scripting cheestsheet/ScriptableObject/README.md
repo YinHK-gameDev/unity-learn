@@ -4,6 +4,8 @@
 
 - **ScriptableObject** as a way to **create scripts that do not attach to any GameObject**.
 
+- The class you created **must derive from ScriptableObject class**.
+
 - A ScriptableObject is a **data container** that you can use to **save large amounts of data**, independent of class instances. One of the main use cases for ScriptableObjects is to **reduce your Project’s memory usage by avoiding copies of values**. This is useful if your Project has a Prefab that **stores unchanging data** in attached MonoBehaviour scripts.
 
 - Every time you **instantiate that Prefab**, it will get its **own copy of that data**. Instead of using the method, and storing duplicated data, you can use a ScriptableObject to **store the data** and then **access it by reference from all of the Prefabs**. This means that there is one copy of the data in memory.
@@ -22,7 +24,7 @@ Here's an example of how to create and use a ScriptableObject in Unity:
 
 1. **Create a ScriptableObject**:
 
-   To create a ScriptableObject, you need to create a C# script that derives from `ScriptableObject`. For example, let's create a simple ScriptableObject for storing player data:
+   To create a ScriptableObject, you need to create a C# script that **derives from `ScriptableObject`**. For example, let's create a simple ScriptableObject for storing player data:
 
    ```csharp
    using UnityEngine;
