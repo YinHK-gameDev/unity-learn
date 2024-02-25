@@ -22,6 +22,9 @@ To save property settings to a **Preset asset**, follow the instructions below. 
 4. In the Select Preset window, click **"Save current to"**.
 5. Choose the location of your new Preset, enter its name, and **click Save**.
 
+You can also s**ave data in ScriptableObject to a Preset**:
+
+![](./img/scriptableObject.png)
 
 ### Applying settings from a Preset
 
