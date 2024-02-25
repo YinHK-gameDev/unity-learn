@@ -34,7 +34,8 @@ Building a `NavMesh` for your scene can be done in 4 quick steps:
 
 ![](./img/Bake.png)
 
-Or using **NavMesh Surface** component in the selected scene geometry to bake the **NavMesh**.
+Or using **NavMesh Surface** component in the **selected scene geometry** to **bak**e the **NavMesh**.
+
 ### NavMesh building components
 **`NavMesh`** building components provide additional controls for generating and using **`NavMeshes`** in the Unity Editor and at runtime.
 
