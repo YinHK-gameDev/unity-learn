@@ -95,7 +95,7 @@ public class SpawnManagerScriptableObject : ScriptableObject
     public Vector3[] spawnPoints;
 }
 ```
-With the above script in your **Assets** folder, you can create an instance of your ScriptableObject by navigating to **Assets > Create > ScriptableObjects > SpawnManagerScriptableObject**. Give your new ScriptableObject instance a meaningful name and alter the values. To use these values, you need to create a new script that references your ScriptableObject, in this case, a `SpawnManagerScriptableObject`. 
+With the above script in your **Assets** folder, you can **create an instance of your ScriptableObject** by navigating to **Assets > Create > ScriptableObjects > SpawnManagerScriptableObject**. Give your new ScriptableObject instance a meaningful name and alter the values. To use these values, you need to create a new script that references your ScriptableObject, in this case, a `SpawnManagerScriptableObject`. 
 
 For example:
 
