@@ -17,9 +17,36 @@ The **Navigation System** allows you to create characters which can navigate the
 ### Building a NavMesh
 The process of creating a NavMesh from the level geometry is called **NavMesh Baking**. The process collects the Render Meshes and Terrains of all Game Objects which are marked as **Navigation Static**, and then processes them to create a navigation mesh that approximates the walkable surfaces of the level.
 
-In Unity, **`NavMesh`** generation is handled from the Navigation window (menu: **Window > AI > Navigation**).
+In Unity, **`NavMesh`** generation is handled from the Navigation window (menu: **Window > AI > Navigation**). This open the Navigation window.
 
-Building a `NavMesh` for your scene can be done in 4 quick steps:
+Use the Navigation window to specify the types of NavMesh agents and areas used in your scenes.
+
+#### Agents tab
+| **Property** | **Description** |
+| --- | --- |
+| **Agent Types** | Select an agent type to modify.  
+Click the "+" icon to add an agent type.  
+Click the "-" icon to remove the currently selected agent type. |
+| **Name** | Specify the name of the type of agent. |
+| **Radius** | Define how close the agent center can get to a wall or a ledge. |
+| **Height** | Specify the height of this type of agent in Unity units. |
+| **Step Height** | Specify the maximum step height that this type of agent can climb. |
+| **Max Slope** | Specify how steep of a ramp the agent can walk up. Type a value, in degrees, in the text box or drag the slider to adjust the value. |
+
+#### Areas tab
+The Areas tab contains properties that allow you to specify how difficult it is to walk across the different area types used in your scenes. There are 29 custom area types, and 3 built-in area types:
+
+-   **Walkable** is a generic area type which specifies that the area can be walked on.
+-   **Not Walkable** is a generic area type which prevents navigation. It is useful for cases where you want to mark a certain object to be an obstacle, but you don't want to put a NavMesh on top of it.
+-   **Jump** is an area type that is assigned to all auto-generated OffMesh links.
+  
+| **Property** | **Description** |
+| --- | --- |
+| **Name** | Specify a name for the area type. |
+| **Cost** | Specify the cost of traveling across this area. Costs are multipliers applied to the distance traveled across an area. A cost of 2 means an area is twice as difficult to cross as an area with a cost of 1. The default value is 1. |
+
+
+Building a `NavMesh` for your scene can be done in 4 quick steps in **Navigation window**:
 
 -   **Select** scene geometry that should affect the navigation – walkable surfaces and obstacles. (After you selected the scene geometry for baking NavMesh, you can see the object you selected in Object tab in Navigation window)_
 -   **Check Navigation Static** on to include selected objects in the NavMesh baking process.
@@ -30,11 +57,12 @@ Building a `NavMesh` for your scene can be done in 4 quick steps:
     -   _Step Height_ defines how high obstructions are that the agent can step on.
 -   Click **bake** to build the NavMesh.
 
+**Navigation window**: \
 ![](./img/navigation.png)
 
 ![](./img/Bake.png)
 
-Or using **NavMesh Surface** component in the **selected scene geometry** to **bak**e the **NavMesh**.
+> Or using **NavMesh Surface** component in the **selected scene geometry** to **bak**e the **NavMesh**.
 
 ### NavMesh building components
 **`NavMesh`** building components provide additional controls for generating and using **`NavMeshes`** in the Unity Editor and at runtime.
@@ -46,7 +74,11 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/index.html
 #### NavMesh Surface
 The NavMesh Surface component represents the walkable area for a specific NavMesh Agent type, and defines a part of the Scene where a NavMesh should be built.
 
-https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshSurface.html
+To use the **NavMesh Surface component**, navigate to **GameObject > AI > NavMesh Surface**. This creates an empty GameObject with a NavMesh Surface component attached to it. A Scene can contain multiple NavMesh Surfaces.
+
+You can add the **NavMesh Surface component** to **any GameObject**. This is useful for when you want to use the GameObject parenting Hierarchy to define which GameObjects contribute to the **NavMesh**.
+
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshSurface.html
 
 #### NavMeshModifier
 Use for affecting the NavMesh generation of NavMesh area types based on the transform hierarchy.
