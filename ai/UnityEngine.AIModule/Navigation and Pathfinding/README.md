@@ -70,6 +70,7 @@ Building a `NavMesh` for your scene can be done in 4 quick steps in **Navigation
 
 > Or using **NavMesh Surface** component in the **selected scene geometry** to **bak**e the **NavMesh**.
 
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavigationWindow.html
 
 ### Unity AI navigation package
 
@@ -293,7 +294,7 @@ The area types are specified in the Navigation Window’s Areas tab. There are 2
 
 > If several objects of different area types are overlapping, the resulting navmesh area type will generally be the one with the highest index. There is one exception however: Not Walkable always takes precedence. Which can be helpful if you need to block out an area.
 
-https://docs.unity3d.com/Manual/nav-AreasAndCosts.html
+
 
 #### Area Mask
 Each agent has an **Area Mask** which describes which areas it can use when navigating. The area mask can be set in the agent properties, or the bitmask can be manipulated using a script at runtime.
@@ -302,8 +303,9 @@ The area mask is useful when you want only certain types characters to be able t
 
 ![](./img/agent.png)
 
-https://docs.unity3d.com/Manual/nav-AreasAndCosts.html
 
+
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/AreasAndCosts.html
 
 ### Loading Multiple NavMeshes using Additive Loading
 The **NavMeshes** in different Scenes are not connected by default. When you load another level using **`Application.LoadLevelAdditive()`** you will need to use OffMesh links to connect the **NavMeshe**s in different scenes.
