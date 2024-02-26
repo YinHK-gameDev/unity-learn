@@ -67,7 +67,7 @@ Building a `NavMesh` for your scene can be done in **4 quick steps** in **Naviga
 -   Click **bake** to build the NavMesh.
 
 **Navigation window**: \
-![](./img/navigation.png)
+![](./img/navigation_tab.png)
 
 ![](./img/Bake.png)
 
