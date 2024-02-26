@@ -313,7 +313,7 @@ For example, in a zombie evasion game, you could mark the area under each door w
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/AreasAndCosts.html
 
 ### Loading Multiple NavMeshes using Additive Loading
-The **NavMeshes** in different Scenes are not connected by default. When you load another level using **`Application.LoadLevelAdditive()`** you will need to use OffMesh links to connect the **NavMeshe**s in different scenes.
+The **NavMeshes** in different Scenes are not connected by default. When you load another level using **`Application.LoadLevelAdditive()`** you will need to use **NavMeshLink** to connect the **NavMeshe**s in different scenes.
 
 
 ### Telling a NavMeshAgent to Move to a Destination
