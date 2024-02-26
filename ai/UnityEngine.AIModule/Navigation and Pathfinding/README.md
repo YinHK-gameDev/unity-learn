@@ -205,7 +205,7 @@ https://docs.unity3d.com/Manual/nav-CreateNavMeshAgent.html
 https://docs.unity3d.com/Manual/nav-CreateNavMeshObstacle.html
 
 ### Creating an OffMesh Link
-OffMesh Links are used to create paths crossing outside the walkable navigation mesh surface. For example, jumping over a ditch or a fence, or opening a door before walking through it, can be all described as OffMesh links.
+OffMesh Links are used to **create paths crossing outside the walkable navigation mesh surface**. For example, **jumping over a ditch or a fence, or opening a door before walking through it**, can be all described as OffMesh links. Used to link NavMesh gap.
 
 
 #### Creating off mesh link Manually
