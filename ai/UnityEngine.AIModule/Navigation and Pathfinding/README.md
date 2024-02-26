@@ -91,6 +91,8 @@ To use the **NavMesh Surface component**, navigate to **GameObject > AI > NavMes
 
 You can add the **NavMesh Surface component** to **any GameObject**. This is useful for when you want to use the GameObject parenting Hierarchy to **define which GameObjects contribute** to the **NavMesh**.
 
+> Note: You can attach multiple **NavMesh Surface component** for the **same scene geometry gameobject**, each **NavMesh Surface** is available for the **specific agent type**.
+
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshSurface.html
 
 #### NavMeshModifier
@@ -177,13 +179,15 @@ You can create a **NavMesh** to define an area of your scene within which a char
 
 To create a NavMesh do the following:
 
-1. Select the scene geometry where you want to add the NavMesh.
+1. Select the **scene geometry** where you want to add the NavMesh.
 2. In the Inspector window, click **Add Component**.
 3. Select **Navigation > NavMesh Surface**.
-4. In the **NavMesh Surface component**, specify the necessary settings. 
-5. When you are finished, click **Bake**.
+4. In the **NavMesh Surface component**, specify the necessary settings.
+5. Select the **agent type** for this NavMesh, this baked NavMesh is **available for the agents with this agent type**.
+6. When you are finished, click **Bake**.
 The NavMesh is generated and displayed in the scene as a blue overlay on the underlying scene geometry whenever the Navigation window is open and visible.
 
+> Note: You can attach multiple **NavMesh Surface component** for the **same scene geometry gameobject**, each **NavMesh Surface** is available for the **specific agent type**.
 
 ### Creating a NavMesh Agent
 Once you have a **NavMesh** baked for your level it is time to create a character which can navigate the **scene**. We’re going to build our prototype agent from a cylinder and set it in motion. This is done using a NavMesh Agent component and a simple script.
