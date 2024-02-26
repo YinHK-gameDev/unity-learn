@@ -217,7 +217,8 @@ To create a manually off mesh link, you need two gameobjects. They can be empty 
 4. Place the **second cylinder** on the ground, close to the **NavMesh**, at the location where the link should land.
 5. Select the **first cylinder** cylinder and add an **Off-Mesh Link component** to it. Choose **Add Component** from the inspector and choose **Navigation > Off Mesh Link**.
 6. Assign the **first cylinder** in the **Start** field and the **second cylinder** in the **End** field.
- 
+
+![](./img/OffMeshLinkSetup.svg)
  
 ####  Creating off mesh link automatically
 
