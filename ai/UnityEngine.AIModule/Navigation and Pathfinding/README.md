@@ -212,7 +212,8 @@ First let’s create the character:
 
 
 https://docs.unity3d.com/Manual/nav-CreateNavMeshAgent.html \
-https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/MixingComponents.html
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/MixingComponents.html \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshAgent.html
 
 
 ### Creating a NavMesh Obstacle
