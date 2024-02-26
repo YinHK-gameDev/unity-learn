@@ -139,4 +139,21 @@ public float remainingDistance;
 
 //Stop within this distance from the target position.
 public float stoppingDistance;
+
+//Calculate a path to a specified point and store the resulting path.
+public bool CalculatePath(Vector3 targetPosition, AI.NavMeshPath path);
+
+//Clears the current path.
+public void ResetPath();
+
+//Sets the cost for traversing over areas of the area type.
+public void SetAreaCost(int areaIndex, float areaCost);
+
+//Sets or updates the destination thus triggering the calculation for a new path.
+public bool SetDestination(Vector3 target);
+
+//Trace a straight path towards a target postion in the NavMesh without moving the agent.
+//This function follows the path of a "ray" between the agent's position and the specified target //position. If an obstruction is encountered along the line then a true value is returned and the //position and other details of the obstructing object are stored in the hit parameter. This can be //used to check if there is a clear shot or line of sight between a character and a target object.
+public bool Raycast(Vector3 targetPosition, out AI.NavMeshHit hit);
+
 ```
