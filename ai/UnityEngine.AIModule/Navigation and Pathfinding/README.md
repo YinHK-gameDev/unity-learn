@@ -497,7 +497,7 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshSurf
 https://learn.unity.com/search?k=%5B%22q%3ANavigation%22%5D
 
 
-**Brackeys Unity NavMesh Tutorial** \
+**Unity Navigation Tutorial** \
 https://www.youtube.com/watch?v=CHV1ymlw-P8
 
 https://www.youtube.com/watch?v=FkLJ45Pt-mY
@@ -510,6 +510,11 @@ https://www.youtube.com/watch?v=blPglabGueM&t=11s
 
 https://www.youtube.com/watch?v=G9Otw12OUvE
 
-https://www.youtube.com/watch?v=2yH41kSFG8I
 
+
+**New Unity AI Navigation pacakge** \
+https://www.youtube.com/watch?v=sOIQCHNJbCs \
+https://www.youtube.com/watch?v=2yH41kSFG8I \
+https://www.youtube.com/watch?v=u2EQtrdgfNs \
+https://www.youtube.com/watch?v=mJu-zdZ9dyE \
 
