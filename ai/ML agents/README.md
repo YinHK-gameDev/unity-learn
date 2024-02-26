@@ -28,7 +28,7 @@ To create a new environment named sample-env execute:
 python -m venv python-envs\sample-env
 ```
 
-To activate the environment execute:
+Go to your virtual environment directory to activate the environment execute:
 ```
 python-envs\sample-env\Scripts\activate
 ```
