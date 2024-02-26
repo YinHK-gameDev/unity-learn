@@ -110,17 +110,21 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshModi
 
 
 #### NavMeshLink 
-Use for connecting the **same or different NavMesh surfaces** for one type of Agent.
+Use for connecting the **different NavMesh surfaces** for one type of Agent.
 
 **NavMesh Link** creates a **navigable link between two locations** that use **NavMeshe**s.
 
 This link can be from point to point or it can span a gap, in which case the Agent uses the nearest location along the entry edge to cross the link.
 
-You **must** use a **NavMesh Link** to connect **different NavMesh Surfaces**.
+> You **must** use a **NavMesh Link** to connect **different NavMesh Surfaces**.
 
 To use the **NavMesh Link component**, navigate to **GameObject** > **AI** > **NavMesh Link**.
 
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshLink.html
+
+**NavMeshLink** vs **OffMeshLink**: \
+> **NavMeshLink** is used to link between **multiple separate Navmesh surfaces** . \
+> **OffMeshLink** is used to **link between Navmesh gaps** on the **same navmesh**.
 
 
 ### Min Region Area
