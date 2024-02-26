@@ -468,6 +468,9 @@ https://docs.unity3d.com/Manual/nav-AdvancedSettings.html
 **Navigation window reference** \
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavigationWindow.html
 
+**Navigation user interface** \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/Reference.html
+
 **AI Navigation preferences** \
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavEditorPreferences.html
 
