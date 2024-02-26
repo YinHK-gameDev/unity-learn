@@ -39,6 +39,8 @@ Use the Navigation window to specify the types of NavMesh agents and areas used 
 | **Step Height** | Specify the maximum step height that this type of agent can climb. |
 | **Max Slope** | Specify how steep of a ramp the agent can walk up. Type a value, in degrees, in the text box or drag the slider to adjust the value. |
 
+![](./img/Agent_tab.png)
+
 #### Areas tab
 The Areas tab contains properties that allow you to specify how difficult it is to walk across the different area types used in your scenes. There are 29 custom area types, and 3 built-in area types:
 
@@ -51,6 +53,7 @@ The Areas tab contains properties that allow you to specify how difficult it is 
 | **Name** | Specify a name for the area type. |
 | **Cost** | Specify the cost of traveling across this area. Costs are multipliers applied to the distance traveled across an area. A cost of 2 means an area is twice as difficult to cross as an area with a cost of 1. The default value is 1. |
 
+![](./img/Area_type.png)
 
 Building a `NavMesh` for your scene can be done in 4 quick steps in **Navigation window**:
 
