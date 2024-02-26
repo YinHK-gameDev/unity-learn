@@ -447,8 +447,6 @@ https://docs.unity3d.com/Manual/nav-CouplingAnimationAndNavigation.html
 
 
 ### ref 
-Built-in AI: \
-https://docs.unity3d.com/Manual/Navigation.html
 
 **Scripting API** \
 **`UnityEngine.AI`** \
@@ -458,7 +456,7 @@ https://docs.unity3d.com/2022.3/Documentation/ScriptReference/UnityEngine.AIModu
 **`Unity.AI.Navigation`** \
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/api/index.html
 
-AI Navigation package: \
+**AI Navigation package**: \
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavigationOverview.html
 
 **Advanced NavMesh Bake Settings** \
