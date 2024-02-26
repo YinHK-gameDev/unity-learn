@@ -67,6 +67,9 @@ Building a `NavMesh` for your scene can be done in 4 quick steps in **Navigation
 
 > Or using **NavMesh Surface** component in the **selected scene geometry** to **bak**e the **NavMesh**.
 
+
+### Unity AI navigation package
+
 ### NavMesh building components
 **`NavMesh`** building components provide additional controls for generating and using **`NavMeshes`** in the Unity Editor and at runtime.
 
