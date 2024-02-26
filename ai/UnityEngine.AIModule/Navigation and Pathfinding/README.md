@@ -122,7 +122,7 @@ To use the **NavMesh Link component**, navigate to **GameObject** > **AI** > **N
 
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshLink.html
 
-**NavMeshLink** vs **OffMeshLink**: \
+**NavMeshLink** vs **OffMeshLink**: 
 > **NavMeshLink** is used to link between **multiple separate Navmesh surfaces** . \
 > **OffMeshLink** is used to **link between Navmesh gaps** on the **same navmesh**.
 
