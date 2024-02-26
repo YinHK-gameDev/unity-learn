@@ -102,6 +102,27 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshSurf
 
 To use the NavMesh Modifier component, navigate to **GameObject** > **AI** > **NavMesh Modifier**.
 
+
+
+| **Property** | **Description** |
+| --- | --- |
+| **Mode** | Specify whether to consider or ignore the affected GameObject(s). |
+| **Add or Modify Object** | Consider the affected GameObject(s) when building the NavMesh. |
+| **Remove Object** | Ignore the affected object(s) when building the NavMesh for the specified agent type. |
+| **Affected Agents** | Specify which agents the NavMesh Modifier affects. For example, you can choose to have certain obstacles be ignored by specific agents. |
+| **All** | Modify the behavior of all agents. |
+| **None** | Exclude all agents from the modified behavior. |
+| **Apply to Children** | Apply the configuration to the child hierarchy of the GameObject.  
+To override this component's influence further down the hierarchy, add another NavMesh Modifier component. |
+| **Override Area** | Change the area type for the affected GameObject(s).  
+If you want to change the area type, select the checkbox then select the new area type in the Area Type dropdown.  
+If you do not want to change the area type, clear the checkbox. |
+| **Area Type** | Select the new area type you want to apply from the dropdown. |
+| **Override Generate Links** | Force the NavMesh bake process to either include or ignore the affected GameObject(s) when you generate links. |
+| **Generate Links** | Specify whether or not to include the affected GameObject(s) when you generate links.  
+To include the GameObject(s) when you generate links in the NavMesh bake process, select this checkbox.  
+To ignore the GameObject(s) when you generate links in the NavMesh bake process, clear this checkbox. |
+
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshModifier.html
 
 #### NavMeshModifierVolume
