@@ -115,6 +115,13 @@ To use the **NavMesh Modifier Volume component**, navigate to **GameObject** > *
 
 The **NavMesh Modifier Volume** also affects the NavMesh generation process, meaning the NavMesh has to be updated to reflect any changes to **NavMesh Modifier Volume**.
 
+| **Property** | **Function** |
+| --- | --- |
+| **Size** | Dimensions of the NavMesh Modifier Volume, defined by XYZ measurements. |
+| **Center** | The center of the NavMesh Modifier Volume relative to the GameObject center, defined by XYZ measurements. |
+| **Area Type** | Describes the area type to which the NavMesh Modifier Volume applies.  - **Walkable** (this is the default option)  - **Not Walkable**  - **Jump** |
+| **Affected Agents** | A selection of agent types that the NavMesh Modifier Volume affects. For example, you may choose to make the selected NavMesh Modifier Volume a danger zone for specific Agent types only. |
+
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshModifierVolume.html
 
 
