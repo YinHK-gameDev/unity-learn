@@ -190,7 +190,25 @@ First let’s create the character:
 2.  The default cylinder dimensions (height 2 and radius 0.5) are good for a humanoid shaped agent, so we will leave them as they are.
 3.  Add a **NavMesh Agent** component: **Component > Navigation > NavMesh Agent**.
 
-https://docs.unity3d.com/Manual/nav-CreateNavMeshAgent.html
+
+**NavMesh Agent and Physics**:
+-   You don’t need to add physics colliders to NavMesh Agents for them to avoid each other
+    -   That is, the navigation system simulates agents and their reaction to obstacles and the static world. Here the static world is the baked NavMesh.
+-   If you want a NavMesh Agent to push around physics objects or use physics triggers:
+    -   Add a Collider component (if not present)
+    -   Add Rigidbody component
+        -   Turn on kinematic (Is Kinematic) - this is important!
+        -   Kinematic means that the rigid body is controlled by something else than the physics simulation
+-  If both NavMesh Agent and Rigidbody (non-kinematic) are active at the same time, you have race condition
+    -   Both components may try to move the agent at the same which leads to undefined behavior
+-   You can use a NavMesh Agent to move e.g. a player character, without physics
+    -   Set players agent’s avoidance priority to a small number (high priority), to allow the player to brush through crowds
+    -   Move the player agent using `NavMeshAgent.velocity`, so that other agents can predict the player movement to avoid the player.
+
+
+
+https://docs.unity3d.com/Manual/nav-CreateNavMeshAgent.html \
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/MixingComponents.html
 
 
 ### Creating a NavMesh Obstacle
