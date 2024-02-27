@@ -186,6 +186,28 @@ ML-Agents provides multiple ways for an Agent to make observations: 1. Overridin
 
 https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#observations-and-sensors
 
+
+#### Actions and Actuators
+An action is an instruction from the Policy that the agent carries out. The action is passed to the an `IActionReceiver` (either an `Agent` or an `IActuator`) as the `ActionBuffers` parameter when the Academy invokes the `IActionReciever.OnActionReceived()` function. There are two types of actions supported: **Continuous** and **Discrete**.
+
+Neither the Policy nor the training algorithm know anything about what the action values themselves mean. The training algorithm simply tries different values for the action list and observes the affect on the accumulated rewards over time and many training episodes. Thus, the only place actions are defined for an Agent is in the `OnActionReceived()` function.
+
+
+- **Continuous Actions**: When an Agent's Policy has **Continuous** actions, the `ActionBuffers.ContinuousActions` passed to the Agent's `OnActionReceived()` function is an array with length equal to the `Continuous Action Size` property value. The individual values in the array have whatever meanings that you ascribe to them.
+- **Discrete Actions**: When an Agent's Policy uses **discrete** actions, the `ActionBuffers.DiscreteActions` passed to the Agent's `OnActionReceived()` function is an array of integers with length equal to `Discrete Branch Size`. When defining the discrete actions, `Branches` is an array of integers, each value corresponds to the number of possibilities for each branch.
+
+https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#actions-and-actuators
+
+#### Rewards
+
+In reinforcement learning, the reward is a signal that the agent has done something right. The PPO reinforcement learning algorithm works by optimizing the choices an agent makes such that the agent earns the highest cumulative reward over time. The better your reward mechanism, the better your agent will learn.
+
+**Note:** Rewards are not used during inference by an Agent using a trained model and is also not used during imitation learning.
+
+Allocate rewards to an Agent by calling the `AddReward()` or `SetReward()` methods on the agent. The reward assigned between each decision should be in the range \[-1,1\]. Values outside this range can lead to unstable training. The `reward` value is reset to zero when the agent receives a new decision. If there are multiple calls to `AddReward()` for a single agent decision, the rewards will be summed together to evaluate how good the previous decision was. The `SetReward()` will override all previous rewards given to an agent since the previous decision.
+
+https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#rewards
+
 ### Agent
 
 The Agent is the actor that observes and takes actions in the environment. In the 3D Balance Ball environment, the Agent components are placed on the twelve "Agent" GameObjects. The base Agent object has a few properties that affect its behavior:
@@ -276,23 +298,23 @@ Additional CLI arguments are grouped into environment, engine, checkpoint and to
   ```
   
  - Checkpoint settings
-  ```
-  checkpoint_settings:
-  run_id: foodtorch
-  initialize_from: null
-  load_model: false
-  resume: false
-  force: true
-  train_model: false
-  inference: false
-  ```
+   ```
+    checkpoint_settings:
+    run_id: foodtorch
+    initialize_from: null
+    load_model: false
+    resume: false
+    force: true
+    train_model: false
+    inference: false
+   ```
   
  - Torch settings:
- ```
-  torch_settings:
-  device: cpu
+   ```
+    torch_settings:
+    device: cpu
   
- ```
+   ```
   
   
   
