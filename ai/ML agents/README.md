@@ -162,7 +162,7 @@ Above will start **ML Agents training** with **N** environment instances. **Comb
 - Your customed **Agent script**(with your own customed logic) by drag script into the agent.
 - Add a **Decision Requester script** with the Add Component button.
 - Add a **Behavior Parameters script** with the Add Component button.
-- In your Agent script, Import ML-Agent package by adding: \
+- In your **Agent script**, Import ML-Agent package by adding: 
 
   ```cs
     using Unity.MLAgents;
@@ -173,6 +173,18 @@ Above will start **ML Agents training** with **N** environment instances. **Comb
 - Delete **`Update()`** since we are not using it, but keep **`Start()`**.
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
+
+
+#### Observations and Sensors
+
+ML-Agents provides multiple ways for an Agent to make observations: 1. Overriding the `Agent.CollectObservations()` method and passing the observations to the provided `VectorSensor`. 1. Adding the `[Observable]` attribute to fields and properties on the Agent. 1. Implementing the `ISensor` interface, using a `SensorComponent` attached to the Agent to create the `ISensor`.
+
+- **Vector Observations**: Both `Agent.CollectObservations()` and `ObservableAttribute`s produce vector observations, which are represented at lists of `float`s. `ISensor`s can produce both vector observations and visual observations, which are multi-dimensional arrays of floats.
+- **Visual Observations**: Visual observations are generally provided to agent via either a `CameraSensor` or `RenderTextureSensor`. These collect image information and transforms it into a 3D Tensor which can be fed into the convolutional neural network (CNN) of the agent policy.
+- R**aycast Observations**: Raycasts are another possible method for providing observations to an agent. This can be easily implemented by adding a `RayPerceptionSensorComponent3D` (or `RayPerceptionSensorComponent2D`) to the Agent GameObject.
+- **Variable Length Observations**: It is possible for agents to collect observations from a varying number of GameObjects by using a `BufferSensor`. You can add a `BufferSensor` to your Agent by adding a `BufferSensorComponent` to its GameObject. The `BufferSensor` can be useful in situations in which the Agent must pay attention to a varying number of entities (for example, a varying number of enemies or projectiles).
+
+https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#observations-and-sensors
 
 ### Agent
 
