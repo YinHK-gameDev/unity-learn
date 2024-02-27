@@ -172,8 +172,42 @@ Above will start **ML Agents training** with **N** environment instances. **Comb
   Then change the base class from **`MonoBehaviour`** to **`Agent`**.
 - Delete **`Update()`** since we are not using it, but keep **`Start()`**.
 
+
+
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
 
+
+#### Decision Requester
+
+Attach a DecisionRequester component to the same [GameObject] as the Agent component.
+
+> The DecisionRequester component provides a convenient and flexible way to trigger the agent decision making process. Without a DecisionRequester, your Agent implementation must manually call its RequestDecision() function.
+
+| Name | Description |
+| --- | --- |
+| DecisionPeriod | The frequency with which the agent requests a decision. A DecisionPeriod of 5 means that the Agent will request a decision every 5 Academy steps. /// |
+| DecisionStep | Indicates when to requests a decision. By changing this value, the timing of decision can be shifted even among agents with the same decision period. The value can be from 0 to DecisionPeriod - 1. |
+| TakeActionsBetweenDecisions | Indicates whether or not the agent will take an action during the Academy steps where it does not request a decision. Has no effect when DecisionPeriod is set to 1. |
+
+https://docs.unity3d.com/Packages/com.unity.ml-agents@3.0/api/Unity.MLAgents.DecisionRequester.html
+
+
+#### Behavior Parameters
+
+| Name | Description |
+| --- | --- |
+| BehaviorName | The name of this behavior, which is used as a base name. See FullyQualifiedBehaviorName for the full name. This should not be set at runtime; use Agent.SetModel(string,Model,Policies.InferenceDevice) to set it instead. |
+| BehaviorType | The BehaviorType for the Agent. |
+| BrainParameters | The associated BrainParameters for this behavior. |
+| DeterministicInference | Whether to select actions deterministically during inference from the provided neural network. |
+| FullyQualifiedBehaviorName | Returns the behavior name, concatenated with any other metadata (i.e. team id). |
+| InferenceDevice | How inference is performed for this Agent's model. This should not be set at runtime; use Agent.SetModel(string,Model,Policies.InferenceDevice) to set it instead. |
+| Model | The neural network model used when in inference mode. This should not be set at runtime; use Agent.SetModel(string,Model,Policies.InferenceDevice) to set it instead. |
+| ObservableAttributeHandling | Determines how the Agent class is searched for ObservableAttributes. |
+| UseChildActuators | Whether or not to use all the actuator components attached to child GameObjects of the agent. Note that changing this after the Agent has been initialized will not have any effect. |
+| UseChildSensors | Whether or not to use all the sensor components attached to child GameObjects of the agent. Note that changing this after the Agent has been initialized will not have any effect. |
+
+https://docs.unity3d.com/Packages/com.unity.ml-agents@3.0/api/Unity.MLAgents.Policies.BehaviorParameters.html
 
 #### Observations and Sensors
 
@@ -209,6 +243,8 @@ Allocate rewards to an Agent by calling the `AddReward()` or `SetReward()` metho
 https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#rewards
 
 ### Agent
+
+![](./img/roller-ball-agent.png)
 
 The Agent is the actor that observes and takes actions in the environment. In the 3D Balance Ball environment, the Agent components are placed on the twelve "Agent" GameObjects. The base Agent object has a few properties that affect its behavior:
 
