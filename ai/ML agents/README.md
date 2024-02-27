@@ -223,6 +223,10 @@ Before making a decision, an agent collects its observation about its state in t
 
 An Agent is given instructions in the form of actions. ML-Agents Toolkit classifies actions into two types: **continuous** and **discrete**.
 
+
+https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Learning-Environment-Design-Agents.md
+
+
 ### Designing a learning environment
 
 https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Learning-Environment-Design.md
@@ -317,10 +321,6 @@ Additional CLI arguments are grouped into environment, engine, checkpoint and to
    ```
   
   
-  
-  
-  
-  
 #### Create a yaml file:
 Using `echo` (Win) :
 ```
@@ -356,8 +356,6 @@ Then navigate to **`localhost:6006`** in your browser to view the TensorBoard su
   
 https://unity-technologies.github.io/ml-agents/Using-Tensorboard/
 
-### Agents
-https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Learning-Environment-Design-Agents.md
 
 ### Embedding the model back into your Unity Environment
 Once training has been completed, the training process saves the model. Your trained model will be at **`results/<run-identifier>/<behavior_name>.onnx`** where **`<behavior_name>`** is the name of the Behavior Name of the agents corresponding to the model.  
