@@ -165,6 +165,21 @@ Above will start **ML Agents training** with **N** environment instances. **Comb
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
 
+### Agent
+
+The Agent is the actor that observes and takes actions in the environment. In the 3D Balance Ball environment, the Agent components are placed on the twelve "Agent" GameObjects. The base Agent object has a few properties that affect its behavior:
+
+-   **Behavior Parameters** — Every Agent must have a Behavior. The Behavior determines how an Agent makes decisions.
+-   **Max Step** — Defines how many simulation steps can occur before the Agent's episode ends.
+
+#### Behavior Parameters : Vector Observation Space
+
+Before making a decision, an agent collects its observation about its state in the world. The vector observation is a **vector of floating point** numbers which contain relevant information for the agent to **make decisions**.
+
+#### Behavior Parameters : Actions
+
+An Agent is given instructions in the form of actions. ML-Agents Toolkit classifies actions into two types: **continuous** and **discrete**.
+
 ### Designing a learning environment
 
 https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Learning-Environment-Design.md
