@@ -54,6 +54,23 @@ The observation-decision-action-reward cycle repeats each time the Agent request
 
 https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#decisions
 
+### Testing the Environment
+
+It is always a good idea to first test your environment by controlling the Agent using the keyboard. To do so, you will need to extend the `Heuristic()` method in the `RollerAgent` class. For our example, the heuristic will generate an action corresponding to the values of the "Horizontal" and "Vertical" input axis (which correspond to the keyboard arrow keys).
+
+
+Eg:
+
+
+```cs
+public override void Heuristic(in ActionBuffers actionsOut)
+{
+    var continuousActionsOut = actionsOut.ContinuousActions;
+    continuousActionsOut[0] = Input.GetAxis("Horizontal");
+    continuousActionsOut[1] = Input.GetAxis("Vertical");
+}
+
+```
 
 ### Example
 ```cs
