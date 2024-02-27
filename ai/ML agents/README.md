@@ -162,6 +162,15 @@ Above will start **ML Agents training** with **N** environment instances. **Comb
 - Your customed **Agent script**(with your own customed logic) by drag script into the agent.
 - Add a **Decision Requester script** with the Add Component button.
 - Add a **Behavior Parameters script** with the Add Component button.
+- In your Agent script, Import ML-Agent package by adding: \
+
+  ```cs
+    using Unity.MLAgents;
+    using Unity.MLAgents.Sensors;
+    using Unity.MLAgents.Actuators;
+  ```
+  Then change the base class from **`MonoBehaviour`** to **`Agent`**.
+- Delete **`Update()`** since we are not using it, but keep **`Start()`**.
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
 
