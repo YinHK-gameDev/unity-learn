@@ -48,6 +48,12 @@ Reinforcement learning requires rewards to signal which decisions are good and w
 - Marks the agent as finished by calling **`EndEpisode()`** on the **Agent**.
 
 
+### Decisions
+
+The observation-decision-action-reward cycle repeats each time the Agent request a decision. Agents will request a decision when `Agent.RequestDecision()` is called. If you need the Agent to request decisions on its own at regular intervals, add a `Decision Requester` component to the Agent's GameObject. Making decisions at regular step intervals is generally most appropriate for physics-based simulations. For example, an agent in a robotic simulator that must provide fine-control of joint torques should make its decisions every step of the simulation. In games such as real-time strategy, where many agents make their decisions at regular intervals, the decision timing for each agent can be staggered by setting the `DecisionStep` parameter in the `Decision Requester` component for each agent. On the other hand, an agent that only needs to make decisions when certain game or simulation events occur, such as in a turn-based game, should call `Agent.RequestDecision()` manually.
+
+https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#decisions
+
 
 ### Example
 ```cs
@@ -133,6 +139,7 @@ public class RollerAgent : Agent
 }
 
 ```
+
 
 
 ### ref 
