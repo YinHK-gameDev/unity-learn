@@ -160,8 +160,16 @@ public class RollerAgent : Agent
 
 
 ### ref 
+
+**MLAgents**: \
 https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.html \
+**MLAgents.Actuators**: \
 https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.html \
+**MLAgents.Sensors**: \
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Sensors.html \
+
+
+
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
 
 
