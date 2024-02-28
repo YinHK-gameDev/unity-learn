@@ -166,7 +166,7 @@ https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.htm
 **MLAgents.Actuators**: \
 https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.html \
 **MLAgents.Sensors**: \
-https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Sensors.html \
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Sensors.html 
 
 
 
