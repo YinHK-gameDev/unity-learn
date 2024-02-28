@@ -26,17 +26,50 @@ Called at the beginning of an Agent's episode, including at the beginning of the
 
 The Agent sends the information we collect to the Brain, which uses it to make a decision. When you train the Agent (or use a trained model), the data is fed into a neural network as a feature vector. For an Agent to successfully learn a task, we need to provide the correct information. A good rule of thumb for deciding what information to collect is to consider what you would need to calculate an analytical solution to the problem.
 
-#### `Agent.CollectObservations()`
+#### `Agent.CollectObservations(VectorSensor)`
 
 `Agent.CollectObservations()` is best used for aspects of the environment which are numerical and non-visual. The Policy class calls the `CollectObservations(VectorSensor sensor)` method of each Agent. Your implementation of this function must call `VectorSensor.AddObservation` to add vector observations.
 
 Called every step that the Agent requests a decision. This is one possible way for collecting the Agent's observations of the environment; see Generating Observations below for more options.
 
+An **agent's observation** is **any environment information that helps the agent achieve its goal**. For example, for a fighting agent, its observation could include distances to friends or enemies, or the current level of ammunition at its disposal.
+
+> You can use **a combination of vector, visual, and raycast observations for an agent**. If you **only use visual** or **raycast observations**, you **do not need** to implement a `CollectObservations()` function.
+
+
+Add vector observations to the sensor parameter passed to this method by calling the **VectorSensor helper methods**:
+
+```cs
+// Adds a boolean observation to the vector observation of the agent.
+public void AddObservation(bool observation);
+
+// Adds a list or array of float observations to the vector observations of the agent.
+public void AddObservation(IList<float> observation);
+
+// Adds an integer observation to the vector observations of the agent.
+public void AddObservation(int observation);
+
+// Adds a float observation to the vector observations of the agent.
+public void AddObservation(float observation);
+
+// Adds a quaternion observation to the vector observations of the agent.
+public void AddObservation(Quaternion observation);
+
+// Adds an Vector2 observation to the vector observations of the agent.
+public void AddObservation(Vector2 observation);
+
+// Adds an Vector3 observation to the vector observations of the agent.
+public void AddObservation(Vector3 observation);
+
+// Adds a one-hot encoding observation.
+public void AddOneHotObservation(int observation, int range);
+
+```
 
 ### Taking Actions and Assigning Rewards
 The final part of the Agent code is the `Agent.OnActionReceived()` method, which receives actions and assigns the reward.
 
-#### `Agent.OnActionReceived()`
+#### `Agent.OnActionReceived(ActionBuffers)`
 
 `Agent.OnActionReceived()` — Called every time the Agent receives an action to take. Receives the action chosen by the Agent. It is also common to assign a reward in this method.
 
@@ -166,9 +199,11 @@ https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.htm
 **MLAgents.Actuators**: \
 https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.html \
 **MLAgents.Sensors**: \
-https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Sensors.html 
-
-
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Sensors.html \
+**MLAgents.Sensors.VectorSensor**: \
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Sensors.VectorSensor.html#methods \
+**MLAgents.Actuators.ActionBuffers**: \
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.ActionBuffers.html
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
 
