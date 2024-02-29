@@ -24,7 +24,7 @@ Called at the beginning of an Agent's episode, including at the beginning of the
 
 ### Observing the Environment
 
-The Agent sends the information we collect to the Brain, which uses it to make a decision. When you train the Agent (or use a trained model), the data is fed into a neural network as a feature vector. For an Agent to successfully learn a task, we need to provide the correct information. A good rule of thumb for deciding what information to collect is to consider what you would need to calculate an analytical solution to the problem.
+The **Agent sends the information we collect to the Brain**, which **uses it to make a decision**. When you train the Agent (or use a trained model), the data is **fed into a neural network as a feature vector**. For an Agent to **successfully learn a t**ask, we need to **provide the correct information**. A good rule of thumb for deciding what information to collect is to consider what you would need to calculate an analytical solution to the problem.
 
 #### `Agent.CollectObservations(VectorSensor)`
 
@@ -99,7 +99,7 @@ When making a decision, the agent picks one of the five actions and puts the cor
 
 You can define multiple sets, or branches, of discrete actions to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step.
 
-The ActionBuffers.DiscreteActions array of an agent with discrete actions contains one element for each branch. The value of each element is the integer representing the chosen action for that branch. The agent always chooses one action for each branch.
+The `ActionBuffers.DiscreteActions` array of an agent with discrete actions contains one element for each branch. The value of each element is the integer representing the chosen action for that branch. The agent always chooses one action for each branch.
 
 Struct **`ActionBuffers`**:
 
