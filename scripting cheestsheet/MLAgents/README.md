@@ -73,6 +73,31 @@ The final part of the Agent code is the `Agent.OnActionReceived()` method, which
 
 `Agent.OnActionReceived()` — Called every time the Agent receives an action to take. Receives the action chosen by the Agent. It is also common to assign a reward in this method.
 
+An action is passed to this function in the form of an `ActionBuffers`. Your implementation **must use the array to direct the agent's behavior** for the current step.
+
+> You decide **how many elements** you need in the `ActionBuffers` to **control your agen**t and **what each element means**.
+
+For example, if you want to apply a force to **move an agent around the environment**, you can **arbitrarily pick three value**s in **`ActionBuffers.ContinuousActions`** array to use as the **force components**. During training, the agent's **policy learns to set those particular elements of the array to maximize the training rewards the agent receives**. (Of course, if you implement a **`Heuristic`(in ActionBuffers) function**, it **must use the same elements of the action array** for the same purpose since there is no learning involved.)
+
+> An Agent can use **continuous** and/or **discrete actions**.
+
+- When an agent uses **continuous actions**, the values in the `ActionBuffers.ContinuousActions` array are **floating point numbers**. You should **clamp the values** to the range, **`-1..1`**, to increase **numerical stability** during training.
+
+- When an agent uses discrete actions, the values in the **`ActionBuffers.DiscreteActions`** array are **integers** that each **represent a specific, discrete actio**n. For example, you could define a set of discrete actions such as:
+
+  ```
+	0 = Do nothing
+	1 = Move one space left
+	2 = Move one space right
+	3 = Move one space up
+	4 = Move one space down
+  ```
+
+When making a decision, the agent picks one of the five actions and puts the corresponding integer value in the ActionBuffers.DiscreteActions array. For example, if the agent decided to move left, the ActionBuffers.DiscreteActions parameter would be an array with a single element with the value 1.
+
+You can define multiple sets, or branches, of discrete actions to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step.
+
+The ActionBuffers.DiscreteActions array of an agent with discrete actions contains one element for each branch. The value of each element is the integer representing the chosen action for that branch. The agent always chooses one action for each branch.
 
 #### Rewards
 Reinforcement learning requires rewards to signal which decisions are good and which are bad. The learning algorithm uses the rewards to determine whether it is giving the Agent the optimal actions. You want to reward an Agent for completing the assigned task. 
