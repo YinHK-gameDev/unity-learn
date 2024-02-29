@@ -125,25 +125,6 @@ Struct **`ActionSegment<T>`**:
 
 `ActionSegment{T}` is a data structure that **allows access to a segment of an underlying array in order to avoid the copying and allocation of sub-arrays**. The segment is defined by the offset into the original array, and an length.
 
-#### `RequestAction()`
-
-Requests an action for the agent.
-
-```cs
-  public void RequestAction()
-```
-
-Call **`RequestAction()`** to **repeat the previous action returned by the agent's most recent decision**. A **new decision** is **not requested**. When you **call this function**, the Agent instance **invokes `OnActionReceived(ActionBuffers)`** with the **existing action vector**.
-
-You can use **`RequestAction()`** in situations where an agent **must take an action every update**, but d**oesn't need to make a decision as often**. \
-For example, an agent that moves through its environment might need to apply an action to keep moving, but only needs to make a decision to change course or speed occasionally.
-
-You can add a **DecisionRequester component** to the agent's GameObject to drive the agent's decision making and action **frequency**. 
-
-> When you use this component, **do not call `RequestAction()` separately**. Note that `RequestDecision()` calls `RequestAction()`; you **do not need to call both functions at the same time**.
-
-
-
 #### Rewards
 Reinforcement learning requires rewards to signal which decisions are good and which are bad. The learning algorithm uses the rewards to determine whether it is giving the Agent the optimal actions. You want to reward an Agent for completing the assigned task. Rewards are used during reinforcement learning; they are ignored during inference. Typically, you assign rewards in the Agent subclass's OnActionReceived(ActionBuffers) implementation after carrying out the received action and evaluating its success.
 
@@ -162,10 +143,38 @@ Reinforcement learning requires rewards to signal which decisions are good and w
     public void EndEpisode()
   ```
 
-
 ### Decisions
 
+#### `Agent.RequestDecision()`
+
 The observation-decision-action-reward cycle repeats each time the Agent request a decision. Agents will request a decision when `Agent.RequestDecision()` is called. If you need the Agent to request decisions on its own at regular intervals, add a `Decision Requester` component to the Agent's GameObject. Making decisions at regular step intervals is generally most appropriate for physics-based simulations. For example, an agent in a robotic simulator that must provide fine-control of joint torques should make its decisions every step of the simulation. In games such as real-time strategy, where many agents make their decisions at regular intervals, the decision timing for each agent can be staggered by setting the `DecisionStep` parameter in the `Decision Requester` component for each agent. On the other hand, an agent that only needs to make decisions when certain game or simulation events occur, such as in a turn-based game, should call `Agent.RequestDecision()` manually.
+
+
+Requests a new decision for this agent.
+```cs
+ public void RequestDecision()
+```
+
+Call `RequestDecision()` whenever an agent needs a decision. You often want to request a decision every environment step. However, if an agent cannot use the decision every step, then you can request a decision less frequently.
+
+> You can add a **DecisionRequester component** to the agent's GameObject to **drive the agent's decision making**. When you use this component, **do not call `RequestDecision()` separately**. Note that this function calls `RequestAction()`; you **do not need to call both functions at the same time**.
+
+#### `Agent.RequestAction()`
+
+Requests an action for the agent.
+
+```cs
+  public void RequestAction()
+```
+
+Call **`RequestAction()`** to **repeat the previous action returned by the agent's most recent decision**. A **new decision** is **not requested**. When you **call this function**, the Agent instance **invokes `OnActionReceived(ActionBuffers)`** with the **existing action vector**.
+
+You can use **`RequestAction()`** in situations where an agent **must take an action every update**, but d**oesn't need to make a decision as often**. \
+For example, an agent that moves through its environment might need to apply an action to keep moving, but only needs to make a decision to change course or speed occasionally.
+
+You can add a **DecisionRequester component** to the agent's GameObject to drive the agent's decision making and action **frequency**. 
+
+> When you use this component, **do not call `RequestAction()` separately**. Note that `RequestDecision()` calls `RequestAction()`; you **do not need to call both functions at the same time**.
 
 https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#decisions
 
