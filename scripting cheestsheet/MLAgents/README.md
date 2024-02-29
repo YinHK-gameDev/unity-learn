@@ -131,7 +131,7 @@ Struct **`ActionSegment<T>`**:
 Reinforcement learning requires rewards to signal which decisions are good and which are bad. The learning algorithm uses the rewards to determine whether it is giving the Agent the optimal actions. You want to reward an Agent for completing the assigned task. Rewards are used during reinforcement learning; they are ignored during inference. Typically, you assign rewards in the Agent subclass's OnActionReceived(ActionBuffers) implementation after carrying out the received action and evaluating its success.
 
 - Calls **`Agent.SetReward(float increment)`** for increments the step and episode rewards by the provided value. \
-  Use a **positive reward to reinforce desired behavior**. You can use a **negative reward to penalize mistakes**. \
+  Use a **positive reward to reinforce desired behavior**. You can use a **negative reward to penalize mistakes**. 
   ```cs
     public void AddReward(float increment)
   ```
