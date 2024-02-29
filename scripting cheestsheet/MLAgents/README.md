@@ -95,7 +95,7 @@ For example, if you want to apply a force to **move an agent around the environm
 	4 = Move one space down
   ```
 
-When making a decision, the agent picks one of the five actions and puts the corresponding integer value in the ActionBuffers.DiscreteActions array. For example, if the agent decided to move left, the ActionBuffers.DiscreteActions parameter would be an array with a single element with the value 1.
+When making a decision, the agent picks one of the five actions and puts the corresponding integer value in the `ActionBuffers.DiscreteActions` array. For example, if the agent decided to move left, the ActionBuffers.DiscreteActions parameter would be an array with a single element with the value 1.
 
 You can define multiple sets, or branches, of discrete actions to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step.
 
@@ -124,6 +124,23 @@ public override readonly bool Equals(object obj)
 Struct **`ActionSegment<T>`**:
 
 `ActionSegment{T}` is a data structure that **allows access to a segment of an underlying array in order to avoid the copying and allocation of sub-arrays**. The segment is defined by the offset into the original array, and an length.
+
+#### `RequestAction()`
+
+Requests an action for the agent.
+
+```cs
+  public void RequestAction()
+```
+
+Call **`RequestAction()`** to **repeat the previous action returned by the agent's most recent decision**. A **new decision** is **not requested**. When you **call this function**, the Agent instance **invokes `OnActionReceived(ActionBuffers)`** with the **existing action vector**.
+
+You can use **`RequestAction()`** in situations where an agent **must take an action every update**, but d**oesn't need to make a decision as often**. \
+For example, an agent that moves through its environment might need to apply an action to keep moving, but only needs to make a decision to change course or speed occasionally.
+
+You can add a **DecisionRequester component** to the agent's GameObject to drive the agent's decision making and action **frequency**. 
+
+> When you use this component, **do not call `RequestAction()` separately**. Note that `RequestDecision()` calls `RequestAction()`; you **do not need to call both functions at the same time**.
 
 
 
