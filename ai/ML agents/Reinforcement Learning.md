@@ -23,5 +23,9 @@ https://aws.amazon.com/what-is/reinforcement-learning/?nc1=h_ls
 
 https://youtu.be/C2zw2H1c5Fk
 
-https://www.synopsys.com/ai/what-is-reinforcement-learning.html
+https://www.synopsys.com/ai/what-is-reinforcement-learning.html 
+
+**Gymnasium** \
+https://gymnasium.farama.org/ \
+https://github.com/Farama-Foundation/Gymnasium
 
