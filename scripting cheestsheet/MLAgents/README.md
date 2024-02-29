@@ -28,7 +28,7 @@ The **Agent sends the information we collect to the Brain**, which **uses it to 
 
 #### `Agent.CollectObservations(VectorSensor)`
 
-`Agent.CollectObservations()` is best used for aspects of the environment which are numerical and non-visual. The Policy class calls the `CollectObservations(VectorSensor sensor)` method of each Agent. Your implementation of this function must call `VectorSensor.AddObservation` to add vector observations.
+`Agent.CollectObservations()` is best used for aspects of the environment which are **numerical** and **non-visual**. The Policy class calls the `CollectObservations(VectorSensor sensor)` method of each Agent. Your implementation of this function **must** call `VectorSensor.AddObservation` to add vector observations.
 
 Called every step that the Agent requests a decision. This is one possible way for collecting the Agent's observations of the environment; see Generating Observations below for more options.
 
