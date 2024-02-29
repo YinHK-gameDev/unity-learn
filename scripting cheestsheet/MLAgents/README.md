@@ -73,6 +73,8 @@ The final part of the Agent code is the `Agent.OnActionReceived()` method, which
 
 `Agent.OnActionReceived()` — Called every time the Agent receives an action to take. Receives the action chosen by the Agent. It is also common to assign a reward in this method.
 
+Implement `OnActionReceived()` to specify agent behavior at **every step**, based on the provided action.
+
 An action is passed to this function in the form of an `ActionBuffers`. Your implementation **must use the array to direct the agent's behavior** for the current step.
 
 > You decide **how many elements** you need in the `ActionBuffers` to **control your agen**t and **what each element means**.
@@ -98,6 +100,32 @@ When making a decision, the agent picks one of the five actions and puts the cor
 You can define multiple sets, or branches, of discrete actions to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step.
 
 The ActionBuffers.DiscreteActions array of an agent with discrete actions contains one element for each branch. The value of each element is the integer representing the chosen action for that branch. The agent always chooses one action for each branch.
+
+Struct **`ActionBuffers`**:
+
+```cs
+// An empty action buffer.
+public static ActionBuffers Empty
+
+// Holds the Continuous ActionSegment<T> to be used by an IActionReceiver
+public readonly ActionSegment<float> ContinuousActions { get; }
+
+// Holds the Discrete ActionSegment<T> to be used by an IActionReceiver
+public readonly ActionSegment<int> DiscreteActions { get; }
+
+// Clear the ContinuousActions and DiscreteActions segments to be all zeros
+public readonly void Clear()
+
+// Indicates whether the current ActionBuffers is equal to another ActionBuffers
+public override readonly bool Equals(object obj)
+
+```
+
+Struct **`ActionSegment<T>`**:
+
+`ActionSegment{T}` is a data structure that **allows access to a segment of an underlying array in order to avoid the copying and allocation of sub-arrays**. The segment is defined by the offset into the original array, and an length.
+
+
 
 #### Rewards
 Reinforcement learning requires rewards to signal which decisions are good and which are bad. The learning algorithm uses the rewards to determine whether it is giving the Agent the optimal actions. You want to reward an Agent for completing the assigned task. 
@@ -228,7 +256,9 @@ https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Sen
 **MLAgents.Sensors.VectorSensor**: \
 https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Sensors.VectorSensor.html#methods \
 **MLAgents.Actuators.ActionBuffers**: \
-https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.ActionBuffers.html
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.ActionBuffers.html \
+**MLAgents.Actuators.ActionSegment<T>**: \
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.ActionSegment-1.html
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
 
