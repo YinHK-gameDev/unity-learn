@@ -128,10 +128,22 @@ Struct **`ActionSegment<T>`**:
 
 
 #### Rewards
-Reinforcement learning requires rewards to signal which decisions are good and which are bad. The learning algorithm uses the rewards to determine whether it is giving the Agent the optimal actions. You want to reward an Agent for completing the assigned task. 
+Reinforcement learning requires rewards to signal which decisions are good and which are bad. The learning algorithm uses the rewards to determine whether it is giving the Agent the optimal actions. You want to reward an Agent for completing the assigned task. Rewards are used during reinforcement learning; they are ignored during inference. Typically, you assign rewards in the Agent subclass's OnActionReceived(ActionBuffers) implementation after carrying out the received action and evaluating its success.
 
-- Calls **`Agent.SetReward()`** to assign a reward.
-- Marks the agent as finished by calling **`EndEpisode()`** on the **Agent**.
+- Calls **`Agent.SetReward(float increment)`** for increments the step and episode rewards by the provided value. \
+  Use a **positive reward to reinforce desired behavior**. You can use a **negative reward to penalize mistakes**. \
+  ```cs
+    public void AddReward(float increment)
+  ```
+- Calls **`Agent.SetReward(float reward)`** to assign a reward. This function replaces any rewards given to the agent during the current step. Use `AddReward(float increment)` to **incrementally change the reward rather than overriding it**. Use `SetReward()` to set the reward assigned to the current step with a specific value rather than increasing or decreasing it.
+  ```cs
+    public void SetReward(float reward)
+  ```
+- Marks the agent as finished by calling **`EndEpisode()`** on the **Agent**. Sets the done flag to true and resets the agent.
+  > This should be used when the episode can **no longer continue**, such as when the **Agent reaches the goal** or **fails at the task**.
+  ```cs
+    public void EndEpisode()
+  ```
 
 
 ### Decisions
