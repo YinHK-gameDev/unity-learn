@@ -15,7 +15,7 @@ The Reinforcement Learning problem involves an agent exploring an unknown enviro
 3.  The policy that the agent follows to take actions
 4.  The reward signal that the agent observes upon taking actions
 
-
+![](./img/rl_cycle.png)
 ### ref 
 https://github.com/gzrjzcx/ML-agents/blob/master/docs/Background-Machine-Learning.md#reinforcement-learning
 
