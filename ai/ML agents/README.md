@@ -209,6 +209,12 @@ A component for setting an **Agent instance's behavior** and **brain properties*
 | ObservableAttributeHandling | Determines how the Agent class is searched for ObservableAttributes. |
 | UseChildActuators | Whether or not to use all the actuator components attached to child GameObjects of the agent. Note that changing this after the Agent has been initialized will not have any effect. |
 | UseChildSensors | Whether or not to use all the sensor components attached to child GameObjects of the agent. Note that changing this after the Agent has been initialized will not have any effect. |
+| Continous Actions | Number of continous actions |
+| Discrete branch | The array of branch sizes for the discrete actions(Number of branches contained in the array)|
+| Branch [i] Size | The number of actions available for that specific branch. |
+
+
+![](./img/discrete_branch.png)
 
 https://docs.unity3d.com/Packages/com.unity.ml-agents@3.0/api/Unity.MLAgents.Policies.BehaviorParameters.html
 
