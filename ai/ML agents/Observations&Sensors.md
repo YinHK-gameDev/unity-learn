@@ -187,7 +187,8 @@ The GridWorld environment(https://unity-technologies.github.io/ml-agents/Learnin
 > **Note**: Agents using visual observations can capture state of arbitrary complexity and are useful when the **state is difficult to describe numerically**. However, they are also typically **less efficient and slower to train**, and sometimes **don't succeed at all as compared to vector observations**. As such, they should only be used when it is **not possible to properly define the problem using vector or ray-cast observations**.
 
 
-https://www.youtube.com/watch?v=7FHyqzUBzZ0
+https://www.youtube.com/watch?v=7FHyqzUBzZ0 \
+https://www.youtube.com/watch?v=ZV12uozR36k
 
 ### Grid Observations
 
