@@ -179,6 +179,10 @@ Where:
 
 > By default, all discrete actions are allowed. If isEnabled is false, the agent will not be able to perform the actions passed as argument at the next decision for the specified action branch. The actionIndex corresponds to the action options the agent will be unable to perform.
 
+-   You can call `SetActionEnabled` multiple times if you want to put masks on multiple branches.
+-   At each step, the state of an action is reset and enabled by default.
+-   You cannot mask all the actions of a branch.
+-   You cannot mask actions in continuous control.
 
 Struct **`ActionBuffers`**:
 
