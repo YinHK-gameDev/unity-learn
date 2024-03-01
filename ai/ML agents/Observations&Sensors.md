@@ -42,6 +42,82 @@ public override void CollectObservations(VectorSensor sensor)
 }
 ```
 
+
+
+#### Observable Fields and Properties
+
+Another approach is to define the relevant observations as fields or properties on your Agent class, and annotate them with an `ObservableAttribute`. For example, in the Ball3DHardAgent, the difference between positions could be observed by adding a property to the Agent:
+
+```
+using Unity.MLAgents.Sensors.Reflection;
+
+public class Ball3DHardAgent : Agent {
+
+    [Observable(numStackedObservations: 9)]
+    Vector3 PositionDelta
+    {
+        get
+        {
+            return ball.transform.position - gameObject.transform.position;
+        }
+    }
+}
+```
+
+`ObservableAttribute` currently supports most basic types (e.g. floats, ints, bools), as well as `Vector2`, `Vector3`, `Vector4`, `Quaternion`, and enums.
+
+
+> **NOTE**: you do not need to adjust the Space Size in the Agent's `Behavior Parameters` when you add `[Observable]` fields or properties to an Agent, since their size can be computed before they are used.
+
+
+
+
+> Both `Agent.CollectObservations()` and `ObservableAttribute`s produce vector observations, which are represented at lists of `float`s. `ISensor`s can produce both vector observations and visual observations, which are multi-dimensional arrays of floats.
+
+#### One-hot encoding categorical information
+
+Type enumerations should be encoded in the _one-hot_ style. That is, add an element to the feature vector for each element of enumeration, setting the element representing the observed member to one and set the rest to zero. For example, if your enumeration contains \[Sword, Shield, Bow\] and the agent observes that the current item is a Bow, you would add the elements: 0, 0, 1 to the feature vector. The following code example illustrates how to add.
+
+```
+enum ItemType { Sword, Shield, Bow, LastItem }
+public override void CollectObservations(VectorSensor sensor)
+{
+    for (int ci = 0; ci &lt; (int)ItemType.LastItem; ci++)
+    {
+        sensor.AddObservation((int)currentItem == ci ? 1.0f : 0.0f);
+    }
+}
+```
+
+`VectorSensor` also provides a two-argument function `AddOneHotObservation()` as a shortcut for _one-hot_ style observations. The following example is identical to the previous one.
+
+```
+enum ItemType { Sword, Shield, Bow, LastItem }
+const int NUM_ITEM_TYPES = (int)ItemType.LastItem + 1;
+
+public override void CollectObservations(VectorSensor sensor)
+{
+    // The first argument is the selection index; the second is the
+    // number of possibilities
+    sensor.AddOneHotObservation((int)currentItem, NUM_ITEM_TYPES);
+}
+```
+
+`ObservableAttribute` has built-in support for enums. Note that you don't need the `LastItem` placeholder in this case:
+
+```
+enum ItemType { Sword, Shield, Bow }
+
+public class HeroAgent : Agent
+{
+    [Observable]
+    ItemType m_CurrentItem;
+}
+```
+
+
+
+
 ### ref 
 https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#observations-and-sensors
 
