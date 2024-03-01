@@ -25,7 +25,22 @@ The observations passed to `VectorSensor.AddObservation()` must always contain t
 
 Additionally, when you set up an Agent's `Behavior Parameters` in the Unity Editor, you must set the **Vector Observations > Space Size** to equal the number of floats that are written by `CollectObservations()`.
 
+eg:
+```cs
+public GameObject ball;
 
+public override void CollectObservations(VectorSensor sensor)
+{
+    // Orientation of the cube (2 floats)
+    sensor.AddObservation(gameObject.transform.rotation.z);
+    sensor.AddObservation(gameObject.transform.rotation.x);
+    // Relative position of the ball to the cube (3 floats)
+    sensor.AddObservation(ball.transform.position - gameObject.transform.position);
+    // Velocity of the ball (3 floats)
+    sensor.AddObservation(m_BallRb.velocity);
+    // 8 floats total
+}
+```
 
 ### ref 
 https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#observations-and-sensors
