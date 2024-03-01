@@ -123,11 +123,37 @@ For example, if you want to apply a force to **move an agent around the environm
   When you use the discrete actions, you can **prevent the training process or the neural network model from choosing specific actions** in a step by implementing the **`WriteDiscreteActionMask(IDiscreteActionMask)`** method. \
   For example, if your agent is next to a wall, you could **mask out any actions** that would result in the agent **trying to move into the wall.**
 
+  ```cs
+		// Get the action index for movement
+		int movement = actionBuffers.DiscreteActions[0];
+		// Get the action index for jumping
+		int jump = actionBuffers.DiscreteActions[1];
+
+		// Look up the index in the movement action list:
+		if (movement == 1) { directionX = -1; }
+		if (movement == 2) { directionX = 1; }
+		if (movement == 3) { directionZ = -1; }
+		if (movement == 4) { directionZ = 1; }
+		// Look up the index in the jump action list:
+		if (jump == 1 && IsGrounded()) { directionY = 1; }
+
+		// Apply the action results to move the Agent
+		gameObject.GetComponent<Rigidbody>().AddForce( new Vector3(directionX * 40f, directionY * 300f, directionZ * 40f));
+  ```
+
 Struct **`ActionBuffers`**:
 
 A structure that wraps the **`ActionSegment<T>`**s for a particular **`IActionReceiver`** and is used when **`OnActionReceived(ActionBuffers)`** is called.
 
 ```cs
+// Construct an ActionBuffers instance with the continuous and discrete actions that will be used
+public ActionBuffers(float[] continuousActions, int[] discreteActions)
+
+// Construct an ActionBuffers instance with the continuous and discrete actions that will be used
+public ActionBuffers(ActionSegment<float> continuousActions, ActionSegment<int> discreteActions)
+
+
+
 // An empty action buffer.
 public static ActionBuffers Empty
 
@@ -148,6 +174,28 @@ public override readonly bool Equals(object obj)
 Struct **`ActionSegment<T>`**:
 
 `ActionSegment{T}` is a data structure that **allows access to a segment of an underlying array in order to avoid the copying and allocation of sub-arrays**. The segment is defined by the offset into the original array, and an length.
+
+```cs
+// Allows access to the underlying array using array syntax.
+public readonly T this[int index] { get; set; }
+
+// Get the underlying Array of this segment.
+public readonly T[] Array { get; }
+
+// The number of items this segment can access in the underlying array.
+public readonly int Length
+
+// An Empty segment which has an offset of 0, a Length of 0
+public static ActionSegment<T> Empty
+
+// The number of items this segment can access in the underlying array
+public readonly int Length
+
+// The zero-based offset into the original array at which this segment starts
+public readonly int Offset
+
+```
+
 
 
 Interface **`IActionReceiver`**:
