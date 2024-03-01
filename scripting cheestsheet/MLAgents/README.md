@@ -113,12 +113,9 @@ For example, if you want to apply a force to **move an agent around the environm
 	3 = Move one space up
 	4 = Move one space down
   ```
-
-When making a decision, the agent picks one of the five actions and puts the corresponding integer value in the `ActionBuffers.DiscreteActions` array. For example, if the agent decided to move left, the ActionBuffers.DiscreteActions parameter would be an array with a single element with the value 1.
-
-You can define multiple sets, or branches, of discrete actions to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step.
-
-The `ActionBuffers.DiscreteActions` array of an agent with discrete actions contains one element for each branch. The value of each element is the integer representing the chosen action for that branch. The agent always chooses one action for each branch.
+  When making a decision, the agent picks one of the five actions and puts the corresponding integer value in the `ActionBuffers.DiscreteActions` array. For example, if the agent decided to move left, the ActionBuffers.DiscreteActions parameter would be an array with a single element with the value 1. \
+  You can define multiple sets, or branches, of discrete actions to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step. \
+  The `ActionBuffers.DiscreteActions` array of an agent with discrete actions contains one element for each branch. The value of each element is the integer representing the chosen action for that branch. The agent always chooses one action for each branch.
 
 Struct **`ActionBuffers`**:
 
