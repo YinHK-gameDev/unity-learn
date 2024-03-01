@@ -116,7 +116,15 @@ public class HeroAgent : Agent
 ```
 
 
+### Raycast Observations
 
+Raycasts are another possible method for providing observations to an agent. This can be easily implemented by adding a **`RayPerceptionSensorComponent3D`** (or **`RayPerceptionSensorComponent2D`**) to the **Agent GameObject**.
+
+During observations, several rays (or spheres, depending on settings) are cast into the physics world, and the objects that are hit determine the observation vector that is produced.
+
+![](./img/RayPerceptionSensor3D.png)
+
+![](./img/RayPerceptionSensor3D_2.png)
 
 
 
@@ -148,6 +156,12 @@ When using `RenderTexture` visual observations, a handy feature for debugging is
 The [GridWorld environment](https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#isensor-interface-and-sensorcomponents../Learning-Environment-Examples/#gridworld) is an example on how to use a RenderTexture for both debugging and observation. Note that in this example, a Camera is rendered to a RenderTexture, which is then used for observations and debugging. To update the RenderTexture, the Camera must be asked to render every time a decision is requested within the game code. When using Cameras as observations directly, this is done automatically by the Agent.
 
 > **Note**: Agents using visual observations can capture state of arbitrary complexity and are useful when the **state is difficult to describe numerically**. However, they are also typically **less efficient and slower to train**, and sometimes **don't succeed at all as compared to vector observations**. As such, they should only be used when it is **not possible to properly define the problem using vector or ray-cast observations**.
+
+
+
+
+
+
 
 ### ref 
 https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#observations-and-sensors
