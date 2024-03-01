@@ -152,6 +152,8 @@ Both sensor components have several settings:
 > Note that this is separate from the State Size defined in `Behavior Parameters`, so you don't need to worry about the formula above when setting the State Size.
 
 
+**Example environent: wall jump** \
+https://unity-technologies.github.io/ml-agents/Learning-Environment-Examples/#wall-jump
 
 
 ### Visual Observations
@@ -178,7 +180,7 @@ When using `RenderTexture` visual observations, a handy feature for debugging is
 ![](./img/visual-observation-rendertexture.png)
 
 
-The [GridWorld environment](https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#isensor-interface-and-sensorcomponents../Learning-Environment-Examples/#gridworld) is an example on how to use a RenderTexture for both debugging and observation. Note that in this example, a Camera is rendered to a RenderTexture, which is then used for observations and debugging. To update the RenderTexture, the Camera must be asked to render every time a decision is requested within the game code. When using Cameras as observations directly, this is done automatically by the Agent.
+The GridWorld environment(https://unity-technologies.github.io/ml-agents/Learning-Environment-Examples/#gridworld) is an example on how to use a RenderTexture for both debugging and observation. Note that in this example, a Camera is rendered to a RenderTexture, which is then used for observations and debugging. To update the RenderTexture, the Camera must be asked to render every time a decision is requested within the game code. When using Cameras as observations directly, this is done automatically by the Agent.
 
 > **Note**: Agents using visual observations can capture state of arbitrary complexity and are useful when the **state is difficult to describe numerically**. However, they are also typically **less efficient and slower to train**, and sometimes **don't succeed at all as compared to vector observations**. As such, they should only be used when it is **not possible to properly define the problem using vector or ray-cast observations**.
 
