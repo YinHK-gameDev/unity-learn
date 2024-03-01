@@ -96,15 +96,18 @@ Implement `OnActionReceived()` to specify agent behavior at **every step**, base
 
 An action is passed to this function in the form of an `ActionBuffers`. Your implementation **must use the array to direct the agent's behavior** for the current step.
 
-> You decide **how many elements** you need in the `ActionBuffers` to **control your agen**t and **what each element means**.
+> You decide **how many elements** you need in the `ActionBuffers` to **control your agent** and **what each element means**.
 
 For example, if you want to apply a force to **move an agent around the environment**, you can **arbitrarily pick three value**s in **`ActionBuffers.ContinuousActions`** array to use as the **force components**. During training, the agent's **policy learns to set those particular elements of the array to maximize the training rewards the agent receives**. (Of course, if you implement a **`Heuristic`(in ActionBuffers) function**, it **must use the same elements of the action array** for the same purpose since there is no learning involved.)
 
 > An Agent can use **continuous** and/or **discrete actions**.
 
-- When an agent uses **continuous actions**, the values in the `ActionBuffers.ContinuousActions` array are **floating point numbers**. You should **clamp the values** to the range, **`-1..1`**, to increase **numerical stability** during training.
+- When an agent uses **continuous actions**, the values in the `ActionBuffers.ContinuousActions` array are **floating point numbers**. You should **clamp the values** to the range, **`-1..1`**, to increase **numerical stability** during training. The **continuous actions** to send to an `IActionReceiver`. \
+  When an Agent's Policy has **Continuous** actions, the `ActionBuffers.ContinuousActions` passed to the Agent's `OnActionReceived()` function is an array with length equal to the `Continuous Action Size` property value. The individual values in the array have whatever meanings that you ascribe to them. If you assign an element in the array as the speed of an Agent, for example, the training process learns to control the speed of the Agent through this parameter.
 
-- When an agent uses discrete actions, the values in the **`ActionBuffers.DiscreteActions`** array are **integers** that each **represent a specific, discrete actio**n. For example, you could define a set of discrete actions such as:
+- When an agent uses discrete actions, the values in the **`ActionBuffers.DiscreteActions`** array are **integers** that each **represent a specific, discrete action**. The **discrete actions** to send to an **`IActionReceiver`**. \
+  When an Agent's Policy uses **discrete** actions, the `ActionBuffers.DiscreteActions` passed to the Agent's `OnActionReceived()` function is an array of integers with length equal to `Discrete Branch Size`. When defining the discrete actions, `Branches` is an array of integers, each value corresponds to the number of possibilities for each branch. \
+  For example, you could define a set of discrete actions such as:
 
   ```
 	0 = Do nothing
@@ -118,6 +121,8 @@ For example, if you want to apply a force to **move an agent around the environm
   The `ActionBuffers.DiscreteActions` array of an agent with discrete actions contains one element for each branch. The value of each element is the integer representing the chosen action for that branch. The agent always chooses one action for each branch.
 
 Struct **`ActionBuffers`**:
+
+A structure that wraps the **`ActionSegment<T>`**s for a particular **`IActionReceiver`** and is used when **`OnActionReceived(ActionBuffers)`** is called.
 
 ```cs
 // An empty action buffer.
@@ -140,6 +145,21 @@ public override readonly bool Equals(object obj)
 Struct **`ActionSegment<T>`**:
 
 `ActionSegment{T}` is a data structure that **allows access to a segment of an underlying array in order to avoid the copying and allocation of sub-arrays**. The segment is defined by the offset into the original array, and an length.
+
+
+Interface **`IActionReceiver`**:
+
+An interface that **describes an object that can receive actions** from a **Reinforcement Learning network**.
+
+```cs
+// Method called in order too allow object to execute actions based on the ActionBuffers contents.
+void OnActionReceived(ActionBuffers actionBuffers)
+
+// Implement WriteDiscreteActionMask() to modify the masks for discrete actions.
+// When using discrete actions, the agent will not perform the masked action.
+void WriteDiscreteActionMask(IDiscreteActionMask actionMask)
+
+```
 
 #### Rewards
 Reinforcement learning requires rewards to signal which decisions are good and which are bad. The learning algorithm uses the rewards to determine whether it is giving the Agent the optimal actions. You want to reward an Agent for completing the assigned task. Rewards are used during reinforcement learning; they are ignored during inference. Typically, you assign rewards in the Agent subclass's OnActionReceived(ActionBuffers) implementation after carrying out the received action and evaluating its success.
@@ -312,7 +332,9 @@ https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Sen
 **MLAgents.Actuators.ActionBuffers**: \
 https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.ActionBuffers.html \
 **MLAgents.Actuators.ActionSegment<T>**: \
-https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.ActionSegment-1.html
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.ActionSegment-1.html \
+**​MLAgents.​ActuatorsIAction​Receiver**: \
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.IActionReceiver.html
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
 
