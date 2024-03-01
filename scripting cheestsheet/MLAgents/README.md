@@ -19,8 +19,24 @@
 ### Initialization and Resetting the Agent
 The process of training in the ML-Agents Toolkit involves running episodes where the Agent (Sphere) attempts to solve the task. Each episode lasts until the Agents solves the task (i.e. reaches the cube), fails (rolls off the platform) or times out (takes too long to solve or fail at the task). At the start of each episode, **`OnEpisodeBegin()`** is called to set-up the environment for a new episode. Typically the scene is initialized in a random manner to enable the agent to learn to solve the task under a variety of conditions.
 
+#### `Agent.Initialize()`
+Implement Initialize() to perform **one-time initialization or set up of the Agent instance**.
+
+```cs
+	public virtual void Initialize()
+```
+
+> `Initialize()` is **called once when the agent is first enabled**. If, for example, the Agent object needs references to other GameObjects in the scene, you can **collect and store those references here**.
+
 #### `Agent.OnEpisodeBegin()`
 Called at the beginning of an Agent's episode, including at the beginning of the simulation.
+
+```cs
+	public virtual void OnEpisodeBegin()
+```
+
+> Note that OnEpisodeBegin() is called **at the start of each of the agent's "episodes"**. You can use that function for items that need to be **reset for each episode**.
+
 
 ### Observing the Environment
 
