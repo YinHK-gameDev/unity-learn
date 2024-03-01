@@ -118,6 +118,37 @@ public class HeroAgent : Agent
 
 
 
+
+
+
+### Visual Observations
+
+**Visual observations** are generally provided to agent via either a **`CameraSensor`** or **`RenderTextureSensor`**. These **collect image information** and **transforms it into a 3D Tensor** which can be fed into the convolutional neural network (CNN) of the agent policy. https://cs231n.github.io/convolutional-networks/ \
+This allows agents to learn from spatial regularities in the observation images. It is possible to use visual and vector observations with the same agent.
+
+Visual observations can be derived from **Cameras** or **RenderTextures** within your scene. To add a visual observation to an Agent, add either a Camera Sensor Component or RenderTextures Sensor Component to the Agent. Then drag the camera or render texture you want to add to the `Camera` or `RenderTexture` field. You can have more than one camera or render texture and even use a combination of both attached to an Agent. For each visual observation, set the width and height of the image (in pixels) and whether or not the observation is color or grayscale.
+
+Each Agent that uses the same Policy must have the same number of visual observations, and they must all have the same resolutions (including whether or not they are grayscale). Additionally, each Sensor Component on an Agent must have a unique name so that they can be sorted deterministically (the name must be unique for that Agent, but multiple Agents can have a Sensor Component with the same name).
+
+Visual observations also support stacking, by specifying `Observation Stacks` to a value greater than 1. The visual observations from the last `stackSize` steps will be stacked on the last dimension (channel dimension).
+
+When using `RenderTexture` visual observations, a handy feature for debugging is adding a `Canvas`, then adding a `Raw Image` with it's texture set to the Agent's `RenderTexture`. This will render the agent observation on the game screen.
+
+
+-   To collect visual observations, attach **`CameraSensor`** or **`RenderTextureSensor` components** to the **agent GameObject**.
+-   Visual observations should generally **only be used when vector observations are not sufficient**.
+-   Image size should be kept **as small as possible**, without the loss of needed details for decision making.
+-   Images should be made **grayscale in situations** where color information is not needed for making informed decisions.
+
+![](./img/visual-observation.png)
+
+![](./img/visual-observation-rendertexture.png)
+
+
+The [GridWorld environment](https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#isensor-interface-and-sensorcomponents../Learning-Environment-Examples/#gridworld) is an example on how to use a RenderTexture for both debugging and observation. Note that in this example, a Camera is rendered to a RenderTexture, which is then used for observations and debugging. To update the RenderTexture, the Camera must be asked to render every time a decision is requested within the game code. When using Cameras as observations directly, this is done automatically by the Agent.
+
+> **Note**: Agents using visual observations can capture state of arbitrary complexity and are useful when the **state is difficult to describe numerically**. However, they are also typically **less efficient and slower to train**, and sometimes **don't succeed at all as compared to vector observations**. As such, they should only be used when it is **not possible to properly define the problem using vector or ray-cast observations**.
+
 ### ref 
 https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#observations-and-sensors
 
