@@ -116,13 +116,6 @@ For example, if you want to apply a force to **move an agent around the environm
 	3 = Move one space up
 	4 = Move one space down
   ```
-  When making a decision, the agent picks one of the five actions and puts the corresponding integer value in the `ActionBuffers.DiscreteActions` array. \
-  For example, if the agent decided to **move left**, the `ActionBuffers.DiscreteActions` parameter would be an array with a **single element with the value 1**. \
-  You can define **multiple sets, or branches, of discrete actions** to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step. \
-  The `ActionBuffers.DiscreteActions` array of an agent with discrete actions contains **one element for each branch**. The value of each element is the integer representing the chosen action for that branch. The agent always **chooses one action for each branch**. \
-  When you use the discrete actions, you can **prevent the training process or the neural network model from choosing specific actions** in a step by implementing the **`WriteDiscreteActionMask(IDiscreteActionMask)`** method. \
-  For example, if your agent is next to a wall, you could **mask out any actions** that would result in the agent **trying to move into the wall.**
-
   ```cs
 		// Get the action index for movement
 		int movement = actionBuffers.DiscreteActions[0];
@@ -140,6 +133,55 @@ For example, if you want to apply a force to **move an agent around the environm
 		// Apply the action results to move the Agent
 		gameObject.GetComponent<Rigidbody>().AddForce( new Vector3(directionX * 40f, directionY * 300f, directionZ * 40f));
   ```
+  When making a decision, the agent picks one of the five actions and puts the corresponding integer value in the `ActionBuffers.DiscreteActions` array. \
+  For example, if the agent decided to **move left**, the `ActionBuffers.DiscreteActions` parameter would be an array with a **single element with the value 1**. \
+  You can define **multiple sets, or branches, of discrete actions** to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step. \
+  The `ActionBuffers.DiscreteActions` array of an agent with discrete actions contains **one element for each branch**. The value of each element is the integer representing the chosen action for that branch. The agent always **chooses one action for each branch**. \
+  When you use the discrete actions, you can **prevent the training process or the neural network model from choosing specific actions** in a step by implementing the **`WriteDiscreteActionMask(IDiscreteActionMask)`** method. \
+  For example, if your agent is next to a wall, you could **mask out any actions** that would result in the agent **trying to move into the wall.** \
+  > Note that when the Agent is controlled by its Heuristic, the Agent will still be able to decide to perform the masked action. In order to disallow an action, override the `Agent.WriteDiscreteActionMask()` virtual method, and call `SetActionEnabled()` on the provided `IDiscreteActionMask`:
+ ```cs
+	public override void WriteDiscreteActionMask(IDiscreteActionMask actionMask)
+	{
+    		actionMask.SetActionEnabled(branch, actionIndex, isEnabled);
+	}
+ ```
+
+
+#### `Agent.WriteDiscreteActionMask(IDiscreteActionMask)`
+Implement `WriteDiscreteActionMask()` to collects the masks for discrete actions. When using discrete actions, the agent will not perform the masked action.
+
+
+```cs
+	public virtual void WriteDiscreteActionMask(IDiscreteActionMask actionMask)
+```
+
+
+```cs
+	public override void WriteDiscreteActionMask(IDiscreteActionMask actionMask)
+	{
+    		actionMask.SetActionEnabled(branch, actionIndex, isEnabled);
+	}
+```
+
+> When using **Discrete Control**, you can **prevent the Agent from using a certain action** by masking it with `SetActionEnabled(Int32, Int32, Boolean)`.
+
+Interface **`IDiscreteActionMask`**: 
+
+Interface for writing a mask to **disable discrete actions for agents for the next decision**.
+
+```cs
+ 	void SetActionEnabled(int branch, int actionIndex, bool isEnabled)
+```
+
+Where:
+
+-   **`branch`** is the **index (starting at 0) of the branch** on which you want to allow or **disallow the action**. The branch for which the actions will be **masked**.
+-   **`actionIndex`** is the **index of the action** that you want to allow or disallow.
+-   **`isEnabled`** is a bool **indicating whether the action should be allowed or not**.
+
+> By default, all discrete actions are allowed. If isEnabled is false, the agent will not be able to perform the actions passed as argument at the next decision for the specified action branch. The actionIndex corresponds to the action options the agent will be unable to perform.
+
 
 Struct **`ActionBuffers`**:
 
