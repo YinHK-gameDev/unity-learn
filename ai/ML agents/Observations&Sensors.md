@@ -120,11 +120,36 @@ public class HeroAgent : Agent
 
 Raycasts are another possible method for providing observations to an agent. This can be easily implemented by adding a **`RayPerceptionSensorComponent3D`** (or **`RayPerceptionSensorComponent2D`**) to the **Agent GameObject**.
 
-During observations, several rays (or spheres, depending on settings) are cast into the physics world, and the objects that are hit determine the observation vector that is produced.
+During observations, several rays (or spheres, depending on settings) are **cast into the physics world**, and the **objects that are hit determine the observation vector** that is produced.
+
+
+-   Attach **`RayPerceptionSensorComponent3D`** or **`RayPerceptionSensorComponent2D`** to use.
+-   This observation type is best used when there is relevant spatial information for the agent that doesn't require a fully rendered image to convey.
+-   Use as few rays and tags as necessary to solve the problem in order to improve learning stability and agent performance.
+-   If you run into performance issues, try using batched raycasts by enabling the **_Use Batched Raycast_** setting. (Only available for **3D ray perception sensors**.)
 
 ![](./img/RayPerceptionSensor3D.png)
 
 ![](./img/RayPerceptionSensor3D_2.png)
+
+
+
+
+Both sensor components have several settings:
+
+-   **_Detectable Tags_**: A list of strings corresponding to the types of objects that the Agent should be able to distinguish between. For example, in the WallJump example, we use "wall", "goal", and "block" as the list of objects to detect.
+-   **_Rays Per Direction_**: Determines the number of rays that are cast. One ray is always cast forward, and this many rays are cast to the left and right.
+-   **_Max Ray Degrees_**: The angle (in degrees) for the outermost rays. 90 degrees corresponds to the left and right of the agent.
+-   **_Sphere Cast Radius_**: The size of the sphere used for sphere casting. If set to 0, rays will be used instead of spheres. Rays may be more efficient, especially in complex scenes.
+-   **_Ray Length**:_ The length of the casts
+-   **_Ray Layer Mask_**: The `LayerMask` passed to the raycast or spherecast. This can be used to ignore certain types of objects when casting.
+-   **_Observation Stacks_**: The number of previous results to "stack" with the cast results. Note that this can be independent of the "Stacked Vectors" setting in `Behavior Parameters`.
+-   **_Start Vertical Offset_ (3D only)**: The vertical offset of the ray start point.
+-   **_End Vertical Offset_ (3D only)**: The vertical offset of the ray end point.
+-   **_Alternating Ray Order_**: Alternating is the default, it gives an order of (**0, -delta, delta, -2_delta, 2_delta, ..., -n_delta, n_delta**). If alternating is disabled the order is left to right (**-n_delta, -(n-1)_delta, ..., -delta, 0, delta, ..., (n-1)_delta, n_delta**). For general usage there is no difference but if using custom models the left-to-right layout that matches the spatial structuring can be preferred (e.g. for processing with conv nets).
+-   **_Use Batched Raycasts_ (3D only)**: Whether to use batched raycasts. Enable to use batched raycasts and the jobs system.
+
+> Note that this is separate from the State Size defined in `Behavior Parameters`, so you don't need to worry about the formula above when setting the State Size.
 
 
 
