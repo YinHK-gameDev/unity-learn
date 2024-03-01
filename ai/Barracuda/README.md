@@ -1,5 +1,5 @@
 ## Unity Inference Engine (Barracuda)
-Using the Unity Inference Engine (Barracuda), you can deploy your ML-Agents models on any platform (PC, mobile or console) that is supported in Unity.
+Using the **Unity Inference Engine (Barracuda)**, you can deploy your ML-Agents models on any platform (PC, mobile or console) that is supported in Unity.
 
 
 The **Barracuda package** is a lightweight cross-platform neural network inference library for Unity.
