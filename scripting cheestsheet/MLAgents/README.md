@@ -217,6 +217,9 @@ Struct **`ActionSegment<T>`**:
 `ActionSegment{T}` is a data structure that **allows access to a segment of an underlying array in order to avoid the copying and allocation of sub-arrays**. The segment is defined by the offset into the original array, and an length.
 
 ```cs
+// Create an ActionSpec initialized with the specified action sizes.
+public ActionSpec(int numContinuousActions = 0, int[] discreteBranchSizes = null)
+
 // Allows access to the underlying array using array syntax.
 public readonly T this[int index] { get; set; }
 
