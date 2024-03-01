@@ -188,6 +188,8 @@ public ActionBuffers(float[] continuousActions, int[] discreteActions)
 // Construct an ActionBuffers instance with the continuous and discrete actions that will be used
 public ActionBuffers(ActionSegment<float> continuousActions, ActionSegment<int> discreteActions)
 
+// Construct an ActionBuffers instance with ActionSpec. All values are initialized to zeros
+public ActionBuffers(ActionSpec actionSpec)
 
 
 // An empty action buffer.
@@ -204,6 +206,9 @@ public readonly void Clear()
 
 // Indicates whether the current ActionBuffers is equal to another ActionBuffers
 public override readonly bool Equals(object obj)
+
+// Create an ActionBuffers instance with discrete actions stored as a float array.
+public static ActionBuffers FromDiscreteActions(float[] discreteActions)
 
 ```
 
