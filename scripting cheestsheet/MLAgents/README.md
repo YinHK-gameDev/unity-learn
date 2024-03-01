@@ -100,14 +100,14 @@ An action is passed to this function in the form of an `ActionBuffers`. Your imp
 
 For example, if you want to apply a force to **move an agent around the environment**, you can **arbitrarily pick three value**s in **`ActionBuffers.ContinuousActions`** array to use as the **force components**. During training, the agent's **policy learns to set those particular elements of the array to maximize the training rewards the agent receives**. (Of course, if you implement a **`Heuristic`(in ActionBuffers) function**, it **must use the same elements of the action array** for the same purpose since there is no learning involved.)
 
-> An Agent can use **continuous** and/or **discrete actions**.
+> An Agent can use **continuous** and/or **discrete actions**. An Agent can use **continuous and/or discrete actions**. Configure this along with the size of the action array, in the `BrainParameters` of the agent's associated **BehaviorParameters component**.
 
 - When an agent uses **continuous actions**, the values in the `ActionBuffers.ContinuousActions` array are **floating point numbers**. You should **clamp the values** to the range, **`-1..1`**, to increase **numerical stability** during training. The **continuous actions** to send to an `IActionReceiver`. \
   When an Agent's Policy has **Continuous** actions, the `ActionBuffers.ContinuousActions` passed to the Agent's `OnActionReceived()` function is an array with length equal to the `Continuous Action Size` property value. The individual values in the array have whatever meanings that you ascribe to them. If you assign an element in the array as the speed of an Agent, for example, the training process learns to control the speed of the Agent through this parameter.
 
 - When an agent uses discrete actions, the values in the **`ActionBuffers.DiscreteActions`** array are **integers** that each **represent a specific, discrete action**. The **discrete actions** to send to an **`IActionReceiver`**. \
   When an Agent's Policy uses **discrete** actions, the `ActionBuffers.DiscreteActions` passed to the Agent's `OnActionReceived()` function is an array of integers with length equal to `Discrete Branch Size`. When defining the discrete actions, `Branches` is an array of integers, each value corresponds to the number of possibilities for each branch. \
-  For example, you could define a set of discrete actions such as:
+  For example, you could **define a set of discrete actions** such as:
 
   ```
 	0 = Do nothing
@@ -116,9 +116,12 @@ For example, if you want to apply a force to **move an agent around the environm
 	3 = Move one space up
 	4 = Move one space down
   ```
-  When making a decision, the agent picks one of the five actions and puts the corresponding integer value in the `ActionBuffers.DiscreteActions` array. For example, if the agent decided to move left, the ActionBuffers.DiscreteActions parameter would be an array with a single element with the value 1. \
-  You can define multiple sets, or branches, of discrete actions to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step. \
-  The `ActionBuffers.DiscreteActions` array of an agent with discrete actions contains one element for each branch. The value of each element is the integer representing the chosen action for that branch. The agent always chooses one action for each branch.
+  When making a decision, the agent picks one of the five actions and puts the corresponding integer value in the `ActionBuffers.DiscreteActions` array. \
+  For example, if the agent decided to **move left**, the `ActionBuffers.DiscreteActions` parameter would be an array with a **single element with the value 1**. \
+  You can define **multiple sets, or branches, of discrete actions** to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step. \
+  The `ActionBuffers.DiscreteActions` array of an agent with discrete actions contains **one element for each branch**. The value of each element is the integer representing the chosen action for that branch. The agent always **chooses one action for each branch**. \
+  When you use the discrete actions, you can **prevent the training process or the neural network model from choosing specific actions** in a step by implementing the **`WriteDiscreteActionMask(IDiscreteActionMask)`** method. \
+  For example, if your agent is next to a wall, you could **mask out any actions** that would result in the agent **trying to move into the wall.**
 
 Struct **`ActionBuffers`**:
 
