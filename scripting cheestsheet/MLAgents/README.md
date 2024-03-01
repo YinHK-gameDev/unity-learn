@@ -363,7 +363,7 @@ https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agent
 
 ### Testing the Environment
 
-It is always a good idea to first test your environment by controlling the Agent using the keyboard. To do so, you will need to extend the `Heuristic()` method in the `RollerAgent` class. For our example, the heuristic will generate an action corresponding to the values of the "Horizontal" and "Vertical" input axis (which correspond to the keyboard arrow keys).
+It is always a good idea to first test your environment by **controlling the Agent using the keyboard**. To do so, you will need to extend the `Heuristic()` method in the `RollerAgent` class. For our example, the heuristic will generate an action corresponding to the values of the "Horizontal" and "Vertical" input axis (which correspond to the keyboard arrow keys).
 
 
 Eg:
