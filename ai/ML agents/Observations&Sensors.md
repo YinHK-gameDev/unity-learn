@@ -185,10 +185,22 @@ The GridWorld environment(https://unity-technologies.github.io/ml-agents/Learnin
 > **Note**: Agents using visual observations can capture state of arbitrary complexity and are useful when the **state is difficult to describe numerically**. However, they are also typically **less efficient and slower to train**, and sometimes **don't succeed at all as compared to vector observations**. As such, they should only be used when it is **not possible to properly define the problem using vector or ray-cast observations**.
 
 
+### Grid Observations
 
+Grid-base observations combine the advantages of 2D spatial representation in visual observations, and the flexibility of defining detectable objects in RayCast observations. The sensor uses a set of box queries in a grid shape and gives a top-down 2D view around the agent. This can be implemented by adding a **`GridSensorComponent`** to the Agent GameObject.
 
+During observations, the sensor detects the presence of detectable objects in each cell and encode that into one-hot representation. The collected information from each cell forms a 3D tensor observation and will be fed into the convolutional neural network (CNN) of the agent policy just like visual observations.
 
+The sensor component has the following settings: - Cell Scale The scale of each cell in the grid. - Grid Size Number of cells on each side of the grid. - Agent Game Object The Agent that holds the grid sensor. This is used to disambiguate objects with the same tag as the agent so that the agent doesn't detect itself. - Rotate With Agent Whether the grid rotates with the Agent. - Detectable Tags A list of strings corresponding to the types of objects that the Agent should be able to distinguish between. - Collider Mask The LayerMask passed to the collider detection. This can be used to ignore certain types of objects. - Initial Collider Buffer Size The initial size of the Collider buffer used in the non-allocating Physics calls for each cell. - Max Collider Buffer Size The max size of the Collider buffer used in the non-allocating Physics calls for each cell.
 
+To allow more variety of observations that grid sensor can capture, the GridSensorComponent and the underlying GridSensorBase also provides interfaces that can be overridden to collect customized observation from detected objects. See the doc on extending [grid Sensors](https://github.com/Unity-Technologies/ml-agents/blob/release_21_docs/com.unity.ml-agents.extensions/Documentation~/CustomGridSensors.md) for more details on custom grid sensors.
+
+> **Note**: The `GridSensor` only works in 3D environments and will not behave properly in 2D environments.
+
+-   Attach `GridSensorComponent` to use.
+-   This observation type is best used when there is relevant non-visual spatial information that can be best captured in 2D representations.
+-   Use as small grid size and as few tags as necessary to solve the problem in order to improve learning stability and agent performance.
+-   Do not use `GridSensor` in a 2D game.
 
 ### ref 
 https://unity-technologies.github.io/ml-agents/Learning-Environment-Design-Agents/#observations-and-sensors
