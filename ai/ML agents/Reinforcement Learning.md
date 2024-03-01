@@ -25,6 +25,10 @@ https://youtu.be/C2zw2H1c5Fk
 
 https://www.synopsys.com/ai/what-is-reinforcement-learning.html 
 
+https://www.andrew.cmu.edu/course/10-703/textbook/BartoSutton.pdf
+
+https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
+
 **Gymnasium** \
 https://gymnasium.farama.org/ \
 https://github.com/Farama-Foundation/Gymnasium
