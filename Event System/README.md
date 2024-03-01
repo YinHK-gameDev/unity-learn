@@ -84,6 +84,8 @@ The Graphic Raycaster can be configured to ignore backfacing Graphics as well as
 
 > When a UI is created, a Graphic Raycaster is **automatically included within the Canvas**.
 
+>  Used in **uGUI**
+
 | **_Property:_** | **_Function:_** |
 | --- | --- |
 | **Ignore Reversed Graphics** | Should graphics facing away from the raycaster be considered? |
@@ -92,6 +94,57 @@ The Graphic Raycaster can be configured to ignore backfacing Graphics as well as
 
 ```cs
 public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
+```
+
+Eg:
+```cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine; using UnityEngine.UI;
+using UnityEngine.EventSystems;
+
+public class UI_ColorPicker : MonoBehaviour
+{
+    public GameObject target;
+    private Material targetMaterial;
+    private GraphicRaycaster rc;
+    private PointerEventData pt;
+    private EventSystem eventSystem;
+
+    void Start()
+    {
+        //Obtain the target object's material
+        if(target != null)
+        {
+            targetMaterial = target.GetComponent<Renderer>().material;
+        }
+        //Obtain the Canvas' Raycaster and EventSystem Components
+        rc = GetComponent<GraphicRaycaster>();
+        eventSystem = GetComponent<EventSystem>();
+    }
+
+    void Update()
+    {
+        pt = new PointerEventData(eventSystem);
+        pt.position = Input.mousePosition;
+        List<RaycastResult> results = new List<RaycastResult>();
+        rc.Raycast(pt, results);
+
+        foreach(RaycastResult swatch in results)
+        {
+            if(swatch.gameObject.GetComponent<Image>().color != null)
+            {
+                changeColor(swatch.gameObject.GetComponent<Image>().color);
+            }
+        }
+    }
+
+    void changeColor(Color c)
+    {
+        targetMaterial.color = c;
+    }
+}
+
 ```
 
 #### Physics Raycaster
