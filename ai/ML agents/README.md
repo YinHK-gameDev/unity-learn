@@ -180,9 +180,9 @@ https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Envir
 
 #### Decision Requester
 
-Attach a DecisionRequester component to the same [GameObject] as the Agent component.
+Attach a **DecisionRequester** component to the same [GameObject] as the Agent component.
 
-> The DecisionRequester component provides a convenient and flexible way to trigger the agent decision making process. Without a DecisionRequester, your Agent implementation must manually call its RequestDecision() function.
+> The **DecisionRequester** component provides **a convenient and flexible way** to **trigger the agent decision making process**. Without a **DecisionRequester**, your Agent implementation **must manually call its `RequestDecision()` function**.
 
 | Name | Description |
 | --- | --- |
@@ -194,6 +194,8 @@ https://docs.unity3d.com/Packages/com.unity.ml-agents@3.0/api/Unity.MLAgents.Dec
 
 
 #### Behavior Parameters
+
+A component for setting an **Agent instance's behavior** and **brain properties**.
 
 | Name | Description |
 | --- | --- |
@@ -209,6 +211,12 @@ https://docs.unity3d.com/Packages/com.unity.ml-agents@3.0/api/Unity.MLAgents.Dec
 | UseChildSensors | Whether or not to use all the sensor components attached to child GameObjects of the agent. Note that changing this after the Agent has been initialized will not have any effect. |
 
 https://docs.unity3d.com/Packages/com.unity.ml-agents@3.0/api/Unity.MLAgents.Policies.BehaviorParameters.html
+
+#### BrainParameters
+**Holds information about the brain**. It defines what are the inputs and outputs of the decision process.
+
+
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Policies.BrainParameters.html
 
 #### Observations and Sensors
 
