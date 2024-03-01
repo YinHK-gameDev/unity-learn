@@ -128,6 +128,7 @@ https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-ML-Ag
 
 https://github.com/gzrjzcx/ML-agents/blob/master/docs/Training-ML-Agents.md
 
+https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Training-ML-Agents.md
 
 #### Multiple Training Areas within the Same Scene
 To generally speeds up training, allow multiple training within the same scene. 
@@ -413,10 +414,12 @@ https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 package doc \
 https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.html
 
-https://github.com/Unity-Technologies/ml-agents
+Github \
+https://github.com/Unity-Technologies/ml-agents \
+https://github.com/gzrjzcx/ML-agents/tree/master
+
 
 https://unity.com/products/machine-learning-agents
-
 
 https://medium.com/ericzhan-publication/unity-ml-agent%E7%AD%86%E8%A8%98-%E5%AE%8C%E5%85%A8%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E7%9A%84%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-01-39472fccc7be
 
