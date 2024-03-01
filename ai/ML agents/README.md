@@ -227,6 +227,7 @@ An action is an instruction from the Policy that the agent carries out. The acti
 
 Neither the Policy nor the training algorithm know anything about what the action values themselves mean. The training algorithm simply tries different values for the action list and observes the affect on the accumulated rewards over time and many training episodes. Thus, the only place actions are defined for an Agent is in the `OnActionReceived()` function.
 
+An Agent can use **continuous and/or discrete actions**. Configure this along with the size of the action array, in the `BrainParameters` of the agent's associated **BehaviorParameters component**.
 
 - **Continuous Actions**: When an Agent's Policy has **Continuous** actions, the `ActionBuffers.ContinuousActions` passed to the Agent's `OnActionReceived()` function is an array with length equal to the `Continuous Action Size` property value. The individual values in the array have whatever meanings that you ascribe to them. \
   When an Agent's Policy has **Continuous** actions, the `ActionBuffers.ContinuousActions` passed to the Agent's `OnActionReceived()` function is an array with length equal to the `Continuous Action Size` property value. The individual values in the array have whatever meanings that you ascribe to them. If you assign an element in the array as the speed of an Agent, for example, the training process learns to control the speed of the Agent through this parameter.
