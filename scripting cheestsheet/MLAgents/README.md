@@ -102,12 +102,14 @@ For example, if you want to apply a force to **move an agent around the environm
 
 > An Agent can use **continuous** and/or **discrete actions**. An Agent can use **continuous and/or discrete actions**. Configure this along with the size of the action array, in the `BrainParameters` of the agent's associated **BehaviorParameters component**.
 
-- When an agent uses **continuous actions**, the values in the `ActionBuffers.ContinuousActions` array are **floating point numbers**. You should **clamp the values** to the range, **`-1..1`**, to increase **numerical stability** during training. The **continuous actions** to send to an `IActionReceiver`. \
-  When an Agent's Policy has **Continuous** actions, the `ActionBuffers.ContinuousActions` passed to the Agent's `OnActionReceived()` function is an array with length equal to the `Continuous Action Size` property value. The individual values in the array have whatever meanings that you ascribe to them. If you assign an element in the array as the speed of an Agent, for example, the training process learns to control the speed of the Agent through this parameter.
+- When an agent uses **continuous actions**, the values in the `ActionBuffers.ContinuousActions` array are **floating point numbers**. You should **clamp the values** to the range, **`-1..1`**, to increase **numerical stability** during training. \
+  `ActionBuffers.ContinuousActions.Length` = **number of continous actions you defined**. Pass the initial value from the range **`-1..1`** for each contionous action.
+  The **continuous actions** to send to an `IActionReceiver`. \
+  When an Agent's Policy has **Continuous** actions, the `ActionBuffers.ContinuousActions` passed to the Agent's `OnActionReceived()` function is an array **with length equal to the `Continuous Action Size` property value**. The individual values in the array have whatever meanings that you ascribe to them. If you assign an element in the array as the speed of an Agent, for example, the training process learns to control the speed of the Agent through this parameter.
 
 - When an agent uses discrete actions, the values in the **`ActionBuffers.DiscreteActions`** array are **integers** that each **represent a specific, discrete action**. The **discrete actions** to send to an **`IActionReceiver`**. \
   When an Agent's Policy uses **discrete** actions, the `ActionBuffers.DiscreteActions` passed to the Agent's `OnActionReceived()` function is an array of integers with length equal to `Discrete Branch Size`. \
-  When defining the discrete actions, **`Branches`** is **an array of integers**, each value **corresponds to the number of possibilities for each branch**. Each branch in branches(array) has a numbers of **possible discrete actions** \ 
+  When defining the discrete actions, **`Branches`** is **an array of integers**, each value **corresponds to the number of possibilities for each branch**. Each branch in branches(array) has a numbers of **possible discrete actions**. For each number in the branch, assign action for them. \ 
   For example, you could **define a set of discrete actions** such as:
 
   ```
