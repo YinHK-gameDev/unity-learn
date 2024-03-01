@@ -19,6 +19,12 @@ The Reinforcement Learning problem involves an agent exploring an unknown enviro
 ### ref 
 https://mofanpy.com/tutorials/machine-learning/reinforcement-learning/
 
+https://github.com/dennybritz/reinforcement-learning
+
+https://github.com/udacity/deep-reinforcement-learning
+
+https://github.com/aikorea/awesome-rl
+
 https://github.com/gzrjzcx/ML-agents/blob/master/docs/Background-Machine-Learning.md#reinforcement-learning
 
 https://aws.amazon.com/what-is/reinforcement-learning/?nc1=h_ls
