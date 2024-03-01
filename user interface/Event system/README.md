@@ -69,7 +69,7 @@ The **Event System** needs a method for **detecting where current input events n
 
 There are 3 provided Raycasters that exist by default:
 
-- **Graphic Raycaster** - Used for **UI elements**.
+- **Graphic Raycaster** - Used for **UI elements(uGUI)**.
 - **Physics 2D Raycaster** - Used for **2D physics elements**.
 - **Physics Raycaster** - Used for **3D physics elements**.
 
