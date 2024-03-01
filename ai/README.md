@@ -33,4 +33,8 @@ https://youtu.be/bv6_OKkHZKY
 Unity new AI tools \
 https://www.youtube.com/watch?v=9iUWTEv-fFE
 
+Unity AI marketplace \
+https://assetstore.unity.com/ai-hub \
+https://investors.unity.com/news/news-details/2023/Unity-Launches-New-AI-Marketplace-as-Premier-Destination-for-AI-Solutions/default.aspx
+
 
