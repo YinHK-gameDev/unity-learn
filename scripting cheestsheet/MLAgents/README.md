@@ -66,6 +66,25 @@ public void AddOneHotObservation(int observation, int range);
 
 ```
 
+
+Eg: 
+```cs
+
+ public GameObject ball;
+
+ public override void CollectObservations(VectorSensor sensor)
+ {
+    // Orientation of the cube (2 floats)
+    sensor.AddObservation(gameObject.transform.rotation.z);
+    sensor.AddObservation(gameObject.transform.rotation.x);
+    // Relative position of the ball to the cube (3 floats)
+    sensor.AddObservation(ball.transform.position - gameObject.transform.position);
+    // Velocity of the ball (3 floats)
+    sensor.AddObservation(m_BallRb.velocity);
+    // 8 floats total
+ }
+```
+
 ### Taking Actions and Assigning Rewards
 The final part of the Agent code is the `Agent.OnActionReceived()` method, which receives actions and assigns the reward.
 
