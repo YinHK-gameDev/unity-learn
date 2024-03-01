@@ -179,7 +179,7 @@ Where:
 
 Struct **`ActionBuffers`**:
 
-A structure that wraps the **`ActionSegment<T>`**s for a particular **`IActionReceiver`** and is used when **`OnActionReceived(ActionBuffers)`** is called.
+A structure that wraps the **`ActionSegment<T>`** s for a particular **`IActionReceiver`** and is used when **`OnActionReceived(ActionBuffers)`** is called.
 
 ```cs
 // Construct an ActionBuffers instance with the continuous and discrete actions that will be used
