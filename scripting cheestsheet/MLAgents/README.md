@@ -138,14 +138,8 @@ For example, if you want to apply a force to **move an agent around the environm
   You can define **multiple sets, or branches, of discrete actions** to allow an agent to perform simultaneous, independent actions. For example, you could use one branch for movement and another branch for throwing a ball left, right, up, or down, to allow the agent to do both in the same step. \
   The `ActionBuffers.DiscreteActions` array of an agent with discrete actions contains **one element for each branch**. The value of each element is the integer representing the chosen action for that branch. The agent always **chooses one action for each branch**. \
   When you use the discrete actions, you can **prevent the training process or the neural network model from choosing specific actions** in a step by implementing the **`WriteDiscreteActionMask(IDiscreteActionMask)`** method. \
-  For example, if your agent is next to a wall, you could **mask out any actions** that would result in the agent **trying to move into the wall.** \
-  > Note that when the Agent is controlled by its Heuristic, the Agent will still be able to decide to perform the masked action. In order to disallow an action, override the `Agent.WriteDiscreteActionMask()` virtual method, and call `SetActionEnabled()` on the provided `IDiscreteActionMask`:
- ```cs
-	public override void WriteDiscreteActionMask(IDiscreteActionMask actionMask)
-	{
-    		actionMask.SetActionEnabled(branch, actionIndex, isEnabled);
-	}
- ```
+  For example, if your agent is next to a wall, you could **mask out any actions** that would result in the agent **trying to move into the wall.** 
+  > Note that when the Agent is controlled by its Heuristic, the Agent will still be able to decide to perform the masked action. In order to disallow an action, override the `Agent.WriteDiscreteActionMask()` virtual method, and call `SetActionEnabled()` on the provided `IDiscreteActionMask`.
 
 
 #### `Agent.WriteDiscreteActionMask(IDiscreteActionMask)`
@@ -235,6 +229,35 @@ public readonly int Length
 
 // The zero-based offset into the original array at which this segment starts
 public readonly int Offset
+
+```
+
+Struct **`ActionSpec`**:
+
+```cs
+// An array of branch sizes for discrete actions.
+// For an IActuator that uses discrete actions, the number of branches is the Length of the Array and each index contains the branch size.
+// The cumulative sum of the total number of discrete actions can be retrieved by the SumOfDiscreteBranchSizes property.
+public int[] BranchSizes
+
+// The number of continuous actions that an Agent can take.
+public int NumContinuousActions { get; set; }
+
+// The number of branches for discrete actions that an Agent can take.
+public readonly int NumDiscreteActions { get; }
+
+// Get the total number of Discrete Actions that can be taken by calculating the Sum of all of the Discrete Action branch sizes.
+public readonly int SumOfDiscreteBranchSizes { get; }
+
+// Combines a list of actions specs and allocates a new array of branch sizes if needed.
+public static ActionSpec Combine(params ActionSpec[] specs)
+
+// Creates a Continuous ActionSpec with the number of actions available.
+public static ActionSpec MakeContinuous(int numActions)
+
+// Creates a Discrete ActionSpec with the array of branch sizes that represents the action space.
+public static ActionSpec MakeDiscrete(params int[] branchSizes)
+
 
 ```
 
@@ -426,8 +449,10 @@ https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Sen
 https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.ActionBuffers.html \
 **MLAgents.Actuators.ActionSegment<T>**: \
 https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.ActionSegment-1.html \
-**​MLAgents.​ActuatorsIAction​Receiver**: \
-https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.IActionReceiver.html
+**​MLAgents.​Actuators.IAction​Receiver**: \
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.IActionReceiver.html \
+**​MLAgents.​Actuators.ActionSpec**: \
+https://docs.unity3d.com/Packages/com.unity.ml-agents@2.3/api/Unity.MLAgents.Actuators.ActionSpec.html?q=branch
 
 https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Create-New.md
 
