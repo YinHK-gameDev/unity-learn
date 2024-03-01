@@ -106,7 +106,8 @@ For example, if you want to apply a force to **move an agent around the environm
   When an Agent's Policy has **Continuous** actions, the `ActionBuffers.ContinuousActions` passed to the Agent's `OnActionReceived()` function is an array with length equal to the `Continuous Action Size` property value. The individual values in the array have whatever meanings that you ascribe to them. If you assign an element in the array as the speed of an Agent, for example, the training process learns to control the speed of the Agent through this parameter.
 
 - When an agent uses discrete actions, the values in the **`ActionBuffers.DiscreteActions`** array are **integers** that each **represent a specific, discrete action**. The **discrete actions** to send to an **`IActionReceiver`**. \
-  When an Agent's Policy uses **discrete** actions, the `ActionBuffers.DiscreteActions` passed to the Agent's `OnActionReceived()` function is an array of integers with length equal to `Discrete Branch Size`. When defining the discrete actions, `Branches` is an array of integers, each value corresponds to the number of possibilities for each branch. \
+  When an Agent's Policy uses **discrete** actions, the `ActionBuffers.DiscreteActions` passed to the Agent's `OnActionReceived()` function is an array of integers with length equal to `Discrete Branch Size`. \
+  When defining the discrete actions, **`Branches`** is **an array of integers**, each value **corresponds to the number of possibilities for each branch**. Each branch in branches(array) has a numbers of **possible discrete actions** \ 
   For example, you could **define a set of discrete actions** such as:
 
   ```
@@ -171,7 +172,7 @@ Interface for writing a mask to **disable discrete actions for agents for the ne
 Where:
 
 -   **`branch`** is the **index (starting at 0) of the branch** on which you want to allow or **disallow the action**. The branch for which the actions will be **masked**.
--   **`actionIndex`** is the **index of the action** that you want to allow or disallow.
+-   **`actionIndex`** is the **index of the action** in the specific branch that you want to allow or disallow.
 -   **`isEnabled`** is a bool **indicating whether the action should be allowed or not**.
 
 > By default, all discrete actions are allowed. If isEnabled is false, the agent will not be able to perform the actions passed as argument at the next decision for the specified action branch. The actionIndex corresponds to the action options the agent will be unable to perform.
@@ -244,6 +245,8 @@ Struct **`ActionSpec`**:
 
 ```cs
 // An array of branch sizes for discrete actions.
+// Branches is an array of integers
+// The array of branch sizes for the discrete actions. Each index contains the number of actions available for that branch.
 // For an IActuator that uses discrete actions, the number of branches is the Length of the Array and each index contains the branch size.
 // The cumulative sum of the total number of discrete actions can be retrieved by the SumOfDiscreteBranchSizes property.
 public int[] BranchSizes
@@ -266,9 +269,7 @@ public static ActionSpec MakeContinuous(int numActions)
 // Creates a Discrete ActionSpec with the array of branch sizes that represents the action space.
 public static ActionSpec MakeDiscrete(params int[] branchSizes)
 
-
 ```
-
 
 
 Interface **`IActionReceiver`**:
