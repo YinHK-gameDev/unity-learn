@@ -15,6 +15,13 @@ The primary goal of object pooling is to improve performance by reducing the ove
 
 > **Note**: Instead of instantiating and destroying, object pooling method is to **reuse the disable object**. Just **disable after using the object** and **enable to reuse it when is nee**ded. 
 
+- Create a pool - **`List<GameObject> pool`**
+- **InitializeObjectPool** - pre-instantiate the object & set them inactive, add them into the pool
+- **GetObjectFromPool**
+- **ReturnObjectToPool**
+- Using Object Pooling methods in the script
+
+
 Eg: \
 Create a **ObjectPool** class:
 ```cs
