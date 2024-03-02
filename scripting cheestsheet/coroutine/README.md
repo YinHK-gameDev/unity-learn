@@ -47,7 +47,7 @@ https://docs.unity3d.com/ScriptReference/WaitForSeconds.html
 
 ### Start coroutine once
 
-**`StartCoroutine`** in Update but **once**
+**`StartCoroutine`** in `Update` but **once**
 ```cs
 bool isCoroutineStarted = false;
 
