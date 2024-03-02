@@ -13,7 +13,7 @@ The primary goal of object pooling is to improve performance by reducing the ove
 
 > 📌 better than instantiate and destroy method
 
-> **Note**: Instead of instantiating and destroying, object pooling method is to reuse the disable object. Just disable after using the object and enable to reuse it when is needed. 
+> **Note**: Instead of instantiating and destroying, object pooling method is to **reuse the disable object**. Just **disable after using the object** and **enable to reuse it when is nee**ded. 
 
 Eg:
 ```cs
