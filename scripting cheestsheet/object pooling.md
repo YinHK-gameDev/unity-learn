@@ -15,7 +15,8 @@ The primary goal of object pooling is to improve performance by reducing the ove
 
 > **Note**: Instead of instantiating and destroying, object pooling method is to **reuse the disable object**. Just **disable after using the object** and **enable to reuse it when is nee**ded. 
 
-Eg:
+Eg: \
+Create a **ObjectPool** class:
 ```cs
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,6 +26,7 @@ public class ObjectPool : MonoBehaviour
     public GameObject prefab;
     public int poolSize = 10;
 
+    // Declare a list to store the object in the pool
     private List<GameObject> objectPool = new List<GameObject>();
 
     void Start()
@@ -32,6 +34,7 @@ public class ObjectPool : MonoBehaviour
         InitializeObjectPool();
     }
 
+    // Pre-instantiate the objects in the pool & set them inactive first
     void InitializeObjectPool()
     {
         for (int i = 0; i < poolSize; i++)
@@ -42,10 +45,12 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
+    // Get the object from the pool & set it to be active for use later
     public GameObject GetObjectFromPool()
     {
         foreach (GameObject obj in objectPool)
         {
+            // Find any inactive object from the pool & set it to be active
             if (!obj.activeInHierarchy)
             {
                 obj.SetActive(true);
@@ -57,6 +62,7 @@ public class ObjectPool : MonoBehaviour
         return null;
     }
 
+    // If the object is unused right now, set it to be inactive & return to the pool
     public void ReturnObjectToPool(GameObject obj)
     {
         obj.SetActive(false);
@@ -64,7 +70,7 @@ public class ObjectPool : MonoBehaviour
 }
 
 ```
-
+Then give reference to that class, use that class for object pooling in your script
 ```cs
 public class ExampleUsage : MonoBehaviour
 {
@@ -78,6 +84,7 @@ public class ExampleUsage : MonoBehaviour
 
     void UsePooledObject()
     {
+        // Get the object from the pool
         GameObject obj = objectPool.GetObjectFromPool();
         if (obj != null)
         {
@@ -152,7 +159,7 @@ public class GameObjectPool
 
 2\. Attach the script to your game controller.
 
-3\. Open the script and write the following within the class definit
+3\. Open the script and write the following within the class define it
 
 ```cs
 public List<GameObject> pooledObjects;
@@ -189,7 +196,7 @@ GameObject bullet = ObjectPool.SharedInstance.GetPooledObject();
 
 ```
 
-The code will request a GameObject to become active, and set the properties of that given GameObject. It removes the need to instantiate a new object and efficiently requests and acquires a GameObject that is **only pre-instantiated**, relieving the burden from the CPU of having to create and destroy a new one.
+The code will request a GameObject to become active, and set the properties of that given GameObject. It removes the need to instantiate a new object and efficiently requests and acquires a GameObject that is **only pre-instantiated**, **relieving the burden from the CPU** of having to create and destroy a new one.
 
 Next, replace any code that destroys the bullets, such as:
 
@@ -204,12 +211,12 @@ gameobject.SetActive(false);
 ```
 
 
-> **Note**: Pre-instantiting an amount of game objects needed for the pool, Keep pooled objects setting active and inactive return to the pool. This way let you keeping reuse the game objects without destroy them and instantiating again.
+> **Note**: **Pre-instantiting** an amount of game objects **needed for the pool**, **Keep pooled objects setting active** and **inactive return to the poo**l. This way let you **keeping reuse the game objects without destroy them** and **instantiating again**.
 
 
 > Unity already has one built in class if you are using Unity 2021.
 
-`ObjectPool` class \
+**`ObjectPool`** class \
 https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html
 
 
