@@ -57,18 +57,12 @@ IEnumerator MyCoroutineMethod()
 Starts a Coroutine.
 
 ```cs
-    public Coroutine StartCoroutine(IEnumerator routine);
+public Coroutine StartCoroutine(IEnumerator routine);
 ```
 
 ```cs
 
 public Coroutine StartCoroutine(string methodName, object value = null);
-```
-
-
-```cs
-
-
 ```
 
 https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html
