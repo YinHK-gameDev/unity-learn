@@ -12,6 +12,7 @@
 - Delete **`Update()`** since not using it, but keep **`Start()`**.
 - Next, we will add the logic that will let our Agent learn to roll to the cube using reinforcement learning. More specifically, we will need to extend three methods from the `Agent` base class:
 
+  -   **`Initialize()`**
   -   **`OnEpisodeBegin()`**
   -   **`CollectObservations(VectorSensor sensor)`**
   -   **`OnActionReceived(ActionBuffers actionBuffers)`**
