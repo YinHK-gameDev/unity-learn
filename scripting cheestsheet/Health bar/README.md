@@ -1,5 +1,8 @@
 ## UI - Health Bar
 
+### Create Slider for heath bar
+
+Add slider UI and fill with value
 
 ### **Health bar move smoothly**
 > ✅ use **lerp** through update method
