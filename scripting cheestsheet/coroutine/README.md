@@ -7,6 +7,8 @@ In most situations, when you call a method, it runs to completion and then retur
 
 In situations where you would like to use a method call to contain a procedural animation or a sequence of events over time, you can use a coroutine.
 
+> It’s best to use coroutines if you need to **deal with long asynchronous operations**, such as **waiting for HTTP transfers**, **asset loads**, or **file I/O to complete**.
+
 ![](./coroutine1.png)
 ![](./coroutine2.png)
 
