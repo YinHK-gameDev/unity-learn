@@ -23,7 +23,7 @@ However, it’s important to remember that coroutines aren’t threads. Synchron
 You can stop a Coroutine with `StopCoroutine` and `StopAllCoroutines`. 
 > A **coroutine**s also **stops** when the GameObject it is attached to is **disabled with `SetActive(false)`**.
 
-A **coroutine** is a function that can **suspend its execution** (**`yield`**) until the given **YieldInstruction finishes**. **`IEnumerator`** function 中 **`yield return`**, **`yield`** execution of the function，return a value to **`IEnumerator`**, and the execution of code will resume at this point. 必須有condition(eg: if/while) 讓 **`IEnumerator`** function loop. 大部分的 Coroutine 會在 Update() 結束後的 B 時間點執行，那要如何切割 Coroutine 呢？在 Coroutine 函式的每一個區段間，可以用 `yield return null` 中斷執行。Coroutine 用 `yield return null` 中斷執行後要等到下一幀同樣的 B 時間點才會接續執行
+A **coroutine** is a function that can **suspend its execution** (**`yield`**) until the given **YieldInstruction finishes**. **`IEnumerator`** function 中 **`yield return`**, **`yield`** execution of the function，return a value to **`IEnumerator`**, and the execution of code will resume at this point. 必須有condition(eg: if/while) 讓 **`IEnumerator`** function loop. 大部分的 Coroutine 會在 Update() 結束後的 B 時間點執行，那要如何切割 Coroutine 呢？在 Coroutine 函式的每一個區段間，可以用 `yield return null` 中斷執行。Coroutine 用 `yield return null` 中斷執行後要等到下一幀同樣的 B 時間點才會接續執行. To create a coroutine in C#, we simply create a method that returns **`IEnumerator`**. It also needs a **`yield return`** statement. The yield return statement is special; it is what actually tells Unity to pause the script and continue on the next frame.
 
 
 
@@ -54,10 +54,20 @@ IEnumerator MyCoroutineMethod()
 - **`yield return StartCoroutine()`** Chains the coroutine, and will wait for the chained coroutine to complete first.
 
 **StartCoroutine**
+Starts a Coroutine.
+
 ```cs
     public Coroutine StartCoroutine(IEnumerator routine);
 ```
+
 ```cs
+
+public Coroutine StartCoroutine(string methodName, object value = null);
+```
+
+
+```cs
+
 
 ```
 
@@ -65,12 +75,64 @@ https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html
 
 **StopCoroutine**
 
+Stops the first coroutine named methodName, or the coroutine stored in routine running on this behaviour.
+
+```cs
+public void StopCoroutine(string methodName);
+```
+
+```cs
+public void StopCoroutine(IEnumerator routine);
+
+```
+
 https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopCoroutine.html
+
+
+**StopAllCoroutines**
+
+Stops all coroutines running on this behaviour.
+
+```cs
+public void StopAllCoroutines();
+```
+
+https://docs.unity3d.com/ScriptReference/MonoBehaviour.StopAllCoroutines.html
+
 
 **WaitForSeconds**
 
 https://docs.unity3d.com/ScriptReference/WaitForSeconds.html
 
+
+
+```cs
+// In this example we show how to invoke a coroutine using a string name and stop it.
+
+using UnityEngine;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour
+{
+    IEnumerator Start()
+    {
+        StartCoroutine("DoSomething", 2.0f);
+        yield return new WaitForSeconds(1);
+        StopCoroutine("DoSomething");
+    }
+
+    IEnumerator DoSomething(float someParameter)
+    {
+        while (true)
+        {
+            print("DoSomething Loop");
+
+            // Yield execution of this coroutine and return to the main loop until next frame
+            yield return null;
+        }
+    }
+}
+```
 
 ### Start coroutine once
 
