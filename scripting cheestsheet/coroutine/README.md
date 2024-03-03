@@ -26,6 +26,25 @@ You can stop a Coroutine with `StopCoroutine` and `StopAllCoroutines`.
 A **coroutine** is a function that can **suspend its execution** (**`yield`**) until the given **YieldInstruction finishes**. **`IEnumerator`** function 中 **`yield return`**, **`yield`** execution of the function，return a value to **`IEnumerator`**, and the execution of code will resume at this point. 必須有condition(eg: if/while) 讓 **`IEnumerator`** function loop. 大部分的 Coroutine 會在 Update() 結束後的 B 時間點執行，那要如何切割 Coroutine 呢？在 Coroutine 函式的每一個區段間，可以用 `yield return null` 中斷執行。Coroutine 用 `yield return null` 中斷執行後要等到下一幀同樣的 B 時間點才會接續執行
 
 
+
+```cs
+
+void Start ()
+{
+   StartCoroutine(MyCoroutineMethod());
+   // or using method name as string
+   // eg: tartCoroutine("MyCoroutineMethod")  
+}
+
+// Use IEnumerator function & yield return
+IEnumerator MyCoroutineMethod()
+{
+   // Your code here…
+   yield return null;
+}
+```
+
+
 ### **Yieldinstruction:**
 
 - **`yield return null` (**-The coroutine will continue after all Update functions have been called on the next frame.**)**
