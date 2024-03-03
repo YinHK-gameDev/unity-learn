@@ -138,7 +138,7 @@ public class TestingEventSubscriber : MonoBehaviour {
 ### Using Generic UnityEvents in script
 **Create your custom UnityEvents**:
 
-**`UnityEvent`** has several generic overloads which you can use to add parameters(event data) through scripting.
+**`UnityEvent`** has several generic overloadings which you can use to add parameters(event data) through scripting.
 
 By default a **`UnityEvent`** in a **`Monobehaviour`** **binds dynamically to a void function**. This does not have to be the case as dynamic invocation of **`UnityEvents`** supports **binding** to functions with up to **4 arguments**. 
 
