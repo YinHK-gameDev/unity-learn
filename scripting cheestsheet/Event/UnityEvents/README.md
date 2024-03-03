@@ -108,7 +108,7 @@ Callback function cannot be found in search, **Generic UnityEvents** should be u
 - Using **`UnityEvent`**, you can use editor to **add event listener manually** in inspector.
 
 
-### Declare UnityEvent
+### Declare UnityEvent & add callback manually in inspector
 
 ```cs
 public class TestingEvents : MonoBehaviour {
@@ -122,7 +122,7 @@ public class TestingEvents : MonoBehaviour {
     }
 }
 ```
-In inspecter, the Event section you declared UnityEvent in the script, select the **"+"** icon to add a slot for a **callback**, select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this), select the **function** you wish to be called (a method that subscribe to the event - event handler).
+In inspector, the Event section you declared `UnityEvent` in the script, select the **"+"** icon to add a slot for a **callback**, select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this), select the **function** you wish to be called (a method that subscribe to the event - event handler).
 
 ```cs
 public class TestingEventSubscriber : MonoBehaviour {
@@ -134,8 +134,12 @@ public class TestingEventSubscriber : MonoBehaviour {
 }
 ```
 
+> This workflow only suitable for **no parameter or exactly only parameter be passed** to the callback function.
 
 ### Using Generic UnityEvents in script
+
+> Not required manually add callback in inspector, only in script.
+
 **Create your custom UnityEvents**:
 
 **`UnityEvent`** has several generic overloadings which you can use to add parameters(event data) through scripting.
