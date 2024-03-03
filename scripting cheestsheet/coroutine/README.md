@@ -30,7 +30,7 @@ A **coroutine** is a function that can **suspend its execution** (**`yield`**) u
 - **`yield return new WaitForSeconds( )` (**-Continue after a specified time delay, after all Update functions have been called for the frame.**)**
 - **`yield return new WaitForFixedUpdate( )` (**-Continue after all FixedUpdate has been called on all scripts.**)**
 - **`yield return new WaitForEndOfFrame( )` (**-Continue after the end of frame. **)**
-- **`yield StartCoroutine`** Chains the coroutine, and will wait for the MyFunc coroutine to complete first.
+- **`yield return StartCoroutine()`** Chains the coroutine, and will wait for the MyFunc coroutine to complete first.
 
 **StartCoroutine**
 
