@@ -33,7 +33,7 @@ void Start ()
 {
    StartCoroutine(MyCoroutineMethod());
    // or using method name as string
-   // eg: tartCoroutine("MyCoroutineMethod")  
+   // eg: StartCoroutine("MyCoroutineMethod")  
 }
 
 // Use IEnumerator function & yield return
