@@ -14,7 +14,7 @@ Access to **application runtime data**.
 #### `Application.persistentDataPath`
 Contains the path to a persistent data directory (Read Only).
 
-This value is a directory path (notice the difference in slash directions on different operating systems according to `Path.DirectorySeparatorChar)`, where you can store data that you want to be kept between runs. When you publish on iOS and Android, persistentDataPath points to a public directory on the device. Files in this location are not erased by app updates. The files can still be erased by users directly.
+This value is a directory path (notice the difference in slash directions on different operating systems according to `Path.DirectorySeparatorChar)`, where you **can store data** that you want to be **kept between runs**. When you publish on **iOS** and **Android**, `persistentDataPath` points to a **public directory on the device**. Files in this location are **not erased by app updates**. The files **can still be erased by users directly**.
 
 When you build the Unity application, a GUID is generated that is based on the Bundle Identifier. This GUID is part of persistentDataPath. If you keep the same Bundle Identifier in future versions, the application keeps accessing the same location on every update.
 
@@ -31,6 +31,14 @@ public class Info : MonoBehaviour
     }
 }
 ```
+
+- **Windows Store Apps**: `Application.persistentDataPath` points to `C:\Users\<user>\AppData\LocalLow\<company name>`
+- **WebGL**: `Application.persistentDataPath` points to `/idbfs/<md5 hash of data path>` where the data path is the URL stripped of everything including and after the last '/' before any '?' components.
+- **Linux**: `Application.persistentDataPath` points to `$XDG_CONFIG_HOME/unity3d` or `$HOME/.config/unity3d`.
+- **iOS**: `Application.persistentDataPath` points to **/var/mobile/Containers/Data/Application/<guid>/Documents**.
+- **tvOS**: `Application.persistentDataPath` is not supported and returns an empty string.
+- **Android**: Application.persistentDataPath points to `/storage/emulated/<userid>/Android/data/<packagename>/files` on most devices (some older phones might point to location on SD card if present), the path is resolved using `android.content.Context.getExternalFilesDir`.
+- **Mac**: `Application.persistentDataPath` points to the user Library folder. (This folder is often hidden.) In recent Unity releases user data is written into `~/Library/Application Support/company name/product name`. Older versions of Unity wrote into the `~/Library/Caches folder`, or `~/Library/Application Support/unity.company name.product name`. 
 
 
 ### ref
