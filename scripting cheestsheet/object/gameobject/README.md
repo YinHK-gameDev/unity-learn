@@ -60,26 +60,25 @@ https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
 ### Find Game object 
 
 - **`GameObject.Find()`** \
-  Finds a GameObject by name and returns it. \
-
+  Finds a GameObject by name and returns it. 
   ```cs
     public static GameObject Find(string name);
   ```
   https://docs.unity3d.com/ScriptReference/GameObject.Find.html
 - **`GameObject.FindWithTag()`** \
-  Returns one active GameObject tagged tag. Returns null if no GameObject was found. \
+  Returns one active GameObject tagged tag. Returns null if no GameObject was found. 
   ```cs
     public static GameObject FindWithTag(string tag);
   ```
   https://docs.unity3d.com/ScriptReference/GameObject.FindWithTag.html
 - **`GameObject.FindGameObjectsWithTag`** \
-  Returns an array of active GameObjects tagged `tag`. Returns empty array if no GameObject was found. \
+  Returns an array of active GameObjects tagged `tag`. Returns empty array if no GameObject was found. 
   ```cs
     public static GameObject[] FindGameObjectsWithTag(string tag);
   ```
   https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
 - **`GameObject.CompareTag()`** \
-  Returns boolean if exists the tag in the gameobject. \
+  Returns boolean if exists the tag in the gameobject. 
   ```cs
     public bool CompareTag(string tag);
   ```
