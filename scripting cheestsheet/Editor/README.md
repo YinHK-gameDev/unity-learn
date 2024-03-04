@@ -19,6 +19,29 @@ Derive from this base class to create a custom inspector or editor for your cust
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Editor.htmlEditor.CreateCachedEditor.html">CreateCachedEditor</a></td><td class="desc">On return previousEditor is an editor for targetObject or targetObjects. The function either returns if the editor is already tracking the objects, or destroys the previous editor and creates a new one.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Editor.htmlEditor.CreateCachedEditorWithContext.html">CreateCachedEditorWithContext</a></td><td class="desc">Creates a cached editor using a context object.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Editor.htmlEditor.CreateEditor.html">CreateEditor</a></td><td class="desc">Make a custom editor for targetObject or targetObjects.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Editor.htmlEditor.CreateEditorWithContext.html">CreateEditorWithContext</a></td><td class="desc">Make a custom editor for targetObject or targetObjects with a context object.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Editor.htmlEditor.DrawFoldoutInspector.html">DrawFoldoutInspector</a></td><td class="desc">Draws the inspector GUI with a foldout header for target.</td></tr></tbody></table>
 
 
+
+
+Eg:
+```cs
+using UnityEditor;
+using UnityEditor.UIElements;
+using UnityEngine;
+using UnityEngine.UIElements;
+[CustomEditor(typeof(MyPlayer))]
+public class MyPlayerEditor : Editor
+{
+    const string resourceFilename = "custom-editor-uie";
+    public override VisualElement CreateInspectorGUI()
+    {
+        VisualElement customInspector = new VisualElement();
+        var visualTree = Resources.Load(resourceFilename) as VisualTreeAsset;
+        visualTree.CloneTree(customInspector);
+        customInspector.styleSheets.Add(Resources.Load($"{resourceFilename}-style") as StyleSheet);
+        return customInspector;
+    }
+}
+```
+
 ### ref 
 https://docs.unity3d.com/ScriptReference/Editor.html
 
