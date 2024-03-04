@@ -10,6 +10,28 @@ Access to **application runtime data**.
 
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.CanStreamedLevelBeLoaded.html">CanStreamedLevelBeLoaded</a></td><td class="desc">Checks if the streamed level can be loaded.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.GetStackTraceLogType.html">GetStackTraceLogType</a></td><td class="desc">Get stack trace logging options. The default value is StackTraceLogType.ScriptOnly.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.HasProLicense.html">HasProLicense</a></td><td class="desc">Is Unity activated with the Pro license?</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.HasUserAuthorization.html">HasUserAuthorization</a></td><td class="desc">Check if the user has authorized use of the webcam or microphone on iOS and WebGL.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.IsPlaying.html">IsPlaying</a></td><td class="desc">Returns true if the given object is part of the playing world either in any kind of built Player or in Play Mode.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.OpenURL.html">OpenURL</a></td><td class="desc">Opens the URL specified, subject to the permissions and limitations of your app’s current platform and environment.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.Quit.html">Quit</a></td><td class="desc">Quits the player application.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.RequestAdvertisingIdentifierAsync.html">RequestAdvertisingIdentifierAsync</a></td><td class="desc">Request advertising ID for iOS and Windows Store.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.RequestUserAuthorization.html">RequestUserAuthorization</a></td><td class="desc">Request authorization to use the webcam or microphone on iOS and WebGL.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.SetStackTraceLogType.html">SetStackTraceLogType</a></td><td class="desc">Set stack trace logging options. The default value is StackTraceLogType.ScriptOnly.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.Unload.html">Unload</a></td><td class="desc">Unloads the Unity Player.</td></tr></tbody></table>
 
+| Events | Descriptions |
+| --- | --- |
+| `deepLinkActivated` | This event is raised when an application running on Android, iOS, or the Universal Windows Platform (UWP) is activated using a deep link URL. |
+| `focusChanged` | Defines the delegate to use to register for events in which the focus gained or lost. |
+| `logMessageReceived` | Event that is fired if a log message is received. |
+| `logMessageReceivedThreaded` | Event that is fired if a log message is received. |
+| `lowMemory` | This event occurs when your app receives a low-memory notification from the device it is running on. |
+| `memoryUsageChanged` | Informs about significant changes in the application's memory usage. |
+| `onBeforeRender` | Delegate method used to register for "Just Before Render" input updates for VR devices. |
+| `quitting` | Unity raises this event when the Player application is quitting. |
+| `unloading` | Unity raises this event when Player is unloading. |
+| `wantsToQuit` | Unity raises this event when the player application wants to quit. |
+
+| Delegates | Descriptions |
+| --- | --- |
+| `AdvertisingIdentifierCallback` | Delegate method for fetching advertising ID. |
+| `LogCallback` | Use this delegate type with Application.logMessageReceived or Application.logMessageReceivedThreaded to monitor what gets logged. |
+| `LowMemoryCallback` | This is the delegate function when a mobile device notifies of low memory. |
+| `MemoryUsageChangedCallback` | A delegate for the Application.memoryUsageChanged vent. |
+
+
+
 
 #### `Application.Quit`
 Quits the application, quit the game. 
