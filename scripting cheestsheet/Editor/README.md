@@ -153,6 +153,26 @@ public class MyEditorWindow : EditorWindow
 | `HasOpenInstances` | Checks if an editor window is open. |
 
 
+| Messages | Descriptions |
+| --- | --- |
+| `Awake` | Called as the new window is opened. |
+| `CreateGUI` | CreateGUI is called when the EditorWindow's rootVisualElement is ready to be populated. |
+| `hasUnsavedChanges` | This property specifies whether the Editor prompts the user to save or discard unsaved changes before the window closes. |
+| `OnBecameInvisible` | Called after the window is removed from a container view, or is no longer visible within a tabbed collection of EditorWindow. |
+| `OnBecameVisible` | Called after the window is added to a container view. |
+| `OnDestroy` | OnDestroy is called to close the EditorWindow window. |
+| `OnFocus` | Called when the window gets keyboard focus. |
+| `OnGUI` | Implement your own editor GUI here. |
+| `OnHierarchyChange` | Handler for message that is sent when an object or group of objects in the hierarchy changes. |
+| `OnInspectorUpdate` | OnInspectorUpdate is called at 10 frames per second to give the inspector a chance to update. |
+| `OnLostFocus` | Called when the window loses keyboard focus. |
+| `OnProjectChange` | Handler for message that is sent whenever the state of the project changes. |
+| `OnSelectionChange` | Called whenever the selection has changed. |
+| `saveChangesMessage` | The message that displays to the user if they are prompted to save |
+| `Update` | Called multiple times per second on all visible windows. |
+
+
+
 ### ref 
 **Editor** \
 https://docs.unity3d.com/ScriptReference/Editor.html
