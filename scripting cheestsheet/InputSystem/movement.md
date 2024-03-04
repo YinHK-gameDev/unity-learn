@@ -1,5 +1,6 @@
 ## Movement
 
+**Directly Reading Device States**: 
 ```cs
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -38,7 +39,7 @@ Gamepad.current.leftStick.down.ReadValue();
 Gamepad.current.leftStick.left.ReadValue();
 Gamepad.current.leftStick.right.ReadValue();
 ```
-
+**Using Embedded Actions**:
 ```cs
 // This embedded action is configurable in the inspector:
 public InputAction moveAction;
@@ -63,6 +64,7 @@ public void OnDisable()
 }
 ```
 
+**Using an Actions Asset**:
 ```cs
 
 // assign the actions asset to this field in the inspector:
@@ -99,8 +101,8 @@ void OnDisable()
 
 ```
 
+**Using Input Action Assets with reference to automatically generate a C# wrapper class**:
 ```cs
-
 // PlayerInputActions is the C# class that Unity auto-generated.
 // It encapsulates the data from the .inputactions asset we created
 // and automatically looks up all the maps and actions for us.
@@ -131,6 +133,7 @@ void FixedUpdate()
 
 ```
 
+**Using an Actions Asset and Player Input Component**:
 ```cs
 public void OnMove(InputAction.CallbackContext context)
 {
