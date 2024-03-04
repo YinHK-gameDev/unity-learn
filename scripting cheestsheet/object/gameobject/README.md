@@ -120,6 +120,18 @@ void OnCollisionEnter(Collision otherObj)
 
 https://docs.unity3d.com/ScriptReference/Object.Destroy.html
 
+
+### Do not destroy the target game object when loading a new Scene
+
+```cs
+ public static void DontDestroyOnLoad(Object target);
+```
+
+The **load of a new Scene destroys all current Scene objects**. **Call `Object.DontDestroyOnLoad` to preserve an Object during scene loading**. If the target Object is a component or GameObject, Unity also **preserves all of the Transform’s children**. `Object.DontDestroyOnLoad` **only works for root GameObjects or components on root GameObjects**. `Object.DontDestroyOnLoad` does not return a value.
+
+
+https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html
+
 ### Clone the existing GameObject
 **`Instantiate()`**  function is used to clone the object original and return the clones. Most commonly used to instantiate projectiles, AI Enemies, particle explosions or wrecked object replacements.
 
