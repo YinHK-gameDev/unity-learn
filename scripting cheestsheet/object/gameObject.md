@@ -18,7 +18,7 @@ Returns the component of Type type if the game object has one attached, null if 
 https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html
 
 ### Accessing other game objects
-add a public GameObject variable to the script
+add a **public GameObject** variable to the script
 eg:
 ```cs
   public class Enemy : MonoBehaviour 
