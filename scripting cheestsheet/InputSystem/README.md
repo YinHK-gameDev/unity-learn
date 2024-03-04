@@ -1,6 +1,6 @@
 ## Unity InputSystem
 
-
+> Using an Actions Asset & Player Input Component, or using Input Action Assets with  automatically generate a C# wrapper class is better choice for handling input 
 
 
 ### ref 
