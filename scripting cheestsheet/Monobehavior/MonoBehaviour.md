@@ -2,7 +2,12 @@
 
 ### Properties
 
-<table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour-destroyCancellationToken.html">destroyCancellationToken</a></td><td class="desc">Cancellation token raised when the MonoBehaviour is destroyed (Read Only).</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour-runInEditMode.html">runInEditMode</a></td><td class="desc">Allow a specific instance of a MonoBehaviour to run in edit mode (only available in the editor). **By default, script components are only executed in play mode**. By setting this property, the MonoBehaviour will have its callback functions executed while the Editor **is not in playmode**.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour-useGUILayout.html">useGUILayout</a></td><td class="desc">Disabling this lets you skip the GUI layout phase.</td></tr></tbody></table>
+| Properties | Descriptions |
+| --- | --- |
+| `destroyCancellationToken` | Cancellation token raised when the MonoBehaviour is destroyed (Read Only). |
+| `runInEditMode` | Allow a specific instance of a MonoBehaviour to run in edit mode (only available in the editor). **By default, script components are only executed in play mod**e. By setting this property, the MonoBehaviour will have its callback functions executed while the Editor is **not in playmode**.|
+| `useGUILayout` | Disabling this lets you skip the GUI layout phase. |
+
 
 ### Public Methods
 
