@@ -6,7 +6,6 @@ Unity has a class in the UnityEngine namespace called Object, which acts as a ba
 
 Any public variable you make that derives from Object gets shown in the inspector as a drop target, allowing you to set the value from the GUI. UnityEngine.Object is the base class of all built-in Unity objects.
 
-https://docs.unity3d.com/ScriptReference/Object.html
 
 ### `Object.FindObjectsOfType<type>()`
 
@@ -27,3 +26,9 @@ https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html
 ### Static Methods
 
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Object.htmlObject.Destroy.html">Destroy</a></td><td class="desc">Removes a GameObject, component or asset.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Object.htmlObject.DestroyImmediate.html">DestroyImmediate</a></td><td class="desc">Destroys the object obj immediately. You are strongly recommended to use Destroy instead.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Object.htmlObject.DontDestroyOnLoad.html">DontDestroyOnLoad</a></td><td class="desc">Do not destroy the target Object when loading a new Scene.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Object.htmlObject.FindAnyObjectByType.html">FindAnyObjectByType</a></td><td class="desc">Retrieves any active loaded object of Type type.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Object.htmlObject.FindFirstObjectByType.html">FindFirstObjectByType</a></td><td class="desc">Retrieves the first active loaded object of Type type.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Object.htmlObject.FindObjectOfType.html">FindObjectOfType</a></td><td class="desc">Returns the first active loaded object of Type type.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Object.htmlObject.FindObjectsByType.html">FindObjectsByType</a></td><td class="desc">Retrieves a list of all loaded objects of Type type.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Object.htmlObject.FindObjectsOfType.html">FindObjectsOfType</a></td><td class="desc">Gets a list of all loaded objects of Type type.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Object.htmlObject.Instantiate.html">Instantiate</a></td><td class="desc">Clones the object original and returns the clone.</td></tr></tbody></table>
+
+
+
+### ref
+https://docs.unity3d.com/ScriptReference/Object.html
+
