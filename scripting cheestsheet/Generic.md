@@ -21,3 +21,49 @@ void FuncName<T>()
 class  GenericClassName<T>  { .... }
 ```
 [Generic Classes - C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-classes)
+
+
+### Multiple generic types
+
+You can specify more than one parameter type. To do this, in the <> operator, after the first generic type, enter a comma and another generic type.
+
+
+```cs
+public class Exercise<T, V>
+{
+
+}
+```
+
+```cs
+public class Exercise<T, V>
+{
+    private T t;
+    private V v;
+
+    public void SetTValue(T value)
+    {
+        t = value;
+    }
+
+    public T GetTValue()
+    {
+        return t;
+    }
+
+    public void SetVValue(V value)
+    {
+        v = value;
+    }
+    public V GetVValue()
+    {
+        return v;
+    }
+
+    public  void Show(T tValue, V vValue)
+    {
+        Console.WriteLine(L"First:  {0}\nSecond: {1}", tValue, vValue);
+    }
+}
+
+```
