@@ -1,5 +1,5 @@
 ## Application
-Access to application runtime data.
+Access to **application runtime data**.
 
 ### `Application.persistentDataPath`
 Contains the path to a persistent data directory (Read Only).
