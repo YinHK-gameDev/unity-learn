@@ -51,7 +51,7 @@ If one of collider is trigger, both collider will **pass through each other** wh
 **Requirement for collision generating trigger messages**:
 - Both objects **must** have a collider.
 - At least one of them **contain a rigidbody**.
-- At least one of them has **`Collider.isTrigger` enabled**.
+- At least one of them has **`Collider.isTrigger` enabled**(one of collider is **trigger** or both).
 
 **Requirement for collision generating collision detection messages**:
 - Both objects **must** have a collider.
