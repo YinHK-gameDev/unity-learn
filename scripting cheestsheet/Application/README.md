@@ -11,6 +11,23 @@ Access to **application runtime data**.
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.CanStreamedLevelBeLoaded.html">CanStreamedLevelBeLoaded</a></td><td class="desc">Checks if the streamed level can be loaded.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.GetStackTraceLogType.html">GetStackTraceLogType</a></td><td class="desc">Get stack trace logging options. The default value is StackTraceLogType.ScriptOnly.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.HasProLicense.html">HasProLicense</a></td><td class="desc">Is Unity activated with the Pro license?</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.HasUserAuthorization.html">HasUserAuthorization</a></td><td class="desc">Check if the user has authorized use of the webcam or microphone on iOS and WebGL.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.IsPlaying.html">IsPlaying</a></td><td class="desc">Returns true if the given object is part of the playing world either in any kind of built Player or in Play Mode.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.OpenURL.html">OpenURL</a></td><td class="desc">Opens the URL specified, subject to the permissions and limitations of your app’s current platform and environment.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.Quit.html">Quit</a></td><td class="desc">Quits the player application.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.RequestAdvertisingIdentifierAsync.html">RequestAdvertisingIdentifierAsync</a></td><td class="desc">Request advertising ID for iOS and Windows Store.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.RequestUserAuthorization.html">RequestUserAuthorization</a></td><td class="desc">Request authorization to use the webcam or microphone on iOS and WebGL.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.SetStackTraceLogType.html">SetStackTraceLogType</a></td><td class="desc">Set stack trace logging options. The default value is StackTraceLogType.ScriptOnly.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Application.htmlApplication.Unload.html">Unload</a></td><td class="desc">Unloads the Unity Player.</td></tr></tbody></table>
 
 
+#### `Application.Quit`
+Quits the application, quit the game. 
+
+Shut down the running application. 
+
+> However, the `Application.Quit` call is **ignored in the Unity Editor**. Only work at real device
+
+**Android and iOS platforms have their own dedicated interfaces to hide and close applications**, which might be the preferred way to close applications for some users. Therefore, it's not recommended to create your own way of shutting down with Application.Quit to prevent inconsistent user experience between your application and these platform interfaces.
+
+If you must programmatically quit an Android application, you can instead move the application to the background via Activity.moveTaskToBack. For more information, refer to Quit a Unity Android application.
+
+For iOS platform, in most cases the termination of application should be left at the user's discretion. Calling Application.Quit method in iOS Player might appear to the user that the application has crashed. For more information, refer to Apple Technical Page qa1561.
+
+```cs
+ public static void Quit();
+```
+
 #### `Application.persistentDataPath`
 Contains the path to a persistent data directory (Read Only).
 
