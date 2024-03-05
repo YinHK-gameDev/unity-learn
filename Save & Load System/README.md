@@ -87,6 +87,17 @@ JsonUtility.FromJsonOverwrite(json, myObject);
 ```
 > If the JSON data does not contain a value for a field, the serializer does not change that field’s value.
 
+
+### Using Cloud to save data
+
+**Unity Cloud Save**
+
+You can use Unity's Cloud Save service to save player data, such as game progress, inventories, or metadata. Because it's cloud based, players can access their data anywhere and across devices, which can mitigate data loss when a player changes devices or re-installs a game
+
+https://unity.com/products/cloud-save \
+https://docs.unity.com/ugs/en-us/manual/cloud-save/manual
+
+
 ### Supported types
 The JSON Serializer API supports any **`MonoBehaviour` subclass**, **`ScriptableObject` subclass**, or **plain class** or **struct with the `[Serializable]` attribute**. When you pass in an object to the standard Unity serializer for processing, the same rules and limitations apply as they do in the Inspector: Unity serializes fields only; and types like **`Dictionary<>` are not supported**.
 
@@ -169,3 +180,16 @@ https://www.youtube.com/watch?v=uD7y4T4PVk0
 
 
 https://github.com/UnityTechnologies/UniteNow20-Persistent-Data/tree/main
+
+Saving and Loading Data using JSON in Unity \
+https://ponderingpixel.com/tutorials/unity/save-and-load-games-using-json-in-unity/ \
+https://videlais.com/2021/02/25/using-jsonutility-in-unity-to-save-and-load-game-data/ \
+https://prasetion.medium.com/saving-data-as-json-in-unity-4419042d1334 \
+https://www.youtube.com/watch?v=pVXEUtMy_Hc \
+https://www.youtube.com/watch?v=aSNj2nvSyD4
+
+Save data to server \
+https://www.youtube.com/watch?v=5cl_Ppu9S-M \
+https://stackoverflow.com/questions/72704203/how-do-large-games-save-data
+
+
