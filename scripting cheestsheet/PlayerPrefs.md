@@ -11,7 +11,7 @@ For example, to save an integer, simply call the Set Int function of the Player 
 
 Unity stores PlayerPrefs in a local registry, without encryption. 
 
-**Do not use PlayerPrefs data to store sensitive data !**.  
+> **Do not use PlayerPrefs data to store sensitive data !**.  
   
 Unity stores **`PlayerPrefs`** data differently based on which operating system the application runs on. 
 
