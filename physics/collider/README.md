@@ -34,7 +34,7 @@ The only way to move a static collider at run time is via the Transform. However
 Colliders on a GameObject that has a **Rigidbody** are known as **dynamic colliders**. \
 Dynamic colliders: The GameObject’s physics body is dynamic (that is, it has **`IsKinematic` disabled**).
 
-> **Note**: with **Rigidbody** & **`IsKinematic` disabled**
+> **Note**: with **Rigidbody** component & disable **`IsKinematic`** field.
 
 ### Physics body colliders
 A physics body collider is a collider on the same GameObject as a physics body (a **Rigidbody** or an **ArticulationBody**). Physics body colliders are included in **physics calculations**, but behave differently depending on whether they are **dynamic** or **kinematic** (that is, whether **Is Kinematic is disabled or enabled**).
