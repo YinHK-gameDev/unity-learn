@@ -143,7 +143,7 @@ Android: `Application.persistentDataPath` points to `/storage/emulated/<userid>/
 Mac: `Application.persistentDataPath` points to the user Library folder. (This folder is often hidden.) In recent Unity releases user data is written into `~/Library/Application Support/company name/product name`.
 
 ### Security
-Security means encryption of data. 
+Security means **encryption of data**. 
 
 when it comes to storing data locally on a player’s device, encryption is relatively easy to manipulate.
 
@@ -151,7 +151,7 @@ Without breaking the encryption, users can manipulate the data directly in memor
 
 If security of player data is high concern, the best option is to keep your data on a server where users can’t modify it. 
 
-The application shouldn’t send any data directly to the server because users could still manipulate it. Instead, the application can only send commands to the server, let the server change the data, and then send the results back to the application.
+The application **shouldn’t send any data directly to the server** because users could still manipulate it. Instead, the **application can only send commands to the server**, **let the server change the data**, and then **send the results back to the application**.
 
 
 ### ref 
