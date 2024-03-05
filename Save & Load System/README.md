@@ -99,6 +99,11 @@ https://unity.com/products/cloud-save \
 https://docs.unity.com/ugs/en-us/manual/cloud-save/manual
 
 
+### Asset store - Easy Save
+
+
+https://assetstore.unity.com/packages/tools/utilities/easy-save-the-complete-save-data-serializer-system-768
+
 ### Supported types
 The JSON Serializer API supports any **`MonoBehaviour` subclass**, **`ScriptableObject` subclass**, or **plain class** or **struct with the `[Serializable]` attribute**. When you pass in an object to the standard Unity serializer for processing, the same rules and limitations apply as they do in the Inspector: Unity serializes fields only; and types like **`Dictionary<>` are not supported**.
 
