@@ -117,7 +117,7 @@ Compound colliders collectively behave like a **single Rigidbody collider**. The
 A compound collider is made of the following elements:
 
 -   A **parent GameObject** that has a **Rigidbody**
--   Empty child GameObjects that **contain colliders**
+-   **Empty child GameObjects** that **contain colliders**
 
 A compound collider should **only have one Rigidbody**, which should be on the **root GameObject**.
 
