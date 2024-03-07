@@ -94,7 +94,7 @@ When you apply a constant force, the speed of movement accelerates over time bas
 
 ### Sleeping
 
-When a Rigidbody is moving slower than a defined minimum linear or rotational speed, the physics engine assumes it has come to a **halt**. When this happens, the GameObject does not move again until it receives a collision or force, and so it is set to **"sleeping"  mode**. 
+When a **Rigidbody** is **moving slower than a defined minimum linear or rotational speed**, the physics engine assumes it has come to a **halt**. When this happens, the GameObject does not move again until it receives a collision or force, and so it is set to **"sleeping"  mode**. 
 
 
 This optimisation means that **no processor time is spent updating the Rigidbody** until the next time it is **"awoken" (that is, set in motion again)**.
