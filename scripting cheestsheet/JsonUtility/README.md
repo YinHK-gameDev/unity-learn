@@ -33,6 +33,11 @@ public class PlayerInfo
 
 ```
 
+```cs
+public static object FromJson(string json, Type type);
+```
+
+
 ### `JsonUtility.FromJsonOverwrite`
 **Overwrite data in an object** by reading from its JSON representation.
 
