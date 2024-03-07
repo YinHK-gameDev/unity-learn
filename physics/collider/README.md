@@ -125,7 +125,7 @@ This configuration offers more flexibility than a single GameObject that contain
 
 > When you attach several colliders to the **same Rigidbody**, the p**hysics system treats the whole collection as a single Rigidbody collider**. The collider type (**dynamic or kinematic**) is defined by the **Rigidbody configuration**.
 
-> When a compound collider touches another collider, Unity registers collisions per each individual collider in the compound. For this reason, you should try to arrange your colliders so that you only get the collision pairs you want at runtime, or use collider labels to determine behaviors caused by specific colliders.
+> When a compound collider touches another collider, Unity registers collisions per each individual collider in the compound. For this reason, you should try to **arrange your colliders so that you only get the collision pairs you want at runtime**, or use collider labels to determine behaviors caused by specific colliders.
 
 ### Circle Collider 2D
 https://docs.unity3d.com/Manual/class-CircleCollider2D.html
@@ -140,7 +140,7 @@ https://docs.unity3d.com/Manual/class-CompositeCollider2D.html
 https://docs.unity3d.com/Manual/class-CustomCollider2D.html
 
 ### Physic Material
-The Physic Material adjusts friction and bouncing effects of colliding GameObjectsThe fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it.
+The Physic Material adjusts **friction** and **bouncing effects** of colliding GameObjectsThe fundamental object in Unity scenes, which can represent characters, props, scenery, cameras, waypoints, and more. A GameObject’s functionality is defined by the Components attached to it.
 
 https://docs.unity3d.com/Manual/class-PhysicMaterial.html
 
