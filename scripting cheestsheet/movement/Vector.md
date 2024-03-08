@@ -45,7 +45,7 @@ v.sqrMagnitude;  //Returns the squared length of this vector (Read Only).
 ```
 
 #### `Vector3.SmoothDamp`
-Gradually changes a vector towards a desired goal over time.
+**Gradually changes a vector towards a desired goal over time**.
 
 The vector is smoothed by some spring-damper like function, which will never overshoot. The most common use is for smoothing a follow camera.
 
@@ -59,7 +59,7 @@ public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 cu
 
 #### `Vector3.Lerp`
 
-Linearly interpolates between two points.
+**Linearly interpolates between two points**.
 
 Interpolates between the points `a` and `b` by the interpolant `t`. The parameter `t` is clamped to the range \[0, 1\]. This is most commonly used to find a point some fraction of the way along a line between two endpoints (e.g. to move an object gradually between those points).  
   
