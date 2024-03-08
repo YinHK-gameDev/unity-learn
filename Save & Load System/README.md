@@ -144,7 +144,6 @@ it’s best to go with a **binary-based serializer**.
   https://assetstore.unity.com/packages/tools/utilities/easy-save-the-complete-save-data-serializer-system-768 \
   https://www.cg.com.tw/EasySave/ \
   https://www.cg.com.tw/EasySave-AutoSave/ \
-  https://dev.twsiyuan.com/2018/06/how-to-save-and-load-gamesaves-in-unity.html \
   https://www.cg.com.tw/EasySave/Content/EasySave_06.php \
   https://www.cg.com.tw/EasySave/Content/EasySave_10.php \
   https://www.cg.com.tw/EasySave/ES3Cloud.php \
@@ -187,6 +186,12 @@ The application **shouldn’t send any data directly to the server** because use
 
 
 ### ref 
+https://dev.twsiyuan.com/2018/06/how-to-save-and-load-gamesaves-in-unity.html \
+https://dev.twsiyuan.com/2018/06/how-to-encrypt-and-decrypt-gamesaves-in-unity.html \
+https://dev.twsiyuan.com/2018/06/how-to-compress-and-decompress-gamesaves-in-unity.html
+
+
+
 https://www.youtube.com/watch?v=XOjd_qU2Ido
 
 https://www.youtube.com/watch?v=gZ3wtNGB3nU
