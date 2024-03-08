@@ -174,7 +174,7 @@ public void Move(InputAction.CallbackContext value)
 }
 ```
 
-### Moving object smoothly(**`Vector.Lerp`**)
+### Moving object smoothly(**`Vector3.Lerp`**)
 
 ```
 public static Vector3 Lerp(Vector3 a, Vector3 b, float t);
@@ -223,6 +223,39 @@ public class ExampleClass : MonoBehaviour
     }
 }
 ```
+
+### Moving object smoothly(**`Vector3.SmoothDamp`**)
+**Gradually changes a vector towards a desired goal over time**.
+
+The vector is smoothed by some spring-damper like function, which will never overshoot. The most common use is for smoothing a follow camera.
+
+```cs
+public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime, float maxSpeed = Mathf.Infinity, float deltaTime = Time.deltaTime);
+```
+
+```cs
+// Smooth towards the target
+
+using UnityEngine;
+using System.Collections;
+
+public class ExampleClass : MonoBehaviour
+{
+    public Transform target;
+    public float smoothTime = 0.3F;
+    private Vector3 velocity = Vector3.zero;
+
+    void Update()
+    {
+        // Define a target position above and behind the target transform
+        Vector3 targetPosition = target.TransformPoint(new Vector3(0, 5, -10));
+
+        // Smoothly move the camera towards that target position
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+    }
+}
+```
+
 
 
 ### Basic movement from user input
