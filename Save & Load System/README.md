@@ -96,7 +96,10 @@ JsonUtility.FromJsonOverwrite(json, myObject);
 You can use Unity's Cloud Save service to save player data, such as game progress, inventories, or metadata. Because it's cloud based, players can access their data anywhere and across devices, which can mitigate data loss when a player changes devices or re-installs a game
 
 https://unity.com/products/cloud-save \
-https://docs.unity.com/ugs/en-us/manual/cloud-save/manual
+https://docs.unity.com/ugs/en-us/manual/cloud-save/manual 
+
+https://www.youtube.com/watch?v=WRKsmnmNpb4 \
+https://www.youtube.com/watch?v=STuIobcdKzk
 
 #### Firebase
 https://www.youtube.com/watch?v=lLZ6tXKTLaQ
