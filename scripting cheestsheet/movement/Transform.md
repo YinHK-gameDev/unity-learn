@@ -15,6 +15,17 @@ https://docs.unity3d.com/ScriptReference/Transform-position.html
 
 ### `Transform.LookAt()`
 Rotates the transform so the forward vector points at target's current position. For example: camera point at the target object.
+```cs
+public void LookAt(Transform target);
+```
+
+```cs
+public void LookAt(Transform target, Vector3 worldUp = Vector3.up);
+```
+| Parameters | Descriptions |
+| - | - |
+| target | Object to point towards |
+| worldUp | Vector specifying the upward direction |
 
 https://docs.unity3d.com/ScriptReference/Transform.LookAt.html
 
