@@ -155,7 +155,7 @@ it’s best to go with a **binary-based serializer**.
 
 ### `Application.persistentDataPath`
 
-This method Contains the path to a persistent data directory (Read Only).
+This method Contains the path to a persistent data directory (Read Only). Path for the saving game data.
 
 Windows Store Apps: `Application.persistentDataPath` points to `C:\Users\<user>\AppData\LocalLow\<company name>`.
 
