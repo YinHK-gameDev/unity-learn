@@ -158,5 +158,6 @@ https://www.youtube.com/watch?v=sJcVJEOwLUs
 ### ref
 https://docs.unity3d.com/ScriptReference/Quaternion-ctor.html
 
+https://en.wikipedia.org/wiki/Quaternion
 
 
