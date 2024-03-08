@@ -57,6 +57,17 @@ public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 cu
  transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 ```
 
+| Parameters | Descriptions |
+| --- | --- |
+| `current` | The current position. |
+| `target` | The position we are trying to reach. |
+| `currentVelocity` | The current velocity, this value is modified by the function every time you call it. |
+| `smoothTime` | Approximately the time it will take to reach the target. A smaller value will reach the target faster. |
+| `maxSpeed` | Optionally allows you to clamp the maximum speed. |
+| `deltaTime` | The time since the last call to this function. By default `Time.deltaTime`. |
+
+https://docs.unity3d.com/ScriptReference/Vector3.SmoothDamp.html
+
 #### `Vector3.Lerp`
 
 **Linearly interpolates between two points**.
@@ -90,8 +101,7 @@ public class LerpToPosition : MonoBehaviour
 }
 ```
 
-
-https://docs.unity3d.com/ScriptReference/Vector3.html
+https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html
 
 ### Static Properties
 
@@ -123,7 +133,9 @@ https://docs.unity3d.com/ScriptReference/Vector3Int.html
 
 
 
+### ref 
 
+https://docs.unity3d.com/ScriptReference/Vector3.html
 
 
 
