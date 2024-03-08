@@ -49,9 +49,10 @@ void Start()
 ```
 
 Adds a **component** class of type componentType to the GameObjec
-``cs
+```cs
 public Component AddComponent(Type componentType);
 ```
+
 ```cs
 void Start()
 {
