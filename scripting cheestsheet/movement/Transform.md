@@ -34,6 +34,40 @@ This method is the same as the parent property except that it also lets the Tran
 
 https://docs.unity3d.com/ScriptReference/Transform.SetParent.html
 
+### `Transform.GetChild`
+Returns a transform child by index.
+
+```cs
+public Transform GetChild(int index);
+```
+
+https://docs.unity3d.com/ScriptReference/Transform.GetChild.html
+
+### `Transform.Find`
+Finds a child by name n and returns it.
+
+If no child with name n can be found, null is returned. If n **contains a '/' character** it will **access the Transform in the hierarchy like a path name**.
+
+> **Note**: `Find` does not perform a **recursive descend down a Transform hierarchy**.
+> **Note**: `Find` can find transform of **disabled GameObject**.
+
+```cs
+public Transform Find(string n);
+```
+
+```cs
+public Transform gun;
+public Transform ammo;
+
+//Finds and assigns the child named "Gun".
+gun = player.transform.Find("Gun");
+
+//Find the child named "ammo" of the gameobject "magazine" (magazine is a child of "gun").
+ammo = gun.transform.Find("magazine/ammo");
+```
+
+https://docs.unity3d.com/ScriptReference/Transform.Find.html
+
 ### `Transform.TransformDirection`
 
 Transforms `direction` from local space to world space.
