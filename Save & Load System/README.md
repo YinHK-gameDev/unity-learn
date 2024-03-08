@@ -134,7 +134,10 @@ it’s best to go with a **binary-based serializer**.
   https://www.cg.com.tw/EasySave/ \
   https://www.cg.com.tw/EasySave-AutoSave/ \
   https://dev.twsiyuan.com/2018/06/how-to-save-and-load-gamesaves-in-unity.html \
-  https://www.cg.com.tw/EasySave/Content/EasySave_10.php
+  https://www.cg.com.tw/EasySave/Content/EasySave_06.php \
+  https://www.cg.com.tw/EasySave/Content/EasySave_10.php \
+  https://www.cg.com.tw/EasySave/ES3Cloud.php \
+  https://www.cg.com.tw/EasySave-ES3Cloud/
 - **.NET System.Xml** \
   an alternative data format. Like JSON, it’s relatively human-readable and has some features that may be useful for your specific application, such as namespaces. DotNet has built-in support for XML.
   https://learn.microsoft.com/en-us/dotnet/api/system.xml?view=net-5.0
