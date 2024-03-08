@@ -4,8 +4,18 @@ Casts the box along a ray and returns detailed information on what was hit.
 ### `Physics.BoxCast`
 ```cs
 public static bool BoxCast(Vector3 center, Vector3 halfExtents, Vector3 direction, Quaternion orientation = Quaternion.identity, float maxDistance = Mathf.Infinity, int layerMask = DefaultRaycastLayers, QueryTriggerInteraction queryTriggerInteraction = QueryTriggerInteraction.UseGlobal);
-
 ```
+
+| Parameters | Descriptions |
+| --- | --- |
+| center | Center of the box. |
+| halfExtents | Half the size of the box in each dimension. |
+| direction | The direction in which to cast the box. |
+| orientation | Rotation of the box. |
+| maxDistance | The max length of the cast. |
+| layerMask | A Layer mask that is used to selectively ignore colliders when casting a capsule. |
+| queryTriggerInteraction | Specifies whether this query should hit Triggers. |
+
 
 Eg:
 ```cs
@@ -86,7 +96,16 @@ public class Example : MonoBehaviour
 public static RaycastHit2D BoxCast(Vector2 origin, Vector2 size, float angle, Vector2 direction, float distance = Mathf.Infinity, int layerMask = Physics2D.AllLayers, float minDepth = -Mathf.Infinity, float maxDepth = Mathf.Infinity);
 ```
 
-
+| Parameters | Descriptions |
+| --- | --- |
+| origin | The point in 2D space where the box originates. |
+| size | The size of the box. |
+| angle | The angle of the box (in degrees). |
+| direction | A vector representing the direction of the box. |
+| distance | The maximum distance over which to cast the box. |
+| layerMask | Filter to detect Colliders only on certain layers. |
+| minDepth | Only include objects with a Z coordinate (depth) greater than or equal to this value. |
+| maxDepth | Only include objects with a Z coordinate (depth) less than or equal to this value. |
 
 
 ### ref
