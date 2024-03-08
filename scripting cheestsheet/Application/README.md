@@ -51,7 +51,7 @@ For iOS platform, in most cases the termination of application should be left at
 ```
 
 #### `Application.persistentDataPath`
-Contains the path to a persistent data directory (Read Only).
+Contains the path to a persistent data directory (Read Only). Path for the saving game data.
 
 This value is a directory path (notice the difference in slash directions on different operating systems according to `Path.DirectorySeparatorChar)`, where you **can store data** that you want to be **kept between runs**. When you publish on **iOS** and **Android**, `persistentDataPath` points to a **public directory on the device**. Files in this location are **not erased by app updates**. The files **can still be erased by users directly**.
 
