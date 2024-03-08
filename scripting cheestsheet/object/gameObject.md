@@ -40,23 +40,23 @@ drag the game object in to inspectpr, the public game object field
   
 ### Access parent/child gameobject
 
-➡️ **1. 取得父物件**
+➡️ **1. Access Parent object**
 ```cs
  gameObject.transform.parent.gameObject; 
 ```
 
-➡️ 2. **取得子物件**
+➡️ 2. **Access child object**
 ```cs
 gameObject.transform.GetChild(int index).gameObject;  
 ```  
-> 📌  **int index :**  數字，放入索引值，代表取第幾個子物件，第一個索引值為0**。**
+> 📌  **int index :**  number，**index**. Mean which **order of child**，the first one is 0。
 
 e.g:  **get the object of first child**
 ```cs
   gameObject.transform.GetChild(0).gameObject;
 ```
   
-**取得子物件數量:**
+**Get number of child:**
 ```cs
 gameObject.transform.childCount;
 ```
@@ -67,17 +67,22 @@ int Obj_childCount;
 Obj_childCount = gameObject.transform.childCount;**
 ```
 
-➡️  **3. 把XX物件變成子物件**
+➡️  **3. Change XX to be a child**
 ```cs
 XX.transform.parent = gameObject.transform;
 ```
   
-➡️ **4. XX物件變成父物件** 
+➡️ **4. Change XX to be a parent** 
 ```cs
 gameObject.transform.parent = XX.transform;  
 ```
   
-➡️ **5. 子物件脫離父物件**
+➡️ **5. Detach child from parent object**
 ```cs
 gameObject.transform.parent = null;
+```
+or  **detech all the children**
+
+```cs
+gameObject.transform.DetachChildren();
 ```
