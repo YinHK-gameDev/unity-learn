@@ -37,6 +37,33 @@ This returns the component of Type type if the game object has one attached (ins
 
 https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html
 
+### Adding component to GameObject by script
+```cs
+public T AddComponent();
+```
+```cs
+void Start()
+{
+    SphereCollider sc = gameObject.AddComponent<SphereCollider>();
+}
+```
+
+Adds a **component** class of type componentType to the GameObjec
+``cs
+public Component AddComponent(Type componentType);
+```
+```cs
+void Start()
+{
+    SphereCollider sc = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
+}
+```
+
+
+> Note that there is no **RemoveComponent()**, to remove a component, use **`Destroy()`**.
+
+https://docs.unity3d.com/ScriptReference/GameObject.AddComponent.html
+
 ### Create an array to store game objects
 In the hierarchy, create an empty object, then assign a script to it. In the script, to create a public array, then you can see in the inspector. In the inspector, change the Array size to match your game objects count, then assign your objects by dragging them in.
 
