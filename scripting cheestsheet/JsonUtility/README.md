@@ -165,4 +165,7 @@ public class PlayerState : MonoBehaviour
 ```
 
 ### ref
-https://docs.unity3d.com/2021.2/Documentation/ScriptReference/JsonUtility.html
+https://docs.unity3d.com/2021.2/Documentation/ScriptReference/JsonUtility.html \
+https://www.youtube.com/watch?v=Wu4SGitck7M \
+https://youtu.be/aSNj2nvSyD4?si=Fz6BblJtLr9eB43E
+
