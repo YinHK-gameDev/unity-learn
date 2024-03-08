@@ -4,35 +4,6 @@ JsonUtility is **Unity’s built-in API** for **serializing and deserializing JS
 Utility functions for working with JSON data.
 
 ```cs
-[System.Serializable]
-public class PlayerData  {
-  public string name;
-  public int lv;
-  public int exp;
-   public ItemData[] items = new ItemData[0];
-}
-
-[System.Serializable]
-public struct ItemData
-{
-  public int id;
-  public int count;
-}
-
-using UnityEngine;
-
-public static void JSONExample(PlayerData playerData)
-{
-   // Serialization
-   var serializedData = JsonUtility.ToJson(playerData);
-
-   // Deserialization
-   playerData = JsonUtility.FromJson<PlayerData>(serializedData);
-}
-```
-
-
-```cs
 [Serializable]
 public class MyClass
 {
@@ -192,6 +163,73 @@ public class PlayerState : MonoBehaviour
 }
 
 ```
+
+
+
+### Example
+```cs
+[System.Serializable]
+public class PlayerData  {
+  public string name;
+  public int lv;
+  public int exp;
+   public ItemData[] items = new ItemData[0];
+}
+
+[System.Serializable]
+public struct ItemData
+{
+  public int id;
+  public int count;
+}
+
+
+var p = new PlayerData{
+   name = "Siyuan",
+   lv = 10,
+   exp = 1000,
+   items = new ItemData[]{
+      new ItemData(){ id = 1, count = 1, },
+      new ItemData(){ id = 2, count = 3, },
+   },
+};
+
+
+using UnityEngine;
+
+public static void JSONExample(PlayerData playerData)
+{
+   // Serialization
+   var serializedData = JsonUtility.ToJson(playerData);
+
+   // Deserialization
+   playerData = JsonUtility.FromJson<PlayerData>(serializedData);
+}
+
+
+// Json
+
+// Original
+{"name":"Siyuan","lv":10,"exp":1000,"items":[{"id":1,"count":1},{"id":2,"count":3}]}
+
+// After adjusting text indents
+{  
+  "name":"Siyuan",
+  "lv":10,
+  "exp":1000,
+  "items":[  
+    {  
+      "id":1,
+      "count":1
+    },
+    {  
+      "id":2,
+      "count":3
+    }
+  ]
+}
+```
+
 
 ### ref
 https://docs.unity3d.com/2021.2/Documentation/ScriptReference/JsonUtility.html \
