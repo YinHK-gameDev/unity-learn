@@ -11,14 +11,14 @@ A **base class** of all colliders.
 | `bounds` | The world space bounding volume of the collider (Read Only). |
 | `contactOffset` | Contact offset value of this collider. |
 | `enabled` | Enabled Colliders will collide with other Colliders, disabled Colliders won't. |
-| excludeLayers | The additional layers that this Collider should exclude when deciding if the Collider can contact another Collider. |
-| hasModifiableContacts | Specify whether this Collider's contacts are modifiable or not. |
-| includeLayers | The additional layers that this Collider should include when deciding if the Collider can contact another Collider. |
-| isTrigger | Specify if this collider is configured as a trigger. |
-| layerOverridePriority | A decision priority assigned to this Collider used when there is a conflicting decision on whether a Collider can contact another Collider. |
-| material | The material used by the collider. |
-| providesContacts | Whether or not this Collider generates contacts for Physics.ContactEvent. |
-| sharedMaterial | The shared physic material of this collider. |
+| `excludeLayers` | The additional layers that this Collider should exclude when deciding if the Collider can contact another Collider. |
+| `hasModifiableContacts` | Specify whether this Collider's contacts are modifiable or not. |
+| `includeLayers` | The additional layers that this Collider should include when deciding if the Collider can contact another Collider. |
+| `isTrigger` | Specify if this collider is configured as a trigger. |
+| `layerOverridePriority` | A decision priority assigned to this Collider used when there is a conflicting decision on whether a Collider can contact another Collider. |
+| `material` | The material used by the collider. |
+| `providesContacts` | Whether or not this Collider generates contacts for Physics.ContactEvent. |
+| `sharedMaterial` | The shared physic material of this collider. |
 
 | Public Methods | Descriptions |
 | --- | --- |
