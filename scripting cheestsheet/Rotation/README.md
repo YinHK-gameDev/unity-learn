@@ -33,14 +33,11 @@ public static Quaternion Euler(float x, float y, float z);
 #### `Quaternion.LookRotation`
 Creates a rotation with the specified `forward` and `upwards` directions.
 
-Z axis will be aligned with `forward`, X axis aligned with c
+Z axis will be aligned with `forward`, X axis aligned with cross product between `forward` and `upwards`, and Y axis aligned with cross product between Z and X.
 
 ```cs
 public static Quaternion LookRotation(Vector3 forward, Vector3 upwards = Vector3.up);
 ```
-
-forward	The direction to look in. \
-upwards	The vector that defines in which direction up is.
 
 
 #### `Quaternion.Angle`
