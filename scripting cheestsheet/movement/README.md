@@ -231,7 +231,7 @@ public class ExampleClass : MonoBehaviour
 - If using physics, declare a new **Rigidbody playerRb variable** for it and initialize it in `Start()`
 - If using arrow keys, declare new **vertical Input** and/or **horizontal Input variables**.
 - If basing your movement off a key press, create the if-statement to test for the KeyCode.
-- Use either the **transform.Translate method** or **transform.position** property or **AddForce method**(if using physics) to move your character.
+- Use either the **`transform.Translate` method** or **`transform.position`** property or **`Rigidbody.AddForce` method**(if using physics) to move your character.
 
 
 
