@@ -18,6 +18,17 @@ public struct ItemData
   public int id;
   public int count;
 }
+
+using UnityEngine;
+
+public static void JSONExample(PlayerData playerData)
+{
+   // Serialization
+   var serializedData = JsonUtility.ToJson(playerData);
+
+   // Deserialization
+   playerData = JsonUtility.FromJson<PlayerData>(serializedData);
+}
 ```
 
 
