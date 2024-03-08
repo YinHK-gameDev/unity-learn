@@ -3,11 +3,13 @@
 Saving data is critical for any game. Whether you need to save high scores, preferences, or a game state, Unity offers a variety of methods – from PlayerPrefs to serializing data, encrypting it, and writing to a file.
 
 
-Game saving workflow:
+**Game data access & saving workflow:**
 
 ![](./img/game-data-save-load-framework.png)
 
-![](./img/game-data-save-load-framework (1).png)
+**Simple game data access & saving workflow**:
+
+![](./img/game-data-save-load-framework2.png)
 
 ### PlayerPrefs
 
