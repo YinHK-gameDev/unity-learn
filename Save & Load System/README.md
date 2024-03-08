@@ -129,6 +129,7 @@ it’s best to go with a **binary-based serializer**.
   https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter?view=net-5.0
 - **Unity EasySave - Asset store** \
   a well-supported and popular plug-in available on the Unity Asset Store. \
+  https://moodkie.com/easy-save-unity/ \
   https://assetstore.unity.com/packages/tools/utilities/easy-save-the-complete-save-data-serializer-system-768 \
   https://www.cg.com.tw/EasySave/ \
   https://dev.twsiyuan.com/2018/06/how-to-save-and-load-gamesaves-in-unity.html \
