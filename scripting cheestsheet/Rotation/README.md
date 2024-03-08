@@ -3,6 +3,8 @@
 ### Quaternion
 Quaternions are used to **represent rotations**. 
 
+Quaternions are generally represented in the form: **`a + bi + cj + dk`**
+
 Unity internally uses Quaternions to represent all rotations.
 
 hey are based on complex numbers and are not easy to understand intuitively. 
