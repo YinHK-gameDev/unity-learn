@@ -91,18 +91,16 @@ JsonUtility.FromJsonOverwrite(json, myObject);
 
 ### Using Cloud to save data
 
-**Unity Cloud Save**
+#### Unity Cloud Save
 
 You can use Unity's Cloud Save service to save player data, such as game progress, inventories, or metadata. Because it's cloud based, players can access their data anywhere and across devices, which can mitigate data loss when a player changes devices or re-installs a game
 
 https://unity.com/products/cloud-save \
 https://docs.unity.com/ugs/en-us/manual/cloud-save/manual
 
+#### Firebase
+https://www.youtube.com/watch?v=lLZ6tXKTLaQ
 
-### Asset store - Easy Save
-
-
-https://assetstore.unity.com/packages/tools/utilities/easy-save-the-complete-save-data-serializer-system-768
 
 ### Supported types
 The JSON Serializer API supports any **`MonoBehaviour` subclass**, **`ScriptableObject` subclass**, or **plain class** or **struct with the `[Serializable]` attribute**. When you pass in an object to the standard Unity serializer for processing, the same rules and limitations apply as they do in the Inspector: Unity serializes fields only; and types like **`Dictionary<>` are not supported**.
@@ -129,14 +127,15 @@ it’s best to go with a **binary-based serializer**.
   > The BinaryFormatter type is dangerous and is not recommended for data processing. Applications should stop using BinaryFormatter as soon as possible, even if they believe the data they're processing to be trustworthy. BinaryFormatter is insecure and can't be made secure.
   
   https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter?view=net-5.0
-- **EasySave** \
+- **Unity EasySave - Asset store** \
   a well-supported and popular plug-in available on the Unity Asset Store. \
-  https://assetstore.unity.com/packages/tools/utilities/easy-save-the-complete-save-data-serializer-system-768
+  https://assetstore.unity.com/packages/tools/utilities/easy-save-the-complete-save-data-serializer-system-768 \
+  https://www.cg.com.tw/EasySave/ \
+  https://dev.twsiyuan.com/2018/06/how-to-save-and-load-gamesaves-in-unity.html \
+  https://www.cg.com.tw/EasySave/Content/EasySave_10.php
 - **.NET System.Xml** \
   an alternative data format. Like JSON, it’s relatively human-readable and has some features that may be useful for your specific application, such as namespaces. DotNet has built-in support for XML.
   https://learn.microsoft.com/en-us/dotnet/api/system.xml?view=net-5.0
-
-  
 
 
 ### `Application.persistentDataPath`
