@@ -236,10 +236,10 @@ public class ExampleClass : MonoBehaviour
 
 
 ### Character Controller component approach for movement
-A CharacterController allows you to easily do movement constrained by collisions without having to deal with a rigidbody. A CharacterController is not affected by forces and will only move when you call the Move function. It will then carry out the movement but be constrained by collisions.
+A CharacterController allows you to **easily do movement constrained by collisions without having to deal with a rigidbody**. A CharacterController is **not affected by force**s and will **only move when you call the Move function**. It will then carry out the movement but be constrained by collisions.
 
-The Character Controller is a component you can add to your player. Its function is to move the player according to the environment (the colliders).
-It doesn’t respond nor uses physics in any way.
+The Character Controller is a component you can add to your player. Its function is to move the player **according to the environment (the colliders)**. \
+It **doesn’t respond nor uses physics** in any way.
 
 
 The Character Controller includes 2 methods used to move the character: **`SimpleMove`** and **`Move`**.
@@ -365,8 +365,8 @@ https://docs.unity3d.com/ScriptReference/CharacterController.html
 
 ### Character Controller vs Rigidbody approach
 
-Rigidbody code less, a lot more functions to interact with physic whereas the Character Controller doesn’t.
-Character Controller approach doesn't need to take care about any physics.
+**Rigidbody code less**, a **lot more functions to interact with physic** whereas the Character Controller doesn’t.
+Character Controller approach **doesn't need to take care about any physics**.
 
 https://medium.com/ironequal/unity-character-controller-vs-rigidbody-a1e243591483
 
