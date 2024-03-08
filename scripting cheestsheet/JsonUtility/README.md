@@ -54,9 +54,9 @@ public class PlayerInfo
 ```cs
 public static void FromJsonOverwrite(string json, object objectToOverwrite);
 ```
-This method is very similar to JsonUtility.FromJson, except that instead of creating a new object and loading the JSON data into it, it loads the JSON data into an existing object. This allows you to update the values stored in classes or objects without any allocations.
+This method is very similar to `JsonUtility.FromJson`, except that instead of creating a new object and loading the JSON data into it, it **loads the JSON data into an existing object**. This allows you to **update the values stored in classes or objects without any allocations**.
 
-Internally, this method uses the Unity serializer; therefore the object you pass in must be supported by the serializer: it must be a MonoBehaviour, ScriptableObject, or plain class/struct with the Serializable attribute applied. The types of fields that you want to be overwritten must be supported by the serializer; unsupported fields will be ignored, as will private fields, static fields, and fields with the NonSerialized attribute applied.
+Internally, this method uses the Unity serializer; therefore the object you pass in must be supported by the serializer: it **must be a MonoBehaviour, ScriptableObject, or plain class/struct with the Serializable attribute applied**. The types of fields that you want to be overwritten must be supported by the serializer; unsupported fields will be ignored, as will private fields, static fields, and fields with the NonSerialized attribute applied.
 
 Any plain class or structure is supported, along with classes derived from MonoBehaviour or ScriptableObject. Other engine types are not supported. In the Editor only, you can use EditorJsonUtility.FromJsonOverwrite to overwrite other engine objects.
 
@@ -99,9 +99,9 @@ public static string ToJson(object obj, bool prettyPrint);
 | **`obj`** | The object to convert to JSON form. |
 | **`prettyPrint`** | If true, format the output for readability. If false, format the output for minimum size. Default is false. |
 
-Internally, this method uses the Unity serializer; therefore the object you pass in must be supported by the serializer: it must be a MonoBehaviour, ScriptableObject, or plain class/struct with the Serializable attribute applied. The types of fields that you want to be included must be supported by the serializer; unsupported fields will be ignored, as will private fields, static fields, and fields with the NonSerialized attribute applied.
+Internally, this method uses the Unity serializer; therefore the object you pass in must be supported by the serializer: it **must be a `MonoBehaviour`, ScriptableObject, or plain class/struct with the Serializable attribute applied**. The types of fields that you want to be included must be supported by the serializer; unsupported fields will be ignored, as will private fields, static fields, and fields with the NonSerialized attribute applied.
 
-Any plain class or structure is supported, as well as classes derived from MonoBehaviour or ScriptableObject. Other engine types are not supported. (In the Editor only, you can use EditorJsonUtility.ToJson to serialize other engine types to JSON).
+Any plain class or structure is supported, as well as classes derived from `MonoBehaviour` or ScriptableObject. Other engine types are not supported. (In the Editor only, you can use EditorJsonUtility.ToJson to serialize other engine types to JSON).
 
 If the object contains fields with references to other Unity objects, those references are serialized by recording the InstanceID for each referenced object. Because the Instance ID acts like a handle to the in-memory object instance, the JSON string can only be deserialized back during the same session of the Unity engine.
 
