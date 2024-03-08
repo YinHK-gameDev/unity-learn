@@ -148,6 +148,11 @@ public class Example : MonoBehaviour
 }
 ```
 
+### Quaternions vs Euler Angles
+
+
+https://www.youtube.com/watch?v=sJcVJEOwLUs
+
 ### ref
 https://docs.unity3d.com/ScriptReference/Quaternion-ctor.html
 
