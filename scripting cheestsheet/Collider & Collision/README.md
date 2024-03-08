@@ -77,7 +77,7 @@ A **base class** of all colliders.
 
 
 ### Collision
-Collision information is passed to `Collider.OnCollisionEnter`, `Collider.OnCollisionStay` and `Collider.OnCollisionExit` events.
+**Collision information** is **passed** to `Collider.OnCollisionEnter`, `Collider.OnCollisionStay` and `Collider.OnCollisionExit` events.
 
 | Properties | Descriptions |
 | --- | --- |
