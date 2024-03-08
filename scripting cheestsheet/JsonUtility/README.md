@@ -4,6 +4,24 @@ JsonUtility is **Unity’s built-in API** for **serializing and deserializing JS
 Utility functions for working with JSON data.
 
 ```cs
+[System.Serializable]
+public class PlayerData  {
+  public string name;
+  public int lv;
+  public int exp;
+   public ItemData[] items = new ItemData[0];
+}
+
+[System.Serializable]
+public struct ItemData
+{
+  public int id;
+  public int count;
+}
+```
+
+
+```cs
 [Serializable]
 public class MyClass
 {
