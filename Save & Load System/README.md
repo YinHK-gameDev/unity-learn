@@ -173,6 +173,45 @@ Android: `Application.persistentDataPath` points to `/storage/emulated/<userid>/
 
 Mac: `Application.persistentDataPath` points to the user Library folder. (This folder is often hidden.) In recent Unity releases user data is written into `~/Library/Application Support/company name/product name`.
 
+
+```cs
+using UnityEngine;
+using System.IO;
+using System.Text;
+
+void FileExample(string serizliedData)
+{
+   var raws = Encoding.UTF8.GetBytes(serizliedData);
+   FileExample(raws);
+}
+
+void FileExample(byte[] serizliedData)
+{
+   const string fileName = "gamesave.dat";
+   var filePath = Application.persistentDataPath + "/" + fileName;
+
+   // Save
+   try
+   {
+      File.WriteAllBytes(filePath, serizliedData);
+   }
+   catch (System.Exception e)
+   {
+      // TODO: Handle exception
+   }
+
+   // Load
+   try
+   {
+      serizliedData = File.ReadAllBytes(filePath);
+   }
+   catch (System.Exception e)
+   {
+      // TODO: Handle exception
+   }
+}
+```
+
 ### Security
 Security means **encryption of data**. 
 
