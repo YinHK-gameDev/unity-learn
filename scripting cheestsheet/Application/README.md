@@ -71,6 +71,44 @@ public class Info : MonoBehaviour
 }
 ```
 
+```cs
+using UnityEngine;
+using System.IO;
+using System.Text;
+
+void FileExample(string serizliedData)
+{
+   var raws = Encoding.UTF8.GetBytes(serizliedData);
+   FileExample(raws);
+}
+
+void FileExample(byte[] serizliedData)
+{
+   const string fileName = "gamesave.dat";
+   var filePath = Application.persistentDataPath + "/" + fileName;
+
+   // Save
+   try
+   {
+      File.WriteAllBytes(filePath, serizliedData);
+   }
+   catch (System.Exception e)
+   {
+      // TODO: Handle exception
+   }
+
+   // Load
+   try
+   {
+      serizliedData = File.ReadAllBytes(filePath);
+   }
+   catch (System.Exception e)
+   {
+      // TODO: Handle exception
+   }
+}
+```
+
 - **Windows Store Apps**: `Application.persistentDataPath` points to `C:\Users\<user>\AppData\LocalLow\<company name>`
 - **WebGL**: `Application.persistentDataPath` points to `/idbfs/<md5 hash of data path>` where the data path is the URL stripped of everything including and after the last '/' before any '?' components.
 - **Linux**: `Application.persistentDataPath` points to `$XDG_CONFIG_HOME/unity3d` or `$HOME/.config/unity3d`.
