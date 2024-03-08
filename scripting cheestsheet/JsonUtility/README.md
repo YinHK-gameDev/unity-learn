@@ -3,6 +3,26 @@ JsonUtility is **Unity’s built-in API** for **serializing and deserializing JS
 
 Utility functions for working with JSON data.
 
+```cs
+[Serializable]
+public class MyClass
+{
+    public int level;
+    public float timeElapsed;
+    public string playerName;
+}
+
+MyClass myObject = new MyClass();
+myObject.level = 1;
+myObject.timeElapsed = 47.5f;
+myObject.playerName = "Dr Charles Francis";
+
+```
+> A plain **class/struct** marked with the **Serializable attribute**
+
+
+
+
 ### `JsonUtility.FromJson`
 Create an object from its JSON representation.
 ```cs
@@ -21,6 +41,11 @@ Internally, this method uses the Unity serializer; therefore the type you are cr
 Only plain classes and structures are supported; classes derived from `UnityEngine.Object` (such as MonoBehaviour or ScriptableObject) are not. Note that classes derived from MonoBehaviour or ScriptableObject can be used with `JsonUtility.FromJsonOverwrite` as an alternative.
 
 If the JSON representation is missing any fields, they will be given their default values (i.e. a field of type T will have value default(T) - it will not be given any value specified as a field initializer, as the constructor for the object is not executed during deserialization).
+
+```cs
+myObject = JsonUtility.FromJson<MyClass>(json);
+```
+
 
 ```cs
 using UnityEngine;
@@ -60,6 +85,9 @@ Internally, this method uses the Unity serializer; therefore the object you pass
 
 Any plain class or structure is supported, along with classes derived from MonoBehaviour or ScriptableObject. Other engine types are not supported. In the Editor only, you can use EditorJsonUtility.FromJsonOverwrite to overwrite other engine objects.
 
+```cs
+JsonUtility.FromJsonOverwrite(json, myObject);
+```
 
 ```cs
 using UnityEngine;
@@ -104,6 +132,11 @@ Internally, this method uses the Unity serializer; therefore the object you pass
 Any plain class or structure is supported, as well as classes derived from `MonoBehaviour` or ScriptableObject. Other engine types are not supported. (In the Editor only, you can use EditorJsonUtility.ToJson to serialize other engine types to JSON).
 
 If the object contains fields with references to other Unity objects, those references are serialized by recording the InstanceID for each referenced object. Because the Instance ID acts like a handle to the in-memory object instance, the JSON string can only be deserialized back during the same session of the Unity engine.
+
+```cs
+string json = JsonUtility.ToJson(myObject);
+// json now contains: '{"level":1,"timeElapsed":47.5,"playerName":"Dr Charles Francis"}'
+```
 
 ```cs
 using UnityEngine;
