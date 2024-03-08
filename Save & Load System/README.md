@@ -132,6 +132,7 @@ it’s best to go with a **binary-based serializer**.
   https://moodkie.com/easy-save-unity/ \
   https://assetstore.unity.com/packages/tools/utilities/easy-save-the-complete-save-data-serializer-system-768 \
   https://www.cg.com.tw/EasySave/ \
+  https://www.cg.com.tw/EasySave-AutoSave/ \
   https://dev.twsiyuan.com/2018/06/how-to-save-and-load-gamesaves-in-unity.html \
   https://www.cg.com.tw/EasySave/Content/EasySave_10.php
 - **.NET System.Xml** \
