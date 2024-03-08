@@ -110,8 +110,8 @@ https://www.youtube.com/watch?v=WRKsmnmNpb4 \
 https://www.youtube.com/watch?v=STuIobcdKzk
 
 #### Firebase
-https://www.youtube.com/watch?v=lLZ6tXKTLaQ
-
+https://www.youtube.com/watch?v=lLZ6tXKTLaQ \
+https://firebase.google.com/docs/unity/setup
 
 ### Supported types
 The JSON Serializer API supports any **`MonoBehaviour` subclass**, **`ScriptableObject` subclass**, or **plain class** or **struct with the `[Serializable]` attribute**. When you pass in an object to the standard Unity serializer for processing, the same rules and limitations apply as they do in the Inspector: Unity serializes fields only; and types like **`Dictionary<>` are not supported**.
