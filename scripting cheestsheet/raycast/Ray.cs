@@ -6,7 +6,7 @@
 public Ray(Vector3 origin, Vector3 direction);
 
 //eg:
-sing UnityEngine;
+using UnityEngine;
 
 public class ExampleClass : MonoBehaviour
 {
