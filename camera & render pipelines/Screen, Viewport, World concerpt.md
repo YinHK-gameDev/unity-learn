@@ -9,6 +9,13 @@ WorldToViewportPoint 如字面意思一樣是由 "世界坐標轉換為螢幕坐
 http://docs.unity3d.com/ScriptReference/Camera.WorldToViewportPoint.html
 
 ```cs
+public Vector3 WorldToViewportPoint(Vector3 position);
+```
+```cs
+public Vector3 WorldToViewportPoint(Vector3 position, Camera.MonoOrStereoscopicEye eye);
+```
+
+```cs
 Vector3 viewPos = camera.WorldToViewportPoint(target.position);  
 
 if (viewPos.x > 0.5F) 
@@ -34,6 +41,28 @@ WorldToViewportPoint 跟 ViewportToWorldPoint 就是這個簡單
 
 再之後可以考慮使用 `Raycast` 進行三維坐標的射線.....etc 但這是另一道題了.
 其實這個有個方便的給初階使用.
+
+```cs
+public Vector3 ViewportToScreenPoint(Vector3 position);
+```
+```cs
+using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+    // Draw an image based on normalized view coordinates
+    // rather than pixel positions.
+    Texture2D bottomPanel;
+
+    void VPToScreenPtExample()
+    {
+        var origin = Camera.main.ViewportToScreenPoint(new Vector3(0.25f, 0.1f, 0));
+        var extent = Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.2f, 0));
+
+        GUI.DrawTexture(new Rect(origin.x, origin.y, extent.x, extent.y), bottomPanel);
+    }
+}
+```
 
 http://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html
 
