@@ -42,6 +42,33 @@ WorldToViewportPoint 跟 ViewportToWorldPoint 就是這個簡單
 再之後可以考慮使用 `Raycast` 進行三維坐標的射線.....etc 但這是另一道題了.
 其實這個有個方便的給初階使用.
 
+
+
+**Transforms a point from screen space into world space**:
+
+```cs
+public Vector3 ScreenToWorldPoint(Vector3 position);
+```
+```cs
+public Vector3 ScreenToWorldPoint(Vector3 position, Camera.MonoOrStereoscopicEye eye);
+```
+
+http://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html
+
+**Transforms position from world space into screen space**:
+
+```cs
+public Vector3 WorldToScreenPoint(Vector3 position);
+```
+```cs
+public Vector3 WorldToScreenPoint(Vector3 position, Camera.MonoOrStereoscopicEye eye);
+```
+
+https://docs.unity3d.com/ScriptReference/Camera.WorldToScreenPoint.html
+
+**`Camera.ViewportToScreenPoint` transform viewport point to screen point**:
+Transforms position from **viewport space into screen space**.
+
 ```cs
 public Vector3 ViewportToScreenPoint(Vector3 position);
 ```
@@ -64,8 +91,16 @@ public class Example : MonoBehaviour
 }
 ```
 
-http://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html
+https://docs.unity3d.com/ScriptReference/Camera.ViewportToScreenPoint.html
 
+
+**`Camera.ScreenToViewportPoint` transforms position from screen space into viewport space**:
+
+```cs
+public Vector3 ScreenToViewportPoint(Vector3 position);
+```
+
+https://docs.unity3d.com/ScriptReference/Camera.ScreenToViewportPoint.html
 
 ### ref
 https://forum.gamer.com.tw/Co.php?bsn=60602&sn=947
