@@ -25,9 +25,11 @@ public void Update(float deltaTime);
 
 // Returns the value of the given boolean parameter.
 public bool GetBool(string name);
+public bool GetBool(int id);
 
 // Returns the value of the given float parameter.
 public float GetFloat(string name);
+public float GetFloat(int id);
 
 // Returns the value of the given integer parameter.
 public int GetInteger(string name);
