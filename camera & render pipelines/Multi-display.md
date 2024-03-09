@@ -3,6 +3,15 @@ You can use multi-display to display up to eight different Camera views of your 
 
 Unity’s default display mode is one monitor only. When you run your application, you need use **`Display.Activate()`** to explicitly activate additional displays. Once you activate a display, you can’t deactivate it.
 
+Unity supports multi-display rendering on:
+
+-   Desktop platforms (Windows, macOS X, and Linux)
+-   Android (OpenGL ES and Vulkan)
+-   iOS
+
+Some features in the Display class only work on some of the supported platforms. See the properties and methods for more information about platform compatibility.
+
+Use the Display class to operate on the displays themselves, and **`Camera.targetDisplay`** to **set up cameras for rendering to individual display**s.
 
 > The best time to activate additional displays is when your application creates a **new Scene**. A good way to do this is to **attach a script component to the default Camera**. Make sure you call **`Display.Activate()`** only once during startup. As a best practice, you might find it helpful to **create a small initial Scene to test your script**.
 
@@ -44,5 +53,5 @@ From the Display menu in the top-left corner, select the Display to Preview.
 
 https://docs.unity3d.com/Manual/MultiDisplay.html
 
-
+S
 
