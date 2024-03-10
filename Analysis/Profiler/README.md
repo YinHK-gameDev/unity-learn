@@ -87,7 +87,7 @@ The Player Name category includes the following categories that display informat
 #### Best practices for profiling your application
 When you profile your application, there are a few things that you can do to ensure consistency across profiling sessions, and to make sure that the processes that Unity uses do not affect your profiling data:
 
-- Only add the** Profiler modules related to the area** that you want to investigate to the Profiler window. To add and remove modules to the Profiler, select the dropdown in the top left of the Profiler window.
+- Only add the **Profiler modules related to the area** that you want to investigate to the Profiler window. To add and remove modules to the Profiler, select the dropdown in the top left of the Profiler window.
 
 - **Avoid using Deep Profiling**, because it **might create a high overhead when you use i**t. If you want to see more details on samples with markers such as GC.Alloc or JobFence.Complete, go to the Profiler window toolbar and enable the Call Stacks setting. This provides the sample’s full call stack, which gives you the information you need without incurring the overhead of Deep Profiling.
 
