@@ -85,3 +85,8 @@ https://docs.unity3d.com/Manual/Animations.html
 
 **用Mixamo自動幫模型綁骨架+動畫--詳細流程教學**
 https://youtu.be/88qbApTkclM
+
+
+
+### ref
+https://gamedevacademy.org/unity-animator-tutorial/
