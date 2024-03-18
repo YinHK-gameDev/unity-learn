@@ -25,10 +25,10 @@ If the GameObject does not yet have any Animation Clips assigned, the "**Create*
 
 When you **save this new empty Animation Clip**, Unity does the following:
 
-- Creates a new Animator Controller Asset
-- Adds the new clip into the Animator Controller as the default state
-- Adds an Animator Component to the GameObject that you are applying animation to
-- Assigns the new Animator Controller to the Animator Component
+- Creates a new **Animator Controller Asset**
+- Adds the new clip into the **Animator Controller** as the default state
+- Adds an **Animator Component** to the **GameObject** that you are applying animation to
+- **Assigns the new Animator Controller** to the **Animator Component**
 
 All the required elements of the animation system are now set up, and you can begin animating the GameObject.
 
