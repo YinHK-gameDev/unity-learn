@@ -39,6 +39,7 @@ If the GameObject already has **one or more Animation Clips** assigned, the **"C
 
 To create a new Animation Clip on a GameObject that has existing animations, select **"Create New Clip"** from this menu. Again, Unity **prompts you to save your new empty Animation Clip** before you can work on it.
 
+![](./AnimationEditorNewClipMenu.png)
 
 > A GameObject **must** have an **Animator component**
 
