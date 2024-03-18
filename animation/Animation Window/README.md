@@ -40,8 +40,7 @@ There are two distinct methods you can use to animate GameObjects in the Animati
 - **Preview Mode**: \
   In preview mode, modifying your animated GameObject **_does not_ automatically create keyframes**. You **must manually create keyframes** each time you modify your GameObject to a desired new state (for example, moving or rotating it). Press the **Preview** button to enable preview mode. The Animation window time line is **tinted blue** when in preview mode. \
   ![](./AnimationEditorControlsPreviewMode.png)
-
-_Note: In record mode, the **Preview** button is also active, because you are previewing the existing animation and recording new keyframes at the same time._
+  > **Note**: In **record mode**, the **Preview** button is also **active**, because you are previewing the existing animation and recording new keyframes at the same time.
 
 ### Manually creating keyframes
 There are three different ways to manually create a keyframe when you have modified a GameObject in preview mode.
