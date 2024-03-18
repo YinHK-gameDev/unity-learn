@@ -48,6 +48,9 @@ You can select specific property for the gameobject to animate by click the **"A
 
 ![](./Add_property.png)
 
+> The animatable properties of a GameObject are revealed when you click the **Add Property** button
+
+![](./AnimationEditorMatchesInspector.png)
 
 #### Animating Child Game Objects
 You may want to animate GameObjects that have multiple moving parts.
@@ -80,7 +83,9 @@ Once in Record mode you can create keyframes by setting the white Playback head 
 
 You can stop the **Record Mode** at any time by clicking the **Record button** again. When you stop Record mode, the Animation window switches to **Preview mode**, so that you can still see the GameObject in its current position according to the animation time line.
 
-You can animate any property of the GameObject by manipulating it while in Animation Record Mode. Moving, Rotating or Scaling the GameObject adds corresponding keyframes for those properties in the animation clip. Adjusting values directly in the GameObject’s inspector also adds keyframes while in Record mode. This applies to any animatable property in the inspector, including numeric values, checkboxes, colors, and most other values.
+You can **animate any property** of the GameObject by manipulating it while in Animation Record Mode. **Moving, Rotating or Scaling** the GameObject **adds corresponding keyframes** for those properties in the animation clip. 
+
+> **Adjusting values directly in the GameObject’s inspector also adds keyframes** while in Record mode. This **applies to any animatable property in the inspector**, including **numeric values**, **checkboxes**, **colors**, and **most other values**.
 
 Any properties of the GameObject that are currently animated are shown listed in the left-hand side of the Animation Window. Properties which are not animated are not shown in this window. Any new properties that you animate, including properties on child objects, are added to the property list area as soon as you start animating them.
 
