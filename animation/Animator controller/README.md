@@ -71,6 +71,43 @@ Animation Parameters are variables that are defined within an Animator Controlle
 -   _Bool_ - true or false value (represented by a checkbox)
 -   _Trigger_ - a boolean parameter that is reset by the controller when consumed by a transition (represented by a circle button)
 
+https://docs.unity3d.com/Manual/AnimationParameters.html
+
+#### Animation Layers
+
+Unity uses **Animation Layers** for **managing complex state machines** for **different body parts**. An example of this is if you have a lower-body layer for walking-jumping, and an upper-body layer for throwing objects / shooting.
+
+You can manage animation layers from the Layers Widget in the top-left corner of the Animator Controller.
+
+
+Clicking the gear wheel on the right of the window shows you the settings for this layer.
+
+![](./gear.png)
+
+On each layer, you can specify the mask and the Blending type. The mask specifies the body parts on which to apply the animation. The Blending type specifies how the animation is applied.
+
+-   Select **Override** to use the animation on this layer, replacing the animation on previous layers.
+-   Select **Additive** to add the animation on this layer on top of the animation from previous layers.  
+    For additive blending to be successful, the animation on the additive layer must contain the same properties as the previous layers.
+
+Add a new layer by pressing the **+** above the widget.
+
+The **Mask property** is there to **specify the mask used on this layer**. For example if you wanted to play a throwing animation on just the upper body of your model, while having your character also able to walk, run or stand still at the same time, you would use a mask on the layer which plays the throwing animation where the upper body sections are defined
+
+
+**Animation Layer syncing**:
+
+Sometimes it is useful to be able to **re-use the same state machine in different layers**. \
+For example if you want to simulate "wounded" behavior, and have "wounded" animations for walk / run / jump instead of the "healthy" ones. You can click the Sync checkbox on one of your layers, and then select the layer you want to sync with. The state machine structure will then be the same, but the actual animation clips used by the states will be distinct.
+
+This means the **Synced layer** **does not have its own state machine** definition at all - instead, it is an **instance of the source of the synced layer**. \
+Any changes you make to the layout or structure of the state machine in the synced layer view (eg, adding/deleting states or transitions) is **done to the source of the synced layer**. The **only changes that are unique to the synced layer are the selected animations used within each state**.
+
+![](./syn_layer.png)
+
+https://docs.unity3d.com/Manual/AnimationLayers.html
+
+
 ###  Animator Override Controller
 It is a type of asset which allows you to extend an existing Animator Controller, replacing the specific animation clips but otherwise retaining the original’s structure, parameters and logic. The difference is the animation clips. 
 
