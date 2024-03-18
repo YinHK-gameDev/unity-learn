@@ -7,14 +7,14 @@ The function called by an Animation Event also has the option to **take one para
 
 
 To add an **Animation Event** to a clip at the current playhead position, click the Event button. 
-To add an **Animation event** to any point in the Animation, double-click the Event line at the point where you want the Event to be triggered. 
-Once added, you can drag the mouse to reposition the Event. To delete an Event, select it and press the **Delete** key, or right-click on it and select **Delete Event**.
+To add an **Animation event** to any point in the Animation, **double-click the Event line** at the point where you want the Event to be triggered. 
+**Once added**, you can **drag the mouse to reposition the Event**. To **delete an Event**, select it and press the **Delete** key, or right-click on it and select **Delete Event**.
 
 ![](./AnimationEditorEventLine.png)
 
 
 When you add an Event, the Inspector
-Window displays several fields. These fields allow you to specify the name of the function you want to call, and the value of the parameter you want to pass to it.
+Window **displays several fields**. These fields allow you to **specify the name of the function** you want to call, and the **value of the parameter** you want to pass to it.
 
 ![](./AnimationEventInspector.png)
 
