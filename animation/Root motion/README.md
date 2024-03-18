@@ -117,5 +117,6 @@ https://read01.com/8PyaeG.html
 
 ### Ref
 https://docs.unity3d.com/Manual/RootMotion.html \
+https://docs.unity3d.com/Manual/ScriptingRootMotion.html \
 http://www.xionggf.com/post/unity3d/generic_animation_root_motion/
 
