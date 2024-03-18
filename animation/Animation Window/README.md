@@ -24,8 +24,9 @@ The timeline view has two modes, **Dopesheet** and **Curves**. To toggle between
   
   
 ### Time line
-You can click anywhere on the Animation window time line to move the playback head to that frame, and preview or modify that frame in the Animation Clip. The numbers in the time line are shown as seconds and frames, so 1:30 means 1 second and 30 frames.
+You can click anywhere on the Animation window time line to move the playback head to that frame, and preview or modify that frame in the Animation Clip. The numbers in the time line are shown as **seconds and frames**, so **1:30 means 1 second and 30 frames**.
 
+> Note: The time line appears **tinted blue** when in _Preview_ mode, or **tinted red** when in _Record_ mode.
 
 ### Animating a GameObject
 
