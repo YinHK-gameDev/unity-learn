@@ -61,6 +61,16 @@ Clicking the **"eye" icon** on or **off** will **show or hide the Parameters & L
 The **lock icon**
 enabling the lock icon will keep the Animator Window focused on the current state machine. When the lock icon is off, clicking a new animator asset or a Game Object with an animator component will switch the Animator Window to show that item’s state machine. Locking the window allows you to keep the Animator window showing the same state machine, regardless of which other assets or Game Objects are selected.
 
+
+#### Animation Parameters
+Animation Parameters are variables that are defined within an Animator Controller
+ that can be **accessed and assigned values from scripts**. This is how a script can **control or affect the flow of the state machine**.
+
+-   _Integer_ - a whole number
+-   _Float_ - a number with a fractional part
+-   _Bool_ - true or false value (represented by a checkbox)
+-   _Trigger_ - a boolean parameter that is reset by the controller when consumed by a transition (represented by a circle button)
+
 ###  Animator Override Controller
 It is a type of asset which allows you to extend an existing Animator Controller, replacing the specific animation clips but otherwise retaining the original’s structure, parameters and logic. The difference is the animation clips. 
 
@@ -72,7 +82,7 @@ To create a new Animator Override Controller, use the **Assets > Create** menu, 
 
 In the controller field in the **Animator Override Controller** component, dragging an existing controller into the Animator Override Controller’s inspector.
 
-
+Parameters can be assigned values **from a script** using functions in the `Animator` class: `SetFloat`, `SetInteger`, `SetBool`, `SetTrigger` and `ResetTrigger`.
 
 ### ref 
 https://docs.unity3d.com/Manual/AnimatorControllers.html \
