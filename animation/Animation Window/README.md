@@ -43,6 +43,11 @@ There are two distinct methods you can use to animate GameObjects in the Animati
   ![](./AnimationEditorControlsPreviewMode.png)
   > **Note**: In **record mode**, the **Preview** button is also **active**, because you are previewing the existing animation and recording new keyframes at the same time. If you move the time frame or click play button, it will enable preview mode.
 
+#### Animated properties
+You can select specific property for the gameobject to animate by click the **"Add property"** to open the menu.
+
+![](./Add_property.png)
+
 
 #### Animating Child Game Objects
 You may want to animate GameObjects that have multiple moving parts.
@@ -60,6 +65,11 @@ Use **Add Property** to display the **list of animatable properties**. You can a
 
 
 > **Note**: You can also **select the child GameObject to animate** from the Hierarchy panel or the scene view and manipulate the object or change its properties in the inspector while in animation recording mode.
+
+
+### Recording keyframes
+To begin recording keyframes for the selected GameObject, click on the **Animation Record button**. This enters Animation Record Mode, where changes to the GameObject are recorded into the Animation Clip.
+
 
 
 ### Creating keyframes in preview mode
