@@ -16,7 +16,8 @@ Animation States are the basic building blocks of an Animation State Machine
 . Each state contains an animation sequence (or blend tree) that plays when the character is in that state. Select the state in the Animator Controller
 , to view the properties for the state in the Inspector
  window.
- 
+
+ ![](./Animation_state.png)
 | Property: | Description: |
 | --- | --- |
 | Motion | The animation clip or blend tree assigned to this state. |
