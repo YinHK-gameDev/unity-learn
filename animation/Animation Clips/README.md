@@ -15,7 +15,7 @@ Animation clips imported from external sources could include:
 
 #### Importing animation files
 
-Before any animation can be used in Unity, it must first be imported into your project. Unity can import native Autodesk® Maya® (.mb or .ma), Autodesk® 3ds Max® (.max), and Blender™ (.blend), and also generic FBX files which can be exported from most animation packages. Note that importing from .blend files requires a local installation of Blender™.
+Before any animation can be used in Unity, it must first be imported into your project. Unity can import native **Autodesk® Maya® (.mb or .ma)**, **Autodesk® 3ds Max® (.max)**, and **Blender™ (.blend)**, and also generic FBX files which can be exported from most animation packages. Note that importing from .blend files requires a local installation of **Blender™**.
 
 ### Creating a new Animation Clip from scratch using Animation window
 
