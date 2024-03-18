@@ -35,6 +35,9 @@ When you have animation clips ready to use, you need to use an Animator Controll
 ![](./Animation_controller_asset.png)
 
 
+Animator Controller assets are created from the Assets menu, or from the Create menu in the Project window.
+
+The controller manages the **various animation states and the transitions between them using a so-called State Machine**. 
 
 ### Animator window
 
