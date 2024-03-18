@@ -46,6 +46,13 @@ The **Animator Window** allows you to create, view and modify Animator Controlle
 **Animator window**: \
 ![](./MecanimAnimatorControllerWindow.png)
 
+The **Animator Controller window** contains:
+
+- The Animation Layer Widget (top-left corner, see Animation Layers)
+- The Event Parameters Widget (top-left, see Animation Parameters)
+- The visualization of the State Machine itself.
+
+
 The **left-hand pane** can be switched betwen **Parameters view** and **Layers view**. The parameters view **allows you to create, view and edit the Animator Controller Parameters**. These are variables you define that act as inputs into the state machine. To add a parameter, click the Plus icon and select the parameter type from the pop up menu. To delete a parameter, select the parameter in the lists and press the delete key (on macOS use fn-Delete to delete the selected parameter).
 
 
@@ -131,5 +138,6 @@ Parameters can be assigned values **from a script** using functions in the `Anim
 
 ### ref 
 https://docs.unity3d.com/Manual/AnimatorControllers.html \
-https://docs.unity3d.com/Manual/class-AnimatorController.html
+https://docs.unity3d.com/Manual/class-AnimatorController.html \
+https://docs.unity3d.com/Manual/AnimatorControllerCreation.html
 
