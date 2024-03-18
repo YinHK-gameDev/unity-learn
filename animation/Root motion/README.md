@@ -1,6 +1,10 @@
 ## Root motion
 Motion of character’s root node, whether it’s controlled by the animation itself or externally.
 
+Automatically **move the object using the root motion** from the animations instead of animating the  object in-place with moving animation. In root motion, Unity **calculate the motion** and **move the object according to the animation**. 
+
+![](./Apply_root_motion.png)
+
 ### Root node
 A transform in an animation hierarchy that allows Unity to establish consistency between Animation clips for a generic model. It also enables Unity to properly blend between Animations that have not been authored “in place” (that is, where the whole Model moves its world position while animating). 
 
