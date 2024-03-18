@@ -41,10 +41,24 @@ https://docs.unity3d.com/Manual/class-State.html
 
 ### Animation transitions
 
-Animation transitions allow the state machine
- to switch or blend from one animation state to another. Transitions define not only how long the blend between states should take, but also under what conditions they should activate. You can set up a transition to occur only when certain conditions are true. To set up these conditions, specify values of parameters in the Animator Controller.
+State Machine Transitions exist to help you **simplify large or complex State Machines**. They allow you to have a higher level of abstraction over the state machine logic.
 
-### Transition properties
+**Animation transitions** allow the **state machine to switch or blend from one animation state to another**. Transitions define not only how long the blend between states should take, but also under what conditions they should activate. You can set up a transition to occur only when certain conditions are true. To set up these conditions, specify values of parameters in the Animator Controller.
+
+![](./AnimatorEntryNodeSingleTransition.png)
+
+> Each view in the animator window has an **Entry** and **Exit** node. These are used during State Machine Transitions.
+
+The Entry node is used when transitioning into a state machine. The entry node will be evaluated and will branch to the destination state according to the conditions set. In this way the entry node can control which state the state machine begins in, by evaluating the state of your parameters when the state machine begins.
+
+![](./AnimatorEntryNodeMultipleTransitions.png)
+
+> You canalso add **additional transitions from the Entry node to other states**, to control whether the state machine should begin in a different state.
+
+
+
+
+#### Transition properties
 To view properties for a transition, click on the transition line connecting two states in the Animator window. The properties appear in the Inspector window.
 
 | Property | Function |
@@ -59,7 +73,7 @@ To view properties for a transition, click on the transition line connecting two
 | Ordered Interruption | Determines whether the current transition can be interrupted by other transitions independently of their order (see Transition interruption below). |
 | Conditions | A transition can have a single condition, multiple conditions, or no conditions at all. If your transition has no conditions, the Unity Editor only considers the Exit Time, and the transition occurs when the exit time is reached. If your transition has one or more conditions, the conditions must all be met before the transition is triggered.A condition consists of:- An event parameter (the value considered in the condition).- A conditional predicate (if needed,for example, ‘less than’ or ‘greater than’ for floats).- A parameter value (if needed).If you have Has Exit Time selected for the transition and have one or more conditions, note that the Unity Editor considers whether the conditions are true after the Exit Time. This allows you to ensure that your transition occurs during a certain portion of the animation. |
 
-### Conditions
+#### Conditions
 A transition can have a **single condition**, **multiple conditions**, or **no conditions** at all. If your transition has no conditions, the Unity Editor **only considers the Exit Time**, and the **transition occurs when the exit time is reached**. 
 > If your transition has one or more conditions, the conditions must all be met before the transition is triggered.
 
@@ -71,7 +85,7 @@ A condition consists of:
 
 > If **Has Exit Time** is enabled for the transition and has one or more conditions, these conditions are only checked after the **exit time** of the state. This allows you to **ensure that your transition only occurs during a certain portion of the animation**.
 
-### Transition interruption
+#### Transition interruption
 Use the Interruption Source and Ordered Interruption properties to control how your transition can be interrupted.
 
 **Interruption Source property** 
@@ -97,9 +111,27 @@ The property Ordered Interruption changes how the queue is parsed.
 
 > Only an AnyState transition can be interrupted by itself.
 
+#### Transition graph
+
+To **manually adjust the settings** listed above, you can either **enter numbers directly into the fields** or **use the transition graph**. The **transition grap**h modifies the values above when the **visual elements are manipulated**.
+
+The Transition settings and graph as shown in the Inspector
+
+Change the transition properties in the graph view using the following directions::
+
+-   Drag the **Duration “out”** marker to change the **Duration** of the transition.
+-   Drag the **Duration “in”** marker to change the duration of the transition and the **Exit Time**.
+-   Drag the target state to adjust the **Transition Offset**.
+-   Drag the preview playback marker to scrub through the animation blend in the preview window at the bottom of the Inspector.
+
+#### Transitions between Blend Tree states
+If either the current or next state belonging to this transition is a Blend Tree state, the Blend Tree parameters appear in the Inspector. Adjust these values to preview how your transition would look with the Blend Tree values set to different configurations. If your Blend Tree contains clips of differing lengths, you should test what your transition looks like when showing both the short clip and the long clip. Adjusting these values does not affect how the transition behaves at runtime; they are solely for helping you preview how the transition could look in different situations.
 
 
-https://docs.unity3d.com/Manual/class-Transition.html
+
+https://docs.unity3d.com/Manual/StateMachineTransitions.html \
+https://docs.unity3d.com/Manual/class-Transition.html 
+
 
 
 
