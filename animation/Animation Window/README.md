@@ -62,6 +62,15 @@ Use **Add Property** to display the **list of animatable properties**. You can a
 > **Note**: You can also **select the child GameObject to animate** from the Hierarchy panel or the scene view and manipulate the object or change its properties in the inspector while in animation recording mode.
 
 
+### Creating keyframes in preview mode
+
+As well as using **Record mode** to automatically create keyframes when you modify a GameObject, you can create keyframes in **Preview mode** by modifying a property on the GameObject, then **explicitly choosing to create a keyframe for that property**.
+
+In **preview mode**, **animated properties are tinted blue in the Inspector window**. When you see this **blue tint**, it means these values are being driven by the keyframes of the animation clip currently being previewed in the animation window.
+
+Eg: \
+![](./AnimationEditorPreviewModifiedValue.png)
+
 
 ### Manually creating keyframes
 There are three different ways to manually create a keyframe when you have modified a GameObject in preview mode.
