@@ -3,7 +3,7 @@
 Use **Animation Events** to **call functions** at **specific points** in the timeline. 
 These functions can be in **any script attached to the GameObject**.
 
-The function called by an Animation Event also has the option to **take one parameter**. The parameter can be a **`float`**, **`string`**, **`int`**, or **`object`** reference, or an `AnimationEvent object`. The **AnimationEvent** object has member variables that allow a **`float`**, **`string`**, **`integer`** and **`object`** reference to be passed into the function all at once, along with other information about the Event that triggered the function call.
+The function called by an Animation Event also has the option to **take one parameter**. The parameter can be a **`float`**, **`string`**, **`int`**, or **`object`** reference, or an **AnimationEvent** object. The **AnimationEvent** object has member variables that allow a **`float`**, **`string`**, **`integer`** and **`object`** reference to be passed into the function all at once, along with other information about the Event that triggered the function call.
 
 
 To add an **Animation Event** to a clip at the current playhead position, click the Event button. 
