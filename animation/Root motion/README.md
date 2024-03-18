@@ -111,4 +111,6 @@ Loop Pose (like Pose Blending in Blend Trees or Transitions) happens in the refe
 https://read01.com/8PyaeG.html
 
 ### Ref
-https://docs.unity3d.com/Manual/RootMotion.html
+https://docs.unity3d.com/Manual/RootMotion.html \
+http://www.xionggf.com/post/unity3d/generic_animation_root_motion/
+
