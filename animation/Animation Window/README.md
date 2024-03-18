@@ -73,7 +73,9 @@ Use **Add Property** to display the **list of animatable properties**. You can a
 ### Recording keyframes
 To begin recording keyframes for the selected GameObject, click on the **Animation Record button**. This enters Animation Record Mode, where changes to the GameObject are recorded into the Animation Clip.
 
-Once in Record mode you can create keyframes by setting the white Playback head to the desired time in the Animation time line, and then **modify your GameObject to the state** you want it to be at that point in time.
+Once in **Record mode** you can **create keyframes** by setting the white Playback head to the **desired time** in the Animation time line, and then **modify your GameObject to the state** you want it to be at that point in time.
+
+> Move to the specific time, when animated property has values modified at the current time, it automatically add key frame.
 
 **The changes** you make to the GameObject **are recorded as keyframes at the current time** shown by the white line (the playback head) in the Animation Window.
 
