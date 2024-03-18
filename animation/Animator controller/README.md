@@ -110,6 +110,9 @@ Any changes you make to the layout or structure of the state machine in the sync
 
 ![](./syn_layer.png)
 
+The **Timing checkbox** allows the **animator to adjust how long each animation in synced layers takes**, determined by the weight. \
+If Timing is **unselected** then **animations on the synced layer will be adjusted**. The adjustment will be **stretched to the length of the animation on the original layer**. If the **option is selected** the **animation length will be a balance for both animations**, **based on weight**. In both cases (chosen and not chosen) the **animator adjusts the length of the animations**. If not chosen then the original layer is the sole master. If chosen, it is then a compromise.
+
 https://docs.unity3d.com/Manual/AnimationLayers.html
 
 
