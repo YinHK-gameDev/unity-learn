@@ -37,7 +37,14 @@ Animation States are the basic building blocks of an Animation State Machine
 
 The default state, displayed in brown, is the state that the machine will be in when it is first activated. You can change the default state, if necessary, by right-clicking on another state and selecting Set As Default from the context menu. The **`solo`** and **`mute` checkboxes** on each transition are used to **control the behaviour of animation previews**.
 
-A new state can be added by right-clicking on an empty space in the **Animator Controller Window** and selecting **Create State->Empty** from the context menu. Alternatively, you can drag an animation into the Animator Controller Window to create a state containing that animation.
+
+#### Creating new State / Sub-State Machine
+
+A **new state**/ **new Sub-State Machine** can be added by **right-clicking on an empty space** in the **Animator Controller Window** and selecting **Create State->Empty**/**Create Sub-State Machine** from the context menu.
+
+**Alternatively, you can drag an animation into the Animator Controller Window to create a state** containing that animation.
+
+![](./context_menu.png)
 
 https://docs.unity3d.com/Manual/class-State.html
 
