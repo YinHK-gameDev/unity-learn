@@ -35,6 +35,9 @@ Animation States are the basic building blocks of an Animation State Machine
 | Write Defaults | Whether the AnimatorStates writes the default values for properties that are not animated by its motion. |
 | Transitions | The list of transitions originating from this state. |
 
+The default state, displayed in brown, is the state that the machine will be in when it is first activated. You can change the default state, if necessary, by right-clicking on another state and selecting Set As Default from the context menu. The **`solo`** and **`mute` checkboxes** on each transition are used to **control the behaviour of animation previews**.
+
+A new state can be added by right-clicking on an empty space in the **Animator Controller Window** and selecting **Create State->Empty** from the context menu. Alternatively, you can drag an animation into the Animator Controller Window to create a state containing that animation.
 
 https://docs.unity3d.com/Manual/class-State.html
 
