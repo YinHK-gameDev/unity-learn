@@ -23,7 +23,7 @@ To create a new Animation Clip, select a GameObject in your Scene, and open the 
 
 If the GameObject does not yet have any Animation Clips assigned, the "**Create**" button appears in the centre of the **Animation Window** timeline area
 
-When you save this new empty Animation Clip, Unity does the following:
+When you **save this new empty Animation Clip**, Unity does the following:
 
 - Creates a new Animator Controller Asset
 - Adds the new clip into the Animator Controller as the default state
