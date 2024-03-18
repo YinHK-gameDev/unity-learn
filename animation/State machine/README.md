@@ -80,6 +80,18 @@ The _Up_ state represents the “outside world”, the state machine that enclos
 https://docs.unity3d.com/Manual/NestedStateMachines.html
 
 
+### Inverse Kinematics
+**Inverse kinematics (IK)**. It is supported in Mecanim for a humanoid character with a correctly configured Avatar.
+
+To set up **IK** for a character, you typically have objects around the scene
+ that a character interacts with. You can use these objects and your character to set up **IK** within a script. You can use the following Animator functions:  **`SetIKPositionWeight`**, **`SetIKRotationWeight`, `SetIKPosition`, `SetIKRotation`, `SetLookAtPosition`, `bodyPosition`, `bodyRotation`**. 
+
+1. Create a valid Avatar for your character.
+2. Create an Animator Controller with at least one animation for this character.
+3. In the Layers pane of the Animator window, click the Cog icon in the Base Layer and **enable** **IK Pass** from the context menu. When enabled, IK Pass sends an **`OnAnimatorIK**` callback. In a later step, you will use this callback to implement **inverse kinematics in a script**.
+ 
+https://docs.unity3d.com/Manual/InverseKinematics.html
+
 ### Animation transitions
 
 State Machine Transitions exist to help you **simplify large or complex State Machines**. They allow you to have a higher level of abstraction over the state machine logic.
