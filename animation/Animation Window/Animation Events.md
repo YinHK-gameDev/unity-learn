@@ -24,6 +24,8 @@ You can also use a selection box to select multiple Animation Events. To do this
 
 ![](./AnimationEditorMultipleEventSelection.png)
 
+To delete an Animation Event, select it and press the **Delete** key. You can also right-click the Animation Event and choose **Delete Event** from the context menu.
+
 
 ### ref 
 
