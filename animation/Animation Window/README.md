@@ -35,8 +35,8 @@ There are three different ways to manually create a keyframe when you have modif
 2. You can also **add a keyframe** by clicking the **Add Keyframe button** in the Animation window. \
    ![](./Add_keyframe.png)
 3. You can add a keyframe (or keyframes) by using the hotkeys **K** or **Shift-K** as described below:
-   - **K** - Key all animated. Adds an keyframe for all animated properties at the current position of the playback head in the animation window.
-   - **Shift-K** - Key all modified. Adds an keyframe for only those animated properties which have been modified at the current position of the playback head in the animation window.
+   - **K** - Key all animated. **Adds an keyframe for all animated properties at the current position** of the playback head in the animation window.
+   - **Shift-K** - Key all modified. **Adds an keyframe for only those animated properties which have been modified at the current position** of the playback head in the animation window.
 
 
 
