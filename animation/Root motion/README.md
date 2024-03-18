@@ -116,6 +116,18 @@ Most of the AnimationClips will enable this setting. Only clips that will change
 ### Loop Pose
 Loop Pose (like Pose Blending in Blend Trees or Transitions) happens in the referential of Root Transform. Once the Root Transform is computed, the Pose becomes relative to it. The relative Pose difference between Start and Stop frame is computed and distributed over the range of the clip from 0–100%
 
+
+### Apply motion vs Bake into pose
+
+勾选界面面板中的`apply root motion`选项，用来启动**root transform**。勾选界面面板中的`bake into pose`选项，用来启动**body transform**。组合勾选后的类型如下：
+
+| apply root motion | bake into pose | Type |
+| --- | --- | --- |
+| true | true | body transform |
+| false | true | body transform |
+| true | false | root transform |
+| false | false | root transform |
+
 ### Stiuation
 
 1. 勾選」Bake into Pose",不勾選「Apply Root Motion",勾選」Bake into Pose"後，變換屬於Body Transform，所以即使這裡未勾選」Apply Root Motion「，但是動畫依然會在場景中體現，人物會按照動畫的路逕行走（但是如果我們觀察Inspector中模型的position參數，值一直不變）。但是因為沒有勾選Apply Root Motion，所以動畫結束後，變換不會應用到模型，所以如果這時候，如果開始一個新的動畫的話，模型會瞬間回到起始位置（新的動畫開始時候，模型處於行走動畫開始時的位置）。
