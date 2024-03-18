@@ -38,6 +38,22 @@ Animation States are the basic building blocks of an Animation State Machine
 The default state, displayed in brown, is the state that the machine will be in when it is first activated. You can change the default state, if necessary, by right-clicking on another state and selecting Set As Default from the context menu. The **`solo`** and **`mute` checkboxes** on each transition are used to **control the behaviour of animation previews**.
 
 
+#### Solo and Mute functionality
+
+It is useful to preview the operation of some parts of the machine separately. For this, you can use the **Mute** and **Solo** functionality:
+
+-   **Mute** disables a transition.
+-   **Solo** plays only that transition.
+
+You can set up multiple **Solo** transitions to play only those that have Solo enabled. If one transition has **Solo** enabled, Unity enables **Mute** on the other transitions. If both **Solo** and **Mute** are enabled, then **Mute** takes precedence.
+
+You can set up **Mute** and **Solo** states either from the **Transition Inspector**, or the **State Inspector**, which provides an overview of all transitions from that state.
+
+![](./MecanimSoloMuteInspector.png)
+
+https://docs.unity3d.com/Manual/AnimationSoloMute.html
+
+
 #### Creating new State / Sub-State Machine
 
 A **new state**/ **new Sub-State Machine** can be added by **right-clicking on an empty space** in the **Animator Controller Window** and selecting **Create State->Empty**/**Create Sub-State Machine** from the context menu.
@@ -60,6 +76,7 @@ When you **double-click the hexagon**, the editor is cleared to let you **edit t
 The _Up_ state represents the “outside world”, the state machine that encloses the sub-state machine in the view. If you add a transition from a state in sub-state machine to the _Up_ state, you will be prompted to choose one of the states of the enclosing machine to connect to.
 
 ![](./MecanimSubStateUp.png)
+
 https://docs.unity3d.com/Manual/NestedStateMachines.html
 
 
