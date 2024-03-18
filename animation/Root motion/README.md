@@ -128,6 +128,8 @@ Loop Pose (like Pose Blending in Blend Trees or Transitions) happens in the refe
 | true | false | root transform |
 | false | false | root transform |
 
+如果对于一个动画，一旦勾选了`Bake into pose`，那么他的旋转（rotation），或者位移（Y、ZX）就变成了动画效果的一部分，而**不会影响**模型本身的旋转和位移。如果没有勾选`bake into pose`，那么这个动画的旋转和位移能否作用于模型，取决于`apply root motion` 是否为**true**。如果为true，那么会改变模型实际上的位移和旋转，反之那么只有动画效果，没有对模型的实际位移和旋转。
+
 ### Stiuation
 
 1. 勾選」Bake into Pose",不勾選「Apply Root Motion",勾選」Bake into Pose"後，變換屬於Body Transform，所以即使這裡未勾選」Apply Root Motion「，但是動畫依然會在場景中體現，人物會按照動畫的路逕行走（但是如果我們觀察Inspector中模型的position參數，值一直不變）。但是因為沒有勾選Apply Root Motion，所以動畫結束後，變換不會應用到模型，所以如果這時候，如果開始一個新的動畫的話，模型會瞬間回到起始位置（新的動畫開始時候，模型處於行走動畫開始時的位置）。
