@@ -33,7 +33,7 @@ Once you have saved the new Animation clip Asset, you are ready to begin **addin
 
 There are two distinct methods you can use to animate GameObjects in the Animation window: **Record Mode** and **Preview Mode**.
 
-- **Record Mode**. (Also referred to as auto-key mode)
+- **Record Mode**(Also referred to as auto-key mode): \
   In record mode, Unity **automatically creates keyframes** at the playback head **when you move, rotate, or otherwise modify any animatable property** on your animated GameObject. Press the button with the **red circle** to enable record mode. The Animation window time line is **tinted red** when in record mode.
 
 ### Manually creating keyframes
