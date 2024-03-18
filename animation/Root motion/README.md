@@ -33,8 +33,8 @@ https://www.youtube.com/watch?v=9bV0K-pifXE
 
 ### What's root motion and how it works?
 **Treadmill vs root motion**: There are two types of animation, **treadmill** and **root motion**. 
-- **Treadmill** means that the animation stays at the origin and we use code to move that asset around.
-- **Root motion** means the motion is built right into the animation and it's the animation that determines how far something moves rather than code.
+- **Treadmill** means that the animation **stays at the origin** and **we use code to move** that asset around.
+- **Root motion** means the **motion is built right into the animation** and it's the **animation that determines how far something moves rather than code**.
 
 https://answers.unity.com/questions/1238987/whats-root-motion-and-how-it-works.html
 
