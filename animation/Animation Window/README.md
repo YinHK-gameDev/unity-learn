@@ -40,3 +40,7 @@ There are three different ways to manually create a keyframe when you have modif
 
 
 
+### ref
+https://docs.unity3d.com/Manual/animeditor-UsingAnimationEditor.html \
+https://docs.unity3d.com/Manual/animeditor-AnimatingAGameObject.html
+
