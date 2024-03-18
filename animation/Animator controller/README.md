@@ -28,6 +28,14 @@ The controller manages the various **animation states** and the transitions betw
 https://www.youtube.com/watch?v=S3ys0jCUE9s
 
 
+### Animator Controller Asset
+When you have animation clips ready to use, you need to use an Animator Controller
+ to bring them together. An **Animator Controller asset** is **created within Unit**y and allows you to **maintain a set of animations** for a character or object.
+
+![](./Animation_controller_asset.png)
+
+
+
 ### Animator window
 
 The **Animator Window** allows you to create, view and modify Animator Controller assets. 
