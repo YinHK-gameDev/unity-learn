@@ -13,10 +13,10 @@ When you begin to animate various properties within this clip, the animated prop
 On the right side of the Animation View is the timeline for the current clip. The keyframes for each animated property appear in this timeline. 
 The timeline view has two modes, **Dopesheet** and **Curves**. To toggle between these modes, click Dopesheet or Curves at the bottom of the animated property list area
   
-- Dopesheet mode: \
+- **Dopesheet mode**: \
   Dopesheet mode offers a more compact view, allowing you to view each property’s keyframe sequence in an individual horizontal track. This allows you to view a simple overview of the keyframe timing for multiple properties or GameObjects.  
   
-- Curves mode: \
+- **Curves mode**: \
   Curves mode displays a resizable graph containing a view of how the values for each animated property changes over time. All selected properties appear overlaid within the same graph view. This mode allows you to have great control over viewing and editing the values, and how they are interpolated between.
   > Press **F** on the keyboard to zoom the view to the currently selected keyframes.
 
