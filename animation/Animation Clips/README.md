@@ -9,7 +9,7 @@ Animation Clips are one of the core elements to Unity’s animation system. Unit
 Animation clips imported from external sources could include:
 
 - Humanoid animations captured at a motion capture studio
-- Animations created from scratch by an artist in an external 3D application (such as Autodesk® 3ds Max® or Autodesk® Maya®)
+- Animations created from scratch by an artist in an external 3D application (such as **Autodesk®** **3ds Max®** or **Autodesk® Maya®**)
 - Animation sets from 3rd-party libraries (eg, from Unity’s asset store)
 - Multiple clips cut and sliced from a single imported timeline.
 
