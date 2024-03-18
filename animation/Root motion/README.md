@@ -9,7 +9,7 @@ Sometimes your animation comes as “in-place”, which means if you put it in a
 , it will not move the character that it’s on. In other words, the animation does not contain **“root motion”**.
 
 ### Root node
-A transform in an animation hierarchy that allows Unity to establish consistency between Animation clips for a generic model. It also enables Unity to properly blend between Animations that have not been authored “in place” (that is, where the whole Model moves its world position while animating). 
+A transform in an animation hierarchy that allows Unity to establish consistency between Animation clips for a generic model. It also enables Unity to properly blend between Animations that **have not been authored “in place”** (that is, where the whole Model moves its world position while animating). 
 
 
 ### Explain root motion
