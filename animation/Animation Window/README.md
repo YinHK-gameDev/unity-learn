@@ -71,6 +71,11 @@ In **preview mode**, **animated properties are tinted blue in the Inspector wind
 Eg: \
 ![](./AnimationEditorPreviewModifiedValue.png)
 
+A modified animated property in preview mode. This change has not yet been saved as a keyframe
+
+> In this modified state, you **must manually create a keyframe to "save" this modification**. If you move the playback head, or switch your selection away from the animated GameObject, you will lose the modification.
+
+
 
 ### Manually creating keyframes
 There are three different ways to manually create a keyframe when you have modified a GameObject in preview mode.
