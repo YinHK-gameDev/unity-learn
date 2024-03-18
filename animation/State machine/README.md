@@ -93,3 +93,8 @@ The property Ordered Interruption changes how the queue is parsed.
 
 
 https://docs.unity3d.com/Manual/class-Transition.html
+
+
+
+### ref 
+https://docs.unity3d.com/Manual/StateMachineBasics.html
