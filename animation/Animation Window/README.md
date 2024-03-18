@@ -70,6 +70,23 @@ Use **Add Property** to display the **list of animatable properties**. You can a
 ### Recording keyframes
 To begin recording keyframes for the selected GameObject, click on the **Animation Record button**. This enters Animation Record Mode, where changes to the GameObject are recorded into the Animation Clip.
 
+Once in Record mode you can create keyframes by setting the white Playback head to the desired time in the Animation time line, and then **modify your GameObject to the state** you want it to be at that point in time.
+
+**The changes** you make to the GameObject **are recorded as keyframes at the current time** shown by the white line (the playback head) in the Animation Window.
+
+**Any change to an animatable property** (such as its **position or rotation**) will **cause a keyframe for that property to appear in the Animation window**.
+
+**Clicking** or **dragging** in the time line bar moves the playback head and shows the state of the animation at the playback head’s current time.
+
+You can stop the **Record Mode** at any time by clicking the **Record button** again. When you stop Record mode, the Animation window switches to **Preview mode**, so that you can still see the GameObject in its current position according to the animation time line.
+
+You can animate any property of the GameObject by manipulating it while in Animation Record Mode. Moving, Rotating or Scaling the GameObject adds corresponding keyframes for those properties in the animation clip. Adjusting values directly in the GameObject’s inspector also adds keyframes while in Record mode. This applies to any animatable property in the inspector, including numeric values, checkboxes, colors, and most other values.
+
+Any properties of the GameObject that are currently animated are shown listed in the left-hand side of the Animation Window. Properties which are not animated are not shown in this window. Any new properties that you animate, including properties on child objects, are added to the property list area as soon as you start animating them.
+
+**Transform** properties are special in that the **.x**, **.y**, and **.z** properties are linked, so curves for all three are added at the same time.
+
+
 
 
 ### Creating keyframes in preview mode
