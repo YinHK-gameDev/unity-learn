@@ -18,6 +18,15 @@ Window **displays several fields**. These fields allow you to **specify the name
 
 ![](./AnimationEventInspector.png)
 
+You can select and manipulate multiple Events in the Event Line. To select multiple Events in the Event Line, hold the **Shift** key and click each Event marker one by one. To remove a marker from the selection, hold **Shift** and click a selected marker.
+
+You can also use a selection box to select multiple Animation Events. To do this, click and drag within the Event Line
+
+![](./AnimationEditorMultipleEventSelection.png)
+
+
+### ref 
+
 https://docs.unity3d.com/Manual/script-AnimationWindowEvent.html
 
 
