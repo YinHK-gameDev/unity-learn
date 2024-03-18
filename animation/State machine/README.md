@@ -97,4 +97,6 @@ https://docs.unity3d.com/Manual/class-Transition.html
 
 
 ### ref 
-https://docs.unity3d.com/Manual/StateMachineBasics.html
+https://docs.unity3d.com/Manual/StateMachineBasics.html \
+https://docs.unity3d.com/Manual/class-State.html
+
