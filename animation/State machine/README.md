@@ -48,6 +48,20 @@ A **new state**/ **new Sub-State Machine** can be added by **right-clicking on a
 
 https://docs.unity3d.com/Manual/class-State.html
 
+### Sub-State Machines
+It is common for a character to have complex actions that consist of a number of stages. Rather than handle the entire action with a single state, it makes sense to identify the separate stages and use a separate state for each. For example, a character may have an action called “Trickshot” where it crouches to take a steady aim, shoots and then stands up again.
+
+>  A sub-state machine is represented in the editor by an **elongated hexagon** to distinguish it from normal states.
+
+When you **double-click the hexagon**, the editor is cleared to let you **edit the sub-state machine** as though it were a completely separate state machine in its own right. The bar at the top of the window shows a “breadcrumb trail” to show which sub-state machine is currently being edited (and note that you can create sub-state machines within other sub-state machines, and so on). Clicking an item in the trail will focus the editor on that particular sub-state machine.
+
+> You will notice an extra state in the sub-state machine whose name begins with **"Up"**.
+
+The _Up_ state represents the “outside world”, the state machine that encloses the sub-state machine in the view. If you add a transition from a state in sub-state machine to the _Up_ state, you will be prompted to choose one of the states of the enclosing machine to connect to.
+
+![](./MecanimSubStateUp.png)
+https://docs.unity3d.com/Manual/NestedStateMachines.html
+
 
 ### Animation transitions
 
