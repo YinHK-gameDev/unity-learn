@@ -54,9 +54,9 @@ https://www.youtube.com/watch?v=oebtkjwjkcs
 
 ### Trigger animation
 
-In the Scripts folder, you’ll find a script called AnimatorControllerTriggers. This script was designed for you to edit so you can trigger animations to occur for your characters and objects based on keyboard input. 
+In the Scripts folder, you’ll find a script called **AnimatorControllerTriggers**. This script was designed for you to edit so you can trigger animations to occur for your characters and objects based on keyboard input. 
 To edit the script:
-1.  Open AnimatorControllerTriggers in Visual Studio by double-clicking the script in the scripts folder.
+1.  Open **AnimatorControllerTriggers** in Visual Studio by double-clicking the script in the scripts folder.
 2.  Scroll down to the Update method and find the section that directs you to duplicate the code block.
 3.  Select the code block, being sure to highlight the closing curly brace ( } ), and copy it with Ctrl/Cmd+C
 4.  Paste your new block several lines below the existing code block, but still inside the Update method (stay inside the second to last curly brace in the script).
