@@ -12,7 +12,7 @@ Animations set things to a specific value. For example, if a movement animation 
 So if your `position.x` is at 4 and you play that animation it will add the motion so it moves towards 5 and not jump back to the starting value when it loops.
 
 
-In Unity, it is possible to move our game objects using **root motion** without writing any script. Unity calculate the motion and move the object according to the animation.
+In Unity, it is possible to move our game objects using **root motion** without writing any script. Unity **calculate the motion** and **move the object according to the animation**.
 
 https://forum.unity.com/threads/confused-about-apply-root-motion-in-the-animator-component.940223/
 
