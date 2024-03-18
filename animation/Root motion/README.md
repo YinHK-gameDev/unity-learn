@@ -59,13 +59,20 @@ The **Animation Clip Editor** settings - **Root Transform Rotation**, **Root Tra
 
 
 ### Body Transform
+> **body transform**：动画发生的位移和旋转，只是单纯的动画效果，不会影响模型自身在世界空间中的实际位置和朝向。
+
+
 The Body Transform is the mass center of the character. It is used in Mecanim’s retargeting engine and provides the most stable displacement model. The Body Orientation is an average of the lower and upper body orientation relative to the Avatar T-Pose.
 Body Transform不影響模型實際的位置和角度，所以這裡只是純粹的動畫效果，模型的位置和角度參數值不變
+
 
 https://read01.com/8PyaeG.html
 
 ### Root Transform
-The Root Transform is a projection on the Y plane of the Body Transform and is computed at runtime. At every frame, a change in the Root Transform is computed. This change in transform is then applied to the Game Object to make it move.
+> **root transform**：动画发生的位移和旋转，会改变模型实际的位置和旋转。
+
+
+The Root Transform is a **projection on the Y plane of the Body Transform** and is **computed at runtime**. At every frame, a change in the Root Transform is computed. This change in transform is then applied to the Game Object to make it move.
 
 > root transform是指body transform在在Y平面上的投影（即Y=0的平面，可以理解为模型所站立的“地面”。且这个投影是在运行时执行计算。在每一帧，root transform的每一个变化都会被计算。然后这些变化将会作用到game object上，使得它发生运动
 
