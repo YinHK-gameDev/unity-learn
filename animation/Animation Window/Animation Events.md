@@ -16,6 +16,9 @@ To add an **Animation event** to any point in the Animation, **double-click the 
 When you add an Event, the Inspector
 Window **displays several fields**. These fields allow you to **specify the name of the function** you want to call, and the **value of the parameter** you want to pass to it.
 
+
+> Call the function which in **any script attached to the current animated GameObject**
+
 ![](./AnimationEventInspector.png)
 
 You can select and manipulate multiple Events in the Event Line. To select multiple Events in the Event Line, hold the **Shift** key and click each Event marker one by one. To remove a marker from the selection, hold **Shift** and click a selected marker.
