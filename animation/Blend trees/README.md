@@ -18,6 +18,14 @@ A Blend Node shown in the inspector before any motions have been added. The plus
 Alternatively, you can add animation clips or child blend nodes by right-clicking on the blend tree and selecting from the context menu:
 The context menu when right-clicking on a blend tree node.
 
+
+To add animation clips or child blend nodes by right-clicking on the blend tree and selecting from the context menu: 
+
+![](./img/MecanimBlendTreeInitial.png)
+
+Alternatively, you can add animation clips to the blend tree you can select the blend tree, then click the **"+"** icon in the motion field in the inspector.
+
+![](./img/AnimatorBlendTreeContextMenu.png)
 ### Blend types
 
 #### 1D blend tree
