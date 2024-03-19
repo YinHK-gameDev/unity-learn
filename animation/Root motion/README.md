@@ -119,6 +119,15 @@ Loop Pose (like Pose Blending in Blend Trees or Transitions) happens in the refe
 
 ### Apply motion vs Bake into pose
 
+在untiy中將動畫中的變換分成兩種，Body Transform和Root Transform,我們可以設置動畫中的關於模型的一些變換（平移、旋轉等）是屬於Body Transform（pose）還是Root Transform（trajectory）的一部分。這裡的Bake into Pose 也就是將變換設置為Body Transform（pose）的一部分。
+
+Apply Root Motion".這裡他會起到兩個作用，首先最重要的是，決定是否應用Root Transform，如果應用的話，那麼在動畫的同時，模型的位置和角度會同時跟著變化。如果這裡不勾選的話，那麼就是說不應用Root Transform，這樣我們所有的Root Transform都將不起任何作用。
+
+Apply Root Motion的第二個作用是在動畫結束後，將Body Transform中的變化應用到模型（注意，這裡是結束的時候才應用，也就是說動畫的時候，模型的position、rorate等參數是不變的，當動畫結束之後，開始新的動畫之前才會改變，注意這裡跟前面提到的Root Transform的區別）
+
+
+
+
 勾选界面面板中的`apply root motion`选项，用来启动**root transform**。勾选界面面板中的`bake into pose`选项，用来启动**body transform**。组合勾选后的类型如下：
 
 | apply root motion | bake into pose | Type |
@@ -131,6 +140,8 @@ Loop Pose (like Pose Blending in Blend Trees or Transitions) happens in the refe
 如果对于一个动画，一旦勾选了`Bake into pose`，那么他的旋转（rotation），或者位移（Y、ZX）就变成了动画效果的一部分，而**不会影响**模型本身的旋转和位移。如果没有勾选`bake into pose`，那么这个动画的旋转和位移能否作用于模型，取决于`apply root motion` 是否为**true**。如果为true，那么会改变模型实际上的位移和旋转，反之那么只有动画效果，没有对模型的实际位移和旋转。
 
 ### Stiuation
+比如說我們有一個人物行走的動畫，我們來考慮一下幾種情況（這裡以「Root transform position(XZ)為例）
+
 
 1. 勾選」Bake into Pose",不勾選「Apply Root Motion",勾選」Bake into Pose"後，變換屬於Body Transform，所以即使這裡未勾選」Apply Root Motion「，但是動畫依然會在場景中體現，人物會按照動畫的路逕行走（但是如果我們觀察Inspector中模型的position參數，值一直不變）。但是因為沒有勾選Apply Root Motion，所以動畫結束後，變換不會應用到模型，所以如果這時候，如果開始一個新的動畫的話，模型會瞬間回到起始位置（新的動畫開始時候，模型處於行走動畫開始時的位置）。
 2. 勾選」Bake into Pose",並勾選「Apply Root Motion"，這裡跟上面的情況唯一不同的就是，動畫結束後，開始新的動畫之前，變換會應用到模型。（模型的position在新的動畫開始之前會發生變化，新的動畫開始時候，模型處於動畫結束時的位置）
