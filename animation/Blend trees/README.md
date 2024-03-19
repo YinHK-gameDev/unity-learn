@@ -26,6 +26,12 @@ To add animation clips or child blend nodes by right-clicking on the blend tree 
 Alternatively, you can add animation clips to the blend tree you can select the blend tree, then click the **"+"** icon in the motion field in the inspector.
 
 ![](./img/AnimatorBlendTreeContextMenu.png)
+
+
+**Nested blend tree:**
+
+You can add a new blend tree inside other blend tree to build a nested blend tree.
+
 ### Blend types
 
 #### 1D blend tree
