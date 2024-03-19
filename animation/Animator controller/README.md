@@ -78,6 +78,9 @@ Animation Parameters are variables that are defined within an Animator Controlle
 -   _Bool_ - true or false value (represented by a checkbox)
 -   _Trigger_ - a boolean parameter that is reset by the controller when consumed by a transition (represented by a circle button)
 
+Parameters can be assigned values **from a script** using functions in the `Animator` class: `SetFloat`, `SetInteger`, `SetBool`, `SetTrigger` and `ResetTrigger`.
+
+
 https://docs.unity3d.com/Manual/AnimationParameters.html
 
 #### Animation Layers
@@ -134,7 +137,8 @@ To create a new Animator Override Controller, use the **Assets > Create** menu, 
 
 In the controller field in the **Animator Override Controller** component, dragging an existing controller into the Animator Override Controller’s inspector.
 
-Parameters can be assigned values **from a script** using functions in the `Animator` class: `SetFloat`, `SetInteger`, `SetBool`, `SetTrigger` and `ResetTrigger`.
+https://docs.unity3d.com/Manual/AnimatorOverrideController.html
+
 
 ### ref 
 https://docs.unity3d.com/Manual/AnimatorControllers.html \
