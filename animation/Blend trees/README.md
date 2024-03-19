@@ -23,6 +23,10 @@ The context menu when right-clicking on a blend tree node.
 #### 1D blend tree
 1D Blending **blends the child motions** according to a **single parameter**.
 
+
+![](./img/1dblend.png)
+
+
 https://docs.unity3d.com/Manual/BlendTree-1DBlending.html
 
 https://www.youtube.com/watch?v=m8rGyoStfgQ
