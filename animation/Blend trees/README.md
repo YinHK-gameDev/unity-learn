@@ -32,6 +32,9 @@ Alternatively, you can add animation clips to the blend tree you can select the 
 
 You can add a new blend tree inside other blend tree to build a nested blend tree.
 
+
+> The first option in the Inspector of a Blend Node is the Blend Type. This drop-down is used to select one of the different blend types that can blend according to one or two parameters.
+
 ### Blend types
 
 #### 1D blend tree
@@ -40,6 +43,9 @@ You can add a new blend tree inside other blend tree to build a nested blend tre
 
 ![](./img/1dblend.png)
 
+> After setting the Blend Type, the first thing you need is to select the **Animation Parameter** that will **control this Blend Tree**.
+
+you can add individual animations by clicking the small **"+"** button and selecting **Add Motion Field** from the popup menu.
 
 https://docs.unity3d.com/Manual/BlendTree-1DBlending.html
 
@@ -67,6 +73,10 @@ The 2D blending types **blends the child motions** according to **two parameters
 
 ![](./img/2dBlendTree2.png)
 
+You can add individual animations by clicking **+** -> **Add Motion Field** to add an **Animation Clip** to the blend tree.
+
+> After setting the Blend Type, the first thing you need is to select the **two Animation Parameters**
+ that will **control this Blend Tree**.
 
 The positions in 2D blending are like the thresholds in 1D blending, except that there are **two values instead of one**, **corresponding to each of the two parameters**.
 
