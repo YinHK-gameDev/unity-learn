@@ -38,6 +38,9 @@ Animation States are the basic building blocks of an Animation State Machine
 The default state, displayed in brown, is the state that the machine will be in when it is first activated. You can change the default state, if necessary, by right-clicking on another state and selecting Set As Default from the context menu. The **`solo`** and **`mute` checkboxes** on each transition are used to **control the behaviour of animation previews**.
 
 
+> Click the parameters boxes to overrider the constant value with an AnimatiorController's parameter to animate the property at run time
+
+
 #### Solo and Mute functionality
 
 It is useful to preview the operation of some parts of the machine separately. For this, you can use the **Mute** and **Solo** functionality:
