@@ -146,7 +146,7 @@ Apply Root Motion的第二個作用是在動畫結束後，將Body Transform中�
 1. 勾選」Bake into Pose",不勾選「Apply Root Motion",勾選」Bake into Pose"後，變換屬於Body Transform，所以即使這裡未勾選」Apply Root Motion「，但是動畫依然會在場景中體現，人物會按照動畫的路逕行走（但是如果我們觀察Inspector中模型的position參數，值一直不變）。但是因為沒有勾選Apply Root Motion，所以動畫結束後，變換不會應用到模型，所以如果這時候，如果開始一個新的動畫的話，模型會瞬間回到起始位置（新的動畫開始時候，模型處於行走動畫開始時的位置）。
 2. 勾選」Bake into Pose",並勾選「Apply Root Motion"，這裡跟上面的情況唯一不同的就是，動畫結束後，開始新的動畫之前，變換會應用到模型。（模型的position在新的動畫開始之前會發生變化，新的動畫開始時候，模型處於動畫結束時的位置）
 3. 不勾選」Bake into Pose",勾選「Apply Root Motion"，這時候，變換是作為Root Transform，所以因為這裡勾選了Apply Root Motion，變換會應用到模型（模型的position跟著動畫不停的變化），自然，新的動畫開始時候，模型處於動畫結束時的位置。
-4. 勾選」Bake into Pose",但不勾選「Apply Root Motion"，這裡變化還是作為Root Transform，但是因為沒有勾選Apply Root Motion，所以變換將不被應用，所以模型將一直在本地不動，自然，新的動畫開始時候，模型處於行走動畫開始時的位置
+4. 不勾選」Bake into Pose",但不勾選「Apply Root Motion"，這裡變化還是作為Root Transform，但是因為沒有勾選Apply Root Motion，所以變換將不被應用，所以模型將一直在本地不動，自然，新的動畫開始時候，模型處於行走動畫開始時的位置
 
 https://read01.com/8PyaeG.html
 
