@@ -153,7 +153,9 @@ Player Animation Override Controller \
 Drag an existing player animation controller into the controller field \
 ![](./Animation_override_controller2.png)
 
-Then you can override with new animation clips 
+Then you can override with new animation clips. 
+
+This Override Controller can now be used in an animator component on the other gameobject, it will use the **same logic as the original Animator Controller**, but **play the new animations assigned instead of the originals**.
 
 https://docs.unity3d.com/Manual/AnimatorOverrideController.html
 
