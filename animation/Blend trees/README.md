@@ -45,6 +45,9 @@ https://youtu.be/HeHvlEYpRbM
 #### 2D blend tree
 The 2D blending types **blends the child motions** according to **two parameters**.
 
+![](./img/2dblend.png)
+
+
 **2D Blend Types:**
 - **2D Simple Directional**: \
   Best used when your **motions represent different directions**, such as “walk forward”, “walk backward”, “walk left”, and “walk right”, or “aim up”, “aim down”, “aim left”, and “aim right”. Optionally a single motion at position (0, 0) can be included, such as “idle” or “aim straight”. In the Simple Directional type there **should not be multiple motions in the same direction**, such as “walk forward” and “run forward”. (Less than 180 degree). Used in single motion for any direction, that means only one motion for a direction.
