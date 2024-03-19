@@ -48,4 +48,7 @@ https://docs.unity3d.com/Manual/BlendTree-DirectBlending.html
 
 https://youtu.be/ihmPDjiF-zg
 
+### ref 
+https://tw.voicetube.com/videos/24234 \
+https://zhuanlan.zhihu.com/p/148260708
 
