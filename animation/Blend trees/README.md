@@ -63,6 +63,17 @@ The 2D blending types **blends the child motions** according to **two parameters
 - **2D Freeform Cartesian**: \
   **Best used when your motions do not represent different directions**. With Freeform Cartesian your **X parameter** and **Y parameter** can represent **different concepts**, such as **angle**, **angular speed** and **linear speed**. An example would be motions such as “walk forward no turn”, “run forward no turn”, “walk forward turn right”, “run forward turn right” etc.
 
+
+The positions in 2D blending are like the thresholds in 1D blending, except that there are **two values instead of one**, **corresponding to each of the two parameters**.
+
+> Their positions along the **horizontal X axis correspond to the first parameter**, and their **positions along the vertical Y axis correspond to the second parameter**.
+
+
+Eg:
+A walking forward animation might have a velocityX of 0 and a velocityZ of 1.5, so those values should be typed into the Pos X and Pos Y number fields for the motion.
+
+
+
 https://docs.unity3d.com/Manual/BlendTree-2DBlending.html
 
 https://youtu.be/_J8RPIaO2Lc
