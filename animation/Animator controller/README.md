@@ -135,18 +135,25 @@ Using an **Animator Override Controller**, the **basic logic for how to transiti
 
 For example, your game may have a variety of NPC types living in the world, but each type (goblin, ogre, elf, etc) has their own unique animations for walking, idling, sitting, etc.
 
-By creating one "base" Animator Controller containing the logic for all NPC types, you could then create an override for each type and drop in their respective animation files.
+By **creating one "base" Animator Controller** containing the logic for all NPC types, you could then **create an override for each type and drop in their respective animation files**.
 
 > Reuse the original animation controller from other game object(with **same logic, structure and parameters**), just **override the specific orignal animation clips**.
 
 To create a new **Animator Override Controller**, use the **Assets > Create** menu, or the **Create** button in the Project view, and select **Animator Override Controller**.
 
-In the controller field in the **Animator Override Controller** component, **dragging an existing controller** into the **Animator Override Controller’s inspecto**r.
+In the controller field in the **Animator Override Controller** component, **dragging an existing controller** into the **Animator Override Controller’s inspector**.
 
-> Animation Override Controller is useful for different object with animation share same logic, structure and parameters for the animation, but with different animation clips.
+> **Animation Override Controller** is useful for different object with animation share same logic, structure and parameters for the animation, but you can override with different animation clips for the object.
 
+Eg:
 
+Player Animation Override Controller \
+![](./Animation_override_controller.png)
 
+Drag an existing player animation controller into the controller field \
+![](./Animation_override_controller2.png)
+
+Then you can override with new animation clips 
 
 https://docs.unity3d.com/Manual/AnimatorOverrideController.html
 
