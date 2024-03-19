@@ -89,4 +89,7 @@ https://youtu.be/88qbApTkclM
 
 
 ### ref
-https://gamedevacademy.org/unity-animator-tutorial/
+https://gamedevacademy.org/unity-animator-tutorial/ \
+https://delightcollab.com/programming-tpl-unity-animation-system-introduction-chapter1-2022/#ftoc-heading-1
+
+
