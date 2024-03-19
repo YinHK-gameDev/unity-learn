@@ -19,7 +19,7 @@ The context menu when right-clicking on a blend tree node.
 ### Blend types
 
 #### 1D blend tree
-1D Blending blends the child motions according to a single parameter.
+1D Blending **blends the child motions** according to a **single parameter**.
 
 https://docs.unity3d.com/Manual/BlendTree-1DBlending.html
 
@@ -29,7 +29,7 @@ https://youtu.be/HeHvlEYpRbM
 
 
 #### 2D blend tree
-The 2D blending types blends the child motions according to two parameters.
+The 2D blending types **blends the child motions** according to **two parameters**.
 
 **2D Blend Types:**
 - **2D Simple Directional**: Best used when your motions represent different directions, such as “walk forward”, “walk backward”, “walk left”, and “walk right”, or “aim up”, “aim down”, “aim left”, and “aim right”. Optionally a single motion at position (0, 0) can be included, such as “idle” or “aim straight”. In the Simple Directional type there **should not be multiple motions in the same direction**, such as “walk forward” and “run forward”. (Less than 180 degree). Used in single motion for any direction, that means only one motion for a direction.
@@ -41,8 +41,8 @@ https://docs.unity3d.com/Manual/BlendTree-2DBlending.html
 https://youtu.be/_J8RPIaO2Lc
 
 #### Direct blend tree
-This type of blend tree lets user control the weight of each node directly. Useful for facial shapes or random idle blending.
-Using a Direct Blend Tree allows you to map animator parameters directly to the weight of a BlendTree child. This can be useful if you want to have exact control over the various animations that are being blended rather than blend them indirectly using one or two parameters.
+This type of blend tree lets user **control the weight of each node directly**. Useful for **facial shapes** or **random idle blending**. \
+Using a Direct Blend Tree allows you to **map animator parameters directly to the weight of a BlendTree child**. This can be useful if you want to **have exact control over the various animations that are being blended rather than blend them indirectly** using one or two parameters.
 
 https://docs.unity3d.com/Manual/BlendTree-DirectBlending.html
 
