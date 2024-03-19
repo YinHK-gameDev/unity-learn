@@ -94,6 +94,9 @@ https://docs.unity3d.com/Manual/InverseKinematics.html
 
 ### Animation transitions
 
+**Transitions** are used for **transitioning smoothly from one Animation State to another over a given amount of time**. Transitions are specified as part of an Animation State Machine
+. A transition from one motion to a completely different motion is usually fine if the transition is quick.
+
 State Machine Transitions exist to help you **simplify large or complex State Machines**. They allow you to have a higher level of abstraction over the state machine logic.
 
 **Animation transitions** allow the **state machine to switch or blend from one animation state to another**. Transitions define not only how long the blend between states should take, but also under what conditions they should activate. You can set up a transition to occur only when certain conditions are true. To set up these conditions, specify values of parameters in the Animator Controller.
