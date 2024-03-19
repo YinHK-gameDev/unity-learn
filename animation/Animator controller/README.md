@@ -127,15 +127,26 @@ https://docs.unity3d.com/Manual/AnimationLayers.html
 
 
 ###  Animator Override Controller
-It is a type of asset which allows you to extend an existing Animator Controller, replacing the specific animation clips but otherwise retaining the original’s structure, parameters and logic. The difference is the animation clips. 
+It is a type of asset which allows you to **extend an existing Animator Controller**, **replacing the specific animation clips** but otherwise **retaining the original’s structure, parameters and logic**. The **difference is the animation clips**(Use different animation clips). 
 
-This allows you to create multiple variants of the same basic state machine, but with each using different sets of animations.
+This allows you to **create multiple variants of the same basic state machine**, but with each using **different sets of animations**.
 
-> Reuse the original animation controller from other game object(with same logic, structure and parameters), just override the specific orignal animation clips
+Using an **Animator Override Controller**, the **basic logic for how to transition and blend between movement states can be shared between different characters with different sets of animation**, **reducing the work required building and modifying state machines** themselves.
 
-To create a new Animator Override Controller, use the **Assets > Create** menu, or the **Create** button in the Project view, and select **Animator Override Controller**.
+For example, your game may have a variety of NPC types living in the world, but each type (goblin, ogre, elf, etc) has their own unique animations for walking, idling, sitting, etc.
 
-In the controller field in the **Animator Override Controller** component, dragging an existing controller into the Animator Override Controller’s inspector.
+By creating one "base" Animator Controller containing the logic for all NPC types, you could then create an override for each type and drop in their respective animation files.
+
+> Reuse the original animation controller from other game object(with **same logic, structure and parameters**), just **override the specific orignal animation clips**.
+
+To create a new **Animator Override Controller**, use the **Assets > Create** menu, or the **Create** button in the Project view, and select **Animator Override Controller**.
+
+In the controller field in the **Animator Override Controller** component, **dragging an existing controller** into the **Animator Override Controller’s inspecto**r.
+
+> Animation Override Controller is useful for different object with animation share same logic, structure and parameters for the animation, but with different animation clips.
+
+
+
 
 https://docs.unity3d.com/Manual/AnimatorOverrideController.html
 
