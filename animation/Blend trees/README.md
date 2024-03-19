@@ -73,6 +73,15 @@ The 2D blending types **blends the child motions** according to **two parameters
 
 ![](./img/2dBlendTree2.png)
 
+The **red dot** indicates the values of the two Parameters.
+
+In the diagram you can also see the influence of each motion represented as circles around each motion. You will see that if you move the red dot on top of one of the blue dots representing a motion, the circle for that motion gains its maximum radius and the circles for all other motions shrink down to nothing.
+
+If you select one of the motions in order to see the blue influence field of that motion, you can see that as you move the red dot around, the circle size of the motion corresponds exactly with how strong the influence field is at various positions.
+
+When no motion is selected, the diagram shows a mix of all the influence fields that is more blue where a single motion dominates and less blue where many motions contribute to the blend.
+
+
 You can add individual animations by clicking **+** -> **Add Motion Field** to add an **Animation Clip** to the blend tree.
 
 > After setting the Blend Type, the first thing you need is to select the **two Animation Parameters**
@@ -83,9 +92,12 @@ The positions in 2D blending are like the thresholds in 1D blending, except that
 > Their positions along the **horizontal X axis correspond to the first parameter**, and their **positions along the vertical Y axis correspond to the second parameter**.
 
 
-Eg:
+Eg: \
 A walking forward animation might have a velocityX of 0 and a velocityZ of 1.5, so those values should be typed into the Pos X and Pos Y number fields for the motion.
 
+You can change the positions of a motion by clicking on its corresponding blue dot in the diagram and dragging it around. You can also edit position coordinates of a motion in the motion list by typing in numbers in the number fields in the Pos X and Pos Y columns.
+
+The **Compute Positions** drop-down will set the positions from data of your choice obtained from the  root motions in the Animation Clips. The data that is available to choose from is speed, velocity x, y, or z, and angular speed in degrees or radians. If one or both of your parameters correspond to one of these properties, you can compute the Pos X and/or Pos Y using the Compute Positions drop-down.
 
 
 https://docs.unity3d.com/Manual/BlendTree-2DBlending.html
