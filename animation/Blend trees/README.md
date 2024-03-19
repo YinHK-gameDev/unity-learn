@@ -105,8 +105,15 @@ https://docs.unity3d.com/Manual/BlendTree-2DBlending.html
 https://youtu.be/_J8RPIaO2Lc
 
 #### Direct blend tree
-This type of blend tree lets user **control the weight of each node directly**. Useful for **facial shapes** or **random idle blending**. \
-Using a Direct Blend Tree allows you to **map animator parameters directly to the weight of a BlendTree child**. This can be useful if you want to **have exact control over the various animations that are being blended rather than blend them indirectly** using one or two parameters.
+This type of blend tree lets user **control the weight of each node directly**. Useful for **facial shapes** or **random idle blending**. 
+
+![](./img/AnimatorDirectBlendTree.png)
+
+Using a Direct Blend Tree allows you to **map animator parameters directly to the weight of a BlendTree child**. This can be useful if you want to **have exact control over the various animations that are being blended rather than blend them indirectly** using **one or two parameters**.
+
+When setting up a direct blend tree, the inspector allows you to add motions to the motion list. Each motion should then be assigned a corresponding parameter to directly control its blend weight in the tree. 
+
+This allow you to blend multiple animations based on multiple parameters, each parameter corresponds to control blend weight for its motion. 
 
 https://docs.unity3d.com/Manual/BlendTree-DirectBlending.html
 
