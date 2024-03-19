@@ -47,6 +47,7 @@ The 2D blending types **blends the child motions** according to **two parameters
 
 ![](./img/2dblend.png)
 
+![](./img/MecanimBlendTree2DDiagram.png)
 
 **2D Blend Types:**
 - **2D Simple Directional**: \
