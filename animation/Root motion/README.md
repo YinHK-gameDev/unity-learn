@@ -128,7 +128,7 @@ Apply Root Motion的第二個作用是在動畫結束後，將Body Transform中�
 
 
 
-勾选界面面板中的`apply root motion`选项，用来启动**root transform**。勾选界面面板中的`bake into pose`选项，用来启动**body transform**。组合勾选后的类型如下：
+> 勾选界面面板中的`apply root motion`选项，用来启动**root transform**。勾选界面面板中的`bake into pose`选项，用来启动**body transform**。组合勾选后的类型如下：
 
 | apply root motion | bake into pose | Type |
 | --- | --- | --- |
