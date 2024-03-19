@@ -38,9 +38,12 @@ https://youtu.be/HeHvlEYpRbM
 The 2D blending types **blends the child motions** according to **two parameters**.
 
 **2D Blend Types:**
-- **2D Simple Directional**: Best used when your motions represent different directions, such as “walk forward”, “walk backward”, “walk left”, and “walk right”, or “aim up”, “aim down”, “aim left”, and “aim right”. Optionally a single motion at position (0, 0) can be included, such as “idle” or “aim straight”. In the Simple Directional type there **should not be multiple motions in the same direction**, such as “walk forward” and “run forward”. (Less than 180 degree). Used in single motion for any direction, that means only one motion for a direction.
-- **2D Freeform Directional**: This blend type is also used when your motions represent different directions, however **you can have multiple motions in the same direction**, for example “walk forward” and “run forward”. In the Freeform Directional type the set of motions should always include a single motion at position (0, 0), such as “idle”.
-- **2D Freeform Cartesian**: **Best used when your motions do not represent different directions**. With Freeform Cartesian your X parameter and Y parameter can represent different concepts, such as angle, angular speed and linear speed. An example would be motions such as “walk forward no turn”, “run forward no turn”, “walk forward turn right”, “run forward turn right” etc.
+- **2D Simple Directional**: \
+  Best used when your **motions represent different directions**, such as “walk forward”, “walk backward”, “walk left”, and “walk right”, or “aim up”, “aim down”, “aim left”, and “aim right”. Optionally a single motion at position (0, 0) can be included, such as “idle” or “aim straight”. In the Simple Directional type there **should not be multiple motions in the same direction**, such as “walk forward” and “run forward”. (Less than 180 degree). Used in single motion for any direction, that means only one motion for a direction.
+- **2D Freeform Directional**: \
+  This blend type is also used when your **motions represent different directions**, however **you can have multiple motions in the same direction**, for example “walk forward” and “run forward”. In the Freeform Directional type the set of motions should always include a single motion at position (0, 0), such as “idle”.
+- **2D Freeform Cartesian**: \
+  **Best used when your motions do not represent different directions**. With Freeform Cartesian your **X parameter** and **Y parameter** can represent **different concepts**, such as **angle**, **angular speed** and **linear speed**. An example would be motions such as “walk forward no turn”, “run forward no turn”, “walk forward turn right”, “run forward turn right” etc.
 
 https://docs.unity3d.com/Manual/BlendTree-2DBlending.html
 
