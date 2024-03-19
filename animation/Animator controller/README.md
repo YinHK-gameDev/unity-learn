@@ -78,8 +78,17 @@ Animation Parameters are variables that are defined within an Animator Controlle
 -   _Bool_ - true or false value (represented by a checkbox)
 -   _Trigger_ - a boolean parameter that is reset by the controller when consumed by a transition (represented by a circle button)
 
-Parameters can be assigned values **from a script** using functions in the `Animator` class: `SetFloat`, `SetInteger`, `SetBool`, `SetTrigger` and `ResetTrigger`.
+**Parameters** can be assigned values **from a script** using functions in the `Animator` class: `SetFloat`, `SetInteger`, `SetBool`, `SetTrigger` and `ResetTrigger`.
 
+
+**Parameters used in transition** \
+![](./AnimationEditorParametersSection.png)
+
+**Parameters used in 1D Blend Tree** \
+![](./1dBlend_parameter.png)
+
+**Parameters used in 2D Blend Tree** \
+![](./2dBlend_parameter.png)
 
 https://docs.unity3d.com/Manual/AnimationParameters.html
 
