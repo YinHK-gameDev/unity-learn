@@ -81,7 +81,7 @@ Animation Parameters are variables that are defined within an Animator Controlle
 **Parameters** can be assigned values **from a script** using functions in the `Animator` class: `SetFloat`, `SetInteger`, `SetBool`, `SetTrigger` and `ResetTrigger`.
 
 
-**Parameters used in transition** \
+**Parameters list used in transition or blend tree** \
 ![](./AnimationEditorParametersSection.png)
 
 **Parameters used in 1D Blend Tree** \
