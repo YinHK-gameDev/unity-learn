@@ -109,7 +109,15 @@ State Machine Transitions exist to help you **simplify large or complex State Ma
 
 **Animation transitions** allow the **state machine to switch or blend from one animation state to another**. Transitions define not only how long the blend between states should take, but also under what conditions they should activate. You can set up a transition to occur only when certain conditions are true. To set up these conditions, specify values of parameters in the Animator Controller.
 
+State machines always have a **default state**(Orange node), there will **always be a default transition branching from the entry node** to the **default state**.
+
 ![](./AnimatorEntryNodeSingleTransition.png)
+
+
+You can also set another state as the default state.
+
+![](./default_state.png)
+
 
 > Each view in the animator window has an **Entry** and **Exit** node. These are used during State Machine Transitions.
 
