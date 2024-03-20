@@ -61,7 +61,12 @@ https://docs.unity3d.com/Manual/AnimationSoloMute.html
 
 A **new state**/ **new Sub-State Machine** can be added by **right-clicking on an empty space** in the **Animator Controller Window** and selecting **Create State->Empty**/**Create Sub-State Machine** from the context menu.
 
-**Alternatively, you can drag an animation into the Animator Controller Window to create a state** containing that animation.
+
+After creating new State, you can add animation clip to the Motion field in the inspector.
+
+![](./new_state.png)
+
+**Alternatively, you can drag an animation clip into the Animator Controller Window to create a state** containing that animation.
 
 ![](./context_menu.png)
 
