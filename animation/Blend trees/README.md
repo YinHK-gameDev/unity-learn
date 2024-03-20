@@ -47,6 +47,24 @@ You can add a new blend tree inside other blend tree to build a nested blend tre
 
 you can add individual animations by clicking the small **"+"** button and selecting **Add Motion Field** from the popup menu.
 
+![](./img/MecanimBlendTreeParam.png)
+
+The **red vertical bar** indicates **the value of the Parameter**. If you **press Play** in the Preview at the bottom of the Inspector and drag the red bar in the diagram left and right, you can see **how the value of the parameter is controlling the blending of the different motions**.
+
+
+**Parameter Range** \
+The range of the parameter used by the Blend Tree is shown below the diagram as two numbers to the left and right. Either one of them can be changed by clicking on the number and dragging left or right with the mouse. Note that the values correspond to the threshold of the first and last motion in the motion list.
+
+
+**Thresholds** 
+
+You can change the threshold value of a motion by clicking on its corresponding blue pyramid in the diagram and dragging it left or right. If the “Automate Thresholds” toggle is not enabled, you can also edit the threshold value of a motion in the motion list by typing in a number in the number field in the Threshold column.
+
+Below the motion list is the checkbox Automate Thresholds. Enabling it will distribute the thresholds of the motions evenly across the parameter range. For example, if there are five clips and the parameter ranges from –90 to +90, the thresholds will be set to –90, –45, 0, +45 and +90 in order.
+
+
+
+
 https://docs.unity3d.com/Manual/BlendTree-1DBlending.html
 
 https://www.youtube.com/watch?v=m8rGyoStfgQ
