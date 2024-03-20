@@ -38,7 +38,7 @@ You can add a new blend tree inside other blend tree to build a nested blend tre
 ### Blend types
 
 #### 1D blend tree
-1D Blending **blends the child motions** according to a **single parameter**.
+1D Blending **blends the child motions** according to a **single parameter**. (line)
 
 
 ![](./img/1dblend.png)
@@ -73,7 +73,7 @@ https://youtu.be/HeHvlEYpRbM
 
 
 #### 2D blend tree
-The 2D blending types **blends the child motions** according to **two parameters**.
+The 2D blending types **blends the child motions** according to **two parameters**. (Cartesian coordinate)
 
 ![](./img/2dblend.png)
 
