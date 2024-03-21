@@ -149,6 +149,9 @@ To view properties for a transition, click on the transition line connecting two
 | Ordered Interruption | Determines whether the current transition can be interrupted by other transitions independently of their order (see Transition interruption below). |
 | Conditions | A transition can have a single condition, multiple conditions, or no conditions at all. If your transition has no conditions, the Unity Editor only considers the Exit Time, and the transition occurs when the exit time is reached. If your transition has one or more conditions, the conditions must all be met before the transition is triggered.A condition consists of:- An event parameter (the value considered in the condition).- A conditional predicate (if needed,for example, ‘less than’ or ‘greater than’ for floats).- A parameter value (if needed).If you have Has Exit Time selected for the transition and have one or more conditions, note that the Unity Editor considers whether the conditions are true after the Exit Time. This allows you to ensure that your transition occurs during a certain portion of the animation. |
 
+#### Unity animation transition has exit time
+https://jerrard-liu.blogspot.com/2016/04/MecanimPart3.html
+
 #### Conditions
 A transition can have a **single condition**, **multiple conditions**, or **no conditions** at all. If your transition has no conditions, the Unity Editor **only considers the Exit Time**, and the **transition occurs when the exit time is reached**. 
 > If your transition has one or more conditions, the conditions must all be met before the transition is triggered.
