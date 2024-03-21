@@ -27,6 +27,11 @@ The controller manages the various **animation states** and the transitions betw
 
 https://www.youtube.com/watch?v=S3ys0jCUE9s
 
+    
+#### Five tips for keeping animator controllers nice & tidy
+https://unity3d.com/how-to/build-animator-controllers \
+https://www.studica.com/blog/game-design-tutorial-blend-trees-unity
+
 
 ### Animator Controller Asset
 When you have animation clips ready to use, you need to use an Animator Controller
