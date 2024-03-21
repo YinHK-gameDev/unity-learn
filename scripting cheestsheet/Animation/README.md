@@ -148,6 +148,12 @@ https://docs.unity3d.com/ScriptReference/AnimationCurve.html
 Keyframe \
 https://docs.unity3d.com/ScriptReference/Keyframe.html
 
+### AnimatorOverrideController
+
+
+https://docs.unity3d.com/ScriptReference/AnimatorOverrideController.html
+
+
 ### Animation(As Animation component is legacy, use Animator instead)
 The animation component is used to **play back animations**.
 
