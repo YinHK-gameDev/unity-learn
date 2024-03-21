@@ -66,7 +66,7 @@ https://www.studica.com/blog/game-design-tutorial-blend-trees-unity
 
 
 ### AnimationClip
-AnimationClip is used by Animation to play back animations.
+AnimationClip is used by Animation to **play back** animations.
 
 ```cs
 // properties
@@ -150,8 +150,13 @@ https://docs.unity3d.com/ScriptReference/Keyframe.html
 
 ### AnimatorOverrideController
 
-
 https://docs.unity3d.com/ScriptReference/AnimatorOverrideController.html
+
+
+### AnimatorController
+
+
+https://docs.unity3d.com/ScriptReference/Animations.AnimatorController.html
 
 
 ### Animation(As Animation component is legacy, use Animator instead)
