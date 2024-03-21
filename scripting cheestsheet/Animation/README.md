@@ -14,6 +14,11 @@ public AnimatorControllerParameter[] parameters;
 // Gets/Sets the current Avatar.
 public Avatar avatar;
 
+// Returns the number of layers in the controller.
+public int layerCount;
+
+// Should root motion be applied?
+public bool applyRootMotion;
 
 // Methods
 
@@ -34,6 +39,10 @@ public float GetFloat(int id);
 // Returns the value of the given integer parameter.
 public int GetInteger(string name);
 public int GetInteger(int id);
+
+// The runtime AnimatorController that controls the Animator.
+public RuntimeAnimatorController runtimeAnimatorController;
+
 
 ```
 
@@ -57,12 +66,16 @@ Use parameter to control animation and transitions between Animator states:
     
     https://docs.unity3d.com/ScriptReference/Animator.SetInteger.html
     
-#### Unity animation transition has exit time
-https://jerrard-liu.blogspot.com/2016/04/MecanimPart3.html
-    
-#### Five tips for keeping animator controllers nice & tidy
-https://unity3d.com/how-to/build-animator-controllers \
-https://www.studica.com/blog/game-design-tutorial-blend-trees-unity
+
+#### Change Animator Controller during runtime
+
+```cs
+Animator animator = gameObject.GetComponent<Animator>();
+animator.runtimeAnimatorController = Resources.Load("path_to_your_controller") as RuntimeAnimatorController;
+```
+
+https://discussions.unity.com/t/how-to-set-animators-controller-in-script/63474/8 \
+https://discussions.unity.com/t/change-animatorcontroller-during-runtime/118974
 
 
 ### AnimationClip
