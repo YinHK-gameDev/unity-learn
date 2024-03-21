@@ -166,7 +166,9 @@ Then you can override with new animation clips.
 
 This Override Controller can now be used in an animator component on the other gameobject, it will use the **same logic as the original Animator Controller**, but **play the new animations assigned instead of the originals**.
 
-https://docs.unity3d.com/Manual/AnimatorOverrideController.html
+https://docs.unity3d.com/Manual/AnimatorOverrideController.html \
+https://medium.com/geekculture/unity-animator-override-controller-another-tool-to-improve-animator-functionalities-8e35bf67f79
+
 
 
 ### ref 
