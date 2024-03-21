@@ -243,6 +243,8 @@ https://discussions.unity.com/t/implementing-jump-w-new-input-system/237428/3 \
 https://matteolopiccolo.medium.com/unity-new-input-system-jump-part-viii-49f876f70e5f \
 https://forum.unity.com/threads/my-script-is-not-able-to-find-type-of-the-input-action-maybe-because-of-the-namespaces.1142860/
 
+https://gamedevbeginner.com/input-in-unity-made-easy-complete-guide-to-the-new-system/#input_action_assets
+
 https://www.youtube.com/watch?v=HmXU4dZbaMw \
 https://www.youtube.com/watch?v=Yjee_e4fICc \
 https://www.youtube.com/watch?v=UyUogO2DvwY \
