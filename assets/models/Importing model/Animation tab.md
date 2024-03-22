@@ -69,7 +69,7 @@
     - **Original**: Keep the vertical position from the source file.
     - **Root Node Position**: \
       Use the vertical root position. \
-      Only available for the Generic Animation Type.
+      > Only available for the Generic Animation Type.
     - **Center of Mass**: \
       Keep center of mass aligned with the root transform position. 
       > Only available for the Humanoid Animation Type.
