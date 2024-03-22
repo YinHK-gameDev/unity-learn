@@ -42,12 +42,7 @@ public int GetInteger(int id);
 
 // The runtime AnimatorController that controls the Animator.
 public RuntimeAnimatorController runtimeAnimatorController;
-
-
 ```
-
-
-
 
 
 https://docs.unity3d.com/ScriptReference/Animator.html
@@ -72,6 +67,9 @@ Use parameter to control animation and transitions between Animator states:
 ```cs
 Animator animator = gameObject.GetComponent<Animator>();
 animator.runtimeAnimatorController = Resources.Load("path_to_your_controller") as RuntimeAnimatorController;
+
+// or
+animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("path_to_your_controller");
 ```
 
 https://discussions.unity.com/t/how-to-set-animators-controller-in-script/63474/8 \
