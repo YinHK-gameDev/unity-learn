@@ -33,6 +33,11 @@ private void OnCancelAction(InputAction.CallbackContext context)
    //... your code is here 
 }
 
+void OnDisable()
+{
+   input.Player.Disable();
+}
+
 ```
 
 
