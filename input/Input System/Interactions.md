@@ -22,3 +22,5 @@ An Interaction has **a set of distinct phases** it can go through in response to
 
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Interactions.html?q=Interactions
+
+https://forum.unity.com/threads/input-getkeydown-but-in-the-new-input-system.1000077/
