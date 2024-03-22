@@ -48,6 +48,8 @@ Loads the asset of the requested type stored at path in a **Resources folder**.
 This method returns the asset at path if it can be found, otherwise it returns `null`.
 Note that the path is **case insensitive and must not contain a file extension**. All asset names and paths in Unity use **forward slashes**, so using **backslashes** in the path will not work.
 
+Specify the path inside **`Resources` folder**.
+
 ```cs
 public static T Load(string path);
 ```
