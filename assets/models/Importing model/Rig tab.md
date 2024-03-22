@@ -24,7 +24,9 @@ Choose where to get the Avatar definition.
 - Copy from Other Avatar: Point to an Avatar set up on another model.
 
 #### Root node
-Select the bone to use as a root node for this Avatar.
+Select the bone to use as a root node for this Avatar. Specify the root node used to extract the animation translation.
+
+> This setting is only available if you set the Avatar Definition to Create From This Model.
 
 #### Source
 Copy another Avatar with an identical rig to import its animation clips.
