@@ -150,6 +150,8 @@ Apply Root Motion的第二個作用是在動畫結束後，將Body Transform中�
 
 https://read01.com/8PyaeG.html
 
+https://forum.unity.com/threads/missing-settings-in-the-animator-import-settings-window-regarding-root-motion.1084631/
+
 ### Ref
 https://docs.unity3d.com/Manual/RootMotion.html \
 https://docs.unity3d.com/Manual/ScriptingRootMotion.html \
