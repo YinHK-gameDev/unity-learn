@@ -71,10 +71,10 @@
       Use the vertical root position. \
       Only available for the Generic Animation Type.
     - **Center of Mass**: \
-      Keep center of mass aligned with the root transform position. \
+      Keep center of mass aligned with the root transform position. 
       > Only available for the Humanoid Animation Type.
     - **Feet**: \
-      Keep feet aligned with the root transform position. \
+      Keep feet aligned with the root transform position. 
       > Only available for the Humanoid Animation Type.
   - **Offset**: Offset to the vertical root position.
 - **Root Transform Position (XZ)**:
@@ -82,19 +82,19 @@
   - **Based Upon**: Basis of horizontal root position.
     - **Original**: Keep the horizontal position from the source file.
     - **Root Node Position**: \
-      Use the horizontal root transform position. \
+      Use the horizontal root transform position. 
       > Only available for the Generic Animation Type.
     - **Center of Mass**:
-      Keep aligned with the root transform position. \
+      Keep aligned with the root transform position. 
       > Only available for the Humanoid Animation Type.
   - **Offset**: Offset to the horizontal root position.
   - **Mirror**: \
-    Mirror left and right in this clip. \
-    Only appears if the Animation Type is set to Humanoid.
+    Mirror left and right in this clip. 
+    > Only appears if the Animation Type is set to Humanoid.
   = **Additive Reference Pose**:
     Enable to set frame for the reference pose used as the base for the additive animation layer. A blue marker becomes visible in the timeline editor.
     - **Pose Frame**: \
-      Enter a frame number to use as the reference pose. You can also drag the blue marker in the timeline to update this value. \
+      Enter a frame number to use as the reference pose. You can also drag the blue marker in the timeline to update this value. 
       > Only available if Additive Reference Pose is enabled.
   - **Curves**: Expand this section to manage animation curves for this animation clip.
   - **Events**: Expand this section to manage animation events for this animation clip.
