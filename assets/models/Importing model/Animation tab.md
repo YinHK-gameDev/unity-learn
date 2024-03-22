@@ -57,11 +57,11 @@
   - **Based Upon**: Basis of root rotation.
     - **Original**: Keep the original rotation from the source file.
     - **Root Node Rotation**: \
-      Use the rotation of the root node. \
+      Use the rotation of the root node. 
       > Only available for the Generic Animation Type.
     - **Body Orientation**: \
-      Keep the upper body pointing forward. \
-      Only available for the Humanoid Animation Type. 
+      Keep the upper body pointing forward. 
+      > Only available for the Humanoid Animation Type. 
   - **Offset**: Offset to the root rotation (in degrees).
 - **Root Transform Position (Y)**:
   - **Bake into Pose**: Bake vertical root motion into the movement of the bones. Disable to store as root motion.
