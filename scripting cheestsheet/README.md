@@ -6,6 +6,12 @@ You can attach a script by dragging the script asset to a GameObject in the hier
 
 Unity provides **`UnityEngine`** & **`UnityEditor`** scripting API. 
 
+**UnityEngine** is for built in Unity components such as the actual GameObjects and Transform that are used within the engine.
+
+**UnityEditor** is the **GUI of the actual program**. You can also **make custom editors** of yours.
+
+https://www.youtube.com/watch?v=491TSNwXTIg
+
 ### Declare variable/array
 When declare variables or array, it must specify its data type:   **value type** (eg: string/float…) or **reference type** ( class eg: `Transform/Gameobject`).
 
