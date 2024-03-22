@@ -20,4 +20,8 @@ Model files can contain a variety of data, such as meshes, animation rigs and cl
   You can extract Materials and Textures or leave them embedded within the model. You can also adjust how Material is mapped in the Model.
 
 
+### ref
+https://docs.unity3d.com/Manual/ImportingModelFiles.html \
+https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html \
+https://docs.unity3d.com/Manual/GenericAnimations.html \
 
