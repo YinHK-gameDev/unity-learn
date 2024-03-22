@@ -131,6 +131,16 @@ void FixedUpdate()
    rb.AddForce(new Vector3(moveVector.x, 0, moveVector.y) * 10f, ForceMode.Force);
 }
 
+void OnEnable()
+{
+   input.Player.Enable();
+}
+
+void OnDisable()
+{
+   input.Player.Disable();
+}
+
 ```
 
 **Using an Actions Asset and Player Input Component**:
