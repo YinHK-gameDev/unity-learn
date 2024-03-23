@@ -42,6 +42,14 @@ public int GetInteger(int id);
 
 // The runtime AnimatorController that controls the Animator.
 public RuntimeAnimatorController runtimeAnimatorController;
+
+
+// Static methods
+
+// Generates an parameter id from a string. Ids are used for optimized setters and getters on parameters.
+public static int StringToHash(string name);
+
+
 ```
 
 
