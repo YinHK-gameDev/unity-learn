@@ -210,7 +210,7 @@ public class ExampleClass : MonoBehaviour
    {
        //,,,
    }
-|
+}
 ```
 
 
