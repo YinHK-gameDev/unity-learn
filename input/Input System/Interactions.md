@@ -19,8 +19,32 @@ An Interaction has **a set of distinct phases** it can go through in response to
 | Performed | The Interaction is complete. |
 | Canceled | The Interaction was interrupted and aborted. For example, the user pressed and then released a button before the minimum time required for a hold Interaction to complete. |
 
+> **Mot**e: **Not every Interaction triggers every phase**, and the pattern in which specific Interactions trigger phases **depends on the Interaction type**.
+
+While `Performed` is typically the phase that triggers the actual response to an Interaction, `Started` and `Canceled` can be useful for providing UI feedback while the **Interaction is in progress**. 
+
+For example, when a hold is `Started`, the app can display a progress bar that fills up until the hold time has been reached. If, however, the hold is `Canceled` before it completes, the app can reset the progress bar to the beginning.
+
+
+#### Multiple Controls on an Action
+If you have multiple Controls bound to a Binding or an Action which has an Interaction, then the Input System first applies the Control conflict resolution logic to get a single value for the Action, which it then feeds to the Interaction logic. Any of the bound Controls can perform the Interaction.
+
+
+#### Multiple Interactions on a Binding
+
+If multiple Interactions are present on a single Binding or Action, then the Input System **checks the Interactions in the order** they are present on the Binding.
+
+#### Timeouts
+Interactions **might need to wait a certain time for a specific input to occur or to not occur**. An example of this is the **Hold interaction** which, after a button is pressed, has to wait for a set duration until the **"hold" is complete**. To do this, an interaction installs a timeout using `SetTimeout`.
+
+It can be useful to know how much of a timeout is left for an interaction to complete. For example, you might want to display a bar in the UI that is charging up while the interaction is waiting to complete. To query the percentage to which a timeout has completed, use **`GetTimeoutCompletionPercentage`**.
+
+> Note that each Interaction can **have its own separate timeout** (but only a single one at any one time). If multiple interactions are in effect, then **`GetTimeoutCompletionPercentage`** will only **use the timeout of the one interaction that is currently driving the action**.
+
 
 ### reference for interaction
+
+![](./img/InteractionsDiagram.png)
 
 Action Type Button
 Interaction None
