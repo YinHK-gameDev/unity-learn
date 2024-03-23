@@ -5,8 +5,9 @@ For example, a hold is an Interaction that **requires a Control to be held for a
 
 ![](./img/input_interaction.png)
 
-Interactions drive responses on Actions. You can place them on individual Bindings or an Action as a whole, 
-in which case they apply to every Binding on the Action. 
+![](./img/InteractionProperties.png)
+
+Interactions drive responses on Actions. You can place them on **individual Bindings** or an **Action as a whole**, in which case they **apply to every Binding on the Action**. 
 **At runtime**, when a **particular interaction completes**, this **triggers the Actio**n.
 
 An Interaction has **a set of distinct phases** it can go through in response to receiving input.
