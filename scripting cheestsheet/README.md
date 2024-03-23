@@ -171,6 +171,49 @@ The Unity build process uses a tool called the Unity linker to strip managed cod
 https://docs.unity3d.com/Manual/ManagedCodeStripping.html
 
 
+### Structure
+Eg:
+```cs
+
+public class ExampleClass : MonoBehaviour
+{
+   // field, to decalre variable here
+
+   // aware method
+   void Aware()
+   {
+        //...
+   }
+
+   // start method
+   void Start()
+   {
+        //...
+   }
+
+   // update method
+   void Update()
+   {
+        //...
+   }
+
+   // fixedupdate method
+   void FixedUpdate()
+   {
+        //...
+   }
+
+   // Other methods defined by your own
+
+   // Corountine methods
+   IEnumerator ExampleMthod()
+   {
+       //,,,
+   }
+|
+```
+
+
 ### Configure entering play mode
 - **Domain Reloading**: Resets the scripting state, by reloading the scripting domain. \
   https://docs.unity3d.com/Manual/DomainReloading.html
