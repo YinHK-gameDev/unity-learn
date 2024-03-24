@@ -148,7 +148,7 @@ The **Panel Settings Asset** (**Assets > Create > UI Toolkit > Panel Settings As
 To render UI and react to input from the users in the Game view, **connect the UI Document assets to a Panel Settings asset by a UI Document component**.
  
  
-Every UI Document component references a UI Document asset (**`.uxml` file**) that defines the UI and a Panel Settings asset that renders it. You can connect more than one UI Document asset to a single Panel Settings asset.
+Every UI Document component references a UI Document asset (**`.uxml` file**) that defines the UI and a Panel Settings asset that renders it. You can **connect more than one UI Document asset to a single Panel Settings asset**.
 
 ### Configure a panel
 A **Panel Settings** asset defines a **panel** in the Scene. The panel provides the **root visual element**
@@ -176,16 +176,16 @@ To configure a panel:
 
 
 ### Connect the UI to a panel
-A panel can display UI from more than one UI Document asset. Each UI Document has a **Sort Order** property that sets the UI Document rendering order:
+A **panel can display UI from more than one UI Document asset**. Each UI Document has a **Sort Order** property that **sets the UI Document rendering order**:
 
--   Child UI Document components are drawn on top of their parent UI Document components.
--   UI Documents components that are at the same level of the hierarchy are rendered in sequence according to their **Sort Order**.
+-   Child UI Document components are **drawn on top of their parent UI Document components**.
+-   UI Documents components that are at the **same level of the hierarchy** are **rendered in sequence** according to their **Sort Order**.
 
 
 To connect **more than one UI Document asset** to a panel:
 
 
-1. Select or create a GameObject to host the UI.
+1. Select or create a **GameObject to host the UI**.
 2. Select **Component > UI Toolkit > UI Document** to add a UI Document component.
 3. In the Inspector window of the UIDocument, do the following:
    - Set the **Panel Settings** to the Panel Settings asset to display the UI.
