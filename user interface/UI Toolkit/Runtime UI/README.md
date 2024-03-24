@@ -178,7 +178,7 @@ To configure a panel:
 ### Connect the UI to a panel
 A **panel can display UI from more than one UI Document asset**. Each UI Document has a **Sort Order** property that **sets the UI Document rendering order**:
 
--   Child UI Document components are **drawn on top of their parent UI Document components**.
+-   **Child UI Document components** are **drawn on top of their parent UI Document components**.
 -   UI Documents components that are at the **same level of the hierarchy** are **rendered in sequence** according to their **Sort Order**.
 
 
