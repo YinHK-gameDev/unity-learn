@@ -4,8 +4,8 @@
  
  
 **Note:** 
-- The Built-in Render Pipeline, and the Universal Render Pipeline (URP) both support dynamic resolution as described in this document.
-- The High Definition Render Pipeline (HDRP) supports dynamic resolution, but you enable and use it in a different way. For information on dynamic resolution in HDRP, see Dynamic resoluton in HDRP.
+- The **Built-in Render Pipeline**, and the **Universal Render Pipeline (URP)** both support dynamic resolution as described in this document.
+- The **High Definition Render Pipeline (HDRP)** supports dynamic resolution, but you **enable and use it in a different way**. For information on dynamic resolution in HDRP, see Dynamic resoluton in HDRP.
 
 ### Scaling render targets
 With dynamic resolution, render targets have the DynamicallyScalable flag. You can set this to state whether Unity should scale this render texture as part of the dynamic resolution process or not. Cameras also have the allowDynamicResolution flag, which you can use to set up dynamic resolution so that there is no need to override the render target if you just want to apply dynamic resolution to a less complex Scene.
