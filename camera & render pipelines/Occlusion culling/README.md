@@ -39,3 +39,7 @@ https://blog.unity.com/technology/occlusion-culling-in-unity-4-3-best-practices
 
 https://blog.unity.com/technology/occlusion-culling-in-unity-4-3-troubleshooting
 
+https://sites.google.com/view/godninelibrary/unity%E7%9B%B8%E9%97%9C/%E6%95%88%E8%83%BD%E5%84%AA%E5%8C%96/occlusion-culling
+
+
+
