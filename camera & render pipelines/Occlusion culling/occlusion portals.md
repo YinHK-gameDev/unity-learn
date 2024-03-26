@@ -1,6 +1,5 @@
 ## Occlusion Portals
-An Occlusion Portal can either be open or closed. When an Occlusion Portal is closed, it occludes other GameObjects
-. When an Occlusion Portal is open, it does not occlude other GameObjects.
+An **Occlusion Portal** can **either be open or closed**. When an **Occlusion Portal is closed**, it **occludes other GameObjects**. When an **Occlusion Portal is ope**n, it **does not occlude other GameObjects**.
 
 If you have a GameObject in your Scene
  that has an open and a closed state (such as a door), you can create an Occlusion Portal that represents it in the occlusion culling
