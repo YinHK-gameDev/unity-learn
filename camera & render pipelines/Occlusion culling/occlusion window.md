@@ -40,13 +40,6 @@ When the Renderers filter is active, select a Renderer in the Hierarchy window o
 
 When the Occlusion Areas filter is active, you can select an Occlusion Area in the Hierarchy window or Scene view to view and change its Is View Volume setting in the Occlusion Culling window. You can also click Create New Occlusion Area to create a new Occlusion Area in the Scene.
 
-> At the bottom of the Bake tab are the Bake and Clear buttons. Click the Bake button to bake occlusion culling data. Click the Clear button to remove previously baked data.
-
-| Setting | Description |
-| --- | --- |
-| Smallest Occluder | The size of the smallest GameObject that can occlude other GameObjects, in metres. In general, for the smallest file size and fastest bake times, you should choose the highest value that gives good results in your Scene. |
-| Smallest Hole | The diameter of the smallest gap through which a Camera can see, in metres. In general, for the smallest file size and fastest bake times, you should choose the highest value that gives good results in your Scene. |
-| Backface Threshold | If you need to reduce the size of the baked data, Unity can sample the Scene as it bakes, and exclude parts of the Scene where the visible occluder geometry consists of more than a given percentage of backfaces. An area with a high percentage of backfaces is likely to be underneath or inside geometry, and therefore not likely somewhere the Camera is at runtime. The default value of 100 never removes areas from the data. Lower values result in a smaller file size, but can lead to visual artifacts. |
 
 ### Bake data
 In the Bake tab, you can fine-tune the parameters of the Occlusion Culling bake process. Configure these settings to find a balance between bake times, data size at runtime, and visual results.
@@ -57,6 +50,14 @@ Occlusion culling inspector **bake** tab.
 - In the top menu, select **Window > Rendering > Occlusion Culling** to open the Occlusion Culling window.
 - Select the **Bake** tab.
 - In the bottom right hand corner of the Inspector window, press the Bake button. Unity generates the occlusion culling data, saves the data as an asset in your Project, and links the asset with the current Scene(s).
+
+> At the bottom of the Bake tab are the Bake and Clear buttons. Click the Bake button to bake occlusion culling data. Click the Clear button to remove previously baked data.
+
+| Setting | Description |
+| --- | --- |
+| Smallest Occluder | The size of the smallest GameObject that can occlude other GameObjects, in metres. In general, for the smallest file size and fastest bake times, you should choose the highest value that gives good results in your Scene. |
+| Smallest Hole | The diameter of the smallest gap through which a Camera can see, in metres. In general, for the smallest file size and fastest bake times, you should choose the highest value that gives good results in your Scene. |
+| Backface Threshold | If you need to reduce the size of the baked data, Unity can sample the Scene as it bakes, and exclude parts of the Scene where the visible occluder geometry consists of more than a given percentage of backfaces. An area with a high percentage of backfaces is likely to be underneath or inside geometry, and therefore not likely somewhere the Camera is at runtime. The default value of 100 never removes areas from the data. Lower values result in a smaller file size, but can lead to visual artifacts. |
 
 ### Visualizion the results
 When you select a Camera in the Scene view or Hierarchy window while the Visualization tab is visible, Unity updates the Scene view to show the effects of occlusion culling from the perspective of the selected Camera. You can use the Occlusion Culling popup in the Scene view to configure the visualization.
