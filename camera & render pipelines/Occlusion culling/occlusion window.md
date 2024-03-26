@@ -14,15 +14,6 @@ Any GameObject that is likely to **be occluded at runtim**e is a **good candidat
 - Have **any type** of **Renderer component**
 - **Not move at runtime**
 
-When you have identified the GameObjects that you would like to be **Static Occluders** and **Static Occludees**, you can set up your Scene.
-
-1. Select all of the GameObjects that you would like to be **Static Occluders**.
-2. In the Inspector window, open the **Static Editor Flags** drop-down menu and select **Occluder Static**.
-3. Select all of the GameObjects that you would like to be **Static Occludees**.
-4. In the Inspector window, open the **Static Editor Flags** drop-down menu and select **Occludee Static**.
-5. Add a Camera to your Scene and select it, or select an existing Camera.
-6. In the Inspector window, ensure that the **Camera’s Occlusion Culling property is enabled**.
-
 **Static editor flags**: \
 ![](./static_editor+flag.png)
 
@@ -45,6 +36,16 @@ When the **Occlusion Areas filter** is active, you can select an **Occlusion Are
 In the Bake tab, you can fine-tune the parameters of the Occlusion Culling bake process. Configure these settings to find a balance between bake times, data size at runtime, and visual results.
 
 ![](./OcclusionCullingInspectorBake.png)
+
+
+When you have identified the GameObjects that you would like to be **Static Occluders** and **Static Occludees**, you can set up your Scene.
+
+1. Select all of the GameObjects that you would like to be **Static Occluders**.
+2. In the Inspector window, open the **Static Editor Flags** drop-down menu and select **Occluder Static**.
+3. Select all of the GameObjects that you would like to be **Static Occludees**.
+4. In the Inspector window, open the **Static Editor Flags** drop-down menu and select **Occludee Static**.
+5. Add a Camera to your Scene and select it, or select an existing Camera.
+6. In the Inspector window, ensure that the **Camera’s Occlusion Culling property is enabled**.
 
 Occlusion culling inspector **bake** tab. 
 - In the top menu, select **Window > Rendering > Occlusion Culling** to open the Occlusion Culling window.
