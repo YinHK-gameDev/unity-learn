@@ -12,9 +12,9 @@ To avoid this, **place Occlusion Areas in your Scene to define View Volumes** fo
 
 
 ### Using an Occlusion Area component to define a View Volume
-1. Add an Occlusion Area component to an empty GameObject in your Scene
-2. In the Inspector window, configure the Size property so that the bounding volume covers the desired area
-3. In the Inspector window, enable Is View Volume
+1. Add an **Occlusion Area component** to an **empty GameObject** in your Scene
+2. In the Inspector window, configure the **Size property** so that the **bounding volume covers the desired area**
+3. In the Inspector window, **enable Is View Volume**
 
 ![](./Inspector-OcclusionArea.png)
 
