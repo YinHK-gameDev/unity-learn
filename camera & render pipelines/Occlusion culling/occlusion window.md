@@ -26,6 +26,7 @@ When you have identified the GameObjects that you would like to be Static Occlud
 **Static editor flags**: \
 ![](./static_editor+flag.png)
 
+![](./occulsion_culling.png)
 
 > Open the Occlusion Culling window by navigating to the top menu and selecting **Window > Rendering > Occlusion Culling**.
 
