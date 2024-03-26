@@ -58,7 +58,7 @@ Occlusion culling inspector **bake** tab.
 - Select the **Bake** tab.
 - In the bottom right hand corner of the Inspector window, press the Bake button. Unity generates the occlusion culling data, saves the data as an asset in your Project, and links the asset with the current Scene(s).
 
-### Visualizion
+### Visualizion the results
 When you select a Camera in the Scene view or Hierarchy window while the Visualization tab is visible, Unity updates the Scene view to show the effects of occlusion culling from the perspective of the selected Camera. You can use the Occlusion Culling popup in the Scene view to configure the visualization.
 
 ![](./OcclusionCullingInspectorVisualization.png)
