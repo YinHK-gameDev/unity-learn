@@ -33,12 +33,12 @@ When you have identified the GameObjects that you would like to be **Static Occl
 ### Object tab
 ![](./OcclusionCullingInspectorObject.png)
 
-Occlusion Culling Window for a Mesh Renderer
-In the Object tab, you can click the All, Renderers, and Occlusion Areas buttons to filter the contents of the Hierarchy window.
+Occlusion Culling Window for a Mesh Renderer \
+In the **Object tab**, you can click the **All**, **Renderers**, and **Occlusion Areas** buttons to **filter the contents of the Hierarchy windo**w.
 
-When the Renderers filter is active, select a Renderer in the Hierarchy window or Scene view to view and change its occlusion culling settings in the Occlusion Culling window.
+When the **Renderers filter** is active, select a Renderer in the Hierarchy window or Scene view to view and change its occlusion culling settings in the Occlusion Culling window.
 
-When the Occlusion Areas filter is active, you can select an Occlusion Area in the Hierarchy window or Scene view to view and change its Is View Volume setting in the Occlusion Culling window. You can also click Create New Occlusion Area to create a new Occlusion Area in the Scene.
+When the **Occlusion Areas filter** is active, you can select an **Occlusion Area in the Hierarchy windo**w or **Scen**e view to view and change its Is **View Volume** setting in the Occlusion Culling window. You can also click Create New Occlusion Area to create a new Occlusion Area in the Scene.
 
 
 ### Bake data
