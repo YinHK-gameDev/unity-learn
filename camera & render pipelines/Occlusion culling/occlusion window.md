@@ -74,6 +74,9 @@ Occlusion Culling window **Visualization** tab.
 ### Occlusion Culling popup in the Scene view
 The **Occlusion Culling popup** has two modes: **Edit**, and **Visualization**. You can switch between them using the drop-down menu.
 
+![](./occulsion_culling_popup.png)
+
+
 #### Edit mode
 | Setting | Description |
 | --- | --- |
