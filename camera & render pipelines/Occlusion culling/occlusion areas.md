@@ -1,5 +1,5 @@
 ## Occlusion Areas
-An Occlusion Area component lets you define a **View Volume**, which is an **area where the Camera is most likely to be at runtime**. Within View Volumes, Unity generates higher fidelity occlusion culling data and performs more performance-intensive calculations.
+An **Occlusion Area component** lets you define a **View Volume**, which is an **area where the Camera is most likely to be at runtime**. Within View Volumes, Unity generates higher fidelity occlusion culling data and performs more performance-intensive calculations.
 
 Use the Occlusion Area component to define View Volumes in the occlusion culling
  system. View Volumes are areas of the Scene
