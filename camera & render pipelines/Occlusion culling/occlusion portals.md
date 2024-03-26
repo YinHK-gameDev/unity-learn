@@ -1,21 +1,20 @@
 ## Occlusion Portals
 An **Occlusion Portal** can **either be open or closed**. When an **Occlusion Portal is closed**, it **occludes other GameObjects**. When an **Occlusion Portal is ope**n, it **does not occlude other GameObjects**.
 
-If you have a GameObject in your Scene
- that has an open and a closed state (such as a door), you can create an Occlusion Portal that represents it in the occlusion culling
- system. You can then set the open state of the Occlusion Portal according to the state of that GameObject. An Occlusion Portal component does not need to be placed on the GameObject it represents.
+If you have a GameObject in your Scene that has an **open and a closed state** (such as a **door**), you can **create an Occlusion Portal** that represents it in the occlusion culling
+ system. You can then **set the open state** of the Occlusion Portal according to the state of that GameObject. An **Occlusion Portal component** does **not need to be placed on the GameObject** it represents.
 
 ![](./OcclusionPortal.png)
 
 ### Setting up an Occlusion Portal
-1. Choose a suitable GameObject in your Scene to act as an Occlusion Portal. Good candidates for Occlusion Portals are medium to large solid GameObjects, such as a door.
-2. Ensure that the GameObject is not marked as Occluder Static or Occludee Static.
-3. Add an Occlusion Portal component to the GameObject.
-4. Bake the occlusion data for your Scene. See Getting started with occlusion culling for instructions.
-5. Ensure that the Occlusion Culling window, the Inspector panel and the Scene view are all visible.
-6. In the Scene view, move the Camera to a position where it is directly in front of the Occlusion Portal.
-7. Select the GameObject with the Occlusion Portal component.
-8. In the Inspector window, toggle the Occlusion Portal component’s Open property on and off. In the Scene view, observe the difference in occlusion culling.
+1. Choose a suitable GameObject in your Scene to **act as an Occlusion Portal**. Good candidates for Occlusion Portals are **medium to large solid GameObjects**, such as a **doo**r.
+2. Ensure that the GameObject is **not marked** as **Occluder Static** or **Occludee Static**.
+3. Add an **Occlusion Portal component** to the GameObject.
+4. **Bake the occlusion data** for your Scene. 
+5. Ensure that the **Occlusion Culling window**, the Inspector panel and the **Scene view are all visible**.
+6. In the Scene view, **move the Camera to a position where it is directly in front of the Occlusion Portal**.
+7. Select the GameObject with the **Occlusion Portal component**.
+8. In the Inspector window, **toggle the Occlusion Portal component’s Open property on and off**. In the Scene view, observe the difference in occlusion culling.
 
 ### Opening and closing an Occlusion Portal using script
 ```cs
