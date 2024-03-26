@@ -14,6 +14,15 @@ If you have not defined any View Volumes in your Scene, **Unity creates a View V
 2. In the Inspector window, configure the Size property so that the bounding volume covers the desired area
 3. In the Inspector window, enable Is View Volume
 
+![](./Inspector-OcclusionArea.png)
+
+| Property: | Function: |
+| --- | --- |
+| Size | Set the size of the Occlusion Area. |
+| Center | Set the center of the Occlusion Area. By default this is 0,0,0 and is located in the center of the box. |
+| Is View Volume | If enabled, the Occlusion Area defines a View Volume. If disabled, the Occlusion Area does not define a View Volume. This must be enabled for an Occlusion Area to work. |
+
+
 ### ref
 https://docs.unity3d.com/Manual/class-OcclusionArea.html
 
