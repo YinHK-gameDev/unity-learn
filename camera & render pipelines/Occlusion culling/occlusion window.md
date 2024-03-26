@@ -55,9 +55,9 @@ Occlusion culling inspector **bake** tab.
 
 | Setting | Description |
 | --- | --- |
-| Smallest Occluder | The size of the smallest GameObject that can occlude other GameObjects, in metres. In general, for the smallest file size and fastest bake times, you should choose the highest value that gives good results in your Scene. |
-| Smallest Hole | The diameter of the smallest gap through which a Camera can see, in metres. In general, for the smallest file size and fastest bake times, you should choose the highest value that gives good results in your Scene. |
-| Backface Threshold | If you need to reduce the size of the baked data, Unity can sample the Scene as it bakes, and exclude parts of the Scene where the visible occluder geometry consists of more than a given percentage of backfaces. An area with a high percentage of backfaces is likely to be underneath or inside geometry, and therefore not likely somewhere the Camera is at runtime. The default value of 100 never removes areas from the data. Lower values result in a smaller file size, but can lead to visual artifacts. |
+| Smallest Occluder | The **size of the smallest GameObject that can occlude other GameObjects**, in metres. In general, for the smallest file size and fastest bake times, you should choose the highest value that gives good results in your Scene. |
+| Smallest Hole | The **diameter of the smallest gap through which a Camera can see**, in metres. In general, for the smallest file size and fastest bake times, you should choose the highest value that gives good results in your Scene. |
+| Backface Threshold | If you need to **reduce the size of the baked data**, Unity can sample the Scene as it bakes, and **exclude parts of the Scene** where the visible occluder geometry consists of more than a given percentage of backfaces. An area with a high percentage of backfaces is likely to be underneath or inside geometry, and therefore not likely somewhere the Camera is at runtime. The default value of 100 never removes areas from the data. Lower values result in a smaller file size, but can lead to visual artifacts. |
 
 ### Visualizion the results
 When you select a Camera in the Scene view or Hierarchy window while the Visualization tab is visible, Unity updates the Scene view to show the effects of occlusion culling from the perspective of the selected Camera. You can use the Occlusion Culling popup in the Scene view to configure the visualization.
