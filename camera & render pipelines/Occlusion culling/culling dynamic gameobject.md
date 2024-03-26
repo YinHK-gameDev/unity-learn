@@ -1,8 +1,8 @@
 ## Occlusion culling with dynamic GameObjects
 
-Static GameObjects and dynamic GameObjects behave differently in Unity’s occlusion culling system:
+**Static GameObjects** and **dynamic GameObjects** behave differently in Unity’s occlusion culling system:
 - Unity can **bake static GameObjects into the occlusion culling data** as a Static Occluder and/or a Static Occludee.
-- Unity **cannot bake dynamic GameObjects into the occlusion culling data**. A dynamic GameObject can be an occludee at runtime, but it cannot be an occluder.
+- Unity **cannot bake dynamic GameObjects into the occlusion culling data**. A **dynamic GameObject can be an occludee at runtime**, but it **cannot be an occluder**.
 
 
 To determine whether a dynamic GameObject acts as a occludee, you can **set the Dynamic Occlusion property on any type of Renderer component**. When Dynamic Occlusion is enabled, Unity **culls the Renderer when a Static Occluder blocks it from a Camera
