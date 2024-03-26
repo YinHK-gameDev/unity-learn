@@ -72,7 +72,7 @@ Occlusion Culling window **Visualization** tab.
 - If required, tweak the bake settings in the Bake tab of the Occlusion Culling window, and repeat the baking process.
 
 ### Occlusion Culling popup in the Scene view
-The Occlusion Culling popup has two modes: **Edit**, and **Visualization**. You can switch between them using the drop-down menu.
+The **Occlusion Culling popup** has two modes: **Edit**, and **Visualization**. You can switch between them using the drop-down menu.
 
 #### Edit mode
 | Setting | Description |
