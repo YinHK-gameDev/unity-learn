@@ -22,9 +22,9 @@ The main tasks that the Virtual Camera does for you:
 -   **Aims the Unity camera** at something.
 -   **Adds procedural noise** to the Unity camera. Noise simulates things like handheld effects or vehicle shakes.
 
-Cinemachine encourages you to create many Virtual Cameras. The Virtual Camera is designed to consume little processing power. If your Scene is performance-sensitive, deactivate all but the essential Virtual Cameras at any given moment for best performance.
+Cinemachine encourages you to **create many Virtual Cameras**. The Virtual Camera is designed to consume little processing power. If your Scene is performance-sensitive, deactivate all but the essential Virtual Cameras at any given moment for best performance.
 
-It is recommended that you use a single Virtual Camera for a single shot. Take advantage of this to create dramatic or subtle cuts or blends. Examples:
+It is recommended that you use a **single Virtual Camera for a single shot**. Take advantage of this to **create dramatic or subtle cuts or blen**ds. Examples:
 
 -   For a cutscene where two characters exchange dialog, use three Virtual Cameras: one camera for a mid-shot of both characters, and separate Virtual Cameras for a close-up of each character. Use Timeline to synchronize audio with the Virtual Cameras.
     
