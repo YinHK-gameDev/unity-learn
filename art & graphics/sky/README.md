@@ -116,10 +116,6 @@ You can also specify **when Unity updates the ambient lighting**. To do this, ch
 
 
 
-
-
-
-
 If your Skybox includes a **sun, moon, or other light** in it, set up a Directional Light that points in the **same direction as the light**. This makes it appear as though the light in your skybox creates shadows in your Scene. If there are multiple Directional Lights in your Scene, you can choose which Directional Light the Skybox uses. To do this:
 
 1.  From the menu bar, click **Window > Rendering > Lighting Settings**.
@@ -133,6 +129,8 @@ If you want to have **fog** in your Scene, match the fog color to the color of t
 3.  In the **Other Settings** section, enable the **Fog** checkbox.
 4.  Set the **Color** property to a color that suits your skybox. For this, you can use the ink dropper tool to select a color from the Scene.
  
+https://docs.unity3d.com/Manual/skyboxes-using.html
+
 
 ### Skybox shaders
 
@@ -140,14 +138,13 @@ Unity provides multiple **Skybox** Shaders for you to use. Each **Shader** uses 
 
 **Textured**: Generates a skybox from one or multiple textures. The source textures represent the view of the background from all directions. The Skybox Shaders in this category are:
 
--   [6 Sided](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-6sided.html).
--   [Cubemap](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-cubemap.html).
--   [Panoramic](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-panoramic.html).
+-   **6 Sided**
+-   **Cubemap**
+-   **Panoramic**
 
 **Procedural**: Does not use textures and instead uses properties on the Material to generate a skybox. The Skybox Shader in this category is:
 
--   [Procedural](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-procedural.html).
-
+-   **Procedural**
 
 
 #### 6 Sided skybox
@@ -185,7 +182,12 @@ The **Procedural skybox Shader** does not require any input Textures and instead
 | **Ground** | The color of the ground (the area below the horizon). |
 | **Exposure** | Adjusts the sky’s exposure. This allows you to change tonal values in the skybox this Material generates. Larger values produce a more exposed, seemingly brighter, skybox. Smaller values produce a less exposed, seemingly darker, skybox. |
 
+https://docs.unity3d.com/Manual/skybox-shaders.html
 
+### ref
+https://docs.unity3d.com/Manual/using-skymanager.html
+
+https://docs.unity3d.com/Manual/sky.html
 
 
 
