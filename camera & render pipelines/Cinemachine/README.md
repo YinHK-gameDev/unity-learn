@@ -134,6 +134,36 @@ At any time, each Virtual Camera may be in one of these states:
 -   **Disabled**: The Virtual Camera doesn’t control the Unity camera and doesn’t actively follow or aim at its targets. A Virtual Camera in this state doesn’t consume processing power. To disable a Virtual Camera, deactivate its game object. The Virtual Camera is present but disabled in the Scene. However, even though the game object is deactivated, the virtual camera can still control the Unity camera if the virtual camera is participating in a blend, or if it is invoked by Timeline.
 
 
+| **Property:** |  | **Function:** |
+| --- | --- | --- |
+| **Solo** |  | Toggles whether or not the Virtual Camera is temporarily live. Use this property to get immediate visual feedback in the Game view to adjust the Virtual Camera. |
+| **Game Window Guides** |  | Toggles the visibility of compositional guides in the Game view. These guides are available when Look At specifies a GameObject and the Aim section uses Composer or Group Composer, or when Follow specifies a target and the Body section uses Framing Composer. This property applies to all Virtual Cameras. |
+| **Save During Play** |  | Check to apply the changes while in Play mode. Use this feature to fine-tune a Virtual Camera without having to remember which properties to copy and paste. This property applies to all Virtual Cameras. |
+| **Priority** |  | The importance of this Virtual Camera for choosing the next shot. A higher value indicates a higher priority. Cinemachine Brain chooses the next live Virtual Camera from all Virtual Cameras that are activated and have the same or higher priority as the current live Virtual Camera. This property has no effect when using a Virtual Camera with Timeline. |
+| **Follow** |  | The target GameObject that the Virtual Camera moves with. The Body properties use this target to update the position of the Unity camera. Keep this property empty to make the Unity camera use the position of the Virtual Camera’ transform. For example, you might choose to animate the Virtual Camera in Timeline. |
+| **Look At** |  | The target GameObject to aim the Unity camera at. The Aim properties use this target to update the rotation of the Unity camera. Keep this property empty to make the Unity camera use the orientation of the Virtual Camera. |
+| **Standby Update** |  | Controls how often the virtual camera is updated when the virtual camera is not live. |
+| **Position Blending** |  | Style for blending positions to and from this Virtual Camera. |
+|  | _Linear_ | Standard linear position blend. |
+|  | _Spherical_ | Spherical blend about the Look At position, if there is a Look At target. |
+|  | _Cylindrical_ | Cylindrical blend about the Look At position, if there is a Look At target. Vertical coordinate is linearly interpolated. |
+| **Lens** |  | These properties mirror their counterparts in the properties for the Unity camera. |
+|  | _Field Of View_ | The camera view in vertical degrees. For example, to specify the equivalent of a 50mm lens on a Super 35 sensor, enter a Field of View of 19.6 degrees. This property is available when the Unity camera with the Cinemachine Brain component uses a Projection of Perspective. You can also use Scene Handles to modify this property. |
+|  | _Presets_ | A drop-down menu of settings for commonly-used lenses. Choose **Edit Presets** to add or edit the asset that contains a default list of lenses. |
+|  | _Orthographic Size_ | When using an orthographic camera, defines the half-height of the camera view, in world coordinates. Available when the Unity camera with the Cinemachine Brain component uses a Projection of Orthographic. |
+|  | _Near Clip Plane_ | The closest point relative to the camera where drawing occurs. You can also use Scene Handles to modify this property. |
+|  | _Far Clip Plane_ | The furthest point relative to the camera where drawing occurs. You can also use Scene Handles to modify this property. |
+|  | _Dutch_ | Dutch angle. Tilts the Unity camera on the z-axis, in degrees. This property is unique to the Virtual Camera; there is no counterpart property in the Unity camera. |
+| **Mode Override** |  | Allows you to select a different camera mode to apply to the Unity camera component when Cinemachine activates this Virtual Camera.  
+**Important:** All the changes applied to the Camera component through this setting will remain after the Virtual Camera deactivation. If you set a mode override in any Virtual Camera, you should set one in all Virtual Cameras. |
+|  | _None_ | Leaves the **Projection** and **Physical Camera** properties unchanged in the Camera. |
+|  | _Orthographic_ | Sets the **Projection** property to **Orthographic**. |
+|  | _Perspective_ | Sets the **Projection** property to **Perspective** and _disables_ the **Physical Camera** feature and properties. |
+|  | _Physical_ | Sets the **Projection** property to **Perspective** and _enables_ the **Physical Camera** feature and properties. |
+| **Blend Hint** |  | Provides hints for blending positions to and from the virtual camera. |
+| **Inherit Position** |  | When enabled, whenever this virtual camera goes live, forces the initial position to be the same as the current position of the Unity Camera, if possible. |
+| **Extensions** |  | Components that add extra behaviors to the Virtual Camera. |
+|  | _Add Extension_ | Choose a new extension to add to the Virtual Camera. |
 
 ### Switching virtual camera
 
