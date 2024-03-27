@@ -25,6 +25,41 @@ It **chooses the next Virtual Camera to control the Unity camera**. It also **co
 
 ![](./CinemachineBrainInspector.png)
 
+| **Property:** |  | **Function:** |
+| --- | --- | --- |
+| **Show Debug Text** |  | Check to display a textual summary of the live CinemachineCamera and blend in the view. |
+| **Show Camera Frustum** |  | Check to display the frustum of the camera in the Scene view. |
+| **Ignore Time Scale** |  | Check to make the CinemachineCameras respond in real time to user input and damping, even if the game is running in slow motion. |
+| **World Up Override** |  | The Y axis of the specified GameObject defines the worldspace up vector for CinemachineCameras. Use this property in top-down game environments. Set to None to use the worldspace Y axis. Setting this appropriately is important to avoid gimbal-lock in extreme up/down conditions. |
+| **Channel Mask** |  | The CinemachineBrain will find the highest-priority CinemachineCamera that outputs to any of the channels selected. CinemachineCameras that do not output to one of these channels will be ignored. Normally, this value should be left at Default. Change it in situations where multiple CinemachineBrains are needed (for example, when implementing Split-screen). |
+| **Update Method** |  | When to update the position and rotation of the CinemachineCameras. |
+|  | _Fixed Update_ | Synchronize CinemachineCamera update with the Physics module, in FixedUpdate. |
+|  | _Late Update_ | In MonoBehaviour LateUpdate. |
+|  | _Smart Update_ | Update each CinemachineCamera according to how its target is updated. This is the recommended setting. |
+|  | _Manual Update_ | CinemachineCameras do not update automatically. You must explicitly call `brain.ManualUpdate()` at an appropriate time in your game loop. This should be after any camera LookAt or Follow targets have moved. This is an advanced feature. |
+| **Blend Update Method** |  | When to resolve the blends and update the main camera. |
+|  | _Late Update_ | In MonoBehaviour LateUpdate. This is the recommended setting. |
+|  | _Fixed Update_ | Use this setting only if your Update Method is FixedUpdate and you see judder when blending. |
+| **Lens Mode Override** |  | When enabled, CM camras are permitted to override the camera's lens mode (Perspective vs Orthographic vs Physical). |
+| **Default Mode** |  | When Lens Mode Override is enabled and there is no CinemachineCamera actively overriding the lens mode, this lens mode will be pushed to the camera. |
+|  | _None_ | If Lens Override Mode is enabled and Default Mode is set to _None_, there will be no default mode pushed to the Camera when the CinemachineCamera is not overriding the lens mode. This setting is not recommended, because it can produce unpredictable results. It's always best to have a default mode. |
+|  | _Orthographic_ | Sets the **Projection** property to **Orthographic**. |
+|  | _Perspective_ | Sets the **Projection** property to **Perspective** and _disables_ the **Physical Camera** feature and properties. |
+|  | _Physical_ | Sets the **Projection** property to **Perspective** and _enables_ the **Physical Camera** feature and properties. |
+| **Default Blend** |  | The blend to use when you haven’t explicitly defined a blend between two CinemachineCameras. |
+|  | _Cut_ | Zero-length blend. |
+|  | _Ease In Out_ | S-shaped curve, giving a gentle and smooth transition. |
+|  | _Ease In_ | Linear out of the outgoing shot, and easy into the incoming. |
+|  | _Ease Out_ | Easy out of the outgoing shot, and linear into the incoming. |
+|  | _Hard In_ | Easy out of the outgoing, and hard into the incoming. |
+|  | _Hard Out_ | Hard out of the outgoing, and easy into the incoming. |
+|  | _Linear_ | Linear blend. Mechanical-looking. |
+|  | _Custom_ | Custom blend curve. Draw the curve you want. |
+| **Custom Blends** |  | The asset that contains custom settings for blends between specific CinemachineCameras in your Scene. |
+| **Create Asset** |  | Create an asset containing a list of custom blends between CinemachineCameras. |
+| **Camera Cut Event** |  | This event fires when a CinemachineCamera goes live and there is no blend. |
+| **Camera Activated Event** |  | This event fires when a CinemachineCamera goes live. If a blend is involved, then the event fires on the first frame of the blend. |
+
 https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/manual/CinemachineBrain.html
 
 
