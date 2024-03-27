@@ -99,7 +99,7 @@ Unity displays different properties in the Camera Inspector depending on the **r
 | **Y** | The beginning vertical position that the camera view will be drawn. |
 | **W** (Width) | Width of the camera output on the screen. |
 | **H** (Height) | Height of the camera output on the screen. |
-| **Depth** | The camera’s position in the draw order. Cameras with a larger value will be drawn on top of cameras with a smaller value. The value range is [-100, 100],the highest value of deth for the camera view will be draw in the Game view.|
+| **Depth** | The camera’s position in the draw order. Cameras with a **larger value will be drawn on top of cameras with a smaller value**. The **value range is [-100, 100]**, the **highest value of deth for the camera view will be draw in the Game view**.|
 | **Rendering Path** | Options for defining what rendering methods will be used by the camera. |
 | **Use Player Settings** | This camera will use whichever Rendering Path is set in the Player Settings. |
 | **Vertex Lit** | All objects rendered by this camera will be rendered as Vertex-Lit objects. |
