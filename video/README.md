@@ -29,7 +29,7 @@ A **Video Player component** attached to a spherical GameObject, playing the Vid
 
 
 #### Renderer Mode
-You can also set a specific target(Choose how to be rendered) for the video to play on, including:
+You can also set a **specific target(Choose how to be rendered) for the video to play on**, including:
 
 - A **Camera plane**
 - A **Render Texture**
