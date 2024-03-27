@@ -11,7 +11,7 @@ It allows you to iterate and prototype new ideas on the fly while saving setting
 
 ### Cinemachine Brain
 
-The Cinemachine Brain is a component in the Unity Camera itself. The Cinemachine Brain **monitors all active Virtual Cameras** in the Scene. 
+The **Cinemachine Brain is a component** in the Unity Camera itself. The Cinemachine Brain **monitors all active Virtual Cameras** in the Scene. 
 
 To specify the next live Virtual Camera, you **activate or deactivate the desired Virtual Camera's game object**. Cinemachine Brain then **chooses the most recently activated Virtual Camera with the same or higher priority as the live Virtual Camera**.
 我們可以藉由改變虛擬攝影機的優先順序以決定要使用哪個鏡頭.
@@ -20,9 +20,12 @@ It **chooses the next Virtual Camera to control the Unity camera**. It also **co
 
 > **Tip**: Use Cinemachine Brain to respond to dynamic game events in real time. It allows your game logic to control the camera by manipulating priorities. This is particularly useful for live gameplay, where action isn’t always predictable. Use Timeline to choreograph cameras in predictable situations, like cutscenes. Timeline overrides the Cinemachine Brain priority system to give you precise, to-the-frame camera control.
 
+> Attach this **Cinemachine Brain Component to the Unity camera**.
+
+
 ### Virtual Cameras
 
-Cinemachine **does not create new cameras**. Instead, it **directs a single Unity camera for multiple shots**. You compose these shots with **Virtual Cameras**. Virtual Cameras move and rotate the Unity camera and control its settings.
+Cinemachine **does not create new cameras**. Instead, it **directs a single Unity camera for multiple shots**. You compose these shots with **Virtual Cameras**. Virtual Cameras **move and rotate the Unity camera** and **control its settings**.
 
 The **Virtual Cameras are separate GameObjects from the Unity Camera, and behave independently**. They are not nested within each other.
 
@@ -36,12 +39,12 @@ Cinemachine encourages you to **create many Virtual Cameras**. The Virtual Camer
 
 It is recommended that you use a **single Virtual Camera for a single shot**. Take advantage of this to **create dramatic or subtle cuts or blen**ds. Examples:
 
--   For a cutscene where two characters exchange dialog, use three Virtual Cameras: one camera for a mid-shot of both characters, and separate Virtual Cameras for a close-up of each character. Use Timeline to synchronize audio with the Virtual Cameras.
+-   For a cutscene where two characters exchange dialog, use three Virtual Cameras: one camera for a mid-shot of both characters, and s**eparate Virtual Cameras for a close-up of each character**. Use **Timeline to synchronize audio with the Virtual Cameras**.
     
 -   Duplicate an existing Virtual Camera so that both Virtual Cameras are in the same position in the Scene. For the second Virtual Camera, change the FOV or composition. When a player enters a trigger volume, Cinemachine blends from the first to the second Virtual Camera to emphasize a change in action.
     
 
-One Virtual Camera has control of the Unity camera at any point in time. This is the **live** Virtual Camera. The exception to this rule is when a blend occurs from one Virtual Camera to the next. During the blend, both Virtual Cameras are live.
+**One Virtual Camera has control of the Unity camera at any point in time**. This is the **live** Virtual Camera. The exception to this rule is when a **blend occurs from one Virtual Camera to the next**. During the **blend**, **both Virtual Cameras are live**.
 
 
 #### Moving and aiming
@@ -95,7 +98,7 @@ In your project, organize your Scene Hierarchy to have a **single Unity camera**
 To add a Virtual Camera to a Scene:
 
 1.  In the Unity menu, choose **Cinemachine > Create Virtual Camera**.  
-    Unity adds a new GameObject with a Cinemachine Virtual Camera component. If necessary, Unity also adds a Cinemachine Brain component to the Unity camera GameObject for you.
+    Unity **adds a new GameObject with a Cinemachine Virtual Camera component**. If necessary, Unity **also adds a Cinemachine Brain component to the Unity camera GameObject** for you.
     
 2.  Use the **Follow** property to specify a GameObject to follow.  
     
