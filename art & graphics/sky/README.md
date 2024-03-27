@@ -15,7 +15,7 @@ The sky itself **can contain anything, such as clouds, mountains, buildings, and
 
 ### SkyManager
 
-Unity includes a dedicated manager—the **SkyManager**—to ensure that environment lighting affects your scene **by default**.
+Unity includes a dedicated manager—the **SkyManager**—to ensure that **environment lighting affects your scene** **by default**.
  
 > The **SkyManager** automatically generates an **ambient probe** and default **reflection probe** to capture environment lighting.
 
