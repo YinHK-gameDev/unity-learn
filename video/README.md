@@ -2,7 +2,9 @@
 Use **Unity’s video system** to integrate video into your game. 
 Video footage can **add realism**, **save on rendering complexity**, or help you integrate content available externally.
 
-To use video in Unity, import **Video Clips** and configure them using the **Video Player component**. The system allows you to feed video footage directly into the **Texture parameter** of any component that has one. Unity then plays the Video on that **Texture** at run time.
+To use video in Unity, import **Video Clips** and configure them using the **Video Player component**. 
+
+> The system also allows you to feed **video footage** directly into the **Texture parameter** of a**ny component that has one**. Unity then plays the Video on that **Texture** at run time.
 
 
 ![](./img/Video-1.png)
