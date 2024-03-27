@@ -369,7 +369,11 @@ When Cinemachine begins a transition from one CinemachineCamera to another, it w
 
 ![](./Custom_blend.png)
 
+**Custom Blend Asset:** 
 
+![](./blend_asset.png)
+
+![](./blend_asset2.png)
 
 | **Property:** |  | **Function:** |
 | --- | --- | --- |
