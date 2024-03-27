@@ -1,6 +1,6 @@
 ## Audio Source
-The Audio Source plays back an Audio Clip in the scene. 
-The clip can be played to an audio listener or through an audio mixer. 
+The **Audio Source plays back an Audio Clip in the scene**. \
+The clip can be **played to an audio listener** or **through an audio mixer**. 
 
 he audio source can play any type of Audio Clip and can be configured to play these as 2D, 3D, or as a mixture (SpatialBlend).
 
