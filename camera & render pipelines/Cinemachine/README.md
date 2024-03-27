@@ -174,7 +174,9 @@ At any time, each Virtual Camera may be in **one of these states**:
 ### Switching virtual camera
 
 **Setting priority value in virtual camera** determine which virtual camera **to be used**. \
-Therefore, to switch between these virtual cameras we can **adjust the priority value in these virtual cameras**. Another method is to **active or deactive the virtual cameras**. 
+Therefore, to switch between these virtual cameras we can **adjust the priority value in these virtual cameras**. 
+
+> Another method is to **active or deactive the virtual cameras**. 
 
 
 
