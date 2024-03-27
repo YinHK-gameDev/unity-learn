@@ -357,7 +357,32 @@ When Cinemachine begins a transition from one CinemachineCamera to another, it w
 -   If multiple entries in the Custom Blends asset match the upcoming transition with equally-strong specificity, then the first one found will apply.
   
 
+**Default blend:** 
+
+![](./default_blend.png)
+
+**Custom Blend:** 
+
+![](./create_custom_blend.png)
+
 ![](./Custom_blend.png)
+
+
+
+| **Property:** |  | **Function:** |
+| --- | --- | --- |
+| **From** |  | The name of the CinemachineCamera to blend from. Use the name \*\*ANY CAMERA\*\* to blend from any CinemachineCamera. This property is available only for custom blends. |
+| **To** |  | The name of the CinemachineCamera to blend to. Use the name \*\*ANY CAMERA\*\* to blend to any CinemachineCamera. This property is available only for custom blends. |
+| **Style Default Blend** |  | Shape of the blend curve. |
+|  | _Cut_ | Zero-length blend. |
+|  | _Ease In Out_ | S-shaped curve, giving a gentle and smooth transition. |
+|  | _Ease In_ | Linear out of the outgoing CinemachineCamera, and ease into the incoming CinemachineCamera. |
+|  | _Ease Out_ | Ease out of the outgoing CinemachineCamera, and blend linearly into the incoming CinemachineCamera. |
+|  | _Hard In_ | Ease out of the outgoing CinemachineCamera, and accelerate into the incoming CinemachineCamera. |
+|  | _Hard Out_ | Accelerate out of the outgoing CinemachineCamera, and ease into the incoming CinemachineCamera. |
+|  | _Linear_ | Linear blend. mechanical-looking. |
+|  | _Custom_ | Custom blend curve. Allows you to draw a custom blend curve. |
+| **Time** |  | Duration (in seconds) of the blend. |
 
 
 https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/manual/CinemachineBlending.html
