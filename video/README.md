@@ -26,12 +26,17 @@ The screenshot below shows a Video Player component attached to a spherical Game
 
 A **Video Player component** attached to a spherical GameObject, playing the Video Clip on the GameObject’s main Texture (in this case, the Texture of the Mesh Renderer)
 
-You can also set a specific target for the video to play on, including:
+
+
+#### Renderer Mode
+You can also set a specific target(Choose how to be rendered) for the video to play on, including:
 
 - A **Camera plane**
 - A **Render Texture**
 - A **Material Texture** parameter
 - Any **Texture field** in a component
+
+![](./img/rendering_mode.png)
 
 https://docs.unity3d.com/Manual/class-VideoPlayer.html
 
