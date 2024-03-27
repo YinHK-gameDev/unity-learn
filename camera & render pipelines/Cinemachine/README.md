@@ -77,13 +77,17 @@ The **Aim** properties offer the following procedural algorithms for rotating a 
 
 The **Noise** properties in a Virtual Camera to simulate **camera shake**.
 
-Cinemachine includes a **Basic Multi Channel Perlin** component, which adds Perlin noise to the movement of the Virtual Camera. **Perlin noise** is a technique to compute random movement with a natural behavior.
+Cinemachine includes a **Basic Multi Channel Perlin** component, which **adds Perlin noise to the movement of the Virtual Camera**. 
 
-The Basic Multi Channel Perlin component applies a noise profile. A noise profile is an Asset that defines the behavior of noise over time. Cinemachine includes a few noise profile assets. You can edit these and create your own.
+> **Perlin noise** is a **technique to compute random movement** with a **natural behavio**r.
+
+The **Basic Multi Channel Perlin component** applies a **noise profile**. A **noise profile is an Asset that defines the behavior of noise over time**. 
+
+**Cinemachine includes a few noise profile assets**. You can **edit these** and **create your own**.
 
 To apply noise:
 
-1.  Select your Virtual Camera in the Scene window.
+1.  **Select your Virtual Camera** in the Scene window.
     
 2.  In the Inspector, use the **Noise** drop-down menu to choose **Basic Multi Channel Perlin**.
     
