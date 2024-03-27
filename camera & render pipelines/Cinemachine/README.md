@@ -57,9 +57,9 @@ A Virtual Camera has two targets:
 - The **Follow** target specifies a GameObject for the Virtual Camera to move with.
 - The **Look At** target specifies the GameObject to aim at.
 
-Cinemachine includes a variety of procedural algorithms to control moving and aiming. Each algorithm solves a specific problem, and has properties to customize the algorithm for your specific needs. Cinemachine implements these algorithms as **`CinemachineComponent`** objects. Use the **`CinemachineComponent`** class to implement a custom moving or aiming behavior.
+> **Cinemachine** includes a **variety of procedural algorithms** to **control moving and aiming**. Each algorithm solves a specific problem, and has properties to **customize the algorithm** for your specific needs. Cinemachine implements these algorithms as **`CinemachineComponent`** objects. Use the **`CinemachineComponent`** class to implement a **custom moving or aiming behavior**.
 
-The **Body** properties offer the following procedural algorithms for moving the Virtual Camera in a Scene:
+The **Body** properties offer the following **procedural algorithms** for **moving the Virtual Camera** in a Scene:
 
 -   **Transposer**: Move in a fixed relationship to the **Follow** target, with optional damping.
 -   **Do Nothing**: Do not move the Virtual Camera.
@@ -68,7 +68,7 @@ The **Body** properties offer the following procedural algorithms for moving the
 -   **Tracked Dolly**: Move along a predefined path.
 -   **Hard Lock to Target**: Use the same position at the **Follow** target.
 
-The **Aim** properties offer the following procedural algorithms for rotating a Virtual Camera to face the **Look At** target:
+The **Aim** properties offer the following **procedural algorithms** for **rotating a Virtual Camera** to face the **Look At** target:
 
 -   **Composer**: Keep the **Look At** target in the camera frame, with compositional constraints.
 -   **Group Composer**: Keep multiple **Look At** targets in the camera frame.
@@ -331,4 +331,8 @@ https://unity.com/unity/features/editor/art-and-design/cinemachine
 https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/index.html
 
 https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/manual/index.html
+
+https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/handles.html
+
+
 
