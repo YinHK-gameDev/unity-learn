@@ -17,13 +17,13 @@ The sky itself **can contain anything, such as clouds, mountains, buildings, and
 
 Unity includes a dedicated manager—the **SkyManager**—to ensure that environment lighting affects your scene **by default**.
  
-The **SkyManager** automatically generates an **ambient probe** and default **reflection probe** to capture environment lighting.
+> The **SkyManager** automatically generates an **ambient probe** and default **reflection probe** to capture environment lighting.
 
 
-Unity updates these probes each time environment lighting in your scene changes, until the moment you generate lighting. After you generate lighting, Unity bakes the current environment light values into the probes.
+Unity **updates these probes each time environment lighting** in your scene changes, until **the moment you generate lighting**. After you generate lighting, Unity **bakes the current environment light values into the probes**.
 
 
-When you specifically use the Generate Lighting control to manually bake your lighting, Unity stops updating the probes from that point onward and only updates them again at the next bake. If you want Unity to continue to update the probes each time the environment lighting changes, enable the Auto Generate option.
+When you specifically use the Generate Lighting control to manually bake your lighting, Unity stops updating the probes from that point onward and only updates them again at the next bake. If you **want Unity to continue to update the probes each time the environment lighting changes**, **enable the Auto Generate option**.
 
 If you remove the Lighting Data Asset from your project, Unity continues to update the probes each time the environment lighting changes.
 
