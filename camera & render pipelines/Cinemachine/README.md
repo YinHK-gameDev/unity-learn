@@ -156,20 +156,25 @@ To add a Virtual Camera to a Scene:
 
  ![](./CinemachineNewVCam.png)   
 
-Use the **Aim**, **Body**, and **Noise** properties to specify how the Virtual Camera animates position, rotation, and other properties. The Virtual Camera applies these settings to the Unity Camera when **Cinemachine Brain** or **Timeline** transfers control of the Unity camera to the Virtual Camera.
+> Use the **Aim**, **Body**, and **Noise** properties to specify how the Virtual Camera animates position, rotation, and other properties. The Virtual Camera applies these settings to the Unity Camera when **Cinemachine Brain** or **Timeline** transfers control of the Unity camera to the Virtual Camera.
 
-At any time, each Virtual Camera may be in one of these states:
+At any time, each Virtual Camera may be in **one of these states**:
 
--   **Live**: The Virtual Camera actively controls a Unity camera that has a Cinemachine Brain. When a Cinemachine Brain blends from one Virtual Camera to the next, both Virtual Cameras are live. When the blend is complete, there is only one live Virtual Camera.
+-   **Live**: \
+    The Virtual Camera **actively controls a Unity camera that has a Cinemachine Brain**. When a **Cinemachine Brain blends from one Virtual Camera to the next**, **both Virtual Cameras are live**. When the **blend is complete**, there is **only one live Virtual Camera**.
     
--   **Standby**: The Virtual Camera doesn’t control the Unity camera. However, it still follows and aims at its targets, and updates at every frame. A Virtual Camera in this state is activated and has a priority that is the same as or lower than the live Virtual Camera.
+-   **Standby**: \
+    The Virtual Camera **doesn’t control the Unity camera**. However, it **still follows and aims at its targets**, and **updates at every frame**. A Virtual Camera in this state is **activated** and **has a priority that is the same as or lower than the live Virtual Camera**.
     
--   **Disabled**: The Virtual Camera doesn’t control the Unity camera and doesn’t actively follow or aim at its targets. A Virtual Camera in this state doesn’t consume processing power. To disable a Virtual Camera, deactivate its game object. The Virtual Camera is present but disabled in the Scene. However, even though the game object is deactivated, the virtual camera can still control the Unity camera if the virtual camera is participating in a blend, or if it is invoked by Timeline.
+-   **Disabled**: \
+    The Virtual Camera **doesn’t control the Unity camera** and **doesn’t actively follow** or **aim at its targets**. A Virtual Camera in this state **doesn’t consume processing power**. \
+    To disable a Virtual Camera, **deactivate its game object**. The **Virtual Camera is present but disabled** in the Scene. However, even though the game object is **deactivated**, the virtual camera **can still control the Unity camera if the virtual camera is participating in a blend**, or if it is **invoked by Timeline**.
 
 
 ### Switching virtual camera
 
-Setting priority value in virtual camera determine which virtual camera to be used. Therefore, to switch between these virtual cameras we can **adjust the priority value in these virtual cameras**. Another method is to **active or deactive the virtual cameras**. 
+**Setting priority value in virtual camera** determine which virtual camera **to be used**. \
+Therefore, to switch between these virtual cameras we can **adjust the priority value in these virtual cameras**. Another method is to **active or deactive the virtual cameras**. 
 
 
 
