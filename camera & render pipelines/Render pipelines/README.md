@@ -13,7 +13,7 @@ A render pipeline determines **how the objects in your scene are displayed**, in
 - The first step is **culling**; it lists the objects that need to be rendered, preferably the ones visible to the camera
  (**frustum culling**) and unoccluded by other objects (**occlusion culling**).
 - The second stage, **rendering**, is the drawing of these objects, with the correct lighting and some of their properties, into pixel-based buffers.
-- Finally, p**ost-processing operations** can be carried out on these buffers, for instance **applying color grading**, bloom and depth of field, to generate the final output frame that is sent to a display device.
+- Finally, p**ost-processing operations** can be carried out on these buffers, for instance **applying color grading**, **bloom and depth of field**, to **generate the final output frame** that is **sent to a display device**.
 
 
 
