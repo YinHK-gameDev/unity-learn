@@ -65,7 +65,7 @@ Unity displays different properties in the Camera Inspector depending on the **r
 
 | Property: | Function: |
 | --- | --- |
-| **Clear Flags** | What to display in empty areas of this Camera's view.  Determines which parts of the screen will be cleared. This is handy when using multiple Cameras to draw different game elements. |
+| **Clear Flags** | **What to display in empty areas** of this Camera's view.  Determines which parts of the screen will be cleared. This is handy when using multiple Cameras to draw different game elements. |
 | **Background** | The color applied to the remaining screen after all elements in view have been drawn and there is no skybox. |
 | **Culling Mask** | Includes or omits layers of objects to be rendered by the Camera. Assigns layers to your objects in the Inspector. |
 | **Projection** | Toggles the camera’s capability to simulate perspective. |
