@@ -102,7 +102,7 @@ To apply noise:
 
 | **Property:** |  | **Function:** |
 | --- | --- | --- |
-| **Solo** |  | Toggles whether or not the Virtual Camera is temporarily live. Use this property to get immediate visual feedback in the Game view to adjust the Virtual Camera. |
+| **Solo** |  | **Toggles whether or not the Virtual Camera is temporarily live**. Use this property to get immediate visual feedback in the Game view to adjust the Virtual Camera. |
 | **Game Window Guides** |  | Toggles the visibility of compositional guides in the Game view. These guides are available when Look At specifies a GameObject and the Aim section uses Composer or Group Composer, or when Follow specifies a target and the Body section uses Framing Composer. This property applies to all Virtual Cameras. |
 | **Save During Play** |  | Check to apply the changes while in Play mode. Use this feature to fine-tune a Virtual Camera without having to remember which properties to copy and paste. This property applies to all Virtual Cameras. |
 | **Priority** |  | The importance of this Virtual Camera for choosing the next shot. A higher value indicates a higher priority. Cinemachine Brain chooses the next live Virtual Camera from all Virtual Cameras that are activated and have the same or higher priority as the current live Virtual Camera. This property has no effect when using a Virtual Camera with Timeline. |
