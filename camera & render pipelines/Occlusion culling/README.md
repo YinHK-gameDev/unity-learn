@@ -78,6 +78,8 @@ https://www.youtube.com/watch?v=20UTQMMZhjI
 
 https://www.youtube.com/watch?v=VqH8kcmD-HI
 
+https://www.youtube.com/watch?v=bylgGoB_PoI
+
 https://blog.unity.com/technology/occlusion-culling-in-unity-4-3-the-basics
 
 https://blog.unity.com/technology/occlusion-culling-in-unity-4-3-best-practices
