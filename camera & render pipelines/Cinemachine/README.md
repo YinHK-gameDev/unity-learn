@@ -341,5 +341,6 @@ https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/manual/index.html
 
 https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/handles.html
 
-
+**Scripting API** \
+https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/api/index.html
 
