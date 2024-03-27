@@ -17,4 +17,4 @@ Audio Clips contain the audio data used by Audio Sources. Unity supports mono, s
   for 360-degree videos and XR applications. Enable this option if your audio file contains Ambisonic-encoded audio.
 
 ### ref
-https://github.com/YinHK-gameDev/unity-learn/tree/2021.3.0(LTS)/audio/Audio%20Clip
+https://docs.unity3d.com/Manual/class-AudioClip.html
