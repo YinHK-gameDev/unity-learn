@@ -391,20 +391,22 @@ https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/manual/CinemachineBl
 
 
 ### Virtual camera extension
-Extensions are components that augment the behavior of a Virtual Camera. For example, the Collider extension moves a camera out of the way of GameObjects that obstruct the camera’s view of its target.
+**Extensions are components** that **augment the behavior of a Virtual Camera**. 
 
-Cinemachine includes a variety of extensions. Create your own custom extensions by deriving from the CinemachineExtension class.
+For example, the **Collider extension** moves a camera out of the way of GameObjects that **obstruct the camera’s view of its target**.
+
+Cinemachine includes a **variety of extensions**. Create your **own custom extensions** by deriving from the **`CinemachineExtension`** class.
 
 To add an extension to a Virtual Camera:
 
-- Select your Virtual Camera in the Scene view or Hierarchy window.
+- Select your **Virtual Camera** in the Scene view or Hierarchy window.
 
 - In the Inspector, use the **Add Extension drop-down menu** to choose the extension.
 
+![](./Add_extension.png)
 
 
-
-https://docs.unity3d.com/Packages/com.unity.cinemachine@2.8/manual/CinemachineVirtualCameraExtensions.html
+https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/manual/CinemachineVirtualCameraExtensions.html
 
 ### Moving camera in the scene
 Create animation clips for transform position of virtual camera and set up animator controller to control all the animation clips
