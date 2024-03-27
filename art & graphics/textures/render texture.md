@@ -1,5 +1,5 @@
 ## Render Texture
-Render Texture is a type of Texturethat Unity creates and updates at run time. 
+**Render Texture** is **a type of Texture that Unity creates and updates at run time**. 
 
 To use a Render Texture, create a new Render Texture using **Assets > Create > Render Texture** and assign it to **Target Texture** in your Camera
  component. Then you can use the Render Texture in a **Material** just like a regular Texture.
