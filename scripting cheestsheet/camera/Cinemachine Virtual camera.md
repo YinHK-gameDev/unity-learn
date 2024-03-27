@@ -12,6 +12,8 @@ Therefore, to switch between these virtual cameras we can **adjust the priority 
 
 #### Adjust priority value
 
+Using **`Unity.Cinemachine.CinemachineVirtualCameraBase`** class, setting the **priority value**.
+
 Eg:
 
 ```cs
@@ -33,9 +35,9 @@ public class CamSwitcher_SetPriority : MonoBehaviour
 
     {
 
-        cam1.m_Priority = 10;
+        cam1.Priority = 10;
 
-        cam2.m_Priority = 0;
+        cam2.Priority = 0;
 
     }
 
@@ -47,9 +49,9 @@ public class CamSwitcher_SetPriority : MonoBehaviour
 
         {
 
-            cam1.m_Priority = 10;
+            cam1.Priority = 10;
 
-            cam2.m_Priority = 0;
+            cam2.Priority = 0;
 
         }
 
@@ -57,9 +59,9 @@ public class CamSwitcher_SetPriority : MonoBehaviour
 
         {
 
-            cam1.m_Priority = 0;
+            cam1.Priority = 0;
 
-            cam2.m_Priority = 10;
+            cam2.Priority = 10;
 
         }
 
@@ -134,5 +136,9 @@ public class CamSwitcher_SetActive : MonoBehaviour
 
 https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/api/index.html
 
-`Unity.Cinemachine`: \
+**`Unity.Cinemachine`**: \
 https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/api/Unity.Cinemachine.html
+
+**`Unity.Cinemachine.CinemachineVirtualCameraBase`**
+https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/api/Unity.Cinemachine.CinemachineVirtualCameraBase.html#methods
+
