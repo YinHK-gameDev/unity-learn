@@ -43,6 +43,8 @@ To **prevent the environment contribution from automatically affecting the light
 
 ![](./gradient.png)
 
+![](./color.png)
+
 #### Disable the SkyManager for all scenes
 
 To prevent the environment contribution from automatically affecting the lighting result for all scenes, navigate to **Window** > **Rendering** > **Lighting Settings** > **Scene**, then disable **Recalculate Environment Lighting**.
