@@ -194,6 +194,12 @@ The **Procedural skybox Shader** does not require any input Textures and instead
 
 https://docs.unity3d.com/Manual/skybox-shaders.html
 
+
+### Skybox component
+The **Skybox component overrides the skybox that Cameras on the same GameObject draw**. It gives you control over **what skybox a Camera renders and is useful when you have multiple Cameras in your Scene** and want to draw different skyboxes depending on the Camera.
+
+https://docs.unity3d.com/Manual/class-Skybox.html
+
 ### ref
 https://docs.unity3d.com/Manual/using-skymanager.html
 
