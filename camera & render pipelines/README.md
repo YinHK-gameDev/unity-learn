@@ -105,7 +105,7 @@ Unity displays different properties in the Camera Inspector depending on the **r
 | **Vertex Lit** | All objects rendered by this camera will be rendered as Vertex-Lit objects. |
 | **Forward** | All objects will be rendered with one pass per material. |
 | **Deferred Lighting** | All objects will be drawn once without lighting, then lighting of all objects will be rendered together at the end of the render queue. NOTE: If the camera’s projection mode is set to Orthographic, this value is overridden, and the camera will always use Forward rendering. |
-| **Target Texture** | Reference to a Render Texture that will contain the output of the Camera view. Setting this reference will disable this Camera’s capability to render to the screen. |
+| **Target Texture** | **Reference to a Render Texture** that will contain the **output of the Camera view**. Setting this reference will **disable this Camera’s capability to render to the screen**. |
 | **Occlusion Culling** | Enables Occlusion Culling for this camera. Occlusion Culling means that objects that are hidden behind other objects are not rendered, for example if they are behind walls. See Occlusion Culling for details. |
 | **Allow HDR** | Enables High Dynamic Range rendering for this camera. See High Dynamic Range Rendering for details. |
 | **Allow MSAA** | Enables multi sample antialiasing for this camera. |
