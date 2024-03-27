@@ -94,7 +94,7 @@ Unity displays different properties in the Camera Inspector depending on the **r
 | **Clipping Planes** | Distances from the camera to start and stop rendering. |
 | **Near** | The closest point relative to the camera that drawing will occur. |
 | **Far** | The furthest point relative to the camera that drawing will occur. |
-| **Viewport Rect** | Four values that indicate where on the screen this camera view will be drawn. Measured in Viewport Coordinates (values 0–1). |
+| **Viewport Rect** | Four values that indicate **where on the screen this camera view will be drawn**. Measured in **Viewport Coordinates (values 0–1)**. |
 | **X** | The beginning horizontal position that the camera view will be drawn. |
 | **Y** | The beginning vertical position that the camera view will be drawn. |
 | **W** (Width) | Width of the camera output on the screen. |
