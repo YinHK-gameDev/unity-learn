@@ -6,7 +6,7 @@ The audio source can play any type of Audio Clip and can be configured to play t
 
 The Source is like a controller for **starting and stopping** playback of that clip, and **modifying other audio properties**.
 
-> Audio Sources don’t do anything without an assigned Audio Clip. 
+> Audio Sources don’t do anything **without an assigned Audio Clip**. 
 
 ### Creating Audio Sources
 - Import your audio files into your Unity Project. These are now Audio Clips.
