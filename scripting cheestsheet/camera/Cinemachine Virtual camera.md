@@ -132,3 +132,7 @@ public class CamSwitcher_SetActive : MonoBehaviour
 
 ### ref
 
+https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/api/index.html
+
+`Unity.Cinemachine`: \
+https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/api/Unity.Cinemachine.html
