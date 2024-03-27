@@ -99,7 +99,7 @@ Unity displays different properties in the Camera Inspector depending on the **r
 | **Y** | The beginning vertical position that the camera view will be drawn. |
 | **W** (Width) | Width of the camera output on the screen. |
 | **H** (Height) | Height of the camera output on the screen. |
-| **Depth** | The camera’s position in the draw order. Cameras with a larger value will be drawn on top of cameras with a smaller value. |
+| **Depth** | The camera’s position in the draw order. Cameras with a larger value will be drawn on top of cameras with a smaller value. The value range is [-100, 100],the highest value of deth for the camera view will be draw in the Game view.|
 | **Rendering Path** | Options for defining what rendering methods will be used by the camera. |
 | **Use Player Settings** | This camera will use whichever Rendering Path is set in the Player Settings. |
 | **Vertex Lit** | All objects rendered by this camera will be rendered as Vertex-Lit objects. |
@@ -137,7 +137,9 @@ This is the default setting. Any empty portions of the screen will display the c
 Any empty portions of the screen will display the current Camera’s Background Color.
 
 #### Depth only
-If you want to draw a player’s gun without letting it get clipped inside the environment, set one Camera at Depth 0 to draw the environment, and another Camera at Depth 1 to draw the weapon alone. Set the weapon Camera’s Clear Flags to depth only. This will keep the graphical display of the environment on the screen, but discard all information about where each object exists in 3-D space. When the gun is drawn, the opaque parts will completely cover anything drawn, regardless of how close the gun is to the wall.
+If you want to draw a player’s gun without letting it get clipped inside the environment, set one Camera at Depth 0 to draw the environment, and another Camera at Depth 1 to draw the weapon alone. Set the weapon Camera’s Clear Flags to depth only. This will keep the graphical display of the environment on the screen, but discard all information about where each object exists in 3-D space. When the gun is drawn, the opaque parts will completely cover anything drawn, regardless of how close the gun is to the wall. 
+
+> Depth value is from -100 to 100, [-100, 100].  The highest value of deth for the camera view will be draw in the Game view.
 
 #### Don’t clear
 This mode does not clear either the color or the depth buffer
