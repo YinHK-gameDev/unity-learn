@@ -7,7 +7,7 @@ An **AudioSource** is **attached to a GameObject for playing back sounds** in a 
 
 In order to play 3D sounds you also need to have a **AudioListener**. The audio listener is normally **attached to the camera** you want to use. 
 
-You can **play a single audio clip using Play**, **Pause** and **Stop**. You can also adjust its volume while playing using the volume property, or seek using time. Multiple sounds can be played on one AudioSource using **`PlayOneShot`**. You can play a clip at a **static position** in 3D space using **`PlayClipAtPoint`**.
+You can **play a single audio clip using `AudioSource.Play()`**, **`AudioSource.Pause`** and **`AudioSource.Stop()`**. You can also adjust its volume while playing using the volume property, or seek using time. Multiple sounds can be played on one AudioSource using **`AudioSource.PlayOneShot()`**. You can play a clip at a **static position** in 3D space using **`AudioSource.PlayClipAtPoint`**.
 
 Eg:
 ```cs
@@ -70,10 +70,42 @@ public class Example : MonoBehaviour
 
 https://docs.unity3d.com/ScriptReference/AudioSource.html
 
+#### `AudioSource.PlayOneShot`
+Plays an AudioClip, and scales the AudioSource volume by **volumeScale**.
+
+```cs
+public void PlayOneShot(AudioClip clip, float volumeScale = 1.0F);
+```
+
+```cs
+using UnityEngine;
+using System.Collections;
+
+[RequireComponent(typeof(AudioSource))]
+public class ExampleClass : MonoBehaviour
+{
+    public AudioClip impact;
+    AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    void OnCollisionEnter()
+    {
+        audioSource.PlayOneShot(impact, 0.7F);
+    }
+}
+```
 #### `AudioSource.PlayClipAtPoint`
-Plays an AudioClip at a given position in world space.
+Plays an AudioClip at a **given position** in world space.
 
 This function creates an audio source but automatically disposes of it once the clip has finished playing.
+
+```cs
+public static void PlayClipAtPoint(AudioClip clip, Vector3 position, float volume = 1.0F);
+```
 
 ```cs
 using UnityEngine;
