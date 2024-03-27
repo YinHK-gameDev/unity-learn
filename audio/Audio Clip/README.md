@@ -2,7 +2,7 @@
 
 Audio Clips contain the audio data used by Audio Sources. Unity supports mono, stereo and multichannel audio assets (up to eight channels). The audio file formats that Unity can import are `.aif`, `.wav`, `.mp3`, and `ogg`. Unity can also import tracker modules in the `.xm`, `.mod`, `.it`, and `.s3m` formats.
 
-
+### Options
 - **Force To Mono**: \
   When this option is enabled, multi-channel audio will be mixed down to a mono track before packing.
 
