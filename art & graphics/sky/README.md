@@ -17,7 +17,7 @@ The sky itself **can contain anything, such as clouds, mountains, buildings, and
 
 Unity includes a dedicated manager—the **SkyManager**—to ensure that **environment lighting affects your scene** **by default**.
  
-> The **SkyManager** automatically generates an **ambient probe** and default **reflection probe** to capture environment lighting.
+> The **SkyManager** automatically generates an **ambient probe** and default **reflection probe** to capture **environment lighting**.
 
 
 Unity **updates these probes each time environment lighting** in your scene changes, until **the moment you generate lighting**. After you generate lighting, Unity **bakes the current environment light values into the probes**.
