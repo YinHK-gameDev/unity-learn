@@ -29,17 +29,22 @@ if (viewPos.x > 0.5F)
 如此類推, 判斷物件在 camera viewport 上的位置就需要用到 WorldToViewport
 (當然你是數學達人可以選擇自行計算, 只是一個方便用的工具罷了)
 
-至於 ViewportToWorldPoint 就是 WorldToViewportPoint 的相反意思,
+至於 **`ViewportToWorldPoint`** 就是 **`WorldToViewportPoint`** 的相反意思,
+
+
+```cs
+public Vector3 ViewportToWorldPoint(Vector3 position);
+```
 
 http://docs.unity3d.com/ScriptReference/Camera.ViewportToScreenPoint.html
 
 
-然後放進去 ViewportToWorldPoint , 你就擁有一個三維坐標點.
+然後放進去 **`ViewportToWorldPoint`** , 你就擁有一個三維坐標點.
 
-從這個 Vector3 的點再加上 Camera.tranform.forward 的方向 Vector3 即可以換算成玩家現在觸碰的點跟方向.
-WorldToViewportPoint 跟 ViewportToWorldPoint 就是這個簡單
+從這個 **`Vector3`** 的點再加上 **`Camera.tranform.forward`** 的方向 **`Vector3`** 即可以換算成玩家現在觸碰的點跟方向.
+**`WorldToViewportPoint`** 跟 **`ViewportToWorldPoint`** 就是這個簡單
 
-再之後可以考慮使用 `Raycast` 進行三維坐標的射線.....etc 但這是另一道題了.
+再之後可以考慮使用 **`Raycast`** 進行三維坐標的射線.....etc 但這是另一道題了.
 其實這個有個方便的給初階使用.
 
 
