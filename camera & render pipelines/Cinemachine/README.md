@@ -357,6 +357,9 @@ When Cinemachine begins a transition from one CinemachineCamera to another, it w
 -   If multiple entries in the Custom Blends asset match the upcoming transition with equally-strong specificity, then the first one found will apply.
   
 
+![](./Custom_blend.png)
+
+
 https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/manual/CinemachineBlending.html
 
 
