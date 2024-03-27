@@ -27,7 +27,7 @@ To make a ray cast ignore a GameObject, you can **assign it to the Ignore Raycas
 
 If you don’t pass a LayerMask to the ray cast API call, Unity uses Physics.DefaultRaycastLayers which matches every layer except Ignore Raycast.
 
-The Physics.Raycast function uses a bitmask, and each bit determines if a layer is ignored by rays or not. If all bits in the layerMask are on, the ray collides against all colliders. If the layerMask = 0, there are no collisions.
+The **`Physics.Raycast` function** uses a bitmask, and each bit determines if a layer is ignored by rays or not. If all bits in the layerMask are on, the ray collides against all colliders. If the layerMask = 0, there are no collisions.
 
 ### Create a layer
 There are two ways you can create a new layer:
@@ -44,7 +44,7 @@ To assign a GameObject to a layer, select the GameObject, go to the Inspector wi
 
 ### Tags
 A tag is **a reference word** which you can assign to one or more GameObjects.
-For example, you might define “Player” tags for player-controlled characters and an “Enemy” tag for non-player-controlled characters. You might define items the player can collect in a Scene with a “Collectable” tag.
+For example, you might define "Player" tags for player-controlled characters and an "Enem" tag for non-player-controlled characters. You might define items the player can collect in a Scene with a “Collectable” tag.
 
 Tags help you identify GameObjects for scripting purposes. 
 
