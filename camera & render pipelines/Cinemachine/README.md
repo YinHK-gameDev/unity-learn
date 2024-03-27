@@ -46,6 +46,7 @@ It is recommended that you use a **single Virtual Camera for a single shot**. Ta
 
 **One Virtual Camera has control of the Unity camera at any point in time**. This is the **live** Virtual Camera. The exception to this rule is when a **blend occurs from one Virtual Camera to the next**. During the **blend**, **both Virtual Cameras are live**.
 
+![](./Virtual_Camera.png)
 
 #### Moving and aiming
 > Use the **Body properties** in a Virtual Camera to specify **how to move** it in the Scene. Use the **Aim properties** to specify **how to rotate** it.
