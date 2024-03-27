@@ -8,6 +8,10 @@ The Source is like a controller for **starting and stopping** playback of that c
 
 > Audio Sources don’t do anything **without an assigned Audio Clip**. 
 
+
+![](./AudioSourceInspector.png)
+
+
 ### Creating Audio Sources
 - Import your audio files into your Unity Project. These are now Audio Clips.
 - Go to **GameObject > Create Empty** from the menubar.
