@@ -68,6 +68,8 @@ https://docs.unity3d.com/Manual/occlusion-culling-scene-loading.html
 ### ref
 https://docs.unity3d.com/Manual/OcclusionCulling.html
 
+https://www.youtube.com/watch?v=7bZ4OIA0wRQ&t=100s
+
 https://www.youtube.com/watch?v=OmuQmydipGg
 
 https://www.youtube.com/watch?v=JC1kXk-mQHs
