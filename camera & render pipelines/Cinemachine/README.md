@@ -27,6 +27,10 @@ It **chooses the next Virtual Camera to control the Unity camera**. It also **co
 
 ![](./CinemachineBrainInspector.png)
 
+> The **Cinemachine Brain Component** locks and contorls the **Unity camera transform** to **transform of the live camera of the virtual Camera** in the scene.
+
+![](./cam_brain.png)
+
 | **Property:** |  | **Function:** |
 | --- | --- | --- |
 | **Show Debug Text** |  | Check to display a textual summary of the live CinemachineCamera and blend in the view. |
