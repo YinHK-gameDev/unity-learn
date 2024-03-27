@@ -2,6 +2,10 @@
 ### Sky and render pipelines
 The sky solutions you can use depend on which render pipeline your Project uses.
  
+A sky is a **type of background that a Camera draws before it renders a frame**. 
+
+The sky itself **can contain anything, such as clouds, mountains, buildings, and other unreachable objects**, to create the illusion of distant three-dimensional surroundings. Unity can also **use a sky to generate realistic ambient lighting** in your Scene.
+
  
 | Render pipeline | Sky Solution |
 | --- | --- |
