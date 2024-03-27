@@ -72,10 +72,10 @@ Unity displays different properties in the Camera Inspector depending on the **r
 | **Perspective** | Camera will render objects with perspective intact. |
 | **Orthographic** | Camera will render objects uniformly, with no sense of perspective. NOTE: **Deferred rendering is not supported in Orthographic mode**. **Forward rendering** is always used. |
 | **Size** (when Orthographic is selected) | The viewport size of the Camera when set to Orthographic. |
-| **FOV Axis** (when Perspective is selected) | Field of **view axis**. |
+| **FOV Axis** (when **Perspective is selected**) | Field of **view axis**. |
 | **Horizontal** | The Camera uses a horizontal field of view axis. |
 | **Vertical** | The Camera uses a vertical field of view axis. |
-| **Field of view** (when Perspective is selected) | The Camera’s view angle, measured in degrees along the axis specified in the FOV Axis drop-down. |
+| **Field of view** (when Perspective is selected) | The **Camera’s view angle**, measured in degrees **along the axis specified in the FOV Axis** drop-down. |
 | **Physical Camera** | Tick this box to enable the Physical Camera properties for this camera.When the Physical Camera properties are enabled, Unity calculates the Field of View using the properties that simulate real-world camera attributes: Focal Length, Sensor Size, and Lens Shift.Physical Camera properties are not visible in the Inspector until you tick this box. |
 | **Focal Length** | Set the distance, in millimeters, between the camera sensor and the camera lens.Lower values result in a wider Field of View, and vice versa.When you change this value, Unity automatically updates the Field of View property accordingly. |
 | **Sensor Typ**e | Specify the real-world camera format you want the camera to simulate. Choose the desired format from the list.When you choose a camera format, Unity sets the the Sensor Size > X and Y properties to the correct values automatically.If you change the Sensor Size values manually, Unity automatically sets this property to Custom. |
