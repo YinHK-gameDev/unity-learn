@@ -9,7 +9,7 @@ When the Audio Listener is **attached to a GameObject** in your scene, any Sourc
 
 If the Sources are 3D, the Listener will emulate position, velocity and orientation of the sound in the 3D world, 2D will ignore any 3D processing.
 
-> Each scene can only have one Audio Listener.
+> **Each scene can only have one Audio Listener**.
 > You access the Project-wide Audio settings using the Audio window (main menu: Edit > Project Settings, then select the Audio category).
 
 
