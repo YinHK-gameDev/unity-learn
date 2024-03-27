@@ -7,4 +7,4 @@ This can be a very powerful tool. Virtual Camera children with Cinemachine Colli
 
 
 ### ref 
-https://docs.unity3d.com/Packages/com.unity.cinemachine@2.8/manual/CinemachineClearShot.html
+https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/manual/CinemachineClearShot.html
