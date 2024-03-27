@@ -41,6 +41,7 @@ To **prevent the environment contribution from automatically affecting the light
 
 ![](./environment_lighting.png)
 
+![](./gradient.png)
 
 #### Disable the SkyManager for all scenes
 
