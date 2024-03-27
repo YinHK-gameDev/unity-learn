@@ -1,6 +1,6 @@
 ## Audio Effects
 
-You can modify the **output of Audio Source and Audio Listene**r components by **applying Audio Effects**.
+You can **modify** the **output of Audio Source and Audio Listene**r components by **applying Audio Effects**.
 The effects are applied by **adding effect components** to the **relevant section of the Audio Mixer**.
 
 > The ordering of the components is important, since it reflects the order in which the effects will be applied to the source audio.
