@@ -340,12 +340,22 @@ public class CamSwitcher_SetActive : MonoBehaviour
 ```
 
 ### Blending between Virtual Cameras
-Use blending properties to specify how the Cinemachine Brain component performs a blend between virtual cameras.
+Use blending properties to specify **how the Cinemachine Brain component performs a blend between virtual cameras**.
 
 A Cinemachine blend is not a fade, wipe, or dissolve. Rather, Cinemachine Brain **performs a smooth animation of the position, rotation, and other settings of the Unity camera from one Virtual Camera to the next**.
 
 For blends between specific Virtual Cameras, use the **Custom Blends** list in the Cinemachine Brain component. Use the **Default Blend** property in Cinemachine Brain to specify blends between Virtual Cameras that do not have custom blends.
 
+The **From** and **To** settings are name-based, not references. This means that Cinemachine finds cameras by matching their names to the settings. They are not linked to specific GameObjects. The built-in dropdowns can be used to select a CinemachineCamera from the current scene, or the name can be typed directly into the text boxes. If a name does not match any CinemachineCamera in the current scene, the field will be highlighted in yellow.
+
+Use the reserved name **\*\*ANY CAMERA\*\*** to blend from or to any CinemachineCamera.
+
+When Cinemachine begins a transition from one CinemachineCamera to another, it will look in this asset for an entry that matches the upcoming transition, and apply that blend definition.
+
+-   If none is found, then the CinemachineBrain's DefaultBlend setting will apply.
+-   If multiple entries in the Custom Blends asset match the upcoming transition, Cinemachine will choose the one with the strongest specificity. For example, if blending from vcam1 to vcam2, and the custom blends asset contains an entry for _vcam1-to-AnyCamera_, and another entry for _vcam1-to-vcam2_, then the _vcam1-to-vcam2_ entry will apply.
+-   If multiple entries in the Custom Blends asset match the upcoming transition with equally-strong specificity, then the first one found will apply.
+  
 
 https://docs.unity3d.com/Packages/com.unity.cinemachine@3.0/manual/CinemachineBlending.html
 
