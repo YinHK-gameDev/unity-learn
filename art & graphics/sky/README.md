@@ -39,6 +39,9 @@ To **prevent the environment contribution from automatically affecting the light
 -   Option 2: Use a black **Skybox** 
 -   Option 3: Set either the **Color** or **Gradient** for the **Source** to black.
 
+![](./environment_lighting.png)
+
+
 #### Disable the SkyManager for all scenes
 
 To prevent the environment contribution from automatically affecting the lighting result for all scenes, navigate to **Window** > **Rendering** > **Lighting Settings** > **Scene**, then disable **Recalculate Environment Lighting**.
