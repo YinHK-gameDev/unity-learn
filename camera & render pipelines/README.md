@@ -25,6 +25,10 @@ Game object outside the **far clipping plane** will not be showed/rendered in th
 Game object before the **near clipping plane** will not be showed/rendered in the game view
 ![](./view3.png)
 
+
+#### Frustum Culling
+Cameras perform **frustum culling**, which **excludes all Renderers** that **do not fall within the Camera’s view frustum**. 
+
 ### Oblique frustum
 By default, the view frustum is arranged symmetrically around the camera’s center line, but we can set an oblique frustum.
 
