@@ -35,18 +35,18 @@ For information about specific Texture Types, see the [Texture Types](https://do
 | **Normal map** | Select this to turn the color channels into a format suitable for real-time normal mapping. For more information, see the Normal map Texture type documentation.For more information on normal mapping in general, see Importing Textures. |
 | **Editor GUI and Legacy GUI** | Select this if you are using the Texture on any HUD or GUI controls. For more information, see the Editor GUI and Legacy GUI Texture type documentation. |
 | **Sprite (2D and UI)** | Select this if you are using the Texture in a 2D game as a Sprite. For more information, see the Sprite (2D and UI) Texture type documentation. |
-| **Cursor** | Select this if you are using the Texture as a custom cursor. For more information, see the Cursor Texture type documentation. |
-| **Cookie** | Select this to set your Texture up with the basic parameters used for the Cookies of your Scene’s Lights. For more information, see the Cookie Texture type documentation. |
-| **Lightmap** | Select this if you are using the Texture as a Lightmap. This option enables encoding into a specific format (RGBM or dLDR, depending on the platform) and a post-processing step on Texture data (a push-pull dilation pass). For more information, see the Lightmap Texture type documentation. |
-| **Single Channel** | Select this if you only need one channel in the Texture. For information on the properties available only for the this type |
+| **Cursor** | Select this if you are using the Texture as **a custom cursor**. For more information, see the Cursor Texture type documentation. |
+| **Cookie** | Select this to set your Texture up with the basic parameters used for the Cookies of your **Scene’s Lights**. For more information, see the Cookie Texture type documentation. |
+| **Lightmap** | Select this if you are using the Texture as a **Lightmap**. This option enables encoding into a specific format (RGBM or dLDR, depending on the platform) and a post-processing step on Texture data (a push-pull dilation pass). For more information, see the Lightmap Texture type documentation. |
+| **Single Channel** | Select this if you **only need one channel in the Texture**. For information on the properties available only for the this type |
 
 
 ### Texture Shape
 
-Use the **Texture Shape** property to select and define the shape and structure of the Texture. There are four shape types:
+Use the **Texture Shape** property to **select and define the shape and structure of the Texture**. There are **four shape types**:
 
--   **2D** is the most common setting for all Textures; it defines the image file as a 2D Texture. These are used to map Textures to 3D Meshes and GUI elements, among other Project elements.
--   **Cube** defines the Texture as a cubemap. You could use this for **Skyboxes** or **Reflection Probes** , for example. This type is only available with the **Default**, **Normal Map**, and **Single Channel** Texture types.
+-   **2D** is the **most common setting for all Textures**; it defines the image file as a 2D Texture. These are used to **map Textures to 3D Meshes** and **GUI elements**, among other Project elements.
+-   **Cube** defines the Texture as a **cubemap**. You could use this for **Skyboxes** or **Reflection Probes** , for example. This type is only available with the **Default**, **Normal Map**, and **Single Channel** Texture types.
 -   **2D Array** defines the Texture as a **2D array texture**. This is commonly used as an optimization for some rendering techniques, where many textures of the same size & format are used.
 -   **3D** defines the Texture as a **3D texture**. 3D textures are used by some **rendering techniques to represent volumetric data**.
 
