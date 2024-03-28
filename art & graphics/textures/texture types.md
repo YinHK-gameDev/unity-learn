@@ -30,6 +30,8 @@ Below are the properties available to configure the various Texture types in Uni
 
 ### ref
 
-https://docs.unity3d.com/Manual/class-TextureImporter.html
+https://docs.unity3d.com/Manual/class-TextureImporter.html \
+https://docs.unity3d.com/Manual/texture-type-default.html
+
 
 
