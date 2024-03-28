@@ -1,5 +1,5 @@
 ## Cubemaps
-A **Cubemap** is a collection of six square textures that represent the **reflections on an environment**. 
+A **Cubemap** is a **collection of six square textures** that represent the **reflections on an environment**. 
 
 The six squares form the faces of an imaginary cube that surrounds an object; each face represents the view along the directions of the world axes (up, down, left, right, forward and back).
 
