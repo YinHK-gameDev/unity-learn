@@ -1,9 +1,9 @@
 ## 3D textures
 
-A 3D texture is a bitmap image that contains information in three dimensions rather than the standard two. 3D textures are commonly used to simulate volumetric effects such as **fog** or **smoke**, to approximate **a volumetric 3D mesh**
+A 3D texture is a bitmap image that **contains information in three dimensions** rather than the standard two. 3D textures are commonly used to **simulate volumetric effects** such as **fog** or **smoke**, to approximate **a volumetric 3D mesh**
 , or to store animated textures and blend between them smoothly.
 
-The maximum resolution of a 3D texture is **2048 x 2048 x 204**8.
+The **maximum resolution** of a 3D texture is **2048 x 2048 x 204**8.
 
 > Be aware that the size of a 3D texture in memory and on disk increases quickly as its resolution increases. An **RGBA32** 3D texture with no **mipmaps** and a resolution of **16 x 16 x 16** has a size of **128KB**, but with a resolution of **256 x 256 x 256** it has a size of **512MB**.
 
