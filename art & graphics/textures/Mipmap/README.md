@@ -3,6 +3,11 @@ A **mip or mip level** is a **version of a texture with a specific resolution**.
 **Mips** exist in sets called **mipmaps**. 
 **Mipmaps** contain progressively **smaller and lower resolution versions** of a single texture.
 
+
+For example, a mipmap might contain four versions of a texture, from the original texture (mipmap level 0), to mipmap level 1, mipmap level 2, and mipmap level 3:
+
+![](./mipmaps.png)
+
 **Mipmaps** are commonly used for rendering objects in 3D scenes, where **textured objects can vary in distance from the camera**. A **higher mip level is used for objects closer to the camera**, and **lower mip levels are used for more distant objects**.
 
 Mipmaps can **speed up rendering operations** and **reduce rendering artifacts** in situations where the GPU renders a texture at less than its full resolution.
