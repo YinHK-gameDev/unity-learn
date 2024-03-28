@@ -157,10 +157,10 @@ Unity provides multiple **Skybox** Shaders for you to use. Each **Shader** uses 
 
 
 #### 6 Sided skybox
-This **skybox Shader** generates a skybox from six separate Textures. Each texture represents a view of the sky along a particular world axis. To illustrate this, think of the Scene as being inside a cube. Each Texture represents one of the interior faces of the cube and all six combine to create a seamless environment.
+This **skybox Shader** generates a skybox from **six separate Textures**. Each texture represents a view of the sky along a particular world axis. To illustrate this, think of the Scene as being inside a cube. Each Texture represents one of the interior faces of the cube and all six combine to create a seamless environment.
 
 #### Cubemap skybox
-This **skybox Shader** generates a skybox from a single Cubemap Asset. This **Cubemap** consists of six square Textures and represents the entire view of the sky from every direction.
+This **skybox Shader** generates a skybox from a **single Cubemap Asset**. This **Cubemap** consists of **six square Textures** and represents the entire view of the sky from **every direction**.
  
  
 #### Panoramic skybox
@@ -177,7 +177,7 @@ To make sure the Texture is 2D:
 > To generate the best ambient lighting, the Texture should use a **high dynamic range (HDR)**.
 
 #### Procedural skybox
-The **Procedural skybox Shader** does not require any input Textures and instead **generates a skybox purely from the properties set in the Material Inspector**.
+The **Procedural skybox Shader** does **not require any input Textures** and instead **generates a skybox purely from the properties set in the Material Inspector**.
 
 **Properties**:
 
