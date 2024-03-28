@@ -1,12 +1,10 @@
 ## Texture types
 Below are the properties available to configure the various Texture types in Unity in the **Texture Inspector** window.
  
- 
 - **Default** \
-  Default is the most common Texture type used for all Textures. It provides access to most of the properties for Texture importing. With this Texture type, you can also change the Texture Shape property to define the Texture Shape.
+  Default is the **most common Texture ty**pe used for all Textures. It provides access to most of the properties for Texture importing. With this Texture type, you can also change the Texture Shape property to define the Texture Shape.
 - **Normal map** \
-  Select Normal map
- to turn the color channels into a format suitable for real-time normal mapping. With this Texture type, you can also change the Texture Shape property to define the Texture Shape.
+  Select Normal map to turn the color channels into a format suitable for **real-time normal mapping**. With this Texture type, you can also change the Texture Shape property to define the Texture Shape.
 - **Editor GUI and Legacy GUI** \
   Select Editor GUI and Legacy GUI if you are using the Texture on any HUD or GUI controls. The Texture Shape property is always set to 2D for this Texture Type. For more information, see the documentation on Texture Shapes.
 - **Sprite (2D and UI)** \
@@ -20,12 +18,10 @@ Below are the properties available to configure the various Texture types in Uni
   - **Directional** and **Spotlight** cookies are always **2D Textures** (the 2D shape type).
   - **Point Light cookies** must be **cubemaps** (the Cube shape type).
 - **Lightmap** \
-  Select Lightmap
- if you are using the Texture as a Lightmap. This option enables encoding into a specific format (RGBM or dLDR, depending on the platform) and a post-processing
+  Select Lightmap if you are using the Texture as a Lightmap. This option enables encoding into a specific format (RGBM or dLDR, depending on the platform) and a post-processing
  step on Texture data (a push-pull dilation pass). The Texture Shape property is always set to 2D for this Texture Type.
 - **Single Channel** \
-  Select Single Channel if you only need one channel in the Texture. With this Texture type, you can also change the Texture Shape property to define the Texture Shape.
-
+  Select Single Channel if you **only need one channel in the Texture**. With this Texture type, you can also change the Texture Shape property to define the Texture Shape.
 
 
 ### ref
