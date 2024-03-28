@@ -99,7 +99,7 @@ After you create a **skybox Material**, you can render it in your **Scene**. To 
 2. In the window that appears, click the **Environment** tab.
 3. Assign the skybox Material to the **Skybox Material** property.
 
-> **Note**: This draws the skybox in the background of **every Camera** in your Scene. If you instead only want to draw the skybox for a particular Camera.
+> **Note**: This **draws the skybox in the background** of **every Camera** in your Scene. If you instead only want to draw the skybox for a particular Camera.
  
 ### Drawing a skybox for a particular Camera
 
