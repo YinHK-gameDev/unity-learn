@@ -23,9 +23,9 @@ In computer graphics, a **shader** is a **computer program** that calculates the
 ### Types of shader
 In Unity, shaders are divided into **three broad categories**. You use each category for different things, and work with them differently.
 
-- Shaders that are part of the graphics pipeline are the most common type of shader. They perform calculations that determine the color of pixels on the screen. In Unity, you usually work with this type of shader by using Shader objects.
-- Compute shaders perform calculations on the GPU, outside of the regular graphics pipeline.
-- Ray tracing shaders perform calculations related to ray tracing.
+- **Shaders** that are part of the graphics pipeline are the most common type of shader. They perform calculations that determine the color of pixels on the screen. In Unity, you usually work with this type of shader by using Shader objects.
+- **Compute shaders** perform calculations on the GPU, outside of the regular graphics pipeline.
+- **Ray tracing shaders** perform calculations related to ray tracing.
 
 ### Shader assets
 A **shader asset** is an asset in your Unity project that defines a Shader object. It is a text file with a **`.shader`** extension. It contains **shader code**.
