@@ -20,7 +20,7 @@ Below are the properties available to configure the various Texture types in Uni
   - **Directional** and **Spotlight** cookies are always **2D Textures** (the 2D shape type).
   - **Point Light cookies** must be **cubemaps** (the Cube shape type).
 - **Lightmap** \
-  elect Lightmap
+  Select Lightmap
  if you are using the Texture as a Lightmap. This option enables encoding into a specific format (RGBM or dLDR, depending on the platform) and a post-processing
  step on Texture data (a push-pull dilation pass). The Texture Shape property is always set to 2D for this Texture Type.
 - **Single Channel** \
