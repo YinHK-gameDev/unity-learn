@@ -17,7 +17,7 @@ You can enable or disable mipmaps for a texture asset in the Texture Import Sett
 The **Mipmap Streaming system** gives you control over how Unity **loads mipmaps**.
 
 This system forces Unity to **only load the mip levels needed to render the current Camera
- position, instead of loading all of them by default**. It trades a small amount of CPU resources to save a potentially large amount of GPU memory.
+ position, instead of loading all of them by default**. It trades a small amount of CPU resources to **save a potentially large amount of GPU memory**.
 
 You can set a **total memory limit** for all textures in an application, and the system automatically reduces mip levels to stay within this budget.
 
