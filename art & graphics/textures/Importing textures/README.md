@@ -1,6 +1,6 @@
 ## Importing textures
 
-The **Texture Import Settings** window defines how Unity imports images from your project’s Assets folder into the Unity Editor.
+The **Texture Import Settings** window defines how Unity **imports images** from your project’s Assets folder into the Unity Editor.
 
 To access this window, select the image file in the **Project window**. The **Texture Import Settings** window appears in the **Inspector**.
 
