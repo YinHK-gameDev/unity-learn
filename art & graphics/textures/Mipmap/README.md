@@ -44,10 +44,10 @@ If you’re developing for Android, you also need to open the Build Settings and
 
 Unity uses this setting to determine:
 
--   Which textures to prioritize when assigning resources.
--   As a mip bias value when choosing a mip level that fits in the memory budget. For example, with a priority of 2, the mipmap streaming system tries to use a mipmap two mip levels higher than Textures with a priority of 0.
+-   Which textures to **prioritize when assigning resources**.
+-   As a **mip bias** value when choosing **a mip level that fits in the memory budget**. For example, with a priority of 2, the mipmap streaming system tries to use a mipmap two mip levels higher than Textures with a priority of 0.
 
-Positive numbers give higher priority. Valid values range from –128 to 127.
+**Positive numbers give higher priority**. Valid values range from **–128 to 127**.
 
 
 ### Mip bias
