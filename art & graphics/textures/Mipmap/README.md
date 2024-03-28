@@ -31,10 +31,10 @@ When you enable this setting, the Quality settings window reveals the settings s
 
 ![](../img/texture_streaming.png)
 
-> By default, this enables Mipmap Streaming for all Cameras in your project.
+> By default, this **enables Mipmap Streaming for all Cameras** in your project.
 
 ### Making textures work with the Mipmap Streaming system
-You can set up Mipmap Streaming on individual textures. Select a texture asset, navigate to the Inspector window and view the Texture Import settings. 
+You can set up **Mipmap Streaming on individual textures**. Select a texture asset, navigate to the Inspector window and view the Texture Import settings. 
 
 Open the Advanced settings, and **enable the Streaming Mip Maps checkbox**.
 
