@@ -3,7 +3,7 @@ A **Cubemap** is a **collection of six square textures** that represent the **re
 
 The six squares form the faces of an imaginary cube that surrounds an object; **each face represents the view along the directions of the world axes** (**up, down, left, right, forward and back**).
 
-> Cubemaps are often used to capture **reflections** or **"surroundings"** of objects
+> **Cubemaps** are often used to **capture** **reflections** or **"surroundings"** of objects
 
 for example: **skyboxes** and **environment reflections** often use **cubemaps**.
 
