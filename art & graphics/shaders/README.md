@@ -36,7 +36,7 @@ To create a new shader asset, use **Assets > Create > Shader** from the main men
 
 ![](./img/shader_inspector.png)
 
-The Import settings section of the Inspector lets you set the **default textures for a shader asset**, by clicking **ALbedo(RGB)** field and select texture or just drag and drop the texture into it then hit apply button. 
+The Import settings section of the Inspector lets you set the **default textures for a shader asset**, by clicking **ALbedo(RGB)** field and **select texture** or j**ust drag and drop the texture into it** then **hit apply** button. 
 
 Whenever a new **Material** is created with this **shader**, these **textures are automatically assigned**.
 
