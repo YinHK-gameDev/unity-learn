@@ -115,7 +115,7 @@ This component also allows you to adjust the **mip bias** setting per-Camera.
 
 ### Streaming Controller component
 
-Use the **Streaming Controller** component to enable **Mipmap Streaming** for a Camera in your scene when the the Add All Cameras setting in Quality settings (**Edit > Project Settings > Quality**) is **disabled**. You can also use it to change the **mip bias** setting per-Camera.
+Use the **Streaming Controller** component to enable **Mipmap Streaming** for a Camera in your scene when the the **Add All Cameras** setting in Quality settings (**Edit > Project Settings > Quality**) is **disabled**. You can also use it to change the **mip bias** setting per-Camera.
 
 This component takes the location and **Camera** settings (such as Field of View) directly from the Camera component.
 
