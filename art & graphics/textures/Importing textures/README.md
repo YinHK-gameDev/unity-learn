@@ -48,7 +48,7 @@ Use the **Texture Shape** property to select and define the shape and structure 
 -   **2D** is the most common setting for all Textures; it defines the image file as a 2D Texture. These are used to map Textures to 3D Meshes and GUI elements, among other Project elements.
 -   **Cube** defines the Texture as a cubemap. You could use this for **Skyboxes** or **Reflection Probes** , for example. This type is only available with the **Default**, **Normal Map**, and **Single Channel** Texture types.
 -   **2D Array** defines the Texture as a **2D array texture**. This is commonly used as an optimization for some rendering techniques, where many textures of the same size & format are used.
--   **3D** defines the Texture as a 3D texture. 3D textures are used by some rendering techniques to represent volumetric data.
+-   **3D** defines the Texture as a **3D texture**. 3D textures are used by some **rendering techniques to represent volumetric data**.
 
 ### ref
 https://docs.unity3d.com/Manual/class-TextureImporter.html
