@@ -1,5 +1,5 @@
 ## Mipmap
-A **mip or mip level** is a **version of a texture with a specific resolution**. 
+A **mip or mip level** is a **version of a texture with a specific resolution**. \
 **Mips** exist in sets called **mipmaps**. 
 **Mipmaps** contain progressively **smaller and lower resolution versions** of a single texture.
 
