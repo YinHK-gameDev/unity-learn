@@ -12,7 +12,7 @@ In computer graphics, a **shader** is a **computer program** that calculates the
 
 
 - **shader or shader program** - **a program that runs on a GPU**. Unless otherwise specified, this means shader programs that are part of the **graphics pipeline**.
-- **Shader object** - an instance of the **Shader** class. A Shader object is a wrapper for shader programs and other information.
+- **Shader object** - an instance of the **Shader** **class**. A Shader object is a **wrapper for shader programs and other information**.
 - **ShaderLab** - a Unity-specific language for writing shaders.
 - **Shader Graph** - a tool for creating shaders without writing code.
 - **shader asset** - a file with the **`.shader`** extension in your Unity project. It defines a Shader object.
@@ -28,7 +28,7 @@ In Unity, shaders are divided into **three broad categories**. You use each cate
 - **Ray tracing shaders** perform calculations related to ray tracing.
 
 ### Shader assets
-A **shader asset** is an asset in your Unity project that defines a Shader object. It is a text file with a **`.shader`** extension. It contains **shader code**.
+A **shader asset** is an asset in your Unity project that **defines a Shader object**. It is a text file with a **`.shader`** extension. It contains **shader code**.
 
 To create a new shader asset, use **Assets > Create > Shader** from the main menu or the Project View context menu.
 
