@@ -31,14 +31,14 @@ For information about specific Texture Types, see the [Texture Types](https://do
  
 | Property: | Function: |
 | --- | --- |
-| Default | This is the most common setting used for all Textures. It provides access to most of the properties for Texture importing. For more information, see the Default Texture type. |
-| Normal map | Select this to turn the color channels into a format suitable for real-time normal mapping. For more information, see the Normal map Texture type documentation.For more information on normal mapping in general, see Importing Textures. |
-| Editor GUI and Legacy GUI | Select this if you are using the Texture on any HUD or GUI controls. For more information, see the Editor GUI and Legacy GUI Texture type documentation. |
-| Sprite (2D and UI) | Select this if you are using the Texture in a 2D game as a Sprite. For more information, see the Sprite (2D and UI) Texture type documentation. |
-| Cursor | Select this if you are using the Texture as a custom cursor. For more information, see the Cursor Texture type documentation. |
-| Cookie | Select this to set your Texture up with the basic parameters used for the Cookies of your Scene’s Lights. For more information, see the Cookie Texture type documentation. |
-| Lightmap | Select this if you are using the Texture as a Lightmap. This option enables encoding into a specific format (RGBM or dLDR, depending on the platform) and a post-processing step on Texture data (a push-pull dilation pass). For more information, see the Lightmap Texture type documentation. |
-| Single Channel | Select this if you only need one channel in the Texture. For information on the properties available only for the this type |
+| **Default** | This is the most common setting used for all Textures. It provides access to most of the properties for Texture importing. For more information, see the Default Texture type. |
+| **Normal map** | Select this to turn the color channels into a format suitable for real-time normal mapping. For more information, see the Normal map Texture type documentation.For more information on normal mapping in general, see Importing Textures. |
+| **Editor GUI and Legacy GUI** | Select this if you are using the Texture on any HUD or GUI controls. For more information, see the Editor GUI and Legacy GUI Texture type documentation. |
+| **Sprite (2D and UI)** | Select this if you are using the Texture in a 2D game as a Sprite. For more information, see the Sprite (2D and UI) Texture type documentation. |
+| **Cursor** | Select this if you are using the Texture as a custom cursor. For more information, see the Cursor Texture type documentation. |
+| **Cookie** | Select this to set your Texture up with the basic parameters used for the Cookies of your Scene’s Lights. For more information, see the Cookie Texture type documentation. |
+| **Lightmap** | Select this if you are using the Texture as a Lightmap. This option enables encoding into a specific format (RGBM or dLDR, depending on the platform) and a post-processing step on Texture data (a push-pull dilation pass). For more information, see the Lightmap Texture type documentation. |
+| **Single Channel** | Select this if you only need one channel in the Texture. For information on the properties available only for the this type |
 
 
 ### Texture Shape
