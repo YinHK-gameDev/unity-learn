@@ -61,17 +61,17 @@ There are **two LOD settings** you can configure:
 
 You can create meshes with different levels of detail in an external 3D application for use with Unity’s [LOD system](https://docs.unity3d.com/Manual/LevelOfDetail.html). If you name these meshes correctly, Unity automatically creates and configures a **GameObject** with **LOD group component** for them when it imports the Model.
 
-To import a Model with **LOD** level into Unity, you must do the following:
+To import a Model with **LOD** level into Unity, you **must** do the following:
 
-1.  In your external 3D application, follow the application’s process to create as many LOD meshes as you need.
+1.  In your **external 3D application**, follow the application’s process to create as **many LOD meshes** as you need.
     
-2.  Name the meshes according to the following naming convention:
+2.  Name the meshes according to the following **naming convention**:
     -   ExampleMeshName\_LOD0 for the first LOD level (i.e., the **most detailed version**)
     -   ExampleMeshName\_LOD1
     -   ExampleMeshName\_LOD2
-3.  Export your Model as an **FBX file**. Alternatively, if you are using Maya, export the **mesh group** directly into Unity; to do this, go to **File > Send to Unity > Selection.**
+3.  Export your Model as an **FBX file**. Alternatively, if you are using **Maya**, export the **mesh group** directly into Unity; to do this, go to **File > Send to Unity > Selection.**
     
-4.  Import the FBX into Unity. Unity recognizes the **grouped Meshes and naming convention**, and automatically creates an **LOD Group component** with the appropriate settings.
+4.  Import the FBX into Unity. Unity recognizes the **grouped Meshes and naming convention**, and **automatically creates** an **LOD Group component** with the appropriate settings.
 
 
 
