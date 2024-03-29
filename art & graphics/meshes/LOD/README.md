@@ -53,7 +53,7 @@ In the Quality settings window(in **Project setting**), you can **configure LOD 
 There are **two LOD settings** you can configure:
 
 -   **Maximum LOD Level**: Exclude meshes above a specified LOD level from your build.
--   **LOD Bias**: Determine whether to favor higher or lower LOD levels at threshold distances.
+-   **LOD Bias**: Determine whether to favor higher or lower LOD levels at **threshold distances**.
 
 
 
