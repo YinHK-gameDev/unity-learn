@@ -129,6 +129,8 @@ Each property **has an associated Data Type**.
 
 ![](./Property+types.png)
 
+![](./material.png)
+
 **Data Types**:
 
 | Name | Color | Description |
