@@ -22,7 +22,7 @@ LOD Group inspector
 
 In addition there are two buttons at the bottom of the component:
 
--   Click **Recalculate Bounds** to recalculate the **bounding volume**A closed shape representing the edges and faces of a collider or trigger. 
+-   Click **Recalculate Bounds** to recalculate the **bounding volume**. A closed shape representing the edges and faces of a collider or trigger. 
 -   Click **Recalculate **Lightmap**A pre-rendered texture that contains the effects of light sources on static objects in the scene. Lightmaps are overlaid on top of scene geometry to create the effect of lighting. Scale** to update the Scale in Lightmap property on all LOD **Mesh Renderers**A mesh component that takes the geometry from the Mesh Filter and renders it at the position defined by the object’s Transform component. 
 
 
