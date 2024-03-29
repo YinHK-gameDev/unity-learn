@@ -15,8 +15,7 @@ https://docs.unity3d.com/Manual/class-MeshRenderer.html
 
 
 ### Skinned Mesh Renderer component
-The Skinned Mesh
- Renderer component renders a deformable mesh. Deformable meshes include skinned meshes (meshes that have bones and bind poses), meshes that have blend shapes, and meshes that run cloth simulation.
+The Skinned Mesh Renderer component **renders a deformable mesh**. **Deformable meshes** include **skinned meshes** (meshes that have **bones and bind poses**), meshes that have **blend shapes**, and meshes that **run cloth simulation**.
 
 > To render a regular mesh, use a **Mesh Renderer** and a **Mesh Filter** instead.
 
