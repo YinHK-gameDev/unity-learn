@@ -64,6 +64,8 @@ If you **connect any nodes to both Contexts**, they are **executed twice**, **on
 #### Blackboard
 An area that **contains all of the shader's properties in a single**, **collected view**. Use the Blackboard to **add, remove, rename, and reorder properties**.
 
+
+
 ![](../img/Blackboard.png)
 
 
@@ -120,6 +122,10 @@ There are two ways to **reference a property in your graph**(**create a node fro
 Some nodes can be **converted to property and show on blackboard**. If you create a node which is in the proprty list, you can right click the node and select **Convert to > Property**.
 
 **Property type**
+
+![](./Property+types.png)
+
+
 
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Property-Types.html
 
