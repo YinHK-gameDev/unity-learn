@@ -122,12 +122,39 @@ There are two ways to **reference a property in your graph**(**create a node fro
 Some nodes can be **converted to property and show on blackboard**. If you create a node which is in the proprty list, you can right click the node and select **Convert to > Property**.
 
 **Property type**
+Property Types are the **types of Property** than can be **defined on the Blackboard for use in the Graph**. These Properties are **exposed to the Inspector for Materials** that use the shader.
+
+Each property **has an associated Data Type**.
+
 
 ![](./Property+types.png)
 
+**Data Types**:
+
+| Name | Color | Description |
+| --- | --- | --- |
+| Float | Light Blue | A **Float** or scalar value |
+| Vector 2 | Green | A **Vector 2** value |
+| Vector 3 | Yellow | A **Vector 3** value |
+| Vector 4 | Pink | A **Vector 4** value |
+| Dynamic Vector | Light Blue | See **Dynamic Data Types** below |
+| Matrix 2 | Blue | A **Matrix 2x2** value |
+| Matrix 3 | Blue | A **Matrix 3x3** value |
+| Matrix 4 | Blue | A **Matrix 4x4** value |
+| Dynamic Matrix | Blue | See **Dynamic Data Types** below |
+| Dynamic | Blue | See **Dynamic Data Types** below |
+| Boolean | Purple | A **Boolean** value. Defined as a float in the generated shader |
+| Texture 2D | Red | A Texture 2D asset |
+| Texture 2D Array | Red | A Texture 2D Array asset |
+| Texture 3D | Red | A Texture 3D asset |
+| Cubemap | Red | A Cubemap asset |
+| Virtual Texture | Gray | A Texture Stack |
+| Gradient | Gray | A **Gradient** value. Defined as a struct in the generated shader |
+| SamplerState | Gray | A state used for sampling a texture |
 
 
-https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Property-Types.html
+https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Property-Types.html \
+https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Data-Types.html
 
 ### Add nodes to a group - Group selection
 Press **Ctrl + G** for Group selection, adding Group name for all selected nodes
