@@ -269,3 +269,10 @@ https://www.youtube.com/watch?v=7hpaVDivGDc
 
 https://www.youtube.com/watch?v=2KSLO9JnxHA
 
+Unity Shader Graph Basics
+https://www.youtube.com/watch?v=TbZYoSu1w8Y&list=PLsaDw3p1XpJiGHPnA8gZH6gO2gQYz3JH1 \
+https://www.youtube.com/watch?v=jVNC0Z2p9qw&list=PLsaDw3p1XpJiGHPnA8gZH6gO2gQYz3JH1&index=2 \
+https://www.youtube.com/watch?v=ig2IVZh9pCk&list=PLsaDw3p1XpJiGHPnA8gZH6gO2gQYz3JH1&index=3 \
+https://www.youtube.com/watch?v=MndZYDHB4zE&list=PLsaDw3p1XpJiGHPnA8gZH6gO2gQYz3JH1&index=4 \
+https://www.youtube.com/watch?v=2KSLO9JnxHA&list=PLsaDw3p1XpJiGHPnA8gZH6gO2gQYz3JH1&index=5 \
+https://www.youtube.com/watch?v=Tjo6mUhqui8&list=PLsaDw3p1XpJiGHPnA8gZH6gO2gQYz3JH1&index=6
