@@ -8,6 +8,8 @@ It is also possible to create your own Billboard Assets from script. For more in
 
 
 
+### Billboard Renderer component
+![](./BillboardRenderer.png)
 
 ###
 https://docs.unity3d.com/Manual/class-BillboardRenderer.html
