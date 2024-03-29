@@ -56,6 +56,11 @@ If you **connect any nodes to both Contexts**, they are **executed twice**, **on
 
 ![](../img/MasterStack_Populated.png)
 
+
+> In Unity 2020.2,Unity introduced several new features in Shader Graph. As the end point of the Graph, the Master Stack is now a modular collection of feature blocks, replacing the monolithic Master Node. The Master Stack is the end point of a Shader Graph that defines the final surface appearance of a shader. It helps users visualize the relationship between operations that take place in the vertex stage and the fragment stage. With Unity 2020.2, the Master Stack replaces the Master Node of earlier Unity versions.
+>
+> 
+
 #### Preview window
 
 ![](../img/MainPreview.png)
@@ -234,9 +239,15 @@ https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Node-Library
 ### ref
 https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/index.html
 
+**Introducing Shader Graph’s new Master Stack**: \
+https://blog.unity.com/engine-platform/introducing-shader-graphs-new-master-stack
+
 https://learn.unity.com/tutorial/shader-graph-vertex-displacement#
 
 https://learn.unity.com/tutorial/introduction-to-shader-graph#5f500900edbc2a0022843fb3
+
+**What's new in Unity's Shader Graph?** \
+https://www.youtube.com/watch?v=-QcwEYOHt2I
 
 https://www.twblogs.net/a/5f0463a35352062f754edb05
 
