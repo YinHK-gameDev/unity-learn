@@ -156,7 +156,8 @@ Each property **has an associated Data Type**.
 
 
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Property-Types.html \
-https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Data-Types.html
+https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Data-Types.html \
+https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Keywords.html
 
 ### Add nodes to a group - Group selection
 Press **Ctrl + G** for Group selection, adding Group name for all selected nodes
