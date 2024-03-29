@@ -5,7 +5,7 @@ A Mesh Renderer component **renders a mesh**. It works with a **Mesh Filter comp
 
 > To render a **deformable mesh**, use a **Skinned Mesh Renderer** instead.
 
-In C# code, the **MeshRenderer class** represents a **Mesh Renderer** component. The **MeshRenderer class** inherits much of its functionality from the **`Renderer` class**. As such, this component has a lot in common with other components that inherit from Renderer, such as **Line Renderer**, and **Trail Renderer**.
+In C# code, the **MeshRenderer class** represents a **Mesh Renderer** component. The **MeshRenderer class** inherits much of its functionality from the **`Renderer` class**. As such, this component has a lot in common with other components that inherit from **`Renderer`**, such as **Line Renderer**, and **Trail Renderer**.
 
 
 
