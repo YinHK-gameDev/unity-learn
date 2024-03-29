@@ -155,6 +155,18 @@ Each property **has an associated Data Type**.
 | SamplerState | Gray | A state used for sampling a texture |
 
 
+#### Keywords
+Use Keywords to create different variants for your Shader Graph.
+
+Keywords enable you to create shaders:
+
+-   With features that you can turn on or off for each Material instance.
+-   With features that behave differently on certain platforms.
+-   That scale in complexity based on conditions you set.
+
+There are three types of Keywords: Boolean, Enum, and Built-in. Unity defines a Keyword in the graph, shader, and optionally, the Material Inspector based on its type.
+
+
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Property-Types.html \
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Data-Types.html \
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Keywords.html
