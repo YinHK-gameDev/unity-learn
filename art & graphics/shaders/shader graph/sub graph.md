@@ -18,6 +18,9 @@ The **Subgraph Asset** is a **new Asset type** introduced with the Shader Graph.
 
 You can open the Shader Graph Window by **double clicking a Subgraph Asset** or by **clicking Open Shader Editor** in the Inspector when the Subgraph Asset is selected.
 
+#### Creating sub-graph asset
+
+**Right click on project window > Create > Shader Graph > Sun Graph**
 
 
 ### ref
