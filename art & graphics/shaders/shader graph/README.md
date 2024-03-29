@@ -232,7 +232,9 @@ Right-click the node and select **"Open documentation or F1"**, to see documenta
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Node-Library.html
 
 ### ref
-https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/index.html
+https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/index.html
+
+https://learn.unity.com/tutorial/shader-graph-vertex-displacement#
 
 https://learn.unity.com/tutorial/introduction-to-shader-graph#5f500900edbc2a0022843fb3
 
@@ -253,3 +255,6 @@ https://youtu.be/V5XFrIhLpGQ
 https://youtube.com/playlist?list=PLzDRvYVwl53tpvp6CP6e-Mrl6dmxs9uhx
 
 https://www.youtube.com/watch?v=7hpaVDivGDc
+
+https://www.youtube.com/watch?v=2KSLO9JnxHA
+
