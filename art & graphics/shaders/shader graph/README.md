@@ -62,7 +62,7 @@ If you **connect any nodes to both Contexts**, they are **executed twice**, **on
 
 
 #### Blackboard
-An area that contains all of the shader's properties in a single, collected view. Use the Blackboard to add, remove, rename, and reorder properties.
+An area that **contains all of the shader's properties in a single**, collected view. Use the Blackboard to **add, remove, rename, and reorder properties**.
 
 ![](../img/Blackboard.png)
 
