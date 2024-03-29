@@ -7,6 +7,10 @@ A Mesh Renderer component **renders a mesh**. It works with a **Mesh Filter comp
 
 In C# code, the **MeshRenderer class** represents a **Mesh Renderer** component. The **MeshRenderer class** inherits much of its functionality from the Renderer class. As such, this component has a lot in common with other components that inherit from Renderer, such as **Line Renderer**, and **Trail Renderer**.
 
+
+
+![](./img/class-MeshRenderer-0.png)
+
 https://docs.unity3d.com/Manual/class-MeshRenderer.html
 
 
@@ -22,6 +26,9 @@ When you add a deformable mesh or a model with a deformable mesh to a scene, Uni
 In C# code, the **SkinnedMeshRenderer class** represents a **Skinned Mesh Renderer component**. The SkinnedMeshRenderer class inherits much of its functionality from the Renderer class. As such, this component has a lot in common with other components that inherit from Renderer, such as **Line Renderer**
 , and **Trail Renderer**.
 
+
+![](./img/skinned-mesh-renderer-inspector.png)
+
 https://docs.unity3d.com/Manual/class-SkinnedMeshRenderer.html
 
 ### Mesh Filter component
@@ -35,7 +42,7 @@ A Mesh Filter component **holds a reference to a mesh.** It works with a Mesh Re
 | --- | --- |
 | Mesh | A reference to a mesh asset.To change the mesh asset that the Mesh Filter component references, use the picker (circle icon) next to the mesh’s name.Note: The settings for other components on this GameObject don’t change when you change the mesh that the Mesh Filter references. For example, a Mesh Renderer doesn’t update its settings, which might cause Unity to render the mesh with unexpected properties. If this happens, adjust the settings of the other components as needed.Corresponds to the MeshFilter.mesh property. |
 
-
+![](./img/Inspector-MeshFilter.png)
 
 https://docs.unity3d.com/Manual/class-MeshFilter.html
 
