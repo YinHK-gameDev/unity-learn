@@ -100,6 +100,20 @@ Select a node in the graph to display settings available for that node in the Gr
 
 https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/Internal-Inspector.html
 
+#### Graph setting
+
+
+![](./GraphSettings_Menu.png)
+
+| Menu Item | Description |
+| --- | --- |
+| Precision | A Precision Mode drop-down menu that lets you set the default precision for the entire graph. You can override the Precision setting here at the node level in your graph. |
+| Preview Mode | (Subgraphs only) Your options are Inherit, Preview 2D, and Preview 3D. |
+| Active Targets | A list that contains the Targets you've selected. You can add or remove entries using the Add (+) and Remove (-) buttons.Shader Graph supports three targets: the Universal Render Pipeline, the High Definition Render Pipeline, and Built-In Render Pipeline. Target-specific settings appear below the standard setting options. The displayed Target-specific settings change according to which Targets you select. |
+
+
+https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/Graph-Settings-Tab.html \
+https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Precision-Modes.html
 
 #### Create a new node
 
