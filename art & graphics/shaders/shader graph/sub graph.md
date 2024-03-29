@@ -22,6 +22,7 @@ You can open the Shader Graph Window by **double clicking a Subgraph Asset** or 
 
 **Right click on project window > Create > Shader Graph > Sun Graph**
 
+> Create Sub Graph asset before reference sub graph in other Shader graph
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/Sub-graph.html 
