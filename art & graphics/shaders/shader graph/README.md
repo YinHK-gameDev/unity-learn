@@ -112,6 +112,20 @@ https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/Internal-Ins
 | Active Targets | A list that contains the Targets you've selected. You can add or remove entries using the Add (+) and Remove (-) buttons.Shader Graph supports three targets: the Universal Render Pipeline, the High Definition Render Pipeline, and Built-In Render Pipeline. Target-specific settings appear below the standard setting options. The displayed Target-specific settings change according to which Targets you select. |
 
 
+**Precision Modes**:
+
+Shader Graph provides specific data **precision modes for nodes**, graphs, and Sub Graphs to help you optimize your content for different platforms.
+
+| Name | Description |
+| --- | --- |
+| Single | This is a high-precision floating point value. The number of bits is platform-specific. For modern desktop computers, it is 32 bits.This mode is useful for world space positions, texture coordinates, and scalar computations that involve complex functions such as trigonometry, power, and exponentiation. |
+| Half | This is a low-precision floating point value. The number of bits is platform-specific. For modern desktop computers, it is 16 bits.This mode is useful for short vectors, directions, object space positions, and many high dynamic range colors, but not very strong light sources, such as the sun. |
+| Switchable | This mode is only for Sub Graphs. When you enable this mode for a Sub Graph, the default precision of the Sub Graph is decided by its Sub Graph node. See Use Graph Precision below. |
+| Inherit | This mode determines a node's precision based on a set of inheritance rules. See Precision inheritance. |
+| Use Graph Precision | This mode forces this node to use the same precision setting as the graph.If this is a node in a Sub Graph, and that Sub Graph’s Precision is set to Switchable, then the precision of this node is the precision of the Sub Graph node representing this Sub Graph. |
+
+
+
 https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/Graph-Settings-Tab.html \
 https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Precision-Modes.html
 
