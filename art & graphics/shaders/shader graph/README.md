@@ -68,12 +68,12 @@ An area that **contains all of the shader's properties in a single**, **collecte
 
 
 #### Internal Inspector
-An area that contains information contextual to whatever the user is currently clicking on. It's a window that automatically is hidden by default and only appears when something is selected that can be edited by the user. Use the Internal Inspector to display and modify properties, node options, and the graph settings.
+An area that **contains information contextual to whatever the user is currently clicking on**. It's a window that **automatically is hidden by default** and **only appears when something is selected that can be edited by the user**. Use the Internal Inspector to display and modify properties, node options, and the graph settings.
 
 ![](../img/Inspector.png)
 
 #### Graph inspector
-The Graph Inspector makes it possible for you to interact with any selectable graph elements and graph-wide settings for a Shader Graph Asset. You can use the Graph Inspector to edit attributes and default values.
+The Graph Inspector makes it possible for you to **interact with any selectable graph elements** and graph-wide settings for a Shader Graph Asset. You can use the Graph Inspector to** edit attributes and default values**.
 
 When you open a Shader Graph, the Graph Inspector displays the Graph Settings tab by default. Graph-wide settings for that specific Shader Graph appear in this tab.
 
