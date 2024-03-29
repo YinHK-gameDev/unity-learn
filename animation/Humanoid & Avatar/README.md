@@ -35,10 +35,11 @@ From the **Rig** tab of the Inspector window, **set the Animation Type to Humano
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
 
 ### Retargeting of Humanoid animations
-One of the most powerful features of Mecanim is retargeting of humanoid animations. This means that with relative ease, you can apply the same set of animations to various character models. Retargeting is only possible for humanoid models, where an Avatar has been configured, because this gives us a correspondence between the models’ bone structure.
+One of the most powerful features of Mecanim is retargeting of humanoid animations. This means that with relative ease, you can **apply the same set of animations to various character models**. 
 
-When working with Mecanim animations, you can expect your scene
- to contain the following elements:-
+Retargeting is **only possible** for **humanoid models**, where an Avatar has been configured, because this gives us a correspondence between the models’ bone structure.
+
+When working with Mecanim animations, you can expect your scene to contain the following elements:-
 
 - The Imported character model, which has an Avatar on it.
 - The Animator Component, referencing an Animator Controller asset.
