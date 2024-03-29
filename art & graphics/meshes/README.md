@@ -1,6 +1,6 @@
 ## Mesh
 
-A mesh is a **collection of data** that describes a shape. In Unity, you use meshes in the following ways:
+A mesh is a **collection of data** that **describes a shape**. In Unity, you use meshes in the following ways:
 
 - In **graphics**, you use meshes together with materials; **meshes describe the shape of an object** that the **GPU renders**, and **materials describe the appearance of its surface**.
 - In **physics**, you can use a mesh to **determine the shape of a collider**. An **invisible shape** that is used to handle physical collisions for an object. A collider doesn’t need to be exactly the same shape as the object’s mesh - a **rough approximation** is often more efficient and indistinguishable in gameplay. 
