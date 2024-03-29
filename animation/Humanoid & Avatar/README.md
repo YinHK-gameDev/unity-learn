@@ -47,6 +47,17 @@ When working with Mecanim animations, you can expect your scene to contain the f
 - Scripts for the character.
 - Character-related components, such as the Character Controller.
 
+
+Your project should also contain another character model **with a valid Avatar**.
+
+
+In order to reuse the same animations on another model, you need to:
+
+-   Disable the original model
+-   Put the model as a child of the GameObject, together with the Animator component
+-   Make sure scripts referencing the Animator are looking for the animator in the children instead of the root; use `GetComponentInChildren<Animator>()` instead of `GetComponent<Animator>()`.
+-   Make sure the Animator Controller property for the new model is referencing the same controller asset
+
 https://www.youtube.com/watch?v=fNgPkuMgWFg
 
 https://docs.unity3d.com/Manual/Retargeting.html
