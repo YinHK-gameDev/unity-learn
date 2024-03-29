@@ -1,10 +1,10 @@
 ## Sub Graph
 
-A Sub Graph is a special type of Shader Graph, which you can reference from inside other graphs. This is useful when you wish to perform the same operations multiple times in one graph or across multiple graphs. A Sub Graph differs from a Shader Graph in three main ways:
+A **Sub Graph is a special type of Shader Graph**, which you can **reference from inside other graphs**. This is useful when you **wish to perform the same operations multiple times in one graph or across multiple graphs**. A **Sub Graph differs from a Shader Graph in three main ways**:
 
-Properties in the Blackboard of a Sub Graph define the input Ports of a Sub Graph Node when you reference the Sub Graph from inside another graph.
-A Sub Graph has its own Asset type. For more information, including instructions on how to make a new Sub Graph, see Sub Graph Asset.
-A Sub Graph does not have a Master Stack. Instead, it has a Node called Output.
+- Properties in the Blackboard of a Sub Graph define the input Ports of a Sub Graph Node when you reference the Sub Graph from inside another graph.
+- A Sub Graph **has its own Asset type**. For more information, including instructions on how to make a new Sub Graph, see Sub Graph Asset.
+- A Sub Graph **does not have a Master Stack**. Instead, it **has a Node called Output**.
 For information about the components of a Sub Graph, see Sub Graph Asset.
 
 ![](../img/SubGraph-Output-Node.png)
