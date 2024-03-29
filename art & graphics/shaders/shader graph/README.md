@@ -58,8 +58,15 @@ If you **connect any nodes to both Contexts**, they are **executed twice**, **on
 
 
 > In Unity 2020.2,Unity introduced several new features in Shader Graph. As the end point of the Graph, the Master Stack is now a modular collection of feature blocks, replacing the monolithic Master Node. The Master Stack is the end point of a Shader Graph that defines the final surface appearance of a shader. It helps users visualize the relationship between operations that take place in the vertex stage and the fragment stage. With Unity 2020.2, the Master Stack replaces the Master Node of earlier Unity versions.
->
-> 
+
+
+#### Vertex and Fragment Shader
+
+Vertex shaders define as the shader programs that modifies the **geometry of the scene and made the 3D projection**. Vertex Shaders transform shape positions into 3D drawing coordinates.
+
+Fragment shaders are related to the render window and **define the color for each pixel**. Fragment Shaders compute the renderings of a **shape's colors and other attributes**.
+
+https://danielilett.com/2024-02-13-tut7-7-intro-to-shader-graph-part-5/
 
 #### Preview window
 
