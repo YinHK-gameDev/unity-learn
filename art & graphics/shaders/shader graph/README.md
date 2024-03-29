@@ -51,6 +51,9 @@ Nodes that you connect to Blocks in the **Fragment Context** become **part of th
 
 If you **connect any nodes to both Contexts**, they are **executed twice**, **once in the vertex function** and then **again in the fragment function**. You **can't cut, copy, or paste Contexts**.
 
+
+> Press **Space bar** to add new node
+
 ![](../img/MasterStack_Populated.png)
 
 #### Preview window
