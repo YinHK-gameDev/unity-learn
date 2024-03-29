@@ -237,6 +237,12 @@ Press **Ctrl + G** for Group selection, adding Group name for all selected nodes
 
 ![](./Node_group.png)
 
+### Create image texture in shsder graph
+
+
+![](./Texture_shader.png)
+
+Use **Sample Texture 2D** node + **Texture2D** property. Assign image in Default field of Graph inspector in Texture2D property. Connect RGBA to Base color & A to Ambient Occusion.
 
 ### Node library
 Right-click the node and select **"Open documentation or F1"**, to see documentation about the slected node in Node library.
