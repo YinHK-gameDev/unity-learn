@@ -12,7 +12,7 @@ The **Universal Render Pipeline (URP)** is a **prebuilt Scriptable Render Pipeli
 
 ### Creating the Universal Render Pipeline Asset
 
-The **Universal Render Pipeline Asset (URP Asset)** contains the global rendering and quality settings of your project, and creates the rendering pipeline instance. The rendering pipeline instance contains intermediate resources and the render pipeline implementation.
+The **Universal Render Pipeline Asset (URP Asset)** contains the **global rendering** and **quality settings** of your project, and **creates the rendering pipeline instance**. The rendering pipeline instance contains **intermediate resources and the render pipeline implementation**.
 
 To create a Universal Render Pipeline Asset:
 
