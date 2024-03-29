@@ -161,6 +161,9 @@ https://docs.unity3d.com/Packages/com.unity.shadergraph@16.0/manual/Data-Types.h
 ### Add nodes to a group - Group selection
 Press **Ctrl + G** for Group selection, adding Group name for all selected nodes
 
+![](./Node_group.png)
+
+
 ### Node library
 Right-click the node and select **"Open documentation or F1"**, to see documentation about the slected node in Node library.
 
