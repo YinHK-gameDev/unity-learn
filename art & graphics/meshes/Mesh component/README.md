@@ -33,7 +33,7 @@ https://docs.unity3d.com/Manual/class-SkinnedMeshRenderer.html
 ### Mesh Filter component
 
 A Mesh Filter component **holds a reference to a mesh.** It works with a Mesh Renderer
- component on the same GameObject; the Mesh Renderer renders the mesh that the Mesh Filter references.
+ component on the same GameObject; the Mesh Renderer **renders the mesh that the Mesh Filter references**.
 
 > To render a deformable mesh, use a Skinned Mesh Renderer instead. A Skinned Mesh Renderer component does not need a Mesh Filter component.
 
