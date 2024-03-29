@@ -20,9 +20,9 @@ The Skinned Mesh Renderer component **renders a deformable mesh**. **Deformable 
 > To render a regular mesh, use a **Mesh Renderer** and a **Mesh Filter** instead.
 
 
-When you add a deformable mesh or a model with a deformable mesh to a scene, Unity adds a Skinned Mesh Renderer component to the resulting GameObject.
+> When you add a deformable mesh or a model with a **deformable mesh to a scene**, Unity **adds a Skinned Mesh Renderer component to the resulting GameObject**.
 
-In C# code, the **SkinnedMeshRenderer class** represents a **Skinned Mesh Renderer component**. The SkinnedMeshRenderer class inherits much of its functionality from the Renderer class. As such, this component has a lot in common with other components that inherit from Renderer, such as **Line Renderer**
+In C# code, the **`SkinnedMeshRenderer` class** represents a **Skinned Mesh Renderer component**. The **`SkinnedMeshRenderer` class** inherits much of its functionality from the **`Renderer` class**. As such, this component has a lot in common with other components that inherit from **`Renderer`**, such as **Line Renderer**
 , and **Trail Renderer**.
 
 
