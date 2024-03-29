@@ -24,7 +24,7 @@ You can either leave the default name for the new Universal Render Pipeline Asse
 
 ### Set URP as the active render pipeline
 
-To set URP as the active render pipeline:
+To set URP as the **active render pipeline**:
 
 1.  In your project, locate the **Render Pipeline Asset** that you want to use.  
     **Tip**: to find all URP Assets in a project, use the following query in the search field: **`t:universalrenderpipelineasset`**.
