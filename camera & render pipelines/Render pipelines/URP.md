@@ -31,7 +31,7 @@ To set URP as the active render pipeline:
     
 2.  Select **Edit** > **Project Settings** > **Graphics**.
     
-3.  In the **Scriptable Render Pipeline Settings** field, select the URP Asset. When you select the URP Asset, the available Graphics settings change immediately.
+3.  In the **Scriptable Render Pipeline Settings** field, **select the URP Asset**. When you select the URP Asset, the **available Graphics settings change immediately**.
 
 
 
