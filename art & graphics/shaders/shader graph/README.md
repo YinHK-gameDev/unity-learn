@@ -80,6 +80,27 @@ The Graph Inspector makes it possible for you to **interact with any selectable 
 When you open a Shader Graph, the Graph Inspector displays the Graph Settings tab by default. Graph-wide settings for that specific Shader Graph appear in this tab.
 
 
+Select a node in the graph to display settings available for that node in the Graph Inspector. Settings available for that node appear in the Node Settings tab of the Graph Inspector. For example, if you select a Property node either in the graph or the Blackboard, the Node Settings tab displays attributes of the Property that you can edit.
+
+
+- **Properties** \
+  ![](./InternalInspectorGraphProperty.png)
+
+- **Keywords** \
+  ![](./keywords_enum.png)
+
+- **Custom Function nodes** \
+  ![](./Custom-Function-Node-File.png)
+
+- **Subgraph Output nodes** \
+  ![](./Inspector-SubgraphOutput.png)
+
+- **Per-node precision** \
+  ![](./Inspector-PerNodePrecision.png)
+
+https://docs.unity3d.com/Packages/com.unity.shadergraph@17.0/manual/Internal-Inspector.html
+
+
 #### Create a new node
 
 Use the Create Node menu to create new nodes. There are two ways to open the menu:
@@ -103,7 +124,7 @@ In either the main menu or the Project View context menu, select **Assets > Crea
 A **Material** is also **automatically generated as a subasset of the Shader Graph**. You can **assign it directly to an object in your scene**. Modifying a property from the Blackboard on the Shader Graph will **update this material in real time**, which allows for **quick visualization** in the scene.
 
 
-### properties
+#### properties
 You can also **use properties to alter your shader's appearance**. 
 
 **Properties are options that are visible from the Material's Inspector**, which lets others **change settings** in your shader **without the need to open the Shader Graph**.
