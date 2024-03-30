@@ -56,7 +56,7 @@ The Environment tab contains settings related to **environmental lighting effect
 The Environment tab is divided into two sections:
 
 - **Environment**: \
-  The Environment section contains lighting-related settings and controls that apply to the environmental lighting in the current scene, such as the Skybox, diffuse lighting and reflections.
+  The Environment section contains **lighting-related settings** and **controls** that apply to the **environmental lighting** in the current scene, such as the **Skybox, diffuse lighting and reflections**.
 - **Other settings**: \
   The Other Settings section contains settings for **fog, Halos, Flares, and Cookies**.
 
