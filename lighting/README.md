@@ -8,10 +8,10 @@ a **Light object** is created by attaching a **Light component** to a GameObject
 Lighting in Unity works by approximating how light behaves in the real world.
 
 - **Direct light**:
-  It is light that is emitted, hits a surface once, and is then reflected directly into a sensor (for example, the eye’s retina or a camera).
+  It is light that is emitted, hits a surface once, and is then **reflected directly into a sensor** (for example, the eye’s retina or a camera).
   
 - **Indirect light**:
-  It is all other light that is ultimately reflected into a sensor, including light that hits surfaces several times, and sky light.  Such as bounced light.
+  It is all other light that is **ultimately reflected into a sensor**, including light that hits surfaces several times, and sky light.  Such as bounced light.
   
 > To achieve realistic lighting results, you need to simulate both direct and indirect light.
 
@@ -24,7 +24,8 @@ Lighting in Unity works by approximating how light behaves in the real world.
 >  In Unity, your Project can use real-time lighting, baked lighting, or a mix of the two (called **mixed lighting**).
   
 - **Global illumination**:
-  Global illumination is **a group of techniques** that **model both direct and indirect lighting to provide realistic lighting results**. Unity has two global illumination systems, which combine direct and indirect lighting.
+  Global illumination is **a group of techniques** that **model both direct and indirect lighting to provide realistic lighting results**. \
+  **Unity has two global illumination systems**, which combine direct and indirect lighting.
   - **Baked Global Illumination system**:
     Consists of **lightmappers**, **Light Probes**, and **Reflection Probes**. \
     **There are three options for baking**: 
