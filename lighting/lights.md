@@ -58,9 +58,9 @@ The Modes are:
 - **Realtime**: \
   Unity **calculates and updates the lighting of Realtime Lights every frame at runtime**. Unity does not precompute any calculations for Realtime Lights. 
   
-  Unity performs the lighting calculations for Realtime Lights at runtime, once per frame. For example  flickering light bulbs, or a torch being carried through a dark room.
+  Unity performs the **lighting calculations for Realtime Lights at runtime, once per frame**. For example  flickering light bulbs, or a torch being carried through a dark room.
   
-  Realtime Lights are useful for lighting and casting shadows on characters or moveable geometry.
+  Realtime Lights are useful for **lighting and casting shadows on characters or moveable geometry**.
   
   **Realtime Light behavior:**
   - Realtime Lights cast shadows up to the Shadow Distance.
