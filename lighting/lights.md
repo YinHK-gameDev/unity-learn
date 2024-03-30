@@ -48,8 +48,8 @@ The Modes are:
   - Unity bakes both direct and indirect lighting from **Baked Lights into Light Probes**.
   
   **Limitations**:
-  - You cannot change the properties of Baked Lights at runtime.
-  - Baked Lights do not contribute to specular lighting.
+  - You **cannot change the properties of Baked Lights** at runtime.
+  - Baked Lights **do not contribute** to **specular lighting**.
   - **Dynamic GameObjects do not receive light or shadow from Baked Lights**.
   
   
@@ -63,8 +63,8 @@ The Modes are:
   Realtime Lights are useful for **lighting and casting shadows on characters or moveable geometry**.
   
   **Realtime Light behavior:**
-  - Realtime Lights cast shadows up to the Shadow Distance.
-  - By default, **Realtime Lights contribute only realtime direct lighting to a Scene**. If you’re using the Built-in Render Pipeline
+  - Realtime Lights **cast shadows** up to the **Shadow Distanc**e.
+  - By default, **Realtime Lights contribute only realtime direct lighting to a Scene**. If you’re using the **Built-in Render Pipeline**
  and you enable **Enlighten Realtime Global Illumination**
  in your Project, Realtime Lights also contribute realtime indirect lighting to your Scene.
 
