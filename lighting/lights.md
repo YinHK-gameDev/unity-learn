@@ -110,6 +110,11 @@ Example:
 
 ![](./img/CookieExample.png)
 
+
+
+
+![](./img/cookies_textures.png)
+
 https://docs.unity3d.com/Manual/creating-cookies-built-in-render-pipeline.html
 
 https://medium.com/geekculture/how-to-use-cookies-to-create-realistic-lighting-in-unity-87ef95a94222
