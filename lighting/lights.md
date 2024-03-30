@@ -65,12 +65,12 @@ The Modes are:
   **Realtime Light behavior:**
   - Realtime Lights cast shadows up to the Shadow Distance.
   - By default, Realtime Lights contribute only realtime direct lighting to a Scene. If you’re using the Built-in Render Pipeline
- and you enable Enlighten Realtime Global Illumination
+ and you enable **Enlighten Realtime Global Illumination**
  in your Project, Realtime Lights also contribute realtime indirect lighting to your Scene.
 
   **Limitations**:
-  - Performing runtime calculations for Realtime Lights might be costly, especially in complex scenes or on low-end hardware.
-  - Because Realtime Lights only contribute direct lighting to the Scene by default, shadows appear completely black and there aren’t any indirect lighting effects, such as color bounce. This might cause unrealistic lighting in the Scene.
+  - Performing runtime calculations for Realtime Lights **might be costly**, especially in complex scenes or on low-end hardware.
+  - Because **Realtime Lights only contribute direct lighting to the Scene by default**, shadows appear completely black and there aren’t any indirect lighting effects, such as color bounce. This might cause unrealistic lighting in the Scene.
   
 - **Mixed**: \
   Unity **performs some calculations for Mixed Lights in advance, and some calculations at runtime**. Mixed Lights combine elements of both real-time and baked lighting. You can use Mixed Lights to combine dynamic shadows with baked lighting from the same light source, or when you want a light to contribute direct real-time lighting and baked indirect lighting.
@@ -88,8 +88,7 @@ Cookies may support different features depending on the render pipeline you are 
 
 #### Enabling and disabling baked cookies
 > For Projects created in Unity 2020.1 or above, baked cookies are enabled for Baked Lights
- and Mixed Lights in the Progressive Lightmapper
- by default.
+ and Mixed Lights in the Progressive Lightmapper by default.
  
 You can toggle whether cookies are enabled for Baked Lights and Mixed Lights in the Progressive Lightmapper in the Editor settings window.
 
