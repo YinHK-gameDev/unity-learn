@@ -11,12 +11,16 @@ Place the light object where you want it in the scene. If you enable scene view 
 - Directional Light
 - Area Light
 
+#### Point Lights
 ![](./img/PointLightDiagram.svg)
 
+#### Spot Lights
 ![](./img/Light-Point.jpg)
 
+#### Directional Lights
 ![](./img/SpotLightDiagram.svg)
 
+#### Area Lights
 ![](./img/Light-Spot.jpg)
 
 A Directional Light typically simulates sunlight, and a single Directional Light can illuminate the entire Scene.
