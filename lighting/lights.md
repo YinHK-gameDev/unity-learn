@@ -82,20 +82,20 @@ The Modes are:
 ### Cookies
 > A cookie is a **mask** that you **place on a Light to create a shadow with a specific shape or color**, which **changes the appearance** and **intensity of the Light**. 
 
-To apply a cookie to a Light in Unity, assign a texture to the Cookie field of a a Light component.
+To **apply a cookie to a Light** in Unity, **assign a texture to the Cookie field of a a Light component**.
 
-Cookies may support different features depending on the render pipeline you are using.  Cookies are an efficient way of simulating complex lighting effects with minimal or **no runtime performance impact**. **Effects** you can **simulate with cookies include caustics, soft shadows, and light shapes**.
+Cookies may support different features depending on the render pipeline you are using.  Cookies are an **efficient way of simulating complex lighting effects** with minimal or **no runtime performance impact**. **Effects** you can **simulate with cookies include caustics, soft shadows, and light shapes**.
 
 #### Enabling and disabling baked cookies
-> For Projects created in Unity 2020.1 or above, baked cookies are enabled for Baked Lights
- and Mixed Lights in the Progressive Lightmapper by default.
+> For Projects created in Unity 2020.1 or above, **baked cookies are enabled for Baked Lights
+ and Mixed Lights in the Progressive Lightmapper by default**.
  
-You can toggle whether cookies are enabled for Baked Lights and Mixed Lights in the Progressive Lightmapper in the Editor settings window.
+You can **toggle whether cookies are enabled for Baked Lights and Mixed Lights in the Progressive Lightmapper** in the Editor settings window.
 
 - Open the Project Settings window (**Edit > Project Settings**).
 - Choose Editor to open the Editor settings.
-- Navigate to the Graphics section.
-- Toggle Enable **baked cookies support**.
+- Navigate to the **Graphics** section.
+- Toggle **Enable** **baked cookies support**.
 
 #### Creating cookies for lighting texture
 In cookies field, just click to select your texture asset.
