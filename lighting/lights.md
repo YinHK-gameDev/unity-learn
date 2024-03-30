@@ -84,7 +84,7 @@ The Modes are:
 
 To apply a cookie to a Light in Unity, assign a texture to the Cookie field of a a Light component.
 
-Cookies may support different features depending on the render pipeline you are using.  Cookies are an efficient way of simulating complex lighting effects with minimal or no runtime performance impact. Effects you can simulate with cookies include caustics, soft shadows, and light shapes.
+Cookies may support different features depending on the render pipeline you are using.  Cookies are an efficient way of simulating complex lighting effects with minimal or **no runtime performance impact**. **Effects** you can **simulate with cookies include caustics, soft shadows, and light shapes**.
 
 #### Enabling and disabling baked cookies
 > For Projects created in Unity 2020.1 or above, baked cookies are enabled for Baked Lights
