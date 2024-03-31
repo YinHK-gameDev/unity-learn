@@ -80,7 +80,7 @@ The Modes are:
 
 
 ### Cookies
-> A cookie is a **mask** that you **place on a Light to create a shadow with a specific shape or color**, which **changes the appearance** and **intensity of the Light**. 
+> A cookie is a **mask** that you **place on a Light to create a shadow with a specific shape or color**, which **changes the appearance** and **intensity of the Light**. A mask that is placed onto a light source, creating a shadow for a specific pattern, shape or colour.
 
 To **apply a cookie to a Light** in Unity, **assign a texture to the Cookie field of a a Light component**.
 
