@@ -26,9 +26,9 @@ This **often happens** when there are **significant differences** in the **light
 
 There are several ways to deal with this:
 
-- In the Light Probe Group component, enable Remove Ringing. Unity automatically removes the unintended light spots. However, this generally makes the Light Probes less accurate, and reduces light contrast, so you must check the visual results.
-- Place in-game obstacles in such a way that players can’t get to a position where they can see the light spot.
-- Avoid baking direct light into Light Probes. Direct light tends to have sharp discontinuities (such as shadow edges), which makes it unsuitable for Light Probes. To only bake indirect light, use Mixed lighting.
+- In the Light Probe Group component, enable **Remove Ringing**. Unity **automatically removes the unintended light spots**. However, this generally **makes the Light Probes less accurate, and reduces light contrast**, so you **must check the visual results**.
+- Place **in-game obstacles** in such a way that **players can’t get to a position where they can see the light spot**.
+- **Avoid baking direct light into Light Probes**. Direct light tends to have sharp discontinuities (such as shadow edges), which makes it unsuitable for Light Probes. To only **bake indirect light**, **use Mixed lighting**.
 
 
 ### Choosing Light Probe positions
