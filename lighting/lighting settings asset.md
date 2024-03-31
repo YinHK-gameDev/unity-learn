@@ -6,6 +6,11 @@ A Lighting Settings Asset represents a **saved instance** of the **`LightingSett
 
 ![](./img/lighting_setting_asset.png)
 
+
+> Setting in lighting setting asset is simlar to scene tab
+
+![](./img/lightwindow_scenetab.png)
+
 ### Creating a Lighting Settings Asset
 There are two ways to create a Lighting Settings Asset in the Unity Editor.
 
