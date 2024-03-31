@@ -1,7 +1,7 @@
 ## Shadows
 In Unity, Lights can **cast shadows from a GameObject onto other parts of itself**, or **onto nearby GameObjects**.
 
-Unity uses a technique called **shadow mapping** to render real-time shadows.
+Unity uses a technique called **shadow mapping** to render **real-time shadows**.
 
 ### Shadow mapping
 Shadow mapping or shadowing projection is a process by which shadows are added to 3D computer graphics.
