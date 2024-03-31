@@ -24,6 +24,8 @@ To be **included in your lightmap**, **Renderers must meet** the following crite
 - Be marked as **Contribute GI**
 - Use a **built-in Unity Material**, the **Standard Shader**, or a **Shader** with a **Meta Pass**
 
+![](../img/Contribute_GI.png)
+
 You can adjust settings for Lights in the **Light Explorer**. To open the Light Explorer, go to **Window > Rendering > Light Explorer**.
 
 To **generate lightmaps** for your Scene:
