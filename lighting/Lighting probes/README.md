@@ -75,8 +75,6 @@ https://www.youtube.com/watch?v=_E0JXOZDTKA
 
 https://www.youtube.com/watch?v=DlxuvvYZO4Q
 
-https://www.google.com/search?rlz=1C1RXMK_enCA1034CA1034&tbm=vid&sxsrf=AJOqlzW0_zOqDoP7476DkYiCrAFKNSBZ5w:1678419702782&q=unity+light+probe&sa=X&ved=2ahUKEwj0_qvRuND9AhUajIkEHTqzBx8Q8ccDegQICxAD&biw=1021&bih=909&dpr=1#fpstate=ive&vld=cid:bbada050,vid:pzbebc0Ryv8
-
 https://fistfullofshrimp.com/unity-vr-optimization-light-probes/
 
 
