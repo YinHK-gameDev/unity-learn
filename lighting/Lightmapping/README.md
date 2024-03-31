@@ -125,7 +125,7 @@ To set up LOD models correctly for baked lighting, mark the **LOD GameObjects** 
 
 ![](../img/LODForBakedGI-2.png)
 
-Use the Light Probes component to place Light Probes around the LOD GameObjects.
+> Use the **Light Probes component** to place Light Probes **around the LOD GameObjects**.
 
 https://docs.unity3d.com/Manual/LODForBakedGI.html
 
