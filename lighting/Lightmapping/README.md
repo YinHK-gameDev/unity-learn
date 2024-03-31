@@ -65,7 +65,7 @@ To assign a **Lightmap Parameters Asset** **to the whole Scene**:
 #### GameObjects
 To assign a **Lightmap Parameters Asset** to a single **GameObject**, ensure the GameObject has a **Mesh Renderer** or **Terrain component** attached.
 
-To assign a Lightmap Parameters Asset to a **Mesh Renderer** component:
+To assign a **Lightmap Parameters Asset** to a **Mesh Renderer** component:
 
 - In the Inspector, go to **Mesh Renderer > Lighting**
 - Enable **Contribute Global Illumination**
