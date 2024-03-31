@@ -112,7 +112,7 @@ Example:
 
 To do this:
 
-1. Create a grayscale texture in the image editor of your choice. If you are creating a cookie to use with a Point Light, lay your texture out as a **cubemap**. If you are creating a cookie to use with a Spot Light or Directional Light, lay your texture out as a regular 2D texture.
+1. Create a **grayscale texture** in the image editor of your choice. If you are creating a cookie to use with a **Point Light**, lay your texture out as a **cubemap**. If you are creating a cookie to use with a **Spot Light or Directional Light**, lay your texture out as a **regular 2D texture**.
 2. Place the texture in your Project’s Asset folder to import the texture into Unity.
 3. In your Project view, select the Texture Asset that represents the texture. Unity displays the Texture import settings in the Inspector.
 4. In the Inspector, set the following values:
