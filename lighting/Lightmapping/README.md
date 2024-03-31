@@ -59,7 +59,7 @@ To assign a **Lightmap Parameters Asset** **to the whole Scene**:
 
 - Open the Lighting window (**Window > Rendering > Lighting**)
 - Click the **Scene** tab
-- Navigate to the **Lightingmapping Settings**.
+- Navigate to the **Lighting mapping Settings**.
 - Use the **Lightmap Parameters** drop-down to assign a default Lightmap Parameters Asset. This drop-down lists all available Lightmap Parameters Assets.
 
 #### GameObjects
