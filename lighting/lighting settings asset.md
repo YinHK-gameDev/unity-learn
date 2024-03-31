@@ -116,7 +116,7 @@ https://docs.unity3d.com/Manual/class-LightingSettings.html
 
 ### Lighting Mode
 
-The **Lighting Mode** determines the **behavior of all Mixed Lights in all Scenes** that use the Lighting Settings Asset. 
+The **Lighting Mode** determines the **behavior of all Mixed Lights in all Scenes** that **use the Lighting Settings Asset**. 
 
 - **Baked Indirect**: \
   combines real-time direct lighting with baked indirect lighting. It provides real-time shadows. This Lighting Mode offers realistic lighting and reasonable shadow fidelity, and is suitable for mid-range hardware.
