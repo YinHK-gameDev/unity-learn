@@ -39,7 +39,7 @@ When lightmapping is complete, Unity’s Scene and Game views update automatical
  to the Assets folder.
 
 
-To create a new Lightmap Parameters Asset, right-click in the Project window and go to Create > New Parameters Asset. Unity stores this in your Project folder.
+To create a new Lightmap Parameters Asset, right-click in the Project window and go to **Create > New Parameters Asset**. Unity stores this in your Project folder.
 
 ### Lightmap Parameters Asset
 
