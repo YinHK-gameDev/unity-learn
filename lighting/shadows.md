@@ -52,7 +52,7 @@ or **Shadows Only to allow shadows to be cast by an invisible GameObject**.
 
 ### Shadow distance
 
-Use the Shadow Distance property to determine the distance from the Camera up to which Unity renders real-time shadows.
+Use the **Shadow Distance property** to **determine the distance from the Camera up to which Unity renders real-time shadows**.
 
 Shadows from GameObjects
  become less noticeable the farther the GameObjects are from the Camera. This is both because the shadows appear smaller on the screen, and because distant GameObjects are usually not the focus of attention. You can take advantage of this effect by disabling real-time shadow rendering for distant GameObjects.  
