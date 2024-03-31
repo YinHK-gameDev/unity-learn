@@ -131,6 +131,22 @@ https://www.youtube.com/watch?v=0MZZ4seC3ZE
 
 https://www.youtube.com/watch?v=uMUTy7Y14ug
 
+
+### Light Component for light object
+
+> Unity displays different properties in the Light Inspector depending on the render pipeline
+ that your Project uses.
+
+**Properties**
+
+- If your Project uses the **Universal Render Pipeline (URP)**, see the **URP package documentation**.
+- If your Project uses the **High Definition Render Pipeline (HDRP)**, see the **HDRP package documentation**.
+- If your Project uses the **Built-in Render Pipeline**, default property:
+
+
+
+https://docs.unity3d.com/Manual/class-Light.html
+
 ### ref
 https://docs.unity3d.com/Manual/Lighting.html
 
