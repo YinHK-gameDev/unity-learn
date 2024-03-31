@@ -107,7 +107,7 @@ When you view a Lighting Settings Asset in the Inspector, this property is at th
 
 | Property | Function: |
 | --- | --- |
-| Auto Generate | If Auto Generate is enabled, Unity precomputes lighting data automatically when you make changes to the Scene.This data includes lightmaps for the Baked Global Illumination system, data for the Enlighten Realtime Global Illumination system, Light Probes, and Reflection Probes.Unity usually begins the bake a few seconds after you make a change to the Scene. If Auto Generate is disabled, you must manually invoke a bake yourself, using the Generate Lighting button in the Lighting window, or the Lightmapping.Bake or Lightmapping.BakeAsync APIs.Note that when you precompute lighting data using Auto Generate, the precomputed lighting data is not stored as Assets in your Project. It is instead stored in memory, and serialized as part of the Scene. |
+| Auto Generate | If Auto Generate is **enabled**, **Unity precomputes lighting data automatically when you make changes to the Scene.This data includes lightmaps for the Baked Global Illumination system, data for the Enlighten Realtime Global Illumination system, Light Probes, and Reflection Probes**. Unity usually **begins the bake a few seconds after you make a change to the Scene**. If Auto Generate is **disabled**, you **must manually invoke a bake yourself, using the Generate Lighting button in the Lighting window, or the Lightmapping**. Bake or Lightmapping.BakeAsync APIs.Note that when you precompute lighting data using Auto Generate, the precomputed lighting data is not stored as Assets in your Project. It is instead stored in memory, and serialized as part of the Scene. |
 
 
 
