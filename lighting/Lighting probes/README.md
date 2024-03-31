@@ -30,7 +30,8 @@ Similar to lightmaps, **light probes** store **"baked" information about lightin
 
 ### Light Probes for moving objects (For bounced light)
 
-Lightmapping adds greatly to the realism of a scene by capturing **realistic bounced light as textures** which are **"baked"** onto the **surface of static objects**. However, due to the **nature of lightmapping**, it can **only be applied to non-moving objects marked as Contribute GI**.
+**Lightmapping** adds greatly to the realism of a scene by capturing **realistic bounced light as textures** which are **"baked"** onto the **surface of static objects**. \
+However, due to the **nature of lightmapping**, it can **only be applied to non-moving objects marked as Contribute GI(Global Illumination)**.
 
 
 **Realtime and mixed mode lights** can cast **direct light** on moving objects, moving objects **do not receive bounced light** from your **static** environment unless you use **light probes**. 
