@@ -71,7 +71,7 @@ To assign a Lightmap Parameters Asset to a **Mesh Renderer** component:
 - In the mesh Renderer component, go to **Lightmapping > Lightmap Parameters**.
 - Select an option from the menu. Select **Scene Default Parameter** to use the same Lightmap Parameters Asset that’s assigned to the whole Scene.
 
-To assign a Lightmap Parameters Asset to a **Terrain** component:
+To assign a **Lightmap Parameters Asset** to a **Terrain** component:
 
 - In the Inspector, go to **Terrain > Terrain Settings > Lighting**
 - Enable **Contribute Global Illumination**
