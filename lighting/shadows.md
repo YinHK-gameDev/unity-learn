@@ -20,6 +20,8 @@ https://en.wikipedia.org/wiki/Shadow_mapping
 
 https://www.youtube.com/watch?v=PTIC1oQzxno
 
+https://docs.unity3d.com/Manual/shadow-mapping.html
+
 ### Shadow map resolution
 
 To calculate the resolution of a shadow map, Unity:
@@ -99,4 +101,4 @@ https://docs.unity3d.com/Manual/ShadowPerformance.html
 Realistic Shadows in Unity with HDRP \
 https://www.youtube.com/watch?v=N_TeKoMC3hg
 
-
+https://docs.unity3d.com/Manual/Shadows.html
