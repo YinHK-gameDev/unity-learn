@@ -13,8 +13,8 @@ Enlighten Realtime Global Illumination (Realtime GI) is useful for Lights that c
  ### Using Enlighten Realtime Global Illumination
  To enable Enlighten Realtime Global Illumination in your Scene, open the **Lighting window** (menu: **Window > Rendering > Lighting**) and **enable Realtime Global Illumination**.
  
-To disable the effect of **Realtime GI** on a specific Light, select the Light GameObject
- and, in the Light component, set the **Indirect Multiplier** to 0. This means that the Light doesn’t contribute any indirect light to the Scene.
+To **disable the effect** of **Realtime GI** on a specific Light, **select the Light GameObject
+ and, in the Light component**, set the **Indirect Multiplier** to 0. This means that the Light **doesn’t contribute any indirect light** to the Scene.
  
 To **disable Realtime GI** altogether, open the Lighting window (menu: **Window > Rendering > Lighting**) and uncheck Realtime Global Illumination.
  
