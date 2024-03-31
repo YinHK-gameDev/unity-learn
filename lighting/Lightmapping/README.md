@@ -50,6 +50,8 @@ Lightmap Parameters Assets **allow you to quickly create presets optimized for d
 
 To create a new Lightmap Parameters Asset, right-click in the **Project window** and go to **Create > Lightmap Parameters**. Unity stores this in your Project folder. Or **Assets > Create > Lightmap Parameters**.
 
+https://docs.unity3d.com/Manual/class-LightmapParameters.html
+
 ### Assigning Lightmap Parameters Assets
 
 #### Scenes
