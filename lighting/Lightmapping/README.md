@@ -48,7 +48,7 @@ A **Lightmap Parameters Asset** contains a **set of values for the parameters th
 Lightmap Parameters Assets **allow you to quickly create presets optimized for different types of GameObjects**, or **for different platforms** and **different Scene types** (for example, indoor or outdoor Scenes).
 
 
-To create a new Lightmap Parameters Asset, right-click in the **Project window** and go to** Create > Lightmap Parameters**. Unity stores this in your Project folder. Or **Assets > Create > Lightmap Parameters**.
+To create a new Lightmap Parameters Asset, right-click in the **Project window** and go to **Create > Lightmap Parameters**. Unity stores this in your Project folder. Or **Assets > Create > Lightmap Parameters**.
 
 ### Assigning Lightmap Parameters Assets
 
