@@ -120,15 +120,14 @@ https://docs.unity3d.com/Manual/class-LightingSettings.html
 The **Lighting Mode** determines the **behavior of all Mixed Lights in all Scenes** that **use the Lighting Settings Asset**. 
 
 - **Baked Indirect**: \
-  combines real-time direct lighting with baked indirect lighting. It provides real-time shadows. This Lighting Mode offers realistic lighting and reasonable shadow fidelity, and is suitable for mid-range hardware.
+  **combines real-time direct lighting with baked indirect lighting**. It provides real-time shadows. This Lighting Mode offers realistic lighting and reasonable shadow fidelity, and is suitable for mid-range hardware.
 - **Shadowmask**: \
-  combines real-time direct lighting with baked indirect lighting. It enables baked shadows for distant GameObjects
-, and blends them automatically with real-time shadows. It is the most realistic, but also the most resource-intensive Lighting Mode. You can use Quality Settings to configure its performance and visual fidelity. This Lighting Mode is suitable for high-end or mid-range hardware.
+  **combines real-time direct lighting with baked indirect lighting**. It **enables baked shadows for distant GameObjects**, and **blends them automatically with real-time shadows**. It is the **most realistic, but also the most resource-intensive Lighting Mode**. You can use Quality Settings to configure its performance and visual fidelity. This Lighting Mode is suitable for high-end or mid-range hardware.
 - **Subtractive** \
-  provides baked direct and indirect lighting. It renders direct real-time shadows for one Directional Light only. This Lighting Mode doesn’t provide particularly realistic lighting results, and is suitable for stylized art or low-end hardware.
+  provides baked direct and indirect lighting. It **renders direct real-time shadows for one Directional Light only**. This Lighting Mode **doesn’t provide particularly realistic lighting results**, and is **suitable for stylized art or low-end hardware**.
  
 #### Baked Indirect
-When you set a Scene’s Lighting Mode to Baked Indirect, **Mixed Lights behave like Realtime Lights**, with the additional benefit of baking indirect lighting into lightmaps. GameObjects lit by Mixed Lights cast real-time shadows up to the Shadow Distance you define in the Project.
+When you set a Scene’s Lighting Mode to **Baked Indirect**, **Mixed Lights behave like Realtime Lights**, with the additional benefit of **baking indirect lighting into lightmaps**. GameObjects lit by **Mixed Lights cast real-time shadows up to the Shadow Distance you define in the Project**.
 
 When you set a Scene’s Lighting Mode to Baked Indirect, Mixed Lights behave as follows:
 
@@ -144,7 +143,7 @@ When you set a Scene’s Lighting Mode to Baked Indirect, Mixed Lights behave as
   - Real-time shadows from dynamic GameObjects, using the shadow map, up to the Shadow Distance.
 
 #### Shadowmask
-Similar to Baked Indirect Lighting Mode, Shadowmask Lighting Mode combines real-time direct lighting with baked indirect lighting. However, Shadowmask Lighting Mode differs from Baked Indirect Lighting Mode in the way that it renders shadows. Shadowmask Lighting Mode allows Unity to combine baked and real-time shadows at runtime, and to render shadows in the far distance. It does this by using an additional lightmap Texture known as a shadow mask, and by storing additional information in Light Probes.
+Similar to **Baked Indirect Lighting Mode**, **Shadowmask** Lighting Mode **combines real-time direct lighting with baked indirect lighting**. However, Shadowmask Lighting Mode differs from Baked Indirect Lighting Mode in the way that it renders shadows. Shadowmask Lighting Mode **allows Unity to combine baked and real-time shadows at runtime**, and to **render shadows in the far distance**. It does this by using an additional lightmap Texture known as a **shadow mask**, and by **storing additional information in Light Probes**.
 
 Shadowmask Lighting Mode provides the highest fidelity shadows among all the Lighting Modes, but has the highest performance cost and memory requirements. It is suitable for rendering realistic scenes where distant GameObjects are visible, such as open worlds, on high-end or mid-range hardware.
 
@@ -152,11 +151,10 @@ https://docs.unity3d.com/Manual/LightMode-Mixed-Shadowmask.html
 
 
 #### Subtractive
-In Subtractive Lighting Mode, all Mixed Lights in your Scene provide baked direct and indirect lighting. Unity bakes shadows cast by static GameObjects
- into the lightmaps
-. In addition to the baked shadows, one Directional Light, known as the Main Directional Light, provides real-time shadows for dynamic GameObjects.
+In **Subtractive Lighting Mode**, all Mixed Lights in your Scene provide **baked direct and indirect lighting**. Unity bakes shadows **cast by static GameObjects
+ into the lightmaps**. In addition to the baked shadows, one Directional Light, known as the Main Directional Light, provides real-time shadows for dynamic GameObjects.
 
-Because shadows are baked into the lightmaps, Unity doesn’t have the information it needs to accurately combine baked and real-time shadows at runtime. Instead, Unity provides a Realtime Shadow Color for reducing the contribution from the lightmap to create the illusion of a correct blend between baked and real-time shadows. You can also tweak the color to achieve a certain artistic style.
+Because **shadows are baked into the lightmaps**, Unity doesn’t have the information it needs to accurately combine baked and real-time shadows at runtime. Instead, Unity provides a Realtime Shadow Color for reducing the contribution from the lightmap to create the illusion of a correct blend between baked and real-time shadows. You can also tweak the color to achieve a certain artistic style.
 
 
 https://docs.unity3d.com/Manual/LightMode-Mixed-Subtractive.html
