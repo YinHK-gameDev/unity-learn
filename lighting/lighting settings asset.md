@@ -4,6 +4,7 @@ A Lighting Settings Asset represents a **saved instance** of the **`LightingSett
 
 > You can assign the same **`Lighting Settings Asset`** or **instance of the LightingSettings class to more than one Scene**, which makes it easy to share **`Global Illumination system settings`** across multiple Scenes.
 
+![](./img/lighting_setting_asset.png)
 
 ### Creating a Lighting Settings Asset
 There are two ways to create a Lighting Settings Asset in the Unity Editor.
