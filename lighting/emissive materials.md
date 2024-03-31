@@ -14,7 +14,8 @@ Example:
 
 Materials with an emission above zero will still appear to glow brightly on-screen even if they are not contributing to scene lighting.
 
-> **Note**: Emissive materials only directly affect static geometry in your scene. If you need dynamic, or non-static geometry - such as characters, to pick up light from emissive materials, **Light Probes**
+> **Note**: **Emissive materials only directly affect static geometry** in your scene. \
+> If you need **dynamic**, or **non-static geometry** - such as **characters**, to pick up light from emissive materials, **Light Probes**
  must be used.
  
 ### Set up emissive materials
