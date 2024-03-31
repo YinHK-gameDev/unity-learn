@@ -43,7 +43,8 @@ https://docs.unity3d.com/Manual/LightProbes-MovingObjects.html
 
 ### Light Probes and the Mesh Renderer
 
-To use Light Probes on your moving GameObjects, the Mesh Renderer component on the moving GameObject must be set correctly. The **Mesh Renderer** component has a Light Probes setting which is set to **Blend Probes** by default. 
+To use Light Probes on your moving GameObjects, the Mesh Renderer component on the moving GameObject must be set correctly. \
+The **Mesh Renderer** component has a Light Probes setting which is set to **Blend Probes** by default. \
 This means that by default, all GameObjects will use light probes and will **blend between the nearest probes** as it changes position in your scene.
 
 
