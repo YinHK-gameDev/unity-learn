@@ -11,6 +11,21 @@ In C# code, the **MeshRenderer class** represents a **Mesh Renderer** component.
 
 ![](./img/class-MeshRenderer-0.png)
 
+**A: Materials**
+- The Materials section lists all the materials that this component uses.
+
+**B: Lighting** 
+- The Lighting section contains properties that relate to lighting.
+
+**C: Lightmapping** 
+- he Lightmapping section contains properties **relating to baked** and **real-time lightmaps**.
+
+**D: Probes** 
+- The Probes section contains properties **relating to Light Probe** and **Reflection Probes**.
+
+**E: Additional Settings** 
+- The Additional Settings section contains additional properties.
+
 https://docs.unity3d.com/Manual/class-MeshRenderer.html
 
 
