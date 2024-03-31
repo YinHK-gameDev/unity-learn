@@ -18,7 +18,7 @@ Materials with an emission above zero will still appear to glow brightly on-scre
  must be used.
  
 ### Set up emissive materials
-In the material inspecter, check the checkbox and change its color in emission field.
+In the **material inspecter**, check the **checkbox and change its color in emission field**.
 Open **Lighting window**, click generating lighting.
  
 ### ref
