@@ -54,24 +54,20 @@ or **Shadows Only to allow shadows to be cast by an invisible GameObject**.
 
 Use the **Shadow Distance property** to **determine the distance from the Camera up to which Unity renders real-time shadows**.
 
-Shadows from GameObjects
- become less noticeable the farther the GameObjects are from the Camera. This is both because the shadows appear smaller on the screen, and because distant GameObjects are usually not the focus of attention. You can take advantage of this effect by disabling real-time shadow rendering for distant GameObjects.  
-This saves on wasted rendering operations, and can improve runtime performance. Additionally, the Scene
- often looks better without distant shadows.
+**Shadows from GameObjects become less noticeable the farther the GameObjects are from the Camera. This is both because the shadows appear smaller on the screen, and because distant GameObjects are usually not the focus of attention**. You can take advantage of this effect by **disabling real-time shadow rendering for distant GameObjects**.  
+This saves on wasted rendering operations, and can **improve runtime performance**. Additionally, the Scene often looks better without distant shadows.
  
-> To disguise missing shadows beyond the Shadow Distance, you can use visual effects such as **fog**.
+> To **disguise missing shadows** beyond the Shadow Distance, you can use **visual effects** such as **fog**.
  
  
-- In the **Built-in Render Pipeline**, set the Shadow Distance property in your Project’s Quality Settings.
+- In the **Built-in Render Pipeline**, set the Shadow Distance property in your Project’s **Quality Settings**.
 
-- In the **Universal Render Pipeline (URP)**, set the Shadow Distance property in the Universal Render Pipeline Asset.
+- In the **Universal Render Pipeline (URP)**, set the Shadow Distance property in the **Universal Render Pipeline Asset**.
 
-- In the **High Definition Render Pipeline (HDRP)**, set the Shadow Distance property for each Volume.
+- In the **High Definition Render Pipeline (HDRP)**, set the Shadow Distance property for **each Volume**.
 
 
-If your Scene uses the Shadowmask Lighting Mode, Unity renders shadows from Mixed Lights
- beyond the Shadow Distance, using either Light Probes
- or a shadow mask Texture. You can configure how Unity renders shadows beyond the Shadow Distance.
+If your **Scene** uses the **Shadowmask Lighting Mode**, Unity **renders shadows from Mixed Lights beyond the Shadow Distance**, using either **Light Probes or a shadow mask Texture**. You can configure **how Unity renders shadows beyond the Shadow Distance**.
 
 ### Shadow cascades
 Shadow Cascades help solve a problem called perspective aliasing, where real-time shadows from Directional Lights appear pixelated when they are near the Camera.
