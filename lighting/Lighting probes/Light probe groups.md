@@ -22,7 +22,7 @@ Adding the **Light Probe Group** component to any GameObject in the Scene. Howev
 ### Ringing 
 Under certain circumstances, **Light Probes** exhibit an **unwanted behaviour called "ringing"**.
 
-This often happens when there are significant differences in the light surrounding a Light Probe. For example, if you have bright light on one side of a Light Probe, and no light on the other side, the light intensity can “overshoot” on the back side. This overshoot causes a light spot on the back side.
+This **often happens** when there are **significant differences** in the **light surrounding a Light Probe**. For example, if you have bright light on one side of a Light Probe, and no light on the other side, the light intensity can **"overshoot"** on the back side. This overshoot causes a light spot on the back side.
 
 There are several ways to deal with this:
 
