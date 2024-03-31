@@ -19,7 +19,7 @@ Materials with an emission above zero will still appear to glow brightly on-scre
  
 ### Set up emissive materials
 In the **material inspecter**, check the **checkbox and change its color in emission field**.
-Open **Lighting window**, click generating lighting.
+Open **Lighting window**, click **generating lighting**.
  
 ### ref
 https://vintay.medium.com/creating-emissive-materials-in-unity-efc6f352971
