@@ -40,7 +40,7 @@ To calculate the resolution of a shadow map, Unity:
 Tp configure the real-time and baked shadow settings for each Light component using the Inspector.
 
 
-> Each** Mesh Renderer** in the Scene also has a **Cast Shadow**s and a **Receive Shadows** property, which **must be enabled** as required.
+> Each **Mesh Renderer** in the Scene also has a **Cast Shadow**s and a **Receive Shadows** property, which **must be enabled** as required.
 
 Enable Cast Shadows by selecting On from the drop-down menu to enable or disable shadow casting for the mesh
 . Alternatively, select Two Sided to allow shadows to be cast by either side of the surface (so backface culling is ignored for shadow casting purposes), or Shadows Only to allow shadows to be cast by an invisible GameObject.
