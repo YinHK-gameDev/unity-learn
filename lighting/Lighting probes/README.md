@@ -16,7 +16,7 @@ Similar to lightmaps, **light probes** store **"baked" information about lightin
 
 - **Light Probes** are **positions in the scene where the light is measured** (probed) during the bake. 
 
-At runtime, the indirect light that hits dynamic GameObjects is approximated using the values from the nearest Light Probes to that object.
+> At runtime, the indirect light that hits dynamic GameObjects is approximated using the values from the nearest Light Probes to that object.
 
 ![](../img/Lightprobe.png)
 
