@@ -70,12 +70,12 @@ This saves on wasted rendering operations, and can **improve runtime performance
 If your **Scene** uses the **Shadowmask Lighting Mode**, Unity **renders shadows from Mixed Lights beyond the Shadow Distance**, using either **Light Probes or a shadow mask Texture**. You can configure **how Unity renders shadows beyond the Shadow Distance**.
 
 ### Shadow cascades
-Shadow Cascades help solve a problem called perspective aliasing, where real-time shadows from Directional Lights appear pixelated when they are near the Camera.
+**Shadow Cascades** help **solve a problem called perspective aliasing**, where **real-time shadows from Directional Lights appear pixelated when they are near the Camera**.
 
 **What are shadow cascades in unity?** \
-Cascaded Shadow maps (CSM) is a know approach that helps to fix the aliasing problem by providing higher resolution of the depth texture near the viewer and lower resolution far away.
+**Cascaded Shadow maps (CSM)** is a know approach that helps to **fix the aliasing problem by providing higher resolution of the depth texture near the viewer and lower resolution far away**.
 
-> **Shadow Cascades** only work with **Directional Lights**.
+> **Note**: **Shadow Cascades** only work with **Directional Lights**.
 
 #### Perspective aliasing
 Perspective aliasing means that shadow map pixels close to the Camera look enlarged and chunky compared to those farther away.
