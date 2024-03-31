@@ -76,9 +76,9 @@ When this setting is enabled, Unity enables the Baked Global Illumination system
 When the Baked Global Illumination system is enabled, Unity uses Baked lights in the Scene for lightmapping only, and Mixed lights behave according to the Lighting Mode setting. When the Baked Global Illumination system is disabled, Unity forces all Baked and Mixed lights in the Scene to act as though they were Realtime Lights.
 
 **Lighting Mode** 
-- Baked Indirect: Use Baked Indirect Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
-- Subtractive: Use Subtractive Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
-- Shadowmask: Use Shadowmask Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
+- **Baked Indirect**: Use Baked Indirect Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
+- **Subtractive**: Use Subtractive Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
+- **Shadowmask**: Use Shadowmask Lighting Mode for all Mixed Lights in the Scenes that use this Lighting Settings Asset.
 
 
 
