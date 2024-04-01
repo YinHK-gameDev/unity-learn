@@ -15,7 +15,11 @@ You should generally place them at every point where the appearance of a reflect
 
 ### How Reflection Probes Work
 
-The visual environment for a point in the scene can be represented by a **cubemap**. This is conceptually like a box with flat images of the view from six directions (up, down, left, right, forward and backward) painted on its **interior surfaces**. Reflective object pass through this box will have those reflective images painted on its surface.
+The **visual environment for a point in the scene can be represented by a** **cubemap**. 
+
+This is conceptually like a box with flat images of the view from **six directions (up, down, left, right, forward and backward)** painted on its **interior surfaces**. 
+
+**Reflective object pass through this box will have those reflective images painted on its surface**.
 
 ![](../img/CubemapDiagram.svg)
 
