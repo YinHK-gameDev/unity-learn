@@ -4,11 +4,11 @@ Traditionally, games have used a technique called ***reflection mapping*** to **
 
 This technique assumes that all reflective objects in the scene can **see** (and therefore reflect) the **exact same surroundings**.
 
-This works quite well for the game’s main character (a shiny car, say) if it is in open space but is unconvincing when the character passes into different surroundings; it looks strange if a car drives into a tunnel but the sky is still visibly reflected in its windows.
+This works quite well for the game’s main character (a shiny car, say) if it is in open space but is unconvincing when the character **passes into different surroundings**; it looks strange if a car drives into a tunnel but the sky is still visibly reflected in its windows.
 
 **Unity improves on basic reflection mapping** through the use of **Reflection Probes**, which **allow the visual environment to be sampled at strategic points** in the scene.
 
-You should generally place them at every point where the appearance of a reflective object would change noticeably (**eg, tunnels, areas near buildings and places where the ground colour changes**). 
+You should generally **place them at every point where the appearance of a reflective object would change noticeably** (**eg, tunnels, areas near buildings and places where the ground colour changes**). 
 
 
 > **Note**: When a **reflective object** **passes near to a probe**, the reflection sampled by the probe can be used for the object’s reflection map. Furthermore, **when several probes are nearby**, Unity can **interpolate between them to allow for gradual changes in reflections**. 
@@ -58,12 +58,12 @@ A probe also **has a zone of effect defined by an invisible box shape** in the s
 
 
 ### Using Custom Probes
-By default, Custom probes work the **same way as Baked probes** but they also have additional options that change this behaviour.
+By default, Custom probes work the **same way as Baked probes** but they also have **additional options** that change this behaviour.
 
 
-The **Dynamic Objects** property on a custom probe’s inspector allows objects that are not marked as **Reflection Probe Static** to be included in the **reflection cubemap**.
+> The **Dynamic Objects** property on a **custom probe’s inspector** allows objects that are not marked as **Reflection Probe Static** to be included in the **reflection cubemap**.
 
-> **Note**: The positions of these objects are still “frozen” in the reflection at the time of baking.
+> **Note**: The positions of these objects are **still “frozen” in the reflection** at the time of baking.
 
 The **Cubemap** property allows you to assign your **own cubemap** to the probe and therefore make it completely independent of what it can **"see"** from its view point. You could use this, say, to set a **skybox** or a **cubemap** generated from your 3D modelling app as the **source for reflection**s.
 
