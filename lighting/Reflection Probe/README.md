@@ -120,6 +120,9 @@ Unity displays different properties in the Reflection Probe Inspector depending 
 - If your Project uses the High Definition **Render Pipeline (HDRP)**, see the HDRP package documentation microsite.
 - If your Project uses the **Built-in Render Pipeline**, Unity displays the following properties:
 
+
+![](../img/1_7x20htkwcgoMAE3odFUZcg.gif)
+
 | Type | Choose whether the probe is for a Baked, Custom, or Realtime setup. If you select Baked, the Reflection Probe does not capture GameObjects at runtime that have their Reflection Probe Static flag disabled. If you want to capture dynamic GameObjects in a baked Reflection Probe, select Custom and enable Dynamic Objects. |
 | --- | --- |
 | Dynamic Objects | (Custom type only) Forces objects not marked as Static to be baked in to the reflection. |
