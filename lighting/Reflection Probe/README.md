@@ -11,7 +11,7 @@ This works quite well for the game’s main character (a shiny car, say) if it i
 You should generally place them at every point where the appearance of a reflective object would change noticeably (**eg, tunnels, areas near buildings and places where the ground colour changes**). 
 
 
-> When a **reflective object** passes near to a probe, the reflection sampled by the probe can be used for the object’s reflection map. Furthermore, when several probes are nearby, Unity can interpolate between them to allow for gradual changes in reflections. 
+> **Note**: When a **reflective object** **passes near to a probe**, the reflection sampled by the probe can be used for the object’s reflection map. Furthermore, **when several probes are nearby**, Unity can **interpolate between them to allow for gradual changes in reflections**. 
 
 ### How Reflection Probes Work
 
