@@ -32,7 +32,7 @@ For an object to show the reflections, its **shader** **must have access to the 
 Reflection probes improve on this by allowing you to set up many **predefined points** in the scene where **cubemap** **snapshots can be taken**. You can therefore **record the surrounding view** at any point in the scene where the reflections differ noticeably.
 
 
-A probe also has a zone of effect defined by an invisible box shape in the scene. A reflective object that passes within a probe’s zone has its reflection cubemap supplied temporarily by that probe. As the object moves from one zone to another, the cubemap changes accordingly.
+A probe also **has a zone of effect defined by an invisible box shape** in the scene. A **reflective object that passes within a probe’s zone has its reflection cubemap supplied temporarily by that probe**. As the object moves from one zone to another, the cubemap changes accordingly.
 
 ### Types of Reflection Probe
 - **Baked** \
