@@ -1,6 +1,6 @@
 ## Reflection Probes
 
-Traditionally, games have used a technique called ***reflection mapping*** to simulate reflections from objects while keeping the processing overhead to an acceptable level. 
+Traditionally, games have used a technique called ***reflection mapping*** to **simulate reflections** from objects while keeping the processing overhead to an acceptable level. 
 
 This technique assumes that all reflective objects in the scene can **see** (and therefore reflect) the exact same surroundings.
 
