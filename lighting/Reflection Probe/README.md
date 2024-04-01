@@ -19,7 +19,7 @@ The **visual environment for a point in the scene can be represented by a** **cu
 
 This is conceptually like a box with flat images of the view from **six directions (up, down, left, right, forward and backward)** painted on its **interior surfaces**. 
 
-**Reflective object pass through this box will have those reflective images painted on its surface**.
+> **Reflective object pass through this box will have those reflective images painted on its surface**.
 
 ![](../img/CubemapDiagram.svg)
 
