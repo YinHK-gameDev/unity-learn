@@ -107,6 +107,12 @@ The probes must be baked before the reflections become visible. If you have the 
 
 
 ### Properties
+Unity displays different properties in the Reflection Probe Inspector depending on the render pipeline hat your Project uses.
+
+- If your Project uses the **Universal Render Pipeline (URP)**, see the URP package documentation microsite.
+- If your Project uses the High Definition **Render Pipeline (HDRP)**, see the HDRP package documentation microsite.
+- If your Project uses the **Built-in Render Pipeline**, Unity displays the following properties:
+
 | Type | Choose whether the probe is for a Baked, Custom, or Realtime setup. If you select Baked, the Reflection Probe does not capture GameObjects at runtime that have their Reflection Probe Static flag disabled. If you want to capture dynamic GameObjects in a baked Reflection Probe, select Custom and enable Dynamic Objects. |
 | --- | --- |
 | Dynamic Objects | (Custom type only) Forces objects not marked as Static to be baked in to the reflection. |
