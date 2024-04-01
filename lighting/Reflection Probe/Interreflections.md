@@ -1,5 +1,5 @@
 ## Interreflections
-You may have seen a situation where two mirrors are placed fairly close together and facing each other. Both mirrors reflect not only the mirror opposite but also the reflections produced by that mirror. The result is an endless progression of reflections between the two; reflection between objects like this are known as **Interreflections**.
+You may have seen a situation where **two mirrors are placed fairly close together and facing each other**. Both mirrors **reflect not only the mirror opposite but also the reflections produced by that mirror**. The result is an **endless progression of reflections** between the two; reflection between objects like this are known as **Interreflections**.
 
 The number of times that a reflection can **"bounce"** back and forth between two objects is controlled in the 
 **Lighting window**; go to **Environment > Environment Reflections** and edit the **Bounces** property. 
