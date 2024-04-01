@@ -2,7 +2,7 @@
 
 Traditionally, games have used a technique called ***reflection mapping*** to **simulate reflections** from objects while keeping the processing overhead to an acceptable level. 
 
-This technique assumes that all reflective objects in the scene can **see** (and therefore reflect) the exact same surroundings.
+This technique assumes that all reflective objects in the scene can **see** (and therefore reflect) the **exact same surroundings**.
 
 This works quite well for the game’s main character (a shiny car, say) if it is in open space but is unconvincing when the character passes into different surroundings; it looks strange if a car drives into a tunnel but the sky is still visibly reflected in its windows.
 
