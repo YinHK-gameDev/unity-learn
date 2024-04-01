@@ -15,7 +15,7 @@ Unity gradually **fades out one probeâ€™s cubemap** while **fading in the otherâ
 - **Blend Probes and Skybox** - Works like **Blend Probes** but also allows the skybox to be used in the blending. You should use this option for objects in the open air, where the sky would always be visible.
 - **Simple** - **Disables blending between probes** when there are two **overlapping** reflection probe volumes.
 
-
+![](./blending.png)
 
 ### ref
 https://docs.unity3d.com/Manual/UsingReflectionProbes.html
