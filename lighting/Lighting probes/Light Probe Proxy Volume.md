@@ -69,7 +69,7 @@ Without Light Probe Proxy Volume
 ### ref 
 https://docs.unity3d.com/Manual/class-LightProbeProxyVolume.html
 
-
+https://www.youtube.com/watch?v=9-2GyLiP974
 
 
 
