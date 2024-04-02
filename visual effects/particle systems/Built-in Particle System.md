@@ -33,7 +33,7 @@ When this property is enabled, Unity displays the bounding volume around the sel
 **Show Only Selected**: \
 When this property is enabled, Unity hides all non-selected Particle Systems, allowing you to focus on producing a single effect.
 
-
+![](./Particle_System.png)
 
 ### Varying properties over time
 
@@ -59,7 +59,7 @@ The **Particle System component** has many **properties**, and for convenience, 
 
 ![](./PartSysMainInsp.png)
 
-![](./Particle_System.png)
+
 
 To expand and collapse modules, click the bar that shows their name. Use the checkbox on the left to enable or disable the functionality of the properties in that module. For example, if you don’t want to vary the sizes of particles over their lifetime, uncheck the Size over Lifetime module.
 
