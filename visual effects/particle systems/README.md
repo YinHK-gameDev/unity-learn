@@ -16,7 +16,7 @@ To provide flexibility when you author a particle system
 - **The Built-in Particle System**: \
   A solution that gives you full read/write access to the system, and the particles it contains, from C# scripts. You can use the Particle System API to create custom behaviors for your particle system.
 - **The Visual Effect Graph**: \
-  A solution that can run on the GPU to simulate millions of particles and create large-scale visual effects. The Visual Effect Graph also includes a visual graph editor to help you author highly customizable visual effects.
+  A solution that can **run on the GPU to simulate millions of particles and create large-scale visual effects**. The Visual Effect Graph also includes a **visual graph editor** to help you author highly **customizable visual effects**.
 
 | Feature | Built-in Particle System | Visual Effect Graph |
 | --- | --- | --- |
