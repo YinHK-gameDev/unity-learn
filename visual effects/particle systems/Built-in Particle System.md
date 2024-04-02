@@ -70,7 +70,12 @@ https://docs.unity3d.com/Manual/ParticleSystemModules.html
 
 
 ### Particle System Force Field
-The Particle System Force Field component **applies forces to particle**s in Particle Systems. To attach this component to a Particle System, enable the External Forces Module in the Particle System, and assign either a Layer Mask, or the specific Force Field component.
+The Particle System Force Field component **applies forces to particle**s in Particle Systems. \
+To **attach this component to a Particle System**, **enable the External Forces Module in the Particle System**, and **assign either a Layer Mask**, or **the specific Force Field component**.
+
+
+![](./Particle_System_Force_Field.png)
+
 
 https://docs.unity3d.com/Manual/class-ParticleSystemForceField.html
 
