@@ -28,3 +28,6 @@ To provide flexibility when you author a particle system
 | Frame buffers | No | In the High Definition Render Pipeline, provides access to the color and depth buffer. For example, you can sample the color buffer and use the result to set particle color, or you can use the depth buffer to simulate collisions. |
 
 
+### ref
+https://docs.unity3d.com/Manual/ChoosingYourParticleSystem.html
+
