@@ -24,6 +24,8 @@ https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@16.0/manual/index.
 
 https://unity.com/visual-effect-graph
 
+https://www.youtube.com/watch?v=0rYj9NbAPrI
+
 ### Scripting API
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@16.0/api/index.html
 
