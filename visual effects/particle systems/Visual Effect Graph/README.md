@@ -17,8 +17,8 @@ The **VFX tab** in the **Project Settings** window controls settings **relevant 
 This tab is **only visible if you install the Visual Effect Graph package**. For information on how to install the Visual Effect Graph
 
 
-![](./vfx-graph-window.png)
-![](./vfx-graph-window-details.png)
+![](../vfx-graph-window.png)
+![](../vfx-graph-window-details.png)
 
 
 ### ref
