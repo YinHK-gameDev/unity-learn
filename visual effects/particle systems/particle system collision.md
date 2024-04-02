@@ -7,8 +7,8 @@ This module controls how particles **collide with GameObjects in the Scene**. Us
 
 -   Click **GameObject** > **Effects** > **Particle System**.
 -   In the **Inspector**, find the Particle System component.
--   In the Particle System component, find the Collision module fold-out.
--   To the left of the fold-out header, enable the checkbox.
+-   In the Particle System component, find the **Collision module** fold-out.
+-   To the left of the fold-out header, **enable the checkbox**.
 
 
 When other objects surround a Particle System, the effect is often more convincing when the particles interact with those objects. For example, water or debris should be obstructed by a solid wall rather than simply passing through it
