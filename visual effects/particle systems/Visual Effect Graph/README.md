@@ -12,9 +12,9 @@ This visual node-based solution enables you to design visual effects, from simpl
 Available for PC, consoles, XR and high-end mobile, VFX Graph has been used in games such as [_V Rising_](https://www.youtube.com/watch?v=C7KTI94LzI8), [_Road 96_](https://www.youtube.com/watch?v=W5ZfH-fbqIQ), [_Hardspace: Shipbreaker_](https://www.youtube.com/watch?v=VWjn3MQHWC8), and _[Syberia: The World Before](https://www.youtube.com/watch?v=L4CIrBygieg)_
 
 ### VFX
-The VFX tab in the Project Settings window controls settings relevant to the Visual Effect Graph.
+The **VFX tab** in the **Project Settings** window controls settings **relevant to the Visual Effect Graph**.
 
-This tab is only visible if you install the Visual Effect Graph package. For information on how to install the Visual Effect Graph
+This tab is **only visible if you install the Visual Effect Graph package**. For information on how to install the Visual Effect Graph
 
 
 ![](./vfx-graph-window.png)
