@@ -20,7 +20,7 @@ This tab is only visible if you install the Visual Effect Graph package. For inf
 
 https://unity.com/how-to/introduction-vfx-graph-unity
 
-https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@16.0/manual/index.html
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/index.html
 
 https://unity.com/visual-effect-graph
 
