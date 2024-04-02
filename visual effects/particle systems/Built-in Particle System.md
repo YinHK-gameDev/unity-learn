@@ -61,6 +61,33 @@ Because the component is quite complicated, the Inspector is divided into a numb
 ### Properties
 The **Particle System component** has many **properties**, and for convenience, the Inspector organises them into collapsible sections called **"modules"**. 
 
+
+- Main Module
+- Emission Module
+- Shape Module
+- Velocity over Lifetime Module
+- Noise Module
+- Limit Velocity over Lifetime Module
+- Inherit Velocity Module
+- Lifetime by Emitter Speed Module
+- Force over Lifetime Module
+- Color over Lifetime Module
+- Color by Speed Module
+- Size over Lifetime Module
+- Size by Speed Module
+- Rotation over Lifetime Module
+- Rotation by Speed Module
+- External Forces Module
+- Collision Module
+- Triggers Module
+- Sub Emitters Module
+- Texture Sheet Animation Module
+- Lights Module
+- Trails Module
+- Custom Data Module
+- Renderer Module
+
+
 ![](./PartSysMainInsp.png)
 
 
