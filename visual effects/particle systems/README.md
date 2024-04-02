@@ -31,3 +31,8 @@ To provide flexibility when you author a particle system
 ### ref
 https://docs.unity3d.com/Manual/ChoosingYourParticleSystem.html
 
+https://www.youtube.com/watch?v=bjZr7gzyvt8
+
+https://www.youtube.com/watch?v=2qeNu2QApAM
+
+
