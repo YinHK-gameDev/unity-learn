@@ -111,7 +111,6 @@ To edit **Visual Effect Graph Assets** in the **Visual Effect Graph window**:
 -   **Select an existing Visual Effect Graph Asset**, and click the **Edit** button in the **Inspector**. This **opens the Visual Effect Graph window with the graph contained in this Asset**.
 -   Select the **Visual Effect component** (menu: next to the Asset template, click **Edit**). This opens the Visual Effect Graph window and with the graph contained in the **referenced Asset**.
 
-
 #### Previewing a graph’s effect
 
 To **preview an effect**, you can:
@@ -122,7 +121,44 @@ To **preview an effect**, you can:
 
 > This lets you edit parameters directly in the Scene, see the lighting on your effect, and use the Target GameObject Panel features for the specific target instance of your effect.
 
-#### The Play Controls Window
+### Visual Effect (Component)
+
+The Visual Effect Component creates an instance of a Visual Effect in the scene, based on a Visual Effect Graph Asset. It controls how the effect plays, renders and let the user customize the instance by editing Exposed Properties.
+
+
+#### The Visual Effect Inspector
+| Item | Description |
+| --- | --- |
+| Asset Template | Object Field that references the Visual Effect Graph Unity uses for this Instance. The **New/Edit** button allows you to create a new visual effect graph asset or edit the current one. When you click **New/Edit**, Unity opens the Visual Effect Graph asset and connects this scene instance to the Target Game Object panel. |
+| Random Seed | An Integer Field that displays the current random seed used for this instance. The **Reseed** button generates a new random seed for this component. |
+| Reseed On Play | Boolean setting that computes a new seed at random every time Unity sends the Play Event to the Visual Effect. |
+| Initial Event Name | Allows Unity to override the Default Event name (string) sent to the component when it is enabled. (Default : _OnPlay_ ). |
+
+**Rendering properties**:
+
+Rendering properties control how the visual effect instance will render and receive lighting. These properties are stored per-instance in the scene and do not apply modifications to the Visual Effect Graph.
+
+| Item | Description |
+| --- | --- |
+| Priority | Controls the Transparency ordering of the effect. This property only appears if the Project uses the High Definition Render Pipeline. |
+| Rendering Layer Mask | This property functions differently depending on which render pipeline your Project uses. •**High Definition Render Pipeline**: Controls the Lighting Layer Mask if it is configured in the HDRP Asset. •**Universal Render Pipeline**: Determines which rendering layer this Renderer exists on. |
+| Reflection Probes | Specifies how reflections in the Scene affect the Renderer. This property only appears if the Project uses the Universal Render Pipeline. |
+| Light Probes | Controls the Use of Light probes to compute the Ambient Lighting of the Effect. |
+| Anchor Override | (Visible Only using Blend Probes option for Light Probes) : Defines an alternative transform to compute the position of the probe sampling. |
+| Proxy Volume Override | (Visible Only using Proxy Volume option for Light Probes) :Defines an alternative Light Probe Proxy volume in order to compute the probe sampling. |
+| Sorting Layer | Specifies the Renderer's group among other SpriteRenderer components. |
+| Order in Layer | Specifies the Renderer's order with a sorting layer relative to other SpriteRenderer components. See also Renderer.sortingOrder. |
+
+**Properties**:
+
+The properties category display any Property that is defined in the Visual Effect Graph Blackboard as an Exposed Property. Every property can be overridden from its default value in order to customize the Visual Effect instance in the scene. Some properties can also be edited using Gizmos directly in the scene.
+
+| Item | Description |
+| --- | --- |
+| Show Property Gizmos | Toggles the display of the editing gizmos used to set up some exposed properties (Spheres, Boxes, Cylinders, Transforms, Positions). You can access each gizmo using its dedicated button next to its property. |
+| Properties | All properties that have been exposed in the Visual Effect Graph Asset. You can edit these properties for this instance of the Visual Effect. |
+
+### The Play Controls Window
 The Play Controls window displays UI Elements that give you control over the currently selected instance of a Visual Effect. It is displayed in the bottom-right corner of the Scene View, when a Visual Effect Game Object is selected.
 
 
