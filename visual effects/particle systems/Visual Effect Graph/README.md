@@ -21,6 +21,18 @@ This tab is **only visible if you install the Visual Effect Graph package**. For
 ![](../vfx-graph-window-details.png)
 
 
+#### Using a Visual Effect Graph
+Use a Visual Effect Graph to:
+
+- Create one or multiple Particle Systems.
+- Add static meshes and control Shader properties.
+- Create properties to customize the instances you use in the Scene.
+- Create events to turn parts of your effect on and off. You can then send these events from the Scene via C# or Timeline.
+- Extend the library of features by creating sub-graphs of the Nodes that you commonly use.
+- Use a Visual Effect Graph in another Visual Effect Graph. For example, you can reuse and customize a simple but configurable explosion in more complex graphs.
+- Previews changes immediately, so you can simulate effects at various rates and perform step-by-step simulation. For instructions on how to install the Visual Effect Graph, see Getting started with Visual Effect Graph.
+
+
 
 ### Unity Visual Effect Graph - Samples
 https://github.com/Unity-Technologies/VisualEffectGraph-Samples
