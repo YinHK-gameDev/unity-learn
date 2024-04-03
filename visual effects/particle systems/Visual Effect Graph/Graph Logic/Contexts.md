@@ -7,6 +7,9 @@ Contexts connect to one another sequentially to define the lifecycle of particle
 
 Contexts connect to one another sequentially to define the lifecycle of particles. After a graph creates new particles, the **Initialize** Context can connect to an **Update Particle** Context to simulate each particle. Also, the **Initialize** Context can instead connect directly to an **Output Particle** Context to render the particles without simulating any behavior.
 
+![](./img/system_context.png)
+
+
 #### Creating and connecting Contexts
 A Context is a type of graph element so to create one, see Adding graph elements.
 
