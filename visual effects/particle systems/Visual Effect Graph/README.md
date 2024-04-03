@@ -42,7 +42,13 @@ A Visual Effect Graph Asset is a **data container** that the Visual Effect Graph
 -   Compiled Shaders
 -   Operator bytecode
 
+![](./img/VFX_asset1.png)
+
+
 #### Visual Effect Asset Inspector
+
+![](./img/VFX_asset2.png)
+
 | Property Name | Description / Values |
 | --- | --- |
 | **Fixed Delta Time** | Indicates whether to update the visual effect at the rate that the **Fixed Time Step** property defines in the Visual Effect Project Settings|
@@ -55,6 +61,8 @@ A Visual Effect Graph Asset is a **data container** that the Visual Effect Graph
 | **Initial Event Name** | Sets the name of the Event that Unity sends when the effect enables. The default value is **OnPlay**, but you can change this to another name, or even a blank field, to make it so that every system does not spawn by default. |
 | **Output Render Order** | Defines a list that shows every Output Context in their rendering order. You can re-order this list to change the order that Unity renders the Output Contexts. Unity draws items at the top of the list first then progressively draws those lower down the list in front of those above. |
 | **Shaders** | Defines a list of every Shader that Unity has compiled for the Visual Effect Graph. These are read-only and mainly for debugging purposes. Use **Shader Externalization** in Visual Effect Preferences to externalize Shaders temporarily for debugging purposes. |
+
+
 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/VisualEffectGraphAsset.html
 
