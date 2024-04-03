@@ -20,7 +20,10 @@ This tab is **only visible if you install the Visual Effect Graph package**. For
 ![](../vfx-graph-window.png)
 ![](../vfx-graph-window-details.png)
 
-
+- **Toolbar (Red)** : This bar contains controls that affect the Visual Effect Graph globally. This includes controls that specify when Unity compiles the Visual Effect Graph as well as controls that let you display/hide certain panels.
+- **Node Workspace (Green)** : This is where you can view and edit the Visual Effect Graph.
+- **Blackboard (Blue)** : This panel displays the properties that the Visual Effect Graph uses.
+- **VFX Control (Purple)** : This panel displays controls for the GameObject currently attached.
 
 **Use a Visual Effect Graph to:**
 
