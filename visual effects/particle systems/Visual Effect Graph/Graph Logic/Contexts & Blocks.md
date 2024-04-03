@@ -69,6 +69,16 @@ To customize **Output** Contexts, you can add compatible **Blocks** to them.
 Blocks are Nodes that **define the behavior of a Context**. \
 You can **create and reorder Blocks within a Context** and, when Unity plays a visual effect, Blocks execute from top to bottom.
 
+Blocks are Nodes that you **can stack into a Context**. Every Block is in charge of one operation. For example, it can apply a force to the velocity, collide with a sphere, or set a random color.
+
+When you create a Block, you can reorder it within it current Context, or move it to another compatible Context.
+
+To customize a Block, you can:
+
+-   Adjust a property. To do this, connect a property Port to another Node with an Edge.
+    
+-   Adjust the settings of a property. Settings are editable values without ports that you cannot connect to other Nodes.
+
 > You can use Blocks for many purposes, from simple value storage (for example, a random Color) to high-level complex operations such as Noise Turbulence, Forces, or Collisions.
 
 
