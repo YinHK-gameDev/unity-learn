@@ -62,6 +62,32 @@ Output Contexts render the particles in a system. They render the particles with
 
 To customize **Output** Contexts, you can add compatible **Blocks** to them.
 
+
+
+
+### Blocks
+Blocks are Nodes that **define the behavior of a Context**. \
+You can **create and reorder Blocks within a Context** and, when Unity plays a visual effect, Blocks execute from top to bottom.
+
+> You can use Blocks for many purposes, from simple value storage (for example, a random Color) to high-level complex operations such as Noise Turbulence, Forces, or Collisions.
+
+#### Adding Blocks
+
+To add a Block to a Context, either:
+
+-   Right click the Context and select **Create Block** from the context menu.
+-   With the cursor above a Context, press the spacebar.
+
+**Note**: Unity places the Block that you create at the closest position to the cursor. Use this behavior to place Blocks in the correct position.
+
+
+![](./img/Block1.png)
+
+
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Blocks.html
+
+
+
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Contexts.html
 
