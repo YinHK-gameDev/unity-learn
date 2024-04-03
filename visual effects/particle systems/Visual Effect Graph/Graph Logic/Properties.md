@@ -1,6 +1,6 @@
 ## Properties
 
-Properties are editable fields that you can connect to graph elements using Property workflow. 
+Properties are **editable fields** that you can connect to graph elements using Property workflow. 
 They can be found on graph elements such as **Contexts, Blocks and Operators**.
 
 
