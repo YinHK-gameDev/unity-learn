@@ -71,6 +71,9 @@ You can **create and reorder Blocks within a Context** and, when Unity plays a v
 
 > You can use Blocks for many purposes, from simple value storage (for example, a random Color) to high-level complex operations such as Noise Turbulence, Forces, or Collisions.
 
+
+![](./img/Block1.png)
+
 #### Adding Blocks
 
 To add a Block to a Context, either:
@@ -81,8 +84,7 @@ To add a Block to a Context, either:
 **Note**: Unity places the Block that you create at the closest position to the cursor. Use this behavior to place Blocks in the correct position.
 
 
-![](./img/Block1.png)
-
+![](./img/Block2.png)
 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Blocks.html
 
