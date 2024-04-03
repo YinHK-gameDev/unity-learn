@@ -127,6 +127,10 @@ The Visual Effect Component creates an instance of a Visual Effect in the scene,
 
 
 #### The Visual Effect Inspector
+
+![](./img/VFX_Component.png)
+
+
 | Item | Description |
 | --- | --- |
 | Asset Template | Object Field that references the Visual Effect Graph Unity uses for this Instance. The **New/Edit** button allows you to create a new visual effect graph asset or edit the current one. When you click **New/Edit**, Unity opens the Visual Effect Graph asset and connects this scene instance to the Target Game Object panel. |
