@@ -21,6 +21,10 @@ This tab is **only visible if you install the Visual Effect Graph package**. For
 ![](../vfx-graph-window-details.png)
 
 
+
+### Unity Visual Effect Graph - Samples
+https://github.com/Unity-Technologies/VisualEffectGraph-Samples
+
 ### ref
 
 https://unity.com/how-to/introduction-vfx-graph-unity
