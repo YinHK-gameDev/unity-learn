@@ -116,6 +116,18 @@ To edit **Visual Effect Graph Assets** in the **Visual Effect Graph window**:
 -   **Select an existing Visual Effect Graph Asset**, and click the **Edit** button in the **Inspector**. This **opens the Visual Effect Graph window with the graph contained in this Asset**.
 -   Select the **Visual Effect component** (menu: next to the Asset template, click **Edit**). This opens the Visual Effect Graph window and with the graph contained in the **referenced Asset**.
 
+
+#### Adding graph elements
+
+To add graph elements, you can use any of the following methods:
+
+-   **Right-click Menu** : Right-click to open the menu, select **Add Node**, then select the **Node** you want to add from the menu. This action is context-sensitive, based on the element that is below your cursor, and only provides you with graph elements that are compatible.
+-   **Spacebar Menu** : This shortcut is the equivalent of making a right-click, then selecting **Add Node**.
+-   Interactive Connections : When creating an edge from a port (either property or workflow), drag the edge around and release the click into empty space to display the Node Menu. This action is context-sensitive, based on the source port's type, and only provides you with compatible graph elements that you can connect to.
+
+
+
+
 #### Previewing a graph’s effect
 
 To **preview an effect**, you can:
