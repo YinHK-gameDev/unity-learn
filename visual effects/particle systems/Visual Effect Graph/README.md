@@ -33,6 +33,17 @@ This tab is **only visible if you install the Visual Effect Graph package**. For
 - Previews changes immediately, so you can simulate effects at various rates and perform step-by-step simulation. For instructions on how to install the Visual Effect Graph, see Getting started with Visual Effect Graph.
 
 
+### Visual Effect Graph Assets
+
+A Visual Effect Graph Asset is a **data container** that the Visual Effect Graph uses the play a visual effect. It includes:
+
+-   Graph elements
+-   Exposed properties
+-   Compiled Shaders
+-   Operator bytecode
+
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/VisualEffectGraphAsset.html
+
 ### Using a Visual Effect Graph
 Visual Effect Graph is a Unity package that uses a Scriptable Render Pipeline to render visual effects. Visual Effect graph uses on compute Shaders to simulate effects.
 
