@@ -33,7 +33,9 @@ https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/index.
 
 https://unity.com/visual-effect-graph
 
-https://www.youtube.com/watch?v=LhvnIOlmXMM
+https://www.youtube.com/watch?v=LhvnIOlmXMM 
+
+https://www.youtube.com/watch?v=h4SBACYb26k
 
 https://glarity.app/zh-TW/videosummary/education/unity-vfx-graph-spawn-effect-tutorial-16577475_1748925
 
