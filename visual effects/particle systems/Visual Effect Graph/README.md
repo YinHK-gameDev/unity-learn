@@ -25,6 +25,8 @@ This tab is **only visible if you install the Visual Effect Graph package**. For
 - **Blackboard (Blue)** : This panel displays the properties that the Visual Effect Graph uses.
 - **VFX Control (Purple)** : This panel displays controls for the GameObject currently attached.
 
+![](./img/VFX_Control.png)
+
 **Use a Visual Effect Graph to:**
 
 - Create one or multiple Particle Systems.
