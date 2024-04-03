@@ -21,8 +21,8 @@ This tab is **only visible if you install the Visual Effect Graph package**. For
 ![](../vfx-graph-window-details.png)
 
 
-#### Using a Visual Effect Graph
-Use a Visual Effect Graph to:
+
+**Use a Visual Effect Graph to:**
 
 - Create one or multiple Particle Systems.
 - Add static meshes and control Shader properties.
@@ -33,6 +33,62 @@ Use a Visual Effect Graph to:
 - Previews changes immediately, so you can simulate effects at various rates and perform step-by-step simulation. For instructions on how to install the Visual Effect Graph, see Getting started with Visual Effect Graph.
 
 
+### Using a Visual Effect Graph
+Visual Effect Graph is a Unity package that uses a Scriptable Render Pipeline to render visual effects. Visual Effect graph uses on compute Shaders to simulate effects.
+
+
+#### Installing Visual Effect Graph:
+
+1. Open a Unity project. 2. Open the **Package Manager** window (**Window > Package Manager**). 3. In the **Package Manager** window, in the **Packages** field, select **Unity Registry**.4. Select **Visual Effect Graph** from the list of packages. 5. In the bottom right corner of the Package Manager window, select **Install**. Unity installs Visual Effect Graph into your Project.
+
+
+#### Creating Visual Effect Graphs:
+
+To use Visual Effect Graph, you **must first create a Visual Effect Graph Asset**.
+
+**To create a Visual Effect Graph Asset:**
+
+ - In Unity, click **Assets > Create > Visual Effects > Visual Effect Graph**.
+
+**To make a copy of a Visual Effect Graph Asset:**
+
+- In the Project window, select the Visual Effect Asset you want to make a copy of.
+- In the top navigation bar, select **Edit > Duplicate**. You’ve now created a copy.
+
+
+#### Using Visual Effect Graphs in Scenes
+
+To use a **Visual Effect Graph**, you **must add a Visual Effect** to the Scene.
+
+To do so, you can:
+
+-   **Drag and drop a Visual Effect Graph Asset** from the Project Window into the Hierarchy Window. \
+    When you **drop the Asset on an existing GameObject**, this **adds a new child GameObject with a Visual Effect Component**, and **assigns the graph to it**. \
+    When you **drop the Asset on an empty space**, Unity **creates a new Visual Effect GameObject** and **assigns the graph to it**.
+-   **Drag and drop a Visual Effect Graph Asset** from the Project Window to the Scene View Window. This **makes the graph appear in front of the Camera**.
+
+> When you’ve **added the Visual Effect Graph Asset to Hierarchy**, Unity **attaches the Asset to a Visual Effect Component**, which **references the Asset**.
+
+
+#### Editing a Visual Effect Graph
+
+To edit **Visual Effect Graph Assets** in the **Visual Effect Graph window**:
+
+-   Open the **Visual Effect Graph window** (menu: **Window** > **Visual Effects**) with an empty graph. This prompts you to **open a Visual Effect Graph Asset**.
+-   **Select an existing Visual Effect Graph Asset**, and click the **Edit** button in the **Inspector**. This **opens the Visual Effect Graph window with the graph contained in this Asset**.
+-   Select the **Visual Effect component** (menu: next to the Asset template, click **Edit**). This opens the Visual Effect Graph window and with the graph contained in the **referenced Asset**.
+
+
+#### Previewing a graph’s effect
+
+To **preview an effect**, you can:
+
+-   Select a **Visual Effect Graph Asset** and **use the Inspector Preview window**.
+    
+-   **Place your effect directly in the Scene** as a **Visual Effect GameObject**.
+
+> This lets you edit parameters directly in the Scene, see the lighting on your effect, and use the Target GameObject Panel features for the specific target instance of your effect.
+
 
 ### Unity Visual Effect Graph - Samples
 https://github.com/Unity-Technologies/VisualEffectGraph-Samples
@@ -42,6 +98,9 @@ https://github.com/Unity-Technologies/VisualEffectGraph-Samples
 https://unity.com/how-to/introduction-vfx-graph-unity
 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/index.html
+
+**The Visual Effect Graph window** \
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/VisualEffectGraphWindow.html
 
 https://unity.com/visual-effect-graph
 
