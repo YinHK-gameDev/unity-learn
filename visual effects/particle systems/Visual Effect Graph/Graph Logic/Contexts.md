@@ -13,6 +13,10 @@ Contexts connect to one another sequentially to define the lifecycle of particle
 #### Creating and connecting Contexts
 A Context is a type of graph element so to create one, see Adding graph elements.
 
+### Event
+
+Event Contexts only display their name, which is a string. To trigger an Event Context and activate a workflow from it, use the Event Context's name in the component API.
+
 ### Spawn
 
 Spawn Contexts are standalone systems that have three States: Running, Idle, and Waiting.
