@@ -53,14 +53,14 @@ You can **change the default Event** in the following ways:
 - In the component API : **`initialEventID = Shader.PropertyToID("MyEventName");`**.
 - Using the **ExposedProperty Helper Class**.
 
-
+### Property interface
 To access the state and values of Exposed Properties, you can use multiple methods in the Visual Effect component. Most of the API methods allow access to the property via the following methods:
 
 -   A `string` property name. This is easy to use, but is the least optimized method.
 -   An `int` property ID. To generate this ID from a string property name, use `Shader.PropertyToID(string name)`. This is the most optimized method.
 -   The **ExposedProperty Helper Class**. This combines the ease of use the **string property name** provides with the efficiency of the **integer property ID**.
 
-### Checking for exposed properties
+#### Checking for exposed properties
 
 You can check if the component's Visual Effect Graph contains a specific exposed property. To do this, you can use the method from the following group that corresponds to the property's type:
 
@@ -80,7 +80,7 @@ You can check if the component's Visual Effect Graph contains a specific exposed
 For each method, if the Visual Effect Graph contains an exposed property of the correct type with the same name or ID you pass in, the method returns `true`. Otherwise the method returns `false`.
 
 
-### Getting the values of exposed properties
+#### Getting the values of exposed properties
 
 The component API allows you to get the value of an exposed property in the component's Visual Effect Graph. To do this, you can use the method from the following group that corresponds to the property's type:
 
@@ -100,7 +100,7 @@ The component API allows you to get the value of an exposed property in the comp
 For each method, if the Visual Effect Graph contains an exposed property of the correct type with the same name or ID you pass in, the method returns the property's value. Otherwise the method returns the default value for the property type.
 
 
-### Setting the values of exposed properties
+#### Setting the values of exposed properties
 
 The component API allows you to set the value of an exposed property in the component's Visual Effect Graph. To do this, you can use the method from the following group that corresponds to the property's type:
 
@@ -141,7 +141,7 @@ The `eventNameOrId` parameter can be one of the following types:
 
 Event Attributes are **Attributes that attach to Events** and can be processed by the Visual Effect Graph. To create and store Event Attributes, use the **VFXEventAttribute class**. The Visual Effect component is responsible for creating instances of the VFXEventAttribute class and creates them based on the currently assigned Visual Effect Graph.
 
-#### reating Event Attributes
+#### Creating Event Attributes
 
 To create a `VFXEventAttribute`, use the `CreateVFXEventAttribute()` method of the Visual Effect component. If you want to send the same Event multiple times with the same attributes, store the `VFXEventAtrribute`, rather than create a new one every time you send the Event. When you send an Event to a Visual Effect Graph, Unity creates a copy of the EventAttribute in its current state and sends the copy. This means that, after you send the Event, you can safely modify the EventAttribute without affecting the information sent to the Visual Effect Graph.
 
