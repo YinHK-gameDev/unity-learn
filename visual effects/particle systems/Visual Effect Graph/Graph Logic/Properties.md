@@ -28,7 +28,7 @@ Property Nodes are Operators that give access to Graph-Wide Properties defined i
 
 > To create property node, you can drag the property from Blackboard to workspace
 
-> You may use these property nodes to connect any contexts/blocks in the workspace.
+> You may use these property nodes to connect any **contexts/blocks** in the workspace.
 
 
 
