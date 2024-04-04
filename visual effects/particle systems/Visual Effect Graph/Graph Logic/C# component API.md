@@ -7,6 +7,8 @@ The Visual Effect component attaches to GameObjects in your Scene and references
 
 This allows you to create different instances of effects at various positions and orientations, and control each effect independently. To control an effect at runtime, Unity **provides C# API that you can use to modify the Visual Effect component** and **set Property overrides**.
 
+> Use **`UnityEngine.VFX.VisualEffect`** & **`UnityEngine.VFX.VisualEffectAsset`** class to control the Visual Effect Graph
+
 
 ### Setting Visual Effect Graph Asset at runtime
 
