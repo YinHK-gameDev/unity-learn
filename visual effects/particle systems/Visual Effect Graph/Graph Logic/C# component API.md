@@ -183,7 +183,9 @@ void OnTriggerEnter()
 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/ComponentAPI.html
 
+**`UnityEngine.VFX.VisualEffect`**: \
 https://docs.unity3d.com/ScriptReference/VFX.VisualEffect.html
 
-
+**`UnityEngine.VFX.VisualEffectAsset`**: \
+https://docs.unity3d.com/ScriptReference/VFX.VisualEffectAsset.html
 
