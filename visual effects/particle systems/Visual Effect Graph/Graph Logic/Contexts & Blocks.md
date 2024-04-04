@@ -113,6 +113,8 @@ To add a Block to a Context, either:
 
 ![](./img/Block2.png)
 
+![](./img/addBlock.png)
+
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Blocks.html
 
 
