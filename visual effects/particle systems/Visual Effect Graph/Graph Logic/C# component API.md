@@ -8,6 +8,23 @@ The Visual Effect component attaches to GameObjects in your Scene and references
 This allows you to create different instances of effects at various positions and orientations, and control each effect independently. To control an effect at runtime, Unity provides C# API that you can use to modify the Visual Effect component and set Property overrides.
 
 
+### Setting Visual Effect Graph Asset at runtime
+
+To change the Visual Effect Graph at runtime, assign a new Visual Effect Graph Asset to the `effect.visualEffectAsset` property. When you change the Visual Effect Graph, the component resets the value of some of its properties.
+
+The values that reset are:
+
+-   **Total Time**: When you change the graph, the API calls the `Reset()` function which sets this value to 0.0f.
+-   **Event Attributes**: The component discards all Event Attribues
+
+The values that do **not** reset are:
+
+-   **Exposed Property Overrides**: If the new Visual Effect Graph Asset exposes a property that has the same name and type as a property from the previous Asset, the value for this property does not reset.
+-   **Random Seed** and **Reset Seed On Play Value**.
+-   **Default Event Override**.
+-   **Rendering Settings overrides**.
+
+
 ### Controlling play state
 You can use the API to control effect playback.
 
