@@ -1,10 +1,10 @@
 ## Properties
 
-Properties are **editable fields** that you can connect to graph elements using Property workflow. 
+Properties are **editable fields** that you can **connect to graph elements using Property workflow**. 
 They can be found on graph elements such as **Contexts, Blocks and Operators**.
 
 
-Properties are displayed on graph elements and will change their value accordingly to their actual value in the graph : Connecting another property to a property slot will display the computed value of the connected property.
+**Properties are displayed on graph elements and will change their value accordingly to their actual value in the graph** : Connecting another property to a property slot will display the computed value of the connected property.
 
 After disconnecting a connected property, the field reverts to the previously set property value.
 
