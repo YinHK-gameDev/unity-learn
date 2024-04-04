@@ -37,7 +37,7 @@ When this property is enabled, Unity displays the bounding volume around the sel
 **Show Only Selected**: \
 When this property is enabled, Unity hides all non-selected Particle Systems, allowing you to focus on producing a single effect.
 
-![](./Particle_System.png)
+![](../Particle_System.png)
 
 ### Varying properties over time
 
@@ -88,7 +88,7 @@ The **Particle System component** has many **properties**, and for convenience, 
 - Renderer Module
 
 
-![](./PartSysMainInsp.png)
+![](../PartSysMainInsp.png)
 
 
 
@@ -105,7 +105,7 @@ The Particle System Force Field component **applies forces to particle**s in Par
 To **attach this component to a Particle System**, **enable the External Forces Module in the Particle System**, and **assign either a Layer Mask**, or **the specific Force Field component**.
 
 
-![](./Particle_System_Force_Field.png)
+![](../Particle_System_Force_Field.png)
 
 
 https://docs.unity3d.com/Manual/class-ParticleSystemForceField.html
