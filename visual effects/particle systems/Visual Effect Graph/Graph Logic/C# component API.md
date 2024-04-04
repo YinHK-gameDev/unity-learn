@@ -137,6 +137,13 @@ The `eventNameOrId` parameter can be one of the following types:
 > The optional `eventAttribute` parameter attaches an **Event Attribute Payload** to the Event. They payload provides data that the Graph processes with the Event.
 
 
+```cs
+public void SendEvent(int eventNameID);
+public void SendEvent(string eventName);
+public void SendEvent(int eventNameID, VFX.VFXEventAttribute eventAttribute);
+public void SendEvent(string eventName, VFX.VFXEventAttribute eventAttribute);
+```
+
 ### Event Attributes
 
 Event Attributes are **Attributes that attach to Events** and can be processed by the Visual Effect Graph. To create and store Event Attributes, use the **VFXEventAttribute class**. The Visual Effect component is responsible for creating instances of the VFXEventAttribute class and creates them based on the currently assigned Visual Effect Graph.
