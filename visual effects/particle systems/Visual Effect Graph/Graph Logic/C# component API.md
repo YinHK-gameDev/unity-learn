@@ -100,6 +100,65 @@ The component API allows you to set the value of an exposed property in the comp
 
 Each method overrides the value of the corresponding property with the value you pass in.
 
+### Sending Events
+
+
+The component API allows you to send Events to the component's Visual Effect Graph at runtime. To do this, use either of the following methods:
+
+-   `SendEvent(eventNameOrId)`
+-   `SendEvent(eventNameOrId, eventAttribute)`
+
+The `eventNameOrId` parameter can be one of the following types:
+
+-   A `string` property name. This is easy to use, but is the least optimized method.
+-   An `int` property ID. To generate this ID from a string property name, use `Shader.PropertyToID(string name)`. This is the most optimized method.
+-   The **ExposedProperty Helper Class**. This combines the ease of use the string property name provides with the efficiency of the integer property ID.
+
+
+> The optional `eventAttribute` parameter attaches an **Event Attribute Payload** to the Event. They payload provides data that the Graph processes with the Event.
+
+
+### Event Attributes
+
+Event Attributes are **Attributes that attach to Events** and can be processed by the Visual Effect Graph. To create and store Event Attributes, use the **VFXEventAttribute class**. The Visual Effect component is responsible for creating instances of the VFXEventAttribute class and creates them based on the currently assigned Visual Effect Graph.
+
+#### reating Event Attributes
+
+To create a `VFXEventAttribute`, use the `CreateVFXEventAttribute()` method of the Visual Effect component. If you want to send the same Event multiple times with the same attributes, store the `VFXEventAtrribute`, rather than create a new one every time you send the Event. When you send an Event to a Visual Effect Graph, Unity creates a copy of the EventAttribute in its current state and sends the copy. This means that, after you send the Event, you can safely modify the EventAttribute without affecting the information sent to the Visual Effect Graph.
+
+#### Setting the Attribute's payload
+After you create an Event Attribute, you use API similar to the Has/Get/Set property methods described in the Property interface section to set the Attribute Payload.
+
+-   Has : `HasBool`, `HasVector3`, `HasFloat`,... To check if an Attribute exists.
+-   Get : `GetBool`, `GetVector3`, `GetFloat`,... To get the value of an Attribute.
+-   Set : `SetBool`, `SetVector3`, `SetFloat`,... To set the value of an Attribute.
+
+
+EG:
+
+```cs
+VisualEffect visualEffect;
+VFXEventAttribute eventAttribute;
+
+static readonly ExposedProperty positionAttribute = "Position"
+static readonly ExposedProperty enteredTriggerEvent = "EnteredTrigger"
+
+void Start()
+{
+    visualEffect = GetComponent<VisualEffect>();
+    // Caches an Event Attribute matching the
+    // visualEffect.visualEffectAsset graph.
+    eventAttribute = visualEffect.CreateVFXEventAttribute();
+}
+
+void OnTriggerEnter()
+{
+    // Sets some Attributes
+    eventAttribute.SetVector3(positionAttribute, player.transform.position);
+    // Sends the Event
+    visualEffect.SendEvent(enteredTriggerEvent, eventAttribute);
+}
+```
 
 ### rer
 
