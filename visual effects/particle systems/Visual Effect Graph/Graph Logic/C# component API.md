@@ -179,7 +179,7 @@ void OnTriggerEnter()
 }
 ```
 
-### rer
+### ref
 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/ComponentAPI.html
 
