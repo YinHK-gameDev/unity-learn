@@ -27,4 +27,5 @@ To read from an Attribute, use an Operator or Block:
 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Attributes.html
 
-
+**Standard Attribute Reference**: \
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Reference-Attributes.html
