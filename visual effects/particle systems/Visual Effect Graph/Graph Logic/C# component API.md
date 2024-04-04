@@ -35,6 +35,70 @@ You can **change the default Event** in the following ways:
 - Using the **ExposedProperty Helper Class**.
 
 
+To access the state and values of Exposed Properties, you can use multiple methods in the Visual Effect component. Most of the API methods allow access to the property via the following methods:
+
+-   A `string` property name. This is easy to use, but is the least optimized method.
+-   An `int` property ID. To generate this ID from a string property name, use `Shader.PropertyToID(string name)`. This is the most optimized method.
+-   The ExposedProperty Helper Class. This combines the ease of use the string property name provides with the efficiency of the integer property ID.
+
+### Checking for exposed properties
+
+You can check if the component's Visual Effect Graph contains a specific exposed property. To do this, you can use the method from the following group that corresponds to the property's type:
+
+-   `HasInt(property)`
+-   `HasUInt(property)`
+-   `HasBool(property)`
+-   `HasFloat(property)`
+-   `HasVector2(property)`
+-   `HasVector3(property)`
+-   `HasVector4(property)`
+-   `HasGradient(property)`
+-   `HasAnimationCurve(property)`
+-   `HasMesh(property)`
+-   `HasTexture(property)`
+-   `HasMatrix4x4(property)`
+
+For each method, if the Visual Effect Graph contains an exposed property of the correct type with the same name or ID you pass in, the method returns `true`. Otherwise the method returns `false`.
+
+
+### Getting the values of exposed properties
+
+The component API allows you to get the value of an exposed property in the component's Visual Effect Graph. To do this, you can use the method from the following group that corresponds to the property's type:
+
+-   `GetInt(property)`
+-   `GetUInt(property)`
+-   `GetBool(property)`
+-   `GetFloat(property)`
+-   `GetVector2(property)`
+-   `GetVector3(property)`
+-   `GetVector4(property)`
+-   `GetGradient(property)`
+-   `GetAnimationCurve(property)`
+-   `GetMesh(property)`
+-   `GetTexture(property)`
+-   `GetMatrix4x4(property)`
+
+For each method, if the Visual Effect Graph contains an exposed property of the correct type with the same name or ID you pass in, the method returns the property's value. Otherwise the method returns the default value for the property type.
+
+
+### Setting the values of exposed properties
+
+The component API allows you to set the value of an exposed property in the component's Visual Effect Graph. To do this, you can use the method from the following group that corresponds to the property's type:
+
+-   `SetInt(property,value)`
+-   `SetUInt(property,value)`
+-   `SetBool(property,value)`
+-   `SetFloat(property,value)`
+-   `SetVector2(property,value)`
+-   `SetVector3(property,value)`
+-   `SetVector4(property,value)`
+-   `SetGradient(property,value)`
+-   `SetAnimationCurve(property,value)`
+-   `SetMesh(property,value)`
+-   `SetTexture(property,value)`
+-   `SetMatrix4x4(property,value)`
+
+Each method overrides the value of the corresponding property with the value you pass in.
 
 
 ### rer
