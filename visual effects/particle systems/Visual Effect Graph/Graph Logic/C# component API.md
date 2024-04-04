@@ -30,7 +30,7 @@ You can use the API to control effect playback.
 
 #### Common controls
 
-   **Play** : `effect.Play()` or `effect.Play(eventAttribute)` if needing Event Attributes.
+-   **Play** : `effect.Play()` or `effect.Play(eventAttribute)` if needing Event Attributes.
 -   **Stop** : `effect.Stop()` or `effect.Stop(eventAttribute)` if needing Event Attributes.
 -   **Pause** : `effect.pause = true` or `effect.pause = false`. Unity does not serialize this change.
 -   **Step** : `effect.AdvanceOneFrame()`. This only works if `effect.pause` is set to `true`.
