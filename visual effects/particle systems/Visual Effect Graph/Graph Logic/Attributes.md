@@ -8,12 +8,12 @@ A **System only stores Attributes when it needs them**. This means that the Syst
 
 ### Writing Attributes
 
-To write to an Attribute, use a Block. Blocks are the only graph elements that can write Attributes to the System.
+**To write to an Attribute, use a Block**. **Blocks are the only graph elements that can write Attributes to the System**.
 
-The Visual Effect Graph only stores an Attribute that you write to in simulation data if a later Context reads the Attribute. This means that:
+The Visual Effect Graph **only stores an Attribute** that you write to in simulation data if a later Context reads the Attribute. This means that:
 
--   When you write to an Attribute in Initialize or Update Contexts, the Visual Effect Graph only stores the Attribute in simulation data if a later Update or Output Context reads from the Attribute.
--   When you write to an Attribute in Output Contexts, the Visual Effect Graph does not store the Attribute in simulation data and only uses the Attribute for rendering.
+-   When you write to an Attribute in **Initialize or Update Contexts**, the Visual Effect Graph only stores the Attribute in simulation data if a later Update or Output Context reads from the Attribute.
+-   When you write to an Attribute in **Output Contexts**, the **Visual Effect Graph does not store the Attribute** in simulation data and only uses the Attribute for rendering.
 
 ### Reading Attributes
 
