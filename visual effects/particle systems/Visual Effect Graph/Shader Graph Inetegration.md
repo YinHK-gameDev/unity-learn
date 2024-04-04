@@ -17,6 +17,16 @@ You can make changes to the Shader Graph's Surface Options in the output context
 
 > **Note**: Any edits you make to a Shader Graph in the VFX Graph are local to the VFX Graph and do not affect the Shader Graph asset.
 
+
+### Visual Effect Target
+
+The **Visual Effect Shader Graph Target** enables you to **create custom lit** and **unlit** Shader Graphs to use in visual effects.
+
+To create a Shader Graph that uses the Visual Effect Target, select **Assets** > **Create** > **Shader Graph** > **VFX Shader Graph**.
+
+
+![](./img/GraphSettings_Menu.png)
+
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/sg-working-with.html
 
