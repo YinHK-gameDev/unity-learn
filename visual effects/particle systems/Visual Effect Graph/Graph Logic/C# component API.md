@@ -1,11 +1,11 @@
 ## C# component API
 
 To create an instance of a Visual Effect Graph in a Scene, 
-Unity uses the Visual Effect component. 
+Unity uses the **Visual Effect component**. 
 
-The Visual Effect component attaches to GameObjects in your Scene and references a Visual Effect Graph which defines the visual effect. 
+The Visual Effect component attaches to GameObjects in your Scene and references a **Visual Effect Graph which defines the visual effect**. 
 
-This allows you to create different instances of effects at various positions and orientations, and control each effect independently. To control an effect at runtime, Unity provides C# API that you can use to modify the Visual Effect component and set Property overrides.
+This allows you to create different instances of effects at various positions and orientations, and control each effect independently. To control an effect at runtime, Unity **provides C# API that you can use to modify the Visual Effect component** and **set Property overrides**.
 
 
 ### Setting Visual Effect Graph Asset at runtime
