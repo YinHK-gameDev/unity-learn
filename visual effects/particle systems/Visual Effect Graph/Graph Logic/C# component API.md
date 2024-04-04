@@ -39,7 +39,7 @@ To access the state and values of Exposed Properties, you can use multiple metho
 
 -   A `string` property name. This is easy to use, but is the least optimized method.
 -   An `int` property ID. To generate this ID from a string property name, use `Shader.PropertyToID(string name)`. This is the most optimized method.
--   The ExposedProperty Helper Class. This combines the ease of use the string property name provides with the efficiency of the integer property ID.
+-   The **ExposedProperty Helper Class**. This combines the ease of use the **string property name** provides with the efficiency of the **integer property ID**.
 
 ### Checking for exposed properties
 
