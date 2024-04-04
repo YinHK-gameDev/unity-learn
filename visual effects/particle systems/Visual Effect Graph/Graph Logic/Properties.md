@@ -21,7 +21,9 @@ Properties in Visual Effect Graph can be of any Type, including the following:
 -   AnimationCurve
 -   Gradient
 
-> After 
+> After adding the property in the blackboard, you can modify the value in the property field. And the Property will be **showed in the properties field of the Visual Effect component**. You can modify the value to ovveride it.
+
+
 ### Property Nodes
 
 Property Nodes are Operators that give access to Graph-Wide Properties defined in the Blackboard. These properties allow you to reuse the same value throughout the graph at different places.
