@@ -122,19 +122,19 @@ Each method overrides the value of the corresponding property with the value you
 ### Sending Events
 
 
-The component API allows you to send Events to the component's Visual Effect Graph at runtime. To do this, use either of the following methods:
+The component API **allows you to send Events to the component's Visual Effect Graph at runtime**. To do this, use either of the following methods:
 
--   `SendEvent(eventNameOrId)`
--   `SendEvent(eventNameOrId, eventAttribute)`
+-   **`SendEvent(eventNameOrId)`**
+-   **`SendEvent(eventNameOrId, eventAttribute)`**
 
-The `eventNameOrId` parameter can be one of the following types:
+The **`eventNameOrId`** parameter can be one of the following types:
 
 -   A `string` property name. This is easy to use, but is the least optimized method.
 -   An `int` property ID. To generate this ID from a string property name, use `Shader.PropertyToID(string name)`. This is the most optimized method.
 -   The **ExposedProperty Helper Class**. This combines the ease of use the string property name provides with the efficiency of the integer property ID.
 
 
-> The optional `eventAttribute` parameter attaches an **Event Attribute Payload** to the Event. They payload provides data that the Graph processes with the Event.
+> The optional **`eventAttribute`** parameter attaches an **Event Attribute Payload** to the Event. They payload provides data that the Graph processes with the Event.
 
 
 ```cs
