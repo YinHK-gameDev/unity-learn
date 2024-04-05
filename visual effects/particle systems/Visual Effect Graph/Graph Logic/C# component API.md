@@ -173,14 +173,15 @@ public class SendEventExample : MonoBehaviour
 
 ### Event Attributes
 
-Event Attributes are **Attributes that attach to Events** and can be processed by the Visual Effect Graph. To create and store Event Attributes, use the **`VFXEventAttribute` class**. The Visual Effect component is responsible for creating instances of the **`VFXEventAttribute` class** and creates them based on the currently assigned Visual Effect Graph.
+**Event Attributes** are **Attributes that attach to Events** and can be processed by the Visual Effect Graph. \
+To **create and store Event Attributes**, use the **`VFXEventAttribute` class**. The Visual Effect component is responsible for creating instances of the **`VFXEventAttribute` class** and creates them based on the currently assigned Visual Effect Graph.
 
 #### Creating Event Attributes
 
-To create a `VFXEventAttribute`, use the `CreateVFXEventAttribute()` method of the Visual Effect component. If you want to send the same Event multiple times with the same attributes, store the `VFXEventAtrribute`, rather than create a new one every time you send the Event. When you send an Event to a Visual Effect Graph, Unity creates a copy of the EventAttribute in its current state and sends the copy. This means that, after you send the Event, you can safely modify the EventAttribute without affecting the information sent to the Visual Effect Graph.
+To create a **`VFXEventAttribute`**, use the **`CreateVFXEventAttribute()` method** of the Visual Effect component. If you want to send the same Event multiple times with the same attributes, store the **`VFXEventAtrribute`**, rather than create a new one every time you send the Event. When you send an Event to a Visual Effect Graph, Unity creates a copy of the EventAttribute in its current state and sends the copy. This means that, after you send the Event, you can safely modify the EventAttribute without affecting the information sent to the Visual Effect Graph.
 
 #### Setting the Attribute's payload
-After you create an Event Attribute, you use API similar to the Has/Get/Set property methods described in the Property interface section to set the Attribute Payload.
+After you create an Event Attribute, you **use API similar to the Has/Get/Set property methods described in the Property** interface section to **set the Attribute Payload**.
 
 -   Has : `HasBool`, `HasVector3`, `HasFloat`,... To check if an Attribute exists.
 -   Get : `GetBool`, `GetVector3`, `GetFloat`,... To get the value of an Attribute.
