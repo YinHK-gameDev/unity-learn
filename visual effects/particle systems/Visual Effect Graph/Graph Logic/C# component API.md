@@ -173,7 +173,7 @@ public class SendEventExample : MonoBehaviour
 
 ### Event Attributes
 
-**Event Attributes** are **Attributes that attach to Events** and can be processed by the Visual Effect Graph. \
+**Event Attributes** are **Attributes that attach to Events** and can be **processed by the Visual Effect Graph**. \
 To **create and store Event Attributes**, use the **`VFXEventAttribute` class**. The Visual Effect component is responsible for creating instances of the **`VFXEventAttribute` class** and creates them based on the currently assigned Visual Effect Graph.
 
 #### Creating Event Attributes
