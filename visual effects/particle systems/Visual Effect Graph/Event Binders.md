@@ -1,5 +1,5 @@
 ## Event Binders
-**Event Binders** refer to a **set of MonoBehaviour Scripts that help you trigger Events in Visual Effects** when a particular event happens in the Scene. 
+**Event Binders** refer to a **set of MonoBehaviour Scripts that help you trigger Events in Visual Effects** when a **particular event happens in the Scene**. 
 
  For example, when a Renderer becomes visible. Event Binders can also attach Event Attribute Payloads to the Events that they send.
 
