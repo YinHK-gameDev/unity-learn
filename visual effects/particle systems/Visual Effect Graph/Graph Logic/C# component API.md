@@ -123,7 +123,8 @@ Each method overrides the value of the corresponding property with the value you
 ### Sending Events
 
 
-The component API **allows you to send Events to the component's Visual Effect Graph at runtime**. To do this, use either of the following methods:
+The component API **allows you to send Events to the component's Visual Effect Graph at runtime**. Use this method to send a custom named event. \
+To do this, use either of the following methods:
 
 -   **`SendEvent(eventNameOrId)`**
 -   **`SendEvent(eventNameOrId, eventAttribute)`**
