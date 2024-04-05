@@ -20,8 +20,11 @@ You can add Operator Nodes in the followings ways:
 -   Duplicate Nodes:
     -   Select **Duplicate** in the Context menu (or Ctrl+D).
     -   **Copy**, **Cut** and **Paste** the Operator from Context menu (or Ctrl+C/Ctrl+X then Ctrl+V).
- 
--   
+
+
+![](./img/operator.png)
+
+
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Operators.html
 
