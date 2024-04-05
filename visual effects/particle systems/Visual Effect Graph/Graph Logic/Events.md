@@ -42,9 +42,12 @@ To do this, first **create an Event Context**, then **type the name of your cust
 
 ### Event Attribute Payloads
 
-**Event Attribute payloads** are **attributes** that you **can attach to an Event**. To set these attributes in a Visual Effect Graph, you can use the **Set [Attribute]** Blocks in Spawn Contexts, but you can also **attach them to Events you send from C# scripts**. For information on how to do that latter, see **Component API** .
+**Event Attribute payloads** are **attributes** that you **can attach to an Event**. \
+To **set these attributes** in a **Visual Effect Graph**, you can use the **Set [Attribute]** **Blocks** in **Spawn Contexts**, \
+![](./img/event_attribute.png). \
+but you can also **attach them to Events you send from C# scripts**. For information on how to do that latter, see **Component API** .
 
-Event Attribute Payloads are attributes that implicitly travel through the graph from Events, through Spawn Contexts, and eventually to an Initialize Context. 
+**Event Attribute Payloads are attributes that implicitly travel through the graph from Events**, through **Spawn Contexts**, and eventually to an **Initialize Context**. 
 
 > To **catch a payload** in an Initialize Context, use **Get Source Attribute** Operators or **Inherit [Attribute]** Blocks.
 
