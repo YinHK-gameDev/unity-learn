@@ -146,6 +146,31 @@ public void SendEvent(int eventNameID, VFX.VFXEventAttribute eventAttribute);
 public void SendEvent(string eventName, VFX.VFXEventAttribute eventAttribute);
 ```
 
+Eg:
+```cs
+// The following example triggers the default visual effect play event once every second.
+using UnityEngine;
+using UnityEngine.VFX;
+public class SendEventExample : MonoBehaviour
+{
+    public VisualEffect m_VisualEffect;
+    private float m_Waiting = 1.0f;
+
+    private void Update()
+    {
+        if (m_VisualEffect)
+        {
+            m_Waiting -= Time.deltaTime;
+            if (m_Waiting < 0.0f)
+            {
+                m_Waiting = 1.0f;
+                m_VisualEffect.SendEvent(VisualEffectAsset.PlayEventID);
+            }
+        }
+    }
+}
+```
+
 ### Event Attributes
 
 Event Attributes are **Attributes that attach to Events** and can be processed by the Visual Effect Graph. To create and store Event Attributes, use the **`VFXEventAttribute` class**. The Visual Effect component is responsible for creating instances of the VFXEventAttribute class and creates them based on the currently assigned Visual Effect Graph.
