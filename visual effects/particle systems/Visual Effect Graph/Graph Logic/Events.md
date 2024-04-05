@@ -47,9 +47,9 @@ To **set these attributes** in a **Visual Effect Graph**, you can use the **Set 
 ![](./img/event_attribute.png). \
 but you can also **attach them to Events you send from C# scripts**. For information on how to do that latter, see **Component API** .
 
-**Event Attribute Payloads are attributes that implicitly travel through the graph from Events**, through **Spawn Contexts**, and eventually to an **Initialize Context**. 
+**Event Attribute Payloads are attributes that implicitly travel through the graph from Events**, through **Spawn Contexts**, and **eventually to** an **Initialize Context**. 
 
-> To **catch a payload** in an Initialize Context, use **Get Source Attribute** Operators or **Inherit [Attribute]** Blocks.
+> To **catch a payload** in an **Initialize Context**, use **`Get Source Attribute`** Operators or **`Inherit [Attribute]`** Blocks.
 
 
 
