@@ -9,6 +9,7 @@ This allows you to create different instances of effects at various positions an
 
 > Use **`UnityEngine.VFX.VisualEffect`** & **`UnityEngine.VFX.VisualEffectAsset`** class to control the Visual Effect Graph
 
+> The **visual effect class** that **references an `VisualEffectAsset` instance** within the Scene.
 
 ### Setting Visual Effect Graph Asset at runtime
 
