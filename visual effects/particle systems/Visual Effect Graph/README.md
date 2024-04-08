@@ -126,8 +126,6 @@ To add graph elements, you can use any of the following methods:
 -   Interactive Connections : When creating an edge from a port (either property or workflow), drag the edge around and release the click into empty space to display the Node Menu. This action is context-sensitive, based on the source port's type, and only provides you with compatible graph elements that you can connect to.
 
 
-
-
 #### Previewing a graph’s effect
 
 To **preview an effect**, you can:
@@ -229,6 +227,8 @@ https://glarity.app/zh-TW/videosummary/education/unity-vfx-graph-spawn-effect-tu
 https://medium.com/akatsuki-taiwan-technology/unity-visual-effect-graph%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97-a1906346ed30
 
 https://www.youtube.com/watch?v=nqhkB8CG8pc
+
+https://www.youtube.com/watch?v=FvZNVQuLDjI
 
 Creating Zelda: Breath of the Wild's Remote Bomb in Unity Shader Graph & VFX Graph \
 https://www.youtube.com/watch?v=bjZr7gzyvt8&t=5s
