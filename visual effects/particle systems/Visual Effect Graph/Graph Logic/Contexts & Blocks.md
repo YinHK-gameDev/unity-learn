@@ -79,7 +79,7 @@ To customize **Update** Contexts, you can add compatible **Blocks** to them.
 
 ### Output
 
-Output Contexts render the particles in a system. They render the particles with different modes and settings depending on the particle Data from the **Initialize** and **Update** Contexts in the same system. It then renders the configuration as a particular primitive shape.
+**Output Contexts render the particles in a system**. They render the particles with different modes and settings depending on the particle Data from the **Initialize** and **Update** Contexts in the same system. It then renders the configuration as a particular primitive shape.
 
 To customize **Output** Contexts, you can add compatible **Blocks** to them.
 
