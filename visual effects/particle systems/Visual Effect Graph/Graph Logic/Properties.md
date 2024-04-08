@@ -28,9 +28,14 @@ Properties in Visual Effect Graph can be of any Type, including the following:
 
 Property Nodes are Operators that give access to Graph-Wide Properties defined in the Blackboard. These properties allow you to reuse the same value throughout the graph at different places.
 
+
+
 > To create property node, you can drag the property from Blackboard to workspace
 
 > You may use these property nodes to connect any **contexts/blocks** in the workspace.
+
+
+![](./img/PropertyNodes.png)
 
 
 -   Property Nodes display a Green dot left to the Property name if the property is exposed.
