@@ -55,7 +55,7 @@ but you can also **attach them to Events you send from C# scripts**. For informa
 **GPU Events** are an Experimental feature of the Visual Effect Graph. They **allow you to spawn particles based on other particles**. \
 To **enable this option**, **enable the Experimental Operators/Blocks checkbox in the Visual Effect Preferences** .
 
-GPU Events are Event Contexts that rely on data sent from other systems, for example, when a particle dies. The following Update Blocks can send GPU Event Data:
+GPU Events are **Event Contexts that rely on data sent from other systems**, for example, when a particle dies. The following Update Blocks can send GPU Event Data:
 
 -   **Trigger Event On Die**: **Spawns N Particles on another system** **when a particle dies**.
 -   **Trigger Event Rate**: Spawn N Particles per second (or per distance travelled), based on a particle from a system.
@@ -64,6 +64,9 @@ GPU Events are Event Contexts that rely on data sent from other systems, for exa
 > These Blocks connect to a **GPUEvent** Context. This Context does not handle any Blocks, but instead connects to an **Initialize Context of a child system**.
 
 To gather data from the parent particle, a child system must refer to Source Attributes in its Initialize Context. To do this, a child system can use a **Get Source Attribute** Operator, or an **Inherit Attribute** Block. For a visual example, see the image below.
+
+
+![](./img/GPUEvent.png)
 
 
 ### ref 
