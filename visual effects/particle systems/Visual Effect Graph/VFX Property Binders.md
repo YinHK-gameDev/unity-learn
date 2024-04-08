@@ -35,10 +35,10 @@ The Visual Effect Graph package comes with the following built-in property binde
     -   **Plane** : Binds Plane Properties (**Position, Normal**) to exposed properties.
     -   **Terrain** : Binds Terrain Properties (**Size, Height Map**) to exposed properties.
 -   Transform:
-    -   **Position**: Binds game object position to vector exposed property.
-    -   **Position (previous)**: Binds previous game object position to vector exposed property.
-    -   **Transform**: Binds game object transform to transform exposed property.
-    -   **Velocity**: Binds game object velocity to vector exposed property.
+    -   **Position**: Binds game object position to **vector** exposed property.
+    -   **Position (previous)**: Binds previous game object position to **vector** exposed property.
+    -   **Transform**: Binds game object transform to **transform** exposed property.
+    -   **Velocity**: Binds game object velocity to **vector** exposed property.
 -   Physics:
     -   **Raycast**: Performs a Physics Raycast and binds its result values (**hasHit, Position, Normal**) to exposed properties..
 -   Collider:
