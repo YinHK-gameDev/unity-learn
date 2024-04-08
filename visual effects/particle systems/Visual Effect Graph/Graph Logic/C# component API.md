@@ -55,7 +55,7 @@ You can **change the default Event** in the following ways:
 - Using the **ExposedProperty Helper Class**.
 
 ### Property interface
-To access the state and values of Exposed Properties, you can use multiple methods in the Visual Effect component. Most of the API methods allow access to the property via the following methods:
+To **access the state and values of Exposed Properties**, you can use multiple methods in the Visual Effect component. Most of the API methods allow access to the property via the following methods:
 
 -   A `string` property name. This is easy to use, but is the least optimized method.
 -   An `int` property ID. To generate this ID from a string property name, use `Shader.PropertyToID(string name)`. This is the most optimized method.
@@ -121,7 +121,6 @@ The component API allows you to set the value of an exposed property in the comp
 Each method overrides the value of the corresponding property with the value you pass in.
 
 ### Sending Events
-
 
 The component API **allows you to send Events to the component's Visual Effect Graph at runtime**. Use this method to send a custom named event. \
 To do this, use either of the following methods:
