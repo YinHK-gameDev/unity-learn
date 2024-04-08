@@ -28,7 +28,7 @@ The four most common Contexts in a Visual Effect Graph are:
 > **Note:** Some Contexts, for example the Output Mesh, do not connect to any other Contexts as they do not relate to other systems.
 
 
-
+![](./img/VFX_How_to_06.jpg)
 
 
 #### Creating and connecting Contexts
