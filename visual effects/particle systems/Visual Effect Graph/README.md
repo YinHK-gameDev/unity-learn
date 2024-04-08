@@ -247,8 +247,7 @@ https://www.youtube.com/watch?v=gdb9zvHh3r0
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@16.0/api/index.html
 
 **Visual Effect component API** \
-https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/ComponentAPI.html
-
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/ComponentAPI.html \
 https://docs.unity3d.com/ScriptReference/VFX.VisualEffect.html
 
 
