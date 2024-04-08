@@ -223,6 +223,8 @@ https://www.youtube.com/watch?v=LhvnIOlmXMM
 
 https://www.youtube.com/watch?v=h4SBACYb26k
 
+**VFX Graph tutorial & Demo**: \
+https://store.steampowered.com/app/1763860/Rabbits_Tale/ \
 https://www.youtube.com/watch?v=7bMOhNUA1bI&list=PLpPd_BKEUoYhN8CiOoNLTSVh-7U5yjg3n
 
 https://glarity.app/zh-TW/videosummary/education/unity-vfx-graph-spawn-effect-tutorial-16577475_1748925
