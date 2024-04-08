@@ -2,7 +2,7 @@
 
 Events **define the inputs** for a **Visual Effect Graph's processing workflow**. 
 
-The **Spawn and Initialize Contexts use Events as their inputs**. 
+The **Spawn** and **Initialize Contexts** use **Events as their inputs**. 
 
 
 Through Events, a Visual Effect Graph can :
