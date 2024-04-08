@@ -61,7 +61,7 @@ GPU Events are Event Contexts that rely on data sent from other systems, for exa
 -   **Trigger Event Rate**: Spawn N Particles per second (or per distance travelled), based on a particle from a system.
 -   **Trigger Event Always**: Spawns N Particles every frame.
 
-These Blocks connect to a **GPUEvent** Context. This Context does not handle any Blocks, but instead connects to an Initialize Context of a child system.
+> These Blocks connect to a **GPUEvent** Context. This Context does not handle any Blocks, but instead connects to an **Initialize Context of a child system**.
 
 To gather data from the parent particle, a child system must refer to Source Attributes in its Initialize Context. To do this, a child system can use a **Get Source Attribute** Operator, or an **Inherit Attribute** Block. For a visual example, see the image below.
 
