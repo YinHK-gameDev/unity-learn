@@ -1,5 +1,7 @@
 ## VFX Property Binders
-Property Binders are C# Behaviors you can **attach to a GameObject that has a Visual Effect Component**. Use these behaviors to **make connections between scene or gameplay values and Exposed Properties** for this **Visual Effect instance**.
+Property Binders are C# Behaviors you can **attach to a GameObject that has a Visual Effect Component**. 
+
+> Use these behaviors to **make connections between scene or gameplay values and Exposed Properties** for this **Visual Effect instance**.
 
 For example, a Sphere Binder can automatically set the position and the radius of a Sphere Exposed Property using the values of a sphere collider that is linked in the scene.
 
