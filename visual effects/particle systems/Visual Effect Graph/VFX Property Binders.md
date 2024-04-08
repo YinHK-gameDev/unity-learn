@@ -40,7 +40,7 @@ The Visual Effect Graph package comes with the following built-in property binde
     -   **Transform**: Binds game object transform to transform exposed property.
     -   **Velocity**: Binds game object velocity to vector exposed property.
 -   Physics:
-    -   **Raycast**: Performs a Physics Raycast and binds its result values (hasHit, Position, Normal) to exposed properties..
+    -   **Raycast**: Performs a Physics Raycast and binds its result values (**hasHit, Position, Normal**) to exposed properties..
 -   Collider:
     -   **Sphere**: Binds properties of a Sphere Collider to a Sphere exposed property.
 -   UI:
