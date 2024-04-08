@@ -1,6 +1,6 @@
 ## Contexts
 
-Contexts are the **main element of the Visual Effect Graph's processing (vertical) workflow** and determine how particles spawn and simulate.
+Contexts are the **main element of the Visual Effect Graph's processing (vertical) workflow** and **determine how particles spawn and simulate**.
 
 Contexts connect to one another sequentially to define the lifecycle of particles. After a graph creates new particles, the Initialize Context can connect to an Update Particle Context to simulate each particle. Also, the Initialize Context can instead connect directly to an Output Particle Context to render the particles without simulating any behavior.
 
@@ -16,10 +16,14 @@ Contexts are the parts of a System that define a stage of processing. Contexts c
 
 The four most common Contexts in a Visual Effect Graph are:
 
--   **Spawn**. If active, Unity calls this every Frame, and computes the amount of particles to spawn.
--   **Initialize**. Unity calls this at the “birth” of every particle, This defines the initial state of the particle.
--   **Update**. Unity calls this every frame for all particles, and uses this to perform simulations, for example Forces and Collisions.
--   **Output**. Unity calls this every frame for every particle. This determines the shape of a particle, and performs pre-render transformations.
+-   **Spawn**: \
+    If active, Unity **calls this every Frame**, and **computes the amount of particles to spawn**.
+-   **Initialize**: \
+    Unity **calls** this **at the "birth" of every particle**, This defines the **initial state of the particle**.
+-   **Update**:\
+    Unity **calls this every frame for all particles**, and uses this to **perform simulations**, for example **Forces and Collisions**.
+-   **Output**: \
+    Unity **calls this every frame for every particle**. This determines the **shape of a particle**, and **performs pre-render transformation**s.
 
 > **Note:** Some Contexts, for example the Output Mesh, do not connect to any other Contexts as they do not relate to other systems.
 
