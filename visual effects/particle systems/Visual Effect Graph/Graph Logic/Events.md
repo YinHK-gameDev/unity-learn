@@ -55,6 +55,8 @@ but you can also **attach them to Events you send from C# scripts**. For informa
 **GPU Events** are an Experimental feature of the Visual Effect Graph. They **allow you to spawn particles based on other particles**. \
 To **enable this option**, **enable the Experimental Operators/Blocks checkbox in the Visual Effect Preferences** .
 
+![](./img/preference.png)
+
 GPU Events are **Event Contexts that rely on data sent from other systems**, for example, when a particle dies. The following Update Blocks can send GPU Event Data:
 
 -   **Trigger Event On Die**: **Spawns N Particles on another system** **when a particle dies**.
