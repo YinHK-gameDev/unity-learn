@@ -228,6 +228,8 @@ https://glarity.app/zh-TW/videosummary/education/unity-vfx-graph-spawn-effect-tu
 
 https://medium.com/akatsuki-taiwan-technology/unity-visual-effect-graph%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97-a1906346ed30
 
+https://www.youtube.com/watch?v=nqhkB8CG8pc
+
 Creating Zelda: Breath of the Wild's Remote Bomb in Unity Shader Graph & VFX Graph \
 https://www.youtube.com/watch?v=bjZr7gzyvt8&t=5s
 
