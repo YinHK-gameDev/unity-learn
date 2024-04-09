@@ -7,12 +7,17 @@ The Visual Effect Graph is a package that you can use to **create large-scale vi
 If you want to **create visual effects that include a large number of particles** and need highly customisable behavior, use the **Visual Effect Graph** instead of the Built-in Particle System.
 
 
+> VFX Graph works with the **Universal Render Pipeline (URP)**, **URP's 2D Renderer**, and the **High Definition Render Pipeline (HDRP)**. Visual Effect Graph is a Unity package that uses a **Scriptable Render Pipeline**(URP or HDRP) to render visual effects. Visual Effect graph uses on compute Shaders to simulate effects.
+
+
 This visual node-based solution enables you to design visual effects, from simple common particle behaviors to complex simulations running on the GPU.
 
 Available for PC, consoles, XR and high-end mobile, VFX Graph has been used in games such as [_V Rising_](https://www.youtube.com/watch?v=C7KTI94LzI8), [_Road 96_](https://www.youtube.com/watch?v=W5ZfH-fbqIQ), [_Hardspace: Shipbreaker_](https://www.youtube.com/watch?v=VWjn3MQHWC8), and _[Syberia: The World Before](https://www.youtube.com/watch?v=L4CIrBygieg)_
 
 
 ![](./img/CPUvsGPU_particles.png)
+
+**Leverage GPU power to emit and simulate millions of particles in real-time**. 
 
 ### VFX
 The **VFX tab** in the **Project Settings** window controls settings **relevant to the Visual Effect Graph**.
