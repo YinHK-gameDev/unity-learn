@@ -21,7 +21,9 @@ To create a Universal Render Pipeline Asset:
 
 You can either leave the default name for the new Universal Render Pipeline Asset, or type a new one.
 
+![](./img/URP2.png)
 
+![](./img/URP1.png)
 ### Set URP as the active render pipeline
 
 To set URP as the **active render pipeline**:
