@@ -6,6 +6,8 @@ The Visual Effect Graph is a package that you can use to **create large-scale vi
 
 If you want to **create visual effects that include a large number of particles** and need highly customisable behavior, use the **Visual Effect Graph** instead of the Built-in Particle System.
 
+The Visual Effect Graph (VFX Graph) enables the authoring of both simple and complex effects using node-based visual logic. As one of several major toolsets available in Unity, the VFX Graph allows artists and designers to create with little or no coding.
+
 
 > VFX Graph works with the **Universal Render Pipeline (URP)**, **URP's 2D Renderer**, and the **High Definition Render Pipeline (HDRP)**. Visual Effect Graph is a Unity package that uses a **Scriptable Render Pipeline**(URP or HDRP) to render visual effects. Visual Effect graph uses on compute Shaders to simulate effects.
 
