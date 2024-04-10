@@ -54,8 +54,7 @@ You can either set the value of the attribute directly, or use two different ran
 
 | **Input** | **Type** | **Description** |
 | --- | --- | --- |
-| **<Attribute>** | Depends on the attribute | The value to compose to the attribute.  
-This property only appears if you set **Source** to **Slot** and **Random** to **Off**. |
+| **<Attribute\>** | Depends on the attribute | The value to compose to the attribute. This property only appears if you set **Source** to **Slot** and **Random** to **Off**. |
 | **A** | Depends on the attribute | The first end of the random range the Block uses to calculate the value for the attribute. This property only appears if you set **Source** to **Slot** and **Random** to **PerComponent** or **Uniform**. |
 | **B** | Depends on the attribute | The other end of the random range the Block uses to calculate the value for the attribute. This property only appears if you set **Source** to **Slot** and **Random** to **PerComponent** or **Uniform**. |
 | **Blend** | Float (Range 0..1) | The blend percentage between the current position attribute value and the newly calculated position value. This property only appears if you set **Composition** to **Blend**. |
