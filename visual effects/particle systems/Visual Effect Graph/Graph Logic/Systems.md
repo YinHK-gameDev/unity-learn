@@ -6,6 +6,11 @@ A System can be a Particle System, a Particle Strip System, a Mesh, or a Spawn m
 
 ![](./img/SystemDrawBox.png)
 
+A VFX Graph includes one or more vertical stacks called **Systems**. Systems define standalone portions of the graph and encompass several **Contexts**. A **System is denoted by the dotted line that frames the Contexts it consists of**.
+
+**Each Context is composed of individual Blocks**, which can **set Attributes (size, color, velocity, etc.) for its particles and meshes**. **Multiple Systems can work together within one graph to create the final visual effect**.
+
+> Find **prebuilt templates** under the **Create Node > Systems** menu to view some examples of graph logic.
 
 ### Creating System from templates
 
