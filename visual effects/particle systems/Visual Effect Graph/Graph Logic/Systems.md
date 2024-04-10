@@ -34,6 +34,7 @@ Some Systems use a simulation space property to define the reference space that 
 ![](./img/SystemSpaceLocalWorld.png)
 
 
+> Click the button at the top-right corner of a Context to toggle the System’s simulation space between Local and World.
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@16.0/manual/Systems.html
