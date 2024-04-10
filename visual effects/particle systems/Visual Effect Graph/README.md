@@ -234,7 +234,6 @@ https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/node-l
 **Standard Attribute Reference** \
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Reference-Attributes.html
 
-
 https://www.youtube.com/watch?v=LhvnIOlmXMM 
 
 https://www.youtube.com/watch?v=h4SBACYb26k
