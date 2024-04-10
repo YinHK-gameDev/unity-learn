@@ -108,6 +108,9 @@ Initialize Contexts are the entry point of new systems. As such, they display th
 | **Bounds** (Property) | Controls the Bounding box of the System. |
 | **Capacity** (Setting) | Controls the allocation count of the System. |
 
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Context-Initialize.html
+
+
 ### Update
 
 Update Contexts update all living particles in the system based on **Particle** Data, which Unity computes from Initialize and Update Contexts. Unity executes Update Contexts, and thus updates every particle, every frame.
