@@ -20,6 +20,8 @@ The Visual Effect Graph comes with pre-built System templates that you can add t
 2.  In The menu, select **System**.
 3.  Select a template from the list.
 
+![](./img/System_template.png)
+
 
 ### System simulation spaces
 
