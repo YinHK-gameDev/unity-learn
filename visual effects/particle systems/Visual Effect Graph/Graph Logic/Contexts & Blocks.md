@@ -128,6 +128,107 @@ To add a Block to a Context, either:
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Blocks.html
 
 
+### Particle Trails
+
+Particle trails are a common effect used in games to create the illusion of movement.
+
+They are often used for things like rockets, bullets, and other fast-moving objects.
+
+To create a particle trail effect in VFX Graph, you can use the Trail Renderer node.
+
+Here's how:
+
+↪In the VFX Graph editor, right-click in the graph view and select Create Node > Renderer > Trail Renderer.
+
+↪Connect the Trail Renderer node to the Spawn node by dragging a connection from the Spawn node's output port to the Trail Renderer node's input port.
+
+↪In the Trail Renderer node, set the Trail Length parameter to 1 and adjust other parameters to your liking.
+
+↪Save the VFX Graph asset and play the scene.
+
+### Particle Collisions
+
+Particle collisions can add a sense of realism to particle systems by creating interactions between particles and other objects in the scene.
+
+To create a particle collision effect in VFX Graph, you can use the Collision node.
+
+Here's how:
+
+↪In the VFX Graph editor, right-click in the graph view and select Create Node > Context > Collision.
+
+↪Connect the Collision node to the Spawn node by dragging a connection from the Spawn node's output port to the Collision node's input port.
+
+↪In the Collision node, adjust the Collision Type and other parameters to your liking.
+
+↪Save the VFX Graph asset and play the scene.
+
+### Particle Textures
+
+Using textures in particle systems can create more interesting and detailed effects.
+
+To use textures in VFX Graph, you can use the Texture Sheet Animation node.
+
+Here's how:
+
+↪In the VFX Graph editor, right-click in the graph view and select Create Node > Texture > Texture Sheet Animation.
+
+↪Connect the Texture Sheet Animation node to the Spawn node by dragging a connection from the Spawn node's output port to the Texture Sheet Animation node's input port.
+
+↪In the Texture Sheet Animation node, select a texture sheet and adjust other parameters to your liking.
+
+↪Save the VFX Graph asset and play the scene.
+
+### Particle Forces
+
+Using forces in particle systems can create more dynamic and realistic effects.
+
+To apply forces to particles in VFX Graph, you can use the Force Field node.
+
+Here's how:
+
+↪In the VFX Graph editor, right-click in the graph view and select Create Node > Context > Force Field.
+
+↪Connect the Force Field node to the Spawn node by dragging a connection from the Spawn node's output port to the Force Field node's input port.
+
+↪In the Force Field node, adjust the Force Type, Force Strength, and other parameters to your liking.
+
+↪Save the VFX Graph asset and play the scene.
+
+### Custom Shaders
+
+To create truly unique and customized particle effects, you can use custom shaders in your VFX Graph.
+
+You can create a custom shader that defines how particles are rendered and then use it in your VFX Graph to create the desired effect.
+
+Here's how:
+
+↪Create a new shader asset by right-clicking in the Project window and selecting Create > Shader.
+
+↪Write a custom shader using ShaderLab syntax that defines how particles are rendered.
+
+↪In the VFX Graph editor, right-click in the graph view and select Create Node > Renderer > Custom.
+
+↪Connect the Custom node to the Spawn node by dragging a connection from the Spawn node's output port to the Custom node's input port.
+
+↪In the Custom node, select the custom shader asset you created earlier.
+
+↪Save the VFX Graph asset and play the scene.
+
+### Audio Reactivity
+
+You can use audio reactivity in your particle systems to create effects that respond dynamically to the game's sound effects and music.
+
+To create an audio-reactive particle system in VFX Graph, you can use the Audio Spectrum node.
+
+Here's how:
+
+↪In the VFX Graph editor, right-click in the graph view and select Create Node > Context > Audio Spectrum.
+
+↪Connect the Audio Spectrum node to the Spawn node by dragging a connection from the Spawn node's output port to the Audio Spectrum node's input port.
+
+↪In the Audio Spectrum node, adjust the parameters to your liking.
+
+↪Save the VFX Graph asset and play the scene with audio.
 
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Contexts.html
