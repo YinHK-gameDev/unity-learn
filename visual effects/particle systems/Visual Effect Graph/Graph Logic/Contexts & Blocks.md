@@ -82,7 +82,11 @@ If you set **Loop Duration**, **Loop**, **Delay Before Loop**, or **Delay After 
 -   If set, Unity evaluates **Loop Count** when the **Start** flow input of the Context triggers.
 -   If set, Unity evaluates **Loop Duration** every time a loop starts.
 -   If set, Unity evaluates **Loop Before/After Delay** every time a delay starts.
-  
+
+
+![](./img/spawnContext_inspector.png)
+
+
 ### Initialize
 
 Initialize Contexts generate new particles based on **SpawnEvent** Data, which Unity computes from Events, Spawn Contexts, or GPU Event Contexts.
