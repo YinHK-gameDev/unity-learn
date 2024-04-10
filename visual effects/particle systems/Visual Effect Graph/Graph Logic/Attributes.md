@@ -19,6 +19,25 @@ When you add set Attribute block to the context, it show set Attribute in inspec
 ![](./img/set_attribute.png)
 
 
+### Set Attribute
+
+> You can Set Attribute based on these menu path: **Curve, Derived, Map or Set**.
+
+![](./img/Menu_path.png)
+
+#### Set
+Menu Path : **Attribute > Set > [Add/Blend/Inherit/Multiply/Set\] <Attribute>**
+
+The **Set Attribute** Block is a generic Block that allows you to write values to an attribute using composition.
+
+You can either set the value of the attribute directly, or use two different random modes, **Uniform** and **Per-Component**, to set the attribute to a random value.
+
+-   **Uniform** calculates a single random number in range 0 to 1 then, to produce the final value, uses the random value to interpolate between the two range values (**A** and **B**).
+    
+-   **Per-Component** calculates a random number in range 0 to 1 for each component in the attribute type then, to produce the final value, uses each random value to interpolate between each component of the two range values (**A** and **B**).
+
+
+
 ### Writing Attributes
 
 **To write to an Attribute, use a Block**. **Blocks are the only graph elements that can write Attributes to the System**.
