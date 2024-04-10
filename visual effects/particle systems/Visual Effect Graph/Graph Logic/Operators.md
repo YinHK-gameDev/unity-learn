@@ -1,6 +1,6 @@
 ## Operators
 
-Operators are Nodes that **compose the low-level operations of the property workflow**. 
+Operators are Nodes that **compose the low-level operations of the property workflow**, **such as Math, Time, Logic, Attribute, etc**.
 
 You can connect Nodes together to generate custom behaviors.
 
