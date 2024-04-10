@@ -48,6 +48,40 @@ Spawn Contexts are standalone systems that have three States: Running, Idle, and
 -   **Finished** (Idle): This state means that the spawn machine is off and does not compute Blocks in the Context or spawn particles.
 -   **DelayingBeforeLoop/DelayingAfterLoop** (Waiting): This state pauses the Context for the duration of a delay time which you can specify. After the delay, the Context resumes, computes Blocks in the Context, and spawns particles.
 
+> To customize Spawn Contexts, you can add compatible Blocks to them.
+
+#### Enabling and disabling
+Spawn Contexts expose two flow slots: Start and Stop:
+
+-   The **Start** input resets/starts the Spawn Context. If you do not connect anything to this flow slot, it implicitly uses the **OnPlay** Event. Using **Start** many times has the same effect as using it once.
+-   The **Stop** input stops the Spawn System. If you do not connect anything to this flow slot, it implicitly uses the **OnStop** Event.
+
+
+#### Looping and delaying
+
+Each Spawn Context contains a state to determine when the Context spawns particles.
+
+-   The Spawn Context emits particles during loops of a particular duration. This means the internal spawn time resets when each loop starts. By default, the duration is **infinite**, but you can change this.  
+    To set the loop mode:
+    1.  Select the Spawn Context in the graph.
+    2.  In the Inspector, click the **Loop Duration** drop-down.
+    3.  From the list, click either **Infinite**, **Constant**, or **Random**.
+-   Spawn Contexts can perform one, many, or an infinite number of loops.  
+    To set the number of loops:
+    1.  Select the Spawn Context in the graph.
+    2.  In the Inspector, click the **Loop** drop-down.
+    3.  From the list, click either **Infinite**, **Constant**, or **Random**.
+-   Spawn Contexts can perform a delay before and after each loop. During a delay, the spawn time elapses normally but the Spawn Context does not spawn any particles.  
+    To set the delay duration:
+    1.  Select the Spawn Context in the graph.
+    2.  In the Inspector, click either the **Delay Before Loop** or **Delay After Loop** drop-down.
+    3.  From the list, click either **None**, **Constant**, or **Random**.
+
+If you set **Loop Duration**, **Loop**, **Delay Before Loop**, or **Delay After Loop** to either **Constant** or **Random**, the Spawn Context displays extra properties in its header to control each behavior. To evaluates the values you set, Unity uses the following rules:
+
+-   If set, Unity evaluates **Loop Count** when the **Start** flow input of the Context triggers.
+-   If set, Unity evaluates **Loop Duration** every time a loop starts.
+-   If set, Unity evaluates **Loop Before/After Delay** every time a delay starts.
   
 ### Initialize
 
