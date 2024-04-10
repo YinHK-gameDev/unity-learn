@@ -31,9 +31,9 @@ After you add the Colliders, you can then specify what a particle does when it m
 
 In the Inspector, there is a drop-down for each of these event types that lets you select what should happen to a particle if it passes the trigger event’s conditions. The options are:
 
--   **Callback**: Allows you to access the particle in the **`OnParticleTrigger()`** callback function.
--   **Kill**: Destroys the particle. You can not access the particle in the **`OnParticleTrigger()`** callback function.
--   **Ignore**: Ignores the particle. You can not access the particle in the **`OnParticleTrigger()`** callback function.
+-   **Callback**: **Allows you to access** the particle in the **`OnParticleTrigger()`** callback function.
+-   **Kill**: **Destroys the particle**. You can not access the particle in the **`OnParticleTrigger()`** callback function.
+-   **Ignore**: **Ignores the particle**. You can not access the particle in the **`OnParticleTrigger()`** callback function.
 
 
 | **Property** | **Description** |
