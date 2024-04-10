@@ -119,3 +119,5 @@ https://docs.unity3d.com/ScriptReference/ParticleSystem.html
 **EASY Rain Particle in Unity (Particle System Tutorial)** \
 https://www.youtube.com/watch?v=SrWrUN56UWU
 
+**Unity Game Effects - Slash Attack Tutorial** \
+https://www.youtube.com/watch?v=ebAjo-AvB0M
