@@ -251,6 +251,9 @@ https://www.youtube.com/watch?v=bjZr7gzyvt8&t=5s
 Unity VFX Graph - Sword Slash Tutorial \
 https://www.youtube.com/watch?v=Er99e0OOBgc
 
+Unity VFX Graph - Meteor Rain Tutorial ( Trails + Trigger Events ) \
+https://www.youtube.com/watch?v=w3Xzzs1TWpk
+
 https://www.youtube.com/watch?v=gdb9zvHh3r0
 
 **Scripting API**: \
