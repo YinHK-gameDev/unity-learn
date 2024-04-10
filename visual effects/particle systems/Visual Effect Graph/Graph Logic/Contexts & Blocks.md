@@ -132,7 +132,7 @@ To customize **Output** Contexts, you can add compatible **Blocks** to them.
 
 
 
-### Blocks
+## Blocks
 Blocks are Nodes that **define the behavior of a Context**. \
 You can **create and reorder Blocks within a Context** and, when Unity plays a visual effect, Blocks execute from top to bottom.
 
@@ -273,6 +273,14 @@ Here's how:
 ↪In the Audio Spectrum node, adjust the parameters to your liking.
 
 ↪Save the VFX Graph asset and play the scene with audio.
+
+
+
+
+
+> When you select Context or Block in the VFX graph workspace, inspector may show its setting related to it.
+
+
 
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Contexts.html
