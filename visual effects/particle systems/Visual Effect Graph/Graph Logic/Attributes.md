@@ -60,6 +60,18 @@ You can either set the value of the attribute directly, or use two different ran
 | **Blend** | Float (Range 0..1) | The blend percentage between the current position attribute value and the newly calculated position value. This property only appears if you set **Composition** to **Blend**. |
 
 
+![](./img/Composition.png)
+
+> Change **composition field** to **Overwrite, Add, Multiply or Blend** for **Add/Blend/Multiply/Set** Attribute block.
+
+
+![](./img/inherit.png)
+
+![](./img/source.png)
+
+> You can choose Souce field as **user input** or **inherited from others**.
+
+
 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Block-SetAttribute.html
 
