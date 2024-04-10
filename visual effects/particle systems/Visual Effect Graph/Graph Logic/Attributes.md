@@ -14,6 +14,10 @@ Use nodes to read from or write to Attributes. In particular, use the:
 
 > **Note**: A System only stores Attributes when it needs them. In order to save memory, it does not store any unnecessary data. If you read that the VFX Graph has not stored the simulation data from an Attribute, the Attribute passes its default constant value.
 
+When you add set Attribute block to the context, it show set Attribute in inspector
+
+![](./img/set_attribute.png)
+
 
 ### Writing Attributes
 
