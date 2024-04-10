@@ -165,3 +165,7 @@ public class GameObjectCollisionHandler : MonoBehaviour
     
 
 Remember that this workaround is a simplified solution and may not provide detailed interactions with individual particles within the particle system. If you need more granular control, you might consider using a custom particle collision system or a physics-based solution tailored to your specific use case.
+
+
+### ref 
+https://www.youtube.com/watch?v=zMgSq3O8FE0
