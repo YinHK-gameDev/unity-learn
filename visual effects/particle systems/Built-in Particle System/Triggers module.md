@@ -48,7 +48,109 @@ From the list, you can access, modify, or destroy any particle. The function can
 Example:
 
 **Interaction with a collider** \
+```cs
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
+[ExecuteInEditMode]
+public class TriggerScript : MonoBehaviour
+{
+    ParticleSystem ps;
+
+    // these lists are used to contain the particles which match
+    // the trigger conditions each frame.
+    List<ParticleSystem.Particle> enter = new List<ParticleSystem.Particle>();
+    List<ParticleSystem.Particle> exit = new List<ParticleSystem.Particle>();
+
+    void OnEnable()
+    {
+        ps = GetComponent<ParticleSystem>();
+    }
+
+    void OnParticleTrigger()
+    {
+        // get the particles which matched the trigger conditions this frame
+        int numEnter = ps.GetTriggerParticles(ParticleSystemTriggerEventType.Enter, enter);
+        int numExit = ps.GetTriggerParticles(ParticleSystemTriggerEventType.Exit, exit);
+
+        // iterate through the particles which entered the trigger and make them red
+        for (int i = 0; i < numEnter; i++)
+        {
+            ParticleSystem.Particle p = enter[i];
+            p.startColor = new Color32(255, 0, 0, 255);
+            enter[i] = p;
+        }
+
+        // iterate through the particles which exited the trigger and make them green
+        for (int i = 0; i < numExit; i++)
+        {
+            ParticleSystem.Particle p = exit[i];
+            p.startColor = new Color32(0, 255, 0, 255);
+            exit[i] = p;
+        }
+
+        // re-assign the modified particles back into the particle system
+        ps.SetTriggerParticles(ParticleSystemTriggerEventType.Enter, enter);
+        ps.SetTriggerParticles(ParticleSystemTriggerEventType.Exit, exit);
+    }
+}
+
+```
+
+**Interaction with multiple colliders** \
+```cs
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+[ExecuteInEditMode]
+public class TriggerScript : MonoBehaviour
+{
+    void OnParticleTrigger()
+    {
+        ParticleSystem ps = GetComponent();
+ 
+        // particles
+        List inside = new List();
+        List exit = new List();
+ 
+        // get
+        int numInside = ps.GetTriggerParticles(ParticleSystemTriggerEventType.Inside, inside, out var insideData);
+        int numExit = ps.GetTriggerParticles(ParticleSystemTriggerEventType.Exit, exit);
+ 
+        // iterate
+        for (int i = 0; i < numInside; i++)
+        {
+            ParticleSystem.Particle p = inside[i];
+            if (insideData.GetColliderCount(i) == 1)
+            {
+                if (insideData.GetCollider(i, 0) == ps.trigger.GetCollider(0))
+                    p.startColor = new Color32(255, 0, 0, 255);
+                else
+                    p.startColor = new Color32(0, 0, 255, 255);
+            }
+            else if (insideData.GetColliderCount(i) == 2)
+            {
+                p.startColor = new Color32(0, 255, 0, 255);
+            }
+            inside[i] = p;
+        }
+        for (int i = 0; i < numExit; i++)
+        {
+            ParticleSystem.Particle p = exit[i];
+            p.startColor = new Color32(1, 1, 1, 255);
+            exit[i] = p;
+        }
+ 
+        // set
+        ps.SetTriggerParticles(ParticleSystemTriggerEventType.Inside, inside);
+        ps.SetTriggerParticles(ParticleSystemTriggerEventType.Exit, exit);
+    }
+}
+
+
+```
 
 ### ref
 https://docs.unity3d.com/Manual/PartSysTriggersModule.html
