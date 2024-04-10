@@ -36,6 +36,29 @@ You can either set the value of the attribute directly, or use two different ran
     
 -   **Per-Component** calculates a random number in range 0 to 1 for each component in the attribute type then, to produce the final value, uses each random value to interpolate between each component of the two range values (**A** and **B**).
 
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Block-SetAttribute.html
+
+#### Map
+Menu Path : **Attribute > Set <Attribute> From Map**
+
+The **Set Attribute from Map** Block is a generic Block that calculates values based on data it samples from Textures and then composes those values into a given **attribute.**
+
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Block-SetAttributeFromMap.html
+
+#### Derived > Calculate Mass from Volume
+
+Menu Path : **Attribute > Derived > Calculate Mass from Volume**
+
+The **Calculate Mass from Volume** Block sets a particle’s **Mass** attribute based on its volume, derived from the **Scale** attribute and the Block’s **Density** property. This Block is useful for calculating the mass of particles with different scales so they behave believably during physics simulations.
+
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Block-CalculateMassFromVolume.html
+
+#### Curve
+Menu Path : **Attribute > Curve > [Add/Set] <Attribute> <Mode>**
+
+The **Set Attribute from Curve/Gradient** Block is a generic Block that allows you to write values to an attribute, based on a sample from an **Animation Curve** or **Gradient**, using composition.
+
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Block-SetAttributeFromCurve.html
 
 
 ### Writing Attributes
