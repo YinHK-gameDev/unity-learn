@@ -47,7 +47,7 @@ From the list, you can access, modify, or destroy any particle. The function can
 
 Example:
 
-**Interaction with a collider** \
+**Interaction with a collider** 
 ```cs
 using UnityEngine;
 using System.Collections;
@@ -98,7 +98,7 @@ public class TriggerScript : MonoBehaviour
 
 ```
 
-**Interaction with multiple colliders** \
+**Interaction with multiple colliders** 
 ```cs
 using UnityEngine;
 using System.Collections;
