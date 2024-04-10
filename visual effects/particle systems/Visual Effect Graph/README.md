@@ -254,6 +254,9 @@ https://www.youtube.com/watch?v=Er99e0OOBgc
 Unity VFX Graph - Meteor Rain Tutorial ( Trails + Trigger Events ) \
 https://www.youtube.com/watch?v=w3Xzzs1TWpk
 
+Creating explosive visuals with the Visual Effect Graph \
+https://blog.unity.com/engine-platform/creating-explosive-visuals-with-visual-effect-graph
+
 https://www.youtube.com/watch?v=gdb9zvHh3r0
 
 **Scripting API**: \
