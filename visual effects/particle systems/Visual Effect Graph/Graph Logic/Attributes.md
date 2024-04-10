@@ -6,6 +6,15 @@ For example, the **color of a particl**e, a **particle's position**, or **the am
 
 A **System only stores Attributes when it needs them**. This means that the System **does not store any unnecessary data** and thus saves memory.
 
+Use nodes to read from or write to Attributes. In particular, use the:
+
+-   **Get Attribute Operator** to read from Attributes in the **Particle** or **ParticleStrip System**
+-   **Experimental** **Spawner Callbacks** to read from Attributes in **Spawn systems**
+-   **Set Attribute Block** to write values to an Attribute; either set the value of the Attribute directly or use a random mode (for example, set a **Color Attribute** with a **Random Gradient** or **Random Per-component Block**
+
+> **Note**: A System only stores Attributes when it needs them. In order to save memory, it does not store any unnecessary data. If you read that the VFX Graph has not stored the simulation data from an Attribute, the Attribute passes its default constant value.
+
+
 ### Writing Attributes
 
 **To write to an Attribute, use a Block**. **Blocks are the only graph elements that can write Attributes to the System**.
