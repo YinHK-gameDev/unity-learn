@@ -231,6 +231,9 @@ https://unity.com/visual-effect-graph
 **Node library:** \
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/node-library.html
 
+**Standard Attribute Reference** \
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Reference-Attributes.html
+
 
 https://www.youtube.com/watch?v=LhvnIOlmXMM 
 
