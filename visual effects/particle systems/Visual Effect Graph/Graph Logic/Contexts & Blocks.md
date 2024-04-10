@@ -109,7 +109,7 @@ To customize a Block, you can:
 
 Blocks can do just about anything, from simple value storage for Color, to complex operations such as Noises, Forces, and Collisions. They often have slots on the left, where they can receive input from Operators and Properties.
 
-![](./img/VFX08.jpg)
+![](../img/VFX08.jpg)
 
 #### Adding Blocks
 
