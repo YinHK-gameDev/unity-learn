@@ -138,7 +138,7 @@ To create a particle trail effect in VFX Graph, you can use the Trail Renderer n
 
 Here's how:
 
-↪In the VFX Graph editor, right-click in the graph view and select Create Node > Renderer > Trail Renderer.
+↪In the VFX Graph editor, right-click in the graph view and select **Create Node > Renderer > Trail Renderer**.
 
 ↪Connect the Trail Renderer node to the Spawn node by dragging a connection from the Spawn node's output port to the Trail Renderer node's input port.
 
@@ -154,7 +154,7 @@ To create a particle collision effect in VFX Graph, you can use the Collision no
 
 Here's how:
 
-↪In the VFX Graph editor, right-click in the graph view and select Create Node > Context > Collision.
+↪In the VFX Graph editor, right-click in the graph view and select **Create Node > Context > Collision**.
 
 ↪Connect the Collision node to the Spawn node by dragging a connection from the Spawn node's output port to the Collision node's input port.
 
@@ -170,7 +170,7 @@ To use textures in VFX Graph, you can use the Texture Sheet Animation node.
 
 Here's how:
 
-↪In the VFX Graph editor, right-click in the graph view and select Create Node > Texture > Texture Sheet Animation.
+↪In the VFX Graph editor, right-click in the graph view and select **Create Node > Texture > Texture Sheet Animation**.
 
 ↪Connect the Texture Sheet Animation node to the Spawn node by dragging a connection from the Spawn node's output port to the Texture Sheet Animation node's input port.
 
@@ -186,7 +186,7 @@ To apply forces to particles in VFX Graph, you can use the Force Field node.
 
 Here's how:
 
-↪In the VFX Graph editor, right-click in the graph view and select Create Node > Context > Force Field.
+↪In the VFX Graph editor, right-click in the graph view and select **Create Node > Context > Force Field**.
 
 ↪Connect the Force Field node to the Spawn node by dragging a connection from the Spawn node's output port to the Force Field node's input port.
 
@@ -202,11 +202,11 @@ You can create a custom shader that defines how particles are rendered and then 
 
 Here's how:
 
-↪Create a new shader asset by right-clicking in the Project window and selecting Create > Shader.
+↪Create a new shader asset by right-clicking in the Project window and selecting **Create > Shader**.
 
 ↪Write a custom shader using ShaderLab syntax that defines how particles are rendered.
 
-↪In the VFX Graph editor, right-click in the graph view and select Create Node > Renderer > Custom.
+↪In the VFX Graph editor, right-click in the graph view and select **Create Node > Renderer > Custom**.
 
 ↪Connect the Custom node to the Spawn node by dragging a connection from the Spawn node's output port to the Custom node's input port.
 
@@ -222,7 +222,7 @@ To create an audio-reactive particle system in VFX Graph, you can use the Audio 
 
 Here's how:
 
-↪In the VFX Graph editor, right-click in the graph view and select Create Node > Context > Audio Spectrum.
+↪In the VFX Graph editor, right-click in the graph view and select **Create Node > Context > Audio Spectrum**.
 
 ↪Connect the Audio Spectrum node to the Spawn node by dragging a connection from the Spawn node's output port to the Audio Spectrum node's input port.
 
