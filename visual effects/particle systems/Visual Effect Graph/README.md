@@ -239,6 +239,8 @@ https://glarity.app/zh-TW/videosummary/education/unity-vfx-graph-spawn-effect-tu
 
 https://medium.com/akatsuki-taiwan-technology/unity-visual-effect-graph%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97-a1906346ed30
 
+https://dev.to/bestremoteteam/unity-visual-effect-graph-guide-everything-that-you-need-to-know-2p5b
+
 https://www.youtube.com/watch?v=nqhkB8CG8pc
 
 https://www.youtube.com/watch?v=FvZNVQuLDjI
