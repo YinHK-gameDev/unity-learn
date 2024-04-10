@@ -87,6 +87,11 @@ If you set **Loop Duration**, **Loop**, **Delay Before Loop**, or **Delay After 
 ![](./img/spawnContext_inspector.png)
 
 
+You can also create a custom loop and delay block inside the Spawn Context to custom loop or delay you want: 
+![](./img/Custom_Spawn&Delay_block.png)
+
+
+
 ### Initialize
 
 Initialize Contexts generate new particles based on **SpawnEvent** Data, which Unity computes from Events, Spawn Contexts, or GPU Event Contexts.
