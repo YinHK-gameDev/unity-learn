@@ -20,7 +20,7 @@ This module is part of the Particle System component. When you create a new Part
 To begin, specify which Colliders in the Scene the particles can interact with. To do this, assign one or more Colliders to the Colliders list property. To increase the number of Colliders in the list, click the Add (+) button beneath the list of Colliders. To remove a Collider from the list, select the Collider and click the Remove (-) button. If you have not yet assigned a Collider to an index of the list, you can use the smaller Add (+) button, to the right of the empty entry, to create and assign a new Collider. This creates a new GameObject as a child of the Particle System and attaches a Sphere Collider to it, then assigns the Collider to the empty entry.
 
 
-After you add the Colliders, you can then specify what a particle does when it meets the criteria for passing a particular trigger event type. There are four event types that describe how a particle can interact with a Collider. They are:
+After you add the Colliders, you can then specify what a particle does when it meets the criteria for passing a particular trigger event type. There are four event types that **describe how a particle can interact with a Collider**. They are:
 
 
 -   **Inside**: A particle is inside a Collider’s bounds.
