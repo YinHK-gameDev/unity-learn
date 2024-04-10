@@ -4,6 +4,9 @@ The Built-in Particle System’s Triggers module allows you to access and modify
 . When you enable this module, the Particle System calls the `OnParticleTrigger()` callback on attached scripts
 , which you can use to access lists of particles depending on where they are in respect to the Colliders in the Scene.
 
+
+![](../PartSysTriggersModule.png)
+
 ### Using the Triggers module
 This module is part of the Particle System component. When you create a new Particle System GameObject
 , or add a Particle System component to an exiting GameObject, Unity adds the Triggers module to the Particle System. By default, Unity disables this module. To create a new Particle System and enable this module:
