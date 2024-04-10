@@ -35,6 +35,68 @@ To read from an Attribute, use an Operator or Block:
 -   Use a **Get Attribute** Operator.
 -   Use different composition modes in a **Set Attribute** Block that depends on the previous value of the Attribute.
 
+### Standard Attributes
+
+Here is a comprehensive List of all commonly used attributes, with a brief description and usages.
+
+#### Basic Simulation Attributes
+
+The Initialize and Update Contexts use Simulation Attributes to apply behavior to simulated elements such as Particles or Particle Trails.
+
+| Name | Type | Description | Default Value |
+| --- | --- | --- | --- |
+| `position` | Vector3 | The position of a simulated element, expressed in the corresponding System Space, in System Units | (0,0,0) |
+| `velocity` | Vector3 | The current self-velocity of the simulated element, expressed as a 3D Vector in the corresponding System Space, in System Units per Second. | (0,0,0) |
+| `age` | float | The age of the simulated element, since its spawn, expressed in Seconds. | 0.0 |
+| `lifetime` | float | The life expectancy of a simulated element, expressed in Seconds. | 0.0 |
+| `alive` | bool | Whether the simulated element is alive or not. | true |
+| `size` | float | The size of a simulated element, in system Units. | 0.1 |
+
+#### Advanced Simulation Attributes
+
+Some attributes are a bit more advanced and will be used by default in most simulations. However, you can alter these attributes to enhance how other attributes behave.
+
+| Name | Type | Description | Default Value |
+| --- | --- | --- | --- |
+| `mass` | float | The mass of a particle in Kg/dm^3 | 1.0 (defaults to 1kg per liter of water) |
+| `direction` | Vector | You can use this attribute in the following ways:  
+•As a storage helper to store arbitrary direction.  
+•Use any block that sets a shape position to write to the direction attribute. For example, Set Position (Shape : Circle). | (0.0, 0.0, 1.0) |
+| `angle` | Vector3 | **Variadic:** Euler rotation of a simulated element, expressed as a Vector of Degrees Values. | (0,0,0) |
+| `angularVelocity` | Vector3 | **Variadic:** Euler rotation speed of a simulated element, expressed as a Vector of Degrees per second values. | (0,0,0) |
+| `oldPosition` | Vector3 | **Deprecated:** This attribute is a storage Helper if you want to back-up current position of a simulated element, before integrating its velocity. | (0,0,0) |
+| `targetPosition` | Vector3 | This attribute has various purposes: it can be a storage Helper if you want to store a position to reach, then compute a vector in order to reach this Target Position. In Line Renderers, this attribute can be also used to set the end of each line particle. | (0,0,0) |
+
+#### Rendering Attributes
+
+Rendering Attributes are not used in simulation but are useful when you want to render a simulated element.
+
+| Name | Type | Description | Default Value |
+| --- | --- | --- | --- |
+| `color` | Vector3 | The R,G, and B Components of the Rendered Element. | 1,1,1 |
+| `alpha` | float | The alpha Component of the Rendered Element | 1 |
+| `size` | float | The uniform size of a rendered element, in system Units, applied to its **unit representation** | 0.1 |
+| `scale` | Vector3 | The Non-uniform Scale multiplier of a rendered element, applied to its **unit representation** | (1,1,1) |
+| `pivot` | Vector3 | The Origin position of a rendered element, in its **unit representation** | (0,0,0) |
+| `texIndex` | float | The animation frame used for sampling Flipbook UVs for a rendered element. | 0.0 |
+| `axisX` | Vector3 | The computed Right axis of the rendered Element. | (1,0,0) |
+| `axisY` | Vector3 | The computed Up axis of the rendered Element. | (0,1,0) |
+| `axisZ` | Vector3 | The computed Forward axis of the rendered Element. | (0,0,1) |
+
+
+#### System Attributes
+
+System Attributes provide information about system values. These attributes are available as **Read Only**, which means you can only read them using the `Get <Attribute>` Operator.
+
+| Name | Type | Description | Default Value |
+| --- | --- | --- | --- |
+| `particleID` | uint | A unique ID that refers to 1 particle | 0 |
+| `seed` | uint | A unique seed used for random number computations. | 0 |
+| `spawnCount` | float | A `SpawnEvent` attribute that describes how many particles were spawned this frame. You can use `spawnCount` as a Source Attribute in a Spawn context. `spawnCount` is a floating point number so that Unity can accumulate a relative `spawnCount` at the spawn context stage in the Constant Rate block. | 0.0 |
+| `spawnTime` | float | A SpawnEvent attribute available as Source Attribute in Spawn Contexts, that contains a Spawn Context internal time (when exported using a Set Spawn Time | 0.0 |
+| `particleIndexInStrip` | uint | The index in the Particle Strip Ring Buffer where is located this element. | 0 |
+
+
 
 ### ref
 
