@@ -4,6 +4,8 @@ Events **define the inputs** for a **Visual Effect Graph's processing workflow**
 
 The **Spawn** and **Initialize Contexts** use **Events as their inputs**. 
 
+An Event Context identifies an Event by its **Event string name or ID** inside a graph. 
+
 
 Through Events, a Visual Effect Graph can :
 
@@ -16,6 +18,9 @@ In general, an Event is just a string that represents the Event's name. To recei
 
 
 > **Note**: Event Contexts have **no input flow slots** and can **only connect their output flow slot** to **Spawn** or **Initialize Contexts**.
+
+
+When something needs to happen, **external GameObjects can notify parts of your graph** with the **`SendEvent`** method of the **C# API**. Visual Effect components will **then pass the Event as a string name or property ID**. An Event Context identifies an Event by its Event string name or ID inside a graph.
 
 
 
@@ -70,6 +75,23 @@ To gather data from the parent particle, a child system must refer to Source Att
 
 ![](./img/GPUEvent.png)
 
+
+### Output Events
+You can combine an Output Event with an **`Output Event Handler`**. **Output Events are useful if the initial spawning of the particles needs to drive something else in your scene**. This is common for **synchronizing lighting or gameplay** with your visual effects.
+
+
+
+The above example sends an **OnReceivedEvent** to a GameObject component outside of the graph. The C# script will then react accordingly to intensify a light or flame, activate a spark, etc.
+
+
+> At the same time, you can use **GPU Events** to spawn particles based on other particle behavior. This way, when a particle dies in one system, you can notify another system, which creates a useful chain reaction of effects, such as a projectile particle that spawns a dust effect upon death.
+
+#### Output Event Handlers
+
+A **`VFXOutputEventAbstractHandler` is an API helper** that hooks into an **Output Event** to allow you to **execute scripts based on the event**.
+
+https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@12.1/manual/OutputEventHandlers.html \
+https://unity.com/how-to/introduction-vfx-graph-unity#output-events
 
 ### ref 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Events.html
