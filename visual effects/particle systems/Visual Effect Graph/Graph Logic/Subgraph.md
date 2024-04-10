@@ -11,6 +11,12 @@ Subgraphs can be used in graphs as three main usages:
 
 > Subgraphs allow you to factorize commonly used sets of Nodes in a graph into reusable Assets and adds them to the Library.
 
+A Subgraph appears as a single node, which can help declutter your graph logic. Use it to save part of your VFX Graph as a separate asset that you can drop into another VFX Graph for reorganization and reuse.
+
+To create a Subgraph, select a set of nodes and then pick **Convert To Subgraph Operator** from the right mouse menu. Save the asset to disk and convert the nodes into a single **Subgraph Node**. You can package Systems, Blocks, and Operators into different types of Subgraphs.
+
+Creating a Subgraph is analogous to refactoring code. Just as you would organize logic into reusable methods or functions, a Subgraph makes elements of your VFX Graph more modular.
+
 
 ### Creating System Subgraphs
 
