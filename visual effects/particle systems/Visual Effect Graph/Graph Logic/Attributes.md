@@ -19,9 +19,9 @@ When you add set Attribute block to the context, it show set Attribute in inspec
 ![](./img/set_attribute.png)
 
 
-### Set Attribute
+### Set Attribute block
 
-> You can Set Attribute based on these menu path: **Curve, Derived, Map or Set**.
+> You can add block for Setting Attribute based on these menu path: **Curve, Derived, Map or Set**.
 
 ![](./img/Menu_path.png)
 
@@ -35,6 +35,32 @@ You can either set the value of the attribute directly, or use two different ran
 -   **Uniform** calculates a single random number in range 0 to 1 then, to produce the final value, uses the random value to interpolate between the two range values (**A** and **B**).
     
 -   **Per-Component** calculates a random number in range 0 to 1 for each component in the attribute type then, to produce the final value, uses each random value to interpolate between each component of the two range values (**A** and **B**).
+
+
+**Set Attribute in inspector(Block settings)**:
+
+![](./img/Set_Attribute.png)
+
+| **Setting** | **Type** | **Description** |
+| --- | --- | --- |
+| **Attribute** | Attribute (Inspector Only) | **(Inspector)** Specifies the attribute to write to. |
+| **Composition** | Enum (Inspector Only) | **(Inspector)** Specifies how this Block composes the attribute. The options are:  • **Overwrite**: Overwrites the position attribute with the new value.  • **Add**: Adds the new value to the position attribute value.  • **Multiply**: Multiplies the position attribute value by the new value.  • **Blend**: Interpolates between the position attribute value and the new value. You can specify the blend factor between 0 and 1. |
+| **Source** | Enum (Inspector Only) | **(Inspector)** Specifies the source of the attribute. The options are: • **Slot**: Calculates the value from the Block’s input property ports. • **Source**: Takes the value from the source attribute of the same name. |
+| **Random** | Enum | **(Inspector)** Specifies how the Block calculates the value to compose to the attribute. The options are: • **Off** : Does not calculate a random value for the attribute. Uses the value you provide in the input directly. • **PerComponent**: Calculates a random value for each of the attribute's components. • **Uniform** : Calculates a single random value and uses it for each of the attribute's components. |
+| **Channels** | Enum | Specifies which channels of the attribute to affect. This Operator has no effect on channels you do not specify with this setting. This setting is only visible if the **Attribute** you set is one with channels. |
+
+
+**Block properties**:
+
+| **Input** | **Type** | **Description** |
+| --- | --- | --- |
+| **<Attribute>** | Depends on the attribute | The value to compose to the attribute.  
+This property only appears if you set **Source** to **Slot** and **Random** to **Off**. |
+| **A** | Depends on the attribute | The first end of the random range the Block uses to calculate the value for the attribute. This property only appears if you set **Source** to **Slot** and **Random** to **PerComponent** or **Uniform**. |
+| **B** | Depends on the attribute | The other end of the random range the Block uses to calculate the value for the attribute. This property only appears if you set **Source** to **Slot** and **Random** to **PerComponent** or **Uniform**. |
+| **Blend** | Float (Range 0..1) | The blend percentage between the current position attribute value and the newly calculated position value. This property only appears if you set **Composition** to **Blend**. |
+
+
 
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Block-SetAttribute.html
 
