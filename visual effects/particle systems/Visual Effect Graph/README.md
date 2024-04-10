@@ -211,6 +211,10 @@ The play Controls Window displays the following controls:
 
 
 ### Unity Visual Effect Graph - Samples
+
+In this project you will be able to access sample scenes and effects made with the Visual Effect Graph. You can download snapshots of these samples by using the release tab, or by cloning this repository.
+
+
 https://github.com/Unity-Technologies/VisualEffectGraph-Samples
 
 ### ref
