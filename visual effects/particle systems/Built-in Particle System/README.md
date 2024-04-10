@@ -111,5 +111,11 @@ To **attach this component to a Particle System**, **enable the External Forces 
 https://docs.unity3d.com/Manual/class-ParticleSystemForceField.html
 
 
-### Scripting API
+### ref
+
+**Scripting API** \
 https://docs.unity3d.com/ScriptReference/ParticleSystem.html
+
+**EASY Rain Particle in Unity (Particle System Tutorial)** \
+https://www.youtube.com/watch?v=SrWrUN56UWU
+
