@@ -47,6 +47,8 @@ This tab is **only visible if you install the Visual Effect Graph package**. For
 - Use a Visual Effect Graph in another Visual Effect Graph. For example, you can reuse and customize a simple but configurable explosion in more complex graphs.
 - Previews changes immediately, so you can simulate effects at various rates and perform step-by-step simulation. For instructions on how to install the Visual Effect Graph, see Getting started with Visual Effect Graph.
 
+> because the new vfx particles are calculated on the GPU you can't access the physics system which is calculated on the CPU. Them being simulated on the GPU is the only reason you can have that staggering amount of particles. Sadly if you wanna use collisions, you'd have to use their older system.
+
 
 ### Visual Effect Graph Assets
 
