@@ -3,7 +3,7 @@
 This module allows you to set up **sub-emitters**. These are **additional particle emitters** that **are created at a particle’s position at certain stages of its lifetime**.
 
 
-![](./sun_emitter.png)
+![](../sun_emitter.png)
 
 #### Using the Sub Emitters module
 This module is part of the Particle System component. When you create a new Particle System GameObject, or add a Particle System component to an exiting GameObject, Unity adds the Sub Emitters module to the Particle System. By default, Unity disables this module. To create a new Particle System and enable this module:
