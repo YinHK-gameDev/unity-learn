@@ -17,18 +17,20 @@ Contexts are the parts of a System that define a stage of processing. Contexts c
 The four most common Contexts in a Visual Effect Graph are:
 
 -   **Spawn**: \
-    If active, Unity **calls this every Frame**, and **computes the amount of particles to spawn**.
+    If active, Unity **calls this every Frame**, and **computes the amount of particles to spawn**. Determines how many particles you should create and when to spawn them (e.g., in one burst, looping, with a delay, etc.)
 -   **Initialize**: \
-    Unity **calls** this **at the "birth" of every particle**, This defines the **initial state of the particle**.
+    Unity **calls** this **at the "birth" of every particle**, This defines the **initial state of the particle**. Determines the starting Attributes for the particles, as well as the Capacity (maximum particle count) and Bounds (volume where the effect renders)
 -   **Update**:\
-    Unity **calls this every frame for all particles**, and uses this to **perform simulations**, for example **Forces and Collisions**.
+    Unity **calls this every frame for all particles**, and uses this to **perform simulations**, for example **Forces and Collisions**. Changes the particle properties each frame; here you can apply Forces, add animation, create Collisions, or set up some interaction, such as with Signed Distance Fields (SDF)
 -   **Output**: \
-    Unity **calls this every frame for every particle**. This determines the **shape of a particle**, and **performs pre-render transformation**s.
+    Unity **calls this every frame for every particle**. This determines the **shape of a particle**, and **performs pre-render transformation**s. Renders the particles and determines their final look (color, texture, orientation); each System can have multiple outputs for maximum flexibility
 
 > **Note:** Some Contexts, for example the Output Mesh, do not connect to any other Contexts as they do not relate to other systems.
 
 
 ![](./img/VFX_How_to_06.jpg)
+
+Systems and Contexts form the backbone of the graph’s “vertical logic,” or processing workflow.
 
 
 #### Creating and connecting Contexts
