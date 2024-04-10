@@ -60,10 +60,11 @@ A utility panel called the Blackboard manages Global properties, which can appea
 
 Properties in the Blackboard are either:
 
--   **Exposed**: The green dot to the left of any Exposed Property indicates that you can see and edit it outside of the graph. Access an Exposed Property in the Inspector via script using the Exposed Property class.
--   **Constant**: A Blackboard property without a green dot is a Constant. It is reusable within the graph but does not appear in the Inspector.
+-   **Exposed**: The **green dot** to the left of any **Exposed Property indicates that you can see and edit it outside of the graph**. \
+    **Access an Exposed Property in the Inspector** via script using the Exposed Property class.
+-   **Constant**: A Blackboard property **without a green dot** is a **Constant**. It is **reusable within the graph** but **does not appear in the Inspector**.
 
-New properties are Exposed by default, and as such, appear in the Inspector. You must uncheck the **Exposed** option if you want to hide your property outside of the graph, and create **Categories** to keep your properties organized.
+New properties are **Exposed by default**, and as such, appear in the Inspector. You must uncheck the **Exposed** option if you want to hide your property outside of the graph, and create **Categories** to keep your properties organized.
 
 
 
