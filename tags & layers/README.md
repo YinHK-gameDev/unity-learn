@@ -85,6 +85,9 @@ Sorting Layers are used in **conjunction with Sprite graphics in the 2D system**
 
 ![](./SortingLayerManagerAddedNew.png)
 
+####Layers
+Use Layers throughout the Unity Editor as a way to create groups of objects that share particular characteristics (see documentation on Layers for further details). Use Layers primarily to restrict operations such as raycasting or rendering, so that they are only applied to the relevant groups of objects. Layers marked as Builtin Layer are default layers used by Unity, which you cannot edit. You can customise layers marked as User Layer.
+
 
 ### ref
 https://docs.unity3d.com/Manual/Layers.html
