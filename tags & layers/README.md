@@ -66,6 +66,25 @@ To create a new tag, select Add Tag…. This opens the Tag and Layer Manager in 
   - Player
   - GameController
 
+### Tags and Layers settings
+
+The **Tags and Layers** settings (main menu: **Edit > Project Settings**, then select the **Tags and Layers** category) allows you to set up **Tags**, **Sorting Layers** and **Layers**.
+
+
+#### Tag
+**Tags** are marker values that you can use to identify objects in your Project. To add a new Tag, click the plus button (+) at the bottom-right of the list, and name your new Tag.
+
+![](./TagManagerAddNew.png)
+
+Note that once you have named a Tag, you cannot rename it. To remove a Tag, click on it and then click the minus (-) button at the bottom-right of the list.
+
+![](./TagManagerAddedNew.png)
+
+#### Sorting Layers
+Sorting Layers are used in **conjunction with Sprite graphics in the 2D system**. Sorting refers to **the overlay order of different Sprites**. Use to control the sprites overlay order. 
+
+![](./SortingLayerManagerAddedNew.png)
+
 
 ### ref
 https://docs.unity3d.com/Manual/Layers.html
