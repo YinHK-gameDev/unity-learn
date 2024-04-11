@@ -34,5 +34,36 @@ If you’re used to working in 3D, sprites are similar to **standard textures** 
 |    Visible Outside Mask | The Sprite is visible outside of the Sprite Mask, but not inside it. The Sprite Mask hides the sections of the Sprite it overlays. |
 | **Sprite Sort Point** | Choose between the Sprite’s Center or its Pivot Point when calculating the distance between the Sprite and the **camera**. See the section on Sprite Sort Point for further details. |
 
+https://docs.unity3d.com/Manual/class-SpriteRenderer.html
+
+### Sprite Creator
+
+https://docs.unity3d.com/Manual/SpriteCreator.html
+
+
+### Sprite Editor
+https://docs.unity3d.com/Manual/SpriteEditor.html
+
+
+### Sorting Groups
+
+Sorting Groups allow you to **group GameObjects with Sprite Renderers**together, and **control the order in which they render their Sprites**. Unity **renders Sprite Renderers in the same Sorting Group together**, as if they are a single GameObject.
+
+https://docs.unity3d.com/Manual/class-SortingGroup.html
+
+### Sprite Masks
+Sprite Masks are used to either hide or reveal parts of a Sprite
+ or group of Sprites. The Sprite Mask only affects objects using the Sprite Renderer
+ Component.
+
+
+https://docs.unity3d.com/Manual/class-SpriteMask.html
+
+
+ 
+
+
 ### ref 
-https://docs.unity3d.com/Manual/Sprites.html
+https://docs.unity3d.com/Manual/Sprites.html \
+
+
