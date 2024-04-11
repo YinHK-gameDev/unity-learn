@@ -5,8 +5,11 @@ If you’re used to working in 3D, sprites are similar to **standard textures** 
 
 
 
+### Sprite Renderer
 
 
+
+![](./img/sprite_renderer.png)
 
 
 ### ref 
