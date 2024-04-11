@@ -20,6 +20,10 @@ The Gravity Block applies the given force to particles. To do this, it changes t
 
 Menu Path : **Force > Gravity**
 
+### Noise value
+Value noise is a type of noise commonly used as a procedural texture primitive in computer graphics. It is conceptually different from, and often confused with gradient noise, examples of which are Perlin noise and Simplex noise. 
+
+https://en.wikipedia.org/wiki/Value_noise
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/Block-ConformToSignedDistanceField.html
