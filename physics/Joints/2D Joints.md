@@ -22,6 +22,7 @@
    
 3. **Fixed Joint 2D**
    - **keeps two objects in a position relative to each other**, so the objects are **always offset at a given position and angle**. \
+   - It is a **spring-type 2D joint** for which you don’t need to set maximum forces. You can set the spring to be rigid or soft. \
      For example, objects that need to react as if they are rigidly connected: They can’t move away from each other, they **can’t move closer together**, and they can’t rotate with respect to each other. You can also use this joint to create a less rigid connection that flexes.
 
       | Property | Function |
