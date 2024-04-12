@@ -1,13 +1,14 @@
 ## 2D joints
 1. **Distance Joint 2D** 
-   - attaches two game objects controlled by rigidbody physics together and keeps them a certain distance apart.
+   - attaches two game objects controlled by rigidbody physics together and **keeps them a certain distance apart**.
 
    https://docs.unity3d.com/Manual/class-DistanceJoint2D.html
 
    https://www.youtube.com/watch?v=wpd2W3bIwx4
    
 3. **Fixed Joint 2D**
-   - keeps two objects in a position relative to each other, so the objects are always offset at a given position and angle. For example, objects that need to react as if they are rigidly connected: They can’t move away from each other, they can’t move closer together, and they can’t rotate with respect to each other. You can also use this joint to create a less rigid connection that flexes.
+   - **keeps two objects in a position relative to each other**, so the objects are **always offset at a given position and angle**. \
+     For example, objects that need to react as if they are rigidly connected: They can’t move away from each other, they **can’t move closer together**, and they can’t rotate with respect to each other. You can also use this joint to create a less rigid connection that flexes.
   
    https://docs.unity3d.com/Manual/class-FixedJoint2D.html
 
