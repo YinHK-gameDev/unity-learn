@@ -4,7 +4,7 @@
   
       | Property | Function |
       | --- | --- |
-      | **Enable **Collision**** | Enable this property to enable collisions between the two connected GameObjects. |
+      | **Enable Collision** | Enable this property to enable collisions between the two connected GameObjects. |
       | **Connected Rigidbody** | Specify the other object this joint connects to. Leave this as **None** to have the other end of the joint fixed at a point in space defined by the **Connected Anchor** property. Select the circle icon to the right to view a list of GameObjects to connect to. |
       | **Auto Configure Connected Anchor** | Enable this property to automatically set the anchor location for the other object this joint connects to. You do not need to enter coordinates for the **Connected Anchor** property if you enable this property. |
       | **Anchor** | Define where (in terms of x, y-coordinates on the **Rigidbody 2D**) the end point of the joint connects to this GameObject. |
