@@ -105,8 +105,8 @@
 
 It is important to know the major differences between **Fixed Joint 2D** and Relative Joint 2D:
 
--   **Fixed Joint 2D** is a spring-type joint. **Relative Joint 2D** is a motor-type joint with a maximum force and/or torque.
--   **Fixed Joint 2D** uses a spring to maintain the relative linear and angular offsets. **Relative Joint 2D** uses a motor. You can configure a joint’s spring or motor.
+-   **Fixed Joint 2D** is a **spring-type** joint(Spring Joint). **Relative Joint 2D** is a **motor-type** joint(Hinge Joint) with a maximum force and/or torque.
+-   **Fixed Joint 2D** uses a **spring** to maintain the relative linear and angular offsets. **Relative Joint 2D** uses a **motor**. You can configure a joint’s spring or motor.
 -   **Fixed Joint 2D** works with anchor points (it’s derived from script **Anchored Joint 2D**); it maintains the relative linear and angular offset between the anchors. **Relative Joint 2D** doesn’t have anchor points (it’s derived directly from script **Joint 2D**).
 -   **Fixed Joint 2D** cannot modify the relative linear and angular offsets in real time. **Relative Joint 2D** can.
   
