@@ -20,7 +20,7 @@
 
    https://www.youtube.com/watch?v=wpd2W3bIwx4
    
-3. **Fixed Joint 2D**
+2. **Fixed Joint 2D**
    - **keeps two objects in a position relative to each other**, so the objects are **always offset at a given position and angle**. 
    - It is a **spring-type 2D joint** for which you don’t need to set maximum forces. You can set the spring to be rigid or soft. \
      For example, objects that need to react as if they are rigidly connected: They can’t move away from each other, they **can’t move closer together**, and they can’t rotate with respect to each other. You can also use this joint to create a less rigid connection that flexes.
@@ -45,7 +45,7 @@
 
    https://www.youtube.com/watch?v=AEoWuRn3YfY
 
-5. **Friction Joint 2D** 
+3. **Friction Joint 2D** 
    - The Friction Joint 2D **connects GameObjects controlled by Rigidbody 2D physics, reduces both the linear and angular velocities between two game objects controlled by rigidbody physics to zero** (ie: it **slows them down and stops** them). For example; a platform that rotates but resists that movement.
   
      | Property | Function |
@@ -65,7 +65,7 @@
 
    https://www.youtube.com/watch?v=1-h43fzNB7U
 
-7. **Hinge Joint 2D** 
+4. **Hinge Joint 2D** 
    - allows a game object controlled by rigidbody physics to be **attached to a point in space** around which it **can rotate**. \
      The rotation can be left to happen passively (for example, in response to a collision) or can be actively powered by a motor torque provided by the Joint 2D itself. You can set limits to prevent the hinge from making a full rotation, or make more than a single rotation. \
      For example; the pivot on a pair of scissors.
@@ -77,9 +77,24 @@
 
    https://www.youtube.com/watch?v=l6awvCT29yU
 
-7. **Relative Joint 2D**
+5. **Relative Joint 2D**
    - The Relative Joint 2D allows two game objects controlled by rigidbody physics to **maintain a position based on each other’s location**. Use this joint to **keep two objects offset from each other**. \
      For example; a space-shooter game where the player has extra gun batteries that follow them.
+
+      
+     | Property | Function |
+     | --- | --- |
+     | **Enable Collision** | Enable this property to enable collisions between the two connected GameObjects. |
+     | **Connected Rigid Body** | Specify the other object this joint connects to. Leave this as **None** to have the other end of the joint fixed at a point in space defined by the **Connected Anchor** property. Select the circle icon to the right to view a list of GameObjects to connect to. |
+     | **Max Force** | Set the linear (or straight line) movement between joined GameObjects. A high value (up to 1,000) uses high force to maintain the offset. |
+     | **Max Torque** | Set the angular (or rotation) movement between joined GameObjects. A high value (up to 1000) uses high force to maintain the offset. |
+     | **Correction Scale** | Tweak the joint to correct its behaviorif required. Increasing the **Max Force** or **Max Torque** may affect the joint’s behavior such that the joint doesn’t reach its target, requiring you to correct it by adjusting this setting. The default setting is 0.3. |
+     | **Auto Configure Offset** | Enable this property to automatically set and maintain the distance and angle between the connected objects. You do not need to manually enter the **Linear Offset** and **Angular Offset** when you enable this property. |
+     | **Linear Offset** | Enter local space coordinates to specify and maintain the distance between the connected objects. |
+     | **Angular Offset** | Enter local space coordinates to specify and maintain the angle between the connected objects. |
+     | **Break Action** | Set the action taken when either the force or torque threshold is exceeded. |
+     | **Break Force** | Set the force threshold which if exceeded, will cause the joint to perform the selected **Break Action**. The default value is set to **Infinity**, which can never be exceeded and therefore the **Break Action** can never be taken while the threshold remains at this value. |
+     | **Break Torque** | Set the torque threshold which if exceeded, will cause the joint to perform the selected **Break Action**. The default value is set to **Infinity**, which can never be exceeded and therefore the **Break Action** can never be taken while the threshold remains at this value. |
 
      https://docs.unity3d.com/Manual/class-RelativeJoint2D.html
 
@@ -96,28 +111,31 @@ It is important to know the major differences between **Fixed Joint 2D** and Rel
 -   **Fixed Joint 2D** cannot modify the relative linear and angular offsets in real time. **Relative Joint 2D** can.
   
 
-10. **Slider Joint 2D** 
-   - allows a game object controlled by rigidbody physics to slide along a line in space, like sliding doors, for example.
+
+
+ 
+6. **Slider Joint 2D** 
+    - allows a game object controlled by rigidbody physics to slide along a line in space, like sliding doors, for example.
   
    https://docs.unity3d.com/Manual/class-SliderJoint2D.html
 
    https://www.youtube.com/watch?v=Micpv8SOXcg
 
-11. **Spring Joint 2D** 
-   - allows two game objects controlled by rigidbody physics to be attached together as if by a spring. Spring Joint 2D works in a similar way to distance joints. However, while distance joints enforce a fixed distance, spring joints apply tension to a connection, causing objects to bounce
+7. **Spring Joint 2D** 
+    - allows two game objects controlled by rigidbody physics to be attached together as if by a spring. Spring Joint 2D works in a similar way to distance joints. However, while distance joints enforce a fixed distance, spring joints apply tension to a connection, causing objects to bounce
   
    https://docs.unity3d.com/Manual/class-SpringJoint2D.html
 
    https://www.youtube.com/watch?v=zvHB1fsRadQ
    
-11. **Target Joint 2D** 
-   - connects to a specified target, rather than another rigid body object, as other joints do. It is a spring type joint, which you could use for picking up and moving an object acting under gravity, for example. The Target Joint 2D does not connect to another object with a rigid body; instead, it connects to a specific target. This is a spring type joint and can be used for picking up and moving objects acting under gravity, like our moving platform.
+8. **Target Joint 2D** 
+    - connects to a specified target, rather than another rigid body object, as other joints do. It is a spring type joint, which you could use for picking up and moving an object acting under gravity, for example. The Target Joint 2D does not connect to another object with a rigid body; instead, it connects to a specific target. This is a spring type joint and can be used for picking up and moving objects acting under gravity, like our moving platform.
   
     https://docs.unity3d.com/Manual/class-TargetJoint2D.html
 
     https://www.youtube.com/watch?v=NyhWNWqFEVw
 
-19. **Wheel Joint 2D** 
+9. **Wheel Joint 2D** 
     - simulates wheels and suspension.
 
     https://docs.unity3d.com/Manual/class-WheelJoint2D.html
