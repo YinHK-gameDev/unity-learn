@@ -34,6 +34,15 @@ The final step is to save the setup **ragdoll** as a **Prefab**. Choose **Assets
 
 **Drag the ragdoll character instance** from the Hierarchy **on top** of the **"Ragdoll Prefab"**. You now have a completely set-up, re-usable **ragdoll character** to use as much as you like in your game.
 
+> After you create ragdoll through Ragdoll Wizard, Unity automatically add **Character Joint
+** component on each collider of you humanoid character.
+
+
+> You can also modify collider & add Character Joint component by yourself
+
+
+
+
 
 ### ref
 https://docs.unity3d.com/Manual/ragdoll-physics-section.html
