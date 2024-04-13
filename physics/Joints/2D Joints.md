@@ -115,7 +115,10 @@ It is important to know the major differences between **Fixed Joint 2D** and Rel
 
  
 6. **Slider Joint 2D** 
-    - allows a game object controlled by rigidbody physics to slide along a line in space, like sliding doors, for example.
+    - allows a game object controlled by rigidbody physics to **slide along a line in space**. \
+      The object can freely move anywhere along the line in response to **collisions**  
+or forces. Alternatively, it can be also be moved along by a motor force, with limits applied to keep its position within a certain section of the line. \
+      Like **sliding doors**, for example.
   
    https://docs.unity3d.com/Manual/class-SliderJoint2D.html
 
