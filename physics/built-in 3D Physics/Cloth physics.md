@@ -54,6 +54,8 @@ The color of a particle represents the **relative value of its constraint** with
 | \[ Color spectrum \] |  | Provides the correspondance between particle colors and constraint values for the above selected constraint type, according to the mimimum and maximum values currently applied within the whole cloth. Black always means that the particle has no constraint. |
 | **Constraint Size** |  | The display size of the spheres that represent the cloth particles. Adjust this value at your convenience to ease your constraints edition. This property has no effect on the constraints themselves. |
 
+![](../img/Constraint.png)
+
 #### Constraints edition modes
 
 You can use **3 different modes** to edit the **cloth constraint values**.
