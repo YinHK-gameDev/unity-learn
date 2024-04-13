@@ -32,7 +32,7 @@ Cloth does not react to all colliders in a scene, nor does it apply forces back 
 Additionally, you can only use three types of colliders with cloth: a sphere, a capsule, and conical capsule colliders, constructed using two sphere colliders. These restrictions all exist to help boost performance.
 
 ### Edit Constraints Tool
-You can **apply constraints to specific vertices** of the cloth to give them more or less freedom of movement.
+You can **apply constraints to specific vertices** of the cloth to give them **more or less freedom of movement**.
 
 In the Inspector, **select Edit cloth constraints** (top-left button) in the Cloth component. When the tool is active, small spheres appear in the Scene view on all vertices of the mesh. They represent the cloth particles to which you can apply constraints. The Cloth Constraints tool window also appears at the bottom right of the Scene view.
 
@@ -40,7 +40,7 @@ In the Inspector, **select Edit cloth constraints** (top-left button) in the Clo
 
 For each cloth particle, you can set and display two types of constraints: \* **Max Distance** – the maximum distance a cloth particle can travel from its vertex position. \* **Surface Penetration** – how deep the cloth particle can penetrate the mesh.
 
-The color of a particle represents the relative value of its constraint within the cloth, according to the type of constraint currently selected.
+The color of a particle represents the **relative value of its constraint** within the cloth, according to the **type of constraint currently selected**.
 
 #### Constraints visualization
 
@@ -56,7 +56,7 @@ The color of a particle represents the relative value of its constraint within t
 
 #### Constraints edition modes
 
-You can use 3 different modes to edit the cloth constraint values.
+You can use **3 different modes** to edit the **cloth constraint values**.
 
  
 | **_Mode_** | **_Description_** |
