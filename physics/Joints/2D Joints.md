@@ -1,6 +1,6 @@
 ## 2D joints
 1. **Distance Joint 2D** 
-   - attaches two game objects** controlled by rigidbody physics together** and **keeps them a certain distance apart**.
+   - attaches two game objects **controlled by rigidbody physics together** and **keeps them a certain distance apart**.
   
       | Property | Function |
       | --- | --- |
@@ -70,13 +70,16 @@
      The rotation can be left to happen passively (for example, in response to a collision) or can be actively powered by a motor torque provided by the Joint 2D itself. You can set limits to prevent the hinge from making a full rotation, or make more than a single rotation. \
      For example; the pivot on a pair of scissors.
 
-    
+     ![](./img/Hinge.png)
+
+
    https://docs.unity3d.com/Manual/class-HingeJoint2D.html
 
    https://www.youtube.com/watch?v=l6awvCT29yU
 
-8. **Relative Joint 2D**
-   - allows two game objects controlled by rigidbody physics to maintain a position based on each other’s location. Use this joint to keep two objects offset from each other. For example; a space-shooter game where the player has extra gun batteries that follow them.
+7. **Relative Joint 2D**
+   - The Relative Joint 2D allows two game objects controlled by rigidbody physics to **maintain a position based on each other’s location**. Use this joint to **keep two objects offset from each other**. \
+     For example; a space-shooter game where the player has extra gun batteries that follow them.
   
    https://docs.unity3d.com/Manual/class-RelativeJoint2D.html
 
