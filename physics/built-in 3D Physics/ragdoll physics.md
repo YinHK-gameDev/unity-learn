@@ -5,6 +5,8 @@ that you can apply to a **humanoid character**, to **simulate behaviour** such a
 
 Unity provides a **"Ragdoll Wizard"** that allows you to **configure ragdoll physics behaviours** on your character.
 
+> Ragdoll Physics use **Character Joints & Colliders**
+
 
 ### Create a ragdoll
 
