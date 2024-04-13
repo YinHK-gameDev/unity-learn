@@ -1,6 +1,6 @@
 ## 2D joints
 1. **Distance Joint 2D** 
-   - attaches two game objects controlled by rigidbody physics together and **keeps them a certain distance apart**.
+   - attaches two game objects** controlled by rigidbody physics together** and **keeps them a certain distance apart**.
   
       | Property | Function |
       | --- | --- |
@@ -46,7 +46,7 @@
    https://www.youtube.com/watch?v=AEoWuRn3YfY
 
 5. **Friction Joint 2D** 
-   - reduces both the linear and angular velocities between two game objects controlled by rigidbody physics to zero (ie: it slows them down and stops them). For example; a platform that rotates but resists that movement.
+   - The Friction Joint 2D connects GameObjects controlled by Rigidbody 2D physics, reduces both the linear and angular velocities between two game objects controlled by rigidbody physics to zero (ie: it slows them down and stops them). For example; a platform that rotates but resists that movement.
   
    https://docs.unity3d.com/Manual/class-FrictionJoint2D.html
 
