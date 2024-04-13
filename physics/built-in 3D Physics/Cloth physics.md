@@ -56,6 +56,8 @@ The color of a particle represents the **relative value of its constraint** with
 
 ![](../img/Constraint.png)
 
+![](../img/cloth_constraint.png)
+
 #### Constraints edition modes
 
 You can use **3 different modes** to edit the **cloth constraint values**.
