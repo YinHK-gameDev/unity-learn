@@ -96,16 +96,18 @@ With the **Paint** mode:
 
 ### Self collision and intercollision
 
-Cloth collision makes character clothing and other fabrics in your game move more realistically. In Unity, a cloth has several cloth particles that handle collision. You can set up cloth particles for:
+Cloth collision makes character clothing and other fabrics in your game **move more realistically**. In Unity, a cloth has several cloth particles that handle **collision**. You can set up cloth particles for:
 
--   Self-collision, which prevents cloth from penetrating itself.
--   Intercollision, which allows cloth particles to collide with each other.
+- **Self-collision**: \
+  which prevents cloth from penetrating itself.
+- **Intercollision**: \
+  which allows cloth particles to collide with each other.
 
 To set up the collision particles for a cloth, select the **Self Collision and Intercollision** button in the Cloth inspector:
 
 ![](../img/Inspector-Cloth-Collision-Button.png)
 
-
+![](../img/collision.png)
 
 To enable the self collision behavior for a cloth, to go the Self Collision section of the Cloth Inspector window and set Distance and Stiffness to non-zero values:
 
