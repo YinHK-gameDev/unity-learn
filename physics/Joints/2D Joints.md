@@ -169,7 +169,7 @@ or forces. Alternatively, it can be also be **moved along by a motor force**, wi
 7. **Wheel Joint 2D** 
     - simulates wheels and suspension. You can apply motor power to the joint. The wheel uses a suspension spring to maintain its distance from the main body of the vehicle.
 
-      ![](,.img/WheelJoint.png)
+      ![](,/img/WheelJoint.png)
 
     https://docs.unity3d.com/Manual/class-WheelJoint2D.html
 
