@@ -14,13 +14,16 @@ Unity provides a **"Ragdoll Wizard"** that allows you to **configure ragdoll phy
 When you’ve created your character and rigged it, save the asset normally in your **Project Folder**. When you switch to Unity, you’ll see the character asset file. Select that file and the **Import Settings** dialog will appear inside the
  inspector. Make sure that **Mesh Colliders** is **not enabled**.
 
+
 #### Using Ragdoll Wizard
-It’s not possible to make the actual source asset into a ragdoll. This would require modifying the source asset file, and is therefore impossible. You will make an instance of the character asset into a ragdoll, which can then be saved as a **Prefab**
- for **re-use**.
+It’s not possible to make the actual source asset into a ragdoll. This would require modifying the source asset file, and is therefore impossible. You will make an instance of the character asset into a ragdoll, which can then be saved as a **Prefab** for **re-use**.
 
 Create an instance of the character by **dragging** it from the **Project View** to the **Hierarchy View**. Expand its **Transform Hierarchy** by clicking the small arrow to the left of the instance’s name in the Hierarchy. Now you are ready to start **assigning your ragdoll parts**.
 
 > Open the Ragdoll Wizard by choosing **GameObject > 3D Object > Ragdoll…** from the menu bar. You will now see the Wizard itself.
+
+
+![](../img/Ragdoll.png)
 
 **Drag the different Transforms** of your character instance to **the appropriate property on the wizard**
 
