@@ -39,8 +39,10 @@ In the Inspector, **select Edit cloth constraints** (top-left button) in the Clo
 #### Constraint types and colors
 
 For each cloth particle, you can set and display two types of constraints: 
-- **Max Distance**:  the maximum distance a cloth particle can **travel from its vertex position**.
-- **Surface Penetration**:  **how deep** the cloth particle can **penetrate the mesh**.
+- **Max Distance**: \
+  the maximum distance a cloth particle can **travel from its vertex position**.
+- **Surface Penetration**: \
+  **how deep** the cloth particle can **penetrate the mesh**.
 
 The color of a particle represents the **relative value of its constraint** within the cloth, according to the **type of constraint currently selected**.
 
