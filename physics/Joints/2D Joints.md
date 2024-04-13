@@ -111,34 +111,34 @@ It is important to know the major differences between **Fixed Joint 2D** and Rel
 -   **Fixed Joint 2D** cannot modify the relative linear and angular offsets in real time. **Relative Joint 2D** can.
   
 
-
-
  
 6. **Slider Joint 2D** 
     - allows a game object controlled by rigidbody physics to **slide along a line in space**. \
       The object can freely move anywhere along the line in response to **collisions**  
 or forces. Alternatively, it can be also be moved along by a motor force, with limits applied to keep its position within a certain section of the line. \
       Like **sliding doors**, for example.
-  
+
+      ![](./img/SliderJoint.png)
+
    https://docs.unity3d.com/Manual/class-SliderJoint2D.html
 
    https://www.youtube.com/watch?v=Micpv8SOXcg
 
-7. **Spring Joint 2D** 
+6. **Spring Joint 2D** 
     - allows two game objects controlled by rigidbody physics to be attached together as if by a spring. Spring Joint 2D works in a similar way to distance joints. However, while distance joints enforce a fixed distance, spring joints apply tension to a connection, causing objects to bounce
   
    https://docs.unity3d.com/Manual/class-SpringJoint2D.html
 
    https://www.youtube.com/watch?v=zvHB1fsRadQ
    
-8. **Target Joint 2D** 
+7. **Target Joint 2D** 
     - connects to a specified target, rather than another rigid body object, as other joints do. It is a spring type joint, which you could use for picking up and moving an object acting under gravity, for example. The Target Joint 2D does not connect to another object with a rigid body; instead, it connects to a specific target. This is a spring type joint and can be used for picking up and moving objects acting under gravity, like our moving platform.
   
     https://docs.unity3d.com/Manual/class-TargetJoint2D.html
 
     https://www.youtube.com/watch?v=NyhWNWqFEVw
 
-9. **Wheel Joint 2D** 
+8. **Wheel Joint 2D** 
     - simulates wheels and suspension.
 
     https://docs.unity3d.com/Manual/class-WheelJoint2D.html
