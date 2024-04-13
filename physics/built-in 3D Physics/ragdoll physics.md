@@ -1,7 +1,7 @@
 ## Ragdoll physics
 
 Ragdoll physics are a **set of colliders**, **rigid bodies** and **joints**
-that you can apply to a **humanoid character**, to simulate behaviour such as **impact collisions** and **character death**.
+that you can apply to a **humanoid character**, to **simulate behaviour** such as **impact collisions** and **character death**.
 
 Unity provides a **"Ragdoll Wizard"** that allows you to **configure ragdoll physics behaviours** on your character.
 
