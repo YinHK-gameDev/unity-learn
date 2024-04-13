@@ -66,8 +66,11 @@
    https://www.youtube.com/watch?v=1-h43fzNB7U
 
 7. **Hinge Joint 2D** 
-   - allows a game object controlled by rigidbody physics to be **attached to a point in space** around which it **can rotate**. For example; the pivot on a pair of scissors.
-  
+   - allows a game object controlled by rigidbody physics to be **attached to a point in space** around which it **can rotate**. \
+     The rotation can be left to happen passively (for example, in response to a collision) or can be actively powered by a motor torque provided by the Joint 2D itself. You can set limits to prevent the hinge from making a full rotation, or make more than a single rotation. \
+     For example; the pivot on a pair of scissors.
+
+    
    https://docs.unity3d.com/Manual/class-HingeJoint2D.html
 
    https://www.youtube.com/watch?v=l6awvCT29yU
