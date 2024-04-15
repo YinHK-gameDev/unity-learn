@@ -13,7 +13,7 @@ The Selectable Class is the **base class** for all the **interaction components*
 
 ### Transition Options:
 
-Within a selectable component there are several transition options depending on what state the selectable is currently in. The different states are: normal, highlighted, pressed and disabled.
+Within a selectable component there are several transition options depending on what state the selectable is currently in. The different states are: **normal**, **highlighted**, **pressed** and **disabled**.
 
 | **Transition Options:** | **Function:** |
 | --- | --- |
