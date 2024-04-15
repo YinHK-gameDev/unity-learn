@@ -10,7 +10,7 @@ You should **position the Image** so that the **area that should be visible is d
 
 ![](./img/MaskDisabled.svg)
 
-Then, add a **Mask component** to the Panel. The areas of the child Image outside the panel will become invisible since they are masked by the shape of the Panel.
+Then, add a **Mask component** to the **Panel**. The **areas of the child Image** outside the **panel** will become **invisible** since they are **masked by the shape of the Panel**.
 
 ![](./img/MaskEnabled.svg)
 
