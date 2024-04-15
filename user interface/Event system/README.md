@@ -1,5 +1,5 @@
 ## Event system
-The **Event System** is a way of **sending events to objects** in the application based on **input, be it keyboard, mouse, touch, or custom input**. 
+The **Event System** is a way of **sending events to objects** in the application **based on** **input, be it keyboard, mouse, touch, or custom input**. 
 
 **Objects receive these events based on on user input**.
 
