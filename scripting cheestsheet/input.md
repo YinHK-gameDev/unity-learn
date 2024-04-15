@@ -444,7 +444,7 @@ https://docs.unity3d.com/ScriptReference/Touch.html
 ### "Up", "Down" vs without "Down" or "Up"
 `GetXXXDown` vs `GetXXX` vs `GetXXXUp` difference:
 
-- `GetXXX`  will return value if user **"hold down"** input, only stop returning value when user release.
+- `GetXXX`  will return value if user **"hold down"** input, only **stop returning value when user release**.
 - `GetXXXDown` only return value if user **hit/press down**, even user hold down it won't return value anymore. Unless user release it and **hit/press down** again. **will not return anything until the user has released and pressed it again**
 - `GetXXXUp` only return value if user **release**. 
 
