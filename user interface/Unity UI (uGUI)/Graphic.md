@@ -18,6 +18,17 @@ The Material set by the user
 public virtual Material material { get; set; }
 ```
 
+#### depth
+Absolute depth of the graphic, used by rendering and events -- lowest to highest.
+```cs
+public int depth { get; }
+```
+
+#### raycastTarget
+Should this graphic be considered a target for raycasting?
+```cs
+public virtual bool raycastTarget { get; set; }
+```
 
 
 
