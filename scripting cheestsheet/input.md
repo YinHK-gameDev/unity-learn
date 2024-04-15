@@ -206,7 +206,7 @@ Returns true during the frame the user pressed the given mouse button.
 ```
 public static bool GetMouseButtonDown(int button);
 ```
-Call this function from the Update function, since the state gets reset each frame. It will not return true until the user has released the mouse button and pressed it again. button values are 0 for left button, 1 for right button, 2 for the middle button.
+Call this function from the Update function, since the state gets reset each frame. It will not return true until the user has released the mouse button and pressed it again. button values are **0 for left button**, **1 for right button**, **2 for the middle button**.
 
 ```cs
 using UnityEngine;
