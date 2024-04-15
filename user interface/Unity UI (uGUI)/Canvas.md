@@ -12,7 +12,7 @@ Canvas uses the **EventSystem** object to help the Messaging System.
 
 ### Draw order of elements
 
-> UI elements in the Canvas are drawn in the same order they appear in the Hierarchy. The first child is drawn first, the second child next, and so on.
+> **UI elements** in the Canvas are **drawn in the same order they appear in the Hierarchy**. The first child is drawn first, the second child next, and so on.
 > If two UI elements overlap, the later one will appear on top of the earlier one.
 
 To change which element appear on top of other elements, simply **reorder the elements in the Hierarchy** by dragging them. 
