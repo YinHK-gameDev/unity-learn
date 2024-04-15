@@ -79,7 +79,7 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-SelectableTra
 | **Horizontal** | Navigates Horizontally. |
 | **Vertical** | Navigates Vertically. |
 | **Automatic** | Automatic Navigation. |
-| **Explicit** | In this mode you can explicitly specify where the control navigates to for different arrow keys. |
+| **Explicit** | In this mode you can explicitly specify where the control navigates to for **different arrow keys**. |
 | **Visualize** | Selecting Visualize gives you a visual representation of the navigation you have set up in the scene window. See below. |
 
 ![](./img/GUIVisualizeNavigation.png)
