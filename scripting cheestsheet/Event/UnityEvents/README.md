@@ -66,15 +66,16 @@ To configure a callback in the editor there are a few steps to take:
 
 3. Declare **`UnityEvent`** & **`Invoke()`** function to invoke the event
 
-4. Create a **callback function/event handler** for this event some where. The callback function should be **`public`**, otherwise you can't search it in inspector.
+4. Create a **callback function/event handler** for this event some where. 
+   > The callback function should be **`public`**, otherwise you can't search it in inspector.
     
-5. In inspecter, the Event section you declared **`UnityEvent`** in the script, select the **"+"** icon to add a slot for a **callback**.
+6. In inspecter, the Event section you declared **`UnityEvent`** in the script, select the **"+"** icon to add a slot for a **callback**.
     
-6. Select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this)
+7. Select the **`UnityEngine.Object`** you wish to **receive the callback** (You can use the **object selector** for this)
     
-7. Select the **function** you wish to be called (a method that subscribe to the event - event handler)
+8. Select the **function** you wish to be called (a method that subscribe to the event - event handler)
     
-8. You can add more than one callback for the event
+9. You can add more than one callback for the event
 
 > Adding callback function through UI editor is for static calls only, with **no parameters or exactly one parameter**.
 
