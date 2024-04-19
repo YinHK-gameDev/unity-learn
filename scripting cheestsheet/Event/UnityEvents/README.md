@@ -152,7 +152,7 @@ By default a **`UnityEvent`** in a **`Monobehaviour`** **binds dynamically to a 
 
 > To do this you need to define a **custom** **`UnityEvent`** class that **supports multiple arguments**. This is quite easy to do.
 
-> **Generic UnityEvents** mainly used for dynamic binding, **a method the argument(s) passed by the invoker would be passed down to the actual method**.You can even us **UnityEvents** with **more than one argument** as the arguments are passed by the invoker.
+> **Generic UnityEvents** mainly used for dynamic binding, **a method the argument(s) passed by the invoker would be passed down to the actual method**. You can even us **UnityEvents** with **more than one argument** as the arguments are passed by the invoker.
 
 
 **`UnityEngine.Events`** :
