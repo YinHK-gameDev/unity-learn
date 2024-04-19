@@ -38,7 +38,7 @@ Quits the application, quit the game.
 
 Shut down the running application. 
 
-> However, the `Application.Quit` call is **ignored in the Unity Editor**. Only work at real device
+> **Note**: the `Application.Quit` call is **ignored in the Unity Editor**. Only work at real device
 
 **Android and iOS platforms have their own dedicated interfaces to hide and close applications**, which might be the preferred way to close applications for some users. Therefore, it's not recommended to create your own way of shutting down with Application.Quit to prevent inconsistent user experience between your application and these platform interfaces.
 
