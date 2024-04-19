@@ -2,7 +2,7 @@
 
 Base class for all entities in Unity Scenes.
 
-Inherited from Unity Object class 
+**Inherited from Unity Object class** 
 
 
 ### Set game object
