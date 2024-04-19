@@ -179,7 +179,7 @@ Override data also becomes unused if you delete the public field definition, or 
 To check for and remove unused overrides using the Inspector:
 
 -   Select the GameObject(s) that you want to work on.
--   In the inspector, click the **Overrides** drop-down menu. If there are any unused overrides present, the menu will show an “Unused overrides” option, otherwise the “Unused overrides” option is not displayed.
+-   In the inspector, click the **Overrides** drop-down menu. If there are any unused overrides present, the menu will show an **“Unused overrides” option**, otherwise the **“Unused overrides” option** is not displayed.
 -   Click **Unused Overrides** to open the unused overrides panel.
 -   The unused overrides panel lists the unused overrides, and has a **Remove** button.
 -   Click the **Remove** button to remove the unused overrides.
