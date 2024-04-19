@@ -145,7 +145,7 @@ If you select multiple entries at once, the **Revert All** and **Apply All** but
 
 You can also **revert** and **apply** individual overrides using the context menu in the Inspector, instead of using the Overrides drop-down window.
 
-Overridden properties are shown in bold. They can be reverted or applied via a context menu:
+**Overridden properties** are **shown in bold**. They can be reverted or applied via a context menu:
 
 ![](./img/PrefabsContextSingleProperty1.png)
 
