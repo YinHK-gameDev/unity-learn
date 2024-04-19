@@ -131,7 +131,7 @@ In inspector, the Event section you declared `UnityEvent` in the script, select 
 ```cs
 public class TestingEventSubscriber : MonoBehaviour {
 
-    private void TestingUnityEvent() {
+    public void TestingUnityEvent() {
         Debug.Log("TestingUnityEvent");
     }
 
