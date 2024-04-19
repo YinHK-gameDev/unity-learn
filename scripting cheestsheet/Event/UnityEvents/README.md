@@ -163,6 +163,14 @@ By default a **`UnityEvent`** in a **`Monobehaviour`** **binds dynamically to a 
 - **`UnityEvent<T0,T1,T2,T3>`**
 - **`UnityEventBase`** (Abstract base class)
 
+**Step:**
+
+- For using **`UnityEvent<T0>`**, **`UnityEvent<T0,T1>`**, **`UnityEvent<T0,T1,T2>`** or **`UnityEvent<T0,T1,T2,T3>`**, **create a event class to inherit & override** these class type. But **`UnityEvent`** no need.
+- Instantiate the event class
+- Use **`AddListener()`** to add event listener(event handler), subscribe an event
+- Create callback function(event handler)
+- Use **`RemoveListener()`** to unscribe the event if needed.
+
 #### `UnityEventBase`
 
 **Abstract base class** for UnityEvents. \
