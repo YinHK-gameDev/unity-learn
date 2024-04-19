@@ -75,7 +75,7 @@ To configure a callback in the editor there are a few steps to take:
     
 8. Select the **function** you wish to be called (a method that subscribe to the event - event handler)
     
-9. You can add more than one callback for the event
+9. You can **add more than one callback** for the event
 
 > Adding callback function through UI editor is for static calls only, with **no parameters or exactly one parameter**.
 
