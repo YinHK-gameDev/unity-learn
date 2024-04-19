@@ -34,7 +34,7 @@ If you are **replacing an existing Prefab**, Unity tries to preserve references 
 
 - In **isolation**: When you edit a Prefab in isolation, Unity **hides the rest of your current working Scene**, and you only see the GameObjects that relate to the Prefab itself.
 
-- In **context**: When you edit a Prefab in context, the** rest of your current working Scene remains visible**, **but locked for editing**.
+- In **context**: When you edit a Prefab in context, the **rest of your current working Scene remains visible**, **but locked for editing**.
 
 Editing in isolation
 
