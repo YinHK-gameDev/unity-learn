@@ -21,7 +21,10 @@ Inside script set variable/array 做`public`, 在unity inspector 會顯示該var
 
 ### Inheritance
 
-**`object`(C#) -> `Object`(Unity) -> `Component` -> `Behaviour` -> `MonoBehaviour` -> ....**
+**`object`(C#) -> `Object`(Unity) -> `Component` -> `Behaviour` -> `MonoBehaviour` -> ....** \
+                      
+**`object`(C#) -> `Object`(Unity) -> `GameObject`**
+
 
 ### `Debug.Log()`
 ```cs
