@@ -100,6 +100,9 @@ Then predefined value can be set in UI editor. \
 Callback function cannot be found in search, **Generic UnityEvents** should be used for more than one paramter \
 ![](./img/UnityEvent8.png)
 
+
+> You can add **more than one callback** for the event.
+
 > **Note**: The callback function should be **`public`**, otherwise you can't search it in inspector.
 
 
