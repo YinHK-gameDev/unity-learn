@@ -142,7 +142,7 @@ public class TestingEventSubscriber : MonoBehaviour {
 
 ### Using Generic UnityEvents in script
 
-> No need manually add callback in inspector, scripting only!
+> **No need manually add callback in inspector**, **scripting only !**
 
 **Create your custom UnityEvents**:
 
