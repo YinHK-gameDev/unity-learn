@@ -56,7 +56,7 @@ When configuring a **`UnityEvent`** in the Inspector there are **two types of fu
 
 https://forum.unity.com/threads/unityevent-passing-parameters-with-the-inspector.1249816/
 
-### Steps for Using UnityEvents
+### Steps for Using UnityEvents (Add callbacks manually in inspector)
 
 To configure a callback in the editor there are a few steps to take:
 
