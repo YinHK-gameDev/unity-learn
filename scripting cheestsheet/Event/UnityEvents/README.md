@@ -169,6 +169,7 @@ By default a **`UnityEvent`** in a **`Monobehaviour`** **binds dynamically to a 
 - Instantiate the event class
 - Use **`AddListener()`** to add event listener(event handler), subscribe an event
 - Create callback function(event handler)
+- Use **`Invoke()`** to invoke an event
 - Use **`RemoveListener()`** to unscribe the event if needed.
 
 #### `UnityEventBase`
