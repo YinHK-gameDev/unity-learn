@@ -25,6 +25,11 @@ Inside script set variable/array 做`public`, 在unity inspector 會顯示該var
                       
 **`object`(C#) -> `Object`(Unity) -> `GameObject`**
 
+### Common classes used frequently for Unity Scripting
+
+- **`MonoBehaviour`** class
+- **`GameObject`** class
+- **`Transform`** class
 
 ### `Debug.Log()`
 ```cs
