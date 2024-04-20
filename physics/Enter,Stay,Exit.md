@@ -65,7 +65,7 @@ If one of collider is trigger, both collider will **pass through each other** wh
 
 > To generate collision detection message: Both have **collider** + At least one have **dynamic collider** + **No any trigger** exists
 
-> Unity only applies physics forces to collider GameObjects that have a physics body (a **Rigidbody or ArticulationBody**). When a **physics body collider** collides with a **static collider**, **only** the **physics body collider** behavior changes as a result of the collision (for example, it might bounce or slow down as a result of the collision).
+> Unity **only applies physics forces to collider GameObjects that have a physics body** (a **Rigidbody or ArticulationBody**). When a **physics body collider** collides with a **static collider**, **only** the **physics body collider** behavior changes as a result of the collision (for example, it might bounce or slow down as a result of the collision).
 
 ![](./img/trigger&collider.png)
 
