@@ -45,8 +45,9 @@ https://docs.unity3d.com/ScriptReference/MonoBehaviour.Invoke.html
 
 ### `Invokerepeating()`
 Invokes the method methodName in time seconds, then repeatedly every repeatRate seconds.
-> Note : This does not work if you set the time scale to 0.
+> **Note**: This does not work if you set the time scale to 0.
 
+> **Note**: The time and repeatRate parameters depend on `Time.timeScale`. For example, if `Time.timeScale` is 0, InvokeRepeating will not invoke. On the other hand, if `Time.timeScale` is 2, `InvokeRepeating` will repeat twice as fast.
 
 ```cs
 public void InvokeRepeating(string methodName, float time, float repeatRate);
