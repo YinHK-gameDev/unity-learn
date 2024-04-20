@@ -151,7 +151,7 @@ public class ExampleScript : MonoBehaviour
 
 Invokes the method methodName in **time** seconds, then **repeatedly every repeatRate seconds**.
 
-> **Note**: The **time and repeatRate parameters** depend on **`Time.timeScale`**. For example, if `Time.timeScale` is 0,  `InvokeRepeating` will **not invoke**. On the other hand, if `Time.timeScale` is 2, InvokeRepeating will **repeat twice** as fast.
+> **Note**: The **time and repeatRate parameters** depend on **`Time.timeScale`**. For example, if `Time.timeScale` is 0,  `InvokeRepeating` will **not invoke**. On the other hand, if `Time.timeScale` is 2, `InvokeRepeating` will **repeat twice** as fast.
 
 
 
