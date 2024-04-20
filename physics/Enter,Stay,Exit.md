@@ -45,10 +45,10 @@ void OnTriggerExit(Collider other){ ... }
 > **Note**: Both GameObjects **must** contain a **Collider component**. **One must** have **`Collider.isTrigger`** enabled, and contain a **Rigidbody**. If both GameObjects have **`Collider.isTrigger`** enabled, no collision happens. The same applies when **both** GameObjects **do not have a Rigidbody component**.
 
 #### Trigger
-A collider configured as a **Trigger** (using the **Is Trigge**r property) does not behave as a solid object and **will simply allow other colliders to pass through**. When a collider enters its space, a **trigger will call the `OnTriggerEnter` function** on the trigger object’s scripts
+A collider configured as a **Trigger** (using the **Is Trigge**r property) **does not behave as a solid object** and **will simply allow other colliders to pass through**. When a collider enters its space, a **trigger will call the `OnTriggerEnter` function** on the trigger object’s scripts
 
 #### Is trigger or not?
-If one of collider is trigger, both collider will **pass through each other** whereas non trigger do not. So, if both collider without **at least one of these is trigger**, they will **not pass through each other**.
+If one of collider is trigger, both collider will **pass through each other** whereas **non trigger do not**. So, if both collider without **at least one of these is trigger**, they will **not pass through each other**.
 
 #### Requirement for collision generating trigger messages:
 - Both objects **must** have a collider.
