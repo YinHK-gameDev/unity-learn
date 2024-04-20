@@ -4,7 +4,7 @@ Global physics properties and helper methods
 
 
 ### `Physics.OverlapCapsule`
-heck the given capsule against the physics world and return all overlapping colliders.
+Check the given capsule against the physics world and return all overlapping colliders.
 
 ```cs
 public static Collider[] OverlapCapsule(Vector3 point0, Vector3 point1, float radius, int layerMask = AllLayers, QueryTriggerInteraction queryTriggerInteraction = QueryTriggerInteraction.UseGlobal);
