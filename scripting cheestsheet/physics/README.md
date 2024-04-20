@@ -67,7 +67,7 @@ https://docs.unity3d.com/ScriptReference/Physics.OverlapCapsule.html
 **`Physics.OverlapBox`** \
 https://docs.unity3d.com/ScriptReference/Physics.OverlapBox.html
 
-**`Physics.OverlapSphere**` \
+**`Physics.OverlapSphere`** \
 https://github.com/YinHK-gameDev/unity-learn/edit/2021.3.0(LTS)/scripting%20cheestsheet/check%20grounded.md
 
 
