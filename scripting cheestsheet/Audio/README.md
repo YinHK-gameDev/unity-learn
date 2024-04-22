@@ -99,6 +99,11 @@ https://docs.unity3d.com/ScriptReference/AudioSource.html
 
 **`AudioSource.PlayOneShot`** does not cancel clips that are already being played by **`AudioSource.PlayOneShot`** and **`AudioSource.Play`**.
 
+**`PlayOneShot()`** is an instance method that you can call on an existing **AudioSource component** to play a given audioclip. The clip is played at the position of whatever object the AudioSource component is attached to.
+
+
+> Only **temporarily change the clip in order for it to play**, is to use the **`PlayOneShot`** method. We’re able to **play multiple sounds at the same time through the same AudioSource** using this method, meaning that second PlayOneShot call **doesn’t actually stop/interrupt the first in order to start playing**.
+
 ```cs
 public void PlayOneShot(AudioClip clip, float volumeScale = 1.0F);
 ```
@@ -148,6 +153,8 @@ public class Example : MonoBehaviour
 }
 ```
 https://docs.unity3d.com/ScriptReference/AudioSource.PlayClipAtPoint.html
+
+https://m-ansley.medium.com/playing-sound-effects-in-unity-3c624b48e5bc
 
 
 #### A game object has different audio source, play two different audio source depend on the situation
