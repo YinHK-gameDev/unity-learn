@@ -99,7 +99,7 @@ public class ExampleClass : MonoBehaviour
 }
 ```
 #### `AudioSource.PlayClipAtPoint`
-Plays an AudioClip at a **given position** in world space.
+> Plays an AudioClip at a **given position** in world space.
 
 This function creates an audio source but automatically disposes of it once the clip has finished playing.
 
