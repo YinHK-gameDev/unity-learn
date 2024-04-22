@@ -92,7 +92,46 @@ public class Example : MonoBehaviour
 }
 ```
 
-https://docs.unity3d.com/ScriptReference/AudioSource.html
+https://docs.unity3d.com/ScriptReference/AudioSource.html 
+
+https://m-ansley.medium.com/playing-sound-effects-in-unity-3c624b48e5bc
+
+
+### `AudioSource.clip`
+
+The **default** AudioClip to play.
+
+> You can use this property to change the AudioClip played in the audio source
+
+> **AudioSource clip** determines the audio clip that will be **played next**. Assigning clip with a **new audio clip** does not instantly change the clip that is being played.
+
+
+```cs
+public AudioClip clip;
+```
+
+Eg:
+```cs
+using UnityEngine;
+using System.Collections;
+
+[RequireComponent(typeof(AudioSource))]
+public class ExampleClass : MonoBehaviour
+{
+    public AudioClip otherClip;
+
+    IEnumerator Start()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
+        audio.clip = otherClip;
+        audio.Play();
+    }
+}
+
+```
 
 #### `AudioSource.PlayOneShot`
 > **Plays an AudioClip**, and **scales the AudioSource volume** by **volumeScale**.
@@ -153,8 +192,6 @@ public class Example : MonoBehaviour
 }
 ```
 https://docs.unity3d.com/ScriptReference/AudioSource.PlayClipAtPoint.html
-
-https://m-ansley.medium.com/playing-sound-effects-in-unity-3c624b48e5bc
 
 
 #### A game object has different audio source, play two different audio source depend on the situation
