@@ -9,6 +9,28 @@ In order to play 3D sounds you also need to have a **AudioListener**. The audio 
 
 You can **play a single audio clip using `AudioSource.Play()`**, **`AudioSource.Pause`** and **`AudioSource.Stop()`**. You can also adjust its volume while playing using the volume property, or seek using time. Multiple sounds can be played on one AudioSource using **`AudioSource.PlayOneShot()`**. You can play a clip at a **static position** in 3D space using **`AudioSource.PlayClipAtPoint`**.
 
+
+```cs
+// Plays the clip.
+public void Play();
+
+// Plays the clip with a delay specified in seconds. 
+public void PlayDelayed(float delay);
+
+// Pauses playing the clip.
+public void Pause();
+
+// Stops playing the clip.
+public void Stop();
+
+// Unpause the paused playback of this AudioSource.
+// This function is similar to calling Play() on a paused AudioSource,
+// except that it will not create a new playback voice if it is not currently paused.
+public void UnPause();
+```
+
+
+
 Eg:
 ```cs
 //This script allows you to toggle music to play and stop.
