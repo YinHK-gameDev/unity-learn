@@ -93,7 +93,7 @@ public class Example : MonoBehaviour
 https://docs.unity3d.com/ScriptReference/AudioSource.html
 
 #### `AudioSource.PlayOneShot`
-Plays an AudioClip, and scales the AudioSource volume by **volumeScale**.
+**Plays an AudioClip**, and **scales the AudioSource volume** by **volumeScale**.
 
 ```cs
 public void PlayOneShot(AudioClip clip, float volumeScale = 1.0F);
