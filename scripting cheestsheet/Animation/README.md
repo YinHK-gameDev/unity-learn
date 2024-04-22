@@ -20,6 +20,9 @@ public int layerCount;
 // Should root motion be applied?
 public bool applyRootMotion;
 
+// The runtime AnimatorController that controls the Animator.
+public RuntimeAnimatorController runtimeAnimatorController;
+
 // Methods
 
 // Plays a state.
@@ -39,9 +42,6 @@ public float GetFloat(int id);
 // Returns the value of the given integer parameter.
 public int GetInteger(string name);
 public int GetInteger(int id);
-
-// The runtime AnimatorController that controls the Animator.
-public RuntimeAnimatorController runtimeAnimatorController;
 
 
 // Static methods
