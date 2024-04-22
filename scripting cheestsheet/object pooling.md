@@ -19,7 +19,7 @@ The primary goal of object pooling is to improve performance by reducing the ove
 - **InitializeObjectPool** - pre-instantiate the object & set them inactive, add them into the pool
 - **GetObjectFromPool**
 - **ReturnObjectToPool**
-- Using Object Pooling methods in the script
+- Give reference to the Objectpooling class you created, using Object Pooling methods in other script
 
 
 Eg: \
