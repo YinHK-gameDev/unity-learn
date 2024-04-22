@@ -66,19 +66,24 @@ public class ExampleClass : MonoBehaviour
     {
         //Load a text file (Assets/Resources/Text/textFile01.txt)
         var textFile = Resources.Load<TextAsset>("Text/textFile01");
+        var textFile = Resources.Load("Text/textFile01") as TextAsset;
 
         //Load text from a JSON file (Assets/Resources/Text/jsonFile01.json)
         var jsonTextFile = Resources.Load<TextAsset>("Text/jsonFile01");
+        var jsonTextFile = Resources.Load("Text/jsonFile01") as TextAsset;
         //Then use JsonUtility.FromJson<T>() to deserialize jsonTextFile into an object
 
         //Load a Texture (Assets/Resources/Textures/texture01.png)
         var texture = Resources.Load<Texture2D>("Textures/texture01");
+        var texture = Resources.Load("Textures/texture01") as Texture2D;
 
         //Load a Sprite (Assets/Resources/Sprites/sprite01.png)
         var sprite = Resources.Load<Sprite>("Sprites/sprite01");
+        var sprite = Resources.Load("Sprites/sprite01") as Sprite;
 
         //Load an AudioClip (Assets/Resources/Audio/audioClip01.mp3)
         var audioClip = Resources.Load<AudioClip>("Audio/audioClip01");
+        var audioClip = Resources.Load("Audio/audioClip01") as AudioClip;
     }
 }
 ```
