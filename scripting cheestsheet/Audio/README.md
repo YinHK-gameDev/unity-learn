@@ -168,8 +168,16 @@ This class implements a microphone-like device. It **records the sounds around i
 
 > 📌 use **"AudioListener.Pause = true"** to pause all audios and use in **`update()`** only.
 
+```cs
+AudioListener.Pause = true;
+AudioListener.Pause = False;
+```
+```cs
 
-
+//Controls the game sound volume (0.0 to 1.0).
+public static float volume;
+AudioListener.volume = 1.0F;
+```
 https://docs.unity3d.com/ScriptReference/AudioListener.html
 
 
