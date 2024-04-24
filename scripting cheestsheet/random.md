@@ -16,7 +16,7 @@ https://docs.unity3d.com/ScriptReference/Random.Range.html
 
 #### `Random.insideUnitSphere`
 
-Returns a random point inside or on a sphere with radius 1.0 (Read Only).
+Returns a random point **inside or on** a sphere with radius 1.0 (Read Only).
 
 Note that the probability space includes the surface of the sphere because value, which is inclusive to 1.0, is used to acquire a random radius.
 
@@ -43,7 +43,7 @@ public class Example : MonoBehaviour
 
 #### `Random.onUnitSphere`
 
-Returns a random point on the surface of a sphere with radius 1.0 (Read Only).
+Returns a random point **on the surface** of a sphere with radius 1.0 (Read Only).
 
 ```cs
 public static Vector3 onUnitSphere;
