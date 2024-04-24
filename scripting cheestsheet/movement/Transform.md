@@ -51,6 +51,9 @@ https://docs.unity3d.com/ScriptReference/Transform.Rotate.html
 ### `Transform.position`
 The world space position of the Transform.
 
+
+> **Note**: If updating the position(Vector3), entire vector3 needs to be assigned a new vector3/update instead of updating/assigning value to specific axis only.
+
 https://docs.unity3d.com/ScriptReference/Transform-position.html
 
 
