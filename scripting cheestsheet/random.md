@@ -3,13 +3,19 @@ Use to generating random data.(Eg: generate random game object)
   
 #### `Random.Range()`
 
+Returns a random **float** within **[minInclusive..maxInclusive]** (range is inclusive)
+
 ```cs
 public static float Range(float minInclusive, float maxInclusive);
 ```
 
+Return a random **int** within **[minInclusive..maxExclusive)** (Read Only).
 
+**maxExclusive is exclusive**, so for example **`Random.Range(0, 10)`** will return a value between 0 and 9, each with approximately equal probability.
 
-Returns a random float within **[minInclusive..maxInclusive]** (range is inclusive)
+```cs
+public static int Range(int minInclusive, int maxExclusive);
+```
 
 https://docs.unity3d.com/ScriptReference/Random.Range.html
 
