@@ -242,7 +242,13 @@ https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html
 
 **`UnityEvent.AddListener`**:
 
-Add listener in **`void Start()`**. Use this to add a runtime callback. Adding multiple identical listeners results in only a single call being made.
+Add listener in **`void Start()`**. Use this to add a runtime callback. 
+
+> Adding multiple identical listeners results in only a single call being made. You can use this method add multiple callbacks by using **`AddListener()` multiple times**.
+
+> Add callbacks(event handlers) in script by using **`AddListener()`** instead of manually adding callbacks in inspector
+
+
 ```cs
 public void AddListener(Events.UnityAction call);
 ```
