@@ -48,7 +48,7 @@ IEnumerator MyCoroutineMethod()
 ### **Yieldinstruction:**
 
 - **`yield return null` (**-The **coroutine will continue** after all **Update functions have been called** on the **next frame**.**)**
-- **`yield return new WaitForSeconds()` (**-Continue after a specified time delay, after all Update functions have been called for the frame.**)**
+- **`yield return new WaitForSeconds()` (**-**Continue** after a **specified time delay**, after all **Update functions have been called** for the **frame**.**)**
 - **`yield return new WaitForFixedUpdate()` (**-Continue after all FixedUpdate has been called on all scripts.**)**
 - **`yield return new WaitForEndOfFrame()` (**-Continue after the end of frame. **)**
 - **`yield return StartCoroutine()`** Chains the coroutine, and will wait for the chained coroutine to complete first.
