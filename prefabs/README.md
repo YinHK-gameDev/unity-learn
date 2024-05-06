@@ -23,7 +23,9 @@ Just **drag Prefabs from project window into Hierarchy or Game Scene** if you wa
 
 ### Replacing existing prefabs
 
-You can replace a Prefab by **dragging a new GameObject from the Hierarchy window** and **dropping it on top of an existing Prefab asset** in the Project window.
+You can **replace a Prefab** by **dragging a new GameObject from the Hierarchy window** and **dropping it on top of an existing Prefab asset** in the Project window.
+
+A pop-up show up asking your premission for replacing.
 
 If you are **replacing an existing Prefab**, Unity tries to preserve references to the Prefab itself and the individual parts of the Prefab such as child GameObjects and Components. To do this, it matches the names of GameObjects between the new Prefab and the existing Prefab that you are replacing.
 
