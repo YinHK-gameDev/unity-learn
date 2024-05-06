@@ -217,7 +217,7 @@ There are multiple ways to create a Prefab Variant based on another Prefab.
 
 
 #### Editing a Prefab Variant
-When a **Prefab Variant** is opened in Prefab Mode, the root appears as a **Prefab instance** with the blue Prefab icon. This **Prefab instance** represents the **base Prefab** that the **Prefab Variant** inherits from; it doesn’t represent the **Prefab Variant** itself. Any edits you make to the **Prefab Variant** become **overrides to this base that exists in the Variant**.
+When a **Prefab Variant** is opened in **Prefab Mode**, the root appears as a **Prefab instance** with the blue Prefab icon. This **Prefab instance** represents the **base Prefab** that the **Prefab Variant** inherits from; it doesn’t represent the **Prefab Variant** itself. Any edits you make to the **Prefab Variant** become **overrides to this base that exists in the Variant**.
 
 As with any **Prefab instance**, you can **use prefab overrides in a Prefab Variant**, such as **modified property values, added components, removed components, and added child GameObjects**. There are also the same limitations: you cannot reparent GameObjects in the Prefab Variant which come from its base Prefab. You also cannot remove a GameObject from a Prefab Variant which exists in its base Prefab. You can, however, deactivate GameObjects (as a property override) to achieve the same effect as removing a GameObject.
 
