@@ -36,6 +36,10 @@ https://www.chunfuchao.com/posts/unity-profiling-tools/
 ### Memory Profiler
 The **Memory Profiler** is a tool you can **use to inspect the memory usage of your Unity application and the Unity Editor**. The package adds a Memory Profiler window to the Unity Editor, which you can use to capture, inspect, and compare Snapshots of memory. Snapshots are a record of how the memory your application uses was organized when the Memory Profiler captured the snapshot.
 
+#### Installing Memory Profiler
+You can install the package using the package registry list. Or using **`com.unity.memoryprofiler`** name when adding a registry package by name.
+
+
 
 https://docs.unity3d.com/Packages/com.unity.memoryprofiler@1.0/manual/index.html
 
