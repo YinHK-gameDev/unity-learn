@@ -228,7 +228,7 @@ When you open the Overrides drop-down window, you can always see in its header w
 After making modification with **Prefab Variant**,open **Prefab Variant** in Prefab Mode, you can check & apply those overrides to the **base Prefab**.
 
 
-For the **Prefab Variant instances**, you can make overrides & and apply those overrides to the **Prefab Variant**.
+> For the **Prefab Variant instances**, you can make overrides & and apply those overrides to the **Prefab Variant**.
 
 
 ### Nested Prefabs
