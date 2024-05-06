@@ -36,13 +36,15 @@ The Profiler’s default target is Play mode, which records activities when the 
 
 #### Profile your application on a target platform
 
-To profile your application on its target release platform, connect the target device to your network or directly to your computer via cable. You can also connect to a device via IP address. You can only profile your application as a **Development Build**. To set this up, go to **Build Settings** (menu: **File** > **Build Settings**) and select your application’s target platform. Enable the **Development Build** setting. When you enable this setting, two settings related to the Profiler become available: **Autoconnect Profiler** and **Deep Profiling Support**.
+To profile your application on its target release platform, connect the target device to your network or directly to your computer via cable. You can also connect to a device via IP address. You can only profile your application as a **Development Build**. To set this up, go to **Build Settings** (menu: **File** > **Build Settings**) and select your application’s target platform. 
+
+> Enable the **Development Build** setting. When you enable this setting, two settings related to the Profiler become available: **Autoconnect Profiler** and **Deep Profiling Support**.
 
 ![](./img/profiler-build-settings.png)
 
 When you enable the **Autoconnect Profiler** setting, the **Unity Editor bakes its IP address into the built Player during the build process**. When you **start the Player**, it **attempts to connect to the Profiler in the Editor located at the baked IP address**.
 
-If you additionally **enable** the **Deep Profiling Support** setting, Unity **performs Deep Profiling when the built Player starts**, which means that the Profiler profiles e**very part of your code**, and not just code timings explicitly wrapped in `ProfilerMarkers`. This is useful to get Deep Profiling information on your application’s start up times, however, this adds a small amount of overhead to your build.
+If you additionally **enable** the **Deep Profiling Support** setting, Unity **performs Deep Profiling when the built Player starts**, which means that the Profiler profiles **every part of your code**, and not just code timings explicitly wrapped in `ProfilerMarkers`. This is useful to get Deep Profiling information on your application’s start up times, however, this adds a small amount of overhead to your build.
 
 #### Connecting to your Player in the Profiler window
 To use the Profiler to manually connect to a platform running your application, configure the settings in the **Attach to Player** dropdown. You can only do this if **Autoconnect Profiler** is disabled.
