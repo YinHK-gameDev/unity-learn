@@ -42,13 +42,13 @@ Editing in isolation
 
 You can begin to edit a Prefab in Prefab Mode in several ways. To open a Prefab Asset and edit it in **isolation** you can do it in the following ways:
 
-- Double-click the Prefab Asset in the Project window
-- Select a Prefab Asset in the Project window and click the **Open Prefab button** in the Inspector window
+- Double-click the **Prefab Asset** in the Project window
+- Select a **Prefab Asset** in the Project window and click the **Open Prefab button** in the Inspector window
 
 Alternatively, you can open a Prefab Asset in **Context** via an instance of that Prefab. Ways of doing that include:
 
-- Select a Prefab instance in the Hierarchy window and click the **Open** button in the Inspector window
-- Select a Prefab instance in the Hierarchy window and press **P** on the **keyboard**. This is the default keyboard binding
+- Select a **Prefab instance** in the Hierarchy window and click the **Open** button in the Inspector window
+- Select a **Prefab instance** in the Hierarchy window and press **P** on the **keyboard**. This is the default keyboard binding
 - Use the arrow button next to the Prefab instance in the Hierarchy window
 
 
