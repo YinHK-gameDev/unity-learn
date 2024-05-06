@@ -158,16 +158,16 @@ Modified components can be reverted or applied via the cog drop-down button or c
 ![](./img/PrefabsContextModifiedComponent1.png)
 
 
-Added components have a plus badge that overlays the icon. They can be reverted or applied via the cog drop-down button or context menu of the component header:
+**Added components have a plus badge** that overlays the icon. They can be reverted or applied via the cog drop-down button or context menu of the component header:
 
 ![](./img/PrefabsContextAddedComponent1.png)
 
 
-Removed components have a minus badge that overlays the icon. The removal can be reverted or applied via the cog drop-down button or context menu of the component header. Reverting the removal puts the component back, and applying the removal deletes it from the Prefab Asset as well:
+**Removed components have a minus badge** that overlays the icon. The removal can be reverted or applied via the cog drop-down button or context menu of the component header. Reverting the removal puts the component back, and applying the removal deletes it from the Prefab Asset as well:
 
 ![](./img/PrefabsContextRemovedComponent1.png)
 
-GameObjects (including other Prefabs) that are added as children to a Prefab instance have a plus badge that overlays the icon in the Hierarchy. They can be reverted or applied via the context menu on the object in the Hierarchy:
+**GameObjects (including other Prefabs) that are added as children to a Prefab instance have a plus badge that overlays the icon in the Hierarchy**. They can be reverted or applied via the context menu on the object in the Hierarchy:
 
 ![](./img/PrefabsContextAddedGameObject1.png)
 
