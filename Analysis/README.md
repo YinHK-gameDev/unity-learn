@@ -83,7 +83,28 @@ Unity’s Code Optimization setting has two modes:
 -   **Release Mode**, which gives faster C# performance when you run your Project in Play Mode in the Editor, but you cannot attach any external debuggers.
 
 
-To change which mode the Unity Editor starts up in, go to **Edit** (macOS: **Unity**) > **Preferences** > **General** > **Code Optimization On Startup**.
+> To change which mode the Unity Editor starts up in, go to **Edit** (macOS: **Unity**) > **Preferences** > **General** > **Code Optimization On Startup**.
+
+**Attach your code editor to the Unity Editor:**
+
+The way to attach your code editor to the Unity Editor depends on what code editor you use, and is often a different option from your code editor’s normal debugging process. Some code editors allow you to select an instance of Unity to debug. For instructions specific to your code editor, see Code editor external documentation. To see how you can do this in Visual Studio, see Attach Visual Studio to the Unity Editor.
+
+> When you have attached the code editor to the Unity Editor and you are ready to begin debugging, return to the Unity Editor and enter **Play Mode**.
+
+#### Debug in the Unity Player
+
+To compile a Unity Player for you to debug:
+
+1.  Go to **File** > **Build Profiles**.
+2.  Enable the ****Development Build**** and **Script Debugging** options before you build the Player. You could also enable the **Wait For Managed Debugger** option to make the Player wait for a debugger to be attached before the Player executes any script code.
+3.  Select **Build And Run**.
+
+**Attach your code editor to the Unity Player**:
+
+To attach your code editor to the Unity Player, in your code editor, select the IP address (or machine name) and port of your Player.
+
+
+> **Note**: Your code editor will show all instances of Unity that are available to debug. Make sure you attach the code editor to the correct instance of the Unity Player, and not to the Unity Editor if both are running.
 
 
 https://docs.unity3d.com/6000.0/Documentation/Manual/ManagedCodeDebugging.html
