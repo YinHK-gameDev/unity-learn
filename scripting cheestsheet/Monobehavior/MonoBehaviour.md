@@ -24,7 +24,9 @@
 
 ### Static Methods
 
-<table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour-print.html">print</a></td><td class="desc">Logs message to the Unity Console (identical to Debug.Log).</td></tr></tbody></table>
+| Static Methods | Descriptions |
+| --- | --- |
+| `print` | Logs message to the Unity Console (identical to Debug.Log). |
 
 ### Messages
 
