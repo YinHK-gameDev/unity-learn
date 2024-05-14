@@ -11,7 +11,16 @@
 
 ### Public Methods
 
-<table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour.CancelInvoke.html">CancelInvoke</a></td><td class="desc">Cancels all Invoke calls on this MonoBehaviour.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour.Invoke.html">Invoke</a></td><td class="desc">Invokes the method methodName in time seconds.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour.InvokeRepeating.html">InvokeRepeating</a></td><td class="desc">Invokes the method methodName in time seconds, then repeatedly every repeatRate seconds.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour.IsInvoking.html">IsInvoking</a></td><td class="desc">Is any invoke on methodName pending?</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour.StartCoroutine.html">StartCoroutine</a></td><td class="desc">Starts a Coroutine.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour.StopAllCoroutines.html">StopAllCoroutines</a></td><td class="desc">Stops all coroutines running on this behaviour.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlMonoBehaviour.StopCoroutine.html">StopCoroutine</a></td><td class="desc">Stops the first coroutine named methodName, or the coroutine stored in routine running on this behaviour.</td></tr></tbody></table>
+| Public Methods | Descriptions |
+| --- | --- |
+| `CancelInvoke` | Cancels all Invoke calls on this MonoBehaviour. |
+| `Invoke` | Invokes the method methodName in time seconds. |
+| `InvokeRepeating` | Invokes the method methodName in time seconds, then repeatedly every repeatRate seconds. |
+| `IsInvoking` | Is any invoke on methodName pending? |
+| `StartCoroutine` | Starts a Coroutine. |
+| `StopAllCoroutines` | Stops all coroutines running on this behaviour. |
+| `StopCoroutine` | Stops the first coroutine named methodName, or the coroutine stored in routine running on this behaviour. |
+
 
 ### Static Methods
 
