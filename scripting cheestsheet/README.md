@@ -32,6 +32,7 @@ Inside script set variable/array 做`public`, 在unity inspector 會顯示該var
 - **`Transform`** class
 - **`Physics`** class
 - **`Rigidbody`** class
+- **`Collider`** & **`Collision`** class
 
 ### `Debug.Log()`
 ```cs
