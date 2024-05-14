@@ -103,7 +103,15 @@
 
 ### Properties
 
-<table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlBehaviour-enabled.html">enabled</a></td><td class="desc">Enabled Behaviours are Updated, disabled Behaviours are not.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlBehaviour-isActiveAndEnabled.html">isActiveAndEnabled</a></td><td class="desc">Reports whether a GameObject and its associated Behaviour is active and enabled.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlComponent-gameObject.html">gameObject</a></td><td class="desc">The game object this component is attached to. A component is always attached to a game object.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlComponent-tag.html">tag</a></td><td class="desc">The tag of this game object.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlComponent-transform.html">transform</a></td><td class="desc">The Transform attached to this GameObject.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlObject-hideFlags.html">hideFlags</a></td><td class="desc">Should the object be hidden, saved with the Scene or modifiable by the user?</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.htmlObject-name.html">name</a></td><td class="desc">The name of the object.</td></tr></tbody></table>
+| Properties | Descriptions |
+| --- | --- |
+| `enabled` | Enabled Behaviours are Updated, disabled Behaviours are not. |
+| `isActiveAndEnabled` | Reports whether a GameObject and its associated Behaviour is active and enabled. |
+| `gameObject` | The game object this component is attached to. A component is always attached to a game object. |
+| `tag` | The tag of this game object. |
+| `transform` | The Transform attached to this GameObject. |
+| `hideFlags` | Should the object be hidden, saved with the Scene or modifiable by the user? |
+| `name` | The name of the object. |
 
 ### Public Methods
 
