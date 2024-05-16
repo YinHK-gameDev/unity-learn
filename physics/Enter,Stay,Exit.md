@@ -61,7 +61,7 @@ If one of collider is trigger, both collider will **pass through each other** wh
 
 > **Note**:
 > - If none of **dynamic colliders**, no collision detection.
-> - If **at least one of them** have **`Collider.isTrigger` enabled** enabled, no collision detection.
+> - If **at least one of them** have **`Collider.isTrigger`** enabled, no collision detection.
 > - If **both** do not have a **rigidbody**, no collision detection.
 > - If **both** are **kinematic rigidbody collider**, no collision detection.
 
