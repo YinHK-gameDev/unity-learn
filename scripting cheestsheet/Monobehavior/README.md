@@ -225,7 +225,7 @@ void OnCollisionEnter(Collision collision){ ... }　
 
 void OnCollisionStay(Collision collisionInfo){ ... }
 
-void OnCollisionExit(Collision other){ ... }
+void OnCollisionExit(Collision collision){ ... }
 ```
 
 ### `OnTriggerXXX`
