@@ -58,6 +58,7 @@ If one of collider is trigger, both collider will **pass through each other** wh
 #### Requirement for collision generating collision detection messages:
 - Both objects **must** have a collider.
 - There is **at least one dynamic collider**(**Rigidbody** & **Isn't kinematic**), the other collider is either a **static collider**, or a **kinematic rigidbody collider**, or another **dynamic collider**.
+- **Must not have trigger** in any of collider
 
 > **Note**:
 > - If none of **dynamic colliders**, no collision detection.
