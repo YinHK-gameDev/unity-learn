@@ -169,6 +169,23 @@ https://docs.unity3d.com/ScriptReference/Object.Destroy.html
 
 The **load of a new Scene destroys all current Scene objects**. **Call `Object.DontDestroyOnLoad` to preserve an Object during scene loading**. If the target Object is a component or GameObject, Unity also **preserves all of the Transform’s children**. `Object.DontDestroyOnLoad` **only works for root GameObjects or components on root GameObjects**. `Object.DontDestroyOnLoad` does not return a value.
 
+```cs
+public class DontDestroy : MonoBehaviour
+{
+    void Awake()
+    {
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("music");
+
+        if (objs.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
+    }
+}
+
+```
 
 https://docs.unity3d.com/ScriptReference/Object.DontDestroyOnLoad.html
 
