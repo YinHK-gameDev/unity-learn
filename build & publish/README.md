@@ -85,6 +85,8 @@ Server builds often contain unnecessary assets and compiled code for headless se
 
 The goal of the Dedicated Server build target is to reduce the resource demand of server builds, including the disk size, the size in memory, and the CPU usage. Most of the optimizations take place through stripping code and assets that aren’t necessary for a server build.
 
+![](./img/dedicated-server-build.png)
+
 #### Build your application for Dedicated Server
 
 To create a Dedicated Server build through the Unity Editor:
