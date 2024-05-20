@@ -7,6 +7,10 @@
 - You have a huge library of textures and vegetation models and materials.
 - you **only export those to your level builder project** (which may be separated from your prototype mechanics project, and so on).
 
+In a large project, use AssetBundles and DLLs. Make one or more code projects that compile to DLL(s) in your main project. Similarly, make any number of art projects that generate AssetBundles in your main project.
+
+This way you can make your main project as small as a single "boot" scene with some DLLs and AssetBundles.
+
 https://forum.unity.com/threads/how-do-you-organize-your-project-to-reduce-its-complexity-and-size.526687/
 
 ### Reducing the file size of your build
