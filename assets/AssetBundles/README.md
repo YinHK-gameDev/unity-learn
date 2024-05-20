@@ -21,7 +21,7 @@ This way you can make your main project as small as a single "boot" scene with s
 First is the actual file on disk. This is called the AssetBundle archive. The AssetBundle archive is a container, like a folder, that holds additional files inside it. These additional files consist of two types:
 ​
 -   A **serialized file**, which contains your Assets broken out into their individual objects and written out to this single file.
--   **Resource files**, which are chunks of binary data stored separately for certain Assets (Textures and audio) to allow Unity to efficiently load them from disk on another thread.
+-   **Resource files**, which are **chunks of binary data** stored separately for certain Assets (**Textures and audio**) to allow Unity to efficiently **load them from disk on another thread**.
 
 ​
 
