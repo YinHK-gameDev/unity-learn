@@ -49,7 +49,7 @@ You can add, exclude, remove, and reorder scenes in the list:
 -   **To adjust the scene order**: Drag and drop scenes in the list to reorder them.
 
 ### Change scene order
-With the **smallest number**, the scene will be defult display during the game. You can change the ordering of scenes in your project:
+With the **smallest number**, the **scene will be defult display** during the game. You can **change the ordering of scenes** in your project:
 
 -   Go to **`File > Build Settings`**
 -   Find the `Scenes in Build` section - this will contain all of the scenes in your project that have been added to the build.
