@@ -58,6 +58,32 @@ With the **smallest number**, the **scene will be defult display** during the ga
 -   Find the scene you want to **move and drag and drop it to the desired index**.
 
 
+
+### Platform list
+Each build **must have a target platform**. The Platform pane lists all the platforms you can build for.
+
+Each version of Unity installed on your computer has its own platform list.
+
+If the platform you need is not on the list, do one of the following:
+
+-   In the **Build Settings** window:
+    
+    1.  Select the platform you want to add.
+    2.  Select **Install** or **Download**.
+-   In **Unity Hub** > **Installs**:
+    
+    1.  Select the three dots on the version of Unity you’re using.
+    2.  Select **Add Modules**.
+    3.  Follow the instructions to install the platform module.
+
+To change the build’s target platform:
+
+1.  Select the platform you want to switch to.  
+    **Tip**: The list displays the Unity icon next to the platform currently selected as the target platform.
+2.  Select **Switch Platforms**.  
+    If Unity needs to re-import your assets in formats that match your target platform, the switch process can take a long time.
+
+
 ### Build settings
 When you select a platform, Unity displays a list of options that you can adjust for the build. Some settings apply to all platforms, and some are platform-specific.
 
