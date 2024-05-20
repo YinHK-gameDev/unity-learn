@@ -44,10 +44,10 @@ Note: This tool is an unsupported utility. Viewing extremely large asset bundles
 
 To install the Asset Bundle Browser:
 
-1.  Open the Unity \[Package Manager\]((https://docs.unity3d.com/2020.1/Documentation/Manual/upm-ui.html) in your Project (menu: **Windows** > **Package Manager**).
+1.  Open the Unity **Package Manager**.
 2.  Click the **+** (Add) button at the top, left corner of the window.
 3.  Choose **Add package from git URL…**
-4.  Enter `https://github.com/Unity-Technologies/AssetBundles-Browser.git` as the URL
+4.  Enter **`https://github.com/Unity-Technologies/AssetBundles-Browser.git`** as the URL
 5.  Click **Add**.
 
 
