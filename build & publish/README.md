@@ -1,16 +1,33 @@
 ## Build & publish
 
 ### Reduce project complexity and size
-- Only store assets/code in your repository
-- Split your assets/code into smaller units, and put them in multiple Git or Nuget packages
-- Export the terrain and maps, along with the necessary textures, to your final project.
+- Only **store assets/code in your repository**
+- **Split your assets/code into smaller units**, and put them in multiple Git or Nuget packages
+- **Export the terrain and maps**, along with the necessary textures, to your final project.
 - You have a huge library of textures and vegetation models and materials.
-- you only export those to your level builder project (which may be separated from your prototype mechanics project, and so on).
+- you **only export those to your level builder project** (which may be separated from your prototype mechanics project, and so on).
 
 https://forum.unity.com/threads/how-do-you-organize-your-project-to-reduce-its-complexity-and-size.526687/
 
 ### Reducing the file size of your build
 
+#### Suggestions for reducing build size
+
+**Textures** \
+Textures usually take up the most space in the build. The first solution to this is to use compressed Texture formats. 
+
+If that doesn’t reduce the file size enough, try to reduce the physical size (in pixels) of the Texture images. To do this without modifying the actual source content, select the Texture in the Project view, and in the Inspector window reduce the Max Size. 
+ 
+**Meshes and Animations** \
+
+You can compress Meshes and imported Animation Clips so that they take up less space in your game file. To enable Mesh compression, select the Mesh, then in the Inspector window set the Mesh Compression to Low, Medium or High. Mesh and Animation compression uses quantization, which means it takes less space, but the compression can introduce some inaccuracies. Experiment with what level of compression is acceptable for your models.
+
+> Note that Mesh compression only produces smaller data files, and does not use less memory at run time. Animation keyframe reduction produces smaller data files and uses less memory at run time; generally you should always have it enabled. See documentation on Animation Clips for more information about this.
+
+
+**Reducing .NET library size** \
+
+Unity supports two .NET API compatibility levels.: .NET 4.x and .NET Standard 2.0. The .NET Standard 2.0 restricts you to a smaller subset of the .NET API, which can help keep size down.
 
 
 ![](./img/FileSizeOptimizationTexture.png)
