@@ -53,8 +53,9 @@ With the **smallest number**, the **scene will be defult display** during the ga
 
 -   Go to **`File > Build Settings`**
 -   Find the `Scenes in Build` section - this will contain all of the scenes in your project that have been added to the build.
--   Next to each listed scene, you should see a number which indicates its build index which is the order in which the scene will appear in the build. Note that after 0 (the first scene), this doesn't really matter as you'll likely have a controller script in your game that handles scene switching for the lifespan of the process.
--   Find the scene you want to move and drag and drop it to the desired index.
+-   Next to each listed scene, you should see a number which indicates its build index which is the order in which the scene will appear in the build. \
+    > Note that after 0 (the first scene), this **doesn't really matter** as you'll likely have a controller script in your game that handles scene **switching** for the lifespan of the process.
+-   Find the scene you want to **move and drag and drop it to the desired index**.
 
 
 ### Build settings
