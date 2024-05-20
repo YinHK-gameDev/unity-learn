@@ -73,6 +73,32 @@ The following settings apply to all platforms.
 
 https://docs.unity3d.com/Manual/BuildSettings.html
 
+### Dedicated Server
+Unity provides support for development of games and applications on the Dedicated Server platform. You can publish multiplayer games using Dedicated Server platform.
+
+Dedicated Server refers to a computer that’s optimized to run server applications.
+
+The Dedicated Server build target is a sub-target of the three Desktop Platforms (Linux, macOS, and Windows) that’s optimized for running as a dedicated server. Using Dedicated Server build target, you can cut back on your server builds’ CPU, memory, and disk space requirements.
+
+Server builds often contain unnecessary assets and compiled code for headless server processes. The build data might include artifacts such as audio files, textures, meshes, and shaders
+. In a multiplayer context, rendering and asset management processes occur unnecessarily when building and executing server runtimes.
+
+The goal of the Dedicated Server build target is to reduce the resource demand of server builds, including the disk size, the size in memory, and the CPU usage. Most of the optimizations take place through stripping code and assets that aren’t necessary for a server build.
+
+#### Build your application for Dedicated Server
+
+To create a Dedicated Server build through the Unity Editor:
+
+1.  From the Unity Editor, select **File** > **Build Settings**.
+2.  Select **Dedicated Server**.
+
+
+
+
+https://docs.unity3d.com/Manual/dedicated-server.html \
+https://docs.unity3d.com/Manual/dedicated-server-get-started.html
+
+
 ### Remove Unity Splash Screen ("Made with Unity" logo)
 https://moddingcommunity.com/topic/108-tutorial-a-complete-guide-to-remove-unity-splash-screen/
 
@@ -85,4 +111,7 @@ https://www.youtube.com/watch?v=05ymbWXdZ-8
 
 ### ref 
 https://docs.unity3d.com/Manual/PublishingBuilds.html \
-https://docs.unity3d.com/Manual/BuildSettings.html
+https://docs.unity3d.com/Manual/BuildSettings.html 
+
+**Platform:** \
+https://docs.unity3d.com/Manual/PlatformSpecific.html
