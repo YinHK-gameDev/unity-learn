@@ -22,7 +22,9 @@ First is the actual file on disk. This is called the AssetBundle archive. The As
 ​
 -   A **serialized file**, which contains your Assets broken out into their individual objects and written out to this single file.
 -   **Resource files**, which are chunks of binary data stored separately for certain Assets (Textures and audio) to allow Unity to efficiently load them from disk on another thread.
+
 ​
+
 **"AssetBundle"** can also refer to the actual AssetBundle object you interact with via code to load Assets from a specific AssetBundle archive. This object contains a map of all the file paths of the Assets you added to this archive.
 
 ### Assigning Assets to AssetBundles
