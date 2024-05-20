@@ -10,6 +10,12 @@
 https://forum.unity.com/threads/how-do-you-organize-your-project-to-reduce-its-complexity-and-size.526687/
 
 ### Reducing the file size of your build
+
+
+
+![](./img/FileSizeOptimizationTexture.png)
+
+
 https://docs.unity3d.com/Manual/ReducingFilesize.html
 
 ### Managing scenes in a build
