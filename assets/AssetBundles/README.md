@@ -37,7 +37,7 @@ To assign a given Asset to an AssetBundle, follow these steps:
 
 ### Unity Asset Bundle Browser tool
 
-You can use the Asset Bundle Browser to view and edit the configuration of asset bundles in your Unity project.
+You can use the **Asset Bundle Browser** to **view and edit the configuration of asset bundles** in your Unity project.
 
 For more information, see the Unity Asset Bundle Browser documentation.
 
@@ -52,8 +52,9 @@ To install the Asset Bundle Browser:
 5.  Click **Add**.
 
 
+https://docs.unity3d.com/Packages/com.unity.assetbundlebrowser@1.7/manual/index.html
 
-
+https://www.youtube.com/watch?v=OSx4GouFFCE
 
 ### ref 
 https://docs.unity3d.com/Manual/AssetBundlesIntro.html \
