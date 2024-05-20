@@ -48,6 +48,12 @@ You can add, exclude, remove, and reorder scenes in the list:
 -   **To remove a scene from the list**: Select the scene and press **Delete**.
 -   **To adjust the scene order**: Drag and drop scenes in the list to reorder them.
 
+Unity produces two build types:
+
+-   A **release** build, which includes only what’s necessary to run the application. This is the default build type.
+-   A **development** build, which includes scripting debug symbols and the **Profiler**. Selecting the development build option enables an additional set of options, such as deep profiling support and script debugging
+
+
 ### Change scene order
 With the **smallest number**, the **scene will be defult display** during the game. You can **change the ordering of scenes** in your project:
 
