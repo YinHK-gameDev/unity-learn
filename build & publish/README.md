@@ -101,6 +101,11 @@ To create a Dedicated Server build through the Unity Editor:
 https://docs.unity3d.com/Manual/dedicated-server.html \
 https://docs.unity3d.com/Manual/dedicated-server-get-started.html
 
+### Build games for Nintendo Switch
+
+https://unity.com/solutions/nintendo-switch 
+
+https://developer.nintendo.com/register
 
 ### Remove Unity Splash Screen ("Made with Unity" logo)
 https://moddingcommunity.com/topic/108-tutorial-a-complete-guide-to-remove-unity-splash-screen/
