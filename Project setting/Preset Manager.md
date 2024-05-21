@@ -73,18 +73,11 @@ Supported symbols:
   
 | Symbol | Description | Example |
 | --- | --- | --- |
-| \* | Matches 0 or more characters in a single path portion (a single path portion is defined as any suite of characters excluding / ) | `glob:"foldername/*.fbx"`  
-searches for any .fbx file located in a folder named _foldername_. |
-| ? | Matches 1 character | `glob:"foldername/filename-?.fbx"`  
-searches for any .fbx file located in a folder named _foldername_ that has the name _filename-_ followed by one single character  
-(for example, this would include _filename–1.fbx_, _filename–2.fbx_, but not _filename–01.fbx_). |
-| \[…\] | Matches a range of characters, similar to a RegExp range. If the first character of the range is ! or ^ then it matches any character not in the range. | `glob:"foldername/file[...]1.fbx"`  
-searches for any .fbx file located in a folder named _foldername_ that has a name that begins file and ends with _1_  
-(for example, this would include _file–1.fbx_, _file–01.fbx_, but not _file–2.fbx_). |
-| (pattern|pat\*|pat?erN) | Use searches inside parentheses, separated by a vertical pipe character (meaning “or”), to indicate that filter results can match one of the search patterns. | `glob:("foldername/*.fbx"\|"foldername/filename-?.fbx")`  
-searches for any .fbx file located in a folder named _foldername_, or any .fbx file located in a folder named _foldername_ that has the name _filename-_ followed by one single character. |
-| \*\* | Matches zero or more directories and subdirectories searching for matches. | `glob:"foldername/**.fbx"`  
-searches for any .fbx file located in a folder named _foldername_. or its subfolders. |
+| \* | Matches 0 or more characters in a single path portion (a single path portion is defined as any suite of characters excluding / ) | `glob:"foldername/*.fbx"`searches for any .fbx file located in a folder named _foldername_. |
+| ? | Matches 1 character | `glob:"foldername/filename-?.fbx"`searches for any .fbx file located in a folder named _foldername_ that has the name _filename-_ followed by one single character (for example, this would include _filename–1.fbx_, _filename–2.fbx_, but not _filename–01.fbx_). |
+| \[…\] | Matches a range of characters, similar to a RegExp range. If the first character of the range is ! or ^ then it matches any character not in the range. | `glob:"foldername/file[...]1.fbx"`searches for any .fbx file located in a folder named _foldername_ that has a name that begins file and ends with _1_ (for example, this would include _file–1.fbx_, _file–01.fbx_, but not _file–2.fbx_). |
+| (pattern\|pat\*\|pat?erN) | Use searches inside parentheses, separated by a vertical pipe character (meaning “or”), to indicate that filter results can match one of the search patterns. | `glob:("foldername/*.fbx"\|"foldername/filename-?.fbx")` searches for any .fbx file located in a folder named _foldername_, or any .fbx file located in a folder named _foldername_ that has the name _filename-_ followed by one single character. |
+| \*\* | Matches zero or more directories and subdirectories searching for matches. | `glob:"foldername/**.fbx"`searches for any .fbx file located in a folder named _foldername_. or its subfolders. |
 
 
 ### ref
