@@ -67,6 +67,7 @@ https://www.youtube.com/watch?v=OSx4GouFFCE
 
 ### ref 
 https://docs.unity3d.com/Manual/AssetBundlesIntro.html \
-https://docs.unity3d.com/Manual/AssetBundles-Workflow.html
+https://docs.unity3d.com/Manual/AssetBundles-Workflow.html \
+https://learn.unity.com/tutorial/introduction-to-asset-bundles-1#
 
 
