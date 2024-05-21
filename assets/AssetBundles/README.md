@@ -5,6 +5,10 @@ An **AssetBundle** is an **archive file** that contains platform-specific **non-
 **AssetBundles** can be useful for **downloadable content (DLC)**, **reducing initial install size**, **loading assets optimized** for the end-user’s platform, and **reduce runtime memory pressure**.
 
 
+An AssetBundle is content that is stored separately from a main game or application and loaded (or downloaded, in the case of mobile and online apps) at runtime. This helps minimize the impact on network and system resources by allowing customers to download and install only the parts they need. AssetBundles can also be used to update or add to content post-release.
+
+
+
 
 > **Note**: An AssetBundle can contain the **serialized data of an instance of a code object**, such as a **ScriptableObject**. \
 However, the class definition itself is compiled into one of the Project assemblies. When you load a serialized object in an AssetBundle, Unity finds the matching class definition, creates an instance of it, and sets that instance’s fields using the serialized values. This means that you can introduce new items to your game in an AssetBundle as long as those items do not require any changes to your class definitions.
