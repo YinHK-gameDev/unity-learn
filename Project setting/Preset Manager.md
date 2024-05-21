@@ -13,8 +13,20 @@ The Preset Manager is a window in Project Settings (menu: **Edit > Project Setti
 
 ### Assigning a Preset for default settings
 
+
 ![](./preset-manager-add-type.png)
 
+
+To specify a Preset to use for default settings in the Preset Manager:
+
+1.  If you don’t already have a Preset in your project to use for default settings, create one.
+2.  Open the Preset Manager by choosing **Edit > Project Settings**, and selecting the **Preset Manager**.
+3.  Select **Add Default Preset** and select a default type. \
+    The Preset type you choose appears in the **Preset Manager** list.
+4.  In the Preset field, click the **Preset selector** (circle icon).
+5.  From the **Select Preset** window, choose a Preset for this Preset type. \
+    Alternatively, you can also drag and drop a Preset from the **Project** window into the Preset field.  
+6.  If you want to add another Preset field to the list, click the **Add** (**+**) tab.  
 
 ### ref
 https://docs.unity3d.com/Manual/class-PresetManager.html
