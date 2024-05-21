@@ -58,6 +58,8 @@ The **UI elements are rendered by this camera**, which means that the **Camera s
 
   ![](./img/UI_CanvasWorldSpaceInspector.png)
 
+#### Order property
+Eg: Sorting order, Order in Layer. Determine the sorting for rendering the canvas 
 
 ### Canvas Scaler component
 The **Canvas Scaler component** is used for controlling the overall scale and pixel density of UI elements in the Canvas. This **scaling affects everything under the Canvas**, including font sizes and image borders.
