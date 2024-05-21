@@ -61,6 +61,9 @@ You can choose to only **apply some properties from a Preset and exclude others*
 
 > **Note:** To select all or clear all checkboxes in a Preset, select the **More items** menu (**⋮**) or right-click the Preset name, and select **Include all properties** or **Exclude all properties**. You can still adjust individual properties if you need to.
 
+![](./img/preset.png)
+
+
 ### Editing a Preset
 
 To edit a Preset asset, select it from the **Project** window and view it in the **Inspector** window.
