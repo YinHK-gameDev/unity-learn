@@ -92,10 +92,37 @@ or
 ```
 
 
+### Using the AssetReference Class
+
+The **`AssetReference`** class provides a mechanism to access Assets without the need to know string (or other) addresses.
+
+To access an Addressable Asset using the \*AssetReference \*class:
+
+1.  Select an Asset.
+2.  In the Inspector, click the **Add Component** button and then select the component type.
+3.  Add a public `AssetReference` object in the component. For example: `public AssetReference explosion;`
+4.  In the Inspector, set which Asset the object is linked to by either dragging an Asset from the Project window onto the entry or clicking the entry to choose from previously defined addressable Assets
+
+   
+#### Loading an Addressable Asset by object reference
+
+To load an `AssetReference`, call one of the methods defined on it. For example:
+
+`AssetRefMember.LoadAssetAsync<GameObject>();`
+
+or
+
+`AssetRefMember.InstantiateAsync(pos, rot);`
+
+`LoadAssetAsync` and `InstantiateAsync` are asynch operations. You may provide a callback to work with the asset once it is loaded.
+
+
 
 ### ref
 
-https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html
+https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html \
+https://docs.unity3d.com/Packages/com.unity.addressables@0.8/manual/index.html
+
 
 **`Addressable` API** \
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html \
