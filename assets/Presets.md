@@ -48,7 +48,7 @@ If you apply a component Preset via drag-and-drop, Unity’s behavior depends on
 
 #### Applying partial Presets
 
-You can choose to only apply some properties from a Preset and exclude others. To do this:
+You can choose to only **apply some properties from a Preset and exclude others**. To do this:
 
 1. Select your Preset in the **Project** window.
 2. In the **Inspector**, right-click a property and choose **Exclude Property**. The window displays a red horizontal line next to excluded properties.
