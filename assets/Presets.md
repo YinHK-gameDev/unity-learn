@@ -74,7 +74,7 @@ To edit a Preset asset, select it from the **Project** window and view it in the
 
 Use Presets to **streamline your team’s workflows**. You can even **use Presets to specify settings for Project Settings windows**, including the **Preset settings** themselves. Use this feature to configure a project then **export it as a custom asset package**. Your team members can **import this asset package into their projects**.
 
-!. In the Project window, select the **Presets** you want to **export**.
+1. In the Project window, select the **Presets** you want to **export**.
 2. In the Unity menu, go to **Assets > Export Package**, or right-click inside the Project window and choose **Export Package**.  The **Exporting package** window displays the items to export.
 3. If your Presets contain **references to assets** you want to include in the package, enable **Include dependencies**.
 4. Click **Export**.
