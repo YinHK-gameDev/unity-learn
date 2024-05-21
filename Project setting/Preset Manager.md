@@ -79,6 +79,14 @@ Supported symbols:
 | (pattern\|pat\*\|pat?erN) | Use searches inside parentheses, separated by a vertical pipe character (meaning “or”), to indicate that filter results can match one of the search patterns. | `glob:("foldername/*.fbx"\|"foldername/filename-?.fbx")` searches for any .fbx file located in a folder named _foldername_, or any .fbx file located in a folder named _foldername_ that has the name _filename-_ followed by one single character. |
 | \*\* | Matches zero or more directories and subdirectories searching for matches. | `glob:"foldername/**.fbx"`searches for any .fbx file located in a folder named _foldername_. or its subfolders. |
 
+### Disabling and enabling default Presets
+
+You can temporarily disable/enable a default Preset without losing filter settings.
+
+1.  Open the Preset Manager by choosing **Edit > Project Settings**, and then selecting the **Preset Manager** category.
+    
+2.  Clear the check box to the left of the default Preset to disable the Preset. Select the check box to enable.
+
 
 ### ref
 https://docs.unity3d.com/Manual/class-PresetManager.html
