@@ -23,6 +23,8 @@ To install the Addressables package in your project, use the Package Manager:
 
 To set up the Addressables system in your Project after installation, open the **Addressables Groups** window and click **Create Addressables Settings**.
 
+![](./img/Addressable.png)
+
 
 ### Make an asset Addressable
 
