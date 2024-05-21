@@ -5,6 +5,8 @@ The Canvas is the area that all UI elements should be inside.
 
 Creating a **new UI element**, **such as an Image** using the menu **GameObject > UI > Image**, **automatically creates a Canvas**, if there isn't already a Canvas in the scene. 
 
+> Creating UI elements, using the menu **GameObject > UI > ...**
+
 > The UI element is created as a **child** to this **Canvas**.
 
 The Canvas area is shown as a rectangle in the Scene View. This makes it easy to position UI elements without needing to have the Game View visible at all times.
