@@ -136,7 +136,8 @@ https://learn.unity.com/course/get-started-with-addressables \
 https://www.youtube.com/watch?v=5IvPPI7YnwU \
 https://www.youtube.com/watch?v=0USXRC9f4Iw \
 https://www.youtube.com/watch?v=cl_2icxKCyQ \
-https://www.youtube.com/watch?v=dKYuyKoKU14
+https://www.youtube.com/watch?v=dKYuyKoKU14 \
+https://www.youtube.com/watch?v=C6i_JiRoIfk
 
 
 
