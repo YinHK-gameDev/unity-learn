@@ -12,6 +12,10 @@ Use **Window > Asset Management > Addressables** to begin working with the syste
 
 > **Addressable Assets** are assets that have a **unique address** which you can use to **load them from local or remote AssetBundles**.
 
+Unity's Addressables system is a dynamic asset management solution that provides your users with only the assets they need, when they need them. It allows you to organize your on-demand assets from inside the Unity Editor while you're developing your game, and its runtime API lets you load and unload assets dynamically while users are playing your game.
+
+
+
 ### Concepts
 
 -   **Address** - Identifies an Asset for easy run-time retrieval.
