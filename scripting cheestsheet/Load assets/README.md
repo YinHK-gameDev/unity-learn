@@ -88,7 +88,7 @@ public class ExampleClass : MonoBehaviour
 }
 ```
 
-### Addressable
+### Addressable package & API
 
 `Addressables.LoadAssetAsync<GameObject>("AssetAddress");`
 
@@ -106,4 +106,5 @@ https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html
 https://docs.unity3d.com/ScriptReference/Resources.html \
 https://docs.unity3d.com/ScriptReference/Resources.Load.html \
 https://docs.unity3d.com/ScriptReference/AssetDatabase.html \
-https://docs.unity3d.com/ScriptReference/AssetDatabase.LoadAssetAtPath.html
+https://docs.unity3d.com/ScriptReference/AssetDatabase.LoadAssetAtPath.html \
+https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html
