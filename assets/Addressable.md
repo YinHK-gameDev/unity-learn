@@ -33,7 +33,8 @@ You can make an asset Addressable in the following ways:
 -   Drag the asset into a group on the **Addressables Groups window**.
 -   In the Project window, move the asset into a folder that's marked as **Addressable**.
 
-> Once you make an asset **Addressable**, the **Addressables system** adds it to a **default gr**oup, unless you place it in a specific group. **Addressables packs assets in a group into AssetBundles** according to your group settings when you make a content build. You can **load these assets** using the **`Addressables` API**.
+> Once you make an asset **Addressable**, the **Addressables system** adds it to a **default gr**oup, unless you place it in a specific group. **Addressables packs assets in a group into AssetBundles** according to your group settings when you make a content build. \
+> You can **load these assets** using the **`Addressables` API**.
 
 
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/get-started-make-addressable.html
