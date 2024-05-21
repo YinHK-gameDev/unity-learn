@@ -54,12 +54,55 @@ You can make an asset Addressable in the following ways:
 
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/get-started-make-addressable.html
 
+### Building your game
+
+Addressables needs to build your content into files that can be consumed by the running game before you build the player. This step is not done automatically. You can build this content via the UI or API.
+
+1.  UI a. Open the **Addressables** window. b. Select **Build->Build Player Content**
+2.  API a. **`AddressableAssetSettings.BuildPlayerContent()`**
+
+### Loading or instantiating by address
+
+You can load or instantiate an Asset at run-time. Loading an Asset loads all dependencies into memory (including Asset bundle data if relevant). This allows you to use the Asset when you need to. Instantiating loads the Asset, and then immediately adds it to the scene.
+
+To access an Asset in script using a string address:
+
+`Addressables.LoadAssetAsync<GameObject>("AssetAddress");`
+
+or
+
+`Addressables.InstantiateAsync("AssetAddress");`
+
+`LoadAssetAsync` and `InstantiateAsync` are asynch operations. You may provide a callback to work with the asset once it is loaded. 
+
+```cs
+  GameObject myGameObject;
+
+
+        ...
+        Addressables.LoadAssetAsync<GameObject>("AssetAddress").Completed += OnLoadDone;
+    }
+
+    private void OnLoadDone(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<GameObject> obj)
+    {
+        // In a production environment, you should add exception handling to catch scenarios such as a null result;
+        myGameObject = obj.Result;
+    }
+
+```
+
+
+
 ### ref
 
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html
 
 **`Addressable` API** \
-https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html
+https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html \
+
+**`AsyncOperationHandle`** \
+https://docs.unity3d.com/Packages/com.unity.addressables@0.8/manual/AddressableAssetsAsyncOperationHandle.html
+
 
 **Tutorial** \
 https://learn.unity.com/course/get-started-with-addressables \
