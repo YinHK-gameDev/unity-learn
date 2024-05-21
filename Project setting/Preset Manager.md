@@ -48,6 +48,43 @@ To remove a default Preset:
 2.  In the **Inspector** window, click **Remove from**.
 
 
+### Adding filters
+
+**By default, a Preset applies to all components or asset importers of that Preset type once it is created**. If you want to only apply it to **specific components or asset types**, you can **use the Filter field to define** when to apply the Preset.
+
+Filters allow you to **create multiple Presets for a given type**, and **apply them to specific components or importers based on whether those components and importers meet the filter criteria**. You can filter by **file names**, **directories**, and **file extensions**.
+
+> You can also apply partial Presets that affect only properties you specify in your components or assets.
+
+
+> **Note:** Default Presets in a Preset Type are applied in order from top to bottom. This means that filters at the bottom of the list can override previous filters if not logically ordered.
+
+1.  Open the Preset Manager by choosing **Edit > Project Settings**, then selecting the **Preset Manager** category.
+2.  Find the default Preset you want to filter, and enter the search string in the **Filter** field.
+
+
+#### Advanced filter search
+
+Presets can use glob search, which is a way to use symbols in your filters to allow for more inclusive import filters. See the table below for a list of symbols you can use. A glob search filter is case-sensitive.  
+To create a glob search filter, the syntax is `glob:"yoursearchpatternhere"`. Your filter field must begin `glob:`, and the search term must be in quotation mark characters. For example, `glob:"example-folder/*.fbx"` filters for any .fbx file in a folder called example-folder.
+
+Supported symbols:
+
+  
+| Symbol | Description | Example |
+| --- | --- | --- |
+| \* | Matches 0 or more characters in a single path portion (a single path portion is defined as any suite of characters excluding / ) | `glob:"foldername/*.fbx"`  
+searches for any .fbx file located in a folder named _foldername_. |
+| ? | Matches 1 character | `glob:"foldername/filename-?.fbx"`  
+searches for any .fbx file located in a folder named _foldername_ that has the name _filename-_ followed by one single character  
+(for example, this would include _filename–1.fbx_, _filename–2.fbx_, but not _filename–01.fbx_). |
+| \[…\] | Matches a range of characters, similar to a RegExp range. If the first character of the range is ! or ^ then it matches any character not in the range. | `glob:"foldername/file[...]1.fbx"`  
+searches for any .fbx file located in a folder named _foldername_ that has a name that begins file and ends with _1_  
+(for example, this would include _file–1.fbx_, _file–01.fbx_, but not _file–2.fbx_). |
+| (pattern|pat\*|pat?erN) | Use searches inside parentheses, separated by a vertical pipe character (meaning “or”), to indicate that filter results can match one of the search patterns. | `glob:("foldername/*.fbx"\|"foldername/filename-?.fbx")`  
+searches for any .fbx file located in a folder named _foldername_, or any .fbx file located in a folder named _foldername_ that has the name _filename-_ followed by one single character. |
+| \*\* | Matches zero or more directories and subdirectories searching for matches. | `glob:"foldername/**.fbx"`  
+searches for any .fbx file located in a folder named _foldername_. or its subfolders. |
 
 
 ### ref
