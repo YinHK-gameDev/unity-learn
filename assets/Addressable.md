@@ -145,4 +145,7 @@ https://www.youtube.com/watch?v=C6i_JiRoIfk \
 https://www.youtube.com/watch?v=wEuFAA-Ktwc
 
 
+https://www.youtube.com/watch?v=bCObS3teFGM \
+NodeJS + Addressable
+https://www.youtube.com/watch?v=dfSws1QQmKo
 
