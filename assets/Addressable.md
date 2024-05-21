@@ -12,7 +12,19 @@ Use **Window > Asset Management > Addressables** to begin working with the syste
 
 > **Addressable Assets** are assets that have a **unique address** which you can use to **load them from local or remote AssetBundles**.
 
+### Concepts
 
+-   **Address** - Identifies an Asset for easy run-time retrieval.
+-   **AddressableAssetData directory** - Stores your addressable Asset metadata in your Project’s Assets directory.
+-   **Asset Group** - Denotes a set of addressable Assets available for build-time processing.
+-   **Asset Group Schema** - Defines a set of data that can be assigned to a group and used during the build.
+-   **AssetReference** - An object that operates like a direct reference, but with deferred initialization (for example, for lazy loading). The `AssetReference` stores the GUID as an addressable that you can load on-demand.
+-   **Asynchronous Loading** - allows the location of the Asset and dependencies (for example, local, remote and generated) to change throughout the course of your development without changing the game code. Async Loading is foundational to the Addressable Asset System.
+-   **Build Script** - runs Asset Group Processors to package Assets and provides the mapping between Addresses and Resource Locations for the Resource Manager.
+-   **Label** - provides an additional addressable Asset identifier for run-time loading of similar items. For example: `Addressables.DownloadDependenciesAsync("spaceHazards");`
+
+
+    
 ### Install Addressables
 To install the Addressables package in your project, use the Package Manager:
 
