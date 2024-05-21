@@ -30,3 +30,23 @@ The platform-specific settings are divided into the following sections:
 
 ### ref 
 https://docs.unity3d.com/2021.3/Documentation/Manual/class-PlayerSettings.html
+
+https://docs.unity3d.com/Manual/playersettings-windows.html \
+https://docs.unity3d.com/Manual/class-PlayerSettingsWebGL.html \
+https://docs.unity3d.com/Manual/tvos-player-settings.html \
+https://docs.unity3d.com/Manual/PlayerSettings-macOS.html \
+https://docs.unity3d.com/Manual/PlayerSettings-linux.html \
+https://docs.unity3d.com/Manual/class-PlayerSettingsiOS.html \
+https://docs.unity3d.com/Manual/dedicated-server-player-settings.html \
+https://docs.unity3d.com/Manual/android-ChromeOS-player-settings.html \
+https://docs.unity3d.com/Manual/class-PlayerSettingsAndroid.html
+
+
+
+
+
+
+
+
+
+
