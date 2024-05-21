@@ -28,5 +28,27 @@ To specify a Preset to use for default settings in the Preset Manager:
     Alternatively, you can also drag and drop a Preset from the **Project** window into the Preset field.  
 6.  If you want to add another Preset field to the list, click the **Add** (**+**) tab.  
 
+> **Note**: If you set a default Preset for Transform components, Unity does not use the Position values when you create a new GameObject. Instead, it sets the default Position values to the center of the Scene view. To set the Position values to those of the default Preset, select the Transform component’s More items button (⋮) and select Reset.
+
+
+### Assigning Presets via the Inspector window
+
+You can also add and remove Presets to use for default settings via the **Inspector** window.
+
+To add a default Preset:
+
+1.  Select a Preset in the **Project** window.
+2.  In the **Inspector** window, click **Add to default**.  \
+    Unity adds your default Preset to the **Preset Manager**.
+3.  Open the **Preset Manager** to add filters to the Preset or reorder your Preset list.
+
+To remove a default Preset:
+
+1.  Select a Preset in the **Project** window.
+2.  In the **Inspector** window, click **Remove from**.
+
+
+
+
 ### ref
 https://docs.unity3d.com/Manual/class-PresetManager.html
