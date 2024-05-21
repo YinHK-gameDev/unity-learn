@@ -43,6 +43,7 @@ To set up the Addressables system in your Project after installation, open the *
 You can make an asset Addressable in the following ways:
 
 -   Enable the **Addressable** property in the asset's **Inspector** window.
+    ![](./img/inspectorcheckbox.png)
 -   Assign the asset to an **AssetReference field** in the **Inspector** window.
 -   Drag the asset into a group on the **Addressables Groups window**.
 -   In the Project window, move the asset into a folder that's marked as **Addressable**.
