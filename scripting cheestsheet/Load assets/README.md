@@ -98,8 +98,43 @@ or
 
 `LoadAssetAsync` and `InstantiateAsync` are asynch operations. You may provide a callback to work with the asset once it is loaded.
 
+Eg:
 
-https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html
+```cs
+void Update()
+{
+    if(Input.GetKeyDown(KeyCode.T))
+    {
+      AsyncOperationHandle<GameObject> asyncOperationHandle =
+          Addressables.LoadAssetAsync<GameObject>("AssetAddress");
+
+      asyncOperationHandle.Completed += AsyncOperationHandle_Completed;
+    }
+}
+
+
+void AsyncOperationHandle_Completed(AsyncOperationHandle<GameObject> asyncOperationHandle)
+{
+  if(asyncOperationHandle.Status == AsyncOperationStatus.Succeeded)
+  {
+    Instantiate(asyncOperationHandle.Result);
+  } else
+    {
+       Debug.Log("failed to load");
+    }
+
+}
+
+
+```
+
+
+
+
+https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html \
+https://z0935323866.medium.com/unity-%E5%B0%8B%E5%9D%80%E5%BC%8F%E8%B3%87%E6%BA%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%B5%B1addressable-assets-system-%E4%B8%80-bb1e99014a88 \
+https://www.youtube.com/watch?v=C6i_JiRoIfk \
+https://www.youtube.com/watch?v=bCObS3teFGM
 
 
 ### ref 
