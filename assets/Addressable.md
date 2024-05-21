@@ -58,7 +58,41 @@ You can make an asset Addressable in the following ways:
 
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/get-started-make-addressable.html
 
-### Building your game
+
+###  Addressables Groups window
+To manage your groups and Addressables assets, open the Addressables Groups window by going to **Window >Asset Management > Addressables > Groups**. Refer to **Addressables Groups window** for details about the features of this window.
+
+To create a group:
+
+1.  Go to **Window** > **Asset Management** > **Addressables** and select **Groups** to open the Addressables Groups window.
+2.  Select **New** > **Packed Asset** to create a new group. If you've created your own group templates, they are also displayed in the menu.
+3. Context click the new group and select Rename to rename the group.
+4. Open the context menu again and select Inspect Group Settings.
+5. Adjust the group settings as desired.
+
+#### Add assets to a group
+
+Use one of the following methods to add an asset to a group:
+
+-   Drag the assets from the Project window into the Group window and drop them into the desired group.
+-   Drag the assets from one group into another.
+-   Select the asset to open it in the Inspector window and enable the **Addressables** option. This adds the asset to the default group. Use the group context menu to change which group is the default group.
+-   Add the folder containing the assets to a group. All assets added to the folder are included in the group.
+
+#### Remove assets from a group
+Select one or more assets in the Groups window and right-click to open the context menu, then select Remove Addressables. You can also select the assets and press the Delete key to remove the assets from the group.
+
+
+#### Add or remove labels
+Select one or more assets in the Groups window, then select the label field for one of the selected assets.
+
+To assign labels, enable or disable the checkboxes for the desired labels.
+
+To add, remove or rename your labels, select the + button, then select Manage Labels. To only add a new label, select the + button and then select New Label. Refer to Labels for more information on how to use labels.
+
+
+
+#### Building your game
 
 Addressables needs to build your content into files that can be consumed by the running game before you build the player. This step is not done automatically. You can build this content via the UI or API.
 
