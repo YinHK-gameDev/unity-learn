@@ -13,6 +13,9 @@ In a large project, use AssetBundles and DLLs. Make one or more code projects th
 
 This way you can make your main project as small as a single "boot" scene with some DLLs and AssetBundles.
 
+> A recommended, and more user friendly, alternative is to use the Addressables package.
+
+
 
 ### What’s in an AssetBundle?
 ​
