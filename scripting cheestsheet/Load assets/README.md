@@ -88,6 +88,19 @@ public class ExampleClass : MonoBehaviour
 }
 ```
 
+### Addressable
+
+`Addressables.LoadAssetAsync<GameObject>("AssetAddress");`
+
+or
+
+`Addressables.InstantiateAsync("AssetAddress");`
+
+`LoadAssetAsync` and `InstantiateAsync` are asynch operations. You may provide a callback to work with the asset once it is loaded.
+
+
+https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html
+
 
 ### ref 
 https://docs.unity3d.com/ScriptReference/Resources.html \
