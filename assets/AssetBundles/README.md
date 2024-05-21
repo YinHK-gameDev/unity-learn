@@ -33,7 +33,7 @@ To assign a given Asset to an AssetBundle, follow these steps:
 
 1.  Select the Asset you want to assign to a bundle from your Project View.
 2.  Examine the object in the **Inspector**.
-3.  At the bottom of the Inspector, there is a section to assign AssetBundles and Variants. Use the left-hand drop down to assign the AssetBundle, and the right-hand drop down to assign the variant.
+3.  At the bottom of the Inspector, there is a section to **assign AssetBundles and Variants**. Use the **left-hand drop down to assign the AssetBundle**, and the **right-hand drop down to assign the variant**.
 4.  Click **None** on the left-hand drop to reveal the currently registered AssetBundle names.
 5.  Click **New** to create a new AssetBundle
 6.  Type in the desired AssetBundle name. **Note:** AssetBundle names support a type of folder structure depending on what you type. To add sub-folders, separate folder names by a `/`. For example, use the AssetBundle name `environment/forest` to create a bundle named `forest` under an `environment` sub-folder
