@@ -1,5 +1,5 @@
 ## Splash Image Player settings
-The Splash Image section of the Player settings window (menu: **Edit > Project Settings > Player > Splash Image**) allows you to configure a splash screen for your project. The splash screen displays when your application starts.
+The Splash Image section of the Player settings window (menu: **Edit > Project Settings > Player > Splash Image**) allows you to configure a splash screen for your project. The splash screen **displays when your application starts**.
 
 
 However, the full customization of the splash screen is only available to those on [Plus, Pro, or Enterprise Unity plans](https://store.unity.com/compare-plans). If you’re on a Personal Plan, the following limitations apply to the Splash Image settings:
