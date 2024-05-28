@@ -261,3 +261,5 @@ https://www.youtube.com/watch?v=5cl_Ppu9S-M \
 https://stackoverflow.com/questions/72704203/how-do-large-games-save-data
 
 
+Windows Game data / resource Save in location or path in PC \
+https://www.easeus.com/backup-recovery/windows-10-game-save-file-location.html
