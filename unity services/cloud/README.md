@@ -42,7 +42,10 @@ There are multiple ways to integrate your application content with Cloud Content
 
 > **Addressable Assets** are assets that have a unique address which you can use to load them from **local or remote AssetBundles**.
 
-https://docs.unity.com/ccd/manual/UnityCCDWalkthrough#Configuring_game_assets_as_addressable
+https://docs.unity.com/ccd/manual/UnityCCDWalkthrough#Configuring_game_assets_as_addressable \
+https://www.youtube.com/watch?v=5IvPPI7YnwU
+
+
 
 
 
