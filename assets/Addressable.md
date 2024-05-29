@@ -154,7 +154,8 @@ or
 
 `LoadAssetAsync` and `InstantiateAsync` are asynch operations. You may provide a callback to work with the asset once it is loaded.
 
-
+### Cloud Content Delivery + Addressable Workthrough
+https://www.youtube.com/watch?v=5IvPPI7YnwU
 
 ### ref
 
