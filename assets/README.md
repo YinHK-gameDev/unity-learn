@@ -53,4 +53,5 @@ https://docs.unity3d.com/Manual/AssetStorePublishing.html
 
 https://forum.unity.com/threads/how-do-you-organize-your-project-to-reduce-its-complexity-and-size.526687/
 
-
+### Unity + Play Asset Delivery in Google Play Store
+https://medium.com/akatsuki-taiwan-technology/unity-play-asset-delivery-1d468fd90c2d
