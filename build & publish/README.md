@@ -155,3 +155,8 @@ https://docs.unity3d.com/Manual/BuildSettings.html
 
 **Platform:** \
 https://docs.unity3d.com/Manual/PlatformSpecific.html
+
+**Publish Unity games on Steam:** \
+https://medium.com/@yoonicode/publishing-unity-games-on-steam-the-ultimate-guide-5e09fc812c65 \
+https://fungies.io/how-to-publish-your-game-on-steam/ \
+https://www.youtube.com/watch?v=gwMPvEFFomE
