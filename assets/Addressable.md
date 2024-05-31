@@ -157,6 +157,10 @@ or
 ### Cloud Content Delivery + Addressable Workthrough
 https://www.youtube.com/watch?v=5IvPPI7YnwU
 
+### Load content from multiple projects
+
+https://docs.unity3d.com/Packages/com.unity.addressables@2.0/manual/MultiProject.html
+
 ### ref
 
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html \
