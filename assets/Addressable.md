@@ -581,9 +581,9 @@ https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/RemoteConten
 
 
 #### Cloud Content Delivery + Addressable Workthrough
-https://www.youtube.com/watch?v=5IvPPI7YnwU
-
-
+https://docs.unity.com/ugs/manual/ccd/manual/UnityCCDWalkthrough#Configuring_game_assets_as_addressable \
+https://www.youtube.com/watch?v=5IvPPI7YnwU \
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/AddressablesCCD.html
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html \
