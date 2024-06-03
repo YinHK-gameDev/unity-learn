@@ -1,6 +1,12 @@
 ## Addressables
 Mainly used in assets.
 
+What is dynamic asset management?
+
+Dynamic asset management systems help you improve the performance of your game by allowing you to determine when, and from where, assets are loaded in and out of memory during runtime. 
+Throughout the Unity engine’s history there have been several ways to manage assets in memory. The Addressables system was designed to replace or improve upon legacy systems that have either been deprecated or are inadequate for a project that has progressed beyond a basic prototype.
+
+
 The **Addressable Asset System** allows the developer to **ask for** an **asset** **via its address**. Once an asset (e.g. a prefab) is marked **"addressable"**, it **generates an address which can be called from anywhere**. 
 
 Useful for **downloadable content (DLC)**, **reducing initial install size**, **loading assets optimized** for the end-user’s platform, and **reduce runtime memory pressure**.
