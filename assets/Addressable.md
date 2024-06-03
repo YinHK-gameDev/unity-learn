@@ -9,6 +9,8 @@ Throughout the Unity engine’s history there have been several ways to manage a
 
 The **Addressable Asset System** allows the developer to **ask for** an **asset** **via its address**. Once an asset (e.g. a prefab) is marked **"addressable"**, it **generates an address which can be called from anywhere**. 
 
+The **Addressables system is built on top of the AssetBundles API** to give you a user interface in the Unity Editor, and to automate processes that before could only be managed manually in scripts. With the Addressables system, you can organize your assets in the Unity Editor, and let the system handle dependencies, asset locations, and memory allocation and deallocation.
+
 Useful for **downloadable content (DLC)**, **reducing initial install size**, **loading assets optimized** for the end-user’s platform, and **reduce runtime memory pressure**.
 
 Wherever the asset resides (**local or remote**), the system will **locate it and its dependencies**, then **return it**.
