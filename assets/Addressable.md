@@ -7,12 +7,9 @@ Wherever the asset resides (**local or remote**), the system will **locate it an
 
 Use **Window > Asset Management > Addressables** to begin working with the system.
 
-
-
-
 > **Addressable Assets** are assets that have a **unique address** which you can use to **load them from local or remote AssetBundles**.
 
-Unity's Addressables system is a dynamic asset management solution that provides your users with only the assets they need, when they need them. It allows you to organize your on-demand assets from inside the Unity Editor while you're developing your game, and its runtime API lets you load and unload assets dynamically while users are playing your game.
+Unity's Addressables system is a **dynamic asset management solution** that provides your users with only the assets they need, when they need them. It allows you to organize your on-demand assets from inside the Unity Editor while you're developing your game, and its runtime API lets you load and unload assets dynamically while users are playing your game.
 
 
 
@@ -115,6 +112,19 @@ Addressables needs to build your content into files that can be consumed by the 
 
 1.  UI a. Open the **Addressables** window. b. Select **Build->Build Player Content**
 2.  API a. **`AddressableAssetSettings.BuildPlayerContent()`**
+
+
+### Use Addressables at runtime
+
+To load and use an Addressable asset, you can:
+
+- Use an **AssetReference** that references the asset
+- Use its **address string**
+- Use a **label** assigned to the asset
+
+> Loading Addressable assets uses asynchronous operations. Refer to Operations for information about the different ways to approach asynchronous programming in Unity scripts.
+
+https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/use-addresssables-introduction.html#load-by-address
 
 ### Loading or instantiating by address
 
@@ -279,7 +289,7 @@ Set **`releaseDependenciesOnFailure`** to true when loading a group of assets th
 
 https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/load-assets.html
 
-### Using the AssetReference Class
+### Loading assets by using the AssetReference Class
 
 The **`AssetReference`** class provides a mechanism to access Assets without the need to know string (or other) addresses.
 
@@ -302,6 +312,66 @@ or
 `AssetRefMember.InstantiateAsync(pos, rot);`
 
 `LoadAssetAsync` and `InstantiateAsync` are asynch operations. You may provide a callback to work with the asset once it is loaded.
+
+
+### Load by label
+You can load sets of assets that have the same label in one operation:
+
+```cs
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+
+internal class LoadWithLabels : MonoBehaviour
+{
+    // Label strings to load
+    public List<string> keys = new List<string>() {"characters", "animals"};
+
+    // Operation handle used to load and release assets
+    AsyncOperationHandle<IList<GameObject>> loadHandle;
+
+    // Load Addressables by Label
+    void Start()
+    {
+        float x = 0, z = 0;
+        loadHandle = Addressables.LoadAssetsAsync<GameObject>(
+            keys, // Either a single key or a List of keys 
+            addressable =>
+            {
+                //Gets called for every loaded asset
+                if (addressable != null)
+                {
+                    Instantiate<GameObject>(addressable,
+                        new Vector3(x++ * 2.0f, 0, z * 2.0f),
+                        Quaternion.identity,
+                        transform);
+                    if (x > 9)
+                    {
+                        x = 0;
+                        z++;
+                    }
+                }
+            }, Addressables.MergeMode.Union, // How to combine multiple labels 
+            false); // Whether to fail if any asset fails to load
+        loadHandle.Completed += LoadHandle_Completed;
+    }
+
+    private void LoadHandle_Completed(AsyncOperationHandle<IList<GameObject>> operation)
+    {
+        if (operation.Status != AsyncOperationStatus.Succeeded)
+            Debug.LogWarning("Some assets did not load.");
+    }
+
+    private void OnDestroy()
+    {
+        // Release all the loaded assets associated with loadHandle
+        Addressables.Release(loadHandle);
+    }
+}
+```
+
+https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/use-addresssables-introduction.html#load-by-address
 
 ### Load content from multiple projects
 
@@ -345,6 +415,8 @@ https://www.youtube.com/watch?v=5IvPPI7YnwU
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html \
 https://docs.unity3d.com/Packages/com.unity.addressables@0.8/manual/index.html
 
+**Use Addressables at runtime** \
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/RuntimeAddressables.html
 
 **`Addressable` API** \
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html \
