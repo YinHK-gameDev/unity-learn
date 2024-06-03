@@ -116,6 +116,7 @@ To assign labels, enable or disable the checkboxes for the desired labels.
 
 To add, remove or rename your labels, select the + button, then select Manage Labels. To only add a new label, select the + button and then select New Label. Refer to Labels for more information on how to use labels.
 
+https://learn.unity.com/tutorial/label-addressable-assets?uv=2022.3&courseId=64255c01edbc2a268fb0b800#645ddf46edbc2a5c78dcd389
 
 #### Building your game
 
