@@ -6,9 +6,27 @@ An **AssetBundle** is an **archive file** that contains platform-specific **non-
 
 Split your project into asset bundles and have each asset bundle as a separate project. 
 
-An AssetBundle is content that is stored separately from a main game or application and loaded (or downloaded, in the case of mobile and online apps) at runtime. This helps minimize the impact on network and system resources by allowing customers to download and install only the parts they need. AssetBundles can also be used to update or add to content post-release.
+An **AssetBundle is content** that is **stored separately from a main game or application and loaded (or downloaded, in the case of mobile and online apps) at runtime**. \
+This helps minimize the impact on network and system resources by allowing customers to download and install only the parts they need. AssetBundles can also be used to update or add to content post-release.
 
+**AssetBundle system**
 
+The AssetBundle system organizes assets into containers called AssetBundles. Like the Resources folder, the AssetBundle system creates sets of assets into separate files. Unlike Resources folders, AssetBundles can be stored locally with the Player or remotely in the cloud.
+
+The AssetBundles system, through its API, minimizes the impact on network and system resources. It does this by allowing you to download the bundles on an as-needed basis, so that you can add DLC and post-release content updates. For example, you can deliver new content for your players to view, earn, or purchase, without requiring them to download a new version of your game. Once bundles are downloaded, AssetBundles API provides a way to load and unload assets from bundles.
+
+Although it is a fully bespoke system, AssetBundles has limitations that have required developers to implement their own solutions:
+
+-   The AssetBundles system is an API that can only be used in scripts. There is a limited user interface for defining AssetBundles in the Unity Editor, but building AssetBundles requires scripting.
+    
+
+-   The AssetBundles API by itself does not keep track of asset dependencies between AssetBundles. For example, if you want to load a prefab from AssetBundle A, you will need to locate any of its dependencies such as meshes, materials, and textures that may be located in other AssetBundles, and ensure those dependent AssetBundles are loaded at runtime before you attempt to load the prefab.
+    
+
+-   Memory allocation and deallocation is direct and manual, so it's possible to unload an asset from an AssetBundle while other code still depends on that asset, potentially resulting in missing content issues or memory leakage. This can become problematic in code that creates race conditions, and requires fortifying your code against these problems.
+    
+
+-   AssetBundles runtime API is not aware whether you put your built bundles locally or remotely. This requires you to keep track of the location of that AssetBundle, whether it's on a web server or on disk.
 
 
 > **Note**: An AssetBundle can contain the **serialized data of an instance of a code object**, such as a **ScriptableObject**. \
