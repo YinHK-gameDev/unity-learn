@@ -106,7 +106,8 @@ When you choose to pack assets in a group based on their assigned labels using t
 For example, if you have assets in a group that you have labeled as either **`cat`** or **`dog`** and either **`small`** or **`large`**, the build produces four bundles: one for small cats, one for small dogs, one for large cats, and another for large dogs.
 
 
-https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/Labels.html
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/Labels.html \
+https://learn.unity.com/tutorial/label-addressable-assets?uv=2022.3&courseId=64255c01edbc2a268fb0b800#645ddad2edbc2a5bfc080601
 
 #### Add or remove labels
 Select one or more assets in the Groups window, then select the label field for one of the selected assets.
