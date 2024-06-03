@@ -587,6 +587,10 @@ https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/Addressables
 
 **Demo project**: https://unity.com/cn/demos/loady-dungeons?utm_source=youtube&utm_medium=social&utm_campaign=games_global_generalpromo_2022-05-26_ugs-ccd-video
 
+**How to deploy live game content using Cloud Content Delivery** \
+https://blog.unity.com/games/how-to-deploy-live-game-content-using-cloud-content-delivery
+
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html \
 https://docs.unity3d.com/Packages/com.unity.addressables@0.8/manual/index.html
