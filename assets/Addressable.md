@@ -555,6 +555,27 @@ It might be worth having a minimal amount of content built locally in the source
 
 https://docs.unity3d.com/Packages/com.unity.addressables@2.0/manual/MultiProject.html
 
+
+### Addressables Hosting
+
+You can accomplish a lot of testing in the Unity Editor during the development of Loady Dungeons, but eventually you'll need to test your application on your target platform's devices to test all of your features. With Addressables content, you’ll also need to host your remote content on a CDN to test the loading and unloading of assets.
+
+Building to your chosen platforms and introducing a CDN every time you want to test remote assets can introduce complexities to the development of your project, such as increased time costs. As a solution to these complexities, the Addressables system provides you with the Addressables Hosting window, which acts as a content server integrated into the Unity Editor.
+
+Through this feature, the Addressables system hosts the build output the same way that a proper CDN does: it allows you to treat your Unity Editor Play mode session or a Unity Player build as a client that can connect to it in order to retrieve AssetBundles. The clients can exist on the same machine as your project or on any other machine on your local and remote networks.
+
+Addressables Hosting lets you improve iteration times when testing your content and provides you with a clear understanding of how your application will connect to a remote server.
+
+Hosting Services provide an integrated facility for using Addressable Assets configuration data to serve packed content to local or network-connected application builds from within the Unity Editor. Hosting Services are designed to improve iteration velocity when testing packed content, and can also be used to serve content to connected clients on local and remote networks.
+
+Moving from Editor Play mode testing to platform application build testing introduces complexities and time costs to the development process. Hosting Services provide extensible Editor-embedded content delivery services that map directly to your Addressables group configuration. Using a custom Addressables profile, you can quickly configure your application to load all content from the Unity Editor itself. This includes builds deployed to mobile devices, or any other platform, that have network access to your development system.
+
+
+
+
+https://learn.unity.com/tutorial/host-your-built-content-locally-during-development?uv=2022.3&courseId=64255c01edbc2a268fb0b800#645e2ce7edbc2a6818325620 \
+https://docs.unity3d.com/Packages/com.unity.addressables@1.4/manual/AddressableAssetsHostingServices.html
+
 ### Remote content
 https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/RemoteContentDistribution.html
 
