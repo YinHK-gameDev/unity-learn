@@ -174,6 +174,9 @@ void AsyncOperationHandle_Completed(AsyncOperationHandle<GameObject> asyncOperat
 }
 
 ```
+
+with an address as the key:
+
 ```cs
 using System.Collections;
 using UnityEngine;
@@ -205,6 +208,77 @@ internal class LoadAddress : MonoBehaviour
 
 ```
 
+#### Load multiple assets
+
+Use the **`LoadAssetsAsync`** method to load more than one Addressable asset in a single operation. When using this method, you can specify a single key, such as a label, or a list of keys.
+
+When you specify multiple keys, you can specify a **merge mode** to set how the assets that match each key are combined:
+
+-   `Union`: Include assets that match any key
+-   `Intersection`: Include assets that match every key
+-   `UseFirst`: Include assets only from the first key that resolves to a valid location
+
+
+```cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+
+internal class LoadMultiple : MonoBehaviour
+{
+    // Label strings to load
+    public List<string> keys = new List<string>() {"characters", "animals"};
+
+    // Operation handle used to load and release assets
+    AsyncOperationHandle<IList<GameObject>> loadHandle;
+
+    // Load Addressables by Label
+    public IEnumerator Start()
+    {
+        float x = 0, z = 0;
+        loadHandle = Addressables.LoadAssetsAsync<GameObject>(
+            keys,
+            addressable =>
+            {
+                //Gets called for every loaded asset
+                Instantiate<GameObject>(addressable,
+                    new Vector3(x++ * 2.0f, 0, z * 2.0f),
+                    Quaternion.identity,
+                    transform);
+
+                if (x > 9)
+                {
+                    x = 0;
+                    z++;
+                }
+            }, Addressables.MergeMode.Union, // How to combine multiple labels 
+            false); // Whether to fail and release if any asset fails to load
+
+        yield return loadHandle;
+    }
+
+    private void OnDestroy()
+    {
+        Addressables.Release(loadHandle);
+        // Release all the loaded assets associated with loadHandle
+        // Note that if you do not make loaded addressables a child of this object,
+        // then you will need to devise another way of releasing the handle when
+        // all the individual addressables are destroyed.
+    }
+}
+```
+
+To specify how to handle loading errors, use the **`releaseDependenciesOnFailure`** parameter. If **`true`**, then the operation fails if it encounters an error loading any single asset. The operation and any assets that loaded are released.
+
+If **`false`**, then the operation loads any objects that it can and doesn't release the operation. If it fails, the operation still completes with a status of **`Failed`**. Also, the list of assets returned has null values where the failed assets would otherwise appear.
+
+Set **`releaseDependenciesOnFailure`** to true when loading a group of assets that must be loaded as a set to be used. For example, if you load the assets for a game level, you might fail the operation as a whole rather than load only some of the required assets.
+
+
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/load-assets.html
+
 ### Using the AssetReference Class
 
 The **`AssetReference`** class provides a mechanism to access Assets without the need to know string (or other) addresses.
@@ -230,6 +304,32 @@ or
 `LoadAssetAsync` and `InstantiateAsync` are asynch operations. You may provide a callback to work with the asset once it is loaded.
 
 ### Load content from multiple projects
+
+If you're working with **multiple projects**, such as a **large project broken up across multiple Unity projects**, you can use **`Addressables.LoadContentCatalogAsync`** to **link together code and content** across the various projects.
+
+#### Set up multiple projects
+
+To create a multi-project setup make sure of the following:
+
+-   Each project uses the same version of the Unity Editor
+-   Each project uses the same version of the Addressables package
+
+Projects can contain whatever assets and code you need for your given situation. One of your projects must be your main or source project. This is the project that you'll build and deploy your game binaries from. Typically, this source project is comprised of code and little to no content. The main piece of content in the primary project is a bootstrap scene at minimum. You might want to include any scenes that need to be local for performance purposes before any AssetBundles have had a chance to be downloaded and cached.
+
+Secondary projects are the opposit and contain content and little to no code. These projects need to have all remote Addressable Groups and Build Remote Catalog enabled. Any local data built into these projects can't be loaded in your source project's application. Non-critical scenes can live in these projects and be downloaded by the primary project when requested.
+
+#### Work with multiple project
+
+Once you have your projects setup, the workflow generally is as follows:
+
+1.  Build remote content for all secondary projects
+2.  Build Addressables content for source project
+3.  Start the source project's Play mode or build the source project's binaries
+4.  In source project, use **`Addressables.LoadContentCatalogAsync`** to load the remote catalogs of your other various projects
+5.  Proceed with game runtime as normal. Now that the catalogs are loaded, Addressables can load assets from any of these locations.
+
+It might be worth having a minimal amount of content built locally in the source project. Each project is unique, and has unique needs, but having a small set of content needed to run your game in the event of internet connection issues or other various problems is advisable.
+
 https://docs.unity3d.com/Packages/com.unity.addressables@2.0/manual/MultiProject.html
 
 ### Remote content
