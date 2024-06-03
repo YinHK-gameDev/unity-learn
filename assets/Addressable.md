@@ -82,6 +82,24 @@ Use one of the following methods to add an asset to a group:
 #### Remove assets from a group
 Select one or more assets in the Groups window and right-click to open the context menu, then select Remove Addressables. You can also select the assets and press the Delete key to remove the assets from the group.
 
+#### Label
+
+You can tag your Addressable assets with one or more labels in the Addressables Groups window. Labels have a few uses in the Addressables system, including:
+
+-   You can use one or more labels as keys to identify which assets to load at runtime.
+-   You can pack assets in a group into AssetBundles based on their assigned labels.
+-   You can use labels in the filter box of the Groups window to help find labeled assets
+
+When you load assets using a list of labels, you can specify whether you want to load all assets that have any label in the list or only assets that have every label in the list.
+
+For example, if you used the labels, **`characters`** and **`animals`** to load assets, you could choose to load the union of those two sets of assets, which includes all characters and all animals, or the intersection of those two sets, which includes only characters that are animals. Refer to Loading multiple assets for more information.
+
+When you choose to pack assets in a group based on their assigned labels using the group **Bundle Mode setting**, the Addressables build script creates a bundle for each unique combination of labels in the group.
+
+For example, if you have assets in a group that you have labeled as either **`cat`** or **`dog`** and either **`small`** or **`large`**, the build produces four bundles: one for small cats, one for small dogs, one for large cats, and another for large dogs.
+
+
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/Labels.html
 
 #### Add or remove labels
 Select one or more assets in the Groups window, then select the label field for one of the selected assets.
@@ -89,7 +107,6 @@ Select one or more assets in the Groups window, then select the label field for 
 To assign labels, enable or disable the checkboxes for the desired labels.
 
 To add, remove or rename your labels, select the + button, then select Manage Labels. To only add a new label, select the + button and then select New Label. Refer to Labels for more information on how to use labels.
-
 
 
 #### Building your game
