@@ -46,7 +46,7 @@ https://docs.unity.com/ccd/manual/UnityCCDWalkthrough#Configuring_game_assets_as
 https://www.youtube.com/watch?v=5IvPPI7YnwU
 
 
-
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/AddressablesCCD.html
 
 
 This demo game is built to teach developers how to use Content Cloud Delivery and the Addressable Assets package in a production-ready environment. \
