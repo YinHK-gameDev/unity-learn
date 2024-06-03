@@ -130,6 +130,8 @@ or
 
 `LoadAssetAsync` and `InstantiateAsync` are asynch operations. You may provide a callback to work with the asset once it is loaded. 
 
+Eg:
+
 ```cs
   GameObject myGameObject;
 
@@ -146,6 +148,62 @@ or
 
 ```
 
+```cs
+void Update()
+{
+    if(Input.GetKeyDown(KeyCode.T))
+    {
+      AsyncOperationHandle<GameObject> asyncOperationHandle =
+          Addressables.LoadAssetAsync<GameObject>("AssetAddress");
+
+      asyncOperationHandle.Completed += AsyncOperationHandle_Completed;
+    }
+}
+
+
+void AsyncOperationHandle_Completed(AsyncOperationHandle<GameObject> asyncOperationHandle)
+{
+  if(asyncOperationHandle.Status == AsyncOperationStatus.Succeeded)
+  {
+    Instantiate(asyncOperationHandle.Result);
+  } else
+    {
+       Debug.Log("failed to load");
+    }
+
+}
+
+```
+```cs
+using System.Collections;
+using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+
+internal class LoadAddress : MonoBehaviour
+{
+    public string key;
+    AsyncOperationHandle<GameObject> opHandle;
+
+    public IEnumerator Start()
+    {
+        opHandle = Addressables.LoadAssetAsync<GameObject>(key);
+        yield return opHandle;
+
+        if (opHandle.Status == AsyncOperationStatus.Succeeded)
+        {
+            GameObject obj = opHandle.Result;
+            Instantiate(obj, transform);
+        }
+    }
+
+    void OnDestroy()
+    {
+        Addressables.Release(opHandle);
+    }
+}
+
+```
 
 ### Using the AssetReference Class
 
@@ -171,15 +229,19 @@ or
 
 `LoadAssetAsync` and `InstantiateAsync` are asynch operations. You may provide a callback to work with the asset once it is loaded.
 
-### Cloud Content Delivery + Addressable Workthrough
-https://www.youtube.com/watch?v=5IvPPI7YnwU
-
 ### Load content from multiple projects
-
 https://docs.unity3d.com/Packages/com.unity.addressables@2.0/manual/MultiProject.html
 
-### ref
+### Remote content
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/RemoteContentDistribution.html
 
+
+#### Cloud Content Delivery + Addressable Workthrough
+https://www.youtube.com/watch?v=5IvPPI7YnwU
+
+
+
+### ref
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html \
 https://docs.unity3d.com/Packages/com.unity.addressables@0.8/manual/index.html
 
