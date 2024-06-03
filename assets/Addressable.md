@@ -585,6 +585,8 @@ https://docs.unity.com/ugs/manual/ccd/manual/UnityCCDWalkthrough#Configuring_gam
 https://www.youtube.com/watch?v=5IvPPI7YnwU \
 https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/AddressablesCCD.html
 
+**Demo project**: https://unity.com/cn/demos/loady-dungeons?utm_source=youtube&utm_medium=social&utm_campaign=games_global_generalpromo_2022-05-26_ugs-ccd-video
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/index.html \
 https://docs.unity3d.com/Packages/com.unity.addressables@0.8/manual/index.html
