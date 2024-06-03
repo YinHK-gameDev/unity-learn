@@ -124,6 +124,16 @@ Addressables needs to build your content into files that can be consumed by the 
 2.  API a. **`AddressableAssetSettings.BuildPlayerContent()`**
 
 
+When you make a build while using the Addressables system, you generate two sets of files:
+
+-   A **player build**, which is similar to the application file you would build without using the Addressables system, except that it also contains your local Addressables content.
+  
+-  **Addressables content**, which includes AssetBundles, runtime settings, a content catalog, and other files that will either be stored locally, with the player build, or uploaded to your content delivery network (CDN) or other hosting services.
+
+
+https://learn.unity.com/tutorial/build-content-using-addressables?uv=2022.1&courseId=64255c01edbc2a268fb0b800#645dbeacedbc2a5a33027f43
+
+
 ### Use Addressables at runtime
 
 To load and use an Addressable asset, you can:
