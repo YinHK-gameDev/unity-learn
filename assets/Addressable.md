@@ -293,7 +293,7 @@ https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/load-assets.
 
 The **`AssetReference`** class provides a mechanism to access Assets without the need to know string (or other) addresses.
 
-To access an Addressable Asset using the \*AssetReference \*class:
+To access an Addressable Asset using the **AssetReference** class:
 
 1.  Select an Asset.
 2.  In the Inspector, click the **Add Component** button and then select the component type.
@@ -373,6 +373,16 @@ internal class LoadWithLabels : MonoBehaviour
 
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/use-addresssables-introduction.html#load-by-address
 
+
+### Load a scene
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/LoadingScenes.html
+
+### Load assets by location
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/load-assets-location.html
+
+### Load AssetBundles
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/LoadingAssetBundles.html
+
 ### Load content from multiple projects
 
 If you're working with **multiple projects**, such as a **large project broken up across multiple Unity projects**, you can use **`Addressables.LoadContentCatalogAsync`** to **link together code and content** across the various projects.
@@ -417,6 +427,9 @@ https://docs.unity3d.com/Packages/com.unity.addressables@0.8/manual/index.html
 
 **Use Addressables at runtime** \
 https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/RuntimeAddressables.html
+
+**Loading Addressable assets** \
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/LoadingAddressableAssets.html
 
 **`Addressable` API** \
 https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html \
