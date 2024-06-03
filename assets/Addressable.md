@@ -429,6 +429,14 @@ You can periodically check the status of the operation or register for a complet
 
 When you no longer need the resource provided by an AsyncOperationHandle return through the Addressables API, you should release through the `Addressables.Release` method.
 
+Asynchronous operations
+In the Addressables API, many tasks load assets and data and then return a result. When those assets or data are on a remote server, these tasks can take extra time. To avoid slowing down your game's performance and delaying other tasks, the Addressables system uses asynchronous operations, which means that tasks can run concurrently.
+To implement asynchronous operations with the Addressables API, you'll need to understand these concepts, all of which are included in the Intermediate scripting project:
+
+- **Coroutines**, which allow you to perform a function over time instead of instantly.
+- **Delegates**, which are containers for functions that can be passed around or used like variables.
+- **Events**, which are specialized delegates that can alert a class that something has happened.
+
 **Typed vs Typeless**:
 
 Most of the Addressables API will return a generic `AsyncOperationHandle<T>`. This allows type safety for the `AsyncOperationHandle.Completed` event and for the `AsyncOperationHandle.Result`. There is also a non-generic `AsyncOperationHandle`. You can convert between the generic and non-generic handles. You will get a runtime exception if you attempt to cast a non-generic handle to a generic handle of an incorrect type. Below is an example of this conversion.
