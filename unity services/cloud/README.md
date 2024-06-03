@@ -56,7 +56,8 @@ https://youtu.be/J9XbISBpfp0
 
 
 How to deploy live game content using Cloud Content Delivery \
-https://blog.unity.com/games/how-to-deploy-live-game-content-using-cloud-content-delivery
+https://blog.unity.com/games/how-to-deploy-live-game-content-using-cloud-content-delivery \
+https://www.youtube.com/watch?v=J9XbISBpfp0
 
 
 
