@@ -471,10 +471,13 @@ https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/RuntimeAddre
 https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/LoadingAddressableAssets.html
 
 **`Addressable` API** \
-https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html \
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/api/UnityEngine.AddressableAssets.html \
 
 **`AsyncOperationHandle`** \
-https://docs.unity3d.com/Packages/com.unity.addressables@0.8/manual/AddressableAssetsAsyncOperationHandle.html
+https://docs.unity3d.com/Packages/com.unity.addressables@0.8/manual/AddressableAssetsAsyncOperationHandle.html \
+**`AsyncOperationHandle` API** \
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/api/UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle.html \
+https://docs.unity3d.com/Packages/com.unity.addressables@2.1/api/UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle-1.html
 
 
 **Tutorial** \
