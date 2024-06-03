@@ -43,9 +43,7 @@ There are multiple ways to integrate your application content with Cloud Content
 > **Addressable Assets** are assets that have a unique address which you can use to load them from **local or remote AssetBundles**.
 
 https://docs.unity.com/ccd/manual/UnityCCDWalkthrough#Configuring_game_assets_as_addressable \
-https://www.youtube.com/watch?v=5IvPPI7YnwU
-
-
+https://www.youtube.com/watch?v=5IvPPI7YnwU \
 https://docs.unity3d.com/Packages/com.unity.addressables@2.1/manual/AddressablesCCD.html
 
 
@@ -53,6 +51,9 @@ This demo game is built to teach developers how to use Content Cloud Delivery an
 https://unity.com/demos/loady-dungeons
 
 https://youtu.be/J9XbISBpfp0
+
+**Demo project**: https://unity.com/cn/demos/loady-dungeons?utm_source=youtube&utm_medium=social&utm_campaign=games_global_generalpromo_2022-05-26_ugs-ccd-video
+
 
 How to deploy live game content using Cloud Content Delivery \
 https://blog.unity.com/games/how-to-deploy-live-game-content-using-cloud-content-delivery
