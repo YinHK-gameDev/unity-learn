@@ -160,3 +160,6 @@ https://docs.unity3d.com/Manual/PlatformSpecific.html
 https://medium.com/@yoonicode/publishing-unity-games-on-steam-the-ultimate-guide-5e09fc812c65 \
 https://fungies.io/how-to-publish-your-game-on-steam/ \
 https://www.youtube.com/watch?v=gwMPvEFFomE
+
+**Publish your game on the Play Store:** \
+https://wiki.gdevelop.io/gdevelop5/publishing/android/play-store/
