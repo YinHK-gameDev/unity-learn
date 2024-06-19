@@ -163,3 +163,21 @@ https://www.youtube.com/watch?v=gwMPvEFFomE
 
 **Publish your game on the Play Store:** \
 https://wiki.gdevelop.io/gdevelop5/publishing/android/play-store/
+
+**Publish Your Game on the Epic Games Store:** \
+https://gdevelop.io/page/how-to-publish-game-on-epic-games-store-and-why-you-should \
+https://dev.epicgames.com/docs/epic-games-store/publishing-tools/publishing-process/publishing-workflow \
+https://store.epicgames.com/en-US/news/epic-games-store-launches-self-publishing-tools-for-game-developers-and-publishers \
+https://www.unrealengine.com/en-US/blog/self-service-publishing-now-available-for-the-epic-games-store \
+https://dev.epicgames.com/docs/epic-games-store/publishing-tools \
+https://www.youtube.com/watch?v=dV8L5pto39k
+
+
+
+
+
+
+
+
+
+
