@@ -1,7 +1,7 @@
 ## Control behavior with events
 
 **UI Toolkit** provides events that communicate **user actions or notifications to visual elements**. 
-The **UI Toolkit event** system shares the **same terminology** and event naming as **HTML events**.
+The **UI Toolkit event system** shares the **same terminology** and event naming as **HTML events**.
  
  
 The UI Toolkit **event system listens to events**, coming from the operating system or scripts
