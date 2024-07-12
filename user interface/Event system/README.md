@@ -181,7 +181,7 @@ public override void Raycast(PointerEventData eventData, List<RaycastResult> res
 ```
 
 ### Event System Component
-An **EventSystem component** is automatically created **alongside your UI** and **contains several Input Modules**. 
+> An **EventSystem component** is automatically created **alongside your UI** and **contains several Input Modules**. 
 
 This subsystem is responsible for controlling all the other elements that make up eventing. It coordinates which Input Module is currently active, which GameObject is currently considered **'selected'**, and a host of other high level Event System concepts.
 
