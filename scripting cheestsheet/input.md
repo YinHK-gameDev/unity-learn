@@ -13,7 +13,7 @@ The value will be in the range **`-1...1`** for keyboard and joystick input devi
 
 The meaning of this value depends on the type of input control, for example with a joystick's horizontal axis a value of 1 means the stick is pushed all the way to the right and a value of -1 means it's all the way to the left; a value of 0 means the joystick is in its neutral position.
 
-If the axis is mapped to the mouse, the value is different and** will not be in the range of -1...1**. Instead it'll be the current **mouse delta** multiplied by the **axis sensitivity**. Typically a **positive value means the mouse is moving right/down** and a **negative value means the mouse is moving left/up**.
+If the axis is mapped to the mouse, the value is different and **will not be in the range of -1...1**. Instead it'll be the current **mouse delta** multiplied by the **axis sensitivity**. Typically a **positive value means the mouse is moving right/down** and a **negative value means the mouse is moving left/up**.
 
 
 This is frame-rate independent; you do not need to be concerned about varying frame-rates when using this value.  
