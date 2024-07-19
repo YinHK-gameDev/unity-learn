@@ -55,6 +55,10 @@ If one of collider is trigger, both collider will **pass through each other** wh
 - At least one of them **contain a rigidbody**.
 - At least one of them has **`Collider.isTrigger` enabled**(one of collider is **trigger** or both).
 
+> **Note**:
+> - If none of **Rigidbody** exist, no trigger detection.
+> - If **none of them** have **`Collider.isTrigger`** enabled, no trigger detection.
+
 > To generate trigger message: Both have **collider** + At least one contain a **rigidbody** + **At least one trigger** exists
 
 #### Requirement for collision generating collision detection messages:
