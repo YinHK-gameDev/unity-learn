@@ -79,6 +79,10 @@ The parent of the transform.
 
 Changing the parent will modify the parent-relative position, scale and rotation but keep the world space position, rotation and scale the same.
 
+```cs
+public Transform parent;
+```
+
 https://docs.unity3d.com/ScriptReference/Transform-parent.html
 
 
@@ -86,6 +90,14 @@ https://docs.unity3d.com/ScriptReference/Transform-parent.html
 Set the parent of the transform.
 
 This method is the same as the parent property except that it also lets the Transform keep its local orientation rather than its global orientation. 
+
+```cs
+public void SetParent(Transform p);
+```
+
+```cs
+public void SetParent(Transform parent, bool worldPositionStays);
+```
 
 https://docs.unity3d.com/ScriptReference/Transform.SetParent.html
 
