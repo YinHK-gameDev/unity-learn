@@ -109,6 +109,11 @@ Raycast function:
   https://docs.unity3d.com/ScriptReference/Collider.Raycast.html
 
 
+Eg:
+
+```cs
+public static bool Raycast(Ray ray, out RaycastHit hitInfo, float maxDistance = Mathf.Infinity, int layerMask = DefaultRaycastLayers, QueryTriggerInteraction queryTriggerInteraction = QueryTriggerInteraction.UseGlobal);
+```
 
 ### Visualise Raycast in the scene
 > The **Debug** Class includes a function, **`Draw Ray`**, that allows you to **render a Ray** in the world.
