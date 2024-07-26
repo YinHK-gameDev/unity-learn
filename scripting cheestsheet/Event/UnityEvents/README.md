@@ -66,7 +66,7 @@ To configure a callback in the editor there are a few steps to take:
 
 3. Declare **`UnityEvent`** & **`Invoke()`** function to invoke the event
 
-4. Create a **callback function/event handler** for this event some where. 
+4. Create a **callback function/event handler** for this event **some where(in other script)**. 
    > The callback function should be **`public`**, otherwise you can't search it in inspector.
     
 6. In inspecter, the Event section you declared **`UnityEvent`** in the script, select the **"+"** icon to add a slot for a **callback**.
