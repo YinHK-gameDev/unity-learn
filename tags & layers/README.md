@@ -14,6 +14,16 @@ Common uses of layers include:
 
 > Layers marked as **Builtin** Layer are default layers used by Unity, which you cannot edit. You can customise layers marked as **User Layer**.
 
+
+### Buid-in Layer
+- 0: Default
+- 1: TransparentFX
+- 2: Ignore Raycast
+- 3: Water
+- 4: UI
+
+
+
 ### Camera culling mask with layers
 You can render only the objects in a particular layer, or selection of layers, if you use the **Camera’s culling mask**.
 To change the culling mask, select the camera you want to use, and select the Culling Mask dropdown in the Inspector window. If you clear the checkbox of a layer, it doesn’t render in the scene.
