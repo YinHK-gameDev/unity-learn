@@ -12,9 +12,6 @@ Unity provides **`UnityEngine`** & **`UnityEditor`** scripting API.
 
 https://www.youtube.com/watch?v=491TSNwXTIg
 
-### Unity compiler
-https://onecompiler.com/csharp/3wjz67xfw
-
 
 ### Declare variable/array
 When declare variables or array, it must specify its data type:   **value type** (eg: string/float…) or **reference type** ( class eg: `Transform/Gameobject`).
