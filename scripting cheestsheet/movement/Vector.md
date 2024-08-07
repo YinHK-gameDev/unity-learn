@@ -106,6 +106,16 @@ public class LerpToPosition : MonoBehaviour
 
 https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html
 
+#### `Vector3.MoveTowards`
+
+Calculate a position between the points specified by `current` and `target`, moving no farther than the distance specified by `maxDistanceDelta`.
+
+Use the MoveTowards member to move an object at the `current` position toward the `target` position. By updating an object’s position each frame using the position calculated by this function, you can move it towards the `target` smoothly. Control the speed of movement with the `maxDistanceDelta` parameter. 
+
+```cs
+public static Vector3 MoveTowards(Vector3 current, Vector3 target, float maxDistanceDelta);
+```
+
 ### Static Properties
 
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Vector3.htmlVector3-back.html">back</a></td><td class="desc">Shorthand for writing Vector3(0, 0, -1).</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Vector3.htmlVector3-down.html">down</a></td><td class="desc">Shorthand for writing Vector3(0, -1, 0).</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Vector3.htmlVector3-forward.html">forward</a></td><td class="desc">Shorthand for writing Vector3(0, 0, 1).</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Vector3.htmlVector3-left.html">left</a></td><td class="desc">Shorthand for writing Vector3(-1, 0, 0).</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Vector3.htmlVector3-negativeInfinity.html">negativeInfinity</a></td><td class="desc">Shorthand for writing Vector3(float.NegativeInfinity, float.NegativeInfinity, float.NegativeInfinity).</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Vector3.htmlVector3-one.html">one</a></td><td class="desc">Shorthand for writing Vector3(1, 1, 1).</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Vector3.htmlVector3-positiveInfinity.html">positiveInfinity</a></td><td class="desc">Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Vector3.htmlVector3-right.html">right</a></td><td class="desc">Shorthand for writing Vector3(1, 0, 0).</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Vector3.htmlVector3-up.html">up</a></td><td class="desc">Shorthand for writing Vector3(0, 1, 0).</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/Vector3.htmlVector3-zero.html">zero</a></td><td class="desc">Shorthand for writing Vector3(0, 0, 0).</td></tr></tbody></table>
