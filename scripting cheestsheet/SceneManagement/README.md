@@ -201,7 +201,15 @@ SceneManager.MoveGameObjectToScene(m_MyGameObject, SceneManager.GetSceneByName(m
 SceneManager.UnloadSceneAsync(currentScene);
 ```
 
+### `MoveGameObjectsToScene`
+Move multiple GameObjects, represented by a NativeArray of instance IDs, from their current Scene to a new Scene.
 
+> You can only move root GameObjects from one Scene to another. This means the GameObject to move must not be a child of any other GameObject in its Scene.
+
+
+```cs
+public static void MoveGameObjectsToScene(NativeArray<int> instanceIDs, SceneManagement.Scene scene);
+```
 #### Static Properties
 
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-loadedSceneCount.html">loadedSceneCount</a></td><td class="desc">The number of loaded Scenes.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-sceneCount.html">sceneCount</a></td><td class="desc">The current number of Scenes. Returns the current number Scenes. This includes the Scenes that are currently loading or unloading.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-sceneCountInBuildSettings.html">sceneCountInBuildSettings</a></td><td class="desc">Number of Scenes in Build Settings.</td></tr></tbody></table>
