@@ -31,10 +31,10 @@ Inside script set variable/array 做`public`, 在unity inspector 會顯示該var
 - **`MonoBehaviour`** class
 - **`GameObject`** class
 - **`Transform`** class
+- **`Vector3`** class
 - **`Physics`** class
 - **`Rigidbody`** class
 - **`Collider`** & **`Collision`** class
-- **`Vector3`** class
 
 ### `Debug.Log()`
 ```cs
