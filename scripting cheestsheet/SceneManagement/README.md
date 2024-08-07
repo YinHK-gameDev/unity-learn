@@ -173,6 +173,35 @@ using UnityEngine;// create a randomly placed cubepublic class ExampleScript2 : 
 }
 ```
 
+### `MoveGameObjectToScene`
+```cs
+ public static void MoveGameObjectToScene(GameObject go, SceneManagement.Scene scene);
+```
+Move a GameObject from its current Scene to a new Scene.
+
+> You can only move root GameObjects from one Scene to another. This means the GameObject to move must not be a child of any other GameObject in its Scene.
+
+Eg:
+```cs
+ // Set the current Scene to be able to unload it later
+Scene currentScene = SceneManager.GetActiveScene();
+
+// The Application loads the Scene in the background at the same time as the current Scene.
+AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(m_Scene, LoadSceneMode.Additive);
+
+// Wait until the last operation fully loads to return anything
+while (!asyncLoad.isDone)
+{
+  yield return null;
+}
+
+// Move the GameObject (you attach this in the Inspector) to the newly loaded Scene
+SceneManager.MoveGameObjectToScene(m_MyGameObject, SceneManager.GetSceneByName(m_Scene));
+// Unload the previous Scene
+SceneManager.UnloadSceneAsync(currentScene);
+```
+
+
 #### Static Properties
 
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-loadedSceneCount.html">loadedSceneCount</a></td><td class="desc">The number of loaded Scenes.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-sceneCount.html">sceneCount</a></td><td class="desc">The current number of Scenes. Returns the current number Scenes. This includes the Scenes that are currently loading or unloading.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-sceneCountInBuildSettings.html">sceneCountInBuildSettings</a></td><td class="desc">Number of Scenes in Build Settings.</td></tr></tbody></table>
