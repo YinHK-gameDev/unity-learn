@@ -4,7 +4,7 @@
 
 Gradually changes a value towards a desired goal over time.
 
-The value is smoothed by some spring-damper like function, which will never overshoot. The function can be used to smooth any kind of value, positions, colors, scalars.
+The value is smoothed by some spring-damper like function, which will never overshoot. The function can be used to smooth any kind of **value, positions, colors, scalars**.
 
 
 #### `Mathf.MoveTowards`
