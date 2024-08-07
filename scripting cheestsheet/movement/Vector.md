@@ -8,7 +8,7 @@ This structure is used throughout Unity to pass 3D positions and directions arou
 // Constructor
 public Vector3(float x, float y, float z);
 
-private Vector3 myVector = new Vector3(0.0f, 1.0f, 0.0f);
+private Vector3 v3 = new Vector3(0.0f, 1.0f, 0.0f);
 
 
 // Static Properties
