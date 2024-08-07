@@ -14,6 +14,18 @@ declare **public variable** in script, drag object into inspecter.
 
 https://docs.unity3d.com/ScriptReference/Object.FindObjectsOfType.html
 
+### `Object.GetInstanceID`
+
+Returns the instance ID of the object- `int`
+
+```cs
+public int GetInstanceID();
+```
+Gets the instance ID of the object.
+
+The instance ID of an object acts like a handle to the in-memory instance. It is always unique, and never has the value 0. **Objects loaded from file will be assigned a positive Instance ID**. **Newly created objects will have a negative Instance ID, and retain that negative value even if the object is later saved to file**. Therefore the sign of the InstanceID value is not a safe indicator for whether or not the object is persistent.
+
+The ID changes between sessions of the player runtime and Editor. As such, the ID is not reliable for performing actions that could span between sessions, for example, loading an object state from a file.
 
 ### Properties
 
