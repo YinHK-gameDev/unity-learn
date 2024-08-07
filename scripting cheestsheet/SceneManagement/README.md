@@ -222,6 +222,48 @@ public static void MoveGameObjectsToScene(NativeArray<int> instanceIDs, SceneMan
 
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-activeSceneChanged.html">activeSceneChanged</a></td><td class="desc">Subscribe to this event to get notified when the active Scene has changed.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-sceneLoaded.html">sceneLoaded</a></td><td class="desc">Add a delegate to this to get notifications when a Scene has loaded.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.htmlSceneManagement.SceneManager-sceneUnloaded.html">sceneUnloaded</a></td><td class="desc">Add a delegate to this to get notifications when a Scene has unloaded.</td></tr></tbody></table>
 
+
+Eg:
+```cs
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class ExampleCode : MonoBehaviour
+{
+    // called zero
+    void Awake()
+    {
+        Debug.Log("Awake");
+    }
+
+    // called first
+    void OnEnable()
+    {
+        Debug.Log("OnEnable called");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    // called second
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log(mode);
+    }
+
+    // called third
+    void Start()
+    {
+        Debug.Log("Start");
+    }
+
+    // called when the game is terminated
+    void OnDisable()
+    {
+        Debug.Log("OnDisable");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+}
+```
 ### Enumerations
 
 #### `LoadSceneMode`
