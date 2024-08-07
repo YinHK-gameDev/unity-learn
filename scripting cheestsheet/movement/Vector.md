@@ -110,7 +110,8 @@ https://docs.unity3d.com/ScriptReference/Vector3.Lerp.html
 
 Calculate a position between the points specified by `current` and `target`, moving no farther than the distance specified by `maxDistanceDelta`.
 
-Use the MoveTowards member to move an object at the `current` position toward the `target` position. By updating an object’s position each frame using the position calculated by this function, you can move it towards the `target` smoothly. Control the speed of movement with the `maxDistanceDelta` parameter. 
+Use the MoveTowards member to move an object at the `current` position toward the `target` position. By updating an object’s position each frame using the position calculated by this function, you can move it towards the `target` smoothly. \
+**Control the speed of movement** with the **`maxDistanceDelta`** parameter. 
 
 To make sure that object **speed** is **independent of frame rate**, multiply the `maxDistanceDelta` value by `Time.deltaTime` (or `Time.fixedDeltaTime` in a `FixedUpdate` loop).
 
