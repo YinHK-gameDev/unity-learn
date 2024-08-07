@@ -114,7 +114,7 @@ Use the MoveTowards member to move an object at the `current` position toward th
 
 To make sure that object **speed** is **independent of frame rate**, multiply the `maxDistanceDelta` value by `Time.deltaTime` (or `Time.fixedDeltaTime` in a `FixedUpdate` loop).
 
-> **Note**: if you set maxDistanceDelta to a negative value, this function returns a position in the opposite direction from the target.
+> **Note**: if you set `maxDistanceDelta` to a **negative value**, this function returns a position in the opposite direction from the target.
 
 ```cs
 public static Vector3 MoveTowards(Vector3 current, Vector3 target, float maxDistanceDelta);
