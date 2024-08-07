@@ -140,7 +140,7 @@ https://docs.unity3d.com/ScriptReference/Transform.Find.html
 
 ### `Transform.TransformDirection`
 
-Transforms `direction` from local space to world space.
+Transforms `direction` from **local space to world space**.
 
 This operation is not affected by scale or position of the transform. The returned vector has the same length as `direction`.
 
