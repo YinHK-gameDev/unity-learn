@@ -16,7 +16,7 @@ This is essentially the same as `Mathf.Lerp` but instead the function will ensur
 #### `Mathf.Lerp`
 Linearly interpolates between `a` and `b` by `t`.
 
-The parameter `t` is clamped to the range \[0, 1\].  
+The parameter `t` is **clamped to the range \[0, 1\]**.  
   
 When `t` = 0 returns `a`. \
 When `t` = 1 return `b`. \
@@ -48,7 +48,7 @@ IEnumerator LerpFunction(float endValue, float duration)
 
 Linearly interpolates between two points.
 
-Interpolates between the points `a` and `b` by the interpolant `t`. The parameter `t` is clamped to the range \[0, 1\]. This is most commonly used to find a point some fraction of the way along a line between two endpoints (e.g. to move an object gradually between those points).  
+Interpolates between the points `a` and `b` by the interpolant `t`. The parameter `t` is clamped to the range \[0, 1\]. This is most commonly used to **find a point some fraction of the way along a line between two endpoints** (e.g. to move an object gradually between those points).  
   
 The value returned equals **a + (b - a) \* t** (which can also be written **a \* (1-t) + b\*t**).  
 When `t` = 0, **Vector3.Lerp(a, b, t)** returns `a`.  
