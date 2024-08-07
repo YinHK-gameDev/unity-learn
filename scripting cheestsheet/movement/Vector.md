@@ -53,10 +53,6 @@ The vector is smoothed by some spring-damper like function, which will never ove
 public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 currentVelocity, float smoothTime, float maxSpeed = Mathf.Infinity, float deltaTime = Time.deltaTime);
 ```
 
-```cs
- transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
-```
-
 | Parameters | Descriptions |
 | --- | --- |
 | `current` | The current position. |
@@ -65,6 +61,13 @@ public static Vector3 SmoothDamp(Vector3 current, Vector3 target, ref Vector3 cu
 | `smoothTime` | Approximately the time it will take to reach the target. A smaller value will reach the target faster. |
 | `maxSpeed` | Optionally allows you to clamp the maximum speed. |
 | `deltaTime` | The time since the last call to this function. By default `Time.deltaTime`. |
+
+
+Eg:
+```cs
+ transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+```
+
 
 https://docs.unity3d.com/ScriptReference/Vector3.SmoothDamp.html
 
