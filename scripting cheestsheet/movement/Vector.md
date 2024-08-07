@@ -112,8 +112,21 @@ Calculate a position between the points specified by `current` and `target`, mov
 
 Use the MoveTowards member to move an object at the `current` position toward the `target` position. By updating an object’s position each frame using the position calculated by this function, you can move it towards the `target` smoothly. Control the speed of movement with the `maxDistanceDelta` parameter. 
 
+To make sure that object **speed** is **independent of frame rate**, multiply the `maxDistanceDelta` value by `Time.deltaTime` (or `Time.fixedDeltaTime` in a `FixedUpdate` loop).
+
+> **Note**: if you set maxDistanceDelta to a negative value, this function returns a position in the opposite direction from the target.
+
 ```cs
 public static Vector3 MoveTowards(Vector3 current, Vector3 target, float maxDistanceDelta);
+```
+
+Eg:
+
+```cs
+ // Move our position a step closer to the target.
+var step =  speed * Time.deltaTime; // calculate distance to move
+transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+
 ```
 
 ### Static Properties
