@@ -198,7 +198,7 @@ To connect **more than one UI Document asset** to a panel:
 
 ### Runtime UI event system
 
-**UI Toolkit** uses an **event system** to handle input and send events to all active panels.
+**UI Toolkit** uses an **event system** to **handle input** and **send events to all active panels**.
  
 ### Event system with multiple Panel Settings assets
 
