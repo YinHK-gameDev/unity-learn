@@ -112,7 +112,7 @@ public AudioClip clip;
 
 ```cs
 // Use this property in Audio Source to change the default clip inside Audio Source
-public AudioClip clip;
+AudioSource.clip;
 ```
 
 Eg:
