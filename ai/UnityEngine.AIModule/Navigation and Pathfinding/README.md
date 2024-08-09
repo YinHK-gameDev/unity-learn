@@ -57,7 +57,8 @@ The Areas tab contains properties that allow you to **specify how difficult it i
 #### Building a `NavMesh` for your scene can be done in **4 quick steps** in **Navigation window**:
 
 -   **Select** scene geometry that should affect the navigation – **walkable surfaces** and **obstacles**. (After you selected the scene geometry for baking `NavMesh`, you can see the object you selected in **Object tab** in Navigation window)_
--   **Check `Navigation Static`** on to include **selected objects** in the `NavMesh` baking process.
+-   **Check `Navigation Static`** on to include **selected objects** in the `NavMesh` baking process. Or Under the **"Static"** dropdown list(Top right corner) in the selected gameobject, check **"Navigation Static"**.
+-   After you check **"Navigation Static"**, you're able to define **area type** of that **Navigation Static object** in the **Object tab**.
 -   **Adjust** the **"Bake"** settings in **Bake tab** to match your agent size.
     -   _Agent Radius_ defines how close the agent center can get to a wall or a ledge.
     -   _Agent Height_ defines how low the spaces are that the agent can reach.
