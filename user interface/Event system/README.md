@@ -324,6 +324,9 @@ https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/SupportedEvents.html
 **Raycasters** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/Raycasters.html
 
+**RaycastResult Struct** \
+https://docs.unity3d.com/Packages/com.unity.ugui@3.0/api/UnityEngine.EventSystems.RaycastResult.html#UnityEngine_EventSystems_RaycastResult_gameObject
+
 **Graphic Raycaster** \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-GraphicRaycaster.html \
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/api/UnityEngine.UI.GraphicRaycaster.html
