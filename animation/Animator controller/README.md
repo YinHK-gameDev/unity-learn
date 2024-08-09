@@ -46,7 +46,7 @@ The controller manages the **various animation states and the transitions betwee
 
 ### Animator window
 
-The **Animator Window** allows you to create, view and modify Animator Controller assets. 
+The **Animator Window** allows you to **create, view and modify Animator Controller assets**. 
 
 **Animator window**: \
 ![](./MecanimAnimatorControllerWindow.png)
