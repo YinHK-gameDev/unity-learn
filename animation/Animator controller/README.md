@@ -108,7 +108,7 @@ Clicking the gear wheel on the right of the window shows you the settings for th
 
 ![](./gear.png)
 
-On each layer, you can specify the **mask** and the **Blending type**. The **mask specifies the body parts** on which to **apply the animation**. 
+On each layer, you can specify the **mask***(Avatar mask) and the **Blending type**. The **mask specifies the body parts** on which to **apply the animation**. 
 
 
 The **Blending type** specifies how the animation is **applied**.
@@ -119,9 +119,10 @@ The **Blending type** specifies how the animation is **applied**.
 
 Add a new layer by pressing the **+** above the widget.
 
-The **Mask property** is there to **specify the mask used on this layer**. \
-The **mask specifies the body parts** on which to **apply the animation**. \
-For example if you wanted to play a throwing animation on just the upper body of your model, while having your character also able to walk, run or stand still at the same time, you would use a mask on the layer which plays the throwing animation where the upper body sections are defined
+The **Mask property** is there to **specify the Avatar mask used on this layer**. \
+The **mask specifies the body parts** on which to **apply the animation**. 
+
+For example,  if you wanted to play a throwing animation on just the upper body of your model, while having your character also able to walk, run or stand still at the same time, you would use a mask on the layer which plays the throwing animation where the upper body sections are defined
 
 
 **Animation Layer syncing**:
