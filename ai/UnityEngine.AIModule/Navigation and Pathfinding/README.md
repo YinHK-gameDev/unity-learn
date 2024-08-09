@@ -46,7 +46,10 @@ The Areas tab contains properties that allow you to **specify how difficult it i
 -   **Walkable** is a generic area type which specifies that the area can be walked on.
 -   **Not Walkable** is a generic area type which prevents navigation. It is useful for cases where you want to mark a certain object to be an obstacle, but you don't want to put a NavMesh on top of it.
 -   **Jump** is an area type that is assigned to all **auto-generated OffMesh links**.
-  
+
+> You Can also define your own area type and specify the travelling cost, later used in Object tab to be selected for the Navigation Static object.
+
+
 | **Property** | **Description** |
 | --- | --- |
 | **Name** | Specify a name for the area type. |
@@ -58,7 +61,7 @@ The Areas tab contains properties that allow you to **specify how difficult it i
 
 -   **Select** scene geometry that should affect the navigation – **walkable surfaces** and **obstacles**. (After you selected the scene geometry for baking `NavMesh`, you can see the object you selected in **Object tab** in Navigation window)_
 -   **Check `Navigation Static`** on to include **selected objects** in the `NavMesh` baking process. Or Under the **"Static"** dropdown list(Top right corner) in the selected gameobject, check **"Navigation Static"**.
--   After you check **"Navigation Static"**, you're able to define **area type** of that **Navigation Static object** in the **Object tab**.
+-   After you check **"Navigation Static"**, you're able to select **area type** **buit-in** or **you defined** in the **Area tab** of that **Navigation Static object** in the **Object tab**.
 -   **Adjust** the **"Bake"** settings in **Bake tab** to match your agent size.
     -   _Agent Radius_ defines how close the agent center can get to a wall or a ledge.
     -   _Agent Height_ defines how low the spaces are that the agent can reach.
