@@ -96,7 +96,7 @@ or
 
 **`Addressables.InstantiateAsync("AssetAddress");`**
 
-**`LoadAssetAsync`** and **`InstantiateAsync`** are asynch operations. You may provide a callback to work with the asset once it is loaded.
+> **Note**: Both **`LoadAssetAsync`** and **`InstantiateAsync`** are **asynch operations**. You may provide a callback(Just like event handler) to work with the asset once it is loaded.
 
 Eg:
 
@@ -125,9 +125,66 @@ void AsyncOperationHandle_Completed(AsyncOperationHandle<GameObject> asyncOperat
 
 }
 
+```
+
+Eg: 
+```cs
+AsyncOperationHandle<Texture2D> textureHandle = Addressables.LoadAsset<Texture2D>("mytexture");
+
+// Convert the AsyncOperationHandle<Texture2D> to an AsyncOperationHandle
+AsyncOperationHandle nonGenericHandle = textureHandle;
+
+// Convert the AsyncOperationHandle to an AsyncOperationHandle<Texture2D>
+AsyncOperationHandle<Texture2D> textureHandle2 = nonGenericHandle.Convert<Texture2D>();
+
+// The exact type is required. This will throw and exception because Texture2D is required
+AsyncOperationHandle<Texture> textureHandle3 = nonGenericHandle.Convert<Texture>();
+
+
+private void TextureHandle_Completed(AsyncOperationHandle<Texture2D> handle)
+{
+    if (handle.Status == AsyncOperationStatus.Succeeded)
+    {
+        Texture2D result = handle.Result;
+        // Texture ready for use
+    }
+}
+
+void Start()
+{
+    AsyncOperationHandle<Texture2D> textureHandle = Addressables.LoadAsset<Texture2D>("mytexture");
+    textureHandle.Completed += TextureHandle_Completed;
+}
+
+
+public IEnumerator Start()
+{
+    AsyncOperationHandle<Texture2D> handle = Addressables.Load<Texture2D>("mytexture");
+    yield return handle;
+    if (handle.Status == AsyncOperationStatus.Succeeded)
+    {
+        Texture2D texture = handle.Result;
+        // Texture ready for use...
+
+        // Done. Release resource
+        Addressables.ReleaseHandle(handle);
+    }
+}
+
+
+public async Start()
+{
+    AsyncOperationHandle<Texture2D> handle = Addressables.Load<Texture2D>("mytexture");
+    await handle.Task;
+    // Task has completed. Be sure to check the Status has succeeded before getting the Result
+}
 
 ```
 
+
+**`AsyncOperationHandle`** Struct: \
+https://docs.unity3d.com/Packages/com.unity.addressables@1.1/api/UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle.html \
+https://docs.unity3d.com/Packages/com.unity.addressables@0.7/manual/AddressableAssetsAsyncOperationHandle.html
 
 
 
