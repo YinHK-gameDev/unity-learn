@@ -237,16 +237,16 @@ First let’s create the character:
 **NavMesh Agent and Physics**:
 -   You don’t need to add physics colliders to NavMesh Agents for them to avoid each other
     -   That is, the navigation system simulates agents and their reaction to obstacles and the static world. Here the static world is the baked NavMesh.
--   If you want a NavMesh Agent to push around physics objects or use physics triggers:
+-   If you want a NavMesh Agent to **push around physics objects** or use physics triggers:
     -   Add a Collider component (if not present)
     -   Add Rigidbody component
-        -   Turn on kinematic (Is Kinematic) - this is important!
+        -   Turn on kinematic (**`isKinematic`**) - this is important!
         -   Kinematic means that the rigid body is controlled by something else than the physics simulation
 -  If both NavMesh Agent and Rigidbody (non-kinematic) are active at the same time, you have race condition
     -   Both components may try to move the agent at the same which leads to undefined behavior
--   You can use a NavMesh Agent to move e.g. a player character, without physics
+-   You can use a **NavMesh Agent to move** e.g. a player character, **without physics**
     -   Set players agent’s avoidance priority to a small number (high priority), to allow the player to brush through crowds
-    -   Move the player agent using `NavMeshAgent.velocity`, so that other agents can predict the player movement to avoid the player.
+    -   Move the player agent using **`NavMeshAgent.velocity`**, so that other agents can **predict the player movement to avoid the player**.
 
 
 
