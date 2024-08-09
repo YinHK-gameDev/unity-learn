@@ -41,7 +41,7 @@ Use the **Navigation window** to specify the types of **NavMesh agents** and **a
 ![](./img/Agent_tab.png)
 
 #### Areas tab
-The Areas tab contains properties that allow you to specify how difficult it is to walk across the different area types used in your scenes. There are 29 custom area types, and 3 built-in area types:
+The Areas tab contains properties that allow you to **specify how difficult it is to walk across the different area types** used in your scenes. There are **29 custom area types**, and **3 built-in area types**:
 
 -   **Walkable** is a generic area type which specifies that the area can be walked on.
 -   **Not Walkable** is a generic area type which prevents navigation. It is useful for cases where you want to mark a certain object to be an obstacle, but you don't want to put a NavMesh on top of it.
@@ -70,7 +70,7 @@ Building a `NavMesh` for your scene can be done in **4 quick steps** in **Naviga
 
 ![](./img/Bake.png)
 
-> Or using **NavMesh Surface** component in the **selected scene geometry** to **bak**e the **NavMesh**.
+> Or using **NavMesh Surface** component in the **selected scene geometry** to **bake** the **NavMesh**.
 
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavigationWindow.html
 
