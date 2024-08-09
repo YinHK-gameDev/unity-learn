@@ -101,7 +101,7 @@ https://m-ansley.medium.com/playing-sound-effects-in-unity-3c624b48e5bc
 
 The **default** AudioClip to play.
 
-> You can use this property to change the AudioClip played in the audio source
+> **Note**: You can use this property to **change the AudioClip played in the audio source**.
 
 > **AudioSource clip** determines the audio clip that will be **played next**. Assigning clip with a **new audio clip** does not instantly change the clip that is being played.
 
