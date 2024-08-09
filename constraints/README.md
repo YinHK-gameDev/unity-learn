@@ -5,7 +5,7 @@ A **Constraint** component **links** the **position, rotation, or scale** of a G
 
 Unity supports the following types of Constraint components:
 
-- **Aim**: Rotate the constrained GameObject to face the linked GameObject.
+- **Aim**: Rotate the constrained GameObject to **face** the linked GameObject.
 - **Look At**: Rotate the constrained GameObject to the linked GameObject (simplified Aim Constraint).
 - **Parent**: Move and rotate the constrained GameObject with the linked GameObject.
 - **Position**: Move the constrained GameObject like the linked GameObject.
