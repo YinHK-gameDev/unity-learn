@@ -60,6 +60,15 @@ The module sends move events and submit / cancel events in response to Input tra
 | **Repeat Delay** | Delay in seconds before the input actions per second repeat rate takes effect. |
 | **Force Module Active** | Enable this property to force this **Standalone Input Module** to be active. |
 
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-StandaloneInputModule.html
+
+#### Input System UI Input Module
+
+The **InputSystemUIInputModule** component acts as a drop-in replacement for the **StandaloneInputModule** component that the Unity UI package. InputSystemUIInputModule provides the same functionality as StandaloneInputModule, but it uses the Input System instead of the legacy Input Manager to drive UI input.
+
+If you have a **StandaloneInputModule** component on a GameObject, and the Input System is installed, Unity shows a button in the Inspector offering to automatically replace it with a **InputSystemUIInputModule** for you. The **InputSystemUIInputModule** is pre-configured to use **default Input Actions** to drive the UI, but you can override that configuration to suit your needs.
+
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.4/api/UnityEngine.InputSystem.UI.InputSystemUIInputModule.html
 
 ### Raycasters
 
