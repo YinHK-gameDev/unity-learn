@@ -37,6 +37,29 @@ This returns the component of Type type if the game object has one attached (ins
 
 https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html
 
+### Get access to multiple same type components in gameobject
+Access them by using **`GetComponents<ComponentType>()`**. 
+
+```cs
+public T[] GetComponents();
+```
+
+
+Eg:
+```cs
+ HingeJoint[] hingeJoints;
+
+hingeJoints = objectToCheck.GetComponents<HingeJoint>();
+
+foreach (HingeJoint joint in hingeJoints)
+{
+    joint.useSpring = false;
+}
+```
+
+
+https://docs.unity3d.com/ScriptReference/GameObject.GetComponents.html
+
 ### Adding component to GameObject by script
 ```cs
 public T AddComponent();
