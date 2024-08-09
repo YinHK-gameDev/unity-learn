@@ -156,7 +156,13 @@ This link can be from point to point or it can span a gap, in which case the Age
 
 To use the **NavMesh Link component**, navigate to **GameObject** > **AI** > **NavMesh Link**.
 
-https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshLink.html
+To add the NavMesh Link component to an existing GameObject, do the following:
+
+1.  Select the GameObject you want to add the component to.
+2.  In the Inspector select **Add Component**, then select **Navigation** > **NavMesh Link**.  
+    The **NavMesh Link** component is displayed in the **Inspector** window.
+
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshLink.html
 
 **NavMeshLink** vs **OffMeshLink**: 
 > **NavMeshLink** is used to link between **multiple separate Navmesh surfaces** . \
