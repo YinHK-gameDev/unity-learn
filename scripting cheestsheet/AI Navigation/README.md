@@ -157,3 +157,40 @@ public bool SetDestination(Vector3 target);
 public bool Raycast(Vector3 targetPosition, out AI.NavMeshHit hit);
 
 ```
+
+| Properties | Description |
+| --- | --- |
+| acceleration | The maximum acceleration of an agent as it follows a path, given in units / sec^2. |
+| agentTypeID | The type ID for the agent. |
+| angularSpeed | Maximum turning speed in (deg/s) while following a path. |
+| areaMask | Specifies which NavMesh areas are passable. Changing areaMask will make the path stale (see isPathStale). |
+| autoBraking | Should the agent brake automatically to avoid overshooting the destination point? |
+| autoRepath | Should the agent attempt to acquire a new path if the existing path becomes invalid? |
+| autoTraverseOffMeshLink | Should the agent move across OffMeshLinks automatically? |
+| avoidancePriority | The avoidance priority level. |
+| baseOffset | The relative vertical displacement of the owning GameObject. |
+| currentOffMeshLinkData | The current OffMeshLinkData. |
+| desiredVelocity | The desired velocity of the agent including any potential contribution from avoidance. (Read Only) |
+| destination | Gets or attempts to set the destination of the agent in world-space units. |
+| hasPath | Does the agent currently have a path? (Read Only) |
+| height | The height of the agent for purposes of passing under obstacles, etc. |
+| isOnNavMesh | Is the agent currently bound to the navmesh? (Read Only) |
+| isOnOffMeshLink | Is the agent currently positioned on an OffMeshLink? (Read Only) |
+| isPathStale | Is the current path stale. (Read Only) |
+| isStopped | Use this property to set, or get, whether the NavMesh agent stops or continues its movement along the current path. |
+| navMeshOwner | Returns the owning object of the NavMesh the agent is currently placed on (Read Only). |
+| nextOffMeshLinkData | The next OffMeshLinkData on the current path. |
+| nextPosition | Gets or sets the simulation position of the navmesh agent. |
+| obstacleAvoidanceType | The level of quality of avoidance. |
+| path | Property to get and set the current path. |
+| pathPending | Is a path in the process of being computed but not yet ready? (Read Only) |
+| pathStatus | The status of the current path (complete, partial or invalid). |
+| radius | The avoidance radius for the agent. |
+| remainingDistance | The distance between the agent's position and the destination on the current path. (Read Only) |
+| speed | Maximum movement speed when following a path. |
+| steeringTarget | Get the current steering target along the path. (Read Only) |
+| stoppingDistance | Stop within this distance from the target position. |
+| updatePosition | Gets or sets whether the transform position is synchronized with the simulated agent position. The default value is true. |
+| updateRotation | Should the agent update the transform orientation? |
+| updateUpAxis | Allows you to specify whether the agent should be aligned to the up-axis of the NavMesh or link that it is placed on. |
+| velocity | Access the current velocity of the NavMeshAgent component, or set a velocity to control the agent manually. |
