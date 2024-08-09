@@ -209,8 +209,10 @@ https://docs.unity3d.com/Packages/com.unity.addressables@0.7/manual/AddressableA
 https://docs.unity3d.com/Packages/com.unity.addressables@1.1/api/UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle-1.html
 
 
+**`Addressables`** Class: \
+https://docs.unity3d.com/Packages/com.unity.addressables@1.1/api/UnityEngine.AddressableAssets.Addressables.html
 
-https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/index.html \
+
 https://z0935323866.medium.com/unity-%E5%B0%8B%E5%9D%80%E5%BC%8F%E8%B3%87%E6%BA%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%B5%B1addressable-assets-system-%E4%B8%80-bb1e99014a88 \
 https://www.youtube.com/watch?v=C6i_JiRoIfk \
 https://www.youtube.com/watch?v=bCObS3teFGM
