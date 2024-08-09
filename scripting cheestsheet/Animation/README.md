@@ -43,12 +43,24 @@ public float GetFloat(int id);
 public int GetInteger(string name);
 public int GetInteger(int id);
 
+// Sets the value of the given trigger parameter.
+public void SetTrigger(string name);
+public void SetTrigger(int id);
+
+// Sets the value of the given boolean parameter.
+public void SetBool(string name, bool value);
+public void SetBool(int id, bool value);
+
+// Send float values to the Animator to affect transitions.
+public void SetFloat(string name, float value);
+public void SetFloat(string name, float value, float dampTime, float deltaTime);
+public void SetFloat(int id, float value);
+public void SetFloat(int id, float value, float dampTime, float deltaTime);
 
 // Static methods
 
 // Generates an parameter id from a string. Ids are used for optimized setters and getters on parameters.
 public static int StringToHash(string name);
-
 
 ```
 
