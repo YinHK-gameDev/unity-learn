@@ -29,12 +29,23 @@ The primary roles of the Event System are as follows:
 -   Updating all Input Modules as required
 
 #### Input Modules
-An Input Module is where the main logic of how you want the Event System to behave lives, they are used for:
+An Input Module is where the **main logic of how you want the Event System to behave lives**, they are used for:
 
-Handling Input Managing event state **Sending events to scene objects**. \
+**Handling** Input Managing event state **Sending events to scene objects**. \
 Only one Input Module can be active in the Event System at a time, and they must be components on the same GameObject as the Event System component.
 
 If you want to write a custom Input Module, send events supported by existing UI components in Unity. To extend and write your own events, see the Messaging System documentation.
+
+https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/script-StandaloneInputModule.html
+
+#### Input System UI Input Module
+
+The **InputSystemUIInputModule** component acts as a drop-in replacement for the **StandaloneInputModule** component that the Unity UI package. InputSystemUIInputModule provides the same functionality as StandaloneInputModule, but it uses the Input System instead of the legacy Input Manager to drive UI input.
+
+If you have a **StandaloneInputModule** component on a GameObject, and the Input System is installed, Unity shows a button in the Inspector offering to automatically replace it with a **InputSystemUIInputModule** for you. The **InputSystemUIInputModule** is pre-configured to use **default Input Actions** to drive the UI, but you can override that configuration to suit your needs.
+
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.4/api/UnityEngine.InputSystem.UI.InputSystemUIInputModule.html
+
 
 ### Event propagation
 After the event dispatcher selects the event target, it computes the propagation path of the event. The propagation path is an ordered list of visual elements that receive the event. The propagation path occurs in the following order:
