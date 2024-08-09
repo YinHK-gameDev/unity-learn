@@ -12,6 +12,9 @@ The **Navigation System** allows you to create characters which can navigate the
 -   **NavMesh Agent** component help you to create characters which avoid each other while moving towards their goal. Agents reason about the game world using the NavMesh and they know how to avoid each other as well as moving obstacles.
     https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshAgent.html
 -   **OffMesh Link** component allows you to incorporate navigation shortcuts which cannot be represented using a walkable surface. For example, jumping over a ditch or a fence, or opening a door before walking through it, can be all described as OffMesh links.
+
+    > The OffMesh Link component is deprecated and no longer supported. Use the NavMesh Link component instead.
+    
     https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/OffMeshLink.html
 -   **NavMesh Obstacle** component allows you to describe moving obstacles the agents should avoid while navigating the world. A barrel or a crate controlled by the physics system is a good example of an obstacle. While the obstacle is moving the agents do their best to avoid it, but once the obstacle becomes stationary it will carve a hole in the navmesh so that the agents can change their paths to steer around it, or if the stationary obstacle is blocking the path way, the agents can find a different route.
     https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshObstacle.html
@@ -159,6 +162,8 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.0/manual/NavMeshLink
 > **NavMeshLink** is used to link between **multiple separate Navmesh surfaces** . \
 > **OffMeshLink** is used to **link between Navmesh gaps** on the **same navmesh**.
 
+
+> **Note**: The **OffMesh Link component** is **deprecated** and no longer supported. Use the **NavMesh Link component** instead.
 
 ### Min Region Area
 The **Min Region Area** advanced build settings allows you to cull away small non-connected **NavMesh regions**. **NavMesh regions** whose surface area is smaller than the specified value, will be removed.
