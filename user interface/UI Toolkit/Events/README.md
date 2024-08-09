@@ -46,6 +46,12 @@ If you have a **StandaloneInputModule** component on a GameObject, and the Input
 
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.4/api/UnityEngine.InputSystem.UI.InputSystemUIInputModule.html
 
+#### Using Event System in UItool kit along with Input System package
+
+- Select **GameObject > UI > Event System**. This adds an **Event System GameObject** that includes a **Standalone Input Module** in the Scene. The module shows an **error message** along with a button in the Inspector window.
+- Select **Replace with InputSystemUIInputModule** to **replace the Standalone Input Module** with the **Input System UI Input Module**. The Input System UI Input Module and its accompanying Event System allows the events of both UI Toolkit elements to be dispatched correctly.
+
+
 
 ### Event propagation
 After the event dispatcher selects the event target, it computes the propagation path of the event. The propagation path is an ordered list of visual elements that receive the event. The propagation path occurs in the following order:
