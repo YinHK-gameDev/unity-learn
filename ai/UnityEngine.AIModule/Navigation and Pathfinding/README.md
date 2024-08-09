@@ -45,7 +45,7 @@ The Areas tab contains properties that allow you to **specify how difficult it i
 
 -   **Walkable** is a generic area type which specifies that the area can be walked on.
 -   **Not Walkable** is a generic area type which prevents navigation. It is useful for cases where you want to mark a certain object to be an obstacle, but you don't want to put a NavMesh on top of it.
--   **Jump** is an area type that is assigned to all auto-generated OffMesh links.
+-   **Jump** is an area type that is assigned to all **auto-generated OffMesh links**.
   
 | **Property** | **Description** |
 | --- | --- |
