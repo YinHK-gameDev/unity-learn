@@ -1,5 +1,5 @@
 ## Audio Source
-The **Audio Source plays back an Audio Clip in the scene**. \
+The **Audio Source plays back an Audio Clip(default) in the scene**. \
 The clip can be **played to an audio listener** or **through an audio mixer**. 
 
 The audio source can play any type of Audio Clip and can be configured to play these as 2D, 3D, or as a mixture (SpatialBlend).
@@ -7,6 +7,8 @@ The audio source can play any type of Audio Clip and can be configured to play t
 The Source is like a controller for **starting and stopping** playback of that clip, and **modifying other audio properties**.
 
 > Audio Sources don’t do anything **without an assigned Audio Clip**. 
+
+> **Note**: You need to assign an audio clip as default audio in the Audio Source component
 
 
 ![](./AudioSourceInspector.png)
