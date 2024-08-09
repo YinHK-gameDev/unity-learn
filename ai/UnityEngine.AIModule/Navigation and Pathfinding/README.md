@@ -262,6 +262,10 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshAgen
 4. Set the shape of the obstacle to **box**, changing the shape will automatically fit the center and size to the render **mesh**.
 5. Add a **Rigid body** to the obstacle. Choose **Add Component** from the inspector and choose **Physics > Rigid Body**.
 6. Finally turn on the **Carve** setting from the **`NavMesh`** Obstacle inspector so that the agent knows to find a path around the obstacle.
+   > **Carve** setting allow the NavMesh Obstacle to **create a hole in the NavMesh**.
+When selected, the **NavMesh obstacle carves a hole in the NavMesh**.
+When deselected, the **NavMesh obstacle does not carve a hole** in the NavMesh
+   
    > Disable **"Carve Only Stationary"** checkbox under **Carve** field for Dynamic moving NavMesh Obstacles.
 
 https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/CreateNavMeshObstacle.html
