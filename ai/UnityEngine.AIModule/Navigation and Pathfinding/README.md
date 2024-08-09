@@ -54,11 +54,11 @@ The Areas tab contains properties that allow you to **specify how difficult it i
 
 ![](./img/Area_type.png)
 
-Building a `NavMesh` for your scene can be done in **4 quick steps** in **Navigation window**:
+#### Building a `NavMesh` for your scene can be done in **4 quick steps** in **Navigation window**:
 
 -   **Select** scene geometry that should affect the navigation – **walkable surfaces** and **obstacles**. (After you selected the scene geometry for baking `NavMesh`, you can see the object you selected in **Object tab** in Navigation window)_
--   **Check `Navigation Static`** on to include selected objects in the `NavMesh` baking process.
--   **Adjust** the **"Bake"** settings to match your agent size.
+-   **Check `Navigation Static`** on to include **selected objects** in the `NavMesh` baking process.
+-   **Adjust** the **"Bake"** settings in **Bake tab** to match your agent size.
     -   _Agent Radius_ defines how close the agent center can get to a wall or a ledge.
     -   _Agent Height_ defines how low the spaces are that the agent can reach.
     -   _Max Slope_ defines how steep the ramps are that the agent walk up.
