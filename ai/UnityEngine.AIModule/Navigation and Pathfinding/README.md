@@ -264,7 +264,7 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshAgen
 6. Finally turn on the **Carve** setting from the **`NavMesh`** Obstacle inspector so that the agent knows to find a path around the obstacle.
    > Disable **"Carve Only Stationary"** checkbox under **Carve** field for Dynamic moving NavMesh Obstacles.
 
-https://docs.unity3d.com/Manual/nav-CreateNavMeshObstacle.html
+https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/CreateNavMeshObstacle.html
 
 ### Creating an OffMesh Link
 OffMesh Links are used to **create paths crossing outside the walkable navigation mesh surface**. For example, **jumping over a ditch or a fence, or opening a door before walking through it**, can be all described as OffMesh links. Used to link NavMesh gap.
