@@ -119,6 +119,8 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshModi
 #### NavMeshModifierVolume
 Use for **affecting the NavMesh generation of NavMesh area types** based on **volume**.
 
+**NavMesh Modifier Volume** is useful when you need to **assign an area type to part of your NavMesh** that might not be represented as **separate geometry**. For example, you can use **NavMesh Modifier Volume** to make **part of your NavMesh non-walkable** or **more difficult** to cross.
+
 **NavMesh Modifier Volume** marks a defined area as a **certain type** (for example, **Lava** or **Door**). Whereas **NavMesh Modifier** marks certain GameObjects with an **area type**. **NavMesh Modifier Volume** allows you to change an area type locally **based on a specific volume**.
 
 To use the **NavMesh Modifier Volume component**, navigate to **GameObject** > **AI** > **NavMesh Modifier Volume**.
@@ -126,6 +128,10 @@ To use the **NavMesh Modifier Volume component**, navigate to **GameObject** > *
 **NavMesh Modifier Volume** is useful for **marking certain areas of walkable surfaces that might not be represented as separate geometry**, for example **danger areas**. You can also use It to make certain areas **non-walkable**.
 
 The **NavMesh Modifier Volume** also affects the NavMesh generation process, meaning the NavMesh has to be updated to reflect any changes to **NavMesh Modifier Volume**.
+
+The **NavMesh Modifier Volume** always assigns its **area type** when it overlaps with **NavMesh Modifier objects**, even if the area type of the volume has a lower index. When multiple volumes intersect, the area type with the **highest index** value out of all of them **takes precedence**. 
+
+> To **change the area type** of an entire GameObject, use the **NavMesh Modifier component** instead.
 
 | **Property** | **Function** |
 | --- | --- |
