@@ -21,13 +21,12 @@ The **Navigation System** allows you to create characters which can navigate the
 > You can install this package by going to package manager, adding a **registry package by name** and add the **`com.unity.ai.navigation package`**.
 
 
-
 ### Building a NavMesh
 The process of creating a NavMesh from the level geometry is called **NavMesh Baking**. The process collects the Render Meshes and Terrains of all Game Objects which are marked as **Navigation Static**, and then processes them to create a navigation mesh that approximates the walkable surfaces of the level.
 
 In Unity, **`NavMesh`** generation is handled from the Navigation window (menu: **Window > AI > Navigation**). This open the Navigation window.
 
-Use the Navigation window to specify the types of NavMesh agents and areas used in your scenes.
+Use the **Navigation window** to specify the types of **NavMesh agents** and **areas** used in your scenes.
 
 #### Agents tab
 | **Property** | **Description** |
