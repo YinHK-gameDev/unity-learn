@@ -118,6 +118,9 @@ Making an Agent Patrol Between a Set of Points:
 ```
 
 
+**`NavMeshAgent`** class 
+
+
 ```cs
 //Specifies which NavMesh areas are passable. 
 public int areaMask;
@@ -194,3 +197,20 @@ public bool Raycast(Vector3 targetPosition, out AI.NavMeshHit hit);
 | updateRotation | Should the agent update the transform orientation? |
 | updateUpAxis | Allows you to specify whether the agent should be aligned to the up-axis of the NavMesh or link that it is placed on. |
 | velocity | Access the current velocity of the NavMeshAgent component, or set a velocity to control the agent manually. |
+
+
+| ActivateCurrentOffMeshLink | Enables or disables the current off-mesh link. |
+| --- | --- |
+| CalculatePath | Calculate a path to a specified point and store the resulting path. |
+| CompleteOffMeshLink | Completes the movement on the current OffMeshLink. |
+| FindClosestEdge | Locate the closest NavMesh edge. |
+| GetAreaCost | Gets the cost for path calculation when crossing area of a particular type. |
+| Move | Apply relative movement to current position. |
+| Raycast | Trace a straight path towards a target postion in the NavMesh without moving the agent. |
+| ResetPath | Clears the current path. |
+| SamplePathPosition | Sample a position along the current path. |
+| SetAreaCost | Sets the cost for traversing over areas of the area type. |
+| SetDestination | Sets or updates the destination thus triggering the calculation for a new path. |
+| SetPath | Assign a new path to this agent. |
+| Warp | Warps agent to the provided position. |
+
