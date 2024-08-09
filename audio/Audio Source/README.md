@@ -8,7 +8,7 @@ The Source is like a controller for **starting and stopping** playback of that c
 
 > Audio Sources don’t do anything **without an assigned Audio Clip**. 
 
-> **Note**: You need to assign an audio clip as default audio in the Audio Source component
+> **Note**: You need to assign an audio clip as **default audio clip** in the Audio Source component
 
 
 ![](./AudioSourceInspector.png)
