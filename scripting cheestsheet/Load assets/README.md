@@ -90,13 +90,13 @@ public class ExampleClass : MonoBehaviour
 
 ### Addressable package & API
 
-`Addressables.LoadAssetAsync<GameObject>("AssetAddress");`
+**`Addressables.LoadAssetAsync<GameObject>("AssetAddress");`**
 
 or
 
-`Addressables.InstantiateAsync("AssetAddress");`
+**`Addressables.InstantiateAsync("AssetAddress");`**
 
-`LoadAssetAsync` and `InstantiateAsync` are asynch operations. You may provide a callback to work with the asset once it is loaded.
+**`LoadAssetAsync`** and **`InstantiateAsync`** are asynch operations. You may provide a callback to work with the asset once it is loaded.
 
 Eg:
 
