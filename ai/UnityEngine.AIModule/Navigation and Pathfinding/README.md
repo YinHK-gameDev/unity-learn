@@ -17,7 +17,7 @@ The **Navigation System** allows you to create characters which can navigate the
     https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshObstacle.html
  
 
-> **`UnityEngine.AI`** is a built-in package, you can also add **`Unity.AI.Navigation`** package to use addtional component and script. Some component is from **`Unity.AI.Navigation`** package.
+> **`UnityEngine.AI`** is a built-in package, you can also add **`Unity.AI.Navigation`** package to use **addtional component and script**. Some component is from **`Unity.AI.Navigation`** package.
 > You can install this package by going to package manager, adding a **registry package by name** and add the **`com.unity.ai.navigation package`**.
 
 
