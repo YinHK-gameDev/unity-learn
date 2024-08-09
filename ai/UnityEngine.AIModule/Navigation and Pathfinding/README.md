@@ -110,7 +110,7 @@ https://docs.unity3d.com/Packages/com.unity.ai.navigation@2.0/manual/NavMeshSurf
  
 **NavMesh Modifiers** **adjust how a specific GameObject behaves** during NavMesh **baking** at runtime.
 
-To use the NavMesh Modifier component, navigate to **GameObject** > **AI** > **NavMesh Modifier**.
+To use the **NavMesh Modifier component**, navigate to **GameObject** > **AI** > **NavMesh Modifier**.
 
 ![](./img/NevMeshModifier.png)
 
