@@ -7,7 +7,7 @@ To make objects interact with sending events based on input, use Event System.
 
 The **Event System** consists of a **few components** that work together to send events.
 
-When you add an **Event System component** to a GameObject you will notice that it does not have much functionality exposed, this is because the Event System itself is designed as a manager and facilitator of communication between **Event System** modules.
+> When you add an **Event System component** to a GameObject you will notice that it does not have much functionality exposed, this is because the Event System itself is designed as a **manager and facilitator** of communication between **Event System** modules.
 
 The primary roles of the **Event System** are as follows:
 
