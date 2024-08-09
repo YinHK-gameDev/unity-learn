@@ -103,10 +103,15 @@ The **default** AudioClip to play.
 
 > **Note**: You can use this property to **change the AudioClip played in the audio source**.
 
-> **AudioSource clip** determines the audio clip that will be **played next**. Assigning clip with a **new audio clip** does not instantly change the clip that is being played.
-
+> **`AudioSource.clip`** determines the audio clip that will be **played next**. Assigning clip with a **new audio clip** does not instantly change the clip that is being played.
 
 ```cs
+// Declare a audioClip to be changed in Audio Source
+public AudioClip clip;
+```
+
+```cs
+// Use this property in Audio Source to change the default clip inside Audio Source
 public AudioClip clip;
 ```
 
