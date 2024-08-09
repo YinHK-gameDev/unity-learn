@@ -7,7 +7,7 @@ An **AudioSource** is **attached to a GameObject for playing back sounds** in a 
 
 In order to play 3D sounds you also need to have a **AudioListener**. The audio listener is normally **attached to the camera** you want to use. 
 
-You can **play a single audio clip using `AudioSource.Play()`**, **`AudioSource.Pause`** and **`AudioSource.Stop()`**. You can also adjust its volume while playing using the volume property, or seek using time. 
+You can **play a single audio clip using `AudioSource.Play()`**, **`AudioSource.PlayDelayed(float delay)`**, **`AudioSource.Pause`**, **`AudioSource.UnPause`** and **`AudioSource.Stop()`**. You can also adjust its volume while playing using the volume property, or seek using time. 
 
 **Multiple sounds** can be played on **one AudioSource** using **`AudioSource.PlayOneShot()`**. You can play a clip at a **static position** in 3D space using **`AudioSource.PlayClipAtPoint`**.
 
