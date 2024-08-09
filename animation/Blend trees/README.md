@@ -58,7 +58,7 @@ The range of the parameter used by the Blend Tree is shown below the diagram as 
 
 **Thresholds** 
 
-You can change the threshold value of a motion by clicking on its corresponding blue pyramid in the diagram and dragging it left or right. If the “Automate Thresholds” toggle is not enabled, you can also edit the threshold value of a motion in the motion list by typing in a number in the number field in the Threshold column.
+You can change the threshold value of a motion by clicking on its **corresponding blue pyramid in the diagram** and dragging it left or right. If the “Automate Thresholds” toggle is not enabled, you can also edit the threshold value of a motion in the motion list by typing in a number in the number field in the Threshold column.
 
 Below the motion list is the checkbox Automate Thresholds. Enabling it will distribute the thresholds of the motions evenly across the parameter range. For example, if there are five clips and the parameter ranges from –90 to +90, the thresholds will be set to –90, –45, 0, +45 and +90 in order.
 
