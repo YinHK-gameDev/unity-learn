@@ -198,9 +198,9 @@ public bool Raycast(Vector3 targetPosition, out AI.NavMeshHit hit);
 | updateUpAxis | Allows you to specify whether the agent should be aligned to the up-axis of the NavMesh or link that it is placed on. |
 | velocity | Access the current velocity of the NavMeshAgent component, or set a velocity to control the agent manually. |
 
-
-| ActivateCurrentOffMeshLink | Enables or disables the current off-mesh link. |
+| Public Methods | Description |
 | --- | --- |
+| ActivateCurrentOffMeshLink | Enables or disables the current off-mesh link. |
 | CalculatePath | Calculate a path to a specified point and store the resulting path. |
 | CompleteOffMeshLink | Completes the movement on the current OffMeshLink. |
 | FindClosestEdge | Locate the closest NavMesh edge. |
