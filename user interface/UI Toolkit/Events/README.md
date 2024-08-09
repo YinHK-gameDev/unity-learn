@@ -31,9 +31,7 @@ The primary roles of the Event System are as follows:
 #### Input Modules
 An Input Module is where the main logic of how you want the Event System to behave lives, they are used for:
 
-Handling Input
-Managing event state
-Sending events to scene objects.
+Handling Input Managing event state **Sending events to scene objects**. \
 Only one Input Module can be active in the Event System at a time, and they must be components on the same GameObject as the Event System component.
 
 If you want to write a custom Input Module, send events supported by existing UI components in Unity. To extend and write your own events, see the Messaging System documentation.
