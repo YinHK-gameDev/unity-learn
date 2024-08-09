@@ -96,7 +96,7 @@ To set up **IK** for a character, you typically have objects around the scene
 
 1. Create a valid Avatar for your character.
 2. Create an Animator Controller with at least one animation for this character.
-3. In the Layers pane of the Animator window, click the Cog icon in the Base Layer and **enable** **IK Pass** from the context menu. When enabled, IK Pass sends an **`OnAnimatorIK**` callback. In a later step, you will use this callback to implement **inverse kinematics in a script**.
+3. In the Layers pane of the Animator window, click the Cog icon in the Base Layer and **enable** **IK Pass** from the context menu. When enabled, IK Pass sends an **`OnAnimatorIK`** callback. In a later step, you will use this callback to implement **inverse kinematics in a script**.
  
 https://docs.unity3d.com/Manual/InverseKinematics.html
 
