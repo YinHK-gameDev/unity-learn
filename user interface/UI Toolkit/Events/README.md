@@ -155,7 +155,7 @@ You can register **multiple callbacks** for an event. However, you can **only re
 > **Note**: registering a callback should be before **`Add()`**, otherwise noting happen with the callback
 
 ### Listen to value changes
-UI controls can use the `value` property to hold data for their internal state. For example:
+UI controls can use the `value` property to **hold data for their internal state**. For example:
 
 -   A `Toggle` holds a Boolean value that changes when the `Toggle` is turned on or off.
 -   An `IntegerField` holds an integer that holds the field’s value.
