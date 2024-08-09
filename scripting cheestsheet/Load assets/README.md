@@ -96,7 +96,29 @@ or
 
 **`Addressables.InstantiateAsync("AssetAddress");`**
 
+
 > **Note**: Both **`LoadAssetAsync`** and **`InstantiateAsync`** are **asynch operations**. You may provide a callback(Just like event handler) to work with the asset once it is loaded.
+
+```cs
+// Load a single asset, IResourceLocation: The location of the asset.
+public static AsyncOperationHandle<TObject> LoadAssetAsync<TObject>(IResourceLocation location)
+
+// Load a single asset, The key of the location of the asset.
+public static AsyncOperationHandle<TObject> LoadAssetAsync<TObject>(object key)
+
+// Load mutliple assets
+public static AsyncOperationHandle<IList<TObject>> LoadAssetsAsync<TObject>(IList<object> keys, Action<TObject> callback, Addressables.MergeMode mode)
+
+public static AsyncOperationHandle<IList<TObject>> LoadAssetsAsync<TObject>(object key, Action<TObject> callback)
+```
+
+
+Use Struct **`AsyncOperationHandle<TObject>`** for handle **asynch operations**. And 
+**`AsyncOperationHandle<TObject>.Completed`** to raise an event. 
+
+```cs
+public event Action<AsyncOperationHandle<TObject>> Completed
+```
 
 Eg:
 
@@ -127,7 +149,6 @@ void AsyncOperationHandle_Completed(AsyncOperationHandle<GameObject> asyncOperat
 
 ```
 
-Eg: 
 ```cs
 AsyncOperationHandle<Texture2D> textureHandle = Addressables.LoadAsset<Texture2D>("mytexture");
 
@@ -182,9 +203,10 @@ public async Start()
 ```
 
 
-**`AsyncOperationHandle`** Struct: \
+**`AsyncOperationHandle`** & **`AsyncOperationHandle<TObject>`** Struct: \
 https://docs.unity3d.com/Packages/com.unity.addressables@1.1/api/UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle.html \
-https://docs.unity3d.com/Packages/com.unity.addressables@0.7/manual/AddressableAssetsAsyncOperationHandle.html
+https://docs.unity3d.com/Packages/com.unity.addressables@0.7/manual/AddressableAssetsAsyncOperationHandle.html \
+https://docs.unity3d.com/Packages/com.unity.addressables@1.1/api/UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle-1.html
 
 
 
