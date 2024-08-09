@@ -207,11 +207,13 @@ public currentBullets = 1;
 
 private AudioSource gunAudio;
 private AudioSource outOfAmmo;
+private AudioSource[] source;
 
 void Awake()
 {
-    gunAudio = GetComponent<AudioSource>();
-    outOfAmmo = GetComponent<AudioSource>();
+    source = GetComponents<AudioSource>();
+    gunAudio = source[0];
+    outOfAmmo = source[1];
 }
 
 void Update()
