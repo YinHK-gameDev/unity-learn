@@ -41,6 +41,19 @@ If you **don’t pass a LayerMask to the ray cast API call**, Unity uses **`Phys
 
 The **`Physics.Raycast` function** uses a **bitmask**, and **each bit determines if a layer is ignored by rays or not**. If all bits in the layerMask are on, the ray collides against all colliders. If the layerMask = 0, there are no collisions. All colliders ignore the ray.
 
+### Collision with layers
+Use **Layer collision matrix** to control physics collision detection.
+
+> 📌 Set the two game objects into **different layers** → **project setting** → **physics** → **Layer collision matrix** untick two layer for collision.
+
+**Setting up layer-based collision detection**
+
+- To select a Layer for your GameObjects to belong to, select the GameObject, navigate to the Inspector window, select the Layer dropdown at the top, and either choose a Layer or add a new Layer. Repeat for each GameObject until you have finished assigning your GameObjects to Layers.
+- In the Unity menu bar, go to **Edit > Project Settings**, then select the Physics category to open the Physics window.
+- Select which layers on the **Collision Matrix** will interact with the other layers by checking them.
+
+
+
 ### Create a layer
 There are two ways you can create a new layer:
 
