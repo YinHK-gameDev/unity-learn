@@ -113,9 +113,12 @@ The positions in 2D blending are like the thresholds in 1D blending, except that
 Eg: \
 A walking forward animation might have a velocityX of 0 and a velocityZ of 1.5, so those values should be typed into the Pos X and Pos Y number fields for the motion.
 
-You can change the positions of a motion by clicking on its corresponding blue dot in the diagram and dragging it around. You can also edit position coordinates of a motion in the motion list by typing in numbers in the number fields in the Pos X and Pos Y columns.
+You can **change the positions of a motion** by **clicking on its corresponding blue dot in the diagram and dragging it around**. You can also edit position coordinates of a motion in the motion list by typing in numbers in the number fields in the Pos X and Pos Y columns.
 
-The **Compute Positions** drop-down will set the positions from data of your choice obtained from the  root motions in the Animation Clips. The data that is available to choose from is speed, velocity x, y, or z, and angular speed in degrees or radians. If one or both of your parameters correspond to one of these properties, you can compute the Pos X and/or Pos Y using the Compute Positions drop-down.
+
+#### Compute Positions
+The **Compute Positions** drop-down will **set the positions** from data of your choice obtained from the **root motions in the Animation Clips**. \
+The data that is available to choose from is **speed, velocity x, y, or z, and angular speed in degrees or radians**. If one or both of your parameters correspond to one of these properties, you can **compute the Pos X and/or Pos Y using the Compute Positions drop-down**.
 
 
 https://docs.unity3d.com/Manual/BlendTree-2DBlending.html
