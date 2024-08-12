@@ -1,7 +1,8 @@
 ## Root motion
 Motion of character’s root node, whether it’s controlled by the animation itself or externally.
 
-Automatically **move the object using the root motion** from the animations instead of animating the  object in-place with moving animation. In root motion, Unity **calculate the motion** and **move the object according to the animation**. 
+Automatically **move the object using the root motion** from the animations instead of **animating the  object in-place(like treadmill)** with moving animation. \
+In root motion, Unity **calculate the motion** and **move the object according to the animation**. 
 
 ![](./Apply_root_motion.png)
 
@@ -15,11 +16,12 @@ A transform in an animation hierarchy that allows Unity to establish consistency
 ### Explain root motion
 Animations set things to a specific value. For example, if a movement animation might start the position.x at 0 and move it to 1 over the course of the animation, but then when the animation loops it will set it to 0 again and teleport back to the start.
 
-**Root motion changes any movement that would normally be applied to the root object to be additive instead**. \
-So if your `position.x` is at 4 and you play that animation it will add the motion so it moves towards 5 and not jump back to the starting value when it loops.
+**Root motion changes any movement that would normally be applied to the root object to be additive instead**. 
+
+So if your **`position.x`** is at 4 and you play that animation it will add the motion so it moves towards 5 and not jump back to the starting value when it loops.
 
 
-In Unity, it is possible to move our game objects using **root motion** without writing any script. Unity **calculate the motion** and **move the object according to the animation**.
+> In Unity, it is possible to move our game objects using **root motion** without writing any script. Unity **calculate the motion** and **move the object according to the animation**.
 
 https://forum.unity.com/threads/confused-about-apply-root-motion-in-the-animator-component.940223/
 
@@ -42,8 +44,10 @@ https://docs.unrealengine.com/4.27/en-US/AnimatingObjects/SkeletalMeshAnimation/
 
 在很多動畫當中，模型的位置、角度往往會發生變化，我們需要決定是否將模型再動畫中發生的這些變換應用到實際模型。Unity中有兩個跟這個有關的設置。
 
+1. **Apply Root Motion**: \
 ![](./applyRootMotion.jpg)
 
+2. **Bake into pose**: \
 ![](./clips.jpg)
 
 https://read01.com/8PyaeG.html#.Y9dX3XbMJD8
@@ -55,34 +59,34 @@ https://youtu.be/mNxEetKzc04
 
 
 ### Control the root motion
-The **Animation Clip Editor** settings - **Root Transform Rotation**, **Root Transform Position (Y)** and **Root Transform Position (XZ)** - let you control the Root Transform projection from the Body Transform. Depending on these settings some parts of the Body Transform may be transferred to Root Transform. For example you can decide if you want the motion Y position to be part of the Root Motion (trajectory) or part of the pose (body transform), which is known as Baked into Pose.
+The **Animation Clip Editor** settings - **Root Transform Rotation**, **Root Transform Position (Y)** and **Root Transform Position (XZ)** - let you **control the Root Transform projection from the Body Transform**. Depending on these settings some parts of the Body Transform may be transferred to Root Transform. For example you can decide if you want the motion Y position to be part of the **Root Motion (trajectory)** or **part of the pose (body transform)**, which is known as Baked into Pose.
 
 
 ### Body Transform
 > **body transform**(Pose)：动画发生的位移和旋转，只是单纯的动画效果，不会影响模型自身在世界空间中的实际位置和朝向。
 
 
-The Body Transform is the mass center of the character. It is used in Mecanim’s retargeting engine and provides the most stable displacement model. The Body Orientation is an average of the lower and upper body orientation relative to the Avatar T-Pose.
-Body Transform不影響模型實際的位置和角度，所以這裡只是純粹的動畫效果，模型的位置和角度參數值不變
+The Body Transform is the mass center of the character. It is used in Mecanim’s retargeting engine and provides the most stable displacement model. The Body Orientation is an average of the lower and upper body orientation relative to the Avatar T-Pose. \
+**Body Transform不影響模型實際的位置和角度**，所以這裡只是**純粹的動畫效果**，模型的**位置和角度參數值不變**.
 
 
 https://read01.com/8PyaeG.html
 
 ### Root Transform
-> **root transform**：动画发生的位移和旋转，会改变模型实际的位置和旋转。
+> **root transform**：动画发生的**位移和旋转**，会**改变模型实际的位置和旋转**。
 
 
 The Root Transform is a **projection on the Y plane of the Body Transform** and is **computed at runtime**. At every frame, a change in the Root Transform is computed. This change in transform is then applied to the Game Object to make it move.
 
-> root transform是指body transform在在Y平面上的投影（即Y=0的平面，可以理解为模型所站立的“地面”。且这个投影是在运行时执行计算。在每一帧，root transform的每一个变化都会被计算。然后这些变化将会作用到game object上，使得它发生运动
+> **root transform是指body transform在在Y平面上的投影**（即Y=0的平面，可以理解为模型所站立的“地面”。且这个投影是在运行时执行计算。在每一帧，**root transform的每一个变化都会被计算**。然后这些**变化将会作用到game object上**，使得它**发生运动**
 
 也就是说，root motion就是指：在动画中物体产生的位移，可以在运行时，让绑定了Animator组件的game object，也发生实际的位移。且这个位移，是根据播放动画中每一帧物体的位移，在 X 和 Z 轴上投影计算而得。
 
-对于某些技能动画，整个动画是有一定位移的，但是动画的位移是动作设计师在设计时根据动作需要调出来的，位移是跟动作的幅度直接相关和匹配的。那么在释放技能的时候就只需要直接播放动画，只要应用这个 Root Motion 的特性，就可以很好的完成角色在播放动作的同时进行移动，动作播放完毕之后就在动画结束帧角色所在的位置。而不要额外地做计算工作。
+对于某些技能动画，整个动画是有一定位移的，但是动画的位移是动作设计师在设计时根据动作需要调出来的，位移是跟动作的幅度直接相关和匹配的。那么在释放技能的时候就只需要直接播放动画，只要**应用这个 Root Motion 的特性**，就可以很好的完成角色在播放动作的同时进行移动，动作播放完毕之后就在动画结束帧角色所在的位置。而**不要额外地做计算工作**。
 
 http://www.xionggf.com/post/unity3d/generic_animation_root_motion/
 
-Root Transform將影響模型的實際位置和角度（前提是要設置「Apply Root Motion」，如果不設置Apply Root Motion的話，也就是說變換將不應用，場景中的模型位置或角度是不會有變化的（參數值自然也不變），就像一個行走動畫，可能一直在原地行走）。
+**Root Transform將影響模型的實際位置和角度**（前提是要設置「**Apply Root Motion**」，如果不設置Apply Root Motion的話，也就是說**變換將不應用**，場景中的模型位置或角度是不會有變化的（參數值自然也不變），就像一個行走動畫，可能一直在原地行走）。
 
 https://read01.com/8PyaeG.html
 
