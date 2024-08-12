@@ -59,7 +59,7 @@ The **Animation Clip Editor** settings - **Root Transform Rotation**, **Root Tra
 
 
 ### Body Transform
-> **body transform**：动画发生的位移和旋转，只是单纯的动画效果，不会影响模型自身在世界空间中的实际位置和朝向。
+> **body transform**(Pose)：动画发生的位移和旋转，只是单纯的动画效果，不会影响模型自身在世界空间中的实际位置和朝向。
 
 
 The Body Transform is the mass center of the character. It is used in Mecanim’s retargeting engine and provides the most stable displacement model. The Body Orientation is an average of the lower and upper body orientation relative to the Avatar T-Pose.
@@ -88,30 +88,30 @@ https://read01.com/8PyaeG.html
 
 
 ### Root Transform Rotation
-- **Bake into Pose**: The orientation will stay on the body transform (or Pose). The Root Orientation will be constant and delta Orientation will be identity. This means that the Game Object will not be rotated at all by that AnimationClip.
+- **Bake into Pose**: The orientation will **stay on the body transform (or Pose)**. The **Root Orientation will be constant and delta Orientation will be identity**. This means that the Game Object **will not be rotated at all** by that AnimationClip.
 
 Only AnimationClips that have similar start and stop Root Orientation should use this option. You will have a Green Light in the UI
 telling you that an AnimationClip is a good candidate. A suitable candidate would be a straight walk or a run.
 
-- **Based Upon**: This lets you set the orientation of the clip. Using Body Orientation, the clip will be oriented to follow the forward vector of body. This default setting works well for most Motion Capture (Mocap) data like walks, runs, and jumps, but it will fail with motion like strafing where the motion is perpendicular to the body’s forward vector. In those cases you can manually adjust the orientation using the Offset setting. Finally you have Original that will automatically add the authored offset found in the imported clip. It is usually used with Keyframed data to respect orientation that was set by the artist.
+- **Based Upon**: This lets you set the **orientation** of the clip. Using Body Orientation, the clip will be oriented to follow the forward vector of body. This default setting works well for most Motion Capture (Mocap) data like walks, runs, and jumps, but it will fail with motion like strafing where the motion is perpendicular to the body’s forward vector. In those cases you can manually adjust the orientation using the Offset setting. Finally you have Original that will automatically add the authored offset found in the imported clip. It is usually used with Keyframed data to respect orientation that was set by the artist.
 
 - **Offset**: used to enter the offset when that option is chosen for Based Upon.
 
 ### Root Transform Position (Y)
-- **Bake Into Pose**: The Y component of the motion will stay on the Body Transform (Pose). The Y component of the Root Transform will be constant and Delta Root Position Y will be 0. This means that this clip won’t change the Game Object Height. Again you have a Green Light telling you that a clip is a good candidate for baking Y motion into pose.
+- **Bake Into Pose**: The Y component of the motion will **stay on the Body Transform (or Pose)**. The **Y component of the Root Transform** will be **constant** and **Delta Root Position Y will be 0**. This means that this clip **won’t change the Game Object Height**. Again you have a Green Light telling you that a clip is a good candidate for baking Y motion into pose.
 
-Most of the AnimationClips will enable this setting. Only clips that will change the GameObject
- height should have this turned off, like jump up or down.
+> Most of the AnimationClips will **enable this setting**. Only clips that will change the GameObject
+ height should have this **turned off**, like **jump up or down**.
 
-> **Note**: the Animator.gravityWeight is driven by Bake Into Pose position Y. When enabled, gravityWeight = 1, when disabled = 0. gravityWeight is blended for clips when transitioning between states.
+> **Note**: the **`Animator.gravityWeight`** is driven by **Bake Into Pose position Y**. When enabled, gravityWeight = 1, when disabled = 0. gravityWeight is blended for clips when transitioning between states.
 
-- **Based Upon**: In a similar way to Root Transform Rotation you can choose from Original or Mass Center (Body). There is also a Feet option that is very convenient for AnimationClips that change height (Bake Into Pose disabled). When using Feet the Root Transform Position Y will match the lowest foot Y for all frames. Thus the blending point always remains around the feet which prevents floating problem when blending or transitioning.
+- **Based Upon**: In a similar way to Root Transform Rotation you can choose from **Original** or **Mass Center (Body)**. There is also a Feet option that is very convenient for AnimationClips that change height (Bake Into Pose disabled). When using Feet the Root Transform Position Y will match the lowest foot Y for all frames. Thus the blending point always remains around the feet which prevents floating problem when blending or transitioning.
 
 - **Offset**: In a similar way to Root Transform Rotation, you can manually adjust the AnimationClip height using the Offset setting.
 
 ### Root Transform Position (XZ)
 
-**Bake Into Pose** will usually be used for “Idles” where you want to force the delta Position (XZ) to be 0. It will stop the accumulation of small deltas drifting after many evaluations. It can also be used for a Keyframed clip with Based Upon Original to force an authored position that was set by the artist.
+**Bake Into Pose** will usually be used for **"Idles"** where you want to force the **delta Position (XZ) to be 0**. It will **stop the accumulation of small deltas drifting** after many evaluations. It can also be used for a Keyframed clip with Based Upon Original to force an authored position that was set by the artist.
 
 ### Loop Pose
 Loop Pose (like Pose Blending in Blend Trees or Transitions) happens in the referential of Root Transform. Once the Root Transform is computed, the Pose becomes relative to it. The relative Pose difference between Start and Stop frame is computed and distributed over the range of the clip from 0–100%
