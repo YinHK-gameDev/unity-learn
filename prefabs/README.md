@@ -134,7 +134,7 @@ The Overrides drop-down window also has **Revert All** and **Apply All** buttons
 
 You can also choose to **revert and apply** some of the overrides, not all. You can do this by clicking the override part in the Overrides dropdown, you can see an extension menu next to the Overrides drop-down window. Then you can click **Revert or Apply button** on that override part.
 
-For components with modified values, the view displays a side-by-side comparison of the component’s values on the Prefab Asset and the modified component on the Prefab instance. This allows you to compare the original Prefab Asset values with the current overrides, so that you can decide whether you would like to **revert or apply those values**.
+For components with **modified values**, the view **displays a side-by-side comparison of the component’s values** on the Prefab Asset and the modified component on the Prefab instance. This allows you to compare the original Prefab Asset values with the current overrides, so that you can decide whether you would like to **revert or apply those values**.
 
 ![](./img/overide_menu1.png)
 
