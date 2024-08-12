@@ -59,22 +59,27 @@ https://youtu.be/mNxEetKzc04
 
 
 ### Control the root motion
+
+動畫中, 有兩個變換(Transform): **body transform**(Pose) & **root transform**. 
+
+> Root motion 決定是否將模型再**動畫中發生的這些變換應用到實際模型**. 
+
 The **Animation Clip Editor** settings - **Root Transform Rotation**, **Root Transform Position (Y)** and **Root Transform Position (XZ)** - let you **control the Root Transform projection from the Body Transform**. Depending on these settings some parts of the Body Transform may be transferred to Root Transform. For example you can decide if you want the motion Y position to be part of the **Root Motion (trajectory)** or **part of the pose (body transform)**, which is known as Baked into Pose.
 
 
 ### Body Transform
-> **body transform**(Pose)：动画发生的位移和旋转，只是单纯的动画效果，不会影响模型自身在世界空间中的实际位置和朝向。
+> **body transform**(Pose)：动画发生的位移和旋转，只是单纯的动画效果，**不会影响模型自身在世界空间中的实际位置和朝向**。 在動畫進行中, **Body Transform不影響模型實際的位置和角度**，所以這裡只是**純粹的動畫效果**，模型的**位置和角度參數值於動畫進行中時不變**.
 
+> During animation, body transform **does not change the actual position, rotation of the animated model at run time**.
 
-The Body Transform is the mass center of the character. It is used in Mecanim’s retargeting engine and provides the most stable displacement model. The Body Orientation is an average of the lower and upper body orientation relative to the Avatar T-Pose. \
-**Body Transform不影響模型實際的位置和角度**，所以這裡只是**純粹的動畫效果**，模型的**位置和角度參數值不變**.
-
+The Body Transform is the mass center of the character. It is used in Mecanim’s retargeting engine and provides the most stable displacement model. The Body Orientation is an average of the lower and upper body orientation relative to the Avatar T-Pose. 
 
 https://read01.com/8PyaeG.html
 
 ### Root Transform
 > **root transform**：动画发生的**位移和旋转**，会**改变模型实际的位置和旋转**。
 
+> During animation, root transform **changes the actual position, rotation of the animated model at the same time**.
 
 The Root Transform is a **projection on the Y plane of the Body Transform** and is **computed at runtime**. At every frame, a change in the Root Transform is computed. This change in transform is then applied to the Game Object to make it move.
 
@@ -121,19 +126,26 @@ telling you that an AnimationClip is a good candidate. A suitable candidate woul
 Loop Pose (like Pose Blending in Blend Trees or Transitions) happens in the referential of Root Transform. Once the Root Transform is computed, the Pose becomes relative to it. The relative Pose difference between Start and Stop frame is computed and distributed over the range of the clip from 0–100%
 
 
-### Apply motion vs Bake into pose
+### Apply motion vs Bake into pose 設置
 
-在untiy中將動畫中的變換分成兩種，Body Transform和Root Transform,我們可以設置動畫中的關於模型的一些變換（平移、旋轉等）是屬於Body Transform（pose）還是Root Transform（trajectory）的一部分。這裡的Bake into Pose 也就是將變換設置為Body Transform（pose）的一部分。
+在untiy中將動畫中的變換分成兩種，**Body Transform**和**Root Transform**, 我們可以**設置動畫中的關於模型的一些變換**（平移、旋轉等）是屬於**Body Transform（pose）**還是**Root Transform（trajectory）**的一部分。這裡的**Bake into Pose 也就是將變換設置為Body Transform（pose）的一部分**。
 
-Apply Root Motion".這裡他會起到兩個作用，首先最重要的是，決定是否應用Root Transform，如果應用的話，那麼在動畫的同時，模型的位置和角度會同時跟著變化。如果這裡不勾選的話，那麼就是說不應用Root Transform，這樣我們所有的Root Transform都將不起任何作用。
+**"Apply Root Motion"**.這裡他會起到**兩個作用**，首先最重要的是，決定是否**應用Root Transform**，如果應用的話，那麼在**動畫的同時，模型的位置和角度會同時跟著變化**。如果這裡不勾選的話，那麼就是說不應用Root Transform，這樣我們所有的Root Transform都將不起任何作用。
 
-Apply Root Motion的第二個作用是在動畫結束後，將Body Transform中的變化應用到模型（注意，這裡是結束的時候才應用，也就是說動畫的時候，模型的position、rorate等參數是不變的，當動畫結束之後，開始新的動畫之前才會改變，注意這裡跟前面提到的Root Transform的區別）
-
-
+**"Apply Root Motion"**的**第二個作用**是在**動畫結束**後，將**Body Transform中的變化應用到模型**（注意，這裡是結束的時候才應用，也就是說**動畫的時候，模型的position、rorate等參數是不變**的，當動畫**結束之後**，開始**新的動畫之前才會改變**，注意這裡跟前面提到的Root Transform的區別）
 
 
-> 勾选界面面板中的`apply root motion`选项，用来启动**root transform**。勾选界面面板中的`bake into pose`选项，用来启动**body transform**。组合勾选后的类型如下：
+> **Apply Root motion** 決定是否將模型再動畫中發生的這些變換(Body transform or Root transform)**應用到實際模型**.
 
+**Apply root motion後**, 
+- 若只應用**body transform**(Pose)中的變化: 一個動畫結束後model的pose會可能有不同, 動畫結束後在開始新動畫前根據上一個動畫完結後, 計算model的pose變化(position, rotation改變)再應用到實際模型. 一個動畫結束前都不會計算命apply去實際模型. Update motion & apply to model once animation finished.   
+
+- 若應用**root transform**中的變化: 動畫進行中, model的變化(position, rotation改變)同時應用到實際模型. Update motion & apply to model at the sametime.
+  
+
+> **Note**: 勾选界面面板中的**`apply root motion`** & 不勾选界面板中的**`bake into pose`**选项，用来启动**root transform**。勾选界面面板中的**`bake into pose`**选项，便是用来启动**body transform**。
+
+#### 组合勾选后的类型如下：
 | apply root motion | bake into pose | Type |
 | --- | --- | --- |
 | true | true | body transform |
@@ -143,7 +155,8 @@ Apply Root Motion的第二個作用是在動畫結束後，將Body Transform中�
 
 如果对于一个动画，一旦勾选了`Bake into pose`，那么他的旋转（rotation），或者位移（Y、ZX）就变成了动画效果的一部分，而**不会影响**模型本身的旋转和位移。如果没有勾选`bake into pose`，那么这个动画的旋转和位移能否作用于模型，取决于`apply root motion` 是否为**true**。如果为true，那么会改变模型实际上的位移和旋转，反之那么只有动画效果，没有对模型的实际位移和旋转。
 
-### Stiuation
+
+#### Stiuation
 比如說我們有一個人物行走的動畫，我們來考慮一下幾種情況（這裡以「Root transform position(XZ)為例）
 
 
