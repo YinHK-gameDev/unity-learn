@@ -143,7 +143,7 @@ Loop Pose (like Pose Blending in Blend Trees or Transitions) happens in the refe
 - 若應用**root transform**中的變化: 動畫進行中, model的變化(position, rotation改變)同時應用到實際模型. Update motion & apply to model at the sametime.
   
 
-> **Note**: 勾选界面面板中的**`apply root motion`** & 不勾选界面板中的**`bake into pose`**选项，用来启动**root transform**。勾选界面面板中的**`bake into pose`**选项，便是用来启动**body transform**。
+> **Note**: 勾选界面面板中的**apply root motion** & 不勾选界面板中的**bake into pose**选项，用来启动**root transform**。勾选界面面板中的**bake into pose**选项，便是用来启动**body transform**。
 
 #### 组合勾选后的类型如下：
 | apply root motion | bake into pose | Type |
