@@ -4,7 +4,7 @@ Every GameObject exists on a single layer, but Unity APIs that let you **set whi
 
 **Specifies Layers** to use in a **`Physics.Raycast`**.
 
-> A layer is a standard integer, but a LayerMask is an integer formatted as a **bitmask** where every **1 represents a layer to includ**e and **every 0 represents a layer to exclude**. 
+> A layer is a standard integer, but a LayerMask is an **integer** formatted as a **bitmask** where every **1 represents a layer to include** and **every 0 represents a layer to exclude**. 
 
 his means that you can pass a layer to an API that expects a layerMasks and the script will still compile because layers and layerMasks use the same underlying type. However, the API call won’t produce the behavior you expect.
 
