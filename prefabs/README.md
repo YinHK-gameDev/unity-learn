@@ -101,7 +101,7 @@ The Inspector for the root of a Prefab instance has three more controls than a n
 
 The three Prefab controls in the Inspector window for a Prefab instance.
 
-The **Open** button **opens the Prefab Asset that the instance is from in Prefab Mode**, allowing you to edit the Prefab Asset and thereby change all of its instances. The **Select** button selects the Prefab Asset that this instance is from in the Project window. The **Overrides** button opens the overrides drop-down window.
+The **Open** button **opens the Prefab Asset that the instance is from in Prefab Mode**, allowing you to **edit the Prefab Asset** and **thereby change all of its instances**. The **Select** button selects the Prefab Asset that this instance is from in the Project window. The **Overrides** button opens the overrides drop-down window.
 
 ![](./img/PrefabsInspectorControls1.png)
 
