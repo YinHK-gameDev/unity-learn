@@ -142,6 +142,18 @@ Representation of **rays**.
 A **ray** is an **infinite line** starting at **origin and going in some direction**.
 
 
+
+### Ignore raycast in specific gameobject 
+
+To make a **raycast ignore a GameObject**:
+- you can **assign it to the Ignore Raycast layer**, or
+- pass a **LayerMask** for another layer which does not contain the gameobject you want to ignore the ray to the **ray cast API** call.
+
+If you **don’t pass a LayerMask to the ray cast API call**, Unity uses **`Physics.DefaultRaycastLayers`** which **matches every layer except Ignore Raycast layer**.
+
+The **`Physics.Raycast` function** uses a **bitmask**, and **each bit determines if a layer is ignored by rays or not**. If all bits in the layerMask are on, the ray collides against all colliders. If the layerMask = 0, there are no collisions. All colliders ignore the ray.
+
+
 ### ref
 https://learn.unity.com/tutorial/let-s-try-shooting-with-raycasts#
 
