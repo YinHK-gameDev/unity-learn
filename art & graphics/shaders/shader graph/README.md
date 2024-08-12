@@ -237,7 +237,7 @@ Press **Ctrl + G** for Group selection, adding Group name for all selected nodes
 
 ![](./Node_group.png)
 
-### Create image texture in shsder graph
+### Create image texture in shader graph
 
 
 ![](./Texture_shader.png)
