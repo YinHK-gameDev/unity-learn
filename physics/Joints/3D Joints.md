@@ -49,7 +49,7 @@ https://docs.unity3d.com/Manual/class-ConfigurableJoint.html
 
 
 ### Fixed Joint component
-Fixed Joints restricts an object’s movement to be dependent upon another object. This is somewhat similar to Parenting but is implemented through physics rather than Transform hierarchy. The best scenarios for using them are when you have objects that you want to easily break apart from each other, or connect two object’s movement without parenting.
+Fixed Joints restricts an object’s movement to be dependent upon another object. This is somewhat **similar to Parenting** but is **implemented through physics rather than Transform hierarchy**. The best scenarios for using them are when you have objects that you want to easily break apart from each other, or **connect two object’s movement without parenting**.
 
 | **_Property:_** | **_Function:_** |
 | --- | --- |
