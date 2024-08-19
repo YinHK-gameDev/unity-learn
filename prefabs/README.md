@@ -38,7 +38,7 @@ If you are **replacing an existing Prefab**, Unity tries to preserve references 
 
 - In **context**: When you edit a Prefab in context, the **rest of your current working Scene remains visible**, **but locked for editing**.
 
-Editing in isolation
+Editing in **isolation**
 
 You can begin to edit a Prefab in Prefab Mode in several ways. To open a Prefab Asset and edit it in **isolation** you can do it in the following ways:
 
