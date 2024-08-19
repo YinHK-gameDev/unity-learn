@@ -68,7 +68,7 @@ public class ExampleClass : MonoBehaviour
 
 #### `Quaternion.Slerp`
 
-Quaternion A quaternion spherically interpolated between quaternions a and b.
+Quaternion A quaternion **spherically interpolated** between quaternions a and b.
 ```cs
 public static Quaternion Slerp(Quaternion a, Quaternion b, float t);
 ```
