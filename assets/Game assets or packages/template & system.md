@@ -4,6 +4,9 @@
 
 https://assetstore.unity.com/packages/templates/systems/match-3-juice-fresh-complete-project-editor-58990
 
+#### Match 3 Jelly Garden Kit
+https://assetstore.unity.com/packages/templates/systems/match-3-jelly-garden-kit-43260
+
 #### Match 3 Kit Jewelry
 
 https://assetstore.unity.com/packages/templates/systems/match-3-kit-jewelry-124707
