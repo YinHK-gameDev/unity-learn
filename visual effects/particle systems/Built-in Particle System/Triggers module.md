@@ -1,7 +1,7 @@
 ## Triggers module
 
-The Built-in Particle System’s Triggers module allows you to access and modify particles based on their interaction with one or more Collidersin the Scene
-. When you enable this module, the Particle System calls the `OnParticleTrigger()` callback on attached scripts
+The Built-in Particle System’s Triggers module allows you to **access and modify particles** based on their **interaction with one or more Colliders** in the Scene
+. When you enable this module, the Particle System calls the **`OnParticleTrigger()`** callback on attached scripts
 , which you can use to access lists of particles depending on where they are in respect to the Colliders in the Scene.
 
 
