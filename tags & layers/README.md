@@ -39,7 +39,8 @@ To make a **ray cast ignore a GameObject**:
 
 If you **don’t pass a LayerMask to the ray cast API call**, Unity uses **`Physics.DefaultRaycastLayers`** which **matches every layer except Ignore Raycast layer**.
 
-The **`Physics.Raycast` function** uses a **bitmask**, and **each bit determines if a layer is ignored by rays or not**. If all bits in the layerMask are on, the ray collides against all colliders. If the layerMask = 0, there are no collisions. All colliders ignore the ray.
+The **`Physics.Raycast` function** uses a **bitmask**, and **each bit determines if a layer is ignored by rays or not**. \
+If **all bits** in the layerMask are **on**, the ray **collides against all colliders**. If the **layerMask = 0**, there are **no collisions**. All colliders **ignore the ray**.
 
 ### Collision with layers
 Use **Layer collision matrix** to control physics collision detection.
