@@ -4,6 +4,10 @@
 
 https://assetstore.unity.com/packages/templates/systems/match-3-juice-fresh-complete-project-editor-58990
 
+#### Match 3 Kit Jewelry
+
+https://assetstore.unity.com/packages/templates/systems/match-3-kit-jewelry-124707
+
 #### Candy Match 3 Kit
 
 Create your own match-3 games in the spirit of the classics of the genre \
