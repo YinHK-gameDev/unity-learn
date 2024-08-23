@@ -1,5 +1,9 @@
 ## Template & System
 
+#### Match 3 Juice Fresh Complete Project + EDITOR
+
+https://assetstore.unity.com/packages/templates/systems/match-3-juice-fresh-complete-project-editor-58990
+
 #### Candy Match 3 Kit
 
 Create your own match-3 games in the spirit of the classics of the genre \
