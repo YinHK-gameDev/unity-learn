@@ -22,6 +22,8 @@ https://assetstore.unity.com/packages/templates/systems/fruit-swipe-match-3-kit-
 #### Billiard game template(桌球)
 https://assetstore.unity.com/packages/templates/systems/billiard-template-236246
 
+#### Truck Simulator Template
+https://assetstore.unity.com/packages/templates/systems/truck-simulator-template-277165
 
 #### Easy Flying System (With AI Add-On)
 Enhance your aerial adventures with our AI-Add-on for the Easy Flying System! This add-on includes AI features for drones. \
