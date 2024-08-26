@@ -4,7 +4,7 @@
 
 
 ### Line Renderer component
-The Line Renderer component takes an array of two or more points in 3D space, and draws a straight line between each one. You can use a Line Renderer to draw anything from a simple straight line to a complex spiral.
+The Line Renderer component **takes an array of two or more points in 3D space**, and **draws a straight line between each one**. You can use a Line Renderer to draw anything from a simple straight line to a complex spiral.
 
 To create a Line Renderer:
 
@@ -17,8 +17,8 @@ To create a Line Renderer:
 https://docs.unity3d.com/Manual/class-LineRenderer.html
 
 ### Trail Renderer component
-The Trail Renderer component renders a trail of polygons behind a moving GameObject
-, over time. This can be used to give an emphasized feeling of motion to a moving object, or to highlight the path or position of moving objects.
+The Trail Renderer component **renders a trail of polygons behind a moving GameObject
+, over time**. This can be used to give an emphasized feeling of motion to a moving object, or to highlight the path or position of moving objects.
 
 To create a Trail Renderer:
 
