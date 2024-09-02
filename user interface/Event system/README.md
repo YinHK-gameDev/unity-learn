@@ -72,7 +72,7 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.4/api/UnityEngine.Inpu
 
 ### Raycasters
 
-**Raycasters** are used for figuring out **what the pointer is over**. It is common for Input Modules to **use the Raycasters configured in the Scene to calculate what the pointing device is over**.
+**Raycasters** are **used for** figuring out **what the pointer is over**. It is common for Input Modules to **use the Raycasters configured in the Scene to calculate what the pointing device is over**.
 
 The **Event System** needs a method for **detecting where current input events need to be sent to**, and this is provided by the **Raycasters**. Given a screen space position they will collect all potential targets, figure out if they are under the given position, and then **return the object that is closest to the screen**. 
 
