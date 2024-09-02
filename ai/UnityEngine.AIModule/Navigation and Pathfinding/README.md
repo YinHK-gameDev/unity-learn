@@ -344,7 +344,7 @@ The area types are specified in the Navigation Window’s Areas tab. There are 2
 
 
 #### Area Mask
-Each agent has an **Area Mask** which describes** which areas it can use when navigating**. The area mask can be set in the **agent properties**, or the **bitmask can be manipulated using a script** at runtime.
+Each agent has an **Area Mask** which describes **which areas it can use when navigating**. The area mask can be set in the **agent properties**, or the **bitmask can be manipulated using a script** at runtime.
 
 The **area mask** is useful when you **want only certain types characters to be able to walk through an area**. 
 
