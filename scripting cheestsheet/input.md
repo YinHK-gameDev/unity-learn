@@ -242,7 +242,8 @@ The current mouse **scroll delta**. (**Read Only**)
 public static Vector2 mouseScrollDelta;
 ```
 
-`Input.mouseScrollDelta` is stored in a Vector2.y property. (The Vector2.x value is ignored.) `Input.mouseScrollDelta` can be positive (up) or negative (down). The value is zero when the mouse scroll is not rotated.
+`Input.mouseScrollDelta` is stored in a **`Vector2.y`** property. (The **`Vector2.x`** value is ignored.) \
+**`Input.mouseScrollDelta`** can be **positive (up)** or **negative (down)**. The **value is zero** when the **mouse scroll is not rotated**.
 
 https://docs.unity3d.com/ScriptReference/Input-mouseScrollDelta.html
 
