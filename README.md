@@ -328,8 +328,12 @@ https://home.pearsonvue.com/unity
 Unity professional programmer examsharing 
 https://www.youtube.com/watch?v=FUP01QP99T4
 
-### ➡️ Unity DEMOS
+### ➡️ Unity DEMOS projects
+Discover a range of interactive demos designed to showcase our technology and its practical applications. With code and assets available downloading from Unity Github.
+
 https://unity.com/demos
+
+
 
 ### ➡️ Unity How-to & E-Books
 https://unity.com/how-to
