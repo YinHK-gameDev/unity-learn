@@ -7,7 +7,7 @@ Image is a textured element in the UI hierarchy. **Every interaction component/ 
 
 ### Image Component
 
-
+![](./img/Image_component.png)
 
 
 
