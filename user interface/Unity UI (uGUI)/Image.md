@@ -18,6 +18,13 @@ Image is a textured element in the UI hierarchy. **Every interaction component/ 
 | **Preserve Aspect** | Ensure the image retains its existing dimension. |
 | **Set Native Size** | Set the dimensions of the image box to the original pixel size of the Texture. |
 
+### Image vs Raw image component
+
+The Image control requires its Texture to be a Sprite, while the Raw Image can accept any Texture.
+
+
+
+Raw Image: https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-RawImage.html
 
 ### Image class
 
