@@ -2,8 +2,6 @@
 
 Image is a textured element in the UI hierarchy. **Every interaction component/ selectable component(eg: button, toggle etc.) has this component**. 
 
-**object(C#) -> Object(Unity) -> Component -> Behaviour -> MonoBehaviour -> UIBehaviour -> Graphic -> MaskableGraphic -> Image**
-
 
 ### Image Component
 
@@ -22,6 +20,13 @@ Image is a textured element in the UI hierarchy. **Every interaction component/ 
 
 
 ### Image class
+
+**object(C#) -> Object(Unity) -> Component -> Behaviour -> MonoBehaviour -> UIBehaviour -> Graphic -> MaskableGraphic -> Image**
+
+
+> Inherits Graphic class
+
+
 To change **color** of the interaction component:
 
 Eg:
