@@ -14,8 +14,8 @@ You cannot use Unity UI to create or change user interfaces in the Unity Editor.
 
 ### Visual Components
 - Text
-- Image
-- Raw Image
+- Image (Need sprite as texture)
+- Raw Image (No need Sprite, can be any texture)
 - Mask
 - RectMask2D
 - UI Effect Components
