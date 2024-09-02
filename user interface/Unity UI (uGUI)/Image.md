@@ -30,6 +30,22 @@ button.GetComponent<Image>().color = Color.red;
 
 ```
 
+To access matrial:
+
+Eg:
+```cs
+XXX.GetComponent<Image>().material
+```
+
+To set whether is raycast target or not:
+
+Eg:
+```cs
+XXX.GetComponent<Image>().raycastTarget
+```
+
+
+
 
 ### ref 
 
