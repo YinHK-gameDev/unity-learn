@@ -234,7 +234,9 @@ https://www.youtube.com/@unity_japan
 ### ➡️ Unity release
 LTS is the release for creators who value maximum stability and support for their next project. This is our default release, and it’s primarily recommended for creators past the preproduction phase of development who are about to lock in production on a specific version of Unity.
 
-**https://unity.com/cn/releases/editor/archive**
+**https://unity.com/cn/releases/editor/archive** 
+
+**https://docs.unity3d.com/Manual/upm-semver.html**
 
 #### Tech Stream releases
 Tech Stream releases are for creators who value exploring in-progress features to stay on the cutting edge for their next project. This version is primarily recommended for the preproduction, discovery, and prototyping phases of development, but it can be used for production projects as well.
