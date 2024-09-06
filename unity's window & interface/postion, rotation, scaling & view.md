@@ -3,8 +3,8 @@
 ### For position
 Use the dropdown menu to switch between Pivot and Center.
 
-**Pivot positions** the Gizmo at the actual pivot point of the GameObject, as defined by the Transform component. \
-**Center positions** the Gizmo at a center position based on the selected GameObjects.
+**Pivot positions** the Gizmo at the actual **pivot point of the GameObject**, as defined by the Transform component. \
+**Center positions** the Gizmo at a **center position** based on the **selected GameObjects**.
 
 ### For rotation
 Use the dropdown menu to switch between Local and Global.
@@ -16,10 +16,10 @@ Use the dropdown menu to switch between Local and Global.
 ### Pivot vs. Center of a game object:
 
 **Pivot**: indicates
-- the reference point for positioning, rotating and scaling a game object.
+- the **reference point for positioning, rotating and scaling a game object**.  The Pivot Point determines the location of the Gizmo
 
 **Center**: indicates
-- the average center / middle point of a game object’s geometry or it’s hierarchy.
+- the **average center / middle point of a game object’s geometry** or it’s hierarchy.
 
 We can transform a game object with respect to its pivot or with respect to its center
 Pivot / Center toggle button:
