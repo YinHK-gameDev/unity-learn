@@ -79,6 +79,13 @@ You can assign animation clips to the animation component and control playback f
 
 https://docs.unity3d.com/Manual/Animations.html
 
+
+### Export animations from blender to unity
+https://www.youtube.com/watch?v=UQGMsL8jXRI \
+https://www.youtube.com/watch?v=uWexElqDcaA \
+https://www.youtube.com/watch?v=Bl2xBW-L7uU
+
+
 ### Free animation tools
 - **Blender**
 - **Adobe Mixamo**:   https://www.mixamo.com/#/
