@@ -57,6 +57,10 @@ public void SetFloat(string name, float value, float dampTime, float deltaTime);
 public void SetFloat(int id, float value);
 public void SetFloat(int id, float value, float dampTime, float deltaTime);
 
+// Sets the value of the given integer parameter.
+public void SetInteger(string name, int value);
+public void SetInteger(int id, int value);
+
 // Static methods
 
 // Generates an parameter id from a string. Ids are used for optimized setters and getters on parameters.
