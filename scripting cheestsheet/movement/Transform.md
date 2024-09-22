@@ -2,7 +2,7 @@
 https://docs.unity3d.com/ScriptReference/Transform.html
 
 ### `Transform.Translate`
-Moves the transform in the direction and distance of translation.
+Moves the transform in the **direction** and **distance** of translation.
 ```cs
 public void Translate(Vector3 translation);
 ```
