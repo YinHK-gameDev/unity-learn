@@ -82,6 +82,11 @@ When `t` = 0, **Vector3.Lerp(a, b, t)** returns `a`.
 When `t` = 1, **Vector3.Lerp(a, b, t)** returns `b`.
 
 ```cs
+public static Vector3 Lerp(Vector3 a, Vector3 b, float t);
+```
+
+Eg:
+```cs
 public class LerpToPosition : MonoBehaviour
 {
     public Vector3 positionToMoveTo;
