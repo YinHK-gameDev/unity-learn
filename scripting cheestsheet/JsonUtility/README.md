@@ -32,9 +32,10 @@ public static object FromJson(string json, Type type);
 
 Internally, this method uses the Unity serializer; therefore the type you are creating must be supported by the serializer. It **must be a plain class/struct marked with the Serializable attribute**. Fields of the object must have types supported by the serializer. Fields that have unsupported types, as well as private fields or fields marked with the NonSerialized attribute, will be ignored.
 
-Only plain classes and structures are supported; classes derived from `UnityEngine.Object` (such as MonoBehaviour or ScriptableObject) are not. Note that classes derived from MonoBehaviour or ScriptableObject can be used with `JsonUtility.FromJsonOverwrite` as an alternative.
+> Only **plain classes and structures are supported**; classes derived from **`UnityEngine.Object`** (such as **MonoBehaviour** or **ScriptableObject**) **are not**. \
+> Note that classes derived from **MonoBehaviour** or **ScriptableObject** can be used with **`JsonUtility.FromJsonOverwrite`** as an **alternative**.
 
-If the JSON representation is missing any fields, they will be given their default values (i.e. a field of type T will have value default(T) - it will not be given any value specified as a field initializer, as the constructor for the object is not executed during deserialization).
+If the JSON representation is missing any fields, they will be given their **default values** (i.e. a field of type T will have value default(T) - it will not be given any value specified as a field initializer, as the constructor for the object is not executed during deserialization).
 
 ```cs
 myObject = JsonUtility.FromJson<MyClass>(json);
