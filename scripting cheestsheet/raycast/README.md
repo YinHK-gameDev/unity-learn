@@ -89,7 +89,7 @@ You could even use Raycast Hit to get a **reference** to an object’s **Transfo
 GameObject hitObject = hit.transform.gameObject;
 ```
 
-> Using a **Raycast Hit variable** with Raycast will store information about the first object that is hit by the Ray.
+> Using a **Raycast Hit variable** with Raycast will store information about the **first object** that is hit by the Ray.
 
 https://docs.unity3d.com/ScriptReference/RaycastHit.html
 
