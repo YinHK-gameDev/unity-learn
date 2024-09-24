@@ -1,5 +1,6 @@
 ## Event handler for mouse
 
+In **Monoheaviour** class, there are some event handling for mouse
 
 ### `MonoBehaviour.OnMouseDown()`
 **`OnMouseDown`** is called when the user has pressed the mouse button while over the GUIElement or Collider.
@@ -35,8 +36,26 @@ public class ExampleClass : MonoBehaviour
         Debug.Log("Drag ended!");
     }
 }
-
-
 ```
+
+### `MonoBehaviour.OnMouseEnter()`
+Called when the mouse enters the Collider.
+
+
+### `MonoBehaviour.OnMouseExit()`
+Called when the mouse is not any longer over the Collider.
+
+
+### `MonoBehaviour.OnMouseOver()`
+Called every frame while the mouse is over the Collider.
+
+
+### `MonoBehaviour.OnMouseDrag()`
+**`OnMouseDrag`** is called when the user has clicked on a Collider and is still holding down the mouse.
+
+
+
+
+
 
 
