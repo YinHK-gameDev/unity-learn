@@ -147,7 +147,7 @@ A **ray** is an **infinite line** starting at **origin and going in some directi
 
 To make a **raycast ignore a GameObject**:
 - you can **assign it to the Ignore Raycast layer**, or
-- pass a **LayerMask** for another layer which does not contain the gameobject you want to ignore the ray to the **ray cast API** call.
+- **change LayerMask** - pass a **LayerMask** for another layer which does not contain the gameobject you want to ignore the ray to the **ray cast API** call.
 
 If you **don’t pass a LayerMask to the ray cast API call**, Unity uses **`Physics.DefaultRaycastLayers`** which **matches every layer except Ignore Raycast layer**.
 
