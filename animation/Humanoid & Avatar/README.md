@@ -34,6 +34,19 @@ From the **Rig** tab of the Inspector window, **set the Animation Type to Humano
 
 https://docs.unity3d.com/Manual/ConfiguringtheAvatar.html
 
+
+#### Rigging
+3D modeling software provides a number of ways to create joints for your rig.
+
+For a **Humanoid** model, there are specific requirements for the skeleton so that Unity can match it to a Humanoid Avatar:
+
+-   A minimum of **15 bones**. Your skeleton needs to have at least the required bones in place.
+-   In order to improve your chances for finding a match to the **Avatar**, name your bones in a way that reflects the body parts they represent. For example, “LeftArm” and “RightForearm” make it clear what these bones control.
+-   The joint/bone hierachy should follow a natural structure for the character you are creating. Given that arms and legs come in pairs, you should use a consistent convention for naming them (for example, “arm\_L” for the left arm, “arm\_R” for the right arm). Possible structures for the hierarchy include:
+    -   HIPS - spine - chest - shoulders - arm - forearm - hand
+    -   HIPS - spine - chest - neck - head
+    -   HIPS - UpLeg - Leg - foot - toe - toe\_end
+
 ### Retargeting of Humanoid animations
 One of the most powerful features of Mecanim is retargeting of humanoid animations. This means that with relative ease, you can **apply the same set of animations to various character models**. 
 
