@@ -47,7 +47,7 @@ You can begin to edit a Prefab in Prefab Mode in several ways. To open a Prefab 
 
 > Modifying prefab asset also link to its prefab instance. 
 
-Alternatively, you can open a Prefab Asset in **Context** via an instance of that Prefab. Ways of doing that include:
+Alternatively, you can open a Prefab Asset in **Context** via an **instance of that Prefab**. Ways of doing that include:
 
 - Select a **Prefab instance** in the Hierarchy window and click the **Open** button in the Inspector window
 - Select a **Prefab instance** in the Hierarchy window and press **P** on the **keyboard**. This is the default keyboard binding
