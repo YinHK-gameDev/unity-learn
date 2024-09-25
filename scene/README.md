@@ -83,7 +83,7 @@ Having multiple scenes open at once also lets you improve the workflow, especial
 
 To add multi scenes at editor: 
 
-- Right click to open the menu of a scene asset in the Project window and select Open Scene Additive.
+- **Right click** to open the menu of a scene asset in the Project window and select **"Open Scene Additive"**.
 - Drag one or more scenes from the Project window into the Hierarchy window.
 
 Right click the scene, in the list you can:
