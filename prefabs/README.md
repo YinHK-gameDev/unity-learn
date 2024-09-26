@@ -62,7 +62,7 @@ You can unpack a Prefab instance by **right-clicking on it in the Hierarchy to s
 ### Instance overrides
 Instance overrides allow you to **create variations between Prefab instances**, while still linking those instances to the same Prefab Asset.
 
-When you modify a Prefab Asset, the changes are reflected in all of its instances. However, you can also make modifications directly to an individual instance. Doing this **creates an instance override on that particular instance**.
+When you **modify a Prefab Asset, the changes are reflected in all of its instances**. However, you can also make modifications directly to an individual instance. Doing this **creates an instance override on that particular instance**.
 
 An example would be if you had a Prefab Asset **"Robot"**, which you placed in multiple levels in your game. However, each instance of the **"Robot"** has a **different speed value**, and a **different** **audio clip** assigned.
 
