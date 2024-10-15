@@ -12,6 +12,10 @@ Easy Save lets you save almost anything with ease across platforms, along with f
 https://assetstore.unity.com/packages/tools/utilities/easy-save-the-complete-save-data-serializer-system-768
 
 
+#### Lattice Modifier for Unity
+https://assetstore.unity.com/packages/tools/animation/lattice-modifier-for-unity-293850?srsltid=AfmBOopAqs55TutGp0mxIlZWjBJQQ_l5WulZSBVrod01DrDbe3K6dsp6 \
+https://80.lv/articles/lattice-modifier-for-unity-released/ \
+https://www.youtube.com/watch?v=IA5zqFxn-as
 
 
 ### ref 
