@@ -67,6 +67,15 @@ Select **Edit > Project Settings > Graphics**.
   1. Select **Edit > Project Settings > Quality**.
   2. Drag the Render Pipeline Asset on to the **Render Pipeline** field.
 
+### Render Pipeline Converter
+The **Render Pipeline Converter** converts assets made for a Built-in Render Pipeline project to assets compatible with URP.
+
+> **NOTE:** The conversion process makes irreversible changes to the project. Back up your project before the conversion.
+
+Objects rendered in pink usually indicate that the material needs to be converted. Go to Window>Rendering>Render Pipeline Converter. This tool will allow you to convert all of the materials to URP shaders. 
+
+
+https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.0/manual/features/rp-converter.html
 
 ###  Get and set the active render pipeline in C# scripts
 In C# scripts, you can get and set the active render pipeline and receive a callback when the active render pipeline changes.
