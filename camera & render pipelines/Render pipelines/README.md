@@ -200,6 +200,24 @@ public class ActiveRenderPipelineExample : MonoBehaviour
 }
 ```
 
+
+### URP vs HDRP vs Built-In Render Pipeline
+When choosing a rendering pipeline, you need to consider several factors. The primary factors to consider include:
+
+-   Your project’s performance requirements.
+-   Your target platforms.
+-   Your visual look goals.
+
+For projects that need high-quality graphics and optimal performance, URP may be the best choice.
+
+For projects that require highly realistic graphics and are targeting high-end hardware, HDRP may be the best choice.
+
+For projects that require a balance between performance and quality, Built-in may be the best choice.
+
+
+https://www.occasoftware.com/blog/unity-understanding-urp-hdrp-built-in \
+https://docs.unity3d.com/Manual/render-pipelines-feature-comparison.html
+
 ### ref
 https://docs.unity3d.com/Manual/BestPracticeLightingPipelines.html
 
