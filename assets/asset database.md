@@ -23,6 +23,10 @@ Artifacts are the results of the import process. The Artifact database contains 
 - Artifact Database: `Library\ArtifactDB`
 
 
+> **Note**: `AssetDatabase` class cannot be used at runtime. The `AssetDatabase` is part of Unity’s **Editor-only API** within the `UnityEditor` namespace, meaning it is designed specifically for working within the Unity Editor and is not available or functional in a runtime build (such as on a standalone, mobile, or web platform).
+
+
+
 ### Importing an Asset
 Unity **normally imports assets automatically when they are dragged into the project** but it is also possible to **import them under script control**. To do this you can use the **`AssetDatabase.ImportAsset`** method as in the example below.
 ```cs
