@@ -37,6 +37,8 @@ public class MyPlayer : MonoBehaviour
 }
 ```
 
+> **Note**: `AssetDatabase` class cannot be used at runtime. The `AssetDatabase` is part of Unity’s **Editor-only API** within the `UnityEditor` namespace, meaning it is designed specifically for working within the Unity Editor and is not available or functional in a runtime build (such as on a standalone, mobile, or web platform).
+
 ### `Resources` class
 The Resources class allows you to find and access Objects including assets.
 
