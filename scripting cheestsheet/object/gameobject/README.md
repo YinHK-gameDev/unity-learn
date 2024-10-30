@@ -248,6 +248,46 @@ public class Example : MonoBehaviour
 }
 ```
 
+
+### Creates gameobject by constructor
+A new GameObject, with optional parameters to specify a name and set of components to attach.
+
+```cs
+public GameObject();
+```
+```cs
+public GameObject(string name);
+```
+```cs
+public GameObject(string name, params Type[] components);
+```
+
+Creates a new GameObject, with optional parameters to specify a name and set of components to attach.
+
+Use the constructor with no arguments to create a GameObject with an empty `name` property and only a `Transform` component attached.  
+  
+Use the constructor with `name` parameter to create a GameObject with the specified value as the name property and only a `Transform` component attached.  
+  
+Use the constructor with `name` and `components` parameters to create a GameObject with the specified name and the specified components attached, in addition to the `Transform` component.
+
+eg:
+```cs
+public class Example : MonoBehaviour
+{
+    private void Start()
+    {
+        GameObject exampleOne = new GameObject();
+        exampleOne.name = "GameObject1";
+        exampleOne.AddComponent<Rigidbody>();
+
+        GameObject exampleTwo = new GameObject("GameObject2");
+        exampleTwo.AddComponent<Rigidbody>();
+
+        GameObject exampleThree = new GameObject("GameObject3", typeof(Rigidbody), typeof(BoxCollider));
+    }
+}
+```
+
 ### Properties
 
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/GameObject.htmlGameObject-activeInHierarchy.html">activeInHierarchy</a></td><td class="desc">Defines whether the GameObject is active in the Scene.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/GameObject.htmlGameObject-activeSelf.html">activeSelf</a></td><td class="desc">The local active state of this GameObject. (Read Only)</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/GameObject.htmlGameObject-isStatic.html">isStatic</a></td><td class="desc">Gets and sets the GameObject's StaticEditorFlags.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/GameObject.htmlGameObject-layer.html">layer</a></td><td class="desc">The layer the GameObject is in.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/GameObject.htmlGameObject-scene.html">scene</a></td><td class="desc">Scene that the GameObject is part of.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/GameObject.htmlGameObject-sceneCullingMask.html">sceneCullingMask</a></td><td class="desc">Scene culling mask Unity uses to determine which scene to render the GameObject in.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/GameObject.htmlGameObject-tag.html">tag</a></td><td class="desc">The tag of this GameObject.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/GameObject.htmlGameObject-transform.html">transform</a></td><td class="desc">The Transform attached to this GameObject.</td></tr></tbody></table>
