@@ -270,6 +270,10 @@ Use the constructor with `name` parameter to create a GameObject with the specif
   
 Use the constructor with `name` and `components` parameters to create a GameObject with the specified name and the specified components attached, in addition to the `Transform` component.
 
+
+> components: 	The components to attach, specified as an array of types that inherit from Component.
+
+
 eg:
 ```cs
 public class Example : MonoBehaviour
