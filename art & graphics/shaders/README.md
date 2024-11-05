@@ -51,7 +51,8 @@ In unity the default color for shader is pink. When changing rendering pipeline,
 Another method is to reimport the model, in import settings click **Materials** tab and choose **「Use External Materials (Legacy)」** in Location field, then hit Apply button.
 
 
-
+### Unlit shader
+In Unity (and computer graphics in general), an Unlit Shader is a type of shader that does not respond to or interact with lighting in the scene. This means that unlit materials do not change based on lights, shadows, or reflections around them—they display at their defined color, brightness, and transparency levels regardless of the lighting setup.
 
 
 ### ref
