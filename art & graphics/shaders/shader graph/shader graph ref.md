@@ -8,3 +8,7 @@ https://roystan.net/articles/outline-shader/ \
 https://www.youtube.com/watch?v=LMqio9NsqmM&feature=youtu.be \
 https://www.youtube.com/watch?v=VGIkT9fPh7Y \
 https://www.youtube.com/watch?v=hEth0drTuyg&t=221s
+
+
+Quick Outline asset: \
+https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488?aid=1101l9Bhe
