@@ -7,7 +7,8 @@ https://github.com/Robinseibold/Unity-URP-Outlines/tree/main \
 https://roystan.net/articles/outline-shader/ \
 https://www.youtube.com/watch?v=LMqio9NsqmM&feature=youtu.be \
 https://www.youtube.com/watch?v=VGIkT9fPh7Y \
-https://www.youtube.com/watch?v=hEth0drTuyg&t=221s
+https://www.youtube.com/watch?v=hEth0drTuyg&t=221s \
+https://stackoverflow.com/questions/51446330/how-to-make-outline-shader-with-unity-shader-graph
 
 
 Quick Outline asset: \
