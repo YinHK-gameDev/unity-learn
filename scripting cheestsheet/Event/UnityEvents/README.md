@@ -499,6 +499,74 @@ public delegate void UnityAction();
 
 https://docs.unity3d.com/ScriptReference/Events.UnityAction.html
 
+
+### Publisher & Subscriber class
+
+
+```cs
+using UnityEngine;
+using UnityEngine.Events;
+
+public class EventPublisher : MonoBehaviour
+{
+    // Declare a UnityEvent that can be assigned via Inspector
+    public UnityEvent onEventTriggered;
+
+    void Start()
+    {
+        // Optionally, invoke the event right after start to test
+        InvokeEvent();
+    }
+
+    // Method to invoke the event
+    public void InvokeEvent()
+    {
+        if (onEventTriggered != null)
+        {
+            onEventTriggered.Invoke();  // Trigger the UnityEvent
+        }
+    }
+}
+
+```
+
+
+```cs
+using UnityEngine;
+
+public class EventSubscriber : MonoBehaviour
+{
+    public EventPublisher eventPublisher; // Reference to the EventPublisher script
+
+    void OnEnable()
+    {
+        if (eventPublisher != null)
+        {
+            // Add a listener to the event
+            eventPublisher.onEventTriggered.AddListener(HandleEvent);
+        }
+    }
+
+    void OnDisable()
+    {
+        if (eventPublisher != null)
+        {
+            // Remove the listener when disabled (to avoid memory leaks)
+            eventPublisher.onEventTriggered.RemoveListener(HandleEvent);
+        }
+    }
+
+    // Event handler that gets called when the event is triggered
+    void HandleEvent()
+    {
+        Debug.Log("Event was triggered!");
+    }
+}
+
+```
+
+
+
 ### ref 
 https://docs.unity3d.com/Manual/UnityEvents.html \
 https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html \
