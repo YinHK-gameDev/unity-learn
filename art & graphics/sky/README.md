@@ -177,7 +177,7 @@ To make sure the Texture is 2D:
 > To generate the best ambient lighting, the Texture should use a **high dynamic range (HDR)**.
 
 #### Procedural skybox
-The **Procedural skybox Shader** does **not require any input Textures** and instead **generates a skybox purely from the properties set in the Material Inspector**.
+The **Procedural skybox Shader** does **not require any input Textures** and instead **generates a skybox purely from the properties set in the Material Inspector**. **Simulate sky & sun like default skybox** in unity
 
 **Properties**:
 
