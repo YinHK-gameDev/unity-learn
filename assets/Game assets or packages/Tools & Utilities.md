@@ -5,6 +5,19 @@ Hot Reload allows you to instantly apply code changes, without compiling. Works 
 
 https://assetstore.unity.com/packages/tools/utilities/hot-reload-edit-code-without-compiling-254358
 
+#### Fast Script Reload
+Tool will automatically compile only what you've changed and immediately hot reload that into current play session.
+
+Iterate on whatever you're working on without reentering play mode over and over again.
+
+And you don't have to adjust your code either, just import.
+
+Works with any code editor.
+
+
+https://assetstore.unity.com/packages/tools/utilities/fast-script-reload-239351?srsltid=AfmBOoofirsNbg4CJ2tL56DsQqCxZ164FRXu2pvf_Y0q6_ucA9-r81o3 \
+https://github.com/handzlikchris/FastScriptReload
+
 #### Easy Save
 Easy Save lets you save almost anything with ease across platforms, along with features such as encryption, compression, cloud storage, spreadsheets, backups, and much more.
 
