@@ -62,7 +62,7 @@ Unity provides multiple **Skybox Shaders** for you to use. Each **Shader** uses 
    -   [6 Sided](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-6sided.html)
    -   [Cubemap](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-cubemap.html)
    -   [Panoramic](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-panoramic.html)
-2. **Procedural**: Does not use textures and instead uses properties on the Material to generate a skybox. The Skybox Shader in this category is: [Procedural](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-procedural.html).
+2. **Procedural**: **Does not use textures** and instead **uses properties** on the Material to generate a skybox(Simulate sky & sun like default skybox in unity). The Skybox Shader in this category is: [Procedural](https://docs.unity3d.com/Manual/skybox-shaders.htmlshader-skybox-procedural.html).
 
 https://docs.unity3d.com/Manual/skybox-shaders.html
 
