@@ -25,7 +25,7 @@ public GameObject otherGameObject;
 myResults = otherGameObject.GetComponent<ComponentType>();
 ```
 
-However if you are writing code inside a MonoBehaviour class, you can omit the preceding GameObject reference to get a component from the same GameObject your script is attached to. In this instance, you are actually calling Component.GetComponent because the script itself is a type of component, but the result is the same as if you had referenced the GameObject itself. For example:
+However if you are writing code inside a MonoBehaviour class, you can omit the preceding GameObject reference to get a component from the same GameObject your script is attached to. In this instance, you are actually calling **`Component.GetComponent`** because the script itself is a type of component, but the result is the same as if you had referenced the GameObject itself. For example:
 
 ```cs
 myResults = GetComponent<ComponentType>();
@@ -33,7 +33,7 @@ myResults = GetComponent<ComponentType>();
 
 > **GetComponent()**  should be declared in **`void start()`**
 
-This returns the component of Type type if the game object has one attached (inspecter 中的component).
+This returns the component of Type type if the game object has one attached (component in inspector).
 
 https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html
 
