@@ -281,6 +281,9 @@ The **Event Trigger** can be used to **specify functions you wish to be called**
 
 > **Note**: attaching an **Event Trigger component** to a **GameObject** (eg: **UI element in UItoolkit or UI component in uGUI**) will make that **object intercept all events**, and no event bubbling will occur from this object!
 
+
+> **Note**: In Unity's Event System, an **Event Trigger** does not inherently require a **Raycaster** to function, but whether or not you need a **raycaster depends on the type of object you're interacting with**.
+
 https://vasundhara.io/blogs/event-trigger-in-unity
 
 #### Supported Events
