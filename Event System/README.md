@@ -313,6 +313,9 @@ The events that are supported by the **Standalone Input Module** and **Touch Inp
 -   `ICancelHandler` - `OnCancel` - Called when the cancel button is pressed
 
 
+> **Note**: Some interfaces need to be implemented in the script when using those events in the event system. However, the Event Trigger component in Unity is designed to provide a user-friendly way to handle various pointer and interaction events without needing to implement interfaces like **`IPointerEnterHandler`**, **`IPointerExitHandler`**, etc., in a script. Here's why Event Trigger works without implementing these interfaces.
+
+
 ### Physics Raycaster vs Event Trigger
 #### **Physics Raycaster**
 
