@@ -314,21 +314,21 @@ The events that are supported by the **Standalone Input Module** and **Touch Inp
 
 
 ### Physics Raycaster vs Event Trigger
-1. **Physics Raycaster**
+#### **Physics Raycaster**
 
-#### **Use Case:**
+##### **Use Case:**
 
 -   Detect interactions (e.g., hover, click) with 3D objects in the scene using a raycast from the camera.
 -   Suitable for **dynamic objects** with colliders and physics-based interactions.
 
-#### **Advantages:**
+##### **Advantages:**
 
 1.  **Centralized Logic**: All interactions can be managed in a single script, making it scalable for projects with many objects.
 2.  **Dynamic Interaction**: Works well for objects that are instantiated, moved, or changed dynamically.
 3.  **Flexible Control**: Offers complete programmatic control over hover, click, and other interactions.
 4.  **Physics Integration**: Compatible with Unity's physics system, requiring colliders for interaction.
 
-#### **Disadvantages:**
+##### **Disadvantages:**
 
 1.  **Requires Scripting**: You must write custom scripts to handle interactions.
 2.  **Collider Dependency**: Each interactable object needs a collider, which can increase performance overhead if not optimized.
@@ -336,20 +336,20 @@ The events that are supported by the **Standalone Input Module** and **Touch Inp
 
 
 
-2. **Event Trigger**
+#### **Event Trigger**
 
-#### **Use Case:**
+##### **Use Case:**
 
 -   Detect pointer interactions (e.g., hover, click) using Unity's **Event System**.
 -   Ideal for static or manually configured objects where interactions are simple.
 
-#### **Advantages:**
+##### **Advantages:**
 
 1.  **Easy Setup**: Interaction logic is added via the Inspector without needing custom scripts for basic events.
 2.  **Inspector-Based Control**: Drag-and-drop setup for adding and assigning pointer events (e.g., `PointerEnter`, `PointerClick`).
 3.  **UI Integration**: Works seamlessly with Unity UI and Canvas elements.
 
-#### **Disadvantages:**
+##### **Disadvantages:**
 
 1.  **Manual Assignment**: Each object requires its own Event Trigger component and event setup, making it less scalable.
 2.  **Limited Flexibility**: Difficult to handle dynamic objects or customize interactions beyond predefined events.
