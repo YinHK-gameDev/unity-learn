@@ -87,7 +87,7 @@ When a **Raycaster** is present and enabled in the scene it will be used by the 
 If multiple Raycasters are used then they will all have casting happen against them and the results will be sorted based on distance to the elements.
 
 #### Graphic Raycaster
-The Graphic Raycaster is used to **raycast against a Canvas** (Using muse pointer). The Raycaster looks at all Graphics on the canvas and determines if any of them have been hit.
+The Graphic Raycaster is used to **raycast against a Canvas** (Using **mouse pointer**). The Raycaster looks at all Graphics on the canvas and determines if any of them have been hit.
 
 The Graphic Raycaster can be configured to ignore backfacing Graphics as well as be blocked by 2D or 3D objects that exist in front of it. A manual priority can also be applied if you want processing of this element to be forced to the front or back of the Raycasting.
 
@@ -162,7 +162,7 @@ public class UI_ColorPicker : MonoBehaviour
 
 #### Physics Raycaster
 
-The Raycaster **raycasts against 3D objects** in the scene (Using muse pointer). This allows messages to be sent to 3D physics objects that implement event interfaces.
+The Raycaster **raycasts against 3D objects** in the scene (Using **mouse pointer**). This allows messages to be sent to 3D physics objects that implement event interfaces.
 
 | **_Property:_** | **_Function:_** |
 | --- | --- |
@@ -176,7 +176,7 @@ public override void Raycast(PointerEventData eventData, List<RaycastResult> res
 ```
 
 #### Physics 2D Raycaster
-The 2D Raycaster **raycasts against 2D objects** in the scene (Using muse pointer). This allows messages to be sent to 2D physics objects that implement event interfaces. The **Camera GameObject needs to be used** and will be added to the GameObject if the **Physics 3D Raycaster is not added to the Camera GameObject**.
+The 2D Raycaster **raycasts against 2D objects** in the scene (Using **mouse pointer**). This allows messages to be sent to 2D physics objects that implement event interfaces. The **Camera GameObject needs to be used** and will be added to the GameObject if the **Physics 3D Raycaster is not added to the Camera GameObject**.
 
 | **_Property:_** | **_Function:_** |
 | --- | --- |
