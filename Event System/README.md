@@ -76,6 +76,14 @@ https://docs.unity3d.com/Packages/com.unity.inputsystem@1.4/api/UnityEngine.Inpu
 
 The **Event System** needs a method for **detecting where current input events need to be sent to**, and this is provided by the **Raycasters**. Given a screen space position they will collect all potential targets, figure out if they are under the given position, and then **return the object that is closest to the screen**. 
 
+#### When a Raycaster is Required:
+
+1.  **UI Elements**:
+    -   If your object is part of a **Canvas** (e.g., a button or panel), you need a **Graphic Raycaster** on the Canvas. This allows the Event System to detect pointer events, like clicks or hovers, on UI elements.
+2.  **3D Objects**:
+    -   If your object is a 3D GameObject in the scene (e.g., your chess pieces), you need a **Physics Raycaster** (or **Physics 2D Raycaster** for 2D physics) on the camera. This enables the Event System to detect pointer events on objects with colliders.
+
+
 There are 3 provided Raycasters that exist by default:
 
 - **Graphic Raycaster** - Used for **UI elements(uGUI)**.
@@ -85,6 +93,10 @@ There are 3 provided Raycasters that exist by default:
 When a **Raycaster** is present and enabled in the scene it will be used by the **Event System** whenever a query is issued from an Input Module.
 
 If multiple Raycasters are used then they will all have casting happen against them and the results will be sorted based on distance to the elements.
+
+
+> **Note**: For 3D objects, the GameObject must have a **Collider** (e.g., `BoxCollider`, `SphereCollider`) for the Physics Raycaster to detect it.
+
 
 #### Graphic Raycaster
 The Graphic Raycaster is used to **raycast against a Canvas**. The Raycaster looks at all Graphics on the canvas and determines if any of them have been hit.
