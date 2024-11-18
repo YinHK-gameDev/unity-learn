@@ -286,6 +286,7 @@ The **Event Trigger** can be used to **specify functions you wish to be called**
 
 https://vasundhara.io/blogs/event-trigger-in-unity
 
+
 #### Supported Events
 
 The **Event System supports a number of events**, and they can be customized further in user custom user written Input Modules.
@@ -312,7 +313,67 @@ The events that are supported by the **Standalone Input Module** and **Touch Inp
 -   `ICancelHandler` - `OnCancel` - Called when the cancel button is pressed
 
 
+### Physics Raycaster vs Event Trigger
+1. **Physics Raycaster**
 
+#### **Use Case:**
+
+-   Detect interactions (e.g., hover, click) with 3D objects in the scene using a raycast from the camera.
+-   Suitable for **dynamic objects** with colliders and physics-based interactions.
+
+#### **Advantages:**
+
+1.  **Centralized Logic**: All interactions can be managed in a single script, making it scalable for projects with many objects.
+2.  **Dynamic Interaction**: Works well for objects that are instantiated, moved, or changed dynamically.
+3.  **Flexible Control**: Offers complete programmatic control over hover, click, and other interactions.
+4.  **Physics Integration**: Compatible with Unity's physics system, requiring colliders for interaction.
+
+#### **Disadvantages:**
+
+1.  **Requires Scripting**: You must write custom scripts to handle interactions.
+2.  **Collider Dependency**: Each interactable object needs a collider, which can increase performance overhead if not optimized.
+3.  **More Complex Setup**: Requires adding a Physics Raycaster to the camera and ensuring proper scene configuration.
+
+
+
+2. **Event Trigger**
+
+#### **Use Case:**
+
+-   Detect pointer interactions (e.g., hover, click) using Unity's **Event System**.
+-   Ideal for static or manually configured objects where interactions are simple.
+
+#### **Advantages:**
+
+1.  **Easy Setup**: Interaction logic is added via the Inspector without needing custom scripts for basic events.
+2.  **Inspector-Based Control**: Drag-and-drop setup for adding and assigning pointer events (e.g., `PointerEnter`, `PointerClick`).
+3.  **UI Integration**: Works seamlessly with Unity UI and Canvas elements.
+
+#### **Disadvantages:**
+
+1.  **Manual Assignment**: Each object requires its own Event Trigger component and event setup, making it less scalable.
+2.  **Limited Flexibility**: Difficult to handle dynamic objects or customize interactions beyond predefined events.
+3.  **Less Efficient for Large Scenes**: Becomes cumbersome and error-prone with many interactable objects.
+
+| Feature | **Physics Raycaster** | **Event Trigger** |
+| --- | --- | --- |
+| **Setup** | Requires scripting and colliders | Add via Inspector, no scripting needed |
+| **Scalability** | Suitable for many objects, centralized | Cumbersome for many objects |
+| **Flexibility** | Highly flexible for dynamic objects | Limited to predefined events |
+| **Dependency** | Needs Physics Raycaster + Colliders | Needs Unity Event System |
+| **Ease of Use** | Requires coding | Simple drag-and-drop |
+| **Best Use Case** | Dynamic 3D objects (e.g., chess pieces) | Static or UI elements |
+
+#### **Recommendation**
+
+-   Use **Physics Raycaster** if:
+    
+    -   You need centralized, scalable, and dynamic handling of interactions.
+    -   You’re working with a 3D scene and are comfortable with scripting.
+-   Use **Event Trigger** if:
+    
+    -   You prefer an Inspector-based workflow and are handling simple interactions on static objects or UI elements.
+ 
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/EventSystem.html
