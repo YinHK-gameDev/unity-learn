@@ -293,6 +293,7 @@ The **Event System supports a number of events**, and they can be customized fur
 
 The events that are supported by the **Standalone Input Module** and **Touch Input Module** are provided by interface and can be implemented on a **`MonoBehaviour` by implementing the interface**. If you have a valid Event System configured the events will be called at the correct time.
 
+These event interface can be used and implement in the script and use the event supported by event system without adding event trigger component.
 
 -   `IPointerEnterHandler` - `OnPointerEnter` - Called when a pointer enters the object
 -   `IPointerExitHandler` - `OnPointerExit` - Called when a pointer exits the object
@@ -311,6 +312,7 @@ The events that are supported by the **Standalone Input Module** and **Touch Inp
 -   `IMoveHandler` - `OnMove` - Called when a move event occurs (left, right, up, down)
 -   `ISubmitHandler` - `OnSubmit` - Called when the submit button is pressed
 -   `ICancelHandler` - `OnCancel` - Called when the cancel button is pressed
+
 
 
 > **Note**: Some interfaces need to be implemented in the script when using those events in the event system. However, the Event Trigger component in Unity is designed to provide a user-friendly way to handle various pointer and interaction events without needing to implement interfaces like **`IPointerEnterHandler`**, **`IPointerExitHandler`**, etc., in a script. Here's why Event Trigger works without implementing these interfaces.
