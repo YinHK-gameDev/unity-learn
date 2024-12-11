@@ -223,6 +223,23 @@ https://www.youtube.com/@unity_japan
 
 **https://guild.gamer.com.tw/about.php?gsn=7229**
 
+### Add modules
+To add modules to your version of the Unity Editor:
+
+1.  In the Hub, go to **Installs**.
+    
+2.  Right-click on or select the gear icon to open the contextual menu.
+    
+3.  Select **Add modules** to open a window that lists all of the platform Build Support, language packs, and development tools that you can install. For modules that are already installed for that version, the **DOWNLOAD SIZE** column displays the word **Installed**.
+    
+4.  To view the memory space required to install a module, select it. The top right of the window displays the information. This indicator also displays how much space is available on the install path you have selected.
+    
+5.  Select the modules.
+    
+6.  Select **Install**.
+   
+
+https://docs.unity3d.com/hub/manual/AddModules.html
 
 ### ➡️ Project and community management tool for game dev
 **https://www.codecks.io/**
