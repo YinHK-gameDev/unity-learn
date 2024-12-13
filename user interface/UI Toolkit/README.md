@@ -349,6 +349,40 @@ Styling is where UI Toolkit exhibits its full power. Adding Style to visual elem
 
 You can **add Style selectors** through the **UI Builder Inspector StyleSheet panel** and then edit them **using code or UI Builder**.
 
+
+### Preview a UI Toolkit UI
+
+#### Use the UI Builder
+The UI Builder tool in Unity allows you to visually edit and preview your UXML and USS files.
+
+1. Go to **Window > UI Toolkit > UI Builder**.
+2. In the UI Builder window, click **File > Open** and select your **UXML** file
+3. The UI Builder will show a live preview of your UI. You can drag and drop elements, modify styles, and see changes immediately.
+4. Use the **Preview Mode** in UI Builder to see how your popup looks.
+
+#### Preview UI in the Scene View
+
+If you want to see how the UI looks in your Unity **Scene View**:
+
+1.  **Ensure `UIDocument` Is Set Up:**
+    -   Attach a **`UIDocument` component** to a GameObject in your scene.
+    -   Assign the **`.uxml`** file to the **`Source Asset`** field in the **`UIDocument`**.
+2.  **Enter Play Mode:**
+    -   Enter Play Mode in Unity.
+3.  **Debug in the Scene View:**
+    -   Ensure your **Panel Settings** asset is properly configured for the desired screen scaling and resolution.
+
+#### Advanced Editor Preview (Optional)
+Unity doesn’t natively allow live previews of `UIDocument` UI outside Play Mode. However, you can simulate it:
+
+1.  **Custom Preview Script:**
+    
+    -   Write a custom Editor script to instantiate the `UIDocument` in the Editor and display it.
+2.  **Preview via Prefab:**
+    
+    -   Save your `UIDocument` setup as a prefab.
+    -   Use the prefab as a visual reference in the Scene View.
+
 ### ref
 https://learn.unity.com/tutorial/ui-toolkit-first-steps
 
