@@ -48,7 +48,7 @@ VisualElement root = rootVisualElement;
 ```
 
 
-> **Note**:  Inherite `EditorWindow` class for building UI in editor and use it to preview UI. If you want to build run time UI, use `Monobehavior` class instead
+> **Note**:  Inherite **`EditorWindow`** class for building UI in editor and use it to **preview UI**. If you want to build run time UI, use **`Monobehavior`** class instead
 
 
 ### Create a VisualElement
