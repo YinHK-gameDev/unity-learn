@@ -158,7 +158,7 @@ Consider the following when you use UQuery:
 ### ref 
 https://docs.unity3d.com/Manual/UIE-UQuery.html \
 **`UQueryBuilder`**: \
-https://docs.unity3d.com/ScriptReference/UIElements.UQueryBuilder_1.html \
+https://docs.unity3d.com/ScriptReference/UIElements.UQueryBuilder_1.html 
 
 
 
