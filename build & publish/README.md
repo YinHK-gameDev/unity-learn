@@ -69,11 +69,11 @@ With the **smallest number**, the **scene will be defult display** during the ga
 Excluding certain assets or objects from a Unity build can be done in several ways depending on your needs. Here are the methods to achieve it:
 
 ####  Mark Assets as **`Editor Only`**
-For Objects in Scenes: \
-    -   Add the **`EditorOnly`** **tag** to GameObjects you don't want included in the build.
-        -   Select the GameObject in the hierarchy.
-        -   Assign it the **EditorOnly** tag from the **Tag** dropdown.
-    -   Unity automatically excludes GameObjects with this tag during the build process.
+For Objects in Scenes: 
+- Add the **`EditorOnly`** **tag** to GameObjects you don't want included in the build.
+  - Select the GameObject in the hierarchy.
+  - Assign it the **EditorOnly** tag from the **Tag** dropdown.
+- Unity automatically excludes GameObjects with this tag during the build process.
  
 #### Use Asset Bundles
 
