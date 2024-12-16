@@ -64,6 +64,86 @@ With the **smallest number**, the **scene will be defult display** during the ga
 -   Find the scene you want to **move and drag and drop it to the desired index**.
 
 
+### Excluding certain assets or objects from a Unity build
+
+Excluding certain assets or objects from a Unity build can be done in several ways depending on your needs. Here are the methods to achieve it:
+
+####  Mark Assets as **`Editor Only`**
+For Objects in Scenes: \
+    -   Add the **`EditorOnly`** **tag** to GameObjects you don't want included in the build.
+        -   Select the GameObject in the hierarchy.
+        -   Assign it the **EditorOnly** tag from the **Tag** dropdown.
+    -   Unity automatically excludes GameObjects with this tag during the build process.
+ 
+#### Use Asset Bundles
+
+-   Asset bundles allow you to package and exclude specific assets from the initial build.
+    -   Create and assign assets to an Asset Bundle using the **Asset Bundle Browser**.
+    -   Build the Asset Bundles separately.
+    -   Load them at runtime as needed, excluding them from the main build.
+
+#### Use Addressable Assets
+
+-   Unity's Addressable Asset System manages assets dynamically.
+    -   Mark assets as Addressable in the **Inspector**.
+    -   Addressable assets are not included in the build by default.
+    -   They can be downloaded or loaded from a remote location or a local cache as needed.
+
+#### Conditional Compilation
+
+-   Use `#if UNITY_EDITOR` preprocessor directives to exclude code or references to specific assets during a build:
+
+    ```cs
+      #if UNITY_EDITOR
+          Debug.Log("This code runs in the Editor only.");
+      #endif
+    ```
+    
+#### Exclude Resources Folder
+
+-   Assets in the **Resources** folder are always included in the build.
+    -   To exclude them:
+        -   Move unnecessary assets out of the `Resources` folder into another directory.
+        -   Dynamically load assets using `AssetBundles` or `Addressables`.
+     
+#### Use Build Exclusion Tools
+
+-   Third-party tools like **Build Report Inspector** can show you what assets are included in your build.
+-   You can manually remove unwanted assets based on the report.
+
+
+#### Script-Driven Asset Exclusion
+
+-   Create a custom build pipeline using Unity's `BuildPipeline.BuildPlayer`:
+    -   Use scripts to programmatically exclude assets from a build:
+        ```cs
+          AssetDatabase.DeleteAsset("Assets/Path/To/UnwantedAsset.asset");
+        ```
+
+#### Disable Unnecessary Scenes
+-   In **Build Settings**, only include the scenes you need in the build:
+    -   Go to **File > Build Settings**.
+    -   Uncheck scenes that you don’t want in the build.
+ 
+#### Use Asset Stripping
+
+-   Unity can strip unused assets during a build:
+    -   Enable **Code Stripping** in **Project Settings > Player > Other Settings > Managed Stripping Level**.
+    -   Use **Addressables** or code references to prevent accidental exclusion of needed assets.
+
+#### Manually Remove Unwanted Assets
+
+-   For assets that may still end up in the build (e.g., materials, textures, or audio files):
+    -   Manually verify references using the **Editor Log**:
+        -   After building, open the Editor Log to find a list of included assets.
+        -   Remove unwanted assets or replace them with placeholders.
+
+#### Build-Specific Assets (Using ScriptableObjects)
+
+-   Create a **ScriptableObject** to manage assets that should be included in different builds:
+    -   Define build profiles and load the appropriate assets dynamically.
+ 
+
 
 ### Platform list
 Each build **must have a target platform**. The Platform pane lists all the platforms you can build for.
