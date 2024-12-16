@@ -47,4 +47,8 @@ public class ExampleClass : MonoBehaviour
 
 
 ### ref 
-https://docs.unity3d.com/ScriptReference/Resources.html
+https://docs.unity3d.com/ScriptReference/Resources.html \
+https://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html
+
+
+
