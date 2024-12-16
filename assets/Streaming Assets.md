@@ -38,8 +38,16 @@ The location returned by `Application.streamingAssetsPath` varies per platform:
 3.  **Read-Only**  
     Files in `StreamingAssets` are read-only. If you need to modify them, you must copy them to another location, such as `Application.persistentDataPath`.
 
+### Advantages of Using StreamingAssets
+- Preserves File Integrity: Unity does not modify or compress files in this folder.
+- Dynamic Access: You can load files dynamically without hardcoding their paths.
+- Cross-Platform: Unity handles platform-specific storage locations for you.
 
-    
+#### When to Use `StreamingAssets
+-   For external resources that should not be bundled or altered by Unity (eg: **executables**, **audio/video files**, **config files**).
+-   For files that need to be dynamically loaded and are too large to include in memory upfront.
+
+  
 ### Accessing streaming assets
 On **Android** and the **Web platform**, it’s **not possible to access the streaming asset files directly** via **file system APIs** 
 and **streamingAssets path** because these platforms **return a URL**. Use the **`UnityWebRequest` class** to **access the content** instead.
