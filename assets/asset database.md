@@ -23,7 +23,7 @@ Artifacts are the results of the import process. The Artifact database contains 
 - Artifact Database: `Library\ArtifactDB`
 
 
-> **Note**: `AssetDatabase` class cannot be used at runtime. The `AssetDatabase` is part of Unity’s **Editor-only API** within the `UnityEditor` namespace, meaning it is designed specifically for working within the Unity Editor and is not available or functional in a runtime build (such as on a standalone, mobile, or web platform).
+> **Note**: `AssetDatabase` class **cannot be used at runtime**! The `AssetDatabase` is part of Unity’s **Editor-only API** within the `UnityEditor` namespace, meaning it is designed specifically for working within the Unity Editor and is not available or functional in a runtime build (such as on a standalone, mobile, or web platform).
 
 > **Note**: For **Build Compatibility**: Remember that AssetDatabase **cannot be used in any build** (like a standalone or mobile app), as it’s intended for **Editor-only** operations.
 
