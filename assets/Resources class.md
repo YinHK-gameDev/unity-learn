@@ -45,6 +45,22 @@ public class ExampleClass : MonoBehaviour
 ```
 
 
+### `Resources.UnloadAsset`
+```cs
+public static void UnloadAsset(Object assetToUnload);
+```
+The referenced asset (assetToUnload) will be unloaded from memory. The object will become invalid and can't be loaded back from disk. Any subsequently loaded Scenes or assets that reference the asset on disk will cause a new instance of the object to be loaded from disk. This new instance will not be connected to the previously unloaded object.
+
+### `Resources.UnloadUnusedAssets`
+
+```cs
+public static AsyncOperation UnloadUnusedAssets();
+```
+
+Unloads assets that are not used.
+
+An asset is deemed to be unused if it isn't reached after walking the whole game object hierarchy, including script components. Static variables are also examined.
+
 
 ### ref 
 https://docs.unity3d.com/ScriptReference/Resources.html \
