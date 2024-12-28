@@ -138,6 +138,25 @@ void HandleLog(string logString, string stackTrace, LogType type) {
 
 ### `throw Exception` vs `Debug.LogError`
 
+#### **Purpose**
+
+**`throw Exception`:**
+
+-   **Primary Use:** Signals that something went wrong in the program and halts execution unless the exception is caught.
+-   **Behavior:**
+    -   Generates an exception object, propagates it up the call stack.
+    -   If uncaught, it will terminate the program or stop the Unity play mode.
+    -   Allows you to handle errors programmatically with `try-catch` blocks.
+
+**`Debug.LogError`:**
+
+-   **Primary Use:** Outputs error messages to the Unity Console for debugging purposes.
+-   **Behavior:**
+    -   Does not halt program execution.
+    -   Only logs the error in the console for developer awareness.
+    -   Can optionally include a reference to a GameObject, making it easier to trace errors.
+
+
 **Summary**: 
 
 -   **`throw Exception`**: For handling critical, unrecoverable errors where program execution **must halt**.
