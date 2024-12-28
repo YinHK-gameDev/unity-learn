@@ -136,6 +136,67 @@ void HandleLog(string logString, string stackTrace, LogType type) {
 
 ```
 
+### `throw Exception` vs `Debug.LogError`
+
+**Summary**: 
+
+-   **`throw Exception`**: For handling critical, unrecoverable errors where program execution **must halt**.
+-   **`Debug.LogError`**: For diagnosing issues without breaking program execution, ideal for debugging during development.
+-   For debugging purposes, prefer `Debug.LogError`. For actual error handling in robust programs, use `throw Exception`.
+
+
+**Key Differences**
+
+| Feature | `throw Exception` | `Debug.LogError` |
+| --- | --- | --- |
+| **Purpose** | Signal and handle critical errors | Log errors for debugging only |
+| **Execution Impact** | Halts program unless caught | Does not halt program |
+| **Error Handling** | Supports `try-catch` for recovery | No built-in recovery mechanism |
+| **Visibility** | Visible in the Unity Console (if unhandled) | Visible in the Unity Console |
+| **Stack Trace** | Includes detailed stack trace automatically | Provides less detailed context |
+| **Use in Production** | Intended for critical errors | Useful during development |
+
+#### **For Debugging:**
+
+-   Use `Debug.LogError` if you want to **log a problem but not interrupt program execution**. This is especially helpful during development to investigate issues without breaking the flow of the game.
+    
+    Example:
+    
+    ```cs
+        if (playerHealth < 0)
+        {
+            Debug.LogError("Player health is below zero!");
+        }
+    ```
+
+#### **For Error Handling:**
+
+-   Use `throw Exception` if the error is **critical** and requires **immediate attention or corrective action**.
+    
+    Example:
+    
+    ```cs
+        if (playerData == null)
+        {
+            throw new NullReferenceException("Player data is missing!");
+        }
+    ```
+
+#### **Combination:**
+
+Sometimes, you might combine the two approaches:
+
+-   Use `Debug.LogError` to log non-critical issues or warnings.
+-   Use `throw Exception` for issues that require halting execution.
+
+#### **General Advice**
+
+-   **During Development:**
+    -   Use `Debug.LogError` for identifying issues without disrupting testing.
+    -   Use `Debug.LogWarning` for less severe problems.
+-   **In Production:**
+    -   Minimize or remove `Debug.LogError` calls to avoid cluttering logs.
+    -   Use exceptions (`throw`) sparingly for recoverable issues or critical failures that require program intervention.
 
 ### ref 
 https://docs.unity3d.com/ScriptReference/Debug.html \
