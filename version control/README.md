@@ -67,7 +67,7 @@ https://unity.com/products/unity-cloud
 
 #### **Recommendations**
 
--   For **solo developers or small teams**: Start with **Unity Version Control** or **Unity Collaborate**.
+-   For **solo developers or small teams**: Start with **Unity Version Control** or **Unity Cloud**.
 -   For **experienced developers**: Use **GitHub** with **Git LFS** for flexibility and familiarity.
 -   For **professional teams**: Consider **Unity Version Control** or **Perforce** for scalability and performance.
 
