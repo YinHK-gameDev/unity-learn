@@ -4,7 +4,7 @@
 There are several options to save and manage your Unity projects with version control. These include using cloud-based solutions, local repositories, or specialized tools. Below are some popular solutions for saving and applying version control to Unity projects:
 
 
-#### Unity Version Control **
+#### Unity Version Control 
 
 -   **Description:** Unity's built-in version control system, designed specifically for game development. It handles large files and binary assets well, making it ideal for Unity projects.
 -   **Features:**
@@ -12,6 +12,9 @@ There are several options to save and manage your Unity projects with version co
     -   Visual merging tools for scene and prefab files.
     -   Free tier for small teams (up to 3 users).
 -   **Best For:** Unity teams looking for deep integration and scalability.
+
+https://unity.com/how-to/redeem/version-control \
+https://unity.com/solutions/version-control
 
 #### **GitHub (or Other Git Services like GitLab, Bitbucket, etc.)**
 
@@ -27,8 +30,10 @@ There are several options to save and manage your Unity projects with version co
 -   **Best For:** Developers familiar with Git and working with smaller Unity projects.
 
 #### Unity Cloud
+Flexible and extensible tools streamline every aspect of the multiplayer game development journey, from concept and prototyping through launch and live operations.
 
 
+https://unity.com/products/unity-cloud
 #### **External Cloud Storage Services**
 
 -   **Description:** Use platforms like **Google Drive**, **Dropbox**, or **OneDrive** to save and share your Unity projects.
