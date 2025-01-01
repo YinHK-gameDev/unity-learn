@@ -78,5 +78,6 @@ a free Git and Mercurial client developed by Atlassian, providing a graphical us
 
 
 ### ref
-https://www.youtube.com/watch?v=9IvXupmgl88
+https://www.youtube.com/watch?v=9IvXupmgl88 \
+https://unity.com/resources/best-practices-version-control-unity-6
 
