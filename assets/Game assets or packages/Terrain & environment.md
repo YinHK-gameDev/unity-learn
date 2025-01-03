@@ -6,3 +6,6 @@ https://assetstore.unity.com/packages/tools/terrain/world-creator-professional-5
 
 Mario Style Environment - Super Capsule Boy \
 https://assetstore.unity.com/packages/3d/environments/landscapes/mario-style-environment-super-capsule-boy-256771?srsltid=AfmBOooeGARwotfqmSbxmpIKprGcwBTnfnCdD7_ngcVW4Ngnq5XLaGgX
+
+Easy open world \
+https://assetstore.unity.com/packages/tools/terrain/easy-open-world-192659
