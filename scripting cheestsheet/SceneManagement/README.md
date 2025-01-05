@@ -309,7 +309,7 @@ By default, when a Scene is created or loaded, any 2D or 3D physics component ad
 
 
 ### ref
-https://docs.unity3d.com/2018.4/Documentation/ScriptReference/SceneManagement.Scene.html
+https://docs.unity3d.com/6000.1/Documentation/ScriptReference/SceneManagement.Scene.html
 
-https://docs.unity3d.com/2018.4/Documentation/ScriptReference/SceneManagement.SceneManager.html
+https://docs.unity3d.com/6000.1/Documentation/ScriptReference/SceneManagement.SceneManager.html
 
