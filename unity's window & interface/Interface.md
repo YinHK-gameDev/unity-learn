@@ -24,4 +24,6 @@
 When the finger icon is disabled (grayed out), the GameObject cannot receive any input, and will be inactive to interaction (e.g., buttons won't be clickable).
 This is useful for disabling UI elements or GameObjects that you don't want the player to interact with during certain parts of the game (like a pause menu).
 
-> Tis only affect the **Scene view** and **not affect runtime**. 
+> **Summary:** 
+> -   The **eye icon** only affects visibility in the **Scene view** and won't help with hiding GameObjects during gameplay.
+> -   The **finger icon** can be used to prevent interaction with UI elements or GameObjects, but using **`SetActive(false)`** and **`SetActive(true)`** through script is the **most effective approach**.
