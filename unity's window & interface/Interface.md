@@ -24,5 +24,4 @@
 When the finger icon is disabled (grayed out), the GameObject cannot receive any input, and will be inactive to interaction (e.g., buttons won't be clickable).
 This is useful for disabling UI elements or GameObjects that you don't want the player to interact with during certain parts of the game (like a pause menu).
 
-
-
+> Tis only affect the **Scene view** and **not affect runtime**. 
