@@ -281,7 +281,7 @@ AudioListener.volume = 1.0F;
 > `"There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene."`
 > Solution: disable the Audio Listener component in cameras from inactive or secondary scenes.
 
-Eg: \
+Eg: 
 
 ```cs
 AudioListener[] listeners = FindObjectsOfType<AudioListener>();
