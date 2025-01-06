@@ -13,6 +13,8 @@ If the Sources are 3D, the Listener will emulate position, velocity and orientat
 > You access the Project-wide Audio settings using the Audio window (main menu: Edit > Project Settings, then select the Audio category).
 
 
+Audio Listener in one scene can capture audio from another scene if both scenes are active and their audio sources are enabled. Unity does not isolate audio by scenes; it works globally, meaning any active Audio Listener will capture sound from all active Audio Sources across all loaded scenes.
+
 ### ref 
 https://docs.unity3d.com/Manual/class-AudioListener.html
 
