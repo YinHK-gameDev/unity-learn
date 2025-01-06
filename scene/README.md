@@ -14,7 +14,8 @@ The New Scene dialog opens when you create a new scene from the File menu: (**`F
 ### Active scene 
 
 The **active Scene** is the Scene which will be used as the **target for new GameObjects instantiated** by scripts and from what Scene the **lighting settings are used**. When you add a Scene additively (see **`LoadSceneMode.Additive`**), the **first Scene is still kept as the active Scene**. \
-There **must** always be **one Scene** marked as the **active Scene**.
+
+> **Note**: There **must** always be **one Scene** marked as the **active Scene**.
 
 ### Creating a new scene from a C# script
 
