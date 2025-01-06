@@ -16,6 +16,9 @@ Run-time **data structure** for **`*.unity`** file.
 <table class="list"><tbody><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene.GetRootGameObjects.html">GetRootGameObjects</a></td><td class="desc">Returns all the root game objects in the Scene.</td></tr><tr><td class="lbl"><a href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.htmlSceneManagement.Scene.IsValid.html">IsValid</a></td><td class="desc">Whether this is a valid Scene. A Scene may be invalid if, for example, you tried to open a Scene that does not exist. In this case, the Scene returned from EditorSceneManager.OpenScene would return False for IsValid.</td></tr></tbody></table>
 
 
+> **Note**: The **active Scene** is the Scene which will be used as the **target for new GameObjects instantiated** by scripts and from what Scene the **lighting settings are used**. When you add a Scene additively (see **`LoadSceneMode.Additive`**), the **first Scene is still kept as the active Scene**. \
+> There **must** always be **one Scene** marked as the **active Scene**.
+
 ### SceneManager
 Use this class for Scene management at run-time.
 Using SceneManagement to **transition scene** in the game.
