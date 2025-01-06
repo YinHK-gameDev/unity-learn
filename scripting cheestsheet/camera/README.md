@@ -1,9 +1,9 @@
 ## Camera
 
 #### `Camera.main`
-The first enabled Camera component that is tagged **"MainCamera"** (Read Only).
+The **first enabled Camera component** that is tagged **"MainCamera"** (Read Only).
 
-If there is no enabled Camera component with the "MainCamera" tag, this property is null.
+If there is no enabled Camera component with the **"MainCamera"** tag, this property is null.
 
 Internally, Unity caches all GameObjects with the "MainCamera" tag. When you access this property, Unity returns the first valid result from its cache. Accessing this property has a small CPU overhead, comparable to calling GameObject.GetComponent. Where CPU performance is important, consider caching this property.
 
@@ -62,6 +62,17 @@ public class Example : MonoBehaviour
     }
 }
 ```
+
+> **Note**: If multiple scenes have cameras tagged as **`MainCamera`**: 
+> - By default, **all active cameras** will render their views simultaneously.
+> - If you call **`Camera.main`**, Unity will **only return the first enabled camera** with the **`MainCamera`** tag in the **active scene**.
+
+#### For muliple scene there are more than one main camera:
+
+To Control which camera is active:
+- Disable cameras in inactive scenes, or
+- Use `Camera.enabled = false` on cameras you don't want rendering.
+
 
 | Static Properties | Descriptions |
 | --- | --- |
