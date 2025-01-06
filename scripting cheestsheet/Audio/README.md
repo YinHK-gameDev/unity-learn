@@ -276,13 +276,24 @@ AudioListener.Pause = False;
 public static float volume;
 AudioListener.volume = 1.0F;
 ```
+
+> **Note**: If there are multiple scenes, it may contain more than one Audio listener. But Unity only allows **one active Audio Listener** at a time. If more than one is enabled, Unity will log a warning:  \
+> `"There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene."`
+> Solution: disable the Audio Listener component in cameras from inactive or secondary scenes.
+
+Eg: \
+
+```cs
+AudioListener[] listeners = FindObjectsOfType<AudioListener>();
+for (int i = 1; i < listeners.Length; i++) // Keep only one active
+{
+    listeners[i].enabled = false;
+}
+
+```
+
 https://docs.unity3d.com/ScriptReference/AudioListener.html
 
-
-
-
-
-### 
 
 
 
