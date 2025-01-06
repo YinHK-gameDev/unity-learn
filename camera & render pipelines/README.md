@@ -2,6 +2,8 @@
 
 Cameras are the devices that **capture and display the world** to the player, the scene capture in the camera will display in the Game.
 
+Each scene should have one **Main Camera** only. **Main Camera** tagged as **"MainCamera"** in each scene always have a Audio Listener.
+
 ### View Frustum
 The word frustum refers to a solid shape that looks like a pyramid with the top cut off parallel to the base. This is the shape of the region that can be seen and rendered by a perspective camera.
 
