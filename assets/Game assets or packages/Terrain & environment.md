@@ -4,6 +4,9 @@
 **World Creator** \
 https://assetstore.unity.com/packages/tools/terrain/world-creator-professional-55073?aid=1101l4bPZ&utm_campaign=unity_affiliate&utm_medium=affiliate&utm_source=partnerize-linkmaker
 
+**World Machine** \
+https://assetstore.unity.com/packages/templates/tutorials/introduction-to-world-machine-102700?srsltid=AfmBOooPkYkQHY-P7Pw_GB-9sot3FL3xDmR4ApNF62vUz_FfBMYBuMPF
+
 Mapmagic2 \
 https://assetstore.unity.com/packages/tools/terrain/mapmagic-2-165180?srsltid=AfmBOopyndqoRkC20NlKy7Vp6ZG7BLFp0NFINWg-sl_RVZP-XNIkcSRV
 
