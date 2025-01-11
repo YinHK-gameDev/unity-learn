@@ -3,7 +3,7 @@
 **Gaia Pro** \
 https://assetstore.unity.com/packages/tools/terrain/gaia-pro-2023-terrain-scene-generator-263149?srsltid=AfmBOop3hgRL8CaQJ2BASb0mqmnyisEEKoyfjnHJFAtXyKbztgbJjF0j
 
-**Mesh Terrain Editor Free** \
+**Mesh Terrain Editor (Free)** \
 https://assetstore.unity.com/packages/tools/terrain/mesh-terrain-editor-free-67758?srsltid=AfmBOoq7cEBYkk80gOJq6-huv-KEkXN3-d6idmwYdC_wkvX08KrFBY5Z
 
 **Terrain To Mesh** \
