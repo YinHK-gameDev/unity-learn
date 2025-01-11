@@ -25,13 +25,13 @@ https://assetstore.unity.com/packages/tools/terrain/world-creator-professional-5
 **World Machine** \
 https://assetstore.unity.com/packages/templates/tutorials/introduction-to-world-machine-102700?srsltid=AfmBOooPkYkQHY-P7Pw_GB-9sot3FL3xDmR4ApNF62vUz_FfBMYBuMPF
 
-Mapmagic2 \
+**Mapmagic2** \
 https://assetstore.unity.com/packages/tools/terrain/mapmagic-2-165180?srsltid=AfmBOopyndqoRkC20NlKy7Vp6ZG7BLFp0NFINWg-sl_RVZP-XNIkcSRV
 
-Prefab Brush \
+**Prefab Brush** \
 https://assetstore.unity.com/packages/tools/utilities/prefab-brush-44846?srsltid=AfmBOoptNCcpstYSKfoLW1B0FPyWP6pMHVFEu6OKNvD9U8qRY5_YMb3W
 
-Mario Style Environment - Super Capsule Boy \
+**Mario Style Environment - Super Capsule Boy** \
 https://assetstore.unity.com/packages/3d/environments/landscapes/mario-style-environment-super-capsule-boy-256771?srsltid=AfmBOooeGARwotfqmSbxmpIKprGcwBTnfnCdD7_ngcVW4Ngnq5XLaGgX
 
 
