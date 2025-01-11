@@ -18,6 +18,10 @@ https://assetstore.unity.com/packages/tools/utilities/prefab-brush-44846?srsltid
 Mario Style Environment - Super Capsule Boy \
 https://assetstore.unity.com/packages/3d/environments/landscapes/mario-style-environment-super-capsule-boy-256771?srsltid=AfmBOooeGARwotfqmSbxmpIKprGcwBTnfnCdD7_ngcVW4Ngnq5XLaGgX
 
+
+#### large maps streaming
+
+
 Easy open world \
 https://assetstore.unity.com/packages/tools/terrain/easy-open-world-192659 \
 https://www.i3dtt.com/18051.html
