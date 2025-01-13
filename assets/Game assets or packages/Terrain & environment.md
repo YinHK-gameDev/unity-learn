@@ -34,6 +34,16 @@ https://assetstore.unity.com/packages/tools/utilities/prefab-brush-44846?srsltid
 **Mario Style Environment - Super Capsule Boy** \
 https://assetstore.unity.com/packages/3d/environments/landscapes/mario-style-environment-super-capsule-boy-256771?srsltid=AfmBOooeGARwotfqmSbxmpIKprGcwBTnfnCdD7_ngcVW4Ngnq5XLaGgX
 
+### **Comparison Table**
+
+| **Tool** | **Brush Sculpting** | **Texture Painting** | **Procedural Support** | **Cost** | **Ideal For** |
+| --- | --- | --- | --- | --- | --- |
+| Unity Built-In | ✅ Yes | ✅ Yes | ❌ No | Free | Beginners, small projects |
+| Gaia Pro 2023 | ✅ Yes | ✅ Yes | ✅ Yes | Paid (~$100+) | Large terrains, hybrid workflows |
+| TerrainComposer 2 | ✅ Yes | ✅ Yes | ✅ Yes | Paid (~$45) | Multi-layered terrains |
+| World Creator 2 | ✅ Yes | ✅ Yes | ✅ Yes | Paid (~$120+) | Artist-focused real-time editing |
+| MicroSplat | ❌ No | ✅ Yes | ❌ No | Free/Modules | Texture optimization |
+| Polybrush | ✅ Yes | ✅ Yes | ❌ No | Free | Low-poly meshes and terrains |
 
 #### large maps streaming
 
