@@ -2,7 +2,7 @@
 
 To set displacement in Unity Shader Graph, you can manipulate vertices in the mesh using Height Maps or a mathematical function. The approach depends on your rendering pipeline (HDRP or URP):
 
-= In **HDRP**, displacement can modify vertices for **actual geometry displacement** using **tessellation**.
+- In **HDRP**, displacement can modify vertices for **actual geometry displacement** using **tessellation**.
 - In **URP**, only simulated displacement (e.g., **parallax mapping**) is available.
 
 ### **Displacement in HDRP (with Tessellation)**
