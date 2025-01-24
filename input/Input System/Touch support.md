@@ -48,7 +48,26 @@ In Unity's **Input System**, the terms **Touch #0**, **Touch #1**, ..., **Touch 
     
     -   If a finger (e.g., **Touch #0**) is lifted off the screen, its index becomes available for reuse.
     -   If another finger touches the screen, it will take the lowest available index.
-  
+
+**Multi touch Purpose**:
+
+-   Used for multi-touch scenarios, such as pinch-to-zoom, two-finger rotation, or multi-finger gestures.
+-   Each touch index provides its own independent data (e.g., position, delta, phase).
+
+
+**Primary Touch**
+
+1.  **Definition**:
+    
+    -   The **primary touch** is a special concept used in Unity's **Input System** to represent the most "important" touch at any given time.
+    -   It generally corresponds to **Touch #0**, the first touch detected on the screen.
+2.  **Purpose**:
+    
+    -   The **primary touch** simplifies handling single-touch interactions.
+    -   It is a convenient abstraction for use cases where only one touch input is needed (e.g., tapping, dragging).
+
+
+
 
 -   **Single Touch**: If one finger is used, only **Touch #0** will be active.
 -   **Two-Finger Gestures (e.g., Pinch-to-Zoom)**: Both **Touch #0** and **Touch #1** are tracked simultaneously.
