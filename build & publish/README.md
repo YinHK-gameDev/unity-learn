@@ -252,6 +252,8 @@ https://www.unrealengine.com/en-US/blog/self-service-publishing-now-available-fo
 https://dev.epicgames.com/docs/epic-games-store/publishing-tools \
 https://www.youtube.com/watch?v=dV8L5pto39k
 
+Publish a game on iOS without a mac \
+https://www.reddit.com/r/Unity3D/comments/17ii4dq/publish_a_game_on_ios_without_a_mac/?rdt=51436
 
 
 
