@@ -27,6 +27,34 @@ Touch support is divided into:
 | `tap` | `ButtonControl` | A button Control that reports whether the OS recognizes a tap gesture from this touch. |
 | `tapCount` | `IntegerControl` | Reports the number of consecutive `tap` reports from the OS. You can use this to detect double- and multi-tap gestures. |
 
+
+### TouchScreen bindings
+
+In Unity's **Input System**, the terms **Touch #0**, **Touch #1**, ..., **Touch #9** refer to individual touch inputs detected on a **touchscreen** device. Each "Touch #" represents a unique touch point, with **Touch #0** being the first detected touch, **Touch #1** being the second detected touch, and so on. These numbers are indexed in the order that the touches are recognized.
+
+1.  **Touch #0**:
+    
+    -   The first finger to touch the screen.
+    -   For example, if you place one finger on the screen, it is tracked as **Touch #0**.
+2.  **Touch #1**:
+    
+    -   The second finger to touch the screen.
+    -   If you place another finger while **Touch #0** is still active, it will be tracked as **Touch #1**.
+3.  **Touch #2** to **Touch #9**:
+    
+    -   Subsequent touches are tracked in the order they occur.
+    -   Modern mobile devices support up to 10 simultaneous touches (though some devices may support fewer).
+4.  **Touch Released**:
+    
+    -   If a finger (e.g., **Touch #0**) is lifted off the screen, its index becomes available for reuse.
+    -   If another finger touches the screen, it will take the lowest available index.
+  
+
+-   **Single Touch**: If one finger is used, only **Touch #0** will be active.
+-   **Two-Finger Gestures (e.g., Pinch-to-Zoom)**: Both **Touch #0** and **Touch #1** are tracked simultaneously.
+-   **Multi-Touch Games**: Games that require multi-finger input (e.g., piano apps) may use **Touch #0** through **Touch #9**, depending on the number of simultaneous touches.
+
+
 ### Touch Simulation
 
 Touch input can be simulated from **input** on other kinds of **Pointer devices** 
