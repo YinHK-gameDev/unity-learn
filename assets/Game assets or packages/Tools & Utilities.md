@@ -30,6 +30,8 @@ https://assetstore.unity.com/packages/tools/animation/lattice-modifier-for-unity
 https://80.lv/articles/lattice-modifier-for-unity-released/ \
 https://www.youtube.com/watch?v=IA5zqFxn-as
 
+#### COZY: Stylized Weather 3
+https://assetstore.unity.com/packages/tools/utilities/cozy-stylized-weather-3-271742
 
 ### ref 
 https://assetstore.unity.com/tools/utilities
