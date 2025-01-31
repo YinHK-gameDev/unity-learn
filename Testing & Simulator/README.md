@@ -12,5 +12,10 @@ https://docs.unity3d.com/Manual/UnityRemote5.html \
 https://play.google.com/store/apps/details?id=com.unity3d.mobileremote
 
 ### Testing in android emulator(Bluestack)
+
+Open Bluestack Application, then open Setting Page by click the **Gear** button.
+
+Go to Advanced Tab, enable Android Debug Bridge (ADB), and copy the IP Address
+
 https://blog.januarelsan.com/how-to-connect-bluestack-and-unity-editor-for-testing-786d588b3258
 
