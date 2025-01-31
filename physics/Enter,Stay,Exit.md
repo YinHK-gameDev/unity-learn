@@ -78,6 +78,13 @@ If one of collider is trigger, both collider will **pass through each other** wh
 
 ![](./img/trigger&collider.png)
 
+### gameObject vs collision.gameObject
+When a collision occurs, `gameObject` and `collision.gameObject` both refer to the GameObject involved in the collision, but they have different contexts depending on where they're used:
+
+-   **`gameObject`**: Refers to the **GameObject** that the script is attached to (the object from which the collision is happening).
+-   **`collision.gameObject`**: Refers to the **GameObject** that the script is **colliding with** (the other object involved in the collision).
+
+
 ### Temporarily ignore collision?
 
 https://gamedev.stackexchange.com/questions/164544/temporarily-ignore-collision
