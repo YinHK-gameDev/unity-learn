@@ -7,7 +7,7 @@ The Rigidbody also has a scripting API that lets you apply forces to the object 
 
 ### Comon use 
 
-#### `Rigidbody.velocity`
+#### `Rigidbody.linearVelocity`
 The velocity vector of the rigidbody. It represents the rate of change of Rigidbody position.
 
 #### `Rigidbody.position`
