@@ -26,5 +26,13 @@ Use the Screen class to get a list of supported screen resolutions, switch the c
 | **width**                               | The current width of the screen window in pixels (Read Only).               |
 
 
+| Static method                    | Description                           
+|----------------------------------|--------------------------------------------
+| **GetDisplayLayout**             | Retrieves layout information about connected displays such as names, resolutions, and refresh rates. |
+| **MoveMainWindowTo**             | Moves the main window to the specified position relative to the top left corner of the specified display. Position value is represented in pixels. Moving the window is an asynchronous operation, which can take multiple frames. |
+| **SetMSAASamples**               | Sets the given number of MSAA samples for the screen buffer.                |
+| **SetResolution**                | Switches the screen resolution.                                             |
+
+
 ### ref
 https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Screen.html
