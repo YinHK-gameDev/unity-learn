@@ -217,15 +217,9 @@ For projects that require a balance between performance and quality, Built-in ma
 
 | **Rendering Pipeline** | **Best For** | **Pros ✅** | **Cons ❌** |
 | --- | --- | --- | --- |
-| **Built-in RP** | **Simple 2D/3D Games** | ✔ Compatible with old devices  
-✔ Easy to use | ❌ No Shader Graph  
-❌ Not optimized for mobile |
-| **URP (Universal RP)** 🏆 | **Best for Mobile Games** | ✔ Optimized for performance  
-✔ Supports Shader Graph  
-✔ Better lighting than Built-in RP | ❌ Some features require manual setup |
-| **HDRP (High Definition RP)** | **High-end PC/Console** | ✔ Best graphics quality  
-✔ Advanced lighting & shadows | ❌ Not suitable for mobile  
-❌ Heavy performance cost |
+| **Built-in RP** | **Simple 2D/3D Games** | ✔ Compatible with old devices  ✔ Easy to use | ❌ No Shader Graph  ❌ Not optimized for mobile |
+| **URP (Universal RP)** 🏆 | **Best for Mobile Games** | ✔ Optimized for performance  ✔ Supports Shader Graph  ✔ Better lighting than Built-in RP | ❌ Some features require manual setup |
+| **HDRP (High Definition RP)** | **High-end PC/Console** | ✔ Best graphics quality  ✔ Advanced lighting & shadows | ❌ Not suitable for mobile  ❌ Heavy performance cost |
 
 
 https://www.occasoftware.com/blog/unity-understanding-urp-hdrp-built-in \
