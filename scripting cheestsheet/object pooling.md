@@ -30,8 +30,8 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    public GameObject prefab;
-    public int poolSize = 10;
+    public GameObject prefab = default;
+    public int poolSize = default;
 
     // Declare a list to store the object in the pool
     private List<GameObject> objectPool = new List<GameObject>();
