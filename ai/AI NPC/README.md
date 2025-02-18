@@ -1,7 +1,7 @@
 ## AI NPCs
 
 
-#### NPC AI Behavior \
+#### NPC AI Behavior 
 
 Behavior Designer: https://opsive.com/assets/behavior-designer/
 
