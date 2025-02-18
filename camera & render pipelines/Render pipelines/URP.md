@@ -36,6 +36,11 @@ To set URP as the **active render pipeline**:
 3.  In the **Scriptable Render Pipeline Settings** field, **select the URP Asset**. When you select the URP Asset, the **available Graphics settings change immediately**.
 
 
+### Update existing materials to URP
+If your project is using the old **Built-in Render Pipeline**, you may need to upgrade materials and shaders to be compatible with URP.
+
+**Go to**: \
+**`Edit → Render Pipeline → Universal Render Pipeline → Upgrade Project Materials to URP`**.
 
 
 
