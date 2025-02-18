@@ -42,7 +42,7 @@ If your project is using the old **Built-in Render Pipeline**, you may need to u
 **Go to**: \
 **`Edit → Render Pipeline → Universal Render Pipeline → Upgrade Project Materials to URP`**.
 
-
+#### Enable depth texture and Opaque texture in URP asset setting in inspector for using **URP/particles shader**
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@16.0/manual/index.html
