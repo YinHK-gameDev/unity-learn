@@ -107,6 +107,15 @@ public void SetActive(bool value);
 
 https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
 
+### check if a GameObject is active in scene
+You can check if a **GameObject** is active in Unity using the **`activeSelf`** or **`activeInHierarchy`** properties.
+
+#### `activeSelf` (Checks Local Active State)
+
+Returns **`true`** if the **GameObject** itself is **active**, **regardless of** **parent objects**.
+
+#### `activeInHierarchy` (Checks if Fully Active in Hierarchy)
+Returns true if the **GameObject** and **all its parents are active**.
 
 ### Find Game object 
 
