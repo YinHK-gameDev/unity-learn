@@ -44,6 +44,28 @@ If your project is using the old **Built-in Render Pipeline**, you may need to u
 
 #### Enable depth texture and Opaque texture in URP asset setting in inspector for using **URP/particles shader**
 
+#### **Method 2: Manual Upgrade (Best for Custom Shaders)**
+​
+If your materials **did not upgrade correctly** or are using **custom shaders**, you need to manually convert them.
+​
+**✅ Steps:**
+​
+1️⃣ **Select the Material** in the **Inspector**.  
+2️⃣ **Change the Shader Type**:
+​
+-   If using **Standard Shader**, change it to **URP/Lit**.
+-   If using **Custom Shader**, rewrite it to be compatible with URP (URP uses Shader Graph or HLSL-based shaders).
+​
+3️⃣ **Fix Missing Texture Slots**:
+​
+-   Reassign **Albedo, Normal Map, Metallic, etc.**
+​
+4️⃣ **Check Transparency & Rendering Mode**:
+​
+-   If your material is **transparent**, set **Surface Type** to **Transparent**.
+-   Adjust **Render Queue** (e.g., for transparent objects, use **3000**).
+
+
 ### ref
 https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@16.0/manual/index.html
 
