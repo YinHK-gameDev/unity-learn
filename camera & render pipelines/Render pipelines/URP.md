@@ -42,6 +42,11 @@ If your project is using the old **Built-in Render Pipeline**, you may need to u
 **Go to**: \
 **`Edit → Render Pipeline → Universal Render Pipeline → Upgrade Project Materials to URP`**.
 
+
+> **Note**: In unity 6 and latest URP. Use the **Render Pipeline Converter** to convert any of Unity's built-in Built-In Render Pipeline materials and shaders to a URP material and shader.
+
+https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@16.0/manual/features/rp-converter.html
+
 #### Enable depth texture and Opaque texture in URP asset setting in inspector for using **URP/particles shader**
 
 #### **Method 2: Manual Upgrade (Best for Custom Shaders)**
