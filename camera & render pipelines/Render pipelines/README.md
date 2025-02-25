@@ -17,12 +17,12 @@ A render pipeline determines **how the objects in your scene are displayed**, in
 
 
 
-In Unity, you can choose between different render pipelines. Unity provides three prebuilt render pipelines with different capabilities and performance characteristics, or you can create your own.
+In Unity, you can choose between different render pipelines. Unity provides **three prebuilt render pipelines** with different **capabilities** and **performance characteristics**, or you can **create your own**.
 
 To render content, Unity can either use the **Built-in Render Pipeline** or a render pipeline based on the **Scriptable Render Pipeline (SRP)**, which includes the **Universal Render Pipeline (URP)** and the **High Definition Render Pipeline (HDRP)**.
 
-It can be difficult to switch a Project from one render pipeline to another, because different render pipelines use different **shader**
- outputs, and might not have the same features. It is therefore important to understand the different render pipelines that Unity provides
+It **can be difficult to switch a Project from one render pipeline to another**, because different render pipelines use different **shader
+ outputs**, and **might not have the same features**. It is therefore important to understand the different render pipelines that Unity provides
  
 
 **Unity offers the following render pipelines:** 
@@ -33,7 +33,7 @@ It can be difficult to switch a Project from one render pipeline to another, bec
 - You can create your **own custom render pipeline** using Unity’s **Scriptable Render Pipeline API**.
 
 
-> When you change the active render pipeline, you must ensure that the assets and code in your project are compatible with the new render pipeline; otherwise, you might experience errors or unintended visual effects.
+> **Note**: When you change the active render pipeline, you **must** ensure that the assets and code in your project are compatible with the new render pipeline; otherwise, you might experience errors or unintended visual effects.
 
 ### Render pipeline feature comparison
 https://docs.unity3d.com/Manual/render-pipelines-feature-comparison.html
