@@ -16,7 +16,7 @@ Unity’s Mask Map stores multiple textures in different channels:
 | A (Alpha)	| Height/Displacement Map (Optional) |
 
 
-**Important:** \
+**Important:** 
 - **Metallic Map** → **R channel**
 - **Roughness Map** (from Blender) → **Inverted & placed in B channel** (Unity uses Smoothness, which is the inverse of Roughness).
 
