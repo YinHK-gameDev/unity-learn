@@ -102,6 +102,22 @@ This optimisation means that **no processor time is spent updating the Rigidbody
 For most purposes, the sleeping and waking of a Rigidbody component happens transparently. However, a GameObject might fail to wake up if a Static Collider (that is, one without a Rigidbody) is moved into it or away from it by modifying the Transform position. This might result, say, in the Rigidbody GameObject hanging in the air when the floor has been moved out from beneath it. In cases like this, the GameObject can be woken explicitly using the WakeUp function. 
 
 
+### centre of mass
+The centre of mass is a position that is relative to an object. It is the mean location of mass distribution in space, or it is the average position of all the system parts. It’s a point where force is usually applied to produce linear acceleration rather than angular acceleration.
+
+The centre of mass of a uniform disc shape, for example, would be at its centre. The object’s centre of mass does not always fall in the same place. The centre of mass of a ring, for example, is at its centre, where no material exists.
+
+Two factors that determine the position of the centre of mass of a rigid body are:
+
+- Body structure
+- The mass distribution
+
+These factors **determine whether the centre of mass is located inside or outside the body**. 
+
+Inside the body, the body’s centre of mass is found in the physical structure (matter). But o
+
+> **Note**: The centre of mass of an object or system is that point where any uniform force on the object acts.
+
 ### Scale of the object
 
 In unity, mass doesn't affect fall speed- gravity and drag do. Also the scale of object can make object looks weird(if large scale make object slow speed for motion) while falling. If your object isn’t at real world scale. It will be wonky.
@@ -116,7 +132,8 @@ https://docs.unity3d.com/ScriptReference/Rigidbody.html
 https://www.reddit.com/r/Unity3D/comments/sijgzo/why_is_it_falling_so_slow/
 
 
-
+**centre of mass**: \
+https://unacademy.com/content/jee/study-material/physics/centre-of-mass-of-a-rigid-body/
 
 
 
