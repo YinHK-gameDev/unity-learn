@@ -141,6 +141,9 @@ Inertia tensor is a **rotational analog of mass**: the **larger** the inertia co
 
 **Zero is not a valid inertia tensor component**. Therefore, the physics system interprets zeros as infinite values instead. So, for example, a body with (0, 1, 1) inertia tensor is impossible to rotate around X.
 
+Units: **kg·m²** (moment of inertia for each axis) [].
+
+
 ### Scale of the object
 
 In unity, mass doesn't affect fall speed- gravity and drag do. Also the scale of object can make object looks weird(if large scale make object slow speed for motion) while falling. If your object isn’t at real world scale. It will be wonky.
