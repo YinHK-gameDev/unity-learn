@@ -119,6 +119,18 @@ Inside the body, the body’s centre of mass is found in the physical structure 
 > **Note**: The centre of mass of an object or system is that point where any uniform force on the object acts.
 
 ###  Inertia Tensor
+
+Inertia Tensor controls how hard it is to rotate a Rigidbody around its different axes (X, Y, Z). It’s like mass for rotation: \
+Mass controls how hard it is to move an object in a straight line. \
+Inertia Tensor controls how hard it is to spin or rotate an object.
+
+- If the Inertia Tensor value is **large** on an axis → it's **hard to rotate** around that axis.
+- If the Inertia Tensor value is **small** → it's **easy to rotate** around that axis.
+
+1. x → rotation resistance around X axis
+2. y → rotation resistance around Y axis
+3. z → rotation resistance around Z axis
+
 The inertia tensor is defined as a symmetric 3x3 matrix that describes the distribution of mass of an object in space.
 
 Define the inertia tensor of this Rigidbody. The higher the Inertia Tensor value is, the more torque is required to make the Rigidbody rotate on its axis.
