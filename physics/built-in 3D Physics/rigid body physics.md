@@ -118,6 +118,17 @@ Inside the body, the body’s centre of mass is found in the physical structure 
 
 > **Note**: The centre of mass of an object or system is that point where any uniform force on the object acts.
 
+###  Inertia Tensor
+The inertia tensor is defined as a symmetric 3x3 matrix that describes the distribution of mass of an object in space.
+
+Define the inertia tensor of this Rigidbody. The higher the Inertia Tensor value is, the more torque is required to make the Rigidbody rotate on its axis.
+
+The inertia tensor of this body, defined as a diagonal matrix in a reference frame positioned at this body's center of mass and rotated by Rigidbody.inertiaTensorRotation.
+
+Inertia tensor is a **rotational analog of mass**: the **larger** the inertia component about a particular axis is, the **more torque that is required** to achieve the same angular acceleration about that axis.
+
+**Zero is not a valid inertia tensor component**. Therefore, the physics system interprets zeros as infinite values instead. So, for example, a body with (0, 1, 1) inertia tensor is impossible to rotate around X.
+
 ### Scale of the object
 
 In unity, mass doesn't affect fall speed- gravity and drag do. Also the scale of object can make object looks weird(if large scale make object slow speed for motion) while falling. If your object isn’t at real world scale. It will be wonky.
