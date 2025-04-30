@@ -266,7 +266,11 @@ public class ExampleClass : MonoBehaviour
 - If basing your movement off a key press, create the if-statement to test for the KeyCode.
 - Use either the **`transform.Translate` method** or **`transform.position`** property or **`Rigidbody.AddForce` method**(if using physics) to move your character.
 
-
+> **Note**: If you directly change transform.position, Unity will NOT calculate or update Rigidbody.velocity from that movement.
+> ```cs
+> transform.position += Vector3.forward * 10 * Time.deltaTime; // NO physics
+> ```
+> In this case, **`rigidbody.velocity`** may stay **0**, because Unity **didn't move it using physics**.
 
 ### Character Controller component approach for movement
 A CharacterController allows you to **easily do movement constrained by collisions without having to deal with a rigidbody**. A CharacterController is **not affected by force**s and will **only move when you call the Move function**. It will then carry out the movement but be constrained by collisions.
