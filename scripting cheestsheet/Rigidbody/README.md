@@ -27,9 +27,35 @@ Adds a force to the Rigidbody.
 
 Just a force pushing an object.
 
+- Applies a force to the center of mass of the Rigidbody.
+- Only causes linear motion (i.e. translation, no spin).
+
+**Great for:**
+- Moving an object forward.
+- Simulating pushing something straight.
+
 ```cs
 public void AddForce(Vector3 force, ForceMode mode = ForceMode.Force);
 ```
+
+### `AddForceAtPosition`
+**Applies force at position**. As a result this will apply a **torque** and **force** on the object.
+
+Applies a force at a **specific point in world space**, **not just the center of mass**. \
+**Can cause both**: 
+- ✅ Linear motion (translation)
+- ✅ Angular motion (rotation/torque) if the point is off-center
+
+📌 **Useful for**: 
+- Simulating a **torque effect** (e.g. a door swinging when pushed off-center)
+- **Making a vehicle tilt** or **spin** when force is unevenly applied
+
+#### Quick Comparison
+| **Feature**	| `AddForce` |	`AddForceAtPosition` |
+| -	| - |	- |
+| **Applies force to…**	| Center of mass |	Specific world position |
+| **Can cause rotation?** |	❌ No	 | ✅ Yes (if offset from center) |
+| **Physics use case examples** |	Rocket thrust, constant push |	Poking, hitting, torque effects |
 
 
 #### `AddTorque`
