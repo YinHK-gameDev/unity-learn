@@ -110,6 +110,10 @@ To select an algorithm, set the physics body’s Collision Detection property in
 - In the Editor: On the **Rigidbod**y or **Articulation Body component** Inspector, change the **Collision Detection property**.
 - In code: Use the API properties **`Rigidbody.collisionDetectionMode`** and **`ArticulationBody.collisionDetectionMode`**.
 
+
+> **Note**: Unity do not detect all collisions in the scene — they only detect collisions involving the GameObject that the script is attached to.
+
+
 ### ref
 https://docs.unity3d.com/Manual/collision-section.html
 
