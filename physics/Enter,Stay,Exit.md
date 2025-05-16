@@ -78,8 +78,16 @@ If one of collider is trigger, both collider will **pass through each other** wh
 
 ![](./img/trigger&collider.png)
 
-#### `OnTriggerXXX`
-This will detect all the trigger event happen in the scene, if looking for specific trigger event, just specify the specific collider involved in the trigger event.
+#### Trigger event detect - `OnTriggerXXX`
+- **`OnTriggerXXX`** methods do not detect all trigger events happening in the scene — **only the ones involving the GameObject that the script is attached to**.
+- **`OnTriggerXXX`** will **not detect trigger events between colliders** that are on the **same GameObject or its children**, if they all belong to the same Rigidbody or are part of the same hierarchy. Unity's physics system ignores self-collisions, **including trigger events**, between colliders that are: 1. Part of the **same object (same Rigidbody or no Rigidbody)**, 2. Parent and child under the **same Rigidbody**.
+
+| Parent/Child Setup | Will OnTriggerXXX fire? |
+|-|-|
+| Same hierarchy, no Rigidbody | ❌ No |
+| Same hierarchy, same Rigidbody	| ❌ No |
+| Different Rigidbodies	| ✅ Yes |
+| Trigger with external object	| ✅ Yes |
 
 ### gameObject vs collision.gameObject
 When a collision occurs, `gameObject` and `collision.gameObject` both refer to the GameObject involved in the collision, but they have different contexts depending on where they're used:
