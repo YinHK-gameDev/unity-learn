@@ -78,6 +78,9 @@ If one of collider is trigger, both collider will **pass through each other** wh
 
 ![](./img/trigger&collider.png)
 
+#### `OnTriggerXXX`
+This will detect all the trigger event happen in the scene, if looking for specific trigger event, just specify the specific collider involved in the trigger event.
+
 ### gameObject vs collision.gameObject
 When a collision occurs, `gameObject` and `collision.gameObject` both refer to the GameObject involved in the collision, but they have different contexts depending on where they're used:
 
