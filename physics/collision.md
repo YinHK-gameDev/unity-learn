@@ -115,7 +115,7 @@ To select an algorithm, set the physics body’s Collision Detection property in
 
 #### Collision detect
 - Unity do not detect all collisions in the scene — they **only detect collisions involving the GameObject that the script is attached to**.
-- **`OnCollisionXXX**` will **not detect collisions between colliders on the same GameObject hierarchy, including its child colliders**.
+- **`OnCollisionXXX`** will **not detect collisions between colliders on the same GameObject hierarchy, including its child colliders**.
 
 | Scenario	| Will OnCollisionXXX be called? |
 |-|-|
