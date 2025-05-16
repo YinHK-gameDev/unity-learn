@@ -108,10 +108,22 @@ In some cases, you might find that the physics performance relies on a combinati
 
 To select an algorithm, set the physics body’s Collision Detection property in one of the following ways:
 - In the Editor: On the **Rigidbod**y or **Articulation Body component** Inspector, change the **Collision Detection property**.
-- In code: Use the API properties **`Rigidbody.collisionDetectionMode`** and **`ArticulationBody.collisionDetectionMode`**.
+- In code: Use the API properties **`Rigidbody.collisionDetectionMode`** and **`ArticulationBody.collisionDetectionMode`**. Unity **ignores collisions** between colliders that are part of the **same Rigidbody** (i.e., same physics body), even if they are on different child objects. If both colliders are under the **same Rigidbody** (e.g., parent and child), Unity **assumes they are part of the same object and doesn’t generate a collision between them**. So, **`OnCollisionEnter`**, **`OnCollisionStay`**, **`OnCollisionExit`** will **NOT be called** when a GameObject collides with its own children.
 
 
-> **Note**: Unity do not detect all collisions in the scene — they only detect collisions involving the GameObject that the script is attached to.
+
+
+#### Collision detect
+- Unity do not detect all collisions in the scene — they **only detect collisions involving the GameObject that the script is attached to**.
+- **`OnCollisionXXX**` will **not detect collisions between colliders on the same GameObject hierarchy, including its child colliders**.
+
+| Scenario	| Will OnCollisionXXX be called? |
+|-|-|
+| Collider hits its own child |	❌ No |
+| Parent and child have Rigidbody | ✅ Yes |
+| Collider hits external object	| ✅ Yes |
+
+
 
 
 ### ref
