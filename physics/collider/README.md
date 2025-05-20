@@ -150,6 +150,15 @@ https://docs.unity3d.com/Manual/class-PhysicMaterial.html
 https://forum.unity.com/threads/detecting-which-collider-was-hit.738020/
 
 
+### `Collider.enabled` vs `SetActive`
+Does `Collider.enabled` same as `SetActive`?? \
+
+**NO**, `Collider.enabled` is not the same as disabling the entire component with SetActive.
+
+- To disables the collider functionality: it will no longer participate in collisions or trigger detection.
+- The GameObject and the component still exist and are active.
+- Useful when you want to turn off just the physics interaction, but still render or use other scripts.
+
 ### Trigger
 A collider configured as a **Trigger** (using the **Is Trigge**r property) does not behave as a solid object and **will simply allow other colliders to pass through**. When a collider enters its space, a **trigger will call the `OnTriggerEnter` function** on the trigger object’s scripts
 
