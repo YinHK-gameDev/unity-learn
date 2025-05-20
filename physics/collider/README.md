@@ -151,7 +151,7 @@ https://forum.unity.com/threads/detecting-which-collider-was-hit.738020/
 
 
 ### `Collider.enabled` vs `SetActive`
-Does `Collider.enabled` same as `SetActive`?? \
+Does `Collider.enabled` same as `SetActive`?? 
 
 **NO**, `Collider.enabled` is not the same as disabling the entire component with SetActive.
 
