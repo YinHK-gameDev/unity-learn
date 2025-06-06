@@ -15,6 +15,26 @@ Note that your code will never directly create a Component. Instead, you write s
 > **Note**: To remove component by script. **`Destroy()`** can be used
 
 
+### `GetComponent<T>()` & `gameObject.GetComponent<T>()`
+There's a small but important contextual difference between `GetComponent<T>()` and `gameObject.GetComponent<T>()`
+
+
+1. `GetComponent<T>()` \
+    This is shorthand for: 
+    ```cs
+      this.GetComponent<T>()
+    ```
+    It searches for the component T on the **same GameObject that the script** is attached to.
+
+2. `gameObject.GetComponent<T>()` \
+    This explicitly uses the gameObject reference of the current MonoBehaviour. It's also looking on the same GameObject the script is attached to.
+
+    So in a MonoBehaviour script, these are equivalent:
+    ```cs
+      GetComponent<Collider>();
+      gameObject.GetComponent<Collider>();
+    ```
+
 ### ref 
 https://docs.unity3d.com/ScriptReference/Component.html
 
