@@ -197,7 +197,7 @@ The Player Input component provides two related but separate features which can 
 
 - Configuring how Actions map to methods or callbacks in the script that controls your player.
 - Handling local multiplayer scenarios such as player lobbies, device filtering, and screen-splitting.
-- 
+
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.9/manual/PlayerInput.html
 
 
