@@ -18,6 +18,7 @@ UnityEvents are useful for a number of things:
 
 `UnityEvent`s have similar limitations to standard delegates. That is, they hold references to the element that is the target and this stops the target being garbage collected. If you have a **`UnityEngine.Object`** as the target and the native representation disappears the callback will not be invoked.
 
+> **Note**: alternative can be used: `GameObject.BroadcastMessage` or `GameObject.SendMessage`
 
 ### Using UnityEvents
 To configure a callback in the editor there are a few steps to take:
