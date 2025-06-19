@@ -314,7 +314,19 @@ public class Example : MonoBehaviour
    | value | An optional parameter value to pass to the called method. |
    | options | Whether an error should be raised if the method doesn't exist on the target object. |
 
+2. **`GameObject.BroadcastMessage`**: \
+   Calls the specified method on every MonoBehaviour attached to the GameObject or any of its children.
 
+   ```cs
+     public void BroadcastMessage(string methodName, object parameter = null, SendMessageOptions options = SendMessageOptions.RequireReceiver);
+   ```
+
+   | Parameter | Description |
+   |-|-|
+   | methodName | The name of the MonoBehaviour method to call. |
+   | parameter | An optional parameter value to pass to the called method. |
+   | options | Whether an error should be raised if the method doesn't exist on the target object. |
+   
    
 ### Properties
 
