@@ -198,6 +198,8 @@ The Player Input component provides two related but separate features which can 
 - Configuring how Actions map to methods or callbacks in the script that controls your player.
 - Handling local multiplayer scenarios such as player lobbies, device filtering, and screen-splitting.
 
+> Create a empty object in the scene and assign a player Input component to    it. Assign existing input action asset and set up default scheme. Unity will detect device change and auto change scheme which based on specific scheme.  Set up handler/callback function name stating "On" + action name. Use Boardcast Message or Invoke Unity Events for the behavior.
+
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.9/manual/PlayerInput.html
 
 
