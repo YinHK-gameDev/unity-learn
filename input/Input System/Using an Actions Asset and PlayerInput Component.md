@@ -80,10 +80,6 @@ The Input System provides two related components that simplify how you set up an
 The **Player Input component** represents a **single player**, and that player's associated **Input Actions**, whereas the **Player Input Manager component** handles setups that allow for** several concurrent users (for example, player lobbies and split-screen gameplay in a game)**.
 
 
-
-
-
-
 #### Getting started
 
 To get started using the Player Input component, use the following steps:
@@ -129,8 +125,81 @@ The following options are available:
 | **Broadcast Messages** | Uses `GameObject.BroadcastMessage` on the GameObject that the PlayerInput component belongs to. This broadcasts the message down the GameObject hierarchy. |
 | **Invoke Unity Events** | Uses a separate `UnityEvent` for each individual type of message. When this is selected, the events available on the `PlayerInput` are accessible from the Events foldout. The argument received by events triggered for Actions is the same as the one received by started, performed, and canceled callbacks. |
 | **Invoke CSharp Events** | Similar to **Invoke Unity Events**, except that the events are plain C# events available on the `PlayerInput` API. You cannot configure these from the Inspector. Instead, you have to register callbacks for the events in your scripts.The following events are available: `onActionTriggered` (collective event for all actions on the player), `onDeviceLost`, `onDeviceRegained` |
+ 
+> **Note**: If using `SendMessage` or `BoardcastMessage` method, just declare a Handler method and name it like "On" + Input Action name, use `InputionValue` as an agruement for the handler method.
 
 
+> **Note**: If using **Invoke C# Events**, need to add event handler for the events like `Action<InputAction.CallbackContext> canceled` / `Action<InputAction.CallbackContext> performed` / `Action<InputAction.CallbackContext> started`.
+
+#### Use PlayerInput with "Invoke C# Events"
+- Set Behavior to Invoke C# Events
+- Assign your Input Actions asset
+- Enable Auto-Switch
+- Ensure your actions are named (eg: Move, Jump etc)
+
+
+eg: 
+
+```cs
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class MyPlayerInput : MonoBehaviour
+{
+    private PlayerInput playerInput;
+    private InputAction moveAction;
+    private InputAction jumpAction;
+
+    void Awake()
+    {
+	playerInput = GetComponent<PlayerInput>();
+    }
+
+    private void OnEnable()
+    {
+        // Get the actions from the PlayerInput
+        moveAction = playerInput.actions["Move"];
+        jumpAction = playerInput.actions["Jump"];
+
+        // Subscribe to events
+        moveAction.performed += OnMove;
+        moveAction.canceled += OnMoveCancel;
+        jumpAction.performed += OnJump;
+	jumpAction.canceled += OnJumpCancel;
+    }
+
+    private void OnDisable()
+    {
+        // Unsubscribe
+        moveAction.performed -= OnMove;
+        moveAction.canceled -= OnMoveCancel;
+        jumpAction.performed -= OnJump;
+        jumpAction.canceled -= OnJumpCancel;
+    }
+
+    private void OnMove(InputAction.CallbackContext context)
+    {
+        Vector2 movement = context.ReadValue<Vector2>();
+        Debug.Log("Move: " + movement);
+    }
+
+    private void OnMoveCancel(InputAction.CallbackContext context)
+    {
+        Debug.Log("Move stopped");
+    }
+
+    private void OnJump(InputAction.CallbackContext context)
+    {
+        Debug.Log("Jump pressed");
+    }
+
+    private void OnJumpCancel(InputAction.CallbackContext context)
+    {
+        Debug.Log("Jump stopped");
+    }
+}
+
+```
 
 ### ref
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/manual/Workflow-PlayerInput.html \
