@@ -39,6 +39,41 @@ Lighting in Unity works by approximating how light behaves in the real world.
 ![](./img/BestPracticeLightingPipeline15.svg)
 
 
+### Set `Static` to objects for using baked/mixed lighting
+
+#### 🔆 Unity Lighting: When to Use Static Settings (HDRP/URP)
+
+In **Unity**, especially when using **Baked** or **Mixed Lighting** in **HDRP** or **URP**, objects that should receive baked lighting need to be marked as **Static**, specifically **Lightmap Static**.
+
+#### ✅ When & Why to Mark Objects as Static
+
+1. If Using Baked or Mixed Lights
+  - **Baked Lights** only affect objects marked as **Lightmap Static**.
+  - **Mixed Lights**:
+    - Bake indirect lighting for static objects.
+    - Provide real-time shadows for dynamic objects.
+
+**What to do**:
+
+1. Select the object in the **Scene**.
+2. In the **Inspector**, check the `Static` checkbox (top right).
+3. Or click the dropdown next to it and only check **Lightmap Static**.
+
+#### 🔸 2. If Using Realtime Lights Only
+
+- You **don’t need** to mark the object as static.
+- All objects can receive lighting dynamically from realtime lights.
+
+#### 💡 Summary Table
+
+| Object Type                    | Light Type         | Should Be Static?   |
+|-------------------------------|--------------------|----------------------|
+| Static walls/floors           | Baked or Mixed     | ✅ Yes (Lightmap Static) |
+| Movable vehicles (e.g. forklift) | Mixed or Realtime | ❌ No |
+| Props that never move         | Baked              | ✅ Yes |
+| Player, enemies               | Realtime           | ❌ No  |
+
+
 ### Lighting window
 The Lighting window (menu: **Window > Rendering > Lighting**) is the main control point for Unity’s lighting features.
 
