@@ -43,12 +43,12 @@ Lighting in Unity works by approximating how light behaves in the real world.
 
 #### 🔆 Unity Lighting: When to Use Static Settings (HDRP/URP)
 
-In **Unity**, especially when using **Baked** or **Mixed Lighting** in **HDRP** or **URP**, objects that should receive baked lighting need to be marked as **Static**, specifically **Lightmap Static**.
+In **Unity**, especially when using **Baked** or **Mixed Lighting** in **HDRP** or **URP**, objects that should receive baked lighting need to be marked as **Static**, specifically **Lightmap Static** / **Contribute GI**.
 
 #### ✅ When & Why to Mark Objects as Static
 
 1. If Using Baked or Mixed Lights
-  - **Baked Lights** only affect objects marked as **Lightmap Static**.
+  - **Baked Lights** only affect objects marked as **Lightmap Static**/**Contribute GI**.
   - **Mixed Lights**:
     - Bake indirect lighting for static objects.
     - Provide real-time shadows for dynamic objects.
@@ -57,7 +57,7 @@ In **Unity**, especially when using **Baked** or **Mixed Lighting** in **HDRP** 
 
 1. Select the object in the **Scene**.
 2. In the **Inspector**, check the `Static` checkbox (top right).
-3. Or click the dropdown next to it and only check **Lightmap Static**.
+3. Or click the dropdown next to it and only check **Lightmap Static**/**Contribute GI**.
 
 #### 🔸 2. If Using Realtime Lights Only
 
@@ -75,7 +75,7 @@ In **Unity**, especially when using **Baked** or **Mixed Lighting** in **HDRP** 
 
 #### 💡 Unity Lighting & Lightmap Static: Bake to See Results
 
-If you mark an object as **Lightmap Static**, you must **bake the lighting** first to see the lighting effects in **Editor** or **Play Mode**.
+If you mark an object as **Lightmap Static**/**Contribute GI**, you must **bake the lighting** first to see the lighting effects in **Editor** or **Play Mode**.
 
 
 #### 🔦 Breakdown
@@ -90,7 +90,7 @@ If you mark an object as **Lightmap Static**, you must **bake the lighting** fir
 
 #### 🔧 What You Should Do
 
-1. ✅ **Mark objects as Lightmap Static** if they don’t move.
+1. ✅ **Mark objects as Lightmap Static**/**Contribute GI** if they don’t move.
 2. Go to:  
    `Window > Rendering > Lighting > Environment`
 3. Under **Lightmapping Settings**, click:
