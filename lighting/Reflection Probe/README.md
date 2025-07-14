@@ -10,6 +10,7 @@ This works quite well for the game’s main character (a shiny car, say) if it i
 
 You should generally **place them at every point where the appearance of a reflective object would change noticeably** (**eg, tunnels, areas near buildings and places where the ground colour changes**). 
 
+Use **Reflection Probes** to reflect baked lighting on **metallic/glossy** surfaces.
 
 > **Note**: When a **reflective object** **passes near to a probe**, the reflection sampled by the probe can be used for the object’s reflection map. Furthermore, **when several probes are nearby**, Unity can **interpolate between them to allow for gradual changes in reflections**. Normally, the reflection cubemap is assumed to be at an **infinite distance** from any given object.
 
