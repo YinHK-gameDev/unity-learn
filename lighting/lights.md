@@ -32,6 +32,7 @@ A Directional Light typically simulates sunlight, and a single Directional Light
 #### Area Lights
 ![](./img/AreaLightDiagram.svg)
 
+> **Note**: 💡 **Area Lights** work **only with Baked lighting**.
 
 ### Light modes
 The Modes are:
