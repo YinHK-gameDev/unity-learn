@@ -73,6 +73,34 @@ In **Unity**, especially when using **Baked** or **Mixed Lighting** in **HDRP** 
 | Props that never move         | Baked              | ✅ Yes |
 | Player, enemies               | Realtime           | ❌ No  |
 
+#### 💡 Unity Lighting & Lightmap Static: Bake to See Results
+
+If you mark an object as **Lightmap Static**, you must **bake the lighting** first to see the lighting effects in **Editor** or **Play Mode**.
+
+
+#### 🔦 Breakdown
+
+| Situation                  | Static Object Behavior                         |
+|---------------------------|-------------------------------------------------|
+| ✅ Marked as Lightmap Static | Receives light **only after baking**        |
+| ❌ Not baked yet            | Will look **unlit** / **incorrect** in scene |
+| ✅ Baked Lighting completed | Shows **correct** light/shadow               |
+| 🔁 Real-time Light only     | Doesn’t need baking; **lights immediately**  |
+| 🛠️ Using HDRP/URP           | Needs **Global Illumination settings** configured |
+
+#### 🔧 What You Should Do
+
+1. ✅ **Mark objects as Lightmap Static** if they don’t move.
+2. Go to:  
+   `Window > Rendering > Lighting > Environment`
+3. Under **Lightmapping Settings**, click:
+   - ✅ `Generate Lighting` (manual)  
+   - Or enable `Auto Generate` *(not recommended for large scenes)*
+
+####  ✅ Once Baking is Done, You'll See:
+
+- Proper **shadows**
+- **Global illumination** bounce
 
 ### Lighting window
 The Lighting window (menu: **Window > Rendering > Lighting**) is the main control point for Unity’s lighting features.
