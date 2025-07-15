@@ -28,6 +28,7 @@ In C# code, the **MeshRenderer class** represents a **Mesh Renderer** component.
 
 https://docs.unity3d.com/Manual/class-MeshRenderer.html
 
+https://docs.unity3d.com/6000.1/Documentation/Manual/class-MeshRenderer.html#lighting
 
 ### Skinned Mesh Renderer component
 The Skinned Mesh Renderer component **renders a deformable mesh**. **Deformable meshes** include **skinned meshes** (meshes that have **bones and bind poses**), meshes that have **blend shapes**, and meshes that **run cloth simulation**.
