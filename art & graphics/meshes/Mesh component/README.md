@@ -18,7 +18,7 @@ In C# code, the **MeshRenderer class** represents a **Mesh Renderer** component.
 - The Lighting section contains properties that relate to lighting.
 
 **C: Lightmapping** 
-- he Lightmapping section contains properties **relating to baked** and **real-time lightmaps**.
+- The Lightmapping section contains properties **relating to baked** and **real-time lightmaps**.
 
 **D: Probes** 
 - The Probes section contains properties **relating to Light Probe** and **Reflection Probes**.
