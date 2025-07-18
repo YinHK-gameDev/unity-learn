@@ -27,6 +27,38 @@ You can **blend post-processing, exposure, sky settings, ambient light, fog**, e
 | URP             | ✅ Yes         | Supports volumes with Post Processing and limited environment overrides |
 | Built-in RP     | ❌ No          | Uses legacy **Post-Processing Stack v2** or **custom scripts**; **no native Volume support** |
 
+### 🔧 Types of Volumes
+
+#### Global Volume
+- **Description**: Affects the entire scene, regardless of position.
+- **Collider**: No collider needed.
+- **Use Case**: Ideal for scene-wide effects like skybox, general fog, or ambient light.
+
+#### Local Volume
+- **Description**: Affects a specific area defined by a Box Collider (usually with `IsTrigger = true`).
+- **Behavior**: Effects apply or blend when the camera enters the volume area.
+- **Use Case**: Suitable for zone-based lighting, post-processing effects, or interior/exterior transitions.
+
+### 📦 How to Create a Volume (Example for HDRP)
+1. Create a volume:
+   - Go to **GameObject > Volume > Global Volume** for a global effect.
+   - Or, create an empty GameObject and add a **Volume** component (**Add Component > Volume**).
+2. Assign a **Volume Profile**:
+   - In the Volume component, click **New** under Profile to create a new profile.
+3. Add effects to the profile:
+   - In the profile (Inspector), click **Add Override** to include effects such as:
+     - Bloom
+     - Color Adjustments
+     - Exposure
+     - Sky Settings
+     - Visual Environment
+     - Fog
+
+#### 🎯 Use Case Examples
+- Add an **HDRI Sky** in HDRP for realistic scene lighting.
+- Blend **post-processing effects** between indoor and outdoor areas.
+- Change **ambient lighting** based on specific areas in the scene.
+- Apply **fog** or **lighting effects** exclusively inside a tunnel or cave.
 
 ### ref 
 https://docs.unity3d.com/6000.2/Documentation/Manual/urp/Volumes.html \
