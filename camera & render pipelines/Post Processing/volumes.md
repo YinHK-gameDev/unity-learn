@@ -1,4 +1,8 @@
 ### Volumes
+
+In Unity, a Volume is a system used to **apply post-processing effects, lighting settings, skyboxes, fog, and other environment-related effects** in a defined 3D area of the scene.
+
+
 - The Universal Render Pipeline(URP) uses volumes for post-processing
  effects. **Volumes can override or extend scene properties depending on the camera
  position relative to each volume**.
