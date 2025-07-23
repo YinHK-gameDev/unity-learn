@@ -77,4 +77,5 @@ An Adaptive Probe Volume is a group of Light Probes
 
 ### ref 
 https://docs.unity3d.com/6000.1/Documentation/Manual/urp/probevolumes.html \
-https://docs.unity3d.com/6000.1/Documentation/Manual/urp/probevolumes-concept.html
+https://docs.unity3d.com/6000.1/Documentation/Manual/urp/probevolumes-concept.html \
+https://www.youtube.com/watch?v=yFFKaLQdtL4
