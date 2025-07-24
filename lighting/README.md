@@ -158,6 +158,41 @@ Use the four tabs at the top of the panel to view settings for the **Lights, 2D 
 Use the search field to filter each table for names. You can also **select the lights** you want to work on, then **tick the Lock Selection checkbox**. Only the lights that were selected when the checkbox was ticked remain listed in the Light Explorer, even if you select a different Light in the Scene.
 
 
+### 🌞 Lightmap vs Light Probe — What’s the Difference?
+
+| **Feature**  | **Lightmap**  |**Light Probe**    |
+|-|-|-|
+| **Used For** | Static objects (non-moving) | Dynamic/moving objects (e.g., characters) |
+| **Lighting Stored In**   | Textures (UV-mapped)  | 3D Spherical Harmonics at probe positions  |
+| **Bakes**   | Direct + Indirect lighting  | Indirect lighting only |
+| **Shadows**  | ✅ Yes (baked into the texture)  | ❌ No (only ambient GI, no baked shadowing)  |
+| **Performance**  | Moderate texture memory usage | Lightweight, great for dynamic characters  |
+| **Realtime Compatible**  | ❌ (static only)  | ✅ Yes – responds to probe blending while moving  |
+
+#### 🎯 When to Use Each
+
+**✅ Use **Lightmaps** when:** 
+- The object is **static** (walls, floors, terrain).
+- You want **baked shadows** and **bounce light**.
+- You want **maximum visual quality** for non-moving geometry.
+
+**✅ Use **Light Probes** when:** 
+- The object is **movable** (players, enemies, vehicles).
+- You want it to **receive baked indirect lighting** as it moves.
+- You want **better performance** than full real-time GI.
+
+
+
+#### 🔁 Use Them Together (Recommended)
+**Most games use both:** 
+- **Lightmaps** for static geometry (buildings, props)
+- **Light Probes** for dynamic objects (characters)
+
+In **HDRP**, Light Probes (or **Adaptive Probe Volume**) will blend between probe points to give moving objects smooth **indirect lighting transitions**.
+
+
+
+
 ### ref
 https://www.youtube.com/watch?v=DlxuvvYZO4Q
 
