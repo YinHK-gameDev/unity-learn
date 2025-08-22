@@ -140,6 +140,40 @@ Examples:
 - **Facial Layer** → controls blinking or expressions.
 - **Additive Layer** → applies subtle breathing or aiming animations.
 
+#### Layer Order in Animator
+
+Base Layer:
+- Always exists, always shown at the top in the UI.
+- Internally it is Layer 0 (lowest priority).
+- Controls main animations (idle, walk, run, jump, etc.).
+
+Additional Layers:
+- New layers you add appear below Base Layer in the UI.
+- Internally they get Layer 1, Layer 2, … depending on order.
+- The lower down in the list (visually bottom) → the higher the priority.
+
+Priority Rules:
+1. Unity evaluates animations from Base Layer → downward.
+2. If two layers animate the same bone:
+3. The layer further down (higher index) wins.
+4. If an Avatar Mask is applied, that layer only affects the masked bones.
+5. If set to Additive, the layer adds on top of lower layers instead of overriding.
+
+Example:
+```
+Base Layer (index 0, lowest priority)
+Upper Body (index 1)
+Facial (index 2, highest priority)
+```
+
+Result at runtime:
+- Legs from Base Layer (walk).
+- Arms overridden by Upper Body (shoot).
+- Head overridden by Facial (blink/speak).
+
+✅ Bottom-most layer in the list = strongest influence (highest priority). \
+✅ Base Layer is always at the top of UI, but lowest in priority.
+
 #### Animation Layer syncing:
 
 Sometimes it is useful to be able to **re-use the same state machine in different layers**. \
