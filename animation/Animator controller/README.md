@@ -101,6 +101,8 @@ https://docs.unity3d.com/Manual/AnimationParameters.html
 
 Unity uses **Animation Layers** for **managing complex state machines** for **different body parts**. An example of this is if you have a lower-body layer for walking-jumping, and an upper-body layer for throwing objects / shooting.
 
+In Unity’s Animator Controller, an animation layer is a way to organize and blend multiple animation states that affect the same character. Think of it like Photoshop layers — each layer can add something on top of others, and Unity blends them together.
+
 You can manage animation layers from the Layers Widget in the top-left corner of the Animator Controller.
 
 
@@ -124,8 +126,21 @@ The **mask specifies the body parts** on which to **apply the animation**.
 
 For example,  if you wanted to play a throwing animation on just the upper body of your model, while having your character also able to walk, run or stand still at the same time, you would use a mask on the layer which plays the throwing animation where the upper body sections are defined
 
+#### Base Layer
+- The Base Layer is the **default layer** every Animator Controller has.
+- It usually controls the **main body animations** (like idle, walk, run, jump).
+- All your **core movement** animations go here.
+- You can use state machines inside it (Idle → Walk → Run transitions).
 
-**Animation Layer syncing**:
+#### Additional Layers
+You can **add more layers** on **top of the base**.
+Examples:
+
+- **Upper Body Layer** → handles shooting or waving while walking.
+- **Facial Layer** → controls blinking or expressions.
+- **Additive Layer** → applies subtle breathing or aiming animations.
+
+#### Animation Layer syncing:
 
 Sometimes it is useful to be able to **re-use the same state machine in different layers**. \
 For example if you want to simulate "wounded" behavior, and have "wounded" animations for walk / run / jump instead of the "healthy" ones. You can click the Sync checkbox on one of your layers, and then select the layer you want to sync with. The state machine structure will then be the same, but the actual animation clips used by the states will be distinct.
