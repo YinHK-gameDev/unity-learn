@@ -126,6 +126,13 @@ The **mask specifies the body parts** on which to **apply the animation**.
 
 For example,  if you wanted to play a throwing animation on just the upper body of your model, while having your character also able to walk, run or stand still at the same time, you would use a mask on the layer which plays the throwing animation where the upper body sections are defined
 
+#### Layer Weight
+Layer Weight controls how much influence a layer has on the final animation result.
+It’s a value between 0 and 1:
+- 0 → Layer has no effect (disabled).
+- 1 → Layer is fully applied (100% influence).
+- 0.5 → Layer is blended halfway with the layers below.
+
 #### Base Layer
 - The Base Layer is the **default layer** every Animator Controller has.
 - It usually controls the **main body animations** (like idle, walk, run, jump).
@@ -173,6 +180,7 @@ Result at runtime:
 
 ✅ Bottom-most layer in the list = strongest influence (highest priority). \
 ✅ Base Layer is always at the top of UI, but lowest in priority.
+
 
 #### Animation Layer syncing:
 
