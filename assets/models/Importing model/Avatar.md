@@ -42,7 +42,7 @@ Masking during **import time** is preferable, because it allows the discarded an
 
 To create Avatar Mask:
 
-When import animation/model, in animation tab scroll down you can find Mask field. 
+When **import animation/model**, in animation tab scroll down you can find Mask field. 
 
 ![](./masks.png)
 
