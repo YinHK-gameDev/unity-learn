@@ -12,6 +12,17 @@ Unity provides **`UnityEngine`** & **`UnityEditor`** scripting API.
 
 https://www.youtube.com/watch?v=491TSNwXTIg
 
+### C# class
+
+In Unity, when you attach a C# script (that inherits from MonoBehaviour) to a GameObject, Unity **automatically creates one instance of that class and attaches it to that GameObject**. This instance is called a component.
+
+```
+Drag script onto GameObject in Inspector 
+        ↓
+Unity creates ONE instance of your class 
+        ↓
+That instance lives as long as the GameObject exists
+```
 
 ### Declare variable/array
 When declare variables or array, it must specify its data type:   **value type** (eg: string/float…) or **reference type** ( class eg: `Transform/Gameobject`).
@@ -19,6 +30,18 @@ When declare variables or array, it must specify its data type:   **value type**
 **public variable/array**: \
 Inside script set variable/array 做`public`, 在unity inspector 會顯示該variable/array, 並可於inspector 修改其value, 作更改. `private` variable can’t.  Value of variable/array in inspector can override that in script.
 
+**Static variable:** \
+Static variable means that it belongs to the class rather than its instance.
+In unity, every instance of the class shares the exact same static variable, and any instance (or even code that has no instance at all) can read or change it. When one changes it, everyone else immediately sees the new value because there's only one variable in memory. 
+
+All instances share the same single static variable,
+and any one of them (or any other code) can change it,
+and the change is instantly visible to every other instance and all code.
+
+| Type | Belongs to | Copies created |
+| --- | --- | --- |
+| Instance variable | Each object | One per object |
+| Static variable | The class itself | Only ONE copy ever |
 
 ### Inheritance
 
