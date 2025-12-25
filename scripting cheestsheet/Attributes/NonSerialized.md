@@ -1,4 +1,4 @@
-### NonSerialized]
+### NonSerialized
 The `NonSerialized` attribute marks a variable to not be serialized.
 
 This way you can keep a variable public and Unity **does not attempt to serialize it or show it in the Inspector**.
