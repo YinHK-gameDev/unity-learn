@@ -25,6 +25,9 @@ transform.localPosition // <- position relative to parent
 ### Summary
 - Use local space when you want things to move relative to a parent (e.g., moving inside a car).
 - Use world space when dealing with scene-wide logic (e.g., pathfinding, physics).
+- `Child 的 transform.position
+= Parent.position + (Parent.rotation × Child.localPosition`
+
 
 ### Transform component in the Inspector
 #### Position
